@@ -13,19 +13,18 @@ tags:
   - printmaking
 visualDna:
   aesthetic: Linoleum block print
-  form_and_line: Smooth curves, fluid cuts
-  color_palette: Black, White, or multi-block color
-  lighting_setup: Flat
-  material_texture: Ink texture, paper
-  render_quality: Graphic, craft
-  spatial_distortion: Simplified shapes
-  atmosphere: Bold, graphic
+  subject_treatment: Smooth curves, fluid cuts
+  color_and_tone: Black, White, or multi-block color
+  lighting_and_shadow: Flat
+  texture_and_material: Ink texture, paper
+  camera_and_composition: Simplified shapes
+  atmosphere_and_mood: Bold, graphic
+  rendering_and_quality: Graphic, craft
   key_features: Clean cuts
   creative_brief: >-
-    Apply linocut relief printing to any input: smooth carved curves, bold
-    negative-space cuts, flat ink planes, slight registration wobble, and
-    hand-pulled pressure texture. Keep graphic print immediacy without requiring
-    poster subjects, protest art, animals, portraits, or workshop tools.
+    Apply linocut relief printing to any input: smooth carved curves, bold negative-space cuts, flat ink
+    planes, slight registration wobble, and hand-pulled pressure texture. Keep graphic print immediacy without
+    requiring poster subjects, protest art, animals, portraits, or workshop tools.
 avoidRules:
   - photo
   - realistic
@@ -45,7 +44,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP06-033.webp
 attributes:
-  negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border
+  negativePrompt: >-
+    photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy,
+    watermark, text, signature, frame, border
 taxonomy:
   packId: pack_06
   packName: Essential Art Styles

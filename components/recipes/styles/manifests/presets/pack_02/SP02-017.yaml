@@ -13,15 +13,23 @@ tags:
   - tv-and-broadcast
 visualDna:
   aesthetic: Cozy multi-camera sitcom warmth, laugh-track comfort, 90s broadcast vibe
-  form_and_line: None
-  color_palette: Bright flat warmth, beige, cream, soft accent color
-  lighting_setup: Multi-camera lighting, broad even wash, audience-ready spill
-  material_texture: Videotape, SD broadcast, soft analog edges
-  render_quality: Studio audience feel, live-tap energy, punch-line timing
-  spatial_distortion: None
-  atmosphere: Comfort, funny, nostalgic security
+  subject_treatment: >-
+    Treat subjects as believable filmed or broadcast subjects under 90s Sitcom: casting, wardrobe, props,
+    motion cues, and silhouette hierarchy follow 2. TV And Broadcast cinematic and broadcast grammar without
+    locking to one plot beat.
+  color_and_tone: Bright flat warmth, beige, cream, soft accent color
+  lighting_and_shadow: Multi-camera lighting, broad even wash, audience-ready spill
+  texture_and_material: Videotape, SD broadcast, soft analog edges
+  camera_and_composition: >-
+    Camera language native to 90s Sitcom: genre-aware framing, lens character, focal hierarchy, motion cue,
+    and vertical style-card composition.
+  atmosphere_and_mood: Comfort, funny, nostalgic security
+  rendering_and_quality: Studio audience feel, live-tap energy, punch-line timing
   key_features: Multi-camera wash, 3-wall-set clarity, sitcom warmth
-  creative_brief: '90s sitcom style wraps any subject in broad multi-camera comfort: flat warm light, SD videotape softness, audience-ready exposure, beige/cream palette, and punch-line timing. Keep familiar hangout warmth without requiring apartments, sofas, kitchens, New York, or cast members.'
+  creative_brief: >-
+    90s sitcom style wraps any subject in broad multi-camera comfort: flat warm light, SD videotape softness,
+    audience-ready exposure, beige/cream palette, and punch-line timing. Keep familiar hangout warmth without
+    requiring apartments, sofas, kitchens, New York, or cast members.
 avoidRules:
   - cinematic
   - dark

@@ -12,17 +12,29 @@ tags:
   - miscellaneous-and-fun
   - artistic-mediums
 visualDna:
-  aesthetic: Electric gas-discharge graphic treatment built from glowing tube contours, dark void contrast, and chromatic halo bleed
-  form_and_line: Continuous bent-tube strokes, cursive contour loops, clipped mounting shadows, soft wall-wash silhouettes, luminous edge repetition
-  color_palette: Argon purple, mercury cyan, krypton white, hot pink, vacancy red, deep black backing, reflected blue spill
-  lighting_setup: Self-illuminated emission with colored spill, bloom halos, high local contrast, and dim ambient falloff
-  material_texture: Glass tubing, gas glow, enamel backing, transformer warmth, glossy reflections, dust caught inside colored light
-  render_quality: Sharp luminous linework with controlled bloom, readable silhouette, glossy micro-highlights, and nocturnal graphic clarity
-  spatial_distortion: Halo expansion, chromatic fringe drift, tube refraction, glow stacking, slight sign-maker asymmetry
-  atmosphere: Nocturnal, electric, commercial, seductive, nostalgic, high-contrast
-  key_features: Bent-tube continuity, colored halo bleed, black negative space, glass highlight knots, local glow reflections
+  aesthetic: >-
+    Electric gas-discharge graphic treatment built from glowing tube contours, dark void contrast, and
+    chromatic halo bleed
+  subject_treatment: >-
+    Continuous bent-tube strokes, cursive contour loops, clipped mounting shadows, soft wall-wash silhouettes,
+    luminous edge repetition
+  color_and_tone: Argon purple, mercury cyan, krypton white, hot pink, vacancy red, deep black backing, reflected blue spill
+  lighting_and_shadow: Self-illuminated emission with colored spill, bloom halos, high local contrast, and dim ambient falloff
+  texture_and_material: >-
+    Glass tubing, gas glow, enamel backing, transformer warmth, glossy reflections, dust caught inside colored
+    light
+  camera_and_composition: Halo expansion, chromatic fringe drift, tube refraction, glow stacking, slight sign-maker asymmetry
+  atmosphere_and_mood: Nocturnal, electric, commercial, seductive, nostalgic, high-contrast
+  rendering_and_quality: >-
+    Sharp luminous linework with controlled bloom, readable silhouette, glossy micro-highlights, and nocturnal
+    graphic clarity
+  key_features: >-
+    Bent-tube continuity, colored halo bleed, black negative space, glass highlight knots, local glow
+    reflections
   creative_brief: >-
-    Render any subject as if its visual grammar were built from neon tubing and gas-discharge light. Prioritize continuous luminous contours, glow spill, dark backing, and glassy emission; do not force storefronts, bars, signs, words, or wall-mounted objects.
+    Render any subject as if its visual grammar were built from neon tubing and gas-discharge light.
+    Prioritize continuous luminous contours, glow spill, dark backing, and glassy emission; do not force
+    storefronts, bars, signs, words, or wall-mounted objects.
 avoidRules:
   - daylight
   - paint

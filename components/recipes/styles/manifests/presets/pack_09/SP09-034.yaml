@@ -13,21 +13,22 @@ tags:
   - weathering-and-decay
 visualDna:
   aesthetic: Damp corner
-  form_and_line: Fuzzy spots
-  color_palette: Black, Green, Grey
-  lighting_setup: Matte
-  material_texture: Fuzzy, dusty
-  render_quality: Gross, unhealthy
-  spatial_distortion: Stains
-  atmosphere: Rotting, damp
+  subject_treatment: Fuzzy spots
+  color_and_tone: Black, Green, Grey
+  lighting_and_shadow: Matte
+  texture_and_material: Fuzzy, dusty
+  camera_and_composition: Stains
+  atmosphere_and_mood: Rotting, damp
+  rendering_and_quality: Gross, unhealthy
   key_features: Spreading spots
   creative_brief: >-
-    Capture the organic creep of decay where fuzzy colonies of black, green, and grey spread across damp surfaces like a
-    map of neglect drawn by spores. The texture should feel dusty and soft, a living carpet of dissolution eating its
-    way through the man-made one millimeter at a time. Render the unsettling beauty of rot, nature reclaiming territory
-    in the quiet language of mold. Use Mold & Mildew as portable surface/render behavior over any input: map its
-    texture, light response, edge wear, color chemistry, and tactile rhythm onto the subject instead of requiring a
-    literal material sample, macro tile, wall, landscape, source object, or scene where the material naturally appears.
+    Capture the organic creep of decay where fuzzy colonies of black, green, and grey spread across damp
+    surfaces like a map of neglect drawn by spores. The texture should feel dusty and soft, a living carpet of
+    dissolution eating its way through the man-made one millimeter at a time. Render the unsettling beauty of
+    rot, nature reclaiming territory in the quiet language of mold. Use Mold & Mildew as portable
+    surface/render behavior over any input: map its texture, light response, edge wear, color chemistry, and
+    tactile rhythm onto the subject instead of requiring a literal material sample, macro tile, wall,
+    landscape, source object, or scene where the material naturally appears.
 avoidRules:
   - clean
   - sterile

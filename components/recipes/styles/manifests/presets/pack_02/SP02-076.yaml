@@ -13,20 +13,25 @@ tags:
   - lighting-and-atmosphere
 visualDna:
   aesthetic: Edge glow
-  form_and_line: None
-  color_palette: Dark with white edge, black core, silver perimeter, hair-light gold
-  lighting_setup: Backlight, rim-only separation, edge-defining key
-  material_texture: Silhouette detail, edge texture, haloed perimeter
-  render_quality: Dramatic, separation, subject-pop, depth-carving
-  spatial_distortion: None
-  atmosphere: Heroic, mystery, defined presence, emerging from shadow
+  subject_treatment: >-
+    Treat subjects as believable filmed or broadcast subjects under Rim Lighting: casting, wardrobe, props,
+    motion cues, and silhouette hierarchy follow 5. Lighting And Atmosphere cinematic and broadcast grammar
+    without locking to one plot beat.
+  color_and_tone: Dark with white edge, black core, silver perimeter, hair-light gold
+  lighting_and_shadow: Backlight, rim-only separation, edge-defining key
+  texture_and_material: Silhouette detail, edge texture, haloed perimeter
+  camera_and_composition: >-
+    Camera language native to Rim Lighting: genre-aware framing, lens character, focal hierarchy, motion cue,
+    and vertical style-card composition.
+  atmosphere_and_mood: Heroic, mystery, defined presence, emerging from shadow
+  rendering_and_quality: Dramatic, separation, subject-pop, depth-carving
   key_features: Halo, glowing outline, edge definition
   creative_brief: >-
-    Use rim lighting as edge-first separation: a dark core, bright perimeter, backlight halo, and minimal fill. Avoid
-    depending on figures, hair, or portrait staging. The subject should be readable because its outline glows against
-    shadow. Apply Rim Lighting as a portable cinematic/camera style over any input: preserve its lens behavior, color
-    process, lighting setup, artifact pattern, and deformation grammar while avoiding a required actor, room, prop,
-    brand, readable text, fixed IP scene, or narrative setup.
+    Use rim lighting as edge-first separation: a dark core, bright perimeter, backlight halo, and minimal
+    fill. Avoid depending on figures, hair, or portrait staging. The subject should be readable because its
+    outline glows against shadow. Apply Rim Lighting as a portable cinematic/camera style over any input:
+    preserve its lens behavior, color process, lighting setup, artifact pattern, and deformation grammar while
+    avoiding a required actor, room, prop, brand, readable text, fixed IP scene, or narrative setup.
 avoidRules:
   - flat
 assets:

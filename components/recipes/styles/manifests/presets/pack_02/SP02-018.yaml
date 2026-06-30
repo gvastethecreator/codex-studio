@@ -13,15 +13,18 @@ tags:
   - tv-and-broadcast
 visualDna:
   aesthetic: Broadcast-news urgency
-  form_and_line: Lower-third graphic bands
-  color_palette: Studio blue, navy, red accent, clean white
-  lighting_setup: Flat studio, even key, hair light separation
-  material_texture: HD Video, crisp digital, broadcast sharpness
-  render_quality: Live, urgent, breaking-news tension, satellite delay
-  spatial_distortion: Ticker tape, scrolling crawl, side panel
-  atmosphere: Serious, informational, authoritative urgency
+  subject_treatment: Lower-third graphic bands
+  color_and_tone: Studio blue, navy, red accent, clean white
+  lighting_and_shadow: Flat studio, even key, hair light separation
+  texture_and_material: HD Video, crisp digital, broadcast sharpness
+  camera_and_composition: Ticker tape, scrolling crawl, side panel
+  atmosphere_and_mood: Serious, informational, authoritative urgency
+  rendering_and_quality: Live, urgent, breaking-news tension, satellite delay
   key_features: Lower-third bars, ticker rhythm, studio sharpness
-  creative_brief: 'News broadcast style frames any subject as urgent information: cool blue studio light, crisp HD video, red accent graphics, lower-third-like bands, crawl rhythm, and authoritative flatness. Keep live-news tension without requiring anchors, desks, logos, or readable text.'
+  creative_brief: >-
+    News broadcast style frames any subject as urgent information: cool blue studio light, crisp HD video, red
+    accent graphics, lower-third-like bands, crawl rhythm, and authoritative flatness. Keep live-news tension
+    without requiring anchors, desks, logos, or readable text.
 avoidRules:
   - movie
 assets:

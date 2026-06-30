@@ -13,20 +13,20 @@ tags:
   - historical-and-fantasy
 visualDna:
   aesthetic: Roman ceremonial regalia, martial pageantry, bronze-and-oxblood material gravity
-  form_and_line: Armor articulation, segmentata-plate rhythm, balteus cinch logic, greave taper, pteruges fringe cadence
-  color_palette: Bronze, red, iron-grey, oxblood, dusted tan, leather-brown
-  lighting_setup: Harsh sun, dust-haze contrast, torch-smoke shadows, bronze edge light
-  material_texture: Bronze plate, oiled leather straps, iron chainmail, sand-grit patina, linen pteruges
-  render_quality: Tough, historical, dust-patina authenticity, ceremonial grit
-  spatial_distortion: None
-  atmosphere: Martial, pressurized, ceremonial, defiant, processional gravity
+  subject_treatment: Armor articulation, segmentata-plate rhythm, balteus cinch logic, greave taper, pteruges fringe cadence
+  color_and_tone: Bronze, red, iron-grey, oxblood, dusted tan, leather-brown
+  lighting_and_shadow: Harsh sun, dust-haze contrast, torch-smoke shadows, bronze edge light
+  texture_and_material: Bronze plate, oiled leather straps, iron chainmail, sand-grit patina, linen pteruges
+  camera_and_composition: >-
+    Compose for Roman Ceremonial Regalia using its key spatial cues: Crest cues, curved shield geometry,
+    armored manica, pteruges rhythm, bronze articulation.
+  atmosphere_and_mood: Martial, pressurized, ceremonial, defiant, processional gravity
+  rendering_and_quality: Tough, historical, dust-patina authenticity, ceremonial grit
   key_features: Crest cues, curved shield geometry, armored manica, pteruges rhythm, bronze articulation
   creative_brief: >-
-    Give the input Roman ceremonial regalia: bronze articulation, oiled leather
-    straps, crest cues, greave taper, linen pteruges and sand-grit
-    patina. Keep martial pressure as material atmosphere only; do not require
-    a torso, face, arena combat, weapon pose, crowd or literal gladiator
-    body.
+    Give the input Roman ceremonial regalia: bronze articulation, oiled leather straps, crest cues, greave
+    taper, linen pteruges and sand-grit patina. Keep martial pressure as material atmosphere only; do not
+    require a torso, face, arena combat, weapon pose, crowd or literal gladiator body.
 avoidRules:
   - clean
   - suit

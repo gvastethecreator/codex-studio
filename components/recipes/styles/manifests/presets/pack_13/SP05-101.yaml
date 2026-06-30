@@ -13,32 +13,30 @@ tags:
   - anime-style-spectrum
 visualDna:
   aesthetic: >-
-    Watercolor-bleeding anime with ink-wash fluidity, dissolving linework, experimental art-film
-    energy, and subjects reduced into pigment suggestions
-  form_and_line: >-
-    Loose dissolving ink contours, wet-into-wet bleeding edges, sumi-e gesture lines, variable wash
-    pressure, disappearing outlines
-  color_palette: >-
-    Washed indigo, bleeding crimson, ink-stone black, tea-stain sepia, water-diluted pastels,
-    pool-of-paint gradients
-  lighting_setup: Water-filtered light, backlit through paper, translucent color glow, diffused wash illumination
-  material_texture: >-
-    Wet rice-paper buckling, ink bleeding into surrounding fibers, watercolor bloom halos,
-    salt-texture crystals
-  render_quality: >-
-    Experimental art-anime frame, painterly moving canvas, ink-and-wash cinema, and noncommercial
-    handmade beauty
-  spatial_distortion: >-
-    Edges dissolve into abstract color fields, foreground and background bleed together, no hard
-    spatial boundaries
-  atmosphere: Meditative, ephemeral, dreamlike transience, ink-stone poetry
-  key_features: >-
-    Watercolor blooms, disappearing linework, ink-pool negative space, pigment granulation,
-    wet-paper texture
+    Watercolor-bleeding anime with ink-wash fluidity, dissolving linework, experimental art-film energy, and
+    subjects reduced into pigment suggestions
+  subject_treatment: >-
+    Loose dissolving ink contours, wet-into-wet bleeding edges, sumi-e gesture lines, variable wash pressure,
+    disappearing outlines
+  color_and_tone: >-
+    Washed indigo, bleeding crimson, ink-stone black, tea-stain sepia, water-diluted pastels, pool-of-paint
+    gradients
+  lighting_and_shadow: Water-filtered light, backlit through paper, translucent color glow, diffused wash illumination
+  texture_and_material: >-
+    Wet rice-paper buckling, ink bleeding into surrounding fibers, watercolor bloom halos, salt-texture
+    crystals
+  camera_and_composition: >-
+    Edges dissolve into abstract color fields, foreground and background bleed together, no hard spatial
+    boundaries
+  atmosphere_and_mood: Meditative, ephemeral, dreamlike transience, ink-stone poetry
+  rendering_and_quality: >-
+    Experimental art-anime frame, painterly moving canvas, ink-and-wash cinema, and noncommercial handmade
+    beauty
+  key_features: Watercolor blooms, disappearing linework, ink-pool negative space, pigment granulation, wet-paper texture
   creative_brief: >-
-    Use fluid painterly anime as pigment-behavior grammar. Any prompt should dissolve into wet
-    edges, porous paper, ink-pool negative space, and gesture hierarchy. The style should abstract
-    subjects through material flow, not force landscapes or character staging.
+    Use fluid painterly anime as pigment-behavior grammar. Any prompt should dissolve into wet edges, porous
+    paper, ink-pool negative space, and gesture hierarchy. The style should abstract subjects through material
+    flow, not force landscapes or character staging.
 avoidRules:
   - hard outlines
   - cel shading

@@ -13,25 +13,22 @@ tags:
   - childrens-illustration
 visualDna:
   aesthetic: >-
-    Mid-century gouache modernism with playful geometric warmth and simplified educational
-    storytelling clarity
-  form_and_line: >-
-    Dry-brush edge variation with soft geometric contour blocking and shape-first compositional
-    rhythm
-  color_palette: Opaque, matte, chalk-finish spectrum, design-flat contrast
-  lighting_setup: Flat, even matte illumination, mid-century glow
-  material_texture: Chalky paint
-  render_quality: >-
-    Retro-gouache illustrative finish emphasizing opaque shape design, friendly abstraction, and
-    color-led narrative legibility
-  spatial_distortion: Stylized shapes
-  atmosphere: Colorful, design, atomic-age optimism, playful modernism
+    Mid-century gouache modernism with playful geometric warmth and simplified educational storytelling
+    clarity
+  subject_treatment: Dry-brush edge variation with soft geometric contour blocking and shape-first compositional rhythm
+  color_and_tone: Opaque, matte, chalk-finish spectrum, design-flat contrast
+  lighting_and_shadow: Flat, even matte illumination, mid-century glow
+  texture_and_material: Chalky paint
+  camera_and_composition: Stylized shapes
+  atmosphere_and_mood: Colorful, design, atomic-age optimism, playful modernism
+  rendering_and_quality: >-
+    Retro-gouache illustrative finish emphasizing opaque shape design, friendly abstraction, and color-led
+    narrative legibility
   key_features: Brush texture, dry-brush stroke, gouache opacity
   creative_brief: >-
-    Apply mid-century gouache design to any input: opaque geometric shape choreography, dry-brush
-    texture, chalky matte color, and warm optimistic relationships should carry the style without
-    requiring classrooms, posters, families, interiors, product diagrams, or specific studio
-    references.
+    Apply mid-century gouache design to any input: opaque geometric shape choreography, dry-brush texture,
+    chalky matte color, and warm optimistic relationships should carry the style without requiring classrooms,
+    posters, families, interiors, product diagrams, or specific studio references.
 avoidRules:
   - transparent
   - watercolor

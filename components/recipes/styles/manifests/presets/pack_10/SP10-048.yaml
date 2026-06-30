@@ -13,18 +13,18 @@ tags:
   - material-surface-textures
 visualDna:
   aesthetic: Stone chips in cement
-  form_and_line: Random chips
-  color_palette: Speckled pastel
-  lighting_setup: Flat
-  material_texture: Polished stone
-  render_quality: Interior design
-  spatial_distortion: None
-  atmosphere: Modern, clean
+  subject_treatment: Random chips
+  color_and_tone: Speckled pastel
+  lighting_and_shadow: Flat
+  texture_and_material: Polished stone
+  camera_and_composition: 'Compose for Terrazzo using its key spatial cues: Random chips.'
+  atmosphere_and_mood: Modern, clean
+  rendering_and_quality: Interior design
   key_features: Random chips
   creative_brief: >-
-    Apply terrazzo material logic to the input: irregular marble chips,
-    mineral flecks, polished binder fields, and orderly random scatter should
-    turn surfaces or silhouettes into composite stone without requiring floors.
+    Apply terrazzo material logic to the input: irregular marble chips, mineral flecks, polished binder
+    fields, and orderly random scatter should turn surfaces or silhouettes into composite stone without
+    requiring floors.
 avoidRules:
   - wood
   - metal

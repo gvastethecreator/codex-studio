@@ -13,15 +13,23 @@ tags:
   - tv-and-broadcast
 visualDna:
   aesthetic: Cooking-show appetite lighting
-  form_and_line: None
-  color_palette: Warm, appetizing, golden crust, fresh herb green, tomato red
-  lighting_setup: Bright kitchen, soft overhead, product-key, steam halo
-  material_texture: Glistening surface, steam halo, crumb-like microdetail
-  render_quality: Clean, delicious, mouth-watering, magazine-ready
-  spatial_distortion: None
-  atmosphere: Hungry, happy, cozy instruction, sizzle anticipation
+  subject_treatment: >-
+    Treat subjects as believable filmed or broadcast subjects under Cooking Show: casting, wardrobe, props,
+    motion cues, and silhouette hierarchy follow 2. TV And Broadcast cinematic and broadcast grammar without
+    locking to one plot beat.
+  color_and_tone: Warm, appetizing, golden crust, fresh herb green, tomato red
+  lighting_and_shadow: Bright kitchen, soft overhead, product-key, steam halo
+  texture_and_material: Glistening surface, steam halo, crumb-like microdetail
+  camera_and_composition: >-
+    Camera language native to Cooking Show: genre-aware framing, lens character, focal hierarchy, motion cue,
+    and vertical style-card composition.
+  atmosphere_and_mood: Hungry, happy, cozy instruction, sizzle anticipation
+  rendering_and_quality: Clean, delicious, mouth-watering, magazine-ready
   key_features: Overhead demo angle, warm macro texture, steam halo
-  creative_brief: 'Cooking-show style makes any subject appetizing and instructive: bright kitchen-like light, overhead demo angle, warm color, steam halo, gloss, macro texture, and clean magazine-ready polish. Keep food-TV sensory clarity without requiring food, cutting boards, garnish, spoons, or kitchen set.'
+  creative_brief: >-
+    Cooking-show style makes any subject appetizing and instructive: bright kitchen-like light, overhead demo
+    angle, warm color, steam halo, gloss, macro texture, and clean magazine-ready polish. Keep food-TV sensory
+    clarity without requiring food, cutting boards, garnish, spoons, or kitchen set.
 avoidRules:
   - messy
 assets:

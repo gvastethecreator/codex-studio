@@ -12,20 +12,33 @@ tags:
   - anime-character-and-lifestyle
   - anime
 visualDna:
-  aesthetic: Labyrinthine glow anime language with bioluminescent mysticism, survival-focused readability, and escalating subterranean tension
-  form_and_line: Clear contour hierarchy, jagged threat-like silhouettes, rune-guided path geometry, and tunnel-axis perspective lines that build pressure
-  color_palette: Abyssal blue foundations, toxic-lime bioluminescent accents, muted amber torch warmth, and stone-neutral grays for value stability
-  lighting_setup: Dual-source contrast of warm practicals and cool bio-glow pockets, with controlled fog diffusion and high-value focal anchoring
-  material_texture: Moist carved stone faces, crystalline growth nodes, mossy damp seams, airborne subterranean mist, and weathered surface detail
-  render_quality: High-clarity exploration-anime render with focal design, strong depth readability, and suspense-preserving tonal discipline
-  spatial_distortion: Progressive tunnel-like compression with layered occlusion planes to intensify danger anticipation
-  atmosphere: Suspenseful, curious, cautious, and latent-threat driven
-  key_features: Bioluminescent rune cues, portal-like glow anchors, survival silhouette markers, and moisture-rich cavern material signatures
+  aesthetic: >-
+    Labyrinthine glow anime language with bioluminescent mysticism, survival-focused readability, and
+    escalating subterranean tension
+  subject_treatment: >-
+    Clear contour hierarchy, jagged threat-like silhouettes, rune-guided path geometry, and tunnel-axis
+    perspective lines that build pressure
+  color_and_tone: >-
+    Abyssal blue foundations, toxic-lime bioluminescent accents, muted amber torch warmth, and stone-neutral
+    grays for value stability
+  lighting_and_shadow: >-
+    Dual-source contrast of warm practicals and cool bio-glow pockets, with controlled fog diffusion and
+    high-value focal anchoring
+  texture_and_material: >-
+    Moist carved stone faces, crystalline growth nodes, mossy damp seams, airborne subterranean mist, and
+    weathered surface detail
+  camera_and_composition: Progressive tunnel-like compression with layered occlusion planes to intensify danger anticipation
+  atmosphere_and_mood: Suspenseful, curious, cautious, and latent-threat driven
+  rendering_and_quality: >-
+    High-clarity exploration-anime render with focal design, strong depth readability, and suspense-preserving
+    tonal discipline
+  key_features: >-
+    Bioluminescent rune cues, portal-like glow anchors, survival silhouette markers, and moisture-rich cavern
+    material signatures
   creative_brief: >-
-    Use Meikyuu Dungeon Glow as style anchor for subterranean suspense:
-    warm-cool bio glow, rune-guided spatial tension, and wet mineral material
-    fidelity should transfer without requiring a dungeon, explorers, torches, or
-    portal scene.
+    Use Meikyuu Dungeon Glow as style anchor for subterranean suspense: warm-cool bio glow, rune-guided
+    spatial tension, and wet mineral material fidelity should transfer without requiring a dungeon, explorers,
+    torches, or portal scene.
 avoidRules:
   - photoreal
   - daylight

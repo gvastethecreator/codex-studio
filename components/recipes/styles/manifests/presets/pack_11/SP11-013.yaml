@@ -13,24 +13,24 @@ tags:
   - aesthetics
 visualDna:
   aesthetic: >-
-    Diesel-industrial retrofuturism with heavy mechanical massing, soot-era infrastructure, and oppressive analog power
-    aesthetics
-  form_and_line: Rivets, heavy metal plates, cast-iron curves, bolted seams, industrial silhouettes
-  color_palette: Oil, Grease, Steel, Rust, soot-black, oxidized copper, military-olive stain, burnt-sienna corrosion
-  lighting_setup: Sooty, dark, industrial, caged-bulb gloom, exhaust-haze diffusion, furnace-glow warmth
-  material_texture: Grime, smoke, metal, cold-stamped steel, oil-slick puddles, sweat-stained leather, caked rust
-  render_quality: >-
-    Dense mechanical rendering with piston-era complexity, high material wear readability, and monumental industrial
-    gravity
-  spatial_distortion: Bulky machinery, oversized engines, vertical oppression, crushing-mass architecture
-  atmosphere: Dirty, loud, powerful, oppressive weight, grinding fatigue, iron-willed endurance
+    Diesel-industrial retrofuturism with heavy mechanical massing, soot-era infrastructure, and oppressive
+    analog power aesthetics
+  subject_treatment: Rivets, heavy metal plates, cast-iron curves, bolted seams, industrial silhouettes
+  color_and_tone: Oil, Grease, Steel, Rust, soot-black, oxidized copper, military-olive stain, burnt-sienna corrosion
+  lighting_and_shadow: Sooty, dark, industrial, caged-bulb gloom, exhaust-haze diffusion, furnace-glow warmth
+  texture_and_material: Grime, smoke, metal, cold-stamped steel, oil-slick puddles, sweat-stained leather, caked rust
+  camera_and_composition: Bulky machinery, oversized engines, vertical oppression, crushing-mass architecture
+  atmosphere_and_mood: Dirty, loud, powerful, oppressive weight, grinding fatigue, iron-willed endurance
+  rendering_and_quality: >-
+    Dense mechanical rendering with piston-era complexity, high material wear readability, and monumental
+    industrial gravity
   key_features: Exhaust smoke, bolted armor plates, pressure gauges, colossal treads
   creative_brief: >-
-    Keep identity rooted in diesel-mechanical grammar: riveted mass, soot-loaded atmosphere, and pressure-gauge
-    industrial lighting should define the style without locking it to a single war narrative vignette. Apply Dieselpunk
-    as a portable style system over any input: preserve its construction grammar, material cues, scale logic, and
-    signature rendering behavior while avoiding a required franchise, literal prop, fixed specimen, classroom sample,
-    product shot, or scene template.
+    Keep identity rooted in diesel-mechanical grammar: riveted mass, soot-loaded atmosphere, and
+    pressure-gauge industrial lighting should define the style without locking it to a single war narrative
+    vignette. Apply Dieselpunk as a portable style system over any input: preserve its construction grammar,
+    material cues, scale logic, and signature rendering behavior while avoiding a required franchise, literal
+    prop, fixed specimen, classroom sample, product shot, or scene template.
 avoidRules:
   - clean
   - digital

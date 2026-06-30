@@ -13,21 +13,22 @@ tags:
   - natural-materials
 visualDna:
   aesthetic: Volcanic glass
-  form_and_line: Sharp fractures
-  color_palette: Deep Black
-  lighting_setup: Glassy reflection
-  material_texture: Glassy, sharp
-  render_quality: Volcanic, sharp
-  spatial_distortion: Conchoidal fracture
-  atmosphere: Dark, dangerous
+  subject_treatment: Sharp fractures
+  color_and_tone: Deep Black
+  lighting_and_shadow: Glassy reflection
+  texture_and_material: Glassy, sharp
+  camera_and_composition: Conchoidal fracture
+  atmosphere_and_mood: Dark, dangerous
+  rendering_and_quality: Volcanic, sharp
   key_features: Sharp edges
   creative_brief: >-
-    Conjure the frozen midnight of obsidian, volcanic glass that shatters into edges sharper than intention and darker
-    than shadow. Conchoidal fractures should bloom across the surface like dark flowers, each curve a record of impact
-    translated into mineral poetry. The material must feel simultaneously precious and predatory, beautiful and
-    unforgiving. Use Obsidian as portable surface/render behavior over any input: map its texture, light response, edge
-    wear, color chemistry, and tactile rhythm onto the subject instead of requiring a literal material sample, macro
-    tile, wall, landscape, source object, or scene where the material naturally appears.
+    Conjure the frozen midnight of obsidian, volcanic glass that shatters into edges sharper than intention
+    and darker than shadow. Conchoidal fractures should bloom across the surface like dark flowers, each curve
+    a record of impact translated into mineral poetry. The material must feel simultaneously precious and
+    predatory, beautiful and unforgiving. Use Obsidian as portable surface/render behavior over any input: map
+    its texture, light response, edge wear, color chemistry, and tactile rhythm onto the subject instead of
+    requiring a literal material sample, macro tile, wall, landscape, source object, or scene where the
+    material naturally appears.
 avoidRules:
   - matte
   - rough

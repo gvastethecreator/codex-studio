@@ -13,22 +13,23 @@ tags:
   - elemental-and-fx
 visualDna:
   aesthetic: Grinder sparks
-  form_and_line: Trails
-  color_palette: Orange, Yellow, White
-  lighting_setup: Point lights
-  material_texture: Particle
-  render_quality: Industrial, hot
-  spatial_distortion: Motion blur
-  atmosphere: Intense, work
+  subject_treatment: Trails
+  color_and_tone: Orange, Yellow, White
+  lighting_and_shadow: Point lights
+  texture_and_material: Particle
+  camera_and_composition: Motion blur
+  atmosphere_and_mood: Intense, work
+  rendering_and_quality: Industrial, hot
   key_features: Trajectory
   creative_brief: >-
-    Render the streaking light-trails of grinding sparks spraying outward in arcs of orange to white, each particle a
-    tiny sun burning its brief trajectory through industrial darkness with motion blur carrying the velocity. The point
-    lights should illuminate the surrounding space in warm pulses, creating a constellation of brief fires. Capture the
-    beauty of friction, light born from the resistance of metal against wheel. Use Sparks as portable surface/render
-    behavior over any input: map its texture, light response, edge wear, color chemistry, and tactile rhythm onto the
-    subject instead of requiring a literal material sample, macro tile, wall, landscape, source object, or scene where
-    the material naturally appears.
+    Render the streaking light-trails of grinding sparks spraying outward in arcs of orange to white, each
+    particle a tiny sun burning its brief trajectory through industrial darkness with motion blur carrying the
+    velocity. The point lights should illuminate the surrounding space in warm pulses, creating a
+    constellation of brief fires. Capture the beauty of friction, light born from the resistance of metal
+    against wheel. Use Sparks as portable surface/render behavior over any input: map its texture, light
+    response, edge wear, color chemistry, and tactile rhythm onto the subject instead of requiring a literal
+    material sample, macro tile, wall, landscape, source object, or scene where the material naturally
+    appears.
 avoidRules:
   - fire
 assets:

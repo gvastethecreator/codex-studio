@@ -13,18 +13,18 @@ tags:
   - film-and-analog-process
 visualDna:
   aesthetic: Aerochrome style
-  form_and_line: Glowing infrared edges
-  color_palette: Pink/Red highlights, dark cyan shadows
-  lighting_setup: Surreal
-  material_texture: Grainy
-  render_quality: Psychedelic, scientific
-  spatial_distortion: False color
-  atmosphere: Alien, dreamlike
+  subject_treatment: Glowing infrared edges
+  color_and_tone: Pink/Red highlights, dark cyan shadows
+  lighting_and_shadow: Surreal
+  texture_and_material: Grainy
+  camera_and_composition: False color
+  atmosphere_and_mood: Alien, dreamlike
+  rendering_and_quality: Psychedelic, scientific
   key_features: False-color infrared response
   creative_brief: >-
-    Apply infrared/Aerochrome false color to the input: pink-red reflective
-    surfaces, indigo shadows, alien material response, and scientific
-    psychedelia should transform any subject without requiring foliage or sky.
+    Apply infrared/Aerochrome false color to the input: pink-red reflective surfaces, indigo shadows, alien
+    material response, and scientific psychedelia should transform any subject without requiring foliage or
+    sky.
 avoidRules:
   - illustration
   - painting
@@ -44,7 +44,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP01-019.webp
 attributes:
-  negativePrompt: illustration, painting, drawing, 3d render, cartoon, anime, sketch, blurry, noisy, low resolution, watermark, text, signature, bad anatomy, deformed
+  negativePrompt: >-
+    illustration, painting, drawing, 3d render, cartoon, anime, sketch, blurry, noisy, low resolution,
+    watermark, text, signature, bad anatomy, deformed
 taxonomy:
   packId: pack_01
   packName: Photography & Realism

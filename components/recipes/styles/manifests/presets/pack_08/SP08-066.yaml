@@ -13,19 +13,22 @@ tags:
   - fabric-and-texture-focus
 visualDna:
   aesthetic: Origami-paper couture, washi-sculpture fragility, geometric fold discipline
-  form_and_line: Sharp folds, mountain-valley crease, triangular-panel construction, accordion compression, angular contour logic
-  color_palette: White paper, rice-paper cream, kraft-brown, washi-natural, metallic-gold foil, indigo-dyed edge
-  lighting_setup: Hard shadows, raking-side light, graphic-crease contrast, gallery-spot precision, shadow-cast drama
-  material_texture: Paper grain, washi fiber, mulberry texture, crisp-kraft, embossed pattern, delicate-tear edge
-  render_quality: Artistic, fragile, pleated-paper precision, sculpture-grade wonder
-  spatial_distortion: None
-  atmosphere: Delicate, precise, crisp, ephemeral, materially tense
+  subject_treatment: >-
+    Sharp folds, mountain-valley crease, triangular-panel construction, accordion compression, angular contour
+    logic
+  color_and_tone: White paper, rice-paper cream, kraft-brown, washi-natural, metallic-gold foil, indigo-dyed edge
+  lighting_and_shadow: Hard shadows, raking-side light, graphic-crease contrast, gallery-spot precision, shadow-cast drama
+  texture_and_material: Paper grain, washi fiber, mulberry texture, crisp-kraft, embossed pattern, delicate-tear edge
+  camera_and_composition: >-
+    Compose for Origami Paper using its key spatial cues: Folds, crisp crease lines, paper edges, origami
+    geometry, tear-away logic.
+  atmosphere_and_mood: Delicate, precise, crisp, ephemeral, materially tense
+  rendering_and_quality: Artistic, fragile, pleated-paper precision, sculpture-grade wonder
   key_features: Folds, crisp crease lines, paper edges, origami geometry, tear-away logic
   creative_brief: >-
-    Fold the input into origami-paper couture: washi grain, mountain-valley
-    creases, triangular panels, accordion compression, crisp kraft edges and
-    hard raking shadows. Keep paper-sculpture wonder without requiring a
-    bodice, crane, gallery display or standing garment body.
+    Fold the input into origami-paper couture: washi grain, mountain-valley creases, triangular panels,
+    accordion compression, crisp kraft edges and hard raking shadows. Keep paper-sculpture wonder without
+    requiring a bodice, crane, gallery display or standing garment body.
 avoidRules:
   - soft textile drape dominance
   - sewn garment realism

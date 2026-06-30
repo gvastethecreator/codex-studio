@@ -12,19 +12,30 @@ tags:
   - anime-character-and-lifestyle
   - shojo-magical-girl-and-visionary-classics
 visualDna:
-  aesthetic: Bittersweet time-memory shojo grammar shaped by message motifs, quiet emotional restraint, and sunset-regret tonality
-  form_and_line: Soft contour continuity, gentle gaze-direction choreography, folded-message compositional guides, and restrained expression-line emphasis
-  color_palette: Amber-orange dusk gradients, muted school neutrals, pale sky-lilac transitions, soft apricot skin warmth, and memory-blue accents
-  lighting_setup: Long-golden-hour side light, low-sun flare diffusion, silhouette-edge glow, and softly collapsing evening contrast
-  material_texture: Paper-fiber softness, wind-lifted fabric cues, sun-warmed grain fields, and slightly grainy memory-haze overlays
-  render_quality: Delicate cinematic-shojo rendering prioritizing emotional afterglow, temporal nostalgia coherence, and quiet scene readability
-  spatial_distortion: Temporal-memory layering through soft depth bleed and subtle perspective drift
-  atmosphere: Regretful, warm, hopeful, bittersweet
+  aesthetic: >-
+    Bittersweet time-memory shojo grammar shaped by message motifs, quiet emotional restraint, and
+    sunset-regret tonality
+  subject_treatment: >-
+    Soft contour continuity, gentle gaze-direction choreography, folded-message compositional guides, and
+    restrained expression-line emphasis
+  color_and_tone: >-
+    Amber-orange dusk gradients, muted school neutrals, pale sky-lilac transitions, soft apricot skin warmth,
+    and memory-blue accents
+  lighting_and_shadow: >-
+    Long-golden-hour side light, low-sun flare diffusion, silhouette-edge glow, and softly collapsing evening
+    contrast
+  texture_and_material: >-
+    Paper-fiber softness, wind-lifted fabric cues, sun-warmed grain fields, and slightly grainy memory-haze
+    overlays
+  camera_and_composition: Temporal-memory layering through soft depth bleed and subtle perspective drift
+  atmosphere_and_mood: Regretful, warm, hopeful, bittersweet
+  rendering_and_quality: >-
+    Delicate cinematic-shojo rendering prioritizing emotional afterglow, temporal nostalgia coherence, and
+    quiet scene readability
   key_features: Message motifs, sunset gradients, ensemble tenderness, time-memory framing, restrained confession pressure
   creative_brief: >-
-    Preserve sunset-regret letter drama as a reusable style grammar:
-    amber-memory lighting, future-message motif framing, and restrained
-    emotional pacing should remain stable across subjects.
+    Preserve sunset-regret letter drama as a reusable style grammar: amber-memory lighting, future-message
+    motif framing, and restrained emotional pacing should remain stable across subjects.
 avoidRules:
   - realistic
   - 3d render
@@ -41,7 +52,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-189.webp
 attributes:
-  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
+  negativePrompt: >-
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts,
+    watermark, text, signature
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle

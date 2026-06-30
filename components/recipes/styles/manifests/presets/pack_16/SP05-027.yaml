@@ -12,21 +12,34 @@ tags:
   - anime-classics-and-prestige
   - 2000s-classics
 visualDna:
-  aesthetic: Hot-blooded spiral bravado with impossible scale, upward momentum, heroic exaggeration, and belief-as-motion intensity.
-  form_and_line: Smooth vector-like anime strokes, crisp contour clarity, spiral gesture arcs, explosive foreshortening, and shout-driven silhouette expansion.
-  color_palette: Fiery orange, solar yellow, electric blue, hot magenta, pure white impact cores, and deep cosmic blacks.
-  lighting_setup: Polished gradient highlights, radial burst keys, rim glow on expanding forms, and clean fill for maximum hype readability.
-  material_texture: Smooth digital cel polish, energy-ring gradients, glossy heroic surfaces, speed-line noise, and subtle composite grain.
-  render_quality: Early-2000s digital anime production frame with clean rendering, smooth color blending, and maximal impact hierarchy.
-  spatial_distortion: Spiral-scale warping, upward vanishing points, impossible compression of distance, and oversized impact framing.
-  atmosphere: Hype, unstoppable, passionate, transcendent
-  key_features: Spiral vectors, radial impact cores, upward scale escalation, declarative heroic pose logic, and clean hype readability.
+  aesthetic: >-
+    Hot-blooded spiral bravado with impossible scale, upward momentum, heroic exaggeration, and
+    belief-as-motion intensity.
+  subject_treatment: >-
+    Smooth vector-like anime strokes, crisp contour clarity, spiral gesture arcs, explosive foreshortening,
+    and shout-driven silhouette expansion.
+  color_and_tone: Fiery orange, solar yellow, electric blue, hot magenta, pure white impact cores, and deep cosmic blacks.
+  lighting_and_shadow: >-
+    Polished gradient highlights, radial burst keys, rim glow on expanding forms, and clean fill for maximum
+    hype readability.
+  texture_and_material: >-
+    Smooth digital cel polish, energy-ring gradients, glossy heroic surfaces, speed-line noise, and subtle
+    composite grain.
+  camera_and_composition: >-
+    Spiral-scale warping, upward vanishing points, impossible compression of distance, and oversized impact
+    framing.
+  atmosphere_and_mood: Hype, unstoppable, passionate, transcendent
+  rendering_and_quality: >-
+    Early-2000s digital anime production frame with clean rendering, smooth color blending, and maximal impact
+    hierarchy.
+  key_features: >-
+    Spiral vectors, radial impact cores, upward scale escalation, declarative heroic pose logic, and clean
+    hype readability.
   creative_brief: >-
-    Build a reusable spiral-overdrive bravado grammar for any subject or input
-    image: upward force, radial impact, impossible scale, saturated heroic
-    energy, and early-digital shonen clarity. Spiral drills, mecha silhouettes,
-    cosmic scale, or heroic impact geometry may transform the input when useful,
-    without fixing a throwdown, galaxy set, sunglasses gag, or specific hero.
+    Build a reusable spiral-overdrive bravado grammar for any subject or input image: upward force, radial
+    impact, impossible scale, saturated heroic energy, and early-digital shonen clarity. Spiral drills, mecha
+    silhouettes, cosmic scale, or heroic impact geometry may transform the input when useful, without fixing a
+    throwdown, galaxy set, sunglasses gag, or specific hero.
 avoidRules:
   - realistic
   - 3d render
@@ -43,7 +56,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-027.webp
 attributes:
-  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
+  negativePrompt: >-
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts,
+    watermark, text, signature
 taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige

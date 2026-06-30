@@ -233,11 +233,12 @@ export async function createStudioApp(
         dbStore.updateJobFinalPrompt(jobId, finalPrompt),
       processReferences: (jobId, prompt, references, libraryDir) =>
         processReferences(jobId, prompt, references ?? [], libraryDir),
-      hydrateSourceSpecAssetPaths: (sourceSpec, references, persistedRefs) =>
+      hydrateSourceSpecAssetPaths: (sourceSpec, references, persistedRefs, libraryDir) =>
         hydrateSourceSpecAssetPaths(
           sourceSpec,
           references ?? [],
           persistedRefs as ProcessedReference[],
+          libraryDir,
         ),
       readLibraryDir: () => getSettings().libraryDir,
       resolveProviderExecutionBlocker: (providerId) => {

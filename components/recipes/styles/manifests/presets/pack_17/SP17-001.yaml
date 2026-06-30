@@ -15,14 +15,28 @@ tags:
   - soulslike
 visualDna:
   aesthetic: Bleak ashen medieval fantasy with broken ramparts, soot-stained armor, and sacred decay.
-  subject_treatment: A colossal ash-wolf grave guardian crawling from a collapsed chapel floor, ember ribs visible as clean orange planes, broken pilgrim bells tied to its antlers, and tiny ruined shields for scale.
-  color_and_tone: Pale ash gray, bone white, cold blue stone, dead ember orange, soot black only as contour, and tarnished brass bell accents.
-  lighting_and_shadow: Low chapel fire glow under the beast plus cool broken-window rim light; open shadows keep fur, bells, and stone readable.
-  texture_and_material: Matted ash fur, cracked chapel tile, tarnished bell metal, eroded stone, frayed burial cloth, and dry ember seams.
-  camera_and_composition: Low monster-card crop, diagonal beast body, broken arch behind, tiny foreground shield shapes, and large empty ash floor planes.
+  subject_treatment: >-
+    A colossal ash-wolf grave guardian crawling from a collapsed chapel floor, ember ribs visible as clean
+    orange planes, broken pilgrim bells tied to its antlers, and tiny ruined shields for scale.
+  color_and_tone: >-
+    Pale ash gray, bone white, cold blue stone, dead ember orange, soot black only as contour, and tarnished
+    brass bell accents.
+  lighting_and_shadow: >-
+    Low chapel fire glow under the beast plus cool broken-window rim light; open shadows keep fur, bells, and
+    stone readable.
+  texture_and_material: >-
+    Matted ash fur, cracked chapel tile, tarnished bell metal, eroded stone, frayed burial cloth, and dry
+    ember seams.
+  camera_and_composition: >-
+    Low monster-card crop, diagonal beast body, broken arch behind, tiny foreground shield shapes, and large
+    empty ash floor planes.
   atmosphere_and_mood: Ancient, predatory, funereal, and solemn without becoming gory or splatter-focused.
-  rendering_and_quality: Dark fantasy digital illustration with defined linework, crisp material shapes, clean shadow masses, and visible details.
-  creative_brief: Reusable visual system for cursed knights, ruins, relics, monsters, or landscapes built from ash, weight, and sacred decay.
+  rendering_and_quality: >-
+    Dark fantasy digital illustration with defined linework, crisp material shapes, clean shadow masses, and
+    visible details.
+  creative_brief: >-
+    Reusable visual system for cursed knights, ruins, relics, monsters, or landscapes built from ash, weight,
+    and sacred decay.
 avoidRules:
   - clean heroic fantasy
   - glossy plastic armor
@@ -33,6 +47,8 @@ avoidRules:
   - text
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP17-001.webp
+attributes:
+  negativePrompt: clean heroic fantasy, glossy plastic armor, cute cartoon, anime, explicit gore, watermark, text
 taxonomy:
   packId: pack_17
   packName: Medieval Fantasy & Dungeon Zine

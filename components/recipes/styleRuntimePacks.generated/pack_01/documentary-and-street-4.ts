@@ -11,13 +11,13 @@ export const GENERATED_STYLE_PRESETS = [
       'illustration, painting, drawing, 3d render, cartoon, anime, sketch, blurry, noisy, low resolution, watermark, text, signature, bad anatomy, deformed',
     style: {
       aesthetic: 'Action camera POV',
-      form_and_line: 'Fisheye distortion',
-      color_palette: 'Vibrant, sharp',
-      lighting_setup: 'Harsh available light',
-      material_texture: 'Digital sharpening',
-      render_quality: 'Action-camera realism',
-      spatial_distortion: 'Curved horizon',
-      atmosphere: 'Active, immersive',
+      subject_treatment: 'Fisheye distortion',
+      color_and_tone: 'Vibrant, sharp',
+      lighting_and_shadow: 'Harsh available light',
+      texture_and_material: 'Digital sharpening',
+      camera_and_composition: 'Curved horizon',
+      atmosphere_and_mood: 'Active, immersive',
+      rendering_and_quality: 'Action-camera realism',
       key_features: 'Wide FOV',
       creative_brief:
         'Apply GoPro-wide action optics to the input: ultra-wide FOV, curved horizon distortion, digital sharpness, hard available light, and foreground pull should make any subject immersive without requiring sports or travel.',
@@ -31,13 +31,13 @@ export const GENERATED_STYLE_PRESETS = [
       'illustration, painting, drawing, 3d render, cartoon, anime, sketch, blurry, noisy, low resolution, watermark, text, signature, bad anatomy, deformed',
     style: {
       aesthetic: 'Top-down view',
-      form_and_line: 'Top-down geometry',
-      color_palette: 'Saturated',
-      lighting_setup: 'Flat (noon) or long shadows',
-      material_texture: 'Sharp digital',
-      render_quality: 'Drone survey realism',
-      spatial_distortion: 'Flattened perspective',
-      atmosphere: 'Epic, overview',
+      subject_treatment: 'Top-down geometry',
+      color_and_tone: 'Saturated',
+      lighting_and_shadow: 'Flat (noon) or long shadows',
+      texture_and_material: 'Sharp digital',
+      camera_and_composition: 'Flattened perspective',
+      atmosphere_and_mood: 'Epic, overview',
+      rendering_and_quality: 'Drone survey realism',
       key_features: "Bird's eye view",
       creative_brief:
         'Altitude converts subject into design: flattened perspective, top-down geometry, maplike spacing, long-shadow logic, and crisp digital survey detail. Use drone grammar to abstract any scene or object into pattern; no rivers, roads, fields, travel vista, or natural landscape required. Apply this photographic look over any input: preserve lens behavior, exposure logic, color response, framing discipline, and artifact pattern while avoiding a required place, face, travel scene, landscape, or narrative setup.',
@@ -50,13 +50,13 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'posed, studio',
     style: {
       aesthetic: 'Documentary candid moment',
-      form_and_line: 'Messy composition',
-      color_palette: 'High contrast B&W or gritty color',
-      lighting_setup: 'Natural',
-      material_texture: 'Grain',
-      render_quality: 'Cartier-Bresson, decisive moment',
-      spatial_distortion: 'Motion blur',
-      atmosphere: 'Real, fleeting',
+      subject_treatment: 'Messy composition',
+      color_and_tone: 'High contrast B&W or gritty color',
+      lighting_and_shadow: 'Natural',
+      texture_and_material: 'Grain',
+      camera_and_composition: 'Motion blur',
+      atmosphere_and_mood: 'Real, fleeting',
+      rendering_and_quality: 'Cartier-Bresson, decisive moment',
       key_features: 'Decisive moment tension',
       creative_brief:
         'Candid documentary timing turns any subject into a decisive moment: imperfect framing, natural light, grain, motion trace, and the feeling of truth caught before it could pose. Keep street-photography immediacy without requiring city, pavement, passerby, or urban context.',
@@ -69,13 +69,13 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'static, slow',
     style: {
       aesthetic: 'High-speed action capture',
-      form_and_line: 'Frozen force geometry',
-      color_palette: 'Vibrant competition color',
-      lighting_setup: 'Hard arena-style light',
-      material_texture: 'Impact texture, dust, sheen',
-      render_quality: 'Sports-editorial sharpness',
-      spatial_distortion: 'Motion blur background',
-      atmosphere: 'Intense, fast',
+      subject_treatment: 'Frozen force geometry',
+      color_and_tone: 'Vibrant competition color',
+      lighting_and_shadow: 'Hard arena-style light',
+      texture_and_material: 'Impact texture, dust, sheen',
+      camera_and_composition: 'Motion blur background',
+      atmosphere_and_mood: 'Intense, fast',
+      rendering_and_quality: 'Sports-editorial sharpness',
       key_features: 'Action freeze',
       creative_brief:
         'High-speed sports grammar freezes any subject at peak force: crisp action edge, motion-blurred background, hard arena light, vibrant color, and impact texture. Convey velocity and intensity without requiring athletes, jerseys, stadiums, crowds, or bodies.',
@@ -88,13 +88,14 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'posed, happy',
     style: {
       aesthetic: 'Harsh witness documentary',
-      form_and_line: 'Chaotic factual framing',
-      color_palette: 'Desaturated, dusty',
-      lighting_setup: 'Harsh sun',
-      material_texture: 'Dust, smoke, grain',
-      render_quality: 'Raw, emotional',
-      spatial_distortion: 'None',
-      atmosphere: 'Unflinching, intense',
+      subject_treatment: 'Chaotic factual framing',
+      color_and_tone: 'Desaturated, dusty',
+      lighting_and_shadow: 'Harsh sun',
+      texture_and_material: 'Dust, smoke, grain',
+      camera_and_composition:
+        'Camera setup native to Documentary (War): lens choice, crop distance, depth of field, and focal hierarchy support 4. Documentary And Street without generic framing.',
+      atmosphere_and_mood: 'Unflinching, intense',
+      rendering_and_quality: 'Raw, emotional',
       key_features: 'Realism',
       creative_brief:
         'Harsh witness photography uses desaturation, dust, smoke, hard sun, grain, and imperfect factual framing to make any subject feel reported rather than staged. Preserve raw documentary testimony without requiring battlefield, tragedy, weapons, sky, or conflict-zone narrative.',
@@ -107,13 +108,13 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'posed, studio',
     style: {
       aesthetic: 'Intrusive telephoto flash',
-      form_and_line: 'Subject isolated',
-      color_palette: 'Flash washed',
-      lighting_setup: 'Direct flash at night',
-      material_texture: 'High ISO noise',
-      render_quality: 'Tabloid, intrusive',
-      spatial_distortion: 'Motion blur',
-      atmosphere: 'Urgent, chaotic',
+      subject_treatment: 'Subject isolated',
+      color_and_tone: 'Flash washed',
+      lighting_and_shadow: 'Direct flash at night',
+      texture_and_material: 'High ISO noise',
+      camera_and_composition: 'Motion blur',
+      atmosphere_and_mood: 'Urgent, chaotic',
+      rendering_and_quality: 'Tabloid, intrusive',
       key_features: 'Startled flash isolation',
       creative_brief:
         'Telephoto distance plus sudden flash isolates any subject with tabloid urgency: high ISO grain, washed highlights, night compression, edge motion smear, and intrusive framing. Keep paparazzi tension without requiring street, celebrity, human surprise, or chase narrative.',
@@ -126,13 +127,14 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'quiet, bright',
     style: {
       aesthetic: 'Concert-stage lighting',
-      form_and_line: 'Silhouettes in beam fog',
-      color_palette: 'Stage lights (Red/Blue)',
-      lighting_setup: 'Beams, spots',
-      material_texture: 'Fog, heat sheen, grain',
-      render_quality: 'Loud live-event realism',
-      spatial_distortion: 'None',
-      atmosphere: 'Energetic, loud',
+      subject_treatment: 'Silhouettes in beam fog',
+      color_and_tone: 'Stage lights (Red/Blue)',
+      lighting_and_shadow: 'Beams, spots',
+      texture_and_material: 'Fog, heat sheen, grain',
+      camera_and_composition:
+        'Camera setup native to Concert Photography: lens choice, crop distance, depth of field, and focal hierarchy support 4. Documentary And Street without generic framing.',
+      atmosphere_and_mood: 'Energetic, loud',
+      rendering_and_quality: 'Loud live-event realism',
       key_features: 'Beam-and-fog energy',
       creative_brief:
         'Concert photography translates any subject through red/blue stage beams, fog volume, hard spotlights, grainy darkness, and loud silhouette energy. Keep live-event intensity without requiring band, crowd hands, instruments, stage performers, or music venue.',
@@ -146,20 +148,20 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         "Travel Photography within 4. Documentary And Street: a reusable Photography & Realism visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Travel Photography's specific style identity.",
-      form_and_line:
+      subject_treatment:
         'Define Travel Photography through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
-      color_palette:
+      color_and_tone:
         'Use a Travel Photography-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
-      lighting_setup:
+      lighting_and_shadow:
         'Use lighting that makes Travel Photography recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
-      material_texture:
+      texture_and_material:
         'Use materials and textures that reinforce Travel Photography: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
-      render_quality:
-        'Render Travel Photography with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
-      spatial_distortion:
+      camera_and_composition:
         'Use spatial behavior that fits Travel Photography: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
-      atmosphere:
+      atmosphere_and_mood:
         'Set a mood that belongs to Travel Photography: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+      rendering_and_quality:
+        'Render Travel Photography with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       key_features:
         "Prioritize Travel Photography's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
@@ -173,13 +175,14 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'clean, new',
     style: {
       aesthetic: 'Urbex decay documentary',
-      form_and_line: 'Decay, peeling layers',
-      color_palette: 'Desaturated, rust',
-      lighting_setup: 'Shafts of light',
-      material_texture: 'Dust, debris',
-      render_quality: 'Gritty, haunting',
-      spatial_distortion: 'None',
-      atmosphere: 'Lonely, post-apocalyptic',
+      subject_treatment: 'Decay, peeling layers',
+      color_and_tone: 'Desaturated, rust',
+      lighting_and_shadow: 'Shafts of light',
+      texture_and_material: 'Dust, debris',
+      camera_and_composition:
+        'Camera setup native to Urbex (Urban Exploration): lens choice, crop distance, depth of field, and focal hierarchy support 4. Documentary And Street without generic framing.',
+      atmosphere_and_mood: 'Lonely, post-apocalyptic',
+      rendering_and_quality: 'Gritty, haunting',
       key_features: 'Ruin texture',
       creative_brief:
         'Apply urbex abandonment to the input: desaturated rust palette, peeling layers, dust, debris texture, lonely light shafts, and documentary grit should age any subject without requiring buildings or post-apocalyptic setting.',

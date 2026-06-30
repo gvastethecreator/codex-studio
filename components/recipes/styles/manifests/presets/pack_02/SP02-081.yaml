@@ -12,16 +12,27 @@ tags:
   - cinematic-and-media
   - caricature-and-cartoon-styles
 visualDna:
-  aesthetic: Deliberately ugly caricature, bulbous distortion, warty textures, hideous charm, adult-swim grotesque, John Kricfalusi energy
-  form_and_line: Wobbly uneven contours, spasming line weight, broken construction, scratchy re-draw marks, elastic form logic
-  color_palette: Sickly greens, bruised purples, bilious yellow, clammy grey, infection-tinted flesh tones, jaundiced warmth
-  lighting_setup: Unflattering fluorescent overexposure, harsh single-source bulb, unkind overhead glare
-  material_texture: Bumpy surface, exaggerated pores or pits, wart dimples, greasy sheen, splotchy texture
-  render_quality: Intentionally terrible, purposefully unpleasant, anti-aesthetic, repulsive yet compelling, scratchy late-night animation
-  spatial_distortion: Inflated proportions, mismatched feature scales, bulging forms, impossible curve stress
-  atmosphere: Uncomfortable, repulsive yet funny, fever-dream ugly, caricature at its cruelest
+  aesthetic: >-
+    Deliberately ugly caricature, bulbous distortion, warty textures, hideous charm, adult-swim grotesque,
+    John Kricfalusi energy
+  subject_treatment: >-
+    Wobbly uneven contours, spasming line weight, broken construction, scratchy re-draw marks, elastic form
+    logic
+  color_and_tone: >-
+    Sickly greens, bruised purples, bilious yellow, clammy grey, infection-tinted flesh tones, jaundiced
+    warmth
+  lighting_and_shadow: Unflattering fluorescent overexposure, harsh single-source bulb, unkind overhead glare
+  texture_and_material: Bumpy surface, exaggerated pores or pits, wart dimples, greasy sheen, splotchy texture
+  camera_and_composition: Inflated proportions, mismatched feature scales, bulging forms, impossible curve stress
+  atmosphere_and_mood: Uncomfortable, repulsive yet funny, fever-dream ugly, caricature at its cruelest
+  rendering_and_quality: >-
+    Intentionally terrible, purposefully unpleasant, anti-aesthetic, repulsive yet compelling, scratchy
+    late-night animation
   key_features: Asymmetry, bulbous focal swelling, greasy texture, excessive folds, cruel redraw energy
-  creative_brief: 'Push any subject through grotesque caricature logic: proportions rebel, surfaces become bumpy and splotchy, contours wobble, and unflattering exaggeration becomes the main design force. Avoid requiring faces, noses, teeth, or bodies. The style should feel repulsive, funny, and magnetically overdrawn.'
+  creative_brief: >-
+    Push any subject through grotesque caricature logic: proportions rebel, surfaces become bumpy and
+    splotchy, contours wobble, and unflattering exaggeration becomes the main design force. Avoid requiring
+    faces, noses, teeth, or bodies. The style should feel repulsive, funny, and magnetically overdrawn.
 avoidRules:
   - realistic
   - photorealistic
@@ -36,7 +47,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP02-081.webp
 attributes:
-  negativePrompt: realistic, photorealistic, proportional, anatomically correct, beautiful, smooth, clean lines, polished, normal proportions, subtle
+  negativePrompt: >-
+    realistic, photorealistic, proportional, anatomically correct, beautiful, smooth, clean lines, polished,
+    normal proportions, subtle
 taxonomy:
   packId: pack_02
   packName: Cinematic & Media

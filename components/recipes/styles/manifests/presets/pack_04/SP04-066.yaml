@@ -15,20 +15,20 @@ visualDna:
   aesthetic: >-
     Pop-serigraph style with repetition logic, flat-process color authority, and media-reproduction
     iconography
-  form_and_line: >-
+  subject_treatment: >-
     Layered flat-shape construction with screen-offset edges, halftone contour cues, and repeat-grid
     compositional rhythm
-  color_palette: Misaligned layers, pop-art separation, silkscreen offset
-  lighting_setup: Halftone, mesh-screen texture, dot-pattern shadow
-  material_texture: Mesh pattern
-  render_quality: Pop art, mass produced, factory repetition, consumer-culture critique
-  spatial_distortion: Offset color
-  atmosphere: Bold, commercial, screenprint bazaar, poster-shop energy
+  color_and_tone: Misaligned layers, pop-art separation, silkscreen offset
+  lighting_and_shadow: Halftone, mesh-screen texture, dot-pattern shadow
+  texture_and_material: Mesh pattern
+  camera_and_composition: Offset color
+  atmosphere_and_mood: Bold, commercial, screenprint bazaar, poster-shop energy
+  rendering_and_quality: Pop art, mass produced, factory repetition, consumer-culture critique
   key_features: Layer overlap, color misregistration, halftone rosette
   creative_brief: >-
-    Apply pop-serigraph grammar to any input: repeatable flat layers, mesh-screen texture,
-    misregistration offsets, halftone rosettes, and consumer-media color authority should create
-    process impact without requiring celebrities, cans, products, posters, or repeat grids.
+    Apply pop-serigraph grammar to any input: repeatable flat layers, mesh-screen texture, misregistration
+    offsets, halftone rosettes, and consumer-media color authority should create process impact without
+    requiring celebrities, cans, products, posters, or repeat grids.
 avoidRules:
   - gradient
   - painting

@@ -13,19 +13,18 @@ tags:
   - editorial-and-poster
 visualDna:
   aesthetic: Runway sketch
-  form_and_line: Loose, gestural
-  color_palette: Watercolor splash, runway accent, gestural pigment
-  lighting_setup: None, spontaneous stroke, fashion-line attitude
-  material_texture: Paper
-  render_quality: Vogue, stylish, runway fluidity, editorial confidence
-  spatial_distortion: Elongated legs
-  atmosphere: Chic, fast, atelier energy, catwalk motion
+  subject_treatment: Loose, gestural
+  color_and_tone: Watercolor splash, runway accent, gestural pigment
+  lighting_and_shadow: Spontaneous stroke and fashion-line attitude without simulated lighting
+  texture_and_material: Paper
+  camera_and_composition: Elongated legs
+  atmosphere_and_mood: Chic, fast, atelier energy, catwalk motion
+  rendering_and_quality: Vogue, stylish, runway fluidity, editorial confidence
   key_features: 9 heads tall, loose gesture, editorial whitespace
   creative_brief: >-
-    Apply runway fashion-illustration grammar to any input: elongated gesture, fugitive brush
-    motion, editorial whitespace, watercolor splash, and fabric-suggesting line speed should make
-    elegance feel caught in motion without requiring models, catwalks, clothing, poses, or atelier
-    scenes.
+    Apply runway fashion-illustration grammar to any input: elongated gesture, fugitive brush motion,
+    editorial whitespace, watercolor splash, and fabric-suggesting line speed should make elegance feel caught
+    in motion without requiring models, catwalks, clothing, poses, or atelier scenes.
 avoidRules:
   - short
   - realistic

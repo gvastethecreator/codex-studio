@@ -13,15 +13,18 @@ tags:
   - commercial-and-product
 visualDna:
   aesthetic: Refreshment advertising chill
-  form_and_line: Crisp hero shape with droplets
-  color_palette: Cold cyan, clean whites, saturated accent color
-  lighting_setup: Backlit frost glow and hard rim sparkle
-  material_texture: Condensation beads, cold haze, slick surface
-  render_quality: Beverage-ad freshness
-  spatial_distortion: Slight heroic low angle
-  atmosphere: Fresh, cold, energetic
+  subject_treatment: Crisp hero shape with droplets
+  color_and_tone: Cold cyan, clean whites, saturated accent color
+  lighting_and_shadow: Backlit frost glow and hard rim sparkle
+  texture_and_material: Condensation beads, cold haze, slick surface
+  camera_and_composition: Slight heroic low angle
+  atmosphere_and_mood: Fresh, cold, energetic
+  rendering_and_quality: Beverage-ad freshness
   key_features: Condensation sparkle
-  creative_brief: 'Cold commercial style adds refreshment cues to any subject: cyan chill, condensation beads, frost haze, rim sparkle, saturated accent color, and a crisp heroic silhouette. It should signal cold freshness without requiring cans, bottles, drinks, ice, or splash props.'
+  creative_brief: >-
+    Cold commercial style adds refreshment cues to any subject: cyan chill, condensation beads, frost haze,
+    rim sparkle, saturated accent color, and a crisp heroic silhouette. It should signal cold freshness
+    without requiring cans, bottles, drinks, ice, or splash props.
 avoidRules:
   - warm palette
   - dry surface

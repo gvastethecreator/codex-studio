@@ -12,20 +12,31 @@ tags:
   - anime-battle-and-worlds
   - modern-shonen-and-action
 visualDna:
-  aesthetic: Civic monster response style, with public-infrastructure heroics, colossal scale, procedural action, and resilient order.
-  form_and_line: Technical contour discipline, response-grid layouts, oversized scale markers, angular suitlike silhouettes, and impact arrows.
-  color_palette: Emergency orange, municipal blue, concrete gray, bio-lime accents, steel black, and clean white signage blocks.
-  lighting_setup: Disaster-scene glare, operational floodlights, smoke-filtered backlight, and clear hazard-color hierarchy.
-  material_texture: Concrete dust, rubberized armor sheen, bio-organic gloss, utility metal, smoke grit, and signage-flat overlays.
-  render_quality: Premium modern anime finish with procedural clarity, colossal impact readability, and civic-response texture.
-  spatial_distortion: Monster-scale perspective shifts, infrastructure-depth compression, and huge-negative-space pressure.
-  atmosphere: Explosive, civic, resilient, colossal
-  key_features: Civic hazard palette, colossal scale markers, procedural heroism, response-grid composition, bio-industrial grit.
+  aesthetic: >-
+    Civic monster response style, with public-infrastructure heroics, colossal scale, procedural action, and
+    resilient order.
+  subject_treatment: >-
+    Technical contour discipline, response-grid layouts, oversized scale markers, angular suitlike
+    silhouettes, and impact arrows.
+  color_and_tone: >-
+    Emergency orange, municipal blue, concrete gray, bio-lime accents, steel black, and clean white signage
+    blocks.
+  lighting_and_shadow: Disaster-scene glare, operational floodlights, smoke-filtered backlight, and clear hazard-color hierarchy.
+  texture_and_material: >-
+    Concrete dust, rubberized armor sheen, bio-organic gloss, utility metal, smoke grit, and signage-flat
+    overlays.
+  camera_and_composition: Monster-scale perspective shifts, infrastructure-depth compression, and huge-negative-space pressure.
+  atmosphere_and_mood: Explosive, civic, resilient, colossal
+  rendering_and_quality: >-
+    Premium modern anime finish with procedural clarity, colossal impact readability, and civic-response
+    texture.
+  key_features: >-
+    Civic hazard palette, colossal scale markers, procedural heroism, response-grid composition,
+    bio-industrial grit.
   creative_brief: >-
-    Make any prompt feel like a public response to impossible scale: combine
-    hazard-color clarity, procedural grids, infrastructure texture, and huge
-    perspective pressure without requiring a literal monster, team, city, or
-    cleanup scene.
+    Make any prompt feel like a public response to impossible scale: combine hazard-color clarity, procedural
+    grids, infrastructure texture, and huge perspective pressure without requiring a literal monster, team,
+    city, or cleanup scene.
 avoidRules:
   - realistic
   - 3d render
@@ -42,7 +53,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-125.webp
 attributes:
-  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
+  negativePrompt: >-
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts,
+    watermark, text, signature
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds

@@ -13,19 +13,18 @@ tags:
   - traditional-painting
 visualDna:
   aesthetic: Renaissance egg tempera
-  form_and_line: Fine cross-hatching strokes
-  color_palette: Bright, pure pigments, gold leaf
-  lighting_setup: Soft, internal glow
-  material_texture: Wood panel, smooth gesso
-  render_quality: Historical panel-painting discipline with devotional precision but no mandatory subject
-  spatial_distortion: Flattened icon-plane depth, deliberate frontality, and fine linear modeling
-  atmosphere: Reverent, ancient, luminous through craft rather than narrative content
+  subject_treatment: Fine cross-hatching strokes
+  color_and_tone: Bright, pure pigments, gold leaf
+  lighting_and_shadow: Soft, internal glow
+  texture_and_material: Wood panel, smooth gesso
+  camera_and_composition: Flattened icon-plane depth, deliberate frontality, and fine linear modeling
+  atmosphere_and_mood: Reverent, ancient, luminous through craft rather than narrative content
+  rendering_and_quality: Historical panel-painting discipline with devotional precision but no mandatory subject
   key_features: Fine linear brushwork
   creative_brief: >-
-    Apply egg-tempera discipline to any input: luminous thin pigment, fine
-    cross-hatched modeling, crisp small strokes, panel-like permanence, and
-    restrained inner glow. Keep sacred-craft precision as technique, not as
-    required religious icon, portrait, gold ground, or medieval subject.
+    Apply egg-tempera discipline to any input: luminous thin pigment, fine cross-hatched modeling, crisp small
+    strokes, panel-like permanence, and restrained inner glow. Keep sacred-craft precision as technique, not
+    as required religious icon, portrait, gold ground, or medieval subject.
 avoidRules:
   - photo
   - realistic
@@ -45,7 +44,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP06-005.webp
 attributes:
-  negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border
+  negativePrompt: >-
+    photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy,
+    watermark, text, signature, frame, border
 taxonomy:
   packId: pack_06
   packName: Essential Art Styles

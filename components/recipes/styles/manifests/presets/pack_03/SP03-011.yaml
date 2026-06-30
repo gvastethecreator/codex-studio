@@ -13,19 +13,18 @@ tags:
   - materials
 visualDna:
   aesthetic: Transparent refractive material system
-  form_and_line: Caustics
-  color_palette: Prismatic dispersion
-  lighting_setup: Refracted light
-  material_texture: Smooth, flawless, refractive clarity
-  render_quality: Raytraced, crystal-clear
-  spatial_distortion: Refraction
-  atmosphere: Elegant, fragile, luxury boutique
+  subject_treatment: Caustics
+  color_and_tone: Prismatic dispersion
+  lighting_and_shadow: Refracted light
+  texture_and_material: Smooth, flawless, refractive clarity
+  camera_and_composition: Refraction
+  atmosphere_and_mood: Elegant, fragile, luxury boutique
+  rendering_and_quality: Raytraced, crystal-clear
   key_features: Transparency, dispersion rainbow
   creative_brief: >-
-    Apply transparent refractive lookdev to the input: caustic lace, prismatic
-    dispersion, glass-thick edges and optical bending that make form legible
-    through what light does inside it. Keep boutique crystal polish without
-    requiring a standalone object, display window or still-life setup.
+    Apply transparent refractive lookdev to the input: caustic lace, prismatic dispersion, glass-thick edges
+    and optical bending that make form legible through what light does inside it. Keep boutique crystal polish
+    without requiring a standalone object, display window or still-life setup.
 avoidRules:
   - opaque
   - dull

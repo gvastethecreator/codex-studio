@@ -13,15 +13,19 @@ tags:
   - man-made-materials
 visualDna:
   aesthetic: Injection molded plastic
-  form_and_line: Parting lines
-  color_palette: Bright, saturated
-  lighting_setup: Subsurface scattering (slight)
-  material_texture: Smooth or orange peel
-  render_quality: Mass produced, cheap
-  spatial_distortion: Sink marks
-  atmosphere: Artificial, toy
+  subject_treatment: Parting lines
+  color_and_tone: Bright, saturated
+  lighting_and_shadow: Subsurface scattering (slight)
+  texture_and_material: Smooth or orange peel
+  camera_and_composition: Sink marks
+  atmosphere_and_mood: Artificial, toy
+  rendering_and_quality: Mass produced, cheap
   key_features: Uniform color
-  creative_brief: 'Apply injection-molded plastic language to the input: saturated uniform color, faint parting lines, subtle sink marks, slight orange-peel texture, and edge translucency from shallow subsurface light. If toy, product, prop, or casing exists, reinforce manufacture; otherwise convert surfaces into artificial molded material without requiring a consumer product shot.'
+  creative_brief: >-
+    Apply injection-molded plastic language to the input: saturated uniform color, faint parting lines, subtle
+    sink marks, slight orange-peel texture, and edge translucency from shallow subsurface light. If toy,
+    product, prop, or casing exists, reinforce manufacture; otherwise convert surfaces into artificial molded
+    material without requiring a consumer product shot.
 avoidRules:
   - metal
   - wood

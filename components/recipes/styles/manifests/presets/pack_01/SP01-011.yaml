@@ -13,18 +13,20 @@ tags:
   - film-and-analog-process
 visualDna:
   aesthetic: Warm analog film look
-  form_and_line: Soft but sharp
-  color_palette: Warm neutrals, pastel highlights
-  lighting_setup: Natural, forgiving
-  material_texture: Fine grain
-  render_quality: Professional film
-  spatial_distortion: None
-  atmosphere: Nostalgic, warm
+  subject_treatment: Soft but sharp
+  color_and_tone: Warm neutrals, pastel highlights
+  lighting_and_shadow: Natural, forgiving
+  texture_and_material: Fine grain
+  camera_and_composition: >-
+    Camera setup native to Kodak Portra 400: lens choice, crop distance, depth of field, and focal hierarchy
+    support 3. Film And Analog Process without generic framing.
+  atmosphere_and_mood: Nostalgic, warm
+  rendering_and_quality: Professional film
   key_features: Yellow/Red bias
   creative_brief: >-
-    Apply Kodak Portra 400 warmth to the input: gentle saturation, amber skinlike
-    neutrals, pastel highlight rolloff, fine analog grain, and soft contrast
-    should make any subject feel intimate without requiring faces or lifestyle setup.
+    Apply Kodak Portra 400 warmth to the input: gentle saturation, amber skinlike neutrals, pastel highlight
+    rolloff, fine analog grain, and soft contrast should make any subject feel intimate without requiring
+    faces or lifestyle setup.
 avoidRules:
   - illustration
   - painting
@@ -44,7 +46,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP01-011.webp
 attributes:
-  negativePrompt: illustration, painting, drawing, 3d render, cartoon, anime, sketch, blurry, noisy, low resolution, watermark, text, signature, bad anatomy, deformed
+  negativePrompt: >-
+    illustration, painting, drawing, 3d render, cartoon, anime, sketch, blurry, noisy, low resolution,
+    watermark, text, signature, bad anatomy, deformed
 taxonomy:
   packId: pack_01
   packName: Photography & Realism

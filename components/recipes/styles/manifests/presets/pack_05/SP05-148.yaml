@@ -13,18 +13,20 @@ tags:
   - modern-shonen-and-action
 visualDna:
   aesthetic: Jazz railcrime ensemble, with nonlinear pulp cool, amber chaos, immortal momentum, and syncopated danger.
-  form_and_line: Clean early-digital contours, ensemble overlap rhythm, jazz-cut diagonals, pulp silhouette snaps, and syncopated framing.
-  color_palette: Amber whiskey, rail black, brass gold, blood red, sepia cream, and smoky blue.
-  lighting_setup: Warm barlike glow, sharp carriage-shadow stripes, theatrical rim highlights, and syncopated flash accents.
-  material_texture: Varnished wood warmth, brass glints, smoke grain, paper pulp texture, and smooth digital-cel polish.
-  render_quality: Early-2000s anime pulp finish with ensemble clarity, amber danger, and rhythmic nonlinear energy.
-  spatial_distortion: Compartmental depth, overlapping timelines, and jazz-timed angle changes without fixed train staging.
-  atmosphere: Riotous, jazzy, dangerous, charismatic
+  subject_treatment: >-
+    Clean early-digital contours, ensemble overlap rhythm, jazz-cut diagonals, pulp silhouette snaps, and
+    syncopated framing.
+  color_and_tone: Amber whiskey, rail black, brass gold, blood red, sepia cream, and smoky blue.
+  lighting_and_shadow: Warm barlike glow, sharp carriage-shadow stripes, theatrical rim highlights, and syncopated flash accents.
+  texture_and_material: Varnished wood warmth, brass glints, smoke grain, paper pulp texture, and smooth digital-cel polish.
+  camera_and_composition: Compartmental depth, overlapping timelines, and jazz-timed angle changes without fixed train staging.
+  atmosphere_and_mood: Riotous, jazzy, dangerous, charismatic
+  rendering_and_quality: Early-2000s anime pulp finish with ensemble clarity, amber danger, and rhythmic nonlinear energy.
   key_features: Jazz timing, amber pulp light, ensemble chaos, brass warmth, nonlinear danger.
   creative_brief: >-
-    Give any prompt jazz-pulp crime energy through syncopated cuts, amber glow,
-    ensemble overlap, and brass-shadow contrast without requiring trains,
-    criminal roles, barrooms, period fashion, or violence set pieces.
+    Give any prompt jazz-pulp crime energy through syncopated cuts, amber glow, ensemble overlap, and
+    brass-shadow contrast without requiring trains, criminal roles, barrooms, period fashion, or violence set
+    pieces.
 avoidRules:
   - realistic
   - 3d render
@@ -41,7 +43,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-148.webp
 attributes:
-  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
+  negativePrompt: >-
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts,
+    watermark, text, signature
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds

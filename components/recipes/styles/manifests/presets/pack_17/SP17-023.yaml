@@ -15,13 +15,17 @@ tags:
   - bio-arcane
 visualDna:
   aesthetic: Bio-arcane medieval future where catacombs, bone machinery, roots, and rune conduits grow into one system.
-  subject_treatment: A bio-arcane catacomb beast grown from armor ribs, bone roots, crystal sacs, and cable-vines, keeping a medieval crypt silhouette.
+  subject_treatment: >-
+    A bio-arcane catacomb beast grown from armor ribs, bone roots, crystal sacs, and cable-vines, keeping a
+    medieval crypt silhouette.
   color_and_tone: Bone cream, black soil, muted moss, sickly turquoise, oxidized copper, and dark violet shadow.
   lighting_and_shadow: Bioluminescent accents create simple pocket light inside clean catacomb shadow shapes.
   texture_and_material: Bone, root fiber, damp stone, etched copper, translucent membranes, crystals, and mineral growth.
   camera_and_composition: Tunnel depth, rib-like arches, centered relic organism, and organic symmetry.
   atmosphere_and_mood: Ancient, uncanny, subterranean, and sacred-biological.
-  rendering_and_quality: Detailed dark-fantasy digital illustration with organic-mechanical clarity, defined contours, and restrained horror.
+  rendering_and_quality: >-
+    Detailed dark-fantasy digital illustration with organic-mechanical clarity, defined contours, and
+    restrained horror.
   creative_brief: Turns subjects into medieval biotech catacomb imagery using bone, growth, runes, and damp stone.
 avoidRules:
   - clean sci-fi lab
@@ -33,6 +37,10 @@ avoidRules:
   - text
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP17-023.webp
+attributes:
+  negativePrompt: >-
+    clean sci-fi lab, cute mushroom village, medical gore, bright garden fantasy, explicit gore, watermark,
+    text
 taxonomy:
   packId: pack_17
   packName: Medieval Fantasy & Dungeon Zine

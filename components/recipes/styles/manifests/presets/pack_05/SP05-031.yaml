@@ -12,26 +12,33 @@ tags:
   - anime-battle-and-worlds
   - modern-shonen-and-action
 visualDna:
-  aesthetic: Ornamental fantasy-action style with calligraphic motion, ceremonial elegance, and mythic elemental flourish
-  form_and_line: >-
-    Curved arc trajectories, decorative yet sharp contour control, fluid motion ribbons, and posture-led heroic
-    silhouette grammar
-  color_palette: >-
-    Luminous jewel accents over deep ink neutrals, selective vermilion-gold highlights, and atmospheric cool-warm
-    transitions
-  lighting_setup: >-
-    Moonlit high-contrast accents, controlled bloom around motion arcs, and dramatic rim isolation for ceremonial action
-    beats
-  material_texture: Fine textile pattern hints, polished glint behavior, painterly effect overlays, and low-noise digital cel finish
-  render_quality: Premium stylized action rendering that balances ornamental detail with crisp combat readability
-  spatial_distortion: Elegant directional foreshortening with spiral motion emphasis and fluid depth pulls around luminous arcs
-  atmosphere: Heroic, graceful, luminous, solemn, resolute
-  key_features: Calligraphic motion language, ornamental combat elegance, mythic elemental arc motifs, ceremonial silhouette staging
+  aesthetic: >-
+    Ornamental fantasy-action style with calligraphic motion, ceremonial elegance, and mythic elemental
+    flourish
+  subject_treatment: >-
+    Curved arc trajectories, decorative yet sharp contour control, fluid motion ribbons, and posture-led
+    heroic silhouette grammar
+  color_and_tone: >-
+    Luminous jewel accents over deep ink neutrals, selective vermilion-gold highlights, and atmospheric
+    cool-warm transitions
+  lighting_and_shadow: >-
+    Moonlit high-contrast accents, controlled bloom around motion arcs, and dramatic rim isolation for
+    ceremonial action beats
+  texture_and_material: >-
+    Fine textile pattern hints, polished glint behavior, painterly effect overlays, and low-noise digital cel
+    finish
+  camera_and_composition: Elegant directional foreshortening with spiral motion emphasis and fluid depth pulls around luminous arcs
+  atmosphere_and_mood: Heroic, graceful, luminous, solemn, resolute
+  rendering_and_quality: Premium stylized action rendering that balances ornamental detail with crisp combat readability
+  key_features: >-
+    Calligraphic motion language, ornamental combat elegance, mythic elemental arc motifs, ceremonial
+    silhouette staging
   creative_brief: >-
-    Keep this preset rooted in decorative choreography and luminous arc design, treating elemental flow as visual
-    calligraphy rather than franchise-specific narrative cues or fixed subject matter. Apply this anime/IP-title grammar
-    over any input: preserve its motion language, line economy, emotional staging, palette logic, and symbolic cues
-    while avoiding a required cast, lore event, weapon, arena, school, ship, or fixed scene.
+    Keep this preset rooted in decorative choreography and luminous arc design, treating elemental flow as
+    visual calligraphy rather than franchise-specific narrative cues or fixed subject matter. Apply this
+    anime/IP-title grammar over any input: preserve its motion language, line economy, emotional staging,
+    palette logic, and symbolic cues while avoiding a required cast, lore event, weapon, arena, school, ship,
+    or fixed scene.
 avoidRules:
   - realistic
   - 3d render
@@ -49,8 +56,8 @@ assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-031.webp
 attributes:
   negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark,
-    text, signature
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts,
+    watermark, text, signature
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds

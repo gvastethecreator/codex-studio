@@ -13,18 +13,20 @@ tags:
   - subcultures
 visualDna:
   aesthetic: Dark academia tailoring, archival material nostalgia, candlelit-scholar romance
-  form_and_line: Tailored layers, tweed-jacket drape, pleated-trouser line, cable-knit volume, scarf-wrap
-  color_palette: Brown, Tweed, Cream, oxblood, forest, mustard, aged-paper cream, charcoal
-  lighting_setup: Low amber tailoring glow, stained-glass amber, fireplace warmth, overcast grey
-  material_texture: Harris tweed, merino wool, corduroy, brushed flannel, leather elbow patches, horn buttons
-  render_quality: Intellectual, moody, archival-quiet gravitas, old-campus nostalgia
-  spatial_distortion: None
-  atmosphere: Studious, serious, archival solitude, paper-cream contemplation, secret-history tension
+  subject_treatment: Tailored layers, tweed-jacket drape, pleated-trouser line, cable-knit volume, scarf-wrap
+  color_and_tone: Brown, Tweed, Cream, oxblood, forest, mustard, aged-paper cream, charcoal
+  lighting_and_shadow: Low amber tailoring glow, stained-glass amber, fireplace warmth, overcast grey
+  texture_and_material: Harris tweed, merino wool, corduroy, brushed flannel, leather elbow patches, horn buttons
+  camera_and_composition: >-
+    Compose for Dark Academia using its key spatial cues: Wire-rim geometry, paper-cream contrast,
+    worn-leather accents, archival tailoring mood.
+  atmosphere_and_mood: Studious, serious, archival solitude, paper-cream contemplation, secret-history tension
+  rendering_and_quality: Intellectual, moody, archival-quiet gravitas, old-campus nostalgia
   key_features: Wire-rim geometry, paper-cream contrast, worn-leather accents, archival tailoring mood
   creative_brief: >-
-    Apply dark-academia codes to any input: tweed, corduroy, cable-knit wool, oxblood leather, horn
-    buttons, elbow patches and paper-cream contrast. Keep secret-history tension without requiring a
-    university, library table, fountain pen, satchel or student figure.
+    Apply dark-academia codes to any input: tweed, corduroy, cable-knit wool, oxblood leather, horn buttons,
+    elbow patches and paper-cream contrast. Keep secret-history tension without requiring a university,
+    library table, fountain pen, satchel or student figure.
 avoidRules:
   - bright
   - sport

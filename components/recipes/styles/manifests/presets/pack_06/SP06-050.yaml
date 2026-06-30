@@ -13,19 +13,18 @@ tags:
   - digital-art
 visualDna:
   aesthetic: 16-bit pixel-art style with deliberate grid economy and palette-ramp readability
-  form_and_line: Pixel perfect
-  color_palette: Limited palette
-  lighting_setup: Dithered
-  material_texture: Pixel grid
-  render_quality: Retro game-art finish without requiring sprites, characters, cartridges, or UI
-  spatial_distortion: Blocky
-  atmosphere: Nostalgic
+  subject_treatment: Pixel perfect
+  color_and_tone: Limited palette
+  lighting_and_shadow: Dithered
+  texture_and_material: Pixel grid
+  camera_and_composition: Blocky
+  atmosphere_and_mood: Nostalgic
+  rendering_and_quality: Retro game-art finish without requiring sprites, characters, cartridges, or UI
   key_features: Grid alignment
   creative_brief: >-
-    Apply 16-bit pixel-art constraints to any input: intentional pixel placement,
-    limited palette, crisp grid scale, dithered shade ramps, tile rhythm, and
-    hard aliasing. Keep hardware-era nostalgia from construction, not from forced
-    game props, HUDs, sprites, or level scenes.
+    Apply 16-bit pixel-art constraints to any input: intentional pixel placement, limited palette, crisp grid
+    scale, dithered shade ramps, tile rhythm, and hard aliasing. Keep hardware-era nostalgia from
+    construction, not from forced game props, HUDs, sprites, or level scenes.
 avoidRules:
   - photo
   - realistic
@@ -47,7 +46,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP06-050.webp
 attributes:
-  negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border, character sprite requirement, cartridge reference
+  negativePrompt: >-
+    photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy,
+    watermark, text, signature, frame, border, character sprite requirement, cartridge reference
 taxonomy:
   packId: pack_06
   packName: Essential Art Styles

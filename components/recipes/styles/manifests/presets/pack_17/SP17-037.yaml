@@ -14,15 +14,23 @@ tags:
   - monochrome-tarot-and-bestiary-plates
   - woodcut-bestiary
 visualDna:
-  aesthetic: Medieval woodcut bestiary illustration with bold animal-monster silhouettes, carved line blocks, and simple old-paper fields.
-  subject_treatment: A woodcut goat-dragon, basilisk bird, or wyrm hybrid posed as one readable beast specimen with strong black shape groups.
+  aesthetic: >-
+    Medieval woodcut bestiary illustration with bold animal-monster silhouettes, carved line blocks, and
+    simple old-paper fields.
+  subject_treatment: >-
+    A woodcut goat-dragon, basilisk bird, or wyrm hybrid posed as one readable beast specimen with strong
+    black shape groups.
   color_and_tone: Off-white paper, black block ink, warm tan wash, and optional single muted red or green accent.
   lighting_and_shadow: Flat print value, clear black-white separation, and no realistic lighting.
   texture_and_material: Carved linework, broad ink blocks, clean paper fiber, and controlled gaps without noisy speckle.
-  camera_and_composition: Side-view or three-quarter creature plate, large silhouette, small ground cue, and decorative frame without words.
+  camera_and_composition: >-
+    Side-view or three-quarter creature plate, large silhouette, small ground cue, and decorative frame
+    without words.
   atmosphere_and_mood: Ancient, strange, folkloric, and instructional.
   rendering_and_quality: Clean woodcut-inspired digital illustration with big marks, not dense micro-hatching.
-  creative_brief: Original medieval bestiary woodcut system for creatures, dungeon monsters, heraldic beasts, and folklore plates.
+  creative_brief: >-
+    Original medieval bestiary woodcut system for creatures, dungeon monsters, heraldic beasts, and folklore
+    plates.
 avoidRules:
   - tiny hatch carpets
   - dirty photocopy noise
@@ -33,6 +41,10 @@ avoidRules:
   - text
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP17-037.webp
+attributes:
+  negativePrompt: >-
+    tiny hatch carpets, dirty photocopy noise, readable captions, realistic creature skin, explicit gore,
+    watermark, text
 taxonomy:
   packId: pack_17
   packName: Medieval Fantasy & Dungeon Zine

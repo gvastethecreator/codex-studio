@@ -11,14 +11,14 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Hand-inked storybook cel animation, Snow White style, multiplane depth, painted fairy-tale finish',
-      form_and_line: 'Hand inked',
-      color_palette:
+      subject_treatment: 'Hand inked',
+      color_and_tone:
         'Technicolor paint, jewel tones, royal purple, lacquer red, warm gold, deep green accent',
-      lighting_setup: 'Multiplane camera, dimensional depth, parallax lighting',
-      material_texture: 'Cel paint, hand-inked acetate, watercolor background wash',
-      render_quality: 'Masterpiece, fluid, full-animation, in-between perfection',
-      spatial_distortion: 'Squash and stretch, elastic weight, cartoon physics',
-      atmosphere: 'Magical, classic, storybook sincerity, ceremonial wonder',
+      lighting_and_shadow: 'Multiplane camera, dimensional depth, parallax lighting',
+      texture_and_material: 'Cel paint, hand-inked acetate, watercolor background wash',
+      camera_and_composition: 'Squash and stretch, elastic weight, cartoon physics',
+      atmosphere_and_mood: 'Magical, classic, storybook sincerity, ceremonial wonder',
+      rendering_and_quality: 'Masterpiece, fluid, full-animation, in-between perfection',
       key_features:
         'Multiplane depth, inked contour, painted background layers, luminous cel separation',
       creative_brief:
@@ -33,15 +33,16 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Hand-painted nature-forward animated feature, Miyazaki film wonder, dappled memory, everyday magic, breathable stillness',
-      form_and_line: 'Delicate',
-      color_palette:
+      subject_treatment: 'Delicate',
+      color_and_tone:
         'Natural, mineral green, sky blue, warm cream, cherry-blossom pink, earth brown',
-      lighting_setup: 'Dappled sunlight, leaf-filtered glow, golden late-afternoon',
-      material_texture: 'Watercolor background, soft wash, pencil underdraw, cel overlay',
-      render_quality:
+      lighting_and_shadow: 'Dappled sunlight, leaf-filtered glow, golden late-afternoon',
+      texture_and_material: 'Watercolor background, soft wash, pencil underdraw, cel overlay',
+      camera_and_composition:
+        'Camera language native to Studio Ghibli Painterly Nature Anime: genre-aware framing, lens character, focal hierarchy, motion cue, and vertical style-card composition.',
+      atmosphere_and_mood: 'Nostalgic, peaceful, bittersweet wonder, human-scale awe',
+      rendering_and_quality:
         'Luminous, lovingly observed, detailed stillness, hand-painted atmospheric depth',
-      spatial_distortion: 'None',
-      atmosphere: 'Nostalgic, peaceful, bittersweet wonder, human-scale awe',
       key_features:
         'Dappled light, watercolor air, pencil underdraw, soft cel overlay, observed micro-detail',
       creative_brief:
@@ -56,15 +57,16 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Stylized family-animation CG, Pixar-era warmth, emotional precision, lovable imperfection',
-      form_and_line: 'None',
-      color_palette: 'Vibrant, subsurface, warm bounce, saturated primaries, soft pastel accent',
-      lighting_setup: 'Cinematic 3D, global illumination, soft bounce, ambient occlusion',
-      material_texture:
+      subject_treatment:
+        'Treat subjects as believable filmed or broadcast subjects under Pixar Style Family Feature CG: casting, wardrobe, props, motion cues, and silhouette hierarchy follow 3. Animation Styles cinematic and broadcast grammar without locking to one plot beat.',
+      color_and_tone: 'Vibrant, subsurface, warm bounce, saturated primaries, soft pastel accent',
+      lighting_and_shadow: 'Cinematic 3D, global illumination, soft bounce, ambient occlusion',
+      texture_and_material:
         'Stylized realism, clay-model surface, fabric nap, polished plastic, soft subsurface',
-      render_quality: 'High budget, cute, emotionally precise, technically invisible',
-      spatial_distortion:
+      camera_and_composition:
         'Soft exaggeration, rounded forms, expressive proportions, appeal-focused silhouette',
-      atmosphere: 'Heartwarming, fun, sincere, emotionally readable',
+      atmosphere_and_mood: 'Heartwarming, fun, sincere, emotionally readable',
+      rendering_and_quality: 'High budget, cute, emotionally precise, technically invisible',
       key_features:
         'Soft shadows, appeal silhouette, rounded bevels, warm bounce light, material storytelling',
       creative_brief:
@@ -79,15 +81,16 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Moody miniature stop-motion fantasy, Laika-style handcrafted dread, tactile miniature craft, replacement animation',
-      form_and_line: 'None',
-      color_palette: 'Texture rich, muted jewel, deep violet, moss green, rust orange',
-      lighting_setup: 'Miniature studio, practical dollhouse, keyed drama, soft fill',
-      material_texture:
+      subject_treatment:
+        'Treat subjects as believable filmed or broadcast subjects under Laika Moody Stop-Motion: casting, wardrobe, props, motion cues, and silhouette hierarchy follow 3. Animation Styles cinematic and broadcast grammar without locking to one plot beat.',
+      color_and_tone: 'Texture rich, muted jewel, deep violet, moss green, rust orange',
+      lighting_and_shadow: 'Miniature studio, practical dollhouse, keyed drama, soft fill',
+      texture_and_material:
         'Fabric fiber, 3D print striation, wool knit, silicone, painted resin, real hair texture',
-      render_quality: 'Tactile, creepy, frame-by-frame labor, physical imperfection',
-      spatial_distortion:
+      camera_and_composition:
         'Replacement seams, expression-swap geometry, incremental sculpt, miniature scale cues',
-      atmosphere: 'Dark, handmade, gothic whimsy, craft unease',
+      atmosphere_and_mood: 'Dark, handmade, gothic whimsy, craft unease',
+      rendering_and_quality: 'Tactile, creepy, frame-by-frame labor, physical imperfection',
       key_features:
         'Fingerprint texture, miniature scale, seam detail, practical studio shadow, tactile imperfection',
       creative_brief:
@@ -102,13 +105,13 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Elastic golden-age studio cartoon, Chuck Jones timing, painted backgrounds, graphic slapstick energy',
-      form_and_line: 'Thick black',
-      color_palette: 'Flat, primary pop, canary yellow, ACME red, sky cel blue',
-      lighting_setup: 'None, flat cel color, no shading, graphic clarity',
-      material_texture: 'Cel, painted acetate, glossy finish, gouache background',
-      render_quality: 'Zany, fast, breakneck timing, held-smear blur',
-      spatial_distortion: 'Extreme squash/stretch, full-body deformation, eye-pop take',
-      atmosphere: 'Funny, anarchic, elastic, gag-driven',
+      subject_treatment: 'Thick black',
+      color_and_tone: 'Flat, primary pop, canary yellow, ACME red, sky cel blue',
+      lighting_and_shadow: 'Flat cel color, no shading, graphic clarity',
+      texture_and_material: 'Cel, painted acetate, glossy finish, gouache background',
+      camera_and_composition: 'Extreme squash/stretch, full-body deformation, eye-pop take',
+      atmosphere_and_mood: 'Funny, anarchic, elastic, gag-driven',
+      rendering_and_quality: 'Zany, fast, breakneck timing, held-smear blur',
       key_features:
         'Abstract painted backdrop, held smear, squash-stretch deformation, crisp cel silhouette',
       creative_brief:
@@ -123,13 +126,13 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         '1930s monochrome bounce-cartoon, Fleischer-era rubber-hose surrealism, pie-cut graphic language, looping rhythm',
-      form_and_line: 'Thick, bouncy',
-      color_palette: 'Black and White, charcoal fill, cream paper, no grey',
-      lighting_setup: 'None, flat monochrome, stark graphic contrast',
-      material_texture: 'Film grain, nitrate flicker, hand-painted cel',
-      render_quality: 'Retro, bouncy, surreal rubber-band motion, hypnotic loop',
-      spatial_distortion: 'Noodle limbs, rubber-hose arms, boneless contortion',
-      atmosphere: 'Happy, weird, vaudeville rhythm, early-talkie energy',
+      subject_treatment: 'Thick, bouncy',
+      color_and_tone: 'Black and White, charcoal fill, cream paper, no grey',
+      lighting_and_shadow: 'Flat monochrome, stark graphic contrast',
+      texture_and_material: 'Film grain, nitrate flicker, hand-painted cel',
+      camera_and_composition: 'Noodle limbs, rubber-hose arms, boneless contortion',
+      atmosphere_and_mood: 'Happy, weird, vaudeville rhythm, early-talkie energy',
+      rendering_and_quality: 'Retro, bouncy, surreal rubber-band motion, hypnotic loop',
       key_features:
         'Rubber-hose curves, pie-cut graphics, bouncing syncopation, surreal morph logic',
       creative_brief:
@@ -144,14 +147,14 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Pastel-neon retro anime blend, Sailor Moon/Eva aesthetic, cel-painted nostalgia, VHS broadcast grain',
-      form_and_line: 'Cel outline',
-      color_palette: 'Pastel/Neon, bubblegum pink, electric cyan, lavender, coral',
-      lighting_setup: 'Hard shadows, cel-shading contrast, dramatic underlight',
-      material_texture: 'Film grain, cel texture, painted acetate, analogue warmth',
-      render_quality: 'Retro anime, cel-painted, VHS broadcast, handcrafted depth',
-      spatial_distortion:
+      subject_treatment: 'Cel outline',
+      color_and_tone: 'Pastel/Neon, bubblegum pink, electric cyan, lavender, coral',
+      lighting_and_shadow: 'Hard shadows, cel-shading contrast, dramatic underlight',
+      texture_and_material: 'Film grain, cel texture, painted acetate, analogue warmth',
+      camera_and_composition:
         'Reflective highlight shapes, expression exaggeration, angular cel simplification, volume accents',
-      atmosphere: 'Nostalgic, aesthetic, shojo romance, mecha melancholy, 90s optimism',
+      atmosphere_and_mood: 'Nostalgic, aesthetic, shojo romance, mecha melancholy, 90s optimism',
+      rendering_and_quality: 'Retro anime, cel-painted, VHS broadcast, handcrafted depth',
       key_features:
         'Cel bloom, sparkle overlay, speed-line energy, VHS crawl, painted acetate texture',
       creative_brief:
@@ -165,13 +168,14 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'smooth 3d',
     style: {
       aesthetic: 'Comic book 3D',
-      form_and_line: 'Ink lines on 3D',
-      color_palette: 'Halftone dots, CMYK offset, Ben-Day texture, pop art primaries',
-      lighting_setup: 'Pop art, flat graphic, comic panel direction',
-      material_texture: 'Paper grain, ink bleed, newsprint, screen-print texture',
-      render_quality: 'Dynamic, glitch, stylized keyframe, stepped animation, frame-drop stutter',
-      spatial_distortion: 'Chromatic aberration, misregistration, color fringe, RGB split',
-      atmosphere: 'Energetic, modern, comic-panel momentum, multiverse chaos',
+      subject_treatment: 'Ink lines on 3D',
+      color_and_tone: 'Halftone dots, CMYK offset, Ben-Day texture, pop art primaries',
+      lighting_and_shadow: 'Pop art, flat graphic, comic panel direction',
+      texture_and_material: 'Paper grain, ink bleed, newsprint, screen-print texture',
+      camera_and_composition: 'Chromatic aberration, misregistration, color fringe, RGB split',
+      atmosphere_and_mood: 'Energetic, modern, comic-panel momentum, multiverse chaos',
+      rendering_and_quality:
+        'Dynamic, glitch, stylized keyframe, stepped animation, frame-drop stutter',
       key_features:
         'Low framerate feel, halftone breakup, registration offset, panel rhythm, motion lines',
       creative_brief:
@@ -185,13 +189,13 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'realistic, 3d',
     style: {
       aesthetic: '50s minimalism',
-      form_and_line: 'Graphic',
-      color_palette: 'Offset blocks, teal, mustard, brick red, charcoal, cream',
-      lighting_setup: 'None, flat graphic, negative space contrast',
-      material_texture: 'Paper, matte, poster-print, graphic-design surface',
-      render_quality: 'Design, flat, modernist composition, elegant simplicity',
-      spatial_distortion: 'Abstract shapes, geometric reduction, angular stylization',
-      atmosphere: 'Jazz, modern, mid-century optimism, cool intellectual',
+      subject_treatment: 'Graphic',
+      color_and_tone: 'Offset blocks, teal, mustard, brick red, charcoal, cream',
+      lighting_and_shadow: 'Flat graphic, negative space contrast',
+      texture_and_material: 'Paper, matte, poster-print, graphic-design surface',
+      camera_and_composition: 'Abstract shapes, geometric reduction, angular stylization',
+      atmosphere_and_mood: 'Jazz, modern, mid-century optimism, cool intellectual',
+      rendering_and_quality: 'Design, flat, modernist composition, elegant simplicity',
       key_features: 'Flatness, limited animation, graphic silhouette',
       creative_brief:
         'Apply UPA mid-century reduction to any subject: flat geometric planes, deliberate negative space, limited-animation silhouette logic, teal-mustard poster color, matte paper texture, and clean modernist linework. Keep jazz-age graphic wit without requiring characters, city offices, domestic settings, or literal retro props.',
@@ -204,13 +208,14 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'drawn, 3d',
     style: {
       aesthetic: 'Construction paper',
-      form_and_line: 'None',
-      color_palette: 'Flat paper, primary crayon, construction-paper tones, snow white',
-      lighting_setup: 'Drop shadow, paper-cut separation, simple depth',
-      material_texture: 'Paper texture, cutout edge, construction-paper grain',
-      render_quality: 'Crude, funny, intentionally cheap, deadpan delivery',
-      spatial_distortion: 'Waddle, paper-doll walk cycle, limited joint movement',
-      atmosphere: 'Satire, simple, blunt, intentionally crude',
+      subject_treatment:
+        'Treat subjects as believable filmed or broadcast subjects under South Park Style: casting, wardrobe, props, motion cues, and silhouette hierarchy follow 3. Animation Styles cinematic and broadcast grammar without locking to one plot beat.',
+      color_and_tone: 'Flat paper, primary crayon, construction-paper tones, snow white',
+      lighting_and_shadow: 'Drop shadow, paper-cut separation, simple depth',
+      texture_and_material: 'Paper texture, cutout edge, construction-paper grain',
+      camera_and_composition: 'Waddle, paper-doll walk cycle, limited joint movement',
+      atmosphere_and_mood: 'Satire, simple, blunt, intentionally crude',
+      rendering_and_quality: 'Crude, funny, intentionally cheap, deadpan delivery',
       key_features:
         'Cutout layers, paper edge, flat drop shadow, simple geometric construction, limited joints',
       creative_brief:
@@ -225,13 +230,14 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Posterized traced live action, A Scanner Darkly style, wobbly reality, digital uncanny valley',
-      form_and_line: 'Wobbly trace',
-      color_palette: 'Flat blocks, posterized palette, unnatural local color, comic-book reduction',
-      lighting_setup: 'Realistic (traced), live-action source, practical on-set',
-      material_texture: 'Digital paint, vector fill, smooth gradient zone',
-      render_quality: 'Uncanny, dream, floating-reality disconnect, liquid edge',
-      spatial_distortion: 'Floating shapes, paint-drift, unstable outline, image swim',
-      atmosphere: 'Surreal, trippy, unstable, psychological unease',
+      subject_treatment: 'Wobbly trace',
+      color_and_tone:
+        'Flat blocks, posterized palette, unnatural local color, comic-book reduction',
+      lighting_and_shadow: 'Realistic (traced), live-action source, practical on-set',
+      texture_and_material: 'Digital paint, vector fill, smooth gradient zone',
+      camera_and_composition: 'Floating shapes, paint-drift, unstable outline, image swim',
+      atmosphere_and_mood: 'Surreal, trippy, unstable, psychological unease',
+      rendering_and_quality: 'Uncanny, dream, floating-reality disconnect, liquid edge',
       key_features: 'Jitter, boil, line tremble, frame-to-frame instability',
       creative_brief:
         'Trace the input as unstable rotoscoped live action: posterized fills, wobbly vector edges, drifting color islands, and frame-boil instability. Avoid forcing faces or identity themes; any subject can become a live-action source slipping out of registration with its drawn overlay. Reality should look observed, repainted, and never fully locked to itself.',
@@ -244,13 +250,13 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'drawn, 3d',
     style: {
       aesthetic: 'Folded paper animation',
-      form_and_line: 'Fold lines',
-      color_palette: 'Origami paper, washi tones, muted coral, indigo, rice white',
-      lighting_setup: 'Soft studio, gentle fill, paper-diffuse bounce',
-      material_texture: 'Paper grain, fold crease, fibrous edge, handmade pulp',
-      render_quality: 'Delicate, craft, handmade patience, precision folding',
-      spatial_distortion: 'Low poly (paper), geometric faceting, crease-driven planes',
-      atmosphere: 'Handmade, precise, storybook craft, gentle wonder',
+      subject_treatment: 'Fold lines',
+      color_and_tone: 'Origami paper, washi tones, muted coral, indigo, rice white',
+      lighting_and_shadow: 'Soft studio, gentle fill, paper-diffuse bounce',
+      texture_and_material: 'Paper grain, fold crease, fibrous edge, handmade pulp',
+      camera_and_composition: 'Low poly (paper), geometric faceting, crease-driven planes',
+      atmosphere_and_mood: 'Handmade, precise, storybook craft, gentle wonder',
+      rendering_and_quality: 'Delicate, craft, handmade patience, precision folding',
       key_features: 'Folds, crease shadow, paper thickness, fibrous edge, handmade pulp',
       creative_brief:
         'Recompose any input as folded paper construction: planar facets, visible crease shadows, fibrous edges, and soft studio bounce across handmade paper. Avoid forcing landscapes, tabletop worlds, or origami creatures. The subject should keep its intent while becoming a fragile assembly of folds, thickness, and careful craft.',
@@ -264,13 +270,13 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Flash-era web animation, Newgrounds style, vector crude, 2000s internet, tweened rebellion',
-      form_and_line: 'Thick vector',
-      color_palette: 'Web safe colors, 216 palette, lime green, hot pink, electric blue',
-      lighting_setup: 'Gradient tool, radial fill, linear ramp, flat vector',
-      material_texture: 'Vector smooth, anti-aliased edge, Flash player crisp',
-      render_quality: 'Internet, crude, preload-bar aesthetic, tween-driven motion',
-      spatial_distortion: 'Tweening, linear interpolation, shape morph, motion guide',
-      atmosphere: 'Nostalgic, simple, dial-up rebellion, forum culture',
+      subject_treatment: 'Thick vector',
+      color_and_tone: 'Web safe colors, 216 palette, lime green, hot pink, electric blue',
+      lighting_and_shadow: 'Gradient tool, radial fill, linear ramp, flat vector',
+      texture_and_material: 'Vector smooth, anti-aliased edge, Flash player crisp',
+      camera_and_composition: 'Tweening, linear interpolation, shape morph, motion guide',
+      atmosphere_and_mood: 'Nostalgic, simple, dial-up rebellion, forum culture',
+      rendering_and_quality: 'Internet, crude, preload-bar aesthetic, tween-driven motion',
       key_features:
         'Symbol reuse, tween trails, vector morphs, radial gradients, hard anti-aliased edges',
       creative_brief:
@@ -285,13 +291,14 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Moving oil-paint canvas, Loving Vincent style, impasto frame by frame, brushstroke life, sheer artistic devotion',
-      form_and_line: 'Brush strokes',
-      color_palette: 'Impressionist, sunlit yellow, cobalt shadow, viridian green, violet dusk',
-      lighting_setup: 'Painted light, brush-rendered glow, canvas-luminosity',
-      material_texture: 'Thick impasto, palette-knife ridges, bristle strokes, layered scumble',
-      render_quality: 'Masterpiece, moving art, frame-by-frame painting, gallery-grade',
-      spatial_distortion: 'Swirling brush current, paint-flow drift, animated impasto displacement',
-      atmosphere: 'Artistic, emotional, painterly devotion, melancholic beauty',
+      subject_treatment: 'Brush strokes',
+      color_and_tone: 'Impressionist, sunlit yellow, cobalt shadow, viridian green, violet dusk',
+      lighting_and_shadow: 'Painted light, brush-rendered glow, canvas-luminosity',
+      texture_and_material: 'Thick impasto, palette-knife ridges, bristle strokes, layered scumble',
+      camera_and_composition:
+        'Swirling brush current, paint-flow drift, animated impasto displacement',
+      atmosphere_and_mood: 'Artistic, emotional, painterly devotion, melancholic beauty',
+      rendering_and_quality: 'Masterpiece, moving art, frame-by-frame painting, gallery-grade',
       key_features: 'Brush direction, visible stroke, canvas weave, palette texture',
       creative_brief:
         'Make the input feel painted frame by frame in thick oil: directional brushwork, ridged impasto, palette-knife texture, canvas weave, and color movement that seems alive between strokes. Avoid fixed skies, fields, or art-historical composition quotes. The result should prioritize material paint behavior and gallery-grade movement over literal subject changes. Apply Oil Paint Animation as a portable cinematic/camera style over any input: preserve its lens behavior, color process, lighting setup, artifact pattern, and deformation grammar while avoiding a required actor, room, prop, brand, readable text, fixed IP scene, or narrative setup.',
@@ -304,13 +311,13 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'vector, smooth',
     style: {
       aesthetic: '16-bit pixel animation',
-      form_and_line: 'Pixel outline',
-      color_palette: 'Limited palette, 16-color, SNES spec, indexed shades, CRT phosphor',
-      lighting_setup: 'Dithered, checkerboard blend, 50% pattern, sprite highlight',
-      material_texture: 'Pixel grid, visible aliasing, blocky charm, scanline overlay',
-      render_quality: 'Retro game, sprite-sheet precision, tile-map aesthetic',
-      spatial_distortion: 'Sprite squash, 8-direction limitation, walk-cycle snap',
-      atmosphere: 'Nostalgic, game, 16-bit constraint, handcrafted sprite logic',
+      subject_treatment: 'Pixel outline',
+      color_and_tone: 'Limited palette, 16-color, SNES spec, indexed shades, CRT phosphor',
+      lighting_and_shadow: 'Dithered, checkerboard blend, 50% pattern, sprite highlight',
+      texture_and_material: 'Pixel grid, visible aliasing, blocky charm, scanline overlay',
+      camera_and_composition: 'Sprite squash, 8-direction limitation, walk-cycle snap',
+      atmosphere_and_mood: 'Nostalgic, game, 16-bit constraint, handcrafted sprite logic',
+      rendering_and_quality: 'Retro game, sprite-sheet precision, tile-map aesthetic',
       key_features: 'Grid lock, pixel-perfect edges, indexed palette, dither ramps, CRT phosphor',
       creative_brief:
         'Convert any subject into 16-bit pixel animation grammar: visible grid, indexed palette, crisp aliasing, dithered shade ramps, tile-like structure, and CRT phosphor glow. Do not add HUDs, dialogue boxes, heroes, kingdoms, or genre scenes unless already requested. Each pixel should feel deliberately placed under hardware-era constraints.',

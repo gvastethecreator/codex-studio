@@ -14,16 +14,35 @@ tags:
   - icepunk
   - data-refuge
 visualDna:
-  aesthetic: icepunk data refuge as a flat graphic digital-illustration card built around a glacier-cooled server refuge with technicians, frost vents, cable braids, and blue-white silence.
-  form_and_line: Terrain-specific silhouettes, waterline arcs, ice facets, salt grids, stilt structures, and wind-tensioned forms. Core composition uses server racks, frost vents, technician robes, cable braids, ice chambers.
-  color_palette: glacier white, cobalt, black cable, silver frost
-  lighting_setup: cold server glow, narrow skylight, frost haze, tiny amber human light
-  material_texture: ice wall planes, sparse cable braids, brushed metal blocks, wool coat silhouettes, simple frost crystals
-  render_quality: Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity, moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material simulation, or hyper-detail.
-  spatial_distortion: Coasts, piers, marinas, glacier towns, salt flats, and swamps with strong environmental identity. Keep depth legible and avoid default hallway, aisle, or empty studio staging.
-  atmosphere: silent, disciplined, remote, technological
+  aesthetic: >-
+    icepunk data refuge as a flat graphic digital-illustration card built around a glacier-cooled server
+    refuge with technicians, frost vents, cable braids, and blue-white silence.
+  subject_treatment: >-
+    Terrain-specific silhouettes, waterline arcs, ice facets, salt grids, stilt structures, and wind-tensioned
+    forms. Core composition uses server racks, frost vents, technician robes, cable braids, ice chambers.
+  color_and_tone: glacier white, cobalt, black cable, silver frost
+  lighting_and_shadow: cold server glow, narrow skylight, frost haze, tiny amber human light
+  texture_and_material: ice wall planes, sparse cable braids, brushed metal blocks, wool coat silhouettes, simple frost crystals
+  camera_and_composition: >-
+    Coasts, piers, marinas, glacier towns, salt flats, and swamps with strong environmental identity. Keep
+    depth legible and avoid default hallway, aisle, or empty studio staging.
+  atmosphere_and_mood: silent, disciplined, remote, technological
+  rendering_and_quality: >-
+    Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly
+    planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity,
+    moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material
+    simulation, or hyper-detail.
   key_features: server racks, frost vents, technician robes, cable braids, ice chambers
-  creative_brief: 'Treat the monastery as mood not religion literalism: cold data refuge, people maintaining machines, and glacial calm. Keep it representative through cropped interior data-refuge alcove, broad visible plain server-rack faces as dark vented rectangles, frost vents, technician robe/coat silhouette maintaining a rack, sparse cable braids, angular ice planes, and a tiny amber human light. Favor flat graphic digital illustration, clean editorial illustration, cel-shaded poster art, gouache poster aesthetics, graphic-novel card art, or stylized animation-background art over realism, photoreal painterly realism, cinematic key art, scratchy print noise, or hyper-detailed concept art. Use few bold color/value zones, simplified brush planes, matte surfaces, low-to-moderate texture, large shapes, clean surfaces, shallow poster depth, and finish denoised with no excessive noise or ultra-fine detail.'
+  creative_brief: >-
+    Treat the monastery as mood not religion literalism: cold data refuge, people maintaining machines, and
+    glacial calm. Keep it representative through cropped interior data-refuge alcove, broad visible plain
+    server-rack faces as dark vented rectangles, frost vents, technician robe/coat silhouette maintaining a
+    rack, sparse cable braids, angular ice planes, and a tiny amber human light. Favor flat graphic digital
+    illustration, clean editorial illustration, cel-shaded poster art, gouache poster aesthetics,
+    graphic-novel card art, or stylized animation-background art over realism, photoreal painterly realism,
+    cinematic key art, scratchy print noise, or hyper-detailed concept art. Use few bold color/value zones,
+    simplified brush planes, matte surfaces, low-to-moderate texture, large shapes, clean surfaces, shallow
+    poster depth, and finish denoised with no excessive noise or ultra-fine detail.
 avoidRules:
   - photoreal
   - watermark
@@ -37,7 +56,24 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP15-038.webp
 attributes:
-  negativePrompt: photoreal, hyperreal, realistic render, photoreal painterly realism, cinematic realism, AAA key art, cinematic concept-art render, photobash polish, realistic material rendering, photographic skin pores, realistic foreground portrait, realistic facial hair detail, lens blur, bokeh, depth-of-field photo look, generic soldier hero, guard pin-up, weapon-first pose, exterior ice doorway, cargo doors, empty bunker entrance, crane, oil platform, snowflake emblem, heraldic badge, faction symbol, server logo, robe insignia, readable marks, literal altar, cross, religious icon, cathedral corridor, hooded monk portrait, blue server hallway, UI panels, readable screens, cable spaghetti, photoreal ice cave, HDR lens realism, 3D render look, PBR material simulation, hyper-detailed concept art, scratchy print noise, tiny black linework, watermark, text, logo, generic style, over-abstract, interchangeable preset, duplicated motifs, generic glass utopia, unmotivated market aisle, unmotivated library aisle, fantasy corridor, random camera held by subject, studio wall fixation, chair fixation, curtain fixation, lamp fixation, scarf fixation, pedestal fixation, bird fixation, excessive noise, ultra-fine detail, over-sharpened microtexture, over-rendered machinery, noisy grime, tiny rivets everywhere, busy texture chatter, realistic uniform portrait, uniformed officer hero, foreground guard portrait, detailed tattoo focus, dense machinery wallpaper, overcrowded scene, high-frequency surface detail, cinematic close-up portrait, flat black fill, crushed black, pure black masses, muddy black fields, generic American illustration, generic Western RPG card art
+  negativePrompt: >-
+    photoreal, hyperreal, realistic render, photoreal painterly realism, cinematic realism, AAA key art,
+    cinematic concept-art render, photobash polish, realistic material rendering, photographic skin pores,
+    realistic foreground portrait, realistic facial hair detail, lens blur, bokeh, depth-of-field photo look,
+    generic soldier hero, guard pin-up, weapon-first pose, exterior ice doorway, cargo doors, empty bunker
+    entrance, crane, oil platform, snowflake emblem, heraldic badge, faction symbol, server logo, robe
+    insignia, readable marks, literal altar, cross, religious icon, cathedral corridor, hooded monk portrait,
+    blue server hallway, UI panels, readable screens, cable spaghetti, photoreal ice cave, HDR lens realism,
+    3D render look, PBR material simulation, hyper-detailed concept art, scratchy print noise, tiny black
+    linework, watermark, text, logo, generic style, over-abstract, interchangeable preset, duplicated motifs,
+    generic glass utopia, unmotivated market aisle, unmotivated library aisle, fantasy corridor, random camera
+    held by subject, studio wall fixation, chair fixation, curtain fixation, lamp fixation, scarf fixation,
+    pedestal fixation, bird fixation, excessive noise, ultra-fine detail, over-sharpened microtexture,
+    over-rendered machinery, noisy grime, tiny rivets everywhere, busy texture chatter, realistic uniform
+    portrait, uniformed officer hero, foreground guard portrait, detailed tattoo focus, dense machinery
+    wallpaper, overcrowded scene, high-frequency surface detail, cinematic close-up portrait, flat black fill,
+    crushed black, pure black masses, muddy black fields, generic American illustration, generic Western RPG
+    card art
 taxonomy:
   packId: pack_15
   packName: Punk Spectrum Vault

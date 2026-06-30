@@ -13,35 +13,35 @@ tags:
   - mecha-and-cyberpunk
 visualDna:
   aesthetic: >-
-    Elegant orbital anime rivalry where high-altitude pressure, gravity defiance, crystalline seams,
-    and strategic grandeur shape the frame
-  form_and_line: >-
-    Long elegant technical-adjacent lines, thin luminous seams, sharp orbital arcs, balanced
-    opposing silhouettes, and calm tactical posing.
-  color_palette: >-
-    Deep orbital blue, white crystalline glow, magenta ion accents, cool alloy gray, and
-    black-violet vacuum shadows.
-  lighting_setup: >-
-    High-altitude rim light, ion glow, hard specular glints, black-field contrast, and luminous
-    descent streaks.
-  material_texture: >-
-    Polished alloy, crystalline energy seams, heat bloom, smooth armor-like surfaces, and faint
-    atmospheric haze.
-  render_quality: >-
-    Premium orbital anime finish with elegant surface control, strategic readability, and luminous
-    high-scale polish.
-  spatial_distortion: >-
-    Gravity-bending arcs, top-down compression, orbital negative space, and opposing-vector
-    composition across large scale.
-  atmosphere: Grand, competitive, epic, political
+    Elegant orbital anime rivalry where high-altitude pressure, gravity defiance, crystalline seams, and
+    strategic grandeur shape the frame
+  subject_treatment: >-
+    Long elegant technical-adjacent lines, thin luminous seams, sharp orbital arcs, balanced opposing
+    silhouettes, and calm tactical posing.
+  color_and_tone: >-
+    Deep orbital blue, white crystalline glow, magenta ion accents, cool alloy gray, and black-violet vacuum
+    shadows.
+  lighting_and_shadow: >-
+    High-altitude rim light, ion glow, hard specular glints, black-field contrast, and luminous descent
+    streaks.
+  texture_and_material: >-
+    Polished alloy, crystalline energy seams, heat bloom, smooth armor-like surfaces, and faint atmospheric
+    haze.
+  camera_and_composition: >-
+    Gravity-bending arcs, top-down compression, orbital negative space, and opposing-vector composition across
+    large scale.
+  atmosphere_and_mood: Grand, competitive, epic, political
+  rendering_and_quality: >-
+    Premium orbital anime finish with elegant surface control, strategic readability, and luminous high-scale
+    polish.
   key_features: >-
-    Orbital arcs, crystalline seams, rivalry symmetry, high-altitude glow, strategic negative space,
-    and graceful technical contrast
+    Orbital arcs, crystalline seams, rivalry symmetry, high-altitude glow, strategic negative space, and
+    graceful technical contrast
   creative_brief: >-
-    Use orbital rivalry symmetry as elevated-strategy grammar. Any prompt should feel graceful,
-    suspended, politically charged, and technically precise. If subject or character supports it,
-    add crystalline hardware seams, pilot/rivalry cues, or orbital-mecha elegance; planets,
-    alliances, and combat scenes remain optional.
+    Use orbital rivalry symmetry as elevated-strategy grammar. Any prompt should feel graceful, suspended,
+    politically charged, and technically precise. If subject or character supports it, add crystalline
+    hardware seams, pilot/rivalry cues, or orbital-mecha elegance; planets, alliances, and combat scenes
+    remain optional.
 avoidRules:
   - realistic
   - 3d render
@@ -59,8 +59,8 @@ assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-060.webp
 attributes:
   negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, text, signature
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts,
+    watermark, text, signature
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds

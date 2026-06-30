@@ -13,18 +13,17 @@ tags:
   - material-surface-textures
 visualDna:
   aesthetic: Rainbow reflection
-  form_and_line: Smooth
-  color_palette: Spectrum
-  lighting_setup: Iridescent
-  material_texture: Smooth plastic
-  render_quality: Sticker, card
-  spatial_distortion: Color shift
-  atmosphere: Cool, collectible
+  subject_treatment: Smooth
+  color_and_tone: Spectrum
+  lighting_and_shadow: Iridescent
+  texture_and_material: Smooth plastic
+  camera_and_composition: Color shift
+  atmosphere_and_mood: Cool, collectible
+  rendering_and_quality: Sticker, card
   key_features: Rainbow gradient
   creative_brief: >-
-    Apply holographic-foil optics to the input: silver base shine, spectral
-    angle shifts, micro-ridge diffraction, and rainbow flashes should make forms
-    change identity with light direction.
+    Apply holographic-foil optics to the input: silver base shine, spectral angle shifts, micro-ridge
+    diffraction, and rainbow flashes should make forms change identity with light direction.
 avoidRules:
   - matte paper
 assets:

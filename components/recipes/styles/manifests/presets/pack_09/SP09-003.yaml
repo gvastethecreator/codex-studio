@@ -13,15 +13,19 @@ tags:
   - natural-materials
 visualDna:
   aesthetic: White tree bark
-  form_and_line: Peeling layers
-  color_palette: White with Black lenticels
-  lighting_setup: Outdoor
-  material_texture: Papery, peeling
-  render_quality: Natural, layered
-  spatial_distortion: Curved bark
-  atmosphere: Natural, wild
+  subject_treatment: Peeling layers
+  color_and_tone: White with Black lenticels
+  lighting_and_shadow: Outdoor
+  texture_and_material: Papery, peeling
+  camera_and_composition: Curved bark
+  atmosphere_and_mood: Natural, wild
+  rendering_and_quality: Natural, layered
   key_features: Horizontal lines
-  creative_brief: 'Apply birch-bark logic as a white-and-charcoal surface system: paper-thin peeling layers, horizontal lenticel marks, curled edges, and protective skin beginning to shed. If the input already contains plant, trunk, or organic structure, reinforce that cue; otherwise wrap the subject in bark-like shedding strata without forcing a forest or tree scene.'
+  creative_brief: >-
+    Apply birch-bark logic as a white-and-charcoal surface system: paper-thin peeling layers, horizontal
+    lenticel marks, curled edges, and protective skin beginning to shed. If the input already contains plant,
+    trunk, or organic structure, reinforce that cue; otherwise wrap the subject in bark-like shedding strata
+    without forcing a forest or tree scene.
 avoidRules:
   - plank
   - cut wood

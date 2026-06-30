@@ -12,16 +12,35 @@ tags:
   - cinematic-and-media
   - caricature-and-cartoon-styles
 visualDna:
-  aesthetic: Five-year-old drawing logic, stick-symbol construction, giant corner-symbol scale, square-triangle geometry, lollipop-circle marks, ground stripe and sky stripe, pure childhood-art vocabulary
-  form_and_line: Heavy crayon pressure, uncertain wobbly circles, coloring-outside-the-lines chaos, multiple-passes-over-same-spot, fat-finger grip thickness
-  color_palette: Sun-yellow, sky-blue stripe, grass-green stripe, skin-peach crayon, dress-pink triangle, house-brown square, each color used straight from box
-  lighting_setup: No lighting logic whatsoever, sun drawn in corner regardless of shadow, flat-fill coloring, equal-brightness everything
-  material_texture: Construction-paper tooth, crayon-wax buildup clumps, too-hard-pressing paper indentations, mixed-brand crayon texture clash
-  render_quality: Kindergarten art-class aesthetic, refrigerator-gallery masterpiece, pure-joy creation, zero-technique-maximum-soul
-  spatial_distortion: Ground-line at page bottom, sky-stripe at page top, scale hierarchy by importance, oversized simple symbols
-  atmosphere: Pure innocence, unconditional love, proud-artist joy, childhood-wonder, mom-will-love-this confidence
-  key_features: Corner symbol with rays, stick-symbol forms, square-triangle geometry, lollipop marks, ground-line-sky-stripe
-  creative_brief: 'Convert any prompt into kindergarten drawing vocabulary: heavy crayon pressure, simple symbolic geometry, importance-based scale, sky and ground stripes, and confident mistakes. Avoid forcing family members, houses, flowers, or people. The style should feel proudly naive and refrigerator-gallery sincere.'
+  aesthetic: >-
+    Five-year-old drawing logic, stick-symbol construction, giant corner-symbol scale, square-triangle
+    geometry, lollipop-circle marks, ground stripe and sky stripe, pure childhood-art vocabulary
+  subject_treatment: >-
+    Heavy crayon pressure, uncertain wobbly circles, coloring-outside-the-lines chaos,
+    multiple-passes-over-same-spot, fat-finger grip thickness
+  color_and_tone: >-
+    Sun-yellow, sky-blue stripe, grass-green stripe, skin-peach crayon, dress-pink triangle, house-brown
+    square, each color used straight from box
+  lighting_and_shadow: >-
+    No lighting logic whatsoever, sun drawn in corner regardless of shadow, flat-fill coloring,
+    equal-brightness everything
+  texture_and_material: >-
+    Construction-paper tooth, crayon-wax buildup clumps, too-hard-pressing paper indentations, mixed-brand
+    crayon texture clash
+  camera_and_composition: >-
+    Ground-line at page bottom, sky-stripe at page top, scale hierarchy by importance, oversized simple
+    symbols
+  atmosphere_and_mood: Pure innocence, unconditional love, proud-artist joy, childhood-wonder, mom-will-love-this confidence
+  rendering_and_quality: >-
+    Kindergarten art-class aesthetic, refrigerator-gallery masterpiece, pure-joy creation,
+    zero-technique-maximum-soul
+  key_features: >-
+    Corner symbol with rays, stick-symbol forms, square-triangle geometry, lollipop marks,
+    ground-line-sky-stripe
+  creative_brief: >-
+    Convert any prompt into kindergarten drawing vocabulary: heavy crayon pressure, simple symbolic geometry,
+    importance-based scale, sky and ground stripes, and confident mistakes. Avoid forcing family members,
+    houses, flowers, or people. The style should feel proudly naive and refrigerator-gallery sincere.
 avoidRules:
   - realistic
   - proportional

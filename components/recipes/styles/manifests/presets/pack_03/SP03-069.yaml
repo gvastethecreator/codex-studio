@@ -13,19 +13,18 @@ tags:
   - environment-and-worldbuilding
 visualDna:
   aesthetic: Houdini pyro simulation
-  form_and_line: Turbulence
-  color_palette: Orange, Black smoke
-  lighting_setup: Self illuminated
-  material_texture: Volume, pyroclastic density
-  render_quality: Houdini VFX simulation, pyro mastery
-  spatial_distortion: Expanding
-  atmosphere: Dangerous, dynamic, cinematic destruction
+  subject_treatment: Turbulence
+  color_and_tone: Orange, Black smoke
+  lighting_and_shadow: Self illuminated
+  texture_and_material: Volume, pyroclastic density
+  camera_and_composition: Expanding
+  atmosphere_and_mood: Dangerous, dynamic, cinematic destruction
+  rendering_and_quality: Houdini VFX simulation, pyro mastery
   key_features: Physics, turbulence control
   creative_brief: >-
-    Apply Houdini pyro behavior to the input: turbulent density curls,
-    self-illuminated heat volumes, smoke layering and fluid-dynamics credibility.
-    It can imply blast, flame or destruction when relevant, but must not require
-    a fireball, disaster staging, or consumed environment.
+    Apply Houdini pyro behavior to the input: turbulent density curls, self-illuminated heat volumes, smoke
+    layering and fluid-dynamics credibility. It can imply blast, flame or destruction when relevant, but must
+    not require a fireball, disaster staging, or consumed environment.
 avoidRules:
   - solid
   - cartoon fire

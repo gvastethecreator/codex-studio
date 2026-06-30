@@ -13,22 +13,22 @@ tags:
   - elemental-and-fx
 visualDna:
   aesthetic: High speed liquid
-  form_and_line: Droplets
-  color_palette: Clear, Blue tint
-  lighting_setup: Refractive, Caustic
-  material_texture: Liquid
-  render_quality: Fresh, clean
-  spatial_distortion: Surface tension
-  atmosphere: Refreshing, dynamic
+  subject_treatment: Droplets
+  color_and_tone: Clear, Blue tint
+  lighting_and_shadow: Refractive, Caustic
+  texture_and_material: Liquid
+  camera_and_composition: Surface tension
+  atmosphere_and_mood: Refreshing, dynamic
+  rendering_and_quality: Fresh, clean
   key_features: Droplets
   creative_brief: >-
-    Capture the frozen ballet of water in mid-splash where droplets hang suspended in a corona of liquid tension, each
-    sphere a tiny lens bending light through its crystalline transparency. Surface tension should feel stretched to its
-    absolute limit, a moment of chaos ordered by physics into fleeting perfection. Render the sculpture of the
-    instantaneous, a splash arrested at its most beautiful. Use Water Splash as portable surface/render behavior over
-    any input: map its texture, light response, edge wear, color chemistry, and tactile rhythm onto the subject instead
-    of requiring a literal material sample, macro tile, wall, landscape, source object, or scene where the material
-    naturally appears.
+    Capture the frozen ballet of water in mid-splash where droplets hang suspended in a corona of liquid
+    tension, each sphere a tiny lens bending light through its crystalline transparency. Surface tension
+    should feel stretched to its absolute limit, a moment of chaos ordered by physics into fleeting
+    perfection. Render the sculpture of the instantaneous, a splash arrested at its most beautiful. Use Water
+    Splash as portable surface/render behavior over any input: map its texture, light response, edge wear,
+    color chemistry, and tactile rhythm onto the subject instead of requiring a literal material sample, macro
+    tile, wall, landscape, source object, or scene where the material naturally appears.
 avoidRules:
   - still water
 assets:

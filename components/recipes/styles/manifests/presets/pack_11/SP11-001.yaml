@@ -13,24 +13,26 @@ tags:
   - toys-and-crafts
 visualDna:
   aesthetic: >-
-    Modular toy-brick construction style with systemized assembly logic, playful engineering clarity, and colorful
-    constructive energy
-  form_and_line: >-
-    Interlocking grid geometry, stud-and-tube articulation, right-angle modular silhouettes, and seam-aware structural
-    rhythm
-  color_palette: High-saturation toy primaries with clean contrast blocks and glossy plastic-friendly hue separation
-  lighting_setup: Product-style key/rim reflection control with crisp specular highlights and clear modular edge readability
-  material_texture: Injection-molded ABS sheen, stud micro-relief, seam-line precision, and polished toy-surface finish
-  render_quality: Crisp toy-assembly rendering prioritizing modular legibility, geometric coherence, and playful engineered charm
-  spatial_distortion: Cubic abstraction with snap-grid proportional logic and minifigure-scale spatial simplification
-  atmosphere: Playful, inventive, structured, nostalgic, constructive
+    Modular toy-brick construction style with systemized assembly logic, playful engineering clarity, and
+    colorful constructive energy
+  subject_treatment: >-
+    Interlocking grid geometry, stud-and-tube articulation, right-angle modular silhouettes, and seam-aware
+    structural rhythm
+  color_and_tone: High-saturation toy primaries with clean contrast blocks and glossy plastic-friendly hue separation
+  lighting_and_shadow: Product-style key/rim reflection control with crisp specular highlights and clear modular edge readability
+  texture_and_material: Injection-molded ABS sheen, stud micro-relief, seam-line precision, and polished toy-surface finish
+  camera_and_composition: Cubic abstraction with snap-grid proportional logic and minifigure-scale spatial simplification
+  atmosphere_and_mood: Playful, inventive, structured, nostalgic, constructive
+  rendering_and_quality: >-
+    Crisp toy-assembly rendering prioritizing modular legibility, geometric coherence, and playful engineered
+    charm
   key_features: Stud-grid grammar, modular seam legibility, toy-plastic gloss control, block-assembly composition logic
   creative_brief: >-
-    Keep this preset defined by modular snap-assembly language and toy-plastic material behavior, so brick-system
-    readability remains the transferable core beyond specific diorama scenes. Apply Lego Toy Brick Build as a portable
-    style system over any input: preserve its construction grammar, material cues, scale logic, and signature rendering
-    behavior while avoiding a required franchise, literal prop, fixed specimen, classroom sample, product shot, or scene
-    template.
+    Keep this preset defined by modular snap-assembly language and toy-plastic material behavior, so
+    brick-system readability remains the transferable core beyond specific diorama scenes. Apply Lego Toy
+    Brick Build as a portable style system over any input: preserve its construction grammar, material cues,
+    scale logic, and signature rendering behavior while avoiding a required franchise, literal prop, fixed
+    specimen, classroom sample, product shot, or scene template.
 avoidRules:
   - melted
   - smooth

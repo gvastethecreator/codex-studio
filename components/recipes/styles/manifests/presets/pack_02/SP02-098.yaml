@@ -13,27 +13,36 @@ tags:
   - caricature-and-cartoon-styles
 visualDna:
   aesthetic: >-
-    Genius-idea-on-cocktail-napkin energy, ballpoint-pen crudely sketching concept structure, coffee-ring framing,
-    condensation warping the paper, desperate late-night inspiration captured on whatever surface available
-  form_and_line: >-
-    Ballpoint-pen on absorbent paper, ink-burst where pen pauses, scratchy-dry-ink skips, pressed-too-hard paper
-    indentations
-  color_palette: Ballpoint-blue ink, coffee-stain sepia, napkin-tan paper, beer-ring moisture-darkened halo, bar-neon reflected tint
-  lighting_setup: Dim ambient, single-overhead-bulb spot, emergency side light, warm falloff
-  material_texture: Soft-ply napkin paper, ink-bleed-fringing, moisture-warped surface, crinkle-fold texture, absorbent-fiber softness
-  render_quality: Cocktail-napkin-sketch aesthetic, desperate-genius energy, bar-napkin-provenance authenticity, beautiful-roughness
-  spatial_distortion: Drawing wrapping around napkin folds, arrows pointing off-edge, squeezed negative space, quarter-napkin composition
-  atmosphere: Eureka-moment electricity, desperate-inspiration, 3am-bar-genius, startup-mythology, beautiful-desperation
+    Genius-idea-on-cocktail-napkin energy, ballpoint-pen crudely sketching concept structure, coffee-ring
+    framing, condensation warping the paper, desperate late-night inspiration captured on whatever surface
+    available
+  subject_treatment: >-
+    Ballpoint-pen on absorbent paper, ink-burst where pen pauses, scratchy-dry-ink skips, pressed-too-hard
+    paper indentations
+  color_and_tone: >-
+    Ballpoint-blue ink, coffee-stain sepia, napkin-tan paper, beer-ring moisture-darkened halo, bar-neon
+    reflected tint
+  lighting_and_shadow: Dim ambient, single-overhead-bulb spot, emergency side light, warm falloff
+  texture_and_material: >-
+    Soft-ply napkin paper, ink-bleed-fringing, moisture-warped surface, crinkle-fold texture, absorbent-fiber
+    softness
+  camera_and_composition: >-
+    Drawing wrapping around napkin folds, arrows pointing off-edge, squeezed negative space, quarter-napkin
+    composition
+  atmosphere_and_mood: Eureka-moment electricity, desperate-inspiration, 3am-bar-genius, startup-mythology, beautiful-desperation
+  rendering_and_quality: >-
+    Cocktail-napkin-sketch aesthetic, desperate-genius energy, bar-napkin-provenance authenticity,
+    beautiful-roughness
   key_features: >-
-    Ballpoint-blue on napkin-tan, coffee-ring overlay, moisture-warped paper, fold-lines bisecting sketch, scratchy-ink
-    skips, no readable text
+    Ballpoint-blue on napkin-tan, coffee-ring overlay, moisture-warped paper, fold-lines bisecting sketch,
+    scratchy-ink skips, no readable text
   creative_brief: >-
-    Render the input like a napkin blueprint: ballpoint ink, absorbent paper bleed, coffee rings, moisture warp, fold
-    lines, and rough arrows or schematic marks without readable text. Avoid inventions, startup myths, bars, or literal
-    eureka setups. The surface should feel urgent and improvised. Apply Napkin Scribble Blueprint as a portable
-    cinematic/camera style over any input: preserve its lens behavior, color process, lighting setup, artifact pattern,
-    and deformation grammar while avoiding a required actor, room, prop, brand, readable text, fixed IP scene, or
-    narrative setup.
+    Render the input like a napkin blueprint: ballpoint ink, absorbent paper bleed, coffee rings, moisture
+    warp, fold lines, and rough arrows or schematic marks without readable text. Avoid inventions, startup
+    myths, bars, or literal eureka setups. The surface should feel urgent and improvised. Apply Napkin
+    Scribble Blueprint as a portable cinematic/camera style over any input: preserve its lens behavior, color
+    process, lighting setup, artifact pattern, and deformation grammar while avoiding a required actor, room,
+    prop, brand, readable text, fixed IP scene, or narrative setup.
 avoidRules:
   - digital
   - clean

@@ -11,20 +11,20 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         "Modern Minimalist within 1. Interior Design Systems: a reusable Architecture & Interior visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Modern Minimalist's specific style identity.",
-      form_and_line:
+      subject_treatment:
         'Define Modern Minimalist through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
-      color_palette:
+      color_and_tone:
         'Use a Modern Minimalist-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
-      lighting_setup:
+      lighting_and_shadow:
         'Use lighting that makes Modern Minimalist recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
-      material_texture:
+      texture_and_material:
         'Use materials and textures that reinforce Modern Minimalist: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
-      render_quality:
-        'Render Modern Minimalist with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
-      spatial_distortion:
+      camera_and_composition:
         'Use spatial behavior that fits Modern Minimalist: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
-      atmosphere:
+      atmosphere_and_mood:
         'Set a mood that belongs to Modern Minimalist: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+      rendering_and_quality:
+        'Render Modern Minimalist with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       key_features:
         "Prioritize Modern Minimalist's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
@@ -39,20 +39,20 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         "Industrial Loft within 1. Interior Design Systems: a reusable Architecture & Interior visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Industrial Loft's specific style identity.",
-      form_and_line:
+      subject_treatment:
         'Define Industrial Loft through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
-      color_palette:
+      color_and_tone:
         'Use a Industrial Loft-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
-      lighting_setup:
+      lighting_and_shadow:
         'Use lighting that makes Industrial Loft recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
-      material_texture:
+      texture_and_material:
         'Use materials and textures that reinforce Industrial Loft: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
-      render_quality:
-        'Render Industrial Loft with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
-      spatial_distortion:
+      camera_and_composition:
         'Use spatial behavior that fits Industrial Loft: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
-      atmosphere:
+      atmosphere_and_mood:
         'Set a mood that belongs to Industrial Loft: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+      rendering_and_quality:
+        'Render Industrial Loft with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       key_features:
         "Prioritize Industrial Loft's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
@@ -67,20 +67,20 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         "Mid-Century Modern within 1. Interior Design Systems: a reusable Architecture & Interior visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Mid-Century Modern's specific style identity.",
-      form_and_line:
+      subject_treatment:
         'Define Mid-Century Modern through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
-      color_palette:
+      color_and_tone:
         'Use a Mid-Century Modern-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
-      lighting_setup:
+      lighting_and_shadow:
         'Use lighting that makes Mid-Century Modern recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
-      material_texture:
+      texture_and_material:
         'Use materials and textures that reinforce Mid-Century Modern: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
-      render_quality:
-        'Render Mid-Century Modern with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
-      spatial_distortion:
+      camera_and_composition:
         'Use spatial behavior that fits Mid-Century Modern: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
-      atmosphere:
+      atmosphere_and_mood:
         'Set a mood that belongs to Mid-Century Modern: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+      rendering_and_quality:
+        'Render Mid-Century Modern with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       key_features:
         "Prioritize Mid-Century Modern's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
@@ -96,20 +96,20 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         "Scandinavian Hygge within 1. Interior Design Systems: a reusable Architecture & Interior visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Scandinavian Hygge's specific style identity.",
-      form_and_line:
+      subject_treatment:
         'Define Scandinavian Hygge through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
-      color_palette:
+      color_and_tone:
         'Use a Scandinavian Hygge-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
-      lighting_setup:
+      lighting_and_shadow:
         'Use lighting that makes Scandinavian Hygge recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
-      material_texture:
+      texture_and_material:
         'Use materials and textures that reinforce Scandinavian Hygge: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
-      render_quality:
-        'Render Scandinavian Hygge with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
-      spatial_distortion:
+      camera_and_composition:
         'Use spatial behavior that fits Scandinavian Hygge: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
-      atmosphere:
+      atmosphere_and_mood:
         'Set a mood that belongs to Scandinavian Hygge: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+      rendering_and_quality:
+        'Render Scandinavian Hygge with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       key_features:
         "Prioritize Scandinavian Hygge's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
@@ -124,20 +124,20 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         "Bohemian Eclectic within 1. Interior Design Systems: a reusable Architecture & Interior visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Bohemian Eclectic's specific style identity.",
-      form_and_line:
+      subject_treatment:
         'Define Bohemian Eclectic through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
-      color_palette:
+      color_and_tone:
         'Use a Bohemian Eclectic-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
-      lighting_setup:
+      lighting_and_shadow:
         'Use lighting that makes Bohemian Eclectic recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
-      material_texture:
+      texture_and_material:
         'Use materials and textures that reinforce Bohemian Eclectic: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
-      render_quality:
-        'Render Bohemian Eclectic with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
-      spatial_distortion:
+      camera_and_composition:
         'Use spatial behavior that fits Bohemian Eclectic: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
-      atmosphere:
+      atmosphere_and_mood:
         'Set a mood that belongs to Bohemian Eclectic: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+      rendering_and_quality:
+        'Render Bohemian Eclectic with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       key_features:
         "Prioritize Bohemian Eclectic's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
@@ -152,20 +152,20 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         "Japanese Zen within 1. Interior Design Systems: a reusable Architecture & Interior visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Japanese Zen's specific style identity.",
-      form_and_line:
+      subject_treatment:
         'Define Japanese Zen through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
-      color_palette:
+      color_and_tone:
         'Use a Japanese Zen-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
-      lighting_setup:
+      lighting_and_shadow:
         'Use lighting that makes Japanese Zen recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
-      material_texture:
+      texture_and_material:
         'Use materials and textures that reinforce Japanese Zen: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
-      render_quality:
-        'Render Japanese Zen with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
-      spatial_distortion:
+      camera_and_composition:
         'Use spatial behavior that fits Japanese Zen: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
-      atmosphere:
+      atmosphere_and_mood:
         'Set a mood that belongs to Japanese Zen: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+      rendering_and_quality:
+        'Render Japanese Zen with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       key_features:
         "Prioritize Japanese Zen's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
@@ -180,20 +180,20 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         "Luxury Penthouse within 1. Interior Design Systems: a reusable Architecture & Interior visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Luxury Penthouse's specific style identity.",
-      form_and_line:
+      subject_treatment:
         'Define Luxury Penthouse through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
-      color_palette:
+      color_and_tone:
         'Use a Luxury Penthouse-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
-      lighting_setup:
+      lighting_and_shadow:
         'Use lighting that makes Luxury Penthouse recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
-      material_texture:
+      texture_and_material:
         'Use materials and textures that reinforce Luxury Penthouse: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
-      render_quality:
-        'Render Luxury Penthouse with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
-      spatial_distortion:
+      camera_and_composition:
         'Use spatial behavior that fits Luxury Penthouse: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
-      atmosphere:
+      atmosphere_and_mood:
         'Set a mood that belongs to Luxury Penthouse: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+      rendering_and_quality:
+        'Render Luxury Penthouse with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       key_features:
         "Prioritize Luxury Penthouse's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
@@ -208,20 +208,20 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         "Rustic Cabin within 1. Interior Design Systems: a reusable Architecture & Interior visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Rustic Cabin's specific style identity.",
-      form_and_line:
+      subject_treatment:
         'Define Rustic Cabin through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
-      color_palette:
+      color_and_tone:
         'Use a Rustic Cabin-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
-      lighting_setup:
+      lighting_and_shadow:
         'Use lighting that makes Rustic Cabin recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
-      material_texture:
+      texture_and_material:
         'Use materials and textures that reinforce Rustic Cabin: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
-      render_quality:
-        'Render Rustic Cabin with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
-      spatial_distortion:
+      camera_and_composition:
         'Use spatial behavior that fits Rustic Cabin: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
-      atmosphere:
+      atmosphere_and_mood:
         'Set a mood that belongs to Rustic Cabin: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+      rendering_and_quality:
+        'Render Rustic Cabin with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       key_features:
         "Prioritize Rustic Cabin's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
@@ -237,20 +237,20 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         "Mediterranean Villa within 1. Interior Design Systems: a reusable Architecture & Interior visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Mediterranean Villa's specific style identity.",
-      form_and_line:
+      subject_treatment:
         'Define Mediterranean Villa through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
-      color_palette:
+      color_and_tone:
         'Use a Mediterranean Villa-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
-      lighting_setup:
+      lighting_and_shadow:
         'Use lighting that makes Mediterranean Villa recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
-      material_texture:
+      texture_and_material:
         'Use materials and textures that reinforce Mediterranean Villa: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
-      render_quality:
-        'Render Mediterranean Villa with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
-      spatial_distortion:
+      camera_and_composition:
         'Use spatial behavior that fits Mediterranean Villa: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
-      atmosphere:
+      atmosphere_and_mood:
         'Set a mood that belongs to Mediterranean Villa: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+      rendering_and_quality:
+        'Render Mediterranean Villa with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       key_features:
         "Prioritize Mediterranean Villa's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
@@ -265,20 +265,20 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         "Cyberpunk Apartment within 1. Interior Design Systems: a reusable Architecture & Interior visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Cyberpunk Apartment's specific style identity.",
-      form_and_line:
+      subject_treatment:
         'Define Cyberpunk Apartment through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
-      color_palette:
+      color_and_tone:
         'Use a Cyberpunk Apartment-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
-      lighting_setup:
+      lighting_and_shadow:
         'Use lighting that makes Cyberpunk Apartment recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
-      material_texture:
+      texture_and_material:
         'Use materials and textures that reinforce Cyberpunk Apartment: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
-      render_quality:
-        'Render Cyberpunk Apartment with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
-      spatial_distortion:
+      camera_and_composition:
         'Use spatial behavior that fits Cyberpunk Apartment: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
-      atmosphere:
+      atmosphere_and_mood:
         'Set a mood that belongs to Cyberpunk Apartment: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+      rendering_and_quality:
+        'Render Cyberpunk Apartment with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       key_features:
         "Prioritize Cyberpunk Apartment's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
@@ -293,20 +293,20 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         "Victorian Mansion within 1. Interior Design Systems: a reusable Architecture & Interior visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Victorian Mansion's specific style identity.",
-      form_and_line:
+      subject_treatment:
         'Define Victorian Mansion through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
-      color_palette:
+      color_and_tone:
         'Use a Victorian Mansion-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
-      lighting_setup:
+      lighting_and_shadow:
         'Use lighting that makes Victorian Mansion recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
-      material_texture:
+      texture_and_material:
         'Use materials and textures that reinforce Victorian Mansion: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
-      render_quality:
-        'Render Victorian Mansion with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
-      spatial_distortion:
+      camera_and_composition:
         'Use spatial behavior that fits Victorian Mansion: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
-      atmosphere:
+      atmosphere_and_mood:
         'Set a mood that belongs to Victorian Mansion: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+      rendering_and_quality:
+        'Render Victorian Mansion with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       key_features:
         "Prioritize Victorian Mansion's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
@@ -321,20 +321,20 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         "Bauhaus Interior within 1. Interior Design Systems: a reusable Architecture & Interior visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Bauhaus Interior's specific style identity.",
-      form_and_line:
+      subject_treatment:
         'Define Bauhaus Interior through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
-      color_palette:
+      color_and_tone:
         'Use a Bauhaus Interior-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
-      lighting_setup:
+      lighting_and_shadow:
         'Use lighting that makes Bauhaus Interior recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
-      material_texture:
+      texture_and_material:
         'Use materials and textures that reinforce Bauhaus Interior: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
-      render_quality:
-        'Render Bauhaus Interior with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
-      spatial_distortion:
+      camera_and_composition:
         'Use spatial behavior that fits Bauhaus Interior: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
-      atmosphere:
+      atmosphere_and_mood:
         'Set a mood that belongs to Bauhaus Interior: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+      rendering_and_quality:
+        'Render Bauhaus Interior with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       key_features:
         "Prioritize Bauhaus Interior's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
@@ -349,20 +349,20 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         "Maximalist Decor within 1. Interior Design Systems: a reusable Architecture & Interior visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Maximalist Decor's specific style identity.",
-      form_and_line:
+      subject_treatment:
         'Define Maximalist Decor through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
-      color_palette:
+      color_and_tone:
         'Use a Maximalist Decor-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
-      lighting_setup:
+      lighting_and_shadow:
         'Use lighting that makes Maximalist Decor recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
-      material_texture:
+      texture_and_material:
         'Use materials and textures that reinforce Maximalist Decor: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
-      render_quality:
-        'Render Maximalist Decor with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
-      spatial_distortion:
+      camera_and_composition:
         'Use spatial behavior that fits Maximalist Decor: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
-      atmosphere:
+      atmosphere_and_mood:
         'Set a mood that belongs to Maximalist Decor: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+      rendering_and_quality:
+        'Render Maximalist Decor with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       key_features:
         "Prioritize Maximalist Decor's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
@@ -377,20 +377,20 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         "Farmhouse Chic within 1. Interior Design Systems: a reusable Architecture & Interior visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Farmhouse Chic's specific style identity.",
-      form_and_line:
+      subject_treatment:
         'Define Farmhouse Chic through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
-      color_palette:
+      color_and_tone:
         'Use a Farmhouse Chic-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
-      lighting_setup:
+      lighting_and_shadow:
         'Use lighting that makes Farmhouse Chic recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
-      material_texture:
+      texture_and_material:
         'Use materials and textures that reinforce Farmhouse Chic: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
-      render_quality:
-        'Render Farmhouse Chic with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
-      spatial_distortion:
+      camera_and_composition:
         'Use spatial behavior that fits Farmhouse Chic: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
-      atmosphere:
+      atmosphere_and_mood:
         'Set a mood that belongs to Farmhouse Chic: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+      rendering_and_quality:
+        'Render Farmhouse Chic with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       key_features:
         "Prioritize Farmhouse Chic's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
@@ -405,20 +405,20 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         "Art Nouveau Interior within 1. Interior Design Systems: a reusable Architecture & Interior visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Art Nouveau Interior's specific style identity.",
-      form_and_line:
+      subject_treatment:
         'Define Art Nouveau Interior through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
-      color_palette:
+      color_and_tone:
         'Use a Art Nouveau Interior-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
-      lighting_setup:
+      lighting_and_shadow:
         'Use lighting that makes Art Nouveau Interior recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
-      material_texture:
+      texture_and_material:
         'Use materials and textures that reinforce Art Nouveau Interior: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
-      render_quality:
-        'Render Art Nouveau Interior with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
-      spatial_distortion:
+      camera_and_composition:
         'Use spatial behavior that fits Art Nouveau Interior: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
-      atmosphere:
+      atmosphere_and_mood:
         'Set a mood that belongs to Art Nouveau Interior: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+      rendering_and_quality:
+        'Render Art Nouveau Interior with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       key_features:
         "Prioritize Art Nouveau Interior's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
@@ -433,20 +433,20 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         "Memphis Design within 1. Interior Design Systems: a reusable Architecture & Interior visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Memphis Design's specific style identity.",
-      form_and_line:
+      subject_treatment:
         'Define Memphis Design through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
-      color_palette:
+      color_and_tone:
         'Use a Memphis Design-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
-      lighting_setup:
+      lighting_and_shadow:
         'Use lighting that makes Memphis Design recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
-      material_texture:
+      texture_and_material:
         'Use materials and textures that reinforce Memphis Design: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
-      render_quality:
-        'Render Memphis Design with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
-      spatial_distortion:
+      camera_and_composition:
         'Use spatial behavior that fits Memphis Design: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
-      atmosphere:
+      atmosphere_and_mood:
         'Set a mood that belongs to Memphis Design: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+      rendering_and_quality:
+        'Render Memphis Design with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       key_features:
         "Prioritize Memphis Design's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:

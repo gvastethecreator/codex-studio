@@ -14,16 +14,36 @@ tags:
   - stonepunk
   - sacred-mechanics
 visualDna:
-  aesthetic: stonepunk sacred mechanics built around a standout basalt gearwright, carved gears, rope pulleys, and torchlit mechanical shadows.
-  form_and_line: Stone tools, rope mechanics, carved engines, low-tech power rigs, salvage sails, and rough handmade engineering. Core composition uses carved gears, rope pulleys, stone engineers, basalt arches, torch shadows.
-  color_palette: basalt black, ash gray, torch orange, bone chalk
-  lighting_setup: torch-orange glow blocks, stone shadow cuts, ember glow, cave-mouth daylight
-  material_texture: basalt, rope, carved stone planes, ash, blank chalk strokes
-  render_quality: Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity, moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material simulation, or hyper-detail.
-  spatial_distortion: Sanctuaries, markets, camps, bridges, battery houses, and shore commons built from elemental materials. Keep depth legible and avoid default hallway, aisle, or empty studio staging.
-  atmosphere: ancient, heavy, engineered, solemn
+  aesthetic: >-
+    stonepunk sacred mechanics built around a standout basalt gearwright, carved gears, rope pulleys, and
+    torchlit mechanical shadows.
+  subject_treatment: >-
+    Stone tools, rope mechanics, carved engines, low-tech power rigs, salvage sails, and rough handmade
+    engineering. Core composition uses carved gears, rope pulleys, stone engineers, basalt arches, torch
+    shadows.
+  color_and_tone: basalt black, ash gray, torch orange, bone chalk
+  lighting_and_shadow: torch-orange glow blocks, stone shadow cuts, ember glow, cave-mouth daylight
+  texture_and_material: basalt, rope, carved stone planes, ash, blank chalk strokes
+  camera_and_composition: >-
+    Sanctuaries, markets, camps, bridges, battery houses, and shore commons built from elemental materials.
+    Keep depth legible and avoid default hallway, aisle, or empty studio staging.
+  atmosphere_and_mood: ancient, heavy, engineered, solemn
+  rendering_and_quality: >-
+    Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly
+    planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity,
+    moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material
+    simulation, or hyper-detail.
   key_features: basalt gearwright, carved gears, rope pulleys, basalt arches, torch shadows
-  creative_brief: 'Stonepunk as sacred mechanics: one standout basalt gearwright as the main character with broad stone apron silhouette and empty hands silhouetted before a rope-pulley arc, plus simplified carved basalt gear machine, chunky basalt blocks, torch-orange glow shapes, and blank chalk strokes behind them, not fantasy dungeon corridor or heraldic workshop. Secondary engineers may be tiny background silhouettes only. Keep the result representative rather than over-abstract; use non-photographic stylized illustration, editorial digital painting, ligne-claire adventure comic clarity, gouache-cel shapes, drawn contours, broad painted planes, and controlled color design over realism or generic concept art. Avoid workers-only composition. Use few bold color/value zones, large matte shapes, clean surfaces, low-to-moderate detail, and finish denoised with no excessive noise or ultra-fine detail.'
+  creative_brief: >-
+    Stonepunk as sacred mechanics: one standout basalt gearwright as the main character with broad stone apron
+    silhouette and empty hands silhouetted before a rope-pulley arc, plus simplified carved basalt gear
+    machine, chunky basalt blocks, torch-orange glow shapes, and blank chalk strokes behind them, not fantasy
+    dungeon corridor or heraldic workshop. Secondary engineers may be tiny background silhouettes only. Keep
+    the result representative rather than over-abstract; use non-photographic stylized illustration, editorial
+    digital painting, ligne-claire adventure comic clarity, gouache-cel shapes, drawn contours, broad painted
+    planes, and controlled color design over realism or generic concept art. Avoid workers-only composition.
+    Use few bold color/value zones, large matte shapes, clean surfaces, low-to-moderate detail, and finish
+    denoised with no excessive noise or ultra-fine detail.
 avoidRules:
   - photoreal
   - watermark
@@ -37,7 +57,24 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP15-073.webp
 attributes:
-  negativePrompt: photoreal, hyperreal, realistic render, photoreal painterly realism, cinematic realism, AAA key art, photographic skin pores, realistic foreground portrait, realistic facial hair detail, realistic human anatomy, detailed face, workers-only composition, anonymous worker crew, lens blur, bokeh, depth-of-field photo look, hanging cloth, tapestry, pendant, decorative foreground tile, shrine plaque, deep perspective, scenic background, city ruins, cave vista, castle courtyard, shields, wall plaques, badges, emblems, cross shapes, heraldic symbols, long corridor, dungeon hallway, religious sanctuary, readable runes, glyph symbols, skulls, bones, gore, weapon, torch procession, photoreal stone, gritty cave realism, realistic carved rock, 3D masonry render, generic soldier hero, guard pin-up, weapon-first pose, HDR lens realism, 3D render look, PBR material simulation, hyper-detailed concept art, watermark, text, logo, generic style, over-abstract, interchangeable preset, duplicated motifs, generic glass utopia, unmotivated market aisle, unmotivated library aisle, fantasy corridor, random camera held by subject, studio wall fixation, chair fixation, curtain fixation, lamp fixation, scarf fixation, pedestal fixation, bird fixation, excessive noise, ultra-fine detail, over-sharpened microtexture, over-rendered machinery, noisy grime, tiny rivets everywhere, busy texture chatter, realistic uniform portrait, uniformed officer hero, foreground guard portrait, detailed tattoo focus, dense machinery wallpaper, overcrowded scene, high-frequency surface detail, cinematic close-up portrait, flat black fill, crushed black, pure black masses, muddy black fields, generic American illustration, generic Western RPG card art
+  negativePrompt: >-
+    photoreal, hyperreal, realistic render, photoreal painterly realism, cinematic realism, AAA key art,
+    photographic skin pores, realistic foreground portrait, realistic facial hair detail, realistic human
+    anatomy, detailed face, workers-only composition, anonymous worker crew, lens blur, bokeh, depth-of-field
+    photo look, hanging cloth, tapestry, pendant, decorative foreground tile, shrine plaque, deep perspective,
+    scenic background, city ruins, cave vista, castle courtyard, shields, wall plaques, badges, emblems, cross
+    shapes, heraldic symbols, long corridor, dungeon hallway, religious sanctuary, readable runes, glyph
+    symbols, skulls, bones, gore, weapon, torch procession, photoreal stone, gritty cave realism, realistic
+    carved rock, 3D masonry render, generic soldier hero, guard pin-up, weapon-first pose, HDR lens realism,
+    3D render look, PBR material simulation, hyper-detailed concept art, watermark, text, logo, generic style,
+    over-abstract, interchangeable preset, duplicated motifs, generic glass utopia, unmotivated market aisle,
+    unmotivated library aisle, fantasy corridor, random camera held by subject, studio wall fixation, chair
+    fixation, curtain fixation, lamp fixation, scarf fixation, pedestal fixation, bird fixation, excessive
+    noise, ultra-fine detail, over-sharpened microtexture, over-rendered machinery, noisy grime, tiny rivets
+    everywhere, busy texture chatter, realistic uniform portrait, uniformed officer hero, foreground guard
+    portrait, detailed tattoo focus, dense machinery wallpaper, overcrowded scene, high-frequency surface
+    detail, cinematic close-up portrait, flat black fill, crushed black, pure black masses, muddy black
+    fields, generic American illustration, generic Western RPG card art
 taxonomy:
   packId: pack_15
   packName: Punk Spectrum Vault

@@ -13,19 +13,22 @@ tags:
   - hard-surface-and-product-cgi
 visualDna:
   aesthetic: Glowing glass tubes
-  form_and_line: Tube shape
-  color_palette: Neon Red/Blue, electric glow
-  lighting_setup: Glow, wall reflection, ambient spill
-  material_texture: Glass, metal supports, tube fittings
-  render_quality: Nightlife, sign, urban-branding
-  atmosphere: Urban, cool, nighttime energy
+  subject_treatment: Tube shape
+  color_and_tone: Neon Red/Blue, electric glow
+  lighting_and_shadow: Glow, wall reflection, ambient spill
+  texture_and_material: Glass, metal supports, tube fittings
+  camera_and_composition: >-
+    Lookdev camera for Neon Sign 3D: three-quarter or orthographic framing, clean silhouette read, material
+    highlights, controlled depth, and vertical card composition.
+  atmosphere_and_mood: Urban, cool, nighttime energy
+  rendering_and_quality: Nightlife, sign, urban-branding
   key_features: Tube connections, gas-glow realism
   creative_brief: >-
-    Rebuild the input in neon-tube construction: bent glass, gas glow, transformer fittings, colored bloom and emissive
-    spill. It may feel like signage or nightlife, but must not require brick walls, bars, text or an urban setting.
-    Apply Neon Sign 3D as a portable 3D/render style system over any input: preserve its renderer logic, material
-    behavior, geometry language, lighting grammar, and production cues while avoiding a required character, vehicle,
-    prop, environment, UI screen, product shot, or scene template.
+    Rebuild the input in neon-tube construction: bent glass, gas glow, transformer fittings, colored bloom and
+    emissive spill. It may feel like signage or nightlife, but must not require brick walls, bars, text or an
+    urban setting. Apply Neon Sign 3D as a portable 3D/render style system over any input: preserve its
+    renderer logic, material behavior, geometry language, lighting grammar, and production cues while avoiding
+    a required character, vehicle, prop, environment, UI screen, product shot, or scene template.
 avoidRules:
   - flat
   - print

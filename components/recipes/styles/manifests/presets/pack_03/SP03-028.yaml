@@ -13,19 +13,23 @@ tags:
   - 3d-styles
 visualDna:
   aesthetic: Mathematically perfect curves
-  form_and_line: Flow lines
-  color_palette: Zebra stripe reflection, curvature analysis
-  lighting_setup: Studio check, highlight continuity
-  material_texture: Glossy, class-A surface
-  render_quality: CAD, automotive, manufacturing-grade
-  atmosphere: Perfect, engineered, mathematical precision
+  subject_treatment: Flow lines
+  color_and_tone: Zebra stripe reflection, curvature analysis
+  lighting_and_shadow: Studio check, highlight continuity
+  texture_and_material: Glossy, class-A surface
+  camera_and_composition: >-
+    Lookdev camera for Nurbs Surface: three-quarter or orthographic framing, clean silhouette read, material
+    highlights, controlled depth, and vertical card composition.
+  atmosphere_and_mood: Perfect, engineered, mathematical precision
+  rendering_and_quality: CAD, automotive, manufacturing-grade
   key_features: Smoothness, G2 continuity
   creative_brief: >-
-    Give the input NURBS-like surface discipline: mathematically smooth curves, zebra-stripe reflection checks, G2
-    continuity and class-A gloss. Automotive CAD language may guide the finish, but no car, fender, or design-studio
-    setup is required. Apply Nurbs Surface as a portable 3D/render style system over any input: preserve its renderer
-    logic, material behavior, geometry language, lighting grammar, and production cues while avoiding a required
-    character, vehicle, prop, environment, UI screen, product shot, or scene template.
+    Give the input NURBS-like surface discipline: mathematically smooth curves, zebra-stripe reflection
+    checks, G2 continuity and class-A gloss. Automotive CAD language may guide the finish, but no car, fender,
+    or design-studio setup is required. Apply Nurbs Surface as a portable 3D/render style system over any
+    input: preserve its renderer logic, material behavior, geometry language, lighting grammar, and production
+    cues while avoiding a required character, vehicle, prop, environment, UI screen, product shot, or scene
+    template.
 avoidRules:
   - polygons
   - sharp

@@ -10,13 +10,14 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'daylight, sun',
     style: {
       aesthetic: 'Cyberpunk neon-rain lookdev',
-      form_and_line: 'Reflections',
-      color_palette: 'Pink, Cyan, Purple',
-      lighting_setup: 'Emissive signs',
-      material_texture: 'Wet reflective surfaces, emissive haze',
-      render_quality: 'Blade Runner rain-soaked neon megacity',
-      spatial_distortion: 'None',
-      atmosphere: 'Dystopian, cool, future-noir',
+      subject_treatment: 'Reflections',
+      color_and_tone: 'Pink, Cyan, Purple',
+      lighting_and_shadow: 'Emissive signs',
+      texture_and_material: 'Wet reflective surfaces, emissive haze',
+      camera_and_composition:
+        'Production-preview camera for Neon City (Cyberpunk): readable hero scale, foreground/midground/background depth, clean silhouette, and practical vertical crop.',
+      atmosphere_and_mood: 'Dystopian, cool, future-noir',
+      rendering_and_quality: 'Blade Runner rain-soaked neon megacity',
       key_features: 'Neon glow',
       creative_brief:
         'Apply cyberpunk neon-rain treatment to the input: magenta/cyan emissive bleed, wet reflective sheen, holographic haze, high-contrast future-noir shadows and ozone atmosphere. It may hint at signage or urban density, but must not force streets, alleys, kanji, pedestrians or a literal city.',
@@ -30,13 +31,14 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Bioluminescent alien ecology, Avatar/Pandora-style wonder, connected organic glow',
-      form_and_line: 'Glowing organic silhouettes, spore halos, branching luminous networks',
-      color_palette: 'Blue, Purple night, cyan bloom',
-      lighting_setup: 'Plant glow, ambient bioluminescence',
-      material_texture: 'Organic, alien, phosphorescent',
-      render_quality: 'Fantasy, magical, otherworldly immersion',
-      spatial_distortion: 'None',
-      atmosphere: 'Wonder, magic, spiritual awe, connected-biology calm',
+      subject_treatment: 'Glowing organic silhouettes, spore halos, branching luminous networks',
+      color_and_tone: 'Blue, Purple night, cyan bloom',
+      lighting_and_shadow: 'Plant glow, ambient bioluminescence',
+      texture_and_material: 'Organic, alien, phosphorescent',
+      camera_and_composition:
+        'Production-preview camera for Bioluminescent Forest: readable hero scale, foreground/midground/background depth, clean silhouette, and practical vertical crop.',
+      atmosphere_and_mood: 'Wonder, magic, spiritual awe, connected-biology calm',
+      rendering_and_quality: 'Fantasy, magical, otherworldly immersion',
       key_features: 'Glow in dark, floating spores',
       creative_brief:
         'Infuse the input with bioluminescent alien ecology: cyan/violet phosphorescence, spore halos, internal plant-like glow, connected organic networks and ambient light replacing sunlight. Keep Pandora-style awe without requiring a forest, floating mountains, specific flora, ecosystem setting, or landscape.',
@@ -49,13 +51,13 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: '2d, flat',
     style: {
       aesthetic: 'Immersive VR presence',
-      form_and_line: '360 degree feel',
-      color_palette: 'Vibrant',
-      lighting_setup: 'Baked',
-      material_texture: 'Optimized, real-time ready',
-      render_quality: 'Oculus headset-ready, immersive VR presence',
-      spatial_distortion: 'Wide FOV',
-      atmosphere: 'Presence, digital, embodied experience',
+      subject_treatment: '360 degree feel',
+      color_and_tone: 'Vibrant',
+      lighting_and_shadow: 'Baked',
+      texture_and_material: 'Optimized, real-time ready',
+      camera_and_composition: 'Wide FOV',
+      atmosphere_and_mood: 'Presence, digital, embodied experience',
+      rendering_and_quality: 'Oculus headset-ready, immersive VR presence',
       key_features: 'Player scale, 180-degree depth',
       creative_brief:
         'Render the input with VR presence: player-scale cues, stereo-depth thinking, peripheral composition, parallax-ready layers and interaction-distance clarity. It can feel inhabitable without requiring a full room, environment or place narrative.',
@@ -69,20 +71,20 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         "Scientific Visualization within 7. Environment And Worldbuilding: a reusable 3D & CGI Rendering visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Scientific Visualization's specific style identity.",
-      form_and_line:
+      subject_treatment:
         'Define Scientific Visualization through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
-      color_palette:
+      color_and_tone:
         'Use a Scientific Visualization-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
-      lighting_setup:
+      lighting_and_shadow:
         'Use lighting that makes Scientific Visualization recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
-      material_texture:
+      texture_and_material:
         'Use materials and textures that reinforce Scientific Visualization: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
-      render_quality:
-        'Render Scientific Visualization with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
-      spatial_distortion:
+      camera_and_composition:
         'Use spatial behavior that fits Scientific Visualization: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
-      atmosphere:
+      atmosphere_and_mood:
         'Set a mood that belongs to Scientific Visualization: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+      rendering_and_quality:
+        'Render Scientific Visualization with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       key_features:
         "Prioritize Scientific Visualization's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
@@ -96,12 +98,14 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'empty, boring',
     style: {
       aesthetic: 'Environment-design render language',
-      form_and_line: 'Modular composition and guided depth',
-      color_palette: 'Atmospheric perspective, distance-blue fade',
-      lighting_setup: 'Baked global illumination, environment-lighting',
-      material_texture: 'Tileable textures, world-building materials',
-      render_quality: 'Level-art material logic, immersive readiness',
-      atmosphere: 'Explorable depth, designed place energy',
+      subject_treatment: 'Modular composition and guided depth',
+      color_and_tone: 'Atmospheric perspective, distance-blue fade',
+      lighting_and_shadow: 'Baked global illumination, environment-lighting',
+      texture_and_material: 'Tileable textures, world-building materials',
+      camera_and_composition:
+        'Production-preview camera for Environment Design: readable hero scale, foreground/midground/background depth, clean silhouette, and practical vertical crop.',
+      atmosphere_and_mood: 'Explorable depth, designed place energy',
+      rendering_and_quality: 'Level-art material logic, immersive readiness',
       key_features: 'Modular kits, environmental-storytelling cues',
       creative_brief:
         'Apply environment-design thinking to the input: modular material kits, atmospheric perspective, baked-GI credibility and depth cues that imply explorable space. If the prompt is an environment, strengthen level-art readability; otherwise borrow worldbuilding texture logic without forcing mountains, ruins, foliage, paths, or a game-level layout.',
@@ -114,12 +118,14 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: '2d map, paper',
     style: {
       aesthetic: 'Isometric cartographic render',
-      form_and_line: 'Topography',
-      color_palette: 'Map colors, topographic contrast',
-      lighting_setup: 'Sunlight, terrain-shadow casting',
-      material_texture: 'Low poly terrain, topographic layers',
-      render_quality: 'Game map, cute, cartographic style',
-      atmosphere: 'Informative, toy, exploration-inviting',
+      subject_treatment: 'Topography',
+      color_and_tone: 'Map colors, topographic contrast',
+      lighting_and_shadow: 'Sunlight, terrain-shadow casting',
+      texture_and_material: 'Low poly terrain, topographic layers',
+      camera_and_composition:
+        'Production-preview camera for 3D Map: readable hero scale, foreground/midground/background depth, clean silhouette, and practical vertical crop.',
+      atmosphere_and_mood: 'Informative, toy, exploration-inviting',
+      rendering_and_quality: 'Game map, cute, cartographic style',
       key_features: 'Grid, elevation readability',
       creative_brief:
         'Translate the input into isometric cartographic logic: stacked contour layers, height-coded color, terrain-shadow style and minimap readability. If landscape exists, map it; otherwise treat subject hierarchy as topographic information without forcing hills, valleys or terrain.',
@@ -133,18 +139,20 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         "Abstract Background within 7. Environment And Worldbuilding: a reusable 3D & CGI Rendering visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Abstract Background's specific style identity.",
-      form_and_line:
+      subject_treatment:
         'Define Abstract Background through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
-      color_palette:
+      color_and_tone:
         'Use a Abstract Background-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
-      lighting_setup:
+      lighting_and_shadow:
         'Use lighting that makes Abstract Background recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
-      material_texture:
+      texture_and_material:
         'Use materials and textures that reinforce Abstract Background: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
-      render_quality:
-        'Render Abstract Background with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
-      atmosphere:
+      camera_and_composition:
+        'Production-preview camera for Abstract Background: readable hero scale, foreground/midground/background depth, clean silhouette, and practical vertical crop.',
+      atmosphere_and_mood:
         'Set a mood that belongs to Abstract Background: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+      rendering_and_quality:
+        'Render Abstract Background with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       key_features:
         "Prioritize Abstract Background's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
@@ -158,13 +166,13 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'perfect, modeled',
     style: {
       aesthetic: 'Photogrammetry scan realism',
-      form_and_line: 'Realistic geometry',
-      color_palette: 'Photo texture',
-      lighting_setup: 'Baked lighting (delit)',
-      material_texture: 'Real world noise, photogrammetry texture',
-      render_quality: 'Quixel Megascans scan-library realism',
-      spatial_distortion: 'Mesh errors (optional)',
-      atmosphere: 'Real, grounded, authentic capture',
+      subject_treatment: 'Realistic geometry',
+      color_and_tone: 'Photo texture',
+      lighting_and_shadow: 'Baked lighting (delit)',
+      texture_and_material: 'Real world noise, photogrammetry texture',
+      camera_and_composition: 'Mesh errors (optional)',
+      atmosphere_and_mood: 'Real, grounded, authentic capture',
+      rendering_and_quality: 'Quixel Megascans scan-library realism',
       key_features: 'Photo realism, surface-level scan detail',
       creative_brief:
         'Give the input photogrammetry truth: scan noise, photo-textured surfaces, baked de-lit color, imperfect mesh detail and Quixel/Megascans credibility. Do not force rocks, tree stumps, ruined walls or outdoor capture subjects. Apply 3D Scan as a portable 3D/render style system over any input: preserve its renderer logic, material behavior, geometry language, lighting grammar, and production cues while avoiding a required character, vehicle, prop, environment, UI screen, product shot, or scene template.',
@@ -177,13 +185,13 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'solid, cartoon fire',
     style: {
       aesthetic: 'Houdini pyro simulation',
-      form_and_line: 'Turbulence',
-      color_palette: 'Orange, Black smoke',
-      lighting_setup: 'Self illuminated',
-      material_texture: 'Volume, pyroclastic density',
-      render_quality: 'Houdini VFX simulation, pyro mastery',
-      spatial_distortion: 'Expanding',
-      atmosphere: 'Dangerous, dynamic, cinematic destruction',
+      subject_treatment: 'Turbulence',
+      color_and_tone: 'Orange, Black smoke',
+      lighting_and_shadow: 'Self illuminated',
+      texture_and_material: 'Volume, pyroclastic density',
+      camera_and_composition: 'Expanding',
+      atmosphere_and_mood: 'Dangerous, dynamic, cinematic destruction',
+      rendering_and_quality: 'Houdini VFX simulation, pyro mastery',
       key_features: 'Physics, turbulence control',
       creative_brief:
         'Apply Houdini pyro behavior to the input: turbulent density curls, self-illuminated heat volumes, smoke layering and fluid-dynamics credibility. It can imply blast, flame or destruction when relevant, but must not require a fireball, disaster staging, or consumed environment.',

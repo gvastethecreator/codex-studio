@@ -13,20 +13,25 @@ tags:
   - anime
   - horror
 visualDna:
-  aesthetic: Ceremonial demonic folklore horror combining shrine-like precision with feral ritual escalation and symbolic intimidation.
-  form_and_line: Hard mask-like silhouettes, talismanic pattern bands, and radial gesture lines that imply invocation cycles.
-  color_palette: Oxblood reds, ash-black fields, smoke-brown mids, and tarnished gold ritual accents.
-  lighting_setup: Low fire-ring illumination with stochastic shadow dance, emphasizing mask contours and gesture focality.
-  material_texture: Lacquer crackle, charred timber grain, wax drips, ash particulates, and scorched fabric edges.
-  render_quality: High-impact folkloric clarity with aggressive focal contrast and controlled peripheral obscurity.
-  spatial_distortion: Circular rite composition with centripetal pull, as if all geometry is bending toward the invocation core.
-  atmosphere: Taboo ceremony, escalating dread, and primal authority made visual through symbols and heat.
-  key_features: Dominant demonic visage language, ember ring systems, talisman clusters, and invocation choreography through heat shimmer.
+  aesthetic: >-
+    Ceremonial demonic folklore horror combining shrine-like precision with feral ritual escalation and
+    symbolic intimidation.
+  subject_treatment: >-
+    Hard mask-like silhouettes, talismanic pattern bands, and radial gesture lines that imply invocation
+    cycles.
+  color_and_tone: Oxblood reds, ash-black fields, smoke-brown mids, and tarnished gold ritual accents.
+  lighting_and_shadow: Low fire-ring illumination with stochastic shadow dance, emphasizing mask contours and gesture focality.
+  texture_and_material: Lacquer crackle, charred timber grain, wax drips, ash particulates, and scorched fabric edges.
+  camera_and_composition: Circular rite composition with centripetal pull, as if all geometry is bending toward the invocation core.
+  atmosphere_and_mood: Taboo ceremony, escalating dread, and primal authority made visual through symbols and heat.
+  rendering_and_quality: High-impact folkloric clarity with aggressive focal contrast and controlled peripheral obscurity.
+  key_features: >-
+    Dominant demonic visage language, ember ring systems, talisman clusters, and invocation choreography
+    through heat shimmer.
   creative_brief: >-
-    Create a reusable demonic-ritual-mask-geometry grammar for any subject:
-    radial ritual geometry, fire-ring contrast, symbolic mask dominance, and
-    taboo ceremonial pressure without imposing oni, masks, shrines, candles,
-    talismans, hand signs, or night rituals.
+    Create a reusable demonic-ritual-mask-geometry grammar for any subject: radial ritual geometry, fire-ring
+    contrast, symbolic mask dominance, and taboo ceremonial pressure without imposing oni, masks, shrines,
+    candles, talismans, hand signs, or night rituals.
 avoidRules:
   - photoreal
   - cute-style

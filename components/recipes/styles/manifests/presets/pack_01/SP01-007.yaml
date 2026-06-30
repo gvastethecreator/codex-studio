@@ -21,9 +21,8 @@ visualDna:
   atmosphere_and_mood: Mysterious, dramatic, anonymous, artistic, epic
   rendering_and_quality: High quality artistic photography, crisp edges
   creative_brief: >-
-    Apply silhouette-portrait lighting to any subject: black graphic contour,
-    strong backlight, stripped internal texture, high contrast, and monumental
-    negative space without requiring a human profile.
+    Apply silhouette-portrait lighting to any subject: black graphic contour, strong backlight, stripped
+    internal texture, high contrast, and monumental negative space without requiring a human profile.
 avoidRules:
   - illustration
   - painting
@@ -43,7 +42,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP01-007.webp
 attributes:
-  negativePrompt: illustration, painting, drawing, 3d render, cartoon, anime, sketch, blurry, noisy, low resolution, watermark, text, signature, bad anatomy, deformed
+  negativePrompt: >-
+    illustration, painting, drawing, 3d render, cartoon, anime, sketch, blurry, noisy, low resolution,
+    watermark, text, signature, bad anatomy, deformed
 taxonomy:
   packId: pack_01
   packName: Photography & Realism

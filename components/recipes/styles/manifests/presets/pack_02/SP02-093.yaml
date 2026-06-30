@@ -12,16 +12,31 @@ tags:
   - cinematic-and-media
   - caricature-and-cartoon-styles
 visualDna:
-  aesthetic: Paleolithic cave-wall art, ochre-pigment stencils, rudimentary symbolic figures, Lascaux-cave energy, rough limestone surface, ancient storytelling through crude marks, thirty-thousand-year-old doodle energy
-  form_and_line: Crude finger-painted contours, blown-pigment hand silhouettes, charcoal-stick roughness, irregular natural pigment strokes
-  color_palette: Ochre red, charcoal black, bone-ash white, clay-earth brown, iron-oxide rust, mineral-pigment rawness
-  lighting_setup: Torchlight flicker on cave wall, deep-shadow crevices, uneven stone illumination, dancing-flame warmth
-  material_texture: Rough limestone surface, mineral-crystal sparkle, pigment-caked into rock pores, stalactite drip, cave-dust coating
-  render_quality: Prehistoric cave-art aesthetic, paleolithic expression, humanity's-first-art beauty, raw-pigment authenticity
-  spatial_distortion: Impossible counts, incomplete silhouettes, overlapping-time narrative on same wall, no ground-line suspension
-  atmosphere: Ancient, primal, mysterious, torchlit-reverence, humanity's-dawn wonder, sacred-cave silence
-  key_features: Stencil negative prints, ochre-red outlines, charcoal-stick roughness, limestone texture, torchlight flicker, no ground plane
-  creative_brief: 'Render any input as Paleolithic wall language: ochre pigment, charcoal marks, rough limestone, torch flicker, stencil silhouettes, and overlapping symbolic time. Avoid requiring animals, hunters, spears, or literal cave narratives. The style should feel ancient, mineral, and pre-perspective.'
+  aesthetic: >-
+    Paleolithic cave-wall art, ochre-pigment stencils, rudimentary symbolic figures, Lascaux-cave energy,
+    rough limestone surface, ancient storytelling through crude marks, thirty-thousand-year-old doodle energy
+  subject_treatment: >-
+    Crude finger-painted contours, blown-pigment hand silhouettes, charcoal-stick roughness, irregular natural
+    pigment strokes
+  color_and_tone: Ochre red, charcoal black, bone-ash white, clay-earth brown, iron-oxide rust, mineral-pigment rawness
+  lighting_and_shadow: Torchlight flicker on cave wall, deep-shadow crevices, uneven stone illumination, dancing-flame warmth
+  texture_and_material: >-
+    Rough limestone surface, mineral-crystal sparkle, pigment-caked into rock pores, stalactite drip,
+    cave-dust coating
+  camera_and_composition: >-
+    Impossible counts, incomplete silhouettes, overlapping-time narrative on same wall, no ground-line
+    suspension
+  atmosphere_and_mood: Ancient, primal, mysterious, torchlit-reverence, humanity's-dawn wonder, sacred-cave silence
+  rendering_and_quality: >-
+    Prehistoric cave-art aesthetic, paleolithic expression, humanity's-first-art beauty, raw-pigment
+    authenticity
+  key_features: >-
+    Stencil negative prints, ochre-red outlines, charcoal-stick roughness, limestone texture, torchlight
+    flicker, no ground plane
+  creative_brief: >-
+    Render any input as Paleolithic wall language: ochre pigment, charcoal marks, rough limestone, torch
+    flicker, stencil silhouettes, and overlapping symbolic time. Avoid requiring animals, hunters, spears, or
+    literal cave narratives. The style should feel ancient, mineral, and pre-perspective.
 avoidRules:
   - modern
   - digital

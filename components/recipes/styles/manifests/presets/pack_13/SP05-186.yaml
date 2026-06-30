@@ -12,20 +12,35 @@ tags:
   - anime-character-and-lifestyle
   - shojo-magical-girl-and-visionary-classics
 visualDna:
-  aesthetic: Height-gap romcom shojo language with banter energy, embarrassment-forward timing, and heartfelt momentum expressed through scale-contrast comedy
-  form_and_line: Elastic comedic acting lines, contrasting scale-language framing, lively conversational gesture contours, and clean silhouette rhythm
-  color_palette: Bright youthful pastels with warmer peach accents, playful urban tones, and selective pop-color highlights for comedic beats
-  lighting_setup: Daylight-forward romcom clarity, warm after-school ambience, low-complexity contrast, and highlight accents timed to reaction moments
-  material_texture: Casual textile softness, simple matte surface cues, and low-noise backgrounds that keep timing and expression in focus
-  render_quality: High-readability romcom render with energetic acting clarity, sincere payoff framing, and balanced comedy-romance polish
-  spatial_distortion: Comedic composition exploiting scale contrast and interpersonal distance changes without sacrificing emotional readability
-  atmosphere: Funny, sweet, loud, sincere
-  key_features: Scale-contrast compositions, comic reaction faces, banter body language, bright youth color, loud-to-soft timing
+  aesthetic: >-
+    Height-gap romcom shojo language with banter energy, embarrassment-forward timing, and heartfelt momentum
+    expressed through scale-contrast comedy
+  subject_treatment: >-
+    Elastic comedic acting lines, contrasting scale-language framing, lively conversational gesture contours,
+    and clean silhouette rhythm
+  color_and_tone: >-
+    Bright youthful pastels with warmer peach accents, playful urban tones, and selective pop-color highlights
+    for comedic beats
+  lighting_and_shadow: >-
+    Daylight-forward romcom clarity, warm after-school ambience, low-complexity contrast, and highlight
+    accents timed to reaction moments
+  texture_and_material: >-
+    Casual textile softness, simple matte surface cues, and low-noise backgrounds that keep timing and
+    expression in focus
+  camera_and_composition: >-
+    Comedic composition exploiting scale contrast and interpersonal distance changes without sacrificing
+    emotional readability
+  atmosphere_and_mood: Funny, sweet, loud, sincere
+  rendering_and_quality: >-
+    High-readability romcom render with energetic acting clarity, sincere payoff framing, and balanced
+    comedy-romance polish
+  key_features: >-
+    Scale-contrast compositions, comic reaction faces, banter body language, bright youth color, loud-to-soft
+    timing
   creative_brief: >-
-    Scale the input through height-gap romcom timing: elastic acting lines,
-    bright pastel pop beats, exaggerated proportion contrast, and loud-to-tender
-    rhythm can make any subject funny and sincere without requiring a couple,
-    school setting, argument pose, or literal height joke.
+    Scale the input through height-gap romcom timing: elastic acting lines, bright pastel pop beats,
+    exaggerated proportion contrast, and loud-to-tender rhythm can make any subject funny and sincere without
+    requiring a couple, school setting, argument pose, or literal height joke.
 avoidRules:
   - realistic
   - 3d render
@@ -42,7 +57,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-186.webp
 attributes:
-  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
+  negativePrompt: >-
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts,
+    watermark, text, signature
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle

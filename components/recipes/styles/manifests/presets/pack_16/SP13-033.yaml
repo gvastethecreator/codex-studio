@@ -13,20 +13,23 @@ tags:
   - anime
   - horror
 visualDna:
-  aesthetic: Grotesque performance-horror language where theatrical elegance is corrupted by marionette anatomy and staged cruelty.
-  form_and_line: Twitchy contour cadence, joint segmentation, and drapery-driven framing lines that trap the focal subject.
-  color_palette: Congealed burgundy, nicotine ivory, oxidized brass hints, and ink-black shadow basins.
-  lighting_setup: Isolated spotlight with aggressive falloff, leaving peripheral planes in predatory darkness.
-  material_texture: Splintered timber, dust-saturated velvet, cracked lacquered surfaces, and dry residue buildup.
-  render_quality: Disturbingly crisp foreground forms against smeared peripheral darkness to sustain visual discomfort.
-  spatial_distortion: Proscenium-like compression with shallow-depth pressure that makes subjects feel pinned to the viewing plane.
-  atmosphere: Claustrophobic spectacle, involuntary audience dread, and ritualized manipulation.
+  aesthetic: >-
+    Grotesque performance-horror language where theatrical elegance is corrupted by marionette anatomy and
+    staged cruelty.
+  subject_treatment: Twitchy contour cadence, joint segmentation, and drapery-driven framing lines that trap the focal subject.
+  color_and_tone: Congealed burgundy, nicotine ivory, oxidized brass hints, and ink-black shadow basins.
+  lighting_and_shadow: Isolated spotlight with aggressive falloff, leaving peripheral planes in predatory darkness.
+  texture_and_material: Splintered timber, dust-saturated velvet, cracked lacquered surfaces, and dry residue buildup.
+  camera_and_composition: >-
+    Proscenium-like compression with shallow-depth pressure that makes subjects feel pinned to the viewing
+    plane.
+  atmosphere_and_mood: Claustrophobic spectacle, involuntary audience dread, and ritualized manipulation.
+  rendering_and_quality: Disturbingly crisp foreground forms against smeared peripheral darkness to sustain visual discomfort.
   key_features: Marionette morphology cues, torn drapery vectors, black void patterning, and central fixation points.
   creative_brief: >-
-    Define a reusable grotesque-marionette-spotlight grammar for any subject:
-    corrupted theatrical elegance, anatomical stylization, spotlight isolation,
-    and pinned-plane pressure without imposing theaters, stages, puppets,
-    seats, props, or audiences.
+    Define a reusable grotesque-marionette-spotlight grammar for any subject: corrupted theatrical elegance,
+    anatomical stylization, spotlight isolation, and pinned-plane pressure without imposing theaters, stages,
+    puppets, seats, props, or audiences.
 avoidRules:
   - photoreal
   - slapstick

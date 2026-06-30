@@ -13,22 +13,22 @@ tags:
   - micro-macro
 visualDna:
   aesthetic: Grit zoom, abrasive-surface, workshop-texture, grit-topography, sanding-material
-  form_and_line: Rough rocks, angular-grain contours, fractured-edges, irregular-particle shapes, bonding-resin crevices
-  color_palette: Brown, Black grit, aluminum-oxide grey, silicon-carbide metallic, garnet-red, ceramic-white
-  lighting_setup: Sparkle on grit, raking-grazing light, particle-shadow, resin-gloss catch, point-source reflection
-  material_texture: Rough, abrasive, sharp-particle, bonding-resin, graded-grit size, backer-paper, clogged-dust
-  render_quality: Industrial, rough, workshop-macro, grit-grade, sanding-precision, surface-prep
-  spatial_distortion: None, flat-sheet, grit-density, particle-projection, backing-plane
-  atmosphere: Harsh, work, workshop-silence, sanding-dust, tool-bench, abrasive-patience
+  subject_treatment: Rough rocks, angular-grain contours, fractured-edges, irregular-particle shapes, bonding-resin crevices
+  color_and_tone: Brown, Black grit, aluminum-oxide grey, silicon-carbide metallic, garnet-red, ceramic-white
+  lighting_and_shadow: Sparkle on grit, raking-grazing light, particle-shadow, resin-gloss catch, point-source reflection
+  texture_and_material: Rough, abrasive, sharp-particle, bonding-resin, graded-grit size, backer-paper, clogged-dust
+  camera_and_composition: Flat-sheet, grit-density, particle-projection, backing-plane
+  atmosphere_and_mood: Harsh, work, workshop-silence, sanding-dust, tool-bench, abrasive-patience
+  rendering_and_quality: Industrial, rough, workshop-macro, grit-grade, sanding-precision, surface-prep
   key_features: >-
-    Grit, abrasive-grain, particle-size, bond-resin, grit-fracture, dust-clog, backer-paper edge, sanding-direction
-    scratch
+    Grit, abrasive-grain, particle-size, bond-resin, grit-fracture, dust-clog, backer-paper edge,
+    sanding-direction scratch
   creative_brief: >-
-    Build abrasive-surface studies from angular grit morphology, resin bonding topology, and directional scratch
-    evidence. Keep workshop material realism and roughness-grade readability as primary style drivers. Apply Sandpaper
-    as a portable style system over any input: preserve its construction grammar, material cues, scale logic, and
-    signature rendering behavior while avoiding a required franchise, literal prop, fixed specimen, classroom sample,
-    product shot, or scene template.
+    Build abrasive-surface studies from angular grit morphology, resin bonding topology, and directional
+    scratch evidence. Keep workshop material realism and roughness-grade readability as primary style drivers.
+    Apply Sandpaper as a portable style system over any input: preserve its construction grammar, material
+    cues, scale logic, and signature rendering behavior while avoiding a required franchise, literal prop,
+    fixed specimen, classroom sample, product shot, or scene template.
 avoidRules:
   - smooth
 assets:

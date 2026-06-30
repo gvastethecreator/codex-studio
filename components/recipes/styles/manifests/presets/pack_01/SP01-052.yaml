@@ -13,15 +13,18 @@ tags:
   - documentary-and-street
 visualDna:
   aesthetic: High-speed action capture
-  form_and_line: Frozen force geometry
-  color_palette: Vibrant competition color
-  lighting_setup: Hard arena-style light
-  material_texture: Impact texture, dust, sheen
-  render_quality: Sports-editorial sharpness
-  spatial_distortion: Motion blur background
-  atmosphere: Intense, fast
+  subject_treatment: Frozen force geometry
+  color_and_tone: Vibrant competition color
+  lighting_and_shadow: Hard arena-style light
+  texture_and_material: Impact texture, dust, sheen
+  camera_and_composition: Motion blur background
+  atmosphere_and_mood: Intense, fast
+  rendering_and_quality: Sports-editorial sharpness
   key_features: Action freeze
-  creative_brief: 'High-speed sports grammar freezes any subject at peak force: crisp action edge, motion-blurred background, hard arena light, vibrant color, and impact texture. Convey velocity and intensity without requiring athletes, jerseys, stadiums, crowds, or bodies.'
+  creative_brief: >-
+    High-speed sports grammar freezes any subject at peak force: crisp action edge, motion-blurred background,
+    hard arena light, vibrant color, and impact texture. Convey velocity and intensity without requiring
+    athletes, jerseys, stadiums, crowds, or bodies.
 avoidRules:
   - static
   - slow

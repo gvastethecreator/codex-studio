@@ -13,34 +13,30 @@ tags:
   - slice-of-life-and-moe
 visualDna:
   aesthetic: >-
-    Immaculate social-jitter anime comedy where pristine beauty, nervous silence, graphic restraint,
-    and overpolite pressure define the image
-  form_and_line: >-
-    Clean beauty contours, microexpression emphasis, large polite negative space, tidy pause panels,
-    and controlled awkward body language
-  color_palette: >-
-    Polished white, navy anchors, soft blush, green-black contrast, warm skin highlights, and pale
-    chalk dust
-  lighting_setup: >-
-    Bright clean fill, reflective tidy surfaces, focused confession-like contrast, and blush-lit
-    reaction beats
-  material_texture: >-
-    Chalk dust, pressed cloth planes, smooth paper, dry marker residue, immaculate polish, and faint
-    surface grain
-  render_quality: >-
-    Polished social-comedy anime finish with high expression readability, elegant exaggeration, and
-    precise awkwardness
-  spatial_distortion: >-
-    Anxiety-POV tightening around expressions and empty graphic space rather than literal classroom
-    geography
-  atmosphere: Shy, polished, funny, affectionate, tense
+    Immaculate social-jitter anime comedy where pristine beauty, nervous silence, graphic restraint, and
+    overpolite pressure define the image
+  subject_treatment: >-
+    Clean beauty contours, microexpression emphasis, large polite negative space, tidy pause panels, and
+    controlled awkward body language
+  color_and_tone: Polished white, navy anchors, soft blush, green-black contrast, warm skin highlights, and pale chalk dust
+  lighting_and_shadow: >-
+    Bright clean fill, reflective tidy surfaces, focused confession-like contrast, and blush-lit reaction
+    beats
+  texture_and_material: >-
+    Chalk dust, pressed cloth planes, smooth paper, dry marker residue, immaculate polish, and faint surface
+    grain
+  camera_and_composition: Anxiety-POV tightening around expressions and empty graphic space rather than literal classroom geography
+  atmosphere_and_mood: Shy, polished, funny, affectionate, tense
+  rendering_and_quality: >-
+    Polished social-comedy anime finish with high expression readability, elegant exaggeration, and precise
+    awkwardness
   key_features: >-
-    Pristine order, silent pressure, chalk-dust motifs, social-jitter beats, beauty-comedy contrast,
-    and polite empty space
+    Pristine order, silent pressure, chalk-dust motifs, social-jitter beats, beauty-comedy contrast, and
+    polite empty space
   creative_brief: >-
-    Use Komi as style anchor for immaculate social-jitter comedy. Apply pristine contours, silent
-    pressure, blush beats, and chalk-dust restraint to any prompt. Classrooms, chalkboards, school
-    setup, and specific social scenes are optional.
+    Use Komi as style anchor for immaculate social-jitter comedy. Apply pristine contours, silent pressure,
+    blush beats, and chalk-dust restraint to any prompt. Classrooms, chalkboards, school setup, and specific
+    social scenes are optional.
 avoidRules:
   - realistic
   - 3d render
@@ -58,8 +54,8 @@ assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-212.webp
 attributes:
   negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, text, signature
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts,
+    watermark, text, signature
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle

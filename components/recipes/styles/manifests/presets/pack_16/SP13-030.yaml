@@ -13,19 +13,26 @@ tags:
   - anime
   - samurai-medieval
 visualDna:
-  aesthetic: Ascetic contemplative style combining monastic serenity with latent kinetic potential and spiritual discipline.
-  form_and_line: Fine calligraphic contours, circular stance geometries, and motion trajectories implied through restrained directional line cues.
-  color_palette: Moonlit cobalt, brushed silver, desaturated pine green, and warm paper-lantern micro-accents.
-  lighting_setup: Soft lunar top fill with localized lantern pools, preserving calm tonal separation and meditative shadow structure.
-  material_texture: Raked matte texture, cool stone, fibrous natural grain, and plain ritual cloth with minimal ornament.
-  render_quality: High-clarity contemplative rendering emphasizing breath rhythm, posture precision, and uncluttered focal hierarchy.
-  spatial_distortion: Symmetric framing with gentle depth compression that turns space into a concentration mandala.
-  atmosphere: Discipline, inward stillness, and ritual force contained before release.
+  aesthetic: >-
+    Ascetic contemplative style combining monastic serenity with latent kinetic potential and spiritual
+    discipline.
+  subject_treatment: >-
+    Fine calligraphic contours, circular stance geometries, and motion trajectories implied through restrained
+    directional line cues.
+  color_and_tone: Moonlit cobalt, brushed silver, desaturated pine green, and warm paper-lantern micro-accents.
+  lighting_and_shadow: >-
+    Soft lunar top fill with localized lantern pools, preserving calm tonal separation and meditative shadow
+    structure.
+  texture_and_material: Raked matte texture, cool stone, fibrous natural grain, and plain ritual cloth with minimal ornament.
+  camera_and_composition: Symmetric framing with gentle depth compression that turns space into a concentration mandala.
+  atmosphere_and_mood: Discipline, inward stillness, and ritual force contained before release.
+  rendering_and_quality: >-
+    High-clarity contemplative rendering emphasizing breath rhythm, posture precision, and uncluttered focal
+    hierarchy.
   key_features: Circular discipline marks, deliberate stance transitions, moon-axis alignment, and measured quiet.
   creative_brief: >-
-    Build a reusable moonlit ascetic discipline grammar for any subject:
-    meditative symmetry, restrained line economy, circular motion cues, and
-    moonlit discipline without imposing monks, blades, temples, courtyards,
+    Build a reusable moonlit ascetic discipline grammar for any subject: meditative symmetry, restrained line
+    economy, circular motion cues, and moonlit discipline without imposing monks, blades, temples, courtyards,
     arenas, training marks, or martial scenes.
 avoidRules:
   - photoreal

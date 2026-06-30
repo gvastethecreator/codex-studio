@@ -13,15 +13,19 @@ tags:
   - animation-styles
 visualDna:
   aesthetic: 16-bit pixel animation
-  form_and_line: Pixel outline
-  color_palette: Limited palette, 16-color, SNES spec, indexed shades, CRT phosphor
-  lighting_setup: Dithered, checkerboard blend, 50% pattern, sprite highlight
-  material_texture: Pixel grid, visible aliasing, blocky charm, scanline overlay
-  render_quality: Retro game, sprite-sheet precision, tile-map aesthetic
-  spatial_distortion: Sprite squash, 8-direction limitation, walk-cycle snap
-  atmosphere: Nostalgic, game, 16-bit constraint, handcrafted sprite logic
+  subject_treatment: Pixel outline
+  color_and_tone: Limited palette, 16-color, SNES spec, indexed shades, CRT phosphor
+  lighting_and_shadow: Dithered, checkerboard blend, 50% pattern, sprite highlight
+  texture_and_material: Pixel grid, visible aliasing, blocky charm, scanline overlay
+  camera_and_composition: Sprite squash, 8-direction limitation, walk-cycle snap
+  atmosphere_and_mood: Nostalgic, game, 16-bit constraint, handcrafted sprite logic
+  rendering_and_quality: Retro game, sprite-sheet precision, tile-map aesthetic
   key_features: Grid lock, pixel-perfect edges, indexed palette, dither ramps, CRT phosphor
-  creative_brief: 'Convert any subject into 16-bit pixel animation grammar: visible grid, indexed palette, crisp aliasing, dithered shade ramps, tile-like structure, and CRT phosphor glow. Do not add HUDs, dialogue boxes, heroes, kingdoms, or genre scenes unless already requested. Each pixel should feel deliberately placed under hardware-era constraints.'
+  creative_brief: >-
+    Convert any subject into 16-bit pixel animation grammar: visible grid, indexed palette, crisp aliasing,
+    dithered shade ramps, tile-like structure, and CRT phosphor glow. Do not add HUDs, dialogue boxes, heroes,
+    kingdoms, or genre scenes unless already requested. Each pixel should feel deliberately placed under
+    hardware-era constraints.
 avoidRules:
   - vector
   - smooth

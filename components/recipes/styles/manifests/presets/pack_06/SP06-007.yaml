@@ -13,19 +13,18 @@ tags:
   - traditional-painting
 visualDna:
   aesthetic: Italian wall fresco
-  form_and_line: Integrated into plaster
-  color_palette: Earthy, desaturated, matte
-  lighting_setup: Natural ambient
-  material_texture: Plaster cracks, wall texture
-  render_quality: Ancient, architectural
-  spatial_distortion: Faded areas
-  atmosphere: Historic, grand
+  subject_treatment: Integrated into plaster
+  color_and_tone: Earthy, desaturated, matte
+  lighting_and_shadow: Natural ambient
+  texture_and_material: Plaster cracks, wall texture
+  camera_and_composition: Faded areas
+  atmosphere_and_mood: Historic, grand
+  rendering_and_quality: Ancient, architectural
   key_features: Plaster texture
   creative_brief: >-
-    Apply fresco wall-painting materiality to any input: pigment absorbed into
-    plaster, mineral matte color, hairline cracks, worn lime surface, and aged
-    architectural permanence. Keep wall-bound durability without requiring
-    murals, churches, ruins, figures, or literal architecture.
+    Apply fresco wall-painting materiality to any input: pigment absorbed into plaster, mineral matte color,
+    hairline cracks, worn lime surface, and aged architectural permanence. Keep wall-bound durability without
+    requiring murals, churches, ruins, figures, or literal architecture.
 avoidRules:
   - photo
   - realistic
@@ -45,7 +44,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP06-007.webp
 attributes:
-  negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border
+  negativePrompt: >-
+    photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy,
+    watermark, text, signature, frame, border
 taxonomy:
   packId: pack_06
   packName: Essential Art Styles

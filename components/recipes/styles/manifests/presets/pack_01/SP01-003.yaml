@@ -21,9 +21,8 @@ visualDna:
   atmosphere_and_mood: Informative, personal, narrative-driven, authentic
   rendering_and_quality: Editorial magazine quality, high resolution, crisp details
   creative_brief: >-
-    Apply environmental portrait logic to any subject: contextual clues,
-    balanced subject-background exposure, narrative texture, and editorial
-    realism without forcing a workspace, room, props, or human sitter.
+    Apply environmental portrait logic to any subject: contextual clues, balanced subject-background exposure,
+    narrative texture, and editorial realism without forcing a workspace, room, props, or human sitter.
 avoidRules:
   - illustration
   - painting
@@ -43,7 +42,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP01-003.webp
 attributes:
-  negativePrompt: illustration, painting, drawing, 3d render, cartoon, anime, sketch, blurry, noisy, low resolution, watermark, text, signature, bad anatomy, deformed
+  negativePrompt: >-
+    illustration, painting, drawing, 3d render, cartoon, anime, sketch, blurry, noisy, low resolution,
+    watermark, text, signature, bad anatomy, deformed
 taxonomy:
   packId: pack_01
   packName: Photography & Realism

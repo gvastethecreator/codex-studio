@@ -13,15 +13,19 @@ tags:
   - natural-materials
 visualDna:
   aesthetic: Dragon-hide armor
-  form_and_line: Thick scales
-  color_palette: Red/Gold/Black
-  lighting_setup: Metallic sheen
-  material_texture: Hard, armored
-  render_quality: Fantasy, tough
-  spatial_distortion: Spiked
-  atmosphere: Epic, dangerous
+  subject_treatment: Thick scales
+  color_and_tone: Red/Gold/Black
+  lighting_and_shadow: Metallic sheen
+  texture_and_material: Hard, armored
+  camera_and_composition: Spiked
+  atmosphere_and_mood: Epic, dangerous
+  rendering_and_quality: Fantasy, tough
   key_features: Overlapping armor
-  creative_brief: 'Apply dragon-hide armor as legendary surface language: thick overlapping red-gold-obsidian scales, ridged crests with metallic sheen, dark shadow between plates, and ancient indestructible weight. If character, creature, armor, vehicle, or object exists, give it dragon-scale protection; otherwise use scale plating as fantasy material without requiring a dragon.'
+  creative_brief: >-
+    Apply dragon-hide armor as legendary surface language: thick overlapping red-gold-obsidian scales, ridged
+    crests with metallic sheen, dark shadow between plates, and ancient indestructible weight. If character,
+    creature, armor, vehicle, or object exists, give it dragon-scale protection; otherwise use scale plating
+    as fantasy material without requiring a dragon.
 avoidRules:
   - fish scale
 assets:

@@ -13,20 +13,24 @@ tags:
   - micro-macro
 visualDna:
   aesthetic: Thread zoom, textile-macro, fabric-architecture, weaver-close-up, cloth-landscape
-  form_and_line: Individual fibers, twist-ply helix, warp-weft grid, filament-strand, staple-fiber end
-  color_palette: Thread color, indigo-denim, linen-natural, wool-heathered, silk-ivory, yarn-dyed spectrum
-  lighting_setup: Soft, raking-light across weave, thread-sheen catch, flat-diffuse, fiber-shadow
-  material_texture: Fuzzy, cotton-fiber, wool-crimp, silk-filament smoothness, microfiber-split, pilling-balls, staple-end tufts
-  render_quality: Tactile, soft, textile-grid, weave-architecture, close-look, fiber-beauty
-  spatial_distortion: Weave pattern, plain-weave grid, twill-diagonal, satin-float, knit-loop, stitch-v
-  atmosphere: Cozy, close, fabric-store, textile-tradition, thread-history, warp-weighted loom
-  key_features: Threads, warp-weft intersection, fiber-halo fuzz, pilling-balls, weave-structure, knit-stitch, selvage-edge
+  subject_treatment: Individual fibers, twist-ply helix, warp-weft grid, filament-strand, staple-fiber end
+  color_and_tone: Thread color, indigo-denim, linen-natural, wool-heathered, silk-ivory, yarn-dyed spectrum
+  lighting_and_shadow: Soft, raking-light across weave, thread-sheen catch, flat-diffuse, fiber-shadow
+  texture_and_material: >-
+    Fuzzy, cotton-fiber, wool-crimp, silk-filament smoothness, microfiber-split, pilling-balls, staple-end
+    tufts
+  camera_and_composition: Weave pattern, plain-weave grid, twill-diagonal, satin-float, knit-loop, stitch-v
+  atmosphere_and_mood: Cozy, close, fabric-store, textile-tradition, thread-history, warp-weighted loom
+  rendering_and_quality: Tactile, soft, textile-grid, weave-architecture, close-look, fiber-beauty
+  key_features: >-
+    Threads, warp-weft intersection, fiber-halo fuzz, pilling-balls, weave-structure, knit-stitch,
+    selvage-edge
   creative_brief: >-
-    Build textile macro studies from visible warp-weft architecture, ply twist detail, and raking-light fiber halo. Keep
-    tactile weave logic central so the style applies across fabrics, garments, and material studies. Apply Fiber/Fabric
-    Macro as a portable style system over any input: preserve its construction grammar, material cues, scale logic, and
-    signature rendering behavior while avoiding a required franchise, literal prop, fixed specimen, classroom sample,
-    product shot, or scene template.
+    Build textile macro studies from visible warp-weft architecture, ply twist detail, and raking-light fiber
+    halo. Keep tactile weave logic central so the style applies across fabrics, garments, and material
+    studies. Apply Fiber/Fabric Macro as a portable style system over any input: preserve its construction
+    grammar, material cues, scale logic, and signature rendering behavior while avoiding a required franchise,
+    literal prop, fixed specimen, classroom sample, product shot, or scene template.
 avoidRules:
   - smooth
 assets:

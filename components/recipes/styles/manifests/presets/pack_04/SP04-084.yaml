@@ -13,18 +13,18 @@ tags:
   - concept-art
 visualDna:
   aesthetic: Material-study board integrating design sketch and comparative swatches
-  form_and_line: Precise contour drawing with leader-line callouts and inset annotations
-  color_palette: Material-true hues organized by functional group
-  lighting_setup: Consistent neutral studio lighting for cross-material comparison
-  material_texture: Macro texture insets (grain, weave, brushed metal, translucency, patina)
-  render_quality: Technical-art hybrid sheet optimized for readability and handoff
-  spatial_distortion: Orthogonal layout with magnified callout circles and structured grid spacing
-  atmosphere: Analytical, didactic, workshop-reference clarity
+  subject_treatment: Precise contour drawing with leader-line callouts and inset annotations
+  color_and_tone: Material-true hues organized by functional group
+  lighting_and_shadow: Consistent neutral studio lighting for cross-material comparison
+  texture_and_material: Macro texture insets (grain, weave, brushed metal, translucency, patina)
+  camera_and_composition: Orthogonal layout with magnified callout circles and structured grid spacing
+  atmosphere_and_mood: Analytical, didactic, workshop-reference clarity
+  rendering_and_quality: Technical-art hybrid sheet optimized for readability and handoff
   key_features: Swatch matrix, labeled material zones, detail zooms, controlled comparison framework
   creative_brief: >-
     Apply material-texture exploration-sheet logic to any input: surface swatches, edge tests, wear patterns,
-    reflectance notes as visual marks, close-up inserts, and material contrast. It can stylize objects, characters,
-    spaces, or abstractions without requiring labels, a product board, or literal texture samples.
+    reflectance notes as visual marks, close-up inserts, and material contrast. It can stylize objects,
+    characters, spaces, or abstractions without requiring labels, a product board, or literal texture samples.
 avoidRules:
   - uniform
   - single material
@@ -38,7 +38,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP04-084.webp
 attributes:
-  negativePrompt: uniform, single material, untextured, flat, smooth, same everywhere, homogeneous, finished piece, single surface
+  negativePrompt: >-
+    uniform, single material, untextured, flat, smooth, same everywhere, homogeneous, finished piece, single
+    surface
 taxonomy:
   packId: pack_04
   packName: Illustration & Graphic Novel

@@ -13,34 +13,30 @@ tags:
   - slice-of-life-and-moe
 visualDna:
   aesthetic: >-
-    Looped-routine healing anime built from reflective repetition, inherited care, practical hobby
-    rhythm, and pastel emotional repair
-  form_and_line: >-
-    Gentle looping paths, threadlike contours, close relational spacing, hand-activity softness, and
-    calm curved composition
-  color_palette: >-
-    Water pastel blue, grassy green, outdoor neutral, lure-bright micro accents, soft coral, and
-    evening amber warmth
-  lighting_setup: >-
-    Reflective daylight fill, cloud diffusion, small glints, and low-contrast warmth around repeated
-    actions
-  material_texture: >-
-    Nylon-line sheen, cork grain, damp stone matte, knit layers, lunch-wrap softness, and quiet
-    hobby tactility
-  render_quality: >-
-    Pastoral-healing anime finish with practical detail, calm relational warmth, and restorative
-    pacing
-  spatial_distortion: >-
-    Looped visual paths and eased depth that suggest reflection, repetition, and gentle repair
-    across any subject
-  atmosphere: Pastoral, healing, tender, quiet, patient
+    Looped-routine healing anime built from reflective repetition, inherited care, practical hobby rhythm, and
+    pastel emotional repair
+  subject_treatment: >-
+    Gentle looping paths, threadlike contours, close relational spacing, hand-activity softness, and calm
+    curved composition
+  color_and_tone: >-
+    Water pastel blue, grassy green, outdoor neutral, lure-bright micro accents, soft coral, and evening amber
+    warmth
+  lighting_and_shadow: Reflective daylight fill, cloud diffusion, small glints, and low-contrast warmth around repeated actions
+  texture_and_material: >-
+    Nylon-line sheen, cork grain, damp stone matte, knit layers, lunch-wrap softness, and quiet hobby
+    tactility
+  camera_and_composition: >-
+    Looped visual paths and eased depth that suggest reflection, repetition, and gentle repair across any
+    subject
+  atmosphere_and_mood: Pastoral, healing, tender, quiet, patient
+  rendering_and_quality: Pastoral-healing anime finish with practical detail, calm relational warmth, and restorative pacing
   key_features: >-
-    Loop motifs, repeated-care rhythm, soft outdoor texture, inherited routine, reflective calm, and
-    close emotional spacing
+    Loop motifs, repeated-care rhythm, soft outdoor texture, inherited routine, reflective calm, and close
+    emotional spacing
   creative_brief: >-
-    Use Slow Loop as style anchor for looped-routine healing. Any prompt should feel repaired
-    through gentle repetition: curved paths, tactile hobby detail, pastel calm, and inherited care.
-    Fishing gear, rivers, siblings, and waterfront scenes are optional.
+    Use Slow Loop as style anchor for looped-routine healing. Any prompt should feel repaired through gentle
+    repetition: curved paths, tactile hobby detail, pastel calm, and inherited care. Fishing gear, rivers,
+    siblings, and waterfront scenes are optional.
 avoidRules:
   - realistic
   - 3d render
@@ -58,8 +54,8 @@ assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-215.webp
 attributes:
   negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, text, signature
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts,
+    watermark, text, signature
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle

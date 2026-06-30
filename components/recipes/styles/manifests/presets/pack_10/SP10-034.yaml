@@ -13,15 +13,19 @@ tags:
   - surrealism-and-dream
 visualDna:
   aesthetic: Nostalgic nightmare
-  form_and_line: Soft
-  color_palette: Pastel, bloom
-  lighting_setup: Overexposed
-  material_texture: Low res photo
-  render_quality: Internet aesthetic
-  spatial_distortion: Familiarity drift
-  atmosphere: Nostalgic, wrong
+  subject_treatment: Soft
+  color_and_tone: Pastel, bloom
+  lighting_and_shadow: Overexposed
+  texture_and_material: Low res photo
+  camera_and_composition: Familiarity drift
+  atmosphere_and_mood: Nostalgic, wrong
+  rendering_and_quality: Internet aesthetic
   key_features: Pastel wrongness
-  creative_brief: Apply dreamcore as nostalgic wrongness over the input with overexposed pastel bloom, low-res-photo softness, familiar forms slightly misremembered, cheerful daylight turning uneasy, and impossible symbolic intrusions. If house, yard, toy, sky, or childhood cue exists, bend it; otherwise make the subject feel like a corrupted memory without requiring a domestic setting.
+  creative_brief: >-
+    Apply dreamcore as nostalgic wrongness over the input with overexposed pastel bloom, low-res-photo
+    softness, familiar forms slightly misremembered, cheerful daylight turning uneasy, and impossible symbolic
+    intrusions. If house, yard, toy, sky, or childhood cue exists, bend it; otherwise make the subject feel
+    like a corrupted memory without requiring a domestic setting.
 avoidRules:
   - realism
   - dark

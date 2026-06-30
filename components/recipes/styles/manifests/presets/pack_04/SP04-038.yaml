@@ -13,19 +13,18 @@ tags:
   - editorial-and-poster
 visualDna:
   aesthetic: WPA-inspired national-park travel poster screenprint language
-  form_and_line: Simplified landscape silhouettes with strong horizon stratification
-  color_palette: Earth-toned separated inks with limited scenic band gradients
-  lighting_setup: Stylized day-phase color banding rather than realistic light physics
-  material_texture: Screen mesh print feel with flat-ink layering
-  render_quality: Bold vintage poster clarity with monumental scenic abstraction
-  spatial_distortion: Simplified mountain masses and compressed depth tiers
-  atmosphere: Majestic, nostalgic, civic-romantic
+  subject_treatment: Simplified landscape silhouettes with strong horizon stratification
+  color_and_tone: Earth-toned separated inks with limited scenic band gradients
+  lighting_and_shadow: Stylized day-phase color banding rather than realistic light physics
+  texture_and_material: Screen mesh print feel with flat-ink layering
+  camera_and_composition: Simplified mountain masses and compressed depth tiers
+  atmosphere_and_mood: Majestic, nostalgic, civic-romantic
+  rendering_and_quality: Bold vintage poster clarity with monumental scenic abstraction
   key_features: Serif titling, horizontal strata, landmark silhouette simplification
   creative_brief: >-
-    Apply WPA travel-poster screenprint grammar to any input: simplified landmark-like silhouettes,
-    horizon strata, limited earth-tone inks, flat scenic banding, and civic nostalgia should create
-    poster majesty without requiring national parks, mountains, titles, specific landmarks, or
-    travel ads.
+    Apply WPA travel-poster screenprint grammar to any input: simplified landmark-like silhouettes, horizon
+    strata, limited earth-tone inks, flat scenic banding, and civic nostalgia should create poster majesty
+    without requiring national parks, mountains, titles, specific landmarks, or travel ads.
 avoidRules:
   - photo
   - detailed

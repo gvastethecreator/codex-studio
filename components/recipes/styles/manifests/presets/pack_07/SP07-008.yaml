@@ -13,36 +13,37 @@ tags:
   - interior-design-systems
 visualDna:
   aesthetic: >-
-    Japanese Zen within 1. Interior Design Systems: a reusable Architecture & Interior visual language with a clear
-    stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects
-    while preserving Japanese Zen's specific style identity.
-  form_and_line: >-
-    Define Japanese Zen through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable
-    beyond one literal scene.
-  color_palette: >-
-    Use a Japanese Zen-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and
-    avoid generic color wash.
-  lighting_setup: >-
-    Use lighting that makes Japanese Zen recognizable: purposeful key, rim, bounce, shadow, and glow behavior with
-    readable hierarchy.
-  material_texture: >-
-    Use materials and textures that reinforce Japanese Zen: surface response, grain, patina, polish, or wear should feel
-    intentional and style-defining.
-  render_quality: >-
-    Render Japanese Zen with high production clarity, strong silhouette reads, clean detail priority, and no accidental
-    UI, text, logos, or watermark.
-  spatial_distortion: >-
-    Use spatial behavior that fits Japanese Zen: perspective, compression, exaggeration, or depth should support the
-    style without forcing one fixed location.
-  atmosphere: >-
-    Set a mood that belongs to Japanese Zen: specific, coherent, and distinct, with emotional tone carried by visual
-    systems rather than narrative captioning.
+    Japanese Zen within 1. Interior Design Systems: a reusable Architecture & Interior visual language with a
+    clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable
+    across subjects while preserving Japanese Zen's specific style identity.
+  subject_treatment: >-
+    Define Japanese Zen through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional,
+    and reusable beyond one literal scene.
+  color_and_tone: >-
+    Use a Japanese Zen-specific palette with clear dominant, secondary, and accent roles. Keep contrast
+    deliberate and avoid generic color wash.
+  lighting_and_shadow: >-
+    Use lighting that makes Japanese Zen recognizable: purposeful key, rim, bounce, shadow, and glow behavior
+    with readable hierarchy.
+  texture_and_material: >-
+    Use materials and textures that reinforce Japanese Zen: surface response, grain, patina, polish, or wear
+    should feel intentional and style-defining.
+  camera_and_composition: >-
+    Use spatial behavior that fits Japanese Zen: perspective, compression, exaggeration, or depth should
+    support the style without forcing one fixed location.
+  atmosphere_and_mood: >-
+    Set a mood that belongs to Japanese Zen: specific, coherent, and distinct, with emotional tone carried by
+    visual systems rather than narrative captioning.
+  rendering_and_quality: >-
+    Render Japanese Zen with high production clarity, strong silhouette reads, clean detail priority, and no
+    accidental UI, text, logos, or watermark.
   key_features: >-
-    Prioritize Japanese Zen's key features: recognizable shape language, palette logic, material cues, lighting
-    behavior, and composition rules.
+    Prioritize Japanese Zen's key features: recognizable shape language, palette logic, material cues,
+    lighting behavior, and composition rules.
   creative_brief: >-
-    Create a style-card that translates Japanese Zen into a portable visual system for 1. Interior Design Systems.
-    Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.
+    Create a style-card that translates Japanese Zen into a portable visual system for 1. Interior Design
+    Systems. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or
+    story beat.
 avoidRules:
   - clutter
   - western

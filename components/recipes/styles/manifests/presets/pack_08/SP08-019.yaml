@@ -13,18 +13,20 @@ tags:
   - contemporary-fashion
 visualDna:
   aesthetic: Professional daywear, boardroom calm, corporate-modern uniformity
-  form_and_line: Tailored, single-breasted structure, notch-lapel precision, tapered trouser, shift-dress column
-  color_palette: Blue, White, Beige, navy suiting, French blue, soft white, sand, dove grey
-  lighting_setup: Window-filtered daylight, soft professional overhead, lobby-neutral glow
-  material_texture: Cotton poplin, tropical wool suiting, stretch-cotton twill, silk habotai lining, ponte knit
-  render_quality: Professional competent polish, low-risk clarity, workplace-ready finish
-  spatial_distortion: None
-  atmosphere: Professional calm, deadline focus, competent neutrality, low-risk polish
+  subject_treatment: Tailored, single-breasted structure, notch-lapel precision, tapered trouser, shift-dress column
+  color_and_tone: Blue, White, Beige, navy suiting, French blue, soft white, sand, dove grey
+  lighting_and_shadow: Window-filtered daylight, soft professional overhead, lobby-neutral glow
+  texture_and_material: Cotton poplin, tropical wool suiting, stretch-cotton twill, silk habotai lining, ponte knit
+  camera_and_composition: >-
+    Compose for Business Casual using its key spatial cues: Blazer, structured shoulder, tapered trouser line,
+    polished leather accessory cues.
+  atmosphere_and_mood: Professional calm, deadline focus, competent neutrality, low-risk polish
+  rendering_and_quality: Professional competent polish, low-risk clarity, workplace-ready finish
   key_features: Blazer, structured shoulder, tapered trouser line, polished leather accessory cues
   creative_brief: >-
     Dress the input in business-casual competence: navy suiting, poplin, tropical wool, notch-lapel geometry,
-    structured shoulders and soft neutral whites. Keep office authority as tone only, not as a conference room,
-    headshot crop, portfolio-bag vignette, executive persona or fixed corporate character.
+    structured shoulders and soft neutral whites. Keep office authority as tone only, not as a conference
+    room, headshot crop, portfolio-bag vignette, executive persona or fixed corporate character.
 avoidRules:
   - t-shirt
   - shorts

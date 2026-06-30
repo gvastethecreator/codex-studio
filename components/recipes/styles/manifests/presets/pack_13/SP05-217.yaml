@@ -15,30 +15,26 @@ visualDna:
   aesthetic: >-
     Rough ideation anime where preproduction sketches, invented mechanics, annotated energy, and
     imagination-over-reality motion become visual grammar
-  form_and_line: >-
-    Scratchy concept lines, annotation boxes without readable text, schematic arrows, mechanical
-    doodle density, and high-energy blocking
-  color_palette: >-
-    Graphite neutral, marker red, idea yellow, craft-paper tan, blueprint cyan, and rare neon
-    invention sparks
-  lighting_setup: Harsh practical baseline with fantasy-cutaway spot accents and layer-separated imagination glow
-  material_texture: >-
-    Draft paper fiber, marker bleed, tape, cardboard mockup tactility, scuffed utility surfaces, and
-    pencil correction marks
-  render_quality: >-
-    Raw preproduction anime finish with kinetic invention readability, expressive roughness, and
-    visible design thinking
-  spatial_distortion: >-
-    Abrupt scale jumps, cutaway layers, schematic perspective, and sketch-space expansion around any
-    subject
-  atmosphere: Inventive, kinetic, nerdy, scrappy, spirited
+  subject_treatment: >-
+    Scratchy concept lines, annotation boxes without readable text, schematic arrows, mechanical doodle
+    density, and high-energy blocking
+  color_and_tone: Graphite neutral, marker red, idea yellow, craft-paper tan, blueprint cyan, and rare neon invention sparks
+  lighting_and_shadow: Harsh practical baseline with fantasy-cutaway spot accents and layer-separated imagination glow
+  texture_and_material: >-
+    Draft paper fiber, marker bleed, tape, cardboard mockup tactility, scuffed utility surfaces, and pencil
+    correction marks
+  camera_and_composition: Abrupt scale jumps, cutaway layers, schematic perspective, and sketch-space expansion around any subject
+  atmosphere_and_mood: Inventive, kinetic, nerdy, scrappy, spirited
+  rendering_and_quality: >-
+    Raw preproduction anime finish with kinetic invention readability, expressive roughness, and visible
+    design thinking
   key_features: >-
-    Sketch overlays, concept cutaways, annotation rhythm, build-from-scratch energy, rough draft
-    texture, and motion imagination
+    Sketch overlays, concept cutaways, annotation rhythm, build-from-scratch energy, rough draft texture, and
+    motion imagination
   creative_brief: >-
-    Use Eizouken as style anchor for rough-ideation motion overlay. Any prompt should look like it
-    is being invented live: sketch layers, schematic cutaways, marker energy, and practical
-    imagination. Students, clubrooms, sketchbooks, and school props are optional.
+    Use Eizouken as style anchor for rough-ideation motion overlay. Any prompt should look like it is being
+    invented live: sketch layers, schematic cutaways, marker energy, and practical imagination. Students,
+    clubrooms, sketchbooks, and school props are optional.
 avoidRules:
   - realistic
   - 3d render
@@ -56,8 +52,8 @@ assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-217.webp
 attributes:
   negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, text, signature
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts,
+    watermark, text, signature
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle

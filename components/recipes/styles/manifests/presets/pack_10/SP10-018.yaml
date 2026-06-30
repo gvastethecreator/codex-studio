@@ -13,18 +13,17 @@ tags:
   - fluid-and-organic
 visualDna:
   aesthetic: Turing pattern
-  form_and_line: Stripes and spots
-  color_palette: Two tone
-  lighting_setup: Flat
-  material_texture: Biological
-  render_quality: Generative, math
-  spatial_distortion: None
-  atmosphere: Hypnotic, natural
+  subject_treatment: Stripes and spots
+  color_and_tone: Two tone
+  lighting_and_shadow: Flat
+  texture_and_material: Biological
+  camera_and_composition: 'Compose for Reaction Diffusion using its key spatial cues: Fingerprint pattern.'
+  atmosphere_and_mood: Hypnotic, natural
+  rendering_and_quality: Generative, math
   key_features: Fingerprint pattern
   creative_brief: >-
-    Apply reaction-diffusion patterning to the input: chemical stripes, spots,
-    wave fronts, and competing growth fields should generate organic complexity
-    across surfaces without requiring animal bodies.
+    Apply reaction-diffusion patterning to the input: chemical stripes, spots, wave fronts, and competing
+    growth fields should generate organic complexity across surfaces without requiring animal bodies.
 avoidRules:
   - random noise
 assets:

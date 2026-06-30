@@ -21,9 +21,8 @@ visualDna:
   atmosphere_and_mood: Beautiful, expensive, alluring, polished, high-end
   rendering_and_quality: Magazine cover quality, heavily retouched, 8k resolution, hyper-realistic
   creative_brief: >-
-    Apply glamour-shot polish to any subject: beauty-dish softness, luxury
-    texture, jewel-box highlights, saturated editorial color, and manufactured
-    perfection without requiring facial anatomy.
+    Apply glamour-shot polish to any subject: beauty-dish softness, luxury texture, jewel-box highlights,
+    saturated editorial color, and manufactured perfection without requiring facial anatomy.
 avoidRules:
   - illustration
   - painting
@@ -43,7 +42,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP01-004.webp
 attributes:
-  negativePrompt: illustration, painting, drawing, 3d render, cartoon, anime, sketch, blurry, noisy, low resolution, watermark, text, signature, bad anatomy, deformed
+  negativePrompt: >-
+    illustration, painting, drawing, 3d render, cartoon, anime, sketch, blurry, noisy, low resolution,
+    watermark, text, signature, bad anatomy, deformed
 taxonomy:
   packId: pack_01
   packName: Photography & Realism

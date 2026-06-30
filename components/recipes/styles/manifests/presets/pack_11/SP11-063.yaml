@@ -13,16 +13,22 @@ tags:
   - micro-macro
 visualDna:
   aesthetic: Corrosion zoom, oxidation-portrait, time-texture, rust-patina, wreck-beauty
-  form_and_line: Flaking paint, paint-blister edges, rust-bubbling contour, crack-propagation fractal, peeling-layers
-  color_palette: Orange, Brown, iron-oxide spectrum, verdigris-green, zinc-white bloom, crust-brown, patina-teal
-  lighting_setup: Rough, raking-side-light, texture-reveal shadow, overcast-diffusion, afternoon-grazing sun
-  material_texture: Oxidation, bumps, iron-oxide crust, flaking-paint platelets, pitted-steel, efflorescence-crystal, patina-powder
-  render_quality: Texture, time, weathered-beauty, entropy-aesthetic, abandoned-place, wabi-sabi
-  spatial_distortion: Cracks, paint-blister domes, oxide-blister eruption, corrosion-front boundary, peeling-plateau
-  atmosphere: Old, textured, shipwreck-quiet, abandoned-corner, time-eats-everything, beautiful-decay
-  key_features: Flakes, paint-blister domes, oxide-stalactite drip, rust-bleed staining, crack-propagation network, peeling-edge curls, bubbled-paint texture
+  subject_treatment: Flaking paint, paint-blister edges, rust-bubbling contour, crack-propagation fractal, peeling-layers
+  color_and_tone: Orange, Brown, iron-oxide spectrum, verdigris-green, zinc-white bloom, crust-brown, patina-teal
+  lighting_and_shadow: Rough, raking-side-light, texture-reveal shadow, overcast-diffusion, afternoon-grazing sun
+  texture_and_material: >-
+    Oxidation, bumps, iron-oxide crust, flaking-paint platelets, pitted-steel, efflorescence-crystal,
+    patina-powder
+  camera_and_composition: Cracks, paint-blister domes, oxide-blister eruption, corrosion-front boundary, peeling-plateau
+  atmosphere_and_mood: Old, textured, shipwreck-quiet, abandoned-corner, time-eats-everything, beautiful-decay
+  rendering_and_quality: Texture, time, weathered-beauty, entropy-aesthetic, abandoned-place, wabi-sabi
+  key_features: >-
+    Flakes, paint-blister domes, oxide-stalactite drip, rust-bleed staining, crack-propagation network,
+    peeling-edge curls, bubbled-paint texture
   creative_brief: >-
-    Emphasize corrosion aesthetics through oxide blooms, paint blistering, and layered substrate exposure under grazing light. Keep entropy, patina, and material aging as reusable style anchors across industrial surfaces.
+    Emphasize corrosion aesthetics through oxide blooms, paint blistering, and layered substrate exposure
+    under grazing light. Keep entropy, patina, and material aging as reusable style anchors across industrial
+    surfaces.
 avoidRules:
   - clean
   - eye

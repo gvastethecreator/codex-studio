@@ -103,6 +103,7 @@ describe('buildStudioJobRetryRequest', () => {
 
     const request = buildStudioJobRetryRequest(detail, {
       batchId: 'batch-retry-1',
+      now: () => 12345,
     });
 
     expect(request).toEqual({
@@ -117,7 +118,7 @@ describe('buildStudioJobRetryRequest', () => {
       },
       references: [],
       sourceSpec: expect.objectContaining({
-        id: 'spec-1',
+        id: 'spec-batch-retry-1-1-12345',
         prompt: 'Retry this scene',
         assets: [
           expect.objectContaining({
@@ -163,8 +164,12 @@ describe('buildStudioJobRetryRequest', () => {
       },
     });
 
-    const request = buildStudioJobRetryRequest(detail, { batchId: 'batch-retry-inline' });
+    const request = buildStudioJobRetryRequest(detail, {
+      batchId: 'batch-retry-inline',
+      now: () => 23456,
+    });
 
+    expect(request.sourceSpec?.id).toBe('spec-batch-retry-inline-1-23456');
     expect(request.references).toEqual([
       {
         name: 'uploaded.png',

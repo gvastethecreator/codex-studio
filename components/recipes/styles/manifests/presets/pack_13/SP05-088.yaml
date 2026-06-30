@@ -13,34 +13,32 @@ tags:
   - slice-of-life-and-moe
 visualDna:
   aesthetic: >-
-    Domestic-fantasy anime chaos where mythic scale collides with affectionate routine, cozy order,
-    and bright magical interruption
-  form_and_line: >-
-    Soft comfort contours mixed with creature-adjacent exaggeration, scale-contrast blocking, and
-    expressive ensemble interaction
-  color_palette: >-
-    Warm cream, wood brown, pastel comfort hues, vivid creature accents, magical cyan, and
-    affectionate pink highlights
-  lighting_setup: >-
+    Domestic-fantasy anime chaos where mythic scale collides with affectionate routine, cozy order, and bright
+    magical interruption
+  subject_treatment: >-
+    Soft comfort contours mixed with creature-adjacent exaggeration, scale-contrast blocking, and expressive
+    ensemble interaction
+  color_and_tone: >-
+    Warm cream, wood brown, pastel comfort hues, vivid creature accents, magical cyan, and affectionate pink
+    highlights
+  lighting_and_shadow: >-
     Cozy practicals, daylight fill, warm evening pools, and sudden magical spill highlights during
     interruption beats
-  material_texture: >-
+  texture_and_material: >-
     Lived-in comfort surfaces, gentle gloss, textile softness, scale/wing-like abstract accents, and
     integrated magical shimmer
-  render_quality: >-
-    Heartwarming fantasy-comedy anime finish balancing routine detail, interruption energy, and
-    readable affection
-  spatial_distortion: >-
-    Grounded comfort-space perspective with mild warps during magical or comedic escalation around
-    any subject
-  atmosphere: Whimsical, lively, affectionate, comfort-chaotic, bright
+  camera_and_composition: Grounded comfort-space perspective with mild warps during magical or comedic escalation around any subject
+  atmosphere_and_mood: Whimsical, lively, affectionate, comfort-chaotic, bright
+  rendering_and_quality: >-
+    Heartwarming fantasy-comedy anime finish balancing routine detail, interruption energy, and readable
+    affection
   key_features: >-
-    Everyday-scale contrast, cozy magical interruption, ensemble warmth, creature-adjacent accents,
-    and routine-chaos rhythm
+    Everyday-scale contrast, cozy magical interruption, ensemble warmth, creature-adjacent accents, and
+    routine-chaos rhythm
   creative_brief: >-
-    Use Dragon Maid as style anchor for domestic-fantasy scale chaos. Any prompt should mix warm
-    routine with impossible scale, affectionate interruption, and cozy magical color. Apartments,
-    kitchens, dragons, household props, and specific creatures are optional.
+    Use Dragon Maid as style anchor for domestic-fantasy scale chaos. Any prompt should mix warm routine with
+    impossible scale, affectionate interruption, and cozy magical color. Apartments, kitchens, dragons,
+    household props, and specific creatures are optional.
 avoidRules:
   - realistic
   - 3d render
@@ -58,8 +56,8 @@ assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-088.webp
 attributes:
   negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, text, signature
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts,
+    watermark, text, signature
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle

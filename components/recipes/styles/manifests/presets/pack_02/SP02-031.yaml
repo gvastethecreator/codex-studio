@@ -13,15 +13,19 @@ tags:
   - animation-styles
 visualDna:
   aesthetic: Hand-inked storybook cel animation, Snow White style, multiplane depth, painted fairy-tale finish
-  form_and_line: Hand inked
-  color_palette: Technicolor paint, jewel tones, royal purple, lacquer red, warm gold, deep green accent
-  lighting_setup: Multiplane camera, dimensional depth, parallax lighting
-  material_texture: Cel paint, hand-inked acetate, watercolor background wash
-  render_quality: Masterpiece, fluid, full-animation, in-between perfection
-  spatial_distortion: Squash and stretch, elastic weight, cartoon physics
-  atmosphere: Magical, classic, storybook sincerity, ceremonial wonder
+  subject_treatment: Hand inked
+  color_and_tone: Technicolor paint, jewel tones, royal purple, lacquer red, warm gold, deep green accent
+  lighting_and_shadow: Multiplane camera, dimensional depth, parallax lighting
+  texture_and_material: Cel paint, hand-inked acetate, watercolor background wash
+  camera_and_composition: Squash and stretch, elastic weight, cartoon physics
+  atmosphere_and_mood: Magical, classic, storybook sincerity, ceremonial wonder
+  rendering_and_quality: Masterpiece, fluid, full-animation, in-between perfection
   key_features: Multiplane depth, inked contour, painted background layers, luminous cel separation
-  creative_brief: 'Treat any subject as a golden-age hand-inked feature cell: elegant silhouette, jewel-toned paint, dimensional multiplane stacking, and watercolor depth behind clean acetate forms. Beauty comes from disciplined line, luminous paint, and staged theatrical clarity rather than fixed fairy-tale content. Every element should feel brushed, inked, layered, and lit by classic studio craft.'
+  creative_brief: >-
+    Treat any subject as a golden-age hand-inked feature cell: elegant silhouette, jewel-toned paint,
+    dimensional multiplane stacking, and watercolor depth behind clean acetate forms. Beauty comes from
+    disciplined line, luminous paint, and staged theatrical clarity rather than fixed fairy-tale content.
+    Every element should feel brushed, inked, layered, and lit by classic studio craft.
 avoidRules:
   - 3d
   - digital

@@ -13,29 +13,20 @@ tags:
   - fantasy-and-mythic-architecture
 visualDna:
   aesthetic: Monumental ceremonial sepulchral gravity with mineral civic scale.
-  form_and_line: >-
-    Severe axiality, stepped masses, sealed chambers, lapidary grids and
-    contained ritual vertical accents.
-  color_palette: >-
-    Black basalt, bone-white marble, oxidized bronze, dim funerary gold,
-    spectral green haze, and bruised violet shadow fields
-  lighting_setup: >-
-    Low mineral glow, pale moon diffusion, contained spectral lanterns and
-    sealed-enclave volumetric haze.
-  material_texture: >-
-    Eroded ashlar, cracked marble, oxidized grates, ashen paving and carved
-    ossuary relief.
-  render_quality: >-
-    High-detail architectural dark fantasy with tonal restraint and oppressive
-    monumental readability.
-  spatial_distortion: Controlled processional depth with sepulchral compression.
-  atmosphere: Solemn, ritual and oppressive, with contained acoustic silence.
+  subject_treatment: Severe axiality, stepped masses, sealed chambers, lapidary grids and contained ritual vertical accents.
+  color_and_tone: >-
+    Black basalt, bone-white marble, oxidized bronze, dim funerary gold, spectral green haze, and bruised
+    violet shadow fields
+  lighting_and_shadow: Low mineral glow, pale moon diffusion, contained spectral lanterns and sealed-enclave volumetric haze.
+  texture_and_material: Eroded ashlar, cracked marble, oxidized grates, ashen paving and carved ossuary relief.
+  camera_and_composition: Controlled processional depth with sepulchral compression.
+  atmosphere_and_mood: Solemn, ritual and oppressive, with contained acoustic silence.
+  rendering_and_quality: High-detail architectural dark fantasy with tonal restraint and oppressive monumental readability.
   key_features: Processional rhythm, sealed chambers, runic wayfinding and massive thresholds.
   creative_brief: >-
-    Push any input toward sepulchral civic monumentality: processional axiality,
-    severe stone, low spectral light, oxidized bronze and sealed-threshold
-    hierarchy. Avoid requiring a cemetery, obelisk or literal crypt; preserve
-    portable architectural solemnity.
+    Push any input toward sepulchral civic monumentality: processional axiality, severe stone, low spectral
+    light, oxidized bronze and sealed-threshold hierarchy. Avoid requiring a cemetery, obelisk or literal
+    crypt; preserve portable architectural solemnity.
 avoidRules:
   - lush garden
   - cozy living space

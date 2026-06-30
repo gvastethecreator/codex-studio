@@ -12,20 +12,27 @@ tags:
   - anime-battle-and-worlds
   - dark-fantasy-and-seinen
 visualDna:
-  aesthetic: Blood-ink intensity, severance rhythm, weathered revenge pressure, period-grit abstraction, punishing brush detail, endurance as visual abrasion
-  form_and_line: Dense mature-anime linework, heavy crosshatching, weighted contour variation, gritty ink density
-  color_palette: Muted earths, blood reds, cold moonlit tones, desaturated horror palette, bruised shadow hues
-  lighting_setup: Ominous directional shadows, single-source drama light, deep chiaroscuro, low-key shadow lift
-  material_texture: Wet ink slash grain, mud-dark paper, worn cloth fiber, dry blood-brown stains, scratched metal flecks, weather-scoured grit
-  render_quality: Gritty dramatic anime frame, film-noir rendering, heavy shadow compression, textured midtone grit
-  spatial_distortion: Slash-led diagonals, brutal close cropping, brushstroke momentum, severed-frame spacing, harsh weather compression
-  atmosphere: Vengeful, weathered, severe, bloody
-  key_features: Ink-heavy slash marks, weathered grime, scar-detail abstraction, severe diagonal rhythm, revenge-pressure stillness
-  creative_brief: >
-    Render any subject with blood-ink severity: brush cuts, weathered grime,
-    scarred texture, and punishing detail should make the composition feel
-    irreversible without fixed period roles, travel narratives, props, or
-    revenge plot beats.
+  aesthetic: >-
+    Blood-ink intensity, severance rhythm, weathered revenge pressure, period-grit abstraction, punishing
+    brush detail, endurance as visual abrasion
+  subject_treatment: Dense mature-anime linework, heavy crosshatching, weighted contour variation, gritty ink density
+  color_and_tone: Muted earths, blood reds, cold moonlit tones, desaturated horror palette, bruised shadow hues
+  lighting_and_shadow: Ominous directional shadows, single-source drama light, deep chiaroscuro, low-key shadow lift
+  texture_and_material: >-
+    Wet ink slash grain, mud-dark paper, worn cloth fiber, dry blood-brown stains, scratched metal flecks,
+    weather-scoured grit
+  camera_and_composition: >-
+    Slash-led diagonals, brutal close cropping, brushstroke momentum, severed-frame spacing, harsh weather
+    compression
+  atmosphere_and_mood: Vengeful, weathered, severe, bloody
+  rendering_and_quality: Gritty dramatic anime frame, film-noir rendering, heavy shadow compression, textured midtone grit
+  key_features: >-
+    Ink-heavy slash marks, weathered grime, scar-detail abstraction, severe diagonal rhythm, revenge-pressure
+    stillness
+  creative_brief: >-
+    Render any subject with blood-ink severity: brush cuts, weathered grime, scarred texture, and punishing
+    detail should make the composition feel irreversible without fixed period roles, travel narratives, props,
+    or revenge plot beats.
 avoidRules:
   - realistic
   - 3d render
@@ -42,7 +49,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-267.webp
 attributes:
-  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
+  negativePrompt: >-
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts,
+    watermark, text, signature
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds

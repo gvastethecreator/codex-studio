@@ -12,16 +12,25 @@ tags:
   - cinematic-and-media
   - caricature-and-cartoon-styles
 visualDna:
-  aesthetic: Loose vibrating linework, conversational minimalism, squigglevision jitter, low-key absurd adult animation, every contour trembling with mild neurosis
-  form_and_line: Persistent squigglevision contour drift, shaky loose lines, conversation-first staging, gentle hand-tremor energy
-  color_palette: Muted therapy-room beige, dusty teal, pencil grey, soft salmon, washed blue, off-white
-  lighting_setup: Flat low-key TV lighting, soft no-drama fill, minimal ambience
-  material_texture: Low-fi TV scan softness, simple fill texture, vibrating edge artifact, hand-drawn jitter
-  render_quality: Squigglevision adult animation, understated comedy, loose conversational minimalism
-  spatial_distortion: Contours vibrating in place, small shape drift, low-action framing, anxious line boil
-  atmosphere: Talky, neurotic, understated, wry
-  key_features: Constant line jitter, simple staging, conversational framing, minimal backgrounds, anxious contour vibration
-  creative_brief: 'Apply squigglevision therapy-doodle logic to any prompt: vibrating contours, minimal backgrounds, talky framing, gentle neurosis, and deliberately low-action composition. Avoid offices, couches, therapists, or stand-up scenes. The style should look like every line is quietly anxious.'
+  aesthetic: >-
+    Loose vibrating linework, conversational minimalism, squigglevision jitter, low-key absurd adult
+    animation, every contour trembling with mild neurosis
+  subject_treatment: >-
+    Persistent squigglevision contour drift, shaky loose lines, conversation-first staging, gentle hand-tremor
+    energy
+  color_and_tone: Muted therapy-room beige, dusty teal, pencil grey, soft salmon, washed blue, off-white
+  lighting_and_shadow: Flat low-key TV lighting, soft no-drama fill, minimal ambience
+  texture_and_material: Low-fi TV scan softness, simple fill texture, vibrating edge artifact, hand-drawn jitter
+  camera_and_composition: Contours vibrating in place, small shape drift, low-action framing, anxious line boil
+  atmosphere_and_mood: Talky, neurotic, understated, wry
+  rendering_and_quality: Squigglevision adult animation, understated comedy, loose conversational minimalism
+  key_features: >-
+    Constant line jitter, simple staging, conversational framing, minimal backgrounds, anxious contour
+    vibration
+  creative_brief: >-
+    Apply squigglevision therapy-doodle logic to any prompt: vibrating contours, minimal backgrounds, talky
+    framing, gentle neurosis, and deliberately low-action composition. Avoid offices, couches, therapists, or
+    stand-up scenes. The style should look like every line is quietly anxious.
 avoidRules:
   - digital
   - HD

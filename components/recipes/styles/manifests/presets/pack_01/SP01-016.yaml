@@ -13,18 +13,18 @@ tags:
   - film-and-analog-process
 visualDna:
   aesthetic: Instant film photo
-  form_and_line: Soft focus
-  color_palette: Washed out, color shift
-  lighting_setup: Direct flash
-  material_texture: Chemical spread marks
-  render_quality: Vintage, casual
-  spatial_distortion: Vignette
-  atmosphere: Memory, retro
+  subject_treatment: Soft focus
+  color_and_tone: Washed out, color shift
+  lighting_and_shadow: Direct flash
+  texture_and_material: Chemical spread marks
+  camera_and_composition: Vignette
+  atmosphere_and_mood: Memory, retro
+  rendering_and_quality: Vintage, casual
   key_features: Square crop
   creative_brief: >-
-    Apply Polaroid 600 instant chemistry to the input: square framing, milky
-    color shift, flash falloff, vignetted edges, and uneven chemical spread marks
-    should make any subject feel immediate, casual, and imperfect.
+    Apply Polaroid 600 instant chemistry to the input: square framing, milky color shift, flash falloff,
+    vignetted edges, and uneven chemical spread marks should make any subject feel immediate, casual, and
+    imperfect.
 avoidRules:
   - illustration
   - painting
@@ -44,7 +44,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP01-016.webp
 attributes:
-  negativePrompt: illustration, painting, drawing, 3d render, cartoon, anime, sketch, blurry, noisy, low resolution, watermark, text, signature, bad anatomy, deformed
+  negativePrompt: >-
+    illustration, painting, drawing, 3d render, cartoon, anime, sketch, blurry, noisy, low resolution,
+    watermark, text, signature, bad anatomy, deformed
 taxonomy:
   packId: pack_01
   packName: Photography & Realism

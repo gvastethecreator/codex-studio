@@ -12,20 +12,31 @@ tags:
   - anime-character-and-lifestyle
   - shojo-magical-girl-and-visionary-classics
 visualDna:
-  aesthetic: Romantic-satire shojo language with princely theater, rose-cloud performativity, and affectionate comedic self-awareness
-  form_and_line: Elegant parody contouring, theatrical gesture silhouettes, ensemble-reaction framing, and compositional flourishes timed to comedic flirt beats
-  color_palette: Rose and champagne tones, polished neutrals, pastel-gold decorative accents, and selective high-romance color flares
-  lighting_setup: Stage-like spotlight pockets, dreamy bloom overlays on cue, soft ambient fill, and comic reveal contrast boosts
-  material_texture: Ornate decorative surfaces, tailored textile cues, bouquet/rose motif overlays, and refined polish with playful exaggeration
-  render_quality: High-polish comedic shojo render with strong ensemble timing readability, theatrical romance styling, and satirical elegance balance
-  spatial_distortion: Mildly exaggerated courtly staging with dynamic group rhythm and pose-centric comedic depth control
-  atmosphere: Playful, elegant, satirical, affectionate
+  aesthetic: >-
+    Romantic-satire shojo language with princely theater, rose-cloud performativity, and affectionate comedic
+    self-awareness
+  subject_treatment: >-
+    Elegant parody contouring, theatrical gesture silhouettes, ensemble-reaction framing, and compositional
+    flourishes timed to comedic flirt beats
+  color_and_tone: >-
+    Rose and champagne tones, polished neutrals, pastel-gold decorative accents, and selective high-romance
+    color flares
+  lighting_and_shadow: >-
+    Stage-like spotlight pockets, dreamy bloom overlays on cue, soft ambient fill, and comic reveal contrast
+    boosts
+  texture_and_material: >-
+    Ornate decorative surfaces, tailored textile cues, bouquet/rose motif overlays, and refined polish with
+    playful exaggeration
+  camera_and_composition: Mildly exaggerated courtly staging with dynamic group rhythm and pose-centric comedic depth control
+  atmosphere_and_mood: Playful, elegant, satirical, affectionate
+  rendering_and_quality: >-
+    High-polish comedic shojo render with strong ensemble timing readability, theatrical romance styling, and
+    satirical elegance balance
   key_features: Rose effects, princely silhouette cues, ornate polish, ensemble comedy staging, tailored detail
   creative_brief: >-
-    Stage the input inside rose-cloud flirt theater: champagne spot pockets,
-    rose overlays, princely silhouette cues, ornate polish, and ensemble comic
-    timing can make any subject elegant and self-aware without requiring a host
-    club, ballroom, bouquet scene, or romance confession.
+    Stage the input inside rose-cloud flirt theater: champagne spot pockets, rose overlays, princely
+    silhouette cues, ornate polish, and ensemble comic timing can make any subject elegant and self-aware
+    without requiring a host club, ballroom, bouquet scene, or romance confession.
 avoidRules:
   - realistic
   - 3d render
@@ -42,7 +53,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-184.webp
 attributes:
-  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
+  negativePrompt: >-
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts,
+    watermark, text, signature
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle

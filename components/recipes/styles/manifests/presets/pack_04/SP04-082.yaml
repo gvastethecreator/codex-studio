@@ -13,18 +13,18 @@ tags:
   - concept-art
 visualDna:
   aesthetic: Hybrid photobash-and-paintover concept rendering
-  form_and_line: Cutout-based structural edges softened by targeted paint integration
-  color_palette: Source-photo gamut unified by global grade and paint harmonization
-  lighting_setup: Mixed-source lighting normalized through paint corrections and value balancing
-  material_texture: Photo-detail patches with visible brush unification passes
-  render_quality: Fast mixed-media visualization with controlled seam management
-  spatial_distortion: Perspective reconciliation of disparate source fragments
-  atmosphere: Pragmatic, production-driven, high-iteration studio workflow
+  subject_treatment: Cutout-based structural edges softened by targeted paint integration
+  color_and_tone: Source-photo gamut unified by global grade and paint harmonization
+  lighting_and_shadow: Mixed-source lighting normalized through paint corrections and value balancing
+  texture_and_material: Photo-detail patches with visible brush unification passes
+  camera_and_composition: Perspective reconciliation of disparate source fragments
+  atmosphere_and_mood: Pragmatic, production-driven, high-iteration studio workflow
+  rendering_and_quality: Fast mixed-media visualization with controlled seam management
   key_features: Composite seam blending, adjustment-grade cohesion, overpainted focal hierarchy
   creative_brief: >-
-    Apply photobash-paintover iteration to any input: mixed-source texture logic, hard photo fragments, painted
-    unification strokes, material seams, lasso-shape edits, and exploratory overpaint marks. Keep the workflow visible
-    without requiring environments, robots, kitbash machinery, or a before/after scene.
+    Apply photobash-paintover iteration to any input: mixed-source texture logic, hard photo fragments,
+    painted unification strokes, material seams, lasso-shape edits, and exploratory overpaint marks. Keep the
+    workflow visible without requiring environments, robots, kitbash machinery, or a before/after scene.
 avoidRules:
   - clean
   - pure illustration

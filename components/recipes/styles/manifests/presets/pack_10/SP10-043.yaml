@@ -13,15 +13,19 @@ tags:
   - surrealism-and-dream
 visualDna:
   aesthetic: Souls game aesthetic
-  form_and_line: Detailed, scratchy
-  color_palette: Desaturated, Black
-  lighting_setup: Gloom
-  material_texture: Rot, rust
-  render_quality: Beksinski, nightmare
-  spatial_distortion: Skeleton
-  atmosphere: Hopeless, grand
+  subject_treatment: Detailed, scratchy
+  color_and_tone: Desaturated, Black
+  lighting_and_shadow: Gloom
+  texture_and_material: Rot, rust
+  camera_and_composition: Skeleton
+  atmosphere_and_mood: Hopeless, grand
+  rendering_and_quality: Beksinski, nightmare
   key_features: Fog
-  creative_brief: Apply dark-fantasy nightmare grandeur over the input with desaturated black weight, rot and rust texture, scratchy detail, fog, skeletal structural cues, and mythic despair at monumental scale. If ruins, cathedrals, armor, creatures, or landscapes exist, deepen them; otherwise make the subject feel ancient, corroded, and hopeless without forcing architecture.
+  creative_brief: >-
+    Apply dark-fantasy nightmare grandeur over the input with desaturated black weight, rot and rust texture,
+    scratchy detail, fog, skeletal structural cues, and mythic despair at monumental scale. If ruins,
+    cathedrals, armor, creatures, or landscapes exist, deepen them; otherwise make the subject feel ancient,
+    corroded, and hopeless without forcing architecture.
 avoidRules:
   - happy
   - bright

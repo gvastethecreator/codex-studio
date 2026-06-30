@@ -13,35 +13,28 @@ tags:
   - concept-art
 visualDna:
   aesthetic: >-
-    Rapid concept-speedpainting style focused on ideation clarity, mood-first block-in, and
-    exploratory visual decision-making
-  form_and_line: >-
-    Gestural brush massing with minimal contour commitment, directional stroke flow, and
-    value-shape-first structure
-  color_palette: >-
-    Mood-driven tonal clusters with controlled atmospheric bleed and broad hue families for fast
-    read hierarchy
-  lighting_setup: >-
-    Ambient atmospheric lighting established through large value masses and early-stage contrast
-    anchors
-  material_texture: >-
-    Visible digital brush grain with layered opacity passes, rough-edge blending, and
-    process-forward stroke evidence
-  render_quality: >-
-    Loose concept-stage rendering emphasizing composition testing, readable silhouettes, and
-    iterative velocity over polish
-  spatial_distortion: >-
-    Intentionally unresolved edge zones with simplified depth grouping and suggestive form
-    abstraction
-  atmosphere: Energetic, exploratory, rough, expressive, iterative
-  key_features: >-
-    Value-block workflow, gestural stroke hierarchy, composition-first framing, selective detail
-    suppression
+    Rapid concept-speedpainting style focused on ideation clarity, mood-first block-in, and exploratory visual
+    decision-making
+  subject_treatment: >-
+    Gestural brush massing with minimal contour commitment, directional stroke flow, and value-shape-first
+    structure
+  color_and_tone: >-
+    Mood-driven tonal clusters with controlled atmospheric bleed and broad hue families for fast read
+    hierarchy
+  lighting_and_shadow: Ambient atmospheric lighting established through large value masses and early-stage contrast anchors
+  texture_and_material: >-
+    Visible digital brush grain with layered opacity passes, rough-edge blending, and process-forward stroke
+    evidence
+  camera_and_composition: Intentionally unresolved edge zones with simplified depth grouping and suggestive form abstraction
+  atmosphere_and_mood: Energetic, exploratory, rough, expressive, iterative
+  rendering_and_quality: >-
+    Loose concept-stage rendering emphasizing composition testing, readable silhouettes, and iterative
+    velocity over polish
+  key_features: Value-block workflow, gestural stroke hierarchy, composition-first framing, selective detail suppression
   creative_brief: >-
-    Apply speedpaint concept grammar to any input: large value block-ins, gestural stroke economy,
-    rough opacity passes, selective detail suppression, and mood-first form solving should define
-    ideation energy without requiring landscapes, characters, thumbnails, fantasy scenes, or
-    unfinished sketches.
+    Apply speedpaint concept grammar to any input: large value block-ins, gestural stroke economy, rough
+    opacity passes, selective detail suppression, and mood-first form solving should define ideation energy
+    without requiring landscapes, characters, thumbnails, fantasy scenes, or unfinished sketches.
 avoidRules:
   - detailed
   - polished

@@ -14,16 +14,35 @@ tags:
   - signalpunk
   - infrastructure
 visualDna:
-  aesthetic: signalpunk infrastructure shrine as a flat-to-painterly poster card built around an electrical substation treated as public signal infrastructure with coils, tokens, and maintenance operators.
-  form_and_line: Sharp but simplified network geometry, non-readable signal rhythm, a few thick cable paths, matte infrastructure planes, and hacker-era silhouettes. Core composition uses coil halos, signal tokens, maintenance figures, ceramic insulators, simplified fence geometry.
-  color_palette: electric blue, oxidized copper, concrete gray, warning yellow
-  lighting_setup: flat coil corona, electric-blue color blocks, simple spark arcs, dusk sky plane
-  material_texture: copper arcs, porcelain insulator blocks, concrete planes, matte utility shapes, rubber glove color accents
-  render_quality: Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity, moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material simulation, or hyper-detail.
-  spatial_distortion: Dense urban slices, service doors, clinics, relays, roofs, and alleys with clear subject hierarchy. Keep depth legible and avoid default hallway, aisle, or empty studio staging.
-  atmosphere: charged, devotional, infrastructural
+  aesthetic: >-
+    signalpunk infrastructure shrine as a flat-to-painterly poster card built around an electrical substation
+    treated as public signal infrastructure with coils, tokens, and maintenance operators.
+  subject_treatment: >-
+    Sharp but simplified network geometry, non-readable signal rhythm, a few thick cable paths, matte
+    infrastructure planes, and hacker-era silhouettes. Core composition uses coil halos, signal tokens,
+    maintenance figures, ceramic insulators, simplified fence geometry.
+  color_and_tone: electric blue, oxidized copper, concrete gray, warning yellow
+  lighting_and_shadow: flat coil corona, electric-blue color blocks, simple spark arcs, dusk sky plane
+  texture_and_material: copper arcs, porcelain insulator blocks, concrete planes, matte utility shapes, rubber glove color accents
+  camera_and_composition: >-
+    Dense urban slices, service doors, clinics, relays, roofs, and alleys with clear subject hierarchy. Keep
+    depth legible and avoid default hallway, aisle, or empty studio staging.
+  atmosphere_and_mood: charged, devotional, infrastructural
+  rendering_and_quality: >-
+    Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly
+    planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity,
+    moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material
+    simulation, or hyper-detail.
   key_features: coil halos, signal tokens, maintenance figures, ceramic insulators, fence geometry
-  creative_brief: 'Turn signal hardware into ritual infrastructure without generic fantasy: people maintain the substation because it powers communication. Keep the result representative rather than over-abstract; make one character in their environment the anchor, with motifs as background, costume, weather, architecture, or social pressure instead of a foreground prop. Favor flat-to-painterly editorial illustration, gouache poster aesthetics, clean graphic-novel card art, or stylized animation-background art over realism, photoreal photoreal painterly realism, cinematic key art, scratchy print noise, or hyper-detailed concept art. Use few bold color/value zones, low-to-moderate texture, large shapes, clean surfaces, shallow poster depth, and finish denoised with no excessive noise or ultra-fine detail.'
+  creative_brief: >-
+    Turn signal hardware into ritual infrastructure without generic fantasy: people maintain the substation
+    because it powers communication. Keep the result representative rather than over-abstract; make one
+    character in their environment the anchor, with motifs as background, costume, weather, architecture, or
+    social pressure instead of a foreground prop. Favor flat-to-painterly editorial illustration, gouache
+    poster aesthetics, clean graphic-novel card art, or stylized animation-background art over realism,
+    photoreal photoreal painterly realism, cinematic key art, scratchy print noise, or hyper-detailed concept
+    art. Use few bold color/value zones, low-to-moderate texture, large shapes, clean surfaces, shallow poster
+    depth, and finish denoised with no excessive noise or ultra-fine detail.
 avoidRules:
   - photoreal
   - watermark
@@ -37,7 +56,22 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP15-014.webp
 attributes:
-  negativePrompt: photoreal, hyperreal, realistic render, photoreal photoreal painterly realism, cinematic realism, AAA key art, cinematic concept-art render, photographic skin pores, realistic foreground portrait, realistic facial hair detail, lens blur, bokeh, depth-of-field photo look, realistic perspective drama, generic soldier hero, guard pin-up, weapon-first pose, fantasy shrine, candles, altar room, service-lamp hero, fence-grid overload, realistic utility yard, rendered metal realism, HDR lens realism, mirror-wet realism, 3D render look, PBR material simulation, hyper-detailed concept art, scratchy print noise, tiny black linework, watermark, text, logo, generic style, over-abstract, interchangeable preset, duplicated motifs, generic glass utopia, unmotivated market aisle, unmotivated library aisle, fantasy corridor, random camera held by subject, studio wall fixation, chair fixation, curtain fixation, lamp fixation, scarf fixation, pedestal fixation, bird fixation, excessive noise, ultra-fine detail, over-sharpened microtexture, over-rendered machinery, noisy grime, tiny rivets everywhere, busy texture chatter, realistic uniform portrait, uniformed officer hero, foreground guard portrait, detailed tattoo focus, dense machinery wallpaper, overcrowded scene, high-frequency surface detail, cinematic close-up portrait, flat black fill, crushed black, pure black masses, muddy black fields, generic American illustration, generic Western RPG card art
+  negativePrompt: >-
+    photoreal, hyperreal, realistic render, photoreal photoreal painterly realism, cinematic realism, AAA key
+    art, cinematic concept-art render, photographic skin pores, realistic foreground portrait, realistic
+    facial hair detail, lens blur, bokeh, depth-of-field photo look, realistic perspective drama, generic
+    soldier hero, guard pin-up, weapon-first pose, fantasy shrine, candles, altar room, service-lamp hero,
+    fence-grid overload, realistic utility yard, rendered metal realism, HDR lens realism, mirror-wet realism,
+    3D render look, PBR material simulation, hyper-detailed concept art, scratchy print noise, tiny black
+    linework, watermark, text, logo, generic style, over-abstract, interchangeable preset, duplicated motifs,
+    generic glass utopia, unmotivated market aisle, unmotivated library aisle, fantasy corridor, random camera
+    held by subject, studio wall fixation, chair fixation, curtain fixation, lamp fixation, scarf fixation,
+    pedestal fixation, bird fixation, excessive noise, ultra-fine detail, over-sharpened microtexture,
+    over-rendered machinery, noisy grime, tiny rivets everywhere, busy texture chatter, realistic uniform
+    portrait, uniformed officer hero, foreground guard portrait, detailed tattoo focus, dense machinery
+    wallpaper, overcrowded scene, high-frequency surface detail, cinematic close-up portrait, flat black fill,
+    crushed black, pure black masses, muddy black fields, generic American illustration, generic Western RPG
+    card art
 taxonomy:
   packId: pack_15
   packName: Punk Spectrum Vault

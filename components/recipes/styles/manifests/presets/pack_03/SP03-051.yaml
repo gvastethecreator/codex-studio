@@ -13,20 +13,23 @@ tags:
   - organic-character-and-bio-cgi
 visualDna:
   aesthetic: Clean diagnostic cutaway render
-  form_and_line: Cutaway view
-  color_palette: Red, Blue, White, medical-chart palettes
-  lighting_setup: Soft, clear, shadowless diagnostic
-  material_texture: Translucent layers, anatomical or system accuracy
-  render_quality: Textbook, educational, clinical-reference
-  atmosphere: Scientific, clean, knowledge-dense
+  subject_treatment: Cutaway view
+  color_and_tone: Red, Blue, White, medical-chart palettes
+  lighting_and_shadow: Soft, clear, shadowless diagnostic
+  texture_and_material: Translucent layers, anatomical or system accuracy
+  camera_and_composition: >-
+    Lookdev camera for Medical Illustration 3D: three-quarter or orthographic framing, clean silhouette read,
+    material highlights, controlled depth, and vertical card composition.
+  atmosphere_and_mood: Scientific, clean, knowledge-dense
+  rendering_and_quality: Textbook, educational, clinical-reference
   key_features: Label space, cutaway clarity
   creative_brief: >-
-    Turn the input into a clean diagnostic cutaway: layered systems, translucent density gradients, red/blue/white
-    clinical coding and shadowless educational clarity. If biological anatomy fits, use it; otherwise expose internal
-    structure like a medical diagram without forcing human body content. Apply Medical Illustration 3D as a portable
-    3D/render style system over any input: preserve its renderer logic, material behavior, geometry language, lighting
-    grammar, and production cues while avoiding a required character, vehicle, prop, environment, UI screen, product
-    shot, or scene template.
+    Turn the input into a clean diagnostic cutaway: layered systems, translucent density gradients,
+    red/blue/white clinical coding and shadowless educational clarity. If biological anatomy fits, use it;
+    otherwise expose internal structure like a medical diagram without forcing human body content. Apply
+    Medical Illustration 3D as a portable 3D/render style system over any input: preserve its renderer logic,
+    material behavior, geometry language, lighting grammar, and production cues while avoiding a required
+    character, vehicle, prop, environment, UI screen, product shot, or scene template.
 avoidRules:
   - gross
   - blood

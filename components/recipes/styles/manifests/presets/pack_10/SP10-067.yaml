@@ -13,15 +13,19 @@ tags:
   - diagram-print-and-light-systems
 visualDna:
   aesthetic: PCB traces
-  form_and_line: 45 degree angles
-  color_palette: Green, Gold, Copper
-  lighting_setup: Flat
-  material_texture: Fiberglass
-  render_quality: Tech, electronic
-  spatial_distortion: None
-  atmosphere: Smart, complex
+  subject_treatment: 45 degree angles
+  color_and_tone: Green, Gold, Copper
+  lighting_and_shadow: Flat
+  texture_and_material: Fiberglass
+  camera_and_composition: 'Compose for Circuit Board using its key spatial cues: Traces.'
+  atmosphere_and_mood: Smart, complex
+  rendering_and_quality: Tech, electronic
   key_features: Traces
-  creative_brief: Apply PCB-trace logic over the input with green fiberglass fields, copper-gold right-angle paths, dense electronic routing, solder-pad nodes, and engineered computation as surface pattern. If tech, machine, object, or interface exists, make circuitry functional; otherwise map circuit topology across forms without forcing a literal board.
+  creative_brief: >-
+    Apply PCB-trace logic over the input with green fiberglass fields, copper-gold right-angle paths, dense
+    electronic routing, solder-pad nodes, and engineered computation as surface pattern. If tech, machine,
+    object, or interface exists, make circuitry functional; otherwise map circuit topology across forms
+    without forcing a literal board.
 avoidRules:
   - organic
 assets:

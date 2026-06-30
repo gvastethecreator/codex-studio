@@ -13,21 +13,24 @@ tags:
   - photography-eras
 visualDna:
   aesthetic: Intensifier tube
-  form_and_line: None
-  color_palette: Phosphor Green, monochrome green, bright-green highlight, black-green shadow
-  lighting_setup: Grainy gain, image intensifier, amplified starlight
-  material_texture: Scintillation noise, electron cascade, static snow
-  render_quality: Low-light clarity, intensifier artifacts, amplified-starlight detail
-  spatial_distortion: Bloom, tube flare, halo around bright sources
-  atmosphere: Hidden, nocturnal, phosphor eerie, low-light uncanny
+  subject_treatment: >-
+    Treat subjects as believable filmed or broadcast subjects under Night Vision (Green): casting, wardrobe,
+    props, motion cues, and silhouette hierarchy follow 4. Photography Eras cinematic and broadcast grammar
+    without locking to one plot beat.
+  color_and_tone: Phosphor Green, monochrome green, bright-green highlight, black-green shadow
+  lighting_and_shadow: Grainy gain, image intensifier, amplified starlight
+  texture_and_material: Scintillation noise, electron cascade, static snow
+  camera_and_composition: Bloom, tube flare, halo around bright sources
+  atmosphere_and_mood: Hidden, nocturnal, phosphor eerie, low-light uncanny
+  rendering_and_quality: Low-light clarity, intensifier artifacts, amplified-starlight detail
   key_features: Monochrome green, scintillation noise, tube halo, gain grain, phosphor bloom
   creative_brief: >-
-    Render the input through green night-vision intensifier optics: monochrome phosphor, amplified starlight, gain
-    grain, scintillation noise, tube halos, and blooming bright sources. Avoid military, spy, predator, or operation
-    scenes. Darkness should become visible through sensor artifacts rather than natural color. Apply Night Vision as a
-    portable cinematic/camera style over any input: preserve its lens behavior, color process, lighting setup, artifact
-    pattern, and deformation grammar while avoiding a required actor, room, prop, brand, readable text, fixed IP scene,
-    or narrative setup.
+    Render the input through green night-vision intensifier optics: monochrome phosphor, amplified starlight,
+    gain grain, scintillation noise, tube halos, and blooming bright sources. Avoid military, spy, predator,
+    or operation scenes. Darkness should become visible through sensor artifacts rather than natural color.
+    Apply Night Vision as a portable cinematic/camera style over any input: preserve its lens behavior, color
+    process, lighting setup, artifact pattern, and deformation grammar while avoiding a required actor, room,
+    prop, brand, readable text, fixed IP scene, or narrative setup.
 avoidRules:
   - color
 assets:

@@ -13,15 +13,21 @@ tags:
   - lighting-and-atmosphere
 visualDna:
   aesthetic: Fractured image
-  form_and_line: None
-  color_palette: Rainbow edges, spectral fringe, red-to-violet split, prismatic white
-  lighting_setup: Refracted, glass-bent, crystal-split spectrum
-  material_texture: Glass distortion, prism face, beveled edge refraction
-  render_quality: Artsy, psychedelic, optical light-bending, refractive polish
-  spatial_distortion: Kaleidoscope, symmetrical fracture, repeating geometry
-  atmosphere: Dreamy, broken, fragmented vision, beauty-through-distortion
+  subject_treatment: >-
+    Treat subjects as believable filmed or broadcast subjects under Prism Effect: casting, wardrobe, props,
+    motion cues, and silhouette hierarchy follow 5. Lighting And Atmosphere cinematic and broadcast grammar
+    without locking to one plot beat.
+  color_and_tone: Rainbow edges, spectral fringe, red-to-violet split, prismatic white
+  lighting_and_shadow: Refracted, glass-bent, crystal-split spectrum
+  texture_and_material: Glass distortion, prism face, beveled edge refraction
+  camera_and_composition: Kaleidoscope, symmetrical fracture, repeating geometry
+  atmosphere_and_mood: Dreamy, broken, fragmented vision, beauty-through-distortion
+  rendering_and_quality: Artsy, psychedelic, optical light-bending, refractive polish
   key_features: Rainbows, color splitting, light dispersion, crystal edge
-  creative_brief: 'Apply prism optics to the input: refraction, spectral edge splits, kaleidoscopic fragments, beveled glass distortion, and rainbow dispersion. Avoid music-video scenes or literal crystals as required props. The style should fracture vision while preserving enough subject identity to read.'
+  creative_brief: >-
+    Apply prism optics to the input: refraction, spectral edge splits, kaleidoscopic fragments, beveled glass
+    distortion, and rainbow dispersion. Avoid music-video scenes or literal crystals as required props. The
+    style should fracture vision while preserving enough subject identity to read.
 avoidRules:
   - clean lens
 assets:

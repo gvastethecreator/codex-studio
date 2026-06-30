@@ -13,15 +13,18 @@ tags:
   - commercial-and-product
 visualDna:
   aesthetic: Automotive commercial polish
-  form_and_line: Sleek curves
-  color_palette: Metallic paint
-  lighting_setup: Studio sweep or motion blur
-  material_texture: Reflection
-  render_quality: Top Gear, expensive
-  spatial_distortion: Motion blur wheels
-  atmosphere: Fast, powerful
+  subject_treatment: Sleek curves
+  color_and_tone: Metallic paint
+  lighting_and_shadow: Studio sweep or motion blur
+  texture_and_material: Reflection
+  camera_and_composition: Motion blur wheels
+  atmosphere_and_mood: Fast, powerful
+  rendering_and_quality: Top Gear, expensive
   key_features: Reflective speed isolation
-  creative_brief: 'Automotive photography gives any subject a sleek performance read: glossy reflections, metallic color behavior, studio sweep or lateral motion blur, sculpted curves, and expensive speed isolation. Use car-commercial polish without requiring cars, wheels, roads, or vehicle action.'
+  creative_brief: >-
+    Automotive photography gives any subject a sleek performance read: glossy reflections, metallic color
+    behavior, studio sweep or lateral motion blur, sculpted curves, and expensive speed isolation. Use
+    car-commercial polish without requiring cars, wheels, roads, or vehicle action.
 avoidRules:
   - dirty
   - dull

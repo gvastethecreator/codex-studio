@@ -13,30 +13,24 @@ tags:
   - slice-of-life-and-moe
 visualDna:
   aesthetic: >-
-    Observational watercolor anime calm where tiny noticing, gentle curiosity, nearly plotless
-    comfort, and afternoon drift make the subject quiet
-  form_and_line: >-
-    Soft sketch contours, drifting motion traces, still-life balance, curiosity-led spacing, and
-    minimal narrative pressure
-  color_palette: >-
-    Watercolor cream, dusty pastel, amber afternoon, muted foliage green, soft ink accents, and pale
-    sky wash
-  lighting_setup: Slow sidelight, cloud-filtered ambient, diffuse warm bleed, and minimal dramatic contrast
-  material_texture: >-
-    Watercolor grain, notebook paper tooth, stucco wear, wood patina, soft fiber, and translucent
-    wash edges
-  render_quality: >-
-    Meditative anime finish with minimal plot pressure, gentle detail fidelity, and comfort-first
-    readability
-  spatial_distortion: Light vignette focus drift and soft observational cropping around any subject
-  atmosphere: Drifting, soft, observant, comforting, quiet
+    Observational watercolor anime calm where tiny noticing, gentle curiosity, nearly plotless comfort, and
+    afternoon drift make the subject quiet
+  subject_treatment: >-
+    Soft sketch contours, drifting motion traces, still-life balance, curiosity-led spacing, and minimal
+    narrative pressure
+  color_and_tone: Watercolor cream, dusty pastel, amber afternoon, muted foliage green, soft ink accents, and pale sky wash
+  lighting_and_shadow: Slow sidelight, cloud-filtered ambient, diffuse warm bleed, and minimal dramatic contrast
+  texture_and_material: Watercolor grain, notebook paper tooth, stucco wear, wood patina, soft fiber, and translucent wash edges
+  camera_and_composition: Light vignette focus drift and soft observational cropping around any subject
+  atmosphere_and_mood: Drifting, soft, observant, comforting, quiet
+  rendering_and_quality: Meditative anime finish with minimal plot pressure, gentle detail fidelity, and comfort-first readability
   key_features: >-
-    Tiny noticing, watercolor softness, warm afternoon drift, still-life balance, gentle curiosity,
-    and minimal narrative demand
+    Tiny noticing, watercolor softness, warm afternoon drift, still-life balance, gentle curiosity, and
+    minimal narrative demand
   creative_brief: >-
-    Use Sketchbook Full Colors as style anchor for observational watercolor drift. Any prompt should
-    become quiet noticing: paper grain, soft wash, small details, and warm afternoon curiosity. Art
-    clubs, cats, town backdrops, and sketchbook props are optional.
+    Use Sketchbook Full Colors as style anchor for observational watercolor drift. Any prompt should become
+    quiet noticing: paper grain, soft wash, small details, and warm afternoon curiosity. Art clubs, cats, town
+    backdrops, and sketchbook props are optional.
 avoidRules:
   - realistic
   - 3d render
@@ -54,8 +48,8 @@ assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-220.webp
 attributes:
   negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, text, signature
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts,
+    watermark, text, signature
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle

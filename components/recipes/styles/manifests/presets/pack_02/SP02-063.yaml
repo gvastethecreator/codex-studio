@@ -13,15 +13,23 @@ tags:
   - lighting-and-atmosphere
 visualDna:
   aesthetic: Classic chiaroscuro portrait-light system
-  form_and_line: None
-  color_palette: Warm umber, dark ground, golden highlight, deep void, restrained flesh-tone warmth
-  lighting_setup: Chiaroscuro triangle, 45-degree key, single-source drama
-  material_texture: Painterly light, oil-paint falloff, velvet darkness
-  render_quality: Dramatic, classic, old-master gravitas, portrait dignity
-  spatial_distortion: None
-  atmosphere: Serious, artful, introspective stillness, old-master gravity
+  subject_treatment: >-
+    Treat subjects as believable filmed or broadcast subjects under Rembrandt Lighting: casting, wardrobe,
+    props, motion cues, and silhouette hierarchy follow 5. Lighting And Atmosphere cinematic and broadcast
+    grammar without locking to one plot beat.
+  color_and_tone: Warm umber, dark ground, golden highlight, deep void, restrained flesh-tone warmth
+  lighting_and_shadow: Chiaroscuro triangle, 45-degree key, single-source drama
+  texture_and_material: Painterly light, oil-paint falloff, velvet darkness
+  camera_and_composition: >-
+    Camera language native to Rembrandt Lighting: genre-aware framing, lens character, focal hierarchy, motion
+    cue, and vertical style-card composition.
+  atmosphere_and_mood: Serious, artful, introspective stillness, old-master gravity
+  rendering_and_quality: Dramatic, classic, old-master gravitas, portrait dignity
   key_features: Chiaroscuro triangle logic, single-source carve, dark-side mystery, velvet falloff
-  creative_brief: 'Use Rembrandt lighting as compositional chiaroscuro: one controlled key source, warm highlight, umber falloff, and a small triangular reveal where form turns from shadow. Do not require faces or portraits; apply the light logic to any subject. Shadow should carry as much structure as illumination.'
+  creative_brief: >-
+    Use Rembrandt lighting as compositional chiaroscuro: one controlled key source, warm highlight, umber
+    falloff, and a small triangular reveal where form turns from shadow. Do not require faces or portraits;
+    apply the light logic to any subject. Shadow should carry as much structure as illumination.
 avoidRules:
   - flat
   - bright

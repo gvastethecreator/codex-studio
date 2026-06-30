@@ -12,19 +12,32 @@ tags:
   - anime-classics-and-prestige
   - 90s-golden-era
 visualDna:
-  aesthetic: Dusty space-western absurdity, reckless comedy-action contrast, sunburnt loneliness, and elastic cool-to-chaos expression.
-  form_and_line: Crisp 90s cel contours, exaggerated gesture snaps, long coat-like silhouette rhythms, and slapstick-to-danger timing lines.
-  color_palette: Sun-bleached ochres, turquoise sky accents, hot red impact pops, faded mauves, and scorched black cel shadows.
-  lighting_setup: Harsh high-noon cel contrast, heat-haze bloom, hard rim light, and dry highlight separation on metal or fabric.
-  material_texture: Painted dust grain, worn leather-like surfaces, scratched metal glints, sanded matte color, and cel overlay texture.
-  render_quality: Golden-era anime frame polish with sharp cel definition, warm grading, and readable absurd-action silhouette design.
-  spatial_distortion: Heat-warped horizon pressure, extreme foreshortening, comedic snap framing, and empty-space loneliness.
-  atmosphere: Chaotic, lonely, reckless, wild.
-  key_features: Dust haze, oversized attitude, elastic expression contrast, dry kinetic impact, and absurd danger rendered with sincerity.
+  aesthetic: >-
+    Dusty space-western absurdity, reckless comedy-action contrast, sunburnt loneliness, and elastic
+    cool-to-chaos expression.
+  subject_treatment: >-
+    Crisp 90s cel contours, exaggerated gesture snaps, long coat-like silhouette rhythms, and
+    slapstick-to-danger timing lines.
+  color_and_tone: >-
+    Sun-bleached ochres, turquoise sky accents, hot red impact pops, faded mauves, and scorched black cel
+    shadows.
+  lighting_and_shadow: >-
+    Harsh high-noon cel contrast, heat-haze bloom, hard rim light, and dry highlight separation on metal or
+    fabric.
+  texture_and_material: >-
+    Painted dust grain, worn leather-like surfaces, scratched metal glints, sanded matte color, and cel
+    overlay texture.
+  camera_and_composition: Heat-warped horizon pressure, extreme foreshortening, comedic snap framing, and empty-space loneliness.
+  atmosphere_and_mood: Chaotic, lonely, reckless, wild.
+  rendering_and_quality: >-
+    Golden-era anime frame polish with sharp cel definition, warm grading, and readable absurd-action
+    silhouette design.
+  key_features: >-
+    Dust haze, oversized attitude, elastic expression contrast, dry kinetic impact, and absurd danger rendered
+    with sincerity.
   creative_brief: >-
-    Build a reusable dusty-space-western absurdity grammar for any subject or
-    input image: heat, dry texture, elastic cool-to-chaos acting, lonely
-    negative space, and reckless 90s cel impact without imposing deserts,
+    Build a reusable dusty-space-western absurdity grammar for any subject or input image: heat, dry texture,
+    elastic cool-to-chaos acting, lonely negative space, and reckless 90s cel impact without imposing deserts,
     guns, saloons, shell casings, arm-weapons, or specific horizons.
 avoidRules:
   - realistic
@@ -42,7 +55,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-018.webp
 attributes:
-  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
+  negativePrompt: >-
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts,
+    watermark, text, signature
 taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige

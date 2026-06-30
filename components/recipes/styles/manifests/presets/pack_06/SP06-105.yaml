@@ -12,9 +12,15 @@ tags:
   - essential-art-styles
   - game-art-directions-and-ui
 visualDna:
-  aesthetic: 90s arcade fighting-game select-screen treatment with bold pixel paint, impact gradients, and competitive energy.
-  subject_treatment: Render any subject as a high-contrast selectable emblem with exaggerated contour strength and badge-like presence.
-  color_and_tone: Saturated arcade ramps, electric rim colors, hot shadows, and posterized flesh/object tones without realism.
+  aesthetic: >-
+    90s arcade fighting-game select-screen treatment with bold pixel paint, impact gradients, and competitive
+    energy.
+  subject_treatment: >-
+    Render any subject as a high-contrast selectable emblem with exaggerated contour strength and badge-like
+    presence.
+  color_and_tone: >-
+    Saturated arcade ramps, electric rim colors, hot shadows, and posterized flesh/object tones without
+    realism.
   lighting_and_shadow: Dramatic top/rim lighting with hard cel-shadow cuts and glossy screen flare accents.
   texture_and_material: Pixel-painted brush clusters, low-res dithering, chunky anti-aliasing, and arcade monitor softness.
   camera_and_composition: Tight icon/portrait framing, diagonal energy slashes, layered selection panels, and strong center lock.

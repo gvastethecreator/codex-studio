@@ -13,15 +13,19 @@ tags:
   - man-made-materials
 visualDna:
   aesthetic: Tire-grade rubber tread
-  form_and_line: Treads
-  color_palette: Black
-  lighting_setup: Matte
-  material_texture: Grippy, nubby
-  render_quality: Industrial, durable
-  spatial_distortion: None
-  atmosphere: Functional, dirty
+  subject_treatment: Treads
+  color_and_tone: Black
+  lighting_and_shadow: Matte
+  texture_and_material: Grippy, nubby
+  camera_and_composition: 'Compose for Rubber (Tire) using its key spatial cues: Tread pattern.'
+  atmosphere_and_mood: Functional, dirty
+  rendering_and_quality: Industrial, durable
   key_features: Tread pattern
-  creative_brief: 'Apply tire-grade rubber logic as functional patterning: matte black tackiness, raised tread ridges, cut valleys, water-channel geometry, and subtle sheen on worn edges. If wheel, vehicle, shoe, armor, or tool exists, make grip visible; otherwise use tread as industrial surface rhythm without requiring a full car tire.'
+  creative_brief: >-
+    Apply tire-grade rubber logic as functional patterning: matte black tackiness, raised tread ridges, cut
+    valleys, water-channel geometry, and subtle sheen on worn edges. If wheel, vehicle, shoe, armor, or tool
+    exists, make grip visible; otherwise use tread as industrial surface rhythm without requiring a full car
+    tire.
 avoidRules:
   - shiny plastic
 assets:

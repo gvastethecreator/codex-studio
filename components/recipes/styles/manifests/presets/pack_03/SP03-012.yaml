@@ -13,19 +13,18 @@ tags:
   - materials
 visualDna:
   aesthetic: Splashing water or fluid
-  form_and_line: Droplets
-  color_palette: Clear or colored liquid
-  lighting_setup: Specular highlights
-  material_texture: Wet, surface tension
-  render_quality: Realflow fluid simulation, splashing realism
-  spatial_distortion: Fluid dynamics
-  atmosphere: Dynamic, wet, in-motion energy
+  subject_treatment: Droplets
+  color_and_tone: Clear or colored liquid
+  lighting_and_shadow: Specular highlights
+  texture_and_material: Wet, surface tension
+  camera_and_composition: Fluid dynamics
+  atmosphere_and_mood: Dynamic, wet, in-motion energy
+  rendering_and_quality: Realflow fluid simulation, splashing realism
   key_features: Splash shape, foam particles
   creative_brief: >-
-    Apply liquid-simulation behavior to any input: surface-tension stretch,
-    suspended droplets, splash-crown curvature, foam particles, wet speculars,
-    and frozen fluid motion. Keep kinetic waterlike sculpture without requiring
-    a falling object, ocean, glass, body, or literal impact event.
+    Apply liquid-simulation behavior to any input: surface-tension stretch, suspended droplets, splash-crown
+    curvature, foam particles, wet speculars, and frozen fluid motion. Keep kinetic waterlike sculpture
+    without requiring a falling object, ocean, glass, body, or literal impact event.
 avoidRules:
   - solid
   - dry

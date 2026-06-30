@@ -12,20 +12,35 @@ tags:
   - anime-classics-and-prestige
   - 2000s-classics
 visualDna:
-  aesthetic: Early-digital gothic soul-pop action with angular cool, playful dread, mask-like rivalry, and occult graphic rhythm.
-  form_and_line: Clean vector-like anime linework, crisp contour clarity, angular silhouette hooks, stretched poses, and emblematic motion arcs.
-  color_palette: Saturated crimson, bone white, electric yellow, deep violet, flat blacks, and punchy early-HD chroma accents.
-  lighting_setup: Polished gradient highlights, rim glow on angular edges, moonlike graphic keys, and balanced key/fill for clear action reads.
-  material_texture: Smooth matte digital cel surfaces, flat emblem graphics, subtle noise grain, lacquered black accents, and clean composite edges.
-  render_quality: Early-2000s digital anime production frame with smooth color blending, clean rendering, and strong youth-action hierarchy.
-  spatial_distortion: Bold perspective angles, emblem-like background compression, action-ready framing, and graphic orbit motifs.
-  atmosphere: Gothic, stylish, eerie, sleek.
-  key_features: Occult pop motifs, angular silhouette language, readable impact choreography, rivalry geometry, and playful dread.
+  aesthetic: >-
+    Early-digital gothic soul-pop action with angular cool, playful dread, mask-like rivalry, and occult
+    graphic rhythm.
+  subject_treatment: >-
+    Clean vector-like anime linework, crisp contour clarity, angular silhouette hooks, stretched poses, and
+    emblematic motion arcs.
+  color_and_tone: >-
+    Saturated crimson, bone white, electric yellow, deep violet, flat blacks, and punchy early-HD chroma
+    accents.
+  lighting_and_shadow: >-
+    Polished gradient highlights, rim glow on angular edges, moonlike graphic keys, and balanced key/fill for
+    clear action reads.
+  texture_and_material: >-
+    Smooth matte digital cel surfaces, flat emblem graphics, subtle noise grain, lacquered black accents, and
+    clean composite edges.
+  camera_and_composition: >-
+    Bold perspective angles, emblem-like background compression, action-ready framing, and graphic orbit
+    motifs.
+  atmosphere_and_mood: Gothic, stylish, eerie, sleek.
+  rendering_and_quality: >-
+    Early-2000s digital anime production frame with smooth color blending, clean rendering, and strong
+    youth-action hierarchy.
+  key_features: >-
+    Occult pop motifs, angular silhouette language, readable impact choreography, rivalry geometry, and
+    playful dread.
   creative_brief: >-
-    Build a reusable gothic-soul-pop action grammar for any subject or input
-    image: occult graphic rhythm, angular cool, crimson-night contrast, crisp
-    early-digital polish, and youth-action readability without imposing
-    schools, hallways, weapons, chains, scythes, masks, students, or showdowns.
+    Build a reusable gothic-soul-pop action grammar for any subject or input image: occult graphic rhythm,
+    angular cool, crimson-night contrast, crisp early-digital polish, and youth-action readability without
+    imposing schools, hallways, weapons, chains, scythes, masks, students, or showdowns.
 avoidRules:
   - realistic
   - 3d render
@@ -42,7 +57,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-030.webp
 attributes:
-  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
+  negativePrompt: >-
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts,
+    watermark, text, signature
 taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige

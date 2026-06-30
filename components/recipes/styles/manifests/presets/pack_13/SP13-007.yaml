@@ -12,20 +12,31 @@ tags:
   - anime-character-and-lifestyle
   - anime
 visualDna:
-  aesthetic: High-impact competitive anime climax language with kinetic framing, performance pressure, and emotionally charged momentum
-  form_and_line: Velocity-biased line bursts, dynamic foreshortening, clean action geometry, and trajectory arcs guiding focal impact
-  color_palette: Electric blue core, bright white contrast anchors, energetic orange highlights, and neutral surface tones
-  lighting_setup: Arena-like overhead arrays, hard specular highlights, motion-accent rim lighting, and selective contrast peaks at action focal zones
-  material_texture: Polished surface reflections, moisture sheen, breathable fabric-like detail, and chalk/rubber micro-particulate cues
-  render_quality: Broadcast-ready action frame quality with crisp motion readability, controlled detail density, and premium key-moment clarity
-  spatial_distortion: Perspective compression with directional motion tunneling to intensify speed and impact perception
-  atmosphere: Driven, explosive, cathartic, and performance-maximized
-  key_features: Freeze-frame kinetic apex, competitive focal intensity, speed-line hierarchy, arena-light contrast gating, and action-vector composition
+  aesthetic: >-
+    High-impact competitive anime climax language with kinetic framing, performance pressure, and emotionally
+    charged momentum
+  subject_treatment: >-
+    Velocity-biased line bursts, dynamic foreshortening, clean action geometry, and trajectory arcs guiding
+    focal impact
+  color_and_tone: Electric blue core, bright white contrast anchors, energetic orange highlights, and neutral surface tones
+  lighting_and_shadow: >-
+    Arena-like overhead arrays, hard specular highlights, motion-accent rim lighting, and selective contrast
+    peaks at action focal zones
+  texture_and_material: >-
+    Polished surface reflections, moisture sheen, breathable fabric-like detail, and chalk/rubber
+    micro-particulate cues
+  camera_and_composition: Perspective compression with directional motion tunneling to intensify speed and impact perception
+  atmosphere_and_mood: Driven, explosive, cathartic, and performance-maximized
+  rendering_and_quality: >-
+    Broadcast-ready action frame quality with crisp motion readability, controlled detail density, and premium
+    key-moment clarity
+  key_features: >-
+    Freeze-frame kinetic apex, competitive focal intensity, speed-line hierarchy, arena-light contrast gating,
+    and action-vector composition
   creative_brief: >-
-    Use Sports Climax Arena as style anchor for peak-performance impact:
-    speed-vector composition, high-contrast athletic lighting, and action
-    readability should transfer without requiring a stadium, court, athlete, or
-    specific sport.
+    Use Sports Climax Arena as style anchor for peak-performance impact: speed-vector composition,
+    high-contrast athletic lighting, and action readability should transfer without requiring a stadium,
+    court, athlete, or specific sport.
 avoidRules:
   - photoreal
   - muddy-motion

@@ -12,19 +12,19 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'KyoAni-inspired shared-warmth moe built from post-effort softness, ensemble eye-lines, tiny social beats, and comfort that feels earned rather than decorative',
-      form_and_line:
+      subject_treatment:
         'Rounded clean contours, small elastic expression shifts, hands and shoulders used as emotional punctuation, and group-focus composition that can wrap any subject',
-      color_palette:
+      color_and_tone:
         'Cream paper neutrals, butter-yellow warmth, soft mint accents, tea browns, rose blush notes, and low-saturation pastel supports',
-      lighting_setup:
+      lighting_and_shadow:
         'Diffuse afternoon key, gentle practical bounce, low-contrast highlight rolloff, and soft rim warmth that keeps every form approachable',
-      material_texture:
+      texture_and_material:
         'Polished-but-lived-in surfaces, brushed fabric folds, matte ceramic softness, faint wood grain, and mild handling wear used as comfort texture',
-      render_quality:
-        'Premium slice-of-life anime finish with soft polish, expression readability, tiny gesture fidelity, and no hard cinematic aggression',
-      spatial_distortion:
+      camera_and_composition:
         'Intimate medium-close staging, mild cute-proportion compression, and shared-attention geometry rather than prop-led composition',
-      atmosphere: 'Warm, relaxed, affectionate, quietly funny, socially comfortable',
+      atmosphere_and_mood: 'Warm, relaxed, affectionate, quietly funny, socially comfortable',
+      rendering_and_quality:
+        'Premium slice-of-life anime finish with soft polish, expression readability, tiny gesture fidelity, and no hard cinematic aggression',
       key_features:
         'Microacting clusters, warm shared-focus cues, tea-toned comfort fields, soft domestic tactility, and gentle ensemble rhythm',
       creative_brief:
@@ -40,19 +40,19 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Local-community anime warmth built from festive intimacy, handmade commerce rhythm, cheerful neighbor density, and confectionery-like softness without locking to a street scene',
-      form_and_line:
+      subject_treatment:
         'Rounded silhouette clusters, welcoming contour rhythm, signage-like shape balance without readable text, and neighborly spacing around the subject',
-      color_palette:
+      color_and_tone:
         'Mochi cream, cedar brown, festival red, mint paper accents, warm amber shoplight, and soft evening violet shadows',
-      lighting_setup:
+      lighting_and_shadow:
         'Lantern-like warm pools, overcast daylight softness, amber spill, and low-drama celebratory highlights',
-      material_texture:
+      texture_and_material:
         'Powdery matte softness, paper fiber, wood grain, woven cloth, polished display glints, and handmade packaging tactility',
-      render_quality:
-        'Community-slice rendering with cozy density, friendly object clarity, festive readability, and gentle local personality',
-      spatial_distortion:
+      camera_and_composition:
         'Compact neighborhood-scale depth, corridor-like warmth, and curved attention flow around the main subject',
-      atmosphere: 'Cheerful, neighborly, tasty, soft, festive',
+      atmosphere_and_mood: 'Cheerful, neighborly, tasty, soft, festive',
+      rendering_and_quality:
+        'Community-slice rendering with cozy density, friendly object clarity, festive readability, and gentle local personality',
       key_features:
         'Community rhythm, food-craft softness, paper accents, warm local light, rounded social composition, and affectionate bustle',
       creative_brief:
@@ -68,19 +68,19 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Beginner-made DIY anime glow where visible process, earnest imperfection, tactile construction, and optimistic collaboration become the style itself',
-      form_and_line:
+      subject_treatment:
         'Handmade contour wobble, tool-path clarity, assembled-shape rhythm, cheerful gesture arcs, and process marks kept legible around any subject',
-      color_palette:
+      color_and_tone:
         'Sanded wood beige, glue white, cloth pastel, mint hardware accents, pencil gray, and amber window warmth',
-      lighting_setup:
+      lighting_and_shadow:
         'Side daylight, dust-mote backlight, soft practical fill, and warm work-surface bounce',
-      material_texture:
+      texture_and_material:
         'Sawdust particulate, unfinished timber grain, fabric scraps, tape edges, adhesive sheen, brush-painted surfaces, and scuffed craft material',
-      render_quality:
-        'Tactile anime rendering that favors process honesty, maker warmth, material readability, and charming nonindustrial imperfection',
-      spatial_distortion:
+      camera_and_composition:
         'Process-focused cropping, magnified handmade presence, and constructive diagonals that imply building without requiring tools',
-      atmosphere: 'Crafty, optimistic, tactile, sweet, constructive',
+      atmosphere_and_mood: 'Crafty, optimistic, tactile, sweet, constructive',
+      rendering_and_quality:
+        'Tactile anime rendering that favors process honesty, maker warmth, material readability, and charming nonindustrial imperfection',
       key_features:
         'DIY material traces, beginner imperfection, warm process light, assembled contours, and collaborative making energy',
       creative_brief:
@@ -96,19 +96,19 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Restorative cold-warm comfort anime built from practical intimacy, thermal contrast, unhurried pacing, and small rituals of care',
-      form_and_line:
+      subject_treatment:
         'Relaxed rounded contours, layered comfort silhouettes, utility-readable shapes, and small-task microgesture clarity',
-      color_palette:
+      color_and_tone:
         'Cool pine green, mountain blue, ember orange, wool neutral, muted earth, and breath-haze lavender',
-      lighting_setup:
+      lighting_and_shadow:
         'Warm thermal key against cool ambient fill, ember-like micro highlights, steam-soft rim separation, and dusk-blue depth',
-      material_texture:
+      texture_and_material:
         'Brushed textile, enamel sheen, rough natural grain, insulated fabric diffusion, vapor haze, and practical worn surfaces',
-      render_quality:
-        'High-clarity cozy anime finish with tactile utility detail, slow comfort pacing, and balanced atmosphere',
-      spatial_distortion:
+      camera_and_composition:
         'Intimate warmth pocket set against open cool space, using foreground heat and background calm as composition logic',
-      atmosphere: 'Serene, practical, restorative, warm, contemplative',
+      atmosphere_and_mood: 'Serene, practical, restorative, warm, contemplative',
+      rendering_and_quality:
+        'High-clarity cozy anime finish with tactile utility detail, slow comfort pacing, and balanced atmosphere',
       key_features:
         'Thermal dialogue, layered comfort, practical-use cues, soft vapor, cold ambient space, and unhurried companionship rhythm',
       creative_brief:
@@ -124,19 +124,19 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Production-workday anime cheer where task density, deadline pressure, visible coordination, and hopeful camaraderie drive visual momentum',
-      form_and_line:
+      subject_treatment:
         'Workflow clutter rhythm, storyboard-like panel geometry, checklist diagonals, quick reaction silhouettes, and coordinated movement paths',
-      color_palette:
+      color_and_tone:
         'Fluorescent neutrals, sticky-note yellow, monitor blue, coffee brown, commuter red accents, and warm late-night beige',
-      lighting_setup:
+      lighting_and_shadow:
         'Mixed fluorescent top-light, cool screen spill, late-night lamp islands, and gray overtime ambience with hopeful warm accents',
-      material_texture:
+      texture_and_material:
         'Paper stacks, tablet plastic, cork fibers, worn desks, condensation rings, and compressed work-surface detail',
-      render_quality:
-        'Energetic workplace anime rendering with high task readability, controlled clutter, and upbeat professional stress',
-      spatial_distortion:
+      camera_and_composition:
         'Tight depth stacking, deadline-compression framing, and motion-led workflow cuts around any subject',
-      atmosphere: 'Busy, collaborative, stressed, upbeat, productive',
+      atmosphere_and_mood: 'Busy, collaborative, stressed, upbeat, productive',
+      rendering_and_quality:
+        'Energetic workplace anime rendering with high task readability, controlled clutter, and upbeat professional stress',
       key_features:
         'Checklist logic, production clutter, team-chaos coherence, panel geometry, deadline compression, and hopeful work warmth',
       creative_brief:
@@ -152,19 +152,19 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Practical quiet-freedom anime minimalism where utilitarian surfaces, spare independence, and ordinary motion create emotional expansion',
-      form_and_line:
+      subject_treatment:
         'Precise functional contour, restrained gestures, compact mechanical rhythm, open-air negative space, and low-noise silhouette discipline',
-      color_palette:
+      color_and_tone:
         'Matte black, cold morning blue, subdued neutrals, rubber gray, dry asphalt beige, and rare sunset amber',
-      lighting_setup:
+      lighting_and_shadow:
         'Clear daylight restraint, overcast commuter softness, sparse golden rim, and low-drama highlights on functional edges',
-      material_texture:
+      texture_and_material:
         'Matte metal, rubber grain, worn vinyl, roadlike grit, utility fabric, and weathered practical surfaces',
-      render_quality:
-        'Minimal mechanical-slice finish with calm fidelity, functional texture, and low-voice emotional restraint',
-      spatial_distortion:
+      camera_and_composition:
         'Long negative-space taper and open perspective used as liberation cue without needing literal travel scenery',
-      atmosphere: 'Minimal, freeing, quiet, clean, self-possessed',
+      atmosphere_and_mood: 'Minimal, freeing, quiet, clean, self-possessed',
+      rendering_and_quality:
+        'Minimal mechanical-slice finish with calm fidelity, functional texture, and low-voice emotional restraint',
       key_features:
         'Utilitarian silhouettes, spare open framing, practical material detail, mechanical quietude, and subtle emotional expansion',
       creative_brief:
@@ -180,19 +180,19 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Looped-routine healing anime built from reflective repetition, inherited care, practical hobby rhythm, and pastel emotional repair',
-      form_and_line:
+      subject_treatment:
         'Gentle looping paths, threadlike contours, close relational spacing, hand-activity softness, and calm curved composition',
-      color_palette:
+      color_and_tone:
         'Water pastel blue, grassy green, outdoor neutral, lure-bright micro accents, soft coral, and evening amber warmth',
-      lighting_setup:
+      lighting_and_shadow:
         'Reflective daylight fill, cloud diffusion, small glints, and low-contrast warmth around repeated actions',
-      material_texture:
+      texture_and_material:
         'Nylon-line sheen, cork grain, damp stone matte, knit layers, lunch-wrap softness, and quiet hobby tactility',
-      render_quality:
-        'Pastoral-healing anime finish with practical detail, calm relational warmth, and restorative pacing',
-      spatial_distortion:
+      camera_and_composition:
         'Looped visual paths and eased depth that suggest reflection, repetition, and gentle repair across any subject',
-      atmosphere: 'Pastoral, healing, tender, quiet, patient',
+      atmosphere_and_mood: 'Pastoral, healing, tender, quiet, patient',
+      rendering_and_quality:
+        'Pastoral-healing anime finish with practical detail, calm relational warmth, and restorative pacing',
       key_features:
         'Loop motifs, repeated-care rhythm, soft outdoor texture, inherited routine, reflective calm, and close emotional spacing',
       creative_brief:
@@ -208,19 +208,19 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Bundled warmth-pocket anime where cold space makes comfort feel deliberate, tactile, and shared without requiring outdoors',
-      form_and_line:
+      subject_treatment:
         'Practical silhouette clarity, rounded bundled shapes, circular warmth-flow composition, and compact comfort against wider cool fields',
-      color_palette:
+      color_and_tone:
         'Winter blue, pine green, orange heat glow, canvas neutral, star indigo, fleece cream, and muted graphite',
-      lighting_setup:
+      lighting_and_shadow:
         'Warm practical key, cold ambient fill, tiny lantern points, crisp dawn diffusion, and soft thermal spill',
-      material_texture:
+      texture_and_material:
         'Nylon weave, quilted padding, enamel gloss, worn metal, frosted particulate, insulated cloth, and soft vapor edges',
-      render_quality:
-        'Cozy cold-weather anime rendering with practical fidelity, tactile comfort, and restorative social calm',
-      spatial_distortion:
+      camera_and_composition:
         'Circular compression concentrates shared warmth while cooler negative space breathes around the subject',
-      atmosphere: 'Cozy, crisp, friendly, restorative, tactile',
+      atmosphere_and_mood: 'Cozy, crisp, friendly, restorative, tactile',
+      rendering_and_quality:
+        'Cozy cold-weather anime rendering with practical fidelity, tactile comfort, and restorative social calm',
       key_features:
         'Bundled contours, cold-warm contrast, warmth pockets, practical textile cues, crisp air, and quiet friendship light',
       creative_brief:
@@ -236,19 +236,19 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Rough ideation anime where preproduction sketches, invented mechanics, annotated energy, and imagination-over-reality motion become visual grammar',
-      form_and_line:
+      subject_treatment:
         'Scratchy concept lines, annotation boxes without readable text, schematic arrows, mechanical doodle density, and high-energy blocking',
-      color_palette:
+      color_and_tone:
         'Graphite neutral, marker red, idea yellow, craft-paper tan, blueprint cyan, and rare neon invention sparks',
-      lighting_setup:
+      lighting_and_shadow:
         'Harsh practical baseline with fantasy-cutaway spot accents and layer-separated imagination glow',
-      material_texture:
+      texture_and_material:
         'Draft paper fiber, marker bleed, tape, cardboard mockup tactility, scuffed utility surfaces, and pencil correction marks',
-      render_quality:
-        'Raw preproduction anime finish with kinetic invention readability, expressive roughness, and visible design thinking',
-      spatial_distortion:
+      camera_and_composition:
         'Abrupt scale jumps, cutaway layers, schematic perspective, and sketch-space expansion around any subject',
-      atmosphere: 'Inventive, kinetic, nerdy, scrappy, spirited',
+      atmosphere_and_mood: 'Inventive, kinetic, nerdy, scrappy, spirited',
+      rendering_and_quality:
+        'Raw preproduction anime finish with kinetic invention readability, expressive roughness, and visible design thinking',
       key_features:
         'Sketch overlays, concept cutaways, annotation rhythm, build-from-scratch energy, rough draft texture, and motion imagination',
       creative_brief:
@@ -264,19 +264,19 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Absurd anime timing system where calm mundane baseline snaps into surreal elastic impact, then returns to deadpan clarity',
-      form_and_line:
+      subject_treatment:
         'Fast-switch contour elasticity, punchline silhouettes, reaction breakpoints, and deformation bursts held inside readable staging',
-      color_palette:
+      color_and_tone:
         'Daily-life pastels, neutral soft bases, sudden saturation spikes, comic accent primaries, and clean pale backgrounds',
-      lighting_setup:
+      lighting_and_shadow:
         'Flat readable baseline with abrupt gag-apex highlight emphasis and minimal shadow complexity',
-      material_texture:
+      texture_and_material:
         'Simplified everyday surfaces kept secondary to timing, with detail spikes only where the joke needs focus',
-      render_quality:
-        'High-clarity comedy anime finish optimized for reaction readability, elastic escalation, and immediate visual punchlines',
-      spatial_distortion:
+      camera_and_composition:
         'Rhythmic reality warps, perspective snaps, and scale exaggerations that land comedy without losing subject legibility',
-      atmosphere: 'Chaotic, witty, absurd, bright, hyper-alert',
+      atmosphere_and_mood: 'Chaotic, witty, absurd, bright, hyper-alert',
+      rendering_and_quality:
+        'High-clarity comedy anime finish optimized for reaction readability, elastic escalation, and immediate visual punchlines',
       key_features:
         'Deadpan baseline, explosive deformation, elastic reaction faces, sudden scale jumps, and punchline-focused composition',
       creative_brief:
@@ -292,19 +292,19 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Low-stakes otaku-banter anime flatness where conversational rhythm, tiny personality deltas, and comfortable repetition carry the image',
-      form_and_line:
+      subject_treatment:
         'Relaxed everyday contours, stable talk-circle composition, expression-over-action priority, and low-drama gesture pacing',
-      color_palette:
+      color_and_tone:
         'Gentle indoor pastels, cream neutrals, mint accents, snack-warm highlights, and balanced low-contrast skin tones',
-      lighting_setup:
+      lighting_and_shadow:
         'Soft ambient fill, mild daylight wash, minimal dramatic shadow, and steady tonal consistency for dialogue-led viewing',
-      material_texture:
+      texture_and_material:
         'Flat simple surfaces, soft textile hints, low-noise small details, and unobtrusive environmental supports',
-      render_quality:
-        'Dialogue-forward anime finish with crisp expression readability, consistent polish, and episodic comfort pacing',
-      spatial_distortion:
+      camera_and_composition:
         'Stable conversational framing, mild cute stylization, and clear line-of-sight geometry around any subject',
-      atmosphere: 'Casual, nerdy, witty, comfortable, low-pressure',
+      atmosphere_and_mood: 'Casual, nerdy, witty, comfortable, low-pressure',
+      rendering_and_quality:
+        'Dialogue-forward anime finish with crisp expression readability, consistent polish, and episodic comfort pacing',
       key_features:
         'Banter pacing, low-contrast calm, tiny reaction shifts, talk-circle composition, and relaxed social continuity',
       creative_brief:
@@ -320,19 +320,19 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Ordinary-cosmic anime whimsy where cozy routine suddenly admits impossible scale, meta-chaos, and playful reality instability',
-      form_and_line:
+      subject_treatment:
         'Everyday soft lines interrupted by uncanny geometry, energetic silhouette spikes, ensemble reaction arcs, and anomaly framing',
-      color_palette:
+      color_and_tone:
         'Warm scholastic pastels, beige neutrals, ribbon-like accents, cool anomaly highlights, and selective cosmic blues',
-      lighting_setup:
+      lighting_and_shadow:
         'Cozy ambient baseline with intermittent anomalous glow, contrast lifts, and reality-slip edge lighting',
-      material_texture:
+      texture_and_material:
         'Paper, textile, and everyday surfaces overlaid with lightly abstracted atmospheric or cosmic interference',
-      render_quality:
-        'Hybrid slice-of-life plus uncanny-sci-fi anime finish with stable readability and controlled tonal pivots',
-      spatial_distortion:
+      camera_and_composition:
         'Mostly grounded perspective with mild non-euclidean hints, closed-space pressure, and sudden impossible scale cues',
-      atmosphere: 'Playful, odd, charged, meta-aware, unpredictable',
+      atmosphere_and_mood: 'Playful, odd, charged, meta-aware, unpredictable',
+      rendering_and_quality:
+        'Hybrid slice-of-life plus uncanny-sci-fi anime finish with stable readability and controlled tonal pivots',
       key_features:
         'Ordinary-to-cosmic contrast, social reaction dynamics, anomaly glow, playful chaos cues, and reality-pivot staging',
       creative_brief:
@@ -348,19 +348,19 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Pastoral breathing-room anime stillness where spacious quiet, tiny rituals, seasonal air, and childlike softness slow the image down',
-      form_and_line:
+      subject_treatment:
         'Low-tension contours, simplified gentle gestures, open negative-space framing, and minimal dramatic pose pressure',
-      color_palette:
+      color_and_tone:
         'Sunlit green, sky soft blue, straw beige, warm wood, muted earth, and low-contrast pastel accents',
-      lighting_setup:
+      lighting_and_shadow:
         'Broad afternoon wash, cicada-hour warmth, soft sky fill, and long low-drama shadow planes',
-      material_texture:
+      texture_and_material:
         'Grass softness, wood grain, paper matte, cotton fabric, dust motes, and lightly weathered rural tactility',
-      render_quality:
-        'Slow-life anime finish with clean open readability, warm nostalgia, and quiet everyday tenderness',
-      spatial_distortion:
+      camera_and_composition:
         'Large breathing-room spacing, gentle horizon calm, and tiny subject emphasis without forcing landscape content',
-      atmosphere: 'Quiet, nostalgic, spacious, tender, sun-warmed',
+      atmosphere_and_mood: 'Quiet, nostalgic, spacious, tender, sun-warmed',
+      rendering_and_quality:
+        'Slow-life anime finish with clean open readability, warm nostalgia, and quiet everyday tenderness',
       key_features:
         'Open negative space, tiny ritual focus, summer-air softness, childlike gesture economy, and pastoral tonal calm',
       creative_brief:
@@ -376,19 +376,19 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Memory-washed anime melodrama where tender emotion, soft eyes, bittersweet light, and quiet vulnerability define the frame',
-      form_and_line:
+      subject_treatment:
         'Gentle facial contouring, lowered gesture pressure, soft posture arcs, and emotion-first framing with minimal visual clutter',
-      color_palette:
+      color_and_tone:
         'Warm sepia cream, pale sky blue, soft blossom pink, muted school navy, and faded amber highlights',
-      lighting_setup:
+      lighting_and_shadow:
         'Diffuse sentimental glow, backlit haze, low-contrast tearline highlights, and soft memory bloom',
-      material_texture:
+      texture_and_material:
         'Subtle fabric weave, paper softness, polished wood warmth, faint dust haze, and blurred memory-grain texture',
-      render_quality:
-        'Tender emotional anime finish with controlled softness, expressive eyes, and high sincerity without photoreal heaviness',
-      spatial_distortion:
+      camera_and_composition:
         'Memory-bloom compression and shallow emotional depth that prioritize feeling over location',
-      atmosphere: 'Bittersweet, tender, nostalgic, sincere, quiet',
+      atmosphere_and_mood: 'Bittersweet, tender, nostalgic, sincere, quiet',
+      rendering_and_quality:
+        'Tender emotional anime finish with controlled softness, expressive eyes, and high sincerity without photoreal heaviness',
       key_features:
         'Soft-eyed emotion, memory haze, gentle backlight, warm faded palette, and vulnerable stillness',
       creative_brief:
@@ -404,19 +404,19 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Observational mystery anime built from warm intellectual stillness, clue-forward attention, polished quiet, and suspended curiosity',
-      form_and_line:
+      subject_treatment:
         'Precise quiet contours, object-attention framing, restrained eye-line geometry, and small inference cues embedded in composition',
-      color_palette:
+      color_and_tone:
         'Tea amber, library brown, soft cream, muted green-black, pale window blue, and subtle gold dust',
-      lighting_setup:
+      lighting_and_shadow:
         'Warm lamplike pools, soft window fill, focused clue highlights, and low-contrast intellectual ambience',
-      material_texture:
+      texture_and_material:
         'Paper fiber, polished wood, ceramic matte, dust motes, cloth grain, and clean glass reflections',
-      render_quality:
-        'Polished contemplative anime finish with high detail control, clue readability, and calm emotional restraint',
-      spatial_distortion:
+      camera_and_composition:
         'Still-life compression and attention tunnels that make any subject feel quietly investigated',
-      atmosphere: 'Curious, calm, warm, observant, restrained',
+      atmosphere_and_mood: 'Curious, calm, warm, observant, restrained',
+      rendering_and_quality:
+        'Polished contemplative anime finish with high detail control, clue readability, and calm emotional restraint',
       key_features:
         'Clue-focused framing, tea-light warmth, observational stillness, precise microgestures, and intellectual hush',
       creative_brief:
@@ -432,19 +432,19 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Healing reverie anime where reflective softness, airy kindness, slow conversation, and waterlike light make the subject feel weightless',
-      form_and_line:
+      subject_treatment:
         'Flowing calm contours, slow oval composition, airy spacing, and gentle handoff rhythm between foreground and reflected depth',
-      color_palette:
+      color_and_tone:
         'Aqua blue, cream stone, soft sky lavender, warm sunset peach, pearl white, and muted teal shadow',
-      lighting_setup:
+      lighting_and_shadow:
         'High-diffusion sky glow, reflective underlight, low-contrast sparkle, and warm horizon softness',
-      material_texture:
+      texture_and_material:
         'Water shimmer, sun-worn stone, soft cloth, polished wood, haze particles, and pearl-like atmospheric gloss',
-      render_quality:
-        'Slow-healing anime finish with clean serenity, reflective light control, and gentle emotional buoyancy',
-      spatial_distortion:
+      camera_and_composition:
         'Drifting canal-like perspective and reflective depth used as calm visual logic, not required scenery',
-      atmosphere: 'Airy, kind, reflective, slow, healing',
+      atmosphere_and_mood: 'Airy, kind, reflective, slow, healing',
+      rendering_and_quality:
+        'Slow-healing anime finish with clean serenity, reflective light control, and gentle emotional buoyancy',
       key_features:
         'Reflection softness, slow conversation pacing, waterlike light, kindness aura, and buoyant negative space',
       creative_brief:
@@ -460,19 +460,19 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Breezy reinvention anime where brush energy, summer looseness, comedy warmth, and self-repair make the image feel freshly restarted',
-      form_and_line:
+      subject_treatment:
         'Loose brushlike contours, breezy gesture arcs, occasional comedy deformation, and open spacing around acts of trying again',
-      color_palette:
+      color_and_tone:
         'Sea-air blue, sunlit white, ink black, straw beige, watermelon red, and warm summer green',
-      lighting_setup:
+      lighting_and_shadow:
         'Bright summer daylight, soft bounce, ink-emphasis contrast, and airy highlight wash',
-      material_texture:
+      texture_and_material:
         'Brush ink drag, paper tooth, weathered wood, cotton texture, salty air haze, and handmade surface irregularity',
-      render_quality:
-        'Breezy slice anime finish with brush-material fidelity, emotional comedy, and relaxed summer clarity',
-      spatial_distortion:
+      camera_and_composition:
         'Open-air spacing and loose brush rhythm that imply reset and motion without locking place',
-      atmosphere: 'Breezy, comic, sincere, summery, renewing',
+      atmosphere_and_mood: 'Breezy, comic, sincere, summery, renewing',
+      rendering_and_quality:
+        'Breezy slice anime finish with brush-material fidelity, emotional comedy, and relaxed summer clarity',
       key_features:
         'Brush energy, summer air, self-reinvention tone, loose comedy, paper texture, and bright sincerity',
       creative_brief:
@@ -488,19 +488,19 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Everyday-care anime intimacy where responsibility, patience, small practical rituals, and sincere tenderness carry emotional weight',
-      form_and_line:
+      subject_treatment:
         'Close relational spacing, softened posture arcs, careful hand gestures, and uncluttered composition around acts of care',
-      color_palette:
+      color_and_tone:
         'Cotton cream, soft beige, lunchbox red, mild navy, warm skin peach, and pale morning blue',
-      lighting_setup:
+      lighting_and_shadow:
         'Gentle domestic daylight, soft practical warmth, low-contrast fill, and small highlight accents on useful objects',
-      material_texture:
+      texture_and_material:
         'Cotton softness, worn surfaces, small utility plastics, cloth wraps, paper textures, and handled everyday tactility',
-      render_quality:
-        'Intimate anime finish with sincere emotional clarity, routine detail fidelity, and low-melodrama restraint',
-      spatial_distortion:
+      camera_and_composition:
         'Close framing compression that turns any subject into a quiet care ritual',
-      atmosphere: 'Tender, patient, domestic, soft, responsible',
+      atmosphere_and_mood: 'Tender, patient, domestic, soft, responsible',
+      rendering_and_quality:
+        'Intimate anime finish with sincere emotional clarity, routine detail fidelity, and low-melodrama restraint',
       key_features:
         'Caregiving gestures, small practical details, patient pauses, close spacing, and emotional sincerity',
       creative_brief:
@@ -516,19 +516,19 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Sugar-cotton moe hospitality where tiny-world charm, lace delicacy, dessertlike softness, and inviting symmetry make the subject feel plush',
-      form_and_line:
+      subject_treatment:
         'Tiny silhouette language, decorative neat contours, rounded service-like gestures, and balanced compact composition',
-      color_palette:
+      color_and_tone:
         'Whipped cream white, strawberry pink, mint accent, caramel brown, warm gold, and cocoa shadow',
-      lighting_setup:
+      lighting_and_shadow:
         'Pendant-like warm pools, pastry-glow diffusion, gentle fill, and soft specular accents',
-      material_texture:
+      texture_and_material:
         'Lace weave, ceramic glaze, foam microtexture, polished wood, confection gloss, and plush textile softness',
-      render_quality:
-        'Decorative moe finish with high legibility, plush surface control, and inviting miniature hospitality tone',
-      spatial_distortion:
+      camera_and_composition:
         'Compact tiny-world framing and soft scale compression around any subject',
-      atmosphere: 'Sugary, tiny, cute, soothing, welcoming',
+      atmosphere_and_mood: 'Sugary, tiny, cute, soothing, welcoming',
+      rendering_and_quality:
+        'Decorative moe finish with high legibility, plush surface control, and inviting miniature hospitality tone',
       key_features:
         'Lace delicacy, dessertlike softness, plush texture, compact symmetry, and hospitality rhythm',
       creative_brief:
@@ -544,19 +544,19 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Immaculate social-jitter anime comedy where pristine beauty, nervous silence, graphic restraint, and overpolite pressure define the image',
-      form_and_line:
+      subject_treatment:
         'Clean beauty contours, microexpression emphasis, large polite negative space, tidy pause panels, and controlled awkward body language',
-      color_palette:
+      color_and_tone:
         'Polished white, navy anchors, soft blush, green-black contrast, warm skin highlights, and pale chalk dust',
-      lighting_setup:
+      lighting_and_shadow:
         'Bright clean fill, reflective tidy surfaces, focused confession-like contrast, and blush-lit reaction beats',
-      material_texture:
+      texture_and_material:
         'Chalk dust, pressed cloth planes, smooth paper, dry marker residue, immaculate polish, and faint surface grain',
-      render_quality:
-        'Polished social-comedy anime finish with high expression readability, elegant exaggeration, and precise awkwardness',
-      spatial_distortion:
+      camera_and_composition:
         'Anxiety-POV tightening around expressions and empty graphic space rather than literal classroom geography',
-      atmosphere: 'Shy, polished, funny, affectionate, tense',
+      atmosphere_and_mood: 'Shy, polished, funny, affectionate, tense',
+      rendering_and_quality:
+        'Polished social-comedy anime finish with high expression readability, elegant exaggeration, and precise awkwardness',
       key_features:
         'Pristine order, silent pressure, chalk-dust motifs, social-jitter beats, beauty-comedy contrast, and polite empty space',
       creative_brief:
@@ -572,19 +572,19 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Shift-comedy anime warmth where ensemble banter, coordinated handoffs, practical service rhythm, and low-stakes workplace chaos become style',
-      form_and_line:
+      subject_treatment:
         'Clear blocking lines, uniform-like silhouette contrast, fast reaction timing cues, handoff arcs, and choreographed movement paths',
-      color_palette:
+      color_and_tone:
         'Diner cream, black-white anchors, menu red, amber practical glow, stainless highlights, and warm beige supports',
-      lighting_setup:
+      lighting_and_shadow:
         'Bright practical illumination, warm pass-through glow, evening comfort, and clean comic reaction spotlighting',
-      material_texture:
+      texture_and_material:
         'Apron cloth, laminated sheen, ceramic gloss, counter smoothness, metal highlights, and handled work-surface wear',
-      render_quality:
-        'Workplace-comedy anime finish with rhythm-first readability, upbeat practicality, and ensemble timing clarity',
-      spatial_distortion:
+      camera_and_composition:
         'Quick-cut compression and reaction-scale pops supporting banter pace around any subject',
-      atmosphere: 'Cheery, busy, ensemble-driven, comfy, punchy',
+      atmosphere_and_mood: 'Cheery, busy, ensemble-driven, comfy, punchy',
+      rendering_and_quality:
+        'Workplace-comedy anime finish with rhythm-first readability, upbeat practicality, and ensemble timing clarity',
       key_features:
         'Handoff choreography, coworker chemistry, practical warmth, service rhythm, comic reaction beats, and clear blocking',
       creative_brief:
@@ -600,19 +600,19 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Breeze-drift anime inertia where low energy, ambient friendship, sleepy elegance, and beautiful nothingness slow every visual decision',
-      form_and_line:
+      subject_treatment:
         'Relaxed silhouettes, minimal expression marks, drifting contours, soft posture collapse, and broad airy negative space',
-      color_palette:
+      color_and_tone:
         'Pale sky blue, soft gray, neutral cloth, spring green, light cream, and faint warm blush',
-      lighting_setup:
+      lighting_and_shadow:
         'Diffuse midday softness, sleepy ambient fill, gentle side light, and low-contrast illumination that lets pauses breathe',
-      material_texture:
+      texture_and_material:
         'Light fabric drape, paper matte, faint worn surfaces, soft wind-ruffled texture, and dustlike air',
-      render_quality:
-        'Lethargic-comfort anime finish with airy minimalism, precise low-exertion comedy, and deliberate calm beauty',
-      spatial_distortion:
+      camera_and_composition:
         'Time-dilation framing stretches quiet pauses and ambient stillness across any subject',
-      atmosphere: 'Sleepy, gentle, airy, easygoing, elegant',
+      atmosphere_and_mood: 'Sleepy, gentle, airy, easygoing, elegant',
+      rendering_and_quality:
+        'Lethargic-comfort anime finish with airy minimalism, precise low-exertion comedy, and deliberate calm beauty',
       key_features:
         'Low-energy posture, breeze effects, negative space, pause-centric timing, minimal exertion comedy, and soft light',
       creative_brief:
@@ -628,19 +628,19 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Incremental-ascent anime confidence where effort, crisp air, supportive rhythm, and small progress reveals make the image feel earned',
-      form_and_line:
+      subject_treatment:
         'Upward route-like composition, practical silhouette clarity, encouragement gestures, breathable spacing, and stepwise progression lines',
-      color_palette:
+      color_and_tone:
         'High-altitude blue, pine green, sunlit ochre, gear neutral, rosy effort highlights, and bright cloud white',
-      lighting_setup:
+      lighting_and_shadow:
         'Clear daylight, edge rim light, cool shadow fill, and reveal-like brightness for progress beats',
-      material_texture:
+      texture_and_material:
         'Technical fabric, nylon strap tactility, rocky grit, bark texture, breathable knit, and dry air sparkle',
-      render_quality:
-        'Outdoor-hobby anime finish with clean clarity, uplifting progression tone, and sincere confidence-building warmth',
-      spatial_distortion:
+      camera_and_composition:
         'Elevation-gain perspective used as emotional progress, without requiring mountains or trails',
-      atmosphere: 'Fresh, supportive, scenic, uplifting, crisp',
+      atmosphere_and_mood: 'Fresh, supportive, scenic, uplifting, crisp',
+      rendering_and_quality:
+        'Outdoor-hobby anime finish with clean clarity, uplifting progression tone, and sincere confidence-building warmth',
       key_features:
         'Upward rhythm, incremental confidence, supportive gestures, crisp daylight, practical texture, and reveal lighting',
       creative_brief:
@@ -656,19 +656,19 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Mundane absurdist anime theater where dead-serious nonsense, awkward underplaying, sketch timing, and banal staging make comedy dry',
-      form_and_line:
+      subject_treatment:
         'Deadpan contour economy, exaggerated reaction beats, plain stage geometry, and loose ensemble rhythm around the subject',
-      color_palette:
+      color_and_tone:
         'Neutral gray, navy anchors, faded concrete, casual green, beige daylight, and sudden small comic accent pops',
-      lighting_setup:
+      lighting_and_shadow:
         'Flat everyday daylight, casual afternoon fill, low-drama illumination, and timing-first visibility',
-      material_texture:
+      texture_and_material:
         'Woollike cloth, desk-edge scuffs, grass-dirt matte, cheap plastic, and plain everyday finish as comic tactility',
-      render_quality:
-        'Deadpan ensemble anime finish with timing clarity, awkward body language, and low-budget absurd rhythm',
-      spatial_distortion:
+      camera_and_composition:
         'Momentary gag exaggeration and reaction-scale pops inside otherwise normal perspective',
-      atmosphere: 'Goofy, deadpan, loose, dry, underplayed',
+      atmosphere_and_mood: 'Goofy, deadpan, loose, dry, underplayed',
+      rendering_and_quality:
+        'Deadpan ensemble anime finish with timing clarity, awkward body language, and low-budget absurd rhythm',
       key_features:
         'Deadpan commitment, banal-stage framing, reaction pops, low-budget absurdism, ensemble rhythm, and awkward silence',
       creative_brief:
@@ -684,19 +684,19 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Observational watercolor anime calm where tiny noticing, gentle curiosity, nearly plotless comfort, and afternoon drift make the subject quiet',
-      form_and_line:
+      subject_treatment:
         'Soft sketch contours, drifting motion traces, still-life balance, curiosity-led spacing, and minimal narrative pressure',
-      color_palette:
+      color_and_tone:
         'Watercolor cream, dusty pastel, amber afternoon, muted foliage green, soft ink accents, and pale sky wash',
-      lighting_setup:
+      lighting_and_shadow:
         'Slow sidelight, cloud-filtered ambient, diffuse warm bleed, and minimal dramatic contrast',
-      material_texture:
+      texture_and_material:
         'Watercolor grain, notebook paper tooth, stucco wear, wood patina, soft fiber, and translucent wash edges',
-      render_quality:
-        'Meditative anime finish with minimal plot pressure, gentle detail fidelity, and comfort-first readability',
-      spatial_distortion:
+      camera_and_composition:
         'Light vignette focus drift and soft observational cropping around any subject',
-      atmosphere: 'Drifting, soft, observant, comforting, quiet',
+      atmosphere_and_mood: 'Drifting, soft, observant, comforting, quiet',
+      rendering_and_quality:
+        'Meditative anime finish with minimal plot pressure, gentle detail fidelity, and comfort-first readability',
       key_features:
         'Tiny noticing, watercolor softness, warm afternoon drift, still-life balance, gentle curiosity, and minimal narrative demand',
       creative_brief:
@@ -712,19 +712,19 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Domestic-fantasy anime chaos where mythic scale collides with affectionate routine, cozy order, and bright magical interruption',
-      form_and_line:
+      subject_treatment:
         'Soft comfort contours mixed with creature-adjacent exaggeration, scale-contrast blocking, and expressive ensemble interaction',
-      color_palette:
+      color_and_tone:
         'Warm cream, wood brown, pastel comfort hues, vivid creature accents, magical cyan, and affectionate pink highlights',
-      lighting_setup:
+      lighting_and_shadow:
         'Cozy practicals, daylight fill, warm evening pools, and sudden magical spill highlights during interruption beats',
-      material_texture:
+      texture_and_material:
         'Lived-in comfort surfaces, gentle gloss, textile softness, scale/wing-like abstract accents, and integrated magical shimmer',
-      render_quality:
-        'Heartwarming fantasy-comedy anime finish balancing routine detail, interruption energy, and readable affection',
-      spatial_distortion:
+      camera_and_composition:
         'Grounded comfort-space perspective with mild warps during magical or comedic escalation around any subject',
-      atmosphere: 'Whimsical, lively, affectionate, comfort-chaotic, bright',
+      atmosphere_and_mood: 'Whimsical, lively, affectionate, comfort-chaotic, bright',
+      rendering_and_quality:
+        'Heartwarming fantasy-comedy anime finish balancing routine detail, interruption energy, and readable affection',
       key_features:
         'Everyday-scale contrast, cozy magical interruption, ensemble warmth, creature-adjacent accents, and routine-chaos rhythm',
       creative_brief:
@@ -740,19 +740,19 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Sunshine-scribble anime abstraction where sketchbook tactility, soft geometry, low-pressure humor, and cozy creative ritual define the image',
-      form_and_line:
+      subject_treatment:
         'Sketchbook-first contours, simplified geometric blocking, playful supply-like silhouette motifs, and relaxed compositional symmetry',
-      color_palette:
+      color_and_tone:
         'Warm paper cream, soft coral, mint accent, graphite gray, sunwashed yellow, and peach lamp warmth',
-      lighting_setup:
+      lighting_and_shadow:
         'Late-afternoon sunlight, warm lamp pockets, low-contrast ambient wrap, and paper-soft bounce',
-      material_texture:
+      texture_and_material:
         'Pencil grain, paper stacks, tape edges, tabletop wear, soft fabric, and handmade doodle texture',
-      render_quality:
-        'Relaxed anime finish with abstracted comfort geometry, handmade sketch warmth, and gentle comedic clarity',
-      spatial_distortion:
+      camera_and_composition:
         'Mild geometric flattening and cozy vignette compression around any subject',
-      atmosphere: 'Sunny, crafty, relaxed, cute, low-pressure',
+      atmosphere_and_mood: 'Sunny, crafty, relaxed, cute, low-pressure',
+      rendering_and_quality:
+        'Relaxed anime finish with abstracted comfort geometry, handmade sketch warmth, and gentle comedic clarity',
       key_features:
         'Sketchbook tactility, soft geometric fields, warm paper light, playful abstraction, and low-pressure creative ritual',
       creative_brief:
@@ -768,19 +768,19 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Anxiety-glitch anime comedy where grounded softness ruptures into mixed-media panic modes, then releases into cathartic brightness',
-      form_and_line:
+      subject_treatment:
         'Soft everyday contours broken by abrupt exaggeration modes, collapse-face elasticity, hard graphic inserts, and stabilized release silhouettes',
-      color_palette:
+      color_and_tone:
         'Warm pastel baseline, high-saturation anxiety spikes, magenta glitch accents, hard black-white bursts, and stage-like release color',
-      lighting_setup:
+      lighting_and_shadow:
         'Calm ambient baseline switching to hard key accents, flash overlays, and cathartic glow bursts during emotional overload',
-      material_texture:
+      texture_and_material:
         'Soft everyday surfaces interrupted by halftone, pixel, smear, photocopy, glitch, or collage overlays used as internal emotion texture',
-      render_quality:
-        'Hybrid slice-comedy anime finish with controlled mode-switching, awkward stillness, and high-energy release readability',
-      spatial_distortion:
+      camera_and_composition:
         'Grounded social framing toggles into panic warps, mixed-media cut-ins, and stable cathartic composition',
-      atmosphere: 'Anxious, funny, vulnerable, explosive, liberating',
+      atmosphere_and_mood: 'Anxious, funny, vulnerable, explosive, liberating',
+      rendering_and_quality:
+        'Hybrid slice-comedy anime finish with controlled mode-switching, awkward stillness, and high-energy release readability',
       key_features:
         'Mode switching, panic inserts, glitch texture, awkward microacting, collapse/release contrast, and cathartic color bursts',
       creative_brief:
@@ -796,19 +796,19 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Soft-surreal anime deadpan where mundane calm accepts dreamlike oddity with gentle timing, minimal aggression, and understated weirdness',
-      form_and_line:
+      subject_treatment:
         'Simple friendly contours, subtle deformation cues, low-intensity reaction acting, and conversational composition for quiet absurdity',
-      color_palette:
+      color_and_tone:
         'Quiet pastel, warm neutral, mint support, beige softness, pale blue wash, and mild surreal accent hues',
-      lighting_setup:
+      lighting_and_shadow:
         'Even daytime ambient, soft fill, minimal drama, and slight atmospheric lift during strange beats',
-      material_texture:
+      texture_and_material:
         'Light everyday surfaces, low-noise background detail, soft paper/fabric tactility, and faint dream haze',
-      render_quality:
-        'Gentle surreal-slice anime finish emphasizing expression nuance, timing, and quiet oddity over spectacle',
-      spatial_distortion:
+      camera_and_composition:
         'Mostly stable perspective with light dream bending, scale oddities, and soft uncanny punctuation',
-      atmosphere: 'Sweet, dreamy, odd, quietly funny, gentle',
+      atmosphere_and_mood: 'Sweet, dreamy, odd, quietly funny, gentle',
+      rendering_and_quality:
+        'Gentle surreal-slice anime finish emphasizing expression nuance, timing, and quiet oddity over spectacle',
       key_features:
         'Deadpan reactions, calm baseline, soft surreal inserts, understated timing, gentle deformation, and everyday continuity',
       creative_brief:
@@ -824,19 +824,19 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Horizon-forward anime momentum where sincerity, friendship propulsion, bright readiness, and ordinary courage turn any subject toward adventure',
-      form_and_line:
+      subject_treatment:
         'Forward-pull silhouettes, practical contour emphasis, ensemble momentum arcs, and horizon-expansion composition',
-      color_palette:
+      color_and_tone:
         'Polar white, sky cyan, navy anchors, orange determination accents, sunlit peach, and clean ice-blue shadow',
-      lighting_setup:
+      lighting_and_shadow:
         'Crisp travel-day daylight, high-albedo bounce, warm departure glow, and bright reveal highlights',
-      material_texture:
+      texture_and_material:
         'Nylon utility, insulated fabric, paper fiber, frost-kissed surfaces, transit scuffs, and clean atmospheric grain',
-      render_quality:
-        'Inspirational anime finish with atmospheric breadth, clean emotional propulsion, and practical readiness detail',
-      spatial_distortion:
+      camera_and_composition:
         'Horizon expansion and forward perspective that amplify collective motion without requiring literal travel',
-      atmosphere: 'Hopeful, brave, bright, uplifting, forward',
+      atmosphere_and_mood: 'Hopeful, brave, bright, uplifting, forward',
+      rendering_and_quality:
+        'Inspirational anime finish with atmospheric breadth, clean emotional propulsion, and practical readiness detail',
       key_features:
         'Sky-heavy optimism, forward motion, practical readiness, friendship momentum, bright horizon expansion, and sincere courage',
       creative_brief:

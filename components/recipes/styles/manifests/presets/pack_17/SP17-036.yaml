@@ -14,15 +14,21 @@ tags:
   - monochrome-tarot-and-bestiary-plates
   - survival-dungeon
 visualDna:
-  aesthetic: Bleak survival dungeon illustration with gaunt pilgrims, broken cells, ritual doors, prison stone, and desperate candlelight.
-  subject_treatment: A starved dungeon pilgrim-king standing before a sealed ritual door, long crown of bent nails, moth cloak, heavy key bundle, and one small companion silhouette for scale.
+  aesthetic: >-
+    Bleak survival dungeon illustration with gaunt pilgrims, broken cells, ritual doors, prison stone, and
+    desperate candlelight.
+  subject_treatment: >-
+    A starved dungeon pilgrim-king standing before a sealed ritual door, long crown of bent nails, moth cloak,
+    heavy key bundle, and one small companion silhouette for scale.
   color_and_tone: Parchment, soot ink, diluted sepia, pale candle yellow, and open midtone gray.
   lighting_and_shadow: One simple candle or doorway light opens the scene and keeps silhouettes readable.
   texture_and_material: Dry stone, cloth, old rope, iron bars, parchment, and clean ink wash without dirty grain.
   camera_and_composition: Close editorial crop, shallow dungeon fragment, one clear survival icon, and no crowded inventory spread.
   atmosphere_and_mood: Hungry, anxious, doomed, and intimate without graphic injury.
   rendering_and_quality: Clean ink-and-wash fantasy illustration with limited detail and clear value control.
-  creative_brief: Original survival-horror dungeon style for fragile medieval journeys, cursed doors, relics, beasts, and desperate interiors.
+  creative_brief: >-
+    Original survival-horror dungeon style for fragile medieval journeys, cursed doors, relics, beasts, and
+    desperate interiors.
 avoidRules:
   - shock gore
   - torture detail
@@ -33,6 +39,10 @@ avoidRules:
   - text
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP17-036.webp
+attributes:
+  negativePrompt: >-
+    shock gore, torture detail, photoreal misery, unreadable black rooms, dense scratch texture, watermark,
+    text
 taxonomy:
   packId: pack_17
   packName: Medieval Fantasy & Dungeon Zine

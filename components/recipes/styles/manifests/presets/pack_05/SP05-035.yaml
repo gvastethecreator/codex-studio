@@ -12,19 +12,28 @@ tags:
   - anime-battle-and-worlds
   - modern-shonen-and-action
 visualDna:
-  aesthetic: Vertical-survival action style defined by scale terror, trajectory tension, and desperate acceleration rhythm
-  form_and_line: Tether-like diagonals, anchor-point geometry, hard angular silhouettes, sharp momentum lines for vertical pressure
-  color_palette: Dusty survival neutrals with emergency red-orange flares, cold steel tones, and smoke-dark value structure
-  lighting_setup: Harsh side light with particulate haze, breached-sky shafts, silhouette-first backlight, and panic-intensity contrast spikes
-  material_texture: Tension-line sheen, weathered technical fibers, mineral debris grain, smoke and grit overlays with high kinetic readability
-  render_quality: High-intensity survival anime finish emphasizing motion mechanics, scale legibility, and urgency-first compositional clarity
-  spatial_distortion: Extreme vertical foreshortening with depth-drop exaggeration and looming mass contrast to reinforce peril
-  atmosphere: Desperate, relentless, hunted, grim, adrenaline-heavy
+  aesthetic: >-
+    Vertical-survival action style defined by scale terror, trajectory tension, and desperate acceleration
+    rhythm
+  subject_treatment: >-
+    Tether-like diagonals, anchor-point geometry, hard angular silhouettes, sharp momentum lines for vertical
+    pressure
+  color_and_tone: Dusty survival neutrals with emergency red-orange flares, cold steel tones, and smoke-dark value structure
+  lighting_and_shadow: >-
+    Harsh side light with particulate haze, breached-sky shafts, silhouette-first backlight, and
+    panic-intensity contrast spikes
+  texture_and_material: >-
+    Tension-line sheen, weathered technical fibers, mineral debris grain, smoke and grit overlays with high
+    kinetic readability
+  camera_and_composition: Extreme vertical foreshortening with depth-drop exaggeration and looming mass contrast to reinforce peril
+  atmosphere_and_mood: Desperate, relentless, hunted, grim, adrenaline-heavy
+  rendering_and_quality: >-
+    High-intensity survival anime finish emphasizing motion mechanics, scale legibility, and urgency-first
+    compositional clarity
   key_features: Aerial trajectory grammar, scale-shock framing, tension-mechanics readability, pressure visual cadence
   creative_brief: >-
-    The identity should come from vertical-mobility tension and overwhelming
-    scale contrast: tethered motion logic and depth-drop fear must remain
-    central without requiring a specific survival setting.
+    The identity should come from vertical-mobility tension and overwhelming scale contrast: tethered motion
+    logic and depth-drop fear must remain central without requiring a specific survival setting.
 avoidRules:
   - realistic
   - 3d render
@@ -41,7 +50,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-035.webp
 attributes:
-  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
+  negativePrompt: >-
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts,
+    watermark, text, signature
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds

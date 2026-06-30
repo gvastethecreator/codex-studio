@@ -13,19 +13,22 @@ tags:
   - 3d-styles
 visualDna:
   aesthetic: Mesh topology view
-  form_and_line: Glowing lines
-  color_palette: Black background, Neon lines, glow contrast
-  lighting_setup: None, self-illuminated edges
-  material_texture: Grid, topology linework
-  render_quality: Technical, blueprint, debug-preview
-  atmosphere: Technical, cyber, developer aesthetic
+  subject_treatment: Glowing lines
+  color_and_tone: Black background, Neon lines, glow contrast
+  lighting_and_shadow: Unlit self-illuminated edges
+  texture_and_material: Grid, topology linework
+  camera_and_composition: >-
+    Lookdev camera for Wireframe Render: three-quarter or orthographic framing, clean silhouette read,
+    material highlights, controlled depth, and vertical card composition.
+  atmosphere_and_mood: Technical, cyber, developer aesthetic
+  rendering_and_quality: Technical, blueprint, debug-preview
   key_features: Topology, edge-flow visibility
   creative_brief: >-
-    Strip the input to topology: neon edge loops, self-illuminated mesh lines, visible edge flow and debug-viewport
-    elegance. No need for a standalone object or black void; the style is structure made visible. Apply Wireframe Render
-    as a portable 3D/render style system over any input: preserve its renderer logic, material behavior, geometry
-    language, lighting grammar, and production cues while avoiding a required character, vehicle, prop, environment, UI
-    screen, product shot, or scene template.
+    Strip the input to topology: neon edge loops, self-illuminated mesh lines, visible edge flow and
+    debug-viewport elegance. No need for a standalone object or black void; the style is structure made
+    visible. Apply Wireframe Render as a portable 3D/render style system over any input: preserve its renderer
+    logic, material behavior, geometry language, lighting grammar, and production cues while avoiding a
+    required character, vehicle, prop, environment, UI screen, product shot, or scene template.
 avoidRules:
   - solid
   - textured

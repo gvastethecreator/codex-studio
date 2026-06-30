@@ -13,19 +13,18 @@ tags:
   - traditional-painting
 visualDna:
   aesthetic: Hot wax painting
-  form_and_line: Soft, melted edges
-  color_palette: Deep, translucent, layered
-  lighting_setup: Subsurface scattering
-  material_texture: Thick wax, scraped layers
-  render_quality: Textured, ancient
-  spatial_distortion: Blurred details
-  atmosphere: Mysterious, tactile
+  subject_treatment: Soft, melted edges
+  color_and_tone: Deep, translucent, layered
+  lighting_and_shadow: Subsurface scattering
+  texture_and_material: Thick wax, scraped layers
+  camera_and_composition: Blurred details
+  atmosphere_and_mood: Mysterious, tactile
+  rendering_and_quality: Textured, ancient
   key_features: Waxy surface
   creative_brief: >-
-    Apply encaustic wax painting to any input: fused translucent layers,
-    beeswax haze, scraped inclusions, heat-smoothed pigment, amber depth, and
-    tactile cloudy surface. Keep warm material memory without requiring abstract
-    panels, candles, relics, or preserved-object subject matter.
+    Apply encaustic wax painting to any input: fused translucent layers, beeswax haze, scraped inclusions,
+    heat-smoothed pigment, amber depth, and tactile cloudy surface. Keep warm material memory without
+    requiring abstract panels, candles, relics, or preserved-object subject matter.
 avoidRules:
   - photo
   - realistic
@@ -45,7 +44,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP06-006.webp
 attributes:
-  negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border
+  negativePrompt: >-
+    photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy,
+    watermark, text, signature, frame, border
 taxonomy:
   packId: pack_06
   packName: Essential Art Styles

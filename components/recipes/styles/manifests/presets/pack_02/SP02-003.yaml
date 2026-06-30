@@ -13,15 +13,23 @@ tags:
   - film-genres
 visualDna:
   aesthetic: Rain-soaked neon dystopia, Blade Runner aesthetic, 80s cyberpunk glow, perpetual night, synth underscore
-  form_and_line: None
-  color_palette: Neon Blue/Pink + Smoke, electric magenta, toxic green
-  lighting_setup: Low key + Neon, volumetric haze, wet reflections
-  material_texture: Anamorphic lens flare, wet reflective surfaces, brushed metal
-  render_quality: Atmospheric, practical FX, miniatures, matte painting
-  spatial_distortion: None
-  atmosphere: Dystopian, cool, synthetic, nocturnal
+  subject_treatment: >-
+    Treat subjects as believable filmed or broadcast subjects under 80s Sci-Fi: casting, wardrobe, props,
+    motion cues, and silhouette hierarchy follow 1. Film Genres cinematic and broadcast grammar without
+    locking to one plot beat.
+  color_and_tone: Neon Blue/Pink + Smoke, electric magenta, toxic green
+  lighting_and_shadow: Low key + Neon, volumetric haze, wet reflections
+  texture_and_material: Anamorphic lens flare, wet reflective surfaces, brushed metal
+  camera_and_composition: >-
+    Camera language native to 80s Sci-Fi: genre-aware framing, lens character, focal hierarchy, motion cue,
+    and vertical style-card composition.
+  atmosphere_and_mood: Dystopian, cool, synthetic, nocturnal
+  rendering_and_quality: Atmospheric, practical FX, miniatures, matte painting
   key_features: Smoke, neon haze, wet reflections
-  creative_brief: '80s sci-fi cinema makes any subject nocturnal and synthetic: magenta/cyan neon, volumetric haze, wet reflections, anamorphic flare, and practical-FX atmosphere. Keep Blade Runner memory as color/lens grammar without forcing megacity, ads, vehicles, or corporate monoliths.'
+  creative_brief: >-
+    80s sci-fi cinema makes any subject nocturnal and synthetic: magenta/cyan neon, volumetric haze, wet
+    reflections, anamorphic flare, and practical-FX atmosphere. Keep Blade Runner memory as color/lens grammar
+    without forcing megacity, ads, vehicles, or corporate monoliths.
 avoidRules:
   - modern cgi
 assets:

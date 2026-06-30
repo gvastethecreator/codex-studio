@@ -13,18 +13,17 @@ tags:
   - material-surface-textures
 visualDna:
   aesthetic: Interlinked rings
-  form_and_line: Rings
-  color_palette: Steel
-  lighting_setup: Metallic
-  material_texture: Metal links
-  render_quality: Medieval, armor
-  spatial_distortion: Drape
-  atmosphere: Strong, protective
+  subject_treatment: Rings
+  color_and_tone: Steel
+  lighting_and_shadow: Metallic
+  texture_and_material: Metal links
+  camera_and_composition: Drape
+  atmosphere_and_mood: Strong, protective
+  rendering_and_quality: Medieval, armor
   key_features: Ring pattern
   creative_brief: >-
-    Apply chainmail structure to the input: interlocked metal rings, flexible
-    armor flow, repeated circular links, and cool steel highlights should wrap
-    or replace surfaces without forcing medieval characters.
+    Apply chainmail structure to the input: interlocked metal rings, flexible armor flow, repeated circular
+    links, and cool steel highlights should wrap or replace surfaces without forcing medieval characters.
 avoidRules:
   - plate armor
 assets:

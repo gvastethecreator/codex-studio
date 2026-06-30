@@ -13,37 +13,38 @@ tags:
   - anime-style-spectrum
 visualDna:
   aesthetic: >-
-    Haruko Ichikawa - Mineral Void Serenity within 12. Anime Style Spectrum: a reusable Anime Character & Lifestyle
-    visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result
-    transferable across subjects while preserving Haruko Ichikawa - Mineral Void Serenity's specific style identity.
-  form_and_line: >-
-    Define Haruko Ichikawa - Mineral Void Serenity through line, mass, contour, spacing, and rhythm. Keep forms
-    readable, intentional, and reusable beyond one literal scene.
-  color_palette: >-
-    Use a Haruko Ichikawa - Mineral Void Serenity-specific palette with clear dominant, secondary, and accent roles.
-    Keep contrast deliberate and avoid generic color wash.
-  lighting_setup: >-
-    Use lighting that makes Haruko Ichikawa - Mineral Void Serenity recognizable: purposeful key, rim, bounce, shadow,
-    and glow behavior with readable hierarchy.
-  material_texture: >-
-    Use materials and textures that reinforce Haruko Ichikawa - Mineral Void Serenity: surface response, grain, patina,
-    polish, or wear should feel intentional and style-defining.
-  render_quality: >-
-    Render Haruko Ichikawa - Mineral Void Serenity with high production clarity, strong silhouette reads, clean detail
-    priority, and no accidental UI, text, logos, or watermark.
-  spatial_distortion: >-
-    Use spatial behavior that fits Haruko Ichikawa - Mineral Void Serenity: perspective, compression, exaggeration, or
-    depth should support the style without forcing one fixed location.
-  atmosphere: >-
-    Set a mood that belongs to Haruko Ichikawa - Mineral Void Serenity: specific, coherent, and distinct, with emotional
-    tone carried by visual systems rather than narrative captioning.
+    Haruko Ichikawa - Mineral Void Serenity within 12. Anime Style Spectrum: a reusable Anime Character &
+    Lifestyle visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction.
+    Keep the result transferable across subjects while preserving Haruko Ichikawa - Mineral Void Serenity's
+    specific style identity.
+  subject_treatment: >-
+    Define Haruko Ichikawa - Mineral Void Serenity through line, mass, contour, spacing, and rhythm. Keep
+    forms readable, intentional, and reusable beyond one literal scene.
+  color_and_tone: >-
+    Use a Haruko Ichikawa - Mineral Void Serenity-specific palette with clear dominant, secondary, and accent
+    roles. Keep contrast deliberate and avoid generic color wash.
+  lighting_and_shadow: >-
+    Use lighting that makes Haruko Ichikawa - Mineral Void Serenity recognizable: purposeful key, rim, bounce,
+    shadow, and glow behavior with readable hierarchy.
+  texture_and_material: >-
+    Use materials and textures that reinforce Haruko Ichikawa - Mineral Void Serenity: surface response,
+    grain, patina, polish, or wear should feel intentional and style-defining.
+  camera_and_composition: >-
+    Use spatial behavior that fits Haruko Ichikawa - Mineral Void Serenity: perspective, compression,
+    exaggeration, or depth should support the style without forcing one fixed location.
+  atmosphere_and_mood: >-
+    Set a mood that belongs to Haruko Ichikawa - Mineral Void Serenity: specific, coherent, and distinct, with
+    emotional tone carried by visual systems rather than narrative captioning.
+  rendering_and_quality: >-
+    Render Haruko Ichikawa - Mineral Void Serenity with high production clarity, strong silhouette reads,
+    clean detail priority, and no accidental UI, text, logos, or watermark.
   key_features: >-
-    Prioritize Haruko Ichikawa - Mineral Void Serenity's key features: recognizable shape language, palette logic,
-    material cues, lighting behavior, and composition rules.
+    Prioritize Haruko Ichikawa - Mineral Void Serenity's key features: recognizable shape language, palette
+    logic, material cues, lighting behavior, and composition rules.
   creative_brief: >-
-    Create a style-card that translates Haruko Ichikawa - Mineral Void Serenity into a portable visual system for 12.
-    Anime Style Spectrum. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or
-    story beat.
+    Create a style-card that translates Haruko Ichikawa - Mineral Void Serenity into a portable visual system
+    for 12. Anime Style Spectrum. Preserve the preset identity through style mechanics, not a fixed scene,
+    character, prop, or story beat.
 avoidRules:
   - noisy maximalism
   - cluttered environment
@@ -56,8 +57,8 @@ assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-335.webp
 attributes:
   negativePrompt: >-
-    noisy maximalism, cluttered environment, gritty horror texture, warm muddy palette, heavy outline cartooning, dense
-    crowd staging, opaque plastic surfaces
+    noisy maximalism, cluttered environment, gritty horror texture, warm muddy palette, heavy outline
+    cartooning, dense crowd staging, opaque plastic surfaces
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle

@@ -13,19 +13,18 @@ tags:
   - digital-art
 visualDna:
   aesthetic: Double-exposure compositing with nested imagery, transparent overlap, and poetic contour masking
-  form_and_line: Silhouette or mask-driven overlays with soft edge blending and exposure fusion
-  color_palette: Mixed palettes
-  lighting_setup: Contrast
-  material_texture: Mixed
-  render_quality: Artistic
-  spatial_distortion: Image inside shape
-  atmosphere: Dreamy
+  subject_treatment: Silhouette or mask-driven overlays with soft edge blending and exposure fusion
+  color_and_tone: Mixed palettes
+  lighting_and_shadow: Contrast
+  texture_and_material: Mixed
+  camera_and_composition: Image inside shape
+  atmosphere_and_mood: Dreamy
+  rendering_and_quality: Artistic
   key_features: Silhouette container
   creative_brief: >-
-    Apply double-exposure composition to any input: tonal masking, overlapping
-    visual fields, translucent registration drift, additive density, and negative
-    space fusion. Keep layered memory logic without requiring faces, forests,
-    mountains, human profiles, or portrait silhouettes.
+    Apply double-exposure composition to any input: tonal masking, overlapping visual fields, translucent
+    registration drift, additive density, and negative space fusion. Keep layered memory logic without
+    requiring faces, forests, mountains, human profiles, or portrait silhouettes.
 avoidRules:
   - photo
   - realistic
@@ -48,7 +47,10 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP06-057.webp
 attributes:
-  negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border, face profile requirement, forest requirement, mountain requirement
+  negativePrompt: >-
+    photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy,
+    watermark, text, signature, frame, border, face profile requirement, forest requirement, mountain
+    requirement
 taxonomy:
   packId: pack_06
   packName: Essential Art Styles

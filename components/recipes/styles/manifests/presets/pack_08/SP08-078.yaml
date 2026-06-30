@@ -13,20 +13,23 @@ tags:
   - fantasy-sci-fi-costume
 visualDna:
   aesthetic: Monochrome sci-fi hologram, distant-transmission shimmer, long-range signal urgency
-  form_and_line: Scanlines, horizontal-interlaced banding, ghost-flicker edge, translucent signal contour, projection-field taper
-  color_palette: Blue monochrome, hologram azure, transmission-static white, fade-to-transparent edge, flicker-blue
-  lighting_setup: Self-lit emissive-blue glow, projection-cone light, low-background contrast and flicker-instability pulse
-  material_texture: >-
+  subject_treatment: >-
+    Scanlines, horizontal-interlaced banding, ghost-flicker edge, translucent signal contour, projection-field
+    taper
+  color_and_tone: Blue monochrome, hologram azure, transmission-static white, fade-to-transparent edge, flicker-blue
+  lighting_and_shadow: Self-lit emissive-blue glow, projection-cone light, low-background contrast and flicker-instability pulse
+  texture_and_material: >-
     Light interference, scanline-grid pattern, signal-degradation static, transparency-fade, projection-grain,
     chromatic-fringe
-  render_quality: Sci-fi glitch precision, unstable signal urgency, transmission-grade shimmer
-  spatial_distortion: Transparent
-  atmosphere: Tech, message, urgent intimacy, distant-signal nostalgia, fragile transmission hope
+  camera_and_composition: Transparent
+  atmosphere_and_mood: Tech, message, urgent intimacy, distant-signal nostalgia, fragile transmission hope
+  rendering_and_quality: Sci-fi glitch precision, unstable signal urgency, transmission-grade shimmer
   key_features: Scanlines, blue monochrome, flicker instability, transparent contour, projection-field falloff
   creative_brief: >-
-    Render the input as unstable holographic transmission: blue monochrome, scanlines, projection grain, transparency
-    fade, chromatic fringe and flicker-loss at the edges. It can imply a message or figure, but must not require named
-    space-opera staging, a projection base, dark room, pleading character or body-first apparition.
+    Render the input as unstable holographic transmission: blue monochrome, scanlines, projection grain,
+    transparency fade, chromatic fringe and flicker-loss at the edges. It can imply a message or figure, but
+    must not require named space-opera staging, a projection base, dark room, pleading character or body-first
+    apparition.
 avoidRules:
   - solid
 assets:

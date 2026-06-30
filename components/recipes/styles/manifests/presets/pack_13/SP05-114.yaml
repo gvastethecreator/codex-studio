@@ -13,34 +13,34 @@ tags:
   - anime-style-spectrum
 visualDna:
   aesthetic: >-
-    Textile-patchwork anime treatment built from fabric scraps, embroidery detail, visible stitched
-    contours, quilted surfaces, and handmade soft imperfection
-  form_and_line: >-
-    Stitching-trail contours replacing ink lines, thread thickness varying by stitch,
-    embroidery-hoop circular framing, raw fabric-edge fraying
-  color_palette: >-
+    Textile-patchwork anime treatment built from fabric scraps, embroidery detail, visible stitched contours,
+    quilted surfaces, and handmade soft imperfection
+  subject_treatment: >-
+    Stitching-trail contours replacing ink lines, thread thickness varying by stitch, embroidery-hoop circular
+    framing, raw fabric-edge fraying
+  color_and_tone: >-
     Indigo-dyed-cotton, sashiko-white-stitching, vintage-kimono-silk-patterns, yarn-skein-rainbow,
     wooden-button-brown, linen-natural-ecru, patchwork-scrap-variety
-  lighting_setup: >-
+  lighting_and_shadow: >-
     Soft-sewing-room-daylight, fabric-store-ambient-warmth, afternoon-sun-through-lace-curtains,
     gentle-textile-softness
-  material_texture: >-
+  texture_and_material: >-
     Cotton-fabric-weave, wool-yarn-fuzz, silk-thread-sheen, button-sewing-thread-tension,
     embroidery-floss-gloss, frayed-edge-loose-threads
-  render_quality: >-
-    Textile-art-anime fusion, sewing-craft-beauty, quilted-animation-aesthetic,
-    thread-and-fabric-rendering, handmade-softness
-  spatial_distortion: >-
-    Patchwork seam divisions, embroidery-hoop composition framing, soft stuffed-volume proportion
-    shifts, and fabric-gather pleats
-  atmosphere: Cozy, handmade, craft-circle warmth, slow-craft meditation, tactile comfort
+  camera_and_composition: >-
+    Patchwork seam divisions, embroidery-hoop composition framing, soft stuffed-volume proportion shifts, and
+    fabric-gather pleats
+  atmosphere_and_mood: Cozy, handmade, craft-circle warmth, slow-craft meditation, tactile comfort
+  rendering_and_quality: >-
+    Textile-art-anime fusion, sewing-craft-beauty, quilted-animation-aesthetic, thread-and-fabric-rendering,
+    handmade-softness
   key_features: >-
-    Stitching-trail contours, yarn-bundle texture, fabric-patchwork seams, embroidery-hoop framing,
-    frayed fabric edges, sashiko-like patterns
+    Stitching-trail contours, yarn-bundle texture, fabric-patchwork seams, embroidery-hoop framing, frayed
+    fabric edges, sashiko-like patterns
   creative_brief: >-
-    Use threadbare textile patchwork as stitched-material grammar. Any prompt should become
-    fabric-built: seams, frayed edges, embroidery contours, quilted planes, and handmade softness.
-    Dolls, button eyes, kimonos, sewing rooms, and literal garments are optional.
+    Use threadbare textile patchwork as stitched-material grammar. Any prompt should become fabric-built:
+    seams, frayed edges, embroidery contours, quilted planes, and handmade softness. Dolls, button eyes,
+    kimonos, sewing rooms, and literal garments are optional.
 avoidRules:
   - smooth
   - digital

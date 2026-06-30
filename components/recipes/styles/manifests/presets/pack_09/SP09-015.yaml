@@ -13,21 +13,22 @@ tags:
   - natural-materials
 visualDna:
   aesthetic: Bee hive
-  form_and_line: Hexagons
-  color_palette: Golden Yellow
-  lighting_setup: Subsurface scattering
-  material_texture: Waxy, sticky
-  render_quality: Organic, sweet
-  spatial_distortion: Melting edge
-  atmosphere: Warm, busy
+  subject_treatment: Hexagons
+  color_and_tone: Golden Yellow
+  lighting_and_shadow: Subsurface scattering
+  texture_and_material: Waxy, sticky
+  camera_and_composition: Melting edge
+  atmosphere_and_mood: Warm, busy
+  rendering_and_quality: Organic, sweet
   key_features: Hex grid
   creative_brief: >-
-    Capture the golden geometry of beeswax hexagons, where instinct engineers perfection in translucent amber walls that
-    glow with subsurface warmth. Light should penetrate the wax like it penetrates memory, warm and diffused, revealing
-    the sticky sweetness held within each cell. The surface must hum with the ghost of industry, geometry sweetened by
-    purpose. Use Honeycomb Wax as portable surface/render behavior over any input: map its texture, light response, edge
-    wear, color chemistry, and tactile rhythm onto the subject instead of requiring a literal material sample, macro
-    tile, wall, landscape, source object, or scene where the material naturally appears.
+    Capture the golden geometry of beeswax hexagons, where instinct engineers perfection in translucent amber
+    walls that glow with subsurface warmth. Light should penetrate the wax like it penetrates memory, warm and
+    diffused, revealing the sticky sweetness held within each cell. The surface must hum with the ghost of
+    industry, geometry sweetened by purpose. Use Honeycomb Wax as portable surface/render behavior over any
+    input: map its texture, light response, edge wear, color chemistry, and tactile rhythm onto the subject
+    instead of requiring a literal material sample, macro tile, wall, landscape, source object, or scene where
+    the material naturally appears.
 avoidRules:
   - plastic
   - dry

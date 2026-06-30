@@ -13,19 +13,18 @@ tags:
   - drawing-and-sketching
 visualDna:
   aesthetic: Paper-cut silhouette grammar with total shape reliance and zero interior modeling
-  form_and_line: Outline only
-  color_palette: Solid Black on White
-  lighting_setup: Backlit
-  material_texture: Paper edge
-  render_quality: Stark cut-paper finish with crisp contour judgment
-  spatial_distortion: No internal details
-  atmosphere: Graphic, stark
+  subject_treatment: Outline only
+  color_and_tone: Solid Black on White
+  lighting_and_shadow: Backlit
+  texture_and_material: Paper edge
+  camera_and_composition: No internal details
+  atmosphere_and_mood: Graphic, stark
+  rendering_and_quality: Stark cut-paper finish with crisp contour judgment
   key_features: Solid shape
   creative_brief: >-
-    Apply silhouette-first drawing to any input: pure contour recognition,
-    interior detail removed, high figure-ground contrast, edge clarity, and
-    omission as design language. Keep shape-driven eloquence without requiring
-    profile portraits, sunsets, cut paper, theatre screens, or human bodies.
+    Apply silhouette-first drawing to any input: pure contour recognition, interior detail removed, high
+    figure-ground contrast, edge clarity, and omission as design language. Keep shape-driven eloquence without
+    requiring profile portraits, sunsets, cut paper, theatre screens, or human bodies.
 avoidRules:
   - photo
   - realistic
@@ -45,7 +44,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP06-029.webp
 attributes:
-  negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border
+  negativePrompt: >-
+    photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy,
+    watermark, text, signature, frame, border
 taxonomy:
   packId: pack_06
   packName: Essential Art Styles

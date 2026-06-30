@@ -123,7 +123,7 @@ export const GENERATED_STYLE_PRESETS = [
       aesthetic:
         'Severe crusader fantasy built from black iron, devotional symbols, and battle-worn austerity.',
       subject_treatment:
-        'A black-iron siege standard bearer built like a shield tower, faceless and angular, with relic scars and a massive tabard silhouette.',
+        'A black-iron siege banner bearer built like a shield tower, faceless and angular, with relic scars and a massive tabard silhouette.',
       color_and_tone:
         'Blackened steel, faded linen, bone white, rust red, and cold silver edge highlights.',
       lighting_and_shadow:

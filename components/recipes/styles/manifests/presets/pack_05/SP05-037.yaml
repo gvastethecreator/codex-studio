@@ -13,29 +13,32 @@ tags:
   - modern-shonen-and-action
 visualDna:
   aesthetic: Satirical overpowered action style combining premium destruction spectacle with deadpan comedic detachment
-  form_and_line: >-
-    Hyper-clean impact silhouettes, minimal-expression face grammar, explosive contour bursts, freeze-frame punchline
-    timing lines
-  color_palette: >-
-    Catastrophic contrast spikes over neutral comedic anchors, high-energy effect chroma with deliberate flat reaction
-    zones
-  lighting_setup: >-
+  subject_treatment: >-
+    Hyper-clean impact silhouettes, minimal-expression face grammar, explosive contour bursts, freeze-frame
+    punchline timing lines
+  color_and_tone: >-
+    Catastrophic contrast spikes over neutral comedic anchors, high-energy effect chroma with deliberate flat
+    reaction zones
+  lighting_and_shadow: >-
     Blockbuster blast illumination paired with calm portrait lighting for reaction shots, emphasizing
     joke-through-contrast
-  material_texture: >-
-    Crisp debris effects, polished impact particles, low-noise digital surfaces, comic-clean compositing with theatrical
-    clarity
-  render_quality: >-
-    Top-tier action animation polish intentionally juxtaposed with anti-dramatic character stillness and visual
-    punchline control
-  spatial_distortion: Extreme impact foreshortening alternating with static deadpan framing to maximize comedic dissonance
-  atmosphere: Absurd, overpowering, ironic, explosive, stoic
-  key_features: Spectacle-vs-deadpan duality, overkill impact staging, minimal-reaction comedy rhythm, freeze-frame gag mechanics
+  texture_and_material: >-
+    Crisp debris effects, polished impact particles, low-noise digital surfaces, comic-clean compositing with
+    theatrical clarity
+  camera_and_composition: Extreme impact foreshortening alternating with static deadpan framing to maximize comedic dissonance
+  atmosphere_and_mood: Absurd, overpowering, ironic, explosive, stoic
+  rendering_and_quality: >-
+    Top-tier action animation polish intentionally juxtaposed with anti-dramatic character stillness and
+    visual punchline control
+  key_features: >-
+    Spectacle-vs-deadpan duality, overkill impact staging, minimal-reaction comedy rhythm, freeze-frame gag
+    mechanics
   creative_brief: >-
-    The style should read as high-budget action satire: catastrophic impact grammar contrasted with emotionally flat
-    reaction framing, making comedic dissonance the transferable core. Apply this anime/IP-title grammar over any input:
-    preserve its motion language, line economy, emotional staging, palette logic, and symbolic cues while avoiding a
-    required cast, lore event, weapon, arena, school, ship, or fixed scene.
+    The style should read as high-budget action satire: catastrophic impact grammar contrasted with
+    emotionally flat reaction framing, making comedic dissonance the transferable core. Apply this
+    anime/IP-title grammar over any input: preserve its motion language, line economy, emotional staging,
+    palette logic, and symbolic cues while avoiding a required cast, lore event, weapon, arena, school, ship,
+    or fixed scene.
 avoidRules:
   - realistic
   - 3d render
@@ -53,8 +56,8 @@ assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-037.webp
 attributes:
   negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark,
-    text, signature
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts,
+    watermark, text, signature
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds

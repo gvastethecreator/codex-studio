@@ -13,20 +13,23 @@ tags:
   - organic-character-and-bio-cgi
 visualDna:
   aesthetic: Character model sheet
-  form_and_line: Anatomical
-  color_palette: Neutral light, skin-tone accuracy
-  lighting_setup: Flat, character-sheet evenness
-  material_texture: Skin, cloth, character assembly
-  render_quality: Concept art, production, model-sheet
-  atmosphere: Neutral, design, audition-ready
+  subject_treatment: Anatomical
+  color_and_tone: Neutral light, skin-tone accuracy
+  lighting_and_shadow: Flat, character-sheet evenness
+  texture_and_material: Skin, cloth, character assembly
+  camera_and_composition: >-
+    Lookdev camera for Character Design (T-Pose): three-quarter or orthographic framing, clean silhouette
+    read, material highlights, controlled depth, and vertical card composition.
+  atmosphere_and_mood: Neutral, design, audition-ready
+  rendering_and_quality: Concept art, production, model-sheet
   key_features: T-Pose or A-Pose, turn-around clarity
   creative_brief: >-
-    Use production model-sheet clarity. If a character exists, keep T-pose or A-pose, neutral turnaround lighting and
-    rig-ready anatomy/cloth truth. If no character exists, translate the subject into a neutral asset sheet with
-    orthographic readability. Avoid action pose or narrative background. Apply Character Design as a portable 3D/render
-    style system over any input: preserve its renderer logic, material behavior, geometry language, lighting grammar,
-    and production cues while avoiding a required character, vehicle, prop, environment, UI screen, product shot, or
-    scene template.
+    Use production model-sheet clarity. If a character exists, keep T-pose or A-pose, neutral turnaround
+    lighting and rig-ready anatomy/cloth truth. If no character exists, translate the subject into a neutral
+    asset sheet with orthographic readability. Avoid action pose or narrative background. Apply Character
+    Design as a portable 3D/render style system over any input: preserve its renderer logic, material
+    behavior, geometry language, lighting grammar, and production cues while avoiding a required character,
+    vehicle, prop, environment, UI screen, product shot, or scene template.
 avoidRules:
   - action pose
   - background

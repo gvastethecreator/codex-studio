@@ -13,20 +13,18 @@ tags:
   - render-engines
 visualDna:
   aesthetic: High end animation
-  form_and_line: Soft shapes
-  color_palette: Vibrant, cinematic, storybook saturation
-  lighting_setup: Artistic control, per-light AOVs
-  material_texture: Stylized realism, feature-animation material pipeline
-  render_quality: Disney/Pixar family feature animation, heartfelt, timeless
-  spatial_distortion: Squash and stretch
-  atmosphere: Magical, emotional resonance, family-feature warmth
+  subject_treatment: Soft shapes
+  color_and_tone: Vibrant, cinematic, storybook saturation
+  lighting_and_shadow: Artistic control, per-light AOVs
+  texture_and_material: Stylized realism, feature-animation material pipeline
+  camera_and_composition: Squash and stretch
+  atmosphere_and_mood: Magical, emotional resonance, family-feature warmth
+  rendering_and_quality: Disney/Pixar family feature animation, heartfelt, timeless
   key_features: Subsurface scattering, deep compositing
   creative_brief: >-
-    Render the input with feature-animation warmth: soft shapes,
-    stylized-real material response, subsurface edge glow, squash-and-stretch
-    elasticity and deep-composited light control. Preserve Pixar/RenderMan
-    emotional polish without requiring characters, skin, fabric, story pose or
-    family-film setup.
+    Render the input with feature-animation warmth: soft shapes, stylized-real material response, subsurface
+    edge glow, squash-and-stretch elasticity and deep-composited light control. Preserve Pixar/RenderMan
+    emotional polish without requiring characters, skin, fabric, story pose or family-film setup.
 avoidRules:
   - anime
   - 2d

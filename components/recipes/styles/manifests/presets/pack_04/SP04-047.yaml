@@ -13,19 +13,18 @@ tags:
   - concept-art
 visualDna:
   aesthetic: Movie background
-  form_and_line: None
-  color_palette: Photorealistic, natural-world spectrum, cinematic grade
-  lighting_setup: Cinematic, God-light rays, atmospheric perspective
-  material_texture: Photo bash
-  render_quality: Epic, detailed, world-building scale, invisible compositing
-  spatial_distortion: None
-  atmosphere: Vast, invisible, suspension-of-disbelief, epic silence
+  subject_treatment: "Treat subjects through Matte Painting's signature cues: Horizon line, depth layering, atmospheric haze."
+  color_and_tone: Photorealistic, natural-world spectrum, cinematic grade
+  lighting_and_shadow: Cinematic, God-light rays, atmospheric perspective
+  texture_and_material: Photo bash
+  camera_and_composition: 'Compose for Matte Painting using its key spatial cues: Horizon line, depth layering, atmospheric haze.'
+  atmosphere_and_mood: Vast, invisible, suspension-of-disbelief, epic silence
+  rendering_and_quality: Epic, detailed, world-building scale, invisible compositing
   key_features: Horizon line, depth layering, atmospheric haze
   creative_brief: >-
-    Apply cinematic matte-painting grammar to any input: atmospheric depth, horizon layering,
-    photobash seams, god-ray structure, haze scale, and invisible-composite realism should make
-    world weight carry emotion without requiring mountains, landscapes, backgrounds, castles, skies,
-    or vast scenery.
+    Apply cinematic matte-painting grammar to any input: atmospheric depth, horizon layering, photobash seams,
+    god-ray structure, haze scale, and invisible-composite realism should make world weight carry emotion
+    without requiring mountains, landscapes, backgrounds, castles, skies, or vast scenery.
 avoidRules:
   - cartoon
   - sketch

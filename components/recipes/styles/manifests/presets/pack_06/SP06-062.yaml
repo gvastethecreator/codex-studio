@@ -13,15 +13,19 @@ tags:
   - mixed-media
 visualDna:
   aesthetic: Seamless photo blending
-  form_and_line: Invisible
-  color_palette: Unified grading
-  lighting_setup: Matched
-  material_texture: Photo
-  render_quality: Surreal, advertising
-  spatial_distortion: Impossible scale
-  atmosphere: Dreamlike
+  subject_treatment: Invisible
+  color_and_tone: Unified grading
+  lighting_and_shadow: Matched
+  texture_and_material: Photo
+  camera_and_composition: Impossible scale
+  atmosphere_and_mood: Dreamlike
+  rendering_and_quality: Surreal, advertising
   key_features: Realistic blend
-  creative_brief: Image fragments blend at the pixel level, one visual plane flowing into another through gradients of transparency, the join so seamless it becomes uncanny. Scale shifts without warning, impossible relationships presented with banal compositing confidence. The image disturbs through plausibility, not fantasy, without requiring faces, cities, objects, or passport-photo framing.
+  creative_brief: >-
+    Image fragments blend at the pixel level, one visual plane flowing into another through gradients of
+    transparency, the join so seamless it becomes uncanny. Scale shifts without warning, impossible
+    relationships presented with banal compositing confidence. The image disturbs through plausibility, not
+    fantasy, without requiring faces, cities, objects, or passport-photo framing.
 avoidRules:
   - photo
   - realistic
@@ -44,7 +48,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP06-062.webp
 attributes:
-  negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border, face requirement, city requirement, object gag requirement
+  negativePrompt: >-
+    photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy,
+    watermark, text, signature, frame, border, face requirement, city requirement, object gag requirement
 taxonomy:
   packId: pack_06
   packName: Essential Art Styles

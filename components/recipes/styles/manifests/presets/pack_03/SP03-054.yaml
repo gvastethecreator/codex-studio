@@ -13,19 +13,18 @@ tags:
   - organic-character-and-bio-cgi
 visualDna:
   aesthetic: Hyper-appetizing food-ad CGI
-  form_and_line: Juicy details
-  color_palette: Saturated, fresh
-  lighting_setup: Backlit steam
-  material_texture: Wet, condensation, micro-droplets
-  render_quality: Fast-food hero-ad polish, impossibly appetizing
-  spatial_distortion: Flying ingredients
-  atmosphere: Delicious, hyperreal, crave-inducing
+  subject_treatment: Juicy details
+  color_and_tone: Saturated, fresh
+  lighting_and_shadow: Backlit steam
+  texture_and_material: Wet, condensation, micro-droplets
+  camera_and_composition: Flying ingredients
+  atmosphere_and_mood: Delicious, hyperreal, crave-inducing
+  rendering_and_quality: Fast-food hero-ad polish, impossibly appetizing
   key_features: Water droplets, steam wisps
   creative_brief: >-
-    Apply appetizing food-CGI craft to the input: macro compression, glossy
-    edible highlights, subsurface sauce-like glow, calibrated droplets and
-    crumb-level texture. If food exists, make it craveable; otherwise borrow
-    food-ad lighting/material richness without forcing burger ingredients.
+    Apply appetizing food-CGI craft to the input: macro compression, glossy edible highlights, subsurface
+    sauce-like glow, calibrated droplets and crumb-level texture. If food exists, make it craveable; otherwise
+    borrow food-ad lighting/material richness without forcing burger ingredients.
 avoidRules:
   - rotten
   - dry

@@ -13,15 +13,23 @@ tags:
   - film-genres
 visualDna:
   aesthetic: Scrappy analog space opera, used-future adventure, practical model magic
-  form_and_line: None
-  color_palette: Used future, worn ochre, grey panel, rebel olive, droid beige
-  lighting_setup: Studio practicals, cockpit-like glow, optical composite light
-  material_texture: Model kitbash, plastic parts, weathered metal, found-object greeble
-  render_quality: Practical FX, optical composite, matte painting, miniature magic
-  spatial_distortion: None
-  atmosphere: Adventure, dirty, swashbuckling, handmade wonder
+  subject_treatment: >-
+    Treat subjects as believable filmed or broadcast subjects under Space Opera (70s): casting, wardrobe,
+    props, motion cues, and silhouette hierarchy follow 1. Film Genres cinematic and broadcast grammar without
+    locking to one plot beat.
+  color_and_tone: Used future, worn ochre, grey panel, rebel olive, droid beige
+  lighting_and_shadow: Studio practicals, cockpit-like glow, optical composite light
+  texture_and_material: Model kitbash, plastic parts, weathered metal, found-object greeble
+  camera_and_composition: >-
+    Camera language native to Space Opera (70s): genre-aware framing, lens character, focal hierarchy, motion
+    cue, and vertical style-card composition.
+  atmosphere_and_mood: Adventure, dirty, swashbuckling, handmade wonder
+  rendering_and_quality: Practical FX, optical composite, matte painting, miniature magic
   key_features: Greebles, optical composite, worn future
-  creative_brief: '70s space opera gives any subject used-future wonder: kitbashed greebles, weathered panels, optical-composite softness, matte-painting depth, practical glow, and worn heroic texture. Keep Star Wars-era adventure without forcing ships, droids, cockpits, cantinas, or rebellion plot.'
+  creative_brief: >-
+    70s space opera gives any subject used-future wonder: kitbashed greebles, weathered panels,
+    optical-composite softness, matte-painting depth, practical glow, and worn heroic texture. Keep Star
+    Wars-era adventure without forcing ships, droids, cockpits, cantinas, or rebellion plot.
 avoidRules:
   - cgi
 assets:

@@ -12,23 +12,19 @@ tags:
   - illustration-and-graphic-novel
   - ink-and-print
 visualDna:
-  aesthetic: >-
-    Monotype one-off print style with painterly transfer unpredictability and unique
-    impression-first identity
-  form_and_line: >-
-    Smudged plate-transfer marks with pressure-variant edges, ghost traces, and spontaneous ink
-    movement
-  color_palette: Ink wash, single-pass tone, monoprint spontaneity
-  lighting_setup: Unpredictable, plate-pressure variation, unique ghost-artifact
-  material_texture: Plate texture
-  render_quality: Painterly print, one-chance drama, artistic gamble
-  spatial_distortion: Squashed ink
-  atmosphere: Expressive, unique, printmaking surprise, serendipitous beauty
+  aesthetic: Monotype one-off print style with painterly transfer unpredictability and unique impression-first identity
+  subject_treatment: Smudged plate-transfer marks with pressure-variant edges, ghost traces, and spontaneous ink movement
+  color_and_tone: Ink wash, single-pass tone, monoprint spontaneity
+  lighting_and_shadow: Unpredictable, plate-pressure variation, unique ghost-artifact
+  texture_and_material: Plate texture
+  camera_and_composition: Squashed ink
+  atmosphere_and_mood: Expressive, unique, printmaking surprise, serendipitous beauty
+  rendering_and_quality: Painterly print, one-chance drama, artistic gamble
   key_features: Ghost image, ink-bleed edge, plate-memory residue
   creative_brief: >-
-    Apply monotype print grammar to any input: one-pass transfer, pressure-born variation, ghosting,
-    smudged plate edges, and non-repeatable ink movement should create unique impression energy
-    without requiring abstract figures, print plates, studios, or one expressive scene.
+    Apply monotype print grammar to any input: one-pass transfer, pressure-born variation, ghosting, smudged
+    plate edges, and non-repeatable ink movement should create unique impression energy without requiring
+    abstract figures, print plates, studios, or one expressive scene.
 avoidRules:
   - repeatable
   - clean

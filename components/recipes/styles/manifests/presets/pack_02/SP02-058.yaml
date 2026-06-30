@@ -13,15 +13,19 @@ tags:
   - photography-eras
 visualDna:
   aesthetic: Internal structure
-  form_and_line: Bones/Structure
-  color_palette: Black/White/Blue, indigo ghost, bone-white, translucent cyan
-  lighting_setup: Translucent, backlit negative, see-through glow
-  material_texture: Film, radiographic sheet, phosphor plate
-  render_quality: Medical, scientific, diagnostic clarity, ghostly penetration
-  spatial_distortion: Transparency, density mapping, interior-only view
-  atmosphere: Clinical, spooky, diagnostic, hidden structure
+  subject_treatment: Bones/Structure
+  color_and_tone: Black/White/Blue, indigo ghost, bone-white, translucent cyan
+  lighting_and_shadow: Translucent, backlit negative, see-through glow
+  texture_and_material: Film, radiographic sheet, phosphor plate
+  camera_and_composition: Transparency, density mapping, interior-only view
+  atmosphere_and_mood: Clinical, spooky, diagnostic, hidden structure
+  rendering_and_quality: Medical, scientific, diagnostic clarity, ghostly penetration
   key_features: Inverted density map, translucent layers, phosphor glow, radiographic negative
-  creative_brief: 'Translate the input into radiographic imagery: surface detail drops away, density becomes tone, hidden structure glows through translucent layers, and the frame reads like a scientific negative. Avoid body-only, skeleton-only, swallowed-object, or security-scan scenes. The style should expose internal architecture whatever the subject is.'
+  creative_brief: >-
+    Translate the input into radiographic imagery: surface detail drops away, density becomes tone, hidden
+    structure glows through translucent layers, and the frame reads like a scientific negative. Avoid
+    body-only, skeleton-only, swallowed-object, or security-scan scenes. The style should expose internal
+    architecture whatever the subject is.
 avoidRules:
   - surface detail
 assets:

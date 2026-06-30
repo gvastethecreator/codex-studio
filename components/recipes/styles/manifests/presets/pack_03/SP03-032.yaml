@@ -13,19 +13,23 @@ tags:
   - lighting-and-atmosphere
 visualDna:
   aesthetic: Light beams in air
-  form_and_line: God rays
-  color_palette: Hazy, desaturated depth
-  lighting_setup: Scattered light, god-ray projection
-  material_texture: Fog density, volumetric depth
-  render_quality: Cinematic, atmospheric, immersive mystery
-  atmosphere: Mysterious, epic, volumetric scale
+  subject_treatment: God rays
+  color_and_tone: Hazy, desaturated depth
+  lighting_and_shadow: Scattered light, god-ray projection
+  texture_and_material: Fog density, volumetric depth
+  camera_and_composition: >-
+    Lighting-study camera for Volumetric Fog: stable three-quarter framing, visible depth layers, clear shadow
+    planes, and a vertical style-card crop.
+  atmosphere_and_mood: Mysterious, epic, volumetric scale
+  rendering_and_quality: Cinematic, atmospheric, immersive mystery
   key_features: Light shafts, air-density sculpting
   creative_brief: >-
-    Make atmosphere a render material around the input: layered fog volumes, blue-grey depth falloff, particulate beams
-    and cinematic air density. Keep cathedral/forest grandeur as optional mood only; do not require windows, canopy, or
-    specific environment. Apply Volumetric Fog as a portable 3D/render style system over any input: preserve its
-    renderer logic, material behavior, geometry language, lighting grammar, and production cues while avoiding a
-    required character, vehicle, prop, environment, UI screen, product shot, or scene template.
+    Make atmosphere a render material around the input: layered fog volumes, blue-grey depth falloff,
+    particulate beams and cinematic air density. Keep cathedral/forest grandeur as optional mood only; do not
+    require windows, canopy, or specific environment. Apply Volumetric Fog as a portable 3D/render style
+    system over any input: preserve its renderer logic, material behavior, geometry language, lighting
+    grammar, and production cues while avoiding a required character, vehicle, prop, environment, UI screen,
+    product shot, or scene template.
 avoidRules:
   - clear
   - vacuum

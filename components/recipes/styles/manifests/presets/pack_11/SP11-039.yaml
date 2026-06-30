@@ -13,19 +13,18 @@ tags:
   - aesthetics
 visualDna:
   aesthetic: Gothic horror romanticism with ornamental decay, aristocratic gloom, and vertical menace
-  form_and_line: Spiky vertical silhouettes, flying-buttress rhythm, tombstone-contours, wrought-iron flourishes
-  color_palette: Black, Grey, Deep Red, midnight-blue, blood-wine, silver-moon, funeral-lilac, bone-ivory
-  lighting_setup: Moonlight, fog, candelabra-flicker, stained-glass color cuts, lightning-flash drama, torch-sconce warmth
-  material_texture: Stone, velvet, fog, crumbling-masonry, coffin-wood, wax-drip candle, cold-marble tomb, cobweb-silk
-  render_quality: Atmospheric gothic rendering blending elegance and menace
-  spatial_distortion: Shadows, elongated-finger silhouettes, stretched verticals, impossible depth, cape-like darkness
-  atmosphere: Fear, elegance, whispered decay, eternal-twilight, forbidden-love, moonlit-solitude
+  subject_treatment: Spiky vertical silhouettes, flying-buttress rhythm, tombstone-contours, wrought-iron flourishes
+  color_and_tone: Black, Grey, Deep Red, midnight-blue, blood-wine, silver-moon, funeral-lilac, bone-ivory
+  lighting_and_shadow: Moonlight, fog, candelabra-flicker, stained-glass color cuts, lightning-flash drama, torch-sconce warmth
+  texture_and_material: Stone, velvet, fog, crumbling-masonry, coffin-wood, wax-drip candle, cold-marble tomb, cobweb-silk
+  camera_and_composition: Shadows, elongated-finger silhouettes, stretched verticals, impossible depth, cape-like darkness
+  atmosphere_and_mood: Fear, elegance, whispered decay, eternal-twilight, forbidden-love, moonlit-solitude
+  rendering_and_quality: Atmospheric gothic rendering blending elegance and menace
   key_features: Wrought-iron motifs, candelabra light pools, stone decay, dramatic moonlit silhouettes
   creative_brief: >-
-    Build gothic tension through vertical pressure, candle/moon contrast,
-    ornamental decay, ironwork rhythm, and velvet-shadow depth. Architectural
-    cues may reinforce the mood, but the style must adapt to any input without
-    requiring a castle, crypt, character, or fixed location.
+    Build gothic tension through vertical pressure, candle/moon contrast, ornamental decay, ironwork rhythm,
+    and velvet-shadow depth. Architectural cues may reinforce the mood, but the style must adapt to any input
+    without requiring a castle, crypt, character, or fixed location.
 avoidRules:
   - sunlight
   - happy

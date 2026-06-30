@@ -12,17 +12,17 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'zinepunk safehouse graphics as a flat graphic digital-illustration card built around a safehouse wall of handmade zines, paste buckets, distro crates, tape strips, and jacketed organizers.',
-      form_and_line:
+      subject_treatment:
         'Handmade graphics, patched clothes, improvised machines, crew energy, protest rhythm, and rough edges. Core composition uses zine walls, paste buckets, distro crates, organizers, cut paper texture.',
-      color_palette: 'photocopy black, paper cream, red ink, tape yellow',
-      lighting_setup: 'bare bulb and window light, copier glow, sharp paper shadows',
-      material_texture:
+      color_and_tone: 'photocopy black, paper cream, red ink, tape yellow',
+      lighting_and_shadow: 'bare bulb and window light, copier glow, sharp paper shadows',
+      texture_and_material:
         'blank paper blocks, tape strips, paste bucket shapes, denim silhouettes, marker-ink color blocks, plywood planes',
-      render_quality:
-        'Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity, moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material simulation, or hyper-detail.',
-      spatial_distortion:
+      camera_and_composition:
         'Safehouses, skateparks, warehouses, booths, yards, clinics, and shared kitchens with visible use. Keep depth legible and avoid default hallway, aisle, or empty studio staging.',
-      atmosphere: 'urgent, intimate, graphic, conspiratorial',
+      atmosphere_and_mood: 'urgent, intimate, graphic, conspiratorial',
+      rendering_and_quality:
+        'Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity, moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material simulation, or hyper-detail.',
       key_features: 'zine walls, paste buckets, distro crates, organizers, cut paper texture',
       creative_brief:
         'Zinepunk needs people and print culture: safehouse energy, handmade media, no readable text dependence or blank abstract collage. Keep it representative through cropped safehouse work wall, blank zine sheets as graphic blocks, jacketed organizers, paste bucket shapes, distro crates, tape strips, red ink blocks, and paper texture. Favor flat graphic digital illustration, clean editorial illustration, cel-shaded poster art, gouache poster aesthetics, graphic-novel card art, or stylized animation-background art over realism, photoreal painterly realism, cinematic key art, scratchy print noise, or hyper-detailed concept art. Use few bold color/value zones, simplified brush planes, matte surfaces, low-to-moderate texture, large shapes, clean surfaces, shallow poster depth, and finish denoised with no excessive noise or ultra-fine detail.',
@@ -37,17 +37,17 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'skatepunk power crew as a flat graphic digital-illustration card built around skaters wiring a generator rig into a concrete park with ramps, blank sticker shapes, cables, and sunset dust.',
-      form_and_line:
+      subject_treatment:
         'Handmade graphics, patched clothes, improvised machines, crew energy, protest rhythm, and rough edges. Core composition uses generator rig, skaters, ramps, cable trails, sticker clusters.',
-      color_palette: 'concrete gray, sticker red, battery green, sunset orange',
-      lighting_setup: 'low sunset, portable floodlights, battery LEDs, dust haze',
-      material_texture:
+      color_and_tone: 'concrete gray, sticker red, battery green, sunset orange',
+      lighting_and_shadow: 'low sunset, portable floodlights, battery LEDs, dust haze',
+      texture_and_material:
         'concrete planes, grip-tape shapes, patched denim silhouettes, battery-pack blocks, blank spray-paint color fields',
-      render_quality:
-        'Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity, moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material simulation, or hyper-detail.',
-      spatial_distortion:
+      camera_and_composition:
         'Safehouses, skateparks, warehouses, booths, yards, clinics, and shared kitchens with visible use. Keep depth legible and avoid default hallway, aisle, or empty studio staging.',
-      atmosphere: 'kinetic, young, rough, inventive',
+      atmosphere_and_mood: 'kinetic, young, rough, inventive',
+      rendering_and_quality:
+        'Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity, moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material simulation, or hyper-detail.',
       key_features: 'generator rig, skaters, ramps, cable trails, sticker clusters',
       creative_brief:
         'Skatepunk as motion and DIY power: crew, ramps, cables, and attitude, not a sterile product render of a board. Keep it representative through concrete skatepark corner, skater crew silhouettes, chunky generator rig, ramp curve, broad cable trails, battery glow blocks, and blank sticker-color clusters. Favor flat graphic digital illustration, clean editorial illustration, cel-shaded poster art, gouache poster aesthetics, graphic-novel card art, or stylized animation-background art over realism, photoreal painterly realism, cinematic key art, scratchy print noise, or hyper-detailed concept art. Use few bold color/value zones, simplified brush planes, matte surfaces, low-to-moderate texture, large shapes, clean surfaces, shallow poster depth, and finish denoised with no excessive noise or ultra-fine detail.',
@@ -62,17 +62,17 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'riot synthpunk basement as a flat graphic digital-illustration card built around a basement show where synth rigs, barricade furniture, patched amps, and a crowd share protest electricity.',
-      form_and_line:
+      subject_treatment:
         'Handmade graphics, patched clothes, improvised machines, crew energy, protest rhythm, and rough edges. Core composition uses synth rigs, patched amps, crowd silhouettes, improvised barricade, cable tangles.',
-      color_palette: 'charcoal, magenta, plywood brown, electric blue',
-      lighting_setup: 'stage LEDs, cheap bulbs, amp glow, smoky low ceiling',
-      material_texture:
+      color_and_tone: 'charcoal, magenta, plywood brown, electric blue',
+      lighting_and_shadow: 'stage LEDs, cheap bulbs, amp glow, smoky low ceiling',
+      texture_and_material:
         'plywood blocks, duct tape strips, thick cable trails, worn speaker shapes, jacket silhouettes',
-      render_quality:
-        'Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity, moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material simulation, or hyper-detail.',
-      spatial_distortion:
+      camera_and_composition:
         'Safehouses, skateparks, warehouses, booths, yards, clinics, and shared kitchens with visible use. Keep depth legible and avoid default hallway, aisle, or empty studio staging.',
-      atmosphere: 'loud, cramped, defiant, electric',
+      atmosphere_and_mood: 'loud, cramped, defiant, electric',
+      rendering_and_quality:
+        'Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity, moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material simulation, or hyper-detail.',
       key_features:
         'synth rigs, patched amps, crowd silhouettes, improvised barricade, cable tangles',
       creative_brief:
@@ -88,17 +88,17 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'junkpunk courier culture as a flat graphic digital-illustration card built around a courier yard full of scrapbikes, welded cargo racks, blank route-map shapes, helmets, and repair crews.',
-      form_and_line:
+      subject_treatment:
         'Handmade graphics, patched clothes, improvised machines, crew energy, protest rhythm, and rough edges. Core composition uses scrapbikes, cargo racks, maps, welding crews, chain silhouettes.',
-      color_palette: 'rust orange, tire black, courier yellow, oil blue',
-      lighting_setup: 'yard floodlights, welding sparks, late-sky rim light',
-      material_texture:
+      color_and_tone: 'rust orange, tire black, courier yellow, oil blue',
+      lighting_and_shadow: 'yard floodlights, welding sparks, late-sky rim light',
+      texture_and_material:
         'scrap metal blocks, tire rubber shapes, oil color planes, chain arcs, patched helmet silhouettes',
-      render_quality:
-        'Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity, moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material simulation, or hyper-detail.',
-      spatial_distortion:
+      camera_and_composition:
         'Safehouses, skateparks, warehouses, booths, yards, clinics, and shared kitchens with visible use. Keep depth legible and avoid default hallway, aisle, or empty studio staging.',
-      atmosphere: 'fast, improvised, grimy, practical',
+      atmosphere_and_mood: 'fast, improvised, grimy, practical',
+      rendering_and_quality:
+        'Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity, moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material simulation, or hyper-detail.',
       key_features: 'scrapbikes, cargo racks, maps, welding crews, chain silhouettes',
       creative_brief:
         'Junkpunk with transport function: bikes, racks, repair, crews, and city logistics, not random trash sculpture. Keep it representative through practical courier repair yard, scrapbike silhouettes, welded cargo racks, mechanic/courier figure, blank route-map board as abstract color planes, chain arcs, and one flat welding glow. Favor flat graphic digital illustration, clean editorial illustration, cel-shaded poster art, gouache poster aesthetics, graphic-novel card art, or stylized animation-background art over realism, photoreal painterly realism, cinematic key art, scratchy print noise, or hyper-detailed concept art. Use few bold color/value zones, simplified brush planes, matte surfaces, low-to-moderate texture, large shapes, clean surfaces, shallow poster depth, and finish denoised with no excessive noise or ultra-fine detail.',
@@ -113,17 +113,17 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'street signal booth as a flat graphic digital-illustration card built around a tiny signal booth layered with blank sticker-color shapes, cables, pirate switches, and teens monitoring street feeds.',
-      form_and_line:
+      subject_treatment:
         'Handmade graphics, patched clothes, improvised machines, crew energy, protest rhythm, and rough edges. Core composition uses signal booth, sticker layers, switch panels, teens, cable knots.',
-      color_palette: 'sticker red, hazard yellow, cyan screen, black marker',
-      lighting_setup: 'screen glow, street sodium, sticker gloss highlights',
-      material_texture:
+      color_and_tone: 'sticker red, hazard yellow, cyan screen, black marker',
+      lighting_and_shadow: 'screen glow, street sodium, sticker gloss highlights',
+      texture_and_material:
         'blank sticker-color layers, plywood planes, acrylic switch blocks, sparse cable arcs, marker-ink shapes',
-      render_quality:
-        'Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity, moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material simulation, or hyper-detail.',
-      spatial_distortion:
+      camera_and_composition:
         'Safehouses, skateparks, warehouses, booths, yards, clinics, and shared kitchens with visible use. Keep depth legible and avoid default hallway, aisle, or empty studio staging.',
-      atmosphere: 'scrappy, graphic, watchful, urban',
+      atmosphere_and_mood: 'scrappy, graphic, watchful, urban',
+      rendering_and_quality:
+        'Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity, moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material simulation, or hyper-detail.',
       key_features: 'signal booth, sticker layers, switch panels, teens, cable knots',
       creative_brief:
         'A street-media preset: dense stickers and signal gear are valid if they serve the booth, not repeated random props. Keep it representative through tiny urban signal booth, blank sticker-color layers as plain rectangles/circles only, teen operator silhouettes, switch-panel blocks with no marks, cyan screen glow as flat rectangle, sparse black cable arcs, and plywood booth geometry. Favor flat graphic digital illustration, clean editorial illustration, cel-shaded poster art, gouache poster aesthetics, graphic-novel card art, or stylized animation-background art over realism, photoreal painterly realism, cinematic key art, scratchy print noise, or hyper-detailed concept art. Use few bold color/value zones, simplified brush planes, matte surfaces, low-to-moderate texture, large shapes, clean surfaces, shallow poster depth, and finish denoised with no excessive noise or ultra-fine detail.',
@@ -138,17 +138,17 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'ravepunk mutual care as a flat graphic digital-illustration card built around a rave-adjacent care clinic inside a warehouse with care tables, dancers, lasers, and hydration rigs.',
-      form_and_line:
+      subject_treatment:
         'Handmade graphics, patched clothes, improvised machines, crew energy, protest rhythm, and rough edges. Core composition uses care tables, dancers, hydration rigs, lasers, warehouse columns.',
-      color_palette: 'laser green, violet, white vinyl, concrete gray',
-      lighting_setup: 'laser haze, soft clinic lamps, strobe traces, exit-light red',
-      material_texture:
+      color_and_tone: 'laser green, violet, white vinyl, concrete gray',
+      lighting_and_shadow: 'laser haze, soft clinic lamps, strobe traces, exit-light red',
+      texture_and_material:
         'vinyl cot planes, concrete columns, foil blanket shape, plastic water-tank blocks, matte laser bands',
-      render_quality:
-        'Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity, moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material simulation, or hyper-detail.',
-      spatial_distortion:
+      camera_and_composition:
         'Safehouses, skateparks, warehouses, booths, yards, clinics, and shared kitchens with visible use. Keep depth legible and avoid default hallway, aisle, or empty studio staging.',
-      atmosphere: 'protective, nocturnal, pulsing, communal',
+      atmosphere_and_mood: 'protective, nocturnal, pulsing, communal',
+      rendering_and_quality:
+        'Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity, moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material simulation, or hyper-detail.',
       key_features: 'care tables, dancers, hydration rigs, lasers, warehouse columns',
       creative_brief:
         'Ravepunk but humane: music, care, hydration, med tables, and people, not just abstract neon haze. Keep it representative through warehouse mutual-care corner, one care table, helper/dancer silhouettes in plain clothes, hydration rig blocks, foil blanket shape, soft clinic lamp circles, laser green/violet bands, concrete column planes, and blank exit-red accent. Favor flat graphic digital illustration, clean editorial illustration, cel-shaded poster art, gouache poster aesthetics, graphic-novel card art, or stylized animation-background art over realism, photoreal painterly realism, cinematic key art, scratchy print noise, or hyper-detailed concept art. Use few bold color/value zones, simplified brush planes, matte surfaces, low-to-moderate texture, large shapes, clean surfaces, shallow poster depth, and finish denoised with no excessive noise or ultra-fine detail.',
@@ -163,16 +163,16 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'crustpunk fashion council built around a circle of patched jackets, bootleg symbols, battered tables, dogs optional, and tense crew decisions.',
-      form_and_line:
+      subject_treatment:
         'Handmade graphics, patched clothes, improvised machines, crew energy, protest rhythm, and rough edges. Core composition uses patch jackets, circular seating, boot silhouettes, hand signs, worn table maps.',
-      color_palette: 'faded black, bone white, rust red, dirty denim blue',
-      lighting_setup: 'bare overhead light, candle edge glow, harsh side shadows',
-      material_texture: 'patched denim, leather, metal studs, paper maps, chipped tables',
-      render_quality:
-        'Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity, moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material simulation, or hyper-detail.',
-      spatial_distortion:
+      color_and_tone: 'faded black, bone white, rust red, dirty denim blue',
+      lighting_and_shadow: 'bare overhead light, candle edge glow, harsh side shadows',
+      texture_and_material: 'patched denim, leather, metal studs, paper maps, chipped tables',
+      camera_and_composition:
         'Safehouses, skateparks, warehouses, booths, yards, clinics, and shared kitchens with visible use. Keep depth legible and avoid default hallway, aisle, or empty studio staging.',
-      atmosphere: 'rough, tribal, argumentative, loyal',
+      atmosphere_and_mood: 'rough, tribal, argumentative, loyal',
+      rendering_and_quality:
+        'Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity, moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material simulation, or hyper-detail.',
       key_features:
         'patch jackets, circular seating, boot silhouettes, hand signs, worn table maps',
       creative_brief:
@@ -188,16 +188,16 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'commons street tech built around a street kitchen using hacked food printers, crates, volunteers, queue lines, and steam in a hard city block.',
-      form_and_line:
+      subject_treatment:
         'Handmade graphics, patched clothes, improvised machines, crew energy, protest rhythm, and rough edges. Core composition uses food printers, volunteer line, crates, steam, street kitchen tables.',
-      color_palette: 'tomato red, stainless steel, cardboard tan, street black',
-      lighting_setup: 'steam glow, portable lamps, cloudy daylight, warm queue light',
-      material_texture: 'cardboard, steel trays, food steam, aprons, cracked pavement',
-      render_quality:
-        'Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity, moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material simulation, or hyper-detail.',
-      spatial_distortion:
+      color_and_tone: 'tomato red, stainless steel, cardboard tan, street black',
+      lighting_and_shadow: 'steam glow, portable lamps, cloudy daylight, warm queue light',
+      texture_and_material: 'cardboard, steel trays, food steam, aprons, cracked pavement',
+      camera_and_composition:
         'Safehouses, skateparks, warehouses, booths, yards, clinics, and shared kitchens with visible use. Keep depth legible and avoid default hallway, aisle, or empty studio staging.',
-      atmosphere: 'generous, busy, stubborn, practical',
+      atmosphere_and_mood: 'generous, busy, stubborn, practical',
+      rendering_and_quality:
+        'Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity, moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material simulation, or hyper-detail.',
       key_features: 'food printers, volunteer line, crates, steam, street kitchen tables',
       creative_brief:
         'Commons punk should feed people: queues, hacked machines, volunteers, and city grit, not abstract utopian icons. Keep the result representative rather than over-abstract; make one character in their environment the anchor, with motifs as background, costume, weather, architecture, or social pressure instead of a foreground prop. Favor clean graphic-novel card art, stylized 2D digital illustration, controlled digital painting, cel-shaded poster art, or gouache-poster color blocking over realism, photoreal painterly realism, cinematic key art, or hyper-detailed concept art. Use few bold color/value zones, moderate texture, large shapes, clean surfaces, and finish denoised with no excessive noise or ultra-fine detail.',

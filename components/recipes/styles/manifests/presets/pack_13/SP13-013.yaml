@@ -13,20 +13,31 @@ tags:
   - anime
   - slice-of-life
 visualDna:
-  aesthetic: Pre-performance slice-of-life anime language with emotional intimacy, polished stagecraft contrast, and rain-tinted nocturnal sensitivity
-  form_and_line: Soft facial contour priority, controlled costume-like fold elegance, hand-gesture micro-acting cues, and close-framing silhouette clarity
-  color_palette: Night blues, muted rose accents, warm gold practicals, mirror-neutral highlights, and subdued skin midtones
-  lighting_setup: Vanity-like practicals as warm key, soft stage-bokeh separation, low-contrast fill, and rain-cooled edge tones
-  material_texture: Satin fabric sheen, reflective mirror-like surfaces, subtle cosmetic powder finish, damp diffusion, and metallic hardware accents
-  render_quality: Emotion-first polished anime rendering with refined facial readability, restrained detail density, and premium music-drama card legibility
-  spatial_distortion: Intimate medium framing with shallow focus falloff and performance context kept intentionally soft
-  atmosphere: Vulnerable, aspirational, focused, and quietly determined
+  aesthetic: >-
+    Pre-performance slice-of-life anime language with emotional intimacy, polished stagecraft contrast, and
+    rain-tinted nocturnal sensitivity
+  subject_treatment: >-
+    Soft facial contour priority, controlled costume-like fold elegance, hand-gesture micro-acting cues, and
+    close-framing silhouette clarity
+  color_and_tone: >-
+    Night blues, muted rose accents, warm gold practicals, mirror-neutral highlights, and subdued skin
+    midtones
+  lighting_and_shadow: >-
+    Vanity-like practicals as warm key, soft stage-bokeh separation, low-contrast fill, and rain-cooled edge
+    tones
+  texture_and_material: >-
+    Satin fabric sheen, reflective mirror-like surfaces, subtle cosmetic powder finish, damp diffusion, and
+    metallic hardware accents
+  camera_and_composition: Intimate medium framing with shallow focus falloff and performance context kept intentionally soft
+  atmosphere_and_mood: Vulnerable, aspirational, focused, and quietly determined
+  rendering_and_quality: >-
+    Emotion-first polished anime rendering with refined facial readability, restrained detail density, and
+    premium music-drama card legibility
   key_features: Backstage-like light rhythm, pre-stage expression anchor, readiness cues, and rain-muted contrast
   creative_brief: >-
-    Use Rainy Idol Backstage as style anchor for quiet pre-performance tension:
-    warm practicals, intimate expression-led framing, and rain-cooled polish
-    should transfer without requiring an idol, mirror room, microphone,
-    wardrobe, or literal backstage.
+    Use Rainy Idol Backstage as style anchor for quiet pre-performance tension: warm practicals, intimate
+    expression-led framing, and rain-cooled polish should transfer without requiring an idol, mirror room,
+    microphone, wardrobe, or literal backstage.
 avoidRules:
   - photoreal
   - gritty-horror

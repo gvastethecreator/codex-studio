@@ -13,15 +13,19 @@ tags:
   - textile-and-ornamental-patterns
 visualDna:
   aesthetic: Portuguese ceramic tile
-  form_and_line: Blue painting
-  color_palette: Blue on White
-  lighting_setup: Glossy glaze
-  material_texture: Ceramic
-  render_quality: Historic, decorative
-  spatial_distortion: None
-  atmosphere: Classic, bright
+  subject_treatment: Blue painting
+  color_and_tone: Blue on White
+  lighting_and_shadow: Glossy glaze
+  texture_and_material: Ceramic
+  camera_and_composition: 'Compose for Azulejo Tile using its key spatial cues: Square grid.'
+  atmosphere_and_mood: Classic, bright
+  rendering_and_quality: Historic, decorative
   key_features: Square grid
-  creative_brief: Apply azulejo ceramic language over the input with cobalt-blue painting on white glaze, square-grid segmentation, glossy ceramic imperfections, and historic decorative rhythm. If walls, tiles, architecture, or objects exist, glaze them; otherwise use blue-white tile geometry as pattern and surface without forcing Lisbon, palaces, or wall setting.
+  creative_brief: >-
+    Apply azulejo ceramic language over the input with cobalt-blue painting on white glaze, square-grid
+    segmentation, glossy ceramic imperfections, and historic decorative rhythm. If walls, tiles, architecture,
+    or objects exist, glaze them; otherwise use blue-white tile geometry as pattern and surface without
+    forcing Lisbon, palaces, or wall setting.
 avoidRules:
   - modern
 assets:

@@ -13,19 +13,20 @@ tags:
   - drawing-and-sketching
 visualDna:
   aesthetic: Technical drafting with measured line hierarchy and schematic restraint
-  form_and_line: Uniform line weight
-  color_palette: Black on white
-  lighting_setup: None
-  material_texture: Vellum, smooth
-  render_quality: Blueprint-like schematic clarity without requiring buildings or plans
-  spatial_distortion: Geometric
-  atmosphere: Precise, technical
+  subject_treatment: Uniform line weight
+  color_and_tone: Black on white
+  lighting_and_shadow: >-
+    Lighting for Technical Pen: purposeful key, bounce, rim, shadow depth, and focal readability matched to 2.
+    Drawing & Sketching.
+  texture_and_material: Vellum, smooth
+  camera_and_composition: Geometric
+  atmosphere_and_mood: Precise, technical
+  rendering_and_quality: Blueprint-like schematic clarity without requiring buildings or plans
   key_features: Clean lines
   creative_brief: >-
-    Apply technical-pen precision to any input: uniform steel-nib lines,
-    measured hatching, straightedge discipline, controlled line weights, and
-    accuracy-first detail. Keep engineering clarity without requiring machinery,
-    blueprints, architecture, labels, or diagrammatic annotations.
+    Apply technical-pen precision to any input: uniform steel-nib lines, measured hatching, straightedge
+    discipline, controlled line weights, and accuracy-first detail. Keep engineering clarity without requiring
+    machinery, blueprints, architecture, labels, or diagrammatic annotations.
 avoidRules:
   - photo
   - realistic
@@ -45,7 +46,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP06-025.webp
 attributes:
-  negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border
+  negativePrompt: >-
+    photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy,
+    watermark, text, signature, frame, border
 taxonomy:
   packId: pack_06
   packName: Essential Art Styles

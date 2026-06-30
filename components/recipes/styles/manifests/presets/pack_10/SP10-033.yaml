@@ -13,18 +13,18 @@ tags:
   - surrealism-and-dream
 visualDna:
   aesthetic: LSD trip visual
-  form_and_line: Flowing, melting
-  color_palette: Neon, rainbow
-  lighting_setup: Glowing
-  material_texture: Fractal
-  render_quality: Trippy, 60s
-  spatial_distortion: Melting geometry
-  atmosphere: Intense, hallucination
+  subject_treatment: Flowing, melting
+  color_and_tone: Neon, rainbow
+  lighting_and_shadow: Glowing
+  texture_and_material: Fractal
+  camera_and_composition: Melting geometry
+  atmosphere_and_mood: Intense, hallucination
+  rendering_and_quality: Trippy, 60s
   key_features: Pulse motifs
   creative_brief: >-
-    Apply psychedelic pulse to the input: neon fractals, vibrating complementary
-    colors, recursive floral geometry, liquid contour drift, and sensory
-    overload should transform any subject without requiring faces, posters, or drug imagery.
+    Apply psychedelic pulse to the input: neon fractals, vibrating complementary colors, recursive floral
+    geometry, liquid contour drift, and sensory overload should transform any subject without requiring faces,
+    posters, or drug imagery.
 avoidRules:
   - dull
   - grey

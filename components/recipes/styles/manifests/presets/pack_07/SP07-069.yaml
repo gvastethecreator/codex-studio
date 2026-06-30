@@ -13,21 +13,22 @@ tags:
   - toy-craft-and-miniature-architecture
 visualDna:
   aesthetic: Soft pressurized architecture with pneumatic mass, festive color blocking and temporary spatial logic.
-  form_and_line: Bulging pneumatic tubes, welded segmentation, modular rounded lobes and hose-anchor geometry.
-  color_palette: >-
-    High-saturation vinyl pink, electric yellow, safety orange, cobalt blue, bright green, and neutral seam-strip
-    accents
-  lighting_setup: Diffuse outdoor sun, strong vinyl speculars, translucent panel glow and soft bloom on inflated edges.
-  material_texture: Glossy PVC skin, heat-weld ridges, tensioned membranes, load wrinkles and blower hardware.
-  render_quality: Legible playful inflatable rendering with high material fidelity and controlled temporary-installation gloss.
-  spatial_distortion: Soft-volume inflation bulge and pressure-rounded edge behavior across all masses
-  atmosphere: Energetic, kinetic and festive, unmistakably temporary.
-  key_features: >-
-    Pressurized tubular frame, heat-weld seam grid, vivid zoning, mesh panels and visible inflation nodes.
+  subject_treatment: Bulging pneumatic tubes, welded segmentation, modular rounded lobes and hose-anchor geometry.
+  color_and_tone: >-
+    High-saturation vinyl pink, electric yellow, safety orange, cobalt blue, bright green, and neutral
+    seam-strip accents
+  lighting_and_shadow: Diffuse outdoor sun, strong vinyl speculars, translucent panel glow and soft bloom on inflated edges.
+  texture_and_material: Glossy PVC skin, heat-weld ridges, tensioned membranes, load wrinkles and blower hardware.
+  camera_and_composition: Soft-volume inflation bulge and pressure-rounded edge behavior across all masses
+  atmosphere_and_mood: Energetic, kinetic and festive, unmistakably temporary.
+  rendering_and_quality: >-
+    Legible playful inflatable rendering with high material fidelity and controlled temporary-installation
+    gloss.
+  key_features: Pressurized tubular frame, heat-weld seam grid, vivid zoning, mesh panels and visible inflation nodes.
   creative_brief: >-
-    Apply inflatable vinyl behavior when compatible: pressure-rounded edges, heat-weld seams,
-    PVC highlights, temporary joints and safety-pop color. The style should suggest pressure,
-    play and temporality without turning every subject into a park, castle or literal inflatable volume.
+    Apply inflatable vinyl behavior when compatible: pressure-rounded edges, heat-weld seams, PVC highlights,
+    temporary joints and safety-pop color. The style should suggest pressure, play and temporality without
+    turning every subject into a park, castle or literal inflatable volume.
 avoidRules:
   - hard edges
 assets:

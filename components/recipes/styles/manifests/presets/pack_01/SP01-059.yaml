@@ -13,18 +13,17 @@ tags:
   - technical-and-specialist-imaging
 visualDna:
   aesthetic: Unrecognizable forms
-  form_and_line: Shape and color
-  color_palette: Bold
-  lighting_setup: Experimental
-  material_texture: Macro or motion blur
-  render_quality: Artistic, confusion
-  spatial_distortion: Total abstraction
-  atmosphere: Conceptual
+  subject_treatment: Shape and color
+  color_and_tone: Bold
+  lighting_and_shadow: Experimental
+  texture_and_material: Macro or motion blur
+  camera_and_composition: Total abstraction
+  atmosphere_and_mood: Conceptual
+  rendering_and_quality: Artistic, confusion
   key_features: No subject
   creative_brief: >-
-    Apply abstract-photography dissolution to the input: close-range cropping,
-    color-first composition, blur, partial recognition, and suggestive form
-    fragments should let any subject become photographic abstraction.
+    Apply abstract-photography dissolution to the input: close-range cropping, color-first composition, blur,
+    partial recognition, and suggestive form fragments should let any subject become photographic abstraction.
 avoidRules:
   - recognizable object
 assets:

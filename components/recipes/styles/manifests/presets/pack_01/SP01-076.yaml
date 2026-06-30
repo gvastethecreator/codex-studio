@@ -13,15 +13,20 @@ tags:
   - technical-and-specialist-imaging
 visualDna:
   aesthetic: Forensic evidence documentation
-  form_and_line: Clinical scale logic
-  color_palette: Neutral, flash
-  lighting_setup: Flat flash
-  material_texture: Detail focus
-  render_quality: Objective, cold
-  spatial_distortion: None
-  atmosphere: Unsettling, factual
+  subject_treatment: Clinical scale logic
+  color_and_tone: Neutral, flash
+  lighting_and_shadow: Flat flash
+  texture_and_material: Detail focus
+  camera_and_composition: >-
+    Camera setup native to Forensic Photography: lens choice, crop distance, depth of field, and focal
+    hierarchy support 7. Technical And Specialist Imaging without generic framing.
+  atmosphere_and_mood: Unsettling, factual
+  rendering_and_quality: Objective, cold
   key_features: Evidence-like markers
-  creative_brief: Forensic photography documents any subject with flat flash, neutral color, clinical scale logic, cold detail focus, and evidence-like markers. The camera behaves as factual witness without requiring crime setting, blood, ruler, or investigation props.
+  creative_brief: >-
+    Forensic photography documents any subject with flat flash, neutral color, clinical scale logic, cold
+    detail focus, and evidence-like markers. The camera behaves as factual witness without requiring crime
+    setting, blood, ruler, or investigation props.
 avoidRules:
   - artistic
   - emotional

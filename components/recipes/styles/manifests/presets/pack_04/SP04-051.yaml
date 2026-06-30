@@ -13,25 +13,24 @@ tags:
   - concept-art
 visualDna:
   aesthetic: >-
-    Creature-concept development style driven by ecological plausibility, adaptive morphology, and
-    silhouette threat readability
-  form_and_line: >-
+    Creature-concept development style driven by ecological plausibility, adaptive morphology, and silhouette
+    threat readability
+  subject_treatment: >-
     Anatomical construction logic with biomechanical cue layering, functional limb articulation, and
     predator-profile contour control
-  color_palette: Skin tones, organic chromatics, creature-flesh spectrum
-  lighting_setup: Rim light, silhouette reveal, ambient dread
-  material_texture: Scales, fur
-  render_quality: Scary, biological, anatomical conviction, apex-predator presence
-  spatial_distortion: >-
-    Speculative anatomy distortions guided by functional adaptation, not random mutation, with
-    balanced asymmetry control
-  atmosphere: Dangerous, alive, predatory stillness, ecological tension
+  color_and_tone: Skin tones, organic chromatics, creature-flesh spectrum
+  lighting_and_shadow: Rim light, silhouette reveal, ambient dread
+  texture_and_material: Scales, fur
+  camera_and_composition: >-
+    Speculative anatomy distortions guided by functional adaptation, not random mutation, with balanced
+    asymmetry control
+  atmosphere_and_mood: Dangerous, alive, predatory stillness, ecological tension
+  rendering_and_quality: Scary, biological, anatomical conviction, apex-predator presence
   key_features: Silhouette, anatomical breakdown, adaptive feature
   creative_brief: >-
-    Apply creature-design grammar to any input: adaptive morphology, habitat-driven features,
-    anatomical construction, predator-profile silhouette, and biological material logic should
-    create living threat without requiring monsters, beasts, claws, fangs, horror scenes, or one
-    creature vignette.
+    Apply creature-design grammar to any input: adaptive morphology, habitat-driven features, anatomical
+    construction, predator-profile silhouette, and biological material logic should create living threat
+    without requiring monsters, beasts, claws, fangs, horror scenes, or one creature vignette.
 avoidRules:
   - human
   - cute

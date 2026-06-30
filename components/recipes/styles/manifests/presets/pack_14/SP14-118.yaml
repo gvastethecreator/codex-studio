@@ -13,36 +13,37 @@ tags:
   - mythic-noir
 visualDna:
   aesthetic: >-
-    Cinder Sun Pantheon Trial within 3. Mythic Pantheons & Legends: a reusable Mythic Noir Curated Vault visual language
-    with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across
-    subjects while preserving Cinder Sun Pantheon Trial's specific style identity.
-  form_and_line: >-
-    Define Cinder Sun Pantheon Trial through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional,
-    and reusable beyond one literal scene.
-  color_palette: >-
-    Use a Cinder Sun Pantheon Trial-specific palette with clear dominant, secondary, and accent roles. Keep contrast
-    deliberate and avoid generic color wash.
-  lighting_setup: >-
-    Use lighting that makes Cinder Sun Pantheon Trial recognizable: purposeful key, rim, bounce, shadow, and glow
-    behavior with readable hierarchy.
-  material_texture: >-
-    Use materials and textures that reinforce Cinder Sun Pantheon Trial: surface response, grain, patina, polish, or
-    wear should feel intentional and style-defining.
-  render_quality: >-
-    Render Cinder Sun Pantheon Trial with high production clarity, strong silhouette reads, clean detail priority, and
-    no accidental UI, text, logos, or watermark.
-  spatial_distortion: >-
-    Use spatial behavior that fits Cinder Sun Pantheon Trial: perspective, compression, exaggeration, or depth should
-    support the style without forcing one fixed location.
-  atmosphere: >-
-    Set a mood that belongs to Cinder Sun Pantheon Trial: specific, coherent, and distinct, with emotional tone carried
-    by visual systems rather than narrative captioning.
+    Cinder Sun Pantheon Trial within 3. Mythic Pantheons & Legends: a reusable Mythic Noir Curated Vault
+    visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the
+    result transferable across subjects while preserving Cinder Sun Pantheon Trial's specific style identity.
+  subject_treatment: >-
+    Define Cinder Sun Pantheon Trial through line, mass, contour, spacing, and rhythm. Keep forms readable,
+    intentional, and reusable beyond one literal scene.
+  color_and_tone: >-
+    Use a Cinder Sun Pantheon Trial-specific palette with clear dominant, secondary, and accent roles. Keep
+    contrast deliberate and avoid generic color wash.
+  lighting_and_shadow: >-
+    Use lighting that makes Cinder Sun Pantheon Trial recognizable: purposeful key, rim, bounce, shadow, and
+    glow behavior with readable hierarchy.
+  texture_and_material: >-
+    Use materials and textures that reinforce Cinder Sun Pantheon Trial: surface response, grain, patina,
+    polish, or wear should feel intentional and style-defining.
+  camera_and_composition: >-
+    Use spatial behavior that fits Cinder Sun Pantheon Trial: perspective, compression, exaggeration, or depth
+    should support the style without forcing one fixed location.
+  atmosphere_and_mood: >-
+    Set a mood that belongs to Cinder Sun Pantheon Trial: specific, coherent, and distinct, with emotional
+    tone carried by visual systems rather than narrative captioning.
+  rendering_and_quality: >-
+    Render Cinder Sun Pantheon Trial with high production clarity, strong silhouette reads, clean detail
+    priority, and no accidental UI, text, logos, or watermark.
   key_features: >-
-    Prioritize Cinder Sun Pantheon Trial's key features: recognizable shape language, palette logic, material cues,
-    lighting behavior, and composition rules.
+    Prioritize Cinder Sun Pantheon Trial's key features: recognizable shape language, palette logic, material
+    cues, lighting behavior, and composition rules.
   creative_brief: >-
-    Create a style-card that translates Cinder Sun Pantheon Trial into a portable visual system for 3. Mythic Pantheons
-    & Legends. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.
+    Create a style-card that translates Cinder Sun Pantheon Trial into a portable visual system for 3. Mythic
+    Pantheons & Legends. Preserve the preset identity through style mechanics, not a fixed scene, character,
+    prop, or story beat.
 avoidRules:
   - photoreal
   - cheerful

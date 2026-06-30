@@ -13,19 +13,18 @@ tags:
   - 3d-styles
 visualDna:
   aesthetic: App icon render
-  form_and_line: Rounded corners
-  color_palette: Vibrant, gradient
-  lighting_setup: Soft studio
-  material_texture: Smooth plastic/glass, UI-grade finish
-  render_quality: macOS Big Sur glossy modern platform icon, squircle elegance
-  spatial_distortion: Squircle
-  atmosphere: Friendly, UI, app-store ready
+  subject_treatment: Rounded corners
+  color_and_tone: Vibrant, gradient
+  lighting_and_shadow: Soft studio
+  texture_and_material: Smooth plastic/glass, UI-grade finish
+  camera_and_composition: Squircle
+  atmosphere_and_mood: Friendly, UI, app-store ready
+  rendering_and_quality: macOS Big Sur glossy modern platform icon, squircle elegance
   key_features: Front facing, soft shadow base
   creative_brief: >-
-    Compress the input into platform-icon language: squircle discipline,
-    UI-grade plastic/glass, vibrant gradients, soft shadow grounding and
-    front-facing legibility. Keep macOS Big Sur polish without requiring a
-    literal app, drawer context or standalone object.
+    Compress the input into platform-icon language: squircle discipline, UI-grade plastic/glass, vibrant
+    gradients, soft shadow grounding and front-facing legibility. Keep macOS Big Sur polish without requiring
+    a literal app, drawer context or standalone object.
 avoidRules:
   - flat
   - 2d icon

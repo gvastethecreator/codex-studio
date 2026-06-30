@@ -13,18 +13,18 @@ tags:
   - documentary-and-street
 visualDna:
   aesthetic: Action camera POV
-  form_and_line: Fisheye distortion
-  color_palette: Vibrant, sharp
-  lighting_setup: Harsh available light
-  material_texture: Digital sharpening
-  render_quality: Action-camera realism
-  spatial_distortion: Curved horizon
-  atmosphere: Active, immersive
+  subject_treatment: Fisheye distortion
+  color_and_tone: Vibrant, sharp
+  lighting_and_shadow: Harsh available light
+  texture_and_material: Digital sharpening
+  camera_and_composition: Curved horizon
+  atmosphere_and_mood: Active, immersive
+  rendering_and_quality: Action-camera realism
   key_features: Wide FOV
   creative_brief: >-
-    Apply GoPro-wide action optics to the input: ultra-wide FOV, curved horizon
-    distortion, digital sharpness, hard available light, and foreground pull
-    should make any subject immersive without requiring sports or travel.
+    Apply GoPro-wide action optics to the input: ultra-wide FOV, curved horizon distortion, digital sharpness,
+    hard available light, and foreground pull should make any subject immersive without requiring sports or
+    travel.
 avoidRules:
   - illustration
   - painting
@@ -44,7 +44,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP01-023.webp
 attributes:
-  negativePrompt: illustration, painting, drawing, 3d render, cartoon, anime, sketch, blurry, noisy, low resolution, watermark, text, signature, bad anatomy, deformed
+  negativePrompt: >-
+    illustration, painting, drawing, 3d render, cartoon, anime, sketch, blurry, noisy, low resolution,
+    watermark, text, signature, bad anatomy, deformed
 taxonomy:
   packId: pack_01
   packName: Photography & Realism

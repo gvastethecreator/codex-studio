@@ -12,17 +12,33 @@ tags:
   - miscellaneous-and-fun
   - artistic-mediums
 visualDna:
-  aesthetic: Handmade broadcast texture system where any subject becomes soft, stitched, fuzzy, visibly operated, and warmly stage-lit
-  form_and_line: Rounded cut-fabric contours, sock-like volume breaks, seam-guided silhouettes, elastic wobble arcs, simplified expressive geometry
-  color_palette: Primary felt blocks, craft-store brights, saturated fleece accents, warm studio neutrals, tiny black button contrast
-  lighting_setup: Friendly multi-camera studio light with soft key-fill balance, gentle rim glow, and practical set warmth without requiring a stage
-  material_texture: Felt nap, fleece fuzz, foam padding, visible stitching, brushed fabric grain, handmade edge irregularity
-  render_quality: Tactile, imperfect, playful, low-tech, performance-driven, with intentional handcraft evidence in every surface
-  spatial_distortion: Mouth-flap compression, rod-like gesture arcs, slight squash at joints, fabric slouch, shallow theatrical depth
-  atmosphere: Warm, comedic, approachable, nostalgic, handmade, emotionally legible
-  key_features: Fuzzy contour halos, seam punctuation, button-eye abstraction, foam volume, felt color blocking, soft jaw-like deformation
+  aesthetic: >-
+    Handmade broadcast texture system where any subject becomes soft, stitched, fuzzy, visibly operated, and
+    warmly stage-lit
+  subject_treatment: >-
+    Rounded cut-fabric contours, sock-like volume breaks, seam-guided silhouettes, elastic wobble arcs,
+    simplified expressive geometry
+  color_and_tone: >-
+    Primary felt blocks, craft-store brights, saturated fleece accents, warm studio neutrals, tiny black
+    button contrast
+  lighting_and_shadow: >-
+    Friendly multi-camera studio light with soft key-fill balance, gentle rim glow, and practical set warmth
+    without requiring a stage
+  texture_and_material: Felt nap, fleece fuzz, foam padding, visible stitching, brushed fabric grain, handmade edge irregularity
+  camera_and_composition: >-
+    Mouth-flap compression, rod-like gesture arcs, slight squash at joints, fabric slouch, shallow theatrical
+    depth
+  atmosphere_and_mood: Warm, comedic, approachable, nostalgic, handmade, emotionally legible
+  rendering_and_quality: >-
+    Tactile, imperfect, playful, low-tech, performance-driven, with intentional handcraft evidence in every
+    surface
+  key_features: >-
+    Fuzzy contour halos, seam punctuation, button-eye abstraction, foam volume, felt color blocking, soft
+    jaw-like deformation
   creative_brief: >-
-    Transform the input into a handmade broadcast-material treatment: felt nap, foam softness, seam rhythm, and operated-expression timing should define the image. The result should feel tactile and performed, without requiring literal puppets, sets, rods, or franchise references.
+    Transform the input into a handmade broadcast-material treatment: felt nap, foam softness, seam rhythm,
+    and operated-expression timing should define the image. The result should feel tactile and performed,
+    without requiring literal puppets, sets, rods, or franchise references.
 avoidRules:
   - cgi
   - smooth

@@ -13,15 +13,23 @@ tags:
   - photography-eras
 visualDna:
   aesthetic: Blue print photo
-  form_and_line: None
-  color_palette: Prussian Blue/White, deep indigo, cerulean, paper-white
-  lighting_setup: Sunlight, UV exposure, contact-print daylight
-  material_texture: Paper fiber, watercolor paper, pulp grain
-  render_quality: Blueprint, art, scientific aesthetic, photogram precision
-  spatial_distortion: None
-  atmosphere: Calm, blue, scientific, contemplative
+  subject_treatment: >-
+    Treat subjects as believable filmed or broadcast subjects under Cyanotype (Photo): casting, wardrobe,
+    props, motion cues, and silhouette hierarchy follow 4. Photography Eras cinematic and broadcast grammar
+    without locking to one plot beat.
+  color_and_tone: Prussian Blue/White, deep indigo, cerulean, paper-white
+  lighting_and_shadow: Sunlight, UV exposure, contact-print daylight
+  texture_and_material: Paper fiber, watercolor paper, pulp grain
+  camera_and_composition: >-
+    Camera language native to Cyanotype (Photo): genre-aware framing, lens character, focal hierarchy, motion
+    cue, and vertical style-card composition.
+  atmosphere_and_mood: Calm, blue, scientific, contemplative
+  rendering_and_quality: Blueprint, art, scientific aesthetic, photogram precision
   key_features: Monochrome blue, contact-print silhouette, paper fiber, UV exposure edge, Prussian wash
-  creative_brief: 'Convert any input into cyanotype contact-print language: Prussian blue and paper white, UV exposure softness, watercolor paper fiber, contact shadows, and blueprint-like negative space. Avoid forcing botanical specimens or catalog scenes. The style should feel methodical, quiet, and handmade by sunlight.'
+  creative_brief: >-
+    Convert any input into cyanotype contact-print language: Prussian blue and paper white, UV exposure
+    softness, watercolor paper fiber, contact shadows, and blueprint-like negative space. Avoid forcing
+    botanical specimens or catalog scenes. The style should feel methodical, quiet, and handmade by sunlight.
 avoidRules:
   - color
 assets:

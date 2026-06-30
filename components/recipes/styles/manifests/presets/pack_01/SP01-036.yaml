@@ -13,15 +13,18 @@ tags:
   - lighting-techniques
 visualDna:
   aesthetic: Half-lit split contrast
-  form_and_line: Sharp transition
-  color_palette: High contrast
-  lighting_setup: 90 degree side light
-  material_texture: Hard lateral contrast
-  render_quality: Dramatic side-light realism
-  spatial_distortion: Hidden side
-  atmosphere: Conflict, mystery
+  subject_treatment: Sharp transition
+  color_and_tone: High contrast
+  lighting_and_shadow: 90 degree side light
+  texture_and_material: Hard lateral contrast
+  camera_and_composition: Hidden side
+  atmosphere_and_mood: Conflict, mystery
+  rendering_and_quality: Dramatic side-light realism
   key_features: Half dark
-  creative_brief: Apply split lighting to the input with a 90-degree side source, dividing forms into declared and hidden halves. Use a sharp meridian of contrast, one side exposed and one side falling into black, to create tension without requiring a face, villain, or character narrative.
+  creative_brief: >-
+    Apply split lighting to the input with a 90-degree side source, dividing forms into declared and hidden
+    halves. Use a sharp meridian of contrast, one side exposed and one side falling into black, to create
+    tension without requiring a face, villain, or character narrative.
 avoidRules:
   - flat
   - fill light

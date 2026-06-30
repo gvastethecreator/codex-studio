@@ -14,16 +14,33 @@ tags:
   - tarot-tech
   - industrial-occult
 visualDna:
-  aesthetic: tarot-tech industrial occult built around a foundry casting circuit-like tarot plates with workers, molten lines, and symbolic machine presses.
-  form_and_line: Ritual diagrams, gothic silhouettes, folk hardware, talismanic machines, and mythic street-level staging. Core composition uses tarot plates, machine presses, workers, molten traces, card geometry without readable text.
-  color_palette: burned gold, black iron, card cream, red ember
-  lighting_setup: molten gold lines, press shadows, ember glow, overhead smoke
-  material_texture: iron presses, card stock, molten metal, soot, engraved copper
-  render_quality: Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity, moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material simulation, or hyper-detail.
-  spatial_distortion: Switchyards, foundries, chapels, cairns, repair shops, salons, processions, and rural transformers. Keep depth legible and avoid default hallway, aisle, or empty studio staging.
-  atmosphere: fateful, industrial, symbolic, heavy
+  aesthetic: >-
+    tarot-tech industrial occult built around a foundry casting circuit-like tarot plates with workers, molten
+    lines, and symbolic machine presses.
+  subject_treatment: >-
+    Ritual diagrams, gothic silhouettes, folk hardware, talismanic machines, and mythic street-level staging.
+    Core composition uses tarot plates, machine presses, workers, molten traces, card geometry without
+    readable text.
+  color_and_tone: burned gold, black iron, card cream, red ember
+  lighting_and_shadow: molten gold lines, press shadows, ember glow, overhead smoke
+  texture_and_material: iron presses, card stock, molten metal, soot, engraved copper
+  camera_and_composition: >-
+    Switchyards, foundries, chapels, cairns, repair shops, salons, processions, and rural transformers. Keep
+    depth legible and avoid default hallway, aisle, or empty studio staging.
+  atmosphere_and_mood: fateful, industrial, symbolic, heavy
+  rendering_and_quality: >-
+    Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly
+    planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity,
+    moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material
+    simulation, or hyper-detail.
   key_features: tarot plates, machine presses, workers, molten traces, card geometry without readable text
-  creative_brief: 'Make tarot visual language physical and industrial: casting, a compact press as hero, blank card geometry, molten circuit traces, and small plain worker silhouettes with no clothing marks, with no readable card text. Keep the result representative rather than over-abstract; use flat graphic illustration, gouache-poster shapes, cel-poster blocking, and controlled digital painting over realism or generic concept art. Use few bold color/value zones, large matte shapes, clean surfaces, low-to-moderate detail, and finish denoised with no excessive noise or ultra-fine detail.'
+  creative_brief: >-
+    Make tarot visual language physical and industrial: casting, a compact press as hero, blank card geometry,
+    molten circuit traces, and small plain worker silhouettes with no clothing marks, with no readable card
+    text. Keep the result representative rather than over-abstract; use flat graphic illustration,
+    gouache-poster shapes, cel-poster blocking, and controlled digital painting over realism or generic
+    concept art. Use few bold color/value zones, large matte shapes, clean surfaces, low-to-moderate detail,
+    and finish denoised with no excessive noise or ultra-fine detail.
 avoidRules:
   - photoreal
   - watermark
@@ -37,7 +54,22 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP15-058.webp
 attributes:
-  negativePrompt: photoreal, hyperreal, realistic render, painterly realism, realistic paint finish, cinematic realism, AAA key art, photographic skin pores, realistic foreground portrait, realistic facial hair detail, lens blur, bokeh, depth-of-field photo look, foreground masked hero, realistic masked portrait, robe symbols, worker emblems, wall plaques with glyphs, readable card names, letters, zodiac signs, pentagram, cross, skull emblem, fortune-teller table, altar, cathedral corridor, foundry corridor, photoreal molten metal, tiny circuit filigree, generic soldier hero, guard pin-up, weapon-first pose, HDR lens realism, 3D render look, PBR material simulation, hyper-detailed concept art, watermark, text, logo, generic style, over-abstract, interchangeable preset, duplicated motifs, generic glass utopia, unmotivated market aisle, unmotivated library aisle, fantasy corridor, random camera held by subject, studio wall fixation, chair fixation, curtain fixation, lamp fixation, scarf fixation, pedestal fixation, bird fixation, excessive noise, ultra-fine detail, over-sharpened microtexture, over-rendered machinery, noisy grime, tiny rivets everywhere, busy texture chatter, realistic uniform portrait, uniformed officer hero, foreground guard portrait, detailed tattoo focus, dense machinery wallpaper, overcrowded scene, high-frequency surface detail, cinematic close-up portrait, flat black fill, crushed black, pure black masses, muddy black fields, generic American illustration, generic Western RPG card art
+  negativePrompt: >-
+    photoreal, hyperreal, realistic render, painterly realism, realistic paint finish, cinematic realism, AAA
+    key art, photographic skin pores, realistic foreground portrait, realistic facial hair detail, lens blur,
+    bokeh, depth-of-field photo look, foreground masked hero, realistic masked portrait, robe symbols, worker
+    emblems, wall plaques with glyphs, readable card names, letters, zodiac signs, pentagram, cross, skull
+    emblem, fortune-teller table, altar, cathedral corridor, foundry corridor, photoreal molten metal, tiny
+    circuit filigree, generic soldier hero, guard pin-up, weapon-first pose, HDR lens realism, 3D render look,
+    PBR material simulation, hyper-detailed concept art, watermark, text, logo, generic style, over-abstract,
+    interchangeable preset, duplicated motifs, generic glass utopia, unmotivated market aisle, unmotivated
+    library aisle, fantasy corridor, random camera held by subject, studio wall fixation, chair fixation,
+    curtain fixation, lamp fixation, scarf fixation, pedestal fixation, bird fixation, excessive noise,
+    ultra-fine detail, over-sharpened microtexture, over-rendered machinery, noisy grime, tiny rivets
+    everywhere, busy texture chatter, realistic uniform portrait, uniformed officer hero, foreground guard
+    portrait, detailed tattoo focus, dense machinery wallpaper, overcrowded scene, high-frequency surface
+    detail, cinematic close-up portrait, flat black fill, crushed black, pure black masses, muddy black
+    fields, generic American illustration, generic Western RPG card art
 taxonomy:
   packId: pack_15
   packName: Punk Spectrum Vault

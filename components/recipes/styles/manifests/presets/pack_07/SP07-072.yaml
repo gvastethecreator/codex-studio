@@ -13,37 +13,38 @@ tags:
   - toy-craft-and-miniature-architecture
 visualDna:
   aesthetic: >-
-    Bottle-Glass Curio Miniature within 6. Toy Craft And Miniature Architecture: a reusable Architecture & Interior
-    visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result
-    transferable across subjects while preserving Bottle-Glass Curio Miniature's specific style identity.
-  form_and_line: >-
+    Bottle-Glass Curio Miniature within 6. Toy Craft And Miniature Architecture: a reusable Architecture &
+    Interior visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction.
+    Keep the result transferable across subjects while preserving Bottle-Glass Curio Miniature's specific
+    style identity.
+  subject_treatment: >-
     Define Bottle-Glass Curio Miniature through line, mass, contour, spacing, and rhythm. Keep forms readable,
     intentional, and reusable beyond one literal scene.
-  color_palette: >-
-    Use a Bottle-Glass Curio Miniature-specific palette with clear dominant, secondary, and accent roles. Keep contrast
-    deliberate and avoid generic color wash.
-  lighting_setup: >-
-    Use lighting that makes Bottle-Glass Curio Miniature recognizable: purposeful key, rim, bounce, shadow, and glow
-    behavior with readable hierarchy.
-  material_texture: >-
-    Use materials and textures that reinforce Bottle-Glass Curio Miniature: surface response, grain, patina, polish, or
-    wear should feel intentional and style-defining.
-  render_quality: >-
-    Render Bottle-Glass Curio Miniature with high production clarity, strong silhouette reads, clean detail priority,
-    and no accidental UI, text, logos, or watermark.
-  spatial_distortion: >-
-    Use spatial behavior that fits Bottle-Glass Curio Miniature: perspective, compression, exaggeration, or depth should
-    support the style without forcing one fixed location.
-  atmosphere: >-
-    Set a mood that belongs to Bottle-Glass Curio Miniature: specific, coherent, and distinct, with emotional tone
-    carried by visual systems rather than narrative captioning.
+  color_and_tone: >-
+    Use a Bottle-Glass Curio Miniature-specific palette with clear dominant, secondary, and accent roles. Keep
+    contrast deliberate and avoid generic color wash.
+  lighting_and_shadow: >-
+    Use lighting that makes Bottle-Glass Curio Miniature recognizable: purposeful key, rim, bounce, shadow,
+    and glow behavior with readable hierarchy.
+  texture_and_material: >-
+    Use materials and textures that reinforce Bottle-Glass Curio Miniature: surface response, grain, patina,
+    polish, or wear should feel intentional and style-defining.
+  camera_and_composition: >-
+    Use spatial behavior that fits Bottle-Glass Curio Miniature: perspective, compression, exaggeration, or
+    depth should support the style without forcing one fixed location.
+  atmosphere_and_mood: >-
+    Set a mood that belongs to Bottle-Glass Curio Miniature: specific, coherent, and distinct, with emotional
+    tone carried by visual systems rather than narrative captioning.
+  rendering_and_quality: >-
+    Render Bottle-Glass Curio Miniature with high production clarity, strong silhouette reads, clean detail
+    priority, and no accidental UI, text, logos, or watermark.
   key_features: >-
-    Prioritize Bottle-Glass Curio Miniature's key features: recognizable shape language, palette logic, material cues,
-    lighting behavior, and composition rules.
+    Prioritize Bottle-Glass Curio Miniature's key features: recognizable shape language, palette logic,
+    material cues, lighting behavior, and composition rules.
   creative_brief: >-
-    Create a style-card that translates Bottle-Glass Curio Miniature into a portable visual system for 6. Toy Craft And
-    Miniature Architecture. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or
-    story beat.
+    Create a style-card that translates Bottle-Glass Curio Miniature into a portable visual system for 6. Toy
+    Craft And Miniature Architecture. Preserve the preset identity through style mechanics, not a fixed scene,
+    character, prop, or story beat.
 avoidRules:
   - open ocean background
   - seascape dominance

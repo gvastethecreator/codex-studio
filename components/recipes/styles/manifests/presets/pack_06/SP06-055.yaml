@@ -13,19 +13,18 @@ tags:
   - digital-art
 visualDna:
   aesthetic: Corrupted data
-  form_and_line: Jagged, displaced
-  color_palette: RGB shift, neon
-  lighting_setup: Broken
-  material_texture: Pixels, noise
-  render_quality: Broken, cyber
-  spatial_distortion: Tearing
-  atmosphere: Chaotic, tech
+  subject_treatment: Jagged, displaced
+  color_and_tone: RGB shift, neon
+  lighting_and_shadow: Broken
+  texture_and_material: Pixels, noise
+  camera_and_composition: Tearing
+  atmosphere_and_mood: Chaotic, tech
+  rendering_and_quality: Broken, cyber
   key_features: Digital artifacts
   creative_brief: >-
-    Apply glitch-art corruption to any input: RGB channel displacement, data
-    tearing, compression blocks, scanline breaks, algorithmic offsets, and
-    malfunction-as-medium structure. Keep digital failure expressive without
-    requiring screens, hackers, cyberpunk rooms, or UI overlays.
+    Apply glitch-art corruption to any input: RGB channel displacement, data tearing, compression blocks,
+    scanline breaks, algorithmic offsets, and malfunction-as-medium structure. Keep digital failure expressive
+    without requiring screens, hackers, cyberpunk rooms, or UI overlays.
 avoidRules:
   - photo
   - realistic
@@ -45,7 +44,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP06-055.webp
 attributes:
-  negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border
+  negativePrompt: >-
+    photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy,
+    watermark, text, signature, frame, border
 taxonomy:
   packId: pack_06
   packName: Essential Art Styles

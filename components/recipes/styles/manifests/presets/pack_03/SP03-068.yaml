@@ -13,20 +13,20 @@ tags:
   - environment-and-worldbuilding
 visualDna:
   aesthetic: Photogrammetry scan realism
-  form_and_line: Realistic geometry
-  color_palette: Photo texture
-  lighting_setup: Baked lighting (delit)
-  material_texture: Real world noise, photogrammetry texture
-  render_quality: Quixel Megascans scan-library realism
-  spatial_distortion: Mesh errors (optional)
-  atmosphere: Real, grounded, authentic capture
+  subject_treatment: Realistic geometry
+  color_and_tone: Photo texture
+  lighting_and_shadow: Baked lighting (delit)
+  texture_and_material: Real world noise, photogrammetry texture
+  camera_and_composition: Mesh errors (optional)
+  atmosphere_and_mood: Real, grounded, authentic capture
+  rendering_and_quality: Quixel Megascans scan-library realism
   key_features: Photo realism, surface-level scan detail
   creative_brief: >-
-    Give the input photogrammetry truth: scan noise, photo-textured surfaces, baked de-lit color, imperfect mesh detail
-    and Quixel/Megascans credibility. Do not force rocks, tree stumps, ruined walls or outdoor capture subjects. Apply
-    3D Scan as a portable 3D/render style system over any input: preserve its renderer logic, material behavior,
-    geometry language, lighting grammar, and production cues while avoiding a required character, vehicle, prop,
-    environment, UI screen, product shot, or scene template.
+    Give the input photogrammetry truth: scan noise, photo-textured surfaces, baked de-lit color, imperfect
+    mesh detail and Quixel/Megascans credibility. Do not force rocks, tree stumps, ruined walls or outdoor
+    capture subjects. Apply 3D Scan as a portable 3D/render style system over any input: preserve its renderer
+    logic, material behavior, geometry language, lighting grammar, and production cues while avoiding a
+    required character, vehicle, prop, environment, UI screen, product shot, or scene template.
 avoidRules:
   - perfect
   - modeled

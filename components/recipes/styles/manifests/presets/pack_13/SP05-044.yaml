@@ -13,29 +13,33 @@ tags:
   - shojo-magical-girl-and-visionary-classics
 visualDna:
   aesthetic: >-
-    Punk-romance editorial anime style balancing glam abrasion, emotional proximity, and music-scene intimacy without
-    fixed narrative casting
-  form_and_line: >-
-    Delicate facial line economy paired with sharper fashion-edge accents, expressive eye architecture, and panel-like
-    compositional rhythm
-  color_palette: >-
+    Punk-romance editorial anime style balancing glam abrasion, emotional proximity, and music-scene intimacy
+    without fixed narrative casting
+  subject_treatment: >-
+    Delicate facial line economy paired with sharper fashion-edge accents, expressive eye architecture, and
+    panel-like compositional rhythm
+  color_and_tone: >-
     Muted rose-violet base, charcoal cosmetic contrasts, selective crimson highlights, soft metallic accents,
     low-saturation skin warmth
-  lighting_setup: >-
-    Stage-adjacent soft bloom with directional rim glints, moody fill shadows, and selective halation around focal
-    expressions
-  material_texture: Denim grain, leather sheen, smudged cosmetic surfaces, soft textile overlays, subtle print-poster patina
-  render_quality: >-
-    High-polish shojo-drama render with editorial styling precision, emotional close-up clarity, and cinematic tonal
-    restraint
-  spatial_distortion: Intimate framing compression with elegant elongation and gesture-led depth cues to emphasize relational tension
-  atmosphere: Intimate, aching, stylish, magnetic, bittersweet
-  key_features: Fashion-emotion coupling, eyeliner contrast language, music-scene visual cadence, close-range expressive dramaturgy
+  lighting_and_shadow: >-
+    Stage-adjacent soft bloom with directional rim glints, moody fill shadows, and selective halation around
+    focal expressions
+  texture_and_material: Denim grain, leather sheen, smudged cosmetic surfaces, soft textile overlays, subtle print-poster patina
+  camera_and_composition: >-
+    Intimate framing compression with elegant elongation and gesture-led depth cues to emphasize relational
+    tension
+  atmosphere_and_mood: Intimate, aching, stylish, magnetic, bittersweet
+  rendering_and_quality: >-
+    High-polish shojo-drama render with editorial styling precision, emotional close-up clarity, and cinematic
+    tonal restraint
+  key_features: >-
+    Fashion-emotion coupling, eyeliner contrast language, music-scene visual cadence, close-range expressive
+    dramaturgy
   creative_brief: >-
-    Define the preset through glam-punk material contrast and emotionally charged portrait staging; preserve the tension
-    between tenderness and edge as a transferable visual language. Apply this anime/IP-title grammar over any input:
-    preserve its emotional staging, line behavior, palette, symbolic motifs, and production cues while avoiding a
-    required cast, lore event, location, prop, or fixed scene.
+    Define the preset through glam-punk material contrast and emotionally charged portrait staging; preserve
+    the tension between tenderness and edge as a transferable visual language. Apply this anime/IP-title
+    grammar over any input: preserve its emotional staging, line behavior, palette, symbolic motifs, and
+    production cues while avoiding a required cast, lore event, location, prop, or fixed scene.
 avoidRules:
   - realistic
   - 3d render
@@ -53,8 +57,8 @@ assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-044.webp
 attributes:
   negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark,
-    text, signature
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts,
+    watermark, text, signature
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle

@@ -12,19 +12,25 @@ tags:
   - anime-battle-and-worlds
   - modern-shonen-and-action
 visualDna:
-  aesthetic: Shadow monarch raid ascension, with violet-black dominance, solitary power growth, sleek aura spectacle, and rank-up intensity.
-  form_and_line: Tall silhouette authority, shadow-swarm edges, vertical ascent vectors, sharp aura crowns, and layered power contours.
-  color_palette: Void black, royal violet, electric blue, silver edge light, deep indigo, and cold white rank glints.
-  lighting_setup: Bottomless shadow glow, violet lightning rims, portal-like depth bloom, and hard silhouette backlight.
-  material_texture: Smoky shadow grain, glossy black aura, metallic trim glints, particle shards, and polished digital contrast.
-  render_quality: Sleek modern anime polish with overwhelming force, clean aura readability, and solitary scale.
-  spatial_distortion: Upward pressure, shadow-depth multiplication, and perspective that makes power feel exponential.
-  atmosphere: Dominant, sleek, ominous, ascendant
+  aesthetic: >-
+    Shadow monarch raid ascension, with violet-black dominance, solitary power growth, sleek aura spectacle,
+    and rank-up intensity.
+  subject_treatment: >-
+    Tall silhouette authority, shadow-swarm edges, vertical ascent vectors, sharp aura crowns, and layered
+    power contours.
+  color_and_tone: Void black, royal violet, electric blue, silver edge light, deep indigo, and cold white rank glints.
+  lighting_and_shadow: Bottomless shadow glow, violet lightning rims, portal-like depth bloom, and hard silhouette backlight.
+  texture_and_material: >-
+    Smoky shadow grain, glossy black aura, metallic trim glints, particle shards, and polished digital
+    contrast.
+  camera_and_composition: Upward pressure, shadow-depth multiplication, and perspective that makes power feel exponential.
+  atmosphere_and_mood: Dominant, sleek, ominous, ascendant
+  rendering_and_quality: Sleek modern anime polish with overwhelming force, clean aura readability, and solitary scale.
   key_features: Violet aura crown, shadow multiplication, solitary ascent, rank-glow hierarchy, overwhelming calm.
   creative_brief: >-
-    Make any prompt feel like solitary power ascending: multiply shadow depth,
-    add violet hierarchy, and compress space around a dominant center without
-    requiring a fixed challenge space, entity, ruler figure, or transition scene.
+    Make any prompt feel like solitary power ascending: multiply shadow depth, add violet hierarchy, and
+    compress space around a dominant center without requiring a fixed challenge space, entity, ruler figure,
+    or transition scene.
 avoidRules:
   - realistic
   - 3d render
@@ -41,7 +47,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-132.webp
 attributes:
-  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
+  negativePrompt: >-
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts,
+    watermark, text, signature
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds

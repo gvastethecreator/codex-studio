@@ -13,18 +13,17 @@ tags:
   - geometric-abstraction
 visualDna:
   aesthetic: Cellular diagram
-  form_and_line: Cell walls
-  color_palette: Random seed colors
-  lighting_setup: Flat
-  material_texture: Biological or math
-  render_quality: Generative art
-  spatial_distortion: Cellular
-  atmosphere: Natural math
+  subject_treatment: Cell walls
+  color_and_tone: Random seed colors
+  lighting_and_shadow: Flat
+  texture_and_material: Biological or math
+  camera_and_composition: Cellular
+  atmosphere_and_mood: Natural math
+  rendering_and_quality: Generative art
   key_features: Cell structure
   creative_brief: >-
-    Apply Voronoi partitioning to the input: cellular borders, influence zones,
-    organic algorithmic tiles, and equilibrium maps should segment any subject
-    into living computational geometry.
+    Apply Voronoi partitioning to the input: cellular borders, influence zones, organic algorithmic tiles, and
+    equilibrium maps should segment any subject into living computational geometry.
 avoidRules:
   - square grid
 assets:

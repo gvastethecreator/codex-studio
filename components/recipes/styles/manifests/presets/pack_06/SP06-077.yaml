@@ -13,15 +13,19 @@ tags:
   - mixed-media
 visualDna:
   aesthetic: Painted with coffee
-  form_and_line: Liquid stains
-  color_palette: Sepia, brown
-  lighting_setup: Soft
-  material_texture: Watercolor paper, granules
-  render_quality: Organic, warm
-  spatial_distortion: Fluid
-  atmosphere: Warm, organic, stained
+  subject_treatment: Liquid stains
+  color_and_tone: Sepia, brown
+  lighting_and_shadow: Soft
+  texture_and_material: Watercolor paper, granules
+  camera_and_composition: Fluid
+  atmosphere_and_mood: Warm, organic, stained
+  rendering_and_quality: Organic, warm
   key_features: Monochrome brown
-  creative_brief: Coffee-like organic pigment leaves sepia stains on absorbent paper, the process warm, fluid, and domestic in material feel. Rings, blooms, granules, and tide marks become compositional elements, accidents welcomed into the frame. The style should feel stained and aromatic without requiring mugs, kitchens, mornings, or beverage props.
+  creative_brief: >-
+    Coffee-like organic pigment leaves sepia stains on absorbent paper, the process warm, fluid, and domestic
+    in material feel. Rings, blooms, granules, and tide marks become compositional elements, accidents
+    welcomed into the frame. The style should feel stained and aromatic without requiring mugs, kitchens,
+    mornings, or beverage props.
 avoidRules:
   - photo
   - realistic
@@ -43,7 +47,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP06-077.webp
 attributes:
-  negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border, mug ring requirement, kitchen mood
+  negativePrompt: >-
+    photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy,
+    watermark, text, signature, frame, border, mug ring requirement, kitchen mood
 taxonomy:
   packId: pack_06
   packName: Essential Art Styles

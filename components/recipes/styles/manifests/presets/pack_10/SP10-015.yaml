@@ -13,18 +13,18 @@ tags:
   - fluid-and-organic
 visualDna:
   aesthetic: Fungal roots
-  form_and_line: Webbing
-  color_palette: White, earthy
-  lighting_setup: Subsurface scattering
-  material_texture: Fuzzy, organic
-  render_quality: Nature, macro
-  spatial_distortion: Branching
-  atmosphere: Connected, growth
+  subject_treatment: Webbing
+  color_and_tone: White, earthy
+  lighting_and_shadow: Subsurface scattering
+  texture_and_material: Fuzzy, organic
+  camera_and_composition: Branching
+  atmosphere_and_mood: Connected, growth
+  rendering_and_quality: Nature, macro
   key_features: Web pattern
   creative_brief: >-
-    Apply mycelium-network logic to the input: branching white filaments,
-    nutrient-web connectivity, porous organic nodes, and subterranean softness
-    should link forms into living fungal communication without requiring soil or forest.
+    Apply mycelium-network logic to the input: branching white filaments, nutrient-web connectivity, porous
+    organic nodes, and subterranean softness should link forms into living fungal communication without
+    requiring soil or forest.
 avoidRules:
   - man made
   - straight lines

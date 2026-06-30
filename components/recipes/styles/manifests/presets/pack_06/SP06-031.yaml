@@ -13,19 +13,18 @@ tags:
   - printmaking
 visualDna:
   aesthetic: Intaglio print
-  form_and_line: Fine, fuzzy bitten lines
-  color_palette: Black ink, cream paper
-  lighting_setup: Linear shading
-  material_texture: Plate tone, embossed paper
-  render_quality: Old-master intaglio detail with plate-pressure tactility
-  spatial_distortion: None
-  atmosphere: Antique, classic
+  subject_treatment: Fine, fuzzy bitten lines
+  color_and_tone: Black ink, cream paper
+  lighting_and_shadow: Linear shading
+  texture_and_material: Plate tone, embossed paper
+  camera_and_composition: 'Compose for Etching using its key spatial cues: Plate mark.'
+  atmosphere_and_mood: Antique, classic
+  rendering_and_quality: Old-master intaglio detail with plate-pressure tactility
   key_features: Plate mark
   creative_brief: >-
-    Apply etched-print linework to any input: acid-bitten copper lines, fuzzy
-    inked grooves, plate-pressure emboss, fine crosshatching, and delicate
-    chemical irregularity. Keep intaglio bite without requiring old maps,
-    architecture, portraits, botanical plates, or antique scenes.
+    Apply etched-print linework to any input: acid-bitten copper lines, fuzzy inked grooves, plate-pressure
+    emboss, fine crosshatching, and delicate chemical irregularity. Keep intaglio bite without requiring old
+    maps, architecture, portraits, botanical plates, or antique scenes.
 avoidRules:
   - photo
   - realistic
@@ -45,7 +44,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP06-031.webp
 attributes:
-  negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border
+  negativePrompt: >-
+    photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy,
+    watermark, text, signature, frame, border
 taxonomy:
   packId: pack_06
   packName: Essential Art Styles

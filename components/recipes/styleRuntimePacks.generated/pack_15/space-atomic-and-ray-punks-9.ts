@@ -12,16 +12,16 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'atompunk civic neon built around one distinctive isotope-plaza protagonist, atomic fountain glow, blank isotope orbits, chrome curves, and polished midcentury surfaces.',
-      form_and_line:
+      subject_treatment:
         'Atomic signage, rocket-age curves, raygun geometry, orbital equipment, chrome kitsch, and cosmic civic forms. Core composition uses isotope-plaza protagonist, atomic fountain, blank isotope orbits, chrome curves, terrazzo patterns.',
-      color_palette: 'uranium green, coral red, cream, chrome',
-      lighting_setup: 'neon isotope glow, atomic fountain light, clean evening sky',
-      material_texture: 'chrome, terrazzo, neon tubes, enamel panels, polished stone',
-      render_quality:
-        'Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity, moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material simulation, or hyper-detail.',
-      spatial_distortion:
+      color_and_tone: 'uranium green, coral red, cream, chrome',
+      lighting_and_shadow: 'neon isotope glow, atomic fountain light, clean evening sky',
+      texture_and_material: 'chrome, terrazzo, neon tubes, enamel panels, polished stone',
+      camera_and_composition:
         'Promenades, diners, outposts, salvage yards, rails, lunar farms, craters, and isotope-lit plazas. Keep depth legible and avoid default hallway, aisle, or empty studio staging.',
-      atmosphere: 'bright, optimistic, strange, civic',
+      atmosphere_and_mood: 'bright, optimistic, strange, civic',
+      rendering_and_quality:
+        'Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity, moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material simulation, or hyper-detail.',
       key_features:
         'isotope-plaza protagonist, isotope orbits, atomic fountain, chrome curves, terrazzo blocks',
       creative_brief:
@@ -37,17 +37,17 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'atomic leisure infrastructure built around one distinctive reactor-promenade protagonist, observation windows, simplified suit silhouette, glowing coolant architecture, and blank safety geometry.',
-      form_and_line:
+      subject_treatment:
         'Atomic signage, rocket-age curves, raygun geometry, orbital equipment, chrome kitsch, and cosmic civic forms. Core composition uses reactor-promenade protagonist, reactor windows, suit silhouette, coolant glow, safety geometry.',
-      color_palette: 'coolant blue, safety yellow, white enamel, black rubber',
-      lighting_setup: 'coolant glow, observation-window light, clean overhead strips',
-      material_texture:
+      color_and_tone: 'coolant blue, safety yellow, white enamel, black rubber',
+      lighting_and_shadow: 'coolant glow, observation-window light, clean overhead strips',
+      texture_and_material:
         'enamel panels, rubber suits, glass, polished concrete, warning stripes without readable text',
-      render_quality:
-        'Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity, moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material simulation, or hyper-detail.',
-      spatial_distortion:
+      camera_and_composition:
         'Promenades, diners, outposts, salvage yards, rails, lunar farms, craters, and isotope-lit plazas. Keep depth legible and avoid default hallway, aisle, or empty studio staging.',
-      atmosphere: 'clinical, optimistic, slightly dangerous, touristic',
+      atmosphere_and_mood: 'clinical, optimistic, slightly dangerous, touristic',
+      rendering_and_quality:
+        'Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity, moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material simulation, or hyper-detail.',
       key_features:
         'reactor-promenade protagonist, reactor windows, suit silhouette, coolant glow, safety geometry',
       creative_brief:
@@ -63,17 +63,17 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'retro space roadside built around one distinctive ray-age diner rider or counter-courier, roadside diner strip, blank orbit signs, rocket cars, and chrome counters at blue hour.',
-      form_and_line:
+      subject_treatment:
         'Atomic signage, rocket-age curves, raygun geometry, orbital equipment, chrome kitsch, and cosmic civic forms. Core composition uses diner rider/courier protagonist, blank orbit signs, rocket-car silhouettes, chrome counters, night asphalt.',
-      color_palette: 'chrome silver, cherry red, star blue, cream',
-      lighting_setup: 'blue-hour neon, diner window glow, chrome reflections',
-      material_texture:
+      color_and_tone: 'chrome silver, cherry red, star blue, cream',
+      lighting_and_shadow: 'blue-hour neon, diner window glow, chrome reflections',
+      texture_and_material:
         'chrome color blocks, vinyl booth shapes, blank enamel sign forms, asphalt, glass blocks',
-      render_quality:
-        'Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity, moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material simulation, or hyper-detail.',
-      spatial_distortion:
+      camera_and_composition:
         'Promenades, diners, outposts, salvage yards, rails, lunar farms, craters, and isotope-lit plazas. Keep depth legible and avoid default hallway, aisle, or empty studio staging.',
-      atmosphere: 'fun, roadside, retro, social',
+      atmosphere_and_mood: 'fun, roadside, retro, social',
+      rendering_and_quality:
+        'Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity, moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material simulation, or hyper-detail.',
       key_features:
         'diner rider/courier protagonist, blank orbit sign shapes, rocket-car silhouettes, chrome counter curves, night asphalt',
       creative_brief:
@@ -89,16 +89,16 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'raypunk frontier outpost built around one distinctive outpost keeper protagonist, rocket fins, simple antenna arcs, desert dust, and sparse desert-night stars.',
-      form_and_line:
+      subject_treatment:
         'Atomic signage, rocket-age curves, raygun geometry, orbital equipment, chrome kitsch, and cosmic civic forms. Core composition uses outpost keeper protagonist, rocket fins, antenna arcs, desert dust, sparse star sky.',
-      color_palette: 'rocket white, desert red, teal shadow, star gray',
-      lighting_setup: 'sparse star dots, outpost glow, moonlit fins, teal shadow planes',
-      material_texture: 'painted rocket metal, desert stone, canvas suits, antenna wire, dust',
-      render_quality:
-        'Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity, moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material simulation, or hyper-detail.',
-      spatial_distortion:
+      color_and_tone: 'rocket white, desert red, teal shadow, star gray',
+      lighting_and_shadow: 'sparse star dots, outpost glow, moonlit fins, teal shadow planes',
+      texture_and_material: 'painted rocket metal, desert stone, canvas suits, antenna wire, dust',
+      camera_and_composition:
         'Promenades, diners, outposts, salvage yards, rails, lunar farms, craters, and isotope-lit plazas. Keep depth legible and avoid default hallway, aisle, or empty studio staging.',
-      atmosphere: 'lonely, hopeful, frontier, symbolic',
+      atmosphere_and_mood: 'lonely, hopeful, frontier, symbolic',
+      rendering_and_quality:
+        'Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity, moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material simulation, or hyper-detail.',
       key_features:
         'outpost keeper protagonist, rocket fins, antenna masts, desert dust planes, sparse star dots',
       creative_brief:
@@ -114,16 +114,16 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'space salvagepunk built around one distinctive tethered salvage captain protagonist, comet ice chunks, old satellites, welding sparks, and cable arcs.',
-      form_and_line:
+      subject_treatment:
         'Atomic signage, rocket-age curves, raygun geometry, orbital equipment, chrome kitsch, and cosmic civic forms. Core composition uses tethered salvage captain protagonist, comet ice, old satellites, welding sparks, cable lines.',
-      color_palette: 'space black, ice cyan, hazard orange, dull aluminum',
-      lighting_setup: 'broad welding glow, suit glow dots, comet rimlight, sparse cold stars',
-      material_texture: 'satellite panels, suit fabric, ice, cables, scorched metal',
-      render_quality:
-        'Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity, moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material simulation, or hyper-detail.',
-      spatial_distortion:
+      color_and_tone: 'space black, ice cyan, hazard orange, dull aluminum',
+      lighting_and_shadow: 'broad welding glow, suit glow dots, comet rimlight, sparse cold stars',
+      texture_and_material: 'satellite panels, suit fabric, ice, cables, scorched metal',
+      camera_and_composition:
         'Promenades, diners, outposts, salvage yards, rails, lunar farms, craters, and isotope-lit plazas. Keep depth legible and avoid default hallway, aisle, or empty studio staging.',
-      atmosphere: 'dangerous, scrappy, orbital, cold',
+      atmosphere_and_mood: 'dangerous, scrappy, orbital, cold',
+      rendering_and_quality:
+        'Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity, moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material simulation, or hyper-detail.',
       key_features:
         'tethered salvage captain protagonist, comet ice, old satellites, welding sparks, cable lines',
       creative_brief:
@@ -139,16 +139,18 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'raypunk transit commons built around one distinctive plasma-rail courier or transit guardian, ray-age arches, glowing rails, and civic transit shapes.',
-      form_and_line:
+      subject_treatment:
         'Atomic signage, rocket-age curves, raygun geometry, orbital equipment, chrome kitsch, and cosmic civic forms. Core composition uses plasma-rail courier/guardian protagonist, plasma rails, ray arches, station platforms, motion lines.',
-      color_palette: 'plasma blue, orange, cream, brushed steel',
-      lighting_setup: 'plasma rail glow, arch rimlight, broad platform light, orange motion lines',
-      material_texture: 'brushed steel, enamel tiles, plasma glass, suit fabric, rubber flooring',
-      render_quality:
-        'Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity, moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material simulation, or hyper-detail.',
-      spatial_distortion:
+      color_and_tone: 'plasma blue, orange, cream, brushed steel',
+      lighting_and_shadow:
+        'plasma rail glow, arch rimlight, broad platform light, orange motion lines',
+      texture_and_material:
+        'brushed steel, enamel tiles, plasma glass, suit fabric, rubber flooring',
+      camera_and_composition:
         'Promenades, diners, outposts, salvage yards, rails, lunar farms, craters, and isotope-lit plazas. Keep depth legible and avoid default hallway, aisle, or empty studio staging.',
-      atmosphere: 'fast, public, sleek-retro, optimistic',
+      atmosphere_and_mood: 'fast, public, sleek-retro, optimistic',
+      rendering_and_quality:
+        'Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity, moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material simulation, or hyper-detail.',
       key_features:
         'plasma-rail courier/guardian protagonist, plasma rails, ray arches, station platforms, motion lines',
       creative_brief:
@@ -164,17 +166,17 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'lunarpunk relay agriculture built around a standout lunar orchard signal-keeper, dome orchard, relay dishes, black sky, and pale fruit trees.',
-      form_and_line:
+      subject_treatment:
         'Atomic signage, rocket-age curves, raygun geometry, orbital equipment, chrome kitsch, and cosmic civic forms. Core composition uses dome orchard, suited gardeners, relay dishes, black sky, pale trees.',
-      color_palette: 'moon white, silver, leaf green, vacuum black',
-      lighting_setup: 'earthlight, flat dome glow, soft grow-lamp color blocks, dish rimlight',
-      material_texture:
+      color_and_tone: 'moon white, silver, leaf green, vacuum black',
+      lighting_and_shadow: 'earthlight, flat dome glow, soft grow-lamp color blocks, dish rimlight',
+      texture_and_material:
         'lunar regolith, graphic glass dome, suit fabric, hydroponic tray slabs, silver dish shapes',
-      render_quality:
-        'Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity, moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material simulation, or hyper-detail.',
-      spatial_distortion:
+      camera_and_composition:
         'Promenades, diners, outposts, salvage yards, rails, lunar farms, craters, and isotope-lit plazas. Keep depth legible and avoid default hallway, aisle, or empty studio staging.',
-      atmosphere: 'quiet, fragile, lunar, cultivated',
+      atmosphere_and_mood: 'quiet, fragile, lunar, cultivated',
+      rendering_and_quality:
+        'Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity, moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material simulation, or hyper-detail.',
       key_features: 'signal-keeper, dome orchard, relay dishes, black sky, pale trees',
       creative_brief:
         'Lunarpunk here is lunar survival and signal work, not another garden city: one standout lunar orchard signal-keeper as the main character with simplified suit and broad glowing relay tool, plus dome orchard, relay dishes, hydroponic tray slabs, black sky, and earthlight glow behind them. Secondary gardeners may be tiny background shapes only. Keep the result representative rather than over-abstract; use non-photographic stylized illustration, editorial digital painting, ligne-claire sci-fi comic clarity, gouache-cel shapes, drawn contours, broad painted planes, and controlled color design over realism or generic concept art. Avoid workers-only composition. Use few bold color/value zones, large matte shapes, clean surfaces, low-to-moderate detail, and finish denoised with no excessive noise or ultra-fine detail.',
@@ -189,17 +191,17 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'lunar ritual acoustics built around a standout crater choir conductor, resonant dishes, blank fabric planes, acoustic rigs, and silent choir silhouettes.',
-      form_and_line:
+      subject_treatment:
         'Atomic signage, rocket-age curves, raygun geometry, orbital equipment, chrome kitsch, and cosmic civic forms. Core composition uses crater dishes, astronaut choir, white flags, acoustic rigs, earthrise.',
-      color_palette: 'chalk white, crater gray, cobalt shadow, signal gold',
-      lighting_setup: 'earthrise glow, flat dish highlights, suit glow dots, crater shadow',
-      material_texture:
+      color_and_tone: 'chalk white, crater gray, cobalt shadow, signal gold',
+      lighting_and_shadow: 'earthrise glow, flat dish highlights, suit glow dots, crater shadow',
+      texture_and_material:
         'regolith dust, acoustic dish shapes, plain white fabric blocks, suit glass, gold foil accents',
-      render_quality:
-        'Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity, moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material simulation, or hyper-detail.',
-      spatial_distortion:
+      camera_and_composition:
         'Promenades, diners, outposts, salvage yards, rails, lunar farms, craters, and isotope-lit plazas. Keep depth legible and avoid default hallway, aisle, or empty studio staging.',
-      atmosphere: 'solemn, cosmic, resonant, spare',
+      atmosphere_and_mood: 'solemn, cosmic, resonant, spare',
+      rendering_and_quality:
+        'Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity, moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material simulation, or hyper-detail.',
       key_features:
         'crater choir conductor, crater dishes, choir silhouettes, plain white fabric blocks, acoustic rigs, earthrise',
       creative_brief:

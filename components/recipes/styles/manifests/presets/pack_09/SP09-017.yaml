@@ -13,21 +13,22 @@ tags:
   - man-made-materials
 visualDna:
   aesthetic: Metal surface
-  form_and_line: Micro scratches
-  color_palette: Silver Grey
-  lighting_setup: Anisotropic
-  material_texture: Fine lines
-  render_quality: Industrial, tech
-  spatial_distortion: None
-  atmosphere: Modern, clean
+  subject_treatment: Micro scratches
+  color_and_tone: Silver Grey
+  lighting_and_shadow: Anisotropic
+  texture_and_material: Fine lines
+  camera_and_composition: 'Compose for Brushed Aluminum using its key spatial cues: Directional scratch.'
+  atmosphere_and_mood: Modern, clean
+  rendering_and_quality: Industrial, tech
   key_features: Directional scratch
   creative_brief: >-
-    Render the industrial poetry of brushed aluminum where microscopic scratches align into a directional grain that
-    catches light anisotropically across a field of silver-grey. The surface should feel cool and precise, a choral
-    arrangement of parallel lines marching in disciplined formation. This is the skin of precision engineering, the
-    quiet face of contained complexity. Use Brushed Aluminum as portable surface/render behavior over any input: map its
-    texture, light response, edge wear, color chemistry, and tactile rhythm onto the subject instead of requiring a
-    literal material sample, macro tile, wall, landscape, source object, or scene where the material naturally appears.
+    Render the industrial poetry of brushed aluminum where microscopic scratches align into a directional
+    grain that catches light anisotropically across a field of silver-grey. The surface should feel cool and
+    precise, a choral arrangement of parallel lines marching in disciplined formation. This is the skin of
+    precision engineering, the quiet face of contained complexity. Use Brushed Aluminum as portable
+    surface/render behavior over any input: map its texture, light response, edge wear, color chemistry, and
+    tactile rhythm onto the subject instead of requiring a literal material sample, macro tile, wall,
+    landscape, source object, or scene where the material naturally appears.
 avoidRules:
   - chrome
   - mirror

@@ -14,16 +14,35 @@ tags:
   - space-salvage
   - salvagepunk
 visualDna:
-  aesthetic: space salvagepunk built around one distinctive tethered salvage captain protagonist, comet ice chunks, old satellites, welding sparks, and cable arcs.
-  form_and_line: Atomic signage, rocket-age curves, raygun geometry, orbital equipment, chrome kitsch, and cosmic civic forms. Core composition uses tethered salvage captain protagonist, comet ice, old satellites, welding sparks, cable lines.
-  color_palette: space black, ice cyan, hazard orange, dull aluminum
-  lighting_setup: broad welding glow, suit glow dots, comet rimlight, sparse cold stars
-  material_texture: satellite panels, suit fabric, ice, cables, scorched metal
-  render_quality: Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity, moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material simulation, or hyper-detail.
-  spatial_distortion: Promenades, diners, outposts, salvage yards, rails, lunar farms, craters, and isotope-lit plazas. Keep depth legible and avoid default hallway, aisle, or empty studio staging.
-  atmosphere: dangerous, scrappy, orbital, cold
+  aesthetic: >-
+    space salvagepunk built around one distinctive tethered salvage captain protagonist, comet ice chunks, old
+    satellites, welding sparks, and cable arcs.
+  subject_treatment: >-
+    Atomic signage, rocket-age curves, raygun geometry, orbital equipment, chrome kitsch, and cosmic civic
+    forms. Core composition uses tethered salvage captain protagonist, comet ice, old satellites, welding
+    sparks, cable lines.
+  color_and_tone: space black, ice cyan, hazard orange, dull aluminum
+  lighting_and_shadow: broad welding glow, suit glow dots, comet rimlight, sparse cold stars
+  texture_and_material: satellite panels, suit fabric, ice, cables, scorched metal
+  camera_and_composition: >-
+    Promenades, diners, outposts, salvage yards, rails, lunar farms, craters, and isotope-lit plazas. Keep
+    depth legible and avoid default hallway, aisle, or empty studio staging.
+  atmosphere_and_mood: dangerous, scrappy, orbital, cold
+  rendering_and_quality: >-
+    Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly
+    planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity,
+    moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material
+    simulation, or hyper-detail.
   key_features: tethered salvage captain protagonist, comet ice, old satellites, welding sparks, cable lines
-  creative_brief: 'Space salvagepunk should show risk through one character: a distinctive tethered salvage captain cutting or claiming comet ice beside old satellite panels, thick cable arcs, and broad welding glow, not a heroic ship poster. The debris supports the protagonist; it must not become object-only salvage. Avoid crew lineup, worker crew, battle debris, cockpit UI, spaceship hero, or 3D space render. Keep the result representative rather than over-abstract; use flat graphic illustration, gouache-poster shapes, cel-poster blocking, and controlled digital painting over realism or generic concept art. Use few bold color/value zones, large matte shapes, clean surfaces, low-to-moderate detail, and finish denoised with no excessive noise or ultra-fine detail.'
+  creative_brief: >-
+    Space salvagepunk should show risk through one character: a distinctive tethered salvage captain cutting
+    or claiming comet ice beside old satellite panels, thick cable arcs, and broad welding glow, not a heroic
+    ship poster. The debris supports the protagonist; it must not become object-only salvage. Avoid crew
+    lineup, worker crew, battle debris, cockpit UI, spaceship hero, or 3D space render. Keep the result
+    representative rather than over-abstract; use flat graphic illustration, gouache-poster shapes, cel-poster
+    blocking, and controlled digital painting over realism or generic concept art. Use few bold color/value
+    zones, large matte shapes, clean surfaces, low-to-moderate detail, and finish denoised with no excessive
+    noise or ultra-fine detail.
 avoidRules:
   - photoreal
   - watermark
@@ -37,7 +56,21 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP15-069.webp
 attributes:
-  negativePrompt: photoreal, hyperreal, realistic render, photoreal painterly realism, cinematic realism, AAA key art, photographic skin pores, realistic foreground portrait, realistic facial hair detail, lens blur, bokeh, depth-of-field photo look, spaceship hero, cockpit UI, weapon, explosion, readable satellite labels, NASA-like logo, hazard symbols, dense cable spaghetti, starfield wallpaper, photoreal metal, PBR panels, tiny debris field, generic soldier hero, guard pin-up, weapon-first pose, HDR lens realism, 3D render look, hyper-detailed concept art, watermark, text, logo, generic style, over-abstract, interchangeable preset, duplicated motifs, generic glass utopia, unmotivated market aisle, unmotivated library aisle, fantasy corridor, random camera held by subject, studio wall fixation, chair fixation, curtain fixation, lamp fixation, scarf fixation, pedestal fixation, bird fixation, excessive noise, ultra-fine detail, over-sharpened microtexture, over-rendered machinery, noisy grime, tiny rivets everywhere, busy texture chatter, realistic uniform portrait, uniformed officer hero, foreground guard portrait, detailed tattoo focus, dense machinery wallpaper, overcrowded scene, high-frequency surface detail, cinematic close-up portrait, flat black fill, crushed black, pure black masses, muddy black fields, generic American illustration, generic Western RPG card art
+  negativePrompt: >-
+    photoreal, hyperreal, realistic render, photoreal painterly realism, cinematic realism, AAA key art,
+    photographic skin pores, realistic foreground portrait, realistic facial hair detail, lens blur, bokeh,
+    depth-of-field photo look, spaceship hero, cockpit UI, weapon, explosion, readable satellite labels,
+    NASA-like logo, hazard symbols, dense cable spaghetti, starfield wallpaper, photoreal metal, PBR panels,
+    tiny debris field, generic soldier hero, guard pin-up, weapon-first pose, HDR lens realism, 3D render
+    look, hyper-detailed concept art, watermark, text, logo, generic style, over-abstract, interchangeable
+    preset, duplicated motifs, generic glass utopia, unmotivated market aisle, unmotivated library aisle,
+    fantasy corridor, random camera held by subject, studio wall fixation, chair fixation, curtain fixation,
+    lamp fixation, scarf fixation, pedestal fixation, bird fixation, excessive noise, ultra-fine detail,
+    over-sharpened microtexture, over-rendered machinery, noisy grime, tiny rivets everywhere, busy texture
+    chatter, realistic uniform portrait, uniformed officer hero, foreground guard portrait, detailed tattoo
+    focus, dense machinery wallpaper, overcrowded scene, high-frequency surface detail, cinematic close-up
+    portrait, flat black fill, crushed black, pure black masses, muddy black fields, generic American
+    illustration, generic Western RPG card art
 taxonomy:
   packId: pack_15
   packName: Punk Spectrum Vault

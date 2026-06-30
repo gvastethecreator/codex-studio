@@ -13,18 +13,18 @@ tags:
   - material-surface-textures
 visualDna:
   aesthetic: Woven tech material
-  form_and_line: Diagonal weave
-  color_palette: Black, Grey
-  lighting_setup: Anisotropic
-  material_texture: Synthetic
-  render_quality: High tech, fast
-  spatial_distortion: None
-  atmosphere: Sporty, modern
+  subject_treatment: Diagonal weave
+  color_and_tone: Black, Grey
+  lighting_and_shadow: Anisotropic
+  texture_and_material: Synthetic
+  camera_and_composition: 'Compose for Carbon Fiber using its key spatial cues: Weave.'
+  atmosphere_and_mood: Sporty, modern
+  rendering_and_quality: High tech, fast
   key_features: Weave
   creative_brief: >-
-    Apply carbon-fiber performance texture to the input: diagonal woven
-    filaments, subtle anisotropic sheen, dark composite depth, and precision
-    surface discipline should make any subject feel lightweight and engineered.
+    Apply carbon-fiber performance texture to the input: diagonal woven filaments, subtle anisotropic sheen,
+    dark composite depth, and precision surface discipline should make any subject feel lightweight and
+    engineered.
 avoidRules:
   - organic
 assets:

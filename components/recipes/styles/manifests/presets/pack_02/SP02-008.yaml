@@ -13,15 +13,21 @@ tags:
   - film-genres
 visualDna:
   aesthetic: Improvised panic-horror footage, shaking handheld dread, raw survival terror
-  form_and_line: None
-  color_palette: Low light digital, crushed blacks, sickly green tint
-  lighting_setup: Flashlight only, single beam cone, terrified sweep
-  material_texture: Video noise, CMOS sensor grain, digital mud
-  render_quality: Shaky, amateur, disorienting, raw panic-cam
-  spatial_distortion: Motion blur, smear, headlamp judder
-  atmosphere: Terrifying, real, primal fear, unseen threat
+  subject_treatment: >-
+    Treat subjects as believable filmed or broadcast subjects under Found Footage Horror: casting, wardrobe,
+    props, motion cues, and silhouette hierarchy follow 1. Film Genres cinematic and broadcast grammar without
+    locking to one plot beat.
+  color_and_tone: Low light digital, crushed blacks, sickly green tint
+  lighting_and_shadow: Flashlight only, single beam cone, terrified sweep
+  texture_and_material: Video noise, CMOS sensor grain, digital mud
+  camera_and_composition: Motion blur, smear, headlamp judder
+  atmosphere_and_mood: Terrifying, real, primal fear, unseen threat
+  rendering_and_quality: Shaky, amateur, disorienting, raw panic-cam
   key_features: Flashlight cone, timestamp-like burn-in, panic-cam smear
-  creative_brief: 'Found-footage horror makes any subject feel accidentally captured: shaking handheld motion, flashlight cone, crushed blacks, sickly green digital noise, CMOS mud, and panic-cam blur. Keep dread and raw survival texture without forcing forest, footsteps, breathing, or unseen monster.'
+  creative_brief: >-
+    Found-footage horror makes any subject feel accidentally captured: shaking handheld motion, flashlight
+    cone, crushed blacks, sickly green digital noise, CMOS mud, and panic-cam blur. Keep dread and raw
+    survival texture without forcing forest, footsteps, breathing, or unseen monster.
 avoidRules:
   - steady
   - cinematic

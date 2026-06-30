@@ -10,16 +10,19 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'suit, strict, dark',
     style: {
       aesthetic: 'Sunlit bohemian layering, handcrafted wanderer romance, fringe-and-lace reverie',
-      form_and_line:
+      subject_treatment:
         'Flowing layers, fringe cascades, tiered drape, bell-sleeve billow, relaxed artisan ease',
-      color_palette:
+      color_and_tone:
         'Earth tones, floral prints, terracotta, ochre, dusty rose, sun-bleached coral',
-      lighting_setup: 'Golden hour sun, lens flare warmth, backlit halo, dust-mote glow',
-      material_texture:
+      lighting_and_shadow: 'Golden hour sun, lens flare warmth, backlit halo, dust-mote glow',
+      texture_and_material:
         'Lace, crochet, denim, eyelet cotton, macrame knots, worn-in suede, cheesecloth gauze',
-      render_quality: 'Craft-led bohemian editorial, weathered softness, sun-drenched naturalism',
-      spatial_distortion: 'None',
-      atmosphere: 'Free, happy, natural, carefree wanderlust, sun-warmed nostalgia, handmade ease',
+      camera_and_composition:
+        'Compose for Boho Festival using its key spatial cues: Accessories (hats, jewelry), layered necklaces, wide-brim felt hat, turquoise rings.',
+      atmosphere_and_mood:
+        'Free, happy, natural, carefree wanderlust, sun-warmed nostalgia, handmade ease',
+      rendering_and_quality:
+        'Craft-led bohemian editorial, weathered softness, sun-drenched naturalism',
       key_features:
         'Accessories (hats, jewelry), layered necklaces, wide-brim felt hat, turquoise rings',
       creative_brief:
@@ -33,17 +36,17 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'suit, formal, old, readable branding',
     style: {
       aesthetic: 'Streetwear hype grammar, capsule-drop exclusivity, sneaker culture pressure',
-      form_and_line: 'Oversized silhouette, boxy hoodie cut, dropped shoulders, wide-leg cargo',
-      color_palette: 'Black, White, Red, Neon accents, high-vis lime, saturated electric blue',
-      lighting_setup:
+      subject_treatment: 'Oversized silhouette, boxy hoodie cut, dropped shoulders, wide-leg cargo',
+      color_and_tone: 'Black, White, Red, Neon accents, high-vis lime, saturated electric blue',
+      lighting_and_shadow:
         'Harsh direct flash, nighttime bounce, billboard-color glow, social-feed contrast',
-      material_texture:
+      texture_and_material:
         'Heavyweight cotton, ripstop nylon, pebbled leather, retroreflective tape, mesh paneling',
-      render_quality: 'Luxury streetwear polish, trend-tuned finish, hype-drop precision',
-      spatial_distortion:
+      camera_and_composition:
         'Oversized drop-culture massing, sneaker-scale emphasis and flash-compressed streetwear silhouette',
-      atmosphere:
+      atmosphere_and_mood:
         'Cool, rebellious, rich, exclusivity hunger, drop-day confidence, scarcity pressure',
+      rendering_and_quality: 'Luxury streetwear polish, trend-tuned finish, hype-drop precision',
       key_features:
         'Sneaker-scale emphasis, oversized hoodie/cargo mass, reflective hits, mesh panels and graphic-block confidence without readable branding.',
       creative_brief:
@@ -59,16 +62,18 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Field utility textile styling, expedition-readiness logic, rugged utility silhouette',
-      form_and_line:
+      subject_treatment:
         'Boxy utility blocks, pocket density, modular grid, carrier-like bulk, bloused taper',
-      color_palette:
+      color_and_tone:
         'Olive Drab, Camo, Desert Tan, multiscale camouflage breakup, ranger green, coyote brown',
-      lighting_setup: 'Harsh outdoor, high-noon sun, dust-haze diffusion, overcast tactical grey',
-      material_texture:
+      lighting_and_shadow:
+        'Harsh outdoor, high-noon sun, dust-haze diffusion, overcast tactical grey',
+      texture_and_material:
         'Heavy canvas, abrasion-resistant nylon, dirt, parkerized metal, coated technical fabric',
-      render_quality: 'Tough functional finish, field-worn authenticity, surplus-grade veracity',
-      spatial_distortion: 'Bulky silhouette',
-      atmosphere: 'Serious, ready, field tension, repair focus, quiet professionalism',
+      camera_and_composition: 'Bulky silhouette',
+      atmosphere_and_mood: 'Serious, ready, field tension, repair focus, quiet professionalism',
+      rendering_and_quality:
+        'Tough functional finish, field-worn authenticity, surplus-grade veracity',
       key_features: 'Utility pockets, webbing pouches, cap cues, rugged boot logic, patch accents',
       creative_brief:
         'Convert the input into field-utility textile: olive drab, camo breakup, modular grids, carrier-like bulk, coated-nylon abrasion, patch accents and pocket logic. Keep readiness and field wear without requiring a soldier persona, battlefield, weapon, patrol scene or combat narrative.',
@@ -81,17 +86,18 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'urban, modern',
     style: {
       aesthetic: 'Cottagecore pastoral styling, rural-romance daydream, handmade softness',
-      form_and_line:
+      subject_treatment:
         'Soft rural dress logic, empire-waist rise, puff-sleeve volume, midi hem drift, apron-tie cinch',
-      color_palette:
+      color_and_tone:
         'Cream, Sage, Floral, butter-yellow, dusty lavender, wildflower print, robin-egg blue',
-      lighting_setup: 'Golden hour warmth, dappled shade, morning-dew sparkle, soft backlight',
-      material_texture:
+      lighting_and_shadow: 'Golden hour warmth, dappled shade, morning-dew sparkle, soft backlight',
+      texture_and_material:
         'Linen, cotton muslin, eyelet, soft gauze, knit shawl, woven straw, raw silk',
-      render_quality: 'Whimsical, soft, fairytale illustration, sun-drenched pastoral',
-      spatial_distortion: 'None',
-      atmosphere:
+      camera_and_composition:
+        'Compose for Cottagecore using its key spatial cues: Apron-tie logic, woven-straw texture, straw-hat brim cue, lace-up bodice, ribbon ties.',
+      atmosphere_and_mood:
         'Peaceful, nature-adjacent, bread-baking warmth, wildflower fragility, slow-life softness',
+      rendering_and_quality: 'Whimsical, soft, fairytale illustration, sun-drenched pastoral',
       key_features:
         'Apron-tie logic, woven-straw texture, straw-hat brim cue, lace-up bodice, ribbon ties',
       creative_brief:
@@ -105,15 +111,16 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'modern',
     style: {
       aesthetic: '50s rockabilly Americana, hot-rod romance, rebel polish',
-      form_and_line:
+      subject_treatment:
         'Cuffed jeans, leather, motorcycle-jacket taper, pencil-skirt curve, victory-roll volume',
-      color_palette: 'Black, Red, Denim, cherry-bomb red, indigo raw, chrome, ivory',
-      lighting_setup: 'Sunny chrome-gleam reflections, warm neon accent, afternoon-sun flare',
-      material_texture:
+      color_and_tone: 'Black, Red, Denim, cherry-bomb red, indigo raw, chrome, ivory',
+      lighting_and_shadow: 'Sunny chrome-gleam reflections, warm neon accent, afternoon-sun flare',
+      texture_and_material:
         'Horsehide leather, raw selvedge denim, cotton bandana, pomade shine, swallow-embroidered satin',
-      render_quality: 'Retro, cool, Rockabilly jukebox, vintage-hot-rod spirit',
-      spatial_distortion: 'Pompadour hair',
-      atmosphere: 'Rebellious, fun, Saturday-night swagger, hot-rod adrenaline, soda-shop cool',
+      camera_and_composition: 'Pompadour hair',
+      atmosphere_and_mood:
+        'Rebellious, fun, Saturday-night swagger, hot-rod adrenaline, soda-shop cool',
+      rendering_and_quality: 'Retro, cool, Rockabilly jukebox, vintage-hot-rod spirit',
       key_features:
         'Sailor-style ink cues, rolled sleeve logic, cuffed jeans, engineer boots, chrome-red contrast',
       creative_brief:
@@ -127,16 +134,18 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'flat monochrome goth with no pastel contrast',
     style: {
       aesthetic: 'Creepy cute, kawaii-goth hybrid, sweet-nightmare aesthetic',
-      form_and_line:
+      subject_treatment:
         'Spikes + Bows, A-line skirt, choker tightness, platform-sole elevation, puffed sleeve',
-      color_palette:
+      color_and_tone:
         'Black + Pastel Pink/Mint, lavender, baby blue, candy-corpse contrast, chalky pastel',
-      lighting_setup: 'Soft diffused daylight, candy-colored gels, Halloween fairy-light sparkle',
-      material_texture:
+      lighting_and_shadow:
+        'Soft diffused daylight, candy-colored gels, Halloween fairy-light sparkle',
+      texture_and_material:
         'Patent leather, black lace overlay, pastel tulle, holographic PVC, spiderweb fishnet',
-      render_quality: 'Kawaii, spooky, pastel-goth crispness, creepy-cute editorial',
-      spatial_distortion: 'None',
-      atmosphere: 'Cute, dark, sweet unease, candy-wrapper menace, adorable dread',
+      camera_and_composition:
+        'Compose for Pastel Goth using its key spatial cues: Pastel-goth contrast, optional bat-wing cues, bow accents, occult jewelry, platform mass.',
+      atmosphere_and_mood: 'Cute, dark, sweet unease, candy-wrapper menace, adorable dread',
+      rendering_and_quality: 'Kawaii, spooky, pastel-goth crispness, creepy-cute editorial',
       key_features:
         'Pastel-goth contrast, optional bat-wing cues, bow accents, occult jewelry, platform mass',
       creative_brief:
@@ -150,17 +159,18 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'clean, expensive, nice, readable text, flags, slogans, political symbols',
     style: {
       aesthetic: '1970s punk insurrection, DIY anarchy boutique, anti-polish refusal',
-      form_and_line:
+      subject_treatment:
         'Ripped, torn, pinned, shredded asymmetry, bondage-strap tension, drainpipe jeans',
-      color_palette:
+      color_and_tone:
         'Black, Red Plaid, Silver, safety-orange accent, bleached-out tartan, rusted chrome',
-      lighting_setup: 'Flash bulb, harsh paparazzi pop, sweat-sheen glare, basement-gig strobe',
-      material_texture:
+      lighting_and_shadow:
+        'Flash bulb, harsh paparazzi pop, sweat-sheen glare, basement-gig strobe',
+      texture_and_material:
         'Destroyed denim, cone studs, safety pins, painted leather, gaffer tape, abstract tartan patches',
-      render_quality:
+      camera_and_composition: 'Jagged punk silhouette distortion',
+      atmosphere_and_mood: 'Loud, chaotic, abrasive, three-chord fury, DIY refusal',
+      rendering_and_quality:
         'Rebellious boutique rawness, safety-pin couture abrasion, anti-polish finish',
-      spatial_distortion: 'Jagged punk silhouette distortion',
-      atmosphere: 'Loud, chaotic, abrasive, three-chord fury, DIY refusal',
       key_features:
         'DIY aesthetic, illegible scuffed-mark texture, padlock-necklace hardware, torn abstract patches',
       creative_brief:
@@ -174,17 +184,18 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'bright, sport, library table, fountain pen, satchel, student figure',
     style: {
       aesthetic: 'Dark academia tailoring, archival material nostalgia, candlelit-scholar romance',
-      form_and_line:
+      subject_treatment:
         'Tailored layers, tweed-jacket drape, pleated-trouser line, cable-knit volume, scarf-wrap',
-      color_palette: 'Brown, Tweed, Cream, oxblood, forest, mustard, aged-paper cream, charcoal',
-      lighting_setup:
+      color_and_tone: 'Brown, Tweed, Cream, oxblood, forest, mustard, aged-paper cream, charcoal',
+      lighting_and_shadow:
         'Low amber tailoring glow, stained-glass amber, fireplace warmth, overcast grey',
-      material_texture:
+      texture_and_material:
         'Harris tweed, merino wool, corduroy, brushed flannel, leather elbow patches, horn buttons',
-      render_quality: 'Intellectual, moody, archival-quiet gravitas, old-campus nostalgia',
-      spatial_distortion: 'None',
-      atmosphere:
+      camera_and_composition:
+        'Compose for Dark Academia using its key spatial cues: Wire-rim geometry, paper-cream contrast, worn-leather accents, archival tailoring mood.',
+      atmosphere_and_mood:
         'Studious, serious, archival solitude, paper-cream contemplation, secret-history tension',
+      rendering_and_quality: 'Intellectual, moody, archival-quiet gravitas, old-campus nostalgia',
       key_features:
         'Wire-rim geometry, paper-cream contrast, worn-leather accents, archival tailoring mood',
       creative_brief:
@@ -199,16 +210,18 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Road-worn leather utility, chrome hardware and patch-like texture without gang identity.',
-      form_and_line:
+      subject_treatment:
         'Heavy leather mass, cut-off vest geometry, engineer-boot structure and bandana-like line.',
-      color_palette: 'Black leather, Silver, denim-blue, muted patch color, chrome, grease-black',
-      lighting_setup:
+      color_and_tone: 'Black leather, Silver, denim-blue, muted patch color, chrome, grease-black',
+      lighting_and_shadow:
         'Harsh chrome-reflection highlights, restrained neon hints and sun-glare heat.',
-      material_texture:
+      texture_and_material:
         'Heavyweight cowhide, worn embroidery, metal studs, chain, dirty denim and brass zippers.',
-      render_quality: 'Tough asphalt authenticity, road-worn grit and durable utility finish.',
-      spatial_distortion: 'None',
-      atmosphere: 'Cool road defiance, anti-polish gravity and worn-material confidence.',
+      camera_and_composition:
+        'Compose for Road-Worn Biker Leather using its key spatial cues: Leather vest panels, engineer boots, chain hardware, grease-black wear and patch-like geometry without readable insignia.',
+      atmosphere_and_mood: 'Cool road defiance, anti-polish gravity and worn-material confidence.',
+      rendering_and_quality:
+        'Tough asphalt authenticity, road-worn grit and durable utility finish.',
       key_features:
         'Leather vest panels, engineer boots, chain hardware, grease-black wear and patch-like geometry without readable insignia.',
       creative_brief:
@@ -222,17 +235,18 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'tight clothes, logos, fisheye lens, skatepark lock, parking lot lock',
     style: {
       aesthetic: 'Skate-zine style, deck-grip authenticity, casual session culture',
-      form_and_line:
+      subject_treatment:
         'Baggy relaxed-denim silhouette, oversized tee, hoodie-stack and beanie-slouch',
-      color_palette: 'Grey, Black, Graphic Tee, heather, off-white, washed-black, grip-tape grey',
-      lighting_setup:
+      color_and_tone: 'Grey, Black, Graphic Tee, heather, off-white, washed-black, grip-tape grey',
+      lighting_and_shadow:
         'Hard pavement bounce, golden-hour edge light and raw zine contrast without fisheye camera lock.',
-      material_texture:
+      texture_and_material:
         'Heavyweight cotton, canvas, suede, grip-tape grit, worn-in denim, corduroy',
-      render_quality:
+      camera_and_composition:
+        'Compose for Skater Style using its key spatial cues: Ollie-worn suede texture, grip-tape grit, five-panel cap geometry, oversized tee mass and scuffed sole edges.',
+      atmosphere_and_mood: 'Chill, active, session-flow ease, board-pop rhythm and raw casualness',
+      rendering_and_quality:
         'Casual, active, skate-zine rawness and street-credible wear without brand or logo dependence',
-      spatial_distortion: 'None',
-      atmosphere: 'Chill, active, session-flow ease, board-pop rhythm and raw casualness',
       key_features:
         'Ollie-worn suede texture, grip-tape grit, five-panel cap geometry, oversized tee mass and scuffed sole edges',
       creative_brief:
@@ -246,17 +260,18 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'boring, grey',
     style: {
       aesthetic: '90s ravewear exuberance, PLUR-coded color pressure, after-hours synthetic uplift',
-      form_and_line:
+      subject_treatment:
         'Overscaled volume, phat-pant flare, modular strap punctuation, bucket-hat arc, platform-sole stomp rhythm',
-      color_palette:
+      color_and_tone:
         'Neon, Reflective, hi-vis yellow, electric cyan, safety-orange, silver-reflective, blacklight-reactive',
-      lighting_setup:
+      lighting_and_shadow:
         'Blacklight, UV-reactive glow, strobe-pulse fragmentation, fog-machine haze, colored-laser grid',
-      material_texture:
+      texture_and_material:
         'PVC plastic, faux fur, mesh, retroreflective tape, nylon parachute, fuzzy knit',
-      render_quality: 'Energetic, loud, rave-flyer saturation, peak-time euphoria',
-      spatial_distortion: 'None',
-      atmosphere: 'Euphoric, communal, synthetic, bass-driven glow, after-hours uplift',
+      camera_and_composition:
+        'Compose for Raver (90s) using its key spatial cues: Kandi-bead logic, bucket-hat arc, phat-pant volume, reflective trim, neon-extension accents.',
+      atmosphere_and_mood: 'Euphoric, communal, synthetic, bass-driven glow, after-hours uplift',
+      rendering_and_quality: 'Energetic, loud, rave-flyer saturation, peak-time euphoria',
       key_features:
         'Kandi-bead logic, bucket-hat arc, phat-pant volume, reflective trim, neon-extension accents',
       creative_brief:
@@ -270,15 +285,17 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'plain contemporary casualwear, trouser-dominant outfit',
     style: {
       aesthetic: 'Lolita couture, storybook Victorian sweetness, porcelain-pastel refinement',
-      form_and_line:
+      subject_treatment:
         'Ruffles, bell architecture, tiered volume, mutton-leg sleeve, high-neck lace collar',
-      color_palette: 'Pink, White, Blue, mint, lavender, saxon blue, dusty rose, milk-white',
-      lighting_setup: 'Soft diffused light, petal-pink bounce, porcelain-bright warmth',
-      material_texture:
+      color_and_tone: 'Pink, White, Blue, mint, lavender, saxon blue, dusty rose, milk-white',
+      lighting_and_shadow: 'Soft diffused light, petal-pink bounce, porcelain-bright warmth',
+      texture_and_material:
         'Cotton lace, satin ribbons, pintucked voile, broderie anglaise, tulle underlayers, faux-pearl buttons',
-      render_quality: 'Cute elaborate couture, confectionary precision, porcelain-finish restraint',
-      spatial_distortion: 'None',
-      atmosphere: 'Sweet, storybook serenity, lace-gloved delicacy, porcelain calm',
+      camera_and_composition:
+        'Compose for Lolita Fashion using its key spatial cues: Bell-volume silhouette, lace tiers, ribbon structure, porcelain palette, pintuck rhythm.',
+      atmosphere_and_mood: 'Sweet, storybook serenity, lace-gloved delicacy, porcelain calm',
+      rendering_and_quality:
+        'Cute elaborate couture, confectionary precision, porcelain-finish restraint',
       key_features:
         'Bell-volume silhouette, lace tiers, ribbon structure, porcelain palette, pintuck rhythm',
       creative_brief:
@@ -292,16 +309,19 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'suit, military',
     style: {
       aesthetic: 'Summer-of-love styling, flower-power idealism, counterculture ease',
-      form_and_line:
+      subject_treatment:
         'Flowing, loose, bell-bottom flare, peasant-blouse blouson, kaftan drape, headband circumference',
-      color_palette:
+      color_and_tone:
         'Tie-dye, Earth tones, acid-wash rainbow, rust, avocado green, sunflower yellow, indigo',
-      lighting_setup: 'Sun flare, Kodachrome warmth, psychedelic poster saturation, warm haze',
-      material_texture:
+      lighting_and_shadow: 'Sun flare, Kodachrome warmth, psychedelic poster saturation, warm haze',
+      texture_and_material:
         'Cotton cheesecloth, suede fringe, crochet, distressed denim, leather cord, seed-bead embroidery',
-      render_quality: 'Peaceful psychedelic finish, poster-vibrant softness, counterculture warmth',
-      spatial_distortion: 'None',
-      atmosphere: 'Free, happy, peace-and-love euphoria, counterculture hope, soft protest',
+      camera_and_composition:
+        'Compose for Hippie (60s) using its key spatial cues: Flower crown, round sunglasses, peace-sign pendant, fringed vest.',
+      atmosphere_and_mood:
+        'Free, happy, peace-and-love euphoria, counterculture hope, soft protest',
+      rendering_and_quality:
+        'Peaceful psychedelic finish, poster-vibrant softness, counterculture warmth',
       key_features: 'Flower crown, round sunglasses, peace-sign pendant, fringed vest',
       creative_brief:
         'Give the input 60s hippie counterculture styling: tie-dye spirals, bell-bottom flare, suede fringe, crochet, seed beads, peace-sign jewelry and warm Kodachrome haze. Keep flower-power optimism without requiring meadows, sitars, commune tableaux, group gatherings or festival scenes.',
@@ -314,16 +334,19 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'cheerful pastel daylight, sunny cute palette, beachy bright mood',
     style: {
       aesthetic: 'Traditional goth style, mourning revival, darkwave elegance',
-      form_and_line:
+      subject_treatment:
         'Sharp edges, spikes, fishtail hem, coffin-cut shoulders, cinched seam logic and elongated dark silhouette',
-      color_palette:
+      color_and_tone:
         'Black on Black, jet black, raven, midnight, void-black, deep aubergine shadow',
-      lighting_setup: 'Moonlit silver rim light, candle-flicker ambiance, low-key velvet shadow',
-      material_texture:
+      lighting_and_shadow:
+        'Moonlit silver rim light, candle-flicker ambiance, low-key velvet shadow',
+      texture_and_material:
         'Velvet devore, Chantilly lace, patent leather, polished silver, pewter hardware, fishnet',
-      render_quality: 'Dramatic elegant finish, nocturnal refinement, cryptic couture atmosphere',
-      spatial_distortion: 'Cinched seam logic and nocturnal silhouette compression',
-      atmosphere: 'Melancholic, dark, romantic, moonlit longing, eternal twilight, beautiful decay',
+      camera_and_composition: 'Cinched seam logic and nocturnal silhouette compression',
+      atmosphere_and_mood:
+        'Melancholic, dark, romantic, moonlit longing, eternal twilight, beautiful decay',
+      rendering_and_quality:
+        'Dramatic elegant finish, nocturnal refinement, cryptic couture atmosphere',
       key_features:
         'Black-on-black layering, silver occult jewelry, platform-boot mass, corset or lace cues',
       creative_brief:
@@ -337,16 +360,18 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'clean, ironed',
     style: {
       aesthetic: '90s slouch-grunge, flannel melancholy, lo-fi dishevelment',
-      form_and_line:
+      subject_treatment:
         'Loose, layered, cardigan-over-tee drape, ripped-knee baggy, beanie-slouch silhouette',
-      color_palette:
+      color_and_tone:
         'Faded plaid, denim, olive drab, washed-out black, mustard, vintage-burgundy check',
-      lighting_setup: 'Dim overcast grey, basement-amber warmth, rainy-flat low contrast',
-      material_texture:
+      lighting_and_shadow: 'Dim overcast grey, basement-amber warmth, rainy-flat low contrast',
+      texture_and_material:
         'Brushed flannel, distressed knit, stonewashed denim, thermal waffle, worn canvas sneaker texture',
-      render_quality: 'Messy, cool, apathy, lo-fi honesty, garage-band authenticity',
-      spatial_distortion: 'None',
-      atmosphere: 'Angst, relaxed, quiet desperation, feedback-hum ennui, careless sincerity',
+      camera_and_composition:
+        'Compose for Grunge (90s) using its key spatial cues: Flannel shirt, ripped jeans, cardigan, beanie, unbranded canvas low-top sneakers.',
+      atmosphere_and_mood:
+        'Angst, relaxed, quiet desperation, feedback-hum ennui, careless sincerity',
+      rendering_and_quality: 'Messy, cool, apathy, lo-fi honesty, garage-band authenticity',
       key_features:
         'Flannel shirt, ripped jeans, cardigan, beanie, unbranded canvas low-top sneakers',
       creative_brief:

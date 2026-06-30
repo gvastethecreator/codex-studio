@@ -13,18 +13,18 @@ tags:
   - editorial-and-poster
 visualDna:
   aesthetic: Editorial infographic/data-visualization illustration system
-  form_and_line: Thin icon strokes, modular chart primitives, directional flow connectors
-  color_palette: Consistent categorical palette with accessible contrast grouping
-  lighting_setup: Flat informational rendering with no decorative shadowing
-  material_texture: Clean vector output suitable for print and screen
-  render_quality: High-legibility explainer quality with dashboard-grade precision
-  spatial_distortion: Optional isometric modules integrated into 2D data layouts
-  atmosphere: Analytical, trustworthy, concise
+  subject_treatment: Thin icon strokes, modular chart primitives, directional flow connectors
+  color_and_tone: Consistent categorical palette with accessible contrast grouping
+  lighting_and_shadow: Flat informational rendering with no decorative shadowing
+  texture_and_material: Clean vector output suitable for print and screen
+  camera_and_composition: Optional isometric modules integrated into 2D data layouts
+  atmosphere_and_mood: Analytical, trustworthy, concise
+  rendering_and_quality: High-legibility explainer quality with dashboard-grade precision
   key_features: Chart blocks, iconography families, data-flow arrows, hierarchy scaffolds
   creative_brief: >-
-    Apply editorial infographic grammar to any input: modular chart primitives, icon families,
-    directional flow, semantic color grouping, and dashboard-grade hierarchy should clarify complex
-    subjects without requiring labels, arrows, UI dashboards, statistics, or explainer-page layouts.
+    Apply editorial infographic grammar to any input: modular chart primitives, icon families, directional
+    flow, semantic color grouping, and dashboard-grade hierarchy should clarify complex subjects without
+    requiring labels, arrows, UI dashboards, statistics, or explainer-page layouts.
 avoidRules:
   - messy
   - art

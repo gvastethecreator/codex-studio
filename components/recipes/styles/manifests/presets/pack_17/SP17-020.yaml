@@ -15,7 +15,9 @@ tags:
   - techno-crusader
 visualDna:
   aesthetic: Futuristic crusader armor with medieval plate grammar, lit sigils, modular joints, and ritual tech.
-  subject_treatment: A sealed rune-tech paladin suit with servo joints, relic battery pack, tabard planes, and oath hardware, treated as armor design rather than face or weapon.
+  subject_treatment: >-
+    A sealed rune-tech paladin suit with servo joints, relic battery pack, tabard planes, and oath hardware,
+    treated as armor design rather than face or weapon.
   color_and_tone: Black steel, off-white cloth, red seal accents, amber LEDs, and cold blue edge light.
   lighting_and_shadow: Hard rim light and simple seam glow define armor planes while keeping all major details visible.
   texture_and_material: Ceramic plating, scratched steel, woven tabards, rubberized joints, enamel symbols, and dusty circuitry.
@@ -33,6 +35,10 @@ avoidRules:
   - text
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP17-020.webp
+attributes:
+  negativePrompt: >-
+    generic space marine, smooth plastic suit, superhero spandex, bright fantasy paladin, explicit gore,
+    watermark, text
 taxonomy:
   packId: pack_17
   packName: Medieval Fantasy & Dungeon Zine

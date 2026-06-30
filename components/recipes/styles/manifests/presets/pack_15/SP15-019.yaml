@@ -14,16 +14,36 @@ tags:
   - repairpunk
   - riverside
 visualDna:
-  aesthetic: repairpunk riverside workshop as a flat-to-painterly poster card built around a riverside commons fixing bicycles, turbines, boats, and small appliances under tarps.
-  form_and_line: Repair-culture shapes, civic infrastructure, practical climate machines, and human-scaled commons. Core composition uses repair benches, turbines, patched boats, union patches, riverside tarps.
-  color_palette: river blue, rust orange, canvas tan, tool steel
-  lighting_setup: open shade blocks, flat river color, simple workbench glow, late sun shape
-  material_texture: canvas tarp planes, tool steel accents, patched boat silhouette, bicycle rubber arcs, weathered wood blocks
-  render_quality: Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity, moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material simulation, or hyper-detail.
-  spatial_distortion: Rooftops, riversides, roofs, blocks, terraces, and outdoor workshops with lived-in pragmatism. Keep depth legible and avoid default hallway, aisle, or empty studio staging.
-  atmosphere: neighborly, capable, improvised, resilient
+  aesthetic: >-
+    repairpunk riverside workshop as a flat-to-painterly poster card built around a riverside commons fixing
+    bicycles, turbines, boats, and small appliances under tarps.
+  subject_treatment: >-
+    Repair-culture shapes, civic infrastructure, practical climate machines, and human-scaled commons. Core
+    composition uses repair benches, turbines, patched boats, union patches, riverside tarps.
+  color_and_tone: river blue, rust orange, canvas tan, tool steel
+  lighting_and_shadow: open shade blocks, flat river color, simple workbench glow, late sun shape
+  texture_and_material: >-
+    canvas tarp planes, tool steel accents, patched boat silhouette, bicycle rubber arcs, weathered wood
+    blocks
+  camera_and_composition: >-
+    Rooftops, riversides, roofs, blocks, terraces, and outdoor workshops with lived-in pragmatism. Keep depth
+    legible and avoid default hallway, aisle, or empty studio staging.
+  atmosphere_and_mood: neighborly, capable, improvised, resilient
+  rendering_and_quality: >-
+    Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly
+    planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity,
+    moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material
+    simulation, or hyper-detail.
   key_features: repair benches, turbines, patched boats, union patches, riverside tarps
-  creative_brief: 'Repairpunk should feel hands-on and local: repaired objects, people using tools, and civic usefulness without shiny utopia or market clutter. Keep the result representative rather than over-abstract; make one character in their environment the anchor, with motifs as background, costume, weather, architecture, or social pressure instead of a foreground prop. Favor flat-to-painterly editorial illustration, gouache poster aesthetics, clean graphic-novel card art, or stylized animation-background art over realism, photoreal photoreal painterly realism, cinematic key art, scratchy print noise, or hyper-detailed concept art. Use few bold color/value zones, low-to-moderate texture, large shapes, clean surfaces, shallow poster depth, and finish denoised with no excessive noise or ultra-fine detail.'
+  creative_brief: >-
+    Repairpunk should feel hands-on and local: repaired objects, people using tools, and civic usefulness
+    without shiny utopia or market clutter. Keep the result representative rather than over-abstract; make one
+    character in their environment the anchor, with motifs as background, costume, weather, architecture, or
+    social pressure instead of a foreground prop. Favor flat-to-painterly editorial illustration, gouache
+    poster aesthetics, clean graphic-novel card art, or stylized animation-background art over realism,
+    photoreal photoreal painterly realism, cinematic key art, scratchy print noise, or hyper-detailed concept
+    art. Use few bold color/value zones, low-to-moderate texture, large shapes, clean surfaces, shallow poster
+    depth, and finish denoised with no excessive noise or ultra-fine detail.
 avoidRules:
   - photoreal
   - watermark
@@ -37,7 +57,21 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP15-019.webp
 attributes:
-  negativePrompt: photoreal, hyperreal, realistic render, photoreal photoreal painterly realism, cinematic realism, AAA key art, cinematic concept-art render, photographic skin pores, realistic foreground portrait, realistic facial hair detail, lens blur, bokeh, depth-of-field photo look, realistic perspective drama, generic soldier hero, guard pin-up, weapon-first pose, readable union text, logo badge, work-lamp hero, crowded object pile, market aisle, photoreal river reflection, shiny utopia, HDR lens realism, 3D render look, PBR material simulation, hyper-detailed concept art, scratchy print noise, tiny black linework, watermark, text, logo, generic style, over-abstract, interchangeable preset, duplicated motifs, generic glass utopia, unmotivated market aisle, unmotivated library aisle, fantasy corridor, random camera held by subject, studio wall fixation, chair fixation, curtain fixation, lamp fixation, scarf fixation, pedestal fixation, bird fixation, excessive noise, ultra-fine detail, over-sharpened microtexture, over-rendered machinery, noisy grime, tiny rivets everywhere, busy texture chatter, realistic uniform portrait, uniformed officer hero, foreground guard portrait, detailed tattoo focus, dense machinery wallpaper, overcrowded scene, high-frequency surface detail, cinematic close-up portrait, flat black fill, crushed black, pure black masses, muddy black fields, generic American illustration, generic Western RPG card art
+  negativePrompt: >-
+    photoreal, hyperreal, realistic render, photoreal photoreal painterly realism, cinematic realism, AAA key
+    art, cinematic concept-art render, photographic skin pores, realistic foreground portrait, realistic
+    facial hair detail, lens blur, bokeh, depth-of-field photo look, realistic perspective drama, generic
+    soldier hero, guard pin-up, weapon-first pose, readable union text, logo badge, work-lamp hero, crowded
+    object pile, market aisle, photoreal river reflection, shiny utopia, HDR lens realism, 3D render look, PBR
+    material simulation, hyper-detailed concept art, scratchy print noise, tiny black linework, watermark,
+    text, logo, generic style, over-abstract, interchangeable preset, duplicated motifs, generic glass utopia,
+    unmotivated market aisle, unmotivated library aisle, fantasy corridor, random camera held by subject,
+    studio wall fixation, chair fixation, curtain fixation, lamp fixation, scarf fixation, pedestal fixation,
+    bird fixation, excessive noise, ultra-fine detail, over-sharpened microtexture, over-rendered machinery,
+    noisy grime, tiny rivets everywhere, busy texture chatter, realistic uniform portrait, uniformed officer
+    hero, foreground guard portrait, detailed tattoo focus, dense machinery wallpaper, overcrowded scene,
+    high-frequency surface detail, cinematic close-up portrait, flat black fill, crushed black, pure black
+    masses, muddy black fields, generic American illustration, generic Western RPG card art
 taxonomy:
   packId: pack_15
   packName: Punk Spectrum Vault

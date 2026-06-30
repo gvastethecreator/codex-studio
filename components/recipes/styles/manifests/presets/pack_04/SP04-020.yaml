@@ -13,19 +13,18 @@ tags:
   - childrens-illustration
 visualDna:
   aesthetic: Flat educational infographic system (Kurzgesagt-inspired visual pedagogy)
-  form_and_line: Outline-minimal geometric primitives with rounded construction logic
-  color_palette: Vibrant flat-spectrum channels with strong semantic color grouping
-  lighting_setup: Shadow-light simplified to subtle flat-shape value separation
-  material_texture: Pure vector cleanliness with no analog artifacting
-  render_quality: Screen-optimized explainer clarity and modular consistency
-  spatial_distortion: Simplified isometric/orthographic-friendly shape grammar
-  atmosphere: Optimistic, informative, high-clarity
+  subject_treatment: Outline-minimal geometric primitives with rounded construction logic
+  color_and_tone: Vibrant flat-spectrum channels with strong semantic color grouping
+  lighting_and_shadow: Shadow-light simplified to subtle flat-shape value separation
+  texture_and_material: Pure vector cleanliness with no analog artifacting
+  camera_and_composition: Simplified isometric/orthographic-friendly shape grammar
+  atmosphere_and_mood: Optimistic, informative, high-clarity
+  rendering_and_quality: Screen-optimized explainer clarity and modular consistency
   key_features: Modular icon blocks, geometric metaphors, hierarchy-first composition
   creative_brief: >-
-    Apply flat educational vector grammar to any input: geometric primitives, semantic color coding,
-    modular icon blocks, rounded construction, and hierarchy-first composition should explain form
-    clearly without requiring charts, planets, birds, UI labels, narration panels, or fixed
-    explainer scenes.
+    Apply flat educational vector grammar to any input: geometric primitives, semantic color coding, modular
+    icon blocks, rounded construction, and hierarchy-first composition should explain form clearly without
+    requiring charts, planets, birds, UI labels, narration panels, or fixed explainer scenes.
 avoidRules:
   - outline
   - texture

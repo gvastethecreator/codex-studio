@@ -13,18 +13,18 @@ tags:
   - fluid-and-organic
 visualDna:
   aesthetic: Space gas
-  form_and_line: Soft edges
-  color_palette: Pink, Blue, Purple
-  lighting_setup: Internal star glow
-  material_texture: Gaseous
-  render_quality: Hubble, cosmic
-  spatial_distortion: Amorphous
-  atmosphere: Epic, vast
+  subject_treatment: Soft edges
+  color_and_tone: Pink, Blue, Purple
+  lighting_and_shadow: Internal star glow
+  texture_and_material: Gaseous
+  camera_and_composition: Amorphous
+  atmosphere_and_mood: Epic, vast
+  rendering_and_quality: Hubble, cosmic
   key_features: Stars
   creative_brief: >-
-    Apply nebula-cloud treatment to the input: pink-indigo gas veils, star-dust
-    speckles, luminous depth, and cosmic-scale haze should make forms feel
-    suspended in astronomical color without requiring an outer-space backdrop.
+    Apply nebula-cloud treatment to the input: pink-indigo gas veils, star-dust speckles, luminous depth, and
+    cosmic-scale haze should make forms feel suspended in astronomical color without requiring an outer-space
+    backdrop.
 avoidRules:
   - solid
 assets:

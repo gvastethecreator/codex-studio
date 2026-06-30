@@ -13,19 +13,18 @@ tags:
   - printmaking
 visualDna:
   aesthetic: Textured collage print
-  form_and_line: Embossed textures
-  color_palette: Earthy, multi-colored
-  lighting_setup: Relief
-  material_texture: Sand, glue, fabric
-  render_quality: Experimental, tactile
-  spatial_distortion: Abstracted
-  atmosphere: Rough, organic
+  subject_treatment: Embossed textures
+  color_and_tone: Earthy, multi-colored
+  lighting_and_shadow: Relief
+  texture_and_material: Sand, glue, fabric
+  camera_and_composition: Abstracted
+  atmosphere_and_mood: Rough, organic
+  rendering_and_quality: Experimental, tactile
   key_features: Heavy texture
   creative_brief: >-
-    Apply collagraph print materiality to any input: raised sand/glue/fiber
-    texture, relief valleys holding ink, irregular pressure, cardboard-like
-    surface memory, and tactile printed terrain. Keep material sacrifice visible
-    without requiring literal collage objects, landscapes, or printing plates.
+    Apply collagraph print materiality to any input: raised sand/glue/fiber texture, relief valleys holding
+    ink, irregular pressure, cardboard-like surface memory, and tactile printed terrain. Keep material
+    sacrifice visible without requiring literal collage objects, landscapes, or printing plates.
 avoidRules:
   - photo
   - realistic
@@ -47,7 +46,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP06-045.webp
 attributes:
-  negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border, literal landscape, recognizable found objects
+  negativePrompt: >-
+    photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy,
+    watermark, text, signature, frame, border, literal landscape, recognizable found objects
 taxonomy:
   packId: pack_06
   packName: Essential Art Styles

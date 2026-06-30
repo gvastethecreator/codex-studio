@@ -12,20 +12,20 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Deliberately ugly caricature, bulbous distortion, warty textures, hideous charm, adult-swim grotesque, John Kricfalusi energy',
-      form_and_line:
+      subject_treatment:
         'Wobbly uneven contours, spasming line weight, broken construction, scratchy re-draw marks, elastic form logic',
-      color_palette:
+      color_and_tone:
         'Sickly greens, bruised purples, bilious yellow, clammy grey, infection-tinted flesh tones, jaundiced warmth',
-      lighting_setup:
+      lighting_and_shadow:
         'Unflattering fluorescent overexposure, harsh single-source bulb, unkind overhead glare',
-      material_texture:
+      texture_and_material:
         'Bumpy surface, exaggerated pores or pits, wart dimples, greasy sheen, splotchy texture',
-      render_quality:
-        'Intentionally terrible, purposefully unpleasant, anti-aesthetic, repulsive yet compelling, scratchy late-night animation',
-      spatial_distortion:
+      camera_and_composition:
         'Inflated proportions, mismatched feature scales, bulging forms, impossible curve stress',
-      atmosphere:
+      atmosphere_and_mood:
         'Uncomfortable, repulsive yet funny, fever-dream ugly, caricature at its cruelest',
+      rendering_and_quality:
+        'Intentionally terrible, purposefully unpleasant, anti-aesthetic, repulsive yet compelling, scratchy late-night animation',
       key_features:
         'Asymmetry, bulbous focal swelling, greasy texture, excessive folds, cruel redraw energy',
       creative_brief:
@@ -41,18 +41,18 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Childlike notebook scribble, wonky circles, deliberately bad proportions, joyful incompetence, crayon-on-paper energy',
-      form_and_line:
+      subject_treatment:
         'Loose wobbly graphite, multiple overlapping attempt lines, eraser smudges still visible, uncertain pen pressure',
-      color_palette:
+      color_and_tone:
         "Wax crayon primaries, coloring-outside-the-lines chaos, cheap children's marker bleed, construction-paper bright",
-      lighting_setup: 'No lighting logic, flat fills with zero shading, rejecting dimension',
-      material_texture:
+      lighting_and_shadow: 'No lighting logic, flat fills with zero shading, rejecting dimension',
+      texture_and_material:
         'Lined notebook paper grain, crayon wax buildup, marker bleeding through to reverse side',
-      render_quality:
-        'Intentionally childish, proudly amateur, naive-art celebration, anti-skill philosophy, five-year-old masterpiece',
-      spatial_distortion:
+      camera_and_composition:
         'Scale mistakes, no perspective whatsoever, flattened spatial guesses, naive symbol logic',
-      atmosphere: 'Innocent, joyful chaos, giggling anarchy, pure creative abandon',
+      atmosphere_and_mood: 'Innocent, joyful chaos, giggling anarchy, pure creative abandon',
+      rendering_and_quality:
+        'Intentionally childish, proudly amateur, naive-art celebration, anti-skill philosophy, five-year-old masterpiece',
       key_features:
         'Wobbly attempts, crayon overflow, simple symbols, eraser smudges, flat naive layout',
       creative_brief:
@@ -67,19 +67,20 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Almost-real-but-wrong uncanny rendering, dead glossy surfaces, plastic smoothness, hyper-real detail on simplified structure, creepy animatronic energy, Polar-Express unease',
-      form_and_line:
+      subject_treatment:
         'Overly smooth vector contours, mathematically perfect curves that feel wrong, no organic variation',
-      color_palette:
+      color_and_tone:
         'Uncanny peach, corpse-wax beige, mortician foundation, too-uniform blush, synthetic warmth',
-      lighting_setup: 'Flat diffuse studio, shadowless void, CGI default lighting, no atmosphere',
-      material_texture:
+      lighting_and_shadow:
+        'Flat diffuse studio, shadowless void, CGI default lighting, no atmosphere',
+      texture_and_material:
         'Too-smooth plastic surface, vinyl doll finish, waxy silicone, mannequin gloss',
-      render_quality:
-        'Hyper-clean vector rendering, unsettlingly perfect gradients, algorithmic smoothness, no human imperfection',
-      spatial_distortion:
+      camera_and_composition:
         'Proportions fractionally wrong, feature placement almost correct, threshold-scale misalignment',
-      atmosphere:
+      atmosphere_and_mood:
         'Deeply unsettling, skin-crawling wrongness, silent discomfort, robotic emptiness',
+      rendering_and_quality:
+        'Hyper-clean vector rendering, unsettlingly perfect gradients, algorithmic smoothness, no human imperfection',
       key_features:
         'Glassy speculars, too-perfect symmetry, puppet articulation seams, waxy synthetic sheen',
       creative_brief:
@@ -94,19 +95,19 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Exaggerated editorial satire cartoon, oversized symbolic emphasis, newspaper venom, cruel accuracy in feature selection, Daumier lithograph irreverence, Punch magazine cruelty',
-      form_and_line:
+      subject_treatment:
         'Aggressive crosshatching, heavy india ink, sharp vicious pen strokes, editorial deadline scratch',
-      color_palette:
+      color_and_tone:
         'Newsprint grey, bile green, angry red accents, tobacco-stain ochre, cheap pulp paper yellow',
-      lighting_setup:
+      lighting_and_shadow:
         'Harsh side-light carving shadows into exaggerated features, unflattering key',
-      material_texture:
+      texture_and_material:
         'Coarse newsprint halftone, cheap ink bleeding into paper fibers, mechanical reproduction artifacts',
-      render_quality:
-        'Deadline-rush energy, quickfire ink, rapid-fire satire, next-day print quality, no time for refinement',
-      spatial_distortion:
+      camera_and_composition:
         'Scale hierarchy, symbolic enlargement, compressed bodies or objects, editorial distortion',
-      atmosphere: 'Biting, cynical, merciless observation, righteous mockery',
+      atmosphere_and_mood: 'Biting, cynical, merciless observation, righteous mockery',
+      rendering_and_quality:
+        'Deadline-rush energy, quickfire ink, rapid-fire satire, next-day print quality, no time for refinement',
       key_features:
         'Symbolic distortion, crosshatched fury, newsprint halftone, venomous contour, no readable captions',
       creative_brief:
@@ -121,19 +122,19 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Features melting like hot wax, Salvador Dali meets Tex Avery, fever-dream structural collapse, reality losing integrity, psychedelic cartoon meltdown',
-      form_and_line:
+      subject_treatment:
         'Sinking contour lines, drooping outlines, vertical stretch deformation, no anchoring bone structure',
-      color_palette:
+      color_and_tone:
         'Melting wax pastels, bruise-spectrum purples and yellows, jaundice-glow skin, ice-cream drip tones',
-      lighting_setup:
+      lighting_and_shadow:
         'Shifting light sources, inconsistent shadow direction accenting the wrong places, disorienting illumination',
-      material_texture:
+      texture_and_material:
         'Molten wax surface, glossy drip trails, taffy stretch, viscoelastic surface flow',
-      render_quality:
-        'Psychedelic cartoon surrealism, liquid-reality rendering, Max Fleischer nightmare, experimental animation aesthetic',
-      spatial_distortion:
+      camera_and_composition:
         'Entire form cascading downward, parts migrating off-register, pooled mass, temporal distortion',
-      atmosphere: 'Disorienting, hypnotic, deeply weird, mescaline cartoon',
+      atmosphere_and_mood: 'Disorienting, hypnotic, deeply weird, mescaline cartoon',
+      rendering_and_quality:
+        'Psychedelic cartoon surrealism, liquid-reality rendering, Max Fleischer nightmare, experimental animation aesthetic',
       key_features:
         'Vertical drip lines, pooled forms, runny edges, wax-clock deformation, liquid contour',
       creative_brief:
@@ -149,19 +150,19 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Deformed yet adorable ugly-cute design, lumpy asymmetry, mismatched scale, so-ugly-it-is-precious charm, Ghibli soot-sprite meets Ren & Stimpy as style anchor',
-      form_and_line:
+      subject_treatment:
         'Chunky uneven outlines, bulbous swelling curves, random spikes and bumps, happy accident shapes',
-      color_palette:
+      color_and_tone:
         'Sickly-sweet candy colors, mold-green with pink blush, bruise-purple fur, mucus-yellow highlights',
-      lighting_setup:
+      lighting_and_shadow:
         'Soft forgiving glow, gentle rim light to emphasize lumpiness, cozy shadow under belly folds',
-      material_texture:
+      texture_and_material:
         'Bumpy surface, lumpy wool texture, crusty dried-mud finish, scab-like patches',
-      render_quality:
-        'Lovingly ugly, carefully careless, trash-goblin preciousness, toy-line reject charm',
-      spatial_distortion:
+      camera_and_composition:
         'Mismatched feature scale, uneven proportions, oversized mass, asymmetric appendage logic',
-      atmosphere: 'Affectionate disgust, heartwarming grotesquerie, lovable wrongness',
+      atmosphere_and_mood: 'Affectionate disgust, heartwarming grotesquerie, lovable wrongness',
+      rendering_and_quality:
+        'Lovingly ugly, carefully careless, trash-goblin preciousness, toy-line reject charm',
       key_features:
         'Mismatched scale, lumpy silhouette, awkward charm, candy-sick palette, forgiving glow',
       creative_brief:
@@ -177,19 +178,19 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         '1930s rubber-hose cartoon pushed to mania, spaghetti-like curves, accordion compression, pure kinetic anarchy, Fleischer on amphetamines, Cuphead nightmare mode',
-      form_and_line:
+      subject_treatment:
         'Noodle-thin bouncing outlines, squash-and-stretch taken beyond breaking point, elastic deformation extremes',
-      color_palette:
+      color_and_tone:
         'Vintage cel paint, off-registration cyan bleed, nicotine-stain sepia, fading technicolor, ink-smear black',
-      lighting_setup:
+      lighting_and_shadow:
         'Nonexistent lighting logic, flat cel shading, occasional shadow blob where foot touches ground',
-      material_texture:
+      texture_and_material:
         '16mm film grain, cel paint brush strokes visible, dust-scratched negative, old-reel flicker',
-      render_quality:
-        'Vintage rubber-hose chaos, golden-age bounciness amplified tenfold, classic cartoon on fast-forward',
-      spatial_distortion:
+      camera_and_composition:
         'Forms knotting like elastic tubes, torso-like mass compression, infinite stretch, detached motion accents',
-      atmosphere: 'Frenzied, hysterical, pure kinetic madness, cartoon physics unleashed',
+      atmosphere_and_mood: 'Frenzied, hysterical, pure kinetic madness, cartoon physics unleashed',
+      rendering_and_quality:
+        'Vintage rubber-hose chaos, golden-age bounciness amplified tenfold, classic cartoon on fast-forward',
       key_features:
         'Rubber-hose curves, no-joint elasticity, pie-cut graphic accents, accordion compression, impact smears',
       creative_brief:
@@ -205,19 +206,20 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Crude childhood nightmare-art, jagged triangle symbols, uneven circles, chaotic crayon scribbles, kindergarten fridge-gallery horror',
-      form_and_line:
+      subject_treatment:
         'Heavy greasy crayon pressure, wax-clogged paper grain, multiple angry coloring attempts, drawing-off-the-page energy',
-      color_palette:
+      color_and_tone:
         'Broken crayon colors, orange-purple-green chaos, heavy-handed single-pass coloring, mixed-brand crayon clash',
-      lighting_setup:
-        'None, aggressive coloring regardless of light logic, pure expression over representation',
-      material_texture:
+      lighting_and_shadow:
+        'Expressionist color field with aggressive coloring regardless of light logic, pure expression over representation',
+      texture_and_material:
         'Construction-paper tooth, crayon wax smears, graphite pencil underdrawing, ripped-paper tension',
-      render_quality:
-        'First-grade art class, refrigerator-door masterpiece, pure unfiltered expression, zero technique maximum soul',
-      spatial_distortion:
+      camera_and_composition:
         'Wrong scale, mismatched parts, impossible attachment points, no perspective',
-      atmosphere: 'Wild, unfiltered, pure-id creativity, beautifully terrible, wonderfully wrong',
+      atmosphere_and_mood:
+        'Wild, unfiltered, pure-id creativity, beautifully terrible, wonderfully wrong',
+      rendering_and_quality:
+        'First-grade art class, refrigerator-door masterpiece, pure unfiltered expression, zero technique maximum soul',
       key_features:
         'Jagged triangle marks, uneven circles, scribble texture, construction-paper tooth, uncolored gaps',
       creative_brief:
@@ -232,20 +234,20 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Body-horror cartoon texture system, exposed inner-material logic, translucent flesh-like wrapping, MeatCanyon aesthetic, Cronenberg-meets-SpongeBob, visceral wrongness with cartoon color palette',
-      form_and_line:
+      subject_treatment:
         'Hyper-detailed anatomical horror on cartoon proportions, sinew-like strands, meat-fiber linework',
-      color_palette:
+      color_and_tone:
         'Raw meat red, exposed tendon white, vein-blue, jaundice yellow, pus-green, fresh-bruise purple, surgical pink',
-      lighting_setup:
+      lighting_and_shadow:
         'Clinical overhead, wet glistening surfaces catching light, meat-locker fluorescence',
-      material_texture:
+      texture_and_material:
         'Wet muscle fiber, stretched translucent skin, exposed cartilage gleam, dental-enamel hyper-detail',
-      render_quality:
-        'Visceral gross-out cartoon, anatomically-detailed horror comedy, MeatCanyon-style grotesque, nightmare fuel',
-      spatial_distortion:
+      camera_and_composition:
         'Opened structure beyond physical limits, bulging forms, visible interior scaffold, flesh-puppet proportions',
-      atmosphere:
+      atmosphere_and_mood:
         "Nauseating, fascinating revulsion, can't-look-away horror, deeply wrong yet compelling",
+      rendering_and_quality:
+        'Visceral gross-out cartoon, anatomically-detailed horror comedy, MeatCanyon-style grotesque, nightmare fuel',
       key_features:
         'Interior texture exposure, meat-fiber rendering, translucent wrapping, stretch tension lines, surgical cartoon color',
       creative_brief:
@@ -260,20 +262,20 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Aggressively angular design, sharp triangles and jagged edges, heavy black outlines with zero soft curves, Hot Topic aesthetic, 2000s edgy cartoon network, Invader Zim angularity, JTHM spiky nihilism, skate-punk scribble energy',
-      form_and_line:
+      subject_treatment:
         'Razor-sharp angular contours, triangular composition everywhere, jagged motion lines, aggressive hatch shading',
-      color_palette:
+      color_and_tone:
         'Black-heavy palette, blood red, acid green, toxic waste yellow, bruised purple, no soft colors allowed, high-contrast edgelord spectrum',
-      lighting_setup:
+      lighting_and_shadow:
         'Harsh under-lighting for menace, sharp cast shadows, rim light on angular edges, dramatic noir contrast',
-      material_texture:
+      texture_and_material:
         'Scratchy ink pen strokes, marker bleed on cheap paper, distressed photocopy grain, DIY zine texture',
-      render_quality:
-        'Edgy underground comic, Hot Topic t-shirt art, deliberately aggressive rendering, anti-cute manifesto',
-      spatial_distortion:
+      camera_and_composition:
         'Forms as walking collections of triangles, impossible razor fans, narrowing needle-point extensions',
-      atmosphere:
+      atmosphere_and_mood:
         'Angry, rebellious, anti-establishment sneer, teenage wasteland cool, too-much-energy rage',
+      rendering_and_quality:
+        'Edgy underground comic, Hot Topic t-shirt art, deliberately aggressive rendering, anti-cute manifesto',
       key_features:
         'Triangular everything, blade contours, jagged graphic bursts, crosshatched shadows, no curves allowed',
       creative_brief:
@@ -289,19 +291,20 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Dry-erase marker on whiteboard, awkward flowchart humor, half-erased previous ideas ghosting underneath, blue-expo red-expo green-expo marker colors, corporate satire drawn during boring meetings, strategy-diagram absurdity',
-      form_and_line:
+      subject_treatment:
         'Squeaky dry-erase marker strokes, variable thickness from marker angle, eraser-smear ghost trails, hasty unsteady linework, arrow-heavy composition',
-      color_palette:
+      color_and_tone:
         'Expo-marker blue, red, green, black on glossy white, faded-ink pink from dried-out markers, smudge-grey eraser trails',
-      lighting_setup: 'Harsh fluorescent overhead, glossy board reflection, shallow surface glare',
-      material_texture:
+      lighting_and_shadow:
+        'Harsh fluorescent overhead, glossy board reflection, shallow surface glare',
+      texture_and_material:
         'Glossy whiteboard surface, dried-marker residue stains, eraser-felt streaks, aluminum frame reflection',
-      render_quality:
-        'Office whiteboard doodle aesthetic, dry-erase impermanence, meeting-room creativity, corporate-absurdism humor',
-      spatial_distortion:
+      camera_and_composition:
         'Arrows looping in impossible circles, crowded diagram spacing, warped marker perspective',
-      atmosphere:
+      atmosphere_and_mood:
         'Bored-meeting creativity, corporate-surrealism, passive-aggressive office humor, caffeine-fueled doodling',
+      rendering_and_quality:
+        'Office whiteboard doodle aesthetic, dry-erase impermanence, meeting-room creativity, corporate-absurdism humor',
       key_features:
         'Dry-erase marker strokes, eraser ghost trails, flowchart arrows, diagram circles, glossy board reflection, no readable text',
       creative_brief:
@@ -317,20 +320,20 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Drawing on crumpled then flattened paper, crease-lines cutting through the art, stained and abused surface, wrinkled-grid distortion, beautiful-accident texture, discarded-thought recovered',
-      form_and_line:
+      subject_treatment:
         'Lines broken by paper creases, ink pooling in fold valleys, interrupted-contour across wrinkles, roughened-edge strokes',
-      color_palette:
+      color_and_tone:
         'Stained paper beige, coffee-ring sepia, ballpoint blue, graphite grey, yellow-highlighter fluorescence, tea-tannin brown',
-      lighting_setup:
+      lighting_and_shadow:
         'Top-down desk-lamp warmth, crease-shadow depth from crumpled topography, side-light revealing paper texture',
-      material_texture:
+      texture_and_material:
         'Deep-crease paper folds, coffee-stain absorption circles, water-damage warping, ink-bleed into fibers, torn-edge roughness',
-      render_quality:
-        'Crumpled-paper sketch aesthetic, rescued-from-trash beauty, accidental-texture rendering, wabi-sabi art philosophy',
-      spatial_distortion:
+      camera_and_composition:
         'Forms bisected by fold lines, features shifted across crease faults, drawn-then-crumpled distortion',
-      atmosphere:
+      atmosphere_and_mood:
         'Desperate creativity, beautiful failure, late-night frustrated genius, rescued inspiration, melancholy charm',
+      rendering_and_quality:
+        'Crumpled-paper sketch aesthetic, rescued-from-trash beauty, accidental-texture rendering, wabi-sabi art philosophy',
       key_features:
         'Paper crease lines across art, coffee-stain rings, torn paper edges, ink-pooling in fold valleys, wabi-sabi imperfection',
       creative_brief:
@@ -346,20 +349,20 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Paleolithic cave-wall art, ochre-pigment stencils, rudimentary symbolic figures, Lascaux-cave energy, rough limestone surface, ancient storytelling through crude marks, thirty-thousand-year-old doodle energy',
-      form_and_line:
+      subject_treatment:
         'Crude finger-painted contours, blown-pigment hand silhouettes, charcoal-stick roughness, irregular natural pigment strokes',
-      color_palette:
+      color_and_tone:
         'Ochre red, charcoal black, bone-ash white, clay-earth brown, iron-oxide rust, mineral-pigment rawness',
-      lighting_setup:
+      lighting_and_shadow:
         'Torchlight flicker on cave wall, deep-shadow crevices, uneven stone illumination, dancing-flame warmth',
-      material_texture:
+      texture_and_material:
         'Rough limestone surface, mineral-crystal sparkle, pigment-caked into rock pores, stalactite drip, cave-dust coating',
-      render_quality:
-        "Prehistoric cave-art aesthetic, paleolithic expression, humanity's-first-art beauty, raw-pigment authenticity",
-      spatial_distortion:
+      camera_and_composition:
         'Impossible counts, incomplete silhouettes, overlapping-time narrative on same wall, no ground-line suspension',
-      atmosphere:
+      atmosphere_and_mood:
         "Ancient, primal, mysterious, torchlit-reverence, humanity's-dawn wonder, sacred-cave silence",
+      rendering_and_quality:
+        "Prehistoric cave-art aesthetic, paleolithic expression, humanity's-first-art beauty, raw-pigment authenticity",
       key_features:
         'Stencil negative prints, ochre-red outlines, charcoal-stick roughness, limestone texture, torchlight flicker, no ground plane',
       creative_brief:
@@ -375,20 +378,20 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Five-year-old drawing logic, stick-symbol construction, giant corner-symbol scale, square-triangle geometry, lollipop-circle marks, ground stripe and sky stripe, pure childhood-art vocabulary',
-      form_and_line:
+      subject_treatment:
         'Heavy crayon pressure, uncertain wobbly circles, coloring-outside-the-lines chaos, multiple-passes-over-same-spot, fat-finger grip thickness',
-      color_palette:
+      color_and_tone:
         'Sun-yellow, sky-blue stripe, grass-green stripe, skin-peach crayon, dress-pink triangle, house-brown square, each color used straight from box',
-      lighting_setup:
+      lighting_and_shadow:
         'No lighting logic whatsoever, sun drawn in corner regardless of shadow, flat-fill coloring, equal-brightness everything',
-      material_texture:
+      texture_and_material:
         'Construction-paper tooth, crayon-wax buildup clumps, too-hard-pressing paper indentations, mixed-brand crayon texture clash',
-      render_quality:
-        'Kindergarten art-class aesthetic, refrigerator-gallery masterpiece, pure-joy creation, zero-technique-maximum-soul',
-      spatial_distortion:
+      camera_and_composition:
         'Ground-line at page bottom, sky-stripe at page top, scale hierarchy by importance, oversized simple symbols',
-      atmosphere:
+      atmosphere_and_mood:
         'Pure innocence, unconditional love, proud-artist joy, childhood-wonder, mom-will-love-this confidence',
+      rendering_and_quality:
+        'Kindergarten art-class aesthetic, refrigerator-gallery masterpiece, pure-joy creation, zero-technique-maximum-soul',
       key_features:
         'Corner symbol with rays, stick-symbol forms, square-triangle geometry, lollipop marks, ground-line-sky-stripe',
       creative_brief:
@@ -404,20 +407,20 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Classic newspaper comic strip, dotted-color Ben-Day printing, simple repeating backgrounds with minimal variation, gag-a-day rhythm, Garfield/Calvin/Peanuts as style anchors, cheap-newsprint-ink smell almost visible',
-      form_and_line:
+      subject_treatment:
         'Simple clean ink outlines, consistent character-model sheets, minimal-detail efficiency, speed-line motion indicators, sweat-drop emotion marks',
-      color_palette:
+      color_and_tone:
         'CMYK-dot color printing, limited four-color palette, newsprint off-white, ink-smudge grey, registration-error cyan fringe',
-      lighting_setup:
+      lighting_and_shadow:
         'Flat lighting, occasional shadow-blob under character, no atmosphere or mood lighting, readability-first flatness',
-      material_texture:
+      texture_and_material:
         'Newsprint paper tooth, halftone-dot color pattern, ink-bleed into fibers, off-registration misalignment, pulp-paper cheapness',
-      render_quality:
-        'Sunday-funnies aesthetic, newspaper-comic charm, four-panel-gag perfection, syndicated-strip warmth',
-      spatial_distortion:
+      camera_and_composition:
         'Panel-grid division, balloon-like negative space, repeating simplified background, model-sheet consistency',
-      atmosphere:
+      atmosphere_and_mood:
         'Cozy, familiar, breakfast-table comfort, gentle-humor warmth, daily-ritual companionship',
+      rendering_and_quality:
+        'Sunday-funnies aesthetic, newspaper-comic charm, four-panel-gag perfection, syndicated-strip warmth',
       key_features:
         'Panel grid, Ben-Day dot coloring, blank balloon shapes, repeating backgrounds, consistent model logic, newsprint paper tone',
       creative_brief:
@@ -433,20 +436,20 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Punk-rock skateboard deck art, dripping slime graphics, Thrasher-magazine energy, 80s Powell-Peralta as style anchor, bold rebellious iconography, graffiti-meets-hot-rod aesthetic, deck-grip tape grain underneath the gloss',
-      form_and_line:
+      subject_treatment:
         'Bold thick-black outlines, aggressive angular contours, dripping-paint trails, splatter-burst backgrounds, sharp-stencil edges',
-      color_palette:
+      color_and_tone:
         'Neon green slime, blood red, toxic-waste yellow, black-void background, radioactive purple, white-bone contrast, screenprint-overprint cyan',
-      lighting_setup:
+      lighting_and_shadow:
         'Flat-graphic studio lighting, gloss-varnish reflection on board surface, no atmospheric depth',
-      material_texture:
+      texture_and_material:
         'Screenprint ink on maple veneer, gloss-varnish topcoat, grip-tape grain visible at edges, wood-ply layer peeking through paint',
-      render_quality:
-        'Skateboard-deck graphic aesthetic, punk-rock screenprint energy, street-culture boldness, deck-wall art-gallery',
-      spatial_distortion:
+      camera_and_composition:
         'Graphic centered on deck shape, cutout interruptions, nose-and-tail-kick distortion zone',
-      atmosphere:
+      atmosphere_and_mood:
         'Rebellious, loud, street-cred, teenage-freedom, parking-lot-session energy, aggressive creativity',
+      rendering_and_quality:
+        'Skateboard-deck graphic aesthetic, punk-rock screenprint energy, street-culture boldness, deck-wall art-gallery',
       key_features:
         'Bold-black outlines, slime-drips, screenprint texture, deck-shape composition, neon-green accents, gloss over wood grain',
       creative_brief:
@@ -462,20 +465,20 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Corporate mascot that should never have been approved, dead-soulless brand cheer, unsettling hybridization, clip-art-from-hell energy, focus-group menace, unblinking happiness that registers as threat',
-      form_and_line:
+      subject_treatment:
         'Too-smooth vector contours, mathematically-perfect symmetry that feels wrong, clip-art simplicity taken to uncanny extreme',
-      color_palette:
+      color_and_tone:
         'Corporate-primary blue and red, too-bright yellow, sterile white, uncanny-skin peach, glossy-plastic green',
-      lighting_setup:
+      lighting_and_shadow:
         'Product-photography studio, perfect shadowless lighting, hyperreal gloss on dead eyes, no atmosphere',
-      material_texture:
+      texture_and_material:
         'Glossy plastic-vector surface, costume-foam texture, cheap-fleece fabric, hollow brand emptiness',
-      render_quality:
-        'Rejected-corporate-mascot aesthetic, clip-art-through-nightmare, uncanny-branding-horror, marketing-department-mistake',
-      spatial_distortion:
+      camera_and_composition:
         'Overscaled friendly proportions, frozen approval pose, visible seam logic',
-      atmosphere:
+      atmosphere_and_mood:
         'Deeply wrong, corporate-horror, abandoned-by-marketing sadness, unsettling-brand-silence, focus-group-rejection',
+      rendering_and_quality:
+        'Rejected-corporate-mascot aesthetic, clip-art-through-nightmare, uncanny-branding-horror, marketing-department-mistake',
       key_features:
         'Glossy dead cheer, too-perfect symmetry, frozen approval pose, costume seams, plastic-vector perfection, soulless brand energy',
       creative_brief:
@@ -491,19 +494,20 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Genius-idea-on-cocktail-napkin energy, ballpoint-pen crudely sketching concept structure, coffee-ring framing, condensation warping the paper, desperate late-night inspiration captured on whatever surface available',
-      form_and_line:
+      subject_treatment:
         'Ballpoint-pen on absorbent paper, ink-burst where pen pauses, scratchy-dry-ink skips, pressed-too-hard paper indentations',
-      color_palette:
+      color_and_tone:
         'Ballpoint-blue ink, coffee-stain sepia, napkin-tan paper, beer-ring moisture-darkened halo, bar-neon reflected tint',
-      lighting_setup: 'Dim ambient, single-overhead-bulb spot, emergency side light, warm falloff',
-      material_texture:
+      lighting_and_shadow:
+        'Dim ambient, single-overhead-bulb spot, emergency side light, warm falloff',
+      texture_and_material:
         'Soft-ply napkin paper, ink-bleed-fringing, moisture-warped surface, crinkle-fold texture, absorbent-fiber softness',
-      render_quality:
-        'Cocktail-napkin-sketch aesthetic, desperate-genius energy, bar-napkin-provenance authenticity, beautiful-roughness',
-      spatial_distortion:
+      camera_and_composition:
         'Drawing wrapping around napkin folds, arrows pointing off-edge, squeezed negative space, quarter-napkin composition',
-      atmosphere:
+      atmosphere_and_mood:
         'Eureka-moment electricity, desperate-inspiration, 3am-bar-genius, startup-mythology, beautiful-desperation',
+      rendering_and_quality:
+        'Cocktail-napkin-sketch aesthetic, desperate-genius energy, bar-napkin-provenance authenticity, beautiful-roughness',
       key_features:
         'Ballpoint-blue on napkin-tan, coffee-ring overlay, moisture-warped paper, fold-lines bisecting sketch, scratchy-ink skips, no readable text',
       creative_brief:
@@ -519,20 +523,20 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'DIY photocopied-punk-zine aesthetic, cutout-letter shapes without readable text, deliberately bad photocopier distortion, tape marks holding collage elements, found-image recontextualization, glue-stick residue and scissor cuts, repeated photocopy generation loss',
-      form_and_line:
+      subject_treatment:
         'Cut-and-paste scissor edges, photocopy-contrast-blackening, tape-strip-transparency, staple-marks, torn-paper contours',
-      color_palette:
+      color_and_tone:
         'Black-and-white Xerox, high-contrast photocopy, occasional highlight-marker pink, newspaper-clipping grey, security-envelope-blue-pattern background',
-      lighting_setup:
+      lighting_and_shadow:
         'Photocopier-flatbed harshness, high-contrast blown-out whites, detail-lost-in-shadow-blacks, no nuance',
-      material_texture:
+      texture_and_material:
         'Photocopy-toner grain, paper-curl from glue-stick moisture, scotch-tape gloss, newsprint-collage varied paper stocks, staple-metal glint',
-      render_quality:
-        'Punk-zine photocopy aesthetic, DIY-publication energy, anti-design roughness, copy-of-a-copy degradation',
-      spatial_distortion:
+      camera_and_composition:
         'Cut-out elements tilted angrily, no-alignment layout, overlapping collage depth, tape holding elements askew',
-      atmosphere:
+      atmosphere_and_mood:
         'Angry, urgent, anti-establishment, DIY-or-die, back-bedroom-publishing revolution, creative-resistance',
+      rendering_and_quality:
+        'Punk-zine photocopy aesthetic, DIY-publication energy, anti-design roughness, copy-of-a-copy degradation',
       key_features:
         'Photocopier high-contrast, cutout glyph shapes, cut-and-paste collage, tape marks, staple binding, toner grain, glue-stick wrinkles',
       creative_brief:
@@ -548,20 +552,20 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Rough-animation flipbook page, sequential gesture frames showing motion arc, onion-skin ghosts of previous and next poses, timing-chart marks, animation-desk peg-bar holes, rough breakdown between keyframes, Glen Keane rough-animation philosophy, line-boiling texture from hand-drawn frame-by-frame',
-      form_and_line:
+      subject_treatment:
         'Rapid-fire gesture lines, motion-arc construction curves, timing-chart-hash-marks, multiple-search-lines-per-frame, onion-skin-transparency-implied overlapping',
-      color_palette:
+      color_and_tone:
         'Animation-paper blue-line underdrawing, graphite-pencil grey, Col-Erase blue, red-pencil breakdown lines, paper-buff background',
-      lighting_setup:
+      lighting_and_shadow:
         'Animation-desk backlight transmitting through paper layers, peg-bar registration shadow, no rendered lighting',
-      material_texture:
+      texture_and_material:
         'Animation-paper tooth, graphite-smudge buildup across frames, eraser-crumb dust, peg-bar-hole wear, paper-edge-dog-ear from flipping',
-      render_quality:
-        'Flipbook-rough-animation aesthetic, motion-study-beauty, hand-drawn-frame energy, pre-cleanup-animation soul',
-      spatial_distortion:
+      camera_and_composition:
         'Sequential-frame-progression-across-page, motion-arc-ghost-overlays, onion-skin-transparency-depth, timing-chart-margin-notes',
-      atmosphere:
+      atmosphere_and_mood:
         "Creative-process intimacy, animation-desk focus, pure-motion-observation, pre-digital-handcraft, animator's-private-study",
+      rendering_and_quality:
+        'Flipbook-rough-animation aesthetic, motion-study-beauty, hand-drawn-frame energy, pre-cleanup-animation soul',
       key_features:
         'Sequential drawing progression, animation arc lines, timing-chart marks, onion-skin ghost overlays, peg-bar holes, blue-pencil construction, rough boiling line texture',
       creative_brief:
@@ -577,19 +581,19 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Hyper-detailed gross close-up reaction frame, wet swollen surfaces, oversized pores, painterly grossout timing, John Kricfalusi close-up cruelty, feverish cartoon texture, freeze-frame revulsion played for comedy',
-      form_and_line:
+      subject_treatment:
         'Wobbling brush contours, vibrating line weight, swollen micro-detail lines, irregular fleshy edging',
-      color_palette:
+      color_and_tone:
         'Inflamed flesh pinks, nicotine yellow, clammy teal shadows, rash-red irritation, greasy beige skin',
-      lighting_setup:
+      lighting_and_shadow:
         'Harsh proximity lighting, bright wet sheen, overexposed glare, ugly reaction-frame illumination',
-      material_texture:
+      texture_and_material:
         'Pore-heavy surface, cracked folds, greasy shine, dried-gloss streaks, wobbling paint texture',
-      render_quality:
-        'Close-up grossout cartoon perfection, painful facial detail, freeze-frame reaction absurdity, ugly on purpose',
-      spatial_distortion:
+      camera_and_composition:
         'Subject crushing into lens space, bulging surface masses, swollen forward projection, off-axis pressure',
-      atmosphere: 'Disgusted, frantic, hilarious, deeply unflattering',
+      atmosphere_and_mood: 'Disgusted, frantic, hilarious, deeply unflattering',
+      rendering_and_quality:
+        'Close-up grossout cartoon perfection, painful facial detail, freeze-frame reaction absurdity, ugly on purpose',
       key_features:
         'Extreme close-up distortion, swollen detail, pore-level texture, trembling folds, wet cartoon strings',
       creative_brief:
@@ -605,19 +609,19 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Flat weird dayjob cartoon, awkward simplified forms, anti-climactic absurdity, smiling-through-existential-panic energy, low-stakes apocalypse humor, deadpan mundane nonsense, adult-swim anti-spectacle simplicity',
-      form_and_line:
+      subject_treatment:
         'Thin simple contour lines, deliberately plain shape language, occasional scribbly panic accents',
-      color_palette:
+      color_and_tone:
         'Flat sour pastels, nicotine yellow, dusty salmon, office beige, washed-out green, cheap digital cyan',
-      lighting_setup:
+      lighting_and_shadow:
         'Flat no-drama lighting, fluorescent office wash, occasional dingy hallway glow, unheroic ambient fill',
-      material_texture:
+      texture_and_material:
         'Simple digital fills, lightly dirty edges, cheap surface texture, flat wall-like color, low-fuss line art',
-      render_quality:
-        'Lo-fi weird-comedy cartoon, clean enough to read, ugly enough to feel wrong, internet-age anti-polish',
-      spatial_distortion:
+      camera_and_composition:
         'Stubby proportions, tiny massing, off-model expression logic, abrupt perspective jumps for punchlines',
-      atmosphere: 'Awkward, deadpan, bizarre, mildly cursed',
+      atmosphere_and_mood: 'Awkward, deadpan, bizarre, mildly cursed',
+      rendering_and_quality:
+        'Lo-fi weird-comedy cartoon, clean enough to read, ugly enough to feel wrong, internet-age anti-polish',
       key_features:
         'Simple oddball silhouettes, blank pauses, mundane prop logic, anti-climactic framing, uncomfortable stillness',
       creative_brief:
@@ -633,19 +637,19 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         '90s Nickelodeon grossness, weird stalk-like accents, grime, sewer-slime palette, childlike rebellion, junkyard textures, lumpy asymmetry, playful ugly-cute horror for kids',
-      form_and_line:
+      subject_treatment:
         'Chunky lopsided outlines, uneven monster curves, jittery slime accents, crude expressive contour',
-      color_palette:
+      color_and_tone:
         'Slime green, bruise purple, rust orange, toxic pink, sewer-water teal, moldy yellow',
-      lighting_setup:
+      lighting_and_shadow:
         'Grate-like shafts, dank green underlight, junkyard reflected glare, moist shadow pockets',
-      material_texture:
+      texture_and_material:
         'Sludge, pitted surface, peeling grime, scuff dirt, wet brick-like texture, trash-bag shine',
-      render_quality:
-        '90s gross-kids-cartoon texture, tactile ugliness, lumpy creature-school charm, sewer-funk fidelity',
-      spatial_distortion:
+      camera_and_composition:
         'Mismatched extensions, stacked feature logic, torso-like blobs, lumpy asymmetry',
-      atmosphere: 'Rowdy, gross, mischievous, lovable',
+      atmosphere_and_mood: 'Rowdy, gross, mischievous, lovable',
+      rendering_and_quality:
+        '90s gross-kids-cartoon texture, tactile ugliness, lumpy creature-school charm, sewer-funk fidelity',
       key_features:
         'Asymmetric lumps, grime, rubbery accents, weird feature placement, urban sludge detail',
       creative_brief:
@@ -661,18 +665,19 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Low-to-ground wobbly adventure, chunky simplified scale, everyday danger made epic, scribbly soft interiors, nervous hand-drawn innocence, toy-scale heroism',
-      form_and_line:
+      subject_treatment:
         'Chunky uneven outlines, nervous hand-drawn curves, simplified object silhouettes, soft wobble marks',
-      color_palette:
+      color_and_tone:
         'Soft 90s TV pastels, warm carpet beige, toy-box primaries, nursery blue, faded marker color',
-      lighting_setup:
+      lighting_and_shadow:
         'Flat TV lighting, soft low-angle fill, no rendered drama, readability-first brightness',
-      material_texture: 'TV cel softness, dry marker edge, paper-like fill, softened scan texture',
-      render_quality:
-        '90s hand-drawn TV softness, low-angle everyday epic, gently wobbly animation',
-      spatial_distortion:
+      texture_and_material:
+        'TV cel softness, dry marker edge, paper-like fill, softened scan texture',
+      camera_and_composition:
         'Low-eye-height scale, oversized ordinary forms, softened perspective, rounded clutter geometry',
-      atmosphere: 'Curious, rambunctious, innocent, chaotic',
+      atmosphere_and_mood: 'Curious, rambunctious, innocent, chaotic',
+      rendering_and_quality:
+        '90s hand-drawn TV softness, low-angle everyday epic, gently wobbly animation',
       key_features:
         'Low-scale perspective, chunky outlines, oversized ordinary forms, crayon-ish uncertainty, soft domestic color',
       creative_brief:
@@ -688,18 +693,19 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Boiling-outline scam cartoon energy, stretched expression logic, loud adolescent nonsense, sticky summer heat, doomed-plan slapstick, Canadian tween chaos',
-      form_and_line:
+      subject_treatment:
         'Wobbly vibrating outlines, stretched smear frames, erratic contour boil, high-energy cartoon scribble',
-      color_palette:
+      color_and_tone:
         'Summer-heat yellows, candy red, pool chlorine blue, peach skin, dirty pavement grey',
-      lighting_setup:
+      lighting_and_shadow:
         'Flat hot daylight, heat-haze color pressure, readability-first cartoon illumination',
-      material_texture:
+      texture_and_material:
         'Cel paint wobble, analog TV softness, sticky summer haze, rough pencil boil',
-      render_quality: 'Boiling-line TV cartoon, adolescent scam energy, loud pre-digital slapstick',
-      spatial_distortion:
+      camera_and_composition:
         'Stretch smears, vibrating outlines, elastic overreaction, diagram-like plan collapse',
-      atmosphere: 'Hyper, sweaty, scammy, loud',
+      atmosphere_and_mood: 'Hyper, sweaty, scammy, loud',
+      rendering_and_quality:
+        'Boiling-line TV cartoon, adolescent scam energy, loud pre-digital slapstick',
       key_features:
         'Boiling line art, stretched shapes, sticky heat color, doomed-plan diagram energy, exaggerated reaction takes',
       creative_brief:
@@ -715,18 +721,19 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Neurotic suburban absurdism, anxious simplified forms, weird consumerist texture, gentle gross-out details, 90s TV satire, pastel wallpaper discomfort, mundane things becoming nightmares',
-      form_and_line:
+      subject_treatment:
         'Thin anxious contours, noodle panic marks, weird consumer-product curves, restrained gross-out accents',
-      color_palette:
+      color_and_tone:
         'Beige pastel, dusty teal, tired salmon, consumer-label red, wallpaper cream, fluorescent green',
-      lighting_setup:
+      lighting_and_shadow:
         'Flat sitcom illumination, fluorescent discomfort, no heroic contrast, ambient suburban wash',
-      material_texture:
+      texture_and_material:
         'Pastel TV cel texture, wallpaper-like pattern noise, plastic consumer sheen, mild grime',
-      render_quality: '90s suburban satire cartoon, neurotic mundanity, soft-color discomfort',
-      spatial_distortion:
+      camera_and_composition:
         'Mundane forms warped into unease, noodle bends, small panic gestures, consumer-object exaggeration',
-      atmosphere: 'Neurotic, suburban, goofy, overstimulated',
+      atmosphere_and_mood: 'Neurotic, suburban, goofy, overstimulated',
+      rendering_and_quality:
+        '90s suburban satire cartoon, neurotic mundanity, soft-color discomfort',
       key_features:
         'Beige discomfort, weird brand-like shapes, noodle panic marks, satirical mundanity, consumerist clutter logic',
       creative_brief:
@@ -742,18 +749,19 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Lonely rural nightmare cartoon, pastel panic, grotesque intrusions in empty space, Midwestern doom silence, haunted domesticity, uncanny insert shock, fear made cute and shrill',
-      form_and_line:
+      subject_treatment:
         'Sparse outlines, tiny panic marks, abrupt horror insert contours, empty-space framing',
-      color_palette:
+      color_and_tone:
         'Dusty pink, bruise purple, dead-field beige, moonlit blue, alarm red, faded pastel yellow',
-      lighting_setup:
+      lighting_and_shadow:
         'Moonlit isolation, dusty lamp glow, sudden horror spotlights, red-alert panic lighting',
-      material_texture:
+      texture_and_material:
         'Grainy TV cel, dusty surface, sudden CGI-like insert smoothness, dry pastel texture',
-      render_quality: 'Pastel horror cartoon, cute panic under uncanny pressure, empty-frame dread',
-      spatial_distortion:
+      camera_and_composition:
         'Negative-space expansion, tiny form against vast field, sudden insert scale shock',
-      atmosphere: 'Terrified, lonely, surreal, absurd',
+      atmosphere_and_mood: 'Terrified, lonely, surreal, absurd',
+      rendering_and_quality:
+        'Pastel horror cartoon, cute panic under uncanny pressure, empty-frame dread',
       key_features:
         'Empty-space dread, screaming reaction geometry, uncanny inserts, pastel panic, isolated composition',
       creative_brief:
@@ -769,19 +777,19 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Shouting primary-color lunacy, absurd slapstick, huge scale mismatch, anti-subtle cartoon vulgarity, exaggerated rubbery ugliness, jagged gross comedy',
-      form_and_line:
+      subject_treatment:
         'Thick crude contours, jagged gross-comedy marks, rubbery stretch, blunt graphic impact',
-      color_palette:
+      color_and_tone:
         'Shouting red, chicken-yellow, electric blue, toxic green, black outline, cheap poster white',
-      lighting_setup:
+      lighting_and_shadow:
         'Flat poster illumination, no atmosphere, maximum readability, anti-subtle exposure',
-      material_texture:
+      texture_and_material:
         'Poster-paint cel fill, cheap TV scan softness, sticky marker edge, rubbery gross surface',
-      render_quality:
-        'Loud primary-color TV cartoon, vulgar slapstick, anti-subtle comedic aggression',
-      spatial_distortion:
+      camera_and_composition:
         'Giant accent shapes, tiny support masses, rubbery scale mismatch, compressed slapstick poses',
-      atmosphere: 'Loud, shameless, unruly, ridiculous',
+      atmosphere_and_mood: 'Loud, shameless, unruly, ridiculous',
+      rendering_and_quality:
+        'Loud primary-color TV cartoon, vulgar slapstick, anti-subtle comedic aggression',
       key_features:
         'Primary-color saturation, giant shape accents, screaming graphic bursts, rubbery scale mismatch, vulgar slapstick timing',
       creative_brief:
@@ -797,17 +805,18 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Shared-body elastic nonsense, opposite visual states locked in one stretched form, long-body contortions, impossible shared anatomy as style anchor, simple but deeply strange sitcom design',
-      form_and_line:
+      subject_treatment:
         'Clean elastic outlines, long-contour continuity, simple sitcom construction, soft squash curves',
-      color_palette:
+      color_and_tone:
         '90s flat TV color, mustard tan, muted blue, warm orange, faded green, heavy black accents',
-      lighting_setup: 'Flat sitcom lighting, simple shadow blobs, no dramatic atmosphere',
-      material_texture:
+      lighting_and_shadow: 'Flat sitcom lighting, simple shadow blobs, no dramatic atmosphere',
+      texture_and_material:
         'Smooth cel fill, analog TV softness, light scan grain, simple painted surface',
-      render_quality: 'Simple strange sitcom cartoon, elastic absurdity, readable long-form design',
-      spatial_distortion:
+      camera_and_composition:
         'Sausage-form contortions, impossible shared-spine bends, mirrored states at both ends, accordion compression',
-      atmosphere: 'Goofy, elastic, odd-couple, playful',
+      atmosphere_and_mood: 'Goofy, elastic, odd-couple, playful',
+      rendering_and_quality:
+        'Simple strange sitcom cartoon, elastic absurdity, readable long-form design',
       key_features:
         'Shared-form anatomy, impossible bends, dual-state contrast, elastic long silhouette, accordion compression',
       creative_brief:
@@ -823,17 +832,18 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Cheerful cartoony setup smashed by hyper-detailed disgusting close-up, SpongeBob gross-up freeze-frame as style anchor, deranged reaction insert, slapstick whiplash',
-      form_and_line:
+      subject_treatment:
         'Simple bright cartoon contours interrupted by hyper-detailed gross-up brushwork',
-      color_palette:
+      color_and_tone:
         'Cheerful yellow-blue base, sickly pink close-up accents, pore red, greasy beige, seafoam green',
-      lighting_setup: 'Flat happy setup light interrupted by cruel macro glare',
-      material_texture:
+      lighting_and_shadow: 'Flat happy setup light interrupted by cruel macro glare',
+      texture_and_material:
         'Cel fill colliding with pores, wrinkles, follicles, wet gloss, and painterly gross texture',
-      render_quality: 'Style-whiplash freeze frame, bright cartoon plus revolting macro insert',
-      spatial_distortion:
+      camera_and_composition:
         'Crash-zoom proximity, sudden scale jump, normal-to-gross transformation, invasive crop',
-      atmosphere: 'Cheery, revolting, whiplash-funny, manic',
+      atmosphere_and_mood: 'Cheery, revolting, whiplash-funny, manic',
+      rendering_and_quality:
+        'Style-whiplash freeze frame, bright cartoon plus revolting macro insert',
       key_features:
         'Normal-to-gross style contrast, close-up texture detail, reaction-frame jump scare, bright-to-revolting whiplash',
       creative_brief:
@@ -849,18 +859,18 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Mouth-breathing delinquent caricature, slouch nihilism, ugly low-rent interiors as style anchor, cheap music-video culture, vacant deadbrain energy, pencil-neck stupidity',
-      form_and_line:
+      subject_treatment:
         'Jagged slack contours, pencil-neck angles, ugly profile-like construction, slow posture sag',
-      color_palette:
+      color_and_tone:
         'Cheap TV beige, nicotine yellow, washed denim blue, dull brown, cathode green, stale red',
-      lighting_setup: 'Flat cathode glow, low-rent room ambience, no glamour, tired exposure',
-      material_texture:
+      lighting_and_shadow: 'Flat cathode glow, low-rent room ambience, no glamour, tired exposure',
+      texture_and_material:
         'Analog TV grain, stained fabric suggestion, cheap wall texture, rough ink edge',
-      render_quality:
-        'Ugly deadpan adult cartoon, low-energy slouch caricature, anti-glamour TV satire',
-      spatial_distortion:
+      camera_and_composition:
         'Gravity-heavy slouch, flattened posture, jagged head shapes, underfed proportion logic',
-      atmosphere: 'Idiotic, lazy, mean, vacant',
+      atmosphere_and_mood: 'Idiotic, lazy, mean, vacant',
+      rendering_and_quality:
+        'Ugly deadpan adult cartoon, low-energy slouch caricature, anti-glamour TV satire',
       key_features:
         'Slouch geometry, deadbeat clutter texture, ugly profile-like shapes, cheap-TV ambience, vacant posture',
       creative_brief:
@@ -876,18 +886,19 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Mike Judge dry anti-charisma cartoon, cubicle beige as style anchor, regional mediocrity, paperwork emptiness, satirical nobody energy, American beige despair made funny',
-      form_and_line:
+      subject_treatment:
         'Minimal dry contours, anti-charisma shapes, plain observational line, tiny awkward gestures',
-      color_palette:
+      color_and_tone:
         'Office beige, copy-paper white, washed-out polo green, stale blue, grey carpet, muted toner black',
-      lighting_setup: 'Fluorescent flatness, shadowless workplace exposure, dull overhead wash',
-      material_texture:
+      lighting_and_shadow:
+        'Fluorescent flatness, shadowless workplace exposure, dull overhead wash',
+      texture_and_material:
         'Copy-paper grain, cubicle-fabric suggestion, cheap toner edge, dry marker-like fill',
-      render_quality:
-        'Dry Mike Judge satire, underplayed adult animation, beige observational comedy',
-      spatial_distortion:
+      camera_and_composition:
         'Underwhelming geometry, resignation posture, boxy spatial rhythm, anti-dynamic framing',
-      atmosphere: 'Bored, dry, defeated, observant',
+      atmosphere_and_mood: 'Bored, dry, defeated, observant',
+      rendering_and_quality:
+        'Dry Mike Judge satire, underplayed adult animation, beige observational comedy',
       key_features:
         'Cubicle-like geometry, blank pauses, underwhelming body language, beige clutter, anti-glamour caricature',
       creative_brief:
@@ -903,17 +914,18 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Mutant suburbia satire, malformed silhouettes, environmental rot, class-divide cartoon cruelty, trailer-park grotesquerie as style anchor, deformity normalized into routine, poisoned world whimsy',
-      form_and_line:
+      subject_treatment:
         'Malformed clean outlines, lopsided silhouettes, class-satire exaggeration, friendly deformity marks',
-      color_palette:
+      color_and_tone:
         'Toxic yellow, smoke grey, bruised mauve, landfill green, cheap tan, muted domestic pink',
-      lighting_setup: 'Flat polluted ambience, sour daylight, no glamour, environmental haze',
-      material_texture:
+      lighting_and_shadow: 'Flat polluted ambience, sour daylight, no glamour, environmental haze',
+      texture_and_material:
         'Grime, cheap fabric, polluted residue, dented plastic, dusty TV cel texture',
-      render_quality: 'Mutant suburbia satire, poisoned whimsy, class-coded grotesque warmth',
-      spatial_distortion:
+      camera_and_composition:
         'Lopsided silhouette logic, compressed domestic forms, toxic asymmetry, normalized deformity',
-      atmosphere: 'Bleak, satirical, mutated, weirdly cozy',
+      atmosphere_and_mood: 'Bleak, satirical, mutated, weirdly cozy',
+      rendering_and_quality:
+        'Mutant suburbia satire, poisoned whimsy, class-coded grotesque warmth',
       key_features:
         'Malformed silhouettes, toxic backdrop hints, trashy domestic texture, odd asymmetries, resigned humor',
       creative_brief:
@@ -929,18 +941,18 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Loose vibrating linework, conversational minimalism, squigglevision jitter, low-key absurd adult animation, every contour trembling with mild neurosis',
-      form_and_line:
+      subject_treatment:
         'Persistent squigglevision contour drift, shaky loose lines, conversation-first staging, gentle hand-tremor energy',
-      color_palette:
+      color_and_tone:
         'Muted therapy-room beige, dusty teal, pencil grey, soft salmon, washed blue, off-white',
-      lighting_setup: 'Flat low-key TV lighting, soft no-drama fill, minimal ambience',
-      material_texture:
+      lighting_and_shadow: 'Flat low-key TV lighting, soft no-drama fill, minimal ambience',
+      texture_and_material:
         'Low-fi TV scan softness, simple fill texture, vibrating edge artifact, hand-drawn jitter',
-      render_quality:
-        'Squigglevision adult animation, understated comedy, loose conversational minimalism',
-      spatial_distortion:
+      camera_and_composition:
         'Contours vibrating in place, small shape drift, low-action framing, anxious line boil',
-      atmosphere: 'Talky, neurotic, understated, wry',
+      atmosphere_and_mood: 'Talky, neurotic, understated, wry',
+      rendering_and_quality:
+        'Squigglevision adult animation, understated comedy, loose conversational minimalism',
       key_features:
         'Constant line jitter, simple staging, conversational framing, minimal backgrounds, anxious contour vibration',
       creative_brief:
@@ -956,18 +968,18 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Notebook-color anxiety cartoon, adolescent embarrassment as mood anchor, gentle daydream logic, simple flat backgrounds, internal monologue cartooning, soft marker color',
-      form_and_line:
+      subject_treatment:
         'Soft simple ink, diary-doodle contour, awkward posture marks, gentle daydream curves',
-      color_palette:
+      color_and_tone:
         'Notebook cover teal, soft marker purple, peach anxiety, pale yellow, faded red, school-paper cream',
-      lighting_setup: 'Flat friendly TV light, daydream glow inserts, low-contrast comfort',
-      material_texture:
+      lighting_and_shadow: 'Flat friendly TV light, daydream glow inserts, low-contrast comfort',
+      texture_and_material:
         'Notebook-paper tooth, marker softness, light scan grain, softened cel fill',
-      render_quality:
-        'Wistful notebook cartoon, internal-monologue softness, gentle anxious TV style',
-      spatial_distortion:
+      camera_and_composition:
         'Daydream overlay drift, margin-like framing, softened scale changes, awkward negative space',
-      atmosphere: 'Nervous, sweet, relatable, wistful',
+      atmosphere_and_mood: 'Nervous, sweet, relatable, wistful',
+      rendering_and_quality:
+        'Wistful notebook cartoon, internal-monologue softness, gentle anxious TV style',
       key_features:
         'Notebook-like color fields, awkward posture logic, diary-energy framing, daydream insert logic, soft marker flatness',
       creative_brief:
@@ -983,18 +995,19 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Photocollage black-and-white cutout nightmare, mismatched photo fragments pasted onto crude drawn forms, anti-beauty sarcasm, collage ugliness weaponized, handmade digital freakout',
-      form_and_line:
+      subject_treatment:
         'Scissor-cut edges, crude body or object outlines, mismatched collage seams, hostile paste-up alignment',
-      color_palette:
+      color_and_tone:
         'Photocopy black, harsh white, dirty grey, scanned beige, toner shadow, occasional faded marker accent',
-      lighting_setup: 'Flat scanner light, xerox contrast, no atmosphere, collage-layer shadows',
-      material_texture:
+      lighting_and_shadow:
+        'Flat scanner light, xerox contrast, no atmosphere, collage-layer shadows',
+      texture_and_material:
         'Photocopy grain, paper-cut edges, glue-collage layering, black-and-white halftone abuse, rough scan artifacts',
-      render_quality:
-        'Photocutout nightmare collage, handmade digital freakout, anti-beauty paste-up',
-      spatial_distortion:
+      camera_and_composition:
         'Mismatched scale, pasted fragments, flattened depth layers, wrong-body assembly logic',
-      atmosphere: 'Snarky, janky, hostile, unforgettable',
+      atmosphere_and_mood: 'Snarky, janky, hostile, unforgettable',
+      rendering_and_quality:
+        'Photocutout nightmare collage, handmade digital freakout, anti-beauty paste-up',
       key_features:
         'Photo-cutout fragments, mismatched collage bodies or forms, xerox textures, anti-pretty black-and-white contrast, hostile cut edges',
       creative_brief:
@@ -1010,17 +1023,19 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Garbage-pail trading-card grossness, swelling defect marks, goo drips, prank-card exaggeration, gleeful disgustingness, collectible recoil energy, ugly gags rendered for maximum recoil',
-      form_and_line:
+      subject_treatment:
         'Bold trading-card outline, gross sticker contours, crash-zoom impact marks, swollen defect shapes',
-      color_palette:
+      color_and_tone:
         'Sticker-card primaries, vomit green, zit red, bubblegum pink, cheap cyan, thick black',
-      lighting_setup: 'Flat collectible-card lighting, hard highlight on goo, no atmospheric depth',
-      material_texture:
+      lighting_and_shadow:
+        'Flat collectible-card lighting, hard highlight on goo, no atmospheric depth',
+      texture_and_material:
         'Wax-card print, sticky gloss, halftone edge, cheap sticker ink, goo texture',
-      render_quality: 'Gross collectible caricature, prank-card recoil, loud trading-card finish',
-      spatial_distortion:
+      camera_and_composition:
         'Crash-zoom crop, inflated defect scale, border-compressed layout, prank-card exaggeration',
-      atmosphere: 'Gross, gleeful, juvenile, loud',
+      atmosphere_and_mood: 'Gross, gleeful, juvenile, loud',
+      rendering_and_quality:
+        'Gross collectible caricature, prank-card recoil, loud trading-card finish',
       key_features:
         'Exploding goo detail, prank-card composition, crash-zoom framing, sticky horror texture, collectible border logic',
       creative_brief:
@@ -1036,18 +1051,19 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Badly drawn gross summer doodle, chlorine-green slime, sticky heat, flip-flop trash vibes, grotesque but childish camp-disgust humor',
-      form_and_line:
+      subject_treatment:
         'Crooked marker outlines, gross summer wobble, childish wrong curves, slime-trail accents',
-      color_palette:
+      color_and_tone:
         'Chlorine green, wet turquoise, sunburn red, cheap flip-flop blue, sticky yellow, marker black',
-      lighting_setup: 'Flat hot summer light, chlorine glare, no cinematic depth, sticky exposure',
-      material_texture:
+      lighting_and_shadow:
+        'Flat hot summer light, chlorine glare, no cinematic depth, sticky exposure',
+      texture_and_material:
         'Marker bleed, slick slime gloss, wet paper, cheap plastic texture, sweaty grain',
-      render_quality:
-        'Gross summer doodle, childish camp-disgust humor, intentionally bad marker rendering',
-      spatial_distortion:
+      camera_and_composition:
         'Off-model doodle form, melted summer wobble, slime-weight sag, crooked marker scale',
-      atmosphere: 'Sticky, goofy, gross, summer-feral',
+      atmosphere_and_mood: 'Sticky, goofy, gross, summer-feral',
+      rendering_and_quality:
+        'Gross summer doodle, childish camp-disgust humor, intentionally bad marker rendering',
       key_features:
         'Slime drips, chlorine palette, off-model doodle anatomy or form, gross summer texture, kid-gag nastiness',
       creative_brief:
@@ -1063,19 +1079,19 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Desk-doodle freakout pushed full frame, permanent-marker chaos, rude iconography, sketchbook rebellion, bored-student aggression, malformed margin forms',
-      form_and_line:
+      subject_treatment:
         'Permanent-marker aggression, desk-doodle scratches, malformed margin contours, vandal-energy hatching',
-      color_palette:
+      color_and_tone:
         'Toxic marker green, black ink, red correction pen, highlighter yellow, notebook blue, cheap purple',
-      lighting_setup:
+      lighting_and_shadow:
         'Flat desk light, overhead classroom-like glare, no atmospheric depth, marker-first readability',
-      material_texture:
+      texture_and_material:
         'Marker bleed, scratched desk surface, notebook paper tooth, ink feathering, smudged graphite',
-      render_quality:
-        'Rebellious marker doodle, juvenile freakout composition, toxic margin-art expansion',
-      spatial_distortion:
+      camera_and_composition:
         'Margin doodles expanding full-frame, warped symbols, malformed scale, restless edge crowding',
-      atmosphere: 'Rebellious, messy, hyperactive, juvenile',
+      atmosphere_and_mood: 'Rebellious, messy, hyperactive, juvenile',
+      rendering_and_quality:
+        'Rebellious marker doodle, juvenile freakout composition, toxic margin-art expansion',
       key_features:
         'Permanent-marker texture, desk-doodle iconography, malformed margin forms, vandal-energy linework, adolescent chaos',
       creative_brief:

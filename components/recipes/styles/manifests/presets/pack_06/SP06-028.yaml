@@ -13,19 +13,18 @@ tags:
   - drawing-and-sketching
 visualDna:
   aesthetic: Subtractive drawing
-  form_and_line: White lines scratched out of black
-  color_palette: Black and White
-  lighting_setup: High contrast
-  material_texture: Scratched clay
-  render_quality: Detailed, illustrative
-  spatial_distortion: Stylized texture
-  atmosphere: Dramatic, inverted
+  subject_treatment: White lines scratched out of black
+  color_and_tone: Black and White
+  lighting_and_shadow: High contrast
+  texture_and_material: Scratched clay
+  camera_and_composition: Stylized texture
+  atmosphere_and_mood: Dramatic, inverted
+  rendering_and_quality: Detailed, illustrative
   key_features: White on black
   creative_brief: >-
-    Apply scratchboard technique to any input: ink-black ground, white incised
-    marks, carved highlights, dense hatch excavation, and negative-like tactile
-    contrast. Keep subtractive drawing drama without requiring animals, vintage
-    engraving subjects, logos, or black-card closeups.
+    Apply scratchboard technique to any input: ink-black ground, white incised marks, carved highlights, dense
+    hatch excavation, and negative-like tactile contrast. Keep subtractive drawing drama without requiring
+    animals, vintage engraving subjects, logos, or black-card closeups.
 avoidRules:
   - photo
   - realistic
@@ -45,7 +44,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP06-028.webp
 attributes:
-  negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border
+  negativePrompt: >-
+    photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy,
+    watermark, text, signature, frame, border
 taxonomy:
   packId: pack_06
   packName: Essential Art Styles

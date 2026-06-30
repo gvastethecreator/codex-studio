@@ -13,26 +13,26 @@ tags:
   - mecha-and-cyberpunk
 visualDna:
   aesthetic: >-
-    Endless industrial anime silence with recursive concrete, terminal scale, sparse machine light,
-    tiny markers, and civilization beyond meaning
-  form_and_line: >-
-    Brutal hard-edge geometry, tiny scale markers, recursive corridor lines, terminal void shapes,
-    and severe panel discipline.
-  color_palette: Concrete gray, abyss black, terminal green, cold white, rust shadow, and faint warning red.
-  lighting_setup: Sparse industrial glow, distant strip lights, hard underlighting, and huge shadow masses.
-  material_texture: Raw concrete, oxidized metal, dust film, scratched panels, cable scars, and cold digital grain.
-  render_quality: >-
-    High-detail sci-fi anime finish with monumental clarity, machine silence, and oppressive
-    architectural precision.
-  spatial_distortion: Abyssal vanishing points, recursive scale, and impossible depth that dwarfs any subject.
-  atmosphere: Monumental, empty, lethal, alienated
+    Endless industrial anime silence with recursive concrete, terminal scale, sparse machine light, tiny
+    markers, and civilization beyond meaning
+  subject_treatment: >-
+    Brutal hard-edge geometry, tiny scale markers, recursive corridor lines, terminal void shapes, and severe
+    panel discipline.
+  color_and_tone: Concrete gray, abyss black, terminal green, cold white, rust shadow, and faint warning red.
+  lighting_and_shadow: Sparse industrial glow, distant strip lights, hard underlighting, and huge shadow masses.
+  texture_and_material: Raw concrete, oxidized metal, dust film, scratched panels, cable scars, and cold digital grain.
+  camera_and_composition: Abyssal vanishing points, recursive scale, and impossible depth that dwarfs any subject.
+  atmosphere_and_mood: Monumental, empty, lethal, alienated
+  rendering_and_quality: >-
+    High-detail sci-fi anime finish with monumental clarity, machine silence, and oppressive architectural
+    precision.
   key_features: >-
-    Recursive architecture, concrete void, terminal scale, sparse machine light, tiny markers, and
-    industrial silence
+    Recursive architecture, concrete void, terminal scale, sparse machine light, tiny markers, and industrial
+    silence
   creative_brief: >-
-    Use BLAME! as style anchor for terminal megastructure silence. Any prompt should become vast,
-    recursive, concrete, sparse, and machine-haunted. Corridors, weapons, lone figures, facilities,
-    and literal megastructure interiors are optional.
+    Use BLAME! as style anchor for terminal megastructure silence. Any prompt should become vast, recursive,
+    concrete, sparse, and machine-haunted. Corridors, weapons, lone figures, facilities, and literal
+    megastructure interiors are optional.
 avoidRules:
   - realistic
   - 3d render
@@ -50,8 +50,8 @@ assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-230.webp
 attributes:
   negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, text, signature
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts,
+    watermark, text, signature
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds

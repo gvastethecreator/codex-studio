@@ -13,18 +13,20 @@ tags:
   - subcultures
 visualDna:
   aesthetic: Creepy cute, kawaii-goth hybrid, sweet-nightmare aesthetic
-  form_and_line: Spikes + Bows, A-line skirt, choker tightness, platform-sole elevation, puffed sleeve
-  color_palette: Black + Pastel Pink/Mint, lavender, baby blue, candy-corpse contrast, chalky pastel
-  lighting_setup: Soft diffused daylight, candy-colored gels, Halloween fairy-light sparkle
-  material_texture: Patent leather, black lace overlay, pastel tulle, holographic PVC, spiderweb fishnet
-  render_quality: Kawaii, spooky, pastel-goth crispness, creepy-cute editorial
-  spatial_distortion: None
-  atmosphere: Cute, dark, sweet unease, candy-wrapper menace, adorable dread
+  subject_treatment: Spikes + Bows, A-line skirt, choker tightness, platform-sole elevation, puffed sleeve
+  color_and_tone: Black + Pastel Pink/Mint, lavender, baby blue, candy-corpse contrast, chalky pastel
+  lighting_and_shadow: Soft diffused daylight, candy-colored gels, Halloween fairy-light sparkle
+  texture_and_material: Patent leather, black lace overlay, pastel tulle, holographic PVC, spiderweb fishnet
+  camera_and_composition: >-
+    Compose for Pastel Goth using its key spatial cues: Pastel-goth contrast, optional bat-wing cues, bow
+    accents, occult jewelry, platform mass.
+  atmosphere_and_mood: Cute, dark, sweet unease, candy-wrapper menace, adorable dread
+  rendering_and_quality: Kawaii, spooky, pastel-goth crispness, creepy-cute editorial
   key_features: Pastel-goth contrast, optional bat-wing cues, bow accents, occult jewelry, platform mass
   creative_brief: >-
-    Mix cute and occult into any input: lavender tulle, black lace, pastel PVC, bat-wing cues, bows,
-    chokers, platform mass and candy-corpse contrast. Keep creepy-cute unease without requiring
-    graveyards, bedroom lighting, doll poses or a fixed gothic subject.
+    Mix cute and occult into any input: lavender tulle, black lace, pastel PVC, bat-wing cues, bows, chokers,
+    platform mass and candy-corpse contrast. Keep creepy-cute unease without requiring graveyards, bedroom
+    lighting, doll poses or a fixed gothic subject.
 avoidRules:
   - flat monochrome goth with no pastel contrast
 assets:

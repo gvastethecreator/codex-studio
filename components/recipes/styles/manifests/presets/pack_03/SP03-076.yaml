@@ -13,20 +13,21 @@ tags:
   - organic-character-and-bio-cgi
 visualDna:
   aesthetic: Mylar balloons
-  form_and_line: Seams, wrinkles
-  color_palette: Metallic foil
-  lighting_setup: High reflection
-  material_texture: Wrinkled foil, mylar shimmer
-  render_quality: Jeff Koons gallery-scale pop, party spectacle
-  spatial_distortion: Inflated
-  atmosphere: Fun, pop art, celebration
+  subject_treatment: Seams, wrinkles
+  color_and_tone: Metallic foil
+  lighting_and_shadow: High reflection
+  texture_and_material: Wrinkled foil, mylar shimmer
+  camera_and_composition: Inflated
+  atmosphere_and_mood: Fun, pop art, celebration
+  rendering_and_quality: Jeff Koons gallery-scale pop, party spectacle
   key_features: Seams, reflective curves
   creative_brief: >-
-    Inflate the input into Mylar pop-sculpture language: wrinkled foil, metallic shimmer, visible seams, distorted
-    studio reflections and buoyant tension. Keep celebration/Jeff Koons energy without forcing party props, gallery
-    context or a balloon object. Apply Balloon Art as a portable 3D/render style system over any input: preserve its
-    renderer logic, material behavior, geometry language, lighting grammar, and production cues while avoiding a
-    required character, vehicle, prop, environment, UI screen, product shot, or scene template.
+    Inflate the input into Mylar pop-sculpture language: wrinkled foil, metallic shimmer, visible seams,
+    distorted studio reflections and buoyant tension. Keep celebration/Jeff Koons energy without forcing party
+    props, gallery context or a balloon object. Apply Balloon Art as a portable 3D/render style system over
+    any input: preserve its renderer logic, material behavior, geometry language, lighting grammar, and
+    production cues while avoiding a required character, vehicle, prop, environment, UI screen, product shot,
+    or scene template.
 avoidRules:
   - hard
   - heavy

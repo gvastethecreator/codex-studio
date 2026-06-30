@@ -10,6 +10,7 @@ import {
   resolvePersistentJobIntakeKind,
   type ReferenceProcessingErrorLike,
 } from './persistentJobIntake';
+import { hydrateSourceSpecAssetPaths } from './referenceManager';
 
 function createJob(overrides: Partial<Job> = {}): Job {
   return {
@@ -96,6 +97,93 @@ describe('persistentJobIntake', () => {
     );
     expect(logJobCreated).toHaveBeenCalledWith('image_generate', 'job-new');
     expect(enqueueJob).toHaveBeenCalledWith(expect.objectContaining({ id: 'job-new' }));
+  });
+
+  it('hydrates Studio Library recipe retry assets before final source spec validation', async () => {
+    const publishEvent = vi.fn();
+    const logJobCreated = vi.fn();
+    const enqueueJob = vi.fn();
+    const processReferences = vi.fn(async () => ({
+      augmentedPrompt: 'retry image',
+      persistedRefs: [],
+    }));
+    const createJobFn = vi.fn((input: CreateJobInput) =>
+      createJob({
+        id: input.id,
+        projectId: input.projectId,
+        kind: input.kind,
+        providerId: input.providerId,
+        sourceSpec: input.sourceSpec,
+        originalPrompt: input.prompt,
+        finalPromptUsed: input.prompt,
+      }),
+    );
+    const intake = createPersistentJobIntake({
+      ensureDefaultProjectId: () => 'project-default',
+      createJobId: () => 'job-retry',
+      createJob: createJobFn,
+      updateJobFinalPrompt: () => null,
+      processReferences,
+      hydrateSourceSpecAssetPaths: (sourceSpec, references, persistedRefs, libraryDir) =>
+        hydrateSourceSpecAssetPaths(
+          sourceSpec,
+          references ?? [],
+          persistedRefs as Parameters<typeof hydrateSourceSpecAssetPaths>[2],
+          libraryDir,
+        ),
+      readLibraryDir: () => 'D:/AI-Studio-Library',
+      resolveProviderExecutionBlocker: () => null,
+      isReferenceProcessingError: (_error): _error is ReferenceProcessingErrorLike => false,
+      publishEvent,
+      logJobCreated,
+      enqueueJob,
+    });
+    const sourceSpec = createGenerationTaskSpec({
+      id: 'spec-batch-retry-1-1-12345',
+      task: 'image_generate',
+      providerId: 'codex',
+      prompt: 'retry image',
+      assets: [
+        {
+          role: 'reference',
+          name: 'past-result.webp',
+          sourceUrl: 'http://127.0.0.1:17223/library/outputs/past-result.webp',
+          strength: 0.5,
+        },
+      ],
+      metadata: {
+        workspaceId: 'workspace-1',
+        batchId: 'batch-retry-1',
+      },
+    });
+
+    const result = await intake.createJob({
+      kind: 'image_generate',
+      providerId: 'codex',
+      prompt: 'retry image',
+      sourceSpec,
+    });
+
+    expect(result.ok).toBe(true);
+    expect(processReferences).toHaveBeenCalledWith(
+      'job-retry',
+      'retry image',
+      [],
+      'D:/AI-Studio-Library',
+    );
+    expect(createJobFn).toHaveBeenCalledWith(
+      expect.objectContaining({
+        sourceSpec: expect.objectContaining({
+          assets: [
+            expect.objectContaining({
+              sourceUrl: undefined,
+              localPath: expect.stringContaining('past-result.webp'),
+            }),
+          ],
+        }),
+      }),
+    );
+    expect(enqueueJob).toHaveBeenCalledWith(expect.objectContaining({ id: 'job-retry' }));
   });
 
   it('rejects provider blockers before reference persistence', async () => {

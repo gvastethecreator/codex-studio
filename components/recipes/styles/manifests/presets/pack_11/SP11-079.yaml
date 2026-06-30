@@ -13,20 +13,24 @@ tags:
   - micro-macro
 visualDna:
   aesthetic: Weave pattern, composite-macro, aerospace-material, tow-fiber, high-modulus structure
-  form_and_line: Diagonal weave, twill-diagonal, plain-weave cross, harness-satin float, yarn- crimp, tow-boundary
-  color_palette: Black, Grey, PAN-carbon, pitch-fiber dark, oxidized-surface, resin-matrix amber, intermediate-modulus sheen
-  lighting_setup: Anisotropic reflection, fiber-direction gloss, weave-angle catch, grazing-incidence, ring-light polarizer
-  material_texture: Woven fiber, carbon-tow, filament-diameter, sizing-coating, resin-impregnation, micro-crack, weave- crimp
-  render_quality: High tech, strong, Formula-1 engineering, aerospace-composite, strength-to-weight art
-  spatial_distortion: None, flat-laminate, weave-repeat, tow-orientation, ply-stack
-  atmosphere: Fast, expensive, autoclave-cure, racing-engineering, carbon-fiber exclusivity
-  key_features: Weave, tow-band, resin-rich area, crimp-angle, weave-repeat, filament-break, fabric-selvage, prepreg-tack surface
+  subject_treatment: Diagonal weave, twill-diagonal, plain-weave cross, harness-satin float, yarn- crimp, tow-boundary
+  color_and_tone: >-
+    Black, Grey, PAN-carbon, pitch-fiber dark, oxidized-surface, resin-matrix amber, intermediate-modulus
+    sheen
+  lighting_and_shadow: Anisotropic reflection, fiber-direction gloss, weave-angle catch, grazing-incidence, ring-light polarizer
+  texture_and_material: Woven fiber, carbon-tow, filament-diameter, sizing-coating, resin-impregnation, micro-crack, weave- crimp
+  camera_and_composition: Flat-laminate, weave-repeat, tow-orientation, ply-stack
+  atmosphere_and_mood: Fast, expensive, autoclave-cure, racing-engineering, carbon-fiber exclusivity
+  rendering_and_quality: High tech, strong, Formula-1 engineering, aerospace-composite, strength-to-weight art
+  key_features: >-
+    Weave, tow-band, resin-rich area, crimp-angle, weave-repeat, filament-break, fabric-selvage, prepreg-tack
+    surface
   creative_brief: >-
-    Emphasize carbon composite language through twill repeat, tow boundaries, and anisotropic reflection aligned with
-    fiber direction. Keep the style high-tech and structural, transferable across automotive, aerospace, and product
-    surfaces. Apply Carbon Fiber as a portable style system over any input: preserve its construction grammar, material
-    cues, scale logic, and signature rendering behavior while avoiding a required franchise, literal prop, fixed
-    specimen, classroom sample, product shot, or scene template.
+    Emphasize carbon composite language through twill repeat, tow boundaries, and anisotropic reflection
+    aligned with fiber direction. Keep the style high-tech and structural, transferable across automotive,
+    aerospace, and product surfaces. Apply Carbon Fiber as a portable style system over any input: preserve
+    its construction grammar, material cues, scale logic, and signature rendering behavior while avoiding a
+    required franchise, literal prop, fixed specimen, classroom sample, product shot, or scene template.
 avoidRules:
   - metal
 assets:

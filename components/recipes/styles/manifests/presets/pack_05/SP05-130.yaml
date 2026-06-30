@@ -12,19 +12,27 @@ tags:
   - anime-battle-and-worlds
   - modern-shonen-and-action
 visualDna:
-  aesthetic: Psychic paint-surge meltdown, with awkward sincerity, emotional overload, rough sketch artifacts, and abstract energy storms.
-  form_and_line: Wobbly sketch contours, sudden paint-smear bursts, simple honest face grammar, elastic psychic rings, and hand-drawn rupture.
-  color_palette: Acid rainbow bursts, soft neutral calm fields, hot magenta, electric cyan, yellow-white overload, and raw pencil gray.
-  lighting_setup: Aura bloom surges, exposure jumps, emotional flash peaks, and calm flat light before rupture.
-  material_texture: Paint smear, crayon edge noise, sketch grain, cel polish breaks, paperlike halftone, and raw energy streaks.
-  render_quality: Experimental modern anime finish preserving rough expressive artifacts inside high-energy action clarity.
-  spatial_distortion: Emotion-driven warping, paint-like psychic expansion, and frame pressure that bends around inner state.
-  atmosphere: Earnest, explosive, weird, cathartic
+  aesthetic: >-
+    Psychic paint-surge meltdown, with awkward sincerity, emotional overload, rough sketch artifacts, and
+    abstract energy storms.
+  subject_treatment: >-
+    Wobbly sketch contours, sudden paint-smear bursts, simple honest face grammar, elastic psychic rings, and
+    hand-drawn rupture.
+  color_and_tone: >-
+    Acid rainbow bursts, soft neutral calm fields, hot magenta, electric cyan, yellow-white overload, and raw
+    pencil gray.
+  lighting_and_shadow: Aura bloom surges, exposure jumps, emotional flash peaks, and calm flat light before rupture.
+  texture_and_material: >-
+    Paint smear, crayon edge noise, sketch grain, cel polish breaks, paperlike halftone, and raw energy
+    streaks.
+  camera_and_composition: Emotion-driven warping, paint-like psychic expansion, and frame pressure that bends around inner state.
+  atmosphere_and_mood: Earnest, explosive, weird, cathartic
+  rendering_and_quality: Experimental modern anime finish preserving rough expressive artifacts inside high-energy action clarity.
   key_features: Paint-surge energy, sincere simplicity, overload threshold, rough marks, abstract catharsis.
   creative_brief: >-
-    Make any prompt express inner overflow: let rough sketch marks break into
-    paintlike psychic color, with sincerity and catharsis driving the frame
-    instead of a fixed character, institution, or catastrophe premise.
+    Make any prompt express inner overflow: let rough sketch marks break into paintlike psychic color, with
+    sincerity and catharsis driving the frame instead of a fixed character, institution, or catastrophe
+    premise.
 avoidRules:
   - realistic
   - 3d render
@@ -41,7 +49,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-130.webp
 attributes:
-  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
+  negativePrompt: >-
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts,
+    watermark, text, signature
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds

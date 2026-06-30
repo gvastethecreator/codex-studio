@@ -13,21 +13,24 @@ tags:
   - photography-eras
 visualDna:
   aesthetic: Instant film
-  form_and_line: None
-  color_palette: Green/Blue cast, cool shift, muted pastel, cream border
-  lighting_setup: Flash, direct pop, close-range glare, redeye bounce
-  material_texture: Soft focus, plastic lens, diffusion, chemical developer
-  render_quality: Personal, memory, snapshot intimacy, instant nostalgia
-  spatial_distortion: Chemical leak, developer smear, edge imperfection
-  atmosphere: Nostalgic, fun, tactile memory, scrapbook intimacy
+  subject_treatment: >-
+    Treat subjects as believable filmed or broadcast subjects under Polaroid (Instant): casting, wardrobe,
+    props, motion cues, and silhouette hierarchy follow 4. Photography Eras cinematic and broadcast grammar
+    without locking to one plot beat.
+  color_and_tone: Green/Blue cast, cool shift, muted pastel, cream border
+  lighting_and_shadow: Flash, direct pop, close-range glare, redeye bounce
+  texture_and_material: Soft focus, plastic lens, diffusion, chemical developer
+  camera_and_composition: Chemical leak, developer smear, edge imperfection
+  atmosphere_and_mood: Nostalgic, fun, tactile memory, scrapbook intimacy
+  rendering_and_quality: Personal, memory, snapshot intimacy, instant nostalgia
   key_features: White border, square format, chemical fog, developer smear, soft plastic-lens focus
   creative_brief: >-
-    Make the prompt an instant-film artifact: square crop, thick white border, chemical fog, developer smear, muted cool
-    cast, and soft plastic-lens intimacy. Avoid readable captions, dates, faces, or party scenes unless already
-    requested. The ritual of instant development should be visible in the image chemistry itself. Apply Polaroid as a
-    portable cinematic/camera style over any input: preserve its lens behavior, color process, lighting setup, artifact
-    pattern, and deformation grammar while avoiding a required actor, room, prop, brand, readable text, fixed IP scene,
-    or narrative setup.
+    Make the prompt an instant-film artifact: square crop, thick white border, chemical fog, developer smear,
+    muted cool cast, and soft plastic-lens intimacy. Avoid readable captions, dates, faces, or party scenes
+    unless already requested. The ritual of instant development should be visible in the image chemistry
+    itself. Apply Polaroid as a portable cinematic/camera style over any input: preserve its lens behavior,
+    color process, lighting setup, artifact pattern, and deformation grammar while avoiding a required actor,
+    room, prop, brand, readable text, fixed IP scene, or narrative setup.
 avoidRules:
   - sharp
   - hd

@@ -13,36 +13,38 @@ tags:
   - anime-style-spectrum
 visualDna:
   aesthetic: >-
-    Folkloric Deadpan Ink Catalog within 12. Anime Style Spectrum: a reusable Anime Character & Lifestyle visual
-    language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result
-    transferable across subjects while preserving Folkloric Deadpan Ink Catalog's specific style identity.
-  form_and_line: >-
-    Define Folkloric Deadpan Ink Catalog through line, mass, contour, spacing, and rhythm. Keep forms readable,
-    intentional, and reusable beyond one literal scene.
-  color_palette: >-
-    Use a Folkloric Deadpan Ink Catalog-specific palette with clear dominant, secondary, and accent roles. Keep contrast
-    deliberate and avoid generic color wash.
-  lighting_setup: >-
-    Use lighting that makes Folkloric Deadpan Ink Catalog recognizable: purposeful key, rim, bounce, shadow, and glow
-    behavior with readable hierarchy.
-  material_texture: >-
-    Use materials and textures that reinforce Folkloric Deadpan Ink Catalog: surface response, grain, patina, polish, or
-    wear should feel intentional and style-defining.
-  render_quality: >-
-    Render Folkloric Deadpan Ink Catalog with high production clarity, strong silhouette reads, clean detail priority,
-    and no accidental UI, text, logos, or watermark.
-  spatial_distortion: >-
-    Use spatial behavior that fits Folkloric Deadpan Ink Catalog: perspective, compression, exaggeration, or depth
-    should support the style without forcing one fixed location.
-  atmosphere: >-
-    Set a mood that belongs to Folkloric Deadpan Ink Catalog: specific, coherent, and distinct, with emotional tone
-    carried by visual systems rather than narrative captioning.
+    Folkloric Deadpan Ink Catalog within 12. Anime Style Spectrum: a reusable Anime Character & Lifestyle
+    visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the
+    result transferable across subjects while preserving Folkloric Deadpan Ink Catalog's specific style
+    identity.
+  subject_treatment: >-
+    Define Folkloric Deadpan Ink Catalog through line, mass, contour, spacing, and rhythm. Keep forms
+    readable, intentional, and reusable beyond one literal scene.
+  color_and_tone: >-
+    Use a Folkloric Deadpan Ink Catalog-specific palette with clear dominant, secondary, and accent roles.
+    Keep contrast deliberate and avoid generic color wash.
+  lighting_and_shadow: >-
+    Use lighting that makes Folkloric Deadpan Ink Catalog recognizable: purposeful key, rim, bounce, shadow,
+    and glow behavior with readable hierarchy.
+  texture_and_material: >-
+    Use materials and textures that reinforce Folkloric Deadpan Ink Catalog: surface response, grain, patina,
+    polish, or wear should feel intentional and style-defining.
+  camera_and_composition: >-
+    Use spatial behavior that fits Folkloric Deadpan Ink Catalog: perspective, compression, exaggeration, or
+    depth should support the style without forcing one fixed location.
+  atmosphere_and_mood: >-
+    Set a mood that belongs to Folkloric Deadpan Ink Catalog: specific, coherent, and distinct, with emotional
+    tone carried by visual systems rather than narrative captioning.
+  rendering_and_quality: >-
+    Render Folkloric Deadpan Ink Catalog with high production clarity, strong silhouette reads, clean detail
+    priority, and no accidental UI, text, logos, or watermark.
   key_features: >-
-    Prioritize Folkloric Deadpan Ink Catalog's key features: recognizable shape language, palette logic, material cues,
-    lighting behavior, and composition rules.
+    Prioritize Folkloric Deadpan Ink Catalog's key features: recognizable shape language, palette logic,
+    material cues, lighting behavior, and composition rules.
   creative_brief: >-
-    Create a style-card that translates Folkloric Deadpan Ink Catalog into a portable visual system for 12. Anime Style
-    Spectrum. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.
+    Create a style-card that translates Folkloric Deadpan Ink Catalog into a portable visual system for 12.
+    Anime Style Spectrum. Preserve the preset identity through style mechanics, not a fixed scene, character,
+    prop, or story beat.
 avoidRules:
   - glossy digital polish
   - photoreal creature rendering
@@ -54,8 +56,8 @@ assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-330.webp
 attributes:
   negativePrompt: >-
-    glossy digital polish, photoreal creature rendering, clean modern fantasy UI, neon sci-fi palette, cute mascot
-    simplification, empty flat background
+    glossy digital polish, photoreal creature rendering, clean modern fantasy UI, neon sci-fi palette, cute
+    mascot simplification, empty flat background
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle

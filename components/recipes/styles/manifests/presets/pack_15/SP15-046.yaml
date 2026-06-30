@@ -14,16 +14,35 @@ tags:
   - ravepunk
   - mutual-care
 visualDna:
-  aesthetic: ravepunk mutual care as a flat graphic digital-illustration card built around a rave-adjacent care clinic inside a warehouse with care tables, dancers, lasers, and hydration rigs.
-  form_and_line: Handmade graphics, patched clothes, improvised machines, crew energy, protest rhythm, and rough edges. Core composition uses care tables, dancers, hydration rigs, lasers, warehouse columns.
-  color_palette: laser green, violet, white vinyl, concrete gray
-  lighting_setup: laser haze, soft clinic lamps, strobe traces, exit-light red
-  material_texture: vinyl cot planes, concrete columns, foil blanket shape, plastic water-tank blocks, matte laser bands
-  render_quality: Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity, moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material simulation, or hyper-detail.
-  spatial_distortion: Safehouses, skateparks, warehouses, booths, yards, clinics, and shared kitchens with visible use. Keep depth legible and avoid default hallway, aisle, or empty studio staging.
-  atmosphere: protective, nocturnal, pulsing, communal
+  aesthetic: >-
+    ravepunk mutual care as a flat graphic digital-illustration card built around a rave-adjacent care clinic
+    inside a warehouse with care tables, dancers, lasers, and hydration rigs.
+  subject_treatment: >-
+    Handmade graphics, patched clothes, improvised machines, crew energy, protest rhythm, and rough edges.
+    Core composition uses care tables, dancers, hydration rigs, lasers, warehouse columns.
+  color_and_tone: laser green, violet, white vinyl, concrete gray
+  lighting_and_shadow: laser haze, soft clinic lamps, strobe traces, exit-light red
+  texture_and_material: vinyl cot planes, concrete columns, foil blanket shape, plastic water-tank blocks, matte laser bands
+  camera_and_composition: >-
+    Safehouses, skateparks, warehouses, booths, yards, clinics, and shared kitchens with visible use. Keep
+    depth legible and avoid default hallway, aisle, or empty studio staging.
+  atmosphere_and_mood: protective, nocturnal, pulsing, communal
+  rendering_and_quality: >-
+    Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly
+    planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity,
+    moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material
+    simulation, or hyper-detail.
   key_features: care tables, dancers, hydration rigs, lasers, warehouse columns
-  creative_brief: 'Ravepunk but humane: music, care, hydration, med tables, and people, not just abstract neon haze. Keep it representative through warehouse mutual-care corner, one care table, helper/dancer silhouettes in plain clothes, hydration rig blocks, foil blanket shape, soft clinic lamp circles, laser green/violet bands, concrete column planes, and blank exit-red accent. Favor flat graphic digital illustration, clean editorial illustration, cel-shaded poster art, gouache poster aesthetics, graphic-novel card art, or stylized animation-background art over realism, photoreal painterly realism, cinematic key art, scratchy print noise, or hyper-detailed concept art. Use few bold color/value zones, simplified brush planes, matte surfaces, low-to-moderate texture, large shapes, clean surfaces, shallow poster depth, and finish denoised with no excessive noise or ultra-fine detail.'
+  creative_brief: >-
+    Ravepunk but humane: music, care, hydration, med tables, and people, not just abstract neon haze. Keep it
+    representative through warehouse mutual-care corner, one care table, helper/dancer silhouettes in plain
+    clothes, hydration rig blocks, foil blanket shape, soft clinic lamp circles, laser green/violet bands,
+    concrete column planes, and blank exit-red accent. Favor flat graphic digital illustration, clean
+    editorial illustration, cel-shaded poster art, gouache poster aesthetics, graphic-novel card art, or
+    stylized animation-background art over realism, photoreal painterly realism, cinematic key art, scratchy
+    print noise, or hyper-detailed concept art. Use few bold color/value zones, simplified brush planes, matte
+    surfaces, low-to-moderate texture, large shapes, clean surfaces, shallow poster depth, and finish denoised
+    with no excessive noise or ultra-fine detail.
 avoidRules:
   - photoreal
   - watermark
@@ -37,7 +56,23 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP15-046.webp
 attributes:
-  negativePrompt: photoreal, hyperreal, realistic render, photoreal painterly realism, cinematic realism, AAA key art, cinematic concept-art render, photobash polish, realistic material rendering, photographic skin pores, realistic foreground portrait, realistic facial hair detail, lens blur, bokeh, depth-of-field photo look, generic soldier hero, guard pin-up, weapon-first pose, skull patch, cross emblem, medical logo, jacket symbol, readable marks, medical emergency gore, syringe hero, fetish clinic pose, nightclub glamour crowd, drug-use scene, empty laser tunnel, readable exit sign, readable text, warehouse corridor, photoreal smoke, photoreal laser haze, HDR lens realism, 3D render look, PBR material simulation, hyper-detailed concept art, scratchy print noise, tiny black linework, watermark, text, logo, generic style, over-abstract, interchangeable preset, duplicated motifs, generic glass utopia, unmotivated market aisle, unmotivated library aisle, fantasy corridor, random camera held by subject, studio wall fixation, chair fixation, curtain fixation, lamp fixation, scarf fixation, pedestal fixation, bird fixation, excessive noise, ultra-fine detail, over-sharpened microtexture, over-rendered machinery, noisy grime, tiny rivets everywhere, busy texture chatter, realistic uniform portrait, uniformed officer hero, foreground guard portrait, detailed tattoo focus, dense machinery wallpaper, overcrowded scene, high-frequency surface detail, cinematic close-up portrait, flat black fill, crushed black, pure black masses, muddy black fields, generic American illustration, generic Western RPG card art
+  negativePrompt: >-
+    photoreal, hyperreal, realistic render, photoreal painterly realism, cinematic realism, AAA key art,
+    cinematic concept-art render, photobash polish, realistic material rendering, photographic skin pores,
+    realistic foreground portrait, realistic facial hair detail, lens blur, bokeh, depth-of-field photo look,
+    generic soldier hero, guard pin-up, weapon-first pose, skull patch, cross emblem, medical logo, jacket
+    symbol, readable marks, medical emergency gore, syringe hero, fetish clinic pose, nightclub glamour crowd,
+    drug-use scene, empty laser tunnel, readable exit sign, readable text, warehouse corridor, photoreal
+    smoke, photoreal laser haze, HDR lens realism, 3D render look, PBR material simulation, hyper-detailed
+    concept art, scratchy print noise, tiny black linework, watermark, text, logo, generic style,
+    over-abstract, interchangeable preset, duplicated motifs, generic glass utopia, unmotivated market aisle,
+    unmotivated library aisle, fantasy corridor, random camera held by subject, studio wall fixation, chair
+    fixation, curtain fixation, lamp fixation, scarf fixation, pedestal fixation, bird fixation, excessive
+    noise, ultra-fine detail, over-sharpened microtexture, over-rendered machinery, noisy grime, tiny rivets
+    everywhere, busy texture chatter, realistic uniform portrait, uniformed officer hero, foreground guard
+    portrait, detailed tattoo focus, dense machinery wallpaper, overcrowded scene, high-frequency surface
+    detail, cinematic close-up portrait, flat black fill, crushed black, pure black masses, muddy black
+    fields, generic American illustration, generic Western RPG card art
 taxonomy:
   packId: pack_15
   packName: Punk Spectrum Vault

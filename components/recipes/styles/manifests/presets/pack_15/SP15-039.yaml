@@ -14,16 +14,34 @@ tags:
   - saltpunk
   - wind-industry
 visualDna:
-  aesthetic: saltpunk wind industry as a flat graphic digital-illustration card built around a salt-flat foundry using kite turbines, mirrored pans, mineral carts, and sun-armored workers.
-  form_and_line: Terrain-specific silhouettes, waterline arcs, ice facets, salt grids, stilt structures, and wind-tensioned forms. Core composition uses kite turbines, salt pans, workers, mineral carts, horizon lines.
-  color_palette: salt white, sky blue, rust, black shadow
-  lighting_setup: blinding sun, mirrored bounce, hard kite shadows, heat shimmer
-  material_texture: salt-crust planes, canvas kite triangles, mineral cart blocks, plain sun armor, rusted frame shapes
-  render_quality: Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity, moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material simulation, or hyper-detail.
-  spatial_distortion: Coasts, piers, marinas, glacier towns, salt flats, and swamps with strong environmental identity. Keep depth legible and avoid default hallway, aisle, or empty studio staging.
-  atmosphere: bright, severe, inventive, wind-driven
+  aesthetic: >-
+    saltpunk wind industry as a flat graphic digital-illustration card built around a salt-flat foundry using
+    kite turbines, mirrored pans, mineral carts, and sun-armored workers.
+  subject_treatment: >-
+    Terrain-specific silhouettes, waterline arcs, ice facets, salt grids, stilt structures, and wind-tensioned
+    forms. Core composition uses kite turbines, salt pans, workers, mineral carts, horizon lines.
+  color_and_tone: salt white, sky blue, rust, black shadow
+  lighting_and_shadow: blinding sun, mirrored bounce, hard kite shadows, heat shimmer
+  texture_and_material: salt-crust planes, canvas kite triangles, mineral cart blocks, plain sun armor, rusted frame shapes
+  camera_and_composition: >-
+    Coasts, piers, marinas, glacier towns, salt flats, and swamps with strong environmental identity. Keep
+    depth legible and avoid default hallway, aisle, or empty studio staging.
+  atmosphere_and_mood: bright, severe, inventive, wind-driven
+  rendering_and_quality: >-
+    Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly
+    planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity,
+    moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material
+    simulation, or hyper-detail.
   key_features: kite turbines, salt pans, workers, mineral carts, horizon lines
-  creative_brief: 'Terrain punk from salt and wind: vast brightness, kite machines, and labor, avoiding desert oasis or generic solar farms. Keep it representative through kite-turbine triangles, mineral cart, worker silhouettes, mirrored salt pans, rust frame blocks, and hard black kite shadows. Favor flat graphic digital illustration, clean editorial illustration, cel-shaded poster art, gouache poster aesthetics, graphic-novel card art, or stylized animation-background art over realism, photoreal painterly realism, cinematic key art, scratchy print noise, or hyper-detailed concept art. Use few bold color/value zones, simplified brush planes, matte surfaces, low-to-moderate texture, large shapes, clean surfaces, shallow poster depth, and finish denoised with no excessive noise or ultra-fine detail.'
+  creative_brief: >-
+    Terrain punk from salt and wind: vast brightness, kite machines, and labor, avoiding desert oasis or
+    generic solar farms. Keep it representative through kite-turbine triangles, mineral cart, worker
+    silhouettes, mirrored salt pans, rust frame blocks, and hard black kite shadows. Favor flat graphic
+    digital illustration, clean editorial illustration, cel-shaded poster art, gouache poster aesthetics,
+    graphic-novel card art, or stylized animation-background art over realism, photoreal painterly realism,
+    cinematic key art, scratchy print noise, or hyper-detailed concept art. Use few bold color/value zones,
+    simplified brush planes, matte surfaces, low-to-moderate texture, large shapes, clean surfaces, shallow
+    poster depth, and finish denoised with no excessive noise or ultra-fine detail.
 avoidRules:
   - photoreal
   - watermark
@@ -37,7 +55,22 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP15-039.webp
 attributes:
-  negativePrompt: photoreal, hyperreal, realistic render, photoreal painterly realism, cinematic realism, AAA key art, cinematic concept-art render, photobash polish, realistic material rendering, photographic skin pores, realistic foreground portrait, realistic facial hair detail, lens blur, bokeh, depth-of-field photo look, generic soldier hero, guard pin-up, weapon-first pose, desert oasis, generic solar farm, empty salt landscape, foreground goggle portrait, kite festival, fantasy desert city, windmill farm wallpaper, photoreal glare, photoreal heat shimmer, HDR lens realism, 3D render look, PBR material simulation, hyper-detailed concept art, scratchy print noise, tiny black linework, watermark, text, logo, generic style, over-abstract, interchangeable preset, duplicated motifs, generic glass utopia, unmotivated market aisle, unmotivated library aisle, fantasy corridor, random camera held by subject, studio wall fixation, chair fixation, curtain fixation, lamp fixation, scarf fixation, pedestal fixation, bird fixation, excessive noise, ultra-fine detail, over-sharpened microtexture, over-rendered machinery, noisy grime, tiny rivets everywhere, busy texture chatter, realistic uniform portrait, uniformed officer hero, foreground guard portrait, detailed tattoo focus, dense machinery wallpaper, overcrowded scene, high-frequency surface detail, cinematic close-up portrait, flat black fill, crushed black, pure black masses, muddy black fields, generic American illustration, generic Western RPG card art
+  negativePrompt: >-
+    photoreal, hyperreal, realistic render, photoreal painterly realism, cinematic realism, AAA key art,
+    cinematic concept-art render, photobash polish, realistic material rendering, photographic skin pores,
+    realistic foreground portrait, realistic facial hair detail, lens blur, bokeh, depth-of-field photo look,
+    generic soldier hero, guard pin-up, weapon-first pose, desert oasis, generic solar farm, empty salt
+    landscape, foreground goggle portrait, kite festival, fantasy desert city, windmill farm wallpaper,
+    photoreal glare, photoreal heat shimmer, HDR lens realism, 3D render look, PBR material simulation,
+    hyper-detailed concept art, scratchy print noise, tiny black linework, watermark, text, logo, generic
+    style, over-abstract, interchangeable preset, duplicated motifs, generic glass utopia, unmotivated market
+    aisle, unmotivated library aisle, fantasy corridor, random camera held by subject, studio wall fixation,
+    chair fixation, curtain fixation, lamp fixation, scarf fixation, pedestal fixation, bird fixation,
+    excessive noise, ultra-fine detail, over-sharpened microtexture, over-rendered machinery, noisy grime,
+    tiny rivets everywhere, busy texture chatter, realistic uniform portrait, uniformed officer hero,
+    foreground guard portrait, detailed tattoo focus, dense machinery wallpaper, overcrowded scene,
+    high-frequency surface detail, cinematic close-up portrait, flat black fill, crushed black, pure black
+    masses, muddy black fields, generic American illustration, generic Western RPG card art
 taxonomy:
   packId: pack_15
   packName: Punk Spectrum Vault

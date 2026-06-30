@@ -11,20 +11,20 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Prestige martial minimalism focused on pre-impact stillness, where restraint and posture hierarchy carry more weight than overt action.',
-      form_and_line:
+      subject_treatment:
         'Controlled tapered ink lines, long vertical drape rhythms, and disciplined negative space around poised limbs to amplify intent.',
-      color_palette:
+      color_and_tone:
         'Slate mineral neutrals, lacquer crimson accents, and indigo night tones with sparse warm punctuation.',
-      lighting_setup:
+      lighting_and_shadow:
         'Raking lateral key with low warm bounce, keeping facial planes half-obscured and edge highlights selective.',
-      material_texture:
+      texture_and_material:
         'Weathered cedar grain, moisture-darkened stone, matte woven cloth, and mirror-polished micro-glints.',
-      render_quality:
-        'High-fidelity anime finishing with calm contour clarity, micro-contrast on focal anatomy, and zero ornamental clutter.',
-      spatial_distortion:
+      camera_and_composition:
         'Axial threshold perspective with compressed midground, creating a pressure chamber effect around opposing vectors.',
-      atmosphere:
+      atmosphere_and_mood:
         'Ceremonial tension, disciplined breath control, and the sensation that motion is being withheld by code.',
+      rendering_and_quality:
+        'High-fidelity anime finishing with calm contour clarity, micro-contrast on focal anatomy, and zero ornamental clutter.',
       key_features:
         'Static-ready stance geometry, controlled fabric wind cues, ritual threshold asymmetry, and line-of-sight dominance.',
       creative_brief:
@@ -39,19 +39,20 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Grand-strategy anime language emphasizing formation logic, heraldic identity, and mass momentum over individual hero framing.',
-      form_and_line:
+      subject_treatment:
         'Broad massed silhouettes, banner-like arcs that map faction flow, and repeated line cadence used as directional rhythm.',
-      color_palette:
+      color_and_tone:
         'Dominant crimson, soot-charcoal fields, oxidized metal neutrals, and restrained antique gold command accents.',
-      lighting_setup:
+      lighting_and_shadow:
         'Cold dawn haze with low-angle backlight that separates ranks in planes while preserving readable command focal points.',
-      material_texture:
+      texture_and_material:
         'Battle-scored metal, mud-caked lower planes, frayed fabric standards, and humid particulate air.',
-      render_quality:
-        'Wide-format tactical readability with crisp hierarchy between command layer, vanguard layer, and environmental pressure.',
-      spatial_distortion:
+      camera_and_composition:
         'Multi-plane conflict depth using atmospheric compression and diagonal advance vectors for collective force direction.',
-      atmosphere: 'Inevitable collision, inherited duty, and banner-locked resolve under doctrine.',
+      atmosphere_and_mood:
+        'Inevitable collision, inherited duty, and banner-locked resolve under doctrine.',
+      rendering_and_quality:
+        'Wide-format tactical readability with crisp hierarchy between command layer, vanguard layer, and environmental pressure.',
       key_features:
         'Rank geometry, signal standards, wave cadence, and collision-ready front interfaces.',
       creative_brief:
@@ -66,19 +67,20 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Sacred vow iconography built around verticality, heraldic gravitas, and devotional stillness rather than spectacle.',
-      form_and_line:
+      subject_treatment:
         'Clean armored contour language, weighted drape folds, and emblem-first line emphasis to foreground lineage coding.',
-      color_palette:
+      color_and_tone:
         'Brushed silver base, royal ultramarine fields, muted parchment neutrals, and amber liturgical highlights.',
-      lighting_setup:
+      lighting_and_shadow:
         'Filtered clerestory-style shafts with soft volumetric dust, preserving sanctified contrast on metallic and fabric planes.',
-      material_texture:
+      texture_and_material:
         'Mirror-polished worn steel, carved stone relief, waxed fabric banners, and ceremonial leather straps.',
-      render_quality:
-        'Premium anime finish with emblem legibility, controlled bloom, and high tonal discipline around symbolic gestures.',
-      spatial_distortion:
+      camera_and_composition:
         'Monumental upward composition with columnar framing that magnifies vow posture and insignia readability.',
-      atmosphere: 'Reverence, obligation, and intergenerational burden accepted in silence.',
+      atmosphere_and_mood:
+        'Reverence, obligation, and intergenerational burden accepted in silence.',
+      rendering_and_quality:
+        'Premium anime finish with emblem legibility, controlled bloom, and high tonal discipline around symbolic gestures.',
       key_features:
         'Oath-anchor posture, heraldic motif centrality, chapel-scale geometry, and ritual light crowns.',
       creative_brief:
@@ -93,20 +95,20 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Breach-pressure anime where structural failure, flame logic, and defensive choreography define the visual identity.',
-      form_and_line:
+      subject_treatment:
         'Heavy structural silhouettes, fracture-oriented lines, and arc vectors used as compositional pressure.',
-      color_palette:
+      color_and_tone:
         'Ember orange peaks, smoke black masses, calcified stone grays, and sparse signal-red command accents.',
-      lighting_setup:
+      lighting_and_shadow:
         'Fire-dominant nocturnal contrast with intermittent blast flares that reveal tactical layers in pulses.',
-      material_texture:
+      texture_and_material:
         'Cracked stone, char-flaked timber, soot-burnished metal, and airborne ash granularity.',
-      render_quality:
-        'Epic widescreen readability with strong event hierarchy between fracture zone, resistance layer, and heat pressure.',
-      spatial_distortion:
+      camera_and_composition:
         'Oblique structural perspective that exaggerates breach depth and converging pressure channels.',
-      atmosphere:
+      atmosphere_and_mood:
         'Controlled collapse, disciplined resistance, and escalating heat-driven urgency.',
+      rendering_and_quality:
+        'Epic widescreen readability with strong event hierarchy between fracture zone, resistance layer, and heat pressure.',
       key_features:
         'Breach seams, arc trajectories, pressure points, and command silhouettes amid ember drift.',
       creative_brief:
@@ -121,19 +123,20 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Ascetic contemplative style combining monastic serenity with latent kinetic potential and spiritual discipline.',
-      form_and_line:
+      subject_treatment:
         'Fine calligraphic contours, circular stance geometries, and motion trajectories implied through restrained directional line cues.',
-      color_palette:
+      color_and_tone:
         'Moonlit cobalt, brushed silver, desaturated pine green, and warm paper-lantern micro-accents.',
-      lighting_setup:
+      lighting_and_shadow:
         'Soft lunar top fill with localized lantern pools, preserving calm tonal separation and meditative shadow structure.',
-      material_texture:
+      texture_and_material:
         'Raked matte texture, cool stone, fibrous natural grain, and plain ritual cloth with minimal ornament.',
-      render_quality:
-        'High-clarity contemplative rendering emphasizing breath rhythm, posture precision, and uncluttered focal hierarchy.',
-      spatial_distortion:
+      camera_and_composition:
         'Symmetric framing with gentle depth compression that turns space into a concentration mandala.',
-      atmosphere: 'Discipline, inward stillness, and ritual force contained before release.',
+      atmosphere_and_mood:
+        'Discipline, inward stillness, and ritual force contained before release.',
+      rendering_and_quality:
+        'High-clarity contemplative rendering emphasizing breath rhythm, posture precision, and uncluttered focal hierarchy.',
       key_features:
         'Circular discipline marks, deliberate stance transitions, moon-axis alignment, and measured quiet.',
       creative_brief:

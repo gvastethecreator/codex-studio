@@ -12,20 +12,27 @@ tags:
   - anime-battle-and-worlds
   - dark-fantasy-and-seinen
 visualDna:
-  aesthetic: Black-particle fugitive tension, matte spectral forms, clinical modern pressure, identity terror, institutional pursuit rendered as abstract system stress
-  form_and_line: Dense mature-anime linework, heavy crosshatching, weighted contour variation, gritty ink density
-  color_palette: Muted earths, blood reds, cold moonlit tones, desaturated horror palette, bruised shadow hues
-  lighting_setup: Ominous directional shadows, single-source drama light, deep chiaroscuro, low-key shadow lift
-  material_texture: Matte black particulate haze, clinical glass, smooth concrete-gray grain, cold polymer, smoke-dust edges, dry spectral residue
-  render_quality: Gritty dramatic anime frame, film-noir rendering, heavy shadow compression, textured midtone grit
-  spatial_distortion: Particle-coalesced silhouettes, pursuit-vector compression, clinical open space, identity-split doubling, black form echo trails
-  atmosphere: Hunted, modern, sharp, remorseless
-  key_features: Matte particle echoes, clinical dread, fugitive-vector compression, black spectral pressure, identity-fracture tension
-  creative_brief: >
-    Apply a black-particle thriller treatment to any subject: matte spectral
-    residue, clinical surfaces, pursuit-vector pressure, and fractured identity
-    should drive the image without fixed agencies, passageways, abilities,
-    beings, or pursuit scenarios.
+  aesthetic: >-
+    Black-particle fugitive tension, matte spectral forms, clinical modern pressure, identity terror,
+    institutional pursuit rendered as abstract system stress
+  subject_treatment: Dense mature-anime linework, heavy crosshatching, weighted contour variation, gritty ink density
+  color_and_tone: Muted earths, blood reds, cold moonlit tones, desaturated horror palette, bruised shadow hues
+  lighting_and_shadow: Ominous directional shadows, single-source drama light, deep chiaroscuro, low-key shadow lift
+  texture_and_material: >-
+    Matte black particulate haze, clinical glass, smooth concrete-gray grain, cold polymer, smoke-dust edges,
+    dry spectral residue
+  camera_and_composition: >-
+    Particle-coalesced silhouettes, pursuit-vector compression, clinical open space, identity-split doubling,
+    black form echo trails
+  atmosphere_and_mood: Hunted, modern, sharp, remorseless
+  rendering_and_quality: Gritty dramatic anime frame, film-noir rendering, heavy shadow compression, textured midtone grit
+  key_features: >-
+    Matte particle echoes, clinical dread, fugitive-vector compression, black spectral pressure,
+    identity-fracture tension
+  creative_brief: >-
+    Apply a black-particle thriller treatment to any subject: matte spectral residue, clinical surfaces,
+    pursuit-vector pressure, and fractured identity should drive the image without fixed agencies,
+    passageways, abilities, beings, or pursuit scenarios.
 avoidRules:
   - realistic
   - 3d render
@@ -42,7 +49,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-266.webp
 attributes:
-  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
+  negativePrompt: >-
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts,
+    watermark, text, signature
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds

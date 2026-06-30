@@ -13,19 +13,18 @@ tags:
   - geometric-abstraction
 visualDna:
   aesthetic: Industrial propaganda
-  form_and_line: Diagonal lines
-  color_palette: Red, Black, White, Kraft
-  lighting_setup: Flat
-  material_texture: Rough paper
-  render_quality: Soviet poster, bold
-  spatial_distortion: Aggressive angles
-  atmosphere: Revolutionary, strong
+  subject_treatment: Diagonal lines
+  color_and_tone: Red, Black, White, Kraft
+  lighting_and_shadow: Flat
+  texture_and_material: Rough paper
+  camera_and_composition: Aggressive angles
+  atmosphere_and_mood: Revolutionary, strong
+  rendering_and_quality: Soviet poster, bold
   key_features: Typography elements
   creative_brief: >-
-    Drive the input through constructivist urgency: red-black diagonals,
-    industrial geometry, hard typographic-like blocks without readable text, and
-    poster-force composition should make any subject feel engineered, public,
-    and declarative.
+    Drive the input through constructivist urgency: red-black diagonals, industrial geometry, hard
+    typographic-like blocks without readable text, and poster-force composition should make any subject feel
+    engineered, public, and declarative.
 avoidRules:
   - soft
   - nature

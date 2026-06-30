@@ -12,19 +12,23 @@ tags:
   - anime-battle-and-worlds
   - modern-shonen-and-action
 visualDna:
-  aesthetic: Wall rupture desperation, with colossal scale terror, militarized pressure, dust-cloud dread, and tactical sacrifice.
-  form_and_line: Tether-vector diagonals, severe regimented silhouettes, rupture cracks, falling-depth lines, and panic-sharp contours.
-  color_palette: Dust brown, blood red, bone beige, regiment green, smoke gray, and cold sky blue.
-  lighting_setup: Breached daylight shafts, dust-filtered backlight, hard emergency rims, and tragic silhouette contrast.
-  material_texture: Cracked stone grain, cable sheen, smoke dust, worn fabric, and harsh cel shadow texture.
-  render_quality: Premium modern survival-anime finish with scale clarity, grim motion mechanics, and tragedy-heavy detail.
-  spatial_distortion: Vertical drops, looming mass pressure, walllike compression, and depth that makes distance frightening.
-  atmosphere: Desperate, colossal, militarized, tragic
+  aesthetic: >-
+    Wall rupture desperation, with colossal scale terror, militarized pressure, dust-cloud dread, and tactical
+    sacrifice.
+  subject_treatment: >-
+    Tether-vector diagonals, severe regimented silhouettes, rupture cracks, falling-depth lines, and
+    panic-sharp contours.
+  color_and_tone: Dust brown, blood red, bone beige, regiment green, smoke gray, and cold sky blue.
+  lighting_and_shadow: Breached daylight shafts, dust-filtered backlight, hard emergency rims, and tragic silhouette contrast.
+  texture_and_material: Cracked stone grain, cable sheen, smoke dust, worn fabric, and harsh cel shadow texture.
+  camera_and_composition: Vertical drops, looming mass pressure, walllike compression, and depth that makes distance frightening.
+  atmosphere_and_mood: Desperate, colossal, militarized, tragic
+  rendering_and_quality: Premium modern survival-anime finish with scale clarity, grim motion mechanics, and tragedy-heavy detail.
   key_features: Colossal scale, rupture dust, vertical terror, regimented desperation, tethered motion.
   creative_brief: >-
-    Apply desperate scale pressure to any prompt: use vertical drops, dust
-    rupture, regimented silhouettes, and looming mass contrast without requiring
-    fortifications, troops, traversal equipment, rooftops, or fixed enemies.
+    Apply desperate scale pressure to any prompt: use vertical drops, dust rupture, regimented silhouettes,
+    and looming mass contrast without requiring fortifications, troops, traversal equipment, rooftops, or
+    fixed enemies.
 avoidRules:
   - realistic
   - 3d render
@@ -41,7 +45,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-139.webp
 attributes:
-  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
+  negativePrompt: >-
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts,
+    watermark, text, signature
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds

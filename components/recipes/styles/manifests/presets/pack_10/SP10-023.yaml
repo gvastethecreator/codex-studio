@@ -13,15 +13,19 @@ tags:
   - digital-glitch-and-noise
 visualDna:
   aesthetic: Bad tracking tape
-  form_and_line: Warping at bottom
-  color_palette: Chroma noise, bleeding
-  lighting_setup: Flicker
-  material_texture: Static, scanlines
-  render_quality: Retro, lo-fi
-  spatial_distortion: Tracking error
-  atmosphere: Nostalgic, horror
+  subject_treatment: Warping at bottom
+  color_and_tone: Chroma noise, bleeding
+  lighting_and_shadow: Flicker
+  texture_and_material: Static, scanlines
+  camera_and_composition: Tracking error
+  atmosphere_and_mood: Nostalgic, horror
+  rendering_and_quality: Retro, lo-fi
   key_features: Tracking scars
-  creative_brief: Apply VHS decay as signal damage over the input with bad tracking bands, chroma bleed, scanline vibration, bottom-edge warping, magnetic dropout, and lo-fi analog horror nostalgia. If faces or figures exist, let scanlines tear through them; otherwise corrupt shapes, surfaces, and edges without requiring a portrait or timestamp.
+  creative_brief: >-
+    Apply VHS decay as signal damage over the input with bad tracking bands, chroma bleed, scanline vibration,
+    bottom-edge warping, magnetic dropout, and lo-fi analog horror nostalgia. If faces or figures exist, let
+    scanlines tear through them; otherwise corrupt shapes, surfaces, and edges without requiring a portrait or
+    timestamp.
 avoidRules:
   - hd
   - 4k

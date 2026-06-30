@@ -12,20 +12,29 @@ tags:
   - anime-character-and-lifestyle
   - shojo-magical-girl-and-visionary-classics
 visualDna:
-  aesthetic: Clean-reunion shojo grammar with emotional guardedness, polished minimalism, and tension carried by near-silent interpersonal spacing
-  form_and_line: Crisp silhouette control, controlled negative-space blocking, understated eyelash and hairline rendering, and pause-heavy pose language
-  color_palette: Cool powder blues, winter-white shirt values, subdued graphite neutrals, faint blush accents, and low-saturation spring greens
-  lighting_setup: Cloud-soft ambient fill, window-like side-light, subtle reflective bounce, and low-bloom highlight restraint
-  material_texture: Pressed cotton planes, matte neutral surfaces, smooth paper cues, and minimally glossy hair sheen
-  render_quality: Clean contemporary-shojo rendering with composure-forward facial readability and restrained romantic polish
-  spatial_distortion: Emotional-distance compression through depth narrowing and over-shoulder perspective pressure
-  atmosphere: Pensive, attractive, hesitant, tender
+  aesthetic: >-
+    Clean-reunion shojo grammar with emotional guardedness, polished minimalism, and tension carried by
+    near-silent interpersonal spacing
+  subject_treatment: >-
+    Crisp silhouette control, controlled negative-space blocking, understated eyelash and hairline rendering,
+    and pause-heavy pose language
+  color_and_tone: >-
+    Cool powder blues, winter-white shirt values, subdued graphite neutrals, faint blush accents, and
+    low-saturation spring greens
+  lighting_and_shadow: >-
+    Cloud-soft ambient fill, window-like side-light, subtle reflective bounce, and low-bloom highlight
+    restraint
+  texture_and_material: Pressed cotton planes, matte neutral surfaces, smooth paper cues, and minimally glossy hair sheen
+  camera_and_composition: Emotional-distance compression through depth narrowing and over-shoulder perspective pressure
+  atmosphere_and_mood: Pensive, attractive, hesitant, tender
+  rendering_and_quality: >-
+    Clean contemporary-shojo rendering with composure-forward facial readability and restrained romantic
+    polish
   key_features: Clean styling, reunion glances, cool silhouette contrast, airy negative space, heart-stopping close-ups
   creative_brief: >-
-    Hold the input in clean reunion ache: powder-blue restraint, winter-white
-    planes, crisp negative space, side-lit pauses, and guarded emotional distance
-    should quiet any subject without requiring uniforms, school corridors,
-    reunited lovers, or closeup glances.
+    Hold the input in clean reunion ache: powder-blue restraint, winter-white planes, crisp negative space,
+    side-lit pauses, and guarded emotional distance should quiet any subject without requiring uniforms,
+    school corridors, reunited lovers, or closeup glances.
 avoidRules:
   - realistic
   - 3d render
@@ -42,7 +51,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-190.webp
 attributes:
-  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
+  negativePrompt: >-
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts,
+    watermark, text, signature
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle

@@ -13,20 +13,20 @@ tags:
   - render-engines
 visualDna:
   aesthetic: Open source path tracing
-  form_and_line: Sharp
-  color_palette: Filmic log encoding, view-transform ready
-  lighting_setup: Global Illumination, denoised
-  material_texture: Procedural nodes, shader graph
-  render_quality: Blender Guru creator-friendly, detailed, community-driven excellence
-  spatial_distortion: None
-  atmosphere: Creative, solid, accessible artistry
+  subject_treatment: Sharp
+  color_and_tone: Filmic log encoding, view-transform ready
+  lighting_and_shadow: Global Illumination, denoised
+  texture_and_material: Procedural nodes, shader graph
+  camera_and_composition: >-
+    Lookdev camera for Blender Cycles Open Path Tracer: three-quarter or orthographic framing, clean
+    silhouette read, material highlights, controlled depth, and vertical card composition.
+  atmosphere_and_mood: Creative, solid, accessible artistry
+  rendering_and_quality: Blender Guru creator-friendly, detailed, community-driven excellence
   key_features: Principled BSDF, GPU+CPU hybrid
   creative_brief: >-
-    Render any input through Blender Cycles lookdev: Principled BSDF material
-    variety, Filmic log highlight rolloff, path-traced bounce, open-source
-    geometry cleanliness, and creator-friendly polish. Keep flexible CG craft
-    without requiring a benchmark object, product turntable, demo setup, or
-    gallery environment.
+    Render any input through Blender Cycles lookdev: Principled BSDF material variety, Filmic log highlight
+    rolloff, path-traced bounce, open-source geometry cleanliness, and creator-friendly polish. Keep flexible
+    CG craft without requiring a benchmark object, product turntable, demo setup, or gallery environment.
 avoidRules:
   - eevee
   - realtime

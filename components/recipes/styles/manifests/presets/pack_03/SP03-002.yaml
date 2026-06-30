@@ -13,19 +13,20 @@ tags:
   - render-engines
 visualDna:
   aesthetic: Real-time next-gen game-engine rendering
-  form_and_line: Lumen global illumination
-  color_palette: Realistic, dynamic, physically based
-  lighting_setup: Ray traced shadows, Nanite-lit
-  material_texture: Nanite geometry detail
-  render_quality: AAA game fidelity, virtual production polish, real-time final-frame clarity
-  spatial_distortion: None
-  atmosphere: Immersive, interactive, cinematic depth
+  subject_treatment: Lumen global illumination
+  color_and_tone: Realistic, dynamic, physically based
+  lighting_and_shadow: Ray traced shadows, Nanite-lit
+  texture_and_material: Nanite geometry detail
+  camera_and_composition: >-
+    Lookdev camera for Unreal Engine 5 Next-Gen Real-Time Engine: three-quarter or orthographic framing, clean
+    silhouette read, material highlights, controlled depth, and vertical card composition.
+  atmosphere_and_mood: Immersive, interactive, cinematic depth
+  rendering_and_quality: AAA game fidelity, virtual production polish, real-time final-frame clarity
   key_features: High fidelity, real-time path tracing
   creative_brief: >-
-    Render the input with Unreal Engine 5 language: Nanite-like geometric
-    density, Lumen-style bounce, ray-traced shadows, volumetric depth and
-    real-time virtual-production polish. Keep AAA game immediacy without
-    requiring a full world, screenshot, level, character, or playable setup.
+    Render the input with Unreal Engine 5 language: Nanite-like geometric density, Lumen-style bounce,
+    ray-traced shadows, volumetric depth and real-time virtual-production polish. Keep AAA game immediacy
+    without requiring a full world, screenshot, level, character, or playable setup.
 avoidRules:
   - pre-rendered
   - low poly

@@ -13,19 +13,18 @@ tags:
   - ink-and-print
 visualDna:
   aesthetic: Subtractive chiaroscuro print with deep black fields
-  form_and_line: Minimal contour lines; value-driven form modeling
-  color_palette: Velvet black, graphite charcoal, warm ivory highlight accents
-  lighting_setup: Burnished highlight reveal over fully darkened plate structure
-  material_texture: Fine rocker tooth, polished burnish transitions, plate-grain softness
-  render_quality: High tonal drama with smooth gradients from mass-black to glow
-  spatial_distortion: Flat print plane with depth implied through tonal recession
-  atmosphere: Nocturnal, contemplative, austere, museum-print gravitas
+  subject_treatment: Minimal contour lines; value-driven form modeling
+  color_and_tone: Velvet black, graphite charcoal, warm ivory highlight accents
+  lighting_and_shadow: Burnished highlight reveal over fully darkened plate structure
+  texture_and_material: Fine rocker tooth, polished burnish transitions, plate-grain softness
+  camera_and_composition: Flat print plane with depth implied through tonal recession
+  atmosphere_and_mood: Nocturnal, contemplative, austere, museum-print gravitas
+  rendering_and_quality: High tonal drama with smooth gradients from mass-black to glow
   key_features: Continuous black ground, staged highlight recovery, velvety midtone transitions
   creative_brief: >-
-    Apply mezzotint chiaroscuro grammar to any input: uninterrupted black matrix, burnished
-    highlight recovery, rocker-tooth grain, velvety midtones, and staged glow should build forms
-    from darkness without requiring night scenes, portraits, museum prints, or fixed black-ground
-    subjects.
+    Apply mezzotint chiaroscuro grammar to any input: uninterrupted black matrix, burnished highlight
+    recovery, rocker-tooth grain, velvety midtones, and staged glow should build forms from darkness without
+    requiring night scenes, portraits, museum prints, or fixed black-ground subjects.
 avoidRules:
   - white background
   - lines

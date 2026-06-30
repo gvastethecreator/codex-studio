@@ -13,18 +13,18 @@ tags:
   - technical-and-specialist-imaging
 visualDna:
   aesthetic: Heat map imaging
-  form_and_line: Blobby heat signatures
-  color_palette: Ironbow (Purple to Yellow)
-  lighting_setup: Emissive
-  material_texture: Digital noise
-  render_quality: Military, scientific
-  spatial_distortion: No surface detail
-  atmosphere: Diagnostic, technical
+  subject_treatment: Blobby heat signatures
+  color_and_tone: Ironbow (Purple to Yellow)
+  lighting_and_shadow: Emissive
+  texture_and_material: Digital noise
+  camera_and_composition: No surface detail
+  atmosphere_and_mood: Diagnostic, technical
+  rendering_and_quality: Military, scientific
   key_features: Heat gradient
   creative_brief: >-
-    Apply thermal-camera temperature logic to the input: violet cool zones,
-    red-orange heat gradients, yellow-white intensity peaks, and simplified
-    diagnostic blobs should map any subject without requiring living bodies.
+    Apply thermal-camera temperature logic to the input: violet cool zones, red-orange heat gradients,
+    yellow-white intensity peaks, and simplified diagnostic blobs should map any subject without requiring
+    living bodies.
 avoidRules:
   - realistic colors
 assets:

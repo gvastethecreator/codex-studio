@@ -13,15 +13,20 @@ tags:
   - portrait-and-studio
 visualDna:
   aesthetic: Airy ceremony editorial
-  form_and_line: Soft romantic
-  color_palette: White, pastel, airy
-  lighting_setup: Backlit sun
-  material_texture: Lace-like softness, floral color hints
-  render_quality: Romantic, expensive
-  spatial_distortion: None
-  atmosphere: Romantic, luminous
+  subject_treatment: Soft romantic
+  color_and_tone: White, pastel, airy
+  lighting_and_shadow: Backlit sun
+  texture_and_material: Lace-like softness, floral color hints
+  camera_and_composition: >-
+    Camera setup native to Wedding Photography: lens choice, crop distance, depth of field, and focal
+    hierarchy support 1. Portrait And Studio without generic framing.
+  atmosphere_and_mood: Romantic, luminous
+  rendering_and_quality: Romantic, expensive
   key_features: Veil-like backlight
-  creative_brief: 'Wedding photography becomes airy ceremonial light: pastel whites, lace-like texture, floral softness, backlit glow, and expensive romantic restraint. Apply vow-day luminosity to any subject without requiring bride, groom, veil, flowers, couple, or event.'
+  creative_brief: >-
+    Wedding photography becomes airy ceremonial light: pastel whites, lace-like texture, floral softness,
+    backlit glow, and expensive romantic restraint. Apply vow-day luminosity to any subject without requiring
+    bride, groom, veil, flowers, couple, or event.
 avoidRules:
   - sad
   - dark

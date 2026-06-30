@@ -13,19 +13,20 @@ tags:
   - fabric-and-texture-focus
 visualDna:
   aesthetic: Chunky knit warmth, hygge comfort, handmade winter coziness
-  form_and_line: Cable-knit pattern, oversized volume, ribbed taper, rolled-neck cylinder, soft loft rhythm
-  color_palette: Cream, Grey, oatmeal, charcoal, forest, mustard, rust, undyed-wool ivory
-  lighting_setup: Soft overcast light, fireplace-warm amber, candle-flicker glow
-  material_texture: Wool yarn, merino twist, alpaca halo, cashmere fuzz, Shetland wool, lambswool loft, cable-knit relief
-  render_quality: Cozy, warm, cabin-retreat comfort, Aran-island authenticity
-  spatial_distortion: None
-  atmosphere: Comfortable, winter, wool warmth, snowed-in serenity, handmade calm
+  subject_treatment: Cable-knit pattern, oversized volume, ribbed taper, rolled-neck cylinder, soft loft rhythm
+  color_and_tone: Cream, Grey, oatmeal, charcoal, forest, mustard, rust, undyed-wool ivory
+  lighting_and_shadow: Soft overcast light, fireplace-warm amber, candle-flicker glow
+  texture_and_material: Wool yarn, merino twist, alpaca halo, cashmere fuzz, Shetland wool, lambswool loft, cable-knit relief
+  camera_and_composition: >-
+    Compose for Knitted Wool using its key spatial cues: Knit loops, cable braid, ribbed hem, wooden-button
+    cues, rolled neck.
+  atmosphere_and_mood: Comfortable, winter, wool warmth, snowed-in serenity, handmade calm
+  rendering_and_quality: Cozy, warm, cabin-retreat comfort, Aran-island authenticity
   key_features: Knit loops, cable braid, ribbed hem, wooden-button cues, rolled neck
   creative_brief: >-
-    Knit the input into wool texture: cable-braid relief, ribbed hems, alpaca
-    halo, merino twist, wooden-button cues and oatmeal/charcoal warmth. Keep
-    hygge comfort without requiring a cabin, fireplace vignette, torso framing
-    or sweater portrait.
+    Knit the input into wool texture: cable-braid relief, ribbed hems, alpaca halo, merino twist,
+    wooden-button cues and oatmeal/charcoal warmth. Keep hygge comfort without requiring a cabin, fireplace
+    vignette, torso framing or sweater portrait.
 avoidRules:
   - smooth
 assets:

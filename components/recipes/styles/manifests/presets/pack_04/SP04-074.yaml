@@ -13,18 +13,18 @@ tags:
   - ink-and-print
 visualDna:
   aesthetic: Permanent-marker illustration with assertive graphic massing
-  form_and_line: Thick chisel-tip strokes, blunt corners, bleed-expanded contours
-  color_palette: Carbon black, occasional cool gray marker layering
-  lighting_setup: Minimal modeled light; contrast from bold fill-to-paper opposition
-  material_texture: Fiber soak, edge feathering, back-bleed ghosting
-  render_quality: Loud, raw, high-impact marks with uncorrected gesture energy
-  spatial_distortion: Slight blob expansion and edge pooling in saturated regions
-  atmosphere: Urgent, unapologetic, direct, poster-like confidence
+  subject_treatment: Thick chisel-tip strokes, blunt corners, bleed-expanded contours
+  color_and_tone: Carbon black, occasional cool gray marker layering
+  lighting_and_shadow: Minimal modeled light; contrast from bold fill-to-paper opposition
+  texture_and_material: Fiber soak, edge feathering, back-bleed ghosting
+  camera_and_composition: Slight blob expansion and edge pooling in saturated regions
+  atmosphere_and_mood: Urgent, unapologetic, direct, poster-like confidence
+  rendering_and_quality: Loud, raw, high-impact marks with uncorrected gesture energy
   key_features: Heavy contour weight, visible nib angle behavior, permanent-ink spread
   creative_brief: >-
-    Apply permanent-marker grammar to any input: chisel-tip strokes, broad black masses, fiber soak,
-    edge feathering, back-bleed ghosts, and no-undo commitment should create graphic force without
-    requiring posters, graffiti, labels, signage, or fixed sketch subjects.
+    Apply permanent-marker grammar to any input: chisel-tip strokes, broad black masses, fiber soak, edge
+    feathering, back-bleed ghosts, and no-undo commitment should create graphic force without requiring
+    posters, graffiti, labels, signage, or fixed sketch subjects.
 avoidRules:
   - fine detail
 assets:

@@ -13,23 +13,23 @@ tags:
   - caricature-and-cartoon-styles
 visualDna:
   aesthetic: >-
-    Lonely rural nightmare cartoon, pastel panic, grotesque intrusions in empty space, Midwestern doom silence, haunted
-    domesticity, uncanny insert shock, fear made cute and shrill
-  form_and_line: Sparse outlines, tiny panic marks, abrupt horror insert contours, empty-space framing
-  color_palette: Dusty pink, bruise purple, dead-field beige, moonlit blue, alarm red, faded pastel yellow
-  lighting_setup: Moonlit isolation, dusty lamp glow, sudden horror spotlights, red-alert panic lighting
-  material_texture: Grainy TV cel, dusty surface, sudden CGI-like insert smoothness, dry pastel texture
-  render_quality: Pastel horror cartoon, cute panic under uncanny pressure, empty-frame dread
-  spatial_distortion: Negative-space expansion, tiny form against vast field, sudden insert scale shock
-  atmosphere: Terrified, lonely, surreal, absurd
+    Lonely rural nightmare cartoon, pastel panic, grotesque intrusions in empty space, Midwestern doom
+    silence, haunted domesticity, uncanny insert shock, fear made cute and shrill
+  subject_treatment: Sparse outlines, tiny panic marks, abrupt horror insert contours, empty-space framing
+  color_and_tone: Dusty pink, bruise purple, dead-field beige, moonlit blue, alarm red, faded pastel yellow
+  lighting_and_shadow: Moonlit isolation, dusty lamp glow, sudden horror spotlights, red-alert panic lighting
+  texture_and_material: Grainy TV cel, dusty surface, sudden CGI-like insert smoothness, dry pastel texture
+  camera_and_composition: Negative-space expansion, tiny form against vast field, sudden insert scale shock
+  atmosphere_and_mood: Terrified, lonely, surreal, absurd
+  rendering_and_quality: Pastel horror cartoon, cute panic under uncanny pressure, empty-frame dread
   key_features: Empty-space dread, screaming reaction geometry, uncanny inserts, pastel panic, isolated composition
   creative_brief: >-
-    Use rural nightmare pastel as a transferable mood: empty space, dusty glow, sudden horror spotlight, cute panic
-    colors, and uncanny insert contrast. Avoid farmhouses, fields, specific characters, pets, or intruders as
-    requirements. The style should make emptiness feel like pressure. Apply Courage the Cowardly Dog - Rural Nightmare
-    Pastel as a portable cinematic/camera style over any input: preserve its lens behavior, color process, lighting
-    setup, artifact pattern, and deformation grammar while avoiding a required actor, room, prop, brand, readable text,
-    fixed IP scene, or narrative setup.
+    Use rural nightmare pastel as a transferable mood: empty space, dusty glow, sudden horror spotlight, cute
+    panic colors, and uncanny insert contrast. Avoid farmhouses, fields, specific characters, pets, or
+    intruders as requirements. The style should make emptiness feel like pressure. Apply Courage the Cowardly
+    Dog - Rural Nightmare Pastel as a portable cinematic/camera style over any input: preserve its lens
+    behavior, color process, lighting setup, artifact pattern, and deformation grammar while avoiding a
+    required actor, room, prop, brand, readable text, fixed IP scene, or narrative setup.
 avoidRules:
   - digital
   - HD

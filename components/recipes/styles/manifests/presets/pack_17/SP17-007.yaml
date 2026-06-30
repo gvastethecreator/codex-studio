@@ -15,13 +15,17 @@ tags:
   - hunter-gothic
 visualDna:
   aesthetic: Moonlit gothic hunter fantasy with long coats, sharp silhouettes, wet stone, and monstrous unease.
-  subject_treatment: A lean rooftop beast-hunter in side profile with a hook lantern, crescent trap, high collar, and moonlit pursuit posture; not a plague doctor.
+  subject_treatment: >-
+    A lean rooftop beast-hunter in side profile with a hook lantern, crescent trap, high collar, and moonlit
+    pursuit posture; not a plague doctor.
   color_and_tone: Blue-black night, wet charcoal, tarnished silver, candle amber, and restrained crimson accents.
   lighting_and_shadow: Moon rim light and simple lantern pools create high-contrast silhouettes with readable costume detail.
   texture_and_material: Oiled leather, wet cobblestone, tarnished buckles, wool, soot, fog, and scratched metal.
   camera_and_composition: Street-level perspective, oblique rooftops, narrow alleys, and vertical gothic architecture.
   atmosphere_and_mood: Paranoid, nocturnal, elegant, and threatening without explicit gore.
-  rendering_and_quality: Dark gothic digital illustration with refined costume detail, clean reflections, defined lines, and controlled haze.
+  rendering_and_quality: >-
+    Dark gothic digital illustration with refined costume detail, clean reflections, defined lines, and
+    controlled haze.
   creative_brief: Reusable hunter-gothic visual language for portraits, monsters, architecture, props, or action scenes.
 avoidRules:
   - bright daylight
@@ -33,6 +37,8 @@ avoidRules:
   - text
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP17-007.webp
+attributes:
+  negativePrompt: bright daylight, superhero costume, clean steampunk brass, cute horror, explicit gore, watermark, text
 taxonomy:
   packId: pack_17
   packName: Medieval Fantasy & Dungeon Zine

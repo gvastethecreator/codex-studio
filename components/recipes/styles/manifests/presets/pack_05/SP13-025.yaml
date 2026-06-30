@@ -13,20 +13,27 @@ tags:
   - anime
   - action
 visualDna:
-  aesthetic: Upward thunder momentum, electrical determination, vertical force buildup, white-blue overload, shonen intensity as abstract ascent.
-  form_and_line: Powerful contour, forward thrust posture, branching energy paths, vertical compression, and force-loaded silhouette rhythm.
-  color_palette: Electric blue, intense white, and deep black.
-  lighting_setup: Electric halo, intense white core glow, blue rim flare, and black negative-fill contrast.
-  material_texture: Sparks, vapor haze, charged metal sheen, ionized dust, and clean cel-surface polish.
-  render_quality: Overload key frame with crisp electric hierarchy and high-impact contour clarity.
-  spatial_distortion: Aggressive frontal perspective, upward force compression, radial current pull, and vertical frame pressure.
-  atmosphere: Fierce, ascending, charged, determined.
-  key_features: Branched electric rays, white-blue overload, vertical momentum, charged surface sheen, decisive silhouette force.
-  creative_brief: >
-    Apply upward thunder momentum to any subject: vertical force, branched blue
-    light, intense white cores, vapor haze, and decisive silhouette pressure
-    should define the style without fixed body parts, equipment, lead roles,
-    strike choreography, or metamorphosis premise.
+  aesthetic: >-
+    Upward thunder momentum, electrical determination, vertical force buildup, white-blue overload, shonen
+    intensity as abstract ascent.
+  subject_treatment: >-
+    Powerful contour, forward thrust posture, branching energy paths, vertical compression, and force-loaded
+    silhouette rhythm.
+  color_and_tone: Electric blue, intense white, and deep black.
+  lighting_and_shadow: Electric halo, intense white core glow, blue rim flare, and black negative-fill contrast.
+  texture_and_material: Sparks, vapor haze, charged metal sheen, ionized dust, and clean cel-surface polish.
+  camera_and_composition: >-
+    Aggressive frontal perspective, upward force compression, radial current pull, and vertical frame
+    pressure.
+  atmosphere_and_mood: Fierce, ascending, charged, determined.
+  rendering_and_quality: Overload key frame with crisp electric hierarchy and high-impact contour clarity.
+  key_features: >-
+    Branched electric rays, white-blue overload, vertical momentum, charged surface sheen, decisive silhouette
+    force.
+  creative_brief: >-
+    Apply upward thunder momentum to any subject: vertical force, branched blue light, intense white cores,
+    vapor haze, and decisive silhouette pressure should define the style without fixed body parts, equipment,
+    lead roles, strike choreography, or metamorphosis premise.
 avoidRules:
   - photoreal
   - dull-palette

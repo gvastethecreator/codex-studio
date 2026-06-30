@@ -12,20 +12,35 @@ tags:
   - anime-classics-and-prestige
   - 90s-golden-era
 visualDna:
-  aesthetic: 90s atonement drama style with wind-cut melancholy, restrained violence memory, and noble emotional restraint.
-  form_and_line: Crisp cel-era contour, long drape rhythms, quiet posture tension, controlled action arcs, and expressive ink accents.
-  color_palette: Washed sakura pinks, dusk blues, muted earth tones, soft ivory light, and restrained crimson memory accents.
-  lighting_setup: Gentle rim light, high-contrast cel shadow, breeze-carried highlights, and poetic backlight on quiet silhouettes.
-  material_texture: Layered watercolor backgrounds, fabric grain, brushed metal glints, blossom-like particulate, and cel overlay texture.
-  render_quality: Golden-era anime frame polish with sharp cel definition, lyrical color grading, and strong emotional readability.
-  spatial_distortion: Long-depth staging, wind-swept negative space, diagonal pause before motion, and intimate aftermath framing.
-  atmosphere: Noble, reflective, sorrowful, poetic.
-  key_features: Wind rhythm, vow-like restraint, soft particulate drift, iconic solitary silhouette, and grief held in clean linework.
+  aesthetic: >-
+    90s atonement drama style with wind-cut melancholy, restrained violence memory, and noble emotional
+    restraint.
+  subject_treatment: >-
+    Crisp cel-era contour, long drape rhythms, quiet posture tension, controlled action arcs, and expressive
+    ink accents.
+  color_and_tone: >-
+    Washed sakura pinks, dusk blues, muted earth tones, soft ivory light, and restrained crimson memory
+    accents.
+  lighting_and_shadow: >-
+    Gentle rim light, high-contrast cel shadow, breeze-carried highlights, and poetic backlight on quiet
+    silhouettes.
+  texture_and_material: >-
+    Layered watercolor backgrounds, fabric grain, brushed metal glints, blossom-like particulate, and cel
+    overlay texture.
+  camera_and_composition: >-
+    Long-depth staging, wind-swept negative space, diagonal pause before motion, and intimate aftermath
+    framing.
+  atmosphere_and_mood: Noble, reflective, sorrowful, poetic.
+  rendering_and_quality: >-
+    Golden-era anime frame polish with sharp cel definition, lyrical color grading, and strong emotional
+    readability.
+  key_features: >-
+    Wind rhythm, vow-like restraint, soft particulate drift, iconic solitary silhouette, and grief held in
+    clean linework.
   creative_brief: >-
-    Build a reusable wandering-atonement cel drama for any subject or input
-    image: poetic restraint, wind-shaped motion, noble sorrow, and 90s cel
-    emotional action without imposing swordsmen, duels, roads, robes, cherry
-    blossoms, or historical settings.
+    Build a reusable wandering-atonement cel drama for any subject or input image: poetic restraint,
+    wind-shaped motion, noble sorrow, and 90s cel emotional action without imposing swordsmen, duels, roads,
+    robes, cherry blossoms, or historical settings.
 avoidRules:
   - realistic
   - 3d render
@@ -42,7 +57,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-017.webp
 attributes:
-  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
+  negativePrompt: >-
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts,
+    watermark, text, signature
 taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige

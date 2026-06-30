@@ -13,19 +13,18 @@ tags:
   - digital-art
 visualDna:
   aesthetic: Isometric digital-art projection with equalized depth, toy-scale clarity, and no vanishing point
-  form_and_line: Parallel lines
-  color_palette: Vibrant
-  lighting_setup: Studio
-  material_texture: Smooth
-  render_quality: Game asset
-  spatial_distortion: No perspective
-  atmosphere: Organized, toy-like
+  subject_treatment: Parallel lines
+  color_and_tone: Vibrant
+  lighting_and_shadow: Studio
+  texture_and_material: Smooth
+  camera_and_composition: No perspective
+  atmosphere_and_mood: Organized, toy-like
+  rendering_and_quality: Game asset
   key_features: 30 degree angle
   creative_brief: >-
-    Apply isometric projection to any input: parallel nonconverging lines,
-    thirty-degree tilt, equal plane attention, stacked grid logic, and miniature
-    dimensional clarity. Keep diagrammatic charm without requiring buildings,
-    rooms, game maps, dioramas, or explorable worlds.
+    Apply isometric projection to any input: parallel nonconverging lines, thirty-degree tilt, equal plane
+    attention, stacked grid logic, and miniature dimensional clarity. Keep diagrammatic charm without
+    requiring buildings, rooms, game maps, dioramas, or explorable worlds.
 avoidRules:
   - photo
   - realistic
@@ -47,7 +46,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP06-054.webp
 attributes:
-  negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border, world map requirement, playset requirement
+  negativePrompt: >-
+    photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy,
+    watermark, text, signature, frame, border, world map requirement, playset requirement
 taxonomy:
   packId: pack_06
   packName: Essential Art Styles

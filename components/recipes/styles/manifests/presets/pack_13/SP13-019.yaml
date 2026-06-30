@@ -12,20 +12,33 @@ tags:
   - anime-character-and-lifestyle
   - anime
 visualDna:
-  aesthetic: Gentle pastoral-fantasy anime language with kindness-forward adventure, spirit-like charm, soft journey rhythm, and quiet magic
-  form_and_line: Organic natural contours, mobile rounded silhouettes, satchel-and-scroll-like readability cues, and curved path lines guiding progression
-  color_palette: Forest greens, sky-soft blues, cream neutrals, bark browns, and light moss highlights with subdued saturation
-  lighting_setup: Morning canopy-filtered light, soft ground bounce, mild particulate godrays, and warm-cool balance that preserves tranquil tone
-  material_texture: Leaf-layer variation, hand-stitched leather texture, waxed paper-like surfaces, mossy bark grain, and soft mist diffusion
-  render_quality: Charming high-clarity anime rendering with calm exploratory pacing, reliable subject-prop hierarchy, and cozy fantasy polish
-  spatial_distortion: Path-led layered depth with gentle atmospheric perspective and companion-like silhouette legibility
-  atmosphere: Kind, curious, hopeful, and quietly magical
-  key_features: Courier-like iconography, spirit-companion silhouette cues, path-to-nature depth rhythm, and letter-delivery texture anchors
+  aesthetic: >-
+    Gentle pastoral-fantasy anime language with kindness-forward adventure, spirit-like charm, soft journey
+    rhythm, and quiet magic
+  subject_treatment: >-
+    Organic natural contours, mobile rounded silhouettes, satchel-and-scroll-like readability cues, and curved
+    path lines guiding progression
+  color_and_tone: >-
+    Forest greens, sky-soft blues, cream neutrals, bark browns, and light moss highlights with subdued
+    saturation
+  lighting_and_shadow: >-
+    Morning canopy-filtered light, soft ground bounce, mild particulate godrays, and warm-cool balance that
+    preserves tranquil tone
+  texture_and_material: >-
+    Leaf-layer variation, hand-stitched leather texture, waxed paper-like surfaces, mossy bark grain, and soft
+    mist diffusion
+  camera_and_composition: Path-led layered depth with gentle atmospheric perspective and companion-like silhouette legibility
+  atmosphere_and_mood: Kind, curious, hopeful, and quietly magical
+  rendering_and_quality: >-
+    Charming high-clarity anime rendering with calm exploratory pacing, reliable subject-prop hierarchy, and
+    cozy fantasy polish
+  key_features: >-
+    Courier-like iconography, spirit-companion silhouette cues, path-to-nature depth rhythm, and
+    letter-delivery texture anchors
   creative_brief: >-
-    Use Forest Spirit Courier as style anchor for gentle fantasy delivery:
-    pastoral palette harmony, journey-guided composition, and spirit-companion
-    warmth should transfer without requiring forest, courier, satchel, letter,
-    companion creature, or delivery scene.
+    Use Forest Spirit Courier as style anchor for gentle fantasy delivery: pastoral palette harmony,
+    journey-guided composition, and spirit-companion warmth should transfer without requiring forest, courier,
+    satchel, letter, companion creature, or delivery scene.
 avoidRules:
   - photoreal
   - dark-gore

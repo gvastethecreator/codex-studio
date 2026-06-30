@@ -12,19 +12,28 @@ tags:
   - anime-battle-and-worlds
   - modern-shonen-and-action
 visualDna:
-  aesthetic: Paranormal turbo romance brawl, with occult comedy collision, weird speed, irreverent warmth, and cosmic nonsense.
-  form_and_line: Turbo smear lines, elastic reaction contours, collision-panel rhythm, paranormal glyph bursts, and romantic recoil beats.
-  color_palette: Hot pink, ghostly teal, alien lime, blacklight violet, comic yellow, and warm blush orange.
-  lighting_setup: Flash-frame impacts, uncanny underglow, neon paranormal rim light, and sudden romantic softness after chaos.
-  material_texture: Static grain, ectoplasmic glow, stickerlike graphic overlays, polished cel speed effects, and rough comedy smears.
-  render_quality: Premium weird-action anime finish with high-speed clarity, absurd timing, and expressive romance friction.
-  spatial_distortion: Turbo perspective snaps, supernatural squash-stretch, and colliding scale shifts that keep the frame unstable.
-  atmosphere: Wild, funny, romantic, unhinged
+  aesthetic: >-
+    Paranormal turbo romance brawl, with occult comedy collision, weird speed, irreverent warmth, and cosmic
+    nonsense.
+  subject_treatment: >-
+    Turbo smear lines, elastic reaction contours, collision-panel rhythm, paranormal glyph bursts, and
+    romantic recoil beats.
+  color_and_tone: Hot pink, ghostly teal, alien lime, blacklight violet, comic yellow, and warm blush orange.
+  lighting_and_shadow: >-
+    Flash-frame impacts, uncanny underglow, neon paranormal rim light, and sudden romantic softness after
+    chaos.
+  texture_and_material: >-
+    Static grain, ectoplasmic glow, stickerlike graphic overlays, polished cel speed effects, and rough comedy
+    smears.
+  camera_and_composition: >-
+    Turbo perspective snaps, supernatural squash-stretch, and colliding scale shifts that keep the frame
+    unstable.
+  atmosphere_and_mood: Wild, funny, romantic, unhinged
+  rendering_and_quality: Premium weird-action anime finish with high-speed clarity, absurd timing, and expressive romance friction.
   key_features: Occult comedy, turbo impact, weird romance recoil, paranormal color clash, reaction-shot elasticity.
   creative_brief: >-
-    Push any prompt into turbo paranormal comedy: clash impossible energies,
-    speed-line absurdity, and romantic recoil in the same frame without
-    requiring teenagers, aliens, ghosts, streets, or a brawl setup.
+    Push any prompt into turbo paranormal comedy: clash impossible energies, speed-line absurdity, and
+    romantic recoil in the same frame without requiring teenagers, aliens, ghosts, streets, or a brawl setup.
 avoidRules:
   - realistic
   - 3d render
@@ -41,7 +50,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-126.webp
 attributes:
-  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
+  negativePrompt: >-
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts,
+    watermark, text, signature
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds

@@ -13,19 +13,18 @@ tags:
   - traditional-painting
 visualDna:
   aesthetic: East Asian ink wash painting
-  form_and_line: Expressive brush strokes
-  color_palette: Black ink, grey washes
-  lighting_setup: Minimalist
-  material_texture: Rice paper, ink bleed
-  render_quality: Zen, minimal, masterful
-  spatial_distortion: Abstracted forms
-  atmosphere: Peaceful, meditative
+  subject_treatment: Expressive brush strokes
+  color_and_tone: Black ink, grey washes
+  lighting_and_shadow: Minimalist
+  texture_and_material: Rice paper, ink bleed
+  camera_and_composition: Abstracted forms
+  atmosphere_and_mood: Peaceful, meditative
+  rendering_and_quality: Zen, minimal, masterful
   key_features: Brush pressure variation
   creative_brief: >-
-    Apply sumi-e ink-wash economy to any input: decisive brush pressure, black
-    ink gradients, rice-paper absorption, visible water dilution, restrained
-    negative space, and breathlike rhythm. Keep meditative reduction without
-    requiring bamboo, mountains, birds, calligraphy, or East Asian scenery.
+    Apply sumi-e ink-wash economy to any input: decisive brush pressure, black ink gradients, rice-paper
+    absorption, visible water dilution, restrained negative space, and breathlike rhythm. Keep meditative
+    reduction without requiring bamboo, mountains, birds, calligraphy, or East Asian scenery.
 avoidRules:
   - photo
   - realistic
@@ -45,7 +44,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP06-008.webp
 attributes:
-  negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border
+  negativePrompt: >-
+    photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy,
+    watermark, text, signature, frame, border
 taxonomy:
   packId: pack_06
   packName: Essential Art Styles

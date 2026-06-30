@@ -15,13 +15,19 @@ tags:
   - cathedral
 visualDna:
   aesthetic: Gothic cathedral fantasy with carved darkness, vaulted height, and sacred chiaroscuro.
-  subject_treatment: A towering cathedral executioner-saint in slab armor emerging from a reliquary arch, broad mask, huge candle crown, and one ceremonial axe held like a holy verdict.
+  subject_treatment: >-
+    A towering cathedral executioner-saint in slab armor emerging from a reliquary arch, broad mask, huge
+    candle crown, and one ceremonial axe held like a holy verdict.
   color_and_tone: Near-black stone, candle gold, desaturated crimson, ivory dust, and cool blue-gray recesses.
-  lighting_and_shadow: Clear holy key light and candle accents cut through large graphic shadow masses without losing architectural detail.
+  lighting_and_shadow: >-
+    Clear holy key light and candle accents cut through large graphic shadow masses without losing
+    architectural detail.
   texture_and_material: Carved stone, wax drips, oxidized metal, incense haze, cracked fresco, and embroidered cloth.
   camera_and_composition: Tall vertical framing, symmetrical nave geometry, deep aisles, and silhouettes against stained windows.
   atmosphere_and_mood: Reverent, ominous, quiet, and ceremonial.
-  rendering_and_quality: Fine-art fantasy illustration with precise architecture, defined contours, clean contrast, and painterly atmosphere.
+  rendering_and_quality: >-
+    Fine-art fantasy illustration with precise architecture, defined contours, clean contrast, and painterly
+    atmosphere.
   creative_brief: Applies cathedral light logic and sacred architecture to characters, artifacts, interiors, or creatures.
 avoidRules:
   - flat daylight
@@ -33,6 +39,8 @@ avoidRules:
   - text
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP17-004.webp
+attributes:
+  negativePrompt: flat daylight, modern church interior, clean museum look, cute fantasy, explicit gore, watermark, text
 taxonomy:
   packId: pack_17
   packName: Medieval Fantasy & Dungeon Zine

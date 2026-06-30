@@ -13,19 +13,18 @@ tags:
   - food-and-drink
 visualDna:
   aesthetic: Omakase precision layout, sashimi-fresh surface logic, disciplined cut geometry, itamae restraint
-  form_and_line: Knife cuts, single-stroke-slice, hira-zukuri rectangles, sogi-zukuri bevel, sashimi-fan arrangement
-  color_palette: Orange (Salmon), Red (Tuna), hamachi-amber, shiso-green, gari-pink, nori-black, wasabi-pale-green
-  lighting_setup: Glossy oil highlights, clean counter-like spotlight, lacquer contrast, wasabi-grain texture light
-  material_texture: Raw fish, rice, flesh-marbling, shari-grain, nori-crisp, ikura-bead, torched-aburi char
-  render_quality: Fresh, restrained, Edomae-inspired, knife-skill reverence, minimalist premium finish
-  spatial_distortion: Natural proportion, lacquer-board framing, sashimi-fan geometry, nigiri-oval balance, disciplined spacing
-  atmosphere: Clean, tasty, quiet, precise, fresh-cut anticipation
+  subject_treatment: Knife cuts, single-stroke-slice, hira-zukuri rectangles, sogi-zukuri bevel, sashimi-fan arrangement
+  color_and_tone: Orange (Salmon), Red (Tuna), hamachi-amber, shiso-green, gari-pink, nori-black, wasabi-pale-green
+  lighting_and_shadow: Glossy oil highlights, clean counter-like spotlight, lacquer contrast, wasabi-grain texture light
+  texture_and_material: Raw fish, rice, flesh-marbling, shari-grain, nori-crisp, ikura-bead, torched-aburi char
+  camera_and_composition: Natural proportion, lacquer-board framing, sashimi-fan geometry, nigiri-oval balance, disciplined spacing
+  atmosphere_and_mood: Clean, tasty, quiet, precise, fresh-cut anticipation
+  rendering_and_quality: Fresh, restrained, Edomae-inspired, knife-skill reverence, minimalist premium finish
   key_features: Rice grains, shari-pearl definition, nori-wrap band, wasabi-dot, pickled-ginger mound, soy-sauce dish
   creative_brief: >-
-    Apply omakase presentation logic to the input: precision-cut geometry,
-    disciplined spacing, glossy freshness cues, lacquer contrast, and minimal
-    plate balance. Seafood, shari, nori, or wasabi can reinforce the style, but
-    do not require a counter, fish market, platter, or single dish.
+    Apply omakase presentation logic to the input: precision-cut geometry, disciplined spacing, glossy
+    freshness cues, lacquer contrast, and minimal plate balance. Seafood, shari, nori, or wasabi can reinforce
+    the style, but do not require a counter, fish market, platter, or single dish.
 avoidRules:
   - cooked
   - dry

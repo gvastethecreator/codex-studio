@@ -13,34 +13,28 @@ tags:
   - slice-of-life-and-moe
 visualDna:
   aesthetic: >-
-    Ordinary-cosmic anime whimsy where cozy routine suddenly admits impossible scale, meta-chaos,
-    and playful reality instability
-  form_and_line: >-
-    Everyday soft lines interrupted by uncanny geometry, energetic silhouette spikes, ensemble
-    reaction arcs, and anomaly framing
-  color_palette: >-
-    Warm scholastic pastels, beige neutrals, ribbon-like accents, cool anomaly highlights, and
-    selective cosmic blues
-  lighting_setup: >-
-    Cozy ambient baseline with intermittent anomalous glow, contrast lifts, and reality-slip edge
-    lighting
-  material_texture: >-
-    Paper, textile, and everyday surfaces overlaid with lightly abstracted atmospheric or cosmic
-    interference
-  render_quality: >-
-    Hybrid slice-of-life plus uncanny-sci-fi anime finish with stable readability and controlled
-    tonal pivots
-  spatial_distortion: >-
-    Mostly grounded perspective with mild non-euclidean hints, closed-space pressure, and sudden
-    impossible scale cues
-  atmosphere: Playful, odd, charged, meta-aware, unpredictable
+    Ordinary-cosmic anime whimsy where cozy routine suddenly admits impossible scale, meta-chaos, and playful
+    reality instability
+  subject_treatment: >-
+    Everyday soft lines interrupted by uncanny geometry, energetic silhouette spikes, ensemble reaction arcs,
+    and anomaly framing
+  color_and_tone: >-
+    Warm scholastic pastels, beige neutrals, ribbon-like accents, cool anomaly highlights, and selective
+    cosmic blues
+  lighting_and_shadow: Cozy ambient baseline with intermittent anomalous glow, contrast lifts, and reality-slip edge lighting
+  texture_and_material: Paper, textile, and everyday surfaces overlaid with lightly abstracted atmospheric or cosmic interference
+  camera_and_composition: >-
+    Mostly grounded perspective with mild non-euclidean hints, closed-space pressure, and sudden impossible
+    scale cues
+  atmosphere_and_mood: Playful, odd, charged, meta-aware, unpredictable
+  rendering_and_quality: Hybrid slice-of-life plus uncanny-sci-fi anime finish with stable readability and controlled tonal pivots
   key_features: >-
-    Ordinary-to-cosmic contrast, social reaction dynamics, anomaly glow, playful chaos cues, and
-    reality-pivot staging
+    Ordinary-to-cosmic contrast, social reaction dynamics, anomaly glow, playful chaos cues, and reality-pivot
+    staging
   creative_brief: >-
-    Use Haruhi as style anchor for ordinary-cosmic whimsy. Apply warm daily-life polish plus sudden
-    anomaly geometry, ensemble reaction pressure, and playful meta-instability to any prompt.
-    School, clubrooms, and fixed props are optional.
+    Use Haruhi as style anchor for ordinary-cosmic whimsy. Apply warm daily-life polish plus sudden anomaly
+    geometry, ensemble reaction pressure, and playful meta-instability to any prompt. School, clubrooms, and
+    fixed props are optional.
 avoidRules:
   - realistic
   - 3d render
@@ -58,8 +52,8 @@ assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-084.webp
 attributes:
   negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, text, signature
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts,
+    watermark, text, signature
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle

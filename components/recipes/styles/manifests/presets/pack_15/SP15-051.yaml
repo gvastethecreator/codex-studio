@@ -14,16 +14,34 @@ tags:
   - cassette-futurism
   - weather
 visualDna:
-  aesthetic: cassette futurism climate desk built around a weather station built from cassette decks, analog dials, field coats, maps, and magnetic tape ribbons.
-  form_and_line: CRT geometry, analog signal bands, vapor gradients, mall-era surfaces, tape artifacts, and digital slippage. Core composition uses cassette decks, tape ribbons, weather maps, field operators, dial clusters.
-  color_palette: cassette gray, orange oxide, sky blue, beige plastic
-  lighting_setup: overcast window light, dial lamps, tape shimmer, desk lamp pools
-  material_texture: plastic decks, magnetic tape, paper maps, wool coats, metal antennas
-  render_quality: Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity, moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material simulation, or hyper-detail.
-  spatial_distortion: Pools, arcades, stations, atriums, kiosks, malls, observatories, and broadcast corners with media texture. Keep depth legible and avoid default hallway, aisle, or empty studio staging.
-  atmosphere: analog, nerdy, field-science, tactile
+  aesthetic: >-
+    cassette futurism climate desk built around a weather station built from cassette decks, analog dials,
+    field coats, maps, and magnetic tape ribbons.
+  subject_treatment: >-
+    CRT geometry, analog signal bands, vapor gradients, mall-era surfaces, tape artifacts, and digital
+    slippage. Core composition uses cassette decks, tape ribbons, weather maps, field operators, dial
+    clusters.
+  color_and_tone: cassette gray, orange oxide, sky blue, beige plastic
+  lighting_and_shadow: overcast window light, dial lamps, tape shimmer, desk lamp pools
+  texture_and_material: plastic decks, magnetic tape, paper maps, wool coats, metal antennas
+  camera_and_composition: >-
+    Pools, arcades, stations, atriums, kiosks, malls, observatories, and broadcast corners with media texture.
+    Keep depth legible and avoid default hallway, aisle, or empty studio staging.
+  atmosphere_and_mood: analog, nerdy, field-science, tactile
+  rendering_and_quality: >-
+    Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly
+    planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity,
+    moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material
+    simulation, or hyper-detail.
   key_features: cassette decks, tape ribbons, weather maps, field operators, dial clusters
-  creative_brief: 'Cassette futurism as useful instrument culture: tactile decks and weather work, no product-only still life. Keep the result representative rather than over-abstract; make one character in their environment the anchor, with motifs as background, costume, weather, architecture, or social pressure instead of a foreground prop. Favor clean graphic-novel card art, stylized 2D digital illustration, controlled digital painting, cel-shaded poster art, or gouache-poster color blocking over realism, photoreal painterly realism, cinematic key art, or hyper-detailed concept art. Use few bold color/value zones, moderate texture, large shapes, clean surfaces, and finish denoised with no excessive noise or ultra-fine detail.'
+  creative_brief: >-
+    Cassette futurism as useful instrument culture: tactile decks and weather work, no product-only still
+    life. Keep the result representative rather than over-abstract; make one character in their environment
+    the anchor, with motifs as background, costume, weather, architecture, or social pressure instead of a
+    foreground prop. Favor clean graphic-novel card art, stylized 2D digital illustration, controlled digital
+    painting, cel-shaded poster art, or gouache-poster color blocking over realism, photoreal painterly
+    realism, cinematic key art, or hyper-detailed concept art. Use few bold color/value zones, moderate
+    texture, large shapes, clean surfaces, and finish denoised with no excessive noise or ultra-fine detail.
 avoidRules:
   - photoreal
   - watermark
@@ -37,7 +55,20 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP15-051.webp
 attributes:
-  negativePrompt: photoreal, hyperreal, realistic render, painterly realism, realistic paint finish, cinematic realism, AAA key art, photographic skin pores, realistic foreground portrait, realistic facial hair detail, lens blur, bokeh, depth-of-field photo look, readable map text, letters, logo labels, desk-lamp hero, office control-room wall, tiny dial carpet, generic soldier hero, guard pin-up, weapon-first pose, HDR lens realism, 3D render look, PBR material simulation, hyper-detailed concept art, watermark, text, logo, generic style, over-abstract, interchangeable preset, duplicated motifs, generic glass utopia, unmotivated market aisle, unmotivated library aisle, fantasy corridor, random camera held by subject, studio wall fixation, chair fixation, curtain fixation, lamp fixation, scarf fixation, pedestal fixation, bird fixation, excessive noise, ultra-fine detail, over-sharpened microtexture, over-rendered machinery, noisy grime, tiny rivets everywhere, busy texture chatter, realistic uniform portrait, uniformed officer hero, foreground guard portrait, detailed tattoo focus, dense machinery wallpaper, overcrowded scene, high-frequency surface detail, cinematic close-up portrait, flat black fill, crushed black, pure black masses, muddy black fields, generic American illustration, generic Western RPG card art
+  negativePrompt: >-
+    photoreal, hyperreal, realistic render, painterly realism, realistic paint finish, cinematic realism, AAA
+    key art, photographic skin pores, realistic foreground portrait, realistic facial hair detail, lens blur,
+    bokeh, depth-of-field photo look, readable map text, letters, logo labels, desk-lamp hero, office
+    control-room wall, tiny dial carpet, generic soldier hero, guard pin-up, weapon-first pose, HDR lens
+    realism, 3D render look, PBR material simulation, hyper-detailed concept art, watermark, text, logo,
+    generic style, over-abstract, interchangeable preset, duplicated motifs, generic glass utopia, unmotivated
+    market aisle, unmotivated library aisle, fantasy corridor, random camera held by subject, studio wall
+    fixation, chair fixation, curtain fixation, lamp fixation, scarf fixation, pedestal fixation, bird
+    fixation, excessive noise, ultra-fine detail, over-sharpened microtexture, over-rendered machinery, noisy
+    grime, tiny rivets everywhere, busy texture chatter, realistic uniform portrait, uniformed officer hero,
+    foreground guard portrait, detailed tattoo focus, dense machinery wallpaper, overcrowded scene,
+    high-frequency surface detail, cinematic close-up portrait, flat black fill, crushed black, pure black
+    masses, muddy black fields, generic American illustration, generic Western RPG card art
 taxonomy:
   packId: pack_15
   packName: Punk Spectrum Vault

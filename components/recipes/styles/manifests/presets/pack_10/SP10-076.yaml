@@ -13,18 +13,17 @@ tags:
   - diagram-print-and-light-systems
 visualDna:
   aesthetic: Technical drawing
-  form_and_line: White lines
-  color_palette: Blue background
-  lighting_setup: Flat
-  material_texture: Paper
-  render_quality: Architectural, plan
-  spatial_distortion: None
-  atmosphere: Planning, technical
+  subject_treatment: White lines
+  color_and_tone: Blue background
+  lighting_and_shadow: Flat
+  texture_and_material: Paper
+  camera_and_composition: 'Compose for Blueprint using its key spatial cues: White on Blue.'
+  atmosphere_and_mood: Planning, technical
+  rendering_and_quality: Architectural, plan
   key_features: White on Blue
   creative_brief: >-
-    Apply blueprint drafting to the input: Prussian-blue field, white technical
-    linework, dimension-like marks without readable text, and construction
-    schematics should make any subject feel designed before built.
+    Apply blueprint drafting to the input: Prussian-blue field, white technical linework, dimension-like marks
+    without readable text, and construction schematics should make any subject feel designed before built.
 avoidRules:
   - color
   - 3d

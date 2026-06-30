@@ -13,30 +13,21 @@ tags:
   - slice-of-life-and-moe
 visualDna:
   aesthetic: >-
-    Healing reverie anime where reflective softness, airy kindness, slow conversation, and waterlike
-    light make the subject feel weightless
-  form_and_line: >-
-    Flowing calm contours, slow oval composition, airy spacing, and gentle handoff rhythm between
-    foreground and reflected depth
-  color_palette: Aqua blue, cream stone, soft sky lavender, warm sunset peach, pearl white, and muted teal shadow
-  lighting_setup: High-diffusion sky glow, reflective underlight, low-contrast sparkle, and warm horizon softness
-  material_texture: >-
-    Water shimmer, sun-worn stone, soft cloth, polished wood, haze particles, and pearl-like
-    atmospheric gloss
-  render_quality: >-
-    Slow-healing anime finish with clean serenity, reflective light control, and gentle emotional
-    buoyancy
-  spatial_distortion: >-
-    Drifting canal-like perspective and reflective depth used as calm visual logic, not required
-    scenery
-  atmosphere: Airy, kind, reflective, slow, healing
-  key_features: >-
-    Reflection softness, slow conversation pacing, waterlike light, kindness aura, and buoyant
-    negative space
+    Healing reverie anime where reflective softness, airy kindness, slow conversation, and waterlike light
+    make the subject feel weightless
+  subject_treatment: >-
+    Flowing calm contours, slow oval composition, airy spacing, and gentle handoff rhythm between foreground
+    and reflected depth
+  color_and_tone: Aqua blue, cream stone, soft sky lavender, warm sunset peach, pearl white, and muted teal shadow
+  lighting_and_shadow: High-diffusion sky glow, reflective underlight, low-contrast sparkle, and warm horizon softness
+  texture_and_material: Water shimmer, sun-worn stone, soft cloth, polished wood, haze particles, and pearl-like atmospheric gloss
+  camera_and_composition: Drifting canal-like perspective and reflective depth used as calm visual logic, not required scenery
+  atmosphere_and_mood: Airy, kind, reflective, slow, healing
+  rendering_and_quality: Slow-healing anime finish with clean serenity, reflective light control, and gentle emotional buoyancy
+  key_features: Reflection softness, slow conversation pacing, waterlike light, kindness aura, and buoyant negative space
   creative_brief: >-
-    Use Aria as style anchor for canal-breeze healing reverie. Apply reflective underlight, airy
-    kindness, slow oval flow, and pearl haze to any prompt. Canals, gondolas, uniforms, and city
-    panoramas are optional.
+    Use Aria as style anchor for canal-breeze healing reverie. Apply reflective underlight, airy kindness,
+    slow oval flow, and pearl haze to any prompt. Canals, gondolas, uniforms, and city panoramas are optional.
 avoidRules:
   - realistic
   - 3d render
@@ -54,8 +45,8 @@ assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-204.webp
 attributes:
   negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, text, signature
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts,
+    watermark, text, signature
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle

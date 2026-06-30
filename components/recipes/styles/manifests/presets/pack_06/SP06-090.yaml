@@ -12,16 +12,33 @@ tags:
   - essential-art-styles
   - retro-game-visual-systems
 visualDna:
-  aesthetic: Three-dimensional pixel blocks, MagicaVoxel aesthetic, 3D Dot Game Heroes style, cubic-pixel construction, Minecraft and sprite-sheet logic as block anchors, isometric cube-grid composition, toy-block 3D pixel art
-  form_and_line: Cubic-voxel contour, block-stepped edges, orthogonal grid construction, visible cube boundaries, straight-angle everything
-  color_palette: Bright plastic-cube colors, toy-block primaries, voxel-material palette, per-cube flat coloring, modular color scheme
-  lighting_setup: Global-illumination cube lighting, ambient-occlusion block corners, soft shadow under voxel overhangs, directional sun on block-grid
-  material_texture: Cube-face flat shading, block-edge ambient occlusion, plastic-cube surface, matte-voxel material, grid-seam texture
-  render_quality: Voxel-art render, MagicaVoxel-style beauty, 3D-pixel aesthetic, block-world charm, toy-cube rendering
-  spatial_distortion: Voxel-grid blocky proportions, isometric cube arrangement, cube-stepped curves, block-resolution shape limitation
-  atmosphere: Playful, constructive, modular, toy-block creative, colorful-three-dimensional-pixel joy
-  key_features: Cubic-voxel construction, block-stepped contours, isometric grid alignment, ambient-occlusion block edges, per-cube flat coloring
-  creative_brief: Any prompt is rebuilt from cubes. Curves become stepped approximations, surfaces become stacked modules, and ambient occlusion in block seams gives mass to a style that values constructible form over smooth illusion.
+  aesthetic: >-
+    Three-dimensional pixel blocks, MagicaVoxel aesthetic, 3D Dot Game Heroes style, cubic-pixel construction,
+    Minecraft and sprite-sheet logic as block anchors, isometric cube-grid composition, toy-block 3D pixel art
+  subject_treatment: >-
+    Cubic-voxel contour, block-stepped edges, orthogonal grid construction, visible cube boundaries,
+    straight-angle everything
+  color_and_tone: >-
+    Bright plastic-cube colors, toy-block primaries, voxel-material palette, per-cube flat coloring, modular
+    color scheme
+  lighting_and_shadow: >-
+    Global-illumination cube lighting, ambient-occlusion block corners, soft shadow under voxel overhangs,
+    directional sun on block-grid
+  texture_and_material: >-
+    Cube-face flat shading, block-edge ambient occlusion, plastic-cube surface, matte-voxel material,
+    grid-seam texture
+  camera_and_composition: >-
+    Voxel-grid blocky proportions, isometric cube arrangement, cube-stepped curves, block-resolution shape
+    limitation
+  atmosphere_and_mood: Playful, constructive, modular, toy-block creative, colorful-three-dimensional-pixel joy
+  rendering_and_quality: Voxel-art render, MagicaVoxel-style beauty, 3D-pixel aesthetic, block-world charm, toy-cube rendering
+  key_features: >-
+    Cubic-voxel construction, block-stepped contours, isometric grid alignment, ambient-occlusion block edges,
+    per-cube flat coloring
+  creative_brief: >-
+    Any prompt is rebuilt from cubes. Curves become stepped approximations, surfaces become stacked modules,
+    and ambient occlusion in block seams gives mass to a style that values constructible form over smooth
+    illusion.
 avoidRules:
   - smooth
   - organic

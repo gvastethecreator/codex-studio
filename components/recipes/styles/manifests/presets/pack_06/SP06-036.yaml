@@ -13,19 +13,18 @@ tags:
   - printmaking
 visualDna:
   aesthetic: Single painterly print
-  form_and_line: Soft, smashed paint
-  color_palette: Muted, blended
-  lighting_setup: Soft
-  material_texture: Glass transfer, paper
-  render_quality: Unique, expressive
-  spatial_distortion: Blurred
-  atmosphere: Ghostly, soft
+  subject_treatment: Soft, smashed paint
+  color_and_tone: Muted, blended
+  lighting_and_shadow: Soft
+  texture_and_material: Glass transfer, paper
+  camera_and_composition: Blurred
+  atmosphere_and_mood: Ghostly, soft
+  rendering_and_quality: Unique, expressive
   key_features: Transfer texture
   creative_brief: >-
-    Apply monotype transfer behavior to any input: single-pull softness,
-    glass-plate smear, accidental blending, pressure blur, and unrepeatable
-    painterly transfer marks. Keep one-off print spontaneity without requiring
-    botanical subjects, abstract plates, studio tools, or edition context.
+    Apply monotype transfer behavior to any input: single-pull softness, glass-plate smear, accidental
+    blending, pressure blur, and unrepeatable painterly transfer marks. Keep one-off print spontaneity without
+    requiring botanical subjects, abstract plates, studio tools, or edition context.
 avoidRules:
   - photo
   - realistic
@@ -45,7 +44,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP06-036.webp
 attributes:
-  negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border
+  negativePrompt: >-
+    photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy,
+    watermark, text, signature, frame, border
 taxonomy:
   packId: pack_06
   packName: Essential Art Styles

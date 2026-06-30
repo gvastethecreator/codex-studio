@@ -13,21 +13,23 @@ tags:
   - organic-character-and-bio-cgi
 visualDna:
   aesthetic: Collectible avatar render language
-  form_and_line: Clean
-  color_palette: Neon, Gold, Rare traits, rarity gradient
-  lighting_setup: Studio, promo-ready
-  material_texture: Plastic, Metal, collectible finish
-  render_quality: Bored Ape 3D collectible, avatar-centric hype
-  spatial_distortion: None
-  atmosphere: Hype, digital, exclusive drop
+  subject_treatment: Clean
+  color_and_tone: Neon, Gold, Rare traits, rarity gradient
+  lighting_and_shadow: Studio, promo-ready
+  texture_and_material: Plastic, Metal, collectible finish
+  camera_and_composition: >-
+    Lookdev camera for NFT Collectible Avatar Render: three-quarter or orthographic framing, clean silhouette
+    read, material highlights, controlled depth, and vertical card composition.
+  atmosphere_and_mood: Hype, digital, exclusive drop
+  rendering_and_quality: Bored Ape 3D collectible, avatar-centric hype
   key_features: Profile view, trait accessories
   creative_brief: >-
-    Give the input collectible-avatar styling: rarity-trait clarity, glossy feature emphasis, profile-picture legibility
-    and drop-ready color blocking. If a face or character exists, amplify it; otherwise translate subject cues into
-    trait metadata without forcing an ape, portrait, or NFT-drop setup. Apply NFT Collectible Avatar Render as a
-    portable 3D/render style system over any input: preserve its renderer logic, material behavior, geometry language,
-    lighting grammar, and production cues while avoiding a required character, vehicle, prop, environment, UI screen,
-    product shot, or scene template.
+    Give the input collectible-avatar styling: rarity-trait clarity, glossy feature emphasis, profile-picture
+    legibility and drop-ready color blocking. If a face or character exists, amplify it; otherwise translate
+    subject cues into trait metadata without forcing an ape, portrait, or NFT-drop setup. Apply NFT
+    Collectible Avatar Render as a portable 3D/render style system over any input: preserve its renderer
+    logic, material behavior, geometry language, lighting grammar, and production cues while avoiding a
+    required character, vehicle, prop, environment, UI screen, product shot, or scene template.
 avoidRules:
   - traditional art
 assets:

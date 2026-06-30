@@ -13,19 +13,18 @@ tags:
   - digital-art
 visualDna:
   aesthetic: 80s retro-futurism
-  form_and_line: Grid lines
-  color_palette: Purple, Pink, Cyan
-  lighting_setup: Neon glow
-  material_texture: Scanlines
-  render_quality: Retro, aesthetic
-  spatial_distortion: Chrome reflection
-  atmosphere: Nostalgic, cool
+  subject_treatment: Grid lines
+  color_and_tone: Purple, Pink, Cyan
+  lighting_and_shadow: Neon glow
+  texture_and_material: Scanlines
+  camera_and_composition: Chrome reflection
+  atmosphere_and_mood: Nostalgic, cool
+  rendering_and_quality: Retro, aesthetic
   key_features: Sunset gradient
   creative_brief: >-
-    Apply synthwave visual language to any input: magenta-cyan bloom, neon grid
-    rhythm, chrome gradients, scanline haze, reflective bands, and synthetic
-    retrofuturist glow. Keep remembered-future energy without requiring sunsets,
-    roads, cars, horizons, palm trees, or retro props.
+    Apply synthwave visual language to any input: magenta-cyan bloom, neon grid rhythm, chrome gradients,
+    scanline haze, reflective bands, and synthetic retrofuturist glow. Keep remembered-future energy without
+    requiring sunsets, roads, cars, horizons, palm trees, or retro props.
 avoidRules:
   - photo
   - realistic
@@ -48,7 +47,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP06-056.webp
 attributes:
-  negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border, sunset requirement, road requirement, car requirement
+  negativePrompt: >-
+    photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy,
+    watermark, text, signature, frame, border, sunset requirement, road requirement, car requirement
 taxonomy:
   packId: pack_06
   packName: Essential Art Styles

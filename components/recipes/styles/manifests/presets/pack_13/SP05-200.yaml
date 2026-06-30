@@ -12,19 +12,24 @@ tags:
   - anime-character-and-lifestyle
   - shojo-magical-girl-and-visionary-classics
 visualDna:
-  aesthetic: Contemporary shojo realism, rain-canopy intimacy, tentative self-worth, modern vulnerability, and apology under sodium streetlights
-  form_and_line: Naturalistic modern-shojo contouring, canopy-like framing arcs, hesitant hand-gesture emphasis, and close-distance posture cues
-  color_palette: Sodium amber highlights, wet asphalt blue-grays, uniform charcoal, muted skin warmth, and rain-reflection silvers
-  lighting_setup: Streetlamp halo pools, rainy backscatter glow, practical spill, and low-contrast nocturnal fill
-  material_texture: Rain-beaded nylon sheen, damp cotton softness, pavement gloss reflections, and fogged acrylic surface cues
-  render_quality: Intimate rainy-romance rendering with grounded urban realism and emotionally readable micro-acting
-  spatial_distortion: Condensed shared-canopy framing compression to emphasize vulnerability proximity
-  atmosphere: Rainy, vulnerable, sincere, modern
+  aesthetic: >-
+    Contemporary shojo realism, rain-canopy intimacy, tentative self-worth, modern vulnerability, and apology
+    under sodium streetlights
+  subject_treatment: >-
+    Naturalistic modern-shojo contouring, canopy-like framing arcs, hesitant hand-gesture emphasis, and
+    close-distance posture cues
+  color_and_tone: >-
+    Sodium amber highlights, wet asphalt blue-grays, uniform charcoal, muted skin warmth, and rain-reflection
+    silvers
+  lighting_and_shadow: Streetlamp halo pools, rainy backscatter glow, practical spill, and low-contrast nocturnal fill
+  texture_and_material: Rain-beaded nylon sheen, damp cotton softness, pavement gloss reflections, and fogged acrylic surface cues
+  camera_and_composition: Condensed shared-canopy framing compression to emphasize vulnerability proximity
+  atmosphere_and_mood: Rainy, vulnerable, sincere, modern
+  rendering_and_quality: Intimate rainy-romance rendering with grounded urban realism and emotionally readable micro-acting
   key_features: Canopy framing, rain reflections, sodium-lit intimacy, hesitant touch language, confession-heavy close-ups
   creative_brief: >-
-    Preserve rainy-umbrella confession grammar as a reusable style language:
-    sodium-lit wet surfaces, hesitant intimate blocking, and modern
-    vulnerability pacing should remain consistent across subjects.
+    Preserve rainy-umbrella confession grammar as a reusable style language: sodium-lit wet surfaces, hesitant
+    intimate blocking, and modern vulnerability pacing should remain consistent across subjects.
 avoidRules:
   - realistic
   - 3d render
@@ -41,7 +46,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-200.webp
 attributes:
-  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
+  negativePrompt: >-
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts,
+    watermark, text, signature
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle

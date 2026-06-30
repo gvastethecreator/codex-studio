@@ -13,21 +13,22 @@ tags:
   - weathering-and-decay
 visualDna:
   aesthetic: Corroded metal
-  form_and_line: Pitting
-  color_palette: Orange, Brown, Black
-  lighting_setup: Matte
-  material_texture: Rough, flaky
-  render_quality: Old, abandoned
-  spatial_distortion: Eaten away
-  atmosphere: Decay, heavy
+  subject_treatment: Pitting
+  color_and_tone: Orange, Brown, Black
+  lighting_and_shadow: Matte
+  texture_and_material: Rough, flaky
+  camera_and_composition: Eaten away
+  atmosphere_and_mood: Decay, heavy
+  rendering_and_quality: Old, abandoned
   key_features: Random rust
   creative_brief: >-
-    Capture the slow fire of oxidation consuming iron in blooms of orange, umber, and black, a surface that flakes and
-    pits as time eats through what industry once forged. Each rust spot spreads like a bruise, mapping years of exposure
-    into a topography of decay. Render the fierce beauty of abandonment, where time paints with corrosion what fire once
-    shaped. Use Rusty Iron as portable surface/render behavior over any input: map its texture, light response, edge
-    wear, color chemistry, and tactile rhythm onto the subject instead of requiring a literal material sample, macro
-    tile, wall, landscape, source object, or scene where the material naturally appears.
+    Capture the slow fire of oxidation consuming iron in blooms of orange, umber, and black, a surface that
+    flakes and pits as time eats through what industry once forged. Each rust spot spreads like a bruise,
+    mapping years of exposure into a topography of decay. Render the fierce beauty of abandonment, where time
+    paints with corrosion what fire once shaped. Use Rusty Iron as portable surface/render behavior over any
+    input: map its texture, light response, edge wear, color chemistry, and tactile rhythm onto the subject
+    instead of requiring a literal material sample, macro tile, wall, landscape, source object, or scene where
+    the material naturally appears.
 avoidRules:
   - new
   - shiny

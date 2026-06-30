@@ -12,16 +12,31 @@ tags:
   - essential-art-styles
   - retro-game-visual-systems
 visualDna:
-  aesthetic: Game Boy Advance tactical grid, Advance Wars clarity and Fire Emblem portrait elegance as style anchors, bright clean icon-sprite logic, isometric or top-down squared composition, handheld-strategy precision
-  form_and_line: Crisp small-sprite pixel art, unit-icon clarity for any subject, grid-cell division lines, portrait-window framing, clean readable silhouettes
-  color_palette: Bright tactical readability, blue-green clear contrast, red-blue role coding, saturated portrait accents, sunlit handheld tone
-  lighting_setup: Flat even illumination for gameplay clarity, no atmospheric lighting, readability-first approach, sun-baked tile brightness
-  material_texture: Pixel-grid precision, crisp small-sprite definition, GBA screen color gamut, handheld-LCD rendering limits
-  render_quality: GBA tactical-game screen, handheld-strategy aesthetic, bright-readable pixel art, portable precision
-  spatial_distortion: Grid-based tactical space, isometric or top-down tile perspectives, placement precision, fog-of-war style reveal when useful
-  atmosphere: Strategic, bright, readable, turn-based calm, portable focus
-  key_features: Tactical grid overlay, isometric tile logic, bright readable icon sprites, portrait windows, turn-based UI elements without readable text
-  creative_brief: Readability rules every pixel. Any prompt becomes a tactical display of clean roles, square positions, saturated status colors and handheld UI windows, where composition feels like a board state rather than a scene.
+  aesthetic: >-
+    Game Boy Advance tactical grid, Advance Wars clarity and Fire Emblem portrait elegance as style anchors,
+    bright clean icon-sprite logic, isometric or top-down squared composition, handheld-strategy precision
+  subject_treatment: >-
+    Crisp small-sprite pixel art, unit-icon clarity for any subject, grid-cell division lines, portrait-window
+    framing, clean readable silhouettes
+  color_and_tone: >-
+    Bright tactical readability, blue-green clear contrast, red-blue role coding, saturated portrait accents,
+    sunlit handheld tone
+  lighting_and_shadow: >-
+    Flat even illumination for gameplay clarity, no atmospheric lighting, readability-first approach,
+    sun-baked tile brightness
+  texture_and_material: Pixel-grid precision, crisp small-sprite definition, GBA screen color gamut, handheld-LCD rendering limits
+  camera_and_composition: >-
+    Grid-based tactical space, isometric or top-down tile perspectives, placement precision, fog-of-war style
+    reveal when useful
+  atmosphere_and_mood: Strategic, bright, readable, turn-based calm, portable focus
+  rendering_and_quality: GBA tactical-game screen, handheld-strategy aesthetic, bright-readable pixel art, portable precision
+  key_features: >-
+    Tactical grid overlay, isometric tile logic, bright readable icon sprites, portrait windows, turn-based UI
+    elements without readable text
+  creative_brief: >-
+    Readability rules every pixel. Any prompt becomes a tactical display of clean roles, square positions,
+    saturated status colors and handheld UI windows, where composition feels like a board state rather than a
+    scene.
 avoidRules:
   - realistic
   - 3d

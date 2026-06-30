@@ -12,16 +12,25 @@ tags:
   - cinematic-and-media
   - caricature-and-cartoon-styles
 visualDna:
-  aesthetic: Photocollage black-and-white cutout nightmare, mismatched photo fragments pasted onto crude drawn forms, anti-beauty sarcasm, collage ugliness weaponized, handmade digital freakout
-  form_and_line: Scissor-cut edges, crude body or object outlines, mismatched collage seams, hostile paste-up alignment
-  color_palette: Photocopy black, harsh white, dirty grey, scanned beige, toner shadow, occasional faded marker accent
-  lighting_setup: Flat scanner light, xerox contrast, no atmosphere, collage-layer shadows
-  material_texture: Photocopy grain, paper-cut edges, glue-collage layering, black-and-white halftone abuse, rough scan artifacts
-  render_quality: Photocutout nightmare collage, handmade digital freakout, anti-beauty paste-up
-  spatial_distortion: Mismatched scale, pasted fragments, flattened depth layers, wrong-body assembly logic
-  atmosphere: Snarky, janky, hostile, unforgettable
-  key_features: Photo-cutout fragments, mismatched collage bodies or forms, xerox textures, anti-pretty black-and-white contrast, hostile cut edges
-  creative_brief: 'Apply photo-cutout menace to any subject: xerox grain, mismatched photographic fragments, crude drawn bodies or forms, harsh black-and-white contrast, and visible cut edges. Avoid faces, schoolyards, yearbooks, or revenge narratives as requirements. Nothing should fit cleanly together.'
+  aesthetic: >-
+    Photocollage black-and-white cutout nightmare, mismatched photo fragments pasted onto crude drawn forms,
+    anti-beauty sarcasm, collage ugliness weaponized, handmade digital freakout
+  subject_treatment: Scissor-cut edges, crude body or object outlines, mismatched collage seams, hostile paste-up alignment
+  color_and_tone: Photocopy black, harsh white, dirty grey, scanned beige, toner shadow, occasional faded marker accent
+  lighting_and_shadow: Flat scanner light, xerox contrast, no atmosphere, collage-layer shadows
+  texture_and_material: >-
+    Photocopy grain, paper-cut edges, glue-collage layering, black-and-white halftone abuse, rough scan
+    artifacts
+  camera_and_composition: Mismatched scale, pasted fragments, flattened depth layers, wrong-body assembly logic
+  atmosphere_and_mood: Snarky, janky, hostile, unforgettable
+  rendering_and_quality: Photocutout nightmare collage, handmade digital freakout, anti-beauty paste-up
+  key_features: >-
+    Photo-cutout fragments, mismatched collage bodies or forms, xerox textures, anti-pretty black-and-white
+    contrast, hostile cut edges
+  creative_brief: >-
+    Apply photo-cutout menace to any subject: xerox grain, mismatched photographic fragments, crude drawn
+    bodies or forms, harsh black-and-white contrast, and visible cut edges. Avoid faces, schoolyards,
+    yearbooks, or revenge narratives as requirements. Nothing should fit cleanly together.
 avoidRules:
   - digital
   - HD

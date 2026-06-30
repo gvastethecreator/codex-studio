@@ -12,20 +12,29 @@ tags:
   - anime-character-and-lifestyle
   - shojo-magical-girl-and-visionary-classics
 visualDna:
-  aesthetic: Healing shojo language with zodiac-motif tenderness, emotional continuity, and trauma-softened warmth expressed through gentle symbolic atmosphere
-  form_and_line: Gentle expressive contouring, kind-eyed focal prioritization, restrained gesture acting, and soft profile transitions for emotional safety cues
-  color_palette: Warm creams, peach and rose softs, tea-brown neutrals, light spring greens, and muted comforting pastels
-  lighting_setup: Window-soft key light, ambient warmth, low-contrast bloom, and mild halation around emotional focal areas
-  material_texture: Cotton-soft surfaces, matte ceramic-like softness, warm wood-grain cues, and subtle seasonal particulate overlays
-  render_quality: Emotion-first shojo render with comforting softness, high empathy readability, and stable intimacy over spectacle
-  spatial_distortion: Close-scale framing with mild romantic stylization and closeness-preserving depth control
-  atmosphere: Tender, healing, sorrowful, warm
-  key_features: Warm closeness, kind focal softness, zodiac motifs, springlike emotional haze, gentle symbolic embrace geometry
+  aesthetic: >-
+    Healing shojo language with zodiac-motif tenderness, emotional continuity, and trauma-softened warmth
+    expressed through gentle symbolic atmosphere
+  subject_treatment: >-
+    Gentle expressive contouring, kind-eyed focal prioritization, restrained gesture acting, and soft profile
+    transitions for emotional safety cues
+  color_and_tone: Warm creams, peach and rose softs, tea-brown neutrals, light spring greens, and muted comforting pastels
+  lighting_and_shadow: Window-soft key light, ambient warmth, low-contrast bloom, and mild halation around emotional focal areas
+  texture_and_material: >-
+    Cotton-soft surfaces, matte ceramic-like softness, warm wood-grain cues, and subtle seasonal particulate
+    overlays
+  camera_and_composition: Close-scale framing with mild romantic stylization and closeness-preserving depth control
+  atmosphere_and_mood: Tender, healing, sorrowful, warm
+  rendering_and_quality: >-
+    Emotion-first shojo render with comforting softness, high empathy readability, and stable intimacy over
+    spectacle
+  key_features: >-
+    Warm closeness, kind focal softness, zodiac motifs, springlike emotional haze, gentle symbolic embrace
+    geometry
   creative_brief: >-
-    Soften the input with zodiac warmth and grief: cream-peach halation,
-    tea-brown tenderness, spring-green particulate haze, and subtle zodiac
-    symbolism should make any subject feel healing and emotionally held without
-    forcing a family scene, animal motif, embrace, or closeup.
+    Soften the input with zodiac warmth and grief: cream-peach halation, tea-brown tenderness, spring-green
+    particulate haze, and subtle zodiac symbolism should make any subject feel healing and emotionally held
+    without forcing a family scene, animal motif, embrace, or closeup.
 avoidRules:
   - realistic
   - 3d render
@@ -42,7 +51,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-181.webp
 attributes:
-  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
+  negativePrompt: >-
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts,
+    watermark, text, signature
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle

@@ -13,18 +13,17 @@ tags:
   - diagram-print-and-light-systems
 visualDna:
   aesthetic: Glowing lines in dark
-  form_and_line: Light tubes
-  color_palette: Neon colors
-  lighting_setup: Self illuminated
-  material_texture: Glow
-  render_quality: Nightlife, cyber
-  spatial_distortion: None
-  atmosphere: Cool, dark
+  subject_treatment: Light tubes
+  color_and_tone: Neon colors
+  lighting_and_shadow: Self illuminated
+  texture_and_material: Glow
+  camera_and_composition: 'Compose for Neon Light Lines using its key spatial cues: Dark background.'
+  atmosphere_and_mood: Cool, dark
+  rendering_and_quality: Nightlife, cyber
   key_features: Dark background
   creative_brief: >-
-    Apply neon-line treatment to the input: bent glass-tube strokes, colored
-    glow halos, dark-field contrast, buzzing edge light, and sign-like contours
-    should illuminate forms without requiring readable signage.
+    Apply neon-line treatment to the input: bent glass-tube strokes, colored glow halos, dark-field contrast,
+    buzzing edge light, and sign-like contours should illuminate forms without requiring readable signage.
 avoidRules:
   - bulb
   - sun

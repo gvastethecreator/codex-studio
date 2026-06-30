@@ -13,28 +13,26 @@ tags:
   - slice-of-life-and-moe
 visualDna:
   aesthetic: >-
-    Memory-washed anime melodrama where tender emotion, soft eyes, bittersweet light, and quiet
-    vulnerability define the frame
-  form_and_line: >-
-    Gentle facial contouring, lowered gesture pressure, soft posture arcs, and emotion-first framing
-    with minimal visual clutter
-  color_palette: >-
-    Warm sepia cream, pale sky blue, soft blossom pink, muted school navy, and faded amber
-    highlights
-  lighting_setup: Diffuse sentimental glow, backlit haze, low-contrast tearline highlights, and soft memory bloom
-  material_texture: >-
-    Subtle fabric weave, paper softness, polished wood warmth, faint dust haze, and blurred
-    memory-grain texture
-  render_quality: >-
-    Tender emotional anime finish with controlled softness, expressive eyes, and high sincerity
-    without photoreal heaviness
-  spatial_distortion: Memory-bloom compression and shallow emotional depth that prioritize feeling over location
-  atmosphere: Bittersweet, tender, nostalgic, sincere, quiet
+    Memory-washed anime melodrama where tender emotion, soft eyes, bittersweet light, and quiet vulnerability
+    define the frame
+  subject_treatment: >-
+    Gentle facial contouring, lowered gesture pressure, soft posture arcs, and emotion-first framing with
+    minimal visual clutter
+  color_and_tone: Warm sepia cream, pale sky blue, soft blossom pink, muted school navy, and faded amber highlights
+  lighting_and_shadow: Diffuse sentimental glow, backlit haze, low-contrast tearline highlights, and soft memory bloom
+  texture_and_material: >-
+    Subtle fabric weave, paper softness, polished wood warmth, faint dust haze, and blurred memory-grain
+    texture
+  camera_and_composition: Memory-bloom compression and shallow emotional depth that prioritize feeling over location
+  atmosphere_and_mood: Bittersweet, tender, nostalgic, sincere, quiet
+  rendering_and_quality: >-
+    Tender emotional anime finish with controlled softness, expressive eyes, and high sincerity without
+    photoreal heaviness
   key_features: Soft-eyed emotion, memory haze, gentle backlight, warm faded palette, and vulnerable stillness
   creative_brief: >-
     Use Clannad as style anchor for memory-washed melodrama. Apply bittersweet glow, softened edges,
-    vulnerable framing, and emotion-first composition to any prompt. Romance scenes, domestic props,
-    school settings, and specific relationships are optional.
+    vulnerable framing, and emotion-first composition to any prompt. Romance scenes, domestic props, school
+    settings, and specific relationships are optional.
 avoidRules:
   - realistic
   - 3d render
@@ -52,8 +50,8 @@ assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-090.webp
 attributes:
   negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, text, signature
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts,
+    watermark, text, signature
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle

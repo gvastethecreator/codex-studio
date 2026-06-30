@@ -13,15 +13,18 @@ tags:
   - material-surface-textures
 visualDna:
   aesthetic: Scales
-  form_and_line: Overlapping scales
-  color_palette: Patterned
-  lighting_setup: Sheen
-  material_texture: Scaly
-  render_quality: Exotic, dangerous
-  spatial_distortion: None
-  atmosphere: Wild, luxury
+  subject_treatment: Overlapping scales
+  color_and_tone: Patterned
+  lighting_and_shadow: Sheen
+  texture_and_material: Scaly
+  camera_and_composition: 'Compose for Snake Skin using its key spatial cues: Scale grid.'
+  atmosphere_and_mood: Wild, luxury
+  rendering_and_quality: Exotic, dangerous
   key_features: Scale grid
-  creative_brief: Apply snake-skin pattern as exotic scale geometry over the input with overlapping keratin shields, diamond facets, patterned sheen, and dangerous luxury. If creature, costume, object, or surface exists, wrap it in scale logic; otherwise use the scale grid as abstract texture without requiring a snake body.
+  creative_brief: >-
+    Apply snake-skin pattern as exotic scale geometry over the input with overlapping keratin shields, diamond
+    facets, patterned sheen, and dangerous luxury. If creature, costume, object, or surface exists, wrap it in
+    scale logic; otherwise use the scale grid as abstract texture without requiring a snake body.
 avoidRules:
   - fur
   - smooth

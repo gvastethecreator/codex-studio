@@ -13,18 +13,17 @@ tags:
   - geometric-abstraction
 visualDna:
   aesthetic: Floating shapes
-  form_and_line: None
-  color_palette: Black square, simple
-  lighting_setup: Flat
-  material_texture: Canvas
-  render_quality: Malevich, pure feeling
-  spatial_distortion: Zero gravity
-  atmosphere: Spiritual, empty
+  subject_treatment: "Treat subjects through Suprematism's signature cues: White void."
+  color_and_tone: Black square, simple
+  lighting_and_shadow: Flat
+  texture_and_material: Canvas
+  camera_and_composition: Zero gravity
+  atmosphere_and_mood: Spiritual, empty
+  rendering_and_quality: Malevich, pure feeling
   key_features: White void
   creative_brief: >-
-    Apply suprematist weightlessness to the input: floating rectangles, circles,
-    stark white voids, minimal gravity, and pure color-shape tension should make
-    any subject feel abstracted into sensation.
+    Apply suprematist weightlessness to the input: floating rectangles, circles, stark white voids, minimal
+    gravity, and pure color-shape tension should make any subject feel abstracted into sensation.
 avoidRules:
   - complex
   - real

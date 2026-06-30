@@ -10,14 +10,15 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'perfect registration',
     style: {
       aesthetic: 'Risograph zine print language with analog imperfection as feature',
-      form_and_line: 'Grain-bearing contours and stencil-like shape separation',
-      color_palette: 'Limited fluorescent/soy-ink channels with bold overprint interactions',
-      lighting_setup: 'Layered translucent ink behavior instead of naturalistic light modeling',
-      material_texture:
+      subject_treatment: 'Grain-bearing contours and stencil-like shape separation',
+      color_and_tone: 'Limited fluorescent/soy-ink channels with bold overprint interactions',
+      lighting_and_shadow:
+        'Layered translucent ink behavior instead of naturalistic light modeling',
+      texture_and_material:
         'High grain, registration drift, roller noise, and paper absorbency artifacts',
-      render_quality: 'DIY indie-print finish with deliberate production irregularities',
-      spatial_distortion: 'Channel misalignment and offset halos around forms',
-      atmosphere: 'Handmade, rebellious, art-press energy',
+      camera_and_composition: 'Channel misalignment and offset halos around forms',
+      atmosphere_and_mood: 'Handmade, rebellious, art-press energy',
+      rendering_and_quality: 'DIY indie-print finish with deliberate production irregularities',
       key_features: 'Overprint collisions, halftone grain fields, registration mismatch signatures',
       creative_brief:
         'Apply risograph mechanics to any input: limited soy-ink channels, imperfect registration, overprint collisions, halftone grain, roller noise, and paper absorbency should make the image materially printed without requiring zines, posters, typography, badges, flyers, or fixed print-shop content.',
@@ -30,13 +31,13 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'messy, organic',
     style: {
       aesthetic: 'Art Deco poster language with streamlined geometric glamour',
-      form_and_line: 'Symmetry-aware curves, stepped geometry, and aerodynamic motifs',
-      color_palette: 'Black, teal, gold, and metallic-adjacent accent hierarchy',
-      lighting_setup: 'Stylized gradient bands and radial sunburst emphasis',
-      material_texture: 'Smooth poster print with soft airbrush-like transitions',
-      render_quality: 'Decorative high-finish composition with era-authentic polish',
-      spatial_distortion: 'Streamlined elongation and geometric simplification',
-      atmosphere: 'Luxurious, optimistic, metropolitan',
+      subject_treatment: 'Symmetry-aware curves, stepped geometry, and aerodynamic motifs',
+      color_and_tone: 'Black, teal, gold, and metallic-adjacent accent hierarchy',
+      lighting_and_shadow: 'Stylized gradient bands and radial sunburst emphasis',
+      texture_and_material: 'Smooth poster print with soft airbrush-like transitions',
+      camera_and_composition: 'Streamlined elongation and geometric simplification',
+      atmosphere_and_mood: 'Luxurious, optimistic, metropolitan',
+      rendering_and_quality: 'Decorative high-finish composition with era-authentic polish',
       key_features: 'Sunbursts, frame borders, speed motifs, ornamental geometry',
       creative_brief:
         'Apply Art Deco poster grammar to any input: stepped geometry, sunburst rhythm, metallic-adjacent color blocking, streamlined elongation, and elegant frame discipline should make the image iconic without requiring cities, travel posters, skyscrapers, products, or period scenery.',
@@ -49,13 +50,13 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'straight lines, minimal',
     style: {
       aesthetic: 'Art Nouveau decorative lithograph (Alphonse Mucha influence)',
-      form_and_line: 'Sinuous flowing contour integrating hair, vines, and ornamental framing',
-      color_palette: 'Peach, sage, ivory, and muted gold with floral pastel harmonics',
-      lighting_setup: 'Flat luminous treatment with halo-centered emphasis',
-      material_texture: 'Poster-lithograph grain and ink-flat ornamental finish',
-      render_quality: 'Highly decorative, elegant, and pattern-rich composition',
-      spatial_distortion: 'Organic curve dominance over rigid perspective structure',
-      atmosphere: 'Romantic, ornamental, reverent',
+      subject_treatment: 'Sinuous flowing contour integrating hair, vines, and ornamental framing',
+      color_and_tone: 'Peach, sage, ivory, and muted gold with floral pastel harmonics',
+      lighting_and_shadow: 'Flat luminous treatment with halo-centered emphasis',
+      texture_and_material: 'Poster-lithograph grain and ink-flat ornamental finish',
+      camera_and_composition: 'Organic curve dominance over rigid perspective structure',
+      atmosphere_and_mood: 'Romantic, ornamental, reverent',
+      rendering_and_quality: 'Highly decorative, elegant, and pattern-rich composition',
       key_features: 'Circular nimbus motifs, botanical arabesques, integrated border systems',
       creative_brief:
         'Apply Art Nouveau lithograph flow to any input: sinuous contour, botanical arabesque, halo framing, muted gold, integrated borders, and ornamental curve dominance should unify subject and decoration without requiring women, hair, flowers, posters, or fixed portrait staging.',
@@ -68,14 +69,14 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'subtle, weak',
     style: {
       aesthetic: 'Constructivist',
-      form_and_line: 'Bold',
-      color_palette: 'Red, Black, Cream, revolutionary tension, stark authority',
-      lighting_setup: 'High contrast, heroic low-angle, dramatic light-beam',
-      material_texture: 'Screenprint',
-      render_quality:
+      subject_treatment: 'Bold',
+      color_and_tone: 'Red, Black, Cream, revolutionary tension, stark authority',
+      lighting_and_shadow: 'High contrast, heroic low-angle, dramatic light-beam',
+      texture_and_material: 'Screenprint',
+      camera_and_composition: 'Heroic angle',
+      atmosphere_and_mood: 'Strong, commanding, revolutionary urgency, mass-movement energy',
+      rendering_and_quality:
         'High-impact poster rendering with command-tone typography, screenprint flatness, and mass-communication urgency',
-      spatial_distortion: 'Heroic angle',
-      atmosphere: 'Strong, commanding, revolutionary urgency, mass-movement energy',
       key_features: 'Rays, bold typography, constructivist geometry',
       creative_brief:
         'Apply constructivist propaganda-poster grammar to any input: bold red-black-cream contrast, command diagonals, rays, screenprint flatness, type-shape hierarchy, and heroic low-angle pressure should drive impact without requiring workers, flags, crowds, slogans, politics, or readable text.',
@@ -88,13 +89,13 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'straight, readable',
     style: {
       aesthetic: '60s psychedelic poster language with optical-vibration typography',
-      form_and_line: 'Liquidly warped letterforms and undulating contour fields',
-      color_palette: 'High-chroma complementary clashes and acid-neon screenprint palette',
-      lighting_setup: 'Flat color-plane tension with no naturalistic light dependency',
-      material_texture: 'Screenprint grain and ink-overlap artifacts',
-      render_quality: 'Dense retro visual overload with deliberate readability disruption',
-      spatial_distortion: 'Melting curvature and wave-like compositional drift',
-      atmosphere: 'Countercultural, ecstatic, sensory-saturated',
+      subject_treatment: 'Liquidly warped letterforms and undulating contour fields',
+      color_and_tone: 'High-chroma complementary clashes and acid-neon screenprint palette',
+      lighting_and_shadow: 'Flat color-plane tension with no naturalistic light dependency',
+      texture_and_material: 'Screenprint grain and ink-overlap artifacts',
+      camera_and_composition: 'Melting curvature and wave-like compositional drift',
+      atmosphere_and_mood: 'Countercultural, ecstatic, sensory-saturated',
+      rendering_and_quality: 'Dense retro visual overload with deliberate readability disruption',
       key_features: 'Swirling typographic masses, radial waves, vibrating color adjacency',
       creative_brief:
         'Apply 60s psychedelic poster grammar to any input: liquid warped forms, vibrating complementary color, radial waves, dense pattern rhythm, and screenprint ink overlap should disrupt perception without requiring band names, concerts, readable typography, faces, or event posters.',
@@ -107,13 +108,13 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'detail, texture',
     style: {
       aesthetic: 'Minimalist vector character style in Corporate Memphis tradition',
-      form_and_line: 'Outline-light geometric figures with simplified anatomy blocks',
-      color_palette: 'Flat bright palette with controlled corporate-friendly contrast',
-      lighting_setup: 'Shadowless vector treatment with optional minimal shape layering',
-      material_texture: 'Clean digital-flat surfaces without tactile grain',
-      render_quality: 'UI/editorial-ready vector polish with high scalability',
-      spatial_distortion: 'Oversized limbs and soft blobby morphology',
-      atmosphere: 'Friendly, approachable, optimistic',
+      subject_treatment: 'Outline-light geometric figures with simplified anatomy blocks',
+      color_and_tone: 'Flat bright palette with controlled corporate-friendly contrast',
+      lighting_and_shadow: 'Shadowless vector treatment with optional minimal shape layering',
+      texture_and_material: 'Clean digital-flat surfaces without tactile grain',
+      camera_and_composition: 'Oversized limbs and soft blobby morphology',
+      atmosphere_and_mood: 'Friendly, approachable, optimistic',
+      rendering_and_quality: 'UI/editorial-ready vector polish with high scalability',
       key_features: 'Abstract human forms, geometric props, flat compositional hierarchy',
       creative_brief:
         'Apply minimalist vector character grammar to any input: flat geometry, simplified proportion, bright accessible color, soft blobby morphology, and modular shape hierarchy should stay UI/editorial-ready without requiring office people, product scenes, charts, apps, or corporate storytelling.',
@@ -126,13 +127,13 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'seamless, painted',
     style: {
       aesthetic: 'Dada-style cut-and-paste photomontage collage',
-      form_and_line: 'Hard scissor-cut boundaries and abrupt fragment intersections',
-      color_palette: 'Found-image sepia/grayscale base with selective accent insertions',
-      lighting_setup: 'Intentionally inconsistent source-light continuity across fragments',
-      material_texture: 'Halftone dots, paper edges, print-scan wear artifacts',
-      render_quality: 'Deliberate anti-polish collage assembly with conceptual friction',
-      spatial_distortion: 'Hybridized object-body juxtapositions and scale discontinuities',
-      atmosphere: 'Rebellious, absurdist, provocative',
+      subject_treatment: 'Hard scissor-cut boundaries and abrupt fragment intersections',
+      color_and_tone: 'Found-image sepia/grayscale base with selective accent insertions',
+      lighting_and_shadow: 'Intentionally inconsistent source-light continuity across fragments',
+      texture_and_material: 'Halftone dots, paper edges, print-scan wear artifacts',
+      camera_and_composition: 'Hybridized object-body juxtapositions and scale discontinuities',
+      atmosphere_and_mood: 'Rebellious, absurdist, provocative',
+      rendering_and_quality: 'Deliberate anti-polish collage assembly with conceptual friction',
       key_features: 'Visible seams, torn edges, fragment clash composition',
       creative_brief:
         'Apply Dada photomontage collage to any input: hard scissor seams, mismatched fragments, halftone wear, source-light contradiction, and abrupt scale discontinuity should create conceptual friction without requiring human bodies, newspapers, manifestos, politics, or fixed found-image scenes.',
@@ -145,13 +146,13 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'decorative, floral',
     style: {
       aesthetic: 'Bauhaus poster modernism with function-first geometry',
-      form_and_line: 'Grid-governed composition using circles, squares, triangles, and bars',
-      color_palette: 'Primary triad with black/white neutral anchors',
-      lighting_setup: 'Flat functional value treatment, no decorative shading',
-      material_texture: 'Matte print-surface simplicity',
-      render_quality: 'Precise typographic-layout discipline and asymmetrical balance',
-      spatial_distortion: 'Diagonal type and geometric tension as compositional drivers',
-      atmosphere: 'Rational, didactic, constructive',
+      subject_treatment: 'Grid-governed composition using circles, squares, triangles, and bars',
+      color_and_tone: 'Primary triad with black/white neutral anchors',
+      lighting_and_shadow: 'Flat functional value treatment, no decorative shading',
+      texture_and_material: 'Matte print-surface simplicity',
+      camera_and_composition: 'Diagonal type and geometric tension as compositional drivers',
+      atmosphere_and_mood: 'Rational, didactic, constructive',
+      rendering_and_quality: 'Precise typographic-layout discipline and asymmetrical balance',
       key_features: 'Modular grid, primary blocks, asymmetric equilibrium, typographic integration',
       creative_brief:
         'Apply Bauhaus poster economy to any input: grid-governed primitives, primary blocks, asymmetric balance, diagonal typographic tension, and matte functional clarity should make purpose visible without requiring school posters, readable type, furniture, buildings, or one message.',
@@ -164,13 +165,13 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'photo, detailed',
     style: {
       aesthetic: 'WPA-inspired national-park travel poster screenprint language',
-      form_and_line: 'Simplified landscape silhouettes with strong horizon stratification',
-      color_palette: 'Earth-toned separated inks with limited scenic band gradients',
-      lighting_setup: 'Stylized day-phase color banding rather than realistic light physics',
-      material_texture: 'Screen mesh print feel with flat-ink layering',
-      render_quality: 'Bold vintage poster clarity with monumental scenic abstraction',
-      spatial_distortion: 'Simplified mountain masses and compressed depth tiers',
-      atmosphere: 'Majestic, nostalgic, civic-romantic',
+      subject_treatment: 'Simplified landscape silhouettes with strong horizon stratification',
+      color_and_tone: 'Earth-toned separated inks with limited scenic band gradients',
+      lighting_and_shadow: 'Stylized day-phase color banding rather than realistic light physics',
+      texture_and_material: 'Screen mesh print feel with flat-ink layering',
+      camera_and_composition: 'Simplified mountain masses and compressed depth tiers',
+      atmosphere_and_mood: 'Majestic, nostalgic, civic-romantic',
+      rendering_and_quality: 'Bold vintage poster clarity with monumental scenic abstraction',
       key_features: 'Serif titling, horizontal strata, landmark silhouette simplification',
       creative_brief:
         'Apply WPA travel-poster screenprint grammar to any input: simplified landmark-like silhouettes, horizon strata, limited earth-tone inks, flat scenic banding, and civic nostalgia should create poster majesty without requiring national parks, mountains, titles, specific landmarks, or travel ads.',
@@ -184,19 +185,19 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Hand-painted epic poster style with airbrushed montage drama, nostalgic theatrical promise, and maximal emotional compression',
-      form_and_line:
+      subject_treatment:
         'Soft-airbrush contour blending, compositional figure stacking, and montage-guided directional flow toward focal hierarchy',
-      color_palette:
+      color_and_tone:
         'Bold warm-cool oppositions with theatrical amber/cyan pushes, luminous atmospheric transitions, and poster-grade chroma emphasis',
-      lighting_setup:
+      lighting_and_shadow:
         'Heroic rim/backlight layering with dramatic key splits, glow accents, and stage-like contrast separation',
-      material_texture:
+      texture_and_material:
         'Subtle painted-surface grain with airbrush mist transitions and matte poster-print finish cues',
-      render_quality:
-        'Classic illustrated one-sheet fidelity emphasizing narrative condensation, iconic readability, and high-drama polish',
-      spatial_distortion:
+      camera_and_composition:
         'Layered montage depth with overlapping portrait scales and symbolic background expansion for mythic scope',
-      atmosphere: 'Cinematic, nostalgic, anticipatory, grand, emotional',
+      atmosphere_and_mood: 'Cinematic, nostalgic, anticipatory, grand, emotional',
+      rendering_and_quality:
+        'Classic illustrated one-sheet fidelity emphasizing narrative condensation, iconic readability, and high-drama polish',
       key_features:
         'Airbrushed montage composition, theatrical light contrast, high-impact focal stacking, title-safe hero spacing',
       creative_brief:
@@ -210,13 +211,13 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'messy, art',
     style: {
       aesthetic: 'Editorial infographic/data-visualization illustration system',
-      form_and_line: 'Thin icon strokes, modular chart primitives, directional flow connectors',
-      color_palette: 'Consistent categorical palette with accessible contrast grouping',
-      lighting_setup: 'Flat informational rendering with no decorative shadowing',
-      material_texture: 'Clean vector output suitable for print and screen',
-      render_quality: 'High-legibility explainer quality with dashboard-grade precision',
-      spatial_distortion: 'Optional isometric modules integrated into 2D data layouts',
-      atmosphere: 'Analytical, trustworthy, concise',
+      subject_treatment: 'Thin icon strokes, modular chart primitives, directional flow connectors',
+      color_and_tone: 'Consistent categorical palette with accessible contrast grouping',
+      lighting_and_shadow: 'Flat informational rendering with no decorative shadowing',
+      texture_and_material: 'Clean vector output suitable for print and screen',
+      camera_and_composition: 'Optional isometric modules integrated into 2D data layouts',
+      atmosphere_and_mood: 'Analytical, trustworthy, concise',
+      rendering_and_quality: 'High-legibility explainer quality with dashboard-grade precision',
       key_features: 'Chart blocks, iconography families, data-flow arrows, hierarchy scaffolds',
       creative_brief:
         'Apply editorial infographic grammar to any input: modular chart primitives, icon families, directional flow, semantic color grouping, and dashboard-grade hierarchy should clarify complex subjects without requiring labels, arrows, UI dashboards, statistics, or explainer-page layouts.',
@@ -229,13 +230,14 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'short, realistic',
     style: {
       aesthetic: 'Runway sketch',
-      form_and_line: 'Loose, gestural',
-      color_palette: 'Watercolor splash, runway accent, gestural pigment',
-      lighting_setup: 'None, spontaneous stroke, fashion-line attitude',
-      material_texture: 'Paper',
-      render_quality: 'Vogue, stylish, runway fluidity, editorial confidence',
-      spatial_distortion: 'Elongated legs',
-      atmosphere: 'Chic, fast, atelier energy, catwalk motion',
+      subject_treatment: 'Loose, gestural',
+      color_and_tone: 'Watercolor splash, runway accent, gestural pigment',
+      lighting_and_shadow:
+        'Spontaneous stroke and fashion-line attitude without simulated lighting',
+      texture_and_material: 'Paper',
+      camera_and_composition: 'Elongated legs',
+      atmosphere_and_mood: 'Chic, fast, atelier energy, catwalk motion',
+      rendering_and_quality: 'Vogue, stylish, runway fluidity, editorial confidence',
       key_features: '9 heads tall, loose gesture, editorial whitespace',
       creative_brief:
         'Apply runway fashion-illustration grammar to any input: elongated gesture, fugitive brush motion, editorial whitespace, watercolor splash, and fabric-suggesting line speed should make elegance feel caught in motion without requiring models, catwalks, clothing, poses, or atelier scenes.',
@@ -249,19 +251,19 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Surreal music-cover style with conceptual visual paradoxes, dream-logic symbolism, and iconic square-format image tension',
-      form_and_line:
+      subject_treatment:
         'Sharp-edged geometric motifs balanced with soft surreal transitions, symbolic object juxtaposition, and clean silhouette punctuation',
-      color_palette:
+      color_and_tone:
         'Prismatic spectral accents over controlled dark bases, uncanny complementary pairings, and dream-state tonal discontinuities',
-      lighting_setup:
+      lighting_and_shadow:
         'Impossible-source illumination with haloed glows, selective hard-edge highlights, and surreal depth cues',
-      material_texture:
+      texture_and_material:
         'Fine analog-photo grain with matte print character and subtle collage-surface irregularity',
-      render_quality:
-        'Concept-forward cover rendering prioritizing symbolic ambiguity, memorable central metaphor, and high-impact square readability',
-      spatial_distortion:
+      camera_and_composition:
         'Non-Euclidean object relationships and paradox perspective logic sustaining deliberate visual disorientation',
-      atmosphere: 'Mysterious, contemplative, strange, immersive, hypnotic',
+      atmosphere_and_mood: 'Mysterious, contemplative, strange, immersive, hypnotic',
+      rendering_and_quality:
+        'Concept-forward cover rendering prioritizing symbolic ambiguity, memorable central metaphor, and high-impact square readability',
       key_features:
         'Square-cover composition, symbolic juxtaposition engine, prismatic accent system, impossible-space staging',
       creative_brief:
@@ -276,19 +278,19 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Mid-century pulp-cover illustration style with sensational composition, high-urgency editorial drama, and lurid market-impact intent',
-      form_and_line:
+      subject_treatment:
         'Painterly contour emphasis with bold gesture silhouettes, kinetic focal diagonals, and headline-oriented compositional framing',
-      color_palette:
+      color_and_tone:
         'Aggressive warm primaries with acid yellow-red pushes, deep shadow anchors, and high-contrast attention-grab hierarchy',
-      lighting_setup:
+      lighting_and_shadow:
         'Hard-edged spotlight contrast with half-lit faces, dramatic shadow wedges, and suspense-driven value staging',
-      material_texture:
+      texture_and_material:
         'Cheap coated-pulp paper feel with visible print wear, ink soak variation, and subtle halftone residue',
-      render_quality:
-        'High-energy cover-art finish prioritizing immediate shelf readability, dramatic hooks, and tabloid-level visual punch',
-      spatial_distortion:
+      camera_and_composition:
         'Perspective pushed toward action-forward staging with foreground exaggeration and compressed narrative depth',
-      atmosphere: 'Tense, sensational, urgent, dramatic, lurid',
+      atmosphere_and_mood: 'Tense, sensational, urgent, dramatic, lurid',
+      rendering_and_quality:
+        'High-energy cover-art finish prioritizing immediate shelf readability, dramatic hooks, and tabloid-level visual punch',
       key_features:
         'Masthead-safe title zone, blurb-driven layout logic, sensational focal center, newsstand-impact color blocking',
       creative_brief:
@@ -303,19 +305,19 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Vintage travel-poster style with idealized destination abstraction, optimistic transit-era polish, and graphic promotional clarity',
-      form_and_line:
+      subject_treatment:
         'Simplified geometric landmark silhouettes with clean contour economy, broad shape stacking, and poster-friendly horizon banding',
-      color_palette:
+      color_and_tone:
         'Sunlit flat chroma blocks with warm coastal tones, sky-sea separation, and restrained retro print contrast',
-      lighting_setup:
+      lighting_and_shadow:
         'Even poster illumination with soft midday optimism and minimal shadow complexity to maximize graphic legibility',
-      material_texture:
+      texture_and_material:
         'Lithographic print grain with subtle ink spread, paper aging cues, and lightly faded archival surface character',
-      render_quality:
-        'Clean promotional illustration finish emphasizing readable forms, aspirational mood, and destination-forward composition',
-      spatial_distortion:
+      camera_and_composition:
         'Deliberately simplified depth planes with flattened perspective and iconized environment hierarchy',
-      atmosphere: 'Bright, inviting, relaxed, optimistic, escapist',
+      atmosphere_and_mood: 'Bright, inviting, relaxed, optimistic, escapist',
+      rendering_and_quality:
+        'Clean promotional illustration finish emphasizing readable forms, aspirational mood, and destination-forward composition',
       key_features:
         'Bottom title-lockup zone, destination-led typographic framing, simplified landmark anchors, travel-poster layout discipline',
       creative_brief:
@@ -330,19 +332,19 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Limited-ink screenprint gig-poster style with loud typographic presence, tactile print imperfection, and venue-energy graphic impact',
-      form_and_line:
+      subject_treatment:
         'Thick ink contours with hand-pulled edge variance, halftone transitions, and letterform-dominant compositional structure',
-      color_palette:
+      color_and_tone:
         'Three-spot high-contrast palette with deliberate overprint interactions and poster-impact chroma economy',
-      lighting_setup:
+      lighting_and_shadow:
         'Halftone-value illusion and flat print lighting logic prioritizing tonal punch over realistic illumination',
-      material_texture:
+      texture_and_material:
         'Fibrous poster stock with squeegee drag traces, ink density fluctuation, and worn-edge distress artifacts',
-      render_quality:
-        'Handmade print-shop fidelity emphasizing process evidence, tactile ink layering, and immediate event-readability',
-      spatial_distortion:
+      camera_and_composition:
         'Distressed print deformation with slight misregistration and compositionally intentional grit accents',
-      atmosphere: 'Loud, raw, energetic, gritty, live',
+      atmosphere_and_mood: 'Loud, raw, energetic, gritty, live',
+      rendering_and_quality:
+        'Handmade print-shop fidelity emphasizing process evidence, tactile ink layering, and immediate event-readability',
       key_features:
         'Overprint zone behavior, registration offset cues, distressed border treatment, headline-weight typographic lockups',
       creative_brief:
@@ -356,13 +358,13 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'freehand',
     style: {
       aesthetic: 'Spray over cutout',
-      form_and_line: 'Bridges',
-      color_palette: 'Black on Wall, single-color guerrilla, high-arrest contrast',
-      lighting_setup: 'Flat, street-light ambient, no-studio rawness',
-      material_texture: 'Overspray',
-      render_quality: 'Political, street, quick-strike impact, message-first clarity',
-      spatial_distortion: 'Simplified levels',
-      atmosphere: 'Rebellious, simple, urban-dissident energy, unauthorized truth',
+      subject_treatment: 'Bridges',
+      color_and_tone: 'Black on Wall, single-color guerrilla, high-arrest contrast',
+      lighting_and_shadow: 'Flat, street-light ambient, no-studio rawness',
+      texture_and_material: 'Overspray',
+      camera_and_composition: 'Simplified levels',
+      atmosphere_and_mood: 'Rebellious, simple, urban-dissident energy, unauthorized truth',
+      rendering_and_quality: 'Political, street, quick-strike impact, message-first clarity',
       key_features: 'Bridges, cutout connections, stencil registration',
       creative_brief:
         'Apply protest-stencil print grammar to any input: bridged cutouts, hard one-ink silhouettes, overspray halos, poster-paper grain, registration slippage, and urgent negative-space compression. Preserve the stencil language without requiring slogans, readable text, political scenes, walls, crowds, or any named artist imitation.',

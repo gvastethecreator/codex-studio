@@ -13,33 +13,28 @@ tags:
   - editorial-and-poster
 visualDna:
   aesthetic: >-
-    Hand-painted epic poster style with airbrushed montage drama, nostalgic theatrical promise, and
-    maximal emotional compression
-  form_and_line: >-
-    Soft-airbrush contour blending, compositional figure stacking, and montage-guided directional
-    flow toward focal hierarchy
-  color_palette: >-
-    Bold warm-cool oppositions with theatrical amber/cyan pushes, luminous atmospheric transitions,
-    and poster-grade chroma emphasis
-  lighting_setup: >-
-    Heroic rim/backlight layering with dramatic key splits, glow accents, and stage-like contrast
-    separation
-  material_texture: Subtle painted-surface grain with airbrush mist transitions and matte poster-print finish cues
-  render_quality: >-
-    Classic illustrated one-sheet fidelity emphasizing narrative condensation, iconic readability,
-    and high-drama polish
-  spatial_distortion: >-
-    Layered montage depth with overlapping portrait scales and symbolic background expansion for
-    mythic scope
-  atmosphere: Cinematic, nostalgic, anticipatory, grand, emotional
+    Hand-painted epic poster style with airbrushed montage drama, nostalgic theatrical promise, and maximal
+    emotional compression
+  subject_treatment: >-
+    Soft-airbrush contour blending, compositional figure stacking, and montage-guided directional flow toward
+    focal hierarchy
+  color_and_tone: >-
+    Bold warm-cool oppositions with theatrical amber/cyan pushes, luminous atmospheric transitions, and
+    poster-grade chroma emphasis
+  lighting_and_shadow: Heroic rim/backlight layering with dramatic key splits, glow accents, and stage-like contrast separation
+  texture_and_material: Subtle painted-surface grain with airbrush mist transitions and matte poster-print finish cues
+  camera_and_composition: Layered montage depth with overlapping portrait scales and symbolic background expansion for mythic scope
+  atmosphere_and_mood: Cinematic, nostalgic, anticipatory, grand, emotional
+  rendering_and_quality: >-
+    Classic illustrated one-sheet fidelity emphasizing narrative condensation, iconic readability, and
+    high-drama polish
   key_features: >-
-    Airbrushed montage composition, theatrical light contrast, high-impact focal stacking,
-    title-safe hero spacing
+    Airbrushed montage composition, theatrical light contrast, high-impact focal stacking, title-safe hero
+    spacing
   creative_brief: >-
-    Apply hand-painted epic poster grammar to any input: airbrushed montage layers, theatrical
-    warm-cool conflict, symbolic background expansion, title-safe focal spacing, and nostalgic
-    one-sheet polish should promise drama without requiring films, casts, faces, weapons, titles, or
-    a specific saga.
+    Apply hand-painted epic poster grammar to any input: airbrushed montage layers, theatrical warm-cool
+    conflict, symbolic background expansion, title-safe focal spacing, and nostalgic one-sheet polish should
+    promise drama without requiring films, casts, faces, weapons, titles, or a specific saga.
 avoidRules:
   - photo collage
 assets:

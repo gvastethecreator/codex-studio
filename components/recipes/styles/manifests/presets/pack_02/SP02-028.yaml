@@ -13,15 +13,18 @@ tags:
   - tv-and-broadcast
 visualDna:
   aesthetic: Alternative video
-  form_and_line: Scribbles
-  color_palette: Desaturated + Neon, bleach bypass, acid green, safety orange
-  lighting_setup: Strobe, flicker, flash-frame, concert par-can
-  material_texture: Distressed film, scratched negative, hand-processed
-  render_quality: Edgy, fast, rapid-fire montage, music-video relentlessness
-  spatial_distortion: Morphing, image warp, video feedback, liquid dissolve
-  atmosphere: Rebellious, cool, anti-establishment, mosh-pit energy
+  subject_treatment: Scribbles
+  color_and_tone: Desaturated + Neon, bleach bypass, acid green, safety orange
+  lighting_and_shadow: Strobe, flicker, flash-frame, concert par-can
+  texture_and_material: Distressed film, scratched negative, hand-processed
+  camera_and_composition: Morphing, image warp, video feedback, liquid dissolve
+  atmosphere_and_mood: Rebellious, cool, anti-establishment, mosh-pit energy
+  rendering_and_quality: Edgy, fast, rapid-fire montage, music-video relentlessness
   key_features: Fast-cut feel, scribble overlays, feedback warp
-  creative_brief: 'MTV 90s grunge broadcast attacks any subject with scratched negative, bleach bypass, acid green/orange accents, strobe flash, feedback warp, scribble marks, and rapid-fire montage energy. Keep alternative video rebellion without requiring bands, crowd, logos, graffiti text, or mosh-pit content.'
+  creative_brief: >-
+    MTV 90s grunge broadcast attacks any subject with scratched negative, bleach bypass, acid green/orange
+    accents, strobe flash, feedback warp, scribble marks, and rapid-fire montage energy. Keep alternative
+    video rebellion without requiring bands, crowd, logos, graffiti text, or mosh-pit content.
 avoidRules:
   - clean
 assets:

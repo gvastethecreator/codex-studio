@@ -13,22 +13,22 @@ tags:
   - weathering-and-decay
 visualDna:
   aesthetic: Garage floor
-  form_and_line: Puddles
-  color_palette: Black, Rainbow sheen
-  lighting_setup: Glossy spots
-  material_texture: Wet spots
-  render_quality: Dirty, mechanical
-  spatial_distortion: Stained
-  atmosphere: Industrial, dirty
+  subject_treatment: Puddles
+  color_and_tone: Black, Rainbow sheen
+  lighting_and_shadow: Glossy spots
+  texture_and_material: Wet spots
+  camera_and_composition: Stained
+  atmosphere_and_mood: Industrial, dirty
+  rendering_and_quality: Dirty, mechanical
   key_features: Drip pattern
   creative_brief: >-
-    Render the accidental rainbows of oil spreading across concrete in dark puddles where thin-film interference paints
-    iridescent maps in magenta, cyan, and gold across the garage floor. The surface should feel wet and heavy in the
-    dark pools while the rainbow sheen floats like a ghost of color atop the grime. Capture the strange loveliness of
-    the unwanted, the mechanics of spectrum blooming in neglect. Use Oil Stains as portable surface/render behavior over
-    any input: map its texture, light response, edge wear, color chemistry, and tactile rhythm onto the subject instead
-    of requiring a literal material sample, macro tile, wall, landscape, source object, or scene where the material
-    naturally appears.
+    Render the accidental rainbows of oil spreading across concrete in dark puddles where thin-film
+    interference paints iridescent maps in magenta, cyan, and gold across the garage floor. The surface should
+    feel wet and heavy in the dark pools while the rainbow sheen floats like a ghost of color atop the grime.
+    Capture the strange loveliness of the unwanted, the mechanics of spectrum blooming in neglect. Use Oil
+    Stains as portable surface/render behavior over any input: map its texture, light response, edge wear,
+    color chemistry, and tactile rhythm onto the subject instead of requiring a literal material sample, macro
+    tile, wall, landscape, source object, or scene where the material naturally appears.
 avoidRules:
   - clean concrete
 assets:

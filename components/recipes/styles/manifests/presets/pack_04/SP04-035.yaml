@@ -13,19 +13,18 @@ tags:
   - editorial-and-poster
 visualDna:
   aesthetic: Minimalist vector character style in Corporate Memphis tradition
-  form_and_line: Outline-light geometric figures with simplified anatomy blocks
-  color_palette: Flat bright palette with controlled corporate-friendly contrast
-  lighting_setup: Shadowless vector treatment with optional minimal shape layering
-  material_texture: Clean digital-flat surfaces without tactile grain
-  render_quality: UI/editorial-ready vector polish with high scalability
-  spatial_distortion: Oversized limbs and soft blobby morphology
-  atmosphere: Friendly, approachable, optimistic
+  subject_treatment: Outline-light geometric figures with simplified anatomy blocks
+  color_and_tone: Flat bright palette with controlled corporate-friendly contrast
+  lighting_and_shadow: Shadowless vector treatment with optional minimal shape layering
+  texture_and_material: Clean digital-flat surfaces without tactile grain
+  camera_and_composition: Oversized limbs and soft blobby morphology
+  atmosphere_and_mood: Friendly, approachable, optimistic
+  rendering_and_quality: UI/editorial-ready vector polish with high scalability
   key_features: Abstract human forms, geometric props, flat compositional hierarchy
   creative_brief: >-
-    Apply minimalist vector character grammar to any input: flat geometry, simplified proportion,
-    bright accessible color, soft blobby morphology, and modular shape hierarchy should stay
-    UI/editorial-ready without requiring office people, product scenes, charts, apps, or corporate
-    storytelling.
+    Apply minimalist vector character grammar to any input: flat geometry, simplified proportion, bright
+    accessible color, soft blobby morphology, and modular shape hierarchy should stay UI/editorial-ready
+    without requiring office people, product scenes, charts, apps, or corporate storytelling.
 avoidRules:
   - detail
   - texture

@@ -13,34 +13,34 @@ tags:
   - anime-style-spectrum
 visualDna:
   aesthetic: >-
-    Ukiyo-e and anime fusion with bokashi gradients, flat decorative color fields, wave-like motion
-    energy, rain-streak cadence, and floating-world theatricality
-  form_and_line: >-
-    Woodblock-carved contour lines, variable-width sumi-style edges, deliberate simplification of
-    form, decorative-print line quality
-  color_palette: >-
-    Indigo, vermillion, ochre, pine-green, sumi-black, bokashi-fade gradients, flat-decorative color
-    blocking, Edo-period limited palette
-  lighting_setup: >-
-    Flat-decorative Japanese woodblock lighting, no cast shadows, bokashi-gradient atmosphere,
-    color-block depth separation
-  material_texture: >-
-    Wood-grain printing texture, rice-paper absorption, pigment-saturated washi, carved-block edge
-    impression, hand-burnished surface
-  render_quality: >-
+    Ukiyo-e and anime fusion with bokashi gradients, flat decorative color fields, wave-like motion energy,
+    rain-streak cadence, and floating-world theatricality
+  subject_treatment: >-
+    Woodblock-carved contour lines, variable-width sumi-style edges, deliberate simplification of form,
+    decorative-print line quality
+  color_and_tone: >-
+    Indigo, vermillion, ochre, pine-green, sumi-black, bokashi-fade gradients, flat-decorative color blocking,
+    Edo-period limited palette
+  lighting_and_shadow: >-
+    Flat-decorative Japanese woodblock lighting, no cast shadows, bokashi-gradient atmosphere, color-block
+    depth separation
+  texture_and_material: >-
+    Wood-grain printing texture, rice-paper absorption, pigment-saturated washi, carved-block edge impression,
+    hand-burnished surface
+  camera_and_composition: >-
+    Flattened ukiyo-e perspective, decorative-space composition, layered-depth through color planes, no
+    western vanishing-point
+  atmosphere_and_mood: Timeless, decorative, nature-power, floating-world poetry, traditional-meets-modern elegance
+  rendering_and_quality: >-
     Ukiyo-e-woodblock anime fusion, Hokusai-style dynamism, Japanese-printmaking-beauty,
     decorative-flat-rendering mastery
-  spatial_distortion: >-
-    Flattened ukiyo-e perspective, decorative-space composition, layered-depth through color planes,
-    no western vanishing-point
-  atmosphere: Timeless, decorative, nature-power, floating-world poetry, traditional-meets-modern elegance
   key_features: >-
-    Woodblock-line quality, bokashi-gradient fields, flat-decorative color planes, wave-rhythm
-    echoes, rain-streak cadence, rice-paper texture
+    Woodblock-line quality, bokashi-gradient fields, flat-decorative color planes, wave-rhythm echoes,
+    rain-streak cadence, rice-paper texture
   creative_brief: >-
-    Use ukiyo-e woodblock anime as carved-print grammar. Any prompt should gain bokashi gradients,
-    washi texture, flat decorative depth, carved contours, and rhythmic weather marks. Battles,
-    landscapes, waves, skies, and historic motifs are optional.
+    Use ukiyo-e woodblock anime as carved-print grammar. Any prompt should gain bokashi gradients, washi
+    texture, flat decorative depth, carved contours, and rhythmic weather marks. Battles, landscapes, waves,
+    skies, and historic motifs are optional.
 avoidRules:
   - 3d
   - realistic

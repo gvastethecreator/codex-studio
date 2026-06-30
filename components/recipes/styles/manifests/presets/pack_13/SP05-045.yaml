@@ -12,20 +12,33 @@ tags:
   - anime-character-and-lifestyle
   - shojo-magical-girl-and-visionary-classics
 visualDna:
-  aesthetic: Lavish shojo farce where aristocratic polish, gender-play performance, decorative absurdity, and sincere emotion collide in sparkling romantic comedy
-  form_and_line: Delicate romance linework, fine hair-thin strokes, graceful flowing contours, soft eyelash detail, and theatrical gesture punctuation
-  color_palette: Rose pastels, pearl whites, elegant jewel accents, warm gold glints, and comedic blush pops
-  lighting_setup: Soft bloom, gentle rim light, butterfly portrait lighting, luminous halation, and spotlight-like glamour beats
-  material_texture: Airy fabrics, silk sheen, delicate lace textures, chiffon translucency, polished ornament, and petal-soft surface cues
-  render_quality: Luminous romance-anime frame with ethereal bloom, soft-focus beauty, crisp comic expression, and dreamy chromatic softness
-  spatial_distortion: Graceful elongated proportions, theatrical entrance scaling, fashion-figure elegance, and romantic silhouette styling
-  atmosphere: Playful, lavish, absurd, sparkling
-  key_features: Decorative comedy timing, lavish shojo polish, performance-coded elegance, expressive eye detail, heartfelt farce
+  aesthetic: >-
+    Lavish shojo farce where aristocratic polish, gender-play performance, decorative absurdity, and sincere
+    emotion collide in sparkling romantic comedy
+  subject_treatment: >-
+    Delicate romance linework, fine hair-thin strokes, graceful flowing contours, soft eyelash detail, and
+    theatrical gesture punctuation
+  color_and_tone: Rose pastels, pearl whites, elegant jewel accents, warm gold glints, and comedic blush pops
+  lighting_and_shadow: >-
+    Soft bloom, gentle rim light, butterfly portrait lighting, luminous halation, and spotlight-like glamour
+    beats
+  texture_and_material: >-
+    Airy fabrics, silk sheen, delicate lace textures, chiffon translucency, polished ornament, and petal-soft
+    surface cues
+  camera_and_composition: >-
+    Graceful elongated proportions, theatrical entrance scaling, fashion-figure elegance, and romantic
+    silhouette styling
+  atmosphere_and_mood: Playful, lavish, absurd, sparkling
+  rendering_and_quality: >-
+    Luminous romance-anime frame with ethereal bloom, soft-focus beauty, crisp comic expression, and dreamy
+    chromatic softness
+  key_features: >-
+    Decorative comedy timing, lavish shojo polish, performance-coded elegance, expressive eye detail,
+    heartfelt farce
   creative_brief: >-
-    Use the rose-petal comedy title as a style anchor for lavish shojo farce:
-    glamour, performance, and sincere absurdity should transfer to any subject
-    without requiring school, host-club staging, chandeliers, twins, or fixed
-    entrances.
+    Use the rose-petal comedy title as a style anchor for lavish shojo farce: glamour, performance, and
+    sincere absurdity should transfer to any subject without requiring school, host-club staging, chandeliers,
+    twins, or fixed entrances.
 avoidRules:
   - realistic
   - 3d render
@@ -42,7 +55,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-045.webp
 attributes:
-  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
+  negativePrompt: >-
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts,
+    watermark, text, signature
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle

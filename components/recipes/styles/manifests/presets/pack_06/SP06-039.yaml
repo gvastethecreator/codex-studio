@@ -13,19 +13,18 @@ tags:
   - printmaking
 visualDna:
   aesthetic: Digital duplicator print
-  form_and_line: Dithered
-  color_palette: Neon pink, blue, yellow, grain
-  lighting_setup: Flat
-  material_texture: Rice paper, dithering
-  render_quality: Zine, retro, cheap
-  spatial_distortion: Misregistration
-  atmosphere: Fun, indie, handmade, slightly unstable
+  subject_treatment: Dithered
+  color_and_tone: Neon pink, blue, yellow, grain
+  lighting_and_shadow: Flat
+  texture_and_material: Rice paper, dithering
+  camera_and_composition: Misregistration
+  atmosphere_and_mood: Fun, indie, handmade, slightly unstable
+  rendering_and_quality: Zine, retro, cheap
   key_features: Grainy dither
   creative_brief: >-
-    Apply Risograph duplication to any input: soy-ink grain, neon spot colors,
-    drum-print texture, dithered tonal fields, paper absorption, and charming
-    misregistration. Keep cheap vivid instability without requiring zines,
-    posters, typography, flyers, or student-print context.
+    Apply Risograph duplication to any input: soy-ink grain, neon spot colors, drum-print texture, dithered
+    tonal fields, paper absorption, and charming misregistration. Keep cheap vivid instability without
+    requiring zines, posters, typography, flyers, or student-print context.
 avoidRules:
   - photo
   - realistic
@@ -45,7 +44,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP06-039.webp
 attributes:
-  negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border
+  negativePrompt: >-
+    photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy,
+    watermark, text, signature, frame, border
 taxonomy:
   packId: pack_06
   packName: Essential Art Styles

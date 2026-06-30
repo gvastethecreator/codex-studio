@@ -12,16 +12,24 @@ tags:
   - cinematic-and-media
   - caricature-and-cartoon-styles
 visualDna:
-  aesthetic: Flat weird dayjob cartoon, awkward simplified forms, anti-climactic absurdity, smiling-through-existential-panic energy, low-stakes apocalypse humor, deadpan mundane nonsense, adult-swim anti-spectacle simplicity
-  form_and_line: Thin simple contour lines, deliberately plain shape language, occasional scribbly panic accents
-  color_palette: Flat sour pastels, nicotine yellow, dusty salmon, office beige, washed-out green, cheap digital cyan
-  lighting_setup: Flat no-drama lighting, fluorescent office wash, occasional dingy hallway glow, unheroic ambient fill
-  material_texture: Simple digital fills, lightly dirty edges, cheap surface texture, flat wall-like color, low-fuss line art
-  render_quality: Lo-fi weird-comedy cartoon, clean enough to read, ugly enough to feel wrong, internet-age anti-polish
-  spatial_distortion: Stubby proportions, tiny massing, off-model expression logic, abrupt perspective jumps for punchlines
-  atmosphere: Awkward, deadpan, bizarre, mildly cursed
-  key_features: Simple oddball silhouettes, blank pauses, mundane prop logic, anti-climactic framing, uncomfortable stillness
-  creative_brief: 'Apply flat weird-comedy design to any prompt: sour pastels, simple contours, mundane staging, anti-climactic composition, and awkward pauses made visible. Avoid required offices, workplaces, side characters, or specific props. The style should feel funny because it refuses spectacle.'
+  aesthetic: >-
+    Flat weird dayjob cartoon, awkward simplified forms, anti-climactic absurdity,
+    smiling-through-existential-panic energy, low-stakes apocalypse humor, deadpan mundane nonsense,
+    adult-swim anti-spectacle simplicity
+  subject_treatment: Thin simple contour lines, deliberately plain shape language, occasional scribbly panic accents
+  color_and_tone: Flat sour pastels, nicotine yellow, dusty salmon, office beige, washed-out green, cheap digital cyan
+  lighting_and_shadow: Flat no-drama lighting, fluorescent office wash, occasional dingy hallway glow, unheroic ambient fill
+  texture_and_material: Simple digital fills, lightly dirty edges, cheap surface texture, flat wall-like color, low-fuss line art
+  camera_and_composition: Stubby proportions, tiny massing, off-model expression logic, abrupt perspective jumps for punchlines
+  atmosphere_and_mood: Awkward, deadpan, bizarre, mildly cursed
+  rendering_and_quality: Lo-fi weird-comedy cartoon, clean enough to read, ugly enough to feel wrong, internet-age anti-polish
+  key_features: >-
+    Simple oddball silhouettes, blank pauses, mundane prop logic, anti-climactic framing, uncomfortable
+    stillness
+  creative_brief: >-
+    Apply flat weird-comedy design to any prompt: sour pastels, simple contours, mundane staging,
+    anti-climactic composition, and awkward pauses made visible. Avoid required offices, workplaces, side
+    characters, or specific props. The style should feel funny because it refuses spectacle.
 avoidRules:
   - epic
   - slick

@@ -13,24 +13,22 @@ tags:
   - ink-and-print
 visualDna:
   aesthetic: >-
-    Engraved etching style with document-grade line security, old-master precision, and tonal
-    density through incision logic
-  form_and_line: >-
-    Fine crosshatch weave with controlled burin-like stroke layering and micro-line directional
-    modulation
-  color_palette: Black ink, tonal-hash spectrum, burin-precision value
-  lighting_setup: Line density, hatching-as-light, cumulative shadow depth
-  material_texture: Paper
-  render_quality: >-
-    High-precision engraving fidelity emphasizing line-depth hierarchy, anti-counterfeit visual
-    complexity, and archival print character
-  spatial_distortion: None
-  atmosphere: Serious, valuable, mint-condition reverence, time-capsule gravitas
+    Engraved etching style with document-grade line security, old-master precision, and tonal density through
+    incision logic
+  subject_treatment: Fine crosshatch weave with controlled burin-like stroke layering and micro-line directional modulation
+  color_and_tone: Black ink, tonal-hash spectrum, burin-precision value
+  lighting_and_shadow: Line density, hatching-as-light, cumulative shadow depth
+  texture_and_material: Paper
+  camera_and_composition: 'Compose for Etching (Engraving) using its key spatial cues: Hatching, crosshatching, fine-line density.'
+  atmosphere_and_mood: Serious, valuable, mint-condition reverence, time-capsule gravitas
+  rendering_and_quality: >-
+    High-precision engraving fidelity emphasizing line-depth hierarchy, anti-counterfeit visual complexity,
+    and archival print character
   key_features: Hatching, crosshatching, fine-line density
   creative_brief: >-
-    Apply engraved etching grammar to any input: dense crosshatch tonality, burin-like incision,
-    archival paper, document-authority detail, and micro-line direction should create old-master
-    precision without requiring banknotes, documents, portraits, maps, seals, or antique scenes.
+    Apply engraved etching grammar to any input: dense crosshatch tonality, burin-like incision, archival
+    paper, document-authority detail, and micro-line direction should create old-master precision without
+    requiring banknotes, documents, portraits, maps, seals, or antique scenes.
 avoidRules:
   - smooth shading
 assets:

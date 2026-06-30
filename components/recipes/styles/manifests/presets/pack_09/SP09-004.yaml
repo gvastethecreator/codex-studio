@@ -13,21 +13,22 @@ tags:
   - natural-materials
 visualDna:
   aesthetic: Kitchen countertop stone
-  form_and_line: None
-  color_palette: Speckled Grey/Black/Pink
-  lighting_setup: Sharp reflection
-  material_texture: Smooth stone
-  render_quality: Durable, heavy
-  spatial_distortion: None
-  atmosphere: Solid, cold
+  subject_treatment: "Treat subjects through Granite (Polished)'s signature cues: Random speckles."
+  color_and_tone: Speckled Grey/Black/Pink
+  lighting_and_shadow: Sharp reflection
+  texture_and_material: Smooth stone
+  camera_and_composition: 'Compose for Granite (Polished) using its key spatial cues: Random speckles.'
+  atmosphere_and_mood: Solid, cold
+  rendering_and_quality: Durable, heavy
   key_features: Random speckles
   creative_brief: >-
-    Summon the cold dignity of polished granite with its galaxy of crystalline speckles suspended in stone like a frozen
-    night sky. Light should skim the surface like a blade, revealing depths that feel geological rather than
-    superficial. The image must carry the weight of mountains in every square inch of speckled grey and pink. Use
-    Granite as portable surface/render behavior over any input: map its texture, light response, edge wear, color
-    chemistry, and tactile rhythm onto the subject instead of requiring a literal material sample, macro tile, wall,
-    landscape, source object, or scene where the material naturally appears.
+    Summon the cold dignity of polished granite with its galaxy of crystalline speckles suspended in stone
+    like a frozen night sky. Light should skim the surface like a blade, revealing depths that feel geological
+    rather than superficial. The image must carry the weight of mountains in every square inch of speckled
+    grey and pink. Use Granite as portable surface/render behavior over any input: map its texture, light
+    response, edge wear, color chemistry, and tactile rhythm onto the subject instead of requiring a literal
+    material sample, macro tile, wall, landscape, source object, or scene where the material naturally
+    appears.
 avoidRules:
   - concrete
   - matte

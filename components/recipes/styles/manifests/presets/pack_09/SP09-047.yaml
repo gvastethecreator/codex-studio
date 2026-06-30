@@ -13,22 +13,22 @@ tags:
   - tactile-surfaces
 visualDna:
   aesthetic: Faux fur coat
-  form_and_line: Uniform strands
-  color_palette: Bright Pink/Blue
-  lighting_setup: Plastic sheen
-  material_texture: Soft but synthetic
-  render_quality: Fashion, fun
-  spatial_distortion: None
-  atmosphere: Trendy, soft
+  subject_treatment: Uniform strands
+  color_and_tone: Bright Pink/Blue
+  lighting_and_shadow: Plastic sheen
+  texture_and_material: Soft but synthetic
+  camera_and_composition: 'Compose for Fur (Synthetic) using its key spatial cues: Uniform length.'
+  atmosphere_and_mood: Trendy, soft
+  rendering_and_quality: Fashion, fun
   key_features: Uniform length
   creative_brief: >-
-    Render the uniform plushness of faux fur in unnatural hues of pink or blue, where every identical strand is a
-    manufactured messenger of softness, uniform in length and catching a faint plastic sheen that reveals the artifice.
-    The density should invite the hand while the perfect regularity declares its synthetic nature. Capture the beauty of
-    the proudly fake, comfort manufactured in Technicolor. Use Fur as portable surface/render behavior over any input:
-    map its texture, light response, edge wear, color chemistry, and tactile rhythm onto the subject instead of
-    requiring a literal material sample, macro tile, wall, landscape, source object, or scene where the material
-    naturally appears.
+    Render the uniform plushness of faux fur in unnatural hues of pink or blue, where every identical strand
+    is a manufactured messenger of softness, uniform in length and catching a faint plastic sheen that reveals
+    the artifice. The density should invite the hand while the perfect regularity declares its synthetic
+    nature. Capture the beauty of the proudly fake, comfort manufactured in Technicolor. Use Fur as portable
+    surface/render behavior over any input: map its texture, light response, edge wear, color chemistry, and
+    tactile rhythm onto the subject instead of requiring a literal material sample, macro tile, wall,
+    landscape, source object, or scene where the material naturally appears.
 avoidRules:
   - real fur
   - skin

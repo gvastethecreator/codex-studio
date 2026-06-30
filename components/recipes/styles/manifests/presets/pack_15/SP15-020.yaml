@@ -14,16 +14,34 @@ tags:
   - windpunk
   - rooftop
 visualDna:
-  aesthetic: windpunk neighborhood roofs as a flat-to-painterly poster card built around tenement rooftops filled with windcatchers, kite turbines, cloth wind rhythm, and roof crews.
-  form_and_line: Repair-culture shapes, civic infrastructure, practical climate machines, and human-scaled commons. Core composition uses windcatcher towers, kite turbines, roof crews, laundry rhythm, brick silhouettes.
-  color_palette: chalk white, wind blue, brick red, rope tan
-  lighting_setup: windy daylight blocks, moving cloud shadow shapes, roofline rim color
-  material_texture: canvas vane planes, brick blocks, rope arcs, tin duct shapes, cotton cloth planes
-  render_quality: Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity, moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material simulation, or hyper-detail.
-  spatial_distortion: Rooftops, riversides, roofs, blocks, terraces, and outdoor workshops with lived-in pragmatism. Keep depth legible and avoid default hallway, aisle, or empty studio staging.
-  atmosphere: airy, domestic, clever, communal
+  aesthetic: >-
+    windpunk neighborhood roofs as a flat-to-painterly poster card built around tenement rooftops filled with
+    windcatchers, kite turbines, cloth wind rhythm, and roof crews.
+  subject_treatment: >-
+    Repair-culture shapes, civic infrastructure, practical climate machines, and human-scaled commons. Core
+    composition uses windcatcher towers, kite turbines, roof crews, laundry rhythm, brick silhouettes.
+  color_and_tone: chalk white, wind blue, brick red, rope tan
+  lighting_and_shadow: windy daylight blocks, moving cloud shadow shapes, roofline rim color
+  texture_and_material: canvas vane planes, brick blocks, rope arcs, tin duct shapes, cotton cloth planes
+  camera_and_composition: >-
+    Rooftops, riversides, roofs, blocks, terraces, and outdoor workshops with lived-in pragmatism. Keep depth
+    legible and avoid default hallway, aisle, or empty studio staging.
+  atmosphere_and_mood: airy, domestic, clever, communal
+  rendering_and_quality: >-
+    Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly
+    planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity,
+    moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material
+    simulation, or hyper-detail.
   key_features: windcatcher towers, kite turbines, roof crews, laundry rhythm, brick silhouettes
-  creative_brief: 'Make windpunk domestic and engineered: rooftop wind machines and residents maintaining them, not a fantasy sky city or clothesline clutter. Keep the result representative rather than over-abstract; make one character in their environment the anchor, with motifs as background, costume, weather, architecture, or social pressure instead of a foreground prop. Favor flat-to-painterly editorial illustration, gouache poster aesthetics, clean graphic-novel card art, or stylized animation-background art over realism, photoreal photoreal painterly realism, cinematic key art, scratchy print noise, or hyper-detailed concept art. Use few bold color/value zones, low-to-moderate texture, large shapes, clean surfaces, shallow poster depth, and finish denoised with no excessive noise or ultra-fine detail.'
+  creative_brief: >-
+    Make windpunk domestic and engineered: rooftop wind machines and residents maintaining them, not a fantasy
+    sky city or clothesline clutter. Keep the result representative rather than over-abstract; make one
+    character in their environment the anchor, with motifs as background, costume, weather, architecture, or
+    social pressure instead of a foreground prop. Favor flat-to-painterly editorial illustration, gouache
+    poster aesthetics, clean graphic-novel card art, or stylized animation-background art over realism,
+    photoreal photoreal painterly realism, cinematic key art, scratchy print noise, or hyper-detailed concept
+    art. Use few bold color/value zones, low-to-moderate texture, large shapes, clean surfaces, shallow poster
+    depth, and finish denoised with no excessive noise or ultra-fine detail.
 avoidRules:
   - photoreal
   - watermark
@@ -37,7 +55,21 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP15-020.webp
 attributes:
-  negativePrompt: photoreal, hyperreal, realistic render, photoreal photoreal painterly realism, cinematic realism, AAA key art, cinematic concept-art render, photographic skin pores, realistic foreground portrait, realistic facial hair detail, lens blur, bokeh, depth-of-field photo look, realistic perspective drama, generic soldier hero, guard pin-up, weapon-first pose, fantasy sky city, bird swarm, clothesline clutter, generic rooftop party, photoreal cityscape, dense rope web, HDR lens realism, 3D render look, PBR material simulation, hyper-detailed concept art, scratchy print noise, tiny black linework, watermark, text, logo, generic style, over-abstract, interchangeable preset, duplicated motifs, generic glass utopia, unmotivated market aisle, unmotivated library aisle, fantasy corridor, random camera held by subject, studio wall fixation, chair fixation, curtain fixation, lamp fixation, scarf fixation, pedestal fixation, bird fixation, excessive noise, ultra-fine detail, over-sharpened microtexture, over-rendered machinery, noisy grime, tiny rivets everywhere, busy texture chatter, realistic uniform portrait, uniformed officer hero, foreground guard portrait, detailed tattoo focus, dense machinery wallpaper, overcrowded scene, high-frequency surface detail, cinematic close-up portrait, flat black fill, crushed black, pure black masses, muddy black fields, generic American illustration, generic Western RPG card art
+  negativePrompt: >-
+    photoreal, hyperreal, realistic render, photoreal photoreal painterly realism, cinematic realism, AAA key
+    art, cinematic concept-art render, photographic skin pores, realistic foreground portrait, realistic
+    facial hair detail, lens blur, bokeh, depth-of-field photo look, realistic perspective drama, generic
+    soldier hero, guard pin-up, weapon-first pose, fantasy sky city, bird swarm, clothesline clutter, generic
+    rooftop party, photoreal cityscape, dense rope web, HDR lens realism, 3D render look, PBR material
+    simulation, hyper-detailed concept art, scratchy print noise, tiny black linework, watermark, text, logo,
+    generic style, over-abstract, interchangeable preset, duplicated motifs, generic glass utopia, unmotivated
+    market aisle, unmotivated library aisle, fantasy corridor, random camera held by subject, studio wall
+    fixation, chair fixation, curtain fixation, lamp fixation, scarf fixation, pedestal fixation, bird
+    fixation, excessive noise, ultra-fine detail, over-sharpened microtexture, over-rendered machinery, noisy
+    grime, tiny rivets everywhere, busy texture chatter, realistic uniform portrait, uniformed officer hero,
+    foreground guard portrait, detailed tattoo focus, dense machinery wallpaper, overcrowded scene,
+    high-frequency surface detail, cinematic close-up portrait, flat black fill, crushed black, pure black
+    masses, muddy black fields, generic American illustration, generic Western RPG card art
 taxonomy:
   packId: pack_15
   packName: Punk Spectrum Vault

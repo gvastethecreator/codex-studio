@@ -13,15 +13,19 @@ tags:
   - material-surface-textures
 visualDna:
   aesthetic: Broken pottery repaired with gold
-  form_and_line: Gold cracks
-  color_palette: Ceramic + Gold
-  lighting_setup: Gold reflection
-  material_texture: Ceramic
-  render_quality: Wabi-sabi, precious
-  spatial_distortion: Cracked
-  atmosphere: Healing, beautiful
+  subject_treatment: Gold cracks
+  color_and_tone: Ceramic + Gold
+  lighting_and_shadow: Gold reflection
+  texture_and_material: Ceramic
+  camera_and_composition: Cracked
+  atmosphere_and_mood: Healing, beautiful
+  rendering_and_quality: Wabi-sabi, precious
   key_features: Gold veins
-  creative_brief: Apply kintsugi repair logic over the input with ceramic fracture fields, gold lacquer veins, precious reflection, wabi-sabi asymmetry, and visible damage transformed into structure. If pottery or object exists, repair it; otherwise treat cracks as luminous compositional lines without requiring a shattered landscape.
+  creative_brief: >-
+    Apply kintsugi repair logic over the input with ceramic fracture fields, gold lacquer veins, precious
+    reflection, wabi-sabi asymmetry, and visible damage transformed into structure. If pottery or object
+    exists, repair it; otherwise treat cracks as luminous compositional lines without requiring a shattered
+    landscape.
 avoidRules:
   - perfect
   - new

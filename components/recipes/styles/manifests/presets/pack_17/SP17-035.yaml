@@ -14,15 +14,23 @@ tags:
   - monochrome-tarot-and-bestiary-plates
   - penitent-baroque
 visualDna:
-  aesthetic: Penitential baroque medieval fantasy with tall devotional silhouettes, thorn crowns, reliquaries, veils, and severe sacred geometry.
-  subject_treatment: A bell-headed penitent saint or sorrowful armor icon carrying a candle reliquary, baroque and devotional without becoming another hooded knight.
+  aesthetic: >-
+    Penitential baroque medieval fantasy with tall devotional silhouettes, thorn crowns, reliquaries, veils,
+    and severe sacred geometry.
+  subject_treatment: >-
+    A bell-headed penitent saint or sorrowful armor icon carrying a candle reliquary, baroque and devotional
+    without becoming another hooded knight.
   color_and_tone: Bone white, black ink, muted crimson accent, tarnished gold accent, and soft gray wash used sparingly.
   lighting_and_shadow: Icon-like frontal light, clean halo geometry, and simple shadow masses.
-  texture_and_material: Smooth vellum, polished black ink, brushed gold-like planes, wax, cloth, and carved stone without gritty buildup.
+  texture_and_material: >-
+    Smooth vellum, polished black ink, brushed gold-like planes, wax, cloth, and carved stone without gritty
+    buildup.
   camera_and_composition: Tall devotional icon crop, strong vertical silhouette, symmetrical framing, and no readable scripture.
   atmosphere_and_mood: Penitent, solemn, ceremonial, mournful, and sacred without copied game identities.
   rendering_and_quality: Clean gothic illustration with elegant contour lines, broad values, and controlled ornament.
-  creative_brief: Original penitent gothic visual system for sorrowful medieval icons, relics, pilgrims, and sacred monsters.
+  creative_brief: >-
+    Original penitent gothic visual system for sorrowful medieval icons, relics, pilgrims, and sacred
+    monsters.
 avoidRules:
   - copied game armor
   - readable scripture
@@ -33,6 +41,10 @@ avoidRules:
   - text
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP17-035.webp
+attributes:
+  negativePrompt: >-
+    copied game armor, readable scripture, excessive thorn detail, black-on-black costume, explicit gore,
+    watermark, text
 taxonomy:
   packId: pack_17
   packName: Medieval Fantasy & Dungeon Zine

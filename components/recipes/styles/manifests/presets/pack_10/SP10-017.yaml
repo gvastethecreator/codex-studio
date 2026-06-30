@@ -13,18 +13,18 @@ tags:
   - fluid-and-organic
 visualDna:
   aesthetic: Fluid art
-  form_and_line: Cells
-  color_palette: Mixed, marbled
-  lighting_setup: Glossy
-  material_texture: Paint skin
-  render_quality: DIY art, colorful
-  spatial_distortion: Flow
-  atmosphere: Creative, messy
+  subject_treatment: Cells
+  color_and_tone: Mixed, marbled
+  lighting_and_shadow: Glossy
+  texture_and_material: Paint skin
+  camera_and_composition: Flow
+  atmosphere_and_mood: Creative, messy
+  rendering_and_quality: DIY art, colorful
   key_features: Cells
   creative_brief: >-
-    Apply acrylic-pour behavior to the input: marbled pigment flows, cellular
-    blooms, gravity trails, and accidental color continents should cover or
-    reshape the subject without replacing it with a generic paint puddle.
+    Apply acrylic-pour behavior to the input: marbled pigment flows, cellular blooms, gravity trails, and
+    accidental color continents should cover or reshape the subject without replacing it with a generic paint
+    puddle.
 avoidRules:
   - brush strokes
 assets:

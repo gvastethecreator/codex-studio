@@ -13,22 +13,24 @@ tags:
   - micro-macro
 visualDna:
   aesthetic: Petri dish, mycology-lab, mold-colony, fungal-garden, agar-culture
-  form_and_line: Fuzzy growth, hyphal-fringe, colony-circular, radial-extension, sporangiophore-stalk
-  color_palette: White, Green, Blue, sporulation-spectrum, conidia-ochre, penicillin-mint, aspergillus-charcoal, fusarium-rose
-  lighting_setup: Macro, ring-light, petri-dish reflection, agar-surface gloss, top-down-laboratory
-  material_texture: Fuzzy, spores, aerial-mycelium, powdery-conidia, slimy-yeast, agar-surface, colony-elevation
-  render_quality: Gross, fascinating, microbiology-aesthetic, petri-dish-art, contamination-beauty
-  spatial_distortion: Growth rings, colony-concentric, inhibition-zone, sporulation-halo, colony-margin
-  atmosphere: Biological, decay, lab-incubator warmth, agar-dawn, invisible-kingdom, decomposition-cycle
+  subject_treatment: Fuzzy growth, hyphal-fringe, colony-circular, radial-extension, sporangiophore-stalk
+  color_and_tone: >-
+    White, Green, Blue, sporulation-spectrum, conidia-ochre, penicillin-mint, aspergillus-charcoal,
+    fusarium-rose
+  lighting_and_shadow: Macro, ring-light, petri-dish reflection, agar-surface gloss, top-down-laboratory
+  texture_and_material: Fuzzy, spores, aerial-mycelium, powdery-conidia, slimy-yeast, agar-surface, colony-elevation
+  camera_and_composition: Growth rings, colony-concentric, inhibition-zone, sporulation-halo, colony-margin
+  atmosphere_and_mood: Biological, decay, lab-incubator warmth, agar-dawn, invisible-kingdom, decomposition-cycle
+  rendering_and_quality: Gross, fascinating, microbiology-aesthetic, petri-dish-art, contamination-beauty
   key_features: >-
-    Spores, colony-margin, aerial-hyphae, conidia-powder, petri-dish-lid, inhibition-zone, contamination-sector,
-    sporulation-color
+    Spores, colony-margin, aerial-hyphae, conidia-powder, petri-dish-lid, inhibition-zone,
+    contamination-sector, sporulation-color
   creative_brief: >-
-    Compose fungal macro studies with colony-margin behavior, aerial hyphae texture, and sporulation color zoning over
-    agar-like substrates. Keep the aesthetic biologically rich and adaptable across mold and mycology specimens. Apply
-    Fungi/Mold as a portable style system over any input: preserve its construction grammar, material cues, scale logic,
-    and signature rendering behavior while avoiding a required franchise, literal prop, fixed specimen, classroom
-    sample, product shot, or scene template.
+    Compose fungal macro studies with colony-margin behavior, aerial hyphae texture, and sporulation color
+    zoning over agar-like substrates. Keep the aesthetic biologically rich and adaptable across mold and
+    mycology specimens. Apply Fungi/Mold as a portable style system over any input: preserve its construction
+    grammar, material cues, scale logic, and signature rendering behavior while avoiding a required franchise,
+    literal prop, fixed specimen, classroom sample, product shot, or scene template.
 avoidRules:
   - clean
 assets:

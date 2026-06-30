@@ -13,18 +13,20 @@ tags:
   - modern-shonen-and-action
 visualDna:
   aesthetic: Cathedral inferno action, with liturgical flame, ember halos, sacred urgency, and industrial heat.
-  form_and_line: Speed-line heroics, vertical nave geometry, ignition arcs, black silhouette cuts, and prayerlike motion rhythm.
-  color_palette: Ember orange, soot black, stained-glass blue, sacred gold, ash gray, and white-hot ignition points.
-  lighting_setup: Flame underlight, volumetric sacred rays, explosive backlight, and ember-bloom halos.
-  material_texture: Soot grain, charred metal, glowing ash, polished cel fire, stained-glass color bleed, and heat shimmer.
-  render_quality: Premium modern anime finish with crisp flame readability, sacred scale, and kinetic rescue urgency.
-  spatial_distortion: Vertical heat columns, speed-stretched embers, and cathedral-scale depth suggested through light.
-  atmosphere: Blazing, heroic, sacred, kinetic
+  subject_treatment: >-
+    Speed-line heroics, vertical nave geometry, ignition arcs, black silhouette cuts, and prayerlike motion
+    rhythm.
+  color_and_tone: Ember orange, soot black, stained-glass blue, sacred gold, ash gray, and white-hot ignition points.
+  lighting_and_shadow: Flame underlight, volumetric sacred rays, explosive backlight, and ember-bloom halos.
+  texture_and_material: Soot grain, charred metal, glowing ash, polished cel fire, stained-glass color bleed, and heat shimmer.
+  camera_and_composition: Vertical heat columns, speed-stretched embers, and cathedral-scale depth suggested through light.
+  atmosphere_and_mood: Blazing, heroic, sacred, kinetic
+  rendering_and_quality: Premium modern anime finish with crisp flame readability, sacred scale, and kinetic rescue urgency.
   key_features: Ember halos, liturgical flame, black silhouette cuts, ignition motion, sacred heat.
   creative_brief: >-
-    Apply sacred inferno energy to any prompt: make flame feel ceremonial,
-    emergency-like, and luminous through ember halos, vertical rays, and black
-    silhouette contrast without requiring a brigade, cathedral, or rescue scene.
+    Apply sacred inferno energy to any prompt: make flame feel ceremonial, emergency-like, and luminous
+    through ember halos, vertical rays, and black silhouette contrast without requiring a brigade, cathedral,
+    or rescue scene.
 avoidRules:
   - realistic
   - 3d render
@@ -41,7 +43,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-123.webp
 attributes:
-  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
+  negativePrompt: >-
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts,
+    watermark, text, signature
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds

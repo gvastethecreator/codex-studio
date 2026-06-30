@@ -13,18 +13,18 @@ tags:
   - concept-art
 visualDna:
   aesthetic: Costume exploration board combining silhouette, fabric, and colorway studies
-  form_and_line: Clean croquis-based variants with annotation leaders and modular panel layout
-  color_palette: Multi-fabric palette families organized by role, era, and accent logic
-  lighting_setup: Neutral comparison lighting with controlled sheen read on textiles
-  material_texture: Swatch-forward surface representation (weave, nap, grain, luster)
-  render_quality: Concept-development board clarity over final-fashion polish
-  spatial_distortion: Grid/pinboard organization for side-by-side option evaluation
-  atmosphere: Iterative studio workflow, design-review readiness
+  subject_treatment: Clean croquis-based variants with annotation leaders and modular panel layout
+  color_and_tone: Multi-fabric palette families organized by role, era, and accent logic
+  lighting_and_shadow: Neutral comparison lighting with controlled sheen read on textiles
+  texture_and_material: Swatch-forward surface representation (weave, nap, grain, luster)
+  camera_and_composition: Grid/pinboard organization for side-by-side option evaluation
+  atmosphere_and_mood: Iterative studio workflow, design-review readiness
+  rendering_and_quality: Concept-development board clarity over final-fashion polish
   key_features: Silhouette matrices, swatch clusters, trim notes, color strip comparisons
   creative_brief: >-
-    Apply costume-design exploration to any input: silhouette breaks, fabric behavior, trim systems, palette swatches,
-    accessory rhythm, and material contrast. If no wardrobe or character exists, translate forms into fashion/costume
-    language without requiring a model sheet, clothing catalog, or posed figure.
+    Apply costume-design exploration to any input: silhouette breaks, fabric behavior, trim systems, palette
+    swatches, accessory rhythm, and material contrast. If no wardrobe or character exists, translate forms
+    into fashion/costume language without requiring a model sheet, clothing catalog, or posed figure.
 avoidRules:
   - finished
   - one version

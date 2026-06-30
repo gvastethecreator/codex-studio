@@ -12,20 +12,25 @@ tags:
   - anime-battle-and-worlds
   - dark-fantasy-and-seinen
 visualDna:
-  aesthetic: Moral dread realism, sterile quiet, detail-loaded danger, humane unease, smiling-void ambiguity, suspicion carried by ordinary surfaces
-  form_and_line: Dense mature-anime linework, heavy crosshatching, weighted contour variation, gritty ink density
-  color_palette: Muted earths, blood reds, cold moonlit tones, desaturated horror palette, bruised shadow hues
-  lighting_setup: Ominous directional shadows, single-source drama light, deep chiaroscuro, low-key shadow lift
-  material_texture: Sterile matte planes, paper-dry grain, brushed institutional surfaces, faint grime at edges, restrained skin-tone warmth, cold wall texture
-  render_quality: Gritty dramatic anime frame, film-noir rendering, heavy shadow compression, textured midtone grit
-  spatial_distortion: Restrained perspective, quiet negative space, detail-weighted close framing, stillness-heavy depth, subtle moral compression
-  atmosphere: Paranoid, humane, cold, intelligent
+  aesthetic: >-
+    Moral dread realism, sterile quiet, detail-loaded danger, humane unease, smiling-void ambiguity, suspicion
+    carried by ordinary surfaces
+  subject_treatment: Dense mature-anime linework, heavy crosshatching, weighted contour variation, gritty ink density
+  color_and_tone: Muted earths, blood reds, cold moonlit tones, desaturated horror palette, bruised shadow hues
+  lighting_and_shadow: Ominous directional shadows, single-source drama light, deep chiaroscuro, low-key shadow lift
+  texture_and_material: >-
+    Sterile matte planes, paper-dry grain, brushed institutional surfaces, faint grime at edges, restrained
+    skin-tone warmth, cold wall texture
+  camera_and_composition: >-
+    Restrained perspective, quiet negative space, detail-weighted close framing, stillness-heavy depth, subtle
+    moral compression
+  atmosphere_and_mood: Paranoid, humane, cold, intelligent
+  rendering_and_quality: Gritty dramatic anime frame, film-noir rendering, heavy shadow compression, textured midtone grit
   key_features: Suspicion in stillness, sterile quiet, adult-anime restraint, small-detail menace, cold humane realism
-  creative_brief: >
-    Give any prompt a quiet moral-thriller treatment where ordinary details feel
-    dangerous. Use sterile matte light, restrained expressions, weighted negative
-    space, and realistic tension while avoiding fixed institutions, locations,
-    named roles, or pursuit-story structure.
+  creative_brief: >-
+    Give any prompt a quiet moral-thriller treatment where ordinary details feel dangerous. Use sterile matte
+    light, restrained expressions, weighted negative space, and realistic tension while avoiding fixed
+    institutions, locations, named roles, or pursuit-story structure.
 avoidRules:
   - realistic
   - 3d render
@@ -42,7 +47,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-262.webp
 attributes:
-  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
+  negativePrompt: >-
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts,
+    watermark, text, signature
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds

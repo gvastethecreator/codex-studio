@@ -13,19 +13,20 @@ tags:
   - hard-surface-and-product-cgi
 visualDna:
   aesthetic: Diamond ring macro
-  form_and_line: Facets
-  color_palette: Sparkle, Gold, Silver, gemstone fire
-  lighting_setup: Caustics, dispersion, brilliant-cut
-  material_texture: Metal polish, carat-level clarity
-  render_quality: Luxury, expensive, high-jewelry showcase
-  atmosphere: Elegant, rich, bridal-prestige
+  subject_treatment: Facets
+  color_and_tone: Sparkle, Gold, Silver, gemstone fire
+  lighting_and_shadow: Caustics, dispersion, brilliant-cut
+  texture_and_material: Metal polish, carat-level clarity
+  camera_and_composition: >-
+    Lookdev camera for Jewelry Render: three-quarter or orthographic framing, clean silhouette read, material
+    highlights, controlled depth, and vertical card composition.
+  atmosphere_and_mood: Elegant, rich, bridal-prestige
+  rendering_and_quality: Luxury, expensive, high-jewelry showcase
   key_features: Sparkle, facet-fire dispersion
   creative_brief: >-
-    Render any input with jewelry-bench macro polish: prismatic facet fire,
-    carat-level clarity, gold or platinum specular control, tiny inclusion
-    detail, shallow macro depth, and premium caustic sparkle. Keep bridal-luxury
-    precision without requiring rings, gemstones, boxes, hands, or proposal
-    staging.
+    Render any input with jewelry-bench macro polish: prismatic facet fire, carat-level clarity, gold or
+    platinum specular control, tiny inclusion detail, shallow macro depth, and premium caustic sparkle. Keep
+    bridal-luxury precision without requiring rings, gemstones, boxes, hands, or proposal staging.
 avoidRules:
   - dull
   - plastic

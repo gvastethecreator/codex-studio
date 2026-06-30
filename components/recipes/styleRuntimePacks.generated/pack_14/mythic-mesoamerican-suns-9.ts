@@ -12,20 +12,20 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         "Feathered Eclipse Continuity within 9. Mythic Mesoamerican Suns: a reusable Mythic Noir Curated Vault visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Feathered Eclipse Continuity's specific style identity.",
-      form_and_line:
+      subject_treatment:
         'Define Feathered Eclipse Continuity through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
-      color_palette:
+      color_and_tone:
         'Use a Feathered Eclipse Continuity-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
-      lighting_setup:
+      lighting_and_shadow:
         'Use lighting that makes Feathered Eclipse Continuity recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
-      material_texture:
+      texture_and_material:
         'Use materials and textures that reinforce Feathered Eclipse Continuity: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
-      render_quality:
-        'Render Feathered Eclipse Continuity with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
-      spatial_distortion:
+      camera_and_composition:
         'Use spatial behavior that fits Feathered Eclipse Continuity: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
-      atmosphere:
+      atmosphere_and_mood:
         'Set a mood that belongs to Feathered Eclipse Continuity: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+      rendering_and_quality:
+        'Render Feathered Eclipse Continuity with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       key_features:
         "Prioritize Feathered Eclipse Continuity's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
@@ -40,20 +40,20 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         "Jade Cenote Echo Reading within 9. Mythic Mesoamerican Suns: a reusable Mythic Noir Curated Vault visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Jade Cenote Echo Reading's specific style identity.",
-      form_and_line:
+      subject_treatment:
         'Define Jade Cenote Echo Reading through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
-      color_palette:
+      color_and_tone:
         'Use a Jade Cenote Echo Reading-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
-      lighting_setup:
+      lighting_and_shadow:
         'Use lighting that makes Jade Cenote Echo Reading recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
-      material_texture:
+      texture_and_material:
         'Use materials and textures that reinforce Jade Cenote Echo Reading: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
-      render_quality:
-        'Render Jade Cenote Echo Reading with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
-      spatial_distortion:
+      camera_and_composition:
         'Use spatial behavior that fits Jade Cenote Echo Reading: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
-      atmosphere:
+      atmosphere_and_mood:
         'Set a mood that belongs to Jade Cenote Echo Reading: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+      rendering_and_quality:
+        'Render Jade Cenote Echo Reading with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       key_features:
         "Prioritize Jade Cenote Echo Reading's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
@@ -69,20 +69,20 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         "Obsidian Ballcourt Solar Oath within 9. Mythic Mesoamerican Suns: a reusable Mythic Noir Curated Vault visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Obsidian Ballcourt Solar Oath's specific style identity.",
-      form_and_line:
+      subject_treatment:
         'Define Obsidian Ballcourt Solar Oath through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
-      color_palette:
+      color_and_tone:
         'Use a Obsidian Ballcourt Solar Oath-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
-      lighting_setup:
+      lighting_and_shadow:
         'Use lighting that makes Obsidian Ballcourt Solar Oath recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
-      material_texture:
+      texture_and_material:
         'Use materials and textures that reinforce Obsidian Ballcourt Solar Oath: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
-      render_quality:
-        'Render Obsidian Ballcourt Solar Oath with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
-      spatial_distortion:
+      camera_and_composition:
         'Use spatial behavior that fits Obsidian Ballcourt Solar Oath: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
-      atmosphere:
+      atmosphere_and_mood:
         'Set a mood that belongs to Obsidian Ballcourt Solar Oath: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+      rendering_and_quality:
+        'Render Obsidian Ballcourt Solar Oath with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       key_features:
         "Prioritize Obsidian Ballcourt Solar Oath's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:

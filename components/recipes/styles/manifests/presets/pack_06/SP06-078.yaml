@@ -13,21 +13,21 @@ tags:
   - mixed-media
 visualDna:
   aesthetic: Gilded illustration
-  form_and_line: Gold accents
-  color_palette: Gold, Black
-  lighting_setup: Reflective
-  material_texture: Metal foil, cracks
-  render_quality: Ornamental gilded finish with metallic leaf behavior and decorative flatness
-  spatial_distortion: Flat gold areas
-  atmosphere: Rich, ornamental
+  subject_treatment: Gold accents
+  color_and_tone: Gold, Black
+  lighting_and_shadow: Reflective
+  texture_and_material: Metal foil, cracks
+  camera_and_composition: Flat gold areas
+  atmosphere_and_mood: Rich, ornamental
+  rendering_and_quality: Ornamental gilded finish with metallic leaf behavior and decorative flatness
   key_features: Metallic shine
   creative_brief: >-
-    Gold leaf adheres with breathlike delicacy, the slightest air current threatening to fold the foil into oblivion.
-    The metal catches light and throws it back as radiance, an active source rather than passive surface. The image
-    should feel precious through material reflectivity and ornament, not through any fixed subject. Apply this
-    mixed-media process over any input: preserve material assembly, edge evidence, surface treatment, layering logic,
-    and handmade artifacts while avoiding required clippings, readable text, boards, fire, studio setup, or literal
-    craft-table scene.
+    Gold leaf adheres with breathlike delicacy, the slightest air current threatening to fold the foil into
+    oblivion. The metal catches light and throws it back as radiance, an active source rather than passive
+    surface. The image should feel precious through material reflectivity and ornament, not through any fixed
+    subject. Apply this mixed-media process over any input: preserve material assembly, edge evidence, surface
+    treatment, layering logic, and handmade artifacts while avoiding required clippings, readable text,
+    boards, fire, studio setup, or literal craft-table scene.
 avoidRules:
   - photo
   - realistic
@@ -48,8 +48,8 @@ assets:
   defaultImage: /assets/recipes/styles/defaults/SP06-078.webp
 attributes:
   negativePrompt: >-
-    photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark,
-    text, signature, frame, border
+    photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy,
+    watermark, text, signature, frame, border
 taxonomy:
   packId: pack_06
   packName: Essential Art Styles

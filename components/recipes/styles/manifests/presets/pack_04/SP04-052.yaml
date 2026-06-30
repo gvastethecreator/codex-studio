@@ -13,30 +13,28 @@ tags:
   - concept-art
 visualDna:
   aesthetic: >-
-    Isometric systems-art style with modular worldbuilding clarity, playful simulation readability,
-    and toy-scale urban abstraction
-  form_and_line: >-
-    Clean vector-pixel hybrid contours, grid-disciplined shape language, and module-first
-    construction logic
-  color_palette: >-
-    Bright ordered saturation with zone-based hue grouping, clear functional contrast, and
-    tile-friendly color separation
-  lighting_setup: >-
-    Consistent directional isometric lighting with uniform shadow logic and readability-first
-    highlight placement
-  material_texture: Tile-ready clean surfaces with subtle pattern repetition cues and low-noise asset cohesion
-  render_quality: >-
-    Production-grade simulation asset finish emphasizing legibility at scale, modular coherence, and
-    system clarity
-  spatial_distortion: Isometric orthographic logic with fixed-angle depth mapping and no perspective convergence
-  atmosphere: Ordered, playful, clean, constructive, serene
+    Isometric systems-art style with modular worldbuilding clarity, playful simulation readability, and
+    toy-scale urban abstraction
+  subject_treatment: Clean vector-pixel hybrid contours, grid-disciplined shape language, and module-first construction logic
+  color_and_tone: >-
+    Bright ordered saturation with zone-based hue grouping, clear functional contrast, and tile-friendly color
+    separation
+  lighting_and_shadow: >-
+    Consistent directional isometric lighting with uniform shadow logic and readability-first highlight
+    placement
+  texture_and_material: Tile-ready clean surfaces with subtle pattern repetition cues and low-noise asset cohesion
+  camera_and_composition: Isometric orthographic logic with fixed-angle depth mapping and no perspective convergence
+  atmosphere_and_mood: Ordered, playful, clean, constructive, serene
+  rendering_and_quality: >-
+    Production-grade simulation asset finish emphasizing legibility at scale, modular coherence, and system
+    clarity
   key_features: >-
-    Isometric angle discipline, modular tile-grid composition, systems readability hierarchy,
-    toy-scale abstraction
+    Isometric angle discipline, modular tile-grid composition, systems readability hierarchy, toy-scale
+    abstraction
   creative_brief: >-
-    Apply modular isometric game-art grammar to any input: fixed-angle spatial logic, tile-grid
-    coherence, zone-based color, toy-scale abstraction, and system readability should transfer
-    across subjects without requiring cities, buildings, simulation UI, roads, or game maps.
+    Apply modular isometric game-art grammar to any input: fixed-angle spatial logic, tile-grid coherence,
+    zone-based color, toy-scale abstraction, and system readability should transfer across subjects without
+    requiring cities, buildings, simulation UI, roads, or game maps.
 avoidRules:
   - perspective
   - flat

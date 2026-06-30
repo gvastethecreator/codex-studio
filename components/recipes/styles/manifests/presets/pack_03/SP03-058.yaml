@@ -13,19 +13,21 @@ tags:
   - 3d-styles
 visualDna:
   aesthetic: Letters made of objects
-  form_and_line: Bold font
-  color_palette: Vibrant, brand-expression hues
-  lighting_setup: Studio, typographic readability
-  material_texture: Material letters, physical texture
-  render_quality: Adobe, design, headline-striking
-  atmosphere: Bold, message, visual proclamation
+  subject_treatment: Bold font
+  color_and_tone: Vibrant, brand-expression hues
+  lighting_and_shadow: Studio, typographic readability
+  texture_and_material: Material letters, physical texture
+  camera_and_composition: >-
+    Lookdev camera for 3D Typography: three-quarter or orthographic framing, clean silhouette read, material
+    highlights, controlled depth, and vertical card composition.
+  atmosphere_and_mood: Bold, message, visual proclamation
+  rendering_and_quality: Adobe, design, headline-striking
   key_features: Readable, letterform sculpting
   creative_brief: >-
-    Apply 3D typography logic to any input: bold letterform-like massing,
-    material-built glyph structure, studio-lit bevels, extruded volume, readable
-    silhouette rhythm, and brand-expression color. Keep typographic sculpture
-    without requiring readable words, slogans, alphabet props, logos, or a
-    headline composition.
+    Apply 3D typography logic to any input: bold letterform-like massing, material-built glyph structure,
+    studio-lit bevels, extruded volume, readable silhouette rhythm, and brand-expression color. Keep
+    typographic sculpture without requiring readable words, slogans, alphabet props, logos, or a headline
+    composition.
 avoidRules:
   - flat text
 assets:

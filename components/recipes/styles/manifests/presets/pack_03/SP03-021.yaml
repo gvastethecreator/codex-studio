@@ -13,19 +13,22 @@ tags:
   - 3d-styles
 visualDna:
   aesthetic: Minimalist mesh
-  form_and_line: Visible triangles
-  color_palette: Flat shading, vibrant stylized tones
-  lighting_setup: Baked AO, ambient-fill
-  material_texture: None or gradient, facet-clean
-  render_quality: Indie game, retro, geometric charm
-  atmosphere: Simple, clean, polygon purity
+  subject_treatment: Visible triangles
+  color_and_tone: Flat shading, vibrant stylized tones
+  lighting_and_shadow: Baked AO, ambient-fill
+  texture_and_material: Flat color or gradient, facet-clean
+  camera_and_composition: >-
+    Lookdev camera for Low Poly: three-quarter or orthographic framing, clean silhouette read, material
+    highlights, controlled depth, and vertical card composition.
+  atmosphere_and_mood: Simple, clean, polygon purity
+  rendering_and_quality: Indie game, retro, geometric charm
   key_features: Facets, edge visibility
   creative_brief: >-
-    Reduce the input to deliberate low-poly clarity: visible facets, flat-shaded planes, ambient-occlusion crease
-    accents and vibrant indie-game color. Treat geometry as graphic design, not a forced game world or landscape. Apply
-    Low Poly as a portable 3D/render style system over any input: preserve its renderer logic, material behavior,
-    geometry language, lighting grammar, and production cues while avoiding a required character, vehicle, prop,
-    environment, UI screen, product shot, or scene template.
+    Reduce the input to deliberate low-poly clarity: visible facets, flat-shaded planes, ambient-occlusion
+    crease accents and vibrant indie-game color. Treat geometry as graphic design, not a forced game world or
+    landscape. Apply Low Poly as a portable 3D/render style system over any input: preserve its renderer
+    logic, material behavior, geometry language, lighting grammar, and production cues while avoiding a
+    required character, vehicle, prop, environment, UI screen, product shot, or scene template.
 avoidRules:
   - high poly
   - smooth

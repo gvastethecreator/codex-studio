@@ -13,15 +13,18 @@ tags:
   - fluid-and-organic
 visualDna:
   aesthetic: Wisps of smoke
-  form_and_line: Soft curves
-  color_palette: White on Black or Colored
-  lighting_setup: Studio flash
-  material_texture: Gaseous
-  render_quality: High speed photo
-  spatial_distortion: Turbulence
-  atmosphere: Mysterious, ephemeral
+  subject_treatment: Soft curves
+  color_and_tone: White on Black or Colored
+  lighting_and_shadow: Studio flash
+  texture_and_material: Gaseous
+  camera_and_composition: Turbulence
+  atmosphere_and_mood: Mysterious, ephemeral
+  rendering_and_quality: High speed photo
   key_features: Black background
-  creative_brief: Apply smoke-photography logic as a transform over the input with soft tendrils, studio-flash rim light, turbulence trails, and black-background contrast. Preserve subject legibility as vapor silhouette or contour when useful; do not replace the prompt with empty smoke unless abstraction is requested.
+  creative_brief: >-
+    Apply smoke-photography logic as a transform over the input with soft tendrils, studio-flash rim light,
+    turbulence trails, and black-background contrast. Preserve subject legibility as vapor silhouette or
+    contour when useful; do not replace the prompt with empty smoke unless abstraction is requested.
 avoidRules:
   - hard-edged clutter
 assets:

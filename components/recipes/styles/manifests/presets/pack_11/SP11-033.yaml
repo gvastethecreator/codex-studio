@@ -13,20 +13,22 @@ tags:
   - artistic-mediums
 visualDna:
   aesthetic: Architectural plan, drafting-table vision, engineer's-ghost, technical-imagination
-  form_and_line: White technical lines, dimension-string contours, section-cut profiles, orthographic-projection edges
-  color_palette: Cyan Blue background, blueprint-cyan, ammonia-developer blue, white-line contrast, title-block white
-  lighting_setup: Flat, drafting-table glow, backlit-tracing vellum, even-fluorescent illumination
-  material_texture: Paper grain, diazo-paper tooth, ammonia-print curl, mylar-film gloss, old-blueprint fold
-  render_quality: Technical, precise, ruler-and-compass rigor, drafting-arm sweep, revision-cloud care
-  spatial_distortion: 2D schematic, plan-section-elevation, orthographic-projection geometry, isometric-grid underlay
-  atmosphere: Planning, engineering, midnight-drafting quiet, slide-rule precision, built-environment origin
-  key_features: Grid lines, title-block border, dimension strings, revision-cloud bubbles, compass-rose north, scale-bar reference
+  subject_treatment: White technical lines, dimension-string contours, section-cut profiles, orthographic-projection edges
+  color_and_tone: Cyan Blue background, blueprint-cyan, ammonia-developer blue, white-line contrast, title-block white
+  lighting_and_shadow: Flat, drafting-table glow, backlit-tracing vellum, even-fluorescent illumination
+  texture_and_material: Paper grain, diazo-paper tooth, ammonia-print curl, mylar-film gloss, old-blueprint fold
+  camera_and_composition: 2D schematic, plan-section-elevation, orthographic-projection geometry, isometric-grid underlay
+  atmosphere_and_mood: Planning, engineering, midnight-drafting quiet, slide-rule precision, built-environment origin
+  rendering_and_quality: Technical, precise, ruler-and-compass rigor, drafting-arm sweep, revision-cloud care
+  key_features: >-
+    Grid lines, title-block border, dimension strings, revision-cloud bubbles, compass-rose north, scale-bar
+    reference
   creative_brief: >-
-    Keep this preset defined by blueprint drafting grammar: white-line orthographic clarity, dimension-string hierarchy,
-    title-block structure, and diazo-paper tone should carry identity without a fixed building story. Apply Blueprint as
-    a portable style system over any input: preserve its construction grammar, material cues, scale logic, and signature
-    rendering behavior while avoiding a required franchise, literal prop, fixed specimen, classroom sample, product
-    shot, or scene template.
+    Keep this preset defined by blueprint drafting grammar: white-line orthographic clarity, dimension-string
+    hierarchy, title-block structure, and diazo-paper tone should carry identity without a fixed building
+    story. Apply Blueprint as a portable style system over any input: preserve its construction grammar,
+    material cues, scale logic, and signature rendering behavior while avoiding a required franchise, literal
+    prop, fixed specimen, classroom sample, product shot, or scene template.
 avoidRules:
   - color
   - photo

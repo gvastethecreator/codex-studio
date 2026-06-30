@@ -13,20 +13,20 @@ tags:
   - ink-and-print
 visualDna:
   aesthetic: >-
-    Rubber-stamp impression style with bureaucratic authority cues, imperfect transfer, and analogue
-    office artifact character
-  form_and_line: Thick broken contour forms with pressure-loss gaps, edge breakup, and frame-first stamp geometry
-  color_palette: Red or Black ink, stamp-pad economy, official pigment
-  lighting_setup: Uneven pressure, ink-starvation pattern, hand-stamped irregularity
-  material_texture: Ink starvation
-  render_quality: Office, rough, bureaucrat artefact, rubber-worn character
-  spatial_distortion: Missing parts
-  atmosphere: Official, bureaucratic, desk-clerk authority, document-weight
+    Rubber-stamp impression style with bureaucratic authority cues, imperfect transfer, and analogue office
+    artifact character
+  subject_treatment: Thick broken contour forms with pressure-loss gaps, edge breakup, and frame-first stamp geometry
+  color_and_tone: Red or Black ink, stamp-pad economy, official pigment
+  lighting_and_shadow: Uneven pressure, ink-starvation pattern, hand-stamped irregularity
+  texture_and_material: Ink starvation
+  camera_and_composition: Missing parts
+  atmosphere_and_mood: Official, bureaucratic, desk-clerk authority, document-weight
+  rendering_and_quality: Office, rough, bureaucrat artefact, rubber-worn character
   key_features: Border, stamp frame, ink-fade authenticity
   creative_brief: >-
-    Apply rubber-stamp impression grammar to any input: uneven pressure, ink-starvation gaps,
-    frame-locked geometry, red-black stamp-pad economy, and official-mark roughness should define
-    style without requiring documents, offices, seals, labels, bureaucracy scenes, or readable text.
+    Apply rubber-stamp impression grammar to any input: uneven pressure, ink-starvation gaps, frame-locked
+    geometry, red-black stamp-pad economy, and official-mark roughness should define style without requiring
+    documents, offices, seals, labels, bureaucracy scenes, or readable text.
 avoidRules:
   - perfect
   - clean

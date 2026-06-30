@@ -12,20 +12,35 @@ tags:
   - anime-character-and-lifestyle
   - anime
 visualDna:
-  aesthetic: Neon-noir anime language with rain-polished layering, alert silhouette pressure, high-chroma cyber color control, and nocturnal tension
-  form_and_line: Razor-edged silhouette cuts, angular framing lines, selective tech glyph details, and convergent geometry for depth pressure
-  color_palette: Dominant magenta-cyan duality, deep wet-black fields, electric accent nodes, and cool metallic neutrals for structural balance
-  lighting_setup: Back-biased neon rim systems, wet-surface reflection pooling, constrained bloom halos, and low-key fill preserving noir contrast
-  material_texture: Wet specular streaks, satin metal paneling, rain-beaded glass, luminous diffusion, and damp fabric micro-sheen
-  render_quality: High-contrast contemporary anime finish with cinematic night grading, clean edge discipline, and robust thumbnail readability
-  spatial_distortion: Deep vanishing-point compression with controlled perspective exaggeration and strong foreground-midground-background separation
-  atmosphere: Tense, alert, nocturnal, technological, and atmospheric
-  key_features: Neon channel reflections, rain-layer depth, alert silhouette framing, cyan-magenta contrast gating, and noir silhouette integrity
+  aesthetic: >-
+    Neon-noir anime language with rain-polished layering, alert silhouette pressure, high-chroma cyber color
+    control, and nocturnal tension
+  subject_treatment: >-
+    Razor-edged silhouette cuts, angular framing lines, selective tech glyph details, and convergent geometry
+    for depth pressure
+  color_and_tone: >-
+    Dominant magenta-cyan duality, deep wet-black fields, electric accent nodes, and cool metallic neutrals
+    for structural balance
+  lighting_and_shadow: >-
+    Back-biased neon rim systems, wet-surface reflection pooling, constrained bloom halos, and low-key fill
+    preserving noir contrast
+  texture_and_material: >-
+    Wet specular streaks, satin metal paneling, rain-beaded glass, luminous diffusion, and damp fabric
+    micro-sheen
+  camera_and_composition: >-
+    Deep vanishing-point compression with controlled perspective exaggeration and strong
+    foreground-midground-background separation
+  atmosphere_and_mood: Tense, alert, nocturnal, technological, and atmospheric
+  rendering_and_quality: >-
+    High-contrast contemporary anime finish with cinematic night grading, clean edge discipline, and robust
+    thumbnail readability
+  key_features: >-
+    Neon channel reflections, rain-layer depth, alert silhouette framing, cyan-magenta contrast gating, and
+    noir silhouette integrity
   creative_brief: >-
-    Use Neon City Vigil as style anchor for cyber-noir pressure: neon-backed
-    silhouettes, rain-reflective surfaces, and controlled high-contrast color
-    tension should transfer without requiring city streets, signage, or a
-    literal vigilante scene.
+    Use Neon City Vigil as style anchor for cyber-noir pressure: neon-backed silhouettes, rain-reflective
+    surfaces, and controlled high-contrast color tension should transfer without requiring city streets,
+    signage, or a literal vigilante scene.
 avoidRules:
   - photoreal
   - watercolor

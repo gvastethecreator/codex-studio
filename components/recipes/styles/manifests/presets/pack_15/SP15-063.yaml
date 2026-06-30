@@ -14,16 +14,36 @@ tags:
   - gothic-cyber
   - vampire
 visualDna:
-  aesthetic: gothic cyber salon built around one distinctive nocturnal data-salon protagonist, velvet terminal furniture, red data glass, antique terminals, and social tension.
-  form_and_line: Ritual diagrams, gothic silhouettes, folk hardware, talismanic machines, and mythic street-level staging. Core composition uses data-salon protagonist, velvet terminal table, hand gesture, red data glass, antique screens, night windows.
-  color_palette: velvet black, blood red, pale ivory, chrome
-  lighting_setup: red data-glass glow, candle-like LED dots, moonlit window cuts
-  material_texture: velvet, antique terminals, glass screens, chrome nails, dark wood
-  render_quality: Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity, moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material simulation, or hyper-detail.
-  spatial_distortion: Switchyards, foundries, chapels, cairns, repair shops, salons, processions, and rural transformers. Keep depth legible and avoid default hallway, aisle, or empty studio staging.
-  atmosphere: decadent, dangerous, elegant, social
+  aesthetic: >-
+    gothic cyber salon built around one distinctive nocturnal data-salon protagonist, velvet terminal
+    furniture, red data glass, antique terminals, and social tension.
+  subject_treatment: >-
+    Ritual diagrams, gothic silhouettes, folk hardware, talismanic machines, and mythic street-level staging.
+    Core composition uses data-salon protagonist, velvet terminal table, hand gesture, red data glass, antique
+    screens, night windows.
+  color_and_tone: velvet black, blood red, pale ivory, chrome
+  lighting_and_shadow: red data-glass glow, candle-like LED dots, moonlit window cuts
+  texture_and_material: velvet, antique terminals, glass screens, chrome nails, dark wood
+  camera_and_composition: >-
+    Switchyards, foundries, chapels, cairns, repair shops, salons, processions, and rural transformers. Keep
+    depth legible and avoid default hallway, aisle, or empty studio staging.
+  atmosphere_and_mood: decadent, dangerous, elegant, social
+  rendering_and_quality: >-
+    Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly
+    planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity,
+    moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material
+    simulation, or hyper-detail.
   key_features: nocturnal data-salon protagonist, velvet terminal table, red data glass, antique screens, night windows
-  creative_brief: 'Vampire cyberstyle without glamour portrait drift: one distinctive nocturnal data-salon protagonist in elegant punk silhouette, velvet terminal table, red data glass, antique blank screens, and decadent data society without explicit blood. Character must carry the preset through posture, face shadow, hand gesture, and wardrobe shape; terminal furniture supports them, never replaces them. Avoid object-only terminal poster, pale hacker group, bite scene, gothic bedroom, glamour pinup, UI concept art, or RPG character styling. Use curated editorial style-card structure, flat graphic illustration, gouache-poster shapes, cel-poster blocking, and controlled digital painting over realism or generic concept art. Use few bold color/value zones, large matte shapes, clean surfaces, low-to-moderate detail, and finish denoised with no excessive noise or ultra-fine detail.'
+  creative_brief: >-
+    Vampire cyberstyle without glamour portrait drift: one distinctive nocturnal data-salon protagonist in
+    elegant punk silhouette, velvet terminal table, red data glass, antique blank screens, and decadent data
+    society without explicit blood. Character must carry the preset through posture, face shadow, hand
+    gesture, and wardrobe shape; terminal furniture supports them, never replaces them. Avoid object-only
+    terminal poster, pale hacker group, bite scene, gothic bedroom, glamour pinup, UI concept art, or RPG
+    character styling. Use curated editorial style-card structure, flat graphic illustration, gouache-poster
+    shapes, cel-poster blocking, and controlled digital painting over realism or generic concept art. Use few
+    bold color/value zones, large matte shapes, clean surfaces, low-to-moderate detail, and finish denoised
+    with no excessive noise or ultra-fine detail.
 avoidRules:
   - photoreal
   - watermark
@@ -37,7 +57,21 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP15-063.webp
 attributes:
-  negativePrompt: photoreal, hyperreal, realistic render, photoreal painterly realism, cinematic realism, AAA key art, photographic skin pores, realistic foreground portrait, realistic facial hair detail, lens blur, bokeh, depth-of-field photo look, blood, fangs, bite marks, wounds, gore, skull, coffin, bat swarm, readable screen UI, terminal text, logo, salon chair fixation, lamp fixation, foreground glamour portrait, photoreal skin, generic soldier hero, guard pin-up, weapon-first pose, HDR lens realism, 3D render look, PBR material simulation, hyper-detailed concept art, watermark, text, generic style, over-abstract, interchangeable preset, duplicated motifs, generic glass utopia, unmotivated market aisle, unmotivated library aisle, fantasy corridor, random camera held by subject, studio wall fixation, chair fixation, curtain fixation, scarf fixation, pedestal fixation, bird fixation, excessive noise, ultra-fine detail, over-sharpened microtexture, over-rendered machinery, noisy grime, tiny rivets everywhere, busy texture chatter, realistic uniform portrait, uniformed officer hero, foreground guard portrait, detailed tattoo focus, dense machinery wallpaper, overcrowded scene, high-frequency surface detail, cinematic close-up portrait, flat black fill, crushed black, pure black masses, muddy black fields, generic American illustration, generic Western RPG card art
+  negativePrompt: >-
+    photoreal, hyperreal, realistic render, photoreal painterly realism, cinematic realism, AAA key art,
+    photographic skin pores, realistic foreground portrait, realistic facial hair detail, lens blur, bokeh,
+    depth-of-field photo look, blood, fangs, bite marks, wounds, gore, skull, coffin, bat swarm, readable
+    screen UI, terminal text, logo, salon chair fixation, lamp fixation, foreground glamour portrait,
+    photoreal skin, generic soldier hero, guard pin-up, weapon-first pose, HDR lens realism, 3D render look,
+    PBR material simulation, hyper-detailed concept art, watermark, text, generic style, over-abstract,
+    interchangeable preset, duplicated motifs, generic glass utopia, unmotivated market aisle, unmotivated
+    library aisle, fantasy corridor, random camera held by subject, studio wall fixation, chair fixation,
+    curtain fixation, scarf fixation, pedestal fixation, bird fixation, excessive noise, ultra-fine detail,
+    over-sharpened microtexture, over-rendered machinery, noisy grime, tiny rivets everywhere, busy texture
+    chatter, realistic uniform portrait, uniformed officer hero, foreground guard portrait, detailed tattoo
+    focus, dense machinery wallpaper, overcrowded scene, high-frequency surface detail, cinematic close-up
+    portrait, flat black fill, crushed black, pure black masses, muddy black fields, generic American
+    illustration, generic Western RPG card art
 taxonomy:
   packId: pack_15
   packName: Punk Spectrum Vault

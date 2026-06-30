@@ -12,30 +12,35 @@ tags:
   - anime-character-and-lifestyle
   - shojo-magical-girl-and-visionary-classics
 visualDna:
-  aesthetic: Biomech-psychological drama style with existential tension, techno-organic unease, and introspective catastrophe
-  form_and_line: >-
-    Clinical 90s cel contour control, vertebral-mechanical silhouette hybrids, angular emotional posing, and diagnostic
-    line clarity
-  color_palette: Sickly greens and muted violets against warning reds and sterile grays, with restrained neon trauma accents
-  lighting_setup: >-
+  aesthetic: >-
+    Biomech-psychological drama style with existential tension, techno-organic unease, and introspective
+    catastrophe
+  subject_treatment: >-
+    Clinical 90s cel contour control, vertebral-mechanical silhouette hybrids, angular emotional posing, and
+    diagnostic line clarity
+  color_and_tone: >-
+    Sickly greens and muted violets against warning reds and sterile grays, with restrained neon trauma
+    accents
+  lighting_and_shadow: >-
     Harsh medical-cel contrast, enclosed diagnostic glows, severe rim separations, and shadow bands that imply
     psychological fracture
-  material_texture: Wet bio-fluid sheen, cable-organic micro-detail, painted cel grain, and analog-film noise in dark fields
-  render_quality: >-
-    Golden-era anime precision with philosophical gravitas, high emotional readability, and controlled apocalyptic
-    staging
-  spatial_distortion: >-
-    Constrained claustrophobic compression punctuated by scale rupture moments and uncanny anatomical-mechanical depth
-    shifts
-  atmosphere: Harrowing, introspective, apocalyptic, fragile, intense
+  texture_and_material: Wet bio-fluid sheen, cable-organic micro-detail, painted cel grain, and analog-film noise in dark fields
+  camera_and_composition: >-
+    Constrained claustrophobic compression punctuated by scale rupture moments and uncanny
+    anatomical-mechanical depth shifts
+  atmosphere_and_mood: Harrowing, introspective, apocalyptic, fragile, intense
+  rendering_and_quality: >-
+    Golden-era anime precision with philosophical gravitas, high emotional readability, and controlled
+    apocalyptic staging
   key_features: >-
-    Techno-organic silhouette fusion, diagnostic shadow logic, existential enclosure tension, trauma-coded color
-    architecture
+    Techno-organic silhouette fusion, diagnostic shadow logic, existential enclosure tension, trauma-coded
+    color architecture
   creative_brief: >-
-    Keep this preset rooted in biomech existential language: techno-organic morphology, clinical shadow partitions, and
-    psychological dread should carry the style independent of franchise-specific entities. Apply this anime/IP-title
-    grammar over any input: preserve its emotional staging, line behavior, palette, symbolic motifs, and production cues
-    while avoiding a required cast, lore event, location, prop, or fixed scene.
+    Keep this preset rooted in biomech existential language: techno-organic morphology, clinical shadow
+    partitions, and psychological dread should carry the style independent of franchise-specific entities.
+    Apply this anime/IP-title grammar over any input: preserve its emotional staging, line behavior, palette,
+    symbolic motifs, and production cues while avoiding a required cast, lore event, location, prop, or fixed
+    scene.
 avoidRules:
   - realistic
   - 3d render
@@ -53,8 +58,8 @@ assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-013.webp
 attributes:
   negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark,
-    text, signature
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts,
+    watermark, text, signature
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle

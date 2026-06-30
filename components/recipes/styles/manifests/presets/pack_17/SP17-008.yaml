@@ -15,13 +15,17 @@ tags:
   - plague-baroque
 visualDna:
   aesthetic: Baroque plague-era fantasy with beaked masks, ornate decay, medicine cabinets, and candlelit dread.
-  subject_treatment: A baroque plague physician with bird mask, caged moth familiar, glove tools, apothecary bottles, and broad simplified ruffle shapes, avoiding lace microdetail.
+  subject_treatment: >-
+    A baroque plague physician with bird mask, caged moth familiar, glove tools, apothecary bottles, and broad
+    simplified ruffle shapes, avoiding lace microdetail.
   color_and_tone: Sepia black, aged ivory, oxidized green, wine red, and sickly candle gold.
   lighting_and_shadow: Simple candle key light, soft baroque shadow blocks, and clean glass highlights keep objects readable.
   texture_and_material: Velvet, cracked porcelain, parchment labels, cloudy glass, aged brass, wax, and dusty herbs.
   camera_and_composition: Formal portrait or cabinet composition with clustered objects, curtains, and controlled depth.
   atmosphere_and_mood: Elegant, morbid, clinical, and theatrical.
-  rendering_and_quality: Painterly gothic illustration with ornate props, readable costume layers, defined edges, and restrained horror.
+  rendering_and_quality: >-
+    Painterly gothic illustration with ornate props, readable costume layers, defined edges, and restrained
+    horror.
   creative_brief: Applies plague-baroque costume, medicine, and candlelit decay to any fantasy subject or scene.
 avoidRules:
   - modern hospital
@@ -33,6 +37,8 @@ avoidRules:
   - text
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP17-008.webp
+attributes:
+  negativePrompt: modern hospital, sci-fi lab, cute plague mask, clean fashion shoot, explicit gore, watermark, text
 taxonomy:
   packId: pack_17
   packName: Medieval Fantasy & Dungeon Zine

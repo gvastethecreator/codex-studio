@@ -12,16 +12,31 @@ tags:
   - cinematic-and-media
   - caricature-and-cartoon-styles
 visualDna:
-  aesthetic: Corporate mascot that should never have been approved, dead-soulless brand cheer, unsettling hybridization, clip-art-from-hell energy, focus-group menace, unblinking happiness that registers as threat
-  form_and_line: Too-smooth vector contours, mathematically-perfect symmetry that feels wrong, clip-art simplicity taken to uncanny extreme
-  color_palette: Corporate-primary blue and red, too-bright yellow, sterile white, uncanny-skin peach, glossy-plastic green
-  lighting_setup: Product-photography studio, perfect shadowless lighting, hyperreal gloss on dead eyes, no atmosphere
-  material_texture: Glossy plastic-vector surface, costume-foam texture, cheap-fleece fabric, hollow brand emptiness
-  render_quality: Rejected-corporate-mascot aesthetic, clip-art-through-nightmare, uncanny-branding-horror, marketing-department-mistake
-  spatial_distortion: Overscaled friendly proportions, frozen approval pose, visible seam logic
-  atmosphere: Deeply wrong, corporate-horror, abandoned-by-marketing sadness, unsettling-brand-silence, focus-group-rejection
-  key_features: Glossy dead cheer, too-perfect symmetry, frozen approval pose, costume seams, plastic-vector perfection, soulless brand energy
-  creative_brief: 'Apply rejected-mascot unease to any subject: over-friendly shapes, too-perfect vector symmetry, glossy plastic surfaces, costume seam hints, and engineered cheer that reads as threat. Avoid requiring specific brands, eyes, smiles, thumbs-up poses, or mascot bodies. The horror should come from inappropriate marketing polish.'
+  aesthetic: >-
+    Corporate mascot that should never have been approved, dead-soulless brand cheer, unsettling
+    hybridization, clip-art-from-hell energy, focus-group menace, unblinking happiness that registers as
+    threat
+  subject_treatment: >-
+    Too-smooth vector contours, mathematically-perfect symmetry that feels wrong, clip-art simplicity taken to
+    uncanny extreme
+  color_and_tone: Corporate-primary blue and red, too-bright yellow, sterile white, uncanny-skin peach, glossy-plastic green
+  lighting_and_shadow: Product-photography studio, perfect shadowless lighting, hyperreal gloss on dead eyes, no atmosphere
+  texture_and_material: Glossy plastic-vector surface, costume-foam texture, cheap-fleece fabric, hollow brand emptiness
+  camera_and_composition: Overscaled friendly proportions, frozen approval pose, visible seam logic
+  atmosphere_and_mood: >-
+    Deeply wrong, corporate-horror, abandoned-by-marketing sadness, unsettling-brand-silence,
+    focus-group-rejection
+  rendering_and_quality: >-
+    Rejected-corporate-mascot aesthetic, clip-art-through-nightmare, uncanny-branding-horror,
+    marketing-department-mistake
+  key_features: >-
+    Glossy dead cheer, too-perfect symmetry, frozen approval pose, costume seams, plastic-vector perfection,
+    soulless brand energy
+  creative_brief: >-
+    Apply rejected-mascot unease to any subject: over-friendly shapes, too-perfect vector symmetry, glossy
+    plastic surfaces, costume seam hints, and engineered cheer that reads as threat. Avoid requiring specific
+    brands, eyes, smiles, thumbs-up poses, or mascot bodies. The horror should come from inappropriate
+    marketing polish.
 avoidRules:
   - professional
   - friendly
@@ -35,7 +50,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP02-097.webp
 attributes:
-  negativePrompt: professional, friendly, appealing, trustworthy, polished, market-tested, focus-grouped, appropriate, wholesome
+  negativePrompt: >-
+    professional, friendly, appealing, trustworthy, polished, market-tested, focus-grouped, appropriate,
+    wholesome
 taxonomy:
   packId: pack_02
   packName: Cinematic & Media

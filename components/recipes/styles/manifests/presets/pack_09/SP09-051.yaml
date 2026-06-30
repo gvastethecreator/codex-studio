@@ -13,21 +13,22 @@ tags:
   - elemental-and-fx
 visualDna:
   aesthetic: Lava flow
-  form_and_line: Crust cracks
-  color_palette: Orange, Black, Red
-  lighting_setup: Emissive glow
-  material_texture: Rock and liquid
-  render_quality: Volcanic, hot
-  spatial_distortion: Melting rock
-  atmosphere: Dangerous, intense
+  subject_treatment: Crust cracks
+  color_and_tone: Orange, Black, Red
+  lighting_and_shadow: Emissive glow
+  texture_and_material: Rock and liquid
+  camera_and_composition: Melting rock
+  atmosphere_and_mood: Dangerous, intense
+  rendering_and_quality: Volcanic, hot
   key_features: Heat
   creative_brief: >-
-    Summon the living heat of flowing magma where black crust cracks open to reveal rivers of orange incandescence
-    pulsing beneath, a material that is its own illumination. The skin should feel like a cooling scab over liquid fire,
-    the fissures mapping the flow of creation itself across a surface of elemental birth. Capture the terror and beauty
-    of a planet still forming. Use Fire & Magma as portable surface/render behavior over any input: map its texture,
-    light response, edge wear, color chemistry, and tactile rhythm onto the subject instead of requiring a literal
-    material sample, macro tile, wall, landscape, source object, or scene where the material naturally appears.
+    Summon the living heat of flowing magma where black crust cracks open to reveal rivers of orange
+    incandescence pulsing beneath, a material that is its own illumination. The skin should feel like a
+    cooling scab over liquid fire, the fissures mapping the flow of creation itself across a surface of
+    elemental birth. Capture the terror and beauty of a planet still forming. Use Fire & Magma as portable
+    surface/render behavior over any input: map its texture, light response, edge wear, color chemistry, and
+    tactile rhythm onto the subject instead of requiring a literal material sample, macro tile, wall,
+    landscape, source object, or scene where the material naturally appears.
 avoidRules:
   - cold
   - blue

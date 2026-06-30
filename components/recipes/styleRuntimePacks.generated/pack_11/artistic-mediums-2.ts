@@ -10,16 +10,17 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'paper, ink, digital',
     style: {
       aesthetic: 'Chalkboard drawing language on dark slate surfaces',
-      form_and_line:
+      subject_treatment:
         'Chalk dust, variable thickness, smudged contours, broken strokes, re-drawn corrections',
-      color_palette:
+      color_and_tone:
         'White chalk on Black board, soft pastel chalks, muted color spectrum, dusty desaturation',
-      lighting_setup: 'Flat, even overhead fluorescents, no glare, diffused ambient',
-      material_texture: 'Slate grain, eraser smudges, chalk dust, ghosted afterimages, rough tooth',
-      render_quality: 'Ephemeral hand-drawn chalk finish with visible correction history',
-      spatial_distortion:
+      lighting_and_shadow: 'Flat, even overhead fluorescents, no glare, diffused ambient',
+      texture_and_material:
+        'Slate grain, eraser smudges, chalk dust, ghosted afterimages, rough tooth',
+      camera_and_composition:
         'Hand-drawn imperfections, slightly tilted lettering, uneven scale, organic spacing',
-      atmosphere: 'Casual, temporary, rustic, creative, fleeting, nostalgic melancholy',
+      atmosphere_and_mood: 'Casual, temporary, rustic, creative, fleeting, nostalgic melancholy',
+      rendering_and_quality: 'Ephemeral hand-drawn chalk finish with visible correction history',
       key_features: 'Dusty background, chalk-dust halo, eraser streak ghosts, fingertip blending',
       creative_brief:
         'Compose with dusty, pressure-variable chalk marks over a textured dark board. Preserve eraser ghosts, smudge transitions, and imperfect lettering rhythm to emphasize temporary handmade expression. Apply Chalkboard Art as a portable style system over any input: preserve its construction grammar, material cues, scale logic, and signature rendering behavior while avoiding a required franchise, literal prop, fixed specimen, classroom sample, product shot, or scene template.',
@@ -32,16 +33,19 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'realistic, photo, 3d',
     style: {
       aesthetic: 'Traditional old-school tattoo flash design language',
-      form_and_line: 'Bold black outlines, heavy contour weight, ribbony banners, coiled snakes',
-      color_palette:
+      subject_treatment:
+        'Bold black outlines, heavy contour weight, ribbony banners, coiled snakes',
+      color_and_tone:
         'Red, Green, Yellow, Black shading, limited triad palette, spit-shaded gradients',
-      lighting_setup: 'Paper stain (coffee), vintage amber wash, warm sepia base, parchment glow',
-      material_texture:
+      lighting_and_shadow:
+        'Paper stain (coffee), vintage amber wash, warm sepia base, parchment glow',
+      texture_and_material:
         'Watercolor paper, skin, flash-sheet tooth, poster-board grain, ink-bled edges',
-      render_quality: 'Bold flash-sheet rendering with high durability/readability logic',
-      spatial_distortion:
+      camera_and_composition:
         '2D flat design, pinup proportions, dagger-and-heart motifs, talismanic layout',
-      atmosphere: 'Tough, classic, bold, salt-air romance, port-town grit, permanent devotion',
+      atmosphere_and_mood:
+        'Tough, classic, bold, salt-air romance, port-town grit, permanent devotion',
+      rendering_and_quality: 'Bold flash-sheet rendering with high durability/readability logic',
       key_features:
         'Pepper shading dots, banner typography, emblematic motif blocks, thick contour lock',
       creative_brief:
@@ -55,18 +59,20 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'opaque, dull, painting',
     style: {
       aesthetic: 'Stained-glass window art with lead-came segmentation',
-      form_and_line:
+      subject_treatment:
         'Thick black lead came, segmented contours, curvilinear divisions, interconnected cells',
-      color_palette:
+      color_and_tone:
         'Vibrant translucent glass, jewel-tone spectrum, ruby-cobalt-emerald, sun-drenched saturation',
-      lighting_setup:
+      lighting_and_shadow:
         'Backlit, glowing, sun-through-glass radiance, interior candle warmth, beam-fall drama',
-      material_texture:
+      texture_and_material:
         'Glass imperfections, bubbles, rippled surface, wavy transparency, antique patina',
-      render_quality: 'Ornamental luminous-glass rendering with structural lead-line clarity',
-      spatial_distortion:
+      camera_and_composition:
         'Mosaic segmentation, lead-line compartmentalization, piecemeal assembly, fractured-light unity',
-      atmosphere: 'Spiritual, beautiful, light, reverent calm, sacred awe, transcendent glow',
+      atmosphere_and_mood:
+        'Spiritual, beautiful, light, reverent calm, sacred awe, transcendent glow',
+      rendering_and_quality:
+        'Ornamental luminous-glass rendering with structural lead-line clarity',
       key_features:
         'Black outlines mandatory, lead-came shadows, solder joints, textured glass surface',
       creative_brief:
@@ -81,19 +87,19 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Handmade broadcast texture system where any subject becomes soft, stitched, fuzzy, visibly operated, and warmly stage-lit',
-      form_and_line:
+      subject_treatment:
         'Rounded cut-fabric contours, sock-like volume breaks, seam-guided silhouettes, elastic wobble arcs, simplified expressive geometry',
-      color_palette:
+      color_and_tone:
         'Primary felt blocks, craft-store brights, saturated fleece accents, warm studio neutrals, tiny black button contrast',
-      lighting_setup:
+      lighting_and_shadow:
         'Friendly multi-camera studio light with soft key-fill balance, gentle rim glow, and practical set warmth without requiring a stage',
-      material_texture:
+      texture_and_material:
         'Felt nap, fleece fuzz, foam padding, visible stitching, brushed fabric grain, handmade edge irregularity',
-      render_quality:
-        'Tactile, imperfect, playful, low-tech, performance-driven, with intentional handcraft evidence in every surface',
-      spatial_distortion:
+      camera_and_composition:
         'Mouth-flap compression, rod-like gesture arcs, slight squash at joints, fabric slouch, shallow theatrical depth',
-      atmosphere: 'Warm, comedic, approachable, nostalgic, handmade, emotionally legible',
+      atmosphere_and_mood: 'Warm, comedic, approachable, nostalgic, handmade, emotionally legible',
+      rendering_and_quality:
+        'Tactile, imperfect, playful, low-tech, performance-driven, with intentional handcraft evidence in every surface',
       key_features:
         'Fuzzy contour halos, seam punctuation, button-eye abstraction, foam volume, felt color blocking, soft jaw-like deformation',
       creative_brief:
@@ -108,19 +114,19 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Aerosol markmaking system with overpainted speed, cap-pressure variation, graphic rebellion, and layered surface memory',
-      form_and_line:
+      subject_treatment:
         'Fat-cap fills, skinny-cap cuts, overspray halos, drips, stencil interrupts, tag-like motion trails, scuffed outline collisions',
-      color_palette:
+      color_and_tone:
         'Chrome silver, toxic green, infrared purple, safety yellow, matte black, signal red, concrete grey undertone',
-      lighting_setup:
+      lighting_and_shadow:
         'Flat flash-like visibility with wet-paint glints, grazing texture light, and saturated color punch',
-      material_texture:
+      texture_and_material:
         'Powdery overspray, glossy wet paint, scratched base surface, stencil edge dust, aerosol speckle fields',
-      render_quality:
-        'Raw, layered, fast, tactile, with visible order of operations and deliberate paint accumulation',
-      spatial_distortion:
+      camera_and_composition:
         'Spray drift, drip gravity, edge bloom, stencil offsets, overlapping tag gestures, pressure-fade depth',
-      atmosphere: 'Energetic, illegal-feeling, urban-coded, loud, improvised, physical',
+      atmosphere_and_mood: 'Energetic, illegal-feeling, urban-coded, loud, improvised, physical',
+      rendering_and_quality:
+        'Raw, layered, fast, tactile, with visible order of operations and deliberate paint accumulation',
       key_features:
         'Overspray halos, cap-width transitions, drips, masked edges, layered tags, color collisions, scuffed substrate',
       creative_brief:
@@ -135,19 +141,19 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Electric gas-discharge graphic treatment built from glowing tube contours, dark void contrast, and chromatic halo bleed',
-      form_and_line:
+      subject_treatment:
         'Continuous bent-tube strokes, cursive contour loops, clipped mounting shadows, soft wall-wash silhouettes, luminous edge repetition',
-      color_palette:
+      color_and_tone:
         'Argon purple, mercury cyan, krypton white, hot pink, vacancy red, deep black backing, reflected blue spill',
-      lighting_setup:
+      lighting_and_shadow:
         'Self-illuminated emission with colored spill, bloom halos, high local contrast, and dim ambient falloff',
-      material_texture:
+      texture_and_material:
         'Glass tubing, gas glow, enamel backing, transformer warmth, glossy reflections, dust caught inside colored light',
-      render_quality:
-        'Sharp luminous linework with controlled bloom, readable silhouette, glossy micro-highlights, and nocturnal graphic clarity',
-      spatial_distortion:
+      camera_and_composition:
         'Halo expansion, chromatic fringe drift, tube refraction, glow stacking, slight sign-maker asymmetry',
-      atmosphere: 'Nocturnal, electric, commercial, seductive, nostalgic, high-contrast',
+      atmosphere_and_mood: 'Nocturnal, electric, commercial, seductive, nostalgic, high-contrast',
+      rendering_and_quality:
+        'Sharp luminous linework with controlled bloom, readable silhouette, glossy micro-highlights, and nocturnal graphic clarity',
       key_features:
         'Bent-tube continuity, colored halo bleed, black negative space, glass highlight knots, local glow reflections',
       creative_brief:
@@ -162,19 +168,19 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Microfoam surface drawing, espresso-crema contrast, barista flow geometry, sip-away temporary art',
-      form_and_line:
+      subject_treatment:
         'Soft foam edges, pour-line curves, rosetta-leaf ripple, tulip-stack layers, heart-pour symmetry',
-      color_palette:
+      color_and_tone:
         'Brown, White, Cream, espresso-crema tiger-stripe, caramel-drizzle amber, milk-foam ivory',
-      lighting_setup:
+      lighting_and_shadow:
         'Overhead soft warmth, surface-spot highlights, crema-gloss catch, steamed-milk sheen',
-      material_texture:
+      texture_and_material:
         'Microfoam bubbles, velvet-milk surface, crema-oil slick, silky-pour viscosity, latte-art canvas',
-      render_quality:
-        'Tasty, temporary, sip-away impermanence, barista-throwdown art, third-wave-craft',
-      spatial_distortion:
+      camera_and_composition:
         'Liquid surface, pour-path flow, surface-tension boundary, optional cup-rim curvature',
-      atmosphere: 'Cozy, warm, temporary, crafted, first-sip quiet',
+      atmosphere_and_mood: 'Cozy, warm, temporary, crafted, first-sip quiet',
+      rendering_and_quality:
+        'Tasty, temporary, sip-away impermanence, barista-throwdown art, third-wave-craft',
       key_features:
         'Crema ring, latte-art rosetta, steamed-milk gloss, microfoam bubbles, pour-steam wisps',
       creative_brief:
@@ -189,20 +195,20 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         "Architectural plan, drafting-table vision, engineer's-ghost, technical-imagination",
-      form_and_line:
+      subject_treatment:
         'White technical lines, dimension-string contours, section-cut profiles, orthographic-projection edges',
-      color_palette:
+      color_and_tone:
         'Cyan Blue background, blueprint-cyan, ammonia-developer blue, white-line contrast, title-block white',
-      lighting_setup:
+      lighting_and_shadow:
         'Flat, drafting-table glow, backlit-tracing vellum, even-fluorescent illumination',
-      material_texture:
+      texture_and_material:
         'Paper grain, diazo-paper tooth, ammonia-print curl, mylar-film gloss, old-blueprint fold',
-      render_quality:
-        'Technical, precise, ruler-and-compass rigor, drafting-arm sweep, revision-cloud care',
-      spatial_distortion:
+      camera_and_composition:
         '2D schematic, plan-section-elevation, orthographic-projection geometry, isometric-grid underlay',
-      atmosphere:
+      atmosphere_and_mood:
         'Planning, engineering, midnight-drafting quiet, slide-rule precision, built-environment origin',
+      rendering_and_quality:
+        'Technical, precise, ruler-and-compass rigor, drafting-arm sweep, revision-cloud care',
       key_features:
         'Grid lines, title-block border, dimension strings, revision-cloud bubbles, compass-rose north, scale-bar reference',
       creative_brief:
@@ -217,19 +223,19 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Pop silkscreen impact system using mechanical reproduction, celebrity-scale flatness, commodity color, and graphic repetition',
-      form_and_line:
+      subject_treatment:
         'Ben-Day dots, thick contour separation, screen-registration offsets, posterized planes, repeated frame logic',
-      color_palette:
+      color_and_tone:
         'Tomato red, electric yellow, cyan blocks, hot pink, black ink, cream paper, deliberately offset CMYK',
-      lighting_setup:
+      lighting_and_shadow:
         'Flattened print light with almost no modeled depth, hard color field contrast, and ink-density emphasis',
-      material_texture:
+      texture_and_material:
         'Screenprint ink, paper tooth, halftone grain, misregistration edges, cheap poster gloss',
-      render_quality:
-        'Bold, reproducible, graphic, mechanically printed, iconic, high contrast, deliberately artificial',
-      spatial_distortion:
+      camera_and_composition:
         'Color-channel offset, serial repetition, halftone scale shifts, cropped icon flattening, print misalignment',
-      atmosphere: 'Commercial, ironic, loud, iconic, mass-produced, playful',
+      atmosphere_and_mood: 'Commercial, ironic, loud, iconic, mass-produced, playful',
+      rendering_and_quality:
+        'Bold, reproducible, graphic, mechanically printed, iconic, high contrast, deliberately artificial',
       key_features:
         'Halftone fields, CMYK separation, registration slips, posterized shadow, repeated icon blocks, ink bleed',
       creative_brief:

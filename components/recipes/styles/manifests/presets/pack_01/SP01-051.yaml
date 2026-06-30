@@ -13,15 +13,18 @@ tags:
   - portrait-and-studio
 visualDna:
   aesthetic: Magazine spread
-  form_and_line: Dynamic editorial geometry
-  color_palette: Color graded, trendy
-  lighting_setup: Creative studio
-  material_texture: Fabriclike surface detail
-  render_quality: Vogue, high end
-  spatial_distortion: Elongated limbs
-  atmosphere: Cool, expensive
+  subject_treatment: Dynamic editorial geometry
+  color_and_tone: Color graded, trendy
+  lighting_and_shadow: Creative studio
+  texture_and_material: Fabriclike surface detail
+  camera_and_composition: Elongated limbs
+  atmosphere_and_mood: Cool, expensive
+  rendering_and_quality: Vogue, high end
   key_features: Styling-first focus
-  creative_brief: 'Fashion editorial treats any subject as a styled spread: dynamic geometry, sculpted fabriclike texture, expensive color grade, and surfaces chosen for desire rather than description. Keep Vogue-level drama without requiring clothes, bodies, runway poses, or a human model.'
+  creative_brief: >-
+    Fashion editorial treats any subject as a styled spread: dynamic geometry, sculpted fabriclike texture,
+    expensive color grade, and surfaces chosen for desire rather than description. Keep Vogue-level drama
+    without requiring clothes, bodies, runway poses, or a human model.
 avoidRules:
   - boring
   - plain

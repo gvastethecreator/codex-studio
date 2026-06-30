@@ -13,21 +13,24 @@ tags:
   - photography-eras
 visualDna:
   aesthetic: Disposable 90s snapshot
-  form_and_line: None
-  color_palette: High contrast, punchy saturation, blown highlights, muddy shadow, cheap lab color
-  lighting_setup: Harsh flash, direct frontal, overexposed 3-feet-away
-  material_texture: Grainy 400 ISO, plastic-lens softness, color fringe
-  render_quality: Candid, unposed, cheap-lens spontaneity, one-roll urgency
-  spatial_distortion: Flash reflection, red-edge glare, plastic lens warp
-  atmosphere: Memory, casual, 90s, disposable immediacy
+  subject_treatment: >-
+    Treat subjects as believable filmed or broadcast subjects under Disposable Camera (90s): casting,
+    wardrobe, props, motion cues, and silhouette hierarchy follow 4. Photography Eras cinematic and broadcast
+    grammar without locking to one plot beat.
+  color_and_tone: High contrast, punchy saturation, blown highlights, muddy shadow, cheap lab color
+  lighting_and_shadow: Harsh flash, direct frontal, overexposed 3-feet-away
+  texture_and_material: Grainy 400 ISO, plastic-lens softness, color fringe
+  camera_and_composition: Flash reflection, red-edge glare, plastic lens warp
+  atmosphere_and_mood: Memory, casual, 90s, disposable immediacy
+  rendering_and_quality: Candid, unposed, cheap-lens spontaneity, one-roll urgency
   key_features: Vignette, flash hotspot, crooked horizon, plastic-lens softness, lab-scan grain
   creative_brief: >-
-    Recast the input as a 90s disposable-camera frame: harsh frontal flash, crooked horizon, muddy shadows, cheap
-    plastic softness, and punchy one-hour-lab color. Avoid forcing parties, youth scenes, group selfies, or faces. The
-    style should feel accidental, immediate, and physically limited by a single-use camera. Apply Disposable Camera as a
-    portable cinematic/camera style over any input: preserve its lens behavior, color process, lighting setup, artifact
-    pattern, and deformation grammar while avoiding a required actor, room, prop, brand, readable text, fixed IP scene,
-    or narrative setup.
+    Recast the input as a 90s disposable-camera frame: harsh frontal flash, crooked horizon, muddy shadows,
+    cheap plastic softness, and punchy one-hour-lab color. Avoid forcing parties, youth scenes, group selfies,
+    or faces. The style should feel accidental, immediate, and physically limited by a single-use camera.
+    Apply Disposable Camera as a portable cinematic/camera style over any input: preserve its lens behavior,
+    color process, lighting setup, artifact pattern, and deformation grammar while avoiding a required actor,
+    room, prop, brand, readable text, fixed IP scene, or narrative setup.
 avoidRules:
   - professional lighting
 assets:

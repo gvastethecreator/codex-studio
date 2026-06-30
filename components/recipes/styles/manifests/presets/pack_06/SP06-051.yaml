@@ -13,19 +13,18 @@ tags:
   - digital-art
 visualDna:
   aesthetic: 3D mesh with visible facets
-  form_and_line: Sharp edges
-  color_palette: Flat shaded polygons
-  lighting_setup: Global illumination
-  material_texture: None
-  render_quality: Indie game
-  spatial_distortion: Geometric
-  atmosphere: Simple, clean
+  subject_treatment: Sharp edges
+  color_and_tone: Flat shaded polygons
+  lighting_and_shadow: Global illumination
+  texture_and_material: "Surface treatment follows Low Poly's material cues: Triangles."
+  camera_and_composition: Geometric
+  atmosphere_and_mood: Simple, clean
+  rendering_and_quality: Indie game
   key_features: Triangles
   creative_brief: >-
-    Apply low-poly art to any input: visible triangular facets, flat-shaded
-    planes, simplified geometry, crisp ambient occlusion, and origami-like light
-    breaks. Keep polygon beauty without requiring game terrain, animals,
-    landscapes, or asset turntables.
+    Apply low-poly art to any input: visible triangular facets, flat-shaded planes, simplified geometry, crisp
+    ambient occlusion, and origami-like light breaks. Keep polygon beauty without requiring game terrain,
+    animals, landscapes, or asset turntables.
 avoidRules:
   - photo
   - realistic
@@ -45,7 +44,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP06-051.webp
 attributes:
-  negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border
+  negativePrompt: >-
+    photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy,
+    watermark, text, signature, frame, border
 taxonomy:
   packId: pack_06
   packName: Essential Art Styles

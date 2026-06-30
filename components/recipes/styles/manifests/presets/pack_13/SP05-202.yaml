@@ -13,34 +13,30 @@ tags:
   - slice-of-life-and-moe
 visualDna:
   aesthetic: >-
-    Local-community anime warmth built from festive intimacy, handmade commerce rhythm, cheerful
-    neighbor density, and confectionery-like softness without locking to a street scene
-  form_and_line: >-
-    Rounded silhouette clusters, welcoming contour rhythm, signage-like shape balance without
-    readable text, and neighborly spacing around the subject
-  color_palette: >-
-    Mochi cream, cedar brown, festival red, mint paper accents, warm amber shoplight, and soft
-    evening violet shadows
-  lighting_setup: >-
-    Lantern-like warm pools, overcast daylight softness, amber spill, and low-drama celebratory
-    highlights
-  material_texture: >-
-    Powdery matte softness, paper fiber, wood grain, woven cloth, polished display glints, and
-    handmade packaging tactility
-  render_quality: >-
-    Community-slice rendering with cozy density, friendly object clarity, festive readability, and
-    gentle local personality
-  spatial_distortion: >-
-    Compact neighborhood-scale depth, corridor-like warmth, and curved attention flow around the
-    main subject
-  atmosphere: Cheerful, neighborly, tasty, soft, festive
+    Local-community anime warmth built from festive intimacy, handmade commerce rhythm, cheerful neighbor
+    density, and confectionery-like softness without locking to a street scene
+  subject_treatment: >-
+    Rounded silhouette clusters, welcoming contour rhythm, signage-like shape balance without readable text,
+    and neighborly spacing around the subject
+  color_and_tone: >-
+    Mochi cream, cedar brown, festival red, mint paper accents, warm amber shoplight, and soft evening violet
+    shadows
+  lighting_and_shadow: Lantern-like warm pools, overcast daylight softness, amber spill, and low-drama celebratory highlights
+  texture_and_material: >-
+    Powdery matte softness, paper fiber, wood grain, woven cloth, polished display glints, and handmade
+    packaging tactility
+  camera_and_composition: Compact neighborhood-scale depth, corridor-like warmth, and curved attention flow around the main subject
+  atmosphere_and_mood: Cheerful, neighborly, tasty, soft, festive
+  rendering_and_quality: >-
+    Community-slice rendering with cozy density, friendly object clarity, festive readability, and gentle
+    local personality
   key_features: >-
-    Community rhythm, food-craft softness, paper accents, warm local light, rounded social
-    composition, and affectionate bustle
+    Community rhythm, food-craft softness, paper accents, warm local light, rounded social composition, and
+    affectionate bustle
   creative_brief: >-
-    Use Tamako Market as style anchor for community softness. Transform any subject into warm local
-    ritual: rounded neighborly density, powdery craft texture, paper-festival accents, and amber
-    friendliness. Markets, storefronts, mochi, and stalls stay optional.
+    Use Tamako Market as style anchor for community softness. Transform any subject into warm local ritual:
+    rounded neighborly density, powdery craft texture, paper-festival accents, and amber friendliness.
+    Markets, storefronts, mochi, and stalls stay optional.
 avoidRules:
   - realistic
   - 3d render
@@ -58,8 +54,8 @@ assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-202.webp
 attributes:
   negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, text, signature
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts,
+    watermark, text, signature
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle

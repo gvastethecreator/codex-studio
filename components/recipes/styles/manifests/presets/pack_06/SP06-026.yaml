@@ -13,19 +13,18 @@ tags:
   - drawing-and-sketching
 visualDna:
   aesthetic: Alcohol marker rendering
-  form_and_line: Clean ink outlines
-  color_palette: Vibrant, blended streaks
-  lighting_setup: Glossy highlights
-  material_texture: Marker paper, bleed
-  render_quality: Marker-rendered design illustration with clean contour polish
-  spatial_distortion: None
-  atmosphere: Modern, slick
+  subject_treatment: Clean ink outlines
+  color_and_tone: Vibrant, blended streaks
+  lighting_and_shadow: Glossy highlights
+  texture_and_material: Marker paper, bleed
+  camera_and_composition: 'Compose for Marker (Copic) using its key spatial cues: Marker streaks.'
+  atmosphere_and_mood: Modern, slick
+  rendering_and_quality: Marker-rendered design illustration with clean contour polish
   key_features: Marker streaks
   creative_brief: >-
-    Apply Copic-marker rendering to any input: translucent alcohol-ink layers,
-    soft edge bleed, saturated paper stain, reserved white highlights, and smooth
-    illustrative gradients. Keep marker-board polish without requiring product
-    sketches, fashion plates, manga faces, or visible marker tools.
+    Apply Copic-marker rendering to any input: translucent alcohol-ink layers, soft edge bleed, saturated
+    paper stain, reserved white highlights, and smooth illustrative gradients. Keep marker-board polish
+    without requiring product sketches, fashion plates, manga faces, or visible marker tools.
 avoidRules:
   - photo
   - realistic
@@ -45,7 +44,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP06-026.webp
 attributes:
-  negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border
+  negativePrompt: >-
+    photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy,
+    watermark, text, signature, frame, border
 taxonomy:
   packId: pack_06
   packName: Essential Art Styles

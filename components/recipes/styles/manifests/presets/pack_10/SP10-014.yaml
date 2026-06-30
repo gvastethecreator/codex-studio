@@ -13,18 +13,17 @@ tags:
   - fluid-and-organic
 visualDna:
   aesthetic: Soap film close up
-  form_and_line: Cell walls
-  color_palette: Interference colors
-  lighting_setup: Reflective
-  material_texture: Liquid
-  render_quality: Scientific, beautiful
-  spatial_distortion: Spherical
-  atmosphere: Delicate, colorful
+  subject_treatment: Cell walls
+  color_and_tone: Interference colors
+  lighting_and_shadow: Reflective
+  texture_and_material: Liquid
+  camera_and_composition: Spherical
+  atmosphere_and_mood: Delicate, colorful
+  rendering_and_quality: Scientific, beautiful
   key_features: Surface tension
   creative_brief: >-
-    Apply macro-bubble optics to the input: fragile film domes, rainbow
-    interference, curved reflections, meniscus edges, and magnified surface
-    tension should transform forms into delicate optical membranes.
+    Apply macro-bubble optics to the input: fragile film domes, rainbow interference, curved reflections,
+    meniscus edges, and magnified surface tension should transform forms into delicate optical membranes.
 avoidRules:
   - flat
 assets:

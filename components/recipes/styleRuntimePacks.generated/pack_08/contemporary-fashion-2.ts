@@ -11,18 +11,19 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Avant-garde couture grammar, sculptural cloth spectacle, high-drama fashion object language',
-      form_and_line:
+      subject_treatment:
         'Structural, architectural shapes, sculpted shoulders, dramatic volume, cocoon silhouette',
-      color_palette:
+      color_and_tone:
         'Bold jewel tones, artistic color-blocking, expensive saturated hues, deep emerald, sapphire',
-      lighting_setup:
+      lighting_and_shadow:
         'High-contrast editorial key light, dramatic shadow falloff, controlled atelier haze',
-      material_texture:
+      texture_and_material:
         'Silk duchesse, ostrich feathers, hand-beaded embroidery, organza layers, tulle froth',
-      render_quality: 'Couture editorial polish, ceremonial spectacle, haute-couture precision',
-      spatial_distortion: 'Exaggerated silhouette',
-      atmosphere:
+      camera_and_composition: 'Exaggerated silhouette',
+      atmosphere_and_mood:
         'Dramatic, expensive, artistic, reverent silence, aspirational awe, museum-grade poise',
+      rendering_and_quality:
+        'Couture editorial polish, ceremonial spectacle, haute-couture precision',
       key_features:
         'Exaggerated couture silhouette, sculpted volume, editorial restraint, avant-garde headpiece cues',
       creative_brief:
@@ -36,16 +37,20 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'casual, short',
     style: {
       aesthetic: 'Gala formalwear grandeur, flash-lit luxury, broadcast-event elegance',
-      form_and_line:
+      subject_treatment:
         'Column drape, train-like extension, elongated sweep, jeweled trim rhythm, formal contour control',
-      color_palette: 'Red, Gold, Black, ruby, champagne, midnight sapphire, liquid-silver, emerald',
-      lighting_setup:
+      color_and_tone:
+        'Red, Gold, Black, ruby, champagne, midnight sapphire, liquid-silver, emerald',
+      lighting_and_shadow:
         'Flash photography, jeweled strobe sparkle, arrival-glow warmth, telephoto compression',
-      material_texture:
+      texture_and_material:
         'Silk charmeuse, bugle-bead sequins, Chantilly lace overlay, velvet burnout, crystal mesh',
-      render_quality: 'Glamorous, expensive, broadcast-polish precision, diamond-season finish',
-      spatial_distortion: 'None',
-      atmosphere: 'Ceremonial, elevated, flashbulb electricity, prestige-night anticipation',
+      camera_and_composition:
+        'Compose for Red Carpet Gown using its key spatial cues: Train extension, statement jewels, liquid drape, crystal articulation, formal sweep.',
+      atmosphere_and_mood:
+        'Ceremonial, elevated, flashbulb electricity, prestige-night anticipation',
+      rendering_and_quality:
+        'Glamorous, expensive, broadcast-polish precision, diamond-season finish',
       key_features:
         'Train extension, statement jewels, liquid drape, crystal articulation, formal sweep',
       creative_brief:
@@ -59,15 +64,19 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 't-shirt, shorts',
     style: {
       aesthetic: 'Professional daywear, boardroom calm, corporate-modern uniformity',
-      form_and_line:
+      subject_treatment:
         'Tailored, single-breasted structure, notch-lapel precision, tapered trouser, shift-dress column',
-      color_palette: 'Blue, White, Beige, navy suiting, French blue, soft white, sand, dove grey',
-      lighting_setup: 'Window-filtered daylight, soft professional overhead, lobby-neutral glow',
-      material_texture:
+      color_and_tone: 'Blue, White, Beige, navy suiting, French blue, soft white, sand, dove grey',
+      lighting_and_shadow:
+        'Window-filtered daylight, soft professional overhead, lobby-neutral glow',
+      texture_and_material:
         'Cotton poplin, tropical wool suiting, stretch-cotton twill, silk habotai lining, ponte knit',
-      render_quality: 'Professional competent polish, low-risk clarity, workplace-ready finish',
-      spatial_distortion: 'None',
-      atmosphere: 'Professional calm, deadline focus, competent neutrality, low-risk polish',
+      camera_and_composition:
+        'Compose for Business Casual using its key spatial cues: Blazer, structured shoulder, tapered trouser line, polished leather accessory cues.',
+      atmosphere_and_mood:
+        'Professional calm, deadline focus, competent neutrality, low-risk polish',
+      rendering_and_quality:
+        'Professional competent polish, low-risk clarity, workplace-ready finish',
       key_features:
         'Blazer, structured shoulder, tapered trouser line, polished leather accessory cues',
       creative_brief:
@@ -81,19 +90,20 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'dress, jeans, formal',
     style: {
       aesthetic: 'Performance athleisure styling, pre-to-post-workout fluidity, wellness-as-status',
-      form_and_line:
+      subject_treatment:
         'Ergonomic contouring, compressive structure, racerback line logic, high-waist support, motion-tension seams',
-      color_palette:
+      color_and_tone:
         'Black, Neon accents, Grey, volt yellow, infrared flash, carbon grey, heathered charcoal',
-      lighting_setup:
+      lighting_and_shadow:
         'Crisp fitness-editorial light, sweat-sheen reflection, early-morning clarity, clean rim highlights',
-      material_texture:
+      texture_and_material:
         'Spandex, mesh, sweat-wicking knit, zero-gravity nylon, perforated neoprene, seamless rib',
-      render_quality:
-        'Performance-luxury activewear finish, fit-tech precision, always-ready sharpness',
-      spatial_distortion: 'None',
-      atmosphere:
+      camera_and_composition:
+        'Compose for Athleisure Sport using its key spatial cues: Sleek silhouette, reflective trim hits, zip-free second-skin, thumbhole cuffs.',
+      atmosphere_and_mood:
         'Active, healthy, modern, endorphin glow, disciplined readiness, pre-dawn determination',
+      rendering_and_quality:
+        'Performance-luxury activewear finish, fit-tech precision, always-ready sharpness',
       key_features: 'Sleek silhouette, reflective trim hits, zip-free second-skin, thumbhole cuffs',
       creative_brief:
         'Translate the input into engineered activewear language: compressive knit, reflective trims, seamless ribbing, ergonomic panel lines and motion-ready tension. Preserve the wellness-performance aura without forcing gym context, workout pose, second-skin body read or exposed anatomy.',
@@ -106,16 +116,19 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'suit, tie',
     style: {
       aesthetic: 'Tech-industry uniform, black knit authority, product-launch minimalism',
-      form_and_line:
+      subject_treatment:
         'Simple silhouette, columnar torso, unbranded minimalism, bracelet-length sleeve',
-      color_palette: 'Black, Grey, Navy, charcoal, midnight navy, washed black, graphite',
-      lighting_setup:
+      color_and_tone: 'Black, Grey, Navy, charcoal, midnight navy, washed black, graphite',
+      lighting_and_shadow:
         'Controlled product-launch spotlight, soft keynote backlight, keynote-grade haze',
-      material_texture:
+      texture_and_material:
         'Cotton jersey, merino knit, selvedge denim, unbranded suede, brushed cashmere',
-      render_quality: 'Minimal, rich, billionaire-casual precision, uniform dressing philosophy',
-      spatial_distortion: 'None',
-      atmosphere: 'Serious, visionary calm, controlled intensity, uniform-dressing certainty',
+      camera_and_composition:
+        'Compose for Tech-Industry Uniform using its key spatial cues: Knit column, graphite basics, unbranded sneakers, launch-light restraint, no visible branding.',
+      atmosphere_and_mood:
+        'Serious, visionary calm, controlled intensity, uniform-dressing certainty',
+      rendering_and_quality:
+        'Minimal, rich, billionaire-casual precision, uniform dressing philosophy',
       key_features:
         'Knit column, graphite basics, unbranded sneakers, launch-light restraint, no visible branding',
       creative_brief:
@@ -130,18 +143,20 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Synchronized pop-performance tailoring, candy-neon coordination, comeback-polish precision',
-      form_and_line:
+      subject_treatment:
         'Sharp layered modularity, cropped jacket structure, high-waist tailoring, asymmetric hems, fitted rhythm',
-      color_palette:
+      color_and_tone:
         'Pastel, Neon, White, lavender, electric fuchsia, holographic pearl, candy-pink',
-      lighting_setup: 'Editorial-bright beauty light, color-shifting gels, high-key rim sparkle',
-      material_texture:
+      lighting_and_shadow:
+        'Editorial-bright beauty light, color-shifting gels, high-key rim sparkle',
+      texture_and_material:
         'Mixed fabrics, sequin mesh, patent vinyl, lurex knit, iridescent organza, scattered rhinestones',
-      render_quality:
-        'Hyper-polished pop editorial finish, trend-tuned precision, coordinated surface clarity',
-      spatial_distortion: 'None',
-      atmosphere:
+      camera_and_composition:
+        'Compose for Pop-Performance Tailoring using its key spatial cues: Dyed-hair cues, pastel or jewel-tone color, coordinated layers, statement earrings.',
+      atmosphere_and_mood:
         'Energetic, cute, cool, high-polish perfection, synchronized charisma, polished performance joy',
+      rendering_and_quality:
+        'Hyper-polished pop editorial finish, trend-tuned precision, coordinated surface clarity',
       key_features:
         'Dyed-hair cues, pastel or jewel-tone color, coordinated layers, statement earrings',
       creative_brief:
@@ -155,17 +170,19 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'pattern, logo, bright colors',
     style: {
       aesthetic: 'Clean northern minimalism, soft architectural purity, wabi-sabi restraint',
-      form_and_line:
+      subject_treatment:
         'Straight cuts, simple geometry, fluid column silhouette, knife-pleat precision',
-      color_palette: 'Beige, White, Grey, Black, ecru, oatmeal, dove grey, bone-white, muted sand',
-      lighting_setup:
+      color_and_tone: 'Beige, White, Grey, Black, ecru, oatmeal, dove grey, bone-white, muted sand',
+      lighting_and_shadow:
         'Soft natural light, north-facing window, overcast diffusion, gentle wrap shadow',
-      material_texture:
+      texture_and_material:
         'Linen slub, tropical wool, double-face cashmere, raw silk noil, matte crepe',
-      render_quality: 'Pared-back designer minimalism, expensive calm, quiet-luxury subtlety',
-      spatial_distortion: 'None',
-      atmosphere:
+      camera_and_composition:
+        'Compose for Minimalist Chic using its key spatial cues: Neutral palette, tonal layering, absence of hardware, invisible fastenings.',
+      atmosphere_and_mood:
         'Calm, sophisticated, clean, meditative stillness, curated emptiness, whispered elegance',
+      rendering_and_quality:
+        'Pared-back designer minimalism, expensive calm, quiet-luxury subtlety',
       key_features: 'Neutral palette, tonal layering, absence of hardware, invisible fastenings',
       creative_brief:
         'Apply quiet-luxury subtraction to the input: clean geometry, tonal layering, invisible closures, premium matte fibers and a palette held near bone, oatmeal and charcoal. The result should feel edited down to the one seam that matters, without implying showroom still life, closet editorial, zen room or human figure staging.',
@@ -179,15 +196,19 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         '90s everyday normcore, casual anti-fashion, dad-denim ease, nothing-to-prove comfort',
-      form_and_line: 'Loose fit, straight-leg dad jeans, relaxed shoulder, anti-fit drape',
-      color_palette:
+      subject_treatment: 'Loose fit, straight-leg dad jeans, relaxed shoulder, anti-fit drape',
+      color_and_tone:
         'Grey, Blue denim, heathered oatmeal, faded navy, stonewash, light-wash indigo',
-      lighting_setup: 'Flat everyday overhead, overcast softness, low-contrast practical warmth',
-      material_texture:
+      lighting_and_shadow:
+        'Flat everyday overhead, overcast softness, low-contrast practical warmth',
+      texture_and_material:
         'Cotton jersey, stonewashed denim, fleece sweatshirt, waffle-knit thermal, washed canvas',
-      render_quality: 'Boring, ironic, comfortable, deliberately average, anti-fashion confidence',
-      spatial_distortion: 'None',
-      atmosphere: 'Casual, unpretentious, genuine, unbothered authenticity, anti-fashion ease',
+      camera_and_composition:
+        'Compose for Normcore using its key spatial cues: Dad sneakers, light-wash jeans, tucked-in tee, windbreaker.',
+      atmosphere_and_mood:
+        'Casual, unpretentious, genuine, unbothered authenticity, anti-fashion ease',
+      rendering_and_quality:
+        'Boring, ironic, comfortable, deliberately average, anti-fashion confidence',
       key_features: 'Dad sneakers, light-wash jeans, tucked-in tee, windbreaker',
       creative_brief:
         'Flatten the input into normcore anti-fashion: dad denim, fleece, washed canvas, plain jersey, windbreaker logic and deliberately average proportions. It should feel comfortable and unoptimized without requiring a coffee shop, sidewalk, sitcom reference or human standing pose.',
@@ -200,17 +221,18 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'messy, ripped, dark',
     style: {
       aesthetic: 'Classic American prep, Ivy legacy polish, summer-ease refinement',
-      form_and_line:
+      subject_treatment:
         'Clean layers, natural shoulder, half-canvas drape, straight-leg chino, blazer roll',
-      color_palette: 'Navy, White, Khaki, Red, Nantucket red, forest green, university-crest gold',
-      lighting_setup:
+      color_and_tone: 'Navy, White, Khaki, Red, Nantucket red, forest green, university-crest gold',
+      lighting_and_shadow:
         'Daylight, autumn-gold warmth, reading-room softness, regatta-morning crispness',
-      material_texture:
+      texture_and_material:
         'Oxford cloth, Shetland wool knit, madras cotton, seersucker, needlepoint belt, shell cordovan',
-      render_quality: 'Heritage prep polish, classic ease, generational refinement',
-      spatial_distortion: 'None',
-      atmosphere:
+      camera_and_composition:
+        'Compose for Preppy Ivy League using its key spatial cues: Collared shirt, repp-stripe tie, cable-knit thrown over shoulders, embroidered critters.',
+      atmosphere_and_mood:
         'Smart, wealthy, traditional, generational ease, tailored confidence, inherited polish',
+      rendering_and_quality: 'Heritage prep polish, classic ease, generational refinement',
       key_features:
         'Collared shirt, repp-stripe tie, cable-knit thrown over shoulders, embroidered critters',
       creative_brief:

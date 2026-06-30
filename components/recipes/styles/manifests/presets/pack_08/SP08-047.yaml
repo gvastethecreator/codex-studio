@@ -13,20 +13,21 @@ tags:
   - fantasy-sci-fi-costume
 visualDna:
   aesthetic: Gothic nocturnal aristocracy, immortal-danger elegance, old-world menace
-  form_and_line: High collar, cape-volume sweep, tailcoat-waist taper, cravat-neck precision, heraldic signet accents
-  color_palette: Black, Red lining, blood-crimson, ivory, silver, deep burgundy, moon-white
-  lighting_setup: Moonlight silver rim, low amber flicker, fog-diffused ambiance, deep gothic shadow contrast
-  material_texture: Velvet, silk satin lining, brocade vest, starched wing collar, onyx ring, opera cape wool
-  render_quality: Gothic, theatrical, old-novel atmosphere, aristocratic horror elegance
-  spatial_distortion: None
-  atmosphere: Elegant, ancient-hunger menace, moonlit danger and aristocratic dread
+  subject_treatment: High collar, cape-volume sweep, tailcoat-waist taper, cravat-neck precision, heraldic signet accents
+  color_and_tone: Black, Red lining, blood-crimson, ivory, silver, deep burgundy, moon-white
+  lighting_and_shadow: Moonlight silver rim, low amber flicker, fog-diffused ambiance, deep gothic shadow contrast
+  texture_and_material: Velvet, silk satin lining, brocade vest, starched wing collar, onyx ring, opera cape wool
+  camera_and_composition: >-
+    Compose for Vampire Lord using its key spatial cues: Opera cape, high collar, medallion, heraldic signet,
+    crimson lining.
+  atmosphere_and_mood: Elegant, ancient-hunger menace, moonlit danger and aristocratic dread
+  rendering_and_quality: Gothic, theatrical, old-novel atmosphere, aristocratic horror elegance
   key_features: Opera cape, high collar, medallion, heraldic signet, crimson lining
   creative_brief: >-
-    Style the input through vampire-aristocratic costume grammar: black velvet
-    cape, crimson silk lining, high collar, cravat precision, onyx heraldic
-    accents and moonlit silver edging. Keep immortal menace and old-world
-    elegance without requiring a castle, fangs, widow's peak, portrait bust or
-    a named vampire scene.
+    Style the input through vampire-aristocratic costume grammar: black velvet cape, crimson silk lining, high
+    collar, cravat precision, onyx heraldic accents and moonlit silver edging. Keep immortal menace and
+    old-world elegance without requiring a castle, fangs, widow's peak, portrait bust or a named vampire
+    scene.
 avoidRules:
   - modern
   - messy

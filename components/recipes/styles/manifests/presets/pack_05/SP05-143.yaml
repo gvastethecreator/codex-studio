@@ -12,19 +12,22 @@ tags:
   - anime-battle-and-worlds
   - modern-shonen-and-action
 visualDna:
-  aesthetic: Contract killer night-rain style, with cold electrical espionage, suppressed emotion, and after-midnight tech noir.
-  form_and_line: Smooth early-digital contours, electric thread arcs, masked negative spaces, and restrained body-language geometry.
-  color_palette: Rain blue, black glass, cold cyan, sodium amber, pale mask white, and desaturated violet.
-  lighting_setup: Neon rain streaks, windowlike reflections, controlled rim glow, and cold underlit secrecy.
-  material_texture: Wet glass sheen, rain grain, matte fabric flats, electric particle threads, and clean digital cel polish.
-  render_quality: Early-2000s tech-noir anime finish with smooth compositing, lonely restraint, and crisp electric detail.
-  spatial_distortion: Narrow depth lanes, surveillance-like framing, and rain-layer parallax that compresses emotion.
-  atmosphere: Cold, secretive, sleek, lonely
+  aesthetic: >-
+    Contract killer night-rain style, with cold electrical espionage, suppressed emotion, and after-midnight
+    tech noir.
+  subject_treatment: >-
+    Smooth early-digital contours, electric thread arcs, masked negative spaces, and restrained body-language
+    geometry.
+  color_and_tone: Rain blue, black glass, cold cyan, sodium amber, pale mask white, and desaturated violet.
+  lighting_and_shadow: Neon rain streaks, windowlike reflections, controlled rim glow, and cold underlit secrecy.
+  texture_and_material: Wet glass sheen, rain grain, matte fabric flats, electric particle threads, and clean digital cel polish.
+  camera_and_composition: Narrow depth lanes, surveillance-like framing, and rain-layer parallax that compresses emotion.
+  atmosphere_and_mood: Cold, secretive, sleek, lonely
+  rendering_and_quality: Early-2000s tech-noir anime finish with smooth compositing, lonely restraint, and crisp electric detail.
   key_features: Electric threads, rain noir, masked emptiness, emotional suppression, covert stillness.
   creative_brief: >-
-    Give any prompt night-rain espionage: use cold reflection, electric thread
-    accents, masked negative space, and suppressed emotion without requiring a
-    fixed urban location, operative role, or mission setup.
+    Give any prompt night-rain espionage: use cold reflection, electric thread accents, masked negative space,
+    and suppressed emotion without requiring a fixed urban location, operative role, or mission setup.
 avoidRules:
   - realistic
   - 3d render
@@ -41,7 +44,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-143.webp
 attributes:
-  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
+  negativePrompt: >-
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts,
+    watermark, text, signature
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds

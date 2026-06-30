@@ -12,20 +12,27 @@ tags:
   - anime-battle-and-worlds
   - dark-fantasy-and-seinen
 visualDna:
-  aesthetic: Wind-scoured restraint, historical-grit naturalism, revenge cooled into quiet form, weathered endurance, moral weight, sparse horizon pressure
-  form_and_line: Dense mature-anime linework, heavy crosshatching, weighted contour variation, gritty ink density
-  color_palette: Muted earths, blood reds, cold moonlit tones, desaturated horror palette, bruised shadow hues
-  lighting_setup: Ominous directional shadows, single-source drama light, deep chiaroscuro, low-key shadow lift
-  material_texture: Wind-abraded grain, worn textile roughness, cold mineral matte, salt-weathered surfaces, dry earth scuffing, subdued iron patina
-  render_quality: Gritty dramatic anime frame, film-noir rendering, heavy shadow compression, textured midtone grit
-  spatial_distortion: Broad stillness, low-pressure horizon bands, grounded mass, negative space as emotional restraint, slow diagonal weather flow
-  atmosphere: Stoic, epic, historical, meditative
-  key_features: Heavy atmosphere, narrative weight, oppressive mood building, visceral consequence framing, story-first visual language
-  creative_brief: >
-    Render any subject with weathered restraint and moral afterweight: muted earths,
-    cold light, dry abrasion, and open negative space that feels earned rather than
-    empty. Keep the treatment portable, without historical cast, fixed geography,
-    props, or narrative confrontation.
+  aesthetic: >-
+    Wind-scoured restraint, historical-grit naturalism, revenge cooled into quiet form, weathered endurance,
+    moral weight, sparse horizon pressure
+  subject_treatment: Dense mature-anime linework, heavy crosshatching, weighted contour variation, gritty ink density
+  color_and_tone: Muted earths, blood reds, cold moonlit tones, desaturated horror palette, bruised shadow hues
+  lighting_and_shadow: Ominous directional shadows, single-source drama light, deep chiaroscuro, low-key shadow lift
+  texture_and_material: >-
+    Wind-abraded grain, worn textile roughness, cold mineral matte, salt-weathered surfaces, dry earth
+    scuffing, subdued iron patina
+  camera_and_composition: >-
+    Broad stillness, low-pressure horizon bands, grounded mass, negative space as emotional restraint, slow
+    diagonal weather flow
+  atmosphere_and_mood: Stoic, epic, historical, meditative
+  rendering_and_quality: Gritty dramatic anime frame, film-noir rendering, heavy shadow compression, textured midtone grit
+  key_features: >-
+    Heavy atmosphere, narrative weight, oppressive mood building, visceral consequence framing, story-first
+    visual language
+  creative_brief: >-
+    Render any subject with weathered restraint and moral afterweight: muted earths, cold light, dry abrasion,
+    and open negative space that feels earned rather than empty. Keep the treatment portable, without
+    historical cast, fixed geography, props, or narrative confrontation.
 avoidRules:
   - realistic
   - 3d render
@@ -42,7 +49,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-064.webp
 attributes:
-  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
+  negativePrompt: >-
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts,
+    watermark, text, signature
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds

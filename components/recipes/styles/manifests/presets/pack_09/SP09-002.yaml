@@ -13,21 +13,21 @@ tags:
   - natural-materials
 visualDna:
   aesthetic: Expensive furniture wood
-  form_and_line: Subtle grain
-  color_palette: Deep reddish brown
-  lighting_setup: High gloss reflection
-  material_texture: Smooth varnish
-  render_quality: Luxury, antique
-  spatial_distortion: None
-  atmosphere: Elegant, rich
+  subject_treatment: Subtle grain
+  color_and_tone: Deep reddish brown
+  lighting_and_shadow: High gloss reflection
+  texture_and_material: Smooth varnish
+  camera_and_composition: 'Compose for Mahogany (Polished) using its key spatial cues: Smooth surface.'
+  atmosphere_and_mood: Elegant, rich
+  rendering_and_quality: Luxury, antique
   key_features: Smooth surface
   creative_brief: >-
-    Channel the depths of polished mahogany where light sinks into a sea of reddish amber and emerges transformed. The
-    surface should feel like still water frozen in wood, deep, reflective, impossibly smooth. Elegance here is not
-    applied but released from within, a slow exhale of centuries. Use Mahogany as portable surface/render behavior over
-    any input: map its texture, light response, edge wear, color chemistry, and tactile rhythm onto the subject instead
-    of requiring a literal material sample, macro tile, wall, landscape, source object, or scene where the material
-    naturally appears.
+    Channel the depths of polished mahogany where light sinks into a sea of reddish amber and emerges
+    transformed. The surface should feel like still water frozen in wood, deep, reflective, impossibly smooth.
+    Elegance here is not applied but released from within, a slow exhale of centuries. Use Mahogany as
+    portable surface/render behavior over any input: map its texture, light response, edge wear, color
+    chemistry, and tactile rhythm onto the subject instead of requiring a literal material sample, macro tile,
+    wall, landscape, source object, or scene where the material naturally appears.
 avoidRules:
   - dusty
   - rough

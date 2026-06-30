@@ -12,16 +12,18 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Polished digital illustration with layer-built control, clean brush economy, and modern concept-render clarity',
-      form_and_line:
+      subject_treatment:
         'Refined silhouette edges, selective painterly marks, and clean shape transitions',
-      color_palette:
+      color_and_tone:
         'RGB-vibrant but disciplined, with controlled hue shifts and crisp accent separation',
-      lighting_setup: 'Studio-like key/fill/rim logic tuned for clean digital readability',
-      material_texture:
+      lighting_and_shadow: 'Studio-like key/fill/rim logic tuned for clean digital readability',
+      texture_and_material:
         'Smooth brush blending with selective texture overlays and pressure-sensitive edge detail',
-      render_quality: 'Professional digital painting polish without platform-specific tropes',
-      spatial_distortion: 'None',
-      atmosphere: 'Polished',
+      camera_and_composition:
+        'Compose for Digital Painting using its key spatial cues: Layered polish, crisp focal rendering, editable-feeling control.',
+      atmosphere_and_mood: 'Polished',
+      rendering_and_quality:
+        'Professional digital painting polish without platform-specific tropes',
       key_features: 'Layered polish, crisp focal rendering, editable-feeling control',
       creative_brief:
         'Apply digital-painting workflow to any input: pressure-sensitive brushwork, layered corrections, sampled color precision, soft undo-polished gradients, and clean iterative finish. Keep weightless painterly control without requiring fantasy characters, concept sheets, tablet UI, or visible layers.',
@@ -36,14 +38,15 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Matte-painting extension style with seamless photobash integration and atmospheric scale logic',
-      form_and_line: 'Invisible',
-      color_palette: 'Cinematic, atmospheric',
-      lighting_setup: 'Natural, consistent',
-      material_texture: 'Photo textures',
-      render_quality:
+      subject_treatment: 'Invisible',
+      color_and_tone: 'Cinematic, atmospheric',
+      lighting_and_shadow: 'Natural, consistent',
+      texture_and_material: 'Photo textures',
+      camera_and_composition:
+        'Compose for Matte Painting Extension using its key spatial cues: Seamless blend.',
+      atmosphere_and_mood: 'Expansive, coherent, cinematic',
+      rendering_and_quality:
         'Cinematic background/extension finish without requiring landscapes, skies, or architecture',
-      spatial_distortion: 'None',
-      atmosphere: 'Expansive, coherent, cinematic',
       key_features: 'Seamless blend',
       creative_brief:
         'Apply matte-painting extension logic to any input: phototexture integration, painted continuity, atmospheric depth, cinematic color matching, and seamless scale expansion. Keep VFX-believable cohesion without requiring skies, architecture, vistas, plate photography, or environment-only subjects.',
@@ -58,14 +61,15 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Entertainment concept-art visualization with mood-first design and production-readable focal hierarchy',
-      form_and_line: 'Painterly',
-      color_palette: 'Mood lighting',
-      lighting_setup: 'Cinematic',
-      material_texture: 'Photobash',
-      render_quality:
+      subject_treatment: 'Painterly',
+      color_and_tone: 'Mood lighting',
+      lighting_and_shadow: 'Cinematic',
+      texture_and_material: 'Photobash',
+      camera_and_composition:
+        'Compose for Concept Art using its key spatial cues: Focal point detail.',
+      atmosphere_and_mood: 'Epic, storytelling',
+      rendering_and_quality:
         'AAA concept-art finish without locking to games, movies, worlds, or products',
-      spatial_distortion: 'None',
-      atmosphere: 'Epic, storytelling',
       key_features: 'Focal point detail',
       creative_brief:
         'Apply concept-art development language to any input: mood-first lighting, readable design intent, photobash-paint hybrid texture, production-ready shape decisions, and exploratory polish. Keep visual-direction utility without requiring characters, environments, callouts, model sheets, or story beats.',
@@ -79,13 +83,13 @@ export const GENERATED_STYLE_PRESETS = [
       'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border',
     style: {
       aesthetic: '3D mesh with visible facets',
-      form_and_line: 'Sharp edges',
-      color_palette: 'Flat shaded polygons',
-      lighting_setup: 'Global illumination',
-      material_texture: 'None',
-      render_quality: 'Indie game',
-      spatial_distortion: 'Geometric',
-      atmosphere: 'Simple, clean',
+      subject_treatment: 'Sharp edges',
+      color_and_tone: 'Flat shaded polygons',
+      lighting_and_shadow: 'Global illumination',
+      texture_and_material: "Surface treatment follows Low Poly's material cues: Triangles.",
+      camera_and_composition: 'Geometric',
+      atmosphere_and_mood: 'Simple, clean',
+      rendering_and_quality: 'Indie game',
       key_features: 'Triangles',
       creative_brief:
         'Apply low-poly art to any input: visible triangular facets, flat-shaded planes, simplified geometry, crisp ambient occlusion, and origami-like light breaks. Keep polygon beauty without requiring game terrain, animals, landscapes, or asset turntables.',
@@ -99,13 +103,13 @@ export const GENERATED_STYLE_PRESETS = [
       'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border',
     style: {
       aesthetic: 'Quick digital sketch',
-      form_and_line: 'Rough, energetic',
-      color_palette: 'Bold, unrefined',
-      lighting_setup: 'Dramatic',
-      material_texture: 'Brush strokes',
-      render_quality: 'Concept, loose',
-      spatial_distortion: 'Unfinished edges',
-      atmosphere: 'Dynamic, fast',
+      subject_treatment: 'Rough, energetic',
+      color_and_tone: 'Bold, unrefined',
+      lighting_and_shadow: 'Dramatic',
+      texture_and_material: 'Brush strokes',
+      camera_and_composition: 'Unfinished edges',
+      atmosphere_and_mood: 'Dynamic, fast',
+      rendering_and_quality: 'Concept, loose',
       key_features: 'Loose strokes',
       creative_brief:
         'Apply speedpaint energy to any input: broad gestural strokes, loose edges, compressed detail, fast value blocking, visible brush shortcuts, and idea-first confidence. Keep rapid concept vitality without requiring fantasy key art, YouTube process frames, characters, or unfinished sketch borders.',
@@ -120,13 +124,13 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Isometric digital-art projection with equalized depth, toy-scale clarity, and no vanishing point',
-      form_and_line: 'Parallel lines',
-      color_palette: 'Vibrant',
-      lighting_setup: 'Studio',
-      material_texture: 'Smooth',
-      render_quality: 'Game asset',
-      spatial_distortion: 'No perspective',
-      atmosphere: 'Organized, toy-like',
+      subject_treatment: 'Parallel lines',
+      color_and_tone: 'Vibrant',
+      lighting_and_shadow: 'Studio',
+      texture_and_material: 'Smooth',
+      camera_and_composition: 'No perspective',
+      atmosphere_and_mood: 'Organized, toy-like',
+      rendering_and_quality: 'Game asset',
       key_features: '30 degree angle',
       creative_brief:
         'Apply isometric projection to any input: parallel nonconverging lines, thirty-degree tilt, equal plane attention, stacked grid logic, and miniature dimensional clarity. Keep diagrammatic charm without requiring buildings, rooms, game maps, dioramas, or explorable worlds.',
@@ -141,14 +145,14 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Double-exposure compositing with nested imagery, transparent overlap, and poetic contour masking',
-      form_and_line:
+      subject_treatment:
         'Silhouette or mask-driven overlays with soft edge blending and exposure fusion',
-      color_palette: 'Mixed palettes',
-      lighting_setup: 'Contrast',
-      material_texture: 'Mixed',
-      render_quality: 'Artistic',
-      spatial_distortion: 'Image inside shape',
-      atmosphere: 'Dreamy',
+      color_and_tone: 'Mixed palettes',
+      lighting_and_shadow: 'Contrast',
+      texture_and_material: 'Mixed',
+      camera_and_composition: 'Image inside shape',
+      atmosphere_and_mood: 'Dreamy',
+      rendering_and_quality: 'Artistic',
       key_features: 'Silhouette container',
       creative_brief:
         'Apply double-exposure composition to any input: tonal masking, overlapping visual fields, translucent registration drift, additive density, and negative space fusion. Keep layered memory logic without requiring faces, forests, mountains, human profiles, or portrait silhouettes.',
@@ -162,13 +166,13 @@ export const GENERATED_STYLE_PRESETS = [
       'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border',
     style: {
       aesthetic: 'Layered paper style',
-      form_and_line: 'Cut edges',
-      color_palette: 'Solid colors',
-      lighting_setup: 'Drop shadows',
-      material_texture: 'Paper grain',
-      render_quality: 'Craft, cute',
-      spatial_distortion: 'Simplified',
-      atmosphere: 'Playful',
+      subject_treatment: 'Cut edges',
+      color_and_tone: 'Solid colors',
+      lighting_and_shadow: 'Drop shadows',
+      texture_and_material: 'Paper grain',
+      camera_and_composition: 'Simplified',
+      atmosphere_and_mood: 'Playful',
+      rendering_and_quality: 'Craft, cute',
       key_features: 'Depth layers',
       creative_brief:
         'Apply digital paper-cutout style to any input: layered flat paper planes, clean cut edges, soft drop shadows, staged depth, and machine-perfect craft illusion. Keep handmade charm simulated digitally without requiring greeting cards, landscapes, characters, or tabletop craft scenes.',
@@ -182,14 +186,14 @@ export const GENERATED_STYLE_PRESETS = [
       'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border, character sprite requirement, cartridge reference',
     style: {
       aesthetic: '16-bit pixel-art style with deliberate grid economy and palette-ramp readability',
-      form_and_line: 'Pixel perfect',
-      color_palette: 'Limited palette',
-      lighting_setup: 'Dithered',
-      material_texture: 'Pixel grid',
-      render_quality:
+      subject_treatment: 'Pixel perfect',
+      color_and_tone: 'Limited palette',
+      lighting_and_shadow: 'Dithered',
+      texture_and_material: 'Pixel grid',
+      camera_and_composition: 'Blocky',
+      atmosphere_and_mood: 'Nostalgic',
+      rendering_and_quality:
         'Retro game-art finish without requiring sprites, characters, cartridges, or UI',
-      spatial_distortion: 'Blocky',
-      atmosphere: 'Nostalgic',
       key_features: 'Grid alignment',
       creative_brief:
         'Apply 16-bit pixel-art constraints to any input: intentional pixel placement, limited palette, crisp grid scale, dithered shade ramps, tile rhythm, and hard aliasing. Keep hardware-era nostalgia from construction, not from forced game props, HUDs, sprites, or level scenes.',
@@ -203,13 +207,13 @@ export const GENERATED_STYLE_PRESETS = [
       'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border, sunset requirement, road requirement, car requirement',
     style: {
       aesthetic: '80s retro-futurism',
-      form_and_line: 'Grid lines',
-      color_palette: 'Purple, Pink, Cyan',
-      lighting_setup: 'Neon glow',
-      material_texture: 'Scanlines',
-      render_quality: 'Retro, aesthetic',
-      spatial_distortion: 'Chrome reflection',
-      atmosphere: 'Nostalgic, cool',
+      subject_treatment: 'Grid lines',
+      color_and_tone: 'Purple, Pink, Cyan',
+      lighting_and_shadow: 'Neon glow',
+      texture_and_material: 'Scanlines',
+      camera_and_composition: 'Chrome reflection',
+      atmosphere_and_mood: 'Nostalgic, cool',
+      rendering_and_quality: 'Retro, aesthetic',
       key_features: 'Sunset gradient',
       creative_brief:
         'Apply synthwave visual language to any input: magenta-cyan bloom, neon grid rhythm, chrome gradients, scanline haze, reflective bands, and synthetic retrofuturist glow. Keep remembered-future energy without requiring sunsets, roads, cars, horizons, palm trees, or retro props.',
@@ -224,14 +228,14 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'ASCII-density image style built from monospaced glyph fields and terminal-era tonal logic',
-      form_and_line:
+      subject_treatment:
         'Repeating keyboard glyphs used as value cells, line clusters, and contour-density bands',
-      color_palette: 'Monochrome green/black',
-      lighting_setup: 'Density based',
-      material_texture: 'Text grid',
-      render_quality: 'Retro, hacker',
-      spatial_distortion: 'Low res',
-      atmosphere: 'Tech, code',
+      color_and_tone: 'Monochrome green/black',
+      lighting_and_shadow: 'Density based',
+      texture_and_material: 'Text grid',
+      camera_and_composition: 'Low res',
+      atmosphere_and_mood: 'Tech, code',
+      rendering_and_quality: 'Retro, hacker',
       key_features: 'Glyph density image, monospaced grid, terminal glow',
       creative_brief:
         'Apply ASCII-art construction to any input: monospaced glyph density, symbol fields as tonal pixels, terminal-era spacing, low-resolution contrast, and character-set geometry. Keep text-as-image abstraction while avoiding readable words, captions, signatures, or logos.',
@@ -245,13 +249,13 @@ export const GENERATED_STYLE_PRESETS = [
       'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border',
     style: {
       aesthetic: 'Corrupted data',
-      form_and_line: 'Jagged, displaced',
-      color_palette: 'RGB shift, neon',
-      lighting_setup: 'Broken',
-      material_texture: 'Pixels, noise',
-      render_quality: 'Broken, cyber',
-      spatial_distortion: 'Tearing',
-      atmosphere: 'Chaotic, tech',
+      subject_treatment: 'Jagged, displaced',
+      color_and_tone: 'RGB shift, neon',
+      lighting_and_shadow: 'Broken',
+      texture_and_material: 'Pixels, noise',
+      camera_and_composition: 'Tearing',
+      atmosphere_and_mood: 'Chaotic, tech',
+      rendering_and_quality: 'Broken, cyber',
       key_features: 'Digital artifacts',
       creative_brief:
         'Apply glitch-art corruption to any input: RGB channel displacement, data tearing, compression blocks, scanline breaks, algorithmic offsets, and malfunction-as-medium structure. Keep digital failure expressive without requiring screens, hackers, cyberpunk rooms, or UI overlays.',
@@ -265,13 +269,15 @@ export const GENERATED_STYLE_PRESETS = [
       'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border, logo requirement, brand mark',
     style: {
       aesthetic: 'Clean vector-art style with Bezier precision and flat scalable geometry',
-      form_and_line: 'Bezier curves',
-      color_palette: 'Solid flat colors',
-      lighting_setup: 'None',
-      material_texture: 'None',
-      render_quality: 'Icon-grade clarity without requiring logos, marks, or branding',
-      spatial_distortion: 'Simplified',
-      atmosphere: 'Modern, precise, frictionless',
+      subject_treatment: 'Bezier curves',
+      color_and_tone: 'Solid flat colors',
+      lighting_and_shadow:
+        'Lighting for Vector Art (Flat): purposeful key, bounce, rim, shadow depth, and focal readability matched to 4. Digital Art.',
+      texture_and_material:
+        "Surface treatment follows Vector Art (Flat)'s material cues: Infinite resolution.",
+      camera_and_composition: 'Simplified',
+      atmosphere_and_mood: 'Modern, precise, frictionless',
+      rendering_and_quality: 'Icon-grade clarity without requiring logos, marks, or branding',
       key_features: 'Infinite resolution',
       creative_brief:
         'Apply flat vector-art construction to any input: precise Bezier contours, deliberate anchor-point curves, solid color fills, clean geometric hierarchy, and resolution-independent edges. Keep scalable graphic clarity without requiring icons, logos, infographics, app UI, or brand marks.',
@@ -285,13 +291,14 @@ export const GENERATED_STYLE_PRESETS = [
       'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border, face requirement',
     style: {
       aesthetic: '2D geometric triangulation',
-      form_and_line: 'Triangles',
-      color_palette: 'Gradients per triangle',
-      lighting_setup: 'Flat',
-      material_texture: 'None',
-      render_quality: 'Vector, modern',
-      spatial_distortion: 'Geometric',
-      atmosphere: 'Clean, sharp',
+      subject_treatment: 'Triangles',
+      color_and_tone: 'Gradients per triangle',
+      lighting_and_shadow: 'Flat',
+      texture_and_material:
+        "Surface treatment follows Polygon Art's material cues: Triangular mesh.",
+      camera_and_composition: 'Geometric',
+      atmosphere_and_mood: 'Clean, sharp',
+      rendering_and_quality: 'Vector, modern',
       key_features: 'Triangular mesh',
       creative_brief:
         'Apply polygon-art tessellation to any input: triangular facets, angular tonal decisions, low-resolution form memory, and flat geometric patchwork. Keep geometry as the art system without requiring portraits, animals, landscapes, or stock low-poly subjects.',
@@ -305,13 +312,13 @@ export const GENERATED_STYLE_PRESETS = [
       'photo, realistic, photorealistic, smooth generic 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border, Minecraft branding, building requirement, landscape requirement',
     style: {
       aesthetic: '3D cubes',
-      form_and_line: 'Cubes',
-      color_palette: 'Vibrant',
-      lighting_setup: 'AO',
-      material_texture: 'None',
-      render_quality: 'Voxel-art finish with cube-unit discipline and playful AO depth',
-      spatial_distortion: 'Blocky',
-      atmosphere: 'Cute, digital',
+      subject_treatment: 'Cubes',
+      color_and_tone: 'Vibrant',
+      lighting_and_shadow: 'AO',
+      texture_and_material: "Surface treatment follows Voxel Art's material cues: Cubes.",
+      camera_and_composition: 'Blocky',
+      atmosphere_and_mood: 'Cute, digital',
+      rendering_and_quality: 'Voxel-art finish with cube-unit discipline and playful AO depth',
       key_features: 'Cubes',
       creative_brief:
         'Apply voxel-art construction to any input: cubic sampling, repeated block units, stepped curves, crevice ambient occlusion, and toy-like volumetric readability. Keep voxel grammar without requiring Minecraft worlds, terrain, buildings, or game dioramas.',

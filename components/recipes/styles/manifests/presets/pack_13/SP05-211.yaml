@@ -13,34 +13,28 @@ tags:
   - slice-of-life-and-moe
 visualDna:
   aesthetic: >-
-    Practical quiet-freedom anime minimalism where utilitarian surfaces, spare independence, and
-    ordinary motion create emotional expansion
-  form_and_line: >-
-    Precise functional contour, restrained gestures, compact mechanical rhythm, open-air negative
-    space, and low-noise silhouette discipline
-  color_palette: >-
-    Matte black, cold morning blue, subdued neutrals, rubber gray, dry asphalt beige, and rare
-    sunset amber
-  lighting_setup: >-
-    Clear daylight restraint, overcast commuter softness, sparse golden rim, and low-drama
-    highlights on functional edges
-  material_texture: >-
-    Matte metal, rubber grain, worn vinyl, roadlike grit, utility fabric, and weathered practical
-    surfaces
-  render_quality: >-
-    Minimal mechanical-slice finish with calm fidelity, functional texture, and low-voice emotional
-    restraint
-  spatial_distortion: >-
-    Long negative-space taper and open perspective used as liberation cue without needing literal
-    travel scenery
-  atmosphere: Minimal, freeing, quiet, clean, self-possessed
+    Practical quiet-freedom anime minimalism where utilitarian surfaces, spare independence, and ordinary
+    motion create emotional expansion
+  subject_treatment: >-
+    Precise functional contour, restrained gestures, compact mechanical rhythm, open-air negative space, and
+    low-noise silhouette discipline
+  color_and_tone: Matte black, cold morning blue, subdued neutrals, rubber gray, dry asphalt beige, and rare sunset amber
+  lighting_and_shadow: >-
+    Clear daylight restraint, overcast commuter softness, sparse golden rim, and low-drama highlights on
+    functional edges
+  texture_and_material: Matte metal, rubber grain, worn vinyl, roadlike grit, utility fabric, and weathered practical surfaces
+  camera_and_composition: >-
+    Long negative-space taper and open perspective used as liberation cue without needing literal travel
+    scenery
+  atmosphere_and_mood: Minimal, freeing, quiet, clean, self-possessed
+  rendering_and_quality: Minimal mechanical-slice finish with calm fidelity, functional texture, and low-voice emotional restraint
   key_features: >-
-    Utilitarian silhouettes, spare open framing, practical material detail, mechanical quietude, and
-    subtle emotional expansion
+    Utilitarian silhouettes, spare open framing, practical material detail, mechanical quietude, and subtle
+    emotional expansion
   creative_brief: >-
-    Use Super Cub as style anchor for utilitarian quiet freedom. Apply matte functional texture,
-    spare open framing, restrained daylight, and small independence cues to any subject. Bikes,
-    roads, riders, and school setups are optional.
+    Use Super Cub as style anchor for utilitarian quiet freedom. Apply matte functional texture, spare open
+    framing, restrained daylight, and small independence cues to any subject. Bikes, roads, riders, and school
+    setups are optional.
 avoidRules:
   - realistic
   - 3d render
@@ -58,8 +52,8 @@ assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-211.webp
 attributes:
   negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, text, signature
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts,
+    watermark, text, signature
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle

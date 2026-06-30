@@ -13,37 +13,38 @@ tags:
   - dark-fantasy-and-seinen
 visualDna:
   aesthetic: >-
-    Devilman Crybaby Neon Tragic Metamorphosis within 9. Dark Fantasy & Seinen: a reusable Anime Battle & Worlds visual
-    language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result
-    transferable across subjects while preserving Devilman Crybaby Neon Tragic Metamorphosis's specific style identity.
-  form_and_line: >-
-    Define Devilman Crybaby Neon Tragic Metamorphosis through line, mass, contour, spacing, and rhythm. Keep forms
-    readable, intentional, and reusable beyond one literal scene.
-  color_palette: >-
-    Use a Devilman Crybaby Neon Tragic Metamorphosis-specific palette with clear dominant, secondary, and accent roles.
-    Keep contrast deliberate and avoid generic color wash.
-  lighting_setup: >-
-    Use lighting that makes Devilman Crybaby Neon Tragic Metamorphosis recognizable: purposeful key, rim, bounce,
-    shadow, and glow behavior with readable hierarchy.
-  material_texture: >-
-    Use materials and textures that reinforce Devilman Crybaby Neon Tragic Metamorphosis: surface response, grain,
-    patina, polish, or wear should feel intentional and style-defining.
-  render_quality: >-
-    Render Devilman Crybaby Neon Tragic Metamorphosis with high production clarity, strong silhouette reads, clean
-    detail priority, and no accidental UI, text, logos, or watermark.
-  spatial_distortion: >-
-    Use spatial behavior that fits Devilman Crybaby Neon Tragic Metamorphosis: perspective, compression, exaggeration,
-    or depth should support the style without forcing one fixed location.
-  atmosphere: >-
-    Set a mood that belongs to Devilman Crybaby Neon Tragic Metamorphosis: specific, coherent, and distinct, with
-    emotional tone carried by visual systems rather than narrative captioning.
+    Devilman Crybaby Neon Tragic Metamorphosis within 9. Dark Fantasy & Seinen: a reusable Anime Battle &
+    Worlds visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction.
+    Keep the result transferable across subjects while preserving Devilman Crybaby Neon Tragic Metamorphosis's
+    specific style identity.
+  subject_treatment: >-
+    Define Devilman Crybaby Neon Tragic Metamorphosis through line, mass, contour, spacing, and rhythm. Keep
+    forms readable, intentional, and reusable beyond one literal scene.
+  color_and_tone: >-
+    Use a Devilman Crybaby Neon Tragic Metamorphosis-specific palette with clear dominant, secondary, and
+    accent roles. Keep contrast deliberate and avoid generic color wash.
+  lighting_and_shadow: >-
+    Use lighting that makes Devilman Crybaby Neon Tragic Metamorphosis recognizable: purposeful key, rim,
+    bounce, shadow, and glow behavior with readable hierarchy.
+  texture_and_material: >-
+    Use materials and textures that reinforce Devilman Crybaby Neon Tragic Metamorphosis: surface response,
+    grain, patina, polish, or wear should feel intentional and style-defining.
+  camera_and_composition: >-
+    Use spatial behavior that fits Devilman Crybaby Neon Tragic Metamorphosis: perspective, compression,
+    exaggeration, or depth should support the style without forcing one fixed location.
+  atmosphere_and_mood: >-
+    Set a mood that belongs to Devilman Crybaby Neon Tragic Metamorphosis: specific, coherent, and distinct,
+    with emotional tone carried by visual systems rather than narrative captioning.
+  rendering_and_quality: >-
+    Render Devilman Crybaby Neon Tragic Metamorphosis with high production clarity, strong silhouette reads,
+    clean detail priority, and no accidental UI, text, logos, or watermark.
   key_features: >-
-    Prioritize Devilman Crybaby Neon Tragic Metamorphosis's key features: recognizable shape language, palette logic,
-    material cues, lighting behavior, and composition rules.
+    Prioritize Devilman Crybaby Neon Tragic Metamorphosis's key features: recognizable shape language, palette
+    logic, material cues, lighting behavior, and composition rules.
   creative_brief: >-
-    Create a style-card that translates Devilman Crybaby Neon Tragic Metamorphosis into a portable visual system for 9.
-    Dark Fantasy & Seinen. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or
-    story beat.
+    Create a style-card that translates Devilman Crybaby Neon Tragic Metamorphosis into a portable visual
+    system for 9. Dark Fantasy & Seinen. Preserve the preset identity through style mechanics, not a fixed
+    scene, character, prop, or story beat.
 avoidRules:
   - realistic
   - 3d render
@@ -61,8 +62,8 @@ assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-070.webp
 attributes:
   negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark,
-    text, signature
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts,
+    watermark, text, signature
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds

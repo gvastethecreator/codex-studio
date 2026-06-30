@@ -95,7 +95,9 @@ interface StylesRecipeProps {
 const FAVORITES_PACK_ID = 'favorites';
 const EMPTY_IMAGES: GeneratedImageWithConfig[] = [];
 const DEFAULT_STYLE_PACK_ID = STYLE_RUNTIME_PACK_SUMMARIES[0]?.id ?? 'pack_01';
+const STYLE_RUNTIME_PACK_IDS = STYLE_RUNTIME_PACK_SUMMARIES.map((pack) => pack.id);
 const STYLE_GROUP_VIEWPORT_ROOT_MARGIN = '220px 0px';
+const STYLE_HOVER_PREVIEW_EXIT_DELAY_MS = 280;
 const MAX_STYLE_REFERENCE_IMAGES = 5;
 const MAX_SELECTED_STYLE_SLOTS = 5;
 const DEFAULT_SELECTED_STYLE_STRENGTH = 0.75;
@@ -383,6 +385,7 @@ interface SelectedStyleSlot {
 
 interface StylePresetCardProps {
   preset: StyleRuntimePreset;
+  packId: string;
   visualState: StylePresetVisualState | undefined;
   active: boolean;
   copied: boolean;
@@ -666,6 +669,7 @@ const StylePresetResultButton: React.FC<StylePresetResultButtonProps> = ({
 const StylePresetCard = React.memo(
   ({
     preset,
+    packId,
     visualState,
     active,
     copied,
@@ -777,6 +781,7 @@ const StylePresetCard = React.memo(
             onHoverPreviewChange(null);
           }}
           data-style-preset-card={preset.id}
+          data-style-pack-id={packId}
           data-style-category={preset.category || 'General'}
           data-style-image-kind={imageDiagnostics.kind}
           data-style-image-src={imageDiagnostics.src ?? ''}
@@ -1647,12 +1652,21 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
     [selectedStyles],
   );
   const timeoutRef = useRef<number | null>(null);
+  const hoverPreviewClearTimeoutRef = useRef<number | null>(null);
+
+  const clearPendingHoverPreview = useCallback(() => {
+    if (hoverPreviewClearTimeoutRef.current === null) return;
+    window.clearTimeout(hoverPreviewClearTimeoutRef.current);
+    hoverPreviewClearTimeoutRef.current = null;
+  }, []);
 
   useEffect(() => {
-    const timeout = timeoutRef.current;
     return () => {
-      if (timeout) {
-        clearTimeout(timeout);
+      if (timeoutRef.current !== null) {
+        window.clearTimeout(timeoutRef.current);
+      }
+      if (hoverPreviewClearTimeoutRef.current !== null) {
+        window.clearTimeout(hoverPreviewClearTimeoutRef.current);
       }
     };
   }, []);
@@ -1676,6 +1690,8 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
     showAllStyleCategories,
     styleScrollWidth,
   } = browserState;
+  const normalizedStyleSearchQuery = searchQuery.trim();
+  const isGlobalStyleSearchActive = normalizedStyleSearchQuery.length > 0;
   const [favorites, setFavorites] = useLocalStorage<string[]>('style-favorites', []);
   const [gridColumns, setGridColumns] = useLocalStorage<number>('styles-grid-columns', 4);
   const styleScrollRootRef = useRef<HTMLDivElement>(null);
@@ -1776,6 +1792,24 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
     };
   }, [currentPackId, favorites.length]);
 
+  useEffect(() => {
+    if (!isGlobalStyleSearchActive) return;
+    if (STYLE_RUNTIME_PACK_IDS.every((packId) => loadedStylePacksById[packId])) return;
+
+    let cancelled = false;
+    void loadStyleRuntimePacks().then((packs) => {
+      if (cancelled) return;
+      setLoadedStylePacksById((current) => {
+        const next = { ...current };
+        for (const pack of packs) next[pack.id] = pack;
+        return next;
+      });
+    });
+    return () => {
+      cancelled = true;
+    };
+  }, [isGlobalStyleSearchActive, loadedStylePacksById]);
+
   const toggleFavorite = React.useCallback(
     (presetId: string) => {
       setFavorites((prev) =>
@@ -1856,28 +1890,45 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
 
   const activeTheme = PACK_THEMES[currentPackId] || PACK_THEMES['pack_01'];
   const resolvedHoveredPresetPreview = hoveredPresetPreview;
+  const orderedLoadedStylePacks = useMemo(
+    () =>
+      STYLE_RUNTIME_PACK_IDS.flatMap((packId) => {
+        const pack = loadedStylePacksById[packId];
+        return pack ? [pack] : [];
+      }),
+    [loadedStylePacksById],
+  );
+  const searchableStylePresets = useMemo(
+    () => orderedLoadedStylePacks.flatMap((pack) => pack.presets),
+    [orderedLoadedStylePacks],
+  );
+  const presetPackIdById = useMemo(() => {
+    const packIdByPresetId = new Map<string, string>();
+    for (const pack of orderedLoadedStylePacks) {
+      for (const preset of pack.presets) packIdByPresetId.set(preset.id, pack.id);
+    }
+    return packIdByPresetId;
+  }, [orderedLoadedStylePacks]);
 
   const favoritePresets = useMemo(() => {
     const presetById = new Map<string, StyleRuntimePreset>();
-    for (const pack of Object.values(loadedStylePacksById)) {
+    for (const pack of orderedLoadedStylePacks) {
       for (const preset of pack.presets) presetById.set(preset.id, preset);
     }
     return favorites.flatMap((presetId) => {
       const preset = presetById.get(presetId);
       return preset ? [preset] : [];
     });
-  }, [favorites, loadedStylePacksById]);
+  }, [favorites, orderedLoadedStylePacks]);
 
   const getPackIdForPreset = React.useCallback(
     (preset: StyleRuntimePreset) => {
-      if (currentPackId !== FAVORITES_PACK_ID) return currentPackId;
       return (
-        Object.values(loadedStylePacksById).find((pack) =>
-          pack.presets.some((candidate) => candidate.id === preset.id),
-        )?.id || activePack.id
+        presetPackIdById.get(preset.id) ??
+        (currentPackId !== FAVORITES_PACK_ID ? currentPackId : activePack.id)
       );
     },
-    [activePack.id, currentPackId, loadedStylePacksById],
+    [activePack.id, currentPackId, presetPackIdById],
   );
 
   const getPackNameForId = useCallback(
@@ -1885,36 +1936,6 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
       loadedStylePacksById[packId]?.name ?? getStylePackSummary(packId)?.name ?? 'Styles',
     [loadedStylePacksById],
   );
-
-  const presetVisualStateById = useMemo(() => {
-    const stateMap = new Map<string, StylePresetVisualState>();
-
-    const visiblePresets =
-      currentPackId === FAVORITES_PACK_ID ? favoritePresets : activePack.presets || [];
-
-    visiblePresets.forEach((preset) => {
-      const presetPackId = getPackIdForPreset(preset);
-      const presetPack = loadedStylePacksById[presetPackId] ?? activePack;
-      stateMap.set(
-        preset.id,
-        createStylePresetVisualState({
-          preset,
-          presetPackId,
-          presetPackName: presetPack.name,
-          images,
-        }),
-      );
-    });
-
-    return stateMap;
-  }, [
-    activePack,
-    currentPackId,
-    favoritePresets,
-    getPackIdForPreset,
-    images,
-    loadedStylePacksById,
-  ]);
 
   const selectedStyleVisualStateById = useMemo(() => {
     const stateMap = new Map<string, StylePresetVisualState>();
@@ -1953,6 +1974,7 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
         currentPackId,
         favoritesPackId: FAVORITES_PACK_ID,
         favoritePresets,
+        searchPresets: isGlobalStyleSearchActive ? searchableStylePresets : undefined,
         favoriteIds: favorites,
         searchQuery,
         sortOrder,
@@ -1962,7 +1984,9 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
       activePack,
       currentPackId,
       favoritePresets,
+      isGlobalStyleSearchActive,
       searchQuery,
+      searchableStylePresets,
       sortOrder,
       favorites,
       showFavoritesOnly,
@@ -1979,6 +2003,35 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
   );
   const { visibleStyleGroupEntries, hiddenStyleGroupEntries, hiddenStylePresetCount } =
     styleRenderPlan;
+
+  const filteredStylePresets = useMemo(() => {
+    const presetById = new Map<string, StyleRuntimePreset>();
+    for (const preset of processedData.favorites) presetById.set(preset.id, preset);
+    for (const groupPresets of Object.values(processedData.groups)) {
+      for (const preset of groupPresets) presetById.set(preset.id, preset);
+    }
+    return [...presetById.values()];
+  }, [processedData]);
+
+  const presetVisualStateById = useMemo(() => {
+    const stateMap = new Map<string, StylePresetVisualState>();
+
+    filteredStylePresets.forEach((preset) => {
+      const presetPackId = getPackIdForPreset(preset);
+      const presetPack = loadedStylePacksById[presetPackId] ?? activePack;
+      stateMap.set(
+        preset.id,
+        createStylePresetVisualState({
+          preset,
+          presetPackId,
+          presetPackName: presetPack.name,
+          images,
+        }),
+      );
+    });
+
+    return stateMap;
+  }, [activePack, filteredStylePresets, getPackIdForPreset, images, loadedStylePacksById]);
 
   const stylePreviewPreloadSources = useMemo(
     () =>
@@ -2239,22 +2292,40 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
     }
   };
 
-  const handleHoverPreviewChange = useCallback((preview: StyleCardHoverPreview | null) => {
-    setInteractionState((prev) => ({ ...prev, hoveredPresetPreview: preview }));
-  }, []);
+  const handleHoverPreviewChange = useCallback(
+    (preview: StyleCardHoverPreview | null) => {
+      clearPendingHoverPreview();
+
+      if (preview) {
+        setInteractionState((prev) => ({ ...prev, hoveredPresetPreview: preview }));
+        return;
+      }
+
+      hoverPreviewClearTimeoutRef.current = window.setTimeout(() => {
+        hoverPreviewClearTimeoutRef.current = null;
+        setInteractionState((prev) =>
+          prev.hoveredPresetPreview === null ? prev : { ...prev, hoveredPresetPreview: null },
+        );
+      }, STYLE_HOVER_PREVIEW_EXIT_DELAY_MS);
+    },
+    [clearPendingHoverPreview],
+  );
 
   const renderPresetCard = React.useCallback(
     (preset: StyleRuntimePreset) => {
+      const presetPackId = getPackIdForPreset(preset);
+      const presetTheme = PACK_THEMES[presetPackId] || activeTheme;
       return (
         <StylePresetCard
           key={preset.id}
           preset={preset}
+          packId={presetPackId}
           visualState={presetVisualStateById.get(preset.id)}
           active={selectedStyleIds.has(preset.id)}
           copied={copiedStyleId === preset.id}
           favorite={favorites.includes(preset.id)}
-          theme={activeTheme}
-          onApply={handleApplyStyleRef.current}
+          theme={presetTheme}
+          onApply={(selectedPreset) => handleApplyStyleRef.current(selectedPreset, presetPackId)}
           onCopy={handleCopyStylePromptRef.current}
           onToggleFavorite={toggleFavorite}
           onHoverPreviewChange={handleHoverPreviewChange}
@@ -2266,6 +2337,7 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
       copiedStyleId,
       favorites,
       activeTheme,
+      getPackIdForPreset,
       toggleFavorite,
       presetVisualStateById,
       handleHoverPreviewChange,
@@ -2661,11 +2733,13 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
                 <button
                   type="button"
                   onClick={handleGenerateSelectedStyles}
-                  disabled={selectedStyles.length === 0 || isGenerating}
+                  disabled={selectedStyles.length === 0}
+                  data-style-generate-button
+                  data-generate-active={isGenerating ? 'true' : 'false'}
                   className="mt-3 flex h-10 w-full items-center justify-center gap-2 rounded-[6px] border border-accent-400/20 bg-accent-500/18 px-4 text-[10px] font-black uppercase tracking-widest text-accent-100 transition-[background-color,border-color,opacity] disabled:cursor-not-allowed disabled:border-white/8 disabled:bg-white/5 disabled:text-zinc-600"
                 >
                   <Play size={15} />
-                  {isGenerating ? 'Generating' : 'Generate'}
+                  {isGenerating ? 'Queue' : 'Generate'}
                 </button>
               </div>
             </div>
@@ -3152,11 +3226,13 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
         <button
           type="button"
           onClick={handleGenerateSelectedStyles}
-          disabled={selectedStyles.length === 0 || isGenerating}
+          disabled={selectedStyles.length === 0}
+          data-style-generate-button
+          data-generate-active={isGenerating ? 'true' : 'false'}
           className="mt-3 flex h-11 items-center justify-center gap-2 rounded-[6px] border border-accent-400/20 bg-accent-500/18 px-4 text-[10px] font-black uppercase tracking-widest text-accent-100 transition-[background-color,border-color,opacity] hover:border-accent-300/35 hover:bg-accent-500/25 disabled:cursor-not-allowed disabled:border-white/8 disabled:bg-white/5 disabled:text-zinc-600"
         >
           <Play size={16} />
-          {isGenerating ? 'Generating' : 'Generate'}
+          {isGenerating ? 'Queue' : 'Generate'}
         </button>
       </aside>
     </RecipeLayout>

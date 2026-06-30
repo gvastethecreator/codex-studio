@@ -13,20 +13,20 @@ tags:
   - toys-and-crafts
 visualDna:
   aesthetic: Vintage wind-up robot, tin-toy nostalgia, clockwork companion, mid-century curiosity
-  form_and_line: Lithograph print, pressed-metal contour, rolled-edge seams, tab-slot assembly
-  color_palette: Metallic, Red, Gold, stamped-tin spectrum, oxidized-brass patina, litho-ink fade
-  lighting_setup: Metallic reflection, tin-surface sparkle, warm-overhead spot, glossy-highlight bounce
-  material_texture: Painted metal, cold-tin shell, stamped-relief surface, hand-soldered joints, sharp-press edges
-  render_quality: Retro, mechanical, wind-up wonder, gear-train heart, toy-cabinet treasure
-  spatial_distortion: Boxy, rectilinear body, tube-limb geometry, keyhole-center alignment, angular-foot stance
-  atmosphere: Old fashioned, noisy, tick-tock romance, mantelpiece pride, mechanical nostalgia
+  subject_treatment: Lithograph print, pressed-metal contour, rolled-edge seams, tab-slot assembly
+  color_and_tone: Metallic, Red, Gold, stamped-tin spectrum, oxidized-brass patina, litho-ink fade
+  lighting_and_shadow: Metallic reflection, tin-surface sparkle, warm-overhead spot, glossy-highlight bounce
+  texture_and_material: Painted metal, cold-tin shell, stamped-relief surface, hand-soldered joints, sharp-press edges
+  camera_and_composition: Boxy, rectilinear body, tube-limb geometry, keyhole-center alignment, angular-foot stance
+  atmosphere_and_mood: Old fashioned, noisy, tick-tock romance, mantelpiece pride, mechanical nostalgia
+  rendering_and_quality: Retro, mechanical, wind-up wonder, gear-train heart, toy-cabinet treasure
   key_features: Wind-up key, stamped-brand plate, clockwork-motor hum, rivet-dot detail
   creative_brief: >-
-    Keep this preset grounded in wind-up tin-toy grammar: stamped metal lithography, key-driven clockwork cues, and
-    pressed-soldered mechanical charm should define identity beyond one mascot narrative. Apply Tin Toy as a portable
-    style system over any input: preserve its construction grammar, material cues, scale logic, and signature rendering
-    behavior while avoiding a required franchise, literal prop, fixed specimen, classroom sample, product shot, or scene
-    template.
+    Keep this preset grounded in wind-up tin-toy grammar: stamped metal lithography, key-driven clockwork
+    cues, and pressed-soldered mechanical charm should define identity beyond one mascot narrative. Apply Tin
+    Toy as a portable style system over any input: preserve its construction grammar, material cues, scale
+    logic, and signature rendering behavior while avoiding a required franchise, literal prop, fixed specimen,
+    classroom sample, product shot, or scene template.
 avoidRules:
   - plastic
 assets:

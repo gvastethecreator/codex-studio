@@ -12,20 +12,33 @@ tags:
   - anime-character-and-lifestyle
   - shojo-magical-girl-and-visionary-classics
 visualDna:
-  aesthetic: Revolutionary-baroque shojo grammar combining court portrait grandeur, political tension undertones, and tragic romantic nobility
-  form_and_line: Ornate portrait silhouette hierarchy, martial-and-lace contour interplay, dramatic profile line emphasis, and ceremonial pose rigor
-  color_palette: Powdered ivory, royal blue and wine-red authority tones, antique gold ornament, candle-amber highlights, and storm-gray dramatic shadows
-  lighting_setup: Chandelier-like and candle key light, painterly portrait falloff, velvet-shadow depth, and high-contrast edge illumination for dueling tensions
-  material_texture: Brocade and lace detailing, polished metal reflections, powdered fabric softness, carved gilt-frame surfaces, and marble-like accents
-  render_quality: Operatic classic-shojo rendering with aristocratic detail clarity, portrait-theatre composition, and high-emotion historical polish
-  spatial_distortion: Court-stage perspective stretching to emphasize rank distance and impending upheaval tension
-  atmosphere: Regal, tragic, historic, operatic
-  key_features: Baroque ornament, lace-and-martial contrast, court portrait poses, revolutionary tension, tear-bright dramatic gazes
+  aesthetic: >-
+    Revolutionary-baroque shojo grammar combining court portrait grandeur, political tension undertones, and
+    tragic romantic nobility
+  subject_treatment: >-
+    Ornate portrait silhouette hierarchy, martial-and-lace contour interplay, dramatic profile line emphasis,
+    and ceremonial pose rigor
+  color_and_tone: >-
+    Powdered ivory, royal blue and wine-red authority tones, antique gold ornament, candle-amber highlights,
+    and storm-gray dramatic shadows
+  lighting_and_shadow: >-
+    Chandelier-like and candle key light, painterly portrait falloff, velvet-shadow depth, and high-contrast
+    edge illumination for dueling tensions
+  texture_and_material: >-
+    Brocade and lace detailing, polished metal reflections, powdered fabric softness, carved gilt-frame
+    surfaces, and marble-like accents
+  camera_and_composition: Court-stage perspective stretching to emphasize rank distance and impending upheaval tension
+  atmosphere_and_mood: Regal, tragic, historic, operatic
+  rendering_and_quality: >-
+    Operatic classic-shojo rendering with aristocratic detail clarity, portrait-theatre composition, and
+    high-emotion historical polish
+  key_features: >-
+    Baroque ornament, lace-and-martial contrast, court portrait poses, revolutionary tension, tear-bright
+    dramatic gazes
   creative_brief: >-
-    Ennoble the input with Versailles court revolution: powdered ivory, royal
-    blue and wine-red authority, lace-versus-martial contour tension, candlelit
-    portrait falloff, and operatic tragic gravity can transform any subject
-    without requiring a palace, court figure, duel, or historical scene.
+    Ennoble the input with Versailles court revolution: powdered ivory, royal blue and wine-red authority,
+    lace-versus-martial contour tension, candlelit portrait falloff, and operatic tragic gravity can transform
+    any subject without requiring a palace, court figure, duel, or historical scene.
 avoidRules:
   - realistic
   - 3d render
@@ -42,7 +55,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-194.webp
 attributes:
-  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
+  negativePrompt: >-
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts,
+    watermark, text, signature
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle

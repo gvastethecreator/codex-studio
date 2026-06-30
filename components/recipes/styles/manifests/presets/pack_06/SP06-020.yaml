@@ -13,19 +13,18 @@ tags:
   - drawing-and-sketching
 visualDna:
   aesthetic: Prismacolor drawing
-  form_and_line: Layered wax strokes
-  color_palette: Vibrant, blended
-  lighting_setup: Soft
-  material_texture: Wax buildup, paper grain
-  render_quality: Illustrative, soft
-  spatial_distortion: None
-  atmosphere: Gentle, colorful
+  subject_treatment: Layered wax strokes
+  color_and_tone: Vibrant, blended
+  lighting_and_shadow: Soft
+  texture_and_material: Wax buildup, paper grain
+  camera_and_composition: 'Compose for Colored Pencil using its key spatial cues: Wax texture.'
+  atmosphere_and_mood: Gentle, colorful
+  rendering_and_quality: Illustrative, soft
   key_features: Wax texture
   creative_brief: >-
-    Apply colored-pencil rendering to any input: waxy pigment layering, visible
-    paper grain, burnished blends, sharp colored linework, and hand-pressure
-    saturation. Keep warm drawn color without requiring coloring-book subjects,
-    childhood cues, botanical studies, or stationery props.
+    Apply colored-pencil rendering to any input: waxy pigment layering, visible paper grain, burnished blends,
+    sharp colored linework, and hand-pressure saturation. Keep warm drawn color without requiring
+    coloring-book subjects, childhood cues, botanical studies, or stationery props.
 avoidRules:
   - photo
   - realistic
@@ -45,7 +44,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP06-020.webp
 attributes:
-  negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border
+  negativePrompt: >-
+    photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy,
+    watermark, text, signature, frame, border
 taxonomy:
   packId: pack_06
   packName: Essential Art Styles

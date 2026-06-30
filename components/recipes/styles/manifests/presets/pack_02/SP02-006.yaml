@@ -13,15 +13,21 @@ tags:
   - film-genres
 visualDna:
   aesthetic: 70s B-movie
-  form_and_line: None
-  color_palette: Faded, red shift, yellowed decay, magenta bleed
-  lighting_setup: Harsh, underexposed, single-source, pools of black
-  material_texture: Scratches, cigarette burns, torn splices, dust hair
-  render_quality: Damaged film, degraded, sleazy, exploitation-grade
-  spatial_distortion: Film splice, jumpy gate weave, missing frame
-  atmosphere: Trashy, lurid, midnight-movie danger
+  subject_treatment: >-
+    Treat subjects as believable filmed or broadcast subjects under Grindhouse/Exploitation: casting,
+    wardrobe, props, motion cues, and silhouette hierarchy follow 1. Film Genres cinematic and broadcast
+    grammar without locking to one plot beat.
+  color_and_tone: Faded, red shift, yellowed decay, magenta bleed
+  lighting_and_shadow: Harsh, underexposed, single-source, pools of black
+  texture_and_material: Scratches, cigarette burns, torn splices, dust hair
+  camera_and_composition: Film splice, jumpy gate weave, missing frame
+  atmosphere_and_mood: Trashy, lurid, midnight-movie danger
+  rendering_and_quality: Damaged film, degraded, sleazy, exploitation-grade
   key_features: Dirt, cue marks, grain storm
-  creative_brief: 'Grindhouse style wounds any subject with degraded projection: scratches, cigarette burns, torn splices, magenta bleed, underexposed pools of black, jumpy gate weave, and lurid low-budget danger. Keep exploitation-film damage without requiring violence, rooms, walls, or narrative sleaze.'
+  creative_brief: >-
+    Grindhouse style wounds any subject with degraded projection: scratches, cigarette burns, torn splices,
+    magenta bleed, underexposed pools of black, jumpy gate weave, and lurid low-budget danger. Keep
+    exploitation-film damage without requiring violence, rooms, walls, or narrative sleaze.
 avoidRules:
   - clean
   - hd

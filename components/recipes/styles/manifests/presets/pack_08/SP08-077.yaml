@@ -13,19 +13,20 @@ tags:
   - fabric-and-texture-focus
 visualDna:
   aesthetic: Sculptural stone material, petrified elegance, carved-surface awe
-  form_and_line: Chisel marks, sculpted-drapery fold, classical massing, rigid carved contour, grounded stillness
-  color_palette: Grey Marble, Carrara-white, Pentelic-cream, veined-grey, Parian-snow, weathered-ivory, shadow-grey recess
-  lighting_setup: Gallery-grade material light, overhead directional drama, marble-subsurface scatter, grounded shadow
-  material_texture: Stone, fine-grain marble, crystalline-sparkle, chisel-tool mark, weathered-surface, polished-high, dust-settled crevice
-  render_quality: Classic, cold, carved-marble realism, gallery-grade material clarity
-  spatial_distortion: Rigid
-  atmosphere: Timeless, still, sculptural-permanence awe, stone-silence eternity
+  subject_treatment: Chisel marks, sculpted-drapery fold, classical massing, rigid carved contour, grounded stillness
+  color_and_tone: Grey Marble, Carrara-white, Pentelic-cream, veined-grey, Parian-snow, weathered-ivory, shadow-grey recess
+  lighting_and_shadow: Gallery-grade material light, overhead directional drama, marble-subsurface scatter, grounded shadow
+  texture_and_material: >-
+    Stone, fine-grain marble, crystalline-sparkle, chisel-tool mark, weathered-surface, polished-high,
+    dust-settled crevice
+  camera_and_composition: Rigid
+  atmosphere_and_mood: Timeless, still, sculptural-permanence awe, stone-silence eternity
+  rendering_and_quality: Classic, cold, carved-marble realism, gallery-grade material clarity
   key_features: Marble, veining, chisel marks, sculpted drapery, base-weight cues
   creative_brief: >-
-    Petrify the input into stone-statue material: Carrara grain, grey veining,
-    chisel marks, sculpted drapery folds, rigid carved contour and gallery-like
-    spot light. Keep living-statue wonder without requiring contrapposto figure,
-    museum, pedestal, body or classical portrait bust.
+    Petrify the input into stone-statue material: Carrara grain, grey veining, chisel marks, sculpted drapery
+    folds, rigid carved contour and gallery-like spot light. Keep living-statue wonder without requiring
+    contrapposto figure, museum, pedestal, body or classical portrait bust.
 avoidRules:
   - flesh
 assets:

@@ -13,18 +13,17 @@ tags:
   - material-surface-textures
 visualDna:
   aesthetic: Oxidized metal
-  form_and_line: Flakes
-  color_palette: Orange, Brown
-  lighting_setup: Matte
-  material_texture: Rough, flaky
-  render_quality: Decay, old
-  spatial_distortion: Corrosion
-  atmosphere: Abandoned, gritty
+  subject_treatment: Flakes
+  color_and_tone: Orange, Brown
+  lighting_and_shadow: Matte
+  texture_and_material: Rough, flaky
+  camera_and_composition: Corrosion
+  atmosphere_and_mood: Abandoned, gritty
+  rendering_and_quality: Decay, old
   key_features: Random patches
   creative_brief: >-
-    Apply rust corrosion to the input: orange-brown blooms, flaking iron,
-    pitted edges, oxidized stains, and slow entropy gradients should age any
-    subject without requiring metal junkyards or abandoned settings.
+    Apply rust corrosion to the input: orange-brown blooms, flaking iron, pitted edges, oxidized stains, and
+    slow entropy gradients should age any subject without requiring metal junkyards or abandoned settings.
 avoidRules:
   - clean
   - new

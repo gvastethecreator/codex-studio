@@ -13,20 +13,22 @@ tags:
   - toys-and-crafts
 visualDna:
   aesthetic: Uncanny handcrafted button-eyed doll style with stitched-fantasy tension and eerie miniature-horror charm
-  form_and_line: Stitched mouth, cross-stitch contour, needle-pull tension, seam-line grimace
-  color_palette: Muted, creepy, faded-indigo, storm-purple, bone-cream, dust-mote grey, spiderweb-silver
-  lighting_setup: Cinematic dark, single-source key, fog-machine haze, moon-through-cobweb, cold-blue fill
-  material_texture: Fabric, thread, burlap-sack weave, sawdust-stuffed cotton, button-surface sheen, waxed-thread shine
-  render_quality: Spooky handcrafted stop-motion look emphasizing stitched unease, tactile doll materials, and dark-whimsy atmosphere
-  spatial_distortion: Button eyes, stitched-mouth replacement, needle-hole pupils, thread-wound joints
-  atmosphere: Unsettling, magical, door-to-elsewhere, carnival-mirror dread, careful-what-you-wish-for
+  subject_treatment: Stitched mouth, cross-stitch contour, needle-pull tension, seam-line grimace
+  color_and_tone: Muted, creepy, faded-indigo, storm-purple, bone-cream, dust-mote grey, spiderweb-silver
+  lighting_and_shadow: Cinematic dark, single-source key, fog-machine haze, moon-through-cobweb, cold-blue fill
+  texture_and_material: Fabric, thread, burlap-sack weave, sawdust-stuffed cotton, button-surface sheen, waxed-thread shine
+  camera_and_composition: Button eyes, stitched-mouth replacement, needle-hole pupils, thread-wound joints
+  atmosphere_and_mood: Unsettling, magical, door-to-elsewhere, carnival-mirror dread, careful-what-you-wish-for
+  rendering_and_quality: >-
+    Spooky handcrafted stop-motion look emphasizing stitched unease, tactile doll materials, and dark-whimsy
+    atmosphere
   key_features: Visible stitching, four-hole buttons, cross-thread tension, burlap-fabric grain, needle-impaled surfaces
   creative_brief: >-
-    Preserve identity through uncanny dollcraft grammar: button-eye geometry, stitched-mouth tension, and burlap-thread
-    material unease should carry the preset without referencing specific films or studios. Apply Button Eye Doll as a
-    portable style system over any input: preserve its construction grammar, material cues, scale logic, and signature
-    rendering behavior while avoiding a required franchise, literal prop, fixed specimen, classroom sample, product
-    shot, or scene template.
+    Preserve identity through uncanny dollcraft grammar: button-eye geometry, stitched-mouth tension, and
+    burlap-thread material unease should carry the preset without referencing specific films or studios. Apply
+    Button Eye Doll as a portable style system over any input: preserve its construction grammar, material
+    cues, scale logic, and signature rendering behavior while avoiding a required franchise, literal prop,
+    fixed specimen, classroom sample, product shot, or scene template.
 avoidRules:
   - human eyes
 assets:

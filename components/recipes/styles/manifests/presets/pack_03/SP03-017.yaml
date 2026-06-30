@@ -13,19 +13,18 @@ tags:
   - materials
 visualDna:
   aesthetic: Viscous sticky fluid
-  form_and_line: Stretching strands
-  color_palette: Neon Green/Pink
-  lighting_setup: Glossy
-  material_texture: Sticky, wet, viscous elasticity
-  render_quality: Nickelodeon gooey cartoon gross-out, slime fun
-  spatial_distortion: Dripping
-  atmosphere: Fun, gross, messy joy
+  subject_treatment: Stretching strands
+  color_and_tone: Neon Green/Pink
+  lighting_and_shadow: Glossy
+  texture_and_material: Sticky, wet, viscous elasticity
+  camera_and_composition: Dripping
+  atmosphere_and_mood: Fun, gross, messy joy
+  rendering_and_quality: Nickelodeon gooey cartoon gross-out, slime fun
   key_features: Drips, stretch strings
   creative_brief: >-
-    Apply slime material behavior to any input: viscous neon goo, stretch
-    strands, wet specular pooling, dripping deformation, electric green or hot
-    pink gross-out color, and playful sticky volume. Keep messy cartoon energy
-    without requiring a bucket, prank, creature, lab accident, or body beneath.
+    Apply slime material behavior to any input: viscous neon goo, stretch strands, wet specular pooling,
+    dripping deformation, electric green or hot pink gross-out color, and playful sticky volume. Keep messy
+    cartoon energy without requiring a bucket, prank, creature, lab accident, or body beneath.
 avoidRules:
   - dry
   - solid

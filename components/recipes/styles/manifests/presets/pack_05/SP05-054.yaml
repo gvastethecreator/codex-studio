@@ -13,34 +13,34 @@ tags:
   - mecha-and-cyberpunk
 visualDna:
   aesthetic: >-
-    Operatic luminous anime conflict rendered through sleek heroic geometry, psychic color pressure,
-    radiant scale, and melodramatic energy staging
-  form_and_line: >-
-    Clean heroic hard-edge linework, long beam diagonals, crisp panel accents, elegant silhouette
-    contrast, and elevated stance framing.
-  color_palette: >-
-    White-hot cores, saturated red-blue primaries, violet void shadows, chrome neutrals, and
-    aurora-like particle color.
-  lighting_setup: >-
+    Operatic luminous anime conflict rendered through sleek heroic geometry, psychic color pressure, radiant
+    scale, and melodramatic energy staging
+  subject_treatment: >-
+    Clean heroic hard-edge linework, long beam diagonals, crisp panel accents, elegant silhouette contrast,
+    and elevated stance framing.
+  color_and_tone: >-
+    White-hot cores, saturated red-blue primaries, violet void shadows, chrome neutrals, and aurora-like
+    particle color.
+  lighting_and_shadow: >-
     Radiant beam keys, flare bloom, colored rim clashes, distant black-field contrast, and luminous
     particulate haze.
-  material_texture: >-
-    Polished alloy sheen, smooth enamel planes, energy bloom, transparent particles, and cel-era
-    specular snaps.
-  render_quality: >-
-    Premium space-opera anime finish with clear heroic hierarchy, bright chroma discipline, and
-    polished luminous drama.
-  spatial_distortion: >-
-    Grand diagonal scale, beam-led depth, telephoto compression, and cosmic negative space around
-    the focal silhouette.
-  atmosphere: Dramatic, luminous, operatic, cosmic
+  texture_and_material: >-
+    Polished alloy sheen, smooth enamel planes, energy bloom, transparent particles, and cel-era specular
+    snaps.
+  camera_and_composition: >-
+    Grand diagonal scale, beam-led depth, telephoto compression, and cosmic negative space around the focal
+    silhouette.
+  atmosphere_and_mood: Dramatic, luminous, operatic, cosmic
+  rendering_and_quality: >-
+    Premium space-opera anime finish with clear heroic hierarchy, bright chroma discipline, and polished
+    luminous drama.
   key_features: >-
-    Beam diagonals, psychic bloom, operatic silhouette contrast, luminous particles, strategic
-    negative space, and radiant scale
+    Beam diagonals, psychic bloom, operatic silhouette contrast, luminous particles, strategic negative space,
+    and radiant scale
   creative_brief: >-
-    Use luminous beam opera as colored-energy staging grammar. Any prompt should become grand,
-    radiant, strategic, and emotionally charged through light diagonals. Operators, hardware,
-    territory, factions, and combat narratives are optional.
+    Use luminous beam opera as colored-energy staging grammar. Any prompt should become grand, radiant,
+    strategic, and emotionally charged through light diagonals. Operators, hardware, territory, factions, and
+    combat narratives are optional.
 avoidRules:
   - realistic
   - 3d render
@@ -58,8 +58,8 @@ assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-054.webp
 attributes:
   negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, text, signature
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts,
+    watermark, text, signature
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds

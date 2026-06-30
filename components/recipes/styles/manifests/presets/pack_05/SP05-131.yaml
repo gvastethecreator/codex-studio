@@ -12,19 +12,24 @@ tags:
   - anime-battle-and-worlds
   - modern-shonen-and-action
 visualDna:
-  aesthetic: Delinquent protector rush style, with streetwind swagger, bruised loyalty, sharp youth motion, and neon grit.
-  form_and_line: Wind-shear diagonals, loose jacketlike silhouette rhythm, knuckle-close impact arcs, and confident stance geometry.
-  color_palette: Streetlight amber, bruised purple, asphalt gray, neon green, hot sign red, and midnight blue.
-  lighting_setup: Flickering urban rim light, low practical glow, fast backlight streaks, and hard contrast around impact beats.
-  material_texture: Scuffed fabric, skin bruise tones, pavement grit, sign-glow bloom, and polished modern cel edges.
-  render_quality: Premium modern action anime finish with clean speed, grounded swagger, and readable loyalty tension.
-  spatial_distortion: Alleylike compression, wind-pushed depth, and foreshortened rush lines without fixed architecture.
-  atmosphere: Rowdy, loyal, kinetic, swaggering
+  aesthetic: >-
+    Delinquent protector rush style, with streetwind swagger, bruised loyalty, sharp youth motion, and neon
+    grit.
+  subject_treatment: >-
+    Wind-shear diagonals, loose jacketlike silhouette rhythm, knuckle-close impact arcs, and confident stance
+    geometry.
+  color_and_tone: Streetlight amber, bruised purple, asphalt gray, neon green, hot sign red, and midnight blue.
+  lighting_and_shadow: >-
+    Flickering urban rim light, low practical glow, fast backlight streaks, and hard contrast around impact
+    beats.
+  texture_and_material: Scuffed fabric, skin bruise tones, pavement grit, sign-glow bloom, and polished modern cel edges.
+  camera_and_composition: Alleylike compression, wind-pushed depth, and foreshortened rush lines without fixed architecture.
+  atmosphere_and_mood: Rowdy, loyal, kinetic, swaggering
+  rendering_and_quality: Premium modern action anime finish with clean speed, grounded swagger, and readable loyalty tension.
   key_features: Streetwind motion, bruised loyalty, neon grit, protector swagger, close-impact rhythm.
   creative_brief: >-
-    Give any prompt delinquent protector energy through wind-shear lines,
-    bruised color, neon grit, and loyalty-charged impact timing without fixing
-    the style to an institution, faction, or fixed setting.
+    Give any prompt delinquent protector energy through wind-shear lines, bruised color, neon grit, and
+    loyalty-charged impact timing without fixing the style to an institution, faction, or fixed setting.
 avoidRules:
   - realistic
   - 3d render
@@ -41,7 +46,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-131.webp
 attributes:
-  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
+  negativePrompt: >-
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts,
+    watermark, text, signature
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds

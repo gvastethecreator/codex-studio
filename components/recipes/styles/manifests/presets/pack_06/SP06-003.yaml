@@ -13,19 +13,18 @@ tags:
   - traditional-painting
 visualDna:
   aesthetic: Modern acrylic painting
-  form_and_line: Clean edges, layered paint
-  color_palette: Bright, opaque, synthetic colors
-  lighting_setup: Flat or stylized lighting
-  material_texture: Slight canvas texture, matte finish
-  render_quality: Modern art, vibrant
-  spatial_distortion: Stylized shapes
-  atmosphere: Energetic, contemporary
+  subject_treatment: Clean edges, layered paint
+  color_and_tone: Bright, opaque, synthetic colors
+  lighting_and_shadow: Flat or stylized lighting
+  texture_and_material: Slight canvas texture, matte finish
+  camera_and_composition: Stylized shapes
+  atmosphere_and_mood: Energetic, contemporary
+  rendering_and_quality: Modern art, vibrant
   key_features: Opaque paint layers
   creative_brief: >-
-    Apply modern acrylic-paint logic to any input: fast-drying opaque color,
-    crisp blocked planes, synthetic pigment density, visible plastic surface
-    body, and bright contemporary contrast. Keep modern studio energy without
-    requiring canvas panels, abstract walls, or gallery installation context.
+    Apply modern acrylic-paint logic to any input: fast-drying opaque color, crisp blocked planes, synthetic
+    pigment density, visible plastic surface body, and bright contemporary contrast. Keep modern studio energy
+    without requiring canvas panels, abstract walls, or gallery installation context.
 avoidRules:
   - photo
   - realistic
@@ -45,7 +44,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP06-003.webp
 attributes:
-  negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border
+  negativePrompt: >-
+    photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy,
+    watermark, text, signature, frame, border
 taxonomy:
   packId: pack_06
   packName: Essential Art Styles

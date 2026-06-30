@@ -13,19 +13,18 @@ tags:
   - digital-art
 visualDna:
   aesthetic: Entertainment concept-art visualization with mood-first design and production-readable focal hierarchy
-  form_and_line: Painterly
-  color_palette: Mood lighting
-  lighting_setup: Cinematic
-  material_texture: Photobash
-  render_quality: AAA concept-art finish without locking to games, movies, worlds, or products
-  spatial_distortion: None
-  atmosphere: Epic, storytelling
+  subject_treatment: Painterly
+  color_and_tone: Mood lighting
+  lighting_and_shadow: Cinematic
+  texture_and_material: Photobash
+  camera_and_composition: 'Compose for Concept Art using its key spatial cues: Focal point detail.'
+  atmosphere_and_mood: Epic, storytelling
+  rendering_and_quality: AAA concept-art finish without locking to games, movies, worlds, or products
   key_features: Focal point detail
   creative_brief: >-
-    Apply concept-art development language to any input: mood-first lighting,
-    readable design intent, photobash-paint hybrid texture, production-ready
-    shape decisions, and exploratory polish. Keep visual-direction utility
-    without requiring characters, environments, callouts, model sheets, or story
+    Apply concept-art development language to any input: mood-first lighting, readable design intent,
+    photobash-paint hybrid texture, production-ready shape decisions, and exploratory polish. Keep
+    visual-direction utility without requiring characters, environments, callouts, model sheets, or story
     beats.
 avoidRules:
   - photo
@@ -48,7 +47,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP06-053.webp
 attributes:
-  negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border, product pitch, fixed worldbuilding scene
+  negativePrompt: >-
+    photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy,
+    watermark, text, signature, frame, border, product pitch, fixed worldbuilding scene
 taxonomy:
   packId: pack_06
   packName: Essential Art Styles

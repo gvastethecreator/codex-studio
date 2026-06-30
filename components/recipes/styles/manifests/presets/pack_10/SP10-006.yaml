@@ -13,18 +13,17 @@ tags:
   - geometric-abstraction
 visualDna:
   aesthetic: Mandelbrot set
-  form_and_line: Infinite detail
-  color_palette: Psychedelic gradient
-  lighting_setup: Mathematical
-  material_texture: Smooth
-  render_quality: Math art, complex
-  spatial_distortion: Recursive
-  atmosphere: Infinite, trippy
+  subject_treatment: Infinite detail
+  color_and_tone: Psychedelic gradient
+  lighting_and_shadow: Mathematical
+  texture_and_material: Smooth
+  camera_and_composition: Recursive
+  atmosphere_and_mood: Infinite, trippy
+  rendering_and_quality: Math art, complex
   key_features: Self-similarity
   creative_brief: >-
-    Apply fractal recursion to the input: self-similar branching, nested scale
-    echoes, mathematical edge repetition, and infinite-depth ornament should let
-    any subject bloom into repeatable geometry.
+    Apply fractal recursion to the input: self-similar branching, nested scale echoes, mathematical edge
+    repetition, and infinite-depth ornament should let any subject bloom into repeatable geometry.
 avoidRules:
   - simple
   - finite

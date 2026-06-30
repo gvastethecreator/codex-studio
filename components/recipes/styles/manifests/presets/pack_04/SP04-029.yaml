@@ -13,19 +13,18 @@ tags:
   - childrens-illustration
 visualDna:
   aesthetic: Die-cut sticker illustration with collectible decal language
-  form_and_line: Bold simplified contours with thick white cutline margin
-  color_palette: Saturated vector palette tuned for print legibility
-  lighting_setup: Controlled vinyl gloss accents and compact specular highlights
-  material_texture: Smooth sticker-vinyl finish with subtle laminate sheen
-  render_quality: Crisp decal-ready rendering optimized for small-format readability
-  spatial_distortion: Simplified silhouettes with icon-like proportion clarity
-  atmosphere: Playful, punchy, identity-forward
+  subject_treatment: Bold simplified contours with thick white cutline margin
+  color_and_tone: Saturated vector palette tuned for print legibility
+  lighting_and_shadow: Controlled vinyl gloss accents and compact specular highlights
+  texture_and_material: Smooth sticker-vinyl finish with subtle laminate sheen
+  camera_and_composition: Simplified silhouettes with icon-like proportion clarity
+  atmosphere_and_mood: Playful, punchy, identity-forward
+  rendering_and_quality: Crisp decal-ready rendering optimized for small-format readability
   key_features: White border halo, isolated silhouette, peel-and-stick visual grammar
   creative_brief: >-
-    Apply sticker-art decal grammar to any input: thick white cutline, isolated silhouette, compact
-    vinyl gloss, saturated vector color, and thumbnail-readable edge contrast should make the
-    subject collectible without requiring mascots, icons, slogans, sticker sheets, or peel-off
-    props.
+    Apply sticker-art decal grammar to any input: thick white cutline, isolated silhouette, compact vinyl
+    gloss, saturated vector color, and thumbnail-readable edge contrast should make the subject collectible
+    without requiring mascots, icons, slogans, sticker sheets, or peel-off props.
 avoidRules:
   - background
 assets:

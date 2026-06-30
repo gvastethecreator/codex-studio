@@ -13,21 +13,26 @@ tags:
   - photography-eras
 visualDna:
   aesthetic: Heat map
-  form_and_line: None
-  color_palette: Ironbow (Purple to Yellow), white-hot, cool-to-warm gradient, black-cold
-  lighting_setup: Emissive heat, self-illumination, temperature glow
-  material_texture: Digital, sensor noise, microbolometer grid
-  render_quality: FLIR aesthetic, sensor-driven, heat-signature mapping, diagnostic clarity
-  spatial_distortion: None
-  atmosphere: Tech, analytical, sensor-vision, invisible-energy
+  subject_treatment: >-
+    Treat subjects as believable filmed or broadcast subjects under Thermal Camera: casting, wardrobe, props,
+    motion cues, and silhouette hierarchy follow 4. Photography Eras cinematic and broadcast grammar without
+    locking to one plot beat.
+  color_and_tone: Ironbow (Purple to Yellow), white-hot, cool-to-warm gradient, black-cold
+  lighting_and_shadow: Emissive heat, self-illumination, temperature glow
+  texture_and_material: Digital, sensor noise, microbolometer grid
+  camera_and_composition: >-
+    Camera language native to Thermal Camera: genre-aware framing, lens character, focal hierarchy, motion
+    cue, and vertical style-card composition.
+  atmosphere_and_mood: Tech, analytical, sensor-vision, invisible-energy
+  rendering_and_quality: FLIR aesthetic, sensor-driven, heat-signature mapping, diagnostic clarity
   key_features: White-hot peaks, black-cold lows, ironbow gradient, microbolometer noise, heat-edge bloom
   creative_brief: >-
-    Make the prompt visible as temperature data: ironbow gradient, white-hot peaks, black-cold lows, emissive heat
-    bloom, sensor noise, and microbolometer grid texture. Avoid military, hunting, living-body, or surveillance
-    assumptions. The image should be a diagnostic heat map where warmth, not visible light, defines form. Apply Thermal
-    Camera as a portable cinematic/camera style over any input: preserve its lens behavior, color process, lighting
-    setup, artifact pattern, and deformation grammar while avoiding a required actor, room, prop, brand, readable text,
-    fixed IP scene, or narrative setup.
+    Make the prompt visible as temperature data: ironbow gradient, white-hot peaks, black-cold lows, emissive
+    heat bloom, sensor noise, and microbolometer grid texture. Avoid military, hunting, living-body, or
+    surveillance assumptions. The image should be a diagnostic heat map where warmth, not visible light,
+    defines form. Apply Thermal Camera as a portable cinematic/camera style over any input: preserve its lens
+    behavior, color process, lighting setup, artifact pattern, and deformation grammar while avoiding a
+    required actor, room, prop, brand, readable text, fixed IP scene, or narrative setup.
 avoidRules:
   - visible light
 assets:

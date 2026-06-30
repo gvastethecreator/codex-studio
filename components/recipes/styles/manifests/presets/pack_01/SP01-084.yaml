@@ -13,15 +13,18 @@ tags:
   - commercial-and-product
 visualDna:
   aesthetic: Beauty-product gloss ad
-  form_and_line: Smooth curves and liquid highlights
-  color_palette: Cream, blush, translucent color accents
-  lighting_setup: Large softbox glow with glossy kickers
-  material_texture: Creamy surface, gel sheen, glassy reflection
-  render_quality: Premium beauty campaign
-  spatial_distortion: Gentle macro depth
-  atmosphere: Clean, sensorial, polished
+  subject_treatment: Smooth curves and liquid highlights
+  color_and_tone: Cream, blush, translucent color accents
+  lighting_and_shadow: Large softbox glow with glossy kickers
+  texture_and_material: Creamy surface, gel sheen, glassy reflection
+  camera_and_composition: Gentle macro depth
+  atmosphere_and_mood: Clean, sensorial, polished
+  rendering_and_quality: Premium beauty campaign
   key_features: Gloss highlight ribbons
-  creative_brief: 'Cosmetic still-life lighting gives any subject a sensorial beauty-ad treatment: creamy palette, soft glow, glossy highlight ribbons, translucent accents, and pristine surface control. It should feel tactile and premium without requiring makeup, bottles, skin, cream, or bathroom staging.'
+  creative_brief: >-
+    Cosmetic still-life lighting gives any subject a sensorial beauty-ad treatment: creamy palette, soft glow,
+    glossy highlight ribbons, translucent accents, and pristine surface control. It should feel tactile and
+    premium without requiring makeup, bottles, skin, cream, or bathroom staging.
 avoidRules:
   - dirty
   - harsh contrast

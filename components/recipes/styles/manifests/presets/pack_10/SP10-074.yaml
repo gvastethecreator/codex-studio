@@ -13,15 +13,19 @@ tags:
   - diagram-print-and-light-systems
 visualDna:
   aesthetic: Stained glass segmentation
-  form_and_line: Black lead came
-  color_palette: Glowing, saturated
-  lighting_setup: Backlit
-  material_texture: Glass imperfections
-  render_quality: Luminous, leaded glass
-  spatial_distortion: Simplified shapes
-  atmosphere: Reverent, bright
+  subject_treatment: Black lead came
+  color_and_tone: Glowing, saturated
+  lighting_and_shadow: Backlit
+  texture_and_material: Glass imperfections
+  camera_and_composition: Simplified shapes
+  atmosphere_and_mood: Reverent, bright
+  rendering_and_quality: Luminous, leaded glass
   key_features: Lead lines
-  creative_brief: Apply stained-glass segmentation over the input with cobalt and ruby panes, black lead came, backlit saturation, glass imperfections, and simplified luminous shapes. If icons, figures, architecture, or symbols exist, make them reverent; otherwise convert the subject into leaded color fields without requiring saints, windows, or sermon imagery.
+  creative_brief: >-
+    Apply stained-glass segmentation over the input with cobalt and ruby panes, black lead came, backlit
+    saturation, glass imperfections, and simplified luminous shapes. If icons, figures, architecture, or
+    symbols exist, make them reverent; otherwise convert the subject into leaded color fields without
+    requiring saints, windows, or sermon imagery.
 avoidRules:
   - opaque
 assets:

@@ -13,19 +13,22 @@ tags:
   - 3d-styles
 visualDna:
   aesthetic: Folded paper model
-  form_and_line: Sharp creases
-  color_palette: Paper, natural-fiber tones
-  lighting_setup: Soft, fold-highlighting
-  material_texture: Paper grain, crease-crisp
-  render_quality: Geometric, craft, zen-precision
-  atmosphere: Delicate, precise, folded poetry
+  subject_treatment: Sharp creases
+  color_and_tone: Paper, natural-fiber tones
+  lighting_and_shadow: Soft, fold-highlighting
+  texture_and_material: Paper grain, crease-crisp
+  camera_and_composition: >-
+    Lookdev camera for Origami 3D: three-quarter or orthographic framing, clean silhouette read, material
+    highlights, controlled depth, and vertical card composition.
+  atmosphere_and_mood: Delicate, precise, folded poetry
+  rendering_and_quality: Geometric, craft, zen-precision
   key_features: No cuts, pure-fold geometry
   creative_brief: >-
-    Fold the input into origami logic: single-sheet discipline, crisp crease geometry, natural-fiber paper grain and
-    curve-free faceted planes. Keep zen precision without forcing cranes, lotus forms or traditional subject matter.
-    Apply Origami 3D as a portable 3D/render style system over any input: preserve its renderer logic, material
-    behavior, geometry language, lighting grammar, and production cues while avoiding a required character, vehicle,
-    prop, environment, UI screen, product shot, or scene template.
+    Fold the input into origami logic: single-sheet discipline, crisp crease geometry, natural-fiber paper
+    grain and curve-free faceted planes. Keep zen precision without forcing cranes, lotus forms or traditional
+    subject matter. Apply Origami 3D as a portable 3D/render style system over any input: preserve its
+    renderer logic, material behavior, geometry language, lighting grammar, and production cues while avoiding
+    a required character, vehicle, prop, environment, UI screen, product shot, or scene template.
 avoidRules:
   - curved
   - smooth

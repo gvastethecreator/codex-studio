@@ -13,15 +13,18 @@ tags:
   - commercial-and-product
 visualDna:
   aesthetic: Generic corporate stock polish
-  form_and_line: Clean
-  color_palette: Bright, blue tint
-  lighting_setup: Bright institutional soft light
-  material_texture: Clean
-  render_quality: Generic, safe
-  spatial_distortion: Sanitized sameness
-  atmosphere: Professional, fake
+  subject_treatment: Clean
+  color_and_tone: Bright, blue tint
+  lighting_and_shadow: Bright institutional soft light
+  texture_and_material: Clean
+  camera_and_composition: Sanitized sameness
+  atmosphere_and_mood: Professional, fake
+  rendering_and_quality: Generic, safe
   key_features: Safe generic optimism
-  creative_brief: 'Corporate stock polish sanitizes any subject into universally legible optimism: bright institutional light, cool-blue tint, clean surfaces, centered clarity, and riskless professional sameness. Keep generic boardroom-safe visual language without requiring workers, smiles, handshakes, or office setting.'
+  creative_brief: >-
+    Corporate stock polish sanitizes any subject into universally legible optimism: bright institutional
+    light, cool-blue tint, clean surfaces, centered clarity, and riskless professional sameness. Keep generic
+    boardroom-safe visual language without requiring workers, smiles, handshakes, or office setting.
 avoidRules:
   - sad
   - dark

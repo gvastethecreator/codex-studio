@@ -12,9 +12,15 @@ tags:
   - essential-art-styles
   - game-art-directions-and-ui
 visualDna:
-  aesthetic: Sci-fi inventory-icon style with hard-surface silhouette logic, technical accents, and clean arsenal readability.
-  subject_treatment: Convert any subject into collectible equipment-like icons with crisp outer contours and modular tech segmentation.
-  color_and_tone: Gunmetal neutrals, cold blue emissive accents, rarity-color trims, and strong dark-to-light material ramps.
+  aesthetic: >-
+    Sci-fi inventory-icon style with hard-surface silhouette logic, technical accents, and clean arsenal
+    readability.
+  subject_treatment: >-
+    Convert any subject into collectible equipment-like icons with crisp outer contours and modular tech
+    segmentation.
+  color_and_tone: >-
+    Gunmetal neutrals, cold blue emissive accents, rarity-color trims, and strong dark-to-light material
+    ramps.
   lighting_and_shadow: Small studio-like icon lighting, bevel highlights, contact shadow pads, and controlled emissive glows.
   texture_and_material: Brushed metal pixels, panel seams, carbon texture hints, tiny bolts, and readable material swatches.
   camera_and_composition: Centered three-quarter icon framing, transparent background, equal padding, and atlas-consistent scale.
@@ -32,7 +38,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP06-112.webp
 attributes:
-  negativePrompt: motion blur, inconsistent proportions, changing costume, cluttered background, gun requirement, soldier requirement, watermark, text
+  negativePrompt: >-
+    motion blur, inconsistent proportions, changing costume, cluttered background, gun requirement, soldier
+    requirement, watermark, text
   layout:
     preferredFrameCount: 8
     frameGrid: 4x2

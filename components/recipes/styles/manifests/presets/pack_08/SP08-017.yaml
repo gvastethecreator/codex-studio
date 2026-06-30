@@ -13,18 +13,21 @@ tags:
   - contemporary-fashion
 visualDna:
   aesthetic: Tech-industry uniform, black knit authority, product-launch minimalism
-  form_and_line: Simple silhouette, columnar torso, unbranded minimalism, bracelet-length sleeve
-  color_palette: Black, Grey, Navy, charcoal, midnight navy, washed black, graphite
-  lighting_setup: Controlled product-launch spotlight, soft keynote backlight, keynote-grade haze
-  material_texture: Cotton jersey, merino knit, selvedge denim, unbranded suede, brushed cashmere
-  render_quality: Minimal, rich, billionaire-casual precision, uniform dressing philosophy
-  spatial_distortion: None
-  atmosphere: Serious, visionary calm, controlled intensity, uniform-dressing certainty
+  subject_treatment: Simple silhouette, columnar torso, unbranded minimalism, bracelet-length sleeve
+  color_and_tone: Black, Grey, Navy, charcoal, midnight navy, washed black, graphite
+  lighting_and_shadow: Controlled product-launch spotlight, soft keynote backlight, keynote-grade haze
+  texture_and_material: Cotton jersey, merino knit, selvedge denim, unbranded suede, brushed cashmere
+  camera_and_composition: >-
+    Compose for Tech-Industry Uniform using its key spatial cues: Knit column, graphite basics, unbranded
+    sneakers, launch-light restraint, no visible branding.
+  atmosphere_and_mood: Serious, visionary calm, controlled intensity, uniform-dressing certainty
+  rendering_and_quality: Minimal, rich, billionaire-casual precision, uniform dressing philosophy
   key_features: Knit column, graphite basics, unbranded sneakers, launch-light restraint, no visible branding
   creative_brief: >-
-    Reduce the input to tech-industry uniform logic: black merino, graphite basics, minimal sneakers, unbranded
-    surfaces, columnar silhouette and product-launch restraint. Keep visionary keynote polish as attitude only; do not
-    require a stage, founder portrait, round glasses, laptop, auditorium or specific startup persona.
+    Reduce the input to tech-industry uniform logic: black merino, graphite basics, minimal sneakers,
+    unbranded surfaces, columnar silhouette and product-launch restraint. Keep visionary keynote polish as
+    attitude only; do not require a stage, founder portrait, round glasses, laptop, auditorium or specific
+    startup persona.
 avoidRules:
   - suit
   - tie

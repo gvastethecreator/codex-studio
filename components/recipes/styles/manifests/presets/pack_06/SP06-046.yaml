@@ -12,20 +12,23 @@ tags:
   - essential-art-styles
   - digital-art
 visualDna:
-  aesthetic: Polished digital illustration with layer-built control, clean brush economy, and modern concept-render clarity
-  form_and_line: Refined silhouette edges, selective painterly marks, and clean shape transitions
-  color_palette: RGB-vibrant but disciplined, with controlled hue shifts and crisp accent separation
-  lighting_setup: Studio-like key/fill/rim logic tuned for clean digital readability
-  material_texture: Smooth brush blending with selective texture overlays and pressure-sensitive edge detail
-  render_quality: Professional digital painting polish without platform-specific tropes
-  spatial_distortion: None
-  atmosphere: Polished
+  aesthetic: >-
+    Polished digital illustration with layer-built control, clean brush economy, and modern concept-render
+    clarity
+  subject_treatment: Refined silhouette edges, selective painterly marks, and clean shape transitions
+  color_and_tone: RGB-vibrant but disciplined, with controlled hue shifts and crisp accent separation
+  lighting_and_shadow: Studio-like key/fill/rim logic tuned for clean digital readability
+  texture_and_material: Smooth brush blending with selective texture overlays and pressure-sensitive edge detail
+  camera_and_composition: >-
+    Compose for Digital Painting using its key spatial cues: Layered polish, crisp focal rendering,
+    editable-feeling control.
+  atmosphere_and_mood: Polished
+  rendering_and_quality: Professional digital painting polish without platform-specific tropes
   key_features: Layered polish, crisp focal rendering, editable-feeling control
   creative_brief: >-
-    Apply digital-painting workflow to any input: pressure-sensitive brushwork,
-    layered corrections, sampled color precision, soft undo-polished gradients,
-    and clean iterative finish. Keep weightless painterly control without
-    requiring fantasy characters, concept sheets, tablet UI, or visible layers.
+    Apply digital-painting workflow to any input: pressure-sensitive brushwork, layered corrections, sampled
+    color precision, soft undo-polished gradients, and clean iterative finish. Keep weightless painterly
+    control without requiring fantasy characters, concept sheets, tablet UI, or visible layers.
 avoidRules:
   - photo
   - realistic
@@ -45,7 +48,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP06-046.webp
 attributes:
-  negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border
+  negativePrompt: >-
+    photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy,
+    watermark, text, signature, frame, border
 taxonomy:
   packId: pack_06
   packName: Essential Art Styles

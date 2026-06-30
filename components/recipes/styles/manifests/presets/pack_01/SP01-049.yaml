@@ -13,15 +13,20 @@ tags:
   - commercial-and-product
 visualDna:
   aesthetic: Appetizing food-styling light
-  form_and_line: Soft focus background
-  color_palette: Warm, saturated, fresh
-  lighting_setup: Window light, reflector
-  material_texture: Steamlike glow, gloss, fresh surface
-  render_quality: Cookbook-style appetite polish
-  spatial_distortion: None
-  atmosphere: Warm, appetizing
+  subject_treatment: Soft focus background
+  color_and_tone: Warm, saturated, fresh
+  lighting_and_shadow: Window light, reflector
+  texture_and_material: Steamlike glow, gloss, fresh surface
+  camera_and_composition: >-
+    Camera setup native to Food Photography: lens choice, crop distance, depth of field, and focal hierarchy
+    support 5. Commercial And Product without generic framing.
+  atmosphere_and_mood: Warm, appetizing
+  rendering_and_quality: Cookbook-style appetite polish
   key_features: Top down or 45 degree
-  creative_brief: 'Food-photography appetite logic applied broadly: warm window light, soft reflector fill, fresh saturation, shallow background, gloss highlights, and gentle steamlike atmosphere. Make any subject feel styled for sensory desire without forcing plates, meals, sauces, or edible content.'
+  creative_brief: >-
+    Food-photography appetite logic applied broadly: warm window light, soft reflector fill, fresh saturation,
+    shallow background, gloss highlights, and gentle steamlike atmosphere. Make any subject feel styled for
+    sensory desire without forcing plates, meals, sauces, or edible content.
 avoidRules:
   - unappetizing
   - dark

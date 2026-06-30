@@ -13,15 +13,20 @@ tags:
   - commercial-and-product
 visualDna:
   aesthetic: Interior-design editorial
-  form_and_line: Wide angle
-  color_palette: Balanced palette
-  lighting_setup: Mixed window/interior
-  material_texture: Tactile decor materials
-  render_quality: Design-magazine polish
-  spatial_distortion: None
-  atmosphere: Welcoming, expensive
+  subject_treatment: Wide angle
+  color_and_tone: Balanced palette
+  lighting_and_shadow: Mixed window/interior
+  texture_and_material: Tactile decor materials
+  camera_and_composition: >-
+    Camera setup native to Interior Design: lens choice, crop distance, depth of field, and focal hierarchy
+    support 5. Commercial And Product without generic framing.
+  atmosphere_and_mood: Welcoming, expensive
+  rendering_and_quality: Design-magazine polish
   key_features: Clean layout
-  creative_brief: 'Interior-design photography turns any subject into curated space logic: wide but controlled composition, balanced palette, mixed window/practical light, tactile material hierarchy, and clean layout. Keep magazine warmth without requiring a room, furniture, oak, linen, or real estate staging.'
+  creative_brief: >-
+    Interior-design photography turns any subject into curated space logic: wide but controlled composition,
+    balanced palette, mixed window/practical light, tactile material hierarchy, and clean layout. Keep
+    magazine warmth without requiring a room, furniture, oak, linen, or real estate staging.
 avoidRules:
   - clutter
   - dark

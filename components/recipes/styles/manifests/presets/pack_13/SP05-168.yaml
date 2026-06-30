@@ -12,19 +12,35 @@ tags:
   - anime-character-and-lifestyle
   - shojo-magical-girl-and-visionary-classics
 visualDna:
-  aesthetic: Existential biomecha anime language with red-alert procedural pressure, sacred-apocalypse iconography, and fragile interiority expressed through oppressive systems design
-  form_and_line: Sharp 90s mechanical contour discipline, angular diagnostic grid framing, restrained emotion-line pressure, and punctuated impact-stroke accents
-  color_palette: Alert crimson overlays, bruised violets, toxic industrial greens, apocalyptic ocean blues, and desaturated skin tones under control-room light
-  lighting_setup: Emergency UI strobing, hard diagnostic practicals, cross-blast overexposure flashes, and severe shadow partitions that heighten psychological confinement
-  material_texture: Biomechanical plating sheen, wet-organic understructure cues, cathode-monitor bloom, cel-layer grain, and painted-background decay tonality
-  render_quality: Prestige late-90s psychological mecha rendering with disciplined cel readability, oppressive mood grading, and symbolic action clarity
-  spatial_distortion: Claustrophobic frame compression punctuated by sudden scale ruptures and cross-shaped symbolic blast framing
-  atmosphere: Apocalyptic, anxious, sacred, confined
-  key_features: Red alert overlays, pressure-grid claustrophobia, cross-shaped blasts, procedural interface geometry, isolated focal framing
+  aesthetic: >-
+    Existential biomecha anime language with red-alert procedural pressure, sacred-apocalypse iconography, and
+    fragile interiority expressed through oppressive systems design
+  subject_treatment: >-
+    Sharp 90s mechanical contour discipline, angular diagnostic grid framing, restrained emotion-line
+    pressure, and punctuated impact-stroke accents
+  color_and_tone: >-
+    Alert crimson overlays, bruised violets, toxic industrial greens, apocalyptic ocean blues, and desaturated
+    skin tones under control-room light
+  lighting_and_shadow: >-
+    Emergency UI strobing, hard diagnostic practicals, cross-blast overexposure flashes, and severe shadow
+    partitions that heighten psychological confinement
+  texture_and_material: >-
+    Biomechanical plating sheen, wet-organic understructure cues, cathode-monitor bloom, cel-layer grain, and
+    painted-background decay tonality
+  camera_and_composition: >-
+    Claustrophobic frame compression punctuated by sudden scale ruptures and cross-shaped symbolic blast
+    framing
+  atmosphere_and_mood: Apocalyptic, anxious, sacred, confined
+  rendering_and_quality: >-
+    Prestige late-90s psychological mecha rendering with disciplined cel readability, oppressive mood grading,
+    and symbolic action clarity
+  key_features: >-
+    Red alert overlays, pressure-grid claustrophobia, cross-shaped blasts, procedural interface geometry,
+    isolated focal framing
   creative_brief: >-
-    Preserve red-alert psychological-biomecha grammar as a reusable style
-    system: emergency-interface tension, sacred-apocalypse symbol bursts, and
-    oppressive diagnostic isolation should remain consistent across subjects.
+    Preserve red-alert psychological-biomecha grammar as a reusable style system: emergency-interface tension,
+    sacred-apocalypse symbol bursts, and oppressive diagnostic isolation should remain consistent across
+    subjects.
 avoidRules:
   - realistic
   - 3d render
@@ -41,7 +57,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-168.webp
 attributes:
-  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
+  negativePrompt: >-
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts,
+    watermark, text, signature
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle

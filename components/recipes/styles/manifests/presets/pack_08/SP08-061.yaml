@@ -13,20 +13,23 @@ tags:
   - fabric-and-texture-focus
 visualDna:
   aesthetic: Lace textile detail, heirloom romance, openwork delicacy
-  form_and_line: Intricate web, Alencon-pattern spread, scalloped-edge flow, openwork boundary tracing and trailing relief
-  color_palette: White, Black, ivory, candlelight, champagne, jet, neutral textile shadow
-  lighting_setup: Backlit translucency, window-light diffusion, veil-glow softness and morning-light ethereality
-  material_texture: Holes, thread, Chantilly lace, Alencon needlepoint, guipure relief, tulle ground, silk organza applique, re-embroidered motifs
-  render_quality: Delicate, detailed, lacemaker-artisan precision and heirloom textile heritage
-  spatial_distortion: None
-  atmosphere: Romantic, fragile, heirloom tenderness and hush beauty
+  subject_treatment: Intricate web, Alencon-pattern spread, scalloped-edge flow, openwork boundary tracing and trailing relief
+  color_and_tone: White, Black, ivory, candlelight, champagne, jet, neutral textile shadow
+  lighting_and_shadow: Backlit translucency, window-light diffusion, veil-glow softness and morning-light ethereality
+  texture_and_material: >-
+    Holes, thread, Chantilly lace, Alencon needlepoint, guipure relief, tulle ground, silk organza applique,
+    re-embroidered motifs
+  camera_and_composition: >-
+    Compose for Lace using its key spatial cues: Pattern, floral motif, scalloped edge, openwork textile
+    boundary and hand-embroidered detail.
+  atmosphere_and_mood: Romantic, fragile, heirloom tenderness and hush beauty
+  rendering_and_quality: Delicate, detailed, lacemaker-artisan precision and heirloom textile heritage
   key_features: Pattern, floral motif, scalloped edge, openwork textile boundary and hand-embroidered detail
   creative_brief: >-
-    Lace the input with openwork structure over neutral textile substrate:
-    Chantilly motifs, Alencon relief, guipure edges, scalloped hems, tulle
-    ground and backlit translucency. Keep heirloom and ceremonial romance as
-    textile mood only, not as nude-illusion, bride, chapel, veil-lift tableau,
-    cathedral train, portrait body or wedding scene.
+    Lace the input with openwork structure over neutral textile substrate: Chantilly motifs, Alencon relief,
+    guipure edges, scalloped hems, tulle ground and backlit translucency. Keep heirloom and ceremonial romance
+    as textile mood only, not as nude-illusion, bride, chapel, veil-lift tableau, cathedral train, portrait
+    body or wedding scene.
 avoidRules:
   - solid
   - bare-skin focus

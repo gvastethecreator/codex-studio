@@ -13,20 +13,24 @@ tags:
   - toys-and-crafts
 visualDna:
   aesthetic: Sculpture, frozen-gallery centerpiece, crystal-elegance, banquet-hall spectacle
-  form_and_line: Sharp, melting, chisel-facet edges, drip-softened corners, freeze-frame carve
-  color_palette: Clear, Blue tint, frozen-depth cyan, air-bubble white, internal-fracture silver, melt-water transparency
-  lighting_setup: Refractive, internal, beam-through-crystal, prism-split spectrum, spotlight-brilliance
-  material_texture: Slippery ice, wet-glaze surface, frozen-air bubble pocket, crystalline-fracture depth, chainsaw-carve texture
-  render_quality: Cold, temporary, crystal, melt-away impermanence, wedding-hall spectacle, ice-bar art
-  spatial_distortion: Translucent, see-through volume, refractive-depth illusion, frozen-clarity, submerged-inclusion depth
-  atmosphere: Elegant, freezing, zero-degree magic, slow-drip countdown, crystalline-ceremony
-  key_features: Dripping water, internal-crack networks, air-bubble constellations, chainsaw-blade marks, melt-pool reflection
+  subject_treatment: Sharp, melting, chisel-facet edges, drip-softened corners, freeze-frame carve
+  color_and_tone: Clear, Blue tint, frozen-depth cyan, air-bubble white, internal-fracture silver, melt-water transparency
+  lighting_and_shadow: Refractive, internal, beam-through-crystal, prism-split spectrum, spotlight-brilliance
+  texture_and_material: >-
+    Slippery ice, wet-glaze surface, frozen-air bubble pocket, crystalline-fracture depth, chainsaw-carve
+    texture
+  camera_and_composition: Translucent, see-through volume, refractive-depth illusion, frozen-clarity, submerged-inclusion depth
+  atmosphere_and_mood: Elegant, freezing, zero-degree magic, slow-drip countdown, crystalline-ceremony
+  rendering_and_quality: Cold, temporary, crystal, melt-away impermanence, wedding-hall spectacle, ice-bar art
+  key_features: >-
+    Dripping water, internal-crack networks, air-bubble constellations, chainsaw-blade marks, melt-pool
+    reflection
   creative_brief: >-
-    Preserve identity through ice-sculpture grammar: refractive crystal mass, internal fracture networks, melt-phase
-    transitions, and facet-driven light behavior should define style beyond a specific event setting. Apply Ice Carving
-    as a portable style system over any input: preserve its construction grammar, material cues, scale logic, and
-    signature rendering behavior while avoiding a required franchise, literal prop, fixed specimen, classroom sample,
-    product shot, or scene template.
+    Preserve identity through ice-sculpture grammar: refractive crystal mass, internal fracture networks,
+    melt-phase transitions, and facet-driven light behavior should define style beyond a specific event
+    setting. Apply Ice Carving as a portable style system over any input: preserve its construction grammar,
+    material cues, scale logic, and signature rendering behavior while avoiding a required franchise, literal
+    prop, fixed specimen, classroom sample, product shot, or scene template.
 avoidRules:
   - warm
   - opaque

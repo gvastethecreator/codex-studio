@@ -12,20 +12,25 @@ tags:
   - anime-battle-and-worlds
   - dark-fantasy-and-seinen
 visualDna:
-  aesthetic: Luminous natural-cycle calm, adult folklore quiet, grief softened by ecology, pale living haze, contemplative moonlit medicine
-  form_and_line: Dense mature-anime linework, heavy crosshatching, weighted contour variation, gritty ink density
-  color_palette: Muted earths, blood reds, cold moonlit tones, desaturated horror palette, bruised shadow hues
-  lighting_setup: Ominous directional shadows, single-source drama light, deep chiaroscuro, low-key shadow lift
-  material_texture: Moon-haze bloom, damp bark grain, soft moss matte, pale bioluminescent dust, river-silt texture, natural paper fibers
-  render_quality: Gritty dramatic anime frame, film-noir rendering, heavy shadow compression, textured midtone grit
-  spatial_distortion: Slow ecological layering, low horizontal calm, moon-haze depth, softened foreground veil, cyclical flow composition
-  atmosphere: Quiet, eerie, compassionate, nocturnal
+  aesthetic: >-
+    Luminous natural-cycle calm, adult folklore quiet, grief softened by ecology, pale living haze,
+    contemplative moonlit medicine
+  subject_treatment: Dense mature-anime linework, heavy crosshatching, weighted contour variation, gritty ink density
+  color_and_tone: Muted earths, blood reds, cold moonlit tones, desaturated horror palette, bruised shadow hues
+  lighting_and_shadow: Ominous directional shadows, single-source drama light, deep chiaroscuro, low-key shadow lift
+  texture_and_material: >-
+    Moon-haze bloom, damp bark grain, soft moss matte, pale bioluminescent dust, river-silt texture, natural
+    paper fibers
+  camera_and_composition: >-
+    Slow ecological layering, low horizontal calm, moon-haze depth, softened foreground veil, cyclical flow
+    composition
+  atmosphere_and_mood: Quiet, eerie, compassionate, nocturnal
+  rendering_and_quality: Gritty dramatic anime frame, film-noir rendering, heavy shadow compression, textured midtone grit
   key_features: Pale living haze, ecological stillness, moonlit calm, grief-softened texture, natural-cycle motifs
-  creative_brief: >
-    Render any subject as part of a quiet natural cycle: pale glow, damp organic
-    grain, moon haze, and patient ecological rhythm should define the style
-    without fixed natural locations, specialist roles, journeys, rites, or
-    named folklore beings.
+  creative_brief: >-
+    Render any subject as part of a quiet natural cycle: pale glow, damp organic grain, moon haze, and patient
+    ecological rhythm should define the style without fixed natural locations, specialist roles, journeys,
+    rites, or named folklore beings.
 avoidRules:
   - realistic
   - 3d render
@@ -42,7 +47,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-273.webp
 attributes:
-  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
+  negativePrompt: >-
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts,
+    watermark, text, signature
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds

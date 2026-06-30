@@ -13,18 +13,22 @@ tags:
   - megastructure-and-impossible-space
 visualDna:
   aesthetic: Matte-black vertical mass austerity, severe edge light and symbolic monumental restraint.
-  form_and_line: Vertical planar massing, flawless dark faces and clean severe edges without ornament.
-  color_palette: Deep matte black mass, near-void black absorption fields, faint edge silver glints, sparse neutral lunar-gray reflections
-  lighting_setup: High-contrast directional light, extreme absorption, minimal catch-light and severe projected shadow.
-  material_texture: Ultrasmooth anonymous matte surface, near-total specular suppression and artifact-like uniformity.
-  render_quality: Precision minimalism with geometric authority and disciplined tonal economy.
-  spatial_distortion: None
-  atmosphere: Ominous, contemplative and transcendent, with intellectually unsettling silence.
+  subject_treatment: Vertical planar massing, flawless dark faces and clean severe edges without ornament.
+  color_and_tone: >-
+    Deep matte black mass, near-void black absorption fields, faint edge silver glints, sparse neutral
+    lunar-gray reflections
+  lighting_and_shadow: High-contrast directional light, extreme absorption, minimal catch-light and severe projected shadow.
+  texture_and_material: Ultrasmooth anonymous matte surface, near-total specular suppression and artifact-like uniformity.
+  camera_and_composition: >-
+    Compose for Absolute Black Monolith using its key spatial cues: Non-canonical vertical mass, absorbent
+    black planes, featureless profile and severe vertical composition.
+  atmosphere_and_mood: Ominous, contemplative and transcendent, with intellectually unsettling silence.
+  rendering_and_quality: Precision minimalism with geometric authority and disciplined tonal economy.
   key_features: Non-canonical vertical mass, absorbent black planes, featureless profile and severe vertical composition.
   creative_brief: >-
-    Reduce any subject to transformed vertical presence: absorbent black planes,
-    minimal edge light, one readable silhouette anchor and symbolic authority. Preserve austere mystery without
-    requiring a space location or recognizable cinematic monolith proportions.
+    Reduce any subject to transformed vertical presence: absorbent black planes, minimal edge light, one
+    readable silhouette anchor and symbolic authority. Preserve austere mystery without requiring a space
+    location or recognizable cinematic monolith proportions.
 avoidRules:
   - ornamentation
   - recognizable cinematic monolith proportions

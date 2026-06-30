@@ -13,21 +13,22 @@ tags:
   - man-made-materials
 visualDna:
   aesthetic: Construction wall
-  form_and_line: Formwork holes
-  color_palette: Grey
-  lighting_setup: Matte
-  material_texture: Porous, dusty
-  render_quality: Brutalist, industrial
-  spatial_distortion: Cracks
-  atmosphere: Cold, urban
+  subject_treatment: Formwork holes
+  color_and_tone: Grey
+  lighting_and_shadow: Matte
+  texture_and_material: Porous, dusty
+  camera_and_composition: Cracks
+  atmosphere_and_mood: Cold, urban
+  rendering_and_quality: Brutalist, industrial
   key_features: Air bubbles
   creative_brief: >-
-    Summon the brutal honesty of raw concrete with its pinhole air bubbles and formwork tie-hole scars like a fossil
-    record of the day it was poured. The surface must feel dusty and porous, grey as an overcast sky, heavy with the
-    gravity of the built world. This is the face of function refusing to apologize, the unadorned truth of the urban.
-    Use Concrete as portable surface/render behavior over any input: map its texture, light response, edge wear, color
-    chemistry, and tactile rhythm onto the subject instead of requiring a literal material sample, macro tile, wall,
-    landscape, source object, or scene where the material naturally appears.
+    Summon the brutal honesty of raw concrete with its pinhole air bubbles and formwork tie-hole scars like a
+    fossil record of the day it was poured. The surface must feel dusty and porous, grey as an overcast sky,
+    heavy with the gravity of the built world. This is the face of function refusing to apologize, the
+    unadorned truth of the urban. Use Concrete as portable surface/render behavior over any input: map its
+    texture, light response, edge wear, color chemistry, and tactile rhythm onto the subject instead of
+    requiring a literal material sample, macro tile, wall, landscape, source object, or scene where the
+    material naturally appears.
 avoidRules:
   - polished
   - painted

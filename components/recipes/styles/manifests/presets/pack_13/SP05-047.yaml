@@ -12,20 +12,33 @@ tags:
   - anime-character-and-lifestyle
   - shojo-magical-girl-and-visionary-classics
 visualDna:
-  aesthetic: Airy first-love tenderness built from soft blushes, distance-closing glances, innocent hesitation, springlike pacing, and emotional near-miss clarity
-  form_and_line: Delicate romance linework, fine hair-thin strokes, graceful flowing contours, soft eyelash detail, and breath-held gesture arcs
-  color_palette: Pale pinks, soft florals, pearl luminosity, clean cream fields, and barely-there green-blue freshness
-  lighting_setup: Soft bloom, gentle rim light, butterfly portrait lighting, diffuse romantic glow, and luminous halation around hesitant emotion
-  material_texture: Airy fabrics, ribbon-like motion cues, soft paper grain, silk sheen, delicate lace texture, and chiffon translucency
-  render_quality: Luminous romance-anime frame with ethereal bloom, soft-focus beauty, clean expression readability, and dreamy chromatic softness
-  spatial_distortion: Graceful elongated proportions, shallow emotional depth, suspended-time spacing, and romantic silhouette styling
-  atmosphere: Gentle, hopeful, innocent, sweet
-  key_features: Blush-soft emotional timing, tender micro-expressions, hesitant proximity, pastel restraint, heartfelt gesture language
+  aesthetic: >-
+    Airy first-love tenderness built from soft blushes, distance-closing glances, innocent hesitation,
+    springlike pacing, and emotional near-miss clarity
+  subject_treatment: >-
+    Delicate romance linework, fine hair-thin strokes, graceful flowing contours, soft eyelash detail, and
+    breath-held gesture arcs
+  color_and_tone: Pale pinks, soft florals, pearl luminosity, clean cream fields, and barely-there green-blue freshness
+  lighting_and_shadow: >-
+    Soft bloom, gentle rim light, butterfly portrait lighting, diffuse romantic glow, and luminous halation
+    around hesitant emotion
+  texture_and_material: >-
+    Airy fabrics, ribbon-like motion cues, soft paper grain, silk sheen, delicate lace texture, and chiffon
+    translucency
+  camera_and_composition: >-
+    Graceful elongated proportions, shallow emotional depth, suspended-time spacing, and romantic silhouette
+    styling
+  atmosphere_and_mood: Gentle, hopeful, innocent, sweet
+  rendering_and_quality: >-
+    Luminous romance-anime frame with ethereal bloom, soft-focus beauty, clean expression readability, and
+    dreamy chromatic softness
+  key_features: >-
+    Blush-soft emotional timing, tender micro-expressions, hesitant proximity, pastel restraint, heartfelt
+    gesture language
   creative_brief: >-
-    Keep the first-love title as a style anchor for soft romantic hesitation:
-    blush-light, suspended pacing, and gentle near-contact should stay readable
-    without requiring school, classroom, cherry blossoms, stairwells, or
-    confession scenes.
+    Keep the first-love title as a style anchor for soft romantic hesitation: blush-light, suspended pacing,
+    and gentle near-contact should stay readable without requiring school, classroom, cherry blossoms,
+    stairwells, or confession scenes.
 avoidRules:
   - realistic
   - 3d render
@@ -42,7 +55,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-047.webp
 attributes:
-  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
+  negativePrompt: >-
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts,
+    watermark, text, signature
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle

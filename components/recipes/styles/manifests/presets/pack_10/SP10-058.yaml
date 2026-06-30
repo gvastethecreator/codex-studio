@@ -13,18 +13,17 @@ tags:
   - textile-and-ornamental-patterns
 visualDna:
   aesthetic: Blue jean fabric
-  form_and_line: Diagonal twill
-  color_palette: Indigo, White
-  lighting_setup: Flat
-  material_texture: Cotton twill
-  render_quality: Casual, durable
-  spatial_distortion: Fades
-  atmosphere: Casual, tough
+  subject_treatment: Diagonal twill
+  color_and_tone: Indigo, White
+  lighting_and_shadow: Flat
+  texture_and_material: Cotton twill
+  camera_and_composition: Fades
+  atmosphere_and_mood: Casual, tough
+  rendering_and_quality: Casual, durable
   key_features: Twill lines
   creative_brief: >-
-    Apply denim twill to the input: indigo warp, white weft flashes, diagonal
-    weave, worn fades, seam-like stress marks, and casual durability should
-    materialize surfaces without requiring jeans or clothing.
+    Apply denim twill to the input: indigo warp, white weft flashes, diagonal weave, worn fades, seam-like
+    stress marks, and casual durability should materialize surfaces without requiring jeans or clothing.
 avoidRules:
   - silk
   - smooth

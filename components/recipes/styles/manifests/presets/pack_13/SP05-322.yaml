@@ -13,30 +13,26 @@ tags:
   - anime-style-spectrum
 visualDna:
   aesthetic: >-
-    Elegant CLAMP-inspired supernatural poise with impossible verticality, ornate geometry, moonlit
-    glamour, and emotionally restrained luminous fashion logic
-  form_and_line: >-
-    Refined tapered contour, ornamental linework, graceful eyelash intricacy, and cathedral-tall
-    silhouette construction
-  color_palette: Pearl white, amethyst, midnight blue, rose quartz, icy silver, celestial lavender
-  lighting_setup: Soft moon-rim illumination, jewel-like specular accents, staged dramatic glow
-  material_texture: >-
-    Silk sheen, gem sparkle, lace filigree, polished ribbon-like accents, and glossy highlight
-    points
-  render_quality: >-
-    High-elegance fashion-fantasy rendering with precise silhouette hierarchy and jewel-toned
-    compositional clarity
-  spatial_distortion: >-
-    Fashion-figure proportions, cathedral-tall silhouettes, and elegant extension of hands, necks,
-    objects, or ornamental forms
-  atmosphere: Elegant, lunar, poised, dramatic
-  key_features: >-
-    Extreme vertical elegance, ornate geometry, moonlit framing, jewel accents, poised emotional
-    distance
+    Elegant CLAMP-inspired supernatural poise with impossible verticality, ornate geometry, moonlit glamour,
+    and emotionally restrained luminous fashion logic
+  subject_treatment: >-
+    Refined tapered contour, ornamental linework, graceful eyelash intricacy, and cathedral-tall silhouette
+    construction
+  color_and_tone: Pearl white, amethyst, midnight blue, rose quartz, icy silver, celestial lavender
+  lighting_and_shadow: Soft moon-rim illumination, jewel-like specular accents, staged dramatic glow
+  texture_and_material: Silk sheen, gem sparkle, lace filigree, polished ribbon-like accents, and glossy highlight points
+  camera_and_composition: >-
+    Fashion-figure proportions, cathedral-tall silhouettes, and elegant extension of hands, necks, objects, or
+    ornamental forms
+  atmosphere_and_mood: Elegant, lunar, poised, dramatic
+  rendering_and_quality: >-
+    High-elegance fashion-fantasy rendering with precise silhouette hierarchy and jewel-toned compositional
+    clarity
+  key_features: Extreme vertical elegance, ornate geometry, moonlit framing, jewel accents, poised emotional distance
   creative_brief: >-
     Use CLAMP as style anchor for celestial vertical ornament. Any prompt should stretch into poised
-    verticality, moonlit geometry, jewel accents, and emotional distance. Human limbs, costumes,
-    accessories, and fantasy figures are optional.
+    verticality, moonlit geometry, jewel accents, and emotional distance. Human limbs, costumes, accessories,
+    and fantasy figures are optional.
 avoidRules:
   - photoreal anatomy realism
   - short compact proportions
@@ -47,8 +43,8 @@ assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-322.webp
 attributes:
   negativePrompt: >-
-    photoreal anatomy realism, short compact proportions, casual modern minimal outfits, muddy
-    lighting, thick comic inking
+    photoreal anatomy realism, short compact proportions, casual modern minimal outfits, muddy lighting, thick
+    comic inking
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle

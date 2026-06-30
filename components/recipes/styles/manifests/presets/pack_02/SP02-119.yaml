@@ -12,16 +12,22 @@ tags:
   - cinematic-and-media
   - caricature-and-cartoon-styles
 visualDna:
-  aesthetic: Badly drawn gross summer doodle, chlorine-green slime, sticky heat, flip-flop trash vibes, grotesque but childish camp-disgust humor
-  form_and_line: Crooked marker outlines, gross summer wobble, childish wrong curves, slime-trail accents
-  color_palette: Chlorine green, wet turquoise, sunburn red, cheap flip-flop blue, sticky yellow, marker black
-  lighting_setup: Flat hot summer light, chlorine glare, no cinematic depth, sticky exposure
-  material_texture: Marker bleed, slick slime gloss, wet paper, cheap plastic texture, sweaty grain
-  render_quality: Gross summer doodle, childish camp-disgust humor, intentionally bad marker rendering
-  spatial_distortion: Off-model doodle form, melted summer wobble, slime-weight sag, crooked marker scale
-  atmosphere: Sticky, goofy, gross, summer-feral
+  aesthetic: >-
+    Badly drawn gross summer doodle, chlorine-green slime, sticky heat, flip-flop trash vibes, grotesque but
+    childish camp-disgust humor
+  subject_treatment: Crooked marker outlines, gross summer wobble, childish wrong curves, slime-trail accents
+  color_and_tone: Chlorine green, wet turquoise, sunburn red, cheap flip-flop blue, sticky yellow, marker black
+  lighting_and_shadow: Flat hot summer light, chlorine glare, no cinematic depth, sticky exposure
+  texture_and_material: Marker bleed, slick slime gloss, wet paper, cheap plastic texture, sweaty grain
+  camera_and_composition: Off-model doodle form, melted summer wobble, slime-weight sag, crooked marker scale
+  atmosphere_and_mood: Sticky, goofy, gross, summer-feral
+  rendering_and_quality: Gross summer doodle, childish camp-disgust humor, intentionally bad marker rendering
   key_features: Slime drips, chlorine palette, off-model doodle anatomy or form, gross summer texture, kid-gag nastiness
-  creative_brief: 'Apply public-pool mucus doodle flavor to any prompt: chlorine green slime, sticky heat palette, cheap summer texture, crooked marker forms, and childish gross humor. Avoid pools, monsters, diving boards, creatures, or specific props as requirements. The style should feel sweaty, slimy, and badly drawn on purpose.'
+  creative_brief: >-
+    Apply public-pool mucus doodle flavor to any prompt: chlorine green slime, sticky heat palette, cheap
+    summer texture, crooked marker forms, and childish gross humor. Avoid pools, monsters, diving boards,
+    creatures, or specific props as requirements. The style should feel sweaty, slimy, and badly drawn on
+    purpose.
 avoidRules:
   - digital
   - HD

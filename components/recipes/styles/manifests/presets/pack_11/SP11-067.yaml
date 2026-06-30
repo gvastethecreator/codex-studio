@@ -13,16 +13,20 @@ tags:
   - micro-macro
 visualDna:
   aesthetic: Bird feather zoom, plumage-detail, avian-architecture, flight-surface, contour-feather
-  form_and_line: Barbs and hooks, barbule-branch contour, rachis-spine line, vane-plane, pennaceous-array
-  color_palette: Iridescent, peacock-structural, hummingbird-metallic, macaw-spectrum, melanin-earth, carotenoid-bright
-  lighting_setup: Soft sheen, directional-grazing light, barbule-catch, low-angle gloss, diffused-overhead
-  material_texture: Velcro-like, micro-barbicel hook, keratin-surface, barbule-zipper, plumulaceous-fluff, feather-oil
-  render_quality: Nature, detailed, ornithology-close-up, feather-microstructure, barb-by-barb, structural-color marvel
-  spatial_distortion: None, natural-contour, feather-curve, vane-width taper, rachis-diameter
-  atmosphere: Soft, natural, bird-flight silence, molting-gift, feather-collector, avian-intimacy
-  key_features: Structure, barbule-hook detail, rachis-groove, iridescent-color shift, vane-gap, afterfeather, calamus-base
+  subject_treatment: Barbs and hooks, barbule-branch contour, rachis-spine line, vane-plane, pennaceous-array
+  color_and_tone: Iridescent, peacock-structural, hummingbird-metallic, macaw-spectrum, melanin-earth, carotenoid-bright
+  lighting_and_shadow: Soft sheen, directional-grazing light, barbule-catch, low-angle gloss, diffused-overhead
+  texture_and_material: Velcro-like, micro-barbicel hook, keratin-surface, barbule-zipper, plumulaceous-fluff, feather-oil
+  camera_and_composition: Natural-contour, feather-curve, vane-width taper, rachis-diameter
+  atmosphere_and_mood: Soft, natural, bird-flight silence, molting-gift, feather-collector, avian-intimacy
+  rendering_and_quality: Nature, detailed, ornithology-close-up, feather-microstructure, barb-by-barb, structural-color marvel
+  key_features: >-
+    Structure, barbule-hook detail, rachis-groove, iridescent-color shift, vane-gap, afterfeather,
+    calamus-base
   creative_brief: >-
-    Highlight feather micro-architecture through rachis structure, barb-barbule interlock, and angle-dependent iridescence. Preserve avian aerodynamic logic and keratin texture detail in a broadly reusable macro style.
+    Highlight feather micro-architecture through rachis structure, barb-barbule interlock, and angle-dependent
+    iridescence. Preserve avian aerodynamic logic and keratin texture detail in a broadly reusable macro
+    style.
 avoidRules:
   - blurry
 assets:

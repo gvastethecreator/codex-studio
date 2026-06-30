@@ -13,15 +13,18 @@ tags:
   - diagram-print-and-light-systems
 visualDna:
   aesthetic: Elevation contour lines
-  form_and_line: Wavy parallel lines
-  color_palette: Line art
-  lighting_setup: Flat
-  material_texture: Paper
-  render_quality: Contour-line abstraction
-  spatial_distortion: None
-  atmosphere: Exploration
+  subject_treatment: Wavy parallel lines
+  color_and_tone: Line art
+  lighting_and_shadow: Flat
+  texture_and_material: Paper
+  camera_and_composition: 'Compose for Topographic Map using its key spatial cues: Contours.'
+  atmosphere_and_mood: Exploration
+  rendering_and_quality: Contour-line abstraction
   key_features: Contours
-  creative_brief: Apply topographic contour logic over the input with wavy parallel lines, nested elevation bands, paper-map flatness, and geographic rhythm that behaves like fingerprints. If terrain exists, describe it; otherwise contour the subject's planes and volumes without requiring mountains or a literal map.
+  creative_brief: >-
+    Apply topographic contour logic over the input with wavy parallel lines, nested elevation bands, paper-map
+    flatness, and geographic rhythm that behaves like fingerprints. If terrain exists, describe it; otherwise
+    contour the subject's planes and volumes without requiring mountains or a literal map.
 avoidRules:
   - straight lines
 assets:

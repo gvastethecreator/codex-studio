@@ -12,19 +12,19 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Biomech-psychological drama style with existential tension, techno-organic unease, and introspective catastrophe',
-      form_and_line:
+      subject_treatment:
         'Clinical 90s cel contour control, vertebral-mechanical silhouette hybrids, angular emotional posing, and diagnostic line clarity',
-      color_palette:
+      color_and_tone:
         'Sickly greens and muted violets against warning reds and sterile grays, with restrained neon trauma accents',
-      lighting_setup:
+      lighting_and_shadow:
         'Harsh medical-cel contrast, enclosed diagnostic glows, severe rim separations, and shadow bands that imply psychological fracture',
-      material_texture:
+      texture_and_material:
         'Wet bio-fluid sheen, cable-organic micro-detail, painted cel grain, and analog-film noise in dark fields',
-      render_quality:
-        'Golden-era anime precision with philosophical gravitas, high emotional readability, and controlled apocalyptic staging',
-      spatial_distortion:
+      camera_and_composition:
         'Constrained claustrophobic compression punctuated by scale rupture moments and uncanny anatomical-mechanical depth shifts',
-      atmosphere: 'Harrowing, introspective, apocalyptic, fragile, intense',
+      atmosphere_and_mood: 'Harrowing, introspective, apocalyptic, fragile, intense',
+      rendering_and_quality:
+        'Golden-era anime precision with philosophical gravitas, high emotional readability, and controlled apocalyptic staging',
       key_features:
         'Techno-organic silhouette fusion, diagnostic shadow logic, existential enclosure tension, trauma-coded color architecture',
       creative_brief:
@@ -40,19 +40,19 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Moonlit magical-radiance style with transformation symbolism, romantic justice energy, and luminous heroic optimism',
-      form_and_line:
+      subject_treatment:
         'Crisp vintage-cel contouring, transformation ribbon trajectories, emblem-forward silhouette clarity, and expressive heroic gesture language',
-      color_palette:
+      color_and_tone:
         'Jewel-pastel fusion with moon-silver highlights, pink-cyan-lilac harmonies, and high-contrast magical accent pulses',
-      lighting_setup:
+      lighting_and_shadow:
         'Moonlit backlight halos, transformation glow blooms, heroic rim partitions, and night reflective luminance',
-      material_texture:
+      texture_and_material:
         'Shimmer particle overlays, satin-ribbon sheen, watercolor-cel depth layering, and subtle analog grain warmth',
-      render_quality:
-        'Golden-era magical-action anime finish with strong transformation readability and radiant polished clarity',
-      spatial_distortion:
+      camera_and_composition:
         'Dynamic but graceful foreshortening supporting transformation arcs and multi-silhouette staging',
-      atmosphere: 'Radiant, romantic, heroic, hopeful, graceful',
+      atmosphere_and_mood: 'Radiant, romantic, heroic, hopeful, graceful',
+      rendering_and_quality:
+        'Golden-era magical-action anime finish with strong transformation readability and radiant polished clarity',
       key_features:
         'Transformation symbolism, moon-emblem light logic, jewel-tone magic effects, multi-silhouette choreography',
       creative_brief:
@@ -68,19 +68,19 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Existential biomecha anime language with red-alert procedural pressure, sacred-apocalypse iconography, and fragile interiority expressed through oppressive systems design',
-      form_and_line:
+      subject_treatment:
         'Sharp 90s mechanical contour discipline, angular diagnostic grid framing, restrained emotion-line pressure, and punctuated impact-stroke accents',
-      color_palette:
+      color_and_tone:
         'Alert crimson overlays, bruised violets, toxic industrial greens, apocalyptic ocean blues, and desaturated skin tones under control-room light',
-      lighting_setup:
+      lighting_and_shadow:
         'Emergency UI strobing, hard diagnostic practicals, cross-blast overexposure flashes, and severe shadow partitions that heighten psychological confinement',
-      material_texture:
+      texture_and_material:
         'Biomechanical plating sheen, wet-organic understructure cues, cathode-monitor bloom, cel-layer grain, and painted-background decay tonality',
-      render_quality:
-        'Prestige late-90s psychological mecha rendering with disciplined cel readability, oppressive mood grading, and symbolic action clarity',
-      spatial_distortion:
+      camera_and_composition:
         'Claustrophobic frame compression punctuated by sudden scale ruptures and cross-shaped symbolic blast framing',
-      atmosphere: 'Apocalyptic, anxious, sacred, confined',
+      atmosphere_and_mood: 'Apocalyptic, anxious, sacred, confined',
+      rendering_and_quality:
+        'Prestige late-90s psychological mecha rendering with disciplined cel readability, oppressive mood grading, and symbolic action clarity',
       key_features:
         'Red alert overlays, pressure-grid claustrophobia, cross-shaped blasts, procedural interface geometry, isolated focal framing',
       creative_brief:
@@ -96,19 +96,19 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Arcane-chaos comedy anime language with loud spell theatrics, mercenary bravado, and high-tempo 90s fantasy irreverence abstracted into explosive color rhythm',
-      form_and_line:
+      subject_treatment:
         'Agile expressive linework with elastic comedic accents, flame-and-spell circle geometry, and reaction-shot exaggeration tuned for banter energy',
-      color_palette:
+      color_and_tone:
         'Fire-cast oranges, sapphire spell blues, scorched umbers, pop-magenta highlight accents, and bright fantasy-sky contrasts',
-      lighting_setup:
+      lighting_and_shadow:
         'Spell-burst key flashes, warm ember practicals, high-contrast cel cuts during impact beats, and comedic brightness resets between chaos peaks',
-      material_texture:
+      texture_and_material:
         'Scorched matte surfaces, parchment-grain patterning, cel-grain overlays, and painted fantasy-depth wash',
-      render_quality:
-        'Punchy 90s fantasy-comedy rendering with clear comedic timing readability, explosive magic grammar, and adventurous charm fidelity',
-      spatial_distortion:
+      camera_and_composition:
         'Kinetic exaggeration and rapid perspective pushes that support slapstick-to-spell impact transitions',
-      atmosphere: 'Comic, adventurous, fiery, rambunctious',
+      atmosphere_and_mood: 'Comic, adventurous, fiery, rambunctious',
+      rendering_and_quality:
+        'Punchy 90s fantasy-comedy rendering with clear comedic timing readability, explosive magic grammar, and adventurous charm fidelity',
       key_features:
         'Spell-circle bursts, flame-color punctuation, comic reaction geometry, mischievous silhouette energy, fireball spectacle',
       creative_brief:
@@ -124,19 +124,19 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Fated shojo-mecha fantasy language with tarot symbolism, windswept romance gravitas, and ceremonial machine-myth grandeur rooted in late-90s dramatic elegance',
-      form_and_line:
+      subject_treatment:
         'Noble silhouette architecture, elongated shojo expressivity, ornate mechanical contour weight, and destiny-charged diagonal composition lines',
-      color_palette:
+      color_and_tone:
         'Jewel-toned crimson-sapphire-violet skies, antique gold accents, misty stone neutrals, and prophecy-glow highlights',
-      lighting_setup:
+      lighting_and_shadow:
         'Dramatic horizon backlight, tarot-like spotlight segmentation, rim-lit motion arcs, and high-contrast destiny staging with emotional focal pressure',
-      material_texture:
+      texture_and_material:
         'Ornate enamel, wind-lashed textile rhythm, painted-cloud sky layers, cel-grain filmic warmth, and crystalline magical accents',
-      render_quality:
-        'Romantic high-drama 90s fantasy render with balanced machine-myth and emotion readability, rich atmospheric polish, and operatic clarity',
-      spatial_distortion:
+      camera_and_composition:
         'Sweeping vertical fantasy depth with selective foreshortening and intimate foreground pressure',
-      atmosphere: 'Romantic, fated, windswept, grand',
+      atmosphere_and_mood: 'Romantic, fated, windswept, grand',
+      rendering_and_quality:
+        'Romantic high-drama 90s fantasy render with balanced machine-myth and emotion readability, rich atmospheric polish, and operatic clarity',
       key_features:
         'Tarot symbolism, ceremonial silhouette flow, ornate mechanical motifs, sky-heavy compositions, prophecy-charged focal tension',
       creative_brief:
@@ -152,19 +152,19 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Jewel-quest magical-knight shojo language with heroic friendship cores, rune-lit momentum, and bright mythic fantasy optimism as abstract color-and-symbol system',
-      form_and_line:
+      subject_treatment:
         'Jewel-faceted silhouette clarity, emblematic rune geometry, synchronized arc choreography, and expressive heroic line accents',
-      color_palette:
+      color_and_tone:
         'Saturated jewel primaries, radiant pink-red-blue heroine signatures, gold rune highlights, and sky-fantasy gradients with bright readability',
-      lighting_setup:
+      lighting_and_shadow:
         'Rune-emission key glows, monumental backlight blooms, high-contrast cel split shading, and luminous multi-color rim partitioning',
-      material_texture:
+      texture_and_material:
         'Polished gem facets, layered cel paint warmth, watercolor fantasy gradients, and magical particle overlays with slight film grain',
-      render_quality:
-        'High-energy 90s magical-fantasy render with ensemble-color clarity, heroic transformation readability, and richly colorful polish',
-      spatial_distortion:
+      camera_and_composition:
         'Dynamic heroic foreshortening with balanced chromatic staging and monumental depth escalation',
-      atmosphere: 'Heroic, bright, jewel-like, adventurous',
+      atmosphere_and_mood: 'Heroic, bright, jewel-like, adventurous',
+      rendering_and_quality:
+        'High-energy 90s magical-fantasy render with ensemble-color clarity, heroic transformation readability, and richly colorful polish',
       key_features:
         'Jewel-faceted silhouettes, monumental magic motifs, rune light effects, chromatic team partitioning, bright quest-like motion',
       creative_brief:
@@ -180,19 +180,19 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Retro-space-opera comedy anime language balancing ensemble banter, earnest mechanical momentum, and playful meta-genre self-awareness',
-      form_and_line:
+      subject_treatment:
         'Expressive ensemble line acting, analog UI framing geometry, dynamic launch-vector accents, and comedic reaction silhouette clarity',
-      color_palette:
+      color_and_tone:
         'Bright console cyans and ambers, team-accent pops, deep space navy fields, and warm comedic tonal bases',
-      lighting_setup:
+      lighting_and_shadow:
         'Console-practical glow clusters, alert-state contrast spikes, cel-cut shadow timing for jokes and action beats, and occasional explosion rim flashes',
-      material_texture:
+      texture_and_material:
         'Analog sci-fi panel surfaces, painted space gradients, cel overlay grain, retro UI display bloom, and mechanical detailing',
-      render_quality:
-        'Clean 90s ensemble-mecha rendering with dialogue-to-action rhythm readability, lively tonal shifts, and charismatic crew-first polish',
-      spatial_distortion:
+      camera_and_composition:
         'Alternating stable ensemble rhythm and kinetic vector perspective bursts to maintain war-comedy pacing balance',
-      atmosphere: 'Bouncy, tactical, colorful, meta',
+      atmosphere_and_mood: 'Bouncy, tactical, colorful, meta',
+      rendering_and_quality:
+        'Clean 90s ensemble-mecha rendering with dialogue-to-action rhythm readability, lively tonal shifts, and charismatic crew-first polish',
       key_features:
         'Ensemble staging rhythm, mechanical sortie framing, retro UI accents, playful command-energy, bright group-body-language geometry',
       creative_brief:
@@ -208,19 +208,19 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Urban-occult crisis anime language with mythic duty, invasive botanical dread, and 90s emergency-response supernatural momentum abstracted into symbol-and-growth pressure',
-      form_and_line:
+      subject_treatment:
         'Sharp cel-era contouring, thorn-vine intrusion silhouettes, tactical action stroke bursts, and ritual-symbol inking accents',
-      color_palette:
+      color_and_tone:
         'Emergency reds, toxic chlorophyll greens, asphalt neutrals, talisman-gold accents, and stormed night blues',
-      lighting_setup:
+      lighting_and_shadow:
         'Siren-practical contrast, talisman glow cues, high-contrast cel shadow blocks, and invasion-event rim flashes',
-      material_texture:
+      texture_and_material:
         'Wet mineral surfaces, invasive botanical creep textures, painted matte depth fields, and light cel-grain film warmth',
-      render_quality:
-        'High-tension 90s occult-action render with clear threat readability, procedural rhythm, and myth-vs-modern polish',
-      spatial_distortion:
+      camera_and_composition:
         'Kinetic perspective with growth-driven deformation and emergency-zone depth compression',
-      atmosphere: 'Urgent, mythic, urban, supernatural',
+      atmosphere_and_mood: 'Urgent, mythic, urban, supernatural',
+      rendering_and_quality:
+        'High-tension 90s occult-action render with clear threat readability, procedural rhythm, and myth-vs-modern polish',
       key_features:
         'Ritual symbols, monster-vine invasions, emergency framing, lineage-pressure posture, occult-tech contrast',
       creative_brief:
@@ -236,19 +236,19 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Psychological glitch-anime style built on analog signal decay, identity fragmentation, and minimalist existential framing',
-      form_and_line:
+      subject_treatment:
         'Fine cel contours interrupted by interference breaks, discontinuous silhouette echoes, jittered edge registration, restrained gesture geometry',
-      color_palette:
+      color_and_tone:
         'Desaturated lavenders and cold cyans with intermittent neon corruption pulses, charcoal voids, and ghost-white highlights',
-      lighting_setup:
+      lighting_and_shadow:
         'Low-key monitor-like emission, abrupt contrast cliffs, isolated halo bands, and unstable luminance transitions',
-      material_texture:
+      texture_and_material:
         'CRT phosphor grain, static overlays, scanline veils, layered cel paint softness disrupted by digital noise scars',
-      render_quality:
-        'High-fidelity retro-anime treatment with intentional analog artifacts and controlled degradation for emotional unease',
-      spatial_distortion:
+      camera_and_composition:
         'Perceptual depth drift, duplicated contour offsets, and compositional dislocation that suggests cognitive instability',
-      atmosphere: 'Uncanny, introspective, fragile, dissonant, haunted',
+      atmosphere_and_mood: 'Uncanny, introspective, fragile, dissonant, haunted',
+      rendering_and_quality:
+        'High-fidelity retro-anime treatment with intentional analog artifacts and controlled degradation for emotional unease',
       key_features:
         'Signal-noise dramaturgy, fragmented silhouette logic, analog-digital tension, sparse emotional staging, interference-led mood design',
       creative_brief:
@@ -264,19 +264,19 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Delicate magical-girl ornament style with emblematic ritual motifs, gentle enchantment, and luminous innocence',
-      form_and_line:
+      subject_treatment:
         'Fine 90s cel contours, ribbon-flow gesture accents, emblem-framing circles, and graceful silhouette articulation',
-      color_palette:
+      color_and_tone:
         'Pastel jewel harmony with soft pink-lilac cores, mint-cyan glints, and controlled golden sparkle highlights',
-      lighting_setup:
+      lighting_and_shadow:
         'Soft radiant bloom, haloed key lights, tender rim glows, and low-contrast magical diffusion',
-      material_texture:
+      texture_and_material:
         'Silk-and-ribbon softness, particle sparkle layering, watercolor-backed cel fields, and analog grain warmth',
-      render_quality:
-        'Elegant vintage-anime magical rendering with high decorative clarity and emotionally gentle polish',
-      spatial_distortion:
+      camera_and_composition:
         'Lightly elongated fairytale proportions with floating motif depth and graceful compositional lift',
-      atmosphere: 'Tender, hopeful, radiant, whimsical, reassuring',
+      atmosphere_and_mood: 'Tender, hopeful, radiant, whimsical, reassuring',
+      rendering_and_quality:
+        'Elegant vintage-anime magical rendering with high decorative clarity and emotionally gentle polish',
       key_features:
         'Emblematic ritual motifs, ribbon choreography, soft magical bloom, decorative pastel harmony',
       creative_brief:
@@ -292,19 +292,19 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Shy-romance shojo language with social-anxiety thaw, daylight sincerity, and small-gesture emotional revelation',
-      form_and_line:
+      subject_treatment:
         'Fine soft contouring, blush-reactive micro-acting, cautious spacing, and clean silhouette readability',
-      color_palette:
+      color_and_tone:
         'Light cream fields, tender pink blush accents, pale sky blues, and warm daylight neutrals with gentle saturation',
-      lighting_setup:
+      lighting_and_shadow:
         'Clear daytime window key, soft bounce, minimal dramatic contrast, and subtle bloom to support fragile emotional beats',
-      material_texture:
+      texture_and_material:
         'Crisp textile softness, paper-matte simplicity, and airy low-noise backgrounds that keep focus on expression and distance',
-      render_quality:
-        'Gentle high-clarity romance render with sincerity-first readability, subtle emotional gradients, and unforced softness',
-      spatial_distortion:
+      camera_and_composition:
         'Respectful proximity framing with mild romantic stylization and interpersonal distance cues',
-      atmosphere: 'Shy, bright, hopeful, soft',
+      atmosphere_and_mood: 'Shy, bright, hopeful, soft',
+      rendering_and_quality:
+        'Gentle high-clarity romance render with sincerity-first readability, subtle emotional gradients, and unforced softness',
       key_features:
         'Near-but-not-touching proximity, blush-heavy acting, daylight warmth, friendship-circle softness, delicate confession framing',
       creative_brief:
@@ -320,19 +320,19 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Clean-reunion shojo grammar with emotional guardedness, polished minimalism, and tension carried by near-silent interpersonal spacing',
-      form_and_line:
+      subject_treatment:
         'Crisp silhouette control, controlled negative-space blocking, understated eyelash and hairline rendering, and pause-heavy pose language',
-      color_palette:
+      color_and_tone:
         'Cool powder blues, winter-white shirt values, subdued graphite neutrals, faint blush accents, and low-saturation spring greens',
-      lighting_setup:
+      lighting_and_shadow:
         'Cloud-soft ambient fill, window-like side-light, subtle reflective bounce, and low-bloom highlight restraint',
-      material_texture:
+      texture_and_material:
         'Pressed cotton planes, matte neutral surfaces, smooth paper cues, and minimally glossy hair sheen',
-      render_quality:
-        'Clean contemporary-shojo rendering with composure-forward facial readability and restrained romantic polish',
-      spatial_distortion:
+      camera_and_composition:
         'Emotional-distance compression through depth narrowing and over-shoulder perspective pressure',
-      atmosphere: 'Pensive, attractive, hesitant, tender',
+      atmosphere_and_mood: 'Pensive, attractive, hesitant, tender',
+      rendering_and_quality:
+        'Clean contemporary-shojo rendering with composure-forward facial readability and restrained romantic polish',
       key_features:
         'Clean styling, reunion glances, cool silhouette contrast, airy negative space, heart-stopping close-ups',
       creative_brief:
@@ -348,19 +348,19 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Healing shojo language with zodiac-motif tenderness, emotional continuity, and trauma-softened warmth expressed through gentle symbolic atmosphere',
-      form_and_line:
+      subject_treatment:
         'Gentle expressive contouring, kind-eyed focal prioritization, restrained gesture acting, and soft profile transitions for emotional safety cues',
-      color_palette:
+      color_and_tone:
         'Warm creams, peach and rose softs, tea-brown neutrals, light spring greens, and muted comforting pastels',
-      lighting_setup:
+      lighting_and_shadow:
         'Window-soft key light, ambient warmth, low-contrast bloom, and mild halation around emotional focal areas',
-      material_texture:
+      texture_and_material:
         'Cotton-soft surfaces, matte ceramic-like softness, warm wood-grain cues, and subtle seasonal particulate overlays',
-      render_quality:
-        'Emotion-first shojo render with comforting softness, high empathy readability, and stable intimacy over spectacle',
-      spatial_distortion:
+      camera_and_composition:
         'Close-scale framing with mild romantic stylization and closeness-preserving depth control',
-      atmosphere: 'Tender, healing, sorrowful, warm',
+      atmosphere_and_mood: 'Tender, healing, sorrowful, warm',
+      rendering_and_quality:
+        'Emotion-first shojo render with comforting softness, high empathy readability, and stable intimacy over spectacle',
       key_features:
         'Warm closeness, kind focal softness, zodiac motifs, springlike emotional haze, gentle symbolic embrace geometry',
       creative_brief:
@@ -376,19 +376,19 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Adult-fashion shojo drama language with black-lace intimacy, night-realism restraint, and glamour-heartbreak duality',
-      form_and_line:
+      subject_treatment:
         'Slim fashion-forward contouring, angular romantic pose pressure, high-emotion facial line accents, and silhouette contrast between casual and performance-coded looks',
-      color_palette:
+      color_and_tone:
         'Black and wine-red anchors, smoky mauves, metallic silver accents, low-ambient amber practicals, and selective neon-stage highlights',
-      lighting_setup:
+      lighting_and_shadow:
         'Low practical light pools, smoke-like diffusion, spotlight slices, and moody rim accents for emotional fracture',
-      material_texture:
+      texture_and_material:
         'Lace and leather material contrast, glossy makeup highlights, lived-in matte surfaces, and textile detail with urban wear traces',
-      render_quality:
-        'Stylish mature shojo rendering with polished fashion readability, intimate drama tonality, and high emotional clarity without pastel washout',
-      spatial_distortion:
+      camera_and_composition:
         'Compact noir framing with runway-like silhouette emphasis and controlled depth around interpersonal tension',
-      atmosphere: 'Stylish, aching, intimate, adult',
+      atmosphere_and_mood: 'Stylish, aching, intimate, adult',
+      rendering_and_quality:
+        'Stylish mature shojo rendering with polished fashion readability, intimate drama tonality, and high emotional clarity without pastel washout',
       key_features:
         'Fashion silhouettes, smoky intimacy, performance-light accents, emotional confrontation framing, black-lace detail',
       creative_brief:
@@ -404,19 +404,19 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Romantic-satire shojo language with princely theater, rose-cloud performativity, and affectionate comedic self-awareness',
-      form_and_line:
+      subject_treatment:
         'Elegant parody contouring, theatrical gesture silhouettes, ensemble-reaction framing, and compositional flourishes timed to comedic flirt beats',
-      color_palette:
+      color_and_tone:
         'Rose and champagne tones, polished neutrals, pastel-gold decorative accents, and selective high-romance color flares',
-      lighting_setup:
+      lighting_and_shadow:
         'Stage-like spotlight pockets, dreamy bloom overlays on cue, soft ambient fill, and comic reveal contrast boosts',
-      material_texture:
+      texture_and_material:
         'Ornate decorative surfaces, tailored textile cues, bouquet/rose motif overlays, and refined polish with playful exaggeration',
-      render_quality:
-        'High-polish comedic shojo render with strong ensemble timing readability, theatrical romance styling, and satirical elegance balance',
-      spatial_distortion:
+      camera_and_composition:
         'Mildly exaggerated courtly staging with dynamic group rhythm and pose-centric comedic depth control',
-      atmosphere: 'Playful, elegant, satirical, affectionate',
+      atmosphere_and_mood: 'Playful, elegant, satirical, affectionate',
+      rendering_and_quality:
+        'High-polish comedic shojo render with strong ensemble timing readability, theatrical romance styling, and satirical elegance balance',
       key_features:
         'Rose effects, princely silhouette cues, ornate polish, ensemble comedy staging, tailored detail',
       creative_brief:
@@ -432,19 +432,19 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Runway-heartbreak shojo language with punk-luxe tailoring, self-invention pressure, and coming-of-age emotional volatility',
-      form_and_line:
+      subject_treatment:
         'Editorial fashion silhouette emphasis, sharp pose-line confidence, garment-structure contour detailing, and expressive confrontation framing',
-      color_palette:
+      color_and_tone:
         'Black-cherry fashion anchors, magenta and plum accents, metallic highlight notes, and selective warm skin-light contrast',
-      lighting_setup:
+      lighting_and_shadow:
         'Runway spot and low practical interplay, reflective fabric edge highlights, and mood-shifting contrast tied to emotional stakes',
-      material_texture:
+      texture_and_material:
         'Structured couture fabrics, stitch-line tactile detail, glossy makeup and accessory surfaces, and urban-night ambient texture cues',
-      render_quality:
-        'High-style shojo render with strong garment readability, emotional fashion-drama intensity, and polished adult-romance clarity',
-      spatial_distortion:
+      camera_and_composition:
         'Catwalk-inspired perspective lines with intimate compression to balance performance and vulnerability',
-      atmosphere: 'Chic, restless, romantic, self-inventing',
+      atmosphere_and_mood: 'Chic, restless, romantic, self-inventing',
+      rendering_and_quality:
+        'High-style shojo render with strong garment readability, emotional fashion-drama intensity, and polished adult-romance clarity',
       key_features:
         'Runway silhouettes, stitch-texture cues, fashion detail, angular romantic posing, night-glamour polish',
       creative_brief:
@@ -460,19 +460,19 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Height-gap romcom shojo language with banter energy, embarrassment-forward timing, and heartfelt momentum expressed through scale-contrast comedy',
-      form_and_line:
+      subject_treatment:
         'Elastic comedic acting lines, contrasting scale-language framing, lively conversational gesture contours, and clean silhouette rhythm',
-      color_palette:
+      color_and_tone:
         'Bright youthful pastels with warmer peach accents, playful urban tones, and selective pop-color highlights for comedic beats',
-      lighting_setup:
+      lighting_and_shadow:
         'Daylight-forward romcom clarity, warm after-school ambience, low-complexity contrast, and highlight accents timed to reaction moments',
-      material_texture:
+      texture_and_material:
         'Casual textile softness, simple matte surface cues, and low-noise backgrounds that keep timing and expression in focus',
-      render_quality:
-        'High-readability romcom render with energetic acting clarity, sincere payoff framing, and balanced comedy-romance polish',
-      spatial_distortion:
+      camera_and_composition:
         'Comedic composition exploiting scale contrast and interpersonal distance changes without sacrificing emotional readability',
-      atmosphere: 'Funny, sweet, loud, sincere',
+      atmosphere_and_mood: 'Funny, sweet, loud, sincere',
+      rendering_and_quality:
+        'High-readability romcom render with energetic acting clarity, sincere payoff framing, and balanced comedy-romance polish',
       key_features:
         'Scale-contrast compositions, comic reaction faces, banter body language, bright youth color, loud-to-soft timing',
       creative_brief:
@@ -488,19 +488,19 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Showbiz-revenge transformation shojo language with theatrical performance intensity, mask-symbol emotion, and self-reinvention through acting craft',
-      form_and_line:
+      subject_treatment:
         'Dramatic expression-line spikes, spotlight-blocking silhouette shifts, persona-switch pose language, and costume-driven contour emphasis',
-      color_palette:
+      color_and_tone:
         'Spotlight golds, dramatic magenta-violet accents, backstage neutrals, and high-contrast starburst effect colors',
-      lighting_setup:
+      lighting_and_shadow:
         'Audition-like and stage-practical spotlights, contrast pools, theatrical bloom accents, and identity-shift rim highlights',
-      material_texture:
+      texture_and_material:
         'Performance costume textiles, makeup sheen cues, matte rehearsal-like surfaces, and graphic overlay motifs (mask/starburst) used as emotion carriers',
-      render_quality:
-        'High-drama showbiz shojo rendering with strong persona readability, kinetic emotional staging, and polished theatrical clarity',
-      spatial_distortion:
+      camera_and_composition:
         'Stage-perspective exaggeration and compressed identity-space depth to support transformation beats and persona contrast',
-      atmosphere: 'Driven, theatrical, glittering, intense',
+      atmosphere_and_mood: 'Driven, theatrical, glittering, intense',
+      rendering_and_quality:
+        'High-drama showbiz shojo rendering with strong persona readability, kinetic emotional staging, and polished theatrical clarity',
       key_features:
         'Showbiz costume logic, performance-space pressure, mask symbolism, revenge-expression spikes, starburst comedic effects',
       creative_brief:
@@ -516,19 +516,19 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Elite-status melodrama grammar with social-hierarchy staging, glossy emotional collision, and status-coded romance tension',
-      form_and_line:
+      subject_treatment:
         'Sharp posture-contrast silhouettes, vertical-axis confrontation blocking, disciplined facial micro-expression linework, and tailored contour control',
-      color_palette:
+      color_and_tone:
         'Ivory and navy bases, luxury black accents, restrained gold signifiers, rain-slick slate neutrals, and crimson social-pressure highlights',
-      lighting_setup:
+      lighting_and_shadow:
         'Overcast prestige diffusion, reflective rain sheen, backlight separation, and dramatic vertical contrast pockets',
-      material_texture:
+      texture_and_material:
         'Premium tailored textiles, polished stone-like surfaces, leather accessory gloss, and wet reflective layering',
-      render_quality:
-        'High-polish shojo melodrama rendering with social-rank readability, clean fashion fidelity, and emotionally charged framing clarity',
-      spatial_distortion:
+      camera_and_composition:
         'Vertical-status perspective exaggeration through rank-coded vantage compression',
-      atmosphere: 'Tumultuous, glamorous, bruising, addictive',
+      atmosphere_and_mood: 'Tumultuous, glamorous, bruising, addictive',
+      rendering_and_quality:
+        'High-polish shojo melodrama rendering with social-rank readability, clean fashion fidelity, and emotionally charged framing clarity',
       key_features:
         'Elite status polish, social hierarchy staging, vertical confrontations, tailored detail, rain-soaked dramatic beats',
       creative_brief:
@@ -544,19 +544,19 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Bittersweet time-memory shojo grammar shaped by message motifs, quiet emotional restraint, and sunset-regret tonality',
-      form_and_line:
+      subject_treatment:
         'Soft contour continuity, gentle gaze-direction choreography, folded-message compositional guides, and restrained expression-line emphasis',
-      color_palette:
+      color_and_tone:
         'Amber-orange dusk gradients, muted school neutrals, pale sky-lilac transitions, soft apricot skin warmth, and memory-blue accents',
-      lighting_setup:
+      lighting_and_shadow:
         'Long-golden-hour side light, low-sun flare diffusion, silhouette-edge glow, and softly collapsing evening contrast',
-      material_texture:
+      texture_and_material:
         'Paper-fiber softness, wind-lifted fabric cues, sun-warmed grain fields, and slightly grainy memory-haze overlays',
-      render_quality:
-        'Delicate cinematic-shojo rendering prioritizing emotional afterglow, temporal nostalgia coherence, and quiet scene readability',
-      spatial_distortion:
+      camera_and_composition:
         'Temporal-memory layering through soft depth bleed and subtle perspective drift',
-      atmosphere: 'Regretful, warm, hopeful, bittersweet',
+      atmosphere_and_mood: 'Regretful, warm, hopeful, bittersweet',
+      rendering_and_quality:
+        'Delicate cinematic-shojo rendering prioritizing emotional afterglow, temporal nostalgia coherence, and quiet scene readability',
       key_features:
         'Message motifs, sunset gradients, ensemble tenderness, time-memory framing, restrained confession pressure',
       creative_brief:
@@ -572,18 +572,18 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Grounded modern-shojo intimacy grammar built on night quietness, trust-increment pacing, and low-key emotional realism',
-      form_and_line:
+      subject_treatment:
         'Natural posture silhouettes, proximity-aware shoulder and hand line emphasis, soft facial contour economy, and conversational gesture readability',
-      color_palette:
+      color_and_tone:
         'Sodium-amber streetlight tones, navy night shadows, muted denim and charcoal fashion neutrals, and warm skin highlights',
-      lighting_setup:
+      lighting_and_shadow:
         'Streetlamp-like pool lighting, intermittent practical reflections, cool ambient night fill, and gentle rim halos',
-      material_texture:
+      texture_and_material:
         'Cotton and knit casual-wear textures, moisture sheen, subtle screen-glow bounce, and soft hair movement detail',
-      render_quality:
+      camera_and_composition: 'Night-depth taper with close-proximity framing compression',
+      atmosphere_and_mood: 'Intimate, cautious, warm, vulnerable',
+      rendering_and_quality:
         'Intimate contemporary-shojo rendering with realistic tenderness pacing and uncluttered emotional focus',
-      spatial_distortion: 'Night-depth taper with close-proximity framing compression',
-      atmosphere: 'Intimate, cautious, warm, vulnerable',
       key_features:
         'Night-pool lighting, modern casual softness, protective gesture language, realistic intimate spacing, trust-building eye contact',
       creative_brief:
@@ -599,19 +599,19 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Secret-identity romcom shojo grammar balancing authority-rigidity and frilled sparkle through high-contrast persona switching',
-      form_and_line:
+      subject_treatment:
         'Snappy expression-line bursts, command-posture to flustered-pose transitions, frill-accent contouring, and comedic reaction framing',
-      color_palette:
+      color_and_tone:
         'Black-and-white uniform binaries, pastel pink embarrassment accents, warm cafe amber, and authority-red highlight punctuation',
-      lighting_setup:
+      lighting_and_shadow:
         'Bright warm practical glow, high-key comedic fill, spotlight blush emphasis, and punchy contrast for identity-reveal beats',
-      material_texture:
+      texture_and_material:
         'Crisp binary fabric layering, lace frill detailing, polished surface reflections, and badge or ribbon accent textures',
-      render_quality:
-        'Energetic romcom-shojo rendering with clear dual-role readability, expressive timing clarity, and polished costume articulation',
-      spatial_distortion:
+      camera_and_composition:
         'Persona-shift exaggeration via comedic framing squash and confidence-height perspective modulation',
-      atmosphere: 'Combative, cute, sparkling, energetic',
+      atmosphere_and_mood: 'Combative, cute, sparkling, energetic',
+      rendering_and_quality:
+        'Energetic romcom-shojo rendering with clear dual-role readability, expressive timing clarity, and polished costume articulation',
       key_features:
         'Frill-coded sparkle, strict-to-flustered acting, secret-identity staging, authority-costume contrast, playful dominance framing',
       creative_brief:
@@ -627,19 +627,19 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Revolutionary-baroque shojo grammar combining court portrait grandeur, political tension undertones, and tragic romantic nobility',
-      form_and_line:
+      subject_treatment:
         'Ornate portrait silhouette hierarchy, martial-and-lace contour interplay, dramatic profile line emphasis, and ceremonial pose rigor',
-      color_palette:
+      color_and_tone:
         'Powdered ivory, royal blue and wine-red authority tones, antique gold ornament, candle-amber highlights, and storm-gray dramatic shadows',
-      lighting_setup:
+      lighting_and_shadow:
         'Chandelier-like and candle key light, painterly portrait falloff, velvet-shadow depth, and high-contrast edge illumination for dueling tensions',
-      material_texture:
+      texture_and_material:
         'Brocade and lace detailing, polished metal reflections, powdered fabric softness, carved gilt-frame surfaces, and marble-like accents',
-      render_quality:
-        'Operatic classic-shojo rendering with aristocratic detail clarity, portrait-theatre composition, and high-emotion historical polish',
-      spatial_distortion:
+      camera_and_composition:
         'Court-stage perspective stretching to emphasize rank distance and impending upheaval tension',
-      atmosphere: 'Regal, tragic, historic, operatic',
+      atmosphere_and_mood: 'Regal, tragic, historic, operatic',
+      rendering_and_quality:
+        'Operatic classic-shojo rendering with aristocratic detail clarity, portrait-theatre composition, and high-emotion historical polish',
       key_features:
         'Baroque ornament, lace-and-martial contrast, court portrait poses, revolutionary tension, tear-bright dramatic gazes',
       creative_brief:
@@ -655,19 +655,19 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         '90s fashion-atelier shojo grammar with handmade-accessory culture, Harajuku pop layering, and creative coming-of-age energy',
-      form_and_line:
+      subject_treatment:
         'Expressive fashion-silhouette linework, accessory-forward contour emphasis, playful pose asymmetry, and display-like compositional rhythm',
-      color_palette:
+      color_and_tone:
         'Saturated candy pops, denim and black streetwear anchors, pastel accessory accents, sticker-bright highlights, and warm skin tones',
-      lighting_setup:
+      lighting_and_shadow:
         'Window-display glow, overcast diffusion, neon-sign accent spill, and soft tungsten warmth for craft moments',
-      material_texture:
+      texture_and_material:
         'Denim grain, knit and canvas layering, handmade bead and fabric trim detail, paper-pattern scraps, and glossy plastic charm accents',
-      render_quality:
-        'Vibrant retro-shojo rendering with trend-culture readability, handcrafted detail density, and youthful editorial polish',
-      spatial_distortion:
+      camera_and_composition:
         'Fashion-illustration elongation with dynamic angle framing and accessory-scale emphasis',
-      atmosphere: 'Cute, stylish, youthful, crafty',
+      atmosphere_and_mood: 'Cute, stylish, youthful, crafty',
+      rendering_and_quality:
+        'Vibrant retro-shojo rendering with trend-culture readability, handcrafted detail density, and youthful editorial polish',
       key_features:
         'Handmade accessories, Harajuku color, craft-pattern cues, street-fashion silhouettes, youthful romance staging',
       creative_brief:
@@ -683,18 +683,19 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Art-student shojo-seinen blend, spring light, unspoken longing, and youth drifting toward adulthood through creativity and fragile friendship',
-      form_and_line:
+      subject_treatment:
         'Sketchbook-informed contour work, painterly gesture accents, fine emotional line economy, and creative-material silhouette readability',
-      color_palette:
+      color_and_tone:
         'Spring ivory, muted sakura pinks, pale celadon, weathered wood neutrals, and charcoal sketch accents',
-      lighting_setup:
+      lighting_and_shadow:
         'North-window-like daylight, dusty afternoon bloom, and soft reflective fill from paper and canvas surfaces',
-      material_texture:
+      texture_and_material:
         'Graphite dust, watercolor paper tooth, cotton softness, worn wood, and matte tool patina',
-      render_quality:
+      camera_and_composition:
+        'Gentle memory-depth drift through layered creative foreground elements',
+      atmosphere_and_mood: 'Soft, wistful, intelligent, aching',
+      rendering_and_quality:
         'Poetic art-school rendering with lived-in studio realism, emotional restraint, and tactile analog warmth',
-      spatial_distortion: 'Gentle memory-depth drift through layered creative foreground elements',
-      atmosphere: 'Soft, wistful, intelligent, aching',
       key_features:
         'Sketchbook textures, spring light, quiet ensemble spacing, unspoken affection acting, analog creative warmth',
       creative_brief:
@@ -710,18 +711,18 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Modern spiritual romance, fox-familiar charm, devotional responsibility, soft comedy and magical tenderness expressed through vermilion-moonlit ornament',
-      form_and_line:
+      subject_treatment:
         'Sacred-ornament contour rhythm, sleeve-like flow lines, fox-tail gesture accents, and expressive sacred-comedy framing',
-      color_palette:
+      color_and_tone:
         'Vermilion gate reds, moonlit indigo, parchment cream, fox-gold accents, and lantern amber warmth',
-      lighting_setup:
+      lighting_and_shadow:
         'Lantern-pool warmth, cool moon rim lighting, and talisman-like localized glow in twilight tones',
-      material_texture:
+      texture_and_material:
         'Lacquered wood cues, stone-wear texture, paper charm fibers, silk weave drape, and brushed ceremonial metal accents',
-      render_quality:
+      camera_and_composition: 'Sacred vertical lift with subtle spirit-layer parallax',
+      atmosphere_and_mood: 'Playful, spiritual, romantic, luminous',
+      rendering_and_quality:
         'Spiritual-romcom rendering with folkloric detail clarity, playful intimacy, and luminous night atmosphere',
-      spatial_distortion: 'Sacred vertical lift with subtle spirit-layer parallax',
-      atmosphere: 'Playful, spiritual, romantic, luminous',
       key_features:
         'Vermilion sacred motifs, fox motifs, moonlit vertical rhythm, divine-contract details, playful supernatural intimacy',
       creative_brief:
@@ -737,19 +738,19 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Otaku eccentricity, fashion makeovers, jellyfish softness, outsider-sisterhood warmth, frills and insecurity rendered with bright empathy',
-      form_and_line:
+      subject_treatment:
         'Accessory-heavy contour play, frill-density line clustering, jellyfish-curvature motifs, and makeover-before/after silhouette contrast',
-      color_palette:
+      color_and_tone:
         'Aquarium cyan, translucent lilac, bubblegum pink accents, dusty apartment neutrals, and glossy fashion highlights',
-      lighting_setup:
+      lighting_and_shadow:
         'Window-soft fill, fitting-room-like sparkle, and selective glamour highlights over cozy clutter bases',
-      material_texture:
+      texture_and_material:
         'Synthetic lace, beadwork, layered fabric trims, posters and print textures, and glossy cosmetic surface cues',
-      render_quality:
-        'Empathetic makeover-shojo rendering with quirky-density detail and soft bioluminescent color harmony',
-      spatial_distortion:
+      camera_and_composition:
         'Soft underwater-like drift in framing transitions to suggest emotional emergence',
-      atmosphere: 'Eccentric, sweet, transformative, cozy',
+      atmosphere_and_mood: 'Eccentric, sweet, transformative, cozy',
+      rendering_and_quality:
+        'Empathetic makeover-shojo rendering with quirky-density detail and soft bioluminescent color harmony',
       key_features:
         'Jellyfish motifs, frilly fabric detail, cozy clutter density, makeover contrasts, sisterhood group energy',
       creative_brief:
@@ -765,19 +766,19 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Contemporary shojo realism, rain-canopy intimacy, tentative self-worth, modern vulnerability, and apology under sodium streetlights',
-      form_and_line:
+      subject_treatment:
         'Naturalistic modern-shojo contouring, canopy-like framing arcs, hesitant hand-gesture emphasis, and close-distance posture cues',
-      color_palette:
+      color_and_tone:
         'Sodium amber highlights, wet asphalt blue-grays, uniform charcoal, muted skin warmth, and rain-reflection silvers',
-      lighting_setup:
+      lighting_and_shadow:
         'Streetlamp halo pools, rainy backscatter glow, practical spill, and low-contrast nocturnal fill',
-      material_texture:
+      texture_and_material:
         'Rain-beaded nylon sheen, damp cotton softness, pavement gloss reflections, and fogged acrylic surface cues',
-      render_quality:
-        'Intimate rainy-romance rendering with grounded urban realism and emotionally readable micro-acting',
-      spatial_distortion:
+      camera_and_composition:
         'Condensed shared-canopy framing compression to emphasize vulnerability proximity',
-      atmosphere: 'Rainy, vulnerable, sincere, modern',
+      atmosphere_and_mood: 'Rainy, vulnerable, sincere, modern',
+      rendering_and_quality:
+        'Intimate rainy-romance rendering with grounded urban realism and emotionally readable micro-acting',
       key_features:
         'Canopy framing, rain reflections, sodium-lit intimacy, hesitant touch language, confession-heavy close-ups',
       creative_brief:
@@ -793,19 +794,19 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Herbal-court fantasy shojo grammar centered on dignified tenderness, botanical competency cues, and warm ceremonial elegance',
-      form_and_line:
+      subject_treatment:
         'Graceful silhouette flow, botanical curve and vial-like contour accents, composed expression linework, and soft ceremonial posture arcs',
-      color_palette:
+      color_and_tone:
         'Botanical greens, warm cream parchment tones, red-hair focal chroma, muted royal blues, and honey-gold highlights',
-      lighting_setup:
+      lighting_and_shadow:
         'Soft daylight, filtered garden translucency, candle-warm accents, and gentle rim glow around focal chroma',
-      material_texture:
+      texture_and_material:
         'Linen and satin layering, herb-leaf matte detail, glass-vial translucency, polished wood warmth, and subtle embroidery finishes',
-      render_quality:
-        'Refined fantasy-shojo rendering with craft-competence readability, calm romantic clarity, and luminous but grounded finish',
-      spatial_distortion:
+      camera_and_composition:
         'Storybook depth extension through arched perspective and gentle focal elongation',
-      atmosphere: 'Graceful, capable, warm, romantic',
+      atmosphere_and_mood: 'Graceful, capable, warm, romantic',
+      rendering_and_quality:
+        'Refined fantasy-shojo rendering with craft-competence readability, calm romantic clarity, and luminous but grounded finish',
       key_features:
         'Botanical motifs, courtly warmth, red focal contrast, respectful body language, refined fantasy detail',
       creative_brief:
@@ -821,19 +822,19 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Crimson folk-fantasy resolve, loyal-guardian warmth, travel hardship, romance, devotion, and destiny abstracted into wind-worn heroic chroma',
-      form_and_line:
+      subject_treatment:
         'Heroic journey silhouette language, cloak-flow contour emphasis, ornamented tension balance, and determined profile readability',
-      color_palette:
+      color_and_tone:
         'Crimson focal hair tones, sandstone ochres, dusk violets, royal indigo accents, and campfire amber highlights',
-      lighting_setup:
+      lighting_and_shadow:
         'Harsh journey daylight, desert-like sunset gradients, and torchlit night pockets with directional contrast',
-      material_texture:
+      texture_and_material:
         'Weathered cloth wraps, leather straps, metal charm patina, polished stone cues, and wind-worn surface wear',
-      render_quality:
-        'Folk-fantasy shojo rendering with journey-scale clarity and resolve-forward character emphasis',
-      spatial_distortion:
+      camera_and_composition:
         'Horizon-stretch perspective reinforcing pilgrimage momentum and leadership ascent',
-      atmosphere: 'Resolute, romantic, sweeping, brave',
+      atmosphere_and_mood: 'Resolute, romantic, sweeping, brave',
+      rendering_and_quality:
+        'Folk-fantasy shojo rendering with journey-scale clarity and resolve-forward character emphasis',
       key_features:
         'Wind-worn silhouettes, crimson focal points, wilderness-to-regal contrast, guardian-like ensemble staging, heroic profile poses',
       creative_brief:
@@ -849,19 +850,19 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Airy first-love tenderness built from soft blushes, distance-closing glances, innocent hesitation, springlike pacing, and emotional near-miss clarity',
-      form_and_line:
+      subject_treatment:
         'Delicate romance linework, fine hair-thin strokes, graceful flowing contours, soft eyelash detail, and breath-held gesture arcs',
-      color_palette:
+      color_and_tone:
         'Pale pinks, soft florals, pearl luminosity, clean cream fields, and barely-there green-blue freshness',
-      lighting_setup:
+      lighting_and_shadow:
         'Soft bloom, gentle rim light, butterfly portrait lighting, diffuse romantic glow, and luminous halation around hesitant emotion',
-      material_texture:
+      texture_and_material:
         'Airy fabrics, ribbon-like motion cues, soft paper grain, silk sheen, delicate lace texture, and chiffon translucency',
-      render_quality:
-        'Luminous romance-anime frame with ethereal bloom, soft-focus beauty, clean expression readability, and dreamy chromatic softness',
-      spatial_distortion:
+      camera_and_composition:
         'Graceful elongated proportions, shallow emotional depth, suspended-time spacing, and romantic silhouette styling',
-      atmosphere: 'Gentle, hopeful, innocent, sweet',
+      atmosphere_and_mood: 'Gentle, hopeful, innocent, sweet',
+      rendering_and_quality:
+        'Luminous romance-anime frame with ethereal bloom, soft-focus beauty, clean expression readability, and dreamy chromatic softness',
       key_features:
         'Blush-soft emotional timing, tender micro-expressions, hesitant proximity, pastel restraint, heartfelt gesture language',
       creative_brief:
@@ -877,20 +878,20 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         "Ornate Palace Shojo within 4. Shojo, Magical Girl & Visionary Classics: a reusable Anime Character & Lifestyle visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Ornate Palace Shojo's specific style identity.",
-      form_and_line:
+      subject_treatment:
         'Define Ornate Palace Shojo through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
-      color_palette:
+      color_and_tone:
         'Use a Ornate Palace Shojo-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
-      lighting_setup:
+      lighting_and_shadow:
         'Use lighting that makes Ornate Palace Shojo recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
-      material_texture:
+      texture_and_material:
         'Use materials and textures that reinforce Ornate Palace Shojo: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
-      render_quality:
-        'Render Ornate Palace Shojo with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
-      spatial_distortion:
+      camera_and_composition:
         'Use spatial behavior that fits Ornate Palace Shojo: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
-      atmosphere:
+      atmosphere_and_mood:
         'Set a mood that belongs to Ornate Palace Shojo: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+      rendering_and_quality:
+        'Render Ornate Palace Shojo with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       key_features:
         "Prioritize Ornate Palace Shojo's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
@@ -906,19 +907,19 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Symbolist theatrical-shojo style with surreal stage architecture, ritual confrontation, and allegorical romantic tension',
-      form_and_line:
+      subject_treatment:
         'Elegant opposition silhouette control, rose-motif framing arcs, long-limb choreographic posing, and delicate dramatic contour precision',
-      color_palette:
+      color_and_tone:
         'Rose-jewel spectrum with pearl neutrals, velvet shadow violets, and selective gilded symbolic accents',
-      lighting_setup:
+      lighting_and_shadow:
         'Stage-like spotlight halos, soft theatrical haze, romantic rim glow, and symbolic contrast emphasis on central figures',
-      material_texture:
+      texture_and_material:
         'Velvet-and-silk softness, rose-petal particulate overlays, painted stage-depth gradients, and luminous cel patina',
-      render_quality:
-        'High-poetry shojo rendering with surreal compositional elegance and emotionally symbolic frame design',
-      spatial_distortion:
+      camera_and_composition:
         'Dream-stage perspective lifts with impossible architectural layering and allegorical depth choreography',
-      atmosphere: 'Theatrical, surreal, charged, introspective, ceremonial',
+      atmosphere_and_mood: 'Theatrical, surreal, charged, introspective, ceremonial',
+      rendering_and_quality:
+        'High-poetry shojo rendering with surreal compositional elegance and emotionally symbolic frame design',
       key_features:
         'Symbolic opposition framing, rose iconography grammar, stage-space surrealism, ritual emotional choreography',
       creative_brief:
@@ -934,20 +935,20 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         "Soft Healing Ensemble within 4. Shojo, Magical Girl & Visionary Classics: a reusable Anime Character & Lifestyle visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Soft Healing Ensemble's specific style identity.",
-      form_and_line:
+      subject_treatment:
         'Define Soft Healing Ensemble through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
-      color_palette:
+      color_and_tone:
         'Use a Soft Healing Ensemble-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
-      lighting_setup:
+      lighting_and_shadow:
         'Use lighting that makes Soft Healing Ensemble recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
-      material_texture:
+      texture_and_material:
         'Use materials and textures that reinforce Soft Healing Ensemble: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
-      render_quality:
-        'Render Soft Healing Ensemble with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
-      spatial_distortion:
+      camera_and_composition:
         'Use spatial behavior that fits Soft Healing Ensemble: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
-      atmosphere:
+      atmosphere_and_mood:
         'Set a mood that belongs to Soft Healing Ensemble: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+      rendering_and_quality:
+        'Render Soft Healing Ensemble with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       key_features:
         "Prioritize Soft Healing Ensemble's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
@@ -963,19 +964,19 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Punk-romance editorial anime style balancing glam abrasion, emotional proximity, and music-scene intimacy without fixed narrative casting',
-      form_and_line:
+      subject_treatment:
         'Delicate facial line economy paired with sharper fashion-edge accents, expressive eye architecture, and panel-like compositional rhythm',
-      color_palette:
+      color_and_tone:
         'Muted rose-violet base, charcoal cosmetic contrasts, selective crimson highlights, soft metallic accents, low-saturation skin warmth',
-      lighting_setup:
+      lighting_and_shadow:
         'Stage-adjacent soft bloom with directional rim glints, moody fill shadows, and selective halation around focal expressions',
-      material_texture:
+      texture_and_material:
         'Denim grain, leather sheen, smudged cosmetic surfaces, soft textile overlays, subtle print-poster patina',
-      render_quality:
-        'High-polish shojo-drama render with editorial styling precision, emotional close-up clarity, and cinematic tonal restraint',
-      spatial_distortion:
+      camera_and_composition:
         'Intimate framing compression with elegant elongation and gesture-led depth cues to emphasize relational tension',
-      atmosphere: 'Intimate, aching, stylish, magnetic, bittersweet',
+      atmosphere_and_mood: 'Intimate, aching, stylish, magnetic, bittersweet',
+      rendering_and_quality:
+        'High-polish shojo-drama render with editorial styling precision, emotional close-up clarity, and cinematic tonal restraint',
       key_features:
         'Fashion-emotion coupling, eyeliner contrast language, music-scene visual cadence, close-range expressive dramaturgy',
       creative_brief:
@@ -991,19 +992,19 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Lavish shojo farce where aristocratic polish, gender-play performance, decorative absurdity, and sincere emotion collide in sparkling romantic comedy',
-      form_and_line:
+      subject_treatment:
         'Delicate romance linework, fine hair-thin strokes, graceful flowing contours, soft eyelash detail, and theatrical gesture punctuation',
-      color_palette:
+      color_and_tone:
         'Rose pastels, pearl whites, elegant jewel accents, warm gold glints, and comedic blush pops',
-      lighting_setup:
+      lighting_and_shadow:
         'Soft bloom, gentle rim light, butterfly portrait lighting, luminous halation, and spotlight-like glamour beats',
-      material_texture:
+      texture_and_material:
         'Airy fabrics, silk sheen, delicate lace textures, chiffon translucency, polished ornament, and petal-soft surface cues',
-      render_quality:
-        'Luminous romance-anime frame with ethereal bloom, soft-focus beauty, crisp comic expression, and dreamy chromatic softness',
-      spatial_distortion:
+      camera_and_composition:
         'Graceful elongated proportions, theatrical entrance scaling, fashion-figure elegance, and romantic silhouette styling',
-      atmosphere: 'Playful, lavish, absurd, sparkling',
+      atmosphere_and_mood: 'Playful, lavish, absurd, sparkling',
+      rendering_and_quality:
+        'Luminous romance-anime frame with ethereal bloom, soft-focus beauty, crisp comic expression, and dreamy chromatic softness',
       key_features:
         'Decorative comedy timing, lavish shojo polish, performance-coded elegance, expressive eye detail, heartfelt farce',
       creative_brief:
@@ -1019,19 +1020,19 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Epistolary romance-shojo style with period elegance, contemplative stillness, and emotionally luminous restraint',
-      form_and_line:
+      subject_treatment:
         'Fine calligraphic linework, delicate hand-gesture focus, graceful portrait contours, and posture-driven longing cues',
-      color_palette:
+      color_and_tone:
         'Amber-rose twilight tones, pearl neutrals, muted jewel accents, and soft sepia warmth for memory-like intimacy',
-      lighting_setup:
+      lighting_and_shadow:
         'Window-lamp dual glow, low-intensity bloom halos, gentle rim caress, and still-life portrait luminance balance',
-      material_texture:
+      texture_and_material:
         'Paper-fiber tactility, ink trace softness, lace and satin micro-detail, watercolor-like background transitions',
-      render_quality:
-        'Cinematic shojo rendering optimized for intimate emotional legibility and period-textile precision',
-      spatial_distortion:
+      camera_and_composition:
         'Intimate depth compression with gentle elongation to prioritize correspondence-era emotional proximity',
-      atmosphere: 'Tender, wistful, elegant, reflective, intimate',
+      atmosphere_and_mood: 'Tender, wistful, elegant, reflective, intimate',
+      rendering_and_quality:
+        'Cinematic shojo rendering optimized for intimate emotional legibility and period-textile precision',
       key_features:
         'Epistolary gesture grammar, amber correspondence lighting, period fabric delicacy, longing-through-stillness framing',
       creative_brief:
@@ -1047,19 +1048,19 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Cozy tactile romance built from warm communication, careful gestures, soft winter intimacy, quiet attention, and tender distance-closing',
-      form_and_line:
+      subject_treatment:
         'Delicate romance linework, fine hair-thin strokes, graceful flowing contours, soft eyelash detail, and hand-led gesture clarity',
-      color_palette:
+      color_and_tone:
         'Warm creams, soft winter blues, rose-tinted blush, pearl luminosity, muted florals, and amber comfort accents',
-      lighting_setup:
+      lighting_and_shadow:
         'Soft bloom, gentle rim light, butterfly portrait lighting, diffuse romantic glow, and small warm practical halos',
-      material_texture:
+      texture_and_material:
         'Airy fabrics, soft knit cues, silk sheen, delicate lace textures, chiffon translucency, and skin-warm tactile softness',
-      render_quality:
-        'Luminous romance-anime frame with ethereal bloom, soft-focus beauty, gesture readability, and dreamy chromatic softness',
-      spatial_distortion:
+      camera_and_composition:
         'Graceful elongated proportions, close-range emotional depth, hand-to-face focus drift, and romantic silhouette styling',
-      atmosphere: 'Cozy, intimate, tender, warm',
+      atmosphere_and_mood: 'Cozy, intimate, tender, warm',
+      rendering_and_quality:
+        'Luminous romance-anime frame with ethereal bloom, soft-focus beauty, gesture readability, and dreamy chromatic softness',
       key_features:
         'Tactile communication, careful hand gestures, soft winter warmth, tender micro-expressions, close-range emotional readability',
       creative_brief:
@@ -1075,19 +1076,19 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Crimson quest romance built from brave shojo adventure, loyal warmth, wind-swept emotion, noble resolve, and jewel-toned historical-fantasy elegance',
-      form_and_line:
+      subject_treatment:
         'Delicate romance linework, flowing contour arcs, heroic-yet-soft posture, fine eyelash detail, and wind-guided directional rhythm',
-      color_palette:
+      color_and_tone:
         'Crimson accents, rose warmth, pearl luminosity, soft sky fields, jewel greens, and gentle gold highlights',
-      lighting_setup:
+      lighting_and_shadow:
         'Soft bloom, clear rim light, luminous horizon glow, butterfly portrait softness, and gentle adventure-key illumination',
-      material_texture:
+      texture_and_material:
         'Airy fabrics, silk sheen, delicate trim textures, chiffon translucency, brushed leather notes, and soft metallic ornament',
-      render_quality:
-        'Luminous romance-adventure frame with ethereal bloom, soft-focus beauty, heroic clarity, and dreamy chromatic softness',
-      spatial_distortion:
+      camera_and_composition:
         'Graceful elongated proportions, sweeping wind vectors, horizon-scale emotional breadth, and romantic silhouette styling',
-      atmosphere: 'Adventurous, romantic, sweeping, brave',
+      atmosphere_and_mood: 'Adventurous, romantic, sweeping, brave',
+      rendering_and_quality:
+        'Luminous romance-adventure frame with ethereal bloom, soft-focus beauty, heroic clarity, and dreamy chromatic softness',
       key_features:
         'Brave shojo resolve, crimson accent identity, loyalty warmth, wind-swept romance, expressive eye detail',
       creative_brief:
@@ -1103,19 +1104,19 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Velvet gothic shojo romance built from nocturnal longing, lace-like delicacy, moonlit secrecy, forbidden elegance, and melancholy ornament',
-      form_and_line:
+      subject_treatment:
         'Delicate romance linework, fine hair-thin strokes, graceful flowing contours, soft eyelash detail, and gothic vertical accenting',
-      color_palette:
+      color_and_tone:
         'Deep velvet blacks, moonlit silvers, wine-red accents, pearl skin glow, faded rose tones, and muted violet shadows',
-      lighting_setup:
+      lighting_and_shadow:
         'Soft bloom, moon-rim light, candle-warm accent points, diffuse romantic glow, and luminous halation inside dark value fields',
-      material_texture:
+      texture_and_material:
         'Velvet softness, lace textures, silk sheen, mahogany-like polish, petal softness, and chiffon translucency',
-      render_quality:
-        'Luminous gothic-romance frame with ethereal bloom, soft-focus beauty, dark-value control, and dreamy chromatic softness',
-      spatial_distortion:
+      camera_and_composition:
         'Graceful elongated proportions, corridor-like depth compression as optional mood, fashion elegance, and romantic silhouette styling',
-      atmosphere: 'Gothic, yearning, mysterious, melancholic',
+      atmosphere_and_mood: 'Gothic, yearning, mysterious, melancholic',
+      rendering_and_quality:
+        'Luminous gothic-romance frame with ethereal bloom, soft-focus beauty, dark-value control, and dreamy chromatic softness',
       key_features:
         'Nocturnal longing, velvet-lace materiality, moon-silver contrast, gothic romantic restraint, expressive eye detail',
       creative_brief:

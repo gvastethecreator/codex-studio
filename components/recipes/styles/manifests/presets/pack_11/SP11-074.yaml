@@ -13,20 +13,20 @@ tags:
   - micro-macro
 visualDna:
   aesthetic: Hooks and loops, fastener-macro, textile-engineering, velcro-close-up, grip-technology
-  form_and_line: Plastic hooks, mushroom-cap shapes, loop-pile tufts, hook-shank curvature, interlocking-interface
-  color_palette: Black/White, nylon-spectrum, hook-base color, loop-color contrast, industrial-grey, neon-accent
-  lighting_setup: Macro, ring-flash, side-raking for hook-shape, loop-pile diffusion, shadow-depth for interlock
-  material_texture: Plastic loops, nylon-monofilament, woven-backing, hook-mushroom tip, loop-pile density, adhesive-back
-  render_quality: Industrial, texture, hook-and-loop engineering, biomimetic-design, fastener-science
-  spatial_distortion: Tangling, engaged-hook-loop, separation-gap, pile-compression, hook-penetration depth
-  atmosphere: Functional, close, design-cleverness, burdock-inspiration, Swiss-engineer wonder
+  subject_treatment: Plastic hooks, mushroom-cap shapes, loop-pile tufts, hook-shank curvature, interlocking-interface
+  color_and_tone: Black/White, nylon-spectrum, hook-base color, loop-color contrast, industrial-grey, neon-accent
+  lighting_and_shadow: Macro, ring-flash, side-raking for hook-shape, loop-pile diffusion, shadow-depth for interlock
+  texture_and_material: Plastic loops, nylon-monofilament, woven-backing, hook-mushroom tip, loop-pile density, adhesive-back
+  camera_and_composition: Tangling, engaged-hook-loop, separation-gap, pile-compression, hook-penetration depth
+  atmosphere_and_mood: Functional, close, design-cleverness, burdock-inspiration, Swiss-engineer wonder
+  rendering_and_quality: Industrial, texture, hook-and-loop engineering, biomimetic-design, fastener-science
   key_features: Hooks, mushroom-cap tips, loop-pile, interlock-point, woven-backing, hook-shank, adhesive-layer, edge-trim
   creative_brief: >-
-    Focus on hook-and-loop mechanics with visible interlock points, nylon pile density, and micro-scale engagement
-    geometry. Preserve biomimetic engineering character while keeping subject framing flexible. Apply Velcro as a
-    portable style system over any input: preserve its construction grammar, material cues, scale logic, and signature
-    rendering behavior while avoiding a required franchise, literal prop, fixed specimen, classroom sample, product
-    shot, or scene template.
+    Focus on hook-and-loop mechanics with visible interlock points, nylon pile density, and micro-scale
+    engagement geometry. Preserve biomimetic engineering character while keeping subject framing flexible.
+    Apply Velcro as a portable style system over any input: preserve its construction grammar, material cues,
+    scale logic, and signature rendering behavior while avoiding a required franchise, literal prop, fixed
+    specimen, classroom sample, product shot, or scene template.
 avoidRules:
   - smooth
 assets:

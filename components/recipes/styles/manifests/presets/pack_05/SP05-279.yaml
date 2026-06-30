@@ -12,20 +12,25 @@ tags:
   - anime-battle-and-worlds
   - dark-fantasy-and-seinen
 visualDna:
-  aesthetic: Red-optic security noir, paramilitary abstraction, smoke-dense political dread, buried tenderness inside oppressive system machinery
-  form_and_line: Dense mature-anime linework, heavy crosshatching, weighted contour variation, gritty ink density
-  color_palette: Muted earths, blood reds, cold moonlit tones, desaturated horror palette, bruised shadow hues
-  lighting_setup: Ominous directional shadows, single-source drama light, deep chiaroscuro, low-key shadow lift
-  material_texture: Smoke-black metal, red glass glow, heavy cloth grain, riot-dust haze, oxidized plated panels, wet concrete-neutral grit
-  render_quality: Gritty dramatic anime frame, film-noir rendering, heavy shadow compression, textured midtone grit
-  spatial_distortion: Red-optic focal points, smoke-layer compression, plated mass silhouettes, political negative space, oppressive security geometry
-  atmosphere: Oppressive, political, smoky, tragic
+  aesthetic: >-
+    Red-optic security noir, paramilitary abstraction, smoke-dense political dread, buried tenderness inside
+    oppressive system machinery
+  subject_treatment: Dense mature-anime linework, heavy crosshatching, weighted contour variation, gritty ink density
+  color_and_tone: Muted earths, blood reds, cold moonlit tones, desaturated horror palette, bruised shadow hues
+  lighting_and_shadow: Ominous directional shadows, single-source drama light, deep chiaroscuro, low-key shadow lift
+  texture_and_material: >-
+    Smoke-black metal, red glass glow, heavy cloth grain, riot-dust haze, oxidized plated panels, wet
+    concrete-neutral grit
+  camera_and_composition: >-
+    Red-optic focal points, smoke-layer compression, plated mass silhouettes, political negative space,
+    oppressive security geometry
+  atmosphere_and_mood: Oppressive, political, smoky, tragic
+  rendering_and_quality: Gritty dramatic anime frame, film-noir rendering, heavy shadow compression, textured midtone grit
   key_features: Red optic glow, smoke-dense composition, plated mass abstraction, political dread, buried tenderness
-  creative_brief: >
-    Apply red-optic security noir to any subject: smoke, heavy dark surfaces,
-    red glass points, and political weight should suggest oppressive systems
-    without fixed attire systems, brigades, ruins, concealment props, factions,
-    or security scenes.
+  creative_brief: >-
+    Apply red-optic security noir to any subject: smoke, heavy dark surfaces, red glass points, and political
+    weight should suggest oppressive systems without fixed attire systems, brigades, ruins, concealment props,
+    factions, or security scenes.
 avoidRules:
   - realistic
   - 3d render
@@ -42,7 +47,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-279.webp
 attributes:
-  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
+  negativePrompt: >-
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts,
+    watermark, text, signature
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds

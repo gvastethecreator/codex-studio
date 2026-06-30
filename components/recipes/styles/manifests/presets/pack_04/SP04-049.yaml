@@ -13,23 +13,22 @@ tags:
   - concept-art
 visualDna:
   aesthetic: >-
-    Environment concept-development style with mood-led worldbuilding, navigable composition logic,
-    and place-first visual storytelling
-  form_and_line: >-
-    Perspective-grid anchored block design with readable silhouette layering and path-guided spatial
-    rhythm
-  color_palette: Atmospheric, mood-grade spectrum, location-feel depth
-  lighting_setup: Key light, dramatic spotlight, environmental storytelling
-  material_texture: Painted
-  render_quality: Immersive, vast, sense-of-place conviction, environmental narrative
-  spatial_distortion: None
-  atmosphere: Adventure, place, exploration wonder, threshold excitement
+    Environment concept-development style with mood-led worldbuilding, navigable composition logic, and
+    place-first visual storytelling
+  subject_treatment: Perspective-grid anchored block design with readable silhouette layering and path-guided spatial rhythm
+  color_and_tone: Atmospheric, mood-grade spectrum, location-feel depth
+  lighting_and_shadow: Key light, dramatic spotlight, environmental storytelling
+  texture_and_material: Painted
+  camera_and_composition: >-
+    Compose for Environment Concept using its key spatial cues: Scale figure, perspective grid, environmental
+    storytelling.
+  atmosphere_and_mood: Adventure, place, exploration wonder, threshold excitement
+  rendering_and_quality: Immersive, vast, sense-of-place conviction, environmental narrative
   key_features: Scale figure, perspective grid, environmental storytelling
   creative_brief: >-
-    Apply environment-concept grammar to any input: atmospheric depth, scale cues, path-guided
-    composition, readable silhouette layering, and mood-led worldbuilding should create place-feel
-    without requiring landscapes, ruins, level design, tiny figures, architecture, or one narrative
-    location.
+    Apply environment-concept grammar to any input: atmospheric depth, scale cues, path-guided composition,
+    readable silhouette layering, and mood-led worldbuilding should create place-feel without requiring
+    landscapes, ruins, level design, tiny figures, architecture, or one narrative location.
 avoidRules:
   - character focus
 assets:

@@ -14,16 +14,35 @@ tags:
   - atompunk
   - civic-plaza
 visualDna:
-  aesthetic: atompunk civic neon built around one distinctive isotope-plaza protagonist, atomic fountain glow, blank isotope orbits, chrome curves, and polished midcentury surfaces.
-  form_and_line: Atomic signage, rocket-age curves, raygun geometry, orbital equipment, chrome kitsch, and cosmic civic forms. Core composition uses isotope-plaza protagonist, atomic fountain, blank isotope orbits, chrome curves, terrazzo patterns.
-  color_palette: uranium green, coral red, cream, chrome
-  lighting_setup: neon isotope glow, atomic fountain light, clean evening sky
-  material_texture: chrome, terrazzo, neon tubes, enamel panels, polished stone
-  render_quality: Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity, moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material simulation, or hyper-detail.
-  spatial_distortion: Promenades, diners, outposts, salvage yards, rails, lunar farms, craters, and isotope-lit plazas. Keep depth legible and avoid default hallway, aisle, or empty studio staging.
-  atmosphere: bright, optimistic, strange, civic
+  aesthetic: >-
+    atompunk civic neon built around one distinctive isotope-plaza protagonist, atomic fountain glow, blank
+    isotope orbits, chrome curves, and polished midcentury surfaces.
+  subject_treatment: >-
+    Atomic signage, rocket-age curves, raygun geometry, orbital equipment, chrome kitsch, and cosmic civic
+    forms. Core composition uses isotope-plaza protagonist, atomic fountain, blank isotope orbits, chrome
+    curves, terrazzo patterns.
+  color_and_tone: uranium green, coral red, cream, chrome
+  lighting_and_shadow: neon isotope glow, atomic fountain light, clean evening sky
+  texture_and_material: chrome, terrazzo, neon tubes, enamel panels, polished stone
+  camera_and_composition: >-
+    Promenades, diners, outposts, salvage yards, rails, lunar farms, craters, and isotope-lit plazas. Keep
+    depth legible and avoid default hallway, aisle, or empty studio staging.
+  atmosphere_and_mood: bright, optimistic, strange, civic
+  rendering_and_quality: >-
+    Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly
+    planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity,
+    moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material
+    simulation, or hyper-detail.
   key_features: isotope-plaza protagonist, isotope orbits, atomic fountain, chrome curves, terrazzo blocks
-  creative_brief: 'Atompunk as public life through a character: one distinctive isotope-plaza protagonist near an atomic fountain, blank isotope-orbit geometry, chrome curves, terrazzo blocks, and midcentury optimism with uneasy glow. The fountain and plaza support the protagonist; they must not become an object-only civic poster. Avoid crowd-as-subject, families/workers stock illustration, worker propaganda, science diagram, luxury mall, or empty plaza postcard. Keep the result representative rather than over-abstract; use flat graphic illustration, gouache-poster shapes, cel-poster blocking, and controlled digital painting over realism or generic concept art. Use few bold color/value zones, large matte shapes, clean surfaces, low-to-moderate detail, and finish denoised with no excessive noise or ultra-fine detail.'
+  creative_brief: >-
+    Atompunk as public life through a character: one distinctive isotope-plaza protagonist near an atomic
+    fountain, blank isotope-orbit geometry, chrome curves, terrazzo blocks, and midcentury optimism with
+    uneasy glow. The fountain and plaza support the protagonist; they must not become an object-only civic
+    poster. Avoid crowd-as-subject, families/workers stock illustration, worker propaganda, science diagram,
+    luxury mall, or empty plaza postcard. Keep the result representative rather than over-abstract; use flat
+    graphic illustration, gouache-poster shapes, cel-poster blocking, and controlled digital painting over
+    realism or generic concept art. Use few bold color/value zones, large matte shapes, clean surfaces,
+    low-to-moderate detail, and finish denoised with no excessive noise or ultra-fine detail.
 avoidRules:
   - photoreal
   - watermark
@@ -37,7 +56,21 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP15-065.webp
 attributes:
-  negativePrompt: photoreal, hyperreal, realistic render, photoreal painterly realism, cinematic realism, AAA key art, photographic skin pores, realistic foreground portrait, realistic facial hair detail, lens blur, bokeh, depth-of-field photo look, readable signs, radiation trefoil, hazard logo, flag emblem, brand logo, UI, numbers, text, luxury mall, photoreal chrome, glossy archviz, empty plaza postcard, generic soldier hero, guard pin-up, weapon-first pose, HDR lens realism, 3D render look, PBR material simulation, hyper-detailed concept art, watermark, logo, generic style, over-abstract, interchangeable preset, duplicated motifs, generic glass utopia, unmotivated market aisle, unmotivated library aisle, fantasy corridor, random camera held by subject, studio wall fixation, chair fixation, curtain fixation, lamp fixation, scarf fixation, pedestal fixation, bird fixation, excessive noise, ultra-fine detail, over-sharpened microtexture, over-rendered machinery, noisy grime, tiny rivets everywhere, busy texture chatter, realistic uniform portrait, uniformed officer hero, foreground guard portrait, detailed tattoo focus, dense machinery wallpaper, overcrowded scene, high-frequency surface detail, cinematic close-up portrait, flat black fill, crushed black, pure black masses, muddy black fields, generic American illustration, generic Western RPG card art
+  negativePrompt: >-
+    photoreal, hyperreal, realistic render, photoreal painterly realism, cinematic realism, AAA key art,
+    photographic skin pores, realistic foreground portrait, realistic facial hair detail, lens blur, bokeh,
+    depth-of-field photo look, readable signs, radiation trefoil, hazard logo, flag emblem, brand logo, UI,
+    numbers, text, luxury mall, photoreal chrome, glossy archviz, empty plaza postcard, generic soldier hero,
+    guard pin-up, weapon-first pose, HDR lens realism, 3D render look, PBR material simulation, hyper-detailed
+    concept art, watermark, logo, generic style, over-abstract, interchangeable preset, duplicated motifs,
+    generic glass utopia, unmotivated market aisle, unmotivated library aisle, fantasy corridor, random camera
+    held by subject, studio wall fixation, chair fixation, curtain fixation, lamp fixation, scarf fixation,
+    pedestal fixation, bird fixation, excessive noise, ultra-fine detail, over-sharpened microtexture,
+    over-rendered machinery, noisy grime, tiny rivets everywhere, busy texture chatter, realistic uniform
+    portrait, uniformed officer hero, foreground guard portrait, detailed tattoo focus, dense machinery
+    wallpaper, overcrowded scene, high-frequency surface detail, cinematic close-up portrait, flat black fill,
+    crushed black, pure black masses, muddy black fields, generic American illustration, generic Western RPG
+    card art
 taxonomy:
   packId: pack_15
   packName: Punk Spectrum Vault

@@ -13,15 +13,19 @@ tags:
   - man-made-materials
 visualDna:
   aesthetic: Wet asphalt sheen
-  form_and_line: Slick grain and reflective streaks
-  color_palette: Black, Grey
-  lighting_setup: Reflection of lights
-  material_texture: Grainy tar
-  render_quality: Noir, reflective
-  spatial_distortion: Puddles
-  atmosphere: Urban, dark
+  subject_treatment: Slick grain and reflective streaks
+  color_and_tone: Black, Grey
+  lighting_and_shadow: Reflection of lights
+  texture_and_material: Grainy tar
+  camera_and_composition: Puddles
+  atmosphere_and_mood: Urban, dark
+  rendering_and_quality: Noir, reflective
   key_features: Gravel grain
-  creative_brief: 'Apply wet-asphalt noir to the input: black grain under a thin rainwater skin, reflective streaks, puddled distortion, and occasional neon-like color dissolving across rough tar. If road, city, or vehicle cues exist, intensify them; otherwise treat surfaces as dark urban mirrors without forcing road markings or street layout.'
+  creative_brief: >-
+    Apply wet-asphalt noir to the input: black grain under a thin rainwater skin, reflective streaks, puddled
+    distortion, and occasional neon-like color dissolving across rough tar. If road, city, or vehicle cues
+    exist, intensify them; otherwise treat surfaces as dark urban mirrors without forcing road markings or
+    street layout.
 avoidRules:
   - dry
   - desert

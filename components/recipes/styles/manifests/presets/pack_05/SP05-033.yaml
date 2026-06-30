@@ -12,22 +12,28 @@ tags:
   - anime-battle-and-worlds
   - modern-shonen-and-action
 visualDna:
-  aesthetic: Grindhouse-splatter action style with punk absurdity, grotesque humor, and chaotic cinematic framing energy
-  form_and_line: >-
-    Jagged impact strokes, aggressive silhouette breakage, halftone-panel interruptions, and deliberately unstable line
-    cadence
-  color_palette: Dirty reds and oily blacks with acidic neon accents, paper-gray halftone fields, and high-impact contrast bursts
-  lighting_setup: Harsh practical glare, grime-filtered shadows, strobe-like impact flashes, and uneven luminance for manic pacing
-  material_texture: Ink splatter overlays, print-noise grit, smeared debris particulates, and roughened compositing layers
-  render_quality: High-intensity splatter-action rendering with controlled visual mess and sharp comedic-shock timing
-  spatial_distortion: Abrupt perspective warps and frame rupture moments that amplify violent-comic disorientation
-  atmosphere: Deranged, visceral, anarchic, darkly comic, volatile
+  aesthetic: >-
+    Grindhouse-splatter action style with punk absurdity, grotesque humor, and chaotic cinematic framing
+    energy
+  subject_treatment: >-
+    Jagged impact strokes, aggressive silhouette breakage, halftone-panel interruptions, and deliberately
+    unstable line cadence
+  color_and_tone: >-
+    Dirty reds and oily blacks with acidic neon accents, paper-gray halftone fields, and high-impact contrast
+    bursts
+  lighting_and_shadow: >-
+    Harsh practical glare, grime-filtered shadows, strobe-like impact flashes, and uneven luminance for manic
+    pacing
+  texture_and_material: Ink splatter overlays, print-noise grit, smeared debris particulates, and roughened compositing layers
+  camera_and_composition: Abrupt perspective warps and frame rupture moments that amplify violent-comic disorientation
+  atmosphere_and_mood: Deranged, visceral, anarchic, darkly comic, volatile
+  rendering_and_quality: High-intensity splatter-action rendering with controlled visual mess and sharp comedic-shock timing
   key_features: Splatter-comedy contrast, panel-break chaos, grindhouse texture stack, unstable impact framing
   creative_brief: >-
-    Preserve identity through grindhouse splatter grammar and absurd tonal collision: rough print textures and manic
-    frame ruptures should define the style regardless of character premise. Apply this anime/IP-title grammar over any
-    input: preserve its motion language, line economy, emotional staging, palette logic, and symbolic cues while
-    avoiding a required cast, lore event, weapon, arena, school, ship, or fixed scene.
+    Preserve identity through grindhouse splatter grammar and absurd tonal collision: rough print textures and
+    manic frame ruptures should define the style regardless of character premise. Apply this anime/IP-title
+    grammar over any input: preserve its motion language, line economy, emotional staging, palette logic, and
+    symbolic cues while avoiding a required cast, lore event, weapon, arena, school, ship, or fixed scene.
 avoidRules:
   - realistic
   - 3d render
@@ -45,8 +51,8 @@ assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-033.webp
 attributes:
   negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark,
-    text, signature
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts,
+    watermark, text, signature
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds

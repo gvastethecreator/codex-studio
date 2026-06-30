@@ -13,18 +13,18 @@ tags:
   - childrens-illustration
 visualDna:
   aesthetic: Loose whimsical ink storybook language (Quentin Blake influence)
-  form_and_line: Scratchy, fast, expressive nib lines with playful instability
-  color_palette: Light watercolor splash accents over black ink skeleton
-  lighting_setup: Natural paper-white lighting with wash-led value hints
-  material_texture: Nib chatter, splatter marks, watery bleed pockets
-  render_quality: Mischievous, energetic, deliberately unrefined storybook finish
-  spatial_distortion: Elastic proportions and spiky gesture exaggeration
-  atmosphere: Humorous, lively, irreverent
+  subject_treatment: Scratchy, fast, expressive nib lines with playful instability
+  color_and_tone: Light watercolor splash accents over black ink skeleton
+  lighting_and_shadow: Natural paper-white lighting with wash-led value hints
+  texture_and_material: Nib chatter, splatter marks, watery bleed pockets
+  camera_and_composition: Elastic proportions and spiky gesture exaggeration
+  atmosphere_and_mood: Humorous, lively, irreverent
+  rendering_and_quality: Mischievous, energetic, deliberately unrefined storybook finish
   key_features: Ink flicks, broken contour continuity, lively splash punctuation
   creative_brief: >-
-    Apply whimsical ink storybook energy to any input: scratchy fast nib lines, broken contours,
-    watercolor splashes, spiky gesture exaggeration, and lively splatter punctuation should carry
-    humor without requiring characters, animals, jokes, children, or fixed story vignettes.
+    Apply whimsical ink storybook energy to any input: scratchy fast nib lines, broken contours, watercolor
+    splashes, spiky gesture exaggeration, and lively splatter punctuation should carry humor without requiring
+    characters, animals, jokes, children, or fixed story vignettes.
 avoidRules:
   - heavy
   - dark

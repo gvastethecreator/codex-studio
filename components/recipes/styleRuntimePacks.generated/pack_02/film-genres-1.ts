@@ -10,13 +10,15 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'color, bright, happy',
     style: {
       aesthetic: '1940s noir contrast',
-      form_and_line: 'None',
-      color_palette: 'Black and White, deep charcoal, silver highlights',
-      lighting_setup: 'Venetian blinds shadow, directional key, slatted light',
-      material_texture: 'Film grain, silver gelatin, soft halation',
-      render_quality: 'Cinematic, moody, high-contrast, shadow-rich',
-      spatial_distortion: 'None',
-      atmosphere: 'Suspense, dark, moral ambiguity, shadow pressure',
+      subject_treatment:
+        'Treat subjects as believable filmed or broadcast subjects under Film Noir: casting, wardrobe, props, motion cues, and silhouette hierarchy follow 1. Film Genres cinematic and broadcast grammar without locking to one plot beat.',
+      color_and_tone: 'Black and White, deep charcoal, silver highlights',
+      lighting_and_shadow: 'Venetian blinds shadow, directional key, slatted light',
+      texture_and_material: 'Film grain, silver gelatin, soft halation',
+      camera_and_composition:
+        'Camera language native to Film Noir: genre-aware framing, lens character, focal hierarchy, motion cue, and vertical style-card composition.',
+      atmosphere_and_mood: 'Suspense, dark, moral ambiguity, shadow pressure',
+      rendering_and_quality: 'Cinematic, moody, high-contrast, shadow-rich',
       key_features: 'High contrast, slatted light, silver edge',
       creative_brief:
         'Film noir turns any subject into silver-gelatin suspicion: venetian slat shadows, hard directional key, deep charcoal blacks, wet-look highlights, and a silhouette cut by moral darkness. Keep 1940s crime mood without forcing detective, city, sidewalk, cigarette, or femme fatale.',
@@ -30,13 +32,14 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Dusty operatic frontier cinema, Sergio Leone style, extreme close-up tension, widescreen heat, Morricone mood',
-      form_and_line: 'None',
-      color_palette: 'Warm, dusty yellow, sun-bleached ochre, deep brown',
-      lighting_setup: 'Harsh sun, unflinching overhead, high noon glare',
-      material_texture: 'Techniscope grain, gritty dust, weathered surface',
-      render_quality: 'Epic, gritty, widescreen, sun-baked',
-      spatial_distortion: 'Extreme close-up compression, tension squeeze',
-      atmosphere: 'Tense, hot, dry wind, looming death',
+      subject_treatment:
+        'Treat subjects as believable filmed or broadcast subjects under Spaghetti Western: casting, wardrobe, props, motion cues, and silhouette hierarchy follow 1. Film Genres cinematic and broadcast grammar without locking to one plot beat.',
+      color_and_tone: 'Warm, dusty yellow, sun-bleached ochre, deep brown',
+      lighting_and_shadow: 'Harsh sun, unflinching overhead, high noon glare',
+      texture_and_material: 'Techniscope grain, gritty dust, weathered surface',
+      camera_and_composition: 'Extreme close-up compression, tension squeeze',
+      atmosphere_and_mood: 'Tense, hot, dry wind, looming death',
+      rendering_and_quality: 'Epic, gritty, widescreen, sun-baked',
       key_features: 'Wide framing, extreme close tension, dust haze',
       creative_brief:
         'Spaghetti western style applies harsh noon glare, ochre dust, Techniscope grain, and operatic widescreen tension to any subject. Use Leone-like close/wide contrast and sun-baked texture without requiring desert, guns, holsters, lone riders, or frontier props.',
@@ -50,13 +53,15 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Rain-soaked neon dystopia, Blade Runner aesthetic, 80s cyberpunk glow, perpetual night, synth underscore',
-      form_and_line: 'None',
-      color_palette: 'Neon Blue/Pink + Smoke, electric magenta, toxic green',
-      lighting_setup: 'Low key + Neon, volumetric haze, wet reflections',
-      material_texture: 'Anamorphic lens flare, wet reflective surfaces, brushed metal',
-      render_quality: 'Atmospheric, practical FX, miniatures, matte painting',
-      spatial_distortion: 'None',
-      atmosphere: 'Dystopian, cool, synthetic, nocturnal',
+      subject_treatment:
+        'Treat subjects as believable filmed or broadcast subjects under 80s Sci-Fi: casting, wardrobe, props, motion cues, and silhouette hierarchy follow 1. Film Genres cinematic and broadcast grammar without locking to one plot beat.',
+      color_and_tone: 'Neon Blue/Pink + Smoke, electric magenta, toxic green',
+      lighting_and_shadow: 'Low key + Neon, volumetric haze, wet reflections',
+      texture_and_material: 'Anamorphic lens flare, wet reflective surfaces, brushed metal',
+      camera_and_composition:
+        'Camera language native to 80s Sci-Fi: genre-aware framing, lens character, focal hierarchy, motion cue, and vertical style-card composition.',
+      atmosphere_and_mood: 'Dystopian, cool, synthetic, nocturnal',
+      rendering_and_quality: 'Atmospheric, practical FX, miniatures, matte painting',
       key_features: 'Smoke, neon haze, wet reflections',
       creative_brief:
         '80s sci-fi cinema makes any subject nocturnal and synthetic: magenta/cyan neon, volumetric haze, wet reflections, anamorphic flare, and practical-FX atmosphere. Keep Blade Runner memory as color/lens grammar without forcing megacity, ads, vehicles, or corporate monoliths.',
@@ -70,13 +75,15 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Golden-age Technicolor fantasy, three-strip glory, hyper-saturated theatrical dream, musical spectacle',
-      form_and_line: 'None',
-      color_palette: 'Hyper-saturated, ruby red, emerald green, sapphire blue',
-      lighting_setup: 'High key studio, broad soft fill, painted backdrop',
-      material_texture: '3-strip Technicolor, glossy dye transfer, vibrant saturation',
-      render_quality: 'Vibrant, classic, theatrical, luminous',
-      spatial_distortion: 'None',
-      atmosphere: 'Joyful, theatrical, magical spectacle, storybook wonder',
+      subject_treatment:
+        'Treat subjects as believable filmed or broadcast subjects under Technicolor Musical: casting, wardrobe, props, motion cues, and silhouette hierarchy follow 1. Film Genres cinematic and broadcast grammar without locking to one plot beat.',
+      color_and_tone: 'Hyper-saturated, ruby red, emerald green, sapphire blue',
+      lighting_and_shadow: 'High key studio, broad soft fill, painted backdrop',
+      texture_and_material: '3-strip Technicolor, glossy dye transfer, vibrant saturation',
+      camera_and_composition:
+        'Camera language native to Technicolor Musical: genre-aware framing, lens character, focal hierarchy, motion cue, and vertical style-card composition.',
+      atmosphere_and_mood: 'Joyful, theatrical, magical spectacle, storybook wonder',
+      rendering_and_quality: 'Vibrant, classic, theatrical, luminous',
       key_features: 'Dye-transfer saturation, theatrical color clarity',
       creative_brief:
         'Technicolor musical style makes color sing beyond realism: ruby reds, emerald greens, sapphire blues, broad studio fill, glossy dye-transfer saturation, and painted-backdrop theatricality. Keep golden-age spectacle without forcing yellow roads, slippers, emerald cities, or musical staging. Apply Technicolor Musical as a portable cinematic/camera style over any input: preserve its lens behavior, color process, lighting setup, artifact pattern, and deformation grammar while avoiding a required actor, room, prop, brand, readable text, fixed IP scene, or narrative setup.',
@@ -90,20 +97,20 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         "French New Wave within 1. Film Genres: a reusable Cinematic & Media visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving French New Wave's specific style identity.",
-      form_and_line:
+      subject_treatment:
         'Define French New Wave through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
-      color_palette:
+      color_and_tone:
         'Use a French New Wave-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
-      lighting_setup:
+      lighting_and_shadow:
         'Use lighting that makes French New Wave recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
-      material_texture:
+      texture_and_material:
         'Use materials and textures that reinforce French New Wave: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
-      render_quality:
-        'Render French New Wave with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
-      spatial_distortion:
+      camera_and_composition:
         'Use spatial behavior that fits French New Wave: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
-      atmosphere:
+      atmosphere_and_mood:
         'Set a mood that belongs to French New Wave: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+      rendering_and_quality:
+        'Render French New Wave with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       key_features:
         "Prioritize French New Wave's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
@@ -117,13 +124,14 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'clean, hd',
     style: {
       aesthetic: '70s B-movie',
-      form_and_line: 'None',
-      color_palette: 'Faded, red shift, yellowed decay, magenta bleed',
-      lighting_setup: 'Harsh, underexposed, single-source, pools of black',
-      material_texture: 'Scratches, cigarette burns, torn splices, dust hair',
-      render_quality: 'Damaged film, degraded, sleazy, exploitation-grade',
-      spatial_distortion: 'Film splice, jumpy gate weave, missing frame',
-      atmosphere: 'Trashy, lurid, midnight-movie danger',
+      subject_treatment:
+        'Treat subjects as believable filmed or broadcast subjects under Grindhouse/Exploitation: casting, wardrobe, props, motion cues, and silhouette hierarchy follow 1. Film Genres cinematic and broadcast grammar without locking to one plot beat.',
+      color_and_tone: 'Faded, red shift, yellowed decay, magenta bleed',
+      lighting_and_shadow: 'Harsh, underexposed, single-source, pools of black',
+      texture_and_material: 'Scratches, cigarette burns, torn splices, dust hair',
+      camera_and_composition: 'Film splice, jumpy gate weave, missing frame',
+      atmosphere_and_mood: 'Trashy, lurid, midnight-movie danger',
+      rendering_and_quality: 'Damaged film, degraded, sleazy, exploitation-grade',
       key_features: 'Dirt, cue marks, grain storm',
       creative_brief:
         'Grindhouse style wounds any subject with degraded projection: scratches, cigarette burns, torn splices, magenta bleed, underexposed pools of black, jumpy gate weave, and lurid low-budget danger. Keep exploitation-film damage without requiring violence, rooms, walls, or narrative sleaze.',
@@ -136,13 +144,14 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'sound, color, readable text',
     style: {
       aesthetic: '1920s cinema',
-      form_and_line: 'None',
-      color_palette: 'Sepia or B&W, warm monochrome, faded amber tint',
-      lighting_setup: 'Flat studio, even wash, orthochromatic limitation',
-      material_texture: 'Flicker, dust, gate weave, silver emulsion',
-      render_quality: 'Fast motion feel, 18fps projection, flickering speed',
-      spatial_distortion: 'Vignette, rounded frame edge, iris close',
-      atmosphere: 'Expressive, old, melodramatic, haunted silence',
+      subject_treatment:
+        'Treat subjects as believable filmed or broadcast subjects under Silent Film: casting, wardrobe, props, motion cues, and silhouette hierarchy follow 1. Film Genres cinematic and broadcast grammar without locking to one plot beat.',
+      color_and_tone: 'Sepia or B&W, warm monochrome, faded amber tint',
+      lighting_and_shadow: 'Flat studio, even wash, orthochromatic limitation',
+      texture_and_material: 'Flicker, dust, gate weave, silver emulsion',
+      camera_and_composition: 'Vignette, rounded frame edge, iris close',
+      atmosphere_and_mood: 'Expressive, old, melodramatic, haunted silence',
+      rendering_and_quality: 'Fast motion feel, 18fps projection, flickering speed',
       key_features: 'Flicker, vignette, iris-era framing',
       creative_brief:
         'Silent film style gives any subject amber monochrome age: 18fps flicker, dust, gate weave, orthochromatic flatness, vignette, rounded frame edges, and melodramatic gesture implied by composition. Keep title-card-era rhythm without requiring people, text cards, or performance.',
@@ -155,13 +164,14 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'steady, cinematic',
     style: {
       aesthetic: 'Improvised panic-horror footage, shaking handheld dread, raw survival terror',
-      form_and_line: 'None',
-      color_palette: 'Low light digital, crushed blacks, sickly green tint',
-      lighting_setup: 'Flashlight only, single beam cone, terrified sweep',
-      material_texture: 'Video noise, CMOS sensor grain, digital mud',
-      render_quality: 'Shaky, amateur, disorienting, raw panic-cam',
-      spatial_distortion: 'Motion blur, smear, headlamp judder',
-      atmosphere: 'Terrifying, real, primal fear, unseen threat',
+      subject_treatment:
+        'Treat subjects as believable filmed or broadcast subjects under Found Footage Horror: casting, wardrobe, props, motion cues, and silhouette hierarchy follow 1. Film Genres cinematic and broadcast grammar without locking to one plot beat.',
+      color_and_tone: 'Low light digital, crushed blacks, sickly green tint',
+      lighting_and_shadow: 'Flashlight only, single beam cone, terrified sweep',
+      texture_and_material: 'Video noise, CMOS sensor grain, digital mud',
+      camera_and_composition: 'Motion blur, smear, headlamp judder',
+      atmosphere_and_mood: 'Terrifying, real, primal fear, unseen threat',
+      rendering_and_quality: 'Shaky, amateur, disorienting, raw panic-cam',
       key_features: 'Flashlight cone, timestamp-like burn-in, panic-cam smear',
       creative_brief:
         'Found-footage horror makes any subject feel accidentally captured: shaking handheld motion, flashlight cone, crushed blacks, sickly green digital noise, CMOS mud, and panic-cam blur. Keep dread and raw survival texture without forcing forest, footsteps, breathing, or unseen monster.',
@@ -175,13 +185,14 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Black-and-white suitmation spectacle, Godzilla 1954, miniature-scale practical terror',
-      form_and_line: 'None',
-      color_palette: 'B&W or Eastmancolor, muted desaturated, faded film stock',
-      lighting_setup: 'Miniature set, forced perspective, matte backdrop light',
-      material_texture: 'Rubber suit texture, latex sheen, toy-scale practical material',
-      render_quality: 'Tokusatsu, scale model, practical destruction, charming artifice',
-      spatial_distortion: 'Stiff movement, lumbering gait, wire-work float',
-      atmosphere: 'Epic, handmade, scale panic',
+      subject_treatment:
+        'Treat subjects as believable filmed or broadcast subjects under Kaiju Movie (Suitmation): casting, wardrobe, props, motion cues, and silhouette hierarchy follow 1. Film Genres cinematic and broadcast grammar without locking to one plot beat.',
+      color_and_tone: 'B&W or Eastmancolor, muted desaturated, faded film stock',
+      lighting_and_shadow: 'Miniature set, forced perspective, matte backdrop light',
+      texture_and_material: 'Rubber suit texture, latex sheen, toy-scale practical material',
+      camera_and_composition: 'Stiff movement, lumbering gait, wire-work float',
+      atmosphere_and_mood: 'Epic, handmade, scale panic',
+      rendering_and_quality: 'Tokusatsu, scale model, practical destruction, charming artifice',
       key_features: 'Low angle, miniature scale, charming artifice',
       creative_brief:
         'Kaiju suitmation style gives any subject handmade colossal scale: low camera, forced perspective, miniature-set lighting, latex/rubber texture, stiff motion implication, and sincere practical artifice. Keep tokusatsu weight without forcing monsters, city destruction, power lines, tanks, or crowds.',
@@ -194,13 +205,14 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'modern action',
     style: {
       aesthetic: '70s studio martial-arts cinema, Shaw Brothers spectacle, acrobatic precision',
-      form_and_line: 'None',
-      color_palette: 'Saturated primaries, golden palace, deep red banners',
-      lighting_setup: 'Studio set, flat broad key, painted backdrop',
-      material_texture: 'Film grain, silk sheen, lacquered prop texture, painted set surface',
-      render_quality: 'Choreographed, acrobatic, wire-fu precision, rhythmic combat',
-      spatial_distortion: 'Snap zoom, crash zoom, dramatic push-in',
-      atmosphere: 'Action, classic, rhythmic discipline',
+      subject_treatment:
+        'Treat subjects as believable filmed or broadcast subjects under Kung Fu Studio Epic (Shaw Brothers): casting, wardrobe, props, motion cues, and silhouette hierarchy follow 1. Film Genres cinematic and broadcast grammar without locking to one plot beat.',
+      color_and_tone: 'Saturated primaries, golden palace, deep red banners',
+      lighting_and_shadow: 'Studio set, flat broad key, painted backdrop',
+      texture_and_material: 'Film grain, silk sheen, lacquered prop texture, painted set surface',
+      camera_and_composition: 'Snap zoom, crash zoom, dramatic push-in',
+      atmosphere_and_mood: 'Action, classic, rhythmic discipline',
+      rendering_and_quality: 'Choreographed, acrobatic, wire-fu precision, rhythmic combat',
       key_features: 'Wide staging, crash zoom, choreographic rhythm',
       creative_brief:
         'Shaw Brothers studio style turns any subject into choreographed spectacle: flat painted-set light, saturated primaries, crash zooms, wide staging, silk-sheen color, and rhythmic action precision. Keep martial-cinema energy without forcing fighters, palace sets, weapons, or combat.',
@@ -214,13 +226,13 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Dense cel-animated cyber noir, Ghost in the Shell style, philosophical tech dread',
-      form_and_line: 'Cel shaded',
-      color_palette: 'Green tint, dark, sickly CRT glow, deep shadow cyan',
-      lighting_setup: 'Neon bounce, CRT underlight, low-key cyber glow',
-      material_texture: 'Cel grain, painted acetate, hand-drawn texture',
-      render_quality: 'Detailed, philosophical, intricate background, mood-drenched',
-      spatial_distortion: 'Cablelike tangles, data-tendril abstraction',
-      atmosphere: 'Tech, moody, conspiratorial, rain-slick isolation',
+      subject_treatment: 'Cel shaded',
+      color_and_tone: 'Green tint, dark, sickly CRT glow, deep shadow cyan',
+      lighting_and_shadow: 'Neon bounce, CRT underlight, low-key cyber glow',
+      texture_and_material: 'Cel grain, painted acetate, hand-drawn texture',
+      camera_and_composition: 'Cablelike tangles, data-tendril abstraction',
+      atmosphere_and_mood: 'Tech, moody, conspiratorial, rain-slick isolation',
+      rendering_and_quality: 'Detailed, philosophical, intricate background, mood-drenched',
       key_features: 'Cathode bloom, cel grain, techno-organic density',
       creative_brief:
         '90s cyberpunk anime style renders any subject in cel-painted tech dread: green CRT glow, cyan shadow, acetate grain, dense linework, cablelike abstraction, bloom, and rain-slick isolation. Keep Ghost in the Shell philosophy as mood without forcing cityscape, implants, rain windows, or brain-hack props.',
@@ -233,13 +245,14 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'asymmetrical, messy',
     style: {
       aesthetic: 'Symmetrical composition',
-      form_and_line: 'None',
-      color_palette: 'Pastel palette, butter yellow, mint green, dusty pink, warm ochre',
-      lighting_setup: 'Flat, soft, diffused wrap, even exposure, no shadow drama',
-      material_texture: 'Film, Kodak stock, matte surface, hand-painted props',
-      render_quality: 'Quirky, precise, diorama-perfect, miniature precision',
-      spatial_distortion: 'Center frame, locked-down composition, 90-degree pans',
-      atmosphere: 'Whimsical, deadpan, storybook melancholy, curated nostalgia',
+      subject_treatment:
+        'Treat subjects as believable filmed or broadcast subjects under Wes Anderson Symmetrical Storybook Cinema: casting, wardrobe, props, motion cues, and silhouette hierarchy follow 1. Film Genres cinematic and broadcast grammar without locking to one plot beat.',
+      color_and_tone: 'Pastel palette, butter yellow, mint green, dusty pink, warm ochre',
+      lighting_and_shadow: 'Flat, soft, diffused wrap, even exposure, no shadow drama',
+      texture_and_material: 'Film, Kodak stock, matte surface, hand-painted props',
+      camera_and_composition: 'Center frame, locked-down composition, 90-degree pans',
+      atmosphere_and_mood: 'Whimsical, deadpan, storybook melancholy, curated nostalgia',
+      rendering_and_quality: 'Quirky, precise, diorama-perfect, miniature precision',
       key_features: 'Symmetry, diorama precision, label-like spacing',
       creative_brief:
         'Symmetrical storybook cinema makes any subject deadpan and curated: locked center framing, pastel palette, flat soft exposure, diorama precision, matte prop texture, and nostalgic melancholy. Keep Wes Anderson grammar without forcing cross-section sets, typography, or quirky characters.',
@@ -252,12 +265,15 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'natural color',
     style: {
       aesthetic: 'Modern action movie',
-      form_and_line: 'None',
-      color_palette: 'Teal shadows, orange highlights, complementary grade, cyan bias',
-      lighting_setup: 'High contrast, backlit rim, dramatic underlight',
-      material_texture: 'Digital clean, noise-free, slick compositing',
-      spatial_distortion: 'Lens flare, anamorphic streak, specular bloom',
-      atmosphere: 'Intense, cinematic, bombastic spectacle, summer tentpole',
+      subject_treatment:
+        'Treat subjects as believable filmed or broadcast subjects under Blockbuster Teal & Orange: casting, wardrobe, props, motion cues, and silhouette hierarchy follow 1. Film Genres cinematic and broadcast grammar without locking to one plot beat.',
+      color_and_tone: 'Teal shadows, orange highlights, complementary grade, cyan bias',
+      lighting_and_shadow: 'High contrast, backlit rim, dramatic underlight',
+      texture_and_material: 'Digital clean, noise-free, slick compositing',
+      camera_and_composition: 'Lens flare, anamorphic streak, specular bloom',
+      atmosphere_and_mood: 'Intense, cinematic, bombastic spectacle, summer tentpole',
+      rendering_and_quality:
+        'Polished tentpole digital-cinema finish with clean compositing, high-contrast grade, crisp rim light, controlled bloom, and no text or watermark.',
       key_features: 'Teal-orange grade, rim light, spectacle bloom',
       creative_brief:
         'Blockbuster teal-orange grade makes any subject feel tentpole-scale: cyan shadows, orange highlights, slick compositing, rim light, anamorphic streaks, bloom, and suspended spectacle texture. Keep action-movie intensity without requiring hero walk, debris, skin tones, explosions, or burning sky.',
@@ -270,13 +286,14 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'natural lighting',
     style: {
       aesthetic: 'Italian horror',
-      form_and_line: 'None',
-      color_palette: 'Deep Red, Blue, Green gels, saturated primaries, blood crimson',
-      lighting_setup: 'Unnatural colored light, gel-drenched, theatrical splash',
-      material_texture: 'Film grain, polished surfaces, leatherlike shadow',
-      render_quality: 'Stylish, baroque, operatic color dread',
-      spatial_distortion: 'POV unease, obscured geometry',
-      atmosphere: 'Mystery, stylish, hallucinatory dread',
+      subject_treatment:
+        'Treat subjects as believable filmed or broadcast subjects under Giallo Horror: casting, wardrobe, props, motion cues, and silhouette hierarchy follow 1. Film Genres cinematic and broadcast grammar without locking to one plot beat.',
+      color_and_tone: 'Deep Red, Blue, Green gels, saturated primaries, blood crimson',
+      lighting_and_shadow: 'Unnatural colored light, gel-drenched, theatrical splash',
+      texture_and_material: 'Film grain, polished surfaces, leatherlike shadow',
+      camera_and_composition: 'POV unease, obscured geometry',
+      atmosphere_and_mood: 'Mystery, stylish, hallucinatory dread',
+      rendering_and_quality: 'Stylish, baroque, operatic color dread',
       key_features: 'Color gels, polished threat, baroque shadow',
       creative_brief:
         'Giallo horror makes light itself theatrical threat: saturated red/blue/green gels, polished reflections, leatherlike blacks, grain, POV unease, and baroque color dread. Keep Argento-era style without forcing murder, gloved hands, blades, blood, or crime evidence. Apply Giallo Horror as a portable cinematic/camera style over any input: preserve its lens behavior, color process, lighting setup, artifact pattern, and deformation grammar while avoiding a required actor, room, prop, brand, readable text, fixed IP scene, or narrative setup.',
@@ -289,13 +306,14 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'polished, scripted',
     style: {
       aesthetic: 'Indie film',
-      form_and_line: 'None',
-      color_palette: 'Natural, low contrast, flat daylight, ungraded look',
-      lighting_setup: 'Available light, practical lamps, window spill',
-      material_texture: 'Digital video, DSLR sensor, consumer camera',
-      render_quality: 'Real, awkward, improvised dialogue, unpolished truth',
-      spatial_distortion: 'Out of focus, soft rack, distracted framing',
-      atmosphere: 'Intimate, awkward, honest discomfort',
+      subject_treatment:
+        'Treat subjects as believable filmed or broadcast subjects under Mumblecore: casting, wardrobe, props, motion cues, and silhouette hierarchy follow 1. Film Genres cinematic and broadcast grammar without locking to one plot beat.',
+      color_and_tone: 'Natural, low contrast, flat daylight, ungraded look',
+      lighting_and_shadow: 'Available light, practical lamps, window spill',
+      texture_and_material: 'Digital video, DSLR sensor, consumer camera',
+      camera_and_composition: 'Out of focus, soft rack, distracted framing',
+      atmosphere_and_mood: 'Intimate, awkward, honest discomfort',
+      rendering_and_quality: 'Real, awkward, improvised dialogue, unpolished truth',
       key_features: 'Handheld, accidental framing, available light',
       creative_brief:
         'Mumblecore style lets any subject stay unpolished: available light, DSLR sensor texture, distracted handheld framing, low contrast, soft rack focus, and accidental honesty. Keep indie intimacy without requiring conversations, apartments, people, or relationship drama.',
@@ -308,13 +326,15 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'cgi',
     style: {
       aesthetic: 'Scrappy analog space opera, used-future adventure, practical model magic',
-      form_and_line: 'None',
-      color_palette: 'Used future, worn ochre, grey panel, rebel olive, droid beige',
-      lighting_setup: 'Studio practicals, cockpit-like glow, optical composite light',
-      material_texture: 'Model kitbash, plastic parts, weathered metal, found-object greeble',
-      render_quality: 'Practical FX, optical composite, matte painting, miniature magic',
-      spatial_distortion: 'None',
-      atmosphere: 'Adventure, dirty, swashbuckling, handmade wonder',
+      subject_treatment:
+        'Treat subjects as believable filmed or broadcast subjects under Space Opera (70s): casting, wardrobe, props, motion cues, and silhouette hierarchy follow 1. Film Genres cinematic and broadcast grammar without locking to one plot beat.',
+      color_and_tone: 'Used future, worn ochre, grey panel, rebel olive, droid beige',
+      lighting_and_shadow: 'Studio practicals, cockpit-like glow, optical composite light',
+      texture_and_material: 'Model kitbash, plastic parts, weathered metal, found-object greeble',
+      camera_and_composition:
+        'Camera language native to Space Opera (70s): genre-aware framing, lens character, focal hierarchy, motion cue, and vertical style-card composition.',
+      atmosphere_and_mood: 'Adventure, dirty, swashbuckling, handmade wonder',
+      rendering_and_quality: 'Practical FX, optical composite, matte painting, miniature magic',
       key_features: 'Greebles, optical composite, worn future',
       creative_brief:
         '70s space opera gives any subject used-future wonder: kitbashed greebles, weathered panels, optical-composite softness, matte-painting depth, practical glow, and worn heroic texture. Keep Star Wars-era adventure without forcing ships, droids, cockpits, cantinas, or rebellion plot.',

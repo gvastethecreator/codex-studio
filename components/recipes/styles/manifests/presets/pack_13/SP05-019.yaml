@@ -13,31 +13,36 @@ tags:
   - shojo-magical-girl-and-visionary-classics
 visualDna:
   aesthetic: >-
-    Psychological glitch-anime style built on analog signal decay, identity fragmentation, and minimalist existential
-    framing
-  form_and_line: >-
-    Fine cel contours interrupted by interference breaks, discontinuous silhouette echoes, jittered edge registration,
-    restrained gesture geometry
-  color_palette: >-
-    Desaturated lavenders and cold cyans with intermittent neon corruption pulses, charcoal voids, and ghost-white
-    highlights
-  lighting_setup: Low-key monitor-like emission, abrupt contrast cliffs, isolated halo bands, and unstable luminance transitions
-  material_texture: CRT phosphor grain, static overlays, scanline veils, layered cel paint softness disrupted by digital noise scars
-  render_quality: >-
-    High-fidelity retro-anime treatment with intentional analog artifacts and controlled degradation for emotional
-    unease
-  spatial_distortion: >-
+    Psychological glitch-anime style built on analog signal decay, identity fragmentation, and minimalist
+    existential framing
+  subject_treatment: >-
+    Fine cel contours interrupted by interference breaks, discontinuous silhouette echoes, jittered edge
+    registration, restrained gesture geometry
+  color_and_tone: >-
+    Desaturated lavenders and cold cyans with intermittent neon corruption pulses, charcoal voids, and
+    ghost-white highlights
+  lighting_and_shadow: >-
+    Low-key monitor-like emission, abrupt contrast cliffs, isolated halo bands, and unstable luminance
+    transitions
+  texture_and_material: >-
+    CRT phosphor grain, static overlays, scanline veils, layered cel paint softness disrupted by digital noise
+    scars
+  camera_and_composition: >-
     Perceptual depth drift, duplicated contour offsets, and compositional dislocation that suggests cognitive
     instability
-  atmosphere: Uncanny, introspective, fragile, dissonant, haunted
+  atmosphere_and_mood: Uncanny, introspective, fragile, dissonant, haunted
+  rendering_and_quality: >-
+    High-fidelity retro-anime treatment with intentional analog artifacts and controlled degradation for
+    emotional unease
   key_features: >-
     Signal-noise dramaturgy, fragmented silhouette logic, analog-digital tension, sparse emotional staging,
     interference-led mood design
   creative_brief: >-
-    Make the style recognizable through signal degradation behavior and perceptual instability: line breaks, static
-    overlays, and contrast collapse should communicate psychological tension independent of character archetype. Apply
-    this anime/IP-title grammar over any input: preserve its emotional staging, line behavior, palette, symbolic motifs,
-    and production cues while avoiding a required cast, lore event, location, prop, or fixed scene.
+    Make the style recognizable through signal degradation behavior and perceptual instability: line breaks,
+    static overlays, and contrast collapse should communicate psychological tension independent of character
+    archetype. Apply this anime/IP-title grammar over any input: preserve its emotional staging, line
+    behavior, palette, symbolic motifs, and production cues while avoiding a required cast, lore event,
+    location, prop, or fixed scene.
 avoidRules:
   - realistic
   - 3d render
@@ -55,8 +60,8 @@ assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-019.webp
 attributes:
   negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark,
-    text, signature
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts,
+    watermark, text, signature
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle

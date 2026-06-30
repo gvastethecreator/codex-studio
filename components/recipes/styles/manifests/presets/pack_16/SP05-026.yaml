@@ -12,22 +12,36 @@ tags:
   - anime-classics-and-prestige
   - 2000s-classics
 visualDna:
-  aesthetic: Operatic rebellion strategy with theatrical command, aristocratic severity, masked intent, and elegant political tension.
-  form_and_line: Smooth vector-like anime strokes, crisp contour clarity, cape-like silhouette geometry, chessboard blocking, and declarative pose design.
-  color_palette: Imperial crimson, polished black, royal violet, cold white, gold trim accents, and saturated early-HD emergency glow.
-  lighting_setup: Polished gradient highlights, spotlight-like command keys, crimson rim light, and clean fill for graphic hierarchy.
-  material_texture: Smooth digital cel polish, lacquered black surfaces, ceremonial cloth sheen, tactical glass glow, and subtle composite grain.
-  render_quality: Early-2000s digital anime production frame with clean rendering, smooth color blending, and high-drama readability.
-  spatial_distortion: Strategic overhead cues, theatrical diagonals, throne-like negative space, and compressed command-board perspective.
-  atmosphere: Grand, strategic, dramatic, political
-  key_features: Masked intention, chesslike composition, crimson-black authority, theatrical diagonals, and elegant defiance.
+  aesthetic: >-
+    Operatic rebellion strategy with theatrical command, aristocratic severity, masked intent, and elegant
+    political tension.
+  subject_treatment: >-
+    Smooth vector-like anime strokes, crisp contour clarity, cape-like silhouette geometry, chessboard
+    blocking, and declarative pose design.
+  color_and_tone: >-
+    Imperial crimson, polished black, royal violet, cold white, gold trim accents, and saturated early-HD
+    emergency glow.
+  lighting_and_shadow: >-
+    Polished gradient highlights, spotlight-like command keys, crimson rim light, and clean fill for graphic
+    hierarchy.
+  texture_and_material: >-
+    Smooth digital cel polish, lacquered black surfaces, ceremonial cloth sheen, tactical glass glow, and
+    subtle composite grain.
+  camera_and_composition: >-
+    Strategic overhead cues, theatrical diagonals, throne-like negative space, and compressed command-board
+    perspective.
+  atmosphere_and_mood: Grand, strategic, dramatic, political
+  rendering_and_quality: >-
+    Early-2000s digital anime production frame with clean rendering, smooth color blending, and high-drama
+    readability.
+  key_features: >-
+    Masked intention, chesslike composition, crimson-black authority, theatrical diagonals, and elegant
+    defiance.
   creative_brief: >-
-    Build a reusable operatic-rebellion strategy grammar for any subject or
-    input image: command posture, aristocratic tension, crimson-black graphic
-    hierarchy, masked intent, and early-digital political drama. Mecha, masks,
-    uniforms, or command geometry may appear as strategic style cues when they
-    strengthen the input, without fixing a command room, revolution plot, empire
-    scene, or specific costume.
+    Build a reusable operatic-rebellion strategy grammar for any subject or input image: command posture,
+    aristocratic tension, crimson-black graphic hierarchy, masked intent, and early-digital political drama.
+    Mecha, masks, uniforms, or command geometry may appear as strategic style cues when they strengthen the
+    input, without fixing a command room, revolution plot, empire scene, or specific costume.
 avoidRules:
   - realistic
   - 3d render
@@ -44,7 +58,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-026.webp
 attributes:
-  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
+  negativePrompt: >-
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts,
+    watermark, text, signature
 taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige

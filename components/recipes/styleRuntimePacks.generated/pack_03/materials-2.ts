@@ -10,13 +10,13 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'opaque, dull',
     style: {
       aesthetic: 'Transparent refractive material system',
-      form_and_line: 'Caustics',
-      color_palette: 'Prismatic dispersion',
-      lighting_setup: 'Refracted light',
-      material_texture: 'Smooth, flawless, refractive clarity',
-      render_quality: 'Raytraced, crystal-clear',
-      spatial_distortion: 'Refraction',
-      atmosphere: 'Elegant, fragile, luxury boutique',
+      subject_treatment: 'Caustics',
+      color_and_tone: 'Prismatic dispersion',
+      lighting_and_shadow: 'Refracted light',
+      texture_and_material: 'Smooth, flawless, refractive clarity',
+      camera_and_composition: 'Refraction',
+      atmosphere_and_mood: 'Elegant, fragile, luxury boutique',
+      rendering_and_quality: 'Raytraced, crystal-clear',
       key_features: 'Transparency, dispersion rainbow',
       creative_brief:
         'Apply transparent refractive lookdev to the input: caustic lace, prismatic dispersion, glass-thick edges and optical bending that make form legible through what light does inside it. Keep boutique crystal polish without requiring a standalone object, display window or still-life setup.',
@@ -29,13 +29,13 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'solid, dry',
     style: {
       aesthetic: 'Splashing water or fluid',
-      form_and_line: 'Droplets',
-      color_palette: 'Clear or colored liquid',
-      lighting_setup: 'Specular highlights',
-      material_texture: 'Wet, surface tension',
-      render_quality: 'Realflow fluid simulation, splashing realism',
-      spatial_distortion: 'Fluid dynamics',
-      atmosphere: 'Dynamic, wet, in-motion energy',
+      subject_treatment: 'Droplets',
+      color_and_tone: 'Clear or colored liquid',
+      lighting_and_shadow: 'Specular highlights',
+      texture_and_material: 'Wet, surface tension',
+      camera_and_composition: 'Fluid dynamics',
+      atmosphere_and_mood: 'Dynamic, wet, in-motion energy',
+      rendering_and_quality: 'Realflow fluid simulation, splashing realism',
       key_features: 'Splash shape, foam particles',
       creative_brief:
         'Apply liquid-simulation behavior to any input: surface-tension stretch, suspended droplets, splash-crown curvature, foam particles, wet speculars, and frozen fluid motion. Keep kinetic waterlike sculpture without requiring a falling object, ocean, glass, body, or literal impact event.',
@@ -48,13 +48,13 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'hard, plastic, metal',
     style: {
       aesthetic: 'Translucent material (wax, skin, jade)',
-      form_and_line: 'Soft light penetration',
-      color_palette: 'Glowing from inside, warm subsurface hues',
-      lighting_setup: 'Backlit, rim-penetration',
-      material_texture: 'Waxy, organic, light-permeable',
-      render_quality: 'Realistic organic material, portrait-grade softness when relevant',
-      spatial_distortion: 'Soft edges',
-      atmosphere: 'Soft, organic, life-like warmth',
+      subject_treatment: 'Soft light penetration',
+      color_and_tone: 'Glowing from inside, warm subsurface hues',
+      lighting_and_shadow: 'Backlit, rim-penetration',
+      texture_and_material: 'Waxy, organic, light-permeable',
+      camera_and_composition: 'Soft edges',
+      atmosphere_and_mood: 'Soft, organic, life-like warmth',
+      rendering_and_quality: 'Realistic organic material, portrait-grade softness when relevant',
       key_features: 'Inner glow',
       creative_brief:
         "Give the input subsurface scattering: light penetration, warm internal bounce, wax/jade/alabaster softness, backlit rim glow and organic depth. Keep life-like warmth without requiring skin, portrait framing, a child's ear or a biological subject.",
@@ -67,12 +67,14 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'matte, rough',
     style: {
       aesthetic: 'Highly reflective surface',
-      form_and_line: 'Sharp reflections',
-      color_palette: 'Silver, Gold, Copper, anodized tones',
-      lighting_setup: 'HDRI environment reflection, specular bounce',
-      material_texture: 'Polished, mirror-grade chrome',
-      render_quality: 'Automotive finish, showroom gloss',
-      atmosphere: 'Sleek, futuristic, precision luxury',
+      subject_treatment: 'Sharp reflections',
+      color_and_tone: 'Silver, Gold, Copper, anodized tones',
+      lighting_and_shadow: 'HDRI environment reflection, specular bounce',
+      texture_and_material: 'Polished, mirror-grade chrome',
+      camera_and_composition:
+        'Lookdev camera for Chrome & Metal: close three-quarter or macro material framing, strong highlight planes, readable surface curvature, and controlled depth.',
+      atmosphere_and_mood: 'Sleek, futuristic, precision luxury',
+      rendering_and_quality: 'Automotive finish, showroom gloss',
       key_features: 'Reflection, anisotropic highlights',
       creative_brief:
         'Turn the input into a chrome-and-metal reflection study: HDRI ribbons, anisotropic highlight streaks, gold/chrome/anodized shifts and hard specular confidence. It may suggest automotive or showroom polish when relevant, but must not require a vehicle, product pedestal or surrounding world. Apply Chrome & Metal as a portable 3D/render style system over any input: preserve its renderer logic, material behavior, geometry language, lighting grammar, and production cues while avoiding a required character, vehicle, prop, environment, UI screen, product shot, or scene template.',
@@ -85,13 +87,13 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'bald, smooth',
     style: {
       aesthetic: 'Groomed fur simulation',
-      form_and_line: 'Individual strands',
-      color_palette: 'Soft gradient',
-      lighting_setup: 'Rim light on fuzz',
-      material_texture: 'Fluffy, soft, dimensional volume',
-      render_quality: 'XGen groom simulation, every strand deliberate',
-      spatial_distortion: 'Wind blown',
-      atmosphere: 'Cozy, tactile warmth, groomed softness',
+      subject_treatment: 'Individual strands',
+      color_and_tone: 'Soft gradient',
+      lighting_and_shadow: 'Rim light on fuzz',
+      texture_and_material: 'Fluffy, soft, dimensional volume',
+      camera_and_composition: 'Wind blown',
+      atmosphere_and_mood: 'Cozy, tactile warmth, groomed softness',
+      rendering_and_quality: 'XGen groom simulation, every strand deliberate',
       key_features: 'Hair strands, clump variation',
       creative_brief:
         'Grow groomed fur or hair over the input: XGen-like strand control, clump variation, rim-lit fuzz, density gradients and wind-frozen filament behavior. It may imply creature warmth, but should not require an animal, character, field metaphor or living body. Apply Fur & Hair as a portable 3D/render style system over any input: preserve its renderer logic, material behavior, geometry language, lighting grammar, and production cues while avoiding a required character, vehicle, prop, environment, UI screen, product shot, or scene template.',
@@ -104,13 +106,13 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'dry, solid',
     style: {
       aesthetic: 'Viscous sticky fluid',
-      form_and_line: 'Stretching strands',
-      color_palette: 'Neon Green/Pink',
-      lighting_setup: 'Glossy',
-      material_texture: 'Sticky, wet, viscous elasticity',
-      render_quality: 'Nickelodeon gooey cartoon gross-out, slime fun',
-      spatial_distortion: 'Dripping',
-      atmosphere: 'Fun, gross, messy joy',
+      subject_treatment: 'Stretching strands',
+      color_and_tone: 'Neon Green/Pink',
+      lighting_and_shadow: 'Glossy',
+      texture_and_material: 'Sticky, wet, viscous elasticity',
+      camera_and_composition: 'Dripping',
+      atmosphere_and_mood: 'Fun, gross, messy joy',
+      rendering_and_quality: 'Nickelodeon gooey cartoon gross-out, slime fun',
       key_features: 'Drips, stretch strings',
       creative_brief:
         'Apply slime material behavior to any input: viscous neon goo, stretch strands, wet specular pooling, dripping deformation, electric green or hot pink gross-out color, and playful sticky volume. Keep messy cartoon energy without requiring a bucket, prank, creature, lab accident, or body beneath.',
@@ -123,12 +125,14 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'smooth, paint',
     style: {
       aesthetic: 'Woven composite material',
-      form_and_line: 'Weave pattern',
-      color_palette: 'Black/Grey anisotropic, carbon weave contrast',
-      lighting_setup: 'Clear coat reflection, directional anisotropy',
-      material_texture: 'Geometric weave, layered composite',
-      render_quality: 'High tech, automotive, motorsport-grade',
-      atmosphere: 'Fast, strong, engineering precision',
+      subject_treatment: 'Weave pattern',
+      color_and_tone: 'Black/Grey anisotropic, carbon weave contrast',
+      lighting_and_shadow: 'Clear coat reflection, directional anisotropy',
+      texture_and_material: 'Geometric weave, layered composite',
+      camera_and_composition:
+        'Lookdev camera for Carbon Fiber: close three-quarter or macro material framing, strong highlight planes, readable surface curvature, and controlled depth.',
+      atmosphere_and_mood: 'Fast, strong, engineering precision',
+      rendering_and_quality: 'High tech, automotive, motorsport-grade',
       key_features: 'Weave pattern, carbon-fiber direction',
       creative_brief:
         'Wrap the input in carbon-fiber engineering language: visible weave direction, clear-coat depth, anisotropic glints and weightless-strength precision. Keep motorsport tension as material attitude only; do not force pit lanes, vehicles or racing context. Apply Carbon Fiber as a portable 3D/render style system over any input: preserve its renderer logic, material behavior, geometry language, lighting grammar, and production cues while avoiding a required character, vehicle, prop, environment, UI screen, product shot, or scene template.',
@@ -141,12 +145,14 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'solid, opaque',
     style: {
       aesthetic: 'Projected light construct',
-      form_and_line: 'Scanlines, interference',
-      color_palette: 'Cyan, Blue transparent, interference spectrum',
-      lighting_setup: 'Emissive, volumetric projection',
-      material_texture: 'Digital noise, scanline grain',
-      render_quality: 'Sci-fi interface, AR overlay',
-      atmosphere: 'Futuristic, tech, ghost-data',
+      subject_treatment: 'Scanlines, interference',
+      color_and_tone: 'Cyan, Blue transparent, interference spectrum',
+      lighting_and_shadow: 'Emissive, volumetric projection',
+      texture_and_material: 'Digital noise, scanline grain',
+      camera_and_composition:
+        'Lookdev camera for Hologram: close three-quarter or macro material framing, strong highlight planes, readable surface curvature, and controlled depth.',
+      atmosphere_and_mood: 'Futuristic, tech, ghost-data',
+      rendering_and_quality: 'Sci-fi interface, AR overlay',
       key_features: 'Transparency, flickering projection',
       creative_brief:
         'Rebuild the input as ghost-data: cyan scanlines, transparent interference, volumetric flicker, AR registration seams and blueprint-like light constructs. Preserve sci-fi interface presence without requiring a floating object, architecture mockup or physical room.',
@@ -160,18 +166,20 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         "Porcelain within 2. Materials: a reusable 3D & CGI Rendering visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Porcelain's specific style identity.",
-      form_and_line:
+      subject_treatment:
         'Define Porcelain through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
-      color_palette:
+      color_and_tone:
         'Use a Porcelain-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
-      lighting_setup:
+      lighting_and_shadow:
         'Use lighting that makes Porcelain recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
-      material_texture:
+      texture_and_material:
         'Use materials and textures that reinforce Porcelain: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
-      render_quality:
-        'Render Porcelain with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
-      atmosphere:
+      camera_and_composition:
+        'Lookdev camera for Porcelain: close three-quarter or macro material framing, strong highlight planes, readable surface curvature, and controlled depth.',
+      atmosphere_and_mood:
         'Set a mood that belongs to Porcelain: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+      rendering_and_quality:
+        'Render Porcelain with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       key_features:
         "Prioritize Porcelain's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
@@ -185,12 +193,14 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'diffuse, matte',
     style: {
       aesthetic: 'Light focusing through glass/water',
-      form_and_line: 'Bright patterns',
-      color_palette: 'Prismatic, light-concentration bands',
-      lighting_setup: 'Focused intensity, photon convergence',
-      material_texture: 'Light patterns, refractive surfaces',
-      render_quality: 'Physically correct, optical precision',
-      atmosphere: 'Ethereal, complex, underwater magic',
+      subject_treatment: 'Bright patterns',
+      color_and_tone: 'Prismatic, light-concentration bands',
+      lighting_and_shadow: 'Focused intensity, photon convergence',
+      texture_and_material: 'Light patterns, refractive surfaces',
+      camera_and_composition:
+        'Lookdev camera for Caustics: close three-quarter or macro material framing, strong highlight planes, readable surface curvature, and controlled depth.',
+      atmosphere_and_mood: 'Ethereal, complex, underwater magic',
+      rendering_and_quality: 'Physically correct, optical precision',
       key_features: 'Light dancing, photon mapping',
       creative_brief:
         'Apply caustic light behavior to any input: concentrated photon webs, prismatic separation, refractive patterning, bright surface pools, and optical precision from water or crystal-like bending. Keep the caustic effect as lighting grammar without requiring underwater content, glass props, pools, or a specific refractive object.',
@@ -203,12 +213,14 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'opaque, skin',
     style: {
       aesthetic: 'X-ray transparency render',
-      form_and_line: 'Internal structure',
-      color_palette: 'Blue/White inverted, clinical spectrum',
-      lighting_setup: 'Internal glow, self-illuminated core',
-      material_texture: 'Density-based internal layers',
-      render_quality: 'Medical, sci-fi, diagnostic scan',
-      atmosphere: 'Analytical, cold, forensic insight',
+      subject_treatment: 'Internal structure',
+      color_and_tone: 'Blue/White inverted, clinical spectrum',
+      lighting_and_shadow: 'Internal glow, self-illuminated core',
+      texture_and_material: 'Density-based internal layers',
+      camera_and_composition:
+        'Lookdev camera for X-Ray Shader: close three-quarter or macro material framing, strong highlight planes, readable surface curvature, and controlled depth.',
+      atmosphere_and_mood: 'Analytical, cold, forensic insight',
+      rendering_and_quality: 'Medical, sci-fi, diagnostic scan',
       key_features: 'Internal view, see-through silhouette',
       creative_brief:
         'Render the input as X-ray transparency: ghosted outer contour, cyan-white density, visible internal structure and diagnostic depth. If bones, circuits or mechanics fit, reveal them; otherwise invent structural layers without forcing anatomy or hardware. Apply X-Ray Shader as a portable 3D/render style system over any input: preserve its renderer logic, material behavior, geometry language, lighting grammar, and production cues while avoiding a required character, vehicle, prop, environment, UI screen, product shot, or scene template.',
@@ -221,12 +233,14 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'realistic color',
     style: {
       aesthetic: 'Heat map 3D',
-      form_and_line: 'Heat gradients',
-      color_palette: 'Rainbow (Blue cold, Red hot), thermal gradient',
-      lighting_setup: 'Emissive temperature, heat-source mapping',
-      material_texture: 'None, temperature-emissive',
-      render_quality: 'Thermal false-color sensor overlay',
-      atmosphere: 'Tactical, alien, sensor-data intensity',
+      subject_treatment: 'Heat gradients',
+      color_and_tone: 'Rainbow (Blue cold, Red hot), thermal gradient',
+      lighting_and_shadow: 'Emissive temperature, heat-source mapping',
+      texture_and_material: 'Temperature-emissive surface read with no material grain',
+      camera_and_composition:
+        'Lookdev camera for Thermal Vision: close three-quarter or macro material framing, strong highlight planes, readable surface curvature, and controlled depth.',
+      atmosphere_and_mood: 'Tactical, alien, sensor-data intensity',
+      rendering_and_quality: 'Thermal false-color sensor overlay',
       key_features: 'Heat map, cold-to-hot spectrum',
       creative_brief:
         'Translate the input into thermal false color: white/yellow heat peaks, blue cold zones, soft diffusion edges and sensor-grade data contrast. Keep tactical sci-fi flavor without requiring predator vision, reconnaissance or a literal world scan.',
@@ -239,12 +253,14 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'warm, melted',
     style: {
       aesthetic: 'Carved ice',
-      form_and_line: 'Chiseled edges',
-      color_palette: 'Clear, Blue tint, frosty translucence',
-      lighting_setup: 'Refractive, ice-crystal dispersion',
-      material_texture: 'Smooth, frosty, cold-surface',
-      render_quality: 'Event, art, gala-tier sculpture',
-      atmosphere: 'Cold, temporary, ephemeral beauty',
+      subject_treatment: 'Chiseled edges',
+      color_and_tone: 'Clear, Blue tint, frosty translucence',
+      lighting_and_shadow: 'Refractive, ice-crystal dispersion',
+      texture_and_material: 'Smooth, frosty, cold-surface',
+      camera_and_composition:
+        'Lookdev camera for Ice Sculpture: close three-quarter or macro material framing, strong highlight planes, readable surface curvature, and controlled depth.',
+      atmosphere_and_mood: 'Cold, temporary, ephemeral beauty',
+      rendering_and_quality: 'Event, art, gala-tier sculpture',
       key_features: 'Transparency, melt-edge detail',
       creative_brief:
         'Carve the input into ice-sculpture material: cold translucence, blue-tinted refraction, chiseled edges, melt-softened corners and frosty dispersion. Preserve gala-tier ephemerality without forcing a literal sculpture or event setting. Apply Ice Sculpture as a portable 3D/render style system over any input: preserve its renderer logic, material behavior, geometry language, lighting grammar, and production cues while avoiding a required character, vehicle, prop, environment, UI screen, product shot, or scene template.',
@@ -257,12 +273,14 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'flesh, color',
     style: {
       aesthetic: 'Cast bronze sculptural material',
-      form_and_line: 'Sculpted details',
-      color_palette: 'Bronze, Patina (Green), verdigris aging',
-      lighting_setup: 'Specular highlights, metal-luster',
-      material_texture: 'Metal, weathering, cast-texture',
-      render_quality: 'Monument, classic, sculpture-garden',
-      atmosphere: 'Timeless, heavy, historical gravity',
+      subject_treatment: 'Sculpted details',
+      color_and_tone: 'Bronze, Patina (Green), verdigris aging',
+      lighting_and_shadow: 'Specular highlights, metal-luster',
+      texture_and_material: 'Metal, weathering, cast-texture',
+      camera_and_composition:
+        'Lookdev camera for Bronze Statue: close three-quarter or macro material framing, strong highlight planes, readable surface curvature, and controlled depth.',
+      atmosphere_and_mood: 'Timeless, heavy, historical gravity',
+      rendering_and_quality: 'Monument, classic, sculpture-garden',
       key_features: 'Patina in crevices, cast-metal detail',
       creative_brief:
         'Cast the input in bronze-sculpture language: warm metal luster, verdigris in crevices, mold texture, heavy shadows and monument-grade surface gravity. If figurative forms exist, preserve them; otherwise apply sculptural metal permanence without forcing a statue garden or human figure. Apply Bronze Statue as a portable 3D/render style system over any input: preserve its renderer logic, material behavior, geometry language, lighting grammar, and production cues while avoiding a required character, vehicle, prop, environment, UI screen, product shot, or scene template.',
@@ -275,12 +293,14 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'flesh, warm',
     style: {
       aesthetic: 'Carved stone',
-      form_and_line: 'Chisel marks (optional)',
-      color_palette: 'White, Grey veins, Carrara purity',
-      lighting_setup: 'Subsurface scattering (slight), marble translucency',
-      material_texture: 'Stone polish, veined-crystal surface',
-      render_quality: 'Classical art, museum, neoclassical perfection',
-      atmosphere: 'Classic, pure, sculpted eternity',
+      subject_treatment: 'Chisel marks (optional)',
+      color_and_tone: 'White, Grey veins, Carrara purity',
+      lighting_and_shadow: 'Subsurface scattering (slight), marble translucency',
+      texture_and_material: 'Stone polish, veined-crystal surface',
+      camera_and_composition:
+        'Lookdev camera for Marble Statue: close three-quarter or macro material framing, strong highlight planes, readable surface curvature, and controlled depth.',
+      atmosphere_and_mood: 'Classic, pure, sculpted eternity',
+      rendering_and_quality: 'Classical art, museum, neoclassical perfection',
       key_features: 'Stone texture, vein-flow naturalism',
       creative_brief:
         'Recast the input in Carrara-marble sculpture style: grey veining, semi-translucent stone depth, polished soft reflection and optional chisel marks. Keep neoclassical dignity as material language, not a forced museum piece, figure, or Michelangelo reference setup. Apply Marble Statue as a portable 3D/render style system over any input: preserve its renderer logic, material behavior, geometry language, lighting grammar, and production cues while avoiding a required character, vehicle, prop, environment, UI screen, product shot, or scene template.',

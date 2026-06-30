@@ -13,15 +13,19 @@ tags:
   - animation-styles
 visualDna:
   aesthetic: Flash-era web animation, Newgrounds style, vector crude, 2000s internet, tweened rebellion
-  form_and_line: Thick vector
-  color_palette: Web safe colors, 216 palette, lime green, hot pink, electric blue
-  lighting_setup: Gradient tool, radial fill, linear ramp, flat vector
-  material_texture: Vector smooth, anti-aliased edge, Flash player crisp
-  render_quality: Internet, crude, preload-bar aesthetic, tween-driven motion
-  spatial_distortion: Tweening, linear interpolation, shape morph, motion guide
-  atmosphere: Nostalgic, simple, dial-up rebellion, forum culture
+  subject_treatment: Thick vector
+  color_and_tone: Web safe colors, 216 palette, lime green, hot pink, electric blue
+  lighting_and_shadow: Gradient tool, radial fill, linear ramp, flat vector
+  texture_and_material: Vector smooth, anti-aliased edge, Flash player crisp
+  camera_and_composition: Tweening, linear interpolation, shape morph, motion guide
+  atmosphere_and_mood: Nostalgic, simple, dial-up rebellion, forum culture
+  rendering_and_quality: Internet, crude, preload-bar aesthetic, tween-driven motion
   key_features: Symbol reuse, tween trails, vector morphs, radial gradients, hard anti-aliased edges
-  creative_brief: 'Translate the prompt into early web-vector animation: Flash symbols, reusable shapes, hard anti-aliased contours, radial gradient fills, and linear tween motion. Avoid UI controls, loading screens, stick figures, or readable text. The style should feel like compressed 2000s internet motion design: cheap, bright, rebellious, and vector-crisp.'
+  creative_brief: >-
+    Translate the prompt into early web-vector animation: Flash symbols, reusable shapes, hard anti-aliased
+    contours, radial gradient fills, and linear tween motion. Avoid UI controls, loading screens, stick
+    figures, or readable text. The style should feel like compressed 2000s internet motion design: cheap,
+    bright, rebellious, and vector-crisp.
 avoidRules:
   - textured
   - soft

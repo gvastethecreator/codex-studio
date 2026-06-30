@@ -12,22 +12,28 @@ tags:
   - anime-classics-and-prestige
   - 70s-and-80s-retro-anime
 visualDna:
-  aesthetic: Heavy chrome grandeur, heroic massing, bold retro machinery logic, rivet detailing, and triumphant analog scale.
-  form_and_line: Chunky silhouette blocking, rivet-conscious contouring, mechanical panel breaks, and impact-line emphasis.
-  color_palette: Saturated super-robot primaries with steel neutrals, hot warning reds, and heroic contrast blocks
-  lighting_setup: Hard directional key with dramatic cel shadow wedges, metallic rim splits, and backlight flare.
-  material_texture: Painted steel plate cues, cel-highlighted chrome edges, analog matte background treatment, scanline-era grain
-  render_quality: Classic broadcast frame quality with strong mechanical readability and era-faithful cel compositing.
-  spatial_distortion: Extreme low-angle heroic framing, launch-vector perspective exaggeration, and scale-first composition logic.
-  atmosphere: Action-heavy, triumphant, intense, explosive
-  key_features: Monumental massing grammar, riveted panel articulation, launch-vector perspective drama, and metallic cel highlight choreography.
+  aesthetic: >-
+    Heavy chrome grandeur, heroic massing, bold retro machinery logic, rivet detailing, and triumphant analog
+    scale.
+  subject_treatment: Chunky silhouette blocking, rivet-conscious contouring, mechanical panel breaks, and impact-line emphasis.
+  color_and_tone: Saturated super-robot primaries with steel neutrals, hot warning reds, and heroic contrast blocks
+  lighting_and_shadow: Hard directional key with dramatic cel shadow wedges, metallic rim splits, and backlight flare.
+  texture_and_material: >-
+    Painted steel plate cues, cel-highlighted chrome edges, analog matte background treatment, scanline-era
+    grain
+  camera_and_composition: >-
+    Extreme low-angle heroic framing, launch-vector perspective exaggeration, and scale-first composition
+    logic.
+  atmosphere_and_mood: Action-heavy, triumphant, intense, explosive
+  rendering_and_quality: Classic broadcast frame quality with strong mechanical readability and era-faithful cel compositing.
+  key_features: >-
+    Monumental massing grammar, riveted panel articulation, launch-vector perspective drama, and metallic cel
+    highlight choreography.
   creative_brief: >-
-    Preserve vintage mechanical grandeur through heavy silhouette logic,
-    high-contrast cel shading, riveted articulation, and emotionally maximal
-    hero framing. Transfer this logic to any subject or input image by
-    mechanizing forms when useful, adding riveted mass, robot-scale posture, or
-    vehicle-like panel rhythm without requiring launch bays, pilots, or a fixed
-    machine scene.
+    Preserve vintage mechanical grandeur through heavy silhouette logic, high-contrast cel shading, riveted
+    articulation, and emotionally maximal hero framing. Transfer this logic to any subject or input image by
+    mechanizing forms when useful, adding riveted mass, robot-scale posture, or vehicle-like panel rhythm
+    without requiring launch bays, pilots, or a fixed machine scene.
 avoidRules:
   - realistic
   - 3d render
@@ -44,7 +50,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-002.webp
 attributes:
-  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
+  negativePrompt: >-
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts,
+    watermark, text, signature
 taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige

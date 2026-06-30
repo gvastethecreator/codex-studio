@@ -13,18 +13,20 @@ tags:
   - historical-and-fantasy
 visualDna:
   aesthetic: Ancient Egyptian regalia, Nile-divinity splendor, carved-relief majesty
-  form_and_line: Pleated linen, columnar drape, usekh-collar spread, nemes-headdress frame, sheath-silhouette
-  color_palette: White, Gold, Lapis Blue, turquoise, carnelian red, malachite green, ebony, electrum
-  lighting_setup: Desert-gold sun, relief-shadow contrast, torchlight flicker, lapis highlight
-  material_texture: Fine linen, gold leaf, faience beads, lapis lazuli inlay, hammered electrum, braided papyrus sandals
-  render_quality: Royal, ancient, tomb-painting precision, pharaonic grandeur
-  spatial_distortion: None
-  atmosphere: Regal, divine, eternal-Nile serenity, incense reverence, absolute-power stillness
+  subject_treatment: Pleated linen, columnar drape, usekh-collar spread, nemes-headdress frame, sheath-silhouette
+  color_and_tone: White, Gold, Lapis Blue, turquoise, carnelian red, malachite green, ebony, electrum
+  lighting_and_shadow: Desert-gold sun, relief-shadow contrast, torchlight flicker, lapis highlight
+  texture_and_material: Fine linen, gold leaf, faience beads, lapis lazuli inlay, hammered electrum, braided papyrus sandals
+  camera_and_composition: >-
+    Compose for Ancient Egyptian using its key spatial cues: Usekh spread geometry, kohl-line cues,
+    relief-line ornament, pleated linen rhythm, faience-lapis accents.
+  atmosphere_and_mood: Regal, divine, eternal-Nile serenity, incense reverence, absolute-power stillness
+  rendering_and_quality: Royal, ancient, tomb-painting precision, pharaonic grandeur
   key_features: Usekh spread geometry, kohl-line cues, relief-line ornament, pleated linen rhythm, faience-lapis accents
   creative_brief: >-
-    Render any input through Ancient Egyptian regalia: pleated linen, usekh collar spread, faience
-    beads, lapis, turquoise, electrum and kohl-like line precision. Keep pharaonic divinity without
-    requiring a pharaoh, queen, temple, desert pose, crook/flail or human eyes.
+    Render any input through Ancient Egyptian regalia: pleated linen, usekh collar spread, faience beads,
+    lapis, turquoise, electrum and kohl-like line precision. Keep pharaonic divinity without requiring a
+    pharaoh, queen, temple, desert pose, crook/flail or human eyes.
 avoidRules:
   - contemporary tailoring dominance
   - generic modern streetwear

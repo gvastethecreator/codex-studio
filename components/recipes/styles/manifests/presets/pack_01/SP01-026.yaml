@@ -13,20 +13,21 @@ tags:
   - film-and-analog-process
 visualDna:
   aesthetic: Lensless photography
-  form_and_line: Soft everywhere
-  color_palette: Vignetted
-  lighting_setup: Long exposure motion blur
-  material_texture: Diffraction blur
-  render_quality: Dreamy, experimental
-  spatial_distortion: Infinite depth of field (soft)
-  atmosphere: Surreal, time passing
+  subject_treatment: Soft everywhere
+  color_and_tone: Vignetted
+  lighting_and_shadow: Long exposure motion blur
+  texture_and_material: Diffraction blur
+  camera_and_composition: Infinite depth of field (soft)
+  atmosphere_and_mood: Surreal, time passing
+  rendering_and_quality: Dreamy, experimental
   key_features: Soft focus
   creative_brief: >-
-    Vision stripped of optics, where light seeps through a needle's wound and time pools on the surface. Edges dissolve
-    into dreaming, the world seen as if through memory rather than glass. Every frame exhales the patience of a long
-    exposure, moments bleeding into one another like watercolor on wet paper. Apply this photographic look over any
-    input: preserve lens behavior, exposure logic, color response, framing discipline, and artifact pattern while
-    avoiding a required place, face, travel scene, landscape, or narrative setup.
+    Vision stripped of optics, where light seeps through a needle's wound and time pools on the surface. Edges
+    dissolve into dreaming, the world seen as if through memory rather than glass. Every frame exhales the
+    patience of a long exposure, moments bleeding into one another like watercolor on wet paper. Apply this
+    photographic look over any input: preserve lens behavior, exposure logic, color response, framing
+    discipline, and artifact pattern while avoiding a required place, face, travel scene, landscape, or
+    narrative setup.
 avoidRules:
   - sharp
   - lens flare

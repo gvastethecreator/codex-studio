@@ -13,19 +13,20 @@ tags:
   - digital-art
 visualDna:
   aesthetic: Clean vector-art style with Bezier precision and flat scalable geometry
-  form_and_line: Bezier curves
-  color_palette: Solid flat colors
-  lighting_setup: None
-  material_texture: None
-  render_quality: Icon-grade clarity without requiring logos, marks, or branding
-  spatial_distortion: Simplified
-  atmosphere: Modern, precise, frictionless
+  subject_treatment: Bezier curves
+  color_and_tone: Solid flat colors
+  lighting_and_shadow: >-
+    Lighting for Vector Art (Flat): purposeful key, bounce, rim, shadow depth, and focal readability matched
+    to 4. Digital Art.
+  texture_and_material: "Surface treatment follows Vector Art (Flat)'s material cues: Infinite resolution."
+  camera_and_composition: Simplified
+  atmosphere_and_mood: Modern, precise, frictionless
+  rendering_and_quality: Icon-grade clarity without requiring logos, marks, or branding
   key_features: Infinite resolution
   creative_brief: >-
-    Apply flat vector-art construction to any input: precise Bezier contours,
-    deliberate anchor-point curves, solid color fills, clean geometric hierarchy,
-    and resolution-independent edges. Keep scalable graphic clarity without
-    requiring icons, logos, infographics, app UI, or brand marks.
+    Apply flat vector-art construction to any input: precise Bezier contours, deliberate anchor-point curves,
+    solid color fills, clean geometric hierarchy, and resolution-independent edges. Keep scalable graphic
+    clarity without requiring icons, logos, infographics, app UI, or brand marks.
 avoidRules:
   - photo
   - realistic
@@ -47,7 +48,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP06-049.webp
 attributes:
-  negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border, logo requirement, brand mark
+  negativePrompt: >-
+    photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy,
+    watermark, text, signature, frame, border, logo requirement, brand mark
 taxonomy:
   packId: pack_06
   packName: Essential Art Styles

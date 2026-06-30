@@ -14,16 +14,35 @@ tags:
   - salvagepunk
   - wind-camp
 visualDna:
-  aesthetic: primitive salvage wind-camp identity led by one resilient wind-tender camp elder, with handmade driftwood turbines, patched tents, ember light, and shared power as the thematic world.
-  form_and_line: Stone tools, rope mechanics, carved engines, low-tech power rigs, salvage sails, and rough handmade engineering. Core composition uses one main wind-tender, driftwood turbines, patched tents, campfire, scrap blades.
-  color_palette: driftwood brown, canvas tan, turbine blue, ember orange
-  lighting_setup: campfire warmth, dusk sky, turbine rimlight, soft dust
-  material_texture: driftwood, canvas, scrap blades, rope, ash, patched fabric
-  render_quality: Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity, moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material simulation, or hyper-detail.
-  spatial_distortion: Sanctuaries, markets, camps, bridges, battery houses, and shore commons built from elemental materials. Keep depth legible and avoid default hallway, aisle, or empty studio staging.
-  atmosphere: humble, resilient, handmade, coastal
+  aesthetic: >-
+    primitive salvage wind-camp identity led by one resilient wind-tender camp elder, with handmade driftwood
+    turbines, patched tents, ember light, and shared power as the thematic world.
+  subject_treatment: >-
+    Stone tools, rope mechanics, carved engines, low-tech power rigs, salvage sails, and rough handmade
+    engineering. Core composition uses one main wind-tender, driftwood turbines, patched tents, campfire,
+    scrap blades.
+  color_and_tone: driftwood brown, canvas tan, turbine blue, ember orange
+  lighting_and_shadow: campfire warmth, dusk sky, turbine rimlight, soft dust
+  texture_and_material: driftwood, canvas, scrap blades, rope, ash, patched fabric
+  camera_and_composition: >-
+    Sanctuaries, markets, camps, bridges, battery houses, and shore commons built from elemental materials.
+    Keep depth legible and avoid default hallway, aisle, or empty studio staging.
+  atmosphere_and_mood: humble, resilient, handmade, coastal
+  rendering_and_quality: >-
+    Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly
+    planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity,
+    moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material
+    simulation, or hyper-detail.
   key_features: main wind-tender, driftwood turbines, patched tents, campfire, scrap blades
-  creative_brief: 'Close the pack with human salvage life without sage/adventure hero styling: make the elder, handmade turbine, campfire plane, patched tents, and wind machinery feel like one quiet infrastructure poster. Vary crop and composition; avoid centered full-body adventurer poses, family-camp postcard, generic refugee camp, eco-symbol abstraction, object-only turbine render, or workers-only staging. Favor folk-modernist poster structure, controlled digital painting, clean matte shapes, and handmade material poetry over American RPG/sourcebook illustration, cinematic key art, or hyper-detailed concept art. Use few bold color/value zones, moderate texture, large shapes, clean surfaces, and finish denoised with no excessive noise or ultra-fine detail.'
+  creative_brief: >-
+    Close the pack with human salvage life without sage/adventure hero styling: make the elder, handmade
+    turbine, campfire plane, patched tents, and wind machinery feel like one quiet infrastructure poster. Vary
+    crop and composition; avoid centered full-body adventurer poses, family-camp postcard, generic refugee
+    camp, eco-symbol abstraction, object-only turbine render, or workers-only staging. Favor folk-modernist
+    poster structure, controlled digital painting, clean matte shapes, and handmade material poetry over
+    American RPG/sourcebook illustration, cinematic key art, or hyper-detailed concept art. Use few bold
+    color/value zones, moderate texture, large shapes, clean surfaces, and finish denoised with no excessive
+    noise or ultra-fine detail.
 avoidRules:
   - photoreal
   - watermark
@@ -37,7 +56,23 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP15-080.webp
 attributes:
-  negativePrompt: photoreal, hyperreal, realistic render, cinematic realism, AAA key art, American fantasy RPG hero, sourcebook hero art, superhero pose, YA adventure cover, centered full-body adventurer, young rugged protagonist, cloak and pouches, leather belt costume, boots hero pose, generic sage portrait, photographic skin pores, realistic foreground portrait, realistic facial hair detail, lens blur, bokeh, depth-of-field photo look, generic soldier hero, guard pin-up, weapon-first pose, HDR lens realism, 3D render look, PBR material simulation, hyper-detailed concept art, watermark, text, logo, generic style, over-abstract, object-only card, workers-only composition, anonymous worker crew, interchangeable preset, duplicated motifs, generic glass utopia, unmotivated market aisle, unmotivated library aisle, fantasy corridor, family-camp postcard, generic refugee camp, eco-symbol abstraction, object-only turbine render, logo-like leaf icon, logo-like wind icon, flags, faction marks, readable signs, crowded tents, random camera held by subject, studio wall fixation, chair fixation, curtain fixation, lamp fixation, scarf fixation, pedestal fixation, bird fixation, excessive noise, ultra-fine detail, over-sharpened microtexture, over-rendered machinery, noisy grime, tiny scrap clutter, busy texture chatter, realistic uniform portrait, uniformed officer hero, foreground guard portrait, detailed tattoo focus, dense machinery wallpaper, overcrowded scene, high-frequency surface detail, cinematic close-up portrait, flat black fill, crushed black, pure black masses, muddy black fields, generic American illustration, generic Western RPG card art
+  negativePrompt: >-
+    photoreal, hyperreal, realistic render, cinematic realism, AAA key art, American fantasy RPG hero,
+    sourcebook hero art, superhero pose, YA adventure cover, centered full-body adventurer, young rugged
+    protagonist, cloak and pouches, leather belt costume, boots hero pose, generic sage portrait, photographic
+    skin pores, realistic foreground portrait, realistic facial hair detail, lens blur, bokeh, depth-of-field
+    photo look, generic soldier hero, guard pin-up, weapon-first pose, HDR lens realism, 3D render look, PBR
+    material simulation, hyper-detailed concept art, watermark, text, logo, generic style, over-abstract,
+    object-only card, workers-only composition, anonymous worker crew, interchangeable preset, duplicated
+    motifs, generic glass utopia, unmotivated market aisle, unmotivated library aisle, fantasy corridor,
+    family-camp postcard, generic refugee camp, eco-symbol abstraction, object-only turbine render, logo-like
+    leaf icon, logo-like wind icon, flags, faction marks, readable signs, crowded tents, random camera held by
+    subject, studio wall fixation, chair fixation, curtain fixation, lamp fixation, scarf fixation, pedestal
+    fixation, bird fixation, excessive noise, ultra-fine detail, over-sharpened microtexture, over-rendered
+    machinery, noisy grime, tiny scrap clutter, busy texture chatter, realistic uniform portrait, uniformed
+    officer hero, foreground guard portrait, detailed tattoo focus, dense machinery wallpaper, overcrowded
+    scene, high-frequency surface detail, cinematic close-up portrait, flat black fill, crushed black, pure
+    black masses, muddy black fields, generic American illustration, generic Western RPG card art
 taxonomy:
   packId: pack_15
   packName: Punk Spectrum Vault

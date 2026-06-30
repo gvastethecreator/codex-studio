@@ -12,22 +12,28 @@ tags:
   - cinematic-and-media
   - animation-styles
 visualDna:
-  aesthetic: Moody miniature stop-motion fantasy, Laika-style handcrafted dread, tactile miniature craft, replacement animation
-  form_and_line: None
-  color_palette: Texture rich, muted jewel, deep violet, moss green, rust orange
-  lighting_setup: Miniature studio, practical dollhouse, keyed drama, soft fill
-  material_texture: Fabric fiber, 3D print striation, wool knit, silicone, painted resin, real hair texture
-  render_quality: Tactile, creepy, frame-by-frame labor, physical imperfection
-  spatial_distortion: Replacement seams, expression-swap geometry, incremental sculpt, miniature scale cues
-  atmosphere: Dark, handmade, gothic whimsy, craft unease
+  aesthetic: >-
+    Moody miniature stop-motion fantasy, Laika-style handcrafted dread, tactile miniature craft, replacement
+    animation
+  subject_treatment: >-
+    Treat subjects as believable filmed or broadcast subjects under Laika Moody Stop-Motion: casting,
+    wardrobe, props, motion cues, and silhouette hierarchy follow 3. Animation Styles cinematic and broadcast
+    grammar without locking to one plot beat.
+  color_and_tone: Texture rich, muted jewel, deep violet, moss green, rust orange
+  lighting_and_shadow: Miniature studio, practical dollhouse, keyed drama, soft fill
+  texture_and_material: Fabric fiber, 3D print striation, wool knit, silicone, painted resin, real hair texture
+  camera_and_composition: Replacement seams, expression-swap geometry, incremental sculpt, miniature scale cues
+  atmosphere_and_mood: Dark, handmade, gothic whimsy, craft unease
+  rendering_and_quality: Tactile, creepy, frame-by-frame labor, physical imperfection
   key_features: Fingerprint texture, miniature scale, seam detail, practical studio shadow, tactile imperfection
   creative_brief: >-
-    Rebuild the input as a physical stop-motion miniature: visible fibers, hand-painted resin, tiny seams, practical
-    shadows, and frame-by-frame craft marks. Keep mood strange and tactile without forcing corridors, clothing, or
-    character motifs. The image should feel fabricated on a table, photographed with care, and haunted by tiny material
-    flaws. Apply Laika Moody Stop-Motion as a portable cinematic/camera style over any input: preserve its lens
-    behavior, color process, lighting setup, artifact pattern, and deformation grammar while avoiding a required actor,
-    room, prop, brand, readable text, fixed IP scene, or narrative setup.
+    Rebuild the input as a physical stop-motion miniature: visible fibers, hand-painted resin, tiny seams,
+    practical shadows, and frame-by-frame craft marks. Keep mood strange and tactile without forcing
+    corridors, clothing, or character motifs. The image should feel fabricated on a table, photographed with
+    care, and haunted by tiny material flaws. Apply Laika Moody Stop-Motion as a portable cinematic/camera
+    style over any input: preserve its lens behavior, color process, lighting setup, artifact pattern, and
+    deformation grammar while avoiding a required actor, room, prop, brand, readable text, fixed IP scene, or
+    narrative setup.
 avoidRules:
   - smooth 3d
 assets:

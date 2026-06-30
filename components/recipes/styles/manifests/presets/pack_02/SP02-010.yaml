@@ -13,15 +13,21 @@ tags:
   - film-genres
 visualDna:
   aesthetic: 70s studio martial-arts cinema, Shaw Brothers spectacle, acrobatic precision
-  form_and_line: None
-  color_palette: Saturated primaries, golden palace, deep red banners
-  lighting_setup: Studio set, flat broad key, painted backdrop
-  material_texture: Film grain, silk sheen, lacquered prop texture, painted set surface
-  render_quality: Choreographed, acrobatic, wire-fu precision, rhythmic combat
-  spatial_distortion: Snap zoom, crash zoom, dramatic push-in
-  atmosphere: Action, classic, rhythmic discipline
+  subject_treatment: >-
+    Treat subjects as believable filmed or broadcast subjects under Kung Fu Studio Epic (Shaw Brothers):
+    casting, wardrobe, props, motion cues, and silhouette hierarchy follow 1. Film Genres cinematic and
+    broadcast grammar without locking to one plot beat.
+  color_and_tone: Saturated primaries, golden palace, deep red banners
+  lighting_and_shadow: Studio set, flat broad key, painted backdrop
+  texture_and_material: Film grain, silk sheen, lacquered prop texture, painted set surface
+  camera_and_composition: Snap zoom, crash zoom, dramatic push-in
+  atmosphere_and_mood: Action, classic, rhythmic discipline
+  rendering_and_quality: Choreographed, acrobatic, wire-fu precision, rhythmic combat
   key_features: Wide staging, crash zoom, choreographic rhythm
-  creative_brief: 'Shaw Brothers studio style turns any subject into choreographed spectacle: flat painted-set light, saturated primaries, crash zooms, wide staging, silk-sheen color, and rhythmic action precision. Keep martial-cinema energy without forcing fighters, palace sets, weapons, or combat.'
+  creative_brief: >-
+    Shaw Brothers studio style turns any subject into choreographed spectacle: flat painted-set light,
+    saturated primaries, crash zooms, wide staging, silk-sheen color, and rhythmic action precision. Keep
+    martial-cinema energy without forcing fighters, palace sets, weapons, or combat.
 avoidRules:
   - modern action
 assets:

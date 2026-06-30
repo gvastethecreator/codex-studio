@@ -13,19 +13,20 @@ tags:
   - render-engines
 visualDna:
   aesthetic: High definition game engine
-  form_and_line: Sharp
-  color_palette: Post-processed, filmic tonemap
-  lighting_setup: Volumetric fog, real-time GI
-  material_texture: PBR materials, substance integrations
-  render_quality: Game cinematic, cutscene-grade
-  spatial_distortion: None
-  atmosphere: Dynamic, interactive-feeling, cinematic real-time energy
+  subject_treatment: Sharp
+  color_and_tone: Post-processed, filmic tonemap
+  lighting_and_shadow: Volumetric fog, real-time GI
+  texture_and_material: PBR materials, substance integrations
+  camera_and_composition: >-
+    Lookdev camera for Unity HDRP High-End Game Pipeline: three-quarter or orthographic framing, clean
+    silhouette read, material highlights, controlled depth, and vertical card composition.
+  atmosphere_and_mood: Dynamic, interactive-feeling, cinematic real-time energy
+  rendering_and_quality: Game cinematic, cutscene-grade
   key_features: Lens flares, HDRP pipeline
   creative_brief: >-
-    Apply Unity HDRP polish to the input: volumetric fog, filmic tonemapping,
-    lens flares, real-time GI and Substance-style PBR texture integration. Keep
-    cutscene-grade energy without requiring a player, loading screen, game
-    world, level layout, or character action.
+    Apply Unity HDRP polish to the input: volumetric fog, filmic tonemapping, lens flares, real-time GI and
+    Substance-style PBR texture integration. Keep cutscene-grade energy without requiring a player, loading
+    screen, game world, level layout, or character action.
 avoidRules:
   - mobile game
 assets:

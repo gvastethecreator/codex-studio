@@ -11,20 +11,20 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         "Metropolitan Transit Patina within 3. Civic Infrastructure And Specialty Spaces: a reusable Architecture & Interior visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Metropolitan Transit Patina's specific style identity.",
-      form_and_line:
+      subject_treatment:
         'Define Metropolitan Transit Patina through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
-      color_palette:
+      color_and_tone:
         'Use a Metropolitan Transit Patina-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
-      lighting_setup:
+      lighting_and_shadow:
         'Use lighting that makes Metropolitan Transit Patina recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
-      material_texture:
+      texture_and_material:
         'Use materials and textures that reinforce Metropolitan Transit Patina: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
-      render_quality:
-        'Render Metropolitan Transit Patina with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
-      spatial_distortion:
+      camera_and_composition:
         'Use spatial behavior that fits Metropolitan Transit Patina: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
-      atmosphere:
+      atmosphere_and_mood:
         'Set a mood that belongs to Metropolitan Transit Patina: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+      rendering_and_quality:
+        'Render Metropolitan Transit Patina with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       key_features:
         "Prioritize Metropolitan Transit Patina's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
@@ -39,20 +39,20 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         "Conservatory Bioclimate within 3. Civic Infrastructure And Specialty Spaces: a reusable Architecture & Interior visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Conservatory Bioclimate's specific style identity.",
-      form_and_line:
+      subject_treatment:
         'Define Conservatory Bioclimate through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
-      color_palette:
+      color_and_tone:
         'Use a Conservatory Bioclimate-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
-      lighting_setup:
+      lighting_and_shadow:
         'Use lighting that makes Conservatory Bioclimate recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
-      material_texture:
+      texture_and_material:
         'Use materials and textures that reinforce Conservatory Bioclimate: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
-      render_quality:
-        'Render Conservatory Bioclimate with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
-      spatial_distortion:
+      camera_and_composition:
         'Use spatial behavior that fits Conservatory Bioclimate: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
-      atmosphere:
+      atmosphere_and_mood:
         'Set a mood that belongs to Conservatory Bioclimate: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+      rendering_and_quality:
+        'Render Conservatory Bioclimate with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       key_features:
         "Prioritize Conservatory Bioclimate's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
@@ -67,20 +67,20 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         "Institutional Ruin Patina within 3. Civic Infrastructure And Specialty Spaces: a reusable Architecture & Interior visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Institutional Ruin Patina's specific style identity.",
-      form_and_line:
+      subject_treatment:
         'Define Institutional Ruin Patina through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
-      color_palette:
+      color_and_tone:
         'Use a Institutional Ruin Patina-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
-      lighting_setup:
+      lighting_and_shadow:
         'Use lighting that makes Institutional Ruin Patina recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
-      material_texture:
+      texture_and_material:
         'Use materials and textures that reinforce Institutional Ruin Patina: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
-      render_quality:
-        'Render Institutional Ruin Patina with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
-      spatial_distortion:
+      camera_and_composition:
         'Use spatial behavior that fits Institutional Ruin Patina: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
-      atmosphere:
+      atmosphere_and_mood:
         'Set a mood that belongs to Institutional Ruin Patina: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+      rendering_and_quality:
+        'Render Institutional Ruin Patina with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       key_features:
         "Prioritize Institutional Ruin Patina's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
@@ -95,19 +95,20 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Archival classicism with quiet monumentality, leather-paper-brass order and reading discipline.',
-      form_and_line:
+      subject_treatment:
         'Tall catalog rhythm, access verticals, ordered symmetry and vault/alcove cadence.',
-      color_palette:
+      color_and_tone:
         'Brown, Gold, Dust, Calfskin Tan, Marbled Endpaper, Brass Patina, Forest Leather',
-      lighting_setup:
+      lighting_and_shadow:
         'Warm archival glow, green-amber focal light, high shafts and aged brass accents.',
-      material_texture:
+      texture_and_material:
         'Oxidized leather, irregular paper edges, worn gilding, use-polished oak and darkened brass.',
-      render_quality: 'Museum-quality aging with noble patina and catalog-readable depth of field.',
-      spatial_distortion:
+      camera_and_composition:
         'Vertical archive rhythm, alcove compression and catalog-order depth that can organize any subject without requiring a literal library room.',
-      atmosphere:
+      atmosphere_and_mood:
         'Contemplative, rigorous and reverential, with punctual warmth over structured silence.',
+      rendering_and_quality:
+        'Museum-quality aging with noble patina and catalog-readable depth of field.',
       key_features:
         'Green-amber warmth, catalog clusters, leather-paper-brass material hierarchy, vertical bay rhythm and cartographic accents.',
       creative_brief:
@@ -122,19 +123,19 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'High-stimulus commercial gaming logic designed for continuous attention and prolonged dwell time.',
-      form_and_line:
+      subject_treatment:
         'Dense luminous modules, non-directional pattern fields, strategic reflection layers and deliberately ambiguous circulation cues.',
-      color_palette: 'Red, Gold, Neon, Casino Carpet Confetti, Chrome, Velvet Purple',
-      lighting_setup:
+      color_and_tone: 'Red, Gold, Neon, Casino Carpet Confetti, Chrome, Velvet Purple',
+      lighting_and_shadow:
         'Dark base with serial hotspots, ceiling wash, decorative glints and controlled luminous overstimulation.',
-      material_texture:
+      texture_and_material:
         'Saturated pattern, molded casing sheen, worn chrome, glossy laminate and dense felt texture.',
-      render_quality:
-        'High-stimulus realism with commercial light hierarchy and dense nocturnal finish.',
-      spatial_distortion:
+      camera_and_composition:
         'Attention-loop compression, mirrored depth and non-directional circulation that can trap any subject without requiring a venue floor.',
-      atmosphere:
+      atmosphere_and_mood:
         'Continuous activation, temporal disorientation and consumption-pressure comfort.',
+      rendering_and_quality:
+        'High-stimulus realism with commercial light hierarchy and dense nocturnal finish.',
       key_features:
         'Low glow, mirrored depth, jackpot-color clusters, wayfinding suppression and sensory grid rhythm.',
       creative_brief:
@@ -149,20 +150,20 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         "Immersive Aquarium Optics within 3. Civic Infrastructure And Specialty Spaces: a reusable Architecture & Interior visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Immersive Aquarium Optics's specific style identity.",
-      form_and_line:
+      subject_treatment:
         'Define Immersive Aquarium Optics through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
-      color_palette:
+      color_and_tone:
         'Use a Immersive Aquarium Optics-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
-      lighting_setup:
+      lighting_and_shadow:
         'Use lighting that makes Immersive Aquarium Optics recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
-      material_texture:
+      texture_and_material:
         'Use materials and textures that reinforce Immersive Aquarium Optics: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
-      render_quality:
-        'Render Immersive Aquarium Optics with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
-      spatial_distortion:
+      camera_and_composition:
         'Use spatial behavior that fits Immersive Aquarium Optics: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
-      atmosphere:
+      atmosphere_and_mood:
         'Set a mood that belongs to Immersive Aquarium Optics: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+      rendering_and_quality:
+        'Render Immersive Aquarium Optics with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       key_features:
         "Prioritize Immersive Aquarium Optics's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
@@ -178,17 +179,17 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Chalky subterranean mineral language where calcic module, buried pressure and historic reverence define surface.',
-      form_and_line:
+      subject_treatment:
         'Calcic modular repetition, low sequenced arches, compressed niches and chalk-like bands without fixed funeral corridor.',
-      color_palette: 'Bone white, dirt, sepia age, calcium yellow, shadow brown, cartilage cream',
-      lighting_setup:
+      color_and_tone: 'Bone white, dirt, sepia age, calcium yellow, shadow brown, cartilage cream',
+      lighting_and_shadow:
         'Low warm points, flicker across calcium and dense shadows in compressed depth.',
-      material_texture:
+      texture_and_material:
         'Chalky calcium, mineral porosity, dusty mortar and damp transitions of buried stone.',
-      render_quality:
+      camera_and_composition: 'Compressed subterranean pressure and repetitive calcic stacking.',
+      atmosphere_and_mood: 'Solemn, compressed and reverential, with deep-time stillness.',
+      rendering_and_quality:
         'Low-light archaeological fidelity with legible mineral microtexture and no explicit horror.',
-      spatial_distortion: 'Compressed subterranean pressure and repetitive calcic stacking.',
-      atmosphere: 'Solemn, compressed and reverential, with deep-time stillness.',
       key_features: 'Calcic courses, crossed bands, mineral niches and low-vault pressure.',
       creative_brief:
         'Organize any composition through chalky mineral module, subterranean pressure and low reverent light. Repetition, dust and porosity carry the style without depending on corridors, literal catacombs, bone/remains language, exposed human remains, gore, fresh remains, horror display or closed ritual scene.',
@@ -202,19 +203,20 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Critical data infrastructure focused on operational continuity and machine-first logic.',
-      form_and_line:
+      subject_treatment:
         'Modular series, thermal-containment lanes, orthogonal trays and functional perforated-panel repetition.',
-      color_palette:
+      color_and_tone:
         'Black, Blue LED, Blinking Amber, Cool White fluorescent, Signal Green status, Grey metal',
-      lighting_setup:
+      lighting_and_shadow:
         'Continuous cold artificial light, rack-like glow, service strips and status LED constellations with visible thermal containment.',
-      material_texture:
+      texture_and_material:
         'Powder-coated steel, braided fiber, perforated mesh, rubberized technical surfaces and intake-dust residue.',
-      render_quality:
-        'Facility-grade realism with high information density and system readability under technical lighting.',
-      spatial_distortion:
+      camera_and_composition:
         'Modular redundancy, thermal-lane compression and machine-grid repetition without forcing racks, aisles or a data-center corridor.',
-      atmosphere: 'Controlled urgency, infrastructural surveillance and minimal human occupation.',
+      atmosphere_and_mood:
+        'Controlled urgency, infrastructural surveillance and minimal human occupation.',
+      rendering_and_quality:
+        'Facility-grade realism with high information density and system readability under technical lighting.',
       key_features:
         'Status LED clusters, thermal containment cues, cable-routing logic, patch-field rhythm and redundant repetition.',
       creative_brief:
@@ -229,20 +231,20 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         "Arboreal Craft Shelter within 3. Civic Infrastructure And Specialty Spaces: a reusable Architecture & Interior visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Arboreal Craft Shelter's specific style identity.",
-      form_and_line:
+      subject_treatment:
         'Define Arboreal Craft Shelter through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
-      color_palette:
+      color_and_tone:
         'Use a Arboreal Craft Shelter-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
-      lighting_setup:
+      lighting_and_shadow:
         'Use lighting that makes Arboreal Craft Shelter recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
-      material_texture:
+      texture_and_material:
         'Use materials and textures that reinforce Arboreal Craft Shelter: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
-      render_quality:
-        'Render Arboreal Craft Shelter with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
-      spatial_distortion:
+      camera_and_composition:
         'Use spatial behavior that fits Arboreal Craft Shelter: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
-      atmosphere:
+      atmosphere_and_mood:
         'Set a mood that belongs to Arboreal Craft Shelter: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+      rendering_and_quality:
+        'Render Arboreal Craft Shelter with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       key_features:
         "Prioritize Arboreal Craft Shelter's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:

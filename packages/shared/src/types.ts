@@ -476,5 +476,9 @@ export interface ReferenceHandoffResponse {
     localPath: string;
     publicUrl: string;
     strength: number;
+    mimeType: 'image/webp';
+    fileSizeBytes: number;
+    width: number | null;
+    height: number | null;
   }[];
 }

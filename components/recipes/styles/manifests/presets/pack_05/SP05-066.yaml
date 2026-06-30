@@ -12,20 +12,27 @@ tags:
   - anime-battle-and-worlds
   - dark-fantasy-and-seinen
 visualDna:
-  aesthetic: Invasive anatomy logic, clean surfaces corrupted by organic strategy, selfhood fracture, clinical paranoia, flesh geometry as intelligent design
-  form_and_line: Dense mature-anime linework, heavy crosshatching, weighted contour variation, gritty ink density
-  color_palette: Muted earths, blood reds, cold moonlit tones, desaturated horror palette, bruised shadow hues
-  lighting_setup: Ominous directional shadows, single-source drama light, deep chiaroscuro, low-key shadow lift
-  material_texture: Clean matte planes, wet organic seams, sliced membrane gloss, tense skinlike translucency, surgical shadow grain, cool neutral surfaces
-  render_quality: Gritty dramatic anime frame, film-noir rendering, heavy shadow compression, textured midtone grit
-  spatial_distortion: Asymmetric anatomy echoes, splitting contours, invasive edge growth, clinical open space, threat emerging from familiar proportions
-  atmosphere: Tense, invasive, paranoid, horrifying
-  key_features: Heavy atmosphere, narrative weight, oppressive mood building, visceral consequence framing, story-first visual language
-  creative_brief: >
-    Apply a clean-but-invasive thriller treatment to any subject: familiar forms
-    split into intelligent organic geometry, cool neutrals buckle under crimson
-    stress, and the image feels strategically infected. Keep the language abstract,
-    with no fixed body part, location, role, weapon, or action premise.
+  aesthetic: >-
+    Invasive anatomy logic, clean surfaces corrupted by organic strategy, selfhood fracture, clinical
+    paranoia, flesh geometry as intelligent design
+  subject_treatment: Dense mature-anime linework, heavy crosshatching, weighted contour variation, gritty ink density
+  color_and_tone: Muted earths, blood reds, cold moonlit tones, desaturated horror palette, bruised shadow hues
+  lighting_and_shadow: Ominous directional shadows, single-source drama light, deep chiaroscuro, low-key shadow lift
+  texture_and_material: >-
+    Clean matte planes, wet organic seams, sliced membrane gloss, tense skinlike translucency, surgical shadow
+    grain, cool neutral surfaces
+  camera_and_composition: >-
+    Asymmetric anatomy echoes, splitting contours, invasive edge growth, clinical open space, threat emerging
+    from familiar proportions
+  atmosphere_and_mood: Tense, invasive, paranoid, horrifying
+  rendering_and_quality: Gritty dramatic anime frame, film-noir rendering, heavy shadow compression, textured midtone grit
+  key_features: >-
+    Heavy atmosphere, narrative weight, oppressive mood building, visceral consequence framing, story-first
+    visual language
+  creative_brief: >-
+    Apply a clean-but-invasive thriller treatment to any subject: familiar forms split into intelligent
+    organic geometry, cool neutrals buckle under crimson stress, and the image feels strategically infected.
+    Keep the language abstract, with no fixed body part, location, role, weapon, or action premise.
 avoidRules:
   - realistic
   - 3d render
@@ -42,7 +49,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-066.webp
 attributes:
-  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
+  negativePrompt: >-
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts,
+    watermark, text, signature
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds

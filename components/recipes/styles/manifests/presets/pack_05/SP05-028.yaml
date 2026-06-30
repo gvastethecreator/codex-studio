@@ -13,23 +13,28 @@ tags:
   - modern-shonen-and-action
 visualDna:
   aesthetic: >-
-    Lo-fi rhythm-action style blending cutting kinetics with streetwise groove, improvised cool, and beat-synced visual
-    pacing
-  form_and_line: >-
-    Swinging diagonal cut-lines, loose-but-precise contour attitude, rhythm-marked transitions, and improvised gesture
-    cadence
-  color_palette: Dusty warm earth bases with punchy graffiti accent colors, vinyl-like muted blacks, and selective neon pulse notes
-  lighting_setup: Low-sun directional wash, rhythmic shadow slicing, warm haze overlays, and beat-accent highlight pops
-  material_texture: Film-grain and scratch patina, matte cel surfaces, slight urban grit overlays, and analog-mix visual warmth
-  render_quality: Early-digital anime polish with lo-fi texture seasoning and rhythm-first action readability
-  spatial_distortion: Beat-driven framing shifts with kinetic perspective snaps and flow-preserving directional depth
-  atmosphere: Cool, laid-back, kinetic, improvisational, stylish
+    Lo-fi rhythm-action style blending cutting kinetics with streetwise groove, improvised cool, and
+    beat-synced visual pacing
+  subject_treatment: >-
+    Swinging diagonal cut-lines, loose-but-precise contour attitude, rhythm-marked transitions, and improvised
+    gesture cadence
+  color_and_tone: >-
+    Dusty warm earth bases with punchy graffiti accent colors, vinyl-like muted blacks, and selective neon
+    pulse notes
+  lighting_and_shadow: Low-sun directional wash, rhythmic shadow slicing, warm haze overlays, and beat-accent highlight pops
+  texture_and_material: >-
+    Film-grain and scratch patina, matte cel surfaces, slight urban grit overlays, and analog-mix visual
+    warmth
+  camera_and_composition: Beat-driven framing shifts with kinetic perspective snaps and flow-preserving directional depth
+  atmosphere_and_mood: Cool, laid-back, kinetic, improvisational, stylish
+  rendering_and_quality: Early-digital anime polish with lo-fi texture seasoning and rhythm-first action readability
   key_features: Rhythm-cut action grammar, lo-fi texture stack, swagger-forward motion, analog groove visual cadence
   creative_brief: >-
-    Define this preset by rhythm-synced action language and lo-fi swagger: motion should feel musically improvised, with
-    texture and pacing as the transferable identity rather than a literal action-travel setup. Apply this anime/IP-title
-    grammar over any input: preserve its motion language, line economy, emotional staging, palette logic, and symbolic
-    cues while avoiding a required cast, lore event, weapon, arena, school, ship, or fixed scene.
+    Define this preset by rhythm-synced action language and lo-fi swagger: motion should feel musically
+    improvised, with texture and pacing as the transferable identity rather than a literal action-travel
+    setup. Apply this anime/IP-title grammar over any input: preserve its motion language, line economy,
+    emotional staging, palette logic, and symbolic cues while avoiding a required cast, lore event, weapon,
+    arena, school, ship, or fixed scene.
 avoidRules:
   - realistic
   - 3d render
@@ -47,8 +52,8 @@ assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-028.webp
 attributes:
   negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark,
-    text, signature
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts,
+    watermark, text, signature
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds

@@ -13,18 +13,25 @@ tags:
   - fantasy-sci-fi-costume
 visualDna:
   aesthetic: Biomech interfacewear, sync-signal shine and pressure-system readiness.
-  form_and_line: Armored panel lines, capsule-contour geometry, sealed-edge bands, connector plates and ergonomic seam maps.
-  color_palette: Glossy white/red, biotech violet, alert orange, caution-yellow, matte-black
-  lighting_setup: Amber system glow, display backlight, capsule bioluminescence and sync-alert rim.
-  material_texture: Molded polymer, neoprene support, carbon-fiber panel, rubberized connector plates and memory-foam inner pads.
-  render_quality: Original sci-fi engineering polish with high-spec interfacewear clarity.
-  spatial_distortion: None
-  atmosphere: Ready, technical, machine-linked and tense without anime-franchise identity.
+  subject_treatment: >-
+    Armored panel lines, capsule-contour geometry, sealed-edge bands, connector plates and ergonomic seam
+    maps.
+  color_and_tone: Glossy white/red, biotech violet, alert orange, caution-yellow, matte-black
+  lighting_and_shadow: Amber system glow, display backlight, capsule bioluminescence and sync-alert rim.
+  texture_and_material: >-
+    Molded polymer, neoprene support, carbon-fiber panel, rubberized connector plates and memory-foam inner
+    pads.
+  camera_and_composition: >-
+    Compose for Mech Pilot Suit using its key spatial cues: Connector collar cues, neural-port-like detailing,
+    pilot-panel seams and sealed support bands.
+  atmosphere_and_mood: Ready, technical, machine-linked and tense without anime-franchise identity.
+  rendering_and_quality: Original sci-fi engineering polish with high-spec interfacewear clarity.
   key_features: Connector collar cues, neural-port-like detailing, pilot-panel seams and sealed support bands.
   creative_brief: >-
     Translate the input into biomech interfacewear: glossy panel lines, sealed-edge bands, connector plates,
-    support padding, neural-port-like detailing and synchronization signal cues. Preserve machine-linked tension
-    without latex body read, cockpit, hangar, launch tube, battle pose, franchise suit or mandatory human pilot body.
+    support padding, neural-port-like detailing and synchronization signal cues. Preserve machine-linked
+    tension without latex body read, cockpit, hangar, launch tube, battle pose, franchise suit or mandatory
+    human pilot body.
 avoidRules:
   - casual
   - latex body read

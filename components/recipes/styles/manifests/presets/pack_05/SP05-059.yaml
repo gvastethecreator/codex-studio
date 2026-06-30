@@ -13,34 +13,34 @@ tags:
   - mecha-and-cyberpunk
 visualDna:
   aesthetic: >-
-    Procedural cyber cognition with modular overlays, optical transparency, network pressure,
-    identity uncertainty, and calm investigative tension
-  form_and_line: >-
-    Clean technical linework, modular contour blocks, thin overlay vectors, precise facial
-    restraint, and grounded cyber-anime silhouettes.
-  color_palette: >-
-    Blue-gray steel, muted teal, signal green, amber interface points, black glass, and pale
-    skin-warm accents.
-  lighting_setup: >-
-    Monitor wash, soft urban-noir glow, optical shimmer, low practical highlights, and controlled
-    specular edge light.
-  material_texture: >-
-    Interface glass, matte polymer, subtle rain sheen, brushed technical surfaces, and ghosted
-    transparent overlays.
-  render_quality: >-
-    Premium procedural cyber-anime finish with cool-headed readability, interface discipline, and
-    high-detail restraint.
-  spatial_distortion: >-
-    Network-layer parallax, transparent overlay depth, surveillance compression, and modular data
-    planes around subject forms.
-  atmosphere: Tactical, cool-headed, procedural, cerebral
+    Procedural cyber cognition with modular overlays, optical transparency, network pressure, identity
+    uncertainty, and calm investigative tension
+  subject_treatment: >-
+    Clean technical linework, modular contour blocks, thin overlay vectors, precise facial restraint, and
+    grounded cyber-anime silhouettes.
+  color_and_tone: >-
+    Blue-gray steel, muted teal, signal green, amber interface points, black glass, and pale skin-warm
+    accents.
+  lighting_and_shadow: >-
+    Monitor wash, soft urban-noir glow, optical shimmer, low practical highlights, and controlled specular
+    edge light.
+  texture_and_material: >-
+    Interface glass, matte polymer, subtle rain sheen, brushed technical surfaces, and ghosted transparent
+    overlays.
+  camera_and_composition: >-
+    Network-layer parallax, transparent overlay depth, surveillance compression, and modular data planes
+    around subject forms.
+  atmosphere_and_mood: Tactical, cool-headed, procedural, cerebral
+  rendering_and_quality: >-
+    Premium procedural cyber-anime finish with cool-headed readability, interface discipline, and high-detail
+    restraint.
   key_features: >-
-    Transparent data planes, modular tactical overlays, identity fracture, optical layering, network
-    pressure, and cyber-noir clarity
+    Transparent data planes, modular tactical overlays, identity fracture, optical layering, network pressure,
+    and cyber-noir clarity
   creative_brief: >-
-    Use tactical network cognition as analyzed-visibility grammar. Any prompt should feel partially
-    hidden, networked, inspected, and intellectually tense. Agents, devices, brands, institutions,
-    casework, and rooms are optional.
+    Use tactical network cognition as analyzed-visibility grammar. Any prompt should feel partially hidden,
+    networked, inspected, and intellectually tense. Agents, devices, brands, institutions, casework, and rooms
+    are optional.
 avoidRules:
   - realistic
   - 3d render
@@ -58,8 +58,8 @@ assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-059.webp
 attributes:
   negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, text, signature
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts,
+    watermark, text, signature
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds

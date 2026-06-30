@@ -13,18 +13,18 @@ tags:
   - film-and-analog-process
 visualDna:
   aesthetic: High saturation slide film
-  form_and_line: High contrast
-  color_palette: Vivid Green, Blue, Red
-  lighting_setup: Daylight
-  material_texture: Very fine grain
-  render_quality: Fine-grain slide realism
-  spatial_distortion: Crushed blacks
-  atmosphere: Vibrant, punchy
+  subject_treatment: High contrast
+  color_and_tone: Vivid Green, Blue, Red
+  lighting_and_shadow: Daylight
+  texture_and_material: Very fine grain
+  camera_and_composition: Crushed blacks
+  atmosphere_and_mood: Vibrant, punchy
+  rendering_and_quality: Fine-grain slide realism
   key_features: Magenta bias
   creative_brief: >-
-    Apply Fujifilm Velvia 50 slide-film intensity to the input: jewel greens,
-    saturated blues and reds, crisp edges, compressed blacks, and vivid chrome
-    contrast should energize any subject without requiring landscape or nature.
+    Apply Fujifilm Velvia 50 slide-film intensity to the input: jewel greens, saturated blues and reds, crisp
+    edges, compressed blacks, and vivid chrome contrast should energize any subject without requiring
+    landscape or nature.
 avoidRules:
   - illustration
   - painting
@@ -44,7 +44,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP01-012.webp
 attributes:
-  negativePrompt: illustration, painting, drawing, 3d render, cartoon, anime, sketch, blurry, noisy, low resolution, watermark, text, signature, bad anatomy, deformed
+  negativePrompt: >-
+    illustration, painting, drawing, 3d render, cartoon, anime, sketch, blurry, noisy, low resolution,
+    watermark, text, signature, bad anatomy, deformed
 taxonomy:
   packId: pack_01
   packName: Photography & Realism

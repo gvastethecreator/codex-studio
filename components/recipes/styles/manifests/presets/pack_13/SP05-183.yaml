@@ -12,20 +12,31 @@ tags:
   - anime-character-and-lifestyle
   - shojo-magical-girl-and-visionary-classics
 visualDna:
-  aesthetic: Shy-romance shojo language with social-anxiety thaw, daylight sincerity, and small-gesture emotional revelation
-  form_and_line: Fine soft contouring, blush-reactive micro-acting, cautious spacing, and clean silhouette readability
-  color_palette: Light cream fields, tender pink blush accents, pale sky blues, and warm daylight neutrals with gentle saturation
-  lighting_setup: Clear daytime window key, soft bounce, minimal dramatic contrast, and subtle bloom to support fragile emotional beats
-  material_texture: Crisp textile softness, paper-matte simplicity, and airy low-noise backgrounds that keep focus on expression and distance
-  render_quality: Gentle high-clarity romance render with sincerity-first readability, subtle emotional gradients, and unforced softness
-  spatial_distortion: Respectful proximity framing with mild romantic stylization and interpersonal distance cues
-  atmosphere: Shy, bright, hopeful, soft
-  key_features: Near-but-not-touching proximity, blush-heavy acting, daylight warmth, friendship-circle softness, delicate confession framing
+  aesthetic: >-
+    Shy-romance shojo language with social-anxiety thaw, daylight sincerity, and small-gesture emotional
+    revelation
+  subject_treatment: Fine soft contouring, blush-reactive micro-acting, cautious spacing, and clean silhouette readability
+  color_and_tone: >-
+    Light cream fields, tender pink blush accents, pale sky blues, and warm daylight neutrals with gentle
+    saturation
+  lighting_and_shadow: >-
+    Clear daytime window key, soft bounce, minimal dramatic contrast, and subtle bloom to support fragile
+    emotional beats
+  texture_and_material: >-
+    Crisp textile softness, paper-matte simplicity, and airy low-noise backgrounds that keep focus on
+    expression and distance
+  camera_and_composition: Respectful proximity framing with mild romantic stylization and interpersonal distance cues
+  atmosphere_and_mood: Shy, bright, hopeful, soft
+  rendering_and_quality: >-
+    Gentle high-clarity romance render with sincerity-first readability, subtle emotional gradients, and
+    unforced softness
+  key_features: >-
+    Near-but-not-touching proximity, blush-heavy acting, daylight warmth, friendship-circle softness, delicate
+    confession framing
   creative_brief: >-
-    Let the input bloom with shy daylight romance: fine contours, blush-soft
-    accents, cautious spacing, pale sky-blue warmth, and near-but-not-touching
-    emotional distance should guide any subject without requiring hallways,
-    school uniforms, confession staging, or paired characters.
+    Let the input bloom with shy daylight romance: fine contours, blush-soft accents, cautious spacing, pale
+    sky-blue warmth, and near-but-not-touching emotional distance should guide any subject without requiring
+    hallways, school uniforms, confession staging, or paired characters.
 avoidRules:
   - realistic
   - 3d render
@@ -42,7 +53,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-183.webp
 attributes:
-  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
+  negativePrompt: >-
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts,
+    watermark, text, signature
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle

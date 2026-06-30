@@ -13,32 +13,30 @@ tags:
   - slice-of-life-and-moe
 visualDna:
   aesthetic: >-
-    Beginner-made DIY anime glow where visible process, earnest imperfection, tactile construction,
-    and optimistic collaboration become the style itself
-  form_and_line: >-
-    Handmade contour wobble, tool-path clarity, assembled-shape rhythm, cheerful gesture arcs, and
-    process marks kept legible around any subject
-  color_palette: >-
-    Sanded wood beige, glue white, cloth pastel, mint hardware accents, pencil gray, and amber
-    window warmth
-  lighting_setup: Side daylight, dust-mote backlight, soft practical fill, and warm work-surface bounce
-  material_texture: >-
-    Sawdust particulate, unfinished timber grain, fabric scraps, tape edges, adhesive sheen,
-    brush-painted surfaces, and scuffed craft material
-  render_quality: >-
-    Tactile anime rendering that favors process honesty, maker warmth, material readability, and
-    charming nonindustrial imperfection
-  spatial_distortion: >-
-    Process-focused cropping, magnified handmade presence, and constructive diagonals that imply
-    building without requiring tools
-  atmosphere: Crafty, optimistic, tactile, sweet, constructive
+    Beginner-made DIY anime glow where visible process, earnest imperfection, tactile construction, and
+    optimistic collaboration become the style itself
+  subject_treatment: >-
+    Handmade contour wobble, tool-path clarity, assembled-shape rhythm, cheerful gesture arcs, and process
+    marks kept legible around any subject
+  color_and_tone: Sanded wood beige, glue white, cloth pastel, mint hardware accents, pencil gray, and amber window warmth
+  lighting_and_shadow: Side daylight, dust-mote backlight, soft practical fill, and warm work-surface bounce
+  texture_and_material: >-
+    Sawdust particulate, unfinished timber grain, fabric scraps, tape edges, adhesive sheen, brush-painted
+    surfaces, and scuffed craft material
+  camera_and_composition: >-
+    Process-focused cropping, magnified handmade presence, and constructive diagonals that imply building
+    without requiring tools
+  atmosphere_and_mood: Crafty, optimistic, tactile, sweet, constructive
+  rendering_and_quality: >-
+    Tactile anime rendering that favors process honesty, maker warmth, material readability, and charming
+    nonindustrial imperfection
   key_features: >-
-    DIY material traces, beginner imperfection, warm process light, assembled contours, and
-    collaborative making energy
+    DIY material traces, beginner imperfection, warm process light, assembled contours, and collaborative
+    making energy
   creative_brief: >-
-    Use Do It Yourself!! as style anchor for beginner-made glow. Any prompt should feel physically
-    made: taped edges, sawdust warmth, soft mistakes, constructive diagonals, and friendly process
-    light. Clubs, workshops, tools, and specific objects are optional.
+    Use Do It Yourself!! as style anchor for beginner-made glow. Any prompt should feel physically made: taped
+    edges, sawdust warmth, soft mistakes, constructive diagonals, and friendly process light. Clubs,
+    workshops, tools, and specific objects are optional.
 avoidRules:
   - realistic
   - 3d render
@@ -56,8 +54,8 @@ assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-208.webp
 attributes:
   negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, text, signature
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts,
+    watermark, text, signature
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle

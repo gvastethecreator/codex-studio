@@ -13,15 +13,18 @@ tags:
   - material-surface-textures
 visualDna:
   aesthetic: Leather grain
-  form_and_line: Pores and creases
-  color_palette: Brown, Black
-  lighting_setup: Sheen
-  material_texture: Pores, creases, patina
-  render_quality: Luxury, durable
-  spatial_distortion: Wrinkles
-  atmosphere: Classic, rich
+  subject_treatment: Pores and creases
+  color_and_tone: Brown, Black
+  lighting_and_shadow: Sheen
+  texture_and_material: Pores, creases, patina
+  camera_and_composition: Wrinkles
+  atmosphere_and_mood: Classic, rich
+  rendering_and_quality: Luxury, durable
   key_features: Pores
-  creative_brief: Apply leather grain as durable patinated surface over the input with pores, creases, brown-black sheen, softened wear, and rich craft depth. If bag, jacket, armor, furniture, or object exists, leatherize it; otherwise use leather texture as abstract material finish without focusing on animal hide.
+  creative_brief: >-
+    Apply leather grain as durable patinated surface over the input with pores, creases, brown-black sheen,
+    softened wear, and rich craft depth. If bag, jacket, armor, furniture, or object exists, leatherize it;
+    otherwise use leather texture as abstract material finish without focusing on animal hide.
 avoidRules:
   - fabric
   - smooth

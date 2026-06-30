@@ -12,9 +12,15 @@ tags:
   - essential-art-styles
   - game-art-directions-and-ui
 visualDna:
-  aesthetic: Fantasy MMO parchment-interface style with ornamental cartography logic, aged UI material, and quest-screen clarity.
-  subject_treatment: Recast any subject into symbolic maplike marks, route-like linework, framed medallions, and collectible lore texture.
-  color_and_tone: Sepia parchment base, ink-brown contours, muted jewel accents, red wax-like highlights, and soft vignette aging.
+  aesthetic: >-
+    Fantasy MMO parchment-interface style with ornamental cartography logic, aged UI material, and
+    quest-screen clarity.
+  subject_treatment: >-
+    Recast any subject into symbolic maplike marks, route-like linework, framed medallions, and collectible
+    lore texture.
+  color_and_tone: >-
+    Sepia parchment base, ink-brown contours, muted jewel accents, red wax-like highlights, and soft vignette
+    aging.
   lighting_and_shadow: Flat document lighting with subtle edge shadows, embossed ornament glints, and low-contrast aged stains.
   texture_and_material: Fibrous paper grain, burned borders, stamped motifs, hand-inked line jitter, and softened fold marks.
   camera_and_composition: Top-down UI/document composition with decorative framing, open readable zones, and no required geography.

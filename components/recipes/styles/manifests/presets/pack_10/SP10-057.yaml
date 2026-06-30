@@ -13,18 +13,17 @@ tags:
   - textile-and-ornamental-patterns
 visualDna:
   aesthetic: Interlocking loops
-  form_and_line: Yarn strands
-  color_palette: Wool colors
-  lighting_setup: Soft
-  material_texture: Fuzzy wool
-  render_quality: Cozy, handmade
-  spatial_distortion: Stitch pattern
-  atmosphere: Warm, soft
+  subject_treatment: Yarn strands
+  color_and_tone: Wool colors
+  lighting_and_shadow: Soft
+  texture_and_material: Fuzzy wool
+  camera_and_composition: Stitch pattern
+  atmosphere_and_mood: Warm, soft
+  rendering_and_quality: Cozy, handmade
   key_features: Loops
   creative_brief: >-
-    Apply knitted topology to the input: interlocking loops, ribbing, cable
-    relief, wool halo, and tactile stitch rhythm should soften or wrap forms
-    without requiring sweaters or domestic props.
+    Apply knitted topology to the input: interlocking loops, ribbing, cable relief, wool halo, and tactile
+    stitch rhythm should soften or wrap forms without requiring sweaters or domestic props.
 avoidRules:
   - smooth
   - flat

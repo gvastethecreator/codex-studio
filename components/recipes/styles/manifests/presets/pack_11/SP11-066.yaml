@@ -12,21 +12,32 @@ tags:
   - miscellaneous-and-fun
   - aesthetics
 visualDna:
-  aesthetic: Macro sparkle material system built from iridescent flake scatter, specular chaos, and celebratory micro-geometry
-  form_and_line: Tiny hexagons, sliced polygons, star confetti, shard edges, bokeh circles, clustered micro-facets
-  color_palette: Holographic rainbow, metallic silver, iridescent cyan-pink shifts, foil gold, neon accents, prismatic whites
-  lighting_setup: Hard specular points, shallow macro falloff, prismatic bounce, high sparkle density, dark-to-bright contrast
-  material_texture: Foil flakes, glitter dust, micro-mirrors, glossy confetti, granular sparkle fields, scattered reflective chips
-  render_quality: Dense, festive, tactile, reflective, close-focus, with controlled chaos and readable shimmer structure
-  spatial_distortion: Bokeh expansion, specular starbursts, scale ambiguity, shallow-depth scatter, chromatic reflection shifts
-  atmosphere: Celebratory, kinetic, glossy, playful, glamorous, high-energy
-  key_features: Iridescent flake geometry, specular hot spots, bokeh scatter, prism shifts, metallic dust, micro-facet density
+  aesthetic: >-
+    Macro sparkle material system built from iridescent flake scatter, specular chaos, and celebratory
+    micro-geometry
+  subject_treatment: Tiny hexagons, sliced polygons, star confetti, shard edges, bokeh circles, clustered micro-facets
+  color_and_tone: >-
+    Holographic rainbow, metallic silver, iridescent cyan-pink shifts, foil gold, neon accents, prismatic
+    whites
+  lighting_and_shadow: >-
+    Hard specular points, shallow macro falloff, prismatic bounce, high sparkle density, dark-to-bright
+    contrast
+  texture_and_material: >-
+    Foil flakes, glitter dust, micro-mirrors, glossy confetti, granular sparkle fields, scattered reflective
+    chips
+  camera_and_composition: Bokeh expansion, specular starbursts, scale ambiguity, shallow-depth scatter, chromatic reflection shifts
+  atmosphere_and_mood: Celebratory, kinetic, glossy, playful, glamorous, high-energy
+  rendering_and_quality: Dense, festive, tactile, reflective, close-focus, with controlled chaos and readable shimmer structure
+  key_features: >-
+    Iridescent flake geometry, specular hot spots, bokeh scatter, prism shifts, metallic dust, micro-facet
+    density
   creative_brief: >-
     Turn the input into a holographic flake-and-sparkle material treatment. Use prismatic scatter, micro-facet
-    reflections, shallow macro depth, and dense glitter geometry while avoiding literal piles, craft tables, party
-    scenes, or product shots. Apply Holographic Flake Scatter as a portable style system over any input: preserve its
-    construction grammar, material cues, scale logic, and signature rendering behavior while avoiding a required
-    franchise, literal prop, fixed specimen, classroom sample, product shot, or scene template.
+    reflections, shallow macro depth, and dense glitter geometry while avoiding literal piles, craft tables,
+    party scenes, or product shots. Apply Holographic Flake Scatter as a portable style system over any input:
+    preserve its construction grammar, material cues, scale logic, and signature rendering behavior while
+    avoiding a required franchise, literal prop, fixed specimen, classroom sample, product shot, or scene
+    template.
 avoidRules:
   - matte
 assets:

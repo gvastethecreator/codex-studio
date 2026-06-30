@@ -13,20 +13,20 @@ tags:
   - environment-and-worldbuilding
 visualDna:
   aesthetic: Bioluminescent alien ecology, Avatar/Pandora-style wonder, connected organic glow
-  form_and_line: Glowing organic silhouettes, spore halos, branching luminous networks
-  color_palette: Blue, Purple night, cyan bloom
-  lighting_setup: Plant glow, ambient bioluminescence
-  material_texture: Organic, alien, phosphorescent
-  render_quality: Fantasy, magical, otherworldly immersion
-  spatial_distortion: None
-  atmosphere: Wonder, magic, spiritual awe, connected-biology calm
+  subject_treatment: Glowing organic silhouettes, spore halos, branching luminous networks
+  color_and_tone: Blue, Purple night, cyan bloom
+  lighting_and_shadow: Plant glow, ambient bioluminescence
+  texture_and_material: Organic, alien, phosphorescent
+  camera_and_composition: >-
+    Production-preview camera for Bioluminescent Forest: readable hero scale, foreground/midground/background
+    depth, clean silhouette, and practical vertical crop.
+  atmosphere_and_mood: Wonder, magic, spiritual awe, connected-biology calm
+  rendering_and_quality: Fantasy, magical, otherworldly immersion
   key_features: Glow in dark, floating spores
   creative_brief: >-
-    Infuse the input with bioluminescent alien ecology: cyan/violet
-    phosphorescence, spore halos, internal plant-like glow, connected organic
-    networks and ambient light replacing sunlight. Keep Pandora-style awe
-    without requiring a forest, floating mountains, specific flora, ecosystem
-    setting, or landscape.
+    Infuse the input with bioluminescent alien ecology: cyan/violet phosphorescence, spore halos, internal
+    plant-like glow, connected organic networks and ambient light replacing sunlight. Keep Pandora-style awe
+    without requiring a forest, floating mountains, specific flora, ecosystem setting, or landscape.
 avoidRules:
   - day
   - sun

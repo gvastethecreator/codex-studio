@@ -13,19 +13,22 @@ tags:
   - subcultures
 visualDna:
   aesthetic: Skate-zine style, deck-grip authenticity, casual session culture
-  form_and_line: Baggy relaxed-denim silhouette, oversized tee, hoodie-stack and beanie-slouch
-  color_palette: Grey, Black, Graphic Tee, heather, off-white, washed-black, grip-tape grey
-  lighting_setup: Hard pavement bounce, golden-hour edge light and raw zine contrast without fisheye camera lock.
-  material_texture: Heavyweight cotton, canvas, suede, grip-tape grit, worn-in denim, corduroy
-  render_quality: Casual, active, skate-zine rawness and street-credible wear without brand or logo dependence
-  spatial_distortion: None
-  atmosphere: Chill, active, session-flow ease, board-pop rhythm and raw casualness
-  key_features: Ollie-worn suede texture, grip-tape grit, five-panel cap geometry, oversized tee mass and scuffed sole edges
+  subject_treatment: Baggy relaxed-denim silhouette, oversized tee, hoodie-stack and beanie-slouch
+  color_and_tone: Grey, Black, Graphic Tee, heather, off-white, washed-black, grip-tape grey
+  lighting_and_shadow: Hard pavement bounce, golden-hour edge light and raw zine contrast without fisheye camera lock.
+  texture_and_material: Heavyweight cotton, canvas, suede, grip-tape grit, worn-in denim, corduroy
+  camera_and_composition: >-
+    Compose for Skater Style using its key spatial cues: Ollie-worn suede texture, grip-tape grit, five-panel
+    cap geometry, oversized tee mass and scuffed sole edges.
+  atmosphere_and_mood: Chill, active, session-flow ease, board-pop rhythm and raw casualness
+  rendering_and_quality: Casual, active, skate-zine rawness and street-credible wear without brand or logo dependence
+  key_features: >-
+    Ollie-worn suede texture, grip-tape grit, five-panel cap geometry, oversized tee mass and scuffed sole
+    edges
   creative_brief: >-
-    Convert any input into skater casual: oversized tee mass, hoodie stack,
-    baggy denim, suede scuffs, grip-tape grit and five-panel cap cues. Keep
-    board-pop rhythm and zine rawness without requiring branded shoes, logo tee,
-    fisheye lens, skatepark, parking lot, fixed session scene or a skater body.
+    Convert any input into skater casual: oversized tee mass, hoodie stack, baggy denim, suede scuffs,
+    grip-tape grit and five-panel cap cues. Keep board-pop rhythm and zine rawness without requiring branded
+    shoes, logo tee, fisheye lens, skatepark, parking lot, fixed session scene or a skater body.
 avoidRules:
   - tight clothes
   - logos

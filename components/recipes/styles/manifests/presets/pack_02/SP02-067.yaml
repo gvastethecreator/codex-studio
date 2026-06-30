@@ -13,21 +13,24 @@ tags:
   - lighting-and-atmosphere
 visualDna:
   aesthetic: Layered images
-  form_and_line: None
-  color_palette: Ghostly mix, overlapping hue, translucent blend, ethereal overlay
-  lighting_setup: Screen blend, additive exposure, in-camera double-strike
-  material_texture: Complex, layered transparency, film-sandwich density
-  render_quality: Artsy, dream, visual poetry, memory-merge
-  spatial_distortion: Overlap, layer nesting, translucent registration drift
-  atmosphere: Surreal, memory, dual exposure, fleeting connection
+  subject_treatment: >-
+    Treat subjects as believable filmed or broadcast subjects under Double Exposure: casting, wardrobe, props,
+    motion cues, and silhouette hierarchy follow 5. Lighting And Atmosphere cinematic and broadcast grammar
+    without locking to one plot beat.
+  color_and_tone: Ghostly mix, overlapping hue, translucent blend, ethereal overlay
+  lighting_and_shadow: Screen blend, additive exposure, in-camera double-strike
+  texture_and_material: Complex, layered transparency, film-sandwich density
+  camera_and_composition: Overlap, layer nesting, translucent registration drift
+  atmosphere_and_mood: Surreal, memory, dual exposure, fleeting connection
+  rendering_and_quality: Artsy, dream, visual poetry, memory-merge
   key_features: Layer blend, silhouette mask, translucent density, exposure sandwich
   creative_brief: >-
-    Use double exposure as a transferable layering method: two or more visual fields share one frame through masks,
-    translucent density, additive exposure, and soft registration drift. Avoid requiring faces, landscapes, figures, or
-    nature fusion. The image should read as memory layers occupying one photographic surface. Apply Double Exposure as a
-    portable cinematic/camera style over any input: preserve its lens behavior, color process, lighting setup, artifact
-    pattern, and deformation grammar while avoiding a required actor, room, prop, brand, readable text, fixed IP scene,
-    or narrative setup.
+    Use double exposure as a transferable layering method: two or more visual fields share one frame through
+    masks, translucent density, additive exposure, and soft registration drift. Avoid requiring faces,
+    landscapes, figures, or nature fusion. The image should read as memory layers occupying one photographic
+    surface. Apply Double Exposure as a portable cinematic/camera style over any input: preserve its lens
+    behavior, color process, lighting setup, artifact pattern, and deformation grammar while avoiding a
+    required actor, room, prop, brand, readable text, fixed IP scene, or narrative setup.
 avoidRules:
   - single image
 assets:

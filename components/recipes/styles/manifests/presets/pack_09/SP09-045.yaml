@@ -13,22 +13,22 @@ tags:
   - tactile-surfaces
 visualDna:
   aesthetic: Compressed wool
-  form_and_line: Fuzzy edge
-  color_palette: Matte colors
-  lighting_setup: Soft absorption
-  material_texture: Fuzzy, dense
-  render_quality: Craft, soft
-  spatial_distortion: None
-  atmosphere: Warm, craft
+  subject_treatment: Fuzzy edge
+  color_and_tone: Matte colors
+  lighting_and_shadow: Soft absorption
+  texture_and_material: Fuzzy, dense
+  camera_and_composition: 'Compose for Felt Fabric using its key spatial cues: No weave.'
+  atmosphere_and_mood: Warm, craft
+  rendering_and_quality: Craft, soft
   key_features: No weave
   creative_brief: >-
-    Summon the soft density of felted wool where fibers have surrendered individual identity to become a unified surface
-    without weave or grain, matte colors absorbing light like powdered pigment painted onto compressed cloud. The fuzzy
-    edge should dissolve into atmosphere without a defined boundary. Capture the warmth of compression, softness
-    achieved through the pressure of becoming one. Use Felt Fabric as portable surface/render behavior over any input:
-    map its texture, light response, edge wear, color chemistry, and tactile rhythm onto the subject instead of
-    requiring a literal material sample, macro tile, wall, landscape, source object, or scene where the material
-    naturally appears.
+    Summon the soft density of felted wool where fibers have surrendered individual identity to become a
+    unified surface without weave or grain, matte colors absorbing light like powdered pigment painted onto
+    compressed cloud. The fuzzy edge should dissolve into atmosphere without a defined boundary. Capture the
+    warmth of compression, softness achieved through the pressure of becoming one. Use Felt Fabric as portable
+    surface/render behavior over any input: map its texture, light response, edge wear, color chemistry, and
+    tactile rhythm onto the subject instead of requiring a literal material sample, macro tile, wall,
+    landscape, source object, or scene where the material naturally appears.
 avoidRules:
   - woven
   - shiny

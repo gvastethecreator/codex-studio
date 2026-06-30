@@ -12,20 +12,27 @@ tags:
   - anime-character-and-lifestyle
   - shojo-magical-girl-and-visionary-classics
 visualDna:
-  aesthetic: Modern spiritual romance, fox-familiar charm, devotional responsibility, soft comedy and magical tenderness expressed through vermilion-moonlit ornament
-  form_and_line: Sacred-ornament contour rhythm, sleeve-like flow lines, fox-tail gesture accents, and expressive sacred-comedy framing
-  color_palette: Vermilion gate reds, moonlit indigo, parchment cream, fox-gold accents, and lantern amber warmth
-  lighting_setup: Lantern-pool warmth, cool moon rim lighting, and talisman-like localized glow in twilight tones
-  material_texture: Lacquered wood cues, stone-wear texture, paper charm fibers, silk weave drape, and brushed ceremonial metal accents
-  render_quality: Spiritual-romcom rendering with folkloric detail clarity, playful intimacy, and luminous night atmosphere
-  spatial_distortion: Sacred vertical lift with subtle spirit-layer parallax
-  atmosphere: Playful, spiritual, romantic, luminous
-  key_features: Vermilion sacred motifs, fox motifs, moonlit vertical rhythm, divine-contract details, playful supernatural intimacy
+  aesthetic: >-
+    Modern spiritual romance, fox-familiar charm, devotional responsibility, soft comedy and magical
+    tenderness expressed through vermilion-moonlit ornament
+  subject_treatment: >-
+    Sacred-ornament contour rhythm, sleeve-like flow lines, fox-tail gesture accents, and expressive
+    sacred-comedy framing
+  color_and_tone: Vermilion gate reds, moonlit indigo, parchment cream, fox-gold accents, and lantern amber warmth
+  lighting_and_shadow: Lantern-pool warmth, cool moon rim lighting, and talisman-like localized glow in twilight tones
+  texture_and_material: >-
+    Lacquered wood cues, stone-wear texture, paper charm fibers, silk weave drape, and brushed ceremonial
+    metal accents
+  camera_and_composition: Sacred vertical lift with subtle spirit-layer parallax
+  atmosphere_and_mood: Playful, spiritual, romantic, luminous
+  rendering_and_quality: Spiritual-romcom rendering with folkloric detail clarity, playful intimacy, and luminous night atmosphere
+  key_features: >-
+    Vermilion sacred motifs, fox motifs, moonlit vertical rhythm, divine-contract details, playful
+    supernatural intimacy
   creative_brief: >-
-    Bless the input with shrine romance and fox-familiar charm: vermilion
-    ornament, moonlit indigo rims, talisman glows, sleeve-flow lines, and fox-gold
-    familiar hints can spiritualize any subject without requiring a shrine,
-    contract scene, priestess, fox character, or romantic pair.
+    Bless the input with shrine romance and fox-familiar charm: vermilion ornament, moonlit indigo rims,
+    talisman glows, sleeve-flow lines, and fox-gold familiar hints can spiritualize any subject without
+    requiring a shrine, contract scene, priestess, fox character, or romantic pair.
 avoidRules:
   - realistic
   - 3d render
@@ -42,7 +49,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-197.webp
 attributes:
-  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
+  negativePrompt: >-
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts,
+    watermark, text, signature
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle

@@ -13,22 +13,22 @@ tags:
   - man-made-materials
 visualDna:
   aesthetic: Packing material
-  form_and_line: Circles
-  color_palette: Clear plastic
-  lighting_setup: Highlights on bubbles
-  material_texture: Plastic, air filled
-  render_quality: Disposable, fun
-  spatial_distortion: Bubbles
-  atmosphere: Protective, cheap
+  subject_treatment: Circles
+  color_and_tone: Clear plastic
+  lighting_and_shadow: Highlights on bubbles
+  texture_and_material: Plastic, air filled
+  camera_and_composition: Bubbles
+  atmosphere_and_mood: Protective, cheap
+  rendering_and_quality: Disposable, fun
   key_features: Grid of bubbles
   creative_brief: >-
-    Compose the playful geometry of bubble wrap where transparent plastic domes rise in neat grids, each one a pocket of
-    trapped air awaiting release, highlights dancing across every bubble's crown like tiny lenses of protection. The
-    clear plastic should catch light with a faint sheen that reveals the ordered army of hemispheres beneath. Capture
-    the material of anticipation, joy molded in polyethylene. Use Bubble Wrap as portable surface/render behavior over
-    any input: map its texture, light response, edge wear, color chemistry, and tactile rhythm onto the subject instead
-    of requiring a literal material sample, macro tile, wall, landscape, source object, or scene where the material
-    naturally appears.
+    Compose the playful geometry of bubble wrap where transparent plastic domes rise in neat grids, each one a
+    pocket of trapped air awaiting release, highlights dancing across every bubble's crown like tiny lenses of
+    protection. The clear plastic should catch light with a faint sheen that reveals the ordered army of
+    hemispheres beneath. Capture the material of anticipation, joy molded in polyethylene. Use Bubble Wrap as
+    portable surface/render behavior over any input: map its texture, light response, edge wear, color
+    chemistry, and tactile rhythm onto the subject instead of requiring a literal material sample, macro tile,
+    wall, landscape, source object, or scene where the material naturally appears.
 avoidRules:
   - flat plastic
 assets:

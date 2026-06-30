@@ -13,18 +13,18 @@ tags:
   - diagram-print-and-light-systems
 visualDna:
   aesthetic: Chalk on blackboard
-  form_and_line: Dusty, variable width
-  color_palette: White, Pastel on Black
-  lighting_setup: Flat
-  material_texture: Chalk dust, slate
-  render_quality: Temporary, hand-drawn
-  spatial_distortion: Smudged
-  atmosphere: Casual, hand drawn
+  subject_treatment: Dusty, variable width
+  color_and_tone: White, Pastel on Black
+  lighting_and_shadow: Flat
+  texture_and_material: Chalk dust, slate
+  camera_and_composition: Smudged
+  atmosphere_and_mood: Casual, hand drawn
+  rendering_and_quality: Temporary, hand-drawn
   key_features: Black background
   creative_brief: >-
-    Apply chalkboard dust to the input: slate-dark grounds, soft powder strokes,
-    smudged edges, erasable residue, and hand-drawn instructional marks without
-    readable text should make forms feel temporary and tactile.
+    Apply chalkboard dust to the input: slate-dark grounds, soft powder strokes, smudged edges, erasable
+    residue, and hand-drawn instructional marks without readable text should make forms feel temporary and
+    tactile.
 avoidRules:
   - pen
   - ink

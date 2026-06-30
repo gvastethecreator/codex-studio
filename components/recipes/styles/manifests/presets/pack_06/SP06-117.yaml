@@ -13,10 +13,14 @@ tags:
   - game-art-directions-and-ui
 visualDna:
   aesthetic: Arcade-racing neon style with exaggerated speed trails, glossy color bands, and kinetic route readability.
-  subject_treatment: Stretch any subject into velocity-forward forms with aerodynamic diagonals, luminous edges, and impact streaks.
+  subject_treatment: >-
+    Stretch any subject into velocity-forward forms with aerodynamic diagonals, luminous edges, and impact
+    streaks.
   color_and_tone: Hot magenta, cyan, lime, black asphalt-like neutrals, and intense specular contrast.
   lighting_and_shadow: Neon reflections, tunnel-like light strips, streaked highlights, and long directional glow smears.
-  texture_and_material: Glossy PBR-lite surfaces, motion-line bands, bloom haze, wet reflective grain, and compressed arcade sharpness.
+  texture_and_material: >-
+    Glossy PBR-lite surfaces, motion-line bands, bloom haze, wet reflective grain, and compressed arcade
+    sharpness.
   camera_and_composition: Low wide-angle velocity framing, vanishing-point pull, diagonal lane rhythm, and strong forward momentum.
   atmosphere_and_mood: Fast, loud, competitive mood without requiring cars, tracks, roads, billboards, or city nights.
   rendering_and_quality: High-energy arcade polish, controlled motion effects, no readable signage, no UI overlays.

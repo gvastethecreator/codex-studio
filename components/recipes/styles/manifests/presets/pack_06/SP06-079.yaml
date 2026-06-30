@@ -13,21 +13,21 @@ tags:
   - mixed-media
 visualDna:
   aesthetic: Suminagashi or Ebru
-  form_and_line: Fluid swirls
-  color_palette: Psychedelic, oil
-  lighting_setup: Flat
-  material_texture: Paper, oil slick
-  render_quality: Abstract, pattern
-  spatial_distortion: Liquid distortion
-  atmosphere: Trippy, fluid
+  subject_treatment: Fluid swirls
+  color_and_tone: Psychedelic, oil
+  lighting_and_shadow: Flat
+  texture_and_material: Paper, oil slick
+  camera_and_composition: Liquid distortion
+  atmosphere_and_mood: Trippy, fluid
+  rendering_and_quality: Abstract, pattern
   key_features: Oil patterns
   creative_brief: >-
-    Pigment floats on the surface tension of thickened water, swirled into patterns by comb and stylus, then transferred
-    to paper in a single decisive contact. No two pulls are identical, no two patterns repeatable, the medium encoding
-    uniqueness into every sheet. The image is a liquid moment frozen, a turbulence caught becoming design. Apply this
-    mixed-media process over any input: preserve material assembly, edge evidence, surface treatment, layering logic,
-    and handmade artifacts while avoiding required clippings, readable text, boards, fire, studio setup, or literal
-    craft-table scene.
+    Pigment floats on the surface tension of thickened water, swirled into patterns by comb and stylus, then
+    transferred to paper in a single decisive contact. No two pulls are identical, no two patterns repeatable,
+    the medium encoding uniqueness into every sheet. The image is a liquid moment frozen, a turbulence caught
+    becoming design. Apply this mixed-media process over any input: preserve material assembly, edge evidence,
+    surface treatment, layering logic, and handmade artifacts while avoiding required clippings, readable
+    text, boards, fire, studio setup, or literal craft-table scene.
 avoidRules:
   - photo
   - realistic
@@ -48,8 +48,8 @@ assets:
   defaultImage: /assets/recipes/styles/defaults/SP06-079.webp
 attributes:
   negativePrompt: >-
-    photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark,
-    text, signature, frame, border
+    photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy,
+    watermark, text, signature, frame, border
 taxonomy:
   packId: pack_06
   packName: Essential Art Styles

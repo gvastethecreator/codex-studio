@@ -13,18 +13,22 @@ tags:
   - fantasy-sci-fi-costume
 visualDna:
   aesthetic: Scavenged wasteland utility couture with oxidized survival layers, fuel-scarcity grit and chrome myth.
-  form_and_line: Rags, armor, scavenged-layer chaos, shoulder-pad bulk, wrapped-limb binding and improvised asymmetry
-  color_palette: Dust, Brown, Rust, sun-bleached tan, oxidized copper, dark oxidized rust, chalk-white road paint, desert-ochre
-  lighting_setup: Harsh sun, heat-shimmer distortion, dust diffusion, repair-fire orange accents and wind-haze
-  material_texture: Dirty canvas, torn leather, salvaged tire rubber, oxidized chain texture, scrap-panel armor, gauze wraps, weathered denim
-  render_quality: Survival couture realism with gritty material hierarchy and improvised engineering clarity.
-  spatial_distortion: Scavenged-layer asymmetry, strapped compression, heat-haze edges and armor-fragment silhouette breaks.
-  atmosphere: Tough resource-scarcity tension, wind-burned solitude and ferocious repair culture.
+  subject_treatment: Rags, armor, scavenged-layer chaos, shoulder-pad bulk, wrapped-limb binding and improvised asymmetry
+  color_and_tone: >-
+    Dust, Brown, Rust, sun-bleached tan, oxidized copper, dark oxidized rust, chalk-white road paint,
+    desert-ochre
+  lighting_and_shadow: Harsh sun, heat-shimmer distortion, dust diffusion, repair-fire orange accents and wind-haze
+  texture_and_material: >-
+    Dirty canvas, torn leather, salvaged tire rubber, oxidized chain texture, scrap-panel armor, gauze wraps,
+    weathered denim
+  camera_and_composition: Scavenged-layer asymmetry, strapped compression, heat-haze edges and armor-fragment silhouette breaks.
+  atmosphere_and_mood: Tough resource-scarcity tension, wind-burned solitude and ferocious repair culture.
+  rendering_and_quality: Survival couture realism with gritty material hierarchy and improvised engineering clarity.
   key_features: Optional goggles, shoulder pad, bandolier-like straps, respirator cues and improvised armor fragments
   creative_brief: >-
     Render any input as scavenged survival couture: dirty canvas, tire rubber, oxidized chain texture,
-    scrap-panel fragments, gauze wraps, oxidized metal and dust-choked layering. Keep scarcity
-    ferocity without IP cues, chase vehicles, weapons, gas-mask portrait lock or specific desert scene.
+    scrap-panel fragments, gauze wraps, oxidized metal and dust-choked layering. Keep scarcity ferocity
+    without IP cues, chase vehicles, weapons, gas-mask portrait lock or specific desert scene.
 avoidRules:
   - clean
   - new

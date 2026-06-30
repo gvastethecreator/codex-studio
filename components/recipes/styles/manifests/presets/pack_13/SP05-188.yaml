@@ -12,20 +12,33 @@ tags:
   - anime-character-and-lifestyle
   - shojo-magical-girl-and-visionary-classics
 visualDna:
-  aesthetic: Elite-status melodrama grammar with social-hierarchy staging, glossy emotional collision, and status-coded romance tension
-  form_and_line: Sharp posture-contrast silhouettes, vertical-axis confrontation blocking, disciplined facial micro-expression linework, and tailored contour control
-  color_palette: Ivory and navy bases, luxury black accents, restrained gold signifiers, rain-slick slate neutrals, and crimson social-pressure highlights
-  lighting_setup: Overcast prestige diffusion, reflective rain sheen, backlight separation, and dramatic vertical contrast pockets
-  material_texture: Premium tailored textiles, polished stone-like surfaces, leather accessory gloss, and wet reflective layering
-  render_quality: High-polish shojo melodrama rendering with social-rank readability, clean fashion fidelity, and emotionally charged framing clarity
-  spatial_distortion: Vertical-status perspective exaggeration through rank-coded vantage compression
-  atmosphere: Tumultuous, glamorous, bruising, addictive
-  key_features: Elite status polish, social hierarchy staging, vertical confrontations, tailored detail, rain-soaked dramatic beats
+  aesthetic: >-
+    Elite-status melodrama grammar with social-hierarchy staging, glossy emotional collision, and status-coded
+    romance tension
+  subject_treatment: >-
+    Sharp posture-contrast silhouettes, vertical-axis confrontation blocking, disciplined facial
+    micro-expression linework, and tailored contour control
+  color_and_tone: >-
+    Ivory and navy bases, luxury black accents, restrained gold signifiers, rain-slick slate neutrals, and
+    crimson social-pressure highlights
+  lighting_and_shadow: >-
+    Overcast prestige diffusion, reflective rain sheen, backlight separation, and dramatic vertical contrast
+    pockets
+  texture_and_material: >-
+    Premium tailored textiles, polished stone-like surfaces, leather accessory gloss, and wet reflective
+    layering
+  camera_and_composition: Vertical-status perspective exaggeration through rank-coded vantage compression
+  atmosphere_and_mood: Tumultuous, glamorous, bruising, addictive
+  rendering_and_quality: >-
+    High-polish shojo melodrama rendering with social-rank readability, clean fashion fidelity, and
+    emotionally charged framing clarity
+  key_features: >-
+    Elite status polish, social hierarchy staging, vertical confrontations, tailored detail, rain-soaked
+    dramatic beats
   creative_brief: >-
-    Rank the input through elite melodrama: ivory/navy status contrast, polished
-    rain sheen, tailored contour control, gold hierarchy accents, and vertical
-    confrontation pressure can elevate any subject without requiring a campus,
-    rich students, romance triangle, or hallway scene.
+    Rank the input through elite melodrama: ivory/navy status contrast, polished rain sheen, tailored contour
+    control, gold hierarchy accents, and vertical confrontation pressure can elevate any subject without
+    requiring a campus, rich students, romance triangle, or hallway scene.
 avoidRules:
   - realistic
   - 3d render
@@ -42,7 +55,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-188.webp
 attributes:
-  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
+  negativePrompt: >-
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts,
+    watermark, text, signature
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle

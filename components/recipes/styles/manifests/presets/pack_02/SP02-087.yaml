@@ -12,16 +12,23 @@ tags:
   - cinematic-and-media
   - caricature-and-cartoon-styles
 visualDna:
-  aesthetic: 1930s rubber-hose cartoon pushed to mania, spaghetti-like curves, accordion compression, pure kinetic anarchy, Fleischer on amphetamines, Cuphead nightmare mode
-  form_and_line: Noodle-thin bouncing outlines, squash-and-stretch taken beyond breaking point, elastic deformation extremes
-  color_palette: Vintage cel paint, off-registration cyan bleed, nicotine-stain sepia, fading technicolor, ink-smear black
-  lighting_setup: Nonexistent lighting logic, flat cel shading, occasional shadow blob where foot touches ground
-  material_texture: 16mm film grain, cel paint brush strokes visible, dust-scratched negative, old-reel flicker
-  render_quality: Vintage rubber-hose chaos, golden-age bounciness amplified tenfold, classic cartoon on fast-forward
-  spatial_distortion: Forms knotting like elastic tubes, torso-like mass compression, infinite stretch, detached motion accents
-  atmosphere: Frenzied, hysterical, pure kinetic madness, cartoon physics unleashed
+  aesthetic: >-
+    1930s rubber-hose cartoon pushed to mania, spaghetti-like curves, accordion compression, pure kinetic
+    anarchy, Fleischer on amphetamines, Cuphead nightmare mode
+  subject_treatment: >-
+    Noodle-thin bouncing outlines, squash-and-stretch taken beyond breaking point, elastic deformation
+    extremes
+  color_and_tone: Vintage cel paint, off-registration cyan bleed, nicotine-stain sepia, fading technicolor, ink-smear black
+  lighting_and_shadow: Nonexistent lighting logic, flat cel shading, occasional shadow blob where foot touches ground
+  texture_and_material: 16mm film grain, cel paint brush strokes visible, dust-scratched negative, old-reel flicker
+  camera_and_composition: Forms knotting like elastic tubes, torso-like mass compression, infinite stretch, detached motion accents
+  atmosphere_and_mood: Frenzied, hysterical, pure kinetic madness, cartoon physics unleashed
+  rendering_and_quality: Vintage rubber-hose chaos, golden-age bounciness amplified tenfold, classic cartoon on fast-forward
   key_features: Rubber-hose curves, no-joint elasticity, pie-cut graphic accents, accordion compression, impact smears
-  creative_brief: 'Turn any subject into manic rubber-hose kinetics: no-joint elastic curves, accordion compression, impact smears, pie-cut graphic accents, and fast old-reel flicker. Avoid requiring limbs, pupils, bodies, or object-head gags. Physics should feel revoked through motion language and deformation.'
+  creative_brief: >-
+    Turn any subject into manic rubber-hose kinetics: no-joint elastic curves, accordion compression, impact
+    smears, pie-cut graphic accents, and fast old-reel flicker. Avoid requiring limbs, pupils, bodies, or
+    object-head gags. Physics should feel revoked through motion language and deformation.
 avoidRules:
   - realistic
   - anatomical

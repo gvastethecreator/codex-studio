@@ -14,16 +14,35 @@ tags:
   - bio-urbanism
   - chloroplast
 visualDna:
-  aesthetic: plant-cell urban biotech as a flat graphic digital-illustration card built around dense housing blocks powered by chloroplast panels, algae windows, and resident maintenance balconies.
-  form_and_line: Organic circuitry, fungal branching, lab-craft silhouettes, soft biotech forms, and handmade mutation logic. Core composition uses chloroplast panels, balconies, residents, algae windows, maintenance pipes.
-  color_palette: algae green, concrete cream, sunlit yellow, shadow teal
-  lighting_setup: soft cellular glow, balcony daylight, filtered green reflections
-  material_texture: algae-glass color blocks, concrete planes, plant-cell panels, plain laundry rectangles, simple pipe loops
-  render_quality: Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity, moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material simulation, or hyper-detail.
-  spatial_distortion: Clinics, transit spines, bridges, plazas, conservatories, and worktables that feel grown not installed. Keep depth legible and avoid default hallway, aisle, or empty studio staging.
-  atmosphere: dense, useful, lived-in, bio-urban
+  aesthetic: >-
+    plant-cell urban biotech as a flat graphic digital-illustration card built around dense housing blocks
+    powered by chloroplast panels, algae windows, and resident maintenance balconies.
+  subject_treatment: >-
+    Organic circuitry, fungal branching, lab-craft silhouettes, soft biotech forms, and handmade mutation
+    logic. Core composition uses chloroplast panels, balconies, residents, algae windows, maintenance pipes.
+  color_and_tone: algae green, concrete cream, sunlit yellow, shadow teal
+  lighting_and_shadow: soft cellular glow, balcony daylight, filtered green reflections
+  texture_and_material: algae-glass color blocks, concrete planes, plant-cell panels, plain laundry rectangles, simple pipe loops
+  camera_and_composition: >-
+    Clinics, transit spines, bridges, plazas, conservatories, and worktables that feel grown not installed.
+    Keep depth legible and avoid default hallway, aisle, or empty studio staging.
+  atmosphere_and_mood: dense, useful, lived-in, bio-urban
+  rendering_and_quality: >-
+    Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly
+    planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity,
+    moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material
+    simulation, or hyper-detail.
   key_features: chloroplast panels, balconies, residents, algae windows, maintenance pipes
-  creative_brief: 'This is biotech urbanism, not garden futurism: emphasize plant-cell hardware, dense housing, and maintenance life. Keep it representative through a vertical housing stack, resident-maintenance silhouettes, algae windows, and chunky chloroplast panel tiles, not luxury eco-architecture branding. Favor flat graphic digital illustration, clean editorial illustration, cel-shaded poster art, gouache poster aesthetics, graphic-novel card art, or stylized animation-background art over realism, photoreal photoreal painterly realism, cinematic key art, scratchy print noise, or hyper-detailed concept art. Use few bold color/value zones, simplified brush planes, matte surfaces, low-to-moderate texture, large shapes, clean surfaces, shallow poster depth, and finish denoised with no excessive noise or ultra-fine detail.'
+  creative_brief: >-
+    This is biotech urbanism, not garden futurism: emphasize plant-cell hardware, dense housing, and
+    maintenance life. Keep it representative through a vertical housing stack, resident-maintenance
+    silhouettes, algae windows, and chunky chloroplast panel tiles, not luxury eco-architecture branding.
+    Favor flat graphic digital illustration, clean editorial illustration, cel-shaded poster art, gouache
+    poster aesthetics, graphic-novel card art, or stylized animation-background art over realism, photoreal
+    photoreal painterly realism, cinematic key art, scratchy print noise, or hyper-detailed concept art. Use
+    few bold color/value zones, simplified brush planes, matte surfaces, low-to-moderate texture, large
+    shapes, clean surfaces, shallow poster depth, and finish denoised with no excessive noise or ultra-fine
+    detail.
 avoidRules:
   - photoreal
   - watermark
@@ -37,7 +56,22 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP15-032.webp
 attributes:
-  negativePrompt: photoreal, hyperreal, realistic render, photoreal photoreal painterly realism, cinematic realism, AAA key art, cinematic concept-art render, photobash polish, realistic material rendering, photographic skin pores, realistic foreground portrait, realistic facial hair detail, lens blur, bokeh, depth-of-field photo look, generic soldier hero, guard pin-up, weapon-first pose, leaf-logo emblem, eco badge, generic glass utopia, greenhouse tower, resort balcony render, market aisle, photoreal facade, dense pipe spaghetti, luxury eco archviz, HDR lens realism, 3D render look, PBR material simulation, hyper-detailed concept art, scratchy print noise, tiny black linework, watermark, text, logo, generic style, over-abstract, interchangeable preset, duplicated motifs, unmotivated market aisle, unmotivated library aisle, fantasy corridor, random camera held by subject, studio wall fixation, chair fixation, curtain fixation, lamp fixation, scarf fixation, pedestal fixation, bird fixation, excessive noise, ultra-fine detail, over-sharpened microtexture, over-rendered machinery, noisy grime, tiny rivets everywhere, busy texture chatter, realistic uniform portrait, uniformed officer hero, foreground guard portrait, detailed tattoo focus, dense machinery wallpaper, overcrowded scene, high-frequency surface detail, cinematic close-up portrait, flat black fill, crushed black, pure black masses, muddy black fields, generic American illustration, generic Western RPG card art
+  negativePrompt: >-
+    photoreal, hyperreal, realistic render, photoreal photoreal painterly realism, cinematic realism, AAA key
+    art, cinematic concept-art render, photobash polish, realistic material rendering, photographic skin
+    pores, realistic foreground portrait, realistic facial hair detail, lens blur, bokeh, depth-of-field photo
+    look, generic soldier hero, guard pin-up, weapon-first pose, leaf-logo emblem, eco badge, generic glass
+    utopia, greenhouse tower, resort balcony render, market aisle, photoreal facade, dense pipe spaghetti,
+    luxury eco archviz, HDR lens realism, 3D render look, PBR material simulation, hyper-detailed concept art,
+    scratchy print noise, tiny black linework, watermark, text, logo, generic style, over-abstract,
+    interchangeable preset, duplicated motifs, unmotivated market aisle, unmotivated library aisle, fantasy
+    corridor, random camera held by subject, studio wall fixation, chair fixation, curtain fixation, lamp
+    fixation, scarf fixation, pedestal fixation, bird fixation, excessive noise, ultra-fine detail,
+    over-sharpened microtexture, over-rendered machinery, noisy grime, tiny rivets everywhere, busy texture
+    chatter, realistic uniform portrait, uniformed officer hero, foreground guard portrait, detailed tattoo
+    focus, dense machinery wallpaper, overcrowded scene, high-frequency surface detail, cinematic close-up
+    portrait, flat black fill, crushed black, pure black masses, muddy black fields, generic American
+    illustration, generic Western RPG card art
 taxonomy:
   packId: pack_15
   packName: Punk Spectrum Vault

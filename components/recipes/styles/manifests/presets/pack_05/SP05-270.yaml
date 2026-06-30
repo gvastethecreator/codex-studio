@@ -12,20 +12,25 @@ tags:
   - anime-battle-and-worlds
   - dark-fantasy-and-seinen
 visualDna:
-  aesthetic: Cursed severance softened by compassion, folk-horror grit, muddy tenderness, fractured wholeness, brutal loss rendered with humane warmth
-  form_and_line: Dense mature-anime linework, heavy crosshatching, weighted contour variation, gritty ink density
-  color_palette: Muted earths, blood reds, cold moonlit tones, desaturated horror palette, bruised shadow hues
-  lighting_setup: Ominous directional shadows, single-source drama light, deep chiaroscuro, low-key shadow lift
-  material_texture: Mud-dark grain, worn cloth fiber, scarred wood matte, rust patina, cracked earth texture, dry crimson staining
-  render_quality: Gritty dramatic anime frame, film-noir rendering, heavy shadow compression, textured midtone grit
-  spatial_distortion: Severed-frame spacing, tenderness beside harsh mass, folk-horror silhouettes, muddy horizon drag, compassionate close compression
-  atmosphere: Bleak, raw, compassionate, cursed
+  aesthetic: >-
+    Cursed severance softened by compassion, folk-horror grit, muddy tenderness, fractured wholeness, brutal
+    loss rendered with humane warmth
+  subject_treatment: Dense mature-anime linework, heavy crosshatching, weighted contour variation, gritty ink density
+  color_and_tone: Muted earths, blood reds, cold moonlit tones, desaturated horror palette, bruised shadow hues
+  lighting_and_shadow: Ominous directional shadows, single-source drama light, deep chiaroscuro, low-key shadow lift
+  texture_and_material: >-
+    Mud-dark grain, worn cloth fiber, scarred wood matte, rust patina, cracked earth texture, dry crimson
+    staining
+  camera_and_composition: >-
+    Severed-frame spacing, tenderness beside harsh mass, folk-horror silhouettes, muddy horizon drag,
+    compassionate close compression
+  atmosphere_and_mood: Bleak, raw, compassionate, cursed
+  rendering_and_quality: Gritty dramatic anime frame, film-noir rendering, heavy shadow compression, textured midtone grit
   key_features: Severance motifs, cursed sky pressure, mud-worn tenderness, folk-horror grit, compassion against brutality
-  creative_brief: >
-    Render any subject as damaged wholeness struggling toward tenderness:
-    muddy texture, cursed negative space, folk-horror silhouettes, and warm
-    humane accents should carry the look without fixed anatomy, companions,
-    travel spaces, settlements, adversaries, or quest structure.
+  creative_brief: >-
+    Render any subject as damaged wholeness struggling toward tenderness: muddy texture, cursed negative
+    space, folk-horror silhouettes, and warm humane accents should carry the look without fixed anatomy,
+    companions, travel spaces, settlements, adversaries, or quest structure.
 avoidRules:
   - realistic
   - 3d render
@@ -42,7 +47,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-270.webp
 attributes:
-  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
+  negativePrompt: >-
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts,
+    watermark, text, signature
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds

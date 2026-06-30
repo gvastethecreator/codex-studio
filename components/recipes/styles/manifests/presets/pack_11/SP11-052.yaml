@@ -13,19 +13,20 @@ tags:
   - food-and-drink
 visualDna:
   aesthetic: High-speed freshness burst, juice-splash photography, cut-surface color energy, orchard-dynamism
-  form_and_line: Splash lines, parabolic-arc droplets, knife-slice plane, fruit-half contour, peel-curl spiral
-  color_palette: Juicy brights, watermelon-crimson, citrus-sunburst, berry-stain purple, kiwi-emerald, mango-golden
-  lighting_setup: High speed flash, freeze-motion strobe, water-droplet sparkle, juice-mist backlight, shadow-free key
-  material_texture: Juice, pulp, seed-speckle, rind-texture, flesh-grain, droplet-surface-tension
-  render_quality: Fresh, dynamic, frozen-in-flight, split-second-splash, fruit-ninja zen, liquid-sculpture
-  spatial_distortion: Exploding, radial-burst, centrifugal-juice, peel-unfurling, seed-launch trajectory
-  atmosphere: Energy, vitamin-bright, fresh, splash-play, life-force, morning-juice vitality
-  key_features: Juice drops, seed-suspension, peel-spiral, pulp-splash, knife-blade reflection, fruit-half cross-section, mid-air-droplet constellation
+  subject_treatment: Splash lines, parabolic-arc droplets, knife-slice plane, fruit-half contour, peel-curl spiral
+  color_and_tone: Juicy brights, watermelon-crimson, citrus-sunburst, berry-stain purple, kiwi-emerald, mango-golden
+  lighting_and_shadow: High speed flash, freeze-motion strobe, water-droplet sparkle, juice-mist backlight, shadow-free key
+  texture_and_material: Juice, pulp, seed-speckle, rind-texture, flesh-grain, droplet-surface-tension
+  camera_and_composition: Exploding, radial-burst, centrifugal-juice, peel-unfurling, seed-launch trajectory
+  atmosphere_and_mood: Energy, vitamin-bright, fresh, splash-play, life-force, morning-juice vitality
+  rendering_and_quality: Fresh, dynamic, frozen-in-flight, split-second-splash, fruit-ninja zen, liquid-sculpture
+  key_features: >-
+    Juice drops, seed-suspension, peel-spiral, pulp-splash, knife-blade reflection, fruit-half cross-section,
+    mid-air-droplet constellation
   creative_brief: >-
-    Apply high-speed freshness-burst logic to the input: suspended droplets,
-    radial pulp or liquid motion, crisp cut geometry, peel-like curls, and
-    strobe-frozen energy. Fruit cues can anchor the preset, but avoid requiring
-    a knife, orchard, specific fruit, or literal slicing scene.
+    Apply high-speed freshness-burst logic to the input: suspended droplets, radial pulp or liquid motion,
+    crisp cut geometry, peel-like curls, and strobe-frozen energy. Fruit cues can anchor the preset, but avoid
+    requiring a knife, orchard, specific fruit, or literal slicing scene.
 avoidRules:
   - rotten
   - still

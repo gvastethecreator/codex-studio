@@ -13,15 +13,20 @@ tags:
   - portrait-and-studio
 visualDna:
   aesthetic: Intimate portrait
-  form_and_line: Soft curve emphasis
-  color_palette: Warm, dark, red
-  lighting_setup: Moody, window
-  material_texture: Lace-like texture, soft fabric, warm surface
-  render_quality: Sensual, private
-  spatial_distortion: None
-  atmosphere: Intimate, soft
+  subject_treatment: Soft curve emphasis
+  color_and_tone: Warm, dark, red
+  lighting_and_shadow: Moody, window
+  texture_and_material: Lace-like texture, soft fabric, warm surface
+  camera_and_composition: >-
+    Camera setup native to Boudoir Photography: lens choice, crop distance, depth of field, and focal
+    hierarchy support 1. Portrait And Studio without generic framing.
+  atmosphere_and_mood: Intimate, soft
+  rendering_and_quality: Sensual, private
   key_features: Protected intimacy
-  creative_brief: 'Boudoir style becomes protected intimate lighting: warm dark palette, soft curve emphasis, lace-like texture, window-shaped mood, and private shadow control. Apply sensual editorial atmosphere without requiring bed, skin, body, lingerie, or explicit content.'
+  creative_brief: >-
+    Boudoir style becomes protected intimate lighting: warm dark palette, soft curve emphasis, lace-like
+    texture, window-shaped mood, and private shadow control. Apply sensual editorial atmosphere without
+    requiring bed, skin, body, lingerie, or explicit content.
 avoidRules:
   - explicit
   - harsh

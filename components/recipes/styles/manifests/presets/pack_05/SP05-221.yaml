@@ -13,33 +13,29 @@ tags:
   - mecha-and-cyberpunk
 visualDna:
   aesthetic: >-
-    Broadcast-pop mecha emotion where concert light, contrail calligraphy, engineered romance, and
-    signal layers collide in glossy motion
-  form_and_line: >-
-    Hard-edged mechanical contours, music-wave arcs, contrail swarms, panel-line rhythm, and
-    stage-light silhouette cuts.
-  color_palette: Idol pink, signal cyan, deep space navy, missile white, alloy gray, and hopeful gold.
-  lighting_setup: >-
-    Stage beams crossing combat glow, broadcast bloom, specular metal streaks, and pop-concert rim
-    accents.
-  material_texture: >-
-    Brushed alloy, glossy polymer, holographic signal grain, vapor trails, carbon panels, and
-    sparkle-light overlays.
-  render_quality: >-
-    High-detail sci-fi anime finish with precise machinery, pop emotion, and luminous motion
-    readability.
-  spatial_distortion: >-
-    Aerial vector depth, broadcast-layer overlays, and sweeping contrail perspective without fixed
-    cockpit framing.
-  atmosphere: Aerial, poppy, heroic, romantic
+    Broadcast-pop mecha emotion where concert light, contrail calligraphy, engineered romance, and signal
+    layers collide in glossy motion
+  subject_treatment: >-
+    Hard-edged mechanical contours, music-wave arcs, contrail swarms, panel-line rhythm, and stage-light
+    silhouette cuts.
+  color_and_tone: Idol pink, signal cyan, deep space navy, missile white, alloy gray, and hopeful gold.
+  lighting_and_shadow: Stage beams crossing combat glow, broadcast bloom, specular metal streaks, and pop-concert rim accents.
+  texture_and_material: >-
+    Brushed alloy, glossy polymer, holographic signal grain, vapor trails, carbon panels, and sparkle-light
+    overlays.
+  camera_and_composition: >-
+    Aerial vector depth, broadcast-layer overlays, and sweeping contrail perspective without fixed cockpit
+    framing.
+  atmosphere_and_mood: Aerial, poppy, heroic, romantic
+  rendering_and_quality: High-detail sci-fi anime finish with precise machinery, pop emotion, and luminous motion readability.
   key_features: >-
     Signal-pop lighting, contrail rhythm, broadcast overlays, engineered romance, glossy motion, and
     stage-scale emotional color
   creative_brief: >-
-    Use Macross as style anchor for pop-signal engineered romance. Any prompt should mix broadcast
-    glow, contrail calligraphy, glossy machinery, and romantic signal noise. If character or vehicle
-    cues exist, let them pick up idol-signal/mecha-aircraft hints; dogfights, cockpits, performers,
-    and war scenes remain optional.
+    Use Macross as style anchor for pop-signal engineered romance. Any prompt should mix broadcast glow,
+    contrail calligraphy, glossy machinery, and romantic signal noise. If character or vehicle cues exist, let
+    them pick up idol-signal/mecha-aircraft hints; dogfights, cockpits, performers, and war scenes remain
+    optional.
 avoidRules:
   - realistic
   - 3d render
@@ -57,8 +53,8 @@ assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-221.webp
 attributes:
   negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, text, signature
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts,
+    watermark, text, signature
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds

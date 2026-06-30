@@ -12,17 +12,17 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'mycopunk transit architecture as a flat-to-painterly poster card built around a transit stop grown from mycelial ribs, non-readable route veins, commuters, and fungal maintenance crews.',
-      form_and_line:
+      subject_treatment:
         'Organic circuitry, fungal branching, lab-craft silhouettes, soft biotech forms, and handmade mutation logic. Core composition uses mycelial ribs, commuter silhouettes, glowing route veins, cap awnings, maintenance baskets.',
-      color_palette: 'mushroom ivory, moss green, amber glow, clay brown',
-      lighting_setup: 'soft bioluminescent blocks, platform edge glow, humid shadow planes',
-      material_texture:
+      color_and_tone: 'mushroom ivory, moss green, amber glow, clay brown',
+      lighting_and_shadow: 'soft bioluminescent blocks, platform edge glow, humid shadow planes',
+      texture_and_material:
         'mycelium rib shapes, damp clay blocks, waxed coat silhouettes, fungal cap awnings, smooth translucent color planes',
-      render_quality:
-        'Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity, moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material simulation, or hyper-detail.',
-      spatial_distortion:
+      camera_and_composition:
         'Clinics, transit spines, bridges, plazas, conservatories, and worktables that feel grown not installed. Keep depth legible and avoid default hallway, aisle, or empty studio staging.',
-      atmosphere: 'strange, organic, public, gentle',
+      atmosphere_and_mood: 'strange, organic, public, gentle',
+      rendering_and_quality:
+        'Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity, moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material simulation, or hyper-detail.',
       key_features:
         'mycelial ribs, commuter silhouettes, glowing route veins, cap awnings, maintenance baskets',
       creative_brief:
@@ -38,18 +38,18 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'biopunk symbiotic commerce as a flat-to-painterly poster card built around a living canopy market where vendors trade stylized symbiont tools, seed pods, and crafted wearable graft objects.',
-      form_and_line:
+      subject_treatment:
         'Organic circuitry, fungal branching, lab-craft silhouettes, soft biotech forms, and handmade mutation logic. Core composition uses living canopy, symbiont tools, vendor gestures, wet pods, wearable graft displays.',
-      color_palette: 'orchid magenta, chlorophyll green, warm amber, dark umber',
-      lighting_setup:
+      color_and_tone: 'orchid magenta, chlorophyll green, warm amber, dark umber',
+      lighting_and_shadow:
         'canopy-filtered glow blocks, bioluminescent stall accents, matte organic highlights',
-      material_texture:
+      texture_and_material:
         'living canopy planes, seed pod shapes, woven fiber blocks, smooth translucent color, damp wood accents',
-      render_quality:
-        'Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity, moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material simulation, or hyper-detail.',
-      spatial_distortion:
+      camera_and_composition:
         'Clinics, transit spines, bridges, plazas, conservatories, and worktables that feel grown not installed. Keep depth legible and avoid default hallway, aisle, or empty studio staging.',
-      atmosphere: 'lush, transactional, uncanny, lively',
+      atmosphere_and_mood: 'lush, transactional, uncanny, lively',
+      rendering_and_quality:
+        'Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity, moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material simulation, or hyper-detail.',
       key_features:
         'living canopy, symbiont tools, vendor gestures, wet pods, wearable graft displays',
       creative_brief:
@@ -65,18 +65,18 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'bodypunk healing workshop as a stylized digital-painting clinic card where nerve-like fiber looms weave prosthetic sensation and careful body repairs.',
-      form_and_line:
+      subject_treatment:
         'Organic circuitry, fungal branching, lab-craft silhouettes, soft biotech forms, and handmade mutation logic. Core composition uses nerve looms, caregivers, prosthetic hands, thread webs, compact monitors.',
-      color_palette: 'nerve pink, surgical teal, graphite, soft white',
-      lighting_setup:
+      color_and_tone: 'nerve pink, surgical teal, graphite, soft white',
+      lighting_and_shadow:
         'low clinical color blocks, broad fiber-optic arcs, warm caregiver light plane',
-      material_texture:
+      texture_and_material:
         'fiber-strand arcs, polymer prosthetic shapes, steel loom blocks, cotton sheet planes, smooth glass accents',
-      render_quality:
-        'Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity, moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material simulation, or hyper-detail.',
-      spatial_distortion:
+      camera_and_composition:
         'Clinics, transit spines, bridges, plazas, conservatories, and worktables that feel grown not installed. Keep depth legible and avoid default hallway, aisle, or empty studio staging.',
-      atmosphere: 'careful, intimate, uncanny, compassionate',
+      atmosphere_and_mood: 'careful, intimate, uncanny, compassionate',
+      rendering_and_quality:
+        'Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity, moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material simulation, or hyper-detail.',
       key_features: 'nerve looms, caregivers, prosthetic hands, thread webs, compact monitors',
       creative_brief:
         'Bodypunk without cheap gore: focus on care, tactile repair, and nerve-fiber craft with characters present when useful, never surgery shock or fetish medical staging. Keep the result representative rather than over-abstract; make one character in their environment the anchor, with motifs as background, costume, weather, architecture, or social pressure instead of a foreground prop. Favor flat graphic digital illustration, clean editorial illustration, cel-shaded poster art, gouache poster aesthetics, graphic-novel card art, or stylized animation-background art over realism, photoreal photoreal painterly realism, cinematic key art, scratchy print noise, or hyper-detailed concept art. Use few bold color/value zones, simplified brush planes, matte surfaces, low-to-moderate texture, large shapes, clean surfaces, shallow poster depth, and finish denoised with no excessive noise or ultra-fine detail.',
@@ -91,17 +91,17 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'fungal communication network as a stylized digital-painting card built around a public plaza where spore towers transmit messages through broad glowing clouds and woven operator masks.',
-      form_and_line:
+      subject_treatment:
         'Organic circuitry, fungal branching, lab-craft silhouettes, soft biotech forms, and handmade mutation logic. Core composition uses spore towers, message clouds, masked operators, plaza circles, fungal glyphs without text.',
-      color_palette: 'violet spores, night green, stone gray, amber lantern',
-      lighting_setup: 'spore glow blocks, twilight color planes, soft tower halos',
-      material_texture:
+      color_and_tone: 'violet spores, night green, stone gray, amber lantern',
+      lighting_and_shadow: 'spore glow blocks, twilight color planes, soft tower halos',
+      texture_and_material:
         'stone planter blocks, fungal tower silhouettes, woven mask shapes, moss color planes, powdery spore clouds',
-      render_quality:
-        'Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity, moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material simulation, or hyper-detail.',
-      spatial_distortion:
+      camera_and_composition:
         'Clinics, transit spines, bridges, plazas, conservatories, and worktables that feel grown not installed. Keep depth legible and avoid default hallway, aisle, or empty studio staging.',
-      atmosphere: 'communal, mysterious, breathable, coded',
+      atmosphere_and_mood: 'communal, mysterious, breathable, coded',
+      rendering_and_quality:
+        'Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity, moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material simulation, or hyper-detail.',
       key_features:
         'spore towers, message clouds, masked operators, plaza circles, fungal glyphs without text',
       creative_brief:
@@ -117,17 +117,18 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'bioarchitecture city bridge as a stylized digital-painting card built around a usable city bridge grown from living ribs, root cables, repair pods, and pedestrians crossing at dusk.',
-      form_and_line:
+      subject_treatment:
         'Organic circuitry, fungal branching, lab-craft silhouettes, soft biotech forms, and handmade mutation logic. Core composition uses root cables, pedestrians, repair pods, rib arches, sap-lit seams.',
-      color_palette: 'root brown, bone ivory, leaf green, evening blue',
-      lighting_setup: 'dusk rim color, warm pod accent blocks, soft bioluminescent seam shapes',
-      material_texture:
+      color_and_tone: 'root brown, bone ivory, leaf green, evening blue',
+      lighting_and_shadow:
+        'dusk rim color, warm pod accent blocks, soft bioluminescent seam shapes',
+      texture_and_material:
         'living bark planes, bone-like rib blocks, sap-glass color accents, stone shapes, woven railing arcs',
-      render_quality:
-        'Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity, moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material simulation, or hyper-detail.',
-      spatial_distortion:
+      camera_and_composition:
         'Clinics, transit spines, bridges, plazas, conservatories, and worktables that feel grown not installed. Keep depth legible and avoid default hallway, aisle, or empty studio staging.',
-      atmosphere: 'majestic, civic, alive, calm',
+      atmosphere_and_mood: 'majestic, civic, alive, calm',
+      rendering_and_quality:
+        'Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity, moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material simulation, or hyper-detail.',
       key_features: 'root cables, pedestrians, repair pods, rib arches, sap-lit seams',
       creative_brief:
         'Bioarchitecture as usable city fabric: bridge, people, maintenance pods, and living structure, avoiding empty fantasy palace imagery, rib-cage horror, wet organic gore, or realistic environment concept art. Keep the result representative rather than over-abstract; make one character in their environment the anchor, with motifs as background, costume, weather, architecture, or social pressure instead of a foreground prop. Favor flat graphic digital illustration, clean editorial illustration, cel-shaded poster art, gouache poster aesthetics, graphic-novel card art, or stylized animation-background art over realism, photoreal photoreal painterly realism, cinematic key art, scratchy print noise, or hyper-detailed concept art. Use few bold color/value zones, simplified brush planes, matte surfaces, low-to-moderate texture, large shapes, clean surfaces, shallow poster depth, and finish denoised with no excessive noise or ultra-fine detail.',
@@ -142,18 +143,18 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'garage biopunk craft as a stylized digital-painting card built around a street apothecary of blank vials, coded plants, patched lab coats, and hand-built incubators.',
-      form_and_line:
+      subject_treatment:
         'Organic circuitry, fungal branching, lab-craft silhouettes, soft biotech forms, and handmade mutation logic. Core composition uses coded plants, incubators, patched lab coats, vial racks, hand labels without readable text.',
-      color_palette: 'acid green, amber vial, black rubber, cream labels',
-      lighting_setup:
+      color_and_tone: 'acid green, amber vial, black rubber, cream labels',
+      lighting_and_shadow:
         'bench glow as flat shape, vial color blocks, street-window plane, incubator warmth',
-      material_texture:
+      texture_and_material:
         'blank glass-vial shapes, rubber tubing arcs, patterned plant leaves, patched coat blocks, enamel tray planes',
-      render_quality:
-        'Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity, moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material simulation, or hyper-detail.',
-      spatial_distortion:
+      camera_and_composition:
         'Clinics, transit spines, bridges, plazas, conservatories, and worktables that feel grown not installed. Keep depth legible and avoid default hallway, aisle, or empty studio staging.',
-      atmosphere: 'clever, illicit, small-scale, botanical',
+      atmosphere_and_mood: 'clever, illicit, small-scale, botanical',
+      rendering_and_quality:
+        'Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity, moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material simulation, or hyper-detail.',
       key_features:
         'coded plants, incubators, patched lab coats, vial racks, hand labels without readable text',
       creative_brief:
@@ -169,17 +170,17 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'elegant unsettling biotech as a flat graphic digital-illustration conservatory card where organic circuits and soft red membrane patterns integrate with glasshouse machinery.',
-      form_and_line:
+      subject_treatment:
         'Organic circuitry, fungal branching, lab-craft silhouettes, soft biotech forms, and handmade mutation logic. Core composition uses organic circuit veins, glasshouse ribs, membrane curtains, gold traces, careful figures.',
-      color_palette: 'deep crimson, pale ivory, black green, gold trace lines',
-      lighting_setup: 'greenhouse shafts, red membrane glow, gold circuit glints',
-      material_texture:
+      color_and_tone: 'deep crimson, pale ivory, black green, gold trace lines',
+      lighting_and_shadow: 'greenhouse shafts, red membrane glow, gold circuit glints',
+      texture_and_material:
         'abstract membrane panels, brass tracework, glasshouse ribs, matte leaves, polished bone shapes',
-      render_quality:
-        'Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity, moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material simulation, or hyper-detail.',
-      spatial_distortion:
+      camera_and_composition:
         'Clinics, transit spines, bridges, plazas, conservatories, and worktables that feel grown not installed. Keep depth legible and avoid default hallway, aisle, or empty studio staging.',
-      atmosphere: 'beautiful, unsettling, lush, controlled',
+      atmosphere_and_mood: 'beautiful, unsettling, lush, controlled',
+      rendering_and_quality:
+        'Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity, moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material simulation, or hyper-detail.',
       key_features:
         'organic circuit veins, glasshouse ribs, membrane curtains, gold traces, careful figures',
       creative_brief:
@@ -195,17 +196,17 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'plant-cell urban biotech as a flat graphic digital-illustration card built around dense housing blocks powered by chloroplast panels, algae windows, and resident maintenance balconies.',
-      form_and_line:
+      subject_treatment:
         'Organic circuitry, fungal branching, lab-craft silhouettes, soft biotech forms, and handmade mutation logic. Core composition uses chloroplast panels, balconies, residents, algae windows, maintenance pipes.',
-      color_palette: 'algae green, concrete cream, sunlit yellow, shadow teal',
-      lighting_setup: 'soft cellular glow, balcony daylight, filtered green reflections',
-      material_texture:
+      color_and_tone: 'algae green, concrete cream, sunlit yellow, shadow teal',
+      lighting_and_shadow: 'soft cellular glow, balcony daylight, filtered green reflections',
+      texture_and_material:
         'algae-glass color blocks, concrete planes, plant-cell panels, plain laundry rectangles, simple pipe loops',
-      render_quality:
-        'Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity, moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material simulation, or hyper-detail.',
-      spatial_distortion:
+      camera_and_composition:
         'Clinics, transit spines, bridges, plazas, conservatories, and worktables that feel grown not installed. Keep depth legible and avoid default hallway, aisle, or empty studio staging.',
-      atmosphere: 'dense, useful, lived-in, bio-urban',
+      atmosphere_and_mood: 'dense, useful, lived-in, bio-urban',
+      rendering_and_quality:
+        'Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity, moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material simulation, or hyper-detail.',
       key_features: 'chloroplast panels, balconies, residents, algae windows, maintenance pipes',
       creative_brief:
         'This is biotech urbanism, not garden futurism: emphasize plant-cell hardware, dense housing, and maintenance life. Keep it representative through a vertical housing stack, resident-maintenance silhouettes, algae windows, and chunky chloroplast panel tiles, not luxury eco-architecture branding. Favor flat graphic digital illustration, clean editorial illustration, cel-shaded poster art, gouache poster aesthetics, graphic-novel card art, or stylized animation-background art over realism, photoreal photoreal painterly realism, cinematic key art, scratchy print noise, or hyper-detailed concept art. Use few bold color/value zones, simplified brush planes, matte surfaces, low-to-moderate texture, large shapes, clean surfaces, shallow poster depth, and finish denoised with no excessive noise or ultra-fine detail.',

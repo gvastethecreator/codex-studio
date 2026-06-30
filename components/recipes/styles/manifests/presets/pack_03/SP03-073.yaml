@@ -13,18 +13,20 @@ tags:
   - 3d-styles
 visualDna:
   aesthetic: Virtual paper
-  form_and_line: Fold lines
-  color_palette: Paper texture, craft-material tones
-  lighting_setup: Shadows between layers, folded depth
-  material_texture: Paper grain, craft-cardstock
-  render_quality: Craft, handmade feel, origami precision
-  atmosphere: Creative, delicate, art-project warmth
+  subject_treatment: Fold lines
+  color_and_tone: Paper texture, craft-material tones
+  lighting_and_shadow: Shadows between layers, folded depth
+  texture_and_material: Paper grain, craft-cardstock
+  camera_and_composition: >-
+    Lookdev camera for Papercraft 3D: three-quarter or orthographic framing, clean silhouette read, material
+    highlights, controlled depth, and vertical card composition.
+  atmosphere_and_mood: Creative, delicate, art-project warmth
+  rendering_and_quality: Craft, handmade feel, origami precision
   key_features: Layered depth, fold-crease definition
   creative_brief: >-
-    Translate the input into papercraft construction: cardstock grain,
-    layered-sheet depth, fold creases, cut edges and warm craft lighting. Keep
-    handmade precision without forcing craft-table context, glue props or a
-    paper-built world.
+    Translate the input into papercraft construction: cardstock grain, layered-sheet depth, fold creases, cut
+    edges and warm craft lighting. Keep handmade precision without forcing craft-table context, glue props or
+    a paper-built world.
 avoidRules:
   - realistic
   - fluid

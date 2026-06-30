@@ -13,19 +13,24 @@ tags:
   - fabric-and-texture-focus
 visualDna:
   aesthetic: Covered in gold, gilded-divinity fantasy, gilded-surface opulence
-  form_and_line: Flakes, surface-conforming foil, gilded-contour highlight, seamless-metallic shell, layered-leaf overlap
-  color_palette: Metallic Gold, 24k-yellow, rose-gold, white-gold, champagne-foil, burnished-bronze, copper-patina
-  lighting_setup: Reflection, rim-light gold-bounce, warm-specular highlights, gallery-spot gleam, candlelight-warmth reflection
-  material_texture: Metal foil, gold leaf, composition-gold sheet, gilder's-clay base, burnished-surface, mica-flake, gold-dust
-  render_quality: Expensive, luminous, Secessionist gilded pattern luxury, gilded-age opulence
-  spatial_distortion: None
-  atmosphere: Divine, rich, alchemical-wonder awe, reliquary-treasure sanctity, immortal-beauty stillness
+  subject_treatment: Flakes, surface-conforming foil, gilded-contour highlight, seamless-metallic shell, layered-leaf overlap
+  color_and_tone: Metallic Gold, 24k-yellow, rose-gold, white-gold, champagne-foil, burnished-bronze, copper-patina
+  lighting_and_shadow: >-
+    Reflection, rim-light gold-bounce, warm-specular highlights, gallery-spot gleam, candlelight-warmth
+    reflection
+  texture_and_material: >-
+    Metal foil, gold leaf, composition-gold sheet, gilder's-clay base, burnished-surface, mica-flake,
+    gold-dust
+  camera_and_composition: >-
+    Compose for Gold Leaf using its key spatial cues: Leafing seams, burnished reflection, flake edges, gilded
+    contour, mica-gold dust.
+  atmosphere_and_mood: Divine, rich, alchemical-wonder awe, reliquary-treasure sanctity, immortal-beauty stillness
+  rendering_and_quality: Expensive, luminous, Secessionist gilded pattern luxury, gilded-age opulence
   key_features: Leafing seams, burnished reflection, flake edges, gilded contour, mica-gold dust
   creative_brief: >-
-    Gild the input with gold-leaf behavior: overlapping foil flakes, burnished
-    reflection, leaf seams, mica dust, white-gold or copper-patina variation and
-    ornamental gilded mosaic luxury. Keep divine opulence without requiring skin application,
-    temple treasury, human figure contour or living-statue body.
+    Gild the input with gold-leaf behavior: overlapping foil flakes, burnished reflection, leaf seams, mica
+    dust, white-gold or copper-patina variation and ornamental gilded mosaic luxury. Keep divine opulence
+    without requiring skin application, temple treasury, human figure contour or living-statue body.
 avoidRules:
   - dull
 assets:

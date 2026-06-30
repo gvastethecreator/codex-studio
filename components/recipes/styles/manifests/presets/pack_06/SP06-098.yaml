@@ -12,16 +12,38 @@ tags:
   - essential-art-styles
   - retro-game-visual-systems
 visualDna:
-  aesthetic: PC-Engine-TurboGrafx-16 aesthetic, compact Japanese sprite magic, bright vibrant 482-color palette, Bonk, Rondo of Blood and Hudson Soft as platform anchors, HuCard thin-cartridge identity, CD-ROM2 Red Book audio richness, NEC what-could-have-been glow
-  form_and_line: Compact but vibrant pixel forms, 16-bit sprite hardware in 8-bit CPU body, 320x256 or 256x240 resolution, CD-ROM data-loaded richness
-  color_palette: 512-color total, 482 displayable, PC-Engine vibrant brightness, orange-brown accents, gothic red-purple accents, Red Book audio as color richness, Hudson-bee yellow
-  lighting_setup: Sprite-pixel-art-directional-lighting, palette-gradient-for-depth, CD-ROM-loaded-backgrounds-complex, parallax-scrolling-lighting, no-blast-processing-but-elegant-rendering
-  material_texture: HuCard-thin-cartridge texture, CD-ROM2 loading-screen feel, compact pixel texture, 8-bit CPU with 16-bit graphics contradiction, PC-Engine LT portable LCD
-  render_quality: PC-Engine-TurboGrafx-pixel aesthetic, Japanese-16-bit-compact-beauty, HuCard-game-charm, CD-ROM-RPG- golden-era-rendering
-  spatial_distortion: 320x256 Japanese resolution, CD-ROM loaded background richness, vertical-scroll composition when useful, handheld-LT-LCD screen feel, compact proportions
-  atmosphere: Japanese-console wonder, NEC-technical ingenuity, Hudson-Soft creativity, CD-ROM golden-age glow, what-could-have-been nostalgia
-  key_features: Bright 482-color palette, HuCard cartridge identity, CD-ROM2 loaded-art richness, compact sprite design, 16-bit graphics in 8-bit system, Japanese-console charm
-  creative_brief: Any prompt gets compact Japanese console polish, brighter than its CPU should allow. HuCard restraint and CD-ROM richness coexist, producing dense color, tiny confident forms and a glowing alternate-history console mood.
+  aesthetic: >-
+    PC-Engine-TurboGrafx-16 aesthetic, compact Japanese sprite magic, bright vibrant 482-color palette, Bonk,
+    Rondo of Blood and Hudson Soft as platform anchors, HuCard thin-cartridge identity, CD-ROM2 Red Book audio
+    richness, NEC what-could-have-been glow
+  subject_treatment: >-
+    Compact but vibrant pixel forms, 16-bit sprite hardware in 8-bit CPU body, 320x256 or 256x240 resolution,
+    CD-ROM data-loaded richness
+  color_and_tone: >-
+    512-color total, 482 displayable, PC-Engine vibrant brightness, orange-brown accents, gothic red-purple
+    accents, Red Book audio as color richness, Hudson-bee yellow
+  lighting_and_shadow: >-
+    Sprite-pixel-art-directional-lighting, palette-gradient-for-depth, CD-ROM-loaded-backgrounds-complex,
+    parallax-scrolling-lighting, no-blast-processing-but-elegant-rendering
+  texture_and_material: >-
+    HuCard-thin-cartridge texture, CD-ROM2 loading-screen feel, compact pixel texture, 8-bit CPU with 16-bit
+    graphics contradiction, PC-Engine LT portable LCD
+  camera_and_composition: >-
+    320x256 Japanese resolution, CD-ROM loaded background richness, vertical-scroll composition when useful,
+    handheld-LT-LCD screen feel, compact proportions
+  atmosphere_and_mood: >-
+    Japanese-console wonder, NEC-technical ingenuity, Hudson-Soft creativity, CD-ROM golden-age glow,
+    what-could-have-been nostalgia
+  rendering_and_quality: >-
+    PC-Engine-TurboGrafx-pixel aesthetic, Japanese-16-bit-compact-beauty, HuCard-game-charm, CD-ROM-RPG-
+    golden-era-rendering
+  key_features: >-
+    Bright 482-color palette, HuCard cartridge identity, CD-ROM2 loaded-art richness, compact sprite design,
+    16-bit graphics in 8-bit system, Japanese-console charm
+  creative_brief: >-
+    Any prompt gets compact Japanese console polish, brighter than its CPU should allow. HuCard restraint and
+    CD-ROM richness coexist, producing dense color, tiny confident forms and a glowing alternate-history
+    console mood.
 avoidRules:
   - western
   - dark

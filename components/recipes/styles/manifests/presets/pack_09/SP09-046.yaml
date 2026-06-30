@@ -13,21 +13,22 @@ tags:
   - man-made-materials
 visualDna:
   aesthetic: Disco dress
-  form_and_line: Overlapping discs
-  color_palette: Metallic, reversible
-  lighting_setup: Sparkle
-  material_texture: Scaly plastic
-  render_quality: Glam, cheap
-  spatial_distortion: Flipping
-  atmosphere: Party, flashy
+  subject_treatment: Overlapping discs
+  color_and_tone: Metallic, reversible
+  lighting_and_shadow: Sparkle
+  texture_and_material: Scaly plastic
+  camera_and_composition: Flipping
+  atmosphere_and_mood: Party, flashy
+  rendering_and_quality: Glam, cheap
   key_features: Scale pattern
   creative_brief: >-
-    Compose the kinetic glitter of sequins overlapping like metallic scales, each disc a tiny mirror that flips between
-    two worlds of color with every shift of light, creating a surface that refuses to be still. The scaly plastic should
-    catch sparkle at a thousand points simultaneously, cheap and glamorous in equal measure. Capture the joy of
-    unapologetic shine, fashion as optical event. Use Sequins as portable surface/render behavior over any input: map
-    its texture, light response, edge wear, color chemistry, and tactile rhythm onto the subject instead of requiring a
-    literal material sample, macro tile, wall, landscape, source object, or scene where the material naturally appears.
+    Compose the kinetic glitter of sequins overlapping like metallic scales, each disc a tiny mirror that
+    flips between two worlds of color with every shift of light, creating a surface that refuses to be still.
+    The scaly plastic should catch sparkle at a thousand points simultaneously, cheap and glamorous in equal
+    measure. Capture the joy of unapologetic shine, fashion as optical event. Use Sequins as portable
+    surface/render behavior over any input: map its texture, light response, edge wear, color chemistry, and
+    tactile rhythm onto the subject instead of requiring a literal material sample, macro tile, wall,
+    landscape, source object, or scene where the material naturally appears.
 avoidRules:
   - matte fabric
 assets:

@@ -13,15 +13,19 @@ tags:
   - animation-styles
 visualDna:
   aesthetic: Pastel-neon retro anime blend, Sailor Moon/Eva aesthetic, cel-painted nostalgia, VHS broadcast grain
-  form_and_line: Cel outline
-  color_palette: Pastel/Neon, bubblegum pink, electric cyan, lavender, coral
-  lighting_setup: Hard shadows, cel-shading contrast, dramatic underlight
-  material_texture: Film grain, cel texture, painted acetate, analogue warmth
-  render_quality: Retro anime, cel-painted, VHS broadcast, handcrafted depth
-  spatial_distortion: Reflective highlight shapes, expression exaggeration, angular cel simplification, volume accents
-  atmosphere: Nostalgic, aesthetic, shojo romance, mecha melancholy, 90s optimism
+  subject_treatment: Cel outline
+  color_and_tone: Pastel/Neon, bubblegum pink, electric cyan, lavender, coral
+  lighting_and_shadow: Hard shadows, cel-shading contrast, dramatic underlight
+  texture_and_material: Film grain, cel texture, painted acetate, analogue warmth
+  camera_and_composition: Reflective highlight shapes, expression exaggeration, angular cel simplification, volume accents
+  atmosphere_and_mood: Nostalgic, aesthetic, shojo romance, mecha melancholy, 90s optimism
+  rendering_and_quality: Retro anime, cel-painted, VHS broadcast, handcrafted depth
   key_features: Cel bloom, sparkle overlay, speed-line energy, VHS crawl, painted acetate texture
-  creative_brief: 'Style any subject as 90s broadcast anime: pastel-neon cel paint, hard shadow shapes, analog grain, glow bloom, and graphic motion accents. Keep franchise titles as style anchors only; do not force school scenes, city nights, transformations, or specific character tropes. The output should feel like a photographed cel from late-night TV, saturated with melancholy and electric optimism.'
+  creative_brief: >-
+    Style any subject as 90s broadcast anime: pastel-neon cel paint, hard shadow shapes, analog grain, glow
+    bloom, and graphic motion accents. Keep franchise titles as style anchors only; do not force school
+    scenes, city nights, transformations, or specific character tropes. The output should feel like a
+    photographed cel from late-night TV, saturated with melancholy and electric optimism.
 avoidRules:
   - modern digital
 assets:

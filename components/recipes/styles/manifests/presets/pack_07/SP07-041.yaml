@@ -12,34 +12,25 @@ tags:
   - architecture-and-interior
   - landscape-and-garden-systems
 visualDna:
-  aesthetic: >-
-    Formal landscape classicism where clipped vegetation expresses power,
-    protocol and territorial order.
-  form_and_line: >-
-    Clipped hedge bands, mirrored parterre logic, long perspective pressure and
-    measured control points without forcing one fountain-axis composition.
-  color_palette: Green, Gravel Beige, Boxwood Dark, Seasonal Bedding Red, Water-reflection Silver, Limestone
-  lighting_setup: >-
-    Planimetric sunlight, long-shadow axial drama and restrained reflective
-    glints.
-  material_texture: >-
-    Millimeter-clipped hedges, raked gravel, limestone edging, controlled turf
-    pattern and optional reflective water as texture, not required centerpiece.
-  render_quality: >-
-    Landscape-design precision with ceremonial depth and strict topiary
-    readability.
-  spatial_distortion: >-
-    Planimetric garden order, mirrored axes and clipped-depth compression that
-    can wrap any subject or surface.
-  atmosphere: Ceremonial, monumental and disciplined, with intentional visual authority.
-  key_features: >-
-    Embroidered parterres, hedge planes, axial reflection logic, ceremonial nodes
-    and distant control points.
+  aesthetic: Formal landscape classicism where clipped vegetation expresses power, protocol and territorial order.
+  subject_treatment: >-
+    Clipped hedge bands, mirrored parterre logic, long perspective pressure and measured control points
+    without forcing one fountain-axis composition.
+  color_and_tone: Green, Gravel Beige, Boxwood Dark, Seasonal Bedding Red, Water-reflection Silver, Limestone
+  lighting_and_shadow: Planimetric sunlight, long-shadow axial drama and restrained reflective glints.
+  texture_and_material: >-
+    Millimeter-clipped hedges, raked gravel, limestone edging, controlled turf pattern and optional reflective
+    water as texture, not required centerpiece.
+  camera_and_composition: >-
+    Planimetric garden order, mirrored axes and clipped-depth compression that can wrap any subject or
+    surface.
+  atmosphere_and_mood: Ceremonial, monumental and disciplined, with intentional visual authority.
+  rendering_and_quality: Landscape-design precision with ceremonial depth and strict topiary readability.
+  key_features: Embroidered parterres, hedge planes, axial reflection logic, ceremonial nodes and distant control points.
   creative_brief: >-
-    Any subject should submit to vegetal mirroring, millimetric clipping and
-    territorial control. The image works as horizontal architecture: protocol,
-    long-distance readability and precise topiary replace spontaneity without
-    requiring a palace garden, axial fountain or literal ceremonial route.
+    Any subject should submit to vegetal mirroring, millimetric clipping and territorial control. The image
+    works as horizontal architecture: protocol, long-distance readability and precise topiary replace
+    spontaneity without requiring a palace garden, axial fountain or literal ceremonial route.
 avoidRules:
   - wild
   - messy

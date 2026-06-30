@@ -13,19 +13,18 @@ tags:
   - printmaking
 visualDna:
   aesthetic: Tonal etching
-  form_and_line: None, tonal areas
-  color_palette: Greyscale, sepia
-  lighting_setup: Soft gradients
-  material_texture: Rosin dust, granular
-  render_quality: Atmospheric tonal etching with granular dark-field control
-  spatial_distortion: None
-  atmosphere: Dark, moody
+  subject_treatment: Subject reduced to tonal areas
+  color_and_tone: Greyscale, sepia
+  lighting_and_shadow: Soft gradients
+  texture_and_material: Rosin dust, granular
+  camera_and_composition: 'Compose for Aquatint using its key spatial cues: Granular tone.'
+  atmosphere_and_mood: Dark, moody
+  rendering_and_quality: Atmospheric tonal etching with granular dark-field control
   key_features: Granular tone
   creative_brief: >-
-    Apply aquatint tonal printmaking to any input: rosin-grain texture,
-    acid-built darkness, stop-out protected highlights, particulate shadow, and
-    atmospheric intaglio tone. Keep chemical mood fields without requiring
-    landscapes, weather, old plates, or narrative illustration.
+    Apply aquatint tonal printmaking to any input: rosin-grain texture, acid-built darkness, stop-out
+    protected highlights, particulate shadow, and atmospheric intaglio tone. Keep chemical mood fields without
+    requiring landscapes, weather, old plates, or narrative illustration.
 avoidRules:
   - photo
   - realistic
@@ -45,7 +44,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP06-037.webp
 attributes:
-  negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border
+  negativePrompt: >-
+    photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy,
+    watermark, text, signature, frame, border
 taxonomy:
   packId: pack_06
   packName: Essential Art Styles

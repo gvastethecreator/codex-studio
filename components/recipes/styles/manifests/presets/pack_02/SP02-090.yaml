@@ -12,16 +12,26 @@ tags:
   - cinematic-and-media
   - caricature-and-cartoon-styles
 visualDna:
-  aesthetic: Aggressively angular design, sharp triangles and jagged edges, heavy black outlines with zero soft curves, Hot Topic aesthetic, 2000s edgy cartoon network, Invader Zim angularity, JTHM spiky nihilism, skate-punk scribble energy
-  form_and_line: Razor-sharp angular contours, triangular composition everywhere, jagged motion lines, aggressive hatch shading
-  color_palette: Black-heavy palette, blood red, acid green, toxic waste yellow, bruised purple, no soft colors allowed, high-contrast edgelord spectrum
-  lighting_setup: Harsh under-lighting for menace, sharp cast shadows, rim light on angular edges, dramatic noir contrast
-  material_texture: Scratchy ink pen strokes, marker bleed on cheap paper, distressed photocopy grain, DIY zine texture
-  render_quality: Edgy underground comic, Hot Topic t-shirt art, deliberately aggressive rendering, anti-cute manifesto
-  spatial_distortion: Forms as walking collections of triangles, impossible razor fans, narrowing needle-point extensions
-  atmosphere: Angry, rebellious, anti-establishment sneer, teenage wasteland cool, too-much-energy rage
+  aesthetic: >-
+    Aggressively angular design, sharp triangles and jagged edges, heavy black outlines with zero soft curves,
+    Hot Topic aesthetic, 2000s edgy cartoon network, Invader Zim angularity, JTHM spiky nihilism, skate-punk
+    scribble energy
+  subject_treatment: >-
+    Razor-sharp angular contours, triangular composition everywhere, jagged motion lines, aggressive hatch
+    shading
+  color_and_tone: >-
+    Black-heavy palette, blood red, acid green, toxic waste yellow, bruised purple, no soft colors allowed,
+    high-contrast edgelord spectrum
+  lighting_and_shadow: Harsh under-lighting for menace, sharp cast shadows, rim light on angular edges, dramatic noir contrast
+  texture_and_material: Scratchy ink pen strokes, marker bleed on cheap paper, distressed photocopy grain, DIY zine texture
+  camera_and_composition: Forms as walking collections of triangles, impossible razor fans, narrowing needle-point extensions
+  atmosphere_and_mood: Angry, rebellious, anti-establishment sneer, teenage wasteland cool, too-much-energy rage
+  rendering_and_quality: Edgy underground comic, Hot Topic t-shirt art, deliberately aggressive rendering, anti-cute manifesto
   key_features: Triangular everything, blade contours, jagged graphic bursts, crosshatched shadows, no curves allowed
-  creative_brief: 'Make any subject aggressively angular: contours resolve into points, silhouettes become blade-like, hatch shadows bite into form, and the palette stays black-heavy with toxic accents. Avoid requiring characters, faces, hair, speech bubbles, or teen-scene props. Sharpness itself should be the attitude.'
+  creative_brief: >-
+    Make any subject aggressively angular: contours resolve into points, silhouettes become blade-like, hatch
+    shadows bite into form, and the palette stays black-heavy with toxic accents. Avoid requiring characters,
+    faces, hair, speech bubbles, or teen-scene props. Sharpness itself should be the attitude.
 avoidRules:
   - soft
   - gentle

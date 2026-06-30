@@ -14,18 +14,17 @@ tags:
   - action
 visualDna:
   aesthetic: High-impact anime action with compressed urgency and forward-rush pressure.
-  form_and_line: 'Kinetic lines, aggressive silhouettes, elastic anatomy, and directional force bands.'
-  color_palette: 'Dark blue, energy red and contrast white.'
-  lighting_setup: Flash-burst lighting with dynamic rim and hard motion accents.
-  material_texture: Grit overlays, dust plumes, and stylized sparks without fixed urban surface.
-  render_quality: Sharp combat keyframe with instant readability.
-  spatial_distortion: Forced perspective that amplifies speed.
-  atmosphere: Urgency, adrenaline, and imminent danger.
+  subject_treatment: Kinetic lines, aggressive silhouettes, elastic anatomy, and directional force bands.
+  color_and_tone: Dark blue, energy red and contrast white.
+  lighting_and_shadow: Flash-burst lighting with dynamic rim and hard motion accents.
+  texture_and_material: Grit overlays, dust plumes, and stylized sparks without fixed urban surface.
+  camera_and_composition: Forced perspective that amplifies speed.
+  atmosphere_and_mood: Urgency, adrenaline, and imminent danger.
+  rendering_and_quality: Sharp combat keyframe with instant readability.
   key_features: Motion lines, extreme rush angle, compressed background, impact flash.
   creative_brief: >-
-    Apply alley-rush energy as a transferable action treatment: any subject
-    should feel accelerated, compressed, and impact-ready without requiring a
-    fixed hero, location, chase, or acrobatic sprint.
+    Apply alley-rush energy as a transferable action treatment: any subject should feel accelerated,
+    compressed, and impact-ready without requiring a fixed hero, location, chase, or acrobatic sprint.
 avoidRules:
   - photoreal
   - static-pose

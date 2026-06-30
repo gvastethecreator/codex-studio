@@ -13,18 +13,18 @@ tags:
   - film-and-analog-process
 visualDna:
   aesthetic: Vintage slide film
-  form_and_line: Sharp, archival
-  color_palette: Rich reds, realistic
-  lighting_setup: Clean direct light
-  material_texture: Fine grain
-  render_quality: Archival documentary slide
-  spatial_distortion: High contrast
-  atmosphere: Historic, vivid
+  subject_treatment: Sharp, archival
+  color_and_tone: Rich reds, realistic
+  lighting_and_shadow: Clean direct light
+  texture_and_material: Fine grain
+  camera_and_composition: High contrast
+  atmosphere_and_mood: Historic, vivid
+  rendering_and_quality: Archival documentary slide
   key_features: Red pop
   creative_brief: >-
-    Apply Kodachrome archival permanence to the input: rich reds, clean direct
-    light, crisp microdetail, dense dye-layer contrast, and believable vintage
-    vividness should preserve any subject without requiring travel or mid-century staging.
+    Apply Kodachrome archival permanence to the input: rich reds, clean direct light, crisp microdetail, dense
+    dye-layer contrast, and believable vintage vividness should preserve any subject without requiring travel
+    or mid-century staging.
 avoidRules:
   - illustration
   - painting
@@ -44,7 +44,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP01-015.webp
 attributes:
-  negativePrompt: illustration, painting, drawing, 3d render, cartoon, anime, sketch, blurry, noisy, low resolution, watermark, text, signature, bad anatomy, deformed
+  negativePrompt: >-
+    illustration, painting, drawing, 3d render, cartoon, anime, sketch, blurry, noisy, low resolution,
+    watermark, text, signature, bad anatomy, deformed
 taxonomy:
   packId: pack_01
   packName: Photography & Realism

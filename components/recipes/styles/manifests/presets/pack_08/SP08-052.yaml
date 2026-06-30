@@ -13,19 +13,22 @@ tags:
   - fabric-and-texture-focus
 visualDna:
   aesthetic: Denim-on-denim confidence, Americana workwear cool, indigo utility polish
-  form_and_line: Stitching, jacket-box geometry, straight stacked layers, western-yoke line, contrast-thread geometry
-  color_palette: Indigo Blue, raw-indigo, faded-wash blue, ecru weft, copper-orange stitching, stonewashed sky
-  lighting_setup: Softbox-even texture light, denim side-light, casual daylight
-  material_texture: Denim weave, selvedge twill, contrast-thread chainstitch, copper rivets, buffalo-horn buttons, leather patch
-  render_quality: Textured, casual, heritage-workwear authenticity, Americana-denim fidelity
-  spatial_distortion: None
-  atmosphere: Cool, blue, blue-collar pride, weekend ease, American-classic confidence
+  subject_treatment: Stitching, jacket-box geometry, straight stacked layers, western-yoke line, contrast-thread geometry
+  color_and_tone: Indigo Blue, raw-indigo, faded-wash blue, ecru weft, copper-orange stitching, stonewashed sky
+  lighting_and_shadow: Softbox-even texture light, denim side-light, casual daylight
+  texture_and_material: >-
+    Denim weave, selvedge twill, contrast-thread chainstitch, copper rivets, buffalo-horn buttons, leather
+    patch
+  camera_and_composition: >-
+    Compose for Denim on Denim using its key spatial cues: Orange stitching, selvedge ID, copper rivets,
+    leather patch, double-denim coordination.
+  atmosphere_and_mood: Cool, blue, blue-collar pride, weekend ease, American-classic confidence
+  rendering_and_quality: Textured, casual, heritage-workwear authenticity, Americana-denim fidelity
   key_features: Orange stitching, selvedge ID, copper rivets, leather patch, double-denim coordination
   creative_brief: >-
-    Convert the input into denim-on-denim craft: indigo twill, selvedge IDs,
-    orange chainstitch, copper rivets, leather patch and coordinated blue
-    layering. Keep workwear confidence without requiring a garage, ranch,
-    labor narrative, full outfit pose or a human model.
+    Convert the input into denim-on-denim craft: indigo twill, selvedge IDs, orange chainstitch, copper
+    rivets, leather patch and coordinated blue layering. Keep workwear confidence without requiring a garage,
+    ranch, labor narrative, full outfit pose or a human model.
 avoidRules:
   - silk
   - suit

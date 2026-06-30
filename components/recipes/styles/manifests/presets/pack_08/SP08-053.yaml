@@ -13,19 +13,20 @@ tags:
   - fabric-and-texture-focus
 visualDna:
   aesthetic: Luxury fur opulence, winter-glamour extravagance, tactile grandeur
-  form_and_line: Soft edges, voluminous bulk, shawl-collar wrap, sweeping column, enveloping halo silhouette
-  color_palette: Brown/White, sable, silver-fox, chinchilla grey, mink-champagne, arctic-white
-  lighting_setup: Soft diffused glamour light, fur-halo rim, warm amber bounce
-  material_texture: Fur strands, mink guard hairs, fox underwool, chinchilla density, sable tips, shearling curl, silken guard
-  render_quality: Expensive, soft, fur-atelier luxury, tactile-lavish perfection
-  spatial_distortion: None
-  atmosphere: Rich, warm, tactile opulence, champagne-evening ease, first-class decadence
+  subject_treatment: Soft edges, voluminous bulk, shawl-collar wrap, sweeping column, enveloping halo silhouette
+  color_and_tone: Brown/White, sable, silver-fox, chinchilla grey, mink-champagne, arctic-white
+  lighting_and_shadow: Soft diffused glamour light, fur-halo rim, warm amber bounce
+  texture_and_material: Fur strands, mink guard hairs, fox underwool, chinchilla density, sable tips, shearling curl, silken guard
+  camera_and_composition: >-
+    Compose for Fur Coat using its key spatial cues: Guard-hair sheen, dense underwool, dramatic collar, halo
+    volume, tonal pelt variation.
+  atmosphere_and_mood: Rich, warm, tactile opulence, champagne-evening ease, first-class decadence
+  rendering_and_quality: Expensive, soft, fur-atelier luxury, tactile-lavish perfection
   key_features: Guard-hair sheen, dense underwool, dramatic collar, halo volume, tonal pelt variation
   creative_brief: >-
-    Add fur opulence to the input: guard-hair sheen, dense underwool, sable or
-    chinchilla tonal shifts, halo volume and soft glamour rim light. Keep
-    luxury warmth without requiring shoulders, aristocratic body language,
-    fireside interiors or old-Hollywood staging.
+    Add fur opulence to the input: guard-hair sheen, dense underwool, sable or chinchilla tonal shifts, halo
+    volume and soft glamour rim light. Keep luxury warmth without requiring shoulders, aristocratic body
+    language, fireside interiors or old-Hollywood staging.
 avoidRules:
   - smooth
 assets:

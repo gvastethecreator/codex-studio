@@ -13,19 +13,18 @@ tags:
   - drawing-and-sketching
 visualDna:
   aesthetic: Renaissance metal stylus drawing
-  form_and_line: Extremely fine grey lines
-  color_palette: Pale grey, tarnished warm tone
-  lighting_setup: Delicate
-  material_texture: Prepared ground (bone ash)
-  render_quality: Renaissance-informed precision with ultra-fine archival line discipline
-  spatial_distortion: None
-  atmosphere: Antique, delicate
+  subject_treatment: Extremely fine grey lines
+  color_and_tone: Pale grey, tarnished warm tone
+  lighting_and_shadow: Delicate
+  texture_and_material: Prepared ground (bone ash)
+  camera_and_composition: 'Compose for Silverpoint using its key spatial cues: Fine lines.'
+  atmosphere_and_mood: Antique, delicate
+  rendering_and_quality: Renaissance-informed precision with ultra-fine archival line discipline
   key_features: Fine lines
   creative_brief: >-
-    Apply silverpoint discipline to any input: hairline metal marks, prepared
-    ground texture, nearly irreversible contour, pale grey-to-sepia tarnish, and
-    patient exact modeling. Keep Renaissance precision without requiring portrait
-    studies, hands, drapery, religious subjects, or museum-paper framing.
+    Apply silverpoint discipline to any input: hairline metal marks, prepared ground texture, nearly
+    irreversible contour, pale grey-to-sepia tarnish, and patient exact modeling. Keep Renaissance precision
+    without requiring portrait studies, hands, drapery, religious subjects, or museum-paper framing.
 avoidRules:
   - photo
   - realistic
@@ -45,7 +44,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP06-023.webp
 attributes:
-  negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border
+  negativePrompt: >-
+    photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy,
+    watermark, text, signature, frame, border
 taxonomy:
   packId: pack_06
   packName: Essential Art Styles

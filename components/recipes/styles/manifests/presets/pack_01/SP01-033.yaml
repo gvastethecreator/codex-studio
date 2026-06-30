@@ -13,15 +13,18 @@ tags:
   - lighting-techniques
 visualDna:
   aesthetic: Direct camera flash
-  form_and_line: Hard shadow outlines
-  color_palette: High contrast, saturated
-  lighting_setup: Frontal, harsh
-  material_texture: Specular flash sheen
-  render_quality: Paparazzi, fashion
-  spatial_distortion: Flat depth
-  atmosphere: Raw, exposed
+  subject_treatment: Hard shadow outlines
+  color_and_tone: High contrast, saturated
+  lighting_and_shadow: Frontal, harsh
+  texture_and_material: Specular flash sheen
+  camera_and_composition: Flat depth
+  atmosphere_and_mood: Raw, exposed
+  rendering_and_quality: Paparazzi, fashion
   key_features: Drop shadow
-  creative_brief: 'Direct on-camera flash makes any subject brutally present: hard frontal glare, crisp drop shadow, flattened depth, saturated color, and specular sheen with nowhere to hide. Use paparazzi-fashion exposure as style, not as a requirement for people or walls.'
+  creative_brief: >-
+    Direct on-camera flash makes any subject brutally present: hard frontal glare, crisp drop shadow,
+    flattened depth, saturated color, and specular sheen with nowhere to hide. Use paparazzi-fashion exposure
+    as style, not as a requirement for people or walls.
 avoidRules:
   - soft
   - natural

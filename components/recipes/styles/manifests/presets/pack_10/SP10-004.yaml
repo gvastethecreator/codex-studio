@@ -13,18 +13,20 @@ tags:
   - geometric-abstraction
 visualDna:
   aesthetic: Visual illusion
-  form_and_line: Warped grids
-  color_palette: Black and White
-  lighting_setup: None
-  material_texture: Smooth
-  render_quality: Bridget Riley, trippy
-  spatial_distortion: Vibrating effect
-  atmosphere: Dizzying, kinetic
+  subject_treatment: Warped grids
+  color_and_tone: Black and White
+  lighting_and_shadow: >-
+    Lighting for Op Art (Optical): purposeful key, bounce, rim, shadow depth, and focal readability matched to
+    1. Geometric Abstraction.
+  texture_and_material: Smooth
+  camera_and_composition: Vibrating effect
+  atmosphere_and_mood: Dizzying, kinetic
+  rendering_and_quality: Bridget Riley, trippy
   key_features: High contrast
   creative_brief: >-
-    Apply op-art optical stress to the input: pulsing line fields, high-contrast
-    waves, vibrating figure-ground reversals, and controlled visual interference
-    should make any subject feel unstable without losing silhouette legibility.
+    Apply op-art optical stress to the input: pulsing line fields, high-contrast waves, vibrating
+    figure-ground reversals, and controlled visual interference should make any subject feel unstable without
+    losing silhouette legibility.
 avoidRules:
   - still
   - calm

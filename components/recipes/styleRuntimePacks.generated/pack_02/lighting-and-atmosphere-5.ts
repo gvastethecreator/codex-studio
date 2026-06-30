@@ -10,13 +10,14 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'blue, cold',
     style: {
       aesthetic: 'Sunset light',
-      form_and_line: 'None',
-      color_palette: 'Warm Gold/Orange, honey amber, peach wash, copper rim, low-sun warmth',
-      lighting_setup: 'Low angle sun, golden backlight, hazy atmospheric edge',
-      material_texture: 'Soft, creamy diffusion, atmospheric haze',
-      render_quality: 'Beautiful, romantic, magic-hour glow, cinematic warmth',
-      spatial_distortion: 'Long shadows, stretched silhouettes, low-angle projection',
-      atmosphere: 'Warm, happy, fleeting beauty, end-of-day peace',
+      subject_treatment:
+        'Treat subjects as believable filmed or broadcast subjects under Golden Hour: casting, wardrobe, props, motion cues, and silhouette hierarchy follow 5. Lighting And Atmosphere cinematic and broadcast grammar without locking to one plot beat.',
+      color_and_tone: 'Warm Gold/Orange, honey amber, peach wash, copper rim, low-sun warmth',
+      lighting_and_shadow: 'Low angle sun, golden backlight, hazy atmospheric edge',
+      texture_and_material: 'Soft, creamy diffusion, atmospheric haze',
+      camera_and_composition: 'Long shadows, stretched silhouettes, low-angle projection',
+      atmosphere_and_mood: 'Warm, happy, fleeting beauty, end-of-day peace',
+      rendering_and_quality: 'Beautiful, romantic, magic-hour glow, cinematic warmth',
       key_features: 'Rim light, lens flare burst, amber haze, elongated shadow geometry',
       creative_brief:
         'Apply golden-hour light as a transferable rendering system: low-angle warmth, amber haze, copper rim light, elongated shadows, and soft atmospheric diffusion. Do not require sunsets, horizons, landscapes, skin, or outdoor scenes. Any subject should feel briefly transformed by warm end-of-day light.',
@@ -29,13 +30,15 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'orange, sun',
     style: {
       aesthetic: 'Twilight',
-      form_and_line: 'None',
-      color_palette: 'Deep Blue/Purple, ultramarine sky, violet horizon, warm window amber',
-      lighting_setup: 'Soft ambient, skydome fill, no shadows, twilight wrap',
-      material_texture: 'Smooth, noise-free, silky gradient',
-      render_quality: 'Calm, transition-moment stillness, smooth twilight tonality',
-      spatial_distortion: 'None',
-      atmosphere: 'Quiet, cool, liminal pause, between-day-and-night',
+      subject_treatment:
+        'Treat subjects as believable filmed or broadcast subjects under Blue Hour: casting, wardrobe, props, motion cues, and silhouette hierarchy follow 5. Lighting And Atmosphere cinematic and broadcast grammar without locking to one plot beat.',
+      color_and_tone: 'Deep Blue/Purple, ultramarine sky, violet horizon, warm window amber',
+      lighting_and_shadow: 'Soft ambient, skydome fill, no shadows, twilight wrap',
+      texture_and_material: 'Smooth, noise-free, silky gradient',
+      camera_and_composition:
+        'Camera language native to Blue Hour: genre-aware framing, lens character, focal hierarchy, motion cue, and vertical style-card composition.',
+      atmosphere_and_mood: 'Quiet, cool, liminal pause, between-day-and-night',
+      rendering_and_quality: 'Calm, transition-moment stillness, smooth twilight tonality',
       key_features: 'Blue ambient wrap, violet gradient, low contrast, warm practical accents',
       creative_brief:
         'Treat blue hour as cool ambient cinema language: ultramarine wrap, violet gradients, low shadow contrast, and small warm practical accents where useful. Avoid forcing cities, windows, streets, or sky-dominant scenes. The style should create liminal twilight calm around any input.',
@@ -48,14 +51,16 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'flat, bright',
     style: {
       aesthetic: 'Classic chiaroscuro portrait-light system',
-      form_and_line: 'None',
-      color_palette:
+      subject_treatment:
+        'Treat subjects as believable filmed or broadcast subjects under Rembrandt Lighting: casting, wardrobe, props, motion cues, and silhouette hierarchy follow 5. Lighting And Atmosphere cinematic and broadcast grammar without locking to one plot beat.',
+      color_and_tone:
         'Warm umber, dark ground, golden highlight, deep void, restrained flesh-tone warmth',
-      lighting_setup: 'Chiaroscuro triangle, 45-degree key, single-source drama',
-      material_texture: 'Painterly light, oil-paint falloff, velvet darkness',
-      render_quality: 'Dramatic, classic, old-master gravitas, portrait dignity',
-      spatial_distortion: 'None',
-      atmosphere: 'Serious, artful, introspective stillness, old-master gravity',
+      lighting_and_shadow: 'Chiaroscuro triangle, 45-degree key, single-source drama',
+      texture_and_material: 'Painterly light, oil-paint falloff, velvet darkness',
+      camera_and_composition:
+        'Camera language native to Rembrandt Lighting: genre-aware framing, lens character, focal hierarchy, motion cue, and vertical style-card composition.',
+      atmosphere_and_mood: 'Serious, artful, introspective stillness, old-master gravity',
+      rendering_and_quality: 'Dramatic, classic, old-master gravitas, portrait dignity',
       key_features:
         'Chiaroscuro triangle logic, single-source carve, dark-side mystery, velvet falloff',
       creative_brief:
@@ -70,19 +75,19 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Midnight neon-noir lighting style prioritizing reflective chroma bleed, sparse luminance islands, and cinematic cool isolation',
-      form_and_line:
+      subject_treatment:
         'Silhouette-first framing, minimal contour clutter, negative-space emphasis, edge readability under low-key illumination',
-      color_palette:
+      color_and_tone:
         'Cyan-magenta bi-chromatic core, electric blue mids, restrained hot-pink accents, deep near-black foundations',
-      lighting_setup:
+      lighting_and_shadow:
         'Localized emissive practicals, controlled bounce pools, specular spill choreography, selective halo diffusion',
-      material_texture:
+      texture_and_material:
         'Wet-sheen reflectivity model, micro-surface puddle mirrors, slick asphalt-like gloss response, fine rain haze grain',
-      render_quality:
-        'Filmic low-light polish with clean contrast control, moody saturation restraint, and high reflection legibility',
-      spatial_distortion:
+      camera_and_composition:
         'Perspective neutrality with reflective depth doubling and compositional pull generated by light gradients',
-      atmosphere: 'Solitary, tense, nocturnal, melancholic, atmospheric',
+      atmosphere_and_mood: 'Solitary, tense, nocturnal, melancholic, atmospheric',
+      rendering_and_quality:
+        'Filmic low-light polish with clean contrast control, moody saturation restraint, and high reflection legibility',
       key_features:
         'Bi-chromatic reflections, dark-field contrast architecture, emissive point-source rhythm, moisture-driven specular response',
       creative_brief:
@@ -96,13 +101,15 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'clear air',
     style: {
       aesthetic: 'Light shafts',
-      form_and_line: 'None',
-      color_palette: 'Dusty White, warm cream beam, cool shadow, golden particulate',
-      lighting_setup: 'Beams through dust, volumetric shaft, aperture-cut light',
-      material_texture: 'Atmospheric, particulate haze, floating dust motes',
-      render_quality: 'Epic, luminous, volumetric, revelation-grade atmosphere',
-      spatial_distortion: 'None',
-      atmosphere: 'Sacred, still, suspended, revelation moment',
+      subject_treatment:
+        'Treat subjects as believable filmed or broadcast subjects under God Rays (Volumetric): casting, wardrobe, props, motion cues, and silhouette hierarchy follow 5. Lighting And Atmosphere cinematic and broadcast grammar without locking to one plot beat.',
+      color_and_tone: 'Dusty White, warm cream beam, cool shadow, golden particulate',
+      lighting_and_shadow: 'Beams through dust, volumetric shaft, aperture-cut light',
+      texture_and_material: 'Atmospheric, particulate haze, floating dust motes',
+      camera_and_composition:
+        'Camera language native to God Rays (Volumetric): genre-aware framing, lens character, focal hierarchy, motion cue, and vertical style-card composition.',
+      atmosphere_and_mood: 'Sacred, still, suspended, revelation moment',
+      rendering_and_quality: 'Epic, luminous, volumetric, revelation-grade atmosphere',
       key_features: 'Visible beams, dust motes, shaft geometry, particulate haze',
       creative_brief:
         'Make light visible as volume: shafts through haze, suspended particles, aperture-cut beams, and luminous negative space. Avoid requiring churches, forests, windows, or spiritual scene content. The style should turn air itself into the main cinematic material. Apply God Rays as a portable cinematic/camera style over any input: preserve its lens behavior, color process, lighting setup, artifact pattern, and deformation grammar while avoiding a required actor, room, prop, brand, readable text, fixed IP scene, or narrative setup.',
@@ -115,14 +122,16 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'detail in shadow',
     style: {
       aesthetic: 'Backlit subject',
-      form_and_line: 'None',
-      color_palette:
+      subject_treatment:
+        'Treat subjects as believable filmed or broadcast subjects under Silhouette: casting, wardrobe, props, motion cues, and silhouette hierarchy follow 5. Lighting And Atmosphere cinematic and broadcast grammar without locking to one plot beat.',
+      color_and_tone:
         'Black foreground, luminous background field, orange or blue gradient, stark contrast',
-      lighting_setup: 'Strong backlight, no fill, rim-only separation',
-      material_texture: 'Contrast, edge crispness, opaque block',
-      render_quality: 'Graphic, bold, high-contrast drama, shape-first',
-      spatial_distortion: 'None',
-      atmosphere: 'Mystery, drama, anonymous form, graphic suspense',
+      lighting_and_shadow: 'Strong backlight, no fill, rim-only separation',
+      texture_and_material: 'Contrast, edge crispness, opaque block',
+      camera_and_composition:
+        'Camera language native to Silhouette: genre-aware framing, lens character, focal hierarchy, motion cue, and vertical style-card composition.',
+      atmosphere_and_mood: 'Mystery, drama, anonymous form, graphic suspense',
+      rendering_and_quality: 'Graphic, bold, high-contrast drama, shape-first',
       key_features: 'No fill light, recognizable outline, backlit separation, shape-first read',
       creative_brief:
         'Render the input as silhouette-first cinema: remove interior detail, preserve readable contour, use strong backlight and luminous background contrast. Avoid forcing people, dramatic skies, or sunset scenes. Identity should come from outer shape, not surface detail. Apply Silhouette as a portable cinematic/camera style over any input: preserve its lens behavior, color process, lighting setup, artifact pattern, and deformation grammar while avoiding a required actor, room, prop, brand, readable text, fixed IP scene, or narrative setup.',
@@ -135,13 +144,14 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'single image',
     style: {
       aesthetic: 'Layered images',
-      form_and_line: 'None',
-      color_palette: 'Ghostly mix, overlapping hue, translucent blend, ethereal overlay',
-      lighting_setup: 'Screen blend, additive exposure, in-camera double-strike',
-      material_texture: 'Complex, layered transparency, film-sandwich density',
-      render_quality: 'Artsy, dream, visual poetry, memory-merge',
-      spatial_distortion: 'Overlap, layer nesting, translucent registration drift',
-      atmosphere: 'Surreal, memory, dual exposure, fleeting connection',
+      subject_treatment:
+        'Treat subjects as believable filmed or broadcast subjects under Double Exposure: casting, wardrobe, props, motion cues, and silhouette hierarchy follow 5. Lighting And Atmosphere cinematic and broadcast grammar without locking to one plot beat.',
+      color_and_tone: 'Ghostly mix, overlapping hue, translucent blend, ethereal overlay',
+      lighting_and_shadow: 'Screen blend, additive exposure, in-camera double-strike',
+      texture_and_material: 'Complex, layered transparency, film-sandwich density',
+      camera_and_composition: 'Overlap, layer nesting, translucent registration drift',
+      atmosphere_and_mood: 'Surreal, memory, dual exposure, fleeting connection',
+      rendering_and_quality: 'Artsy, dream, visual poetry, memory-merge',
       key_features: 'Layer blend, silhouette mask, translucent density, exposure sandwich',
       creative_brief:
         'Use double exposure as a transferable layering method: two or more visual fields share one frame through masks, translucent density, additive exposure, and soft registration drift. Avoid requiring faces, landscapes, figures, or nature fusion. The image should read as memory layers occupying one photographic surface. Apply Double Exposure as a portable cinematic/camera style over any input: preserve its lens behavior, color process, lighting setup, artifact pattern, and deformation grammar while avoiding a required actor, room, prop, brand, readable text, fixed IP scene, or narrative setup.',
@@ -154,13 +164,15 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'deep focus',
     style: {
       aesthetic: 'Blurry lights',
-      form_and_line: 'None',
-      color_palette: 'Soft optical discs, warm amber blur, cool cyan blur, pastel specular circles',
-      lighting_setup: 'Defocused points, out-of-focus speculars, aperture-projected glow',
-      material_texture: "Creamy blur, cat's-eye shape, soap-bubble edge",
-      render_quality: 'Dreamy, abstract, lens-artist blur, optical softness',
-      spatial_distortion: 'Circles, aperture shape projection, specular discs, cat-eye edges',
-      atmosphere: 'Soft, optical, intimate, romantic haze',
+      subject_treatment:
+        'Treat subjects as believable filmed or broadcast subjects under Bokeh (Macro): casting, wardrobe, props, motion cues, and silhouette hierarchy follow 5. Lighting And Atmosphere cinematic and broadcast grammar without locking to one plot beat.',
+      color_and_tone:
+        'Soft optical discs, warm amber blur, cool cyan blur, pastel specular circles',
+      lighting_and_shadow: 'Defocused points, out-of-focus speculars, aperture-projected glow',
+      texture_and_material: "Creamy blur, cat's-eye shape, soap-bubble edge",
+      camera_and_composition: 'Circles, aperture shape projection, specular discs, cat-eye edges',
+      atmosphere_and_mood: 'Soft, optical, intimate, romantic haze',
+      rendering_and_quality: 'Dreamy, abstract, lens-artist blur, optical softness',
       key_features: 'Shallow DOF, background abstraction, specular discs, creamy falloff',
       creative_brief:
         'Make depth of field the style: narrow focus, creamy optical blur, aperture-shaped highlights, cat-eye edge distortion, and abstracted background color. Avoid decorative orb-only compositions or fixed night setups. Bokeh should support the input by simplifying everything outside the focal plane. Apply Bokeh as a portable cinematic/camera style over any input: preserve its lens behavior, color process, lighting setup, artifact pattern, and deformation grammar while avoiding a required actor, room, prop, brand, readable text, fixed IP scene, or narrative setup.',
@@ -173,13 +185,15 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'flat light',
     style: {
       aesthetic: 'Split-key high contrast lighting',
-      form_and_line: 'None',
-      color_palette: 'High contrast, deep shadow, bright highlight, no midtone bridge',
-      lighting_setup: '90 degree key, side-only illumination, perfect split',
-      material_texture: 'Hard side relief, surface texture, carved shadow edge',
-      render_quality: 'Dramatic, severe, dual-zone tension, graphic contrast',
-      spatial_distortion: 'None',
-      atmosphere: 'Tense, hidden, divided, severe',
+      subject_treatment:
+        'Treat subjects as believable filmed or broadcast subjects under Split Lighting: casting, wardrobe, props, motion cues, and silhouette hierarchy follow 5. Lighting And Atmosphere cinematic and broadcast grammar without locking to one plot beat.',
+      color_and_tone: 'High contrast, deep shadow, bright highlight, no midtone bridge',
+      lighting_and_shadow: '90 degree key, side-only illumination, perfect split',
+      texture_and_material: 'Hard side relief, surface texture, carved shadow edge',
+      camera_and_composition:
+        'Camera language native to Split Lighting: genre-aware framing, lens character, focal hierarchy, motion cue, and vertical style-card composition.',
+      atmosphere_and_mood: 'Tense, hidden, divided, severe',
+      rendering_and_quality: 'Dramatic, severe, dual-zone tension, graphic contrast',
       key_features: 'Half black, half lit, razor side key, hard falloff',
       creative_brief:
         'Apply split lighting to any subject: one side cut by a hard key, the other side dropping into near-black with minimal midtone bridge. Avoid face-only drama, villain framing, or portrait assumptions. The image should feel divided by illumination itself.',
@@ -192,13 +206,15 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'harsh shadows',
     style: {
       aesthetic: 'High-front glamour lighting',
-      form_and_line: 'None',
-      color_palette: 'Flattering neutral warmth, peach glow, pearl highlight, clean beauty tones',
-      lighting_setup: 'High front key, overhead beauty dish, central downward shadow cue',
-      material_texture: 'Smooth diffusion, retouched surface, soft highlight gradients',
-      render_quality: 'Beauty, studio, magazine-cover polish, glamour perfection',
-      spatial_distortion: 'None',
-      atmosphere: 'Beautiful, clean, aspirational elegance, fashion confidence',
+      subject_treatment:
+        'Treat subjects as believable filmed or broadcast subjects under Butterfly Lighting: casting, wardrobe, props, motion cues, and silhouette hierarchy follow 5. Lighting And Atmosphere cinematic and broadcast grammar without locking to one plot beat.',
+      color_and_tone: 'Flattering neutral warmth, peach glow, pearl highlight, clean beauty tones',
+      lighting_and_shadow: 'High front key, overhead beauty dish, central downward shadow cue',
+      texture_and_material: 'Smooth diffusion, retouched surface, soft highlight gradients',
+      camera_and_composition:
+        'Camera language native to Butterfly Lighting: genre-aware framing, lens character, focal hierarchy, motion cue, and vertical style-card composition.',
+      atmosphere_and_mood: 'Beautiful, clean, aspirational elegance, fashion confidence',
+      rendering_and_quality: 'Beauty, studio, magazine-cover polish, glamour perfection',
       key_features: 'Beauty-dish catchlight, centered top key, soft frontal fill, pearl highlight',
       creative_brief:
         'Use butterfly lighting as a polished beauty-light grammar: high frontal key, centered catchlight, soft fill, pearl highlights, and minimal harsh side shadow. Avoid making the preset depend on faces, skin, cheekbones, or fashion subjects. Any input should become clean, flattering, and studio-elegant.',
@@ -211,13 +227,14 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'real night',
     style: {
       aesthetic: 'Fake movie night',
-      form_and_line: 'None',
-      color_palette: 'Blue tint, tungsten-day conversion, cold moonlight, warm underexposure',
-      lighting_setup: 'Underexposed sun, stop-down daylight, ND-filter trickery',
-      material_texture: 'Film, pushed stock, grain-from-underexposure',
-      render_quality: 'Cinematic, uncanny, old-Hollywood cheat, suspension of disbelief',
-      spatial_distortion: 'Bright sky, dark foreground paradox, impossible contrast',
-      atmosphere: 'Moonlight, fake, studio night, theatrical illusion',
+      subject_treatment:
+        'Treat subjects as believable filmed or broadcast subjects under Day for Night: casting, wardrobe, props, motion cues, and silhouette hierarchy follow 5. Lighting And Atmosphere cinematic and broadcast grammar without locking to one plot beat.',
+      color_and_tone: 'Blue tint, tungsten-day conversion, cold moonlight, warm underexposure',
+      lighting_and_shadow: 'Underexposed sun, stop-down daylight, ND-filter trickery',
+      texture_and_material: 'Film, pushed stock, grain-from-underexposure',
+      camera_and_composition: 'Bright sky, dark foreground paradox, impossible contrast',
+      atmosphere_and_mood: 'Moonlight, fake, studio night, theatrical illusion',
+      rendering_and_quality: 'Cinematic, uncanny, old-Hollywood cheat, suspension of disbelief',
       key_features: 'Blue cast, dark shadows at noon, noir-at-daylight',
       creative_brief:
         'Use day-for-night as a visible cinematic cheat: daylight underexposed into false moonlight, blue filtration, crushed foregrounds, and impossible bright-sky contrast. Avoid requiring outdoor noon scenes or old-Hollywood sets. The output should feel like night manufactured by camera exposure rather than true darkness. Apply Day for Night as a portable cinematic/camera style over any input: preserve its lens behavior, color process, lighting setup, artifact pattern, and deformation grammar while avoiding a required actor, room, prop, brand, readable text, fixed IP scene, or narrative setup.',
@@ -230,13 +247,15 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'electric light',
     style: {
       aesthetic: 'Candlelit pre-electric warmth',
-      form_and_line: 'None',
-      color_palette: 'Warm Orange, amber flame, honey glow, deep umber falloff',
-      lighting_setup: 'Flickering low, single-candle key, flame dance, warm underlight',
-      material_texture: 'Soft shadows, gentle roll-off, intimate darkness',
-      render_quality: 'Intimate, old, pre-electric warmth, flame-source authenticity',
-      spatial_distortion: 'None',
-      atmosphere: 'Romantic, secret, flickering intimacy, warm darkness',
+      subject_treatment:
+        'Treat subjects as believable filmed or broadcast subjects under Candlelight: casting, wardrobe, props, motion cues, and silhouette hierarchy follow 5. Lighting And Atmosphere cinematic and broadcast grammar without locking to one plot beat.',
+      color_and_tone: 'Warm Orange, amber flame, honey glow, deep umber falloff',
+      lighting_and_shadow: 'Flickering low, single-candle key, flame dance, warm underlight',
+      texture_and_material: 'Soft shadows, gentle roll-off, intimate darkness',
+      camera_and_composition:
+        'Camera language native to Candlelight: genre-aware framing, lens character, focal hierarchy, motion cue, and vertical style-card composition.',
+      atmosphere_and_mood: 'Romantic, secret, flickering intimacy, warm darkness',
+      rendering_and_quality: 'Intimate, old, pre-electric warmth, flame-source authenticity',
       key_features: 'Low warm key, flame flicker, amber falloff, moving shadow edge',
       creative_brief:
         'Apply candlelight as a low warm source: flame flicker, amber underglow, fast falloff, moving shadows, and pre-electric intimacy. Avoid period-drama rooms, faces, hands, wax props, or conspiracy scenes. The subject should appear shaped by unstable flame rather than modern lighting. Apply Candlelight as a portable cinematic/camera style over any input: preserve its lens behavior, color process, lighting setup, artifact pattern, and deformation grammar while avoiding a required actor, room, prop, brand, readable text, fixed IP scene, or narrative setup.',
@@ -250,13 +269,15 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Bioluminescent self-illumination, Avatar forest as style anchor, organic phosphor glow, otherworldly photosynthesis',
-      form_and_line: 'None',
-      color_palette: 'Neon Blue/Green, cyan bioluminescence, teal glow, purple accent, deep night',
-      lighting_setup: 'Internal glow, self-illuminating materials, no external source',
-      material_texture: 'Organic glow, phosphorescent surface, luminous cellular texture',
-      render_quality: 'Magical, alien ecology, glowing wonder, self-lit material response',
-      spatial_distortion: 'None',
-      atmosphere: 'Wonder, night, biosphere dream, silent phosphorescence',
+      subject_treatment:
+        'Treat subjects as believable filmed or broadcast subjects under Bioluminescence: casting, wardrobe, props, motion cues, and silhouette hierarchy follow 5. Lighting And Atmosphere cinematic and broadcast grammar without locking to one plot beat.',
+      color_and_tone: 'Neon Blue/Green, cyan bioluminescence, teal glow, purple accent, deep night',
+      lighting_and_shadow: 'Internal glow, self-illuminating materials, no external source',
+      texture_and_material: 'Organic glow, phosphorescent surface, luminous cellular texture',
+      camera_and_composition:
+        'Camera language native to Bioluminescence: genre-aware framing, lens character, focal hierarchy, motion cue, and vertical style-card composition.',
+      atmosphere_and_mood: 'Wonder, night, biosphere dream, silent phosphorescence',
+      rendering_and_quality: 'Magical, alien ecology, glowing wonder, self-lit material response',
       key_features: 'Internal cyan glow, phosphor trails, luminous particles, self-lit edges',
       creative_brief:
         'Use bioluminescence as material logic: surfaces emit cyan-teal light from within, particles glow softly, and external illumination recedes. Avoid requiring forests, plants, spores, or Avatar-like scenes. Any subject should become an organism or object whose own light defines form.',
@@ -269,13 +290,14 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'continuous light',
     style: {
       aesthetic: 'Strobe-sliced motion freeze',
-      form_and_line: 'None',
-      color_palette: 'High contrast White, hard flash, bleached moment, deep shadow gaps',
-      lighting_setup: 'Flash freeze, strobe burst, millisecond illumination',
-      material_texture: 'Sharp motion edges, suspended droplets or fragments, hard-flash glare',
-      render_quality: 'Intense, frozen, time-slice, action-arrested',
-      spatial_distortion: 'Motion trails, ghost frame, multiple-exposure overlay',
-      atmosphere: 'Disorienting, intense, discontinuous rhythm, flash-cut energy',
+      subject_treatment:
+        'Treat subjects as believable filmed or broadcast subjects under Strobe Light: casting, wardrobe, props, motion cues, and silhouette hierarchy follow 5. Lighting And Atmosphere cinematic and broadcast grammar without locking to one plot beat.',
+      color_and_tone: 'High contrast White, hard flash, bleached moment, deep shadow gaps',
+      lighting_and_shadow: 'Flash freeze, strobe burst, millisecond illumination',
+      texture_and_material: 'Sharp motion edges, suspended droplets or fragments, hard-flash glare',
+      camera_and_composition: 'Motion trails, ghost frame, multiple-exposure overlay',
+      atmosphere_and_mood: 'Disorienting, intense, discontinuous rhythm, flash-cut energy',
+      rendering_and_quality: 'Intense, frozen, time-slice, action-arrested',
       key_features: 'Frozen motion, hard flash edges, ghost frame, black gaps, time-slice rhythm',
       creative_brief:
         'Render motion as strobe discontinuity: millisecond flash bursts, frozen fragments, hard white glare, black gaps, and ghosted multi-exposure trails. Avoid club scenes, dancers, panic, or specific action props. The image should feel cut into separate time slices by light. Apply Strobe Light as a portable cinematic/camera style over any input: preserve its lens behavior, color process, lighting setup, artifact pattern, and deformation grammar while avoiding a required actor, room, prop, brand, readable text, fixed IP scene, or narrative setup.',
@@ -288,13 +310,14 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'clean lens',
     style: {
       aesthetic: 'Fractured image',
-      form_and_line: 'None',
-      color_palette: 'Rainbow edges, spectral fringe, red-to-violet split, prismatic white',
-      lighting_setup: 'Refracted, glass-bent, crystal-split spectrum',
-      material_texture: 'Glass distortion, prism face, beveled edge refraction',
-      render_quality: 'Artsy, psychedelic, optical light-bending, refractive polish',
-      spatial_distortion: 'Kaleidoscope, symmetrical fracture, repeating geometry',
-      atmosphere: 'Dreamy, broken, fragmented vision, beauty-through-distortion',
+      subject_treatment:
+        'Treat subjects as believable filmed or broadcast subjects under Prism Effect: casting, wardrobe, props, motion cues, and silhouette hierarchy follow 5. Lighting And Atmosphere cinematic and broadcast grammar without locking to one plot beat.',
+      color_and_tone: 'Rainbow edges, spectral fringe, red-to-violet split, prismatic white',
+      lighting_and_shadow: 'Refracted, glass-bent, crystal-split spectrum',
+      texture_and_material: 'Glass distortion, prism face, beveled edge refraction',
+      camera_and_composition: 'Kaleidoscope, symmetrical fracture, repeating geometry',
+      atmosphere_and_mood: 'Dreamy, broken, fragmented vision, beauty-through-distortion',
+      rendering_and_quality: 'Artsy, psychedelic, optical light-bending, refractive polish',
       key_features: 'Rainbows, color splitting, light dispersion, crystal edge',
       creative_brief:
         'Apply prism optics to the input: refraction, spectral edge splits, kaleidoscopic fragments, beveled glass distortion, and rainbow dispersion. Avoid music-video scenes or literal crystals as required props. The style should fracture vision while preserving enough subject identity to read.',
@@ -307,13 +330,15 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'flat',
     style: {
       aesthetic: 'Edge glow',
-      form_and_line: 'None',
-      color_palette: 'Dark with white edge, black core, silver perimeter, hair-light gold',
-      lighting_setup: 'Backlight, rim-only separation, edge-defining key',
-      material_texture: 'Silhouette detail, edge texture, haloed perimeter',
-      render_quality: 'Dramatic, separation, subject-pop, depth-carving',
-      spatial_distortion: 'None',
-      atmosphere: 'Heroic, mystery, defined presence, emerging from shadow',
+      subject_treatment:
+        'Treat subjects as believable filmed or broadcast subjects under Rim Lighting: casting, wardrobe, props, motion cues, and silhouette hierarchy follow 5. Lighting And Atmosphere cinematic and broadcast grammar without locking to one plot beat.',
+      color_and_tone: 'Dark with white edge, black core, silver perimeter, hair-light gold',
+      lighting_and_shadow: 'Backlight, rim-only separation, edge-defining key',
+      texture_and_material: 'Silhouette detail, edge texture, haloed perimeter',
+      camera_and_composition:
+        'Camera language native to Rim Lighting: genre-aware framing, lens character, focal hierarchy, motion cue, and vertical style-card composition.',
+      atmosphere_and_mood: 'Heroic, mystery, defined presence, emerging from shadow',
+      rendering_and_quality: 'Dramatic, separation, subject-pop, depth-carving',
       key_features: 'Halo, glowing outline, edge definition',
       creative_brief:
         'Use rim lighting as edge-first separation: a dark core, bright perimeter, backlight halo, and minimal fill. Avoid depending on figures, hair, or portrait staging. The subject should be readable because its outline glows against shadow. Apply Rim Lighting as a portable cinematic/camera style over any input: preserve its lens behavior, color process, lighting setup, artifact pattern, and deformation grammar while avoiding a required actor, room, prop, brand, readable text, fixed IP scene, or narrative setup.',
@@ -326,13 +351,13 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'dry',
     style: {
       aesthetic: 'Submerged',
-      form_and_line: 'Caustics',
-      color_palette: 'Cyan/Blue, aquamarine, deep navy, surface-silver, turquoise',
-      lighting_setup: 'Refracted sun, surface-dappled, caustic-net projection',
-      material_texture: 'Water distortion, fluid lens, suspended particles',
-      render_quality: 'Muted, floating, weightless suspension, soundless depth',
-      spatial_distortion: 'Warped, refractive bend, swim-goggle perspective',
-      atmosphere: 'Calm, deep, abyssal peace, submerged solitude',
+      subject_treatment: 'Caustics',
+      color_and_tone: 'Cyan/Blue, aquamarine, deep navy, surface-silver, turquoise',
+      lighting_and_shadow: 'Refracted sun, surface-dappled, caustic-net projection',
+      texture_and_material: 'Water distortion, fluid lens, suspended particles',
+      camera_and_composition: 'Warped, refractive bend, swim-goggle perspective',
+      atmosphere_and_mood: 'Calm, deep, abyssal peace, submerged solitude',
+      rendering_and_quality: 'Muted, floating, weightless suspension, soundless depth',
       key_features: 'Caustics, light-net projection, suspended particles, refractive wobble',
       creative_brief:
         'Apply underwater optics without forcing underwater subject matter: cyan-blue attenuation, caustic nets, refractive wobble, suspended particles, and softened edges through a liquid lens. Avoid bodies, hair, bubbles as required props, or literal ocean environments. The image should feel filtered through depth and fluid refraction. Apply Underwater Light as a portable cinematic/camera style over any input: preserve its lens behavior, color process, lighting setup, artifact pattern, and deformation grammar while avoiding a required actor, room, prop, brand, readable text, fixed IP scene, or narrative setup.',
@@ -345,13 +370,14 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'static light',
     style: {
       aesthetic: 'Long exposure trails',
-      form_and_line: 'Light streaks',
-      color_palette: 'Neon lines, electric blue trails, magenta ribbon, RGB glow',
-      lighting_setup: 'Dark background, total black, light-only visibility',
-      material_texture: 'Glowing lines, light-tube smoothness, LED ribbon',
-      render_quality: 'Creative, night, long-exposure artistry, motion-sculpture',
-      spatial_distortion: 'None',
-      atmosphere: 'Magic, art, drawing-with-light, nocturnal abstraction',
+      subject_treatment: 'Light streaks',
+      color_and_tone: 'Neon lines, electric blue trails, magenta ribbon, RGB glow',
+      lighting_and_shadow: 'Dark background, total black, light-only visibility',
+      texture_and_material: 'Glowing lines, light-tube smoothness, LED ribbon',
+      camera_and_composition:
+        'Camera language native to Light Painting: genre-aware framing, lens character, focal hierarchy, motion cue, and vertical style-card composition.',
+      atmosphere_and_mood: 'Magic, art, drawing-with-light, nocturnal abstraction',
+      rendering_and_quality: 'Creative, night, long-exposure artistry, motion-sculpture',
       key_features: 'Trails, light ribbon, calligraphic light, motion-blur glow',
       creative_brief:
         'Use light painting as long-exposure mark-making: luminous trails, calligraphic motion, dark-field separation, and neon gesture paths. Avoid performers, night-play scenes, or literal drawing tools. The input should be augmented by light traces that reveal motion over time. Apply Light Painting as a portable cinematic/camera style over any input: preserve its lens behavior, color process, lighting setup, artifact pattern, and deformation grammar while avoiding a required actor, room, prop, brand, readable text, fixed IP scene, or narrative setup.',
@@ -364,14 +390,16 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'harsh shadows',
     style: {
       aesthetic: 'Product photography',
-      form_and_line: 'None',
-      color_palette:
+      subject_treatment:
+        'Treat subjects as believable filmed or broadcast subjects under Softbox Studio: casting, wardrobe, props, motion cues, and silhouette hierarchy follow 5. Lighting And Atmosphere cinematic and broadcast grammar without locking to one plot beat.',
+      color_and_tone:
         'Perfect white balance, neutral grey, accurate local color, clean commercial tones',
-      lighting_setup: 'Large diffuse source, softbox wrap, shadowless fill',
-      material_texture: 'Smooth gradients, seamless paper, clean backdrop',
-      render_quality: 'Professional, clean, commercial polish, catalog-perfect',
-      spatial_distortion: 'None',
-      atmosphere: 'Commercial, perfect, aspirational, sterile beauty',
+      lighting_and_shadow: 'Large diffuse source, softbox wrap, shadowless fill',
+      texture_and_material: 'Smooth gradients, seamless paper, clean backdrop',
+      camera_and_composition:
+        'Camera language native to Softbox Studio: genre-aware framing, lens character, focal hierarchy, motion cue, and vertical style-card composition.',
+      atmosphere_and_mood: 'Commercial, perfect, aspirational, sterile beauty',
+      rendering_and_quality: 'Professional, clean, commercial polish, catalog-perfect',
       key_features: 'Soft shadows, seamless sweep, isolated form, diffuse wrap, clean backdrop',
       creative_brief:
         'Apply softbox studio grammar to any input: large diffuse source, seamless sweep, clean backdrop, accurate color, soft gradients, and controlled shadow. Avoid making it product-only or portrait-only. The result should feel catalog-clean without losing the subject intent.',
@@ -385,13 +413,13 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Glossy sci-fi reboot spectacle, Star Trek reboot energy as style anchor, blinding anamorphic, JJ Abrams lens-flare overload',
-      form_and_line: 'Horizontal lines',
-      color_palette: 'Blue anamorphic, cyan streak, warm skin, deep space black, magnesium white',
-      lighting_setup: 'Blinding, overexposed key, intentional flare-induction',
-      material_texture: 'Glass artifacts, multi-coated lens, element reflection',
-      render_quality: 'Sci-fi, action, summer-blockbuster spectacle, visual overload',
-      spatial_distortion: 'Washed out, flare-bleached, contrast-erased bloom',
-      atmosphere: 'Future, bright, optimistic spectacle, epic scale',
+      subject_treatment: 'Horizontal lines',
+      color_and_tone: 'Blue anamorphic, cyan streak, warm skin, deep space black, magnesium white',
+      lighting_and_shadow: 'Blinding, overexposed key, intentional flare-induction',
+      texture_and_material: 'Glass artifacts, multi-coated lens, element reflection',
+      camera_and_composition: 'Washed out, flare-bleached, contrast-erased bloom',
+      atmosphere_and_mood: 'Future, bright, optimistic spectacle, epic scale',
+      rendering_and_quality: 'Sci-fi, action, summer-blockbuster spectacle, visual overload',
       key_features: 'Horizontal flare, anamorphic streak, cyan-white bloom, contrast washout',
       creative_brief:
         'Use anamorphic overflare as the style driver: horizontal cyan-white streaks, blown highlights, lens-element reflections, bloom washout, and glossy blockbuster dazzle. Avoid requiring starships, space, crews, or sci-fi props. The camera artifacts should become the spectacle. Apply JJ Abrams Anamorphic Overflare as a portable cinematic/camera style over any input: preserve its lens behavior, color process, lighting setup, artifact pattern, and deformation grammar while avoiding a required actor, room, prop, brand, readable text, fixed IP scene, or narrative setup.',

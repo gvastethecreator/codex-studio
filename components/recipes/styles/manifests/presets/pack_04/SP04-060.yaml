@@ -13,23 +13,22 @@ tags:
   - concept-art
 visualDna:
   aesthetic: >-
-    Weapon concept-sheet style with functional lethality readability, industrial precision, and
-    controlled silhouette authority
-  form_and_line: >-
-    Mechanical contour logic with component segmentation, ergonomic line flow, and side-profile
-    specification clarity
-  color_palette: Gunmetal, tactical finish, weapon-grade metals
-  lighting_setup: Rim light, barrel gleam, tactical edge highlight
-  material_texture: Scratched metal
-  render_quality: FPS game, lethal, armory-model rigor, weapon-fan detail
-  spatial_distortion: None
-  atmosphere: Dangerous, heavy, trigger discipline, combat-readiness
+    Weapon concept-sheet style with functional lethality readability, industrial precision, and controlled
+    silhouette authority
+  subject_treatment: >-
+    Mechanical contour logic with component segmentation, ergonomic line flow, and side-profile specification
+    clarity
+  color_and_tone: Gunmetal, tactical finish, weapon-grade metals
+  lighting_and_shadow: Rim light, barrel gleam, tactical edge highlight
+  texture_and_material: Scratched metal
+  camera_and_composition: 'Compose for Weapon Design using its key spatial cues: Side view, mechanical detail, magazine/guard.'
+  atmosphere_and_mood: Dangerous, heavy, trigger discipline, combat-readiness
+  rendering_and_quality: FPS game, lethal, armory-model rigor, weapon-fan detail
   key_features: Side view, mechanical detail, magazine/guard
   creative_brief: >-
-    Apply weapon-design concept grammar to any input: component hierarchy, side-profile clarity,
-    industrial material wear, ergonomic line flow, and tactical edge highlights should create
-    controlled silhouette authority without requiring guns, blades, armories, combat, magazines, or
-    battle stories.
+    Apply weapon-design concept grammar to any input: component hierarchy, side-profile clarity, industrial
+    material wear, ergonomic line flow, and tactical edge highlights should create controlled silhouette
+    authority without requiring guns, blades, armories, combat, magazines, or battle stories.
 avoidRules:
   - soft
   - toy

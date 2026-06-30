@@ -13,20 +13,20 @@ tags:
   - fabric-and-texture-focus
 visualDna:
   aesthetic: Tweed tailoring heritage, scholarly restraint, moss-toned country classicism
-  form_and_line: Herringbone pattern flow, structured drape, notch-lapel angle, three-roll-two logic, tailored break rhythm
-  color_palette: Brown, Green, loden, chestnut, olive-herringbone, barley-corn, moss
-  lighting_setup: Rainy grey softness, low wool-warmth, flat wool-revealing light
-  material_texture: Rough wool, herringbone tweed, Donegal fleck, shetland wool, horn buttons, bemberg lining
-  render_quality: Classic, textured, heritage-tailoring precision, wool-depth authenticity
-  spatial_distortion: None
-  atmosphere: Smart, restrained, contemplative, textured, quietly formal
+  subject_treatment: Herringbone pattern flow, structured drape, notch-lapel angle, three-roll-two logic, tailored break rhythm
+  color_and_tone: Brown, Green, loden, chestnut, olive-herringbone, barley-corn, moss
+  lighting_and_shadow: Rainy grey softness, low wool-warmth, flat wool-revealing light
+  texture_and_material: Rough wool, herringbone tweed, Donegal fleck, shetland wool, horn buttons, bemberg lining
+  camera_and_composition: >-
+    Compose for Tweed Suit using its key spatial cues: Herringbone, elbow-patch cues, ticket-pocket logic,
+    horn-button punctuation, wool depth.
+  atmosphere_and_mood: Smart, restrained, contemplative, textured, quietly formal
+  rendering_and_quality: Classic, textured, heritage-tailoring precision, wool-depth authenticity
   key_features: Herringbone, elbow-patch cues, ticket-pocket logic, horn-button punctuation, wool depth
   creative_brief: >-
-    Tailor the input with tweed heritage: herringbone wool, Donegal flecks,
-    horn-button punctuation, elbow-patch cues, three-roll-two lapel logic and
-    moss-brown texture. Keep scholarly classicism as attitude only; do not
-    require a person, study, library, armchair, estate weekend or literal suit
-    portrait.
+    Tailor the input with tweed heritage: herringbone wool, Donegal flecks, horn-button punctuation,
+    elbow-patch cues, three-roll-two lapel logic and moss-brown texture. Keep scholarly classicism as attitude
+    only; do not require a person, study, library, armchair, estate weekend or literal suit portrait.
 avoidRules:
   - smooth
   - shiny

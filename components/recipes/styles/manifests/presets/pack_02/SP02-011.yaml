@@ -13,15 +13,18 @@ tags:
   - film-genres
 visualDna:
   aesthetic: Dense cel-animated cyber noir, Ghost in the Shell style, philosophical tech dread
-  form_and_line: Cel shaded
-  color_palette: Green tint, dark, sickly CRT glow, deep shadow cyan
-  lighting_setup: Neon bounce, CRT underlight, low-key cyber glow
-  material_texture: Cel grain, painted acetate, hand-drawn texture
-  render_quality: Detailed, philosophical, intricate background, mood-drenched
-  spatial_distortion: Cablelike tangles, data-tendril abstraction
-  atmosphere: Tech, moody, conspiratorial, rain-slick isolation
+  subject_treatment: Cel shaded
+  color_and_tone: Green tint, dark, sickly CRT glow, deep shadow cyan
+  lighting_and_shadow: Neon bounce, CRT underlight, low-key cyber glow
+  texture_and_material: Cel grain, painted acetate, hand-drawn texture
+  camera_and_composition: Cablelike tangles, data-tendril abstraction
+  atmosphere_and_mood: Tech, moody, conspiratorial, rain-slick isolation
+  rendering_and_quality: Detailed, philosophical, intricate background, mood-drenched
   key_features: Cathode bloom, cel grain, techno-organic density
-  creative_brief: '90s cyberpunk anime style renders any subject in cel-painted tech dread: green CRT glow, cyan shadow, acetate grain, dense linework, cablelike abstraction, bloom, and rain-slick isolation. Keep Ghost in the Shell philosophy as mood without forcing cityscape, implants, rain windows, or brain-hack props.'
+  creative_brief: >-
+    90s cyberpunk anime style renders any subject in cel-painted tech dread: green CRT glow, cyan shadow,
+    acetate grain, dense linework, cablelike abstraction, bloom, and rain-slick isolation. Keep Ghost in the
+    Shell philosophy as mood without forcing cityscape, implants, rain windows, or brain-hack props.
 avoidRules:
   - modern digital
 assets:

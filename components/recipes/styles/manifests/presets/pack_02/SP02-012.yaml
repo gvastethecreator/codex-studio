@@ -13,15 +13,21 @@ tags:
   - film-genres
 visualDna:
   aesthetic: Symmetrical composition
-  form_and_line: None
-  color_palette: Pastel palette, butter yellow, mint green, dusty pink, warm ochre
-  lighting_setup: Flat, soft, diffused wrap, even exposure, no shadow drama
-  material_texture: Film, Kodak stock, matte surface, hand-painted props
-  render_quality: Quirky, precise, diorama-perfect, miniature precision
-  spatial_distortion: Center frame, locked-down composition, 90-degree pans
-  atmosphere: Whimsical, deadpan, storybook melancholy, curated nostalgia
+  subject_treatment: >-
+    Treat subjects as believable filmed or broadcast subjects under Wes Anderson Symmetrical Storybook Cinema:
+    casting, wardrobe, props, motion cues, and silhouette hierarchy follow 1. Film Genres cinematic and
+    broadcast grammar without locking to one plot beat.
+  color_and_tone: Pastel palette, butter yellow, mint green, dusty pink, warm ochre
+  lighting_and_shadow: Flat, soft, diffused wrap, even exposure, no shadow drama
+  texture_and_material: Film, Kodak stock, matte surface, hand-painted props
+  camera_and_composition: Center frame, locked-down composition, 90-degree pans
+  atmosphere_and_mood: Whimsical, deadpan, storybook melancholy, curated nostalgia
+  rendering_and_quality: Quirky, precise, diorama-perfect, miniature precision
   key_features: Symmetry, diorama precision, label-like spacing
-  creative_brief: 'Symmetrical storybook cinema makes any subject deadpan and curated: locked center framing, pastel palette, flat soft exposure, diorama precision, matte prop texture, and nostalgic melancholy. Keep Wes Anderson grammar without forcing cross-section sets, typography, or quirky characters.'
+  creative_brief: >-
+    Symmetrical storybook cinema makes any subject deadpan and curated: locked center framing, pastel palette,
+    flat soft exposure, diorama precision, matte prop texture, and nostalgic melancholy. Keep Wes Anderson
+    grammar without forcing cross-section sets, typography, or quirky characters.
 avoidRules:
   - asymmetrical
   - messy

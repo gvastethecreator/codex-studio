@@ -15,30 +15,26 @@ visualDna:
   aesthetic: >-
     Surreal music-cover style with conceptual visual paradoxes, dream-logic symbolism, and iconic
     square-format image tension
-  form_and_line: >-
-    Sharp-edged geometric motifs balanced with soft surreal transitions, symbolic object
-    juxtaposition, and clean silhouette punctuation
-  color_palette: >-
-    Prismatic spectral accents over controlled dark bases, uncanny complementary pairings, and
-    dream-state tonal discontinuities
-  lighting_setup: >-
-    Impossible-source illumination with haloed glows, selective hard-edge highlights, and surreal
-    depth cues
-  material_texture: Fine analog-photo grain with matte print character and subtle collage-surface irregularity
-  render_quality: >-
-    Concept-forward cover rendering prioritizing symbolic ambiguity, memorable central metaphor, and
-    high-impact square readability
-  spatial_distortion: >-
+  subject_treatment: >-
+    Sharp-edged geometric motifs balanced with soft surreal transitions, symbolic object juxtaposition, and
+    clean silhouette punctuation
+  color_and_tone: >-
+    Prismatic spectral accents over controlled dark bases, uncanny complementary pairings, and dream-state
+    tonal discontinuities
+  lighting_and_shadow: Impossible-source illumination with haloed glows, selective hard-edge highlights, and surreal depth cues
+  texture_and_material: Fine analog-photo grain with matte print character and subtle collage-surface irregularity
+  camera_and_composition: >-
     Non-Euclidean object relationships and paradox perspective logic sustaining deliberate visual
     disorientation
-  atmosphere: Mysterious, contemplative, strange, immersive, hypnotic
-  key_features: >-
-    Square-cover composition, symbolic juxtaposition engine, prismatic accent system,
-    impossible-space staging
+  atmosphere_and_mood: Mysterious, contemplative, strange, immersive, hypnotic
+  rendering_and_quality: >-
+    Concept-forward cover rendering prioritizing symbolic ambiguity, memorable central metaphor, and
+    high-impact square readability
+  key_features: Square-cover composition, symbolic juxtaposition engine, prismatic accent system, impossible-space staging
   creative_brief: >-
-    Apply surreal album-cover grammar to any input: square-format tension, symbolic paradox,
-    impossible lighting, prismatic accents, and matte print mystery should make the subject iconic
-    without requiring bands, records, portraits, instruments, landscapes, or canonical album motifs.
+    Apply surreal album-cover grammar to any input: square-format tension, symbolic paradox, impossible
+    lighting, prismatic accents, and matte print mystery should make the subject iconic without requiring
+    bands, records, portraits, instruments, landscapes, or canonical album motifs.
 avoidRules:
   - photo
   - boring

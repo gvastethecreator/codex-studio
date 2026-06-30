@@ -13,34 +13,34 @@ tags:
   - anime-style-spectrum
 visualDna:
   aesthetic: >-
-    Frozen-crystalline anime treatment with faceted glass surfaces, internal light refraction,
-    gem-cut proportion logic, frozen motion, and sub-zero elegance
-  form_and_line: >-
-    Faceted-crystal contours, sharp-geometric-edge-lines, no organic curves,
-    prism-cut-surface-faceting, hexagonal-ice-crystal symmetry
-  color_palette: >-
-    Ice-blue, cyan, frozen-lake-turquoise, polar-white, frost-mint,
-    prism-refraction-rainbow-accents, glacier-deep-indigo, diamond-sparkle-spectrum
-  lighting_setup: >-
+    Frozen-crystalline anime treatment with faceted glass surfaces, internal light refraction, gem-cut
+    proportion logic, frozen motion, and sub-zero elegance
+  subject_treatment: >-
+    Faceted-crystal contours, sharp-geometric-edge-lines, no organic curves, prism-cut-surface-faceting,
+    hexagonal-ice-crystal symmetry
+  color_and_tone: >-
+    Ice-blue, cyan, frozen-lake-turquoise, polar-white, frost-mint, prism-refraction-rainbow-accents,
+    glacier-deep-indigo, diamond-sparkle-spectrum
+  lighting_and_shadow: >-
     Internal-refraction-rainbow-splitting, subsurface-scattering-in-ice, rim-light-on-crystal-edges,
     caustic-light-patterns, frozen-sun-backlight
-  material_texture: >-
+  texture_and_material: >-
     Glass-crystal-surface, internal-fracture-planes, frost-fern-pattern-texture,
     diamond-facet-micro-scratches, ice-core-bubble-imperfections
-  render_quality: >-
+  camera_and_composition: >-
+    Faceted gem-cut proportion shifts, hexagonal symmetry, prism-split spatial rainbows, and shard-fragment
+    composition
+  atmosphere_and_mood: Frozen, pristine, otherworldly-cold, geometric-perfection awe, winter-solitude beauty
+  rendering_and_quality: >-
     Crystalline-ice-anime aesthetic, gem-cut-beauty, frozen-refractive-rendering, arctic-elegance,
     geometric-ice-sculpture-animation
-  spatial_distortion: >-
-    Faceted gem-cut proportion shifts, hexagonal symmetry, prism-split spatial rainbows, and
-    shard-fragment composition
-  atmosphere: Frozen, pristine, otherworldly-cold, geometric-perfection awe, winter-solitude beauty
   key_features: >-
     Faceted-crystal-contours, internal-light-refraction, prism-rainbow-splitting,
     ice-blue-monochrome-spectrum, hexagonal-ice-symmetry, frost-fern-textures
   creative_brief: >-
-    Use ice-crystal refractive anime as faceted-cold material grammar. Any prompt should refract
-    through prism anatomy, internal light splits, frost geometry, and sub-zero elegance. Ice people,
-    monarch poses, sculptures, and frozen environments are optional.
+    Use ice-crystal refractive anime as faceted-cold material grammar. Any prompt should refract through prism
+    anatomy, internal light splits, frost geometry, and sub-zero elegance. Ice people, monarch poses,
+    sculptures, and frozen environments are optional.
 avoidRules:
   - warm
   - soft

@@ -13,15 +13,19 @@ tags:
   - mixed-media
 visualDna:
   aesthetic: 3D object collage
-  form_and_line: Physical objects
-  color_palette: Found object colors
-  lighting_setup: Box lighting
-  material_texture: Rust, wood, plastic
-  render_quality: Sculptural, box art
-  spatial_distortion: None
-  atmosphere: Mysterious, collection
+  subject_treatment: Physical objects
+  color_and_tone: Found object colors
+  lighting_and_shadow: Box lighting
+  texture_and_material: Rust, wood, plastic
+  camera_and_composition: 'Compose for Assemblage using its key spatial cues: Shadow box.'
+  atmosphere_and_mood: Mysterious, collection
+  rendering_and_quality: Sculptural, box art
   key_features: Shadow box
-  creative_brief: Found-material logic becomes spatial composition, with rust dialoguing with plastic, wood with glass, and the found speaking to the made across material boundaries. Shadow, depth, and object scale create a sculptural collage grammar without requiring boxes, dioramas, or literal collections. Taxonomy turns into poetics through placement.
+  creative_brief: >-
+    Found-material logic becomes spatial composition, with rust dialoguing with plastic, wood with glass, and
+    the found speaking to the made across material boundaries. Shadow, depth, and object scale create a
+    sculptural collage grammar without requiring boxes, dioramas, or literal collections. Taxonomy turns into
+    poetics through placement.
 avoidRules:
   - photo
   - realistic
@@ -43,7 +47,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP06-064.webp
 attributes:
-  negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border, shadow box requirement, literal collection
+  negativePrompt: >-
+    photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy,
+    watermark, text, signature, frame, border, shadow box requirement, literal collection
 taxonomy:
   packId: pack_06
   packName: Essential Art Styles

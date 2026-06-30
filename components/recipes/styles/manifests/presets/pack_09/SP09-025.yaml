@@ -13,22 +13,22 @@ tags:
   - weathering-and-decay
 visualDna:
   aesthetic: Old doll or vase
-  form_and_line: Craquelure
-  color_palette: Pale white/cream
-  lighting_setup: Glossy
-  material_texture: Smooth glaze
-  render_quality: Antique, fragile
-  spatial_distortion: Fine cracks
-  atmosphere: Creepy, old
+  subject_treatment: Craquelure
+  color_and_tone: Pale white/cream
+  lighting_and_shadow: Glossy
+  texture_and_material: Smooth glaze
+  camera_and_composition: Fine cracks
+  atmosphere_and_mood: Creepy, old
+  rendering_and_quality: Antique, fragile
   key_features: Crack network
   creative_brief: >-
-    Compose the delicate horror of crazed porcelain where a fine network of cracks maps the surface like a frozen
-    lightning storm in cream and white, the glaze still gleaming smooth above fractures held in perpetual arrest. The
-    crack network should spread organically like roots seeking water, each line a record of stress survived. Render the
-    beauty of the almost-broken, fragility that has chosen to endure. Use Porcelain as portable surface/render behavior
-    over any input: map its texture, light response, edge wear, color chemistry, and tactile rhythm onto the subject
-    instead of requiring a literal material sample, macro tile, wall, landscape, source object, or scene where the
-    material naturally appears.
+    Compose the delicate horror of crazed porcelain where a fine network of cracks maps the surface like a
+    frozen lightning storm in cream and white, the glaze still gleaming smooth above fractures held in
+    perpetual arrest. The crack network should spread organically like roots seeking water, each line a record
+    of stress survived. Render the beauty of the almost-broken, fragility that has chosen to endure. Use
+    Porcelain as portable surface/render behavior over any input: map its texture, light response, edge wear,
+    color chemistry, and tactile rhythm onto the subject instead of requiring a literal material sample, macro
+    tile, wall, landscape, source object, or scene where the material naturally appears.
 avoidRules:
   - plastic
 assets:

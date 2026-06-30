@@ -13,18 +13,18 @@ tags:
   - surrealism-and-dream
 visualDna:
   aesthetic: Amateur photo edit
-  form_and_line: MS Paint text
-  color_palette: Flash photo
-  lighting_setup: Harsh flash
-  material_texture: Compression
-  render_quality: Uncanny, internet
-  spatial_distortion: Blacked out eyes
-  atmosphere: Confusing, unsafe
+  subject_treatment: MS Paint text
+  color_and_tone: Flash photo
+  lighting_and_shadow: Harsh flash
+  texture_and_material: Compression
+  camera_and_composition: Blacked out eyes
+  atmosphere_and_mood: Confusing, unsafe
+  rendering_and_quality: Uncanny, internet
   key_features: Text overlay
   creative_brief: >-
-    Apply weirdcore wrongness to the input: uncanny low-skill edits, mismatched
-    scaling, harsh cutouts, off-color overlays, and broken composition should
-    make the subject feel emotionally unsafe without requiring text or rooms.
+    Apply weirdcore wrongness to the input: uncanny low-skill edits, mismatched scaling, harsh cutouts,
+    off-color overlays, and broken composition should make the subject feel emotionally unsafe without
+    requiring text or rooms.
 avoidRules:
   - high quality
   - professional

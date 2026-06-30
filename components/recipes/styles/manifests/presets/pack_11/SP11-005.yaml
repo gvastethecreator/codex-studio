@@ -13,20 +13,20 @@ tags:
   - toys-and-crafts
 visualDna:
   aesthetic: Amigurumi crochet plush language with handmade yarn charm
-  form_and_line: Spiral stitch pattern, V-stitch rows, rounded increases, circular construction
-  color_palette: Soft yarn colors, heathered pastels, cream-spectrum, gentle jewel tones
-  lighting_setup: Soft, fuzzy, diffused window light, warm bounce, cozy shadows
-  material_texture: Yarn fibers, polyester stuffing, looped stitch surface, plump fill
-  render_quality: Soft handcrafted finish emphasizing stitch structure and tactile warmth
-  spatial_distortion: Round, chibi proportions, oversized head, tiny limbs, compact body
-  atmosphere: Cozy, sweet, tactile, nurturing, heartfelt, handmade love
+  subject_treatment: Spiral stitch pattern, V-stitch rows, rounded increases, circular construction
+  color_and_tone: Soft yarn colors, heathered pastels, cream-spectrum, gentle jewel tones
+  lighting_and_shadow: Soft, fuzzy, diffused window light, warm bounce, cozy shadows
+  texture_and_material: Yarn fibers, polyester stuffing, looped stitch surface, plump fill
+  camera_and_composition: Round, chibi proportions, oversized head, tiny limbs, compact body
+  atmosphere_and_mood: Cozy, sweet, tactile, nurturing, heartfelt, handmade love
+  rendering_and_quality: Soft handcrafted finish emphasizing stitch structure and tactile warmth
   key_features: Stitch texture, gauge-consistent rows, yarn halo, safety-eye shine
   creative_brief: >-
-    Prioritize readable stitch topology, yarn fiber behavior, and stuffed volume balance. Keep shapes compact and
-    endearing, with crochet construction details driving form identity across any character or object. Apply Amigurumi
-    Crochet as a portable style system over any input: preserve its construction grammar, material cues, scale logic,
-    and signature rendering behavior while avoiding a required franchise, literal prop, fixed specimen, classroom
-    sample, product shot, or scene template.
+    Prioritize readable stitch topology, yarn fiber behavior, and stuffed volume balance. Keep shapes compact
+    and endearing, with crochet construction details driving form identity across any character or object.
+    Apply Amigurumi Crochet as a portable style system over any input: preserve its construction grammar,
+    material cues, scale logic, and signature rendering behavior while avoiding a required franchise, literal
+    prop, fixed specimen, classroom sample, product shot, or scene template.
 avoidRules:
   - smooth
   - plastic

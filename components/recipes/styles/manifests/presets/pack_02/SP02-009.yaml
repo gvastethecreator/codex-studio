@@ -13,15 +13,21 @@ tags:
   - film-genres
 visualDna:
   aesthetic: Black-and-white suitmation spectacle, Godzilla 1954, miniature-scale practical terror
-  form_and_line: None
-  color_palette: B&W or Eastmancolor, muted desaturated, faded film stock
-  lighting_setup: Miniature set, forced perspective, matte backdrop light
-  material_texture: Rubber suit texture, latex sheen, toy-scale practical material
-  render_quality: Tokusatsu, scale model, practical destruction, charming artifice
-  spatial_distortion: Stiff movement, lumbering gait, wire-work float
-  atmosphere: Epic, handmade, scale panic
+  subject_treatment: >-
+    Treat subjects as believable filmed or broadcast subjects under Kaiju Movie (Suitmation): casting,
+    wardrobe, props, motion cues, and silhouette hierarchy follow 1. Film Genres cinematic and broadcast
+    grammar without locking to one plot beat.
+  color_and_tone: B&W or Eastmancolor, muted desaturated, faded film stock
+  lighting_and_shadow: Miniature set, forced perspective, matte backdrop light
+  texture_and_material: Rubber suit texture, latex sheen, toy-scale practical material
+  camera_and_composition: Stiff movement, lumbering gait, wire-work float
+  atmosphere_and_mood: Epic, handmade, scale panic
+  rendering_and_quality: Tokusatsu, scale model, practical destruction, charming artifice
   key_features: Low angle, miniature scale, charming artifice
-  creative_brief: 'Kaiju suitmation style gives any subject handmade colossal scale: low camera, forced perspective, miniature-set lighting, latex/rubber texture, stiff motion implication, and sincere practical artifice. Keep tokusatsu weight without forcing monsters, city destruction, power lines, tanks, or crowds.'
+  creative_brief: >-
+    Kaiju suitmation style gives any subject handmade colossal scale: low camera, forced perspective,
+    miniature-set lighting, latex/rubber texture, stiff motion implication, and sincere practical artifice.
+    Keep tokusatsu weight without forcing monsters, city destruction, power lines, tanks, or crowds.
 avoidRules:
   - cgi
   - realistic

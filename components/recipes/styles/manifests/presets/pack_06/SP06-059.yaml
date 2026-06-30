@@ -13,19 +13,18 @@ tags:
   - digital-art
 visualDna:
   aesthetic: Layered paper style
-  form_and_line: Cut edges
-  color_palette: Solid colors
-  lighting_setup: Drop shadows
-  material_texture: Paper grain
-  render_quality: Craft, cute
-  spatial_distortion: Simplified
-  atmosphere: Playful
+  subject_treatment: Cut edges
+  color_and_tone: Solid colors
+  lighting_and_shadow: Drop shadows
+  texture_and_material: Paper grain
+  camera_and_composition: Simplified
+  atmosphere_and_mood: Playful
+  rendering_and_quality: Craft, cute
   key_features: Depth layers
   creative_brief: >-
-    Apply digital paper-cutout style to any input: layered flat paper planes,
-    clean cut edges, soft drop shadows, staged depth, and machine-perfect craft
-    illusion. Keep handmade charm simulated digitally without requiring greeting
-    cards, landscapes, characters, or tabletop craft scenes.
+    Apply digital paper-cutout style to any input: layered flat paper planes, clean cut edges, soft drop
+    shadows, staged depth, and machine-perfect craft illusion. Keep handmade charm simulated digitally without
+    requiring greeting cards, landscapes, characters, or tabletop craft scenes.
 avoidRules:
   - photo
   - realistic
@@ -45,7 +44,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP06-059.webp
 attributes:
-  negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border
+  negativePrompt: >-
+    photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy,
+    watermark, text, signature, frame, border
 taxonomy:
   packId: pack_06
   packName: Essential Art Styles

@@ -13,19 +13,18 @@ tags:
   - comic-book-styles
 visualDna:
   aesthetic: Obsessive body-horror manga language (Junji Ito signature tension)
-  form_and_line: Fine high-density linework with relentless detail accretion
-  color_palette: Monochrome black-and-white with suffocating dark field control
-  lighting_setup: Diffuse dread lighting driven by contrast pockets and void depth
-  material_texture: Spiral and micro-line textures that invade organic surfaces
-  render_quality: Precision horror draftsmanship with escalating visual discomfort
-  spatial_distortion: Recursive spiral, cavity, and anatomical warping motifs
-  atmosphere: Uncanny, claustrophobic, cosmic-anxious
+  subject_treatment: Fine high-density linework with relentless detail accretion
+  color_and_tone: Monochrome black-and-white with suffocating dark field control
+  lighting_and_shadow: Diffuse dread lighting driven by contrast pockets and void depth
+  texture_and_material: Spiral and micro-line textures that invade organic surfaces
+  camera_and_composition: Recursive spiral, cavity, and anatomical warping motifs
+  atmosphere_and_mood: Uncanny, claustrophobic, cosmic-anxious
+  rendering_and_quality: Precision horror draftsmanship with escalating visual discomfort
   key_features: Compulsive ink density, motif recursion, skin-to-pattern collapse
   creative_brief: >-
-    Apply obsessive horror manga grammar to any input: micro-line accumulation, spiral or cavity
-    recursion, suffocating dark fields, and controlled anatomical or material corruption should grow
-    dread from pattern inevitability without requiring bodies, villages, rooms, monsters, or fixed
-    narrative location.
+    Apply obsessive horror manga grammar to any input: micro-line accumulation, spiral or cavity recursion,
+    suffocating dark fields, and controlled anatomical or material corruption should grow dread from pattern
+    inevitability without requiring bodies, villages, rooms, monsters, or fixed narrative location.
 avoidRules:
   - cute
   - clean

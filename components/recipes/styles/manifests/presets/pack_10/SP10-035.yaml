@@ -13,15 +13,19 @@ tags:
   - surrealism-and-dream
 visualDna:
   aesthetic: Grounded impossible realism
-  form_and_line: Realistic
-  color_palette: Natural
-  lighting_setup: Subtle glow
-  material_texture: Real
-  render_quality: Literary, subtle
-  spatial_distortion: One impossible element
-  atmosphere: Wonder, grounded
+  subject_treatment: Realistic
+  color_and_tone: Natural
+  lighting_and_shadow: Subtle glow
+  texture_and_material: Real
+  camera_and_composition: One impossible element
+  atmosphere_and_mood: Wonder, grounded
+  rendering_and_quality: Literary, subtle
   key_features: One quiet impossibility
-  creative_brief: Apply magical realism as restrained contradiction over the input with mostly natural rendering, one impossible detail treated as ordinary, subtle glow, grounded texture, and calm acceptance. If mundane props or interiors exist, let one element disobey physics; otherwise add a quiet impossibility to the subject without turning it into overt fantasy or cartoon.
+  creative_brief: >-
+    Apply magical realism as restrained contradiction over the input with mostly natural rendering, one
+    impossible detail treated as ordinary, subtle glow, grounded texture, and calm acceptance. If mundane
+    props or interiors exist, let one element disobey physics; otherwise add a quiet impossibility to the
+    subject without turning it into overt fantasy or cartoon.
 avoidRules:
   - fantasy
   - cartoon

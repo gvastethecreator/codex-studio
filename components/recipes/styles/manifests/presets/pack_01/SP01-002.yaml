@@ -21,9 +21,8 @@ visualDna:
   atmosphere_and_mood: Real, fleeting, documentary, slice-of-life, energetic
   rendering_and_quality: High quality documentary photography, authentic, unretouched look
   creative_brief: >-
-    Apply candid street-documentary behavior to any subject: available light,
-    quick framing, imperfect motion, urban grit, and unposed immediacy without
-    requiring a person, sidewalk, or city setting.
+    Apply candid street-documentary behavior to any subject: available light, quick framing, imperfect motion,
+    urban grit, and unposed immediacy without requiring a person, sidewalk, or city setting.
 avoidRules:
   - illustration
   - painting
@@ -43,7 +42,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP01-002.webp
 attributes:
-  negativePrompt: illustration, painting, drawing, 3d render, cartoon, anime, sketch, blurry, noisy, low resolution, watermark, text, signature, bad anatomy, deformed
+  negativePrompt: >-
+    illustration, painting, drawing, 3d render, cartoon, anime, sketch, blurry, noisy, low resolution,
+    watermark, text, signature, bad anatomy, deformed
 taxonomy:
   packId: pack_01
   packName: Photography & Realism

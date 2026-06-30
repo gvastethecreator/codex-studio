@@ -13,19 +13,24 @@ tags:
   - fantasy-sci-fi-costume
 visualDna:
   aesthetic: Shadow-form materiality, void-edge mystery, darkness-as-surface presence
-  form_and_line: Blurry, undefined-edge silhouette, smoke-like boundary, absence-contour, negative-space shape
-  color_palette: Black, void, abyss, pitch, ink, unlit, dark-matter
-  lighting_setup: Minimal rim separation, light-absence void, negative-fill darkness, silhouette-against-light, rim-light-only edge
-  material_texture: Darkness, light-absorbent void, shadow-cast density, absence-of-matter, velvety-black, depth-without-surface
-  render_quality: Void material poetry, light-swallowing depth, readable silhouette contour
-  spatial_distortion: Silhouette
-  atmosphere: Mystery, primeval-darkness stillness, unnamed-fear quiet, shadow silence
-  key_features: Rim separation, smoke-edge texture, velvet grain, light-absorbing depth, negative shape, silhouette contour
+  subject_treatment: Blurry, undefined-edge silhouette, smoke-like boundary, absence-contour, negative-space shape
+  color_and_tone: Black, void, abyss, pitch, ink, unlit, dark-matter
+  lighting_and_shadow: >-
+    Minimal rim separation, light-absence void, negative-fill darkness, silhouette-against-light,
+    rim-light-only edge
+  texture_and_material: >-
+    Darkness, light-absorbent void, shadow-cast density, absence-of-matter, velvety-black,
+    depth-without-surface
+  camera_and_composition: Silhouette
+  atmosphere_and_mood: Mystery, primeval-darkness stillness, unnamed-fear quiet, shadow silence
+  rendering_and_quality: Void material poetry, light-swallowing depth, readable silhouette contour
+  key_features: >-
+    Rim separation, smoke-edge texture, velvet grain, light-absorbing depth, negative shape, silhouette
+    contour
   creative_brief: >-
-    Transform the input into shadow-form materiality: light-absorbing void,
-    velvety black depth, rim edge, smoke-edge texture, silhouette contour and absence as
-    surface. Keep menace optional and atmospheric; do not require a humanoid
-    figure, evil character, realm scene, garment wearer or literal standing pose.
+    Transform the input into shadow-form materiality: light-absorbing void, velvety black depth, rim edge,
+    smoke-edge texture, silhouette contour and absence as surface. Keep menace optional and atmospheric; do
+    not require a humanoid figure, evil character, realm scene, garment wearer or literal standing pose.
 avoidRules:
   - bright cheerful lighting
   - fully illuminated surface

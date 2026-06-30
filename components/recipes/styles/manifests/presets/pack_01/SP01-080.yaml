@@ -13,15 +13,20 @@ tags:
   - portrait-and-studio
 visualDna:
   aesthetic: ID photo
-  form_and_line: Front-facing centered geometry
-  color_palette: White background
-  lighting_setup: Flat, shadowless
-  material_texture: None
-  render_quality: Bureaucratic, boring
-  spatial_distortion: Neutral administrative flattening
-  atmosphere: Official, deadpan
+  subject_treatment: Front-facing centered geometry
+  color_and_tone: White background
+  lighting_and_shadow: Flat, shadowless
+  texture_and_material: >-
+    Clean photographic skin, plain backdrop paper, controlled retouch, official-document sharpness, and fabric
+    detail kept subtle.
+  camera_and_composition: Neutral administrative flattening
+  atmosphere_and_mood: Official, deadpan
+  rendering_and_quality: Bureaucratic, boring
   key_features: White background
-  creative_brief: 'Passport-photo style strips any subject to administrative minimum: white background, centered front-facing geometry, flat shadowless light, neutral expression logic, and bureaucratic deadpan. Apply ID-photo certification without requiring human face, features, or biography.'
+  creative_brief: >-
+    Passport-photo style strips any subject to administrative minimum: white background, centered front-facing
+    geometry, flat shadowless light, neutral expression logic, and bureaucratic deadpan. Apply ID-photo
+    certification without requiring human face, features, or biography.
 avoidRules:
   - smiling
   - artistic

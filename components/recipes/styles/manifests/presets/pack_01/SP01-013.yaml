@@ -13,15 +13,20 @@ tags:
   - film-and-analog-process
 visualDna:
   aesthetic: Black and White film
-  form_and_line: Medium contrast
-  color_palette: Greyscale
-  lighting_setup: Versatile
-  material_texture: Visible grain
-  render_quality: Documentary film
-  spatial_distortion: None
-  atmosphere: Classic, gritty
+  subject_treatment: Medium contrast
+  color_and_tone: Greyscale
+  lighting_and_shadow: Versatile
+  texture_and_material: Visible grain
+  camera_and_composition: >-
+    Camera setup native to Ilford HP5 Plus: lens choice, crop distance, depth of field, and focal hierarchy
+    support 3. Film And Analog Process without generic framing.
+  atmosphere_and_mood: Classic, gritty
+  rendering_and_quality: Documentary film
   key_features: Monochrome
-  creative_brief: "Stripped of chroma's distraction, the image reduces to structure: light wrestling shadow, midtone grain carrying documentary urgency, edges honest rather than polished. Use silver-gelatin grit and flexible HP5 contrast on any subject; no street, stranger, or human detail required."
+  creative_brief: >-
+    Stripped of chroma's distraction, the image reduces to structure: light wrestling shadow, midtone grain
+    carrying documentary urgency, edges honest rather than polished. Use silver-gelatin grit and flexible HP5
+    contrast on any subject; no street, stranger, or human detail required.
 avoidRules:
   - color
   - chromatic aberration

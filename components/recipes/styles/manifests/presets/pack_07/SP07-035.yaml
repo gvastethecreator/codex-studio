@@ -13,19 +13,22 @@ tags:
   - civic-infrastructure-and-specialty-spaces
 visualDna:
   aesthetic: Archival classicism with quiet monumentality, leather-paper-brass order and reading discipline.
-  form_and_line: Tall catalog rhythm, access verticals, ordered symmetry and vault/alcove cadence.
-  color_palette: Brown, Gold, Dust, Calfskin Tan, Marbled Endpaper, Brass Patina, Forest Leather
-  lighting_setup: Warm archival glow, green-amber focal light, high shafts and aged brass accents.
-  material_texture: Oxidized leather, irregular paper edges, worn gilding, use-polished oak and darkened brass.
-  render_quality: Museum-quality aging with noble patina and catalog-readable depth of field.
-  spatial_distortion: Vertical archive rhythm, alcove compression and catalog-order depth that can organize any subject without requiring a literal library room.
-  atmosphere: Contemplative, rigorous and reverential, with punctual warmth over structured silence.
-  key_features: Green-amber warmth, catalog clusters, leather-paper-brass material hierarchy, vertical bay rhythm and cartographic accents.
+  subject_treatment: Tall catalog rhythm, access verticals, ordered symmetry and vault/alcove cadence.
+  color_and_tone: Brown, Gold, Dust, Calfskin Tan, Marbled Endpaper, Brass Patina, Forest Leather
+  lighting_and_shadow: Warm archival glow, green-amber focal light, high shafts and aged brass accents.
+  texture_and_material: Oxidized leather, irregular paper edges, worn gilding, use-polished oak and darkened brass.
+  camera_and_composition: >-
+    Vertical archive rhythm, alcove compression and catalog-order depth that can organize any subject without
+    requiring a literal library room.
+  atmosphere_and_mood: Contemplative, rigorous and reverential, with punctual warmth over structured silence.
+  rendering_and_quality: Museum-quality aging with noble patina and catalog-readable depth of field.
+  key_features: >-
+    Green-amber warmth, catalog clusters, leather-paper-brass material hierarchy, vertical bay rhythm and
+    cartographic accents.
   creative_brief: >-
-    Any subject should be ordered like old knowledge: vertical rhythm,
-    green-amber focal light, oxidized leather, irregular paper and muted brass.
-    Solemnity comes from cataloging and preservation, not from a fixed hall,
-    mandatory shelves, lamps, reading tables or literal library props.
+    Any subject should be ordered like old knowledge: vertical rhythm, green-amber focal light, oxidized
+    leather, irregular paper and muted brass. Solemnity comes from cataloging and preservation, not from a
+    fixed hall, mandatory shelves, lamps, reading tables or literal library props.
 avoidRules:
   - digital
   - modern

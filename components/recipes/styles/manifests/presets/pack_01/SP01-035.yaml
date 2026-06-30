@@ -13,15 +13,20 @@ tags:
   - lighting-techniques
 visualDna:
   aesthetic: Classic chiaroscuro lighting
-  form_and_line: Triangular highlight geometry
-  color_palette: Warm, dark shadows
-  lighting_setup: 45 degree single source
-  material_texture: Painterly tonal falloff
-  render_quality: Dramatic classical studio
-  spatial_distortion: None
-  atmosphere: Serious, artistic
+  subject_treatment: Triangular highlight geometry
+  color_and_tone: Warm, dark shadows
+  lighting_and_shadow: 45 degree single source
+  texture_and_material: Painterly tonal falloff
+  camera_and_composition: >-
+    Camera setup native to Rembrandt Lighting: lens choice, crop distance, depth of field, and focal hierarchy
+    support 2. Lighting Techniques without generic framing.
+  atmosphere_and_mood: Serious, artistic
+  rendering_and_quality: Dramatic classical studio
   key_features: Chiaroscuro
-  creative_brief: Apply Rembrandt lighting to the input with a single 45-degree source, warm tonal falloff, triangular highlight logic, and painterly chiaroscuro depth. Keep reveal/conceal geometry while freeing it from portrait faces, cheeks, or skin.
+  creative_brief: >-
+    Apply Rembrandt lighting to the input with a single 45-degree source, warm tonal falloff, triangular
+    highlight logic, and painterly chiaroscuro depth. Keep reveal/conceal geometry while freeing it from
+    portrait faces, cheeks, or skin.
 avoidRules:
   - flat
   - bright

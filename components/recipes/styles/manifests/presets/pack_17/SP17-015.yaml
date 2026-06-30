@@ -15,7 +15,9 @@ tags:
   - risograph
 visualDna:
   aesthetic: Two- or three-color risograph necromancy with medieval symbols, heavy ink, and fluorescent occult energy.
-  subject_treatment: A neon skull-candle totem with one clawed necromancer silhouette beneath it, reduced to bold ritual shapes and simplified armor.
+  subject_treatment: >-
+    A neon skull-candle totem with one clawed necromancer silhouette beneath it, reduced to bold ritual shapes
+    and simplified armor.
   color_and_tone: Black ink plus fluorescent magenta, lime, violet, cyan, or acid orange on pale tinted paper.
   lighting_and_shadow: Flat print color replaces light, with shadow delivered by clean black plates and controlled overprint.
   texture_and_material: Controlled Riso grain, clean ink density, misregistration, tidy stippled fills, and paper tooth.
@@ -33,6 +35,8 @@ avoidRules:
   - text
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP17-015.webp
+attributes:
+  negativePrompt: full-color realism, smooth airbrush, glossy 3d render, soft watercolor, explicit gore, watermark, text
 taxonomy:
   packId: pack_17
   packName: Medieval Fantasy & Dungeon Zine

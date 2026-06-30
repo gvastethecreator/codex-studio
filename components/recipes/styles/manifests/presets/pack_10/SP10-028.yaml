@@ -13,15 +13,19 @@ tags:
   - digital-glitch-and-noise
 visualDna:
   aesthetic: Flatbed scanner distortion
-  form_and_line: Distorted motion
-  color_palette: High contrast, dark background
-  lighting_setup: Moving light bar
-  material_texture: Dust on glass
-  render_quality: Distorted, shallow
-  spatial_distortion: Squashed
-  atmosphere: Eerie, surreal
+  subject_treatment: Distorted motion
+  color_and_tone: High contrast, dark background
+  lighting_and_shadow: Moving light bar
+  texture_and_material: Dust on glass
+  camera_and_composition: Squashed
+  atmosphere_and_mood: Eerie, surreal
+  rendering_and_quality: Distorted, shallow
   key_features: Black background
-  creative_brief: Apply scanography as a sensing method over the input with moving light-bar sweep, flattened depth, dust-on-glass texture, shallow black voids, and squashed motion distortion. If an object, plant, body, or artifact is present, press its forms into scanner glass; otherwise use scan light and compression as an eerie abstraction without requiring a specimen layout.
+  creative_brief: >-
+    Apply scanography as a sensing method over the input with moving light-bar sweep, flattened depth,
+    dust-on-glass texture, shallow black voids, and squashed motion distortion. If an object, plant, body, or
+    artifact is present, press its forms into scanner glass; otherwise use scan light and compression as an
+    eerie abstraction without requiring a specimen layout.
 avoidRules:
   - camera photo
 assets:

@@ -13,18 +13,18 @@ tags:
   - digital-glitch-and-noise
 visualDna:
   aesthetic: MacPaint style
-  form_and_line: Pixel patterns
-  color_palette: Black and White only
-  lighting_setup: Pattern density
-  material_texture: Checkerboard, noise
-  render_quality: Retro computer
-  spatial_distortion: No greyscale
-  atmosphere: Retro, binary
+  subject_treatment: Pixel patterns
+  color_and_tone: Black and White only
+  lighting_and_shadow: Pattern density
+  texture_and_material: Checkerboard, noise
+  camera_and_composition: No greyscale
+  atmosphere_and_mood: Retro, binary
+  rendering_and_quality: Retro computer
   key_features: Atkinson dither
   creative_brief: >-
-    Apply one-bit dithering to the input: black-white thresholds, ordered or
-    error-diffused pixel patterns, harsh quantization, and optical gray made from
-    binary marks should keep the subject readable at low fidelity.
+    Apply one-bit dithering to the input: black-white thresholds, ordered or error-diffused pixel patterns,
+    harsh quantization, and optical gray made from binary marks should keep the subject readable at low
+    fidelity.
 avoidRules:
   - grey
   - smooth

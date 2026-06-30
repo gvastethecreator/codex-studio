@@ -13,21 +13,21 @@ tags:
   - natural-materials
 visualDna:
   aesthetic: Roof tile stone
-  form_and_line: Jagged edges
-  color_palette: Dark Grey, Blue
-  lighting_setup: Matte
-  material_texture: Layered, flaky
-  render_quality: Natural, durable
-  spatial_distortion: Flat layers
-  atmosphere: Cold, strong
+  subject_treatment: Jagged edges
+  color_and_tone: Dark Grey, Blue
+  lighting_and_shadow: Matte
+  texture_and_material: Layered, flaky
+  camera_and_composition: Flat layers
+  atmosphere_and_mood: Cold, strong
+  rendering_and_quality: Natural, durable
   key_features: Layers
   creative_brief: >-
-    Capture the clean violence of split slate, where nature fractures into planar perfection along dark grey-blue planes
-    with edges that carry the memory of the break. The face reveals the patient accumulation of sediment, layer upon
-    layer of dark mineral patience. This is geology as geometry, raw and precise. Use Slate as portable surface/render
-    behavior over any input: map its texture, light response, edge wear, color chemistry, and tactile rhythm onto the
-    subject instead of requiring a literal material sample, macro tile, wall, landscape, source object, or scene where
-    the material naturally appears.
+    Capture the clean violence of split slate, where nature fractures into planar perfection along dark
+    grey-blue planes with edges that carry the memory of the break. The face reveals the patient accumulation
+    of sediment, layer upon layer of dark mineral patience. This is geology as geometry, raw and precise. Use
+    Slate as portable surface/render behavior over any input: map its texture, light response, edge wear,
+    color chemistry, and tactile rhythm onto the subject instead of requiring a literal material sample, macro
+    tile, wall, landscape, source object, or scene where the material naturally appears.
 avoidRules:
   - smooth
   - polished

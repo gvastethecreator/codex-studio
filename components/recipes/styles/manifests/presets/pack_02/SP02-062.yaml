@@ -13,15 +13,23 @@ tags:
   - lighting-and-atmosphere
 visualDna:
   aesthetic: Twilight
-  form_and_line: None
-  color_palette: Deep Blue/Purple, ultramarine sky, violet horizon, warm window amber
-  lighting_setup: Soft ambient, skydome fill, no shadows, twilight wrap
-  material_texture: Smooth, noise-free, silky gradient
-  render_quality: Calm, transition-moment stillness, smooth twilight tonality
-  spatial_distortion: None
-  atmosphere: Quiet, cool, liminal pause, between-day-and-night
+  subject_treatment: >-
+    Treat subjects as believable filmed or broadcast subjects under Blue Hour: casting, wardrobe, props,
+    motion cues, and silhouette hierarchy follow 5. Lighting And Atmosphere cinematic and broadcast grammar
+    without locking to one plot beat.
+  color_and_tone: Deep Blue/Purple, ultramarine sky, violet horizon, warm window amber
+  lighting_and_shadow: Soft ambient, skydome fill, no shadows, twilight wrap
+  texture_and_material: Smooth, noise-free, silky gradient
+  camera_and_composition: >-
+    Camera language native to Blue Hour: genre-aware framing, lens character, focal hierarchy, motion cue, and
+    vertical style-card composition.
+  atmosphere_and_mood: Quiet, cool, liminal pause, between-day-and-night
+  rendering_and_quality: Calm, transition-moment stillness, smooth twilight tonality
   key_features: Blue ambient wrap, violet gradient, low contrast, warm practical accents
-  creative_brief: 'Treat blue hour as cool ambient cinema language: ultramarine wrap, violet gradients, low shadow contrast, and small warm practical accents where useful. Avoid forcing cities, windows, streets, or sky-dominant scenes. The style should create liminal twilight calm around any input.'
+  creative_brief: >-
+    Treat blue hour as cool ambient cinema language: ultramarine wrap, violet gradients, low shadow contrast,
+    and small warm practical accents where useful. Avoid forcing cities, windows, streets, or sky-dominant
+    scenes. The style should create liminal twilight calm around any input.
 avoidRules:
   - orange
   - sun

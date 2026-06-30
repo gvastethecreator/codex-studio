@@ -14,16 +14,34 @@ tags:
   - salvagepunk
   - sailpunk
 visualDna:
-  aesthetic: coastal sailpunk salvage identity led by one wind-pulled salvage sailwright-captain, with patched sails, reused hull curves, rope winches, and communal wind rigs behind.
-  form_and_line: Stone tools, rope mechanics, carved engines, low-tech power rigs, salvage sails, and rough handmade engineering. Core composition uses one main sailwright-captain, salvage sails, patched hulls, rope winches, coastal rigs.
-  color_palette: canvas white, rust, sea blue, tar gray
-  lighting_setup: coastal sunlight, sail translucency, welding glints, water bounce
-  material_texture: canvas, drift metal, rope, tar, patched hulls, salt wood
-  render_quality: Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity, moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material simulation, or hyper-detail.
-  spatial_distortion: Sanctuaries, markets, camps, bridges, battery houses, and shore commons built from elemental materials. Keep depth legible and avoid default hallway, aisle, or empty studio staging.
-  atmosphere: windy, communal, rough, optimistic
+  aesthetic: >-
+    coastal sailpunk salvage identity led by one wind-pulled salvage sailwright-captain, with patched sails,
+    reused hull curves, rope winches, and communal wind rigs behind.
+  subject_treatment: >-
+    Stone tools, rope mechanics, carved engines, low-tech power rigs, salvage sails, and rough handmade
+    engineering. Core composition uses one main sailwright-captain, salvage sails, patched hulls, rope
+    winches, coastal rigs.
+  color_and_tone: canvas white, rust, sea blue, tar gray
+  lighting_and_shadow: coastal sunlight, sail translucency, welding glints, water bounce
+  texture_and_material: canvas, drift metal, rope, tar, patched hulls, salt wood
+  camera_and_composition: >-
+    Sanctuaries, markets, camps, bridges, battery houses, and shore commons built from elemental materials.
+    Keep depth legible and avoid default hallway, aisle, or empty studio staging.
+  atmosphere_and_mood: windy, communal, rough, optimistic
+  rendering_and_quality: >-
+    Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly
+    planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity,
+    moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material
+    simulation, or hyper-detail.
   key_features: main sailwright-captain, salvage sails, patched hulls, rope winches, coastal rigs
-  creative_brief: 'Salvagepunk with wind and community without pirate/adventure hero styling: make the sail geometry, hull curves, rope line, and one integrated sailwright figure form a maritime craft poster. Vary crop and composition; avoid centered full-body adventurer poses, crew-only staging, random junk collage, harbor market, pirate costume portrait, or object-only boat render. Favor folk-modernist poster structure, controlled digital painting, clean matte shapes, and handmade material poetry over American RPG/sourcebook illustration, cinematic key art, or hyper-detailed concept art. Use few bold color/value zones, moderate texture, large shapes, clean surfaces, and finish denoised with no excessive noise or ultra-fine detail.'
+  creative_brief: >-
+    Salvagepunk with wind and community without pirate/adventure hero styling: make the sail geometry, hull
+    curves, rope line, and one integrated sailwright figure form a maritime craft poster. Vary crop and
+    composition; avoid centered full-body adventurer poses, crew-only staging, random junk collage, harbor
+    market, pirate costume portrait, or object-only boat render. Favor folk-modernist poster structure,
+    controlled digital painting, clean matte shapes, and handmade material poetry over American RPG/sourcebook
+    illustration, cinematic key art, or hyper-detailed concept art. Use few bold color/value zones, moderate
+    texture, large shapes, clean surfaces, and finish denoised with no excessive noise or ultra-fine detail.
 avoidRules:
   - photoreal
   - watermark
@@ -37,7 +55,23 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP15-079.webp
 attributes:
-  negativePrompt: photoreal, hyperreal, realistic render, cinematic realism, AAA key art, American fantasy RPG hero, sourcebook hero art, superhero pose, YA adventure cover, centered full-body adventurer, young rugged protagonist, cloak and pouches, leather belt costume, boots hero pose, photographic skin pores, realistic foreground portrait, realistic facial hair detail, lens blur, bokeh, depth-of-field photo look, generic soldier hero, guard pin-up, weapon-first pose, HDR lens realism, 3D render look, PBR material simulation, hyper-detailed concept art, watermark, text, logo, generic style, over-abstract, object-only card, workers-only composition, anonymous worker crew, crew-only staging, interchangeable preset, duplicated motifs, generic glass utopia, unmotivated market aisle, unmotivated library aisle, fantasy corridor, random junk collage, pirate costume portrait, harbor market, crowded dock, flags, banners, skull emblem, pirate logo, readable sail marks, weapons, random camera held by subject, studio wall fixation, chair fixation, curtain fixation, lamp fixation, scarf fixation, pedestal fixation, bird fixation, excessive noise, ultra-fine detail, over-sharpened microtexture, over-rendered machinery, noisy grime, tiny rope clutter, busy texture chatter, realistic uniform portrait, uniformed officer hero, foreground guard portrait, detailed tattoo focus, dense machinery wallpaper, overcrowded scene, high-frequency surface detail, cinematic close-up portrait, flat black fill, crushed black, pure black masses, muddy black fields, generic American illustration, generic Western RPG card art
+  negativePrompt: >-
+    photoreal, hyperreal, realistic render, cinematic realism, AAA key art, American fantasy RPG hero,
+    sourcebook hero art, superhero pose, YA adventure cover, centered full-body adventurer, young rugged
+    protagonist, cloak and pouches, leather belt costume, boots hero pose, photographic skin pores, realistic
+    foreground portrait, realistic facial hair detail, lens blur, bokeh, depth-of-field photo look, generic
+    soldier hero, guard pin-up, weapon-first pose, HDR lens realism, 3D render look, PBR material simulation,
+    hyper-detailed concept art, watermark, text, logo, generic style, over-abstract, object-only card,
+    workers-only composition, anonymous worker crew, crew-only staging, interchangeable preset, duplicated
+    motifs, generic glass utopia, unmotivated market aisle, unmotivated library aisle, fantasy corridor,
+    random junk collage, pirate costume portrait, harbor market, crowded dock, flags, banners, skull emblem,
+    pirate logo, readable sail marks, weapons, random camera held by subject, studio wall fixation, chair
+    fixation, curtain fixation, lamp fixation, scarf fixation, pedestal fixation, bird fixation, excessive
+    noise, ultra-fine detail, over-sharpened microtexture, over-rendered machinery, noisy grime, tiny rope
+    clutter, busy texture chatter, realistic uniform portrait, uniformed officer hero, foreground guard
+    portrait, detailed tattoo focus, dense machinery wallpaper, overcrowded scene, high-frequency surface
+    detail, cinematic close-up portrait, flat black fill, crushed black, pure black masses, muddy black
+    fields, generic American illustration, generic Western RPG card art
 taxonomy:
   packId: pack_15
   packName: Punk Spectrum Vault

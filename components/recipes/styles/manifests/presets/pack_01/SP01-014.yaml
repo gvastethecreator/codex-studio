@@ -13,20 +13,20 @@ tags:
   - film-and-analog-process
 visualDna:
   aesthetic: Night photography film
-  form_and_line: Halation around lights
-  color_palette: Cool tungsten balance
-  lighting_setup: Artificial light
-  material_texture: Medium grain
-  render_quality: Cinematic, moody
-  spatial_distortion: Red halation glow
-  atmosphere: Nocturnal, moody
+  subject_treatment: Halation around lights
+  color_and_tone: Cool tungsten balance
+  lighting_and_shadow: Artificial light
+  texture_and_material: Medium grain
+  camera_and_composition: Red halation glow
+  atmosphere_and_mood: Nocturnal, moody
+  rendering_and_quality: Cinematic, moody
   key_features: Red halos
   creative_brief: >-
-    Tungsten-balanced darkness with red halation blooming around every hard light source. Highlights bleed like crimson
-    chemical halos into cool shadow, while medium grain keeps image tactile and cinematic. The style is nocturnal sensor
-    poetry, not a requirement for city streets. Apply this photographic look over any input: preserve lens behavior,
-    exposure logic, color response, framing discipline, and artifact pattern while avoiding a required place, face,
-    travel scene, landscape, or narrative setup.
+    Tungsten-balanced darkness with red halation blooming around every hard light source. Highlights bleed
+    like crimson chemical halos into cool shadow, while medium grain keeps image tactile and cinematic. The
+    style is nocturnal sensor poetry, not a requirement for city streets. Apply this photographic look over
+    any input: preserve lens behavior, exposure logic, color response, framing discipline, and artifact
+    pattern while avoiding a required place, face, travel scene, landscape, or narrative setup.
 avoidRules:
   - illustration
   - painting
@@ -47,8 +47,8 @@ assets:
   defaultImage: /assets/recipes/styles/defaults/SP01-014.webp
 attributes:
   negativePrompt: >-
-    illustration, painting, drawing, 3d render, cartoon, anime, sketch, blurry, noisy, low resolution, watermark, text,
-    signature, bad anatomy, deformed
+    illustration, painting, drawing, 3d render, cartoon, anime, sketch, blurry, noisy, low resolution,
+    watermark, text, signature, bad anatomy, deformed
 taxonomy:
   packId: pack_01
   packName: Photography & Realism

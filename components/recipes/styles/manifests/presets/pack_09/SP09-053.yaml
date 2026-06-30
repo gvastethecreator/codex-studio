@@ -13,15 +13,19 @@ tags:
   - elemental-and-fx
 visualDna:
   aesthetic: Thick fog
-  form_and_line: Soft gradients
-  color_palette: Grey, White
-  lighting_setup: Diffused
-  material_texture: Gaseous
-  render_quality: Atmospheric, soft
-  spatial_distortion: Turbulence
-  atmosphere: Mysterious, blind
+  subject_treatment: Soft gradients
+  color_and_tone: Grey, White
+  lighting_and_shadow: Diffused
+  texture_and_material: Gaseous
+  camera_and_composition: Turbulence
+  atmosphere_and_mood: Mysterious, blind
+  rendering_and_quality: Atmospheric, soft
   key_features: Density
-  creative_brief: 'Apply thick fog as volumetric treatment around the input: grey-white gradients, softened edges, staged loss of detail, cool damp density, and slow turbulence veiling form. Preserve recognizable subject cues as half-seen silhouettes or partial contours; avoid replacing the input with empty mist unless the prompt already asks for abstraction.'
+  creative_brief: >-
+    Apply thick fog as volumetric treatment around the input: grey-white gradients, softened edges, staged
+    loss of detail, cool damp density, and slow turbulence veiling form. Preserve recognizable subject cues as
+    half-seen silhouettes or partial contours; avoid replacing the input with empty mist unless the prompt
+    already asks for abstraction.
 avoidRules:
   - hard-edged clutter
 assets:

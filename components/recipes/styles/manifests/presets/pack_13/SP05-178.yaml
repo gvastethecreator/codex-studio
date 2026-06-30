@@ -12,20 +12,29 @@ tags:
   - anime-character-and-lifestyle
   - shojo-magical-girl-and-visionary-classics
 visualDna:
-  aesthetic: Urban-occult crisis anime language with mythic duty, invasive botanical dread, and 90s emergency-response supernatural momentum abstracted into symbol-and-growth pressure
-  form_and_line: Sharp cel-era contouring, thorn-vine intrusion silhouettes, tactical action stroke bursts, and ritual-symbol inking accents
-  color_palette: Emergency reds, toxic chlorophyll greens, asphalt neutrals, talisman-gold accents, and stormed night blues
-  lighting_setup: Siren-practical contrast, talisman glow cues, high-contrast cel shadow blocks, and invasion-event rim flashes
-  material_texture: Wet mineral surfaces, invasive botanical creep textures, painted matte depth fields, and light cel-grain film warmth
-  render_quality: High-tension 90s occult-action render with clear threat readability, procedural rhythm, and myth-vs-modern polish
-  spatial_distortion: Kinetic perspective with growth-driven deformation and emergency-zone depth compression
-  atmosphere: Urgent, mythic, urban, supernatural
+  aesthetic: >-
+    Urban-occult crisis anime language with mythic duty, invasive botanical dread, and 90s emergency-response
+    supernatural momentum abstracted into symbol-and-growth pressure
+  subject_treatment: >-
+    Sharp cel-era contouring, thorn-vine intrusion silhouettes, tactical action stroke bursts, and
+    ritual-symbol inking accents
+  color_and_tone: Emergency reds, toxic chlorophyll greens, asphalt neutrals, talisman-gold accents, and stormed night blues
+  lighting_and_shadow: >-
+    Siren-practical contrast, talisman glow cues, high-contrast cel shadow blocks, and invasion-event rim
+    flashes
+  texture_and_material: >-
+    Wet mineral surfaces, invasive botanical creep textures, painted matte depth fields, and light cel-grain
+    film warmth
+  camera_and_composition: Kinetic perspective with growth-driven deformation and emergency-zone depth compression
+  atmosphere_and_mood: Urgent, mythic, urban, supernatural
+  rendering_and_quality: >-
+    High-tension 90s occult-action render with clear threat readability, procedural rhythm, and myth-vs-modern
+    polish
   key_features: Ritual symbols, monster-vine invasions, emergency framing, lineage-pressure posture, occult-tech contrast
   creative_brief: >-
-    Infect the input with mythic urban purge pressure: ritual symbols, siren-red
-    framing, toxic chlorophyll intrusions, talisman-gold flashes, and occult
-    procedural tension can reshape any subject without requiring Tokyo streets,
-    monster vines, responders, or a literal crisis scene.
+    Infect the input with mythic urban purge pressure: ritual symbols, siren-red framing, toxic chlorophyll
+    intrusions, talisman-gold flashes, and occult procedural tension can reshape any subject without requiring
+    Tokyo streets, monster vines, responders, or a literal crisis scene.
 avoidRules:
   - realistic
   - 3d render
@@ -42,7 +51,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-178.webp
 attributes:
-  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
+  negativePrompt: >-
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts,
+    watermark, text, signature
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle

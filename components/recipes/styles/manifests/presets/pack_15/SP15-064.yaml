@@ -14,16 +14,38 @@ tags:
   - folk-horror
   - infrastructure
 visualDna:
-  aesthetic: rural occult infrastructure built around one distinctive signal-keeper protagonist, transformer pole omen-machine, ceramic insulators, straw warning bundles, blank ribbons, and dusk farmland.
-  form_and_line: Ritual diagrams, gothic silhouettes, folk hardware, talismanic machines, and mythic street-level staging. Core composition uses rural signal-keeper protagonist, transformer pole, ceramic insulators, straw warning bundles, blank ribbons, farmland silhouettes.
-  color_palette: straw yellow, transformer gray, blood-orange dusk, field black
-  lighting_setup: dusk backlight, transformer hum glow, sparse warm dots, long field shadows
-  material_texture: straw, ceramic insulators, mud, ribbon, galvanized metal
-  render_quality: Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity, moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material simulation, or hyper-detail.
-  spatial_distortion: Switchyards, foundries, chapels, cairns, repair shops, salons, processions, and rural transformers. Keep depth legible and avoid default hallway, aisle, or empty studio staging.
-  atmosphere: uneasy, rural, grounded, superstitious
-  key_features: rural signal-keeper protagonist, transformer pole, ceramic insulators, straw warning bundles, blank ribbons
-  creative_brief: 'Folk horror through person plus infrastructure and place: one distinctive rural signal-keeper protagonist near or beneath a transformer pole, ceramic insulators, straw warning bundles, blank ribbons, dusk field silhouettes, and orange transformer hum. Character must carry the preset through posture, coat/hood silhouette, guarded hand gesture, and uneasy relation to the transformer; pole and ribbons support them, never replace them. Avoid object-only omen poster, technician crew, scarecrow monster, ritual sacrifice, worker propaganda, fantasy forest hallway, or RPG character styling. Use curated editorial style-card structure, flat graphic illustration, gouache-poster shapes, cel-poster blocking, and controlled digital painting over realism or generic concept art. Use few bold color/value zones, large matte shapes, clean surfaces, low-to-moderate detail, and finish denoised with no excessive noise or ultra-fine detail.'
+  aesthetic: >-
+    rural occult infrastructure built around one distinctive signal-keeper protagonist, transformer pole
+    omen-machine, ceramic insulators, straw warning bundles, blank ribbons, and dusk farmland.
+  subject_treatment: >-
+    Ritual diagrams, gothic silhouettes, folk hardware, talismanic machines, and mythic street-level staging.
+    Core composition uses rural signal-keeper protagonist, transformer pole, ceramic insulators, straw warning
+    bundles, blank ribbons, farmland silhouettes.
+  color_and_tone: straw yellow, transformer gray, blood-orange dusk, field black
+  lighting_and_shadow: dusk backlight, transformer hum glow, sparse warm dots, long field shadows
+  texture_and_material: straw, ceramic insulators, mud, ribbon, galvanized metal
+  camera_and_composition: >-
+    Switchyards, foundries, chapels, cairns, repair shops, salons, processions, and rural transformers. Keep
+    depth legible and avoid default hallway, aisle, or empty studio staging.
+  atmosphere_and_mood: uneasy, rural, grounded, superstitious
+  rendering_and_quality: >-
+    Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly
+    planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity,
+    moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material
+    simulation, or hyper-detail.
+  key_features: >-
+    rural signal-keeper protagonist, transformer pole, ceramic insulators, straw warning bundles, blank
+    ribbons
+  creative_brief: >-
+    Folk horror through person plus infrastructure and place: one distinctive rural signal-keeper protagonist
+    near or beneath a transformer pole, ceramic insulators, straw warning bundles, blank ribbons, dusk field
+    silhouettes, and orange transformer hum. Character must carry the preset through posture, coat/hood
+    silhouette, guarded hand gesture, and uneasy relation to the transformer; pole and ribbons support them,
+    never replace them. Avoid object-only omen poster, technician crew, scarecrow monster, ritual sacrifice,
+    worker propaganda, fantasy forest hallway, or RPG character styling. Use curated editorial style-card
+    structure, flat graphic illustration, gouache-poster shapes, cel-poster blocking, and controlled digital
+    painting over realism or generic concept art. Use few bold color/value zones, large matte shapes, clean
+    surfaces, low-to-moderate detail, and finish denoised with no excessive noise or ultra-fine detail.
 avoidRules:
   - photoreal
   - watermark
@@ -37,7 +59,21 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP15-064.webp
 attributes:
-  negativePrompt: photoreal, hyperreal, realistic render, photoreal painterly realism, cinematic realism, AAA key art, photographic skin pores, realistic foreground portrait, realistic facial hair detail, lens blur, bokeh, depth-of-field photo look, straw-mask portrait, scarecrow body, hanging figure, blood, gore, cult symbols, readable warning text, ribbon glyphs, religious icon, lantern carpet, birds as motif, fantasy forest, photoreal mud, generic soldier hero, guard pin-up, weapon-first pose, HDR lens realism, 3D render look, PBR material simulation, hyper-detailed concept art, watermark, text, logo, generic style, over-abstract, interchangeable preset, duplicated motifs, generic glass utopia, unmotivated market aisle, unmotivated library aisle, fantasy corridor, random camera held by subject, studio wall fixation, chair fixation, curtain fixation, lamp fixation, scarf fixation, pedestal fixation, bird fixation, excessive noise, ultra-fine detail, over-sharpened microtexture, over-rendered machinery, noisy grime, tiny rivets everywhere, busy texture chatter, realistic uniform portrait, uniformed officer hero, foreground guard portrait, detailed tattoo focus, dense machinery wallpaper, overcrowded scene, high-frequency surface detail, cinematic close-up portrait, flat black fill, crushed black, pure black masses, muddy black fields, generic American illustration, generic Western RPG card art
+  negativePrompt: >-
+    photoreal, hyperreal, realistic render, photoreal painterly realism, cinematic realism, AAA key art,
+    photographic skin pores, realistic foreground portrait, realistic facial hair detail, lens blur, bokeh,
+    depth-of-field photo look, straw-mask portrait, scarecrow body, hanging figure, blood, gore, cult symbols,
+    readable warning text, ribbon glyphs, religious icon, lantern carpet, birds as motif, fantasy forest,
+    photoreal mud, generic soldier hero, guard pin-up, weapon-first pose, HDR lens realism, 3D render look,
+    PBR material simulation, hyper-detailed concept art, watermark, text, logo, generic style, over-abstract,
+    interchangeable preset, duplicated motifs, generic glass utopia, unmotivated market aisle, unmotivated
+    library aisle, fantasy corridor, random camera held by subject, studio wall fixation, chair fixation,
+    curtain fixation, lamp fixation, scarf fixation, pedestal fixation, bird fixation, excessive noise,
+    ultra-fine detail, over-sharpened microtexture, over-rendered machinery, noisy grime, tiny rivets
+    everywhere, busy texture chatter, realistic uniform portrait, uniformed officer hero, foreground guard
+    portrait, detailed tattoo focus, dense machinery wallpaper, overcrowded scene, high-frequency surface
+    detail, cinematic close-up portrait, flat black fill, crushed black, pure black masses, muddy black
+    fields, generic American illustration, generic Western RPG card art
 taxonomy:
   packId: pack_15
   packName: Punk Spectrum Vault

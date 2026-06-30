@@ -13,20 +13,31 @@ tags:
   - anime
   - action
 visualDna:
-  aesthetic: Monumental impact burst, competitive crescendo, crimson-gold triumph pressure, controlled debris abstraction, final-frame intensity.
-  form_and_line: Hard strokes, athletic contour energy, controlled FX arcs, thick impact silhouettes, and heavy compression lines.
-  color_palette: Crimson, gold, charcoal red, hot white impact cores, and smoky black anchors.
-  lighting_setup: Punctual burst key, high overhead flare, rimmed dust glow, and hard celebratory contrast.
-  material_texture: Cracked surface abstraction, impact dust, hot particles, matte sweat sheen, and compressed shockwave grain.
-  render_quality: Fight-climax anime finish with crisp focal hierarchy, readable burst geometry, and polished action clarity.
-  spatial_distortion: Low-angle monumentality, impact-center expansion, compressed foreground scale, and burst-led perspective pull.
-  atmosphere: Explosive, triumphant, competitive, dramatic.
-  key_features: Burst geometry, monumental low angle, crimson-gold pressure, controlled debris texture, climax-frame readability.
-  creative_brief: >
-    Render any subject as a decisive impact crescendo: low-angle scale,
-    crimson-gold burst light, controlled shock texture, and heavy contour rhythm
-    should create final-frame drama without venues, spectators, named roles,
-    signature moves, or required debris.
+  aesthetic: >-
+    Monumental impact burst, competitive crescendo, crimson-gold triumph pressure, controlled debris
+    abstraction, final-frame intensity.
+  subject_treatment: >-
+    Hard strokes, athletic contour energy, controlled FX arcs, thick impact silhouettes, and heavy compression
+    lines.
+  color_and_tone: Crimson, gold, charcoal red, hot white impact cores, and smoky black anchors.
+  lighting_and_shadow: Punctual burst key, high overhead flare, rimmed dust glow, and hard celebratory contrast.
+  texture_and_material: >-
+    Cracked surface abstraction, impact dust, hot particles, matte sweat sheen, and compressed shockwave
+    grain.
+  camera_and_composition: >-
+    Low-angle monumentality, impact-center expansion, compressed foreground scale, and burst-led perspective
+    pull.
+  atmosphere_and_mood: Explosive, triumphant, competitive, dramatic.
+  rendering_and_quality: >-
+    Fight-climax anime finish with crisp focal hierarchy, readable burst geometry, and polished action
+    clarity.
+  key_features: >-
+    Burst geometry, monumental low angle, crimson-gold pressure, controlled debris texture, climax-frame
+    readability.
+  creative_brief: >-
+    Render any subject as a decisive impact crescendo: low-angle scale, crimson-gold burst light, controlled
+    shock texture, and heavy contour rhythm should create final-frame drama without venues, spectators, named
+    roles, signature moves, or required debris.
 avoidRules:
   - photoreal
   - static

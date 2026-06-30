@@ -13,22 +13,22 @@ tags:
   - man-made-materials
 visualDna:
   aesthetic: Packing foam
-  form_and_line: Beads
-  color_palette: White
-  lighting_setup: Subsurface scattering
-  material_texture: Beaded
-  render_quality: Cheap, packaging
-  spatial_distortion: Broken beads
-  atmosphere: Disposable, white
+  subject_treatment: Beads
+  color_and_tone: White
+  lighting_and_shadow: Subsurface scattering
+  texture_and_material: Beaded
+  camera_and_composition: Broken beads
+  atmosphere_and_mood: Disposable, white
+  rendering_and_quality: Cheap, packaging
   key_features: Cell structure
   creative_brief: >-
-    Summon the cellular geometry of expanded polystyrene where fused white beads create a surface of dimpled spheres,
-    each one a tiny void of trapped air, the subsurface scattering giving the material a ghostly translucence at the
-    edges. Broken beads should reveal the internal cell structure like a cross-section of frozen foam. Capture the
-    accidental sculpture of the disposable, packaging as industrial archaeology. Use Polystyrene as portable
-    surface/render behavior over any input: map its texture, light response, edge wear, color chemistry, and tactile
-    rhythm onto the subject instead of requiring a literal material sample, macro tile, wall, landscape, source object,
-    or scene where the material naturally appears.
+    Summon the cellular geometry of expanded polystyrene where fused white beads create a surface of dimpled
+    spheres, each one a tiny void of trapped air, the subsurface scattering giving the material a ghostly
+    translucence at the edges. Broken beads should reveal the internal cell structure like a cross-section of
+    frozen foam. Capture the accidental sculpture of the disposable, packaging as industrial archaeology. Use
+    Polystyrene as portable surface/render behavior over any input: map its texture, light response, edge
+    wear, color chemistry, and tactile rhythm onto the subject instead of requiring a literal material sample,
+    macro tile, wall, landscape, source object, or scene where the material naturally appears.
 avoidRules:
   - smooth plastic
 assets:

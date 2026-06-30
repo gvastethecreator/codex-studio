@@ -13,19 +13,20 @@ tags:
   - printmaking
 visualDna:
   aesthetic: Silkscreen poster
-  form_and_line: No outlines, color shapes
-  color_palette: Flat, vibrant, layered
-  lighting_setup: None
-  material_texture: Mesh pattern, ink overlay
-  render_quality: Warhol, pop art
-  spatial_distortion: Misregistration (offset)
-  atmosphere: Commercial, bold
+  subject_treatment: No outlines, color shapes
+  color_and_tone: Flat, vibrant, layered
+  lighting_and_shadow: >-
+    Lighting for Screenprint (Serigraphy): purposeful key, bounce, rim, shadow depth, and focal readability
+    matched to 3. Printmaking.
+  texture_and_material: Mesh pattern, ink overlay
+  camera_and_composition: Misregistration (offset)
+  atmosphere_and_mood: Commercial, bold
+  rendering_and_quality: Warhol, pop art
   key_features: Layered colors
   creative_brief: >-
-    Apply screenprint/serigraphy logic to any input: mesh-pulled ink, flat
-    separated color passes, bold registration offsets, opaque poster planes, and
-    reproduction-first contrast. Keep graphic commercial punch without requiring
-    slogans, portraits, pop icons, product ads, or readable text.
+    Apply screenprint/serigraphy logic to any input: mesh-pulled ink, flat separated color passes, bold
+    registration offsets, opaque poster planes, and reproduction-first contrast. Keep graphic commercial punch
+    without requiring slogans, portraits, pop icons, product ads, or readable text.
 avoidRules:
   - photo
   - realistic
@@ -45,7 +46,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP06-035.webp
 attributes:
-  negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border
+  negativePrompt: >-
+    photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy,
+    watermark, text, signature, frame, border
 taxonomy:
   packId: pack_06
   packName: Essential Art Styles

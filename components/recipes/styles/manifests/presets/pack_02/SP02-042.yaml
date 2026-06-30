@@ -13,15 +13,19 @@ tags:
   - animation-styles
 visualDna:
   aesthetic: Folded paper animation
-  form_and_line: Fold lines
-  color_palette: Origami paper, washi tones, muted coral, indigo, rice white
-  lighting_setup: Soft studio, gentle fill, paper-diffuse bounce
-  material_texture: Paper grain, fold crease, fibrous edge, handmade pulp
-  render_quality: Delicate, craft, handmade patience, precision folding
-  spatial_distortion: Low poly (paper), geometric faceting, crease-driven planes
-  atmosphere: Handmade, precise, storybook craft, gentle wonder
+  subject_treatment: Fold lines
+  color_and_tone: Origami paper, washi tones, muted coral, indigo, rice white
+  lighting_and_shadow: Soft studio, gentle fill, paper-diffuse bounce
+  texture_and_material: Paper grain, fold crease, fibrous edge, handmade pulp
+  camera_and_composition: Low poly (paper), geometric faceting, crease-driven planes
+  atmosphere_and_mood: Handmade, precise, storybook craft, gentle wonder
+  rendering_and_quality: Delicate, craft, handmade patience, precision folding
   key_features: Folds, crease shadow, paper thickness, fibrous edge, handmade pulp
-  creative_brief: 'Recompose any input as folded paper construction: planar facets, visible crease shadows, fibrous edges, and soft studio bounce across handmade paper. Avoid forcing landscapes, tabletop worlds, or origami creatures. The subject should keep its intent while becoming a fragile assembly of folds, thickness, and careful craft.'
+  creative_brief: >-
+    Recompose any input as folded paper construction: planar facets, visible crease shadows, fibrous edges,
+    and soft studio bounce across handmade paper. Avoid forcing landscapes, tabletop worlds, or origami
+    creatures. The subject should keep its intent while becoming a fragile assembly of folds, thickness, and
+    careful craft.
 avoidRules:
   - drawn
   - 3d

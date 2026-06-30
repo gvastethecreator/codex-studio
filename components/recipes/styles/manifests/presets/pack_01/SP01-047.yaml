@@ -13,15 +13,20 @@ tags:
   - nature-and-wildlife
 visualDna:
   aesthetic: Zone System fine-art realism
-  form_and_line: Sharp f/64 focus
-  color_palette: Black and White Zone System
-  lighting_setup: Dramatic sun/cloud
-  material_texture: Tonal microdetail
-  render_quality: Masterpiece, sharp
-  spatial_distortion: None
-  atmosphere: Grand, timeless
+  subject_treatment: Sharp f/64 focus
+  color_and_tone: Black and White Zone System
+  lighting_and_shadow: Dramatic sun/cloud
+  texture_and_material: Tonal microdetail
+  camera_and_composition: >-
+    Camera setup native to Landscape (Ansel Adams): lens choice, crop distance, depth of field, and focal
+    hierarchy support 6. Nature And Wildlife without generic framing.
+  atmosphere_and_mood: Grand, timeless
+  rendering_and_quality: Masterpiece, sharp
   key_features: High contrast tonal zones
-  creative_brief: "Ansel Adams' discipline becomes transferable tone design: f/64 sharpness, silver-black Zone System contrast, deep microdetail, and monumental stillness across the full value range. Apply fine-art landscape rigor to any subject without requiring mountains, rocks, clouds, wilderness, or sky."
+  creative_brief: >-
+    Ansel Adams' discipline becomes transferable tone design: f/64 sharpness, silver-black Zone System
+    contrast, deep microdetail, and monumental stillness across the full value range. Apply fine-art landscape
+    rigor to any subject without requiring mountains, rocks, clouds, wilderness, or sky.
 avoidRules:
   - color
 assets:

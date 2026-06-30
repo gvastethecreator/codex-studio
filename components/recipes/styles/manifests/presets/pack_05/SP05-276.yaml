@@ -12,19 +12,25 @@ tags:
   - anime-battle-and-worlds
   - dark-fantasy-and-seinen
 visualDna:
-  aesthetic: Sun-bleached cruelty, austere discipline, hierarchy as pressure, heat-stripped beauty, severe silence before irreversible motion
-  form_and_line: Dense mature-anime linework, heavy crosshatching, weighted contour variation, gritty ink density
-  color_palette: Muted earths, blood reds, cold moonlit tones, desaturated horror palette, bruised shadow hues
-  lighting_setup: Ominous directional shadows, single-source drama light, deep chiaroscuro, low-key shadow lift
-  material_texture: Bleached dust, dry blood-brown staining, worn textile fiber, polished edge glints, hot paper grain, taut skin shadow
-  render_quality: Gritty dramatic anime frame, film-noir rendering, heavy shadow compression, textured midtone grit
-  spatial_distortion: Severe pre-motion stillness, hierarchy-weighted spacing, sun-flattened depth, brutal close crop, disciplined diagonal tension
-  atmosphere: Brutal, austere, scorching, merciless
+  aesthetic: >-
+    Sun-bleached cruelty, austere discipline, hierarchy as pressure, heat-stripped beauty, severe silence
+    before irreversible motion
+  subject_treatment: Dense mature-anime linework, heavy crosshatching, weighted contour variation, gritty ink density
+  color_and_tone: Muted earths, blood reds, cold moonlit tones, desaturated horror palette, bruised shadow hues
+  lighting_and_shadow: Ominous directional shadows, single-source drama light, deep chiaroscuro, low-key shadow lift
+  texture_and_material: >-
+    Bleached dust, dry blood-brown staining, worn textile fiber, polished edge glints, hot paper grain, taut
+    skin shadow
+  camera_and_composition: >-
+    Severe pre-motion stillness, hierarchy-weighted spacing, sun-flattened depth, brutal close crop,
+    disciplined diagonal tension
+  atmosphere_and_mood: Brutal, austere, scorching, merciless
+  rendering_and_quality: Gritty dramatic anime frame, film-noir rendering, heavy shadow compression, textured midtone grit
   key_features: Sun-bleached harshness, pre-motion rigor, woundlike detail, hierarchy pressure, unbearable stillness
-  creative_brief: >
-    Render any subject under merciless heat and discipline: bleached light,
-    dry staining, taut silence, and hierarchical spacing should make beauty feel
-    cruel without fixed eras, duels, blades, ranks, or body-horror staging.
+  creative_brief: >-
+    Render any subject under merciless heat and discipline: bleached light, dry staining, taut silence, and
+    hierarchical spacing should make beauty feel cruel without fixed eras, duels, blades, ranks, or
+    body-horror staging.
 avoidRules:
   - realistic
   - 3d render
@@ -41,7 +47,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-276.webp
 attributes:
-  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
+  negativePrompt: >-
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts,
+    watermark, text, signature
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds

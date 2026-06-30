@@ -13,20 +13,22 @@ tags:
   - fabric-and-texture-focus
 visualDna:
   aesthetic: Ceremonial flame couture, televised-opulence excess, controlled-combustion spectacle
-  form_and_line: Flame tongues, flicker sweep, rising-heat verticality, ember-trail extension, combustion plume logic
-  color_palette: Orange, Yellow, crimson-core, gold-white heat, sapphire-blue base, ember-red edge, coal-black ground
-  lighting_setup: Self-illuminated, flame-glow bloom, incandescent-body light, smoke-haze diffraction, ember-spark scatter
-  material_texture: Fire, flame-sheet fabric, synthetic-ember fiber, smoke-veil char, heat-shimmer distortion, LED-programmable textile
-  render_quality: Dangerous, hot, prestige-spectacle finish, broadcast-polish combustion
-  spatial_distortion: None
-  atmosphere: Powerful, incandescent, ceremonial, controlled-combustion awe
+  subject_treatment: Flame tongues, flicker sweep, rising-heat verticality, ember-trail extension, combustion plume logic
+  color_and_tone: Orange, Yellow, crimson-core, gold-white heat, sapphire-blue base, ember-red edge, coal-black ground
+  lighting_and_shadow: Self-illuminated, flame-glow bloom, incandescent-body light, smoke-haze diffraction, ember-spark scatter
+  texture_and_material: >-
+    Fire, flame-sheet fabric, synthetic-ember fiber, smoke-veil char, heat-shimmer distortion,
+    LED-programmable textile
+  camera_and_composition: >-
+    Compose for Fire Dress using its key spatial cues: Flame tongues, ember trail, heat shimmer, synthetic
+    flame effect, incandescent plume edges.
+  atmosphere_and_mood: Powerful, incandescent, ceremonial, controlled-combustion awe
+  rendering_and_quality: Dangerous, hot, prestige-spectacle finish, broadcast-polish combustion
   key_features: Flame tongues, ember trail, heat shimmer, synthetic flame effect, incandescent plume edges
   creative_brief: >-
-    Ignite the input with flame-couture behavior: ember trails, heat shimmer,
-    combustion-plume sweep, synthetic flame fibers, gold-white cores and smoke
-    haze. Keep televised ceremonial spectacle as style pressure only; do not
-    require a body hemline, parade entrance, arena narrative or explicit IP
-    reenactment.
+    Ignite the input with flame-couture behavior: ember trails, heat shimmer, combustion-plume sweep,
+    synthetic flame fibers, gold-white cores and smoke haze. Keep televised ceremonial spectacle as style
+    pressure only; do not require a body hemline, parade entrance, arena narrative or explicit IP reenactment.
 avoidRules:
   - cold
 assets:

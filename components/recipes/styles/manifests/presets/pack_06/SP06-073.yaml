@@ -13,15 +13,19 @@ tags:
   - mixed-media
 visualDna:
   aesthetic: Thread stitched over photo
-  form_and_line: Thread lines
-  color_palette: Photo + Thread accent
-  lighting_setup: Photo lighting
-  material_texture: Glossy photo, matte thread
-  render_quality: Artistic, altered
-  spatial_distortion: Stitched details
-  atmosphere: Personal, tactile
+  subject_treatment: Thread lines
+  color_and_tone: Photo + Thread accent
+  lighting_and_shadow: Photo lighting
+  texture_and_material: Glossy photo, matte thread
+  camera_and_composition: Stitched details
+  atmosphere_and_mood: Personal, tactile
+  rendering_and_quality: Artistic, altered
   key_features: Thread texture
-  creative_brief: Thread pierces an image surface, adding texture to captured light or flat print, the stitch becoming a third dimension over a two-dimensional base. Needle holes, floss color, and matte thread turn the substrate into a tactile field. The visible mend becomes the art without requiring portraits, memories, or literal photographs.
+  creative_brief: >-
+    Thread pierces an image surface, adding texture to captured light or flat print, the stitch becoming a
+    third dimension over a two-dimensional base. Needle holes, floss color, and matte thread turn the
+    substrate into a tactile field. The visible mend becomes the art without requiring portraits, memories, or
+    literal photographs.
 avoidRules:
   - realistic
   - photorealistic
@@ -42,7 +46,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP06-073.webp
 attributes:
-  negativePrompt: realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border, portrait requirement, literal memory photo
+  negativePrompt: >-
+    realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy,
+    watermark, text, signature, frame, border, portrait requirement, literal memory photo
 taxonomy:
   packId: pack_06
   packName: Essential Art Styles

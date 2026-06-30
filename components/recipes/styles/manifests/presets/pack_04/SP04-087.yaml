@@ -13,18 +13,19 @@ tags:
   - concept-art
 visualDna:
   aesthetic: Comparative silhouette iteration board for shape-language selection
-  form_and_line: Filled contour-only forms with zero interior detail dependency
-  color_palette: Binary black-white with optional neutral gray grouping aids
-  lighting_setup: Non-rendered; readability entirely silhouette-based
-  material_texture: Flat fill blocks with crisp edge control
-  render_quality: Systematic early-stage design study emphasizing variation breadth
-  spatial_distortion: Normalized scale grid enabling direct mass/proportion comparison
-  atmosphere: Methodical, exploratory, selection-oriented
+  subject_treatment: Filled contour-only forms with zero interior detail dependency
+  color_and_tone: Binary black-white with optional neutral gray grouping aids
+  lighting_and_shadow: Non-rendered; readability entirely silhouette-based
+  texture_and_material: Flat fill blocks with crisp edge control
+  camera_and_composition: Normalized scale grid enabling direct mass/proportion comparison
+  atmosphere_and_mood: Methodical, exploratory, selection-oriented
+  rendering_and_quality: Systematic early-stage design study emphasizing variation breadth
   key_features: High-contrast silhouette matrix, archetype spread (round/square/triangular/spiky), immediate read testing
   creative_brief: >-
-    Apply silhouette-iteration board logic to any input: black-shape variants, negative-space deltas, proportion
-    experiments, readable thumbnails, and design exploration pacing. If no character or creature exists, translate the
-    subject into abstract silhouette options without requiring a grid, lineup, or figure design.
+    Apply silhouette-iteration board logic to any input: black-shape variants, negative-space deltas,
+    proportion experiments, readable thumbnails, and design exploration pacing. If no character or creature
+    exists, translate the subject into abstract silhouette options without requiring a grid, lineup, or figure
+    design.
 avoidRules:
   - detailed
   - rendered

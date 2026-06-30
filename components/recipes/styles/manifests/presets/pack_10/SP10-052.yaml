@@ -13,18 +13,18 @@ tags:
   - textile-and-ornamental-patterns
 visualDna:
   aesthetic: Military pattern
-  form_and_line: Blobs
-  color_palette: Green, Brown, Tan
-  lighting_setup: Flat
-  material_texture: Canvas
-  render_quality: Tactical
-  spatial_distortion: None
-  atmosphere: Hidden, military
+  subject_treatment: Blobs
+  color_and_tone: Green, Brown, Tan
+  lighting_and_shadow: Flat
+  texture_and_material: Canvas
+  camera_and_composition: 'Compose for Camouflage using its key spatial cues: Random blobs.'
+  atmosphere_and_mood: Hidden, military
+  rendering_and_quality: Tactical
   key_features: Random blobs
   creative_brief: >-
-    Apply camouflage disruption to the input: irregular concealment blobs,
-    broken silhouette edges, tactical color fields, and visibility-denial logic
-    should fracture form without requiring soldiers, forests, or vehicles.
+    Apply camouflage disruption to the input: irregular concealment blobs, broken silhouette edges, tactical
+    color fields, and visibility-denial logic should fracture form without requiring soldiers, forests, or
+    vehicles.
 avoidRules:
   - bright
   - neon

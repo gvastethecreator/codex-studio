@@ -13,32 +13,34 @@ tags:
   - shojo-magical-girl-and-visionary-classics
 visualDna:
   aesthetic: >-
-    Retro-space-opera comedy anime language balancing ensemble banter, earnest mechanical momentum, and playful
-    meta-genre self-awareness
-  form_and_line: >-
-    Expressive ensemble line acting, analog UI framing geometry, dynamic launch-vector accents, and comedic reaction
-    silhouette clarity
-  color_palette: Bright console cyans and ambers, team-accent pops, deep space navy fields, and warm comedic tonal bases
-  lighting_setup: >-
-    Console-practical glow clusters, alert-state contrast spikes, cel-cut shadow timing for jokes and action beats, and
-    occasional explosion rim flashes
-  material_texture: >-
-    Analog sci-fi panel surfaces, painted space gradients, cel overlay grain, retro UI display bloom, and mechanical
-    detailing
-  render_quality: >-
-    Clean 90s ensemble-mecha rendering with dialogue-to-action rhythm readability, lively tonal shifts, and charismatic
-    crew-first polish
-  spatial_distortion: Alternating stable ensemble rhythm and kinetic vector perspective bursts to maintain war-comedy pacing balance
-  atmosphere: Bouncy, tactical, colorful, meta
+    Retro-space-opera comedy anime language balancing ensemble banter, earnest mechanical momentum, and
+    playful meta-genre self-awareness
+  subject_treatment: >-
+    Expressive ensemble line acting, analog UI framing geometry, dynamic launch-vector accents, and comedic
+    reaction silhouette clarity
+  color_and_tone: Bright console cyans and ambers, team-accent pops, deep space navy fields, and warm comedic tonal bases
+  lighting_and_shadow: >-
+    Console-practical glow clusters, alert-state contrast spikes, cel-cut shadow timing for jokes and action
+    beats, and occasional explosion rim flashes
+  texture_and_material: >-
+    Analog sci-fi panel surfaces, painted space gradients, cel overlay grain, retro UI display bloom, and
+    mechanical detailing
+  camera_and_composition: >-
+    Alternating stable ensemble rhythm and kinetic vector perspective bursts to maintain war-comedy pacing
+    balance
+  atmosphere_and_mood: Bouncy, tactical, colorful, meta
+  rendering_and_quality: >-
+    Clean 90s ensemble-mecha rendering with dialogue-to-action rhythm readability, lively tonal shifts, and
+    charismatic crew-first polish
   key_features: >-
     Ensemble staging rhythm, mechanical sortie framing, retro UI accents, playful command-energy, bright
     group-body-language geometry
   creative_brief: >-
-    Launch the input with cheerful bridge-deck mecha rhythm: retro console glow, ensemble banter spacing, alert
-    cyan/amber accents, and sortie-vector motion can add mecha or command-deck hints when useful without locking the
-    image to a bridge, ship interior, crew lineup, or battle scene. Apply this anime/IP-title grammar over any input:
-    preserve its emotional staging, line behavior, palette, symbolic motifs, and production cues while avoiding a
-    required cast, lore event, location, prop, or fixed scene.
+    Launch the input with cheerful bridge-deck mecha rhythm: retro console glow, ensemble banter spacing,
+    alert cyan/amber accents, and sortie-vector motion can add mecha or command-deck hints when useful without
+    locking the image to a bridge, ship interior, crew lineup, or battle scene. Apply this anime/IP-title
+    grammar over any input: preserve its emotional staging, line behavior, palette, symbolic motifs, and
+    production cues while avoiding a required cast, lore event, location, prop, or fixed scene.
 avoidRules:
   - realistic
   - 3d render
@@ -56,8 +58,8 @@ assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-177.webp
 attributes:
   negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark,
-    text, signature
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts,
+    watermark, text, signature
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle

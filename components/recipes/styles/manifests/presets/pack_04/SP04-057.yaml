@@ -15,21 +15,20 @@ visualDna:
   aesthetic: >-
     Blueprint schematic style with engineering communication clarity, drafting-era precision, and
     specification-forward layout discipline
-  form_and_line: >-
-    White technical line hierarchy with orthographic rigor, dimension-callout logic, and
-    exploded-view readability
-  color_palette: Blue background, white-line cyan, blueprint nostalgia
-  lighting_setup: None, diagrammatic, machine-drawing clarity
-  material_texture: Grid paper
-  render_quality: Engineering, precise, shop-floor accuracy, technical authority
-  spatial_distortion: Exploded view
-  atmosphere: Smart, plan, drafting-table focus, patent-office gravity
+  subject_treatment: >-
+    White technical line hierarchy with orthographic rigor, dimension-callout logic, and exploded-view
+    readability
+  color_and_tone: Blue background, white-line cyan, blueprint nostalgia
+  lighting_and_shadow: Diagrammatic machine-drawing clarity with no simulated lighting
+  texture_and_material: Grid paper
+  camera_and_composition: Exploded view
+  atmosphere_and_mood: Smart, plan, drafting-table focus, patent-office gravity
+  rendering_and_quality: Engineering, precise, shop-floor accuracy, technical authority
   key_features: Measurements, dimension lines, grid sub-base
   creative_brief: >-
     Apply blueprint schematic grammar to any input: orthographic projection, measurement hierarchy,
-    exploded-view logic, grid sub-base, and white technical linework should create drafting
-    authority without requiring machines, labels, title blocks, patents, vehicles, or readable
-    dimensions.
+    exploded-view logic, grid sub-base, and white technical linework should create drafting authority without
+    requiring machines, labels, title blocks, patents, vehicles, or readable dimensions.
 avoidRules:
   - 3d
   - shaded

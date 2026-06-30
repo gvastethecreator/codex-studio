@@ -13,15 +13,18 @@ tags:
   - commercial-and-product
 visualDna:
   aesthetic: Premium tech launch image
-  form_and_line: Minimal hero silhouette
-  color_palette: Graphite, cool white, electric accent
-  lighting_setup: Dark sweep with precise rim lights
-  material_texture: Matte anodized surface, glass edge, clean bevel
-  render_quality: Apple-style keynote polish
-  spatial_distortion: Long-lens product compression
-  atmosphere: Intelligent, minimal, engineered
+  subject_treatment: Minimal hero silhouette
+  color_and_tone: Graphite, cool white, electric accent
+  lighting_and_shadow: Dark sweep with precise rim lights
+  texture_and_material: Matte anodized surface, glass edge, clean bevel
+  camera_and_composition: Long-lens product compression
+  atmosphere_and_mood: Intelligent, minimal, engineered
+  rendering_and_quality: Apple-style keynote polish
   key_features: Precision rim outline
-  creative_brief: 'Tech hardware hero lighting makes any subject feel engineered: dark sweep, graphite palette, exact rim outline, matte/glass material response, and keynote-level minimalism. It should communicate precision and launch-day desire without requiring electronics, screens, devices, or UI.'
+  creative_brief: >-
+    Tech hardware hero lighting makes any subject feel engineered: dark sweep, graphite palette, exact rim
+    outline, matte/glass material response, and keynote-level minimalism. It should communicate precision and
+    launch-day desire without requiring electronics, screens, devices, or UI.
 avoidRules:
   - messy cables
   - dust

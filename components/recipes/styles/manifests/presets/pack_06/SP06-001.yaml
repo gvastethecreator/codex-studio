@@ -13,20 +13,18 @@ tags:
   - traditional-painting
 visualDna:
   aesthetic: Classic oil painting on canvas
-  form_and_line: Thick impasto brush strokes
-  color_palette: Rich, deep, blended traditional pigments
-  lighting_setup: Dramatic chiaroscuro
-  material_texture: Canvas grain, raised paint, brush bristles
-  render_quality: Masterpiece, museum quality
-  spatial_distortion: Slightly impressionistic
-  atmosphere: Timeless, expressive
+  subject_treatment: Thick impasto brush strokes
+  color_and_tone: Rich, deep, blended traditional pigments
+  lighting_and_shadow: Dramatic chiaroscuro
+  texture_and_material: Canvas grain, raised paint, brush bristles
+  camera_and_composition: Slightly impressionistic
+  atmosphere_and_mood: Timeless, expressive
+  rendering_and_quality: Masterpiece, museum quality
   key_features: Visible brushwork
   creative_brief: >-
-    Apply classic oil-paint handling to any input: slow layered pigment,
-    visible canvas grain, soft wet-edge blending, glazed depth, varnish warmth,
-    and brushwork with old-master weight. Keep painterly permanence without
-    requiring portraits, landscapes, still lifes, galleries, or historical
-    subject matter.
+    Apply classic oil-paint handling to any input: slow layered pigment, visible canvas grain, soft wet-edge
+    blending, glazed depth, varnish warmth, and brushwork with old-master weight. Keep painterly permanence
+    without requiring portraits, landscapes, still lifes, galleries, or historical subject matter.
 avoidRules:
   - photo
   - realistic
@@ -46,7 +44,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP06-001.webp
 attributes:
-  negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border
+  negativePrompt: >-
+    photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy,
+    watermark, text, signature, frame, border
 taxonomy:
   packId: pack_06
   packName: Essential Art Styles

@@ -12,23 +12,23 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Mineral loneliness, crystalline fragility, philosophical isolation, sharp beauty under fracture, stripped-down luminous ecosystem abstraction',
-      form_and_line:
+      subject_treatment:
         'Dense mature-anime linework, heavy crosshatching, weighted contour variation, gritty ink density',
-      color_palette:
+      color_and_tone:
         'Muted earths, blood reds, cold moonlit tones, desaturated horror palette, bruised shadow hues',
-      lighting_setup:
+      lighting_and_shadow:
         'Ominous directional shadows, single-source drama light, deep chiaroscuro, low-key shadow lift',
-      material_texture:
+      texture_and_material:
         'Gem refraction, mineral facets, translucent fracture lines, polished dust, pearlescent sheen, clean matte voids',
-      render_quality:
-        'Gritty dramatic anime frame, film-noir rendering, heavy shadow compression, textured midtone grit',
-      spatial_distortion:
+      camera_and_composition:
         'Open emptiness, fracture-line depth, crystalline scale isolation, clean horizon pull, luminous void spacing',
-      atmosphere: 'Crystalline, lonely, austere, luminous',
+      atmosphere_and_mood: 'Crystalline, lonely, austere, luminous',
+      rendering_and_quality:
+        'Gritty dramatic anime frame, film-noir rendering, heavy shadow compression, textured midtone grit',
       key_features:
         'Mineral refraction, clean emptiness, fracture motifs, luminous isolation, philosophical fragility',
       creative_brief:
-        'Render any subject as beautiful material loneliness: crystalline refraction, clean emptiness, fracture lines, and pale light should communicate fragility without fixed anatomy, shores, aggressors, taxonomy, or action scenes.\n',
+        'Render any subject as beautiful material loneliness: crystalline refraction, clean emptiness, fracture lines, and pale light should communicate fragility without fixed anatomy, shores, aggressors, taxonomy, or action scenes.',
     },
   },
   {
@@ -40,23 +40,23 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Eclipse-black burden, scar-mapped tragedy, sacrificial memory pressure, colossal emotional weight, doomed silhouette mass, fate rendered as ink density',
-      form_and_line:
+      subject_treatment:
         'Dense mature-anime linework, heavy crosshatching, weighted contour variation, gritty ink density',
-      color_palette:
+      color_and_tone:
         'Muted earths, blood reds, cold moonlit tones, desaturated horror palette, bruised shadow hues',
-      lighting_setup:
+      lighting_and_shadow:
         'Ominous directional shadows, single-source drama light, deep chiaroscuro, low-key shadow lift',
-      material_texture:
+      texture_and_material:
         'Scarred ink grain, blackened patina, abraded hide texture, cracked mineral matte, dried crimson staining, gritty midtone dust',
-      render_quality:
-        'Gritty dramatic anime frame, film-noir rendering, heavy shadow compression, textured midtone grit',
-      spatial_distortion:
+      camera_and_composition:
         'Severe silhouette compression, oppressive scale contrast, low-gravity emotional mass, eclipse-like void framing, slow diagonal drag',
-      atmosphere: 'Savage, doomed, furious, haunted',
+      atmosphere_and_mood: 'Savage, doomed, furious, haunted',
+      rendering_and_quality:
+        'Gritty dramatic anime frame, film-noir rendering, heavy shadow compression, textured midtone grit',
       key_features:
         'Eclipse void fields, scar-density hatching, black mass silhouettes, sacrificial symbol pressure, grief-heavy negative space',
       creative_brief:
-        'Render any subject as a monument to endured weight: dense hatching, black voids, bruised reds, scar-like texture, and slow compositional drag should communicate doomed persistence without relying on fixed figures, props, places, or narrative set pieces.\n',
+        'Render any subject as a monument to endured weight: dense hatching, black voids, bruised reds, scar-like texture, and slow compositional drag should communicate doomed persistence without relying on fixed figures, props, places, or narrative set pieces.',
     },
   },
   {
@@ -68,23 +68,23 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Moral dread realism, sterile quiet, detail-loaded danger, humane unease, smiling-void ambiguity, suspicion carried by ordinary surfaces',
-      form_and_line:
+      subject_treatment:
         'Dense mature-anime linework, heavy crosshatching, weighted contour variation, gritty ink density',
-      color_palette:
+      color_and_tone:
         'Muted earths, blood reds, cold moonlit tones, desaturated horror palette, bruised shadow hues',
-      lighting_setup:
+      lighting_and_shadow:
         'Ominous directional shadows, single-source drama light, deep chiaroscuro, low-key shadow lift',
-      material_texture:
+      texture_and_material:
         'Sterile matte planes, paper-dry grain, brushed institutional surfaces, faint grime at edges, restrained skin-tone warmth, cold wall texture',
-      render_quality:
-        'Gritty dramatic anime frame, film-noir rendering, heavy shadow compression, textured midtone grit',
-      spatial_distortion:
+      camera_and_composition:
         'Restrained perspective, quiet negative space, detail-weighted close framing, stillness-heavy depth, subtle moral compression',
-      atmosphere: 'Paranoid, humane, cold, intelligent',
+      atmosphere_and_mood: 'Paranoid, humane, cold, intelligent',
+      rendering_and_quality:
+        'Gritty dramatic anime frame, film-noir rendering, heavy shadow compression, textured midtone grit',
       key_features:
         'Suspicion in stillness, sterile quiet, adult-anime restraint, small-detail menace, cold humane realism',
       creative_brief:
-        'Give any prompt a quiet moral-thriller treatment where ordinary details feel dangerous. Use sterile matte light, restrained expressions, weighted negative space, and realistic tension while avoiding fixed institutions, locations, named roles, or pursuit-story structure.\n',
+        'Give any prompt a quiet moral-thriller treatment where ordinary details feel dangerous. Use sterile matte light, restrained expressions, weighted negative space, and realistic tension while avoiding fixed institutions, locations, named roles, or pursuit-story structure.',
     },
   },
   {
@@ -96,23 +96,23 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Black signal nihilism, fluorescent rules pressure, synthetic afterlife dread, cynical precision, glossy void objects, survival logic as graphic design',
-      form_and_line:
+      subject_treatment:
         'Dense mature-anime linework, heavy crosshatching, weighted contour variation, gritty ink density',
-      color_palette:
+      color_and_tone:
         'Muted earths, blood reds, cold moonlit tones, desaturated horror palette, bruised shadow hues',
-      lighting_setup:
+      lighting_and_shadow:
         'Ominous directional shadows, single-source drama light, deep chiaroscuro, low-key shadow lift',
-      material_texture:
+      texture_and_material:
         'Latex-black gloss, fluorescent scan haze, neutral domestic grit, cold polymer sheen, scratched glass, synthetic dust',
-      render_quality:
-        'Gritty dramatic anime frame, film-noir rendering, heavy shadow compression, textured midtone grit',
-      spatial_distortion:
+      camera_and_composition:
         'Spherical void anchors, target-like overlays, compressed enclosure tension, cynical rule spacing, glossy black focal gravity',
-      atmosphere: 'Cruel, flashy, nihilistic, electric',
+      atmosphere_and_mood: 'Cruel, flashy, nihilistic, electric',
+      rendering_and_quality:
+        'Gritty dramatic anime frame, film-noir rendering, heavy shadow compression, textured midtone grit',
       key_features:
         'Gloss-black void shapes, fluorescent rule marks, cynical target geometry, synthetic grit, ruthless body-language abstraction',
       creative_brief:
-        'Treat any subject as if it is being processed by a cruel fluorescent system: glossy black anchors, green signal marks, synthetic grit, and rule-like overlays create nihilistic pressure without fixed settings, attire systems, play structures, locations, or scorekeeping props.\n',
+        'Treat any subject as if it is being processed by a cruel fluorescent system: glossy black anchors, green signal marks, synthetic grit, and rule-like overlays create nihilistic pressure without fixed settings, attire systems, play structures, locations, or scorekeeping props.',
     },
   },
   {
@@ -124,23 +124,23 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Clinical innocence rupture, soft color against sterile brutality, invisible-force trauma, broken memory, songlike sadness under sharp white space',
-      form_and_line:
+      subject_treatment:
         'Dense mature-anime linework, heavy crosshatching, weighted contour variation, gritty ink density',
-      color_palette:
+      color_and_tone:
         'Muted earths, blood reds, cold moonlit tones, desaturated horror palette, bruised shadow hues',
-      lighting_setup:
+      lighting_and_shadow:
         'Ominous directional shadows, single-source drama light, deep chiaroscuro, low-key shadow lift',
-      material_texture:
+      texture_and_material:
         'Clinical white matte, rain-slick sheen, soft pastel wash, sharp red staining, fractured glass texture, sterile tile grain',
-      render_quality:
-        'Gritty dramatic anime frame, film-noir rendering, heavy shadow compression, textured midtone grit',
-      spatial_distortion:
+      camera_and_composition:
         'Invisible-force displacement, fragile center framing, white-space rupture, close emotional compression, sharp offscreen threat vectors',
-      atmosphere: 'Sad, violent, clinical, exposed',
+      atmosphere_and_mood: 'Sad, violent, clinical, exposed',
+      rendering_and_quality:
+        'Gritty dramatic anime frame, film-noir rendering, heavy shadow compression, textured midtone grit',
       key_features:
         'Blood-on-white contrast, pastel fragility, clinical emptiness, invisible-force framing, memory-fracture sadness',
       creative_brief:
-        'Render any subject through soft innocence breaking against sterile violence: pale negative space, pastel warmth, sharp crimson interruption, and invisible pressure should carry the style without fixed facilities, escape scenes, character traits, or scientific backstory.\n',
+        'Render any subject through soft innocence breaking against sterile violence: pale negative space, pastel warmth, sharp crimson interruption, and invisible pressure should carry the style without fixed facilities, escape scenes, character traits, or scientific backstory.',
     },
   },
   {
@@ -152,23 +152,23 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Rose-black decadence, baroque gothic machinery, moonlit aristocratic stillness, predatory romance, elegant ruin pressure, ornamental darkness in motion',
-      form_and_line:
+      subject_treatment:
         'Dense mature-anime linework, heavy crosshatching, weighted contour variation, gritty ink density',
-      color_palette:
+      color_and_tone:
         'Muted earths, blood reds, cold moonlit tones, desaturated horror palette, bruised shadow hues',
-      lighting_setup:
+      lighting_and_shadow:
         'Ominous directional shadows, single-source drama light, deep chiaroscuro, low-key shadow lift',
-      material_texture:
+      texture_and_material:
         'Baroque filigree grain, moonlit enamel, rose-dark velvet, corroded ornament, polished black lacquer, dusty metallic trim',
-      render_quality:
-        'Gritty dramatic anime frame, film-noir rendering, heavy shadow compression, textured midtone grit',
-      spatial_distortion:
+      camera_and_composition:
         'Ornamental frame compression, moonlit silhouette elongation, aristocratic spacing, rose-black diagonal drift, decayed grandeur scale',
-      atmosphere: 'Elegant, predatory, moonlit, decadent',
+      atmosphere_and_mood: 'Elegant, predatory, moonlit, decadent',
+      rendering_and_quality:
+        'Gritty dramatic anime frame, film-noir rendering, heavy shadow compression, textured midtone grit',
       key_features:
         'Rose-black ornament, aristocratic silhouette pressure, moonlit enamel, baroque frame detail, decadent gothic machinery',
       creative_brief:
-        'Give any prompt a decadent rose-black baroque treatment: ornamental frames, moonlit lacquer, predatory elegance, and ruined luxury should define the image without fixed architecture, roles, transport forms, lore taxonomy, or pursuit structure.\n',
+        'Give any prompt a decadent rose-black baroque treatment: ornamental frames, moonlit lacquer, predatory elegance, and ruined luxury should define the image without fixed architecture, roles, transport forms, lore taxonomy, or pursuit structure.',
     },
   },
   {
@@ -180,23 +180,23 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Black-particle fugitive tension, matte spectral forms, clinical modern pressure, identity terror, institutional pursuit rendered as abstract system stress',
-      form_and_line:
+      subject_treatment:
         'Dense mature-anime linework, heavy crosshatching, weighted contour variation, gritty ink density',
-      color_palette:
+      color_and_tone:
         'Muted earths, blood reds, cold moonlit tones, desaturated horror palette, bruised shadow hues',
-      lighting_setup:
+      lighting_and_shadow:
         'Ominous directional shadows, single-source drama light, deep chiaroscuro, low-key shadow lift',
-      material_texture:
+      texture_and_material:
         'Matte black particulate haze, clinical glass, smooth concrete-gray grain, cold polymer, smoke-dust edges, dry spectral residue',
-      render_quality:
-        'Gritty dramatic anime frame, film-noir rendering, heavy shadow compression, textured midtone grit',
-      spatial_distortion:
+      camera_and_composition:
         'Particle-coalesced silhouettes, pursuit-vector compression, clinical open space, identity-split doubling, black form echo trails',
-      atmosphere: 'Hunted, modern, sharp, remorseless',
+      atmosphere_and_mood: 'Hunted, modern, sharp, remorseless',
+      rendering_and_quality:
+        'Gritty dramatic anime frame, film-noir rendering, heavy shadow compression, textured midtone grit',
       key_features:
         'Matte particle echoes, clinical dread, fugitive-vector compression, black spectral pressure, identity-fracture tension',
       creative_brief:
-        'Apply a black-particle thriller treatment to any subject: matte spectral residue, clinical surfaces, pursuit-vector pressure, and fractured identity should drive the image without fixed agencies, passageways, abilities, beings, or pursuit scenarios.\n',
+        'Apply a black-particle thriller treatment to any subject: matte spectral residue, clinical surfaces, pursuit-vector pressure, and fractured identity should drive the image without fixed agencies, passageways, abilities, beings, or pursuit scenarios.',
     },
   },
   {
@@ -208,23 +208,23 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Blood-ink intensity, severance rhythm, weathered revenge pressure, period-grit abstraction, punishing brush detail, endurance as visual abrasion',
-      form_and_line:
+      subject_treatment:
         'Dense mature-anime linework, heavy crosshatching, weighted contour variation, gritty ink density',
-      color_palette:
+      color_and_tone:
         'Muted earths, blood reds, cold moonlit tones, desaturated horror palette, bruised shadow hues',
-      lighting_setup:
+      lighting_and_shadow:
         'Ominous directional shadows, single-source drama light, deep chiaroscuro, low-key shadow lift',
-      material_texture:
+      texture_and_material:
         'Wet ink slash grain, mud-dark paper, worn cloth fiber, dry blood-brown stains, scratched metal flecks, weather-scoured grit',
-      render_quality:
-        'Gritty dramatic anime frame, film-noir rendering, heavy shadow compression, textured midtone grit',
-      spatial_distortion:
+      camera_and_composition:
         'Slash-led diagonals, brutal close cropping, brushstroke momentum, severed-frame spacing, harsh weather compression',
-      atmosphere: 'Vengeful, weathered, severe, bloody',
+      atmosphere_and_mood: 'Vengeful, weathered, severe, bloody',
+      rendering_and_quality:
+        'Gritty dramatic anime frame, film-noir rendering, heavy shadow compression, textured midtone grit',
       key_features:
         'Ink-heavy slash marks, weathered grime, scar-detail abstraction, severe diagonal rhythm, revenge-pressure stillness',
       creative_brief:
-        'Render any subject with blood-ink severity: brush cuts, weathered grime, scarred texture, and punishing detail should make the composition feel irreversible without fixed period roles, travel narratives, props, or revenge plot beats.\n',
+        'Render any subject with blood-ink severity: brush cuts, weathered grime, scarred texture, and punishing detail should make the composition feel irreversible without fixed period roles, travel narratives, props, or revenge plot beats.',
     },
   },
   {
@@ -236,23 +236,23 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Neon despair pressure, fluorescent sweat, jagged adult-anime caricature, impossible financial tension, ruin made graphic and unflattering',
-      form_and_line:
+      subject_treatment:
         'Dense mature-anime linework, heavy crosshatching, weighted contour variation, gritty ink density',
-      color_palette:
+      color_and_tone:
         'Muted earths, blood reds, cold moonlit tones, desaturated horror palette, bruised shadow hues',
-      lighting_setup:
+      lighting_and_shadow:
         'Ominous directional shadows, single-source drama light, deep chiaroscuro, low-key shadow lift',
-      material_texture:
+      texture_and_material:
         'Fluorescent sweat sheen, cheap plastic glare, damp paper texture, sticky surface gloss, rough skin grain, stale air haze',
-      render_quality:
-        'Gritty dramatic anime frame, film-noir rendering, heavy shadow compression, textured midtone grit',
-      spatial_distortion:
+      camera_and_composition:
         'Pressure-cooker close-ups, jagged facial exaggeration, claustrophobic negative space, tilted risk geometry, collapse-edge framing',
-      atmosphere: 'Desperate, electric, ugly, suspenseful',
+      atmosphere_and_mood: 'Desperate, electric, ugly, suspenseful',
+      rendering_and_quality:
+        'Gritty dramatic anime frame, film-noir rendering, heavy shadow compression, textured midtone grit',
       key_features:
         'Sweat-heavy close-ups, fluorescent pressure, jagged anxious silhouettes, risk-geometry distortion, brink-of-collapse acting',
       creative_brief:
-        'Treat any prompt as a pressure chamber of debt, shame, and impossible stakes: fluorescent sweat, jagged exaggeration, tilted geometry, and ugly honesty should define the look without fixed surfaces, play structures, settings, currency props, or named competition.\n',
+        'Treat any prompt as a pressure chamber of debt, shame, and impossible stakes: fluorescent sweat, jagged exaggeration, tilted geometry, and ugly honesty should define the look without fixed surfaces, play structures, settings, currency props, or named competition.',
     },
   },
   {
@@ -264,23 +264,23 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Smoke-filled calculation, stillness as menace, predatory patience, psychological warfare abstraction, heavy-lidded shadow tension, ritualized risk',
-      form_and_line:
+      subject_treatment:
         'Dense mature-anime linework, heavy crosshatching, weighted contour variation, gritty ink density',
-      color_palette:
+      color_and_tone:
         'Muted earths, blood reds, cold moonlit tones, desaturated horror palette, bruised shadow hues',
-      lighting_setup:
+      lighting_and_shadow:
         'Ominous directional shadows, single-source drama light, deep chiaroscuro, low-key shadow lift',
-      material_texture:
+      texture_and_material:
         'Cigarette-smoke haze, worn surface gloss, dry paper grain, shadow-softened skin texture, amber ash glow, stale enclosed atmosphere',
-      render_quality:
-        'Gritty dramatic anime frame, film-noir rendering, heavy shadow compression, textured midtone grit',
-      spatial_distortion:
+      camera_and_composition:
         'Still-hand suspense geometry, smoke-layer depth, predatory close framing, ritual spacing, slow pressure compression',
-      atmosphere: 'Predatory, smoky, cerebral, merciless',
+      atmosphere_and_mood: 'Predatory, smoky, cerebral, merciless',
+      rendering_and_quality:
+        'Gritty dramatic anime frame, film-noir rendering, heavy shadow compression, textured midtone grit',
       key_features:
         'Smoke haze, stillness suspense, hard shadow light, calculation pressure, predatory close framing',
       creative_brief:
-        'Render any subject as a cerebral duel of patience and risk: smoke layers, hard shadows, still gestures, and ritual spacing should create predatory calculation without fixed play structures, surfaces, props, ages, or competition scenes.\n',
+        'Render any subject as a cerebral duel of patience and risk: smoke layers, hard shadows, still gestures, and ritual spacing should create predatory calculation without fixed play structures, surfaces, props, ages, or competition scenes.',
     },
   },
   {
@@ -292,23 +292,23 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Cursed severance softened by compassion, folk-horror grit, muddy tenderness, fractured wholeness, brutal loss rendered with humane warmth',
-      form_and_line:
+      subject_treatment:
         'Dense mature-anime linework, heavy crosshatching, weighted contour variation, gritty ink density',
-      color_palette:
+      color_and_tone:
         'Muted earths, blood reds, cold moonlit tones, desaturated horror palette, bruised shadow hues',
-      lighting_setup:
+      lighting_and_shadow:
         'Ominous directional shadows, single-source drama light, deep chiaroscuro, low-key shadow lift',
-      material_texture:
+      texture_and_material:
         'Mud-dark grain, worn cloth fiber, scarred wood matte, rust patina, cracked earth texture, dry crimson staining',
-      render_quality:
-        'Gritty dramatic anime frame, film-noir rendering, heavy shadow compression, textured midtone grit',
-      spatial_distortion:
+      camera_and_composition:
         'Severed-frame spacing, tenderness beside harsh mass, folk-horror silhouettes, muddy horizon drag, compassionate close compression',
-      atmosphere: 'Bleak, raw, compassionate, cursed',
+      atmosphere_and_mood: 'Bleak, raw, compassionate, cursed',
+      rendering_and_quality:
+        'Gritty dramatic anime frame, film-noir rendering, heavy shadow compression, textured midtone grit',
       key_features:
         'Severance motifs, cursed sky pressure, mud-worn tenderness, folk-horror grit, compassion against brutality',
       creative_brief:
-        'Render any subject as damaged wholeness struggling toward tenderness: muddy texture, cursed negative space, folk-horror silhouettes, and warm humane accents should carry the look without fixed anatomy, companions, travel spaces, settlements, adversaries, or quest structure.\n',
+        'Render any subject as damaged wholeness struggling toward tenderness: muddy texture, cursed negative space, folk-horror silhouettes, and warm humane accents should carry the look without fixed anatomy, companions, travel spaces, settlements, adversaries, or quest structure.',
     },
   },
   {
@@ -320,23 +320,23 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Sun-reclaimed concrete mystery, institutional remnants softened by growth, existential dislocation, low-key unease beneath bright quiet',
-      form_and_line:
+      subject_treatment:
         'Dense mature-anime linework, heavy crosshatching, weighted contour variation, gritty ink density',
-      color_palette:
+      color_and_tone:
         'Muted earths, blood reds, cold moonlit tones, desaturated horror palette, bruised shadow hues',
-      lighting_setup:
+      lighting_and_shadow:
         'Ominous directional shadows, single-source drama light, deep chiaroscuro, low-key shadow lift',
-      material_texture:
+      texture_and_material:
         'Sun-bleached concrete, weed-soft edge texture, flaked paint, warm dust, cracked institutional surfaces, dry moss grain',
-      render_quality:
-        'Gritty dramatic anime frame, film-noir rendering, heavy shadow compression, textured midtone grit',
-      spatial_distortion:
+      camera_and_composition:
         'Open-horizon uncertainty, institutional grid decay, sunlit emptiness, broken-modern scale contrast, quiet pathlike depth',
-      atmosphere: 'Mysterious, sun-bleached, uneasy, searching',
+      atmosphere_and_mood: 'Mysterious, sun-bleached, uneasy, searching',
+      rendering_and_quality:
+        'Gritty dramatic anime frame, film-noir rendering, heavy shadow compression, textured midtone grit',
       key_features:
         'Sun-bleached concrete, growth-over-grid texture, existential quiet, mystery through absence, broken-modern softness',
       creative_brief:
-        'Give any prompt a bright post-institutional mystery treatment: sunlight, concrete, plant-softened decay, and unresolved emptiness should imply lost systems without fixed institutions, roles, threats, travel paths, or world lore.\n',
+        'Give any prompt a bright post-institutional mystery treatment: sunlight, concrete, plant-softened decay, and unresolved emptiness should imply lost systems without fixed institutions, roles, threats, travel paths, or world lore.',
     },
   },
   {
@@ -348,23 +348,23 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Machine mourning noir, humane futurism, forensic melancholy, rain-dark luxury, grief rendered through polished restraint and ethical weight',
-      form_and_line:
+      subject_treatment:
         'Dense mature-anime linework, heavy crosshatching, weighted contour variation, gritty ink density',
-      color_palette:
+      color_and_tone:
         'Muted earths, blood reds, cold moonlit tones, desaturated horror palette, bruised shadow hues',
-      lighting_setup:
+      lighting_and_shadow:
         'Ominous directional shadows, single-source drama light, deep chiaroscuro, low-key shadow lift',
-      material_texture:
+      texture_and_material:
         'Rain-polished metal, quiet luxury grain, forensic matte surfaces, wet glass, brushed alloy, soft fabric shadow',
-      render_quality:
-        'Gritty dramatic anime frame, film-noir rendering, heavy shadow compression, textured midtone grit',
-      spatial_distortion:
+      camera_and_composition:
         'Noir close framing, forensic negative space, rainlit reflection depth, humane-machine symmetry, restrained investigative pacing',
-      atmosphere: 'Somber, investigative, humane, futuristic',
+      atmosphere_and_mood: 'Somber, investigative, humane, futuristic',
+      rendering_and_quality:
+        'Gritty dramatic anime frame, film-noir rendering, heavy shadow compression, textured midtone grit',
       key_features:
         'Mourning atmosphere, rainlit polish, forensic quiet, humane synthetic restraint, noir ethical pressure',
       creative_brief:
-        'Apply machine mourning noir to any subject: polished rain reflections, forensic stillness, soft metal, and humane restraint should create grief without fixed roles, synthetic beings, urban locations, interiors, or case scenes.\n',
+        'Apply machine mourning noir to any subject: polished rain reflections, forensic stillness, soft metal, and humane restraint should create grief without fixed roles, synthetic beings, urban locations, interiors, or case scenes.',
     },
   },
   {
@@ -376,23 +376,23 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Luminous natural-cycle calm, adult folklore quiet, grief softened by ecology, pale living haze, contemplative moonlit medicine',
-      form_and_line:
+      subject_treatment:
         'Dense mature-anime linework, heavy crosshatching, weighted contour variation, gritty ink density',
-      color_palette:
+      color_and_tone:
         'Muted earths, blood reds, cold moonlit tones, desaturated horror palette, bruised shadow hues',
-      lighting_setup:
+      lighting_and_shadow:
         'Ominous directional shadows, single-source drama light, deep chiaroscuro, low-key shadow lift',
-      material_texture:
+      texture_and_material:
         'Moon-haze bloom, damp bark grain, soft moss matte, pale bioluminescent dust, river-silt texture, natural paper fibers',
-      render_quality:
-        'Gritty dramatic anime frame, film-noir rendering, heavy shadow compression, textured midtone grit',
-      spatial_distortion:
+      camera_and_composition:
         'Slow ecological layering, low horizontal calm, moon-haze depth, softened foreground veil, cyclical flow composition',
-      atmosphere: 'Quiet, eerie, compassionate, nocturnal',
+      atmosphere_and_mood: 'Quiet, eerie, compassionate, nocturnal',
+      rendering_and_quality:
+        'Gritty dramatic anime frame, film-noir rendering, heavy shadow compression, textured midtone grit',
       key_features:
         'Pale living haze, ecological stillness, moonlit calm, grief-softened texture, natural-cycle motifs',
       creative_brief:
-        'Render any subject as part of a quiet natural cycle: pale glow, damp organic grain, moon haze, and patient ecological rhythm should define the style without fixed natural locations, specialist roles, journeys, rites, or named folklore beings.\n',
+        'Render any subject as part of a quiet natural cycle: pale glow, damp organic grain, moon haze, and patient ecological rhythm should define the style without fixed natural locations, specialist roles, journeys, rites, or named folklore beings.',
     },
   },
   {
@@ -404,23 +404,23 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Winter guilt suspicion, domestic quiet under threat, time-haunted melancholy, protective dread, ordinary softness sharpened by memory',
-      form_and_line:
+      subject_treatment:
         'Dense mature-anime linework, heavy crosshatching, weighted contour variation, gritty ink density',
-      color_palette:
+      color_and_tone:
         'Muted earths, blood reds, cold moonlit tones, desaturated horror palette, bruised shadow hues',
-      lighting_setup:
+      lighting_and_shadow:
         'Ominous directional shadows, single-source drama light, deep chiaroscuro, low-key shadow lift',
-      material_texture:
+      texture_and_material:
         'Snow-muted grain, worn domestic matte, cold glass haze, soft fabric texture, pale wall scuffs, breath-fog light',
-      render_quality:
-        'Gritty dramatic anime frame, film-noir rendering, heavy shadow compression, textured midtone grit',
-      spatial_distortion:
+      camera_and_composition:
         'Narrow memory compression, small-scale contrast, winter hush spacing, guilt-heavy close-ups, time-echo visual rhythm',
-      atmosphere: 'Wintry, tense, protective, melancholic',
+      atmosphere_and_mood: 'Wintry, tense, protective, melancholic',
+      rendering_and_quality:
+        'Gritty dramatic anime frame, film-noir rendering, heavy shadow compression, textured midtone grit',
       key_features:
         'Winter hush, guilt-heavy close-ups, domestic threat softness, memory echo, protective melancholy',
       creative_brief:
-        'Give any prompt a subdued winter-thriller treatment: pale cold light, domestic softness, memory echoes, and protective tension should create dread without fixed settlements, homes, age roles, culprits, evidence, or time mechanics.\n',
+        'Give any prompt a subdued winter-thriller treatment: pale cold light, domestic softness, memory echoes, and protective tension should create dread without fixed settlements, homes, age roles, culprits, evidence, or time mechanics.',
     },
   },
   {
@@ -432,23 +432,23 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Sun-bleached cruelty, austere discipline, hierarchy as pressure, heat-stripped beauty, severe silence before irreversible motion',
-      form_and_line:
+      subject_treatment:
         'Dense mature-anime linework, heavy crosshatching, weighted contour variation, gritty ink density',
-      color_palette:
+      color_and_tone:
         'Muted earths, blood reds, cold moonlit tones, desaturated horror palette, bruised shadow hues',
-      lighting_setup:
+      lighting_and_shadow:
         'Ominous directional shadows, single-source drama light, deep chiaroscuro, low-key shadow lift',
-      material_texture:
+      texture_and_material:
         'Bleached dust, dry blood-brown staining, worn textile fiber, polished edge glints, hot paper grain, taut skin shadow',
-      render_quality:
-        'Gritty dramatic anime frame, film-noir rendering, heavy shadow compression, textured midtone grit',
-      spatial_distortion:
+      camera_and_composition:
         'Severe pre-motion stillness, hierarchy-weighted spacing, sun-flattened depth, brutal close crop, disciplined diagonal tension',
-      atmosphere: 'Brutal, austere, scorching, merciless',
+      atmosphere_and_mood: 'Brutal, austere, scorching, merciless',
+      rendering_and_quality:
+        'Gritty dramatic anime frame, film-noir rendering, heavy shadow compression, textured midtone grit',
       key_features:
         'Sun-bleached harshness, pre-motion rigor, woundlike detail, hierarchy pressure, unbearable stillness',
       creative_brief:
-        'Render any subject under merciless heat and discipline: bleached light, dry staining, taut silence, and hierarchical spacing should make beauty feel cruel without fixed eras, duels, blades, ranks, or body-horror staging.\n',
+        'Render any subject under merciless heat and discipline: bleached light, dry staining, taut silence, and hierarchical spacing should make beauty feel cruel without fixed eras, duels, blades, ranks, or body-horror staging.',
     },
   },
   {
@@ -460,23 +460,23 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Rusted neon dread, broken youth interiority, violet-night melancholy, fractured chronology, faint unreality threading through ordinary damage',
-      form_and_line:
+      subject_treatment:
         'Dense mature-anime linework, heavy crosshatching, weighted contour variation, gritty ink density',
-      color_palette:
+      color_and_tone:
         'Muted earths, blood reds, cold moonlit tones, desaturated horror palette, bruised shadow hues',
-      lighting_setup:
+      lighting_and_shadow:
         'Ominous directional shadows, single-source drama light, deep chiaroscuro, low-key shadow lift',
-      material_texture:
+      texture_and_material:
         'Rusted neon bleed, industrial dust, violet film grain, damp concrete-neutral scuffing, analog static, worn wall texture',
-      render_quality:
-        'Gritty dramatic anime frame, film-noir rendering, heavy shadow compression, textured midtone grit',
-      spatial_distortion:
+      camera_and_composition:
         'Fragmented chronology cuts, violet-night compression, interior dread depth, static-layer repetition, memory-broken framing',
-      atmosphere: 'Melancholic, fragmented, nocturnal, ghostly',
+      atmosphere_and_mood: 'Melancholic, fragmented, nocturnal, ghostly',
+      rendering_and_quality:
+        'Gritty dramatic anime frame, film-noir rendering, heavy shadow compression, textured midtone grit',
       key_features:
         'Violet night tones, rusted neon bleed, fragmented framing, interior dread, static-haunted melancholy',
       creative_brief:
-        'Give any prompt a rusted-neon psychological treatment: violet haze, analog static, fractured time, and damaged interiority should define the style without fixed institutions, passageways, myths, public spaces, urban scale, or haunting setup.\n',
+        'Give any prompt a rusted-neon psychological treatment: violet haze, analog static, fractured time, and damaged interiority should define the style without fixed institutions, passageways, myths, public spaces, urban scale, or haunting setup.',
     },
   },
   {
@@ -488,23 +488,23 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Red-optic security noir, paramilitary abstraction, smoke-dense political dread, buried tenderness inside oppressive system machinery',
-      form_and_line:
+      subject_treatment:
         'Dense mature-anime linework, heavy crosshatching, weighted contour variation, gritty ink density',
-      color_palette:
+      color_and_tone:
         'Muted earths, blood reds, cold moonlit tones, desaturated horror palette, bruised shadow hues',
-      lighting_setup:
+      lighting_and_shadow:
         'Ominous directional shadows, single-source drama light, deep chiaroscuro, low-key shadow lift',
-      material_texture:
+      texture_and_material:
         'Smoke-black metal, red glass glow, heavy cloth grain, riot-dust haze, oxidized plated panels, wet concrete-neutral grit',
-      render_quality:
-        'Gritty dramatic anime frame, film-noir rendering, heavy shadow compression, textured midtone grit',
-      spatial_distortion:
+      camera_and_composition:
         'Red-optic focal points, smoke-layer compression, plated mass silhouettes, political negative space, oppressive security geometry',
-      atmosphere: 'Oppressive, political, smoky, tragic',
+      atmosphere_and_mood: 'Oppressive, political, smoky, tragic',
+      rendering_and_quality:
+        'Gritty dramatic anime frame, film-noir rendering, heavy shadow compression, textured midtone grit',
       key_features:
         'Red optic glow, smoke-dense composition, plated mass abstraction, political dread, buried tenderness',
       creative_brief:
-        'Apply red-optic security noir to any subject: smoke, heavy dark surfaces, red glass points, and political weight should suggest oppressive systems without fixed attire systems, brigades, ruins, concealment props, factions, or security scenes.\n',
+        'Apply red-optic security noir to any subject: smoke, heavy dark surfaces, red glass points, and political weight should suggest oppressive systems without fixed attire systems, brigades, ruins, concealment props, factions, or security scenes.',
     },
   },
   {
@@ -516,23 +516,23 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Lantern-lit retribution, calm cruelty, midnight ritual serenity, crimson floral omen, fatal correspondence rendered as quiet ceremonial pressure',
-      form_and_line:
+      subject_treatment:
         'Dense mature-anime linework, heavy crosshatching, weighted contour variation, gritty ink density',
-      color_palette:
+      color_and_tone:
         'Muted earths, blood reds, cold moonlit tones, desaturated horror palette, bruised shadow hues',
-      lighting_setup:
+      lighting_and_shadow:
         'Ominous directional shadows, single-source drama light, deep chiaroscuro, low-key shadow lift',
-      material_texture:
+      texture_and_material:
         'Candlelit paper glow, dark silk matte, still-water sheen, crimson petal softness, lacquer black, smoky ritual grain',
-      render_quality:
-        'Gritty dramatic anime frame, film-noir rendering, heavy shadow compression, textured midtone grit',
-      spatial_distortion:
+      camera_and_composition:
         'Ritual symmetry, lantern-point depth, still-water reflection, threshold framing, fatal close compression',
-      atmosphere: 'Cold, ritualistic, nocturnal, fatal',
+      atmosphere_and_mood: 'Cold, ritualistic, nocturnal, fatal',
+      rendering_and_quality:
+        'Gritty dramatic anime frame, film-noir rendering, heavy shadow compression, textured midtone grit',
       key_features:
         'Lantern glow, crimson floral omen, dark silk calm, ritual threshold, quiet fatal symmetry',
       creative_brief:
-        'Render any subject through quiet retribution ritual: lantern glow, crimson floral accents, dark silk, still reflections, and fatal symmetry should define the image without fixed settlements, attire, transport rituals, bargains, or vengeance scenes.\n',
+        'Render any subject through quiet retribution ritual: lantern glow, crimson floral accents, dark silk, still reflections, and fatal symmetry should define the image without fixed settlements, attire, transport rituals, bargains, or vengeance scenes.',
     },
   },
   {
@@ -544,23 +544,23 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Civic rumor panic, media anxiety, dream-logic intrusion, expression-driven social collapse, ordinary surfaces warped by collective pressure',
-      form_and_line:
+      subject_treatment:
         'Dense mature-anime linework, heavy crosshatching, weighted contour variation, gritty ink density',
-      color_palette:
+      color_and_tone:
         'Muted earths, blood reds, cold moonlit tones, desaturated horror palette, bruised shadow hues',
-      lighting_setup:
+      lighting_and_shadow:
         'Ominous directional shadows, single-source drama light, deep chiaroscuro, low-key shadow lift',
-      material_texture:
+      texture_and_material:
         'Broadcast static grain, printed-paper clutter, cheap plastic sheen, urban-neutral scuffing, distorted skin tones, fluorescent haze',
-      render_quality:
-        'Gritty dramatic anime frame, film-noir rendering, heavy shadow compression, textured midtone grit',
-      spatial_distortion:
+      camera_and_composition:
         'Dream-crack perspective, rumor-wave repetition, civic pressure compression, warped familiar proportions, media-noise layering',
-      atmosphere: 'Claustrophobic, surreal, civic, unstable',
+      atmosphere_and_mood: 'Claustrophobic, surreal, civic, unstable',
+      rendering_and_quality:
+        'Gritty dramatic anime frame, film-noir rendering, heavy shadow compression, textured midtone grit',
       key_features:
         'Rumor-driven framing, media clutter, dream-crack cues, distorted ordinary expression, civic pressure waves',
       creative_brief:
-        'Treat any subject as a civic rumor becoming visual pressure: broadcast static, warped expressions, repeated motifs, and dream cracks should create breakdown without fixed aggressors, props, districts, civic roles, or literal media scenes.\n',
+        'Treat any subject as a civic rumor becoming visual pressure: broadcast static, warped expressions, repeated motifs, and dream cracks should create breakdown without fixed aggressors, props, districts, civic roles, or literal media scenes.',
     },
   },
   {
@@ -572,23 +572,23 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Invasive anatomy logic, clean surfaces corrupted by organic strategy, selfhood fracture, clinical paranoia, flesh geometry as intelligent design',
-      form_and_line:
+      subject_treatment:
         'Dense mature-anime linework, heavy crosshatching, weighted contour variation, gritty ink density',
-      color_palette:
+      color_and_tone:
         'Muted earths, blood reds, cold moonlit tones, desaturated horror palette, bruised shadow hues',
-      lighting_setup:
+      lighting_and_shadow:
         'Ominous directional shadows, single-source drama light, deep chiaroscuro, low-key shadow lift',
-      material_texture:
+      texture_and_material:
         'Clean matte planes, wet organic seams, sliced membrane gloss, tense skinlike translucency, surgical shadow grain, cool neutral surfaces',
-      render_quality:
-        'Gritty dramatic anime frame, film-noir rendering, heavy shadow compression, textured midtone grit',
-      spatial_distortion:
+      camera_and_composition:
         'Asymmetric anatomy echoes, splitting contours, invasive edge growth, clinical open space, threat emerging from familiar proportions',
-      atmosphere: 'Tense, invasive, paranoid, horrifying',
+      atmosphere_and_mood: 'Tense, invasive, paranoid, horrifying',
+      rendering_and_quality:
+        'Gritty dramatic anime frame, film-noir rendering, heavy shadow compression, textured midtone grit',
       key_features:
         'Heavy atmosphere, narrative weight, oppressive mood building, visceral consequence framing, story-first visual language',
       creative_brief:
-        'Apply a clean-but-invasive thriller treatment to any subject: familiar forms split into intelligent organic geometry, cool neutrals buckle under crimson stress, and the image feels strategically infected. Keep the language abstract, with no fixed body part, location, role, weapon, or action premise.\n',
+        'Apply a clean-but-invasive thriller treatment to any subject: familiar forms split into intelligent organic geometry, cool neutrals buckle under crimson stress, and the image feels strategically infected. Keep the language abstract, with no fixed body part, location, role, weapon, or action premise.',
     },
   },
   {
@@ -600,23 +600,23 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Procedural low-fantasy severity, dirty-metal pragmatism, tactical light discipline, merciless efficiency as composition, dice-like tension without literal gameplay',
-      form_and_line:
+      subject_treatment:
         'Dense mature-anime linework, heavy crosshatching, weighted contour variation, gritty ink density',
-      color_palette:
+      color_and_tone:
         'Muted earths, blood reds, cold moonlit tones, desaturated horror palette, bruised shadow hues',
-      lighting_setup:
+      lighting_and_shadow:
         'Ominous directional shadows, single-source drama light, deep chiaroscuro, low-key shadow lift',
-      material_texture:
+      texture_and_material:
         'Dirty metal scuffing, torch-smoked grain, worn leatherlike matte, damp stone-neutral grit, practical cloth abrasion, dry blood-brown staining',
-      render_quality:
-        'Gritty dramatic anime frame, film-noir rendering, heavy shadow compression, textured midtone grit',
-      spatial_distortion:
+      camera_and_composition:
         'Tactical corridor-like compression, step-by-step composition, narrow light cones, practical silhouette economy, procedural threat spacing',
-      atmosphere: 'Tactical, grim, relentless, procedural',
+      atmosphere_and_mood: 'Tactical, grim, relentless, procedural',
+      rendering_and_quality:
+        'Gritty dramatic anime frame, film-noir rendering, heavy shadow compression, textured midtone grit',
       key_features:
         'Heavy atmosphere, narrative weight, oppressive mood building, visceral consequence framing, story-first visual language',
       creative_brief:
-        'Treat any subject as harsh practical fantasy rendered through procedure, restraint, and problem-solving grit. Use narrow light, dirty metal texture, smoky shadow, and economical silhouettes while keeping all figures, props, locations, enemies, and game-signifiers non-specific.\n',
+        'Treat any subject as harsh practical fantasy rendered through procedure, restraint, and problem-solving grit. Use narrow light, dirty metal texture, smoky shadow, and economical silhouettes while keeping all figures, props, locations, enemies, and game-signifiers non-specific.',
     },
   },
   {
@@ -628,23 +628,23 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Monumental doom weight, scar-like crosshatching, eclipse-black negative space, sacrificial emblem logic, oppressive scale fields, cursed ornamental geometry',
-      form_and_line:
+      subject_treatment:
         'Dense mature-anime linework, heavy crosshatching, weighted contour variation, gritty ink density',
-      color_palette:
+      color_and_tone:
         'Muted earths, blood reds, cold moonlit tones, desaturated horror palette, bruised shadow hues',
-      lighting_setup:
+      lighting_and_shadow:
         'Ominous directional shadows, single-source drama light, deep chiaroscuro, low-key shadow lift',
-      material_texture:
+      texture_and_material:
         'Scarred ink grain, worn hide texture, oxidized patina, cracked mineral surfaces, viscous black accents, abraded parchment roughness',
-      render_quality:
-        'Gritty dramatic anime frame, film-noir rendering, heavy shadow compression, textured midtone grit',
-      spatial_distortion:
+      camera_and_composition:
         'Severe silhouettes, compressed foreground mass, oppressive scale contrast, ceremonial void framing, gravity-heavy composition',
-      atmosphere: 'Brutal, tragic, despairing, epic',
+      atmosphere_and_mood: 'Brutal, tragic, despairing, epic',
+      rendering_and_quality:
+        'Gritty dramatic anime frame, film-noir rendering, heavy shadow compression, textured midtone grit',
       key_features:
         'Heavy atmosphere, narrative weight, oppressive mood building, visceral consequence framing, story-first visual language',
       creative_brief:
-        'Render any subject as if weight, guilt, and fate have been pressed into the ink. Use scar-dense hatching, sacrificial symbol geometry, bruised earth reds, and eclipse-black shadow fields to create monumental doom as a transferable render grammar, free of fixed props, cast, lore icons, or set-piece events.\n',
+        'Render any subject as if weight, guilt, and fate have been pressed into the ink. Use scar-dense hatching, sacrificial symbol geometry, bruised earth reds, and eclipse-black shadow fields to create monumental doom as a transferable render grammar, free of fixed props, cast, lore icons, or set-piece events.',
     },
   },
   {
@@ -656,23 +656,23 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Crimson hunger tension, alienated identity split, predatory color flares, fleshy ribbon abstraction, mask-like concealment, appetite rendered as graphic pressure',
-      form_and_line:
+      subject_treatment:
         'Dense mature-anime linework, heavy crosshatching, weighted contour variation, gritty ink density',
-      color_palette:
+      color_and_tone:
         'Muted earths, blood reds, cold moonlit tones, desaturated horror palette, bruised shadow hues',
-      lighting_setup:
+      lighting_and_shadow:
         'Ominous directional shadows, single-source drama light, deep chiaroscuro, low-key shadow lift',
-      material_texture:
+      texture_and_material:
         'Damp ink grain, membrane gloss, scratched matte surfaces, bruised translucency, red wet-edge accents, worn urban-neutral grit',
-      render_quality:
-        'Gritty dramatic anime frame, film-noir rendering, heavy shadow compression, textured midtone grit',
-      spatial_distortion:
+      camera_and_composition:
         'Identity-split framing, asymmetrical flare shapes, close pressure cropping, predatory negative space, invasive contour echoes',
-      atmosphere: 'Tormented, hungry, alienated, violent',
+      atmosphere_and_mood: 'Tormented, hungry, alienated, violent',
+      rendering_and_quality:
+        'Gritty dramatic anime frame, film-noir rendering, heavy shadow compression, textured midtone grit',
       key_features:
         'Heavy atmosphere, narrative weight, oppressive mood building, visceral consequence framing, story-first visual language',
       creative_brief:
-        'Treat any input as a study in appetite, concealment, and identity fracture. Push crimson flares through desaturated shadows, membrane-like gloss, and invasive ribbon silhouettes while keeping the style abstract, transferable, and free of fixed locations, named effects, or literal pursuit setups.\n',
+        'Treat any input as a study in appetite, concealment, and identity fracture. Push crimson flares through desaturated shadows, membrane-like gloss, and invasive ribbon silhouettes while keeping the style abstract, transferable, and free of fixed locations, named effects, or literal pursuit setups.',
     },
   },
   {
@@ -684,23 +684,23 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Aristocratic menace, crimson authority fields, black ceremonial contrast, gothic pressure geometry, predatory elegance, sanctified violence as abstraction',
-      form_and_line:
+      subject_treatment:
         'Dense mature-anime linework, heavy crosshatching, weighted contour variation, gritty ink density',
-      color_palette:
+      color_and_tone:
         'Muted earths, blood reds, cold moonlit tones, desaturated horror palette, bruised shadow hues',
-      lighting_setup:
+      lighting_and_shadow:
         'Ominous directional shadows, single-source drama light, deep chiaroscuro, low-key shadow lift',
-      material_texture:
+      texture_and_material:
         'Velvet-black ink mass, oxidized crimson glaze, polished dark enamel, aged paper grain, hard-edged stain texture, smoky drybrush',
-      render_quality:
-        'Gritty dramatic anime frame, film-noir rendering, heavy shadow compression, textured midtone grit',
-      spatial_distortion:
+      camera_and_composition:
         'Heraldic vertical framing, severe silhouette hierarchy, crimson-black power asymmetry, ritualized negative space, blade-sharp contour rhythm',
-      atmosphere: 'Violent, regal, gothic, relentless',
+      atmosphere_and_mood: 'Violent, regal, gothic, relentless',
+      rendering_and_quality:
+        'Gritty dramatic anime frame, film-noir rendering, heavy shadow compression, textured midtone grit',
       key_features:
         'Heavy atmosphere, narrative weight, oppressive mood building, visceral consequence framing, story-first visual language',
       creative_brief:
-        'Convert any subject into a regal gothic pressure image built from crimson authority, black ceremonial voids, and hard-edged shadow hierarchy. Keep the menace formal, graphic, and transferable instead of tied to fixed costumes, factions, interiors, weapons, or pursuit scenes.\n',
+        'Convert any subject into a regal gothic pressure image built from crimson authority, black ceremonial voids, and hard-edged shadow hierarchy. Keep the menace formal, graphic, and transferable instead of tied to fixed costumes, factions, interiors, weapons, or pursuit scenes.',
     },
   },
   {
@@ -712,23 +712,23 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Wind-scoured restraint, historical-grit naturalism, revenge cooled into quiet form, weathered endurance, moral weight, sparse horizon pressure',
-      form_and_line:
+      subject_treatment:
         'Dense mature-anime linework, heavy crosshatching, weighted contour variation, gritty ink density',
-      color_palette:
+      color_and_tone:
         'Muted earths, blood reds, cold moonlit tones, desaturated horror palette, bruised shadow hues',
-      lighting_setup:
+      lighting_and_shadow:
         'Ominous directional shadows, single-source drama light, deep chiaroscuro, low-key shadow lift',
-      material_texture:
+      texture_and_material:
         'Wind-abraded grain, worn textile roughness, cold mineral matte, salt-weathered surfaces, dry earth scuffing, subdued iron patina',
-      render_quality:
-        'Gritty dramatic anime frame, film-noir rendering, heavy shadow compression, textured midtone grit',
-      spatial_distortion:
+      camera_and_composition:
         'Broad stillness, low-pressure horizon bands, grounded mass, negative space as emotional restraint, slow diagonal weather flow',
-      atmosphere: 'Stoic, epic, historical, meditative',
+      atmosphere_and_mood: 'Stoic, epic, historical, meditative',
+      rendering_and_quality:
+        'Gritty dramatic anime frame, film-noir rendering, heavy shadow compression, textured midtone grit',
       key_features:
         'Heavy atmosphere, narrative weight, oppressive mood building, visceral consequence framing, story-first visual language',
       creative_brief:
-        'Render any subject with weathered restraint and moral afterweight: muted earths, cold light, dry abrasion, and open negative space that feels earned rather than empty. Keep the treatment portable, without historical cast, fixed geography, props, or narrative confrontation.\n',
+        'Render any subject with weathered restraint and moral afterweight: muted earths, cold light, dry abrasion, and open negative space that feels earned rather than empty. Keep the treatment portable, without historical cast, fixed geography, props, or narrative confrontation.',
     },
   },
   {
@@ -740,23 +740,23 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Pale threshold horror, silver glint discipline, metamorphic dread, bleak restraint, ranked severity as graphic order, hunter-prey symmetry without literal roles',
-      form_and_line:
+      subject_treatment:
         'Dense mature-anime linework, heavy crosshatching, weighted contour variation, gritty ink density',
-      color_palette:
+      color_and_tone:
         'Muted earths, blood reds, cold moonlit tones, desaturated horror palette, bruised shadow hues',
-      lighting_setup:
+      lighting_and_shadow:
         'Ominous directional shadows, single-source drama light, deep chiaroscuro, low-key shadow lift',
-      material_texture:
+      texture_and_material:
         'Chalk-pale matte surfaces, silver edge sheen, cracked ash grain, cold leatherlike roughness, mineral dust, restrained organic distortion',
-      render_quality:
-        'Gritty dramatic anime frame, film-noir rendering, heavy shadow compression, textured midtone grit',
-      spatial_distortion:
+      camera_and_composition:
         'Symmetrical threat staging, pale figure-ground inversion, narrow vertical cuts, restrained metamorphic edges, severe silhouette separation',
-      atmosphere: 'Bleak, haunted, grim, melancholic',
+      atmosphere_and_mood: 'Bleak, haunted, grim, melancholic',
+      rendering_and_quality:
+        'Gritty dramatic anime frame, film-noir rendering, heavy shadow compression, textured midtone grit',
       key_features:
         'Heavy atmosphere, narrative weight, oppressive mood building, visceral consequence framing, story-first visual language',
       creative_brief:
-        'Give any prompt a pale, disciplined horror treatment where beauty looks one step from transformation. Use silver edge accents, ash-matte textures, severe silhouette order, and quiet dread as a portable image grammar, not a fixed cast, setting, rank system, or confrontation scene.\n',
+        'Give any prompt a pale, disciplined horror treatment where beauty looks one step from transformation. Use silver edge accents, ash-matte textures, severe silhouette order, and quiet dread as a portable image grammar, not a fixed cast, setting, rank system, or confrontation scene.',
     },
   },
   {
@@ -768,23 +768,23 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Lush wonder hiding irreversible cost, bioluminescent mystery, depth-layered dread, delicate beauty under pressure, reliclike detail as visual lure',
-      form_and_line:
+      subject_treatment:
         'Dense mature-anime linework, heavy crosshatching, weighted contour variation, gritty ink density',
-      color_palette:
+      color_and_tone:
         'Muted earths, blood reds, cold moonlit tones, desaturated horror palette, bruised shadow hues',
-      lighting_setup:
+      lighting_and_shadow:
         'Ominous directional shadows, single-source drama light, deep chiaroscuro, low-key shadow lift',
-      material_texture:
+      texture_and_material:
         'Bioluminescent bloom, damp mineral grain, soft organic translucency, antique relic patina, mossy velvet matte, pressure-worn edges',
-      render_quality:
-        'Gritty dramatic anime frame, film-noir rendering, heavy shadow compression, textured midtone grit',
-      spatial_distortion:
+      camera_and_composition:
         'Layered vertical depth cues, scale uncertainty, beautiful foreground lure, ominous compression, circular pull composition',
-      atmosphere: 'Wondrous, terrifying, abyssal, enchanting',
+      atmosphere_and_mood: 'Wondrous, terrifying, abyssal, enchanting',
+      rendering_and_quality:
+        'Gritty dramatic anime frame, film-noir rendering, heavy shadow compression, textured midtone grit',
       key_features:
         'Heavy atmosphere, narrative weight, oppressive mood building, visceral consequence framing, story-first visual language',
       creative_brief:
-        'Recast any subject with beautiful depth that feels costly to enter: luminous blooms, damp mineral texture, layered compression, and wonder turning quietly unsafe. Keep the image portable, with no fixed explorers, lore systems, travel premise, or literal worldbuilding requirement.\n',
+        'Recast any subject with beautiful depth that feels costly to enter: luminous blooms, damp mineral texture, layered compression, and wonder turning quietly unsafe. Keep the image portable, with no fixed explorers, lore systems, travel premise, or literal worldbuilding requirement.',
     },
   },
   {
@@ -796,23 +796,23 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Grimy sorcery collision, anarchic humor in texture, industrial filth, masked ambiguity as shape language, portal-like framing, absurd menace without literal cast',
-      form_and_line:
+      subject_treatment:
         'Dense mature-anime linework, heavy crosshatching, weighted contour variation, gritty ink density',
-      color_palette:
+      color_and_tone:
         'Muted earths, blood reds, cold moonlit tones, desaturated horror palette, bruised shadow hues',
-      lighting_setup:
+      lighting_and_shadow:
         'Ominous directional shadows, single-source drama light, deep chiaroscuro, low-key shadow lift',
-      material_texture:
+      texture_and_material:
         'Tar grime, industrial soot, scraped enamel, greasy ink buildup, oxidized dust, warped organic stains, smoke-softened edges',
-      render_quality:
-        'Gritty dramatic anime frame, film-noir rendering, heavy shadow compression, textured midtone grit',
-      spatial_distortion:
+      camera_and_composition:
         'Colliding frames, smoke-bent edges, masklike silhouettes, portal-crop interruptions, chaotic but readable density, offbeat scale jolts',
-      atmosphere: 'Bizarre, dangerous, grimy, anarchic',
+      atmosphere_and_mood: 'Bizarre, dangerous, grimy, anarchic',
+      rendering_and_quality:
+        'Gritty dramatic anime frame, film-noir rendering, heavy shadow compression, textured midtone grit',
       key_features:
         'Heavy atmosphere, narrative weight, oppressive mood building, visceral consequence framing, story-first visual language',
       creative_brief:
-        'Push any prompt into filthy, funny, dangerous collision: soot, warped frames, occult-industrial stains, and masklike ambiguity create absurd menace as a transferable style, not a fixed place, character, prop system, or action setup.\n',
+        'Push any prompt into filthy, funny, dangerous collision: soot, warped frames, occult-industrial stains, and masklike ambiguity create absurd menace as a transferable style, not a fixed place, character, prop system, or action setup.',
     },
   },
   {
@@ -824,20 +824,20 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         "Devilman Crybaby Neon Tragic Metamorphosis within 9. Dark Fantasy & Seinen: a reusable Anime Battle & Worlds visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Devilman Crybaby Neon Tragic Metamorphosis's specific style identity.",
-      form_and_line:
+      subject_treatment:
         'Define Devilman Crybaby Neon Tragic Metamorphosis through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
-      color_palette:
+      color_and_tone:
         'Use a Devilman Crybaby Neon Tragic Metamorphosis-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
-      lighting_setup:
+      lighting_and_shadow:
         'Use lighting that makes Devilman Crybaby Neon Tragic Metamorphosis recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
-      material_texture:
+      texture_and_material:
         'Use materials and textures that reinforce Devilman Crybaby Neon Tragic Metamorphosis: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
-      render_quality:
-        'Render Devilman Crybaby Neon Tragic Metamorphosis with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
-      spatial_distortion:
+      camera_and_composition:
         'Use spatial behavior that fits Devilman Crybaby Neon Tragic Metamorphosis: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
-      atmosphere:
+      atmosphere_and_mood:
         'Set a mood that belongs to Devilman Crybaby Neon Tragic Metamorphosis: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+      rendering_and_quality:
+        'Render Devilman Crybaby Neon Tragic Metamorphosis with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       key_features:
         "Prioritize Devilman Crybaby Neon Tragic Metamorphosis's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:

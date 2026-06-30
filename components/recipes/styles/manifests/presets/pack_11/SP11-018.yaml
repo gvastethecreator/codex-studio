@@ -12,20 +12,21 @@ tags:
   - miscellaneous-and-fun
   - toys-and-crafts
 visualDna:
-  aesthetic: Twisted latex construction, balloon-sculpture grammar, squeaky inflated form language, pressure-art novelty
-  form_and_line: Rounded segments, pinch-twist nodes, sausage-link sections, tubular bends
-  color_palette: Shiny latex colors, carnival spectrum, bright-red, canary-yellow, sky-blue gloss
-  lighting_setup: High specular highlights, tight glossy rim catches, overhead bounce, balloon-surface reflection
-  material_texture: Stretched rubber, latex skin, powder-dusted finish, taut inflation tension
-  render_quality: Fragile, playful, inflated, balloon-twisting magic, squeak-and-sculpt, festive impermanence
-  spatial_distortion: Tubular shapes, inflated segment geometry, pinch-collapsed waist, pressure-balloon form
-  atmosphere: Fun, squeaky, buoyant, celebration-coded, carnival-joy, light and temporary
+  aesthetic: >-
+    Twisted latex construction, balloon-sculpture grammar, squeaky inflated form language, pressure-art
+    novelty
+  subject_treatment: Rounded segments, pinch-twist nodes, sausage-link sections, tubular bends
+  color_and_tone: Shiny latex colors, carnival spectrum, bright-red, canary-yellow, sky-blue gloss
+  lighting_and_shadow: High specular highlights, tight glossy rim catches, overhead bounce, balloon-surface reflection
+  texture_and_material: Stretched rubber, latex skin, powder-dusted finish, taut inflation tension
+  camera_and_composition: Tubular shapes, inflated segment geometry, pinch-collapsed waist, pressure-balloon form
+  atmosphere_and_mood: Fun, squeaky, buoyant, celebration-coded, carnival-joy, light and temporary
+  rendering_and_quality: Fragile, playful, inflated, balloon-twisting magic, squeak-and-sculpt, festive impermanence
   key_features: Knots, twisted nodes, balloon-neck ties, air-pressure seams, glossy-highlight rings
   creative_brief: >-
-    Convert the input into latex-twist construction grammar: segmented tubular
-    inflation, knot-node articulation, glossy pressure-tension highlights, and
-    inflated simplification should drive the style without requiring clowns,
-    birthdays, animals, or a party room.
+    Convert the input into latex-twist construction grammar: segmented tubular inflation, knot-node
+    articulation, glossy pressure-tension highlights, and inflated simplification should drive the style
+    without requiring clowns, birthdays, animals, or a party room.
 avoidRules:
   - sharp
   - flat

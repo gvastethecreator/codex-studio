@@ -13,19 +13,18 @@ tags:
   - traditional-painting
 visualDna:
   aesthetic: Seurat style dot painting
-  form_and_line: Composed entirely of dots
-  color_palette: Optical mixing of primary colors
-  lighting_setup: Vibrating light
-  material_texture: Stippled paint
-  render_quality: Scientific, meticulous
-  spatial_distortion: Forms dissolve into dots
-  atmosphere: Static, shimmering
+  subject_treatment: Composed entirely of dots
+  color_and_tone: Optical mixing of primary colors
+  lighting_and_shadow: Vibrating light
+  texture_and_material: Stippled paint
+  camera_and_composition: Forms dissolve into dots
+  atmosphere_and_mood: Static, shimmering
+  rendering_and_quality: Scientific, meticulous
   key_features: Dot pattern
   creative_brief: >-
-    Apply pointillist construction to any input: separated pure-color dots,
-    optical mixing at distance, ordered chromatic vibration, and image structure
-    built from small repeated marks. Keep retinal color theory without requiring
-    parks, figures, umbrellas, rivers, or Neo-Impressionist subject staging.
+    Apply pointillist construction to any input: separated pure-color dots, optical mixing at distance,
+    ordered chromatic vibration, and image structure built from small repeated marks. Keep retinal color
+    theory without requiring parks, figures, umbrellas, rivers, or Neo-Impressionist subject staging.
 avoidRules:
   - photo
   - realistic
@@ -45,7 +44,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP06-010.webp
 attributes:
-  negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border
+  negativePrompt: >-
+    photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy,
+    watermark, text, signature, frame, border
 taxonomy:
   packId: pack_06
   packName: Essential Art Styles

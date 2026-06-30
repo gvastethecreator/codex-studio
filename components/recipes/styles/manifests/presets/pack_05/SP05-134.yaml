@@ -12,19 +12,24 @@ tags:
   - anime-battle-and-worlds
   - modern-shonen-and-action
 visualDna:
-  aesthetic: Convenience-store assassin sprint style, with everyday calm, immaculate choreography, and absurd professional velocity.
-  form_and_line: Clean stunt vectors, mundane-grid composition, economical pose language, productlike pattern rhythm, and dead-calm cuts.
-  color_palette: Fluorescent white, snack-package red, mint green, muted tan, steel gray, and sudden action yellow.
-  lighting_setup: Flat retail brightness pierced by kinetic rim streaks, hard practical glow, and clean comedy-action highlights.
-  material_texture: Glossy packaging color, tile shine, polished metal glints, soft cloth flats, and crisp motion overlays.
-  render_quality: Premium modern anime finish with immaculate stunt clarity, mundane detail, and surprise velocity.
-  spatial_distortion: Everyday grids become action lanes, with precise perspective snaps and calm negative space.
-  atmosphere: Cool, funny, efficient, surprising
+  aesthetic: >-
+    Convenience-store assassin sprint style, with everyday calm, immaculate choreography, and absurd
+    professional velocity.
+  subject_treatment: >-
+    Clean stunt vectors, mundane-grid composition, economical pose language, productlike pattern rhythm, and
+    dead-calm cuts.
+  color_and_tone: Fluorescent white, snack-package red, mint green, muted tan, steel gray, and sudden action yellow.
+  lighting_and_shadow: >-
+    Flat retail brightness pierced by kinetic rim streaks, hard practical glow, and clean comedy-action
+    highlights.
+  texture_and_material: Glossy packaging color, tile shine, polished metal glints, soft cloth flats, and crisp motion overlays.
+  camera_and_composition: Everyday grids become action lanes, with precise perspective snaps and calm negative space.
+  atmosphere_and_mood: Cool, funny, efficient, surprising
+  rendering_and_quality: Premium modern anime finish with immaculate stunt clarity, mundane detail, and surprise velocity.
   key_features: Mundane-action contrast, clean stunt lanes, dead-calm efficiency, retail-bright palette, hidden velocity.
   creative_brief: >-
-    Turn any prompt into mundane precision action: keep surfaces ordinary,
-    lighting flat, and motion impossibly clean, without requiring a store,
-    product display, weapon, profession, or suburban scene.
+    Turn any prompt into mundane precision action: keep surfaces ordinary, lighting flat, and motion
+    impossibly clean, without requiring a store, product display, weapon, profession, or suburban scene.
 avoidRules:
   - realistic
   - 3d render
@@ -41,7 +46,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-134.webp
 attributes:
-  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
+  negativePrompt: >-
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts,
+    watermark, text, signature
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds

@@ -13,19 +13,18 @@ tags:
   - traditional-painting
 visualDna:
   aesthetic: Monet style impressionism
-  form_and_line: Short, broken brushstrokes
-  color_palette: Vibrant, unblended optical mixing
-  lighting_setup: Perceptual light built from broken color, luminous edges, and warm-cool vibration
-  material_texture: Thick paint dabs
-  render_quality: Optical impressionist finish with loose local detail and high color vibration
-  spatial_distortion: Loss of detail
-  atmosphere: Light, airy, fleeting
+  subject_treatment: Short, broken brushstrokes
+  color_and_tone: Vibrant, unblended optical mixing
+  lighting_and_shadow: Perceptual light built from broken color, luminous edges, and warm-cool vibration
+  texture_and_material: Thick paint dabs
+  camera_and_composition: Loss of detail
+  atmosphere_and_mood: Light, airy, fleeting
+  rendering_and_quality: Optical impressionist finish with loose local detail and high color vibration
   key_features: Dabbed paint texture
   creative_brief: >-
-    Apply impressionist oil perception to any input: broken color dabs, optical
-    mixing, shimmering light, softened contours, quick visible strokes, and
-    atmospheric afterimage. Keep perception-first painting without requiring
-    gardens, riverbanks, dancers, plein-air landscapes, or period scenes.
+    Apply impressionist oil perception to any input: broken color dabs, optical mixing, shimmering light,
+    softened contours, quick visible strokes, and atmospheric afterimage. Keep perception-first painting
+    without requiring gardens, riverbanks, dancers, plein-air landscapes, or period scenes.
 avoidRules:
   - photo
   - realistic
@@ -45,7 +44,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP06-009.webp
 attributes:
-  negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border
+  negativePrompt: >-
+    photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy,
+    watermark, text, signature, frame, border
 taxonomy:
   packId: pack_06
   packName: Essential Art Styles

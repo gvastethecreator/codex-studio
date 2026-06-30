@@ -12,26 +12,21 @@ tags:
   - illustration-and-graphic-novel
   - ink-and-print
 visualDna:
-  aesthetic: >-
-    Cyanotype contact-print style with UV-driven silhouette capture and deep Prussian monochrome
-    chemistry
-  form_and_line: >-
-    White-negative silhouettes with soft contact edges and exposure-based tonal falloff on coated
-    paper
-  color_palette: Prussian Blue, monochrome cyan, sun-print depth
-  lighting_setup: Negative, UV exposure, solar-contact alchemy
-  material_texture: Watercolor paper
-  render_quality: >-
-    Alternative-process print fidelity emphasizing UV exposure behavior, washout dynamics, and
-    historic photogram aesthetics
-  spatial_distortion: Soft edges
-  atmosphere: Dreamy, blue, alternative-process magic, Victorian science
+  aesthetic: Cyanotype contact-print style with UV-driven silhouette capture and deep Prussian monochrome chemistry
+  subject_treatment: White-negative silhouettes with soft contact edges and exposure-based tonal falloff on coated paper
+  color_and_tone: Prussian Blue, monochrome cyan, sun-print depth
+  lighting_and_shadow: Negative, UV exposure, solar-contact alchemy
+  texture_and_material: Watercolor paper
+  camera_and_composition: Soft edges
+  atmosphere_and_mood: Dreamy, blue, alternative-process magic, Victorian science
+  rendering_and_quality: >-
+    Alternative-process print fidelity emphasizing UV exposure behavior, washout dynamics, and historic
+    photogram aesthetics
   key_features: Blue only, contact shadow, silhouette photogram
   creative_brief: >-
-    Apply cyanotype contact-print grammar to any input: Prussian-blue wash, UV-contact silhouettes,
-    soft exposure falloff, coated-paper texture, and chemistry-led tonal emergence should define
-    style without requiring botanicals, photograms, objects on paper, science props, or Victorian
-    scenes.
+    Apply cyanotype contact-print grammar to any input: Prussian-blue wash, UV-contact silhouettes, soft
+    exposure falloff, coated-paper texture, and chemistry-led tonal emergence should define style without
+    requiring botanicals, photograms, objects on paper, science props, or Victorian scenes.
 avoidRules:
   - red
   - yellow

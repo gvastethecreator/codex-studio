@@ -13,15 +13,18 @@ tags:
   - textile-and-ornamental-patterns
 visualDna:
   aesthetic: Broken check pattern
-  form_and_line: Jagged checks
-  color_palette: Black and White
-  lighting_setup: Flat
-  material_texture: Wool
-  render_quality: Fashion, classic
-  spatial_distortion: Repeat
-  atmosphere: Professional
+  subject_treatment: Jagged checks
+  color_and_tone: Black and White
+  lighting_and_shadow: Flat
+  texture_and_material: Wool
+  camera_and_composition: Repeat
+  atmosphere_and_mood: Professional
+  rendering_and_quality: Fashion, classic
   key_features: Grid
-  creative_brief: Apply houndstooth as jagged woven authority over the input with broken black-white checks, sharp tooth-like repetition, flat fashion clarity, and controlled agitation. If clothing or fabric exists, use it directly; otherwise map the pattern onto forms without requiring boardroom or professional staging.
+  creative_brief: >-
+    Apply houndstooth as jagged woven authority over the input with broken black-white checks, sharp
+    tooth-like repetition, flat fashion clarity, and controlled agitation. If clothing or fabric exists, use
+    it directly; otherwise map the pattern onto forms without requiring boardroom or professional staging.
 avoidRules:
   - floral
   - organic

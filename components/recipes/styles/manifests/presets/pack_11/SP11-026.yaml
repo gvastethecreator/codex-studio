@@ -13,24 +13,29 @@ tags:
   - artistic-mediums
 visualDna:
   aesthetic: >-
-    Aerosol markmaking system with overpainted speed, cap-pressure variation, graphic rebellion, and layered surface
-    memory
-  form_and_line: >-
-    Fat-cap fills, skinny-cap cuts, overspray halos, drips, stencil interrupts, tag-like motion trails, scuffed outline
-    collisions
-  color_palette: Chrome silver, toxic green, infrared purple, safety yellow, matte black, signal red, concrete grey undertone
-  lighting_setup: Flat flash-like visibility with wet-paint glints, grazing texture light, and saturated color punch
-  material_texture: Powdery overspray, glossy wet paint, scratched base surface, stencil edge dust, aerosol speckle fields
-  render_quality: Raw, layered, fast, tactile, with visible order of operations and deliberate paint accumulation
-  spatial_distortion: Spray drift, drip gravity, edge bloom, stencil offsets, overlapping tag gestures, pressure-fade depth
-  atmosphere: Energetic, illegal-feeling, urban-coded, loud, improvised, physical
-  key_features: Overspray halos, cap-width transitions, drips, masked edges, layered tags, color collisions, scuffed substrate
+    Aerosol markmaking system with overpainted speed, cap-pressure variation, graphic rebellion, and layered
+    surface memory
+  subject_treatment: >-
+    Fat-cap fills, skinny-cap cuts, overspray halos, drips, stencil interrupts, tag-like motion trails,
+    scuffed outline collisions
+  color_and_tone: >-
+    Chrome silver, toxic green, infrared purple, safety yellow, matte black, signal red, concrete grey
+    undertone
+  lighting_and_shadow: Flat flash-like visibility with wet-paint glints, grazing texture light, and saturated color punch
+  texture_and_material: Powdery overspray, glossy wet paint, scratched base surface, stencil edge dust, aerosol speckle fields
+  camera_and_composition: Spray drift, drip gravity, edge bloom, stencil offsets, overlapping tag gestures, pressure-fade depth
+  atmosphere_and_mood: Energetic, illegal-feeling, urban-coded, loud, improvised, physical
+  rendering_and_quality: Raw, layered, fast, tactile, with visible order of operations and deliberate paint accumulation
+  key_features: >-
+    Overspray halos, cap-width transitions, drips, masked edges, layered tags, color collisions, scuffed
+    substrate
   creative_brief: >-
-    Push the input through aerosol process rather than a mural scene: visible spray pressure, paint order, drip
-    behavior, and layered marks should drive the image. Avoid requiring walls, alleys, lettering, cans, crews, or a
-    street location. Apply Aerosol Velocity Layering as a portable style system over any input: preserve its
-    construction grammar, material cues, scale logic, and signature rendering behavior while avoiding a required
-    franchise, literal prop, fixed specimen, classroom sample, product shot, or scene template.
+    Push the input through aerosol process rather than a mural scene: visible spray pressure, paint order,
+    drip behavior, and layered marks should drive the image. Avoid requiring walls, alleys, lettering, cans,
+    crews, or a street location. Apply Aerosol Velocity Layering as a portable style system over any input:
+    preserve its construction grammar, material cues, scale logic, and signature rendering behavior while
+    avoiding a required franchise, literal prop, fixed specimen, classroom sample, product shot, or scene
+    template.
 avoidRules:
   - brush strokes
   - clean

@@ -13,20 +13,23 @@ tags:
   - hard-surface-and-product-cgi
 visualDna:
   aesthetic: Premium product-render discipline
-  form_and_line: Sleek curves
-  color_palette: Brand colors
-  lighting_setup: Studio reflection
-  material_texture: Matte plastic, aluminum, premium finish
-  render_quality: Apple flagship product launch, minimalist perfection
-  spatial_distortion: None
-  atmosphere: Desirable, expensive, luxury reveal
+  subject_treatment: Sleek curves
+  color_and_tone: Brand colors
+  lighting_and_shadow: Studio reflection
+  texture_and_material: Matte plastic, aluminum, premium finish
+  camera_and_composition: >-
+    Lookdev camera for Product Render: three-quarter or orthographic framing, clean silhouette read, material
+    highlights, controlled depth, and vertical card composition.
+  atmosphere_and_mood: Desirable, expensive, luxury reveal
+  rendering_and_quality: Apple flagship product launch, minimalist perfection
   key_features: Controlled reflections, premium reveal
   creative_brief: >-
-    Treat the input with flagship product-render polish: minimal context, controlled reflection sweeps, premium material
-    transitions, clean silhouette hierarchy and launch-keynote desire. Do not require consumer electronics, a floating
-    object, wallet cue or infinite white void. Apply Product Render as a portable 3D/render style system over any input:
-    preserve its renderer logic, material behavior, geometry language, lighting grammar, and production cues while
-    avoiding a required character, vehicle, prop, environment, UI screen, product shot, or scene template.
+    Treat the input with flagship product-render polish: minimal context, controlled reflection sweeps,
+    premium material transitions, clean silhouette hierarchy and launch-keynote desire. Do not require
+    consumer electronics, a floating object, wallet cue or infinite white void. Apply Product Render as a
+    portable 3D/render style system over any input: preserve its renderer logic, material behavior, geometry
+    language, lighting grammar, and production cues while avoiding a required character, vehicle, prop,
+    environment, UI screen, product shot, or scene template.
 avoidRules:
   - dust
   - scratches

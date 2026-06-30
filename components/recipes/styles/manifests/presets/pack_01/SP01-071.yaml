@@ -13,15 +13,20 @@ tags:
   - commercial-and-product
 visualDna:
   aesthetic: Top-down arranged composition
-  form_and_line: Grid organization
-  color_palette: Coordinated palette
-  lighting_setup: Top down soft
-  material_texture: Clean surface texture
-  render_quality: Instagram, organized
-  spatial_distortion: None
-  atmosphere: Satisfying, clean
+  subject_treatment: Grid organization
+  color_and_tone: Coordinated palette
+  lighting_and_shadow: Top down soft
+  texture_and_material: Clean surface texture
+  camera_and_composition: >-
+    Overhead orthographic flat-lay composition with measured spacing, clean object separation, and strong
+    negative-space rhythm for Flat Lay.
+  atmosphere_and_mood: Satisfying, clean
+  rendering_and_quality: Instagram, organized
   key_features: 90 degree angle
-  creative_brief: 'Flat-lay photography imposes top-down order on any subject: perpendicular camera, grid organization, coordinated palette, soft overhead light, and satisfying negative spacing. Treat the frame like a designed page without requiring objects on a table.'
+  creative_brief: >-
+    Flat-lay photography imposes top-down order on any subject: perpendicular camera, grid organization,
+    coordinated palette, soft overhead light, and satisfying negative spacing. Treat the frame like a designed
+    page without requiring objects on a table.
 avoidRules:
   - perspective
   - messy

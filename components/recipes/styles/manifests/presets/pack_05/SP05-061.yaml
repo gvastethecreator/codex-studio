@@ -12,20 +12,27 @@ tags:
   - anime-battle-and-worlds
   - dark-fantasy-and-seinen
 visualDna:
-  aesthetic: Monumental doom weight, scar-like crosshatching, eclipse-black negative space, sacrificial emblem logic, oppressive scale fields, cursed ornamental geometry
-  form_and_line: Dense mature-anime linework, heavy crosshatching, weighted contour variation, gritty ink density
-  color_palette: Muted earths, blood reds, cold moonlit tones, desaturated horror palette, bruised shadow hues
-  lighting_setup: Ominous directional shadows, single-source drama light, deep chiaroscuro, low-key shadow lift
-  material_texture: Scarred ink grain, worn hide texture, oxidized patina, cracked mineral surfaces, viscous black accents, abraded parchment roughness
-  render_quality: Gritty dramatic anime frame, film-noir rendering, heavy shadow compression, textured midtone grit
-  spatial_distortion: Severe silhouettes, compressed foreground mass, oppressive scale contrast, ceremonial void framing, gravity-heavy composition
-  atmosphere: Brutal, tragic, despairing, epic
-  key_features: Heavy atmosphere, narrative weight, oppressive mood building, visceral consequence framing, story-first visual language
-  creative_brief: >
-    Render any subject as if weight, guilt, and fate have been pressed into the ink.
-    Use scar-dense hatching, sacrificial symbol geometry, bruised earth reds, and
-    eclipse-black shadow fields to create monumental doom as a transferable render
-    grammar, free of fixed props, cast, lore icons, or set-piece events.
+  aesthetic: >-
+    Monumental doom weight, scar-like crosshatching, eclipse-black negative space, sacrificial emblem logic,
+    oppressive scale fields, cursed ornamental geometry
+  subject_treatment: Dense mature-anime linework, heavy crosshatching, weighted contour variation, gritty ink density
+  color_and_tone: Muted earths, blood reds, cold moonlit tones, desaturated horror palette, bruised shadow hues
+  lighting_and_shadow: Ominous directional shadows, single-source drama light, deep chiaroscuro, low-key shadow lift
+  texture_and_material: >-
+    Scarred ink grain, worn hide texture, oxidized patina, cracked mineral surfaces, viscous black accents,
+    abraded parchment roughness
+  camera_and_composition: >-
+    Severe silhouettes, compressed foreground mass, oppressive scale contrast, ceremonial void framing,
+    gravity-heavy composition
+  atmosphere_and_mood: Brutal, tragic, despairing, epic
+  rendering_and_quality: Gritty dramatic anime frame, film-noir rendering, heavy shadow compression, textured midtone grit
+  key_features: >-
+    Heavy atmosphere, narrative weight, oppressive mood building, visceral consequence framing, story-first
+    visual language
+  creative_brief: >-
+    Render any subject as if weight, guilt, and fate have been pressed into the ink. Use scar-dense hatching,
+    sacrificial symbol geometry, bruised earth reds, and eclipse-black shadow fields to create monumental doom
+    as a transferable render grammar, free of fixed props, cast, lore icons, or set-piece events.
 avoidRules:
   - realistic
   - 3d render
@@ -42,7 +49,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-061.webp
 attributes:
-  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
+  negativePrompt: >-
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts,
+    watermark, text, signature
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds

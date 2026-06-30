@@ -12,20 +12,31 @@ tags:
   - anime-classics-and-prestige
   - 90s-golden-era
 visualDna:
-  aesthetic: 90s space-noir cool with jazz melancholy, stylish restraint, drifting loneliness, and retro-future elegance.
-  form_and_line: Crisp cel-era contour, relaxed silhouette rhythm, smoke-like gesture trails, and clean action accents held in reserve.
-  color_palette: Muted blues, amber lounge glow, teal neon accents, dusty mauves, and deep black cel-shadow pools.
-  lighting_setup: Low-key noir contrast, rim light through haze, soft neon edge spill, and isolated warm highlights.
-  material_texture: Painted background grain, smoky translucency, brushed metal glints, worn matte surfaces, and cel overlay texture.
-  render_quality: Golden-era anime frame polish with sharp cel definition, sophisticated color grading, and silhouette-first staging.
-  spatial_distortion: Wide negative space, slow orbital depth, oblique noir framing, and compressed solitude around the focal subject.
-  atmosphere: Cool, wistful, lonely, stylish
-  key_features: Haze ribbons, cool negative space, amber-cyan noir contrast, iconic lonely silhouettes, and restrained stylish motion.
+  aesthetic: >-
+    90s space-noir cool with jazz melancholy, stylish restraint, drifting loneliness, and retro-future
+    elegance.
+  subject_treatment: >-
+    Crisp cel-era contour, relaxed silhouette rhythm, smoke-like gesture trails, and clean action accents held
+    in reserve.
+  color_and_tone: Muted blues, amber lounge glow, teal neon accents, dusty mauves, and deep black cel-shadow pools.
+  lighting_and_shadow: Low-key noir contrast, rim light through haze, soft neon edge spill, and isolated warm highlights.
+  texture_and_material: >-
+    Painted background grain, smoky translucency, brushed metal glints, worn matte surfaces, and cel overlay
+    texture.
+  camera_and_composition: >-
+    Wide negative space, slow orbital depth, oblique noir framing, and compressed solitude around the focal
+    subject.
+  atmosphere_and_mood: Cool, wistful, lonely, stylish
+  rendering_and_quality: >-
+    Golden-era anime frame polish with sharp cel definition, sophisticated color grading, and silhouette-first
+    staging.
+  key_features: >-
+    Haze ribbons, cool negative space, amber-cyan noir contrast, iconic lonely silhouettes, and restrained
+    stylish motion.
   creative_brief: >-
-    Build a reusable jazzy-space-noir melancholy grammar for any subject or
-    input image: cool restraint, smoke-like rhythm, retro-future polish,
-    low-key cel lighting, and lonely negative space without imposing bars,
-    bounty chases, cigarettes, saxophones, ships, asteroid belts, or stations.
+    Build a reusable jazzy-space-noir melancholy grammar for any subject or input image: cool restraint,
+    smoke-like rhythm, retro-future polish, low-key cel lighting, and lonely negative space without imposing
+    bars, bounty chases, cigarettes, saxophones, ships, asteroid belts, or stations.
 avoidRules:
   - realistic
   - 3d render
@@ -42,7 +53,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-014.webp
 attributes:
-  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
+  negativePrompt: >-
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts,
+    watermark, text, signature
 taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige

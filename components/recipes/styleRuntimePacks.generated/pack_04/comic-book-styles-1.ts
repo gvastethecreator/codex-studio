@@ -11,13 +11,13 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         '1940s flagship hero comic, Superman style, golden-age boldness, truth-justice-energy, pulp optimism',
-      form_and_line: 'Thick ink',
-      color_palette: 'CMYK dots (Ben-Day), primary hero primaries, newsprint nostalgia',
-      lighting_setup: 'Flat, high-key fill, minimal shadows',
-      material_texture: 'Cheap paper',
-      render_quality: 'Vintage, bold, four-color grit, golden-age optimism',
-      spatial_distortion: 'Heroic pose',
-      atmosphere: 'Action, classic, square-jawed heroism, serial cliffhanger',
+      subject_treatment: 'Thick ink',
+      color_and_tone: 'CMYK dots (Ben-Day), primary hero primaries, newsprint nostalgia',
+      lighting_and_shadow: 'Flat, high-key fill, minimal shadows',
+      texture_and_material: 'Cheap paper',
+      camera_and_composition: 'Heroic pose',
+      atmosphere_and_mood: 'Action, classic, square-jawed heroism, serial cliffhanger',
+      rendering_and_quality: 'Vintage, bold, four-color grit, golden-age optimism',
       key_features: '4-color process, halftone pattern, speech balloon',
       creative_brief:
         'Apply golden-age comic grammar to the input: thick confident ink, Ben-Day dots, cheap newsprint texture and primary-color pulp optimism. If a hero or character exists, push defiant square-jawed energy; otherwise keep the four-color graphic force without forcing a heroic pose or sky backdrop.',
@@ -31,15 +31,15 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Silver-age cosmic comic dynamism with atom-era optimism, crackling energy fields, and mythic interstellar scale',
-      form_and_line:
+      subject_treatment:
         'High-velocity foreshortened contouring, dense energy-dot fields, radiation burst linework, and impact-first panel rhythm',
-      color_palette: 'Bright primary, comic pop spectrum, magenta/cyan punch',
-      lighting_setup: 'Dramatic, cosmic backlight, heroic rim glow',
-      material_texture: 'Newsprint',
-      render_quality:
+      color_and_tone: 'Bright primary, comic pop spectrum, magenta/cyan punch',
+      lighting_and_shadow: 'Dramatic, cosmic backlight, heroic rim glow',
+      texture_and_material: 'Newsprint',
+      camera_and_composition: 'Exaggerated perspective',
+      atmosphere_and_mood: 'Epic, sci-fi, super-powered wonder, interstellar drama',
+      rendering_and_quality:
         'Bold classic-comic rendering focused on energetic readability, cosmic spectacle, and iconic action silhouette clarity',
-      spatial_distortion: 'Exaggerated perspective',
-      atmosphere: 'Epic, sci-fi, super-powered wonder, interstellar drama',
       key_features:
         'Energy-dot crackle grammar, cosmic burst halos, dynamic foreshortening thrust, atom-age heroic panel cadence',
       creative_brief:
@@ -54,19 +54,19 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Modern blockbuster-comic style with sleek mythic hero energy, widescreen panel staging, and high-impact digital polish',
-      form_and_line:
+      subject_treatment:
         'Clean high-confidence digital inking with controlled contour weights, sharp silhouette reads, and cinematic action line economy',
-      color_palette:
+      color_and_tone:
         'Bold cool-warm contrast with luminous gradient ramps, reflective accent tones, and controlled flare-spectrum highlights',
-      lighting_setup:
+      lighting_and_shadow:
         'Dynamic key/rim orchestration with volumetric accent rays, specular hit placement, and dramatic separation for heroic focus',
-      material_texture:
+      texture_and_material:
         'Smooth digitally polished surfaces with subtle composite grain and high-clarity FX glow layering',
-      render_quality:
-        'High-detail glossy comic finish emphasizing readability under motion, premium digital compositing, and refined surface response',
-      spatial_distortion:
+      camera_and_composition:
         'Heroic proportion push with muscular volume exaggeration, forced-perspective beats, and panoramic action framing',
-      atmosphere: 'Intense, mythic, serious, kinetic, cinematic',
+      atmosphere_and_mood: 'Intense, mythic, serious, kinetic, cinematic',
+      rendering_and_quality:
+        'High-detail glossy comic finish emphasizing readability under motion, premium digital compositing, and refined surface response',
       key_features:
         'Widescreen action composition, specular-driven suit rendering, flare-controlled highlights, decompressed-impact pacing',
       creative_brief:
@@ -80,13 +80,14 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'color, american comic',
     style: {
       aesthetic: 'High-energy action manga in monochrome print language',
-      form_and_line: 'Aggressive contour weight shifts, speed-line fields, impact burst geometry',
-      color_palette: 'Black, white, and screentone grayscale hierarchy',
-      lighting_setup: 'Hard-contrast shadow cuts with directional momentum accents',
-      material_texture: 'Visible screentone raster and ink-solid blacks',
-      render_quality: 'Dynamic editorial panel finish with sharp kinetic readability',
-      spatial_distortion: 'Exaggerated perspective and motion warping during impact moments',
-      atmosphere: 'Intense, competitive, escalation-driven',
+      subject_treatment:
+        'Aggressive contour weight shifts, speed-line fields, impact burst geometry',
+      color_and_tone: 'Black, white, and screentone grayscale hierarchy',
+      lighting_and_shadow: 'Hard-contrast shadow cuts with directional momentum accents',
+      texture_and_material: 'Visible screentone raster and ink-solid blacks',
+      camera_and_composition: 'Exaggerated perspective and motion warping during impact moments',
+      atmosphere_and_mood: 'Intense, competitive, escalation-driven',
+      rendering_and_quality: 'Dynamic editorial panel finish with sharp kinetic readability',
       key_features: 'Speed vectors, panel impact framing, energy-emphasis effects',
       creative_brief:
         'Apply shonen manga action grammar to any input: bold black masses, screentone modulation, speed-line fields, impact burst geometry, and perspective exaggeration should make motion readable at a glance without requiring fighters, tournament beats, attacks, arenas, or a fixed action scene.',
@@ -99,13 +100,13 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'rough, ugly',
     style: {
       aesthetic: 'Romantic manga visual language with decorative emotional emphasis',
-      form_and_line: 'Fine delicate linework, elegant curves, expressive facial detailing',
-      color_palette: 'Monochrome with soft gray tone bands and light ornamental accents',
-      lighting_setup: 'Diffused glow, soft bloom highlights, low-contrast value transitions',
-      material_texture: 'Floral/sparkle screentone motifs and airy texture overlays',
-      render_quality: 'Polished emotional panel rendering with graceful line control',
-      spatial_distortion: 'Stylized facial proportion and lyrical panel-space treatment',
-      atmosphere: 'Tender, dreamy, introspective',
+      subject_treatment: 'Fine delicate linework, elegant curves, expressive facial detailing',
+      color_and_tone: 'Monochrome with soft gray tone bands and light ornamental accents',
+      lighting_and_shadow: 'Diffused glow, soft bloom highlights, low-contrast value transitions',
+      texture_and_material: 'Floral/sparkle screentone motifs and airy texture overlays',
+      camera_and_composition: 'Stylized facial proportion and lyrical panel-space treatment',
+      atmosphere_and_mood: 'Tender, dreamy, introspective',
+      rendering_and_quality: 'Polished emotional panel rendering with graceful line control',
       key_features: 'Decorative overlays, ornamental borders, emotion-forward closeups',
       creative_brief:
         'Apply shojo manga emotional grammar to any input: delicate line economy, soft tonal gradients, decorative screentones, airy negative space, and lyrical close framing should prioritize intimacy without requiring romance, flowers, sparkles, faces, school scenes, or a fixed relationship setup.',
@@ -118,13 +119,14 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'black and white',
     style: {
       aesthetic: 'Vertical-scroll webcomic language with mobile-first readability',
-      form_and_line: 'Clean digital linework with controlled contour simplification',
-      color_palette: 'Saturated full-color palette with flat-to-soft-cel value staging',
-      lighting_setup: 'Soft cel shading with selective rim accents for depth separation',
-      material_texture: 'Crisp screen-native finish with minimal analog noise',
-      render_quality: 'Polished episodic panel rendering optimized for long-scroll consumption',
-      spatial_distortion: 'Stylized proportions tuned for expressive character readability',
-      atmosphere: 'Emotion-forward, dramatic, contemporary digital storytelling',
+      subject_treatment: 'Clean digital linework with controlled contour simplification',
+      color_and_tone: 'Saturated full-color palette with flat-to-soft-cel value staging',
+      lighting_and_shadow: 'Soft cel shading with selective rim accents for depth separation',
+      texture_and_material: 'Crisp screen-native finish with minimal analog noise',
+      camera_and_composition: 'Stylized proportions tuned for expressive character readability',
+      atmosphere_and_mood: 'Emotion-forward, dramatic, contemporary digital storytelling',
+      rendering_and_quality:
+        'Polished episodic panel rendering optimized for long-scroll consumption',
       key_features:
         'Vertical pacing gaps, beat-driven panel stacking, gradient-backed emphasis moments',
       creative_brief:
@@ -139,20 +141,20 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         "Franco-Belgian (Ligne Claire) within 1. Comic Book Styles: a reusable Illustration & Graphic Novel visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Franco-Belgian (Ligne Claire)'s specific style identity.",
-      form_and_line:
+      subject_treatment:
         'Define Franco-Belgian (Ligne Claire) through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
-      color_palette:
+      color_and_tone:
         'Use a Franco-Belgian (Ligne Claire)-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
-      lighting_setup:
+      lighting_and_shadow:
         'Use lighting that makes Franco-Belgian (Ligne Claire) recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
-      material_texture:
+      texture_and_material:
         'Use materials and textures that reinforce Franco-Belgian (Ligne Claire): surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
-      render_quality:
-        'Render Franco-Belgian (Ligne Claire) with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
-      spatial_distortion:
+      camera_and_composition:
         'Use spatial behavior that fits Franco-Belgian (Ligne Claire): perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
-      atmosphere:
+      atmosphere_and_mood:
         'Set a mood that belongs to Franco-Belgian (Ligne Claire): specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+      rendering_and_quality:
+        'Render Franco-Belgian (Ligne Claire) with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       key_features:
         "Prioritize Franco-Belgian (Ligne Claire)'s key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
@@ -167,17 +169,17 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Hard-boiled monochrome noir style built on brutal contrast logic and silhouette-dominant visual storytelling',
-      form_and_line:
+      subject_treatment:
         'Negative-space carving with razor-edged contour breaks, stark shape blocking, and subtraction-first figure construction',
-      color_palette: 'Black and White only, stark binary, zero greyscale',
-      lighting_setup: 'Harsh, single-source key, knife-edge cast shadows',
-      material_texture:
+      color_and_tone: 'Black and White only, stark binary, zero greyscale',
+      lighting_and_shadow: 'Harsh, single-source key, knife-edge cast shadows',
+      texture_and_material:
         'Dry ink grain, splatter accents, rough print-like edges, and gritty black-fill density variation',
-      render_quality:
-        'Ultra-contrast noir rendering prioritizing shadow hierarchy, binary value discipline, and aggressive readability',
-      spatial_distortion:
+      camera_and_composition:
         'Silhouette-forward composition with compressed midtone absence and hard cutout depth cues',
-      atmosphere: 'Dark, menacing, tense, unforgiving, nocturnal',
+      atmosphere_and_mood: 'Dark, menacing, tense, unforgiving, nocturnal',
+      rendering_and_quality:
+        'Ultra-contrast noir rendering prioritizing shadow hierarchy, binary value discipline, and aggressive readability',
       key_features: 'No greyscale, silhouette framing, white-out rim',
       creative_brief:
         'Apply binary noir comic discipline to any input: deep blacks, strategic white carve-outs, hard silhouette verdicts, dry ink grain, and zero-gray contrast should carry narrative weight without requiring alleys, detectives, violence, rain, city streets, or named noir-franchise staging.',
@@ -190,13 +192,13 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'clean, mainstream',
     style: {
       aesthetic: 'Underground comix ink density (R. Crumb-inspired counterculture draftsmanship)',
-      form_and_line: 'Nervous wobble contours with obsessive crosshatch layering',
-      color_palette: 'High-contrast black-and-white with dense hatch midtones',
-      lighting_setup: 'Shadow built by manual hatch fields and texture accumulation',
-      material_texture: 'Rough print-paper feel with visible hand-ink irregularity',
-      render_quality: 'Raw, hand-forged, anti-polish comic finish',
-      spatial_distortion: 'Grotesque exaggeration and elastic anatomy choices',
-      atmosphere: 'Subversive, satirical, abrasive, id-driven',
+      subject_treatment: 'Nervous wobble contours with obsessive crosshatch layering',
+      color_and_tone: 'High-contrast black-and-white with dense hatch midtones',
+      lighting_and_shadow: 'Shadow built by manual hatch fields and texture accumulation',
+      texture_and_material: 'Rough print-paper feel with visible hand-ink irregularity',
+      camera_and_composition: 'Grotesque exaggeration and elastic anatomy choices',
+      atmosphere_and_mood: 'Subversive, satirical, abrasive, id-driven',
+      rendering_and_quality: 'Raw, hand-forged, anti-polish comic finish',
       key_features: 'Heavy hatch webs, warped panel borders, hyper-detailed clutter zones',
       creative_brief:
         'Apply underground comix attitude to any input: restless hand energy, crosshatch mass, unstable contour rhythm, grotesque proportion shifts, and abrasive print density should carry counterculture tension without requiring crowds, street satire, cluttered rooms, caricature figures, or a fixed scene setup.',
@@ -210,13 +212,13 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Painted realist comic illustration (Alex Ross influence with Norman Rockwell portrait sensibility)',
-      form_and_line: 'Line-minimal painterly construction through value and edge control',
-      color_palette: 'Naturalistic gouache-like chroma with warm skin and muted secondary balance',
-      lighting_setup: 'Classical soft-key + focused heroic spotlight modeling',
-      material_texture: 'Visible brushwork and layered pigment transitions',
-      render_quality: 'Fine-art comic finish with high anatomical and textile fidelity',
-      spatial_distortion: 'Realist proportion and volume, minimal stylization',
-      atmosphere: 'Mythic, solemn, reverential',
+      subject_treatment: 'Line-minimal painterly construction through value and edge control',
+      color_and_tone: 'Naturalistic gouache-like chroma with warm skin and muted secondary balance',
+      lighting_and_shadow: 'Classical soft-key + focused heroic spotlight modeling',
+      texture_and_material: 'Visible brushwork and layered pigment transitions',
+      camera_and_composition: 'Realist proportion and volume, minimal stylization',
+      atmosphere_and_mood: 'Mythic, solemn, reverential',
+      rendering_and_quality: 'Fine-art comic finish with high anatomical and textile fidelity',
       key_features:
         'Outline-free form definition, portrait-grade facial modeling, painterly fabric rendering',
       creative_brief:
@@ -230,13 +232,13 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'cute, clean',
     style: {
       aesthetic: 'Obsessive body-horror manga language (Junji Ito signature tension)',
-      form_and_line: 'Fine high-density linework with relentless detail accretion',
-      color_palette: 'Monochrome black-and-white with suffocating dark field control',
-      lighting_setup: 'Diffuse dread lighting driven by contrast pockets and void depth',
-      material_texture: 'Spiral and micro-line textures that invade organic surfaces',
-      render_quality: 'Precision horror draftsmanship with escalating visual discomfort',
-      spatial_distortion: 'Recursive spiral, cavity, and anatomical warping motifs',
-      atmosphere: 'Uncanny, claustrophobic, cosmic-anxious',
+      subject_treatment: 'Fine high-density linework with relentless detail accretion',
+      color_and_tone: 'Monochrome black-and-white with suffocating dark field control',
+      lighting_and_shadow: 'Diffuse dread lighting driven by contrast pockets and void depth',
+      texture_and_material: 'Spiral and micro-line textures that invade organic surfaces',
+      camera_and_composition: 'Recursive spiral, cavity, and anatomical warping motifs',
+      atmosphere_and_mood: 'Uncanny, claustrophobic, cosmic-anxious',
+      rendering_and_quality: 'Precision horror draftsmanship with escalating visual discomfort',
       key_features: 'Compulsive ink density, motif recursion, skin-to-pattern collapse',
       creative_brief:
         'Apply obsessive horror manga grammar to any input: micro-line accumulation, spiral or cavity recursion, suffocating dark fields, and controlled anatomical or material corruption should grow dread from pattern inevitability without requiring bodies, villages, rooms, monsters, or fixed narrative location.',
@@ -249,13 +251,13 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'dark, heavy shadows',
     style: {
       aesthetic: 'Dreamline retro sci-fi comics language (Moebius-inspired airy surrealism)',
-      form_and_line: 'Fine controlled contour with stipple-assisted tonal modulation',
-      color_palette: 'Soft pastel atmospherics, dusty warms, and cool alien blues',
-      lighting_setup: 'Even ambient illumination with low-contrast dream glow',
-      material_texture: 'Dot/stipple shading and clean matte color fields',
-      render_quality: 'Intricate yet breathable world-detailing with contemplative pacing',
-      spatial_distortion: 'Organic-futurist forms and elegant non-Euclidean silhouettes',
-      atmosphere: 'Vast, meditative, enigmatic, serene',
+      subject_treatment: 'Fine controlled contour with stipple-assisted tonal modulation',
+      color_and_tone: 'Soft pastel atmospherics, dusty warms, and cool alien blues',
+      lighting_and_shadow: 'Even ambient illumination with low-contrast dream glow',
+      texture_and_material: 'Dot/stipple shading and clean matte color fields',
+      camera_and_composition: 'Organic-futurist forms and elegant non-Euclidean silhouettes',
+      atmosphere_and_mood: 'Vast, meditative, enigmatic, serene',
+      rendering_and_quality: 'Intricate yet breathable world-detailing with contemplative pacing',
       key_features: 'Stipple gradients, expansive negative space, poetic architecture',
       creative_brief:
         'Apply dreamline retro sci-fi comic grammar to any input: clean contour precision, stipple gradients, pastel atmospheres, organic-futurist forms, and vast contemplative scale should feel exploratory without requiring deserts, spacecraft, architecture, alien worlds, travelers, or one scene narrative.',
@@ -268,13 +270,13 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'vector, smooth',
     style: {
       aesthetic: 'Retro pixel-comic language rooted in 16-bit sprite constraints',
-      form_and_line: 'Pixel-stepped contours with strict tile/grid alignment',
-      color_palette: 'Limited indexed palette with controlled dithering ramps',
-      lighting_setup: 'Baked sprite shading via cluster placement and dither gradients',
-      material_texture: 'Explicit pixel grid with intentional aliasing',
-      render_quality: 'Crisp low-resolution sprite craft with compositional economy',
-      spatial_distortion: 'Chunked perspective and proportion adapted to sprite readability',
-      atmosphere: 'Nostalgic, arcade-coded, playful',
+      subject_treatment: 'Pixel-stepped contours with strict tile/grid alignment',
+      color_and_tone: 'Limited indexed palette with controlled dithering ramps',
+      lighting_and_shadow: 'Baked sprite shading via cluster placement and dither gradients',
+      texture_and_material: 'Explicit pixel grid with intentional aliasing',
+      camera_and_composition: 'Chunked perspective and proportion adapted to sprite readability',
+      atmosphere_and_mood: 'Nostalgic, arcade-coded, playful',
+      rendering_and_quality: 'Crisp low-resolution sprite craft with compositional economy',
       key_features:
         'Palette discipline, cluster logic, hard-edge silhouettes, frame-efficient detail',
       creative_brief:
@@ -289,19 +291,19 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Graphic tech-noir comic style with stark contrast, synthetic chroma accents, and moody futurist editorial framing',
-      form_and_line:
+      subject_treatment:
         'Knife-edged contour work, selective heavy blacks, angular panel-ready geometry, restrained crosshatch texture',
-      color_palette:
+      color_and_tone:
         'Black-dominant base, cyan-magenta duotone energy, cool indigo shadows, sparse neon highlight punctuation',
-      lighting_setup:
+      lighting_and_shadow:
         'Chiaroscuro with luminous edge accents, vapor-soft diffusion pockets, hard silhouette separation',
-      material_texture:
+      texture_and_material:
         'Slick reflective surfaces, particulate haze, coarse urban grit abstraction, chromed edge glints',
-      render_quality:
-        'High-impact noir-comic rendering with poster-grade readability and controlled cinematic bloom',
-      spatial_distortion:
+      camera_and_composition:
         'Perspective compression tuned for dramatic panel composition and foreground-background tension',
-      atmosphere: 'Ominous, electric, tense, sophisticated, anti-utopian',
+      atmosphere_and_mood: 'Ominous, electric, tense, sophisticated, anti-utopian',
+      rendering_and_quality:
+        'High-impact noir-comic rendering with poster-grade readability and controlled cinematic bloom',
       key_features:
         'Duotone neon contrast, heavy shadow architecture, reflective black planes, vapor diffusion bands, sharp graphic silhouettes',
       creative_brief:

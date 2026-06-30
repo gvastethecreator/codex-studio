@@ -12,20 +12,27 @@ tags:
   - anime-character-and-lifestyle
   - shojo-magical-girl-and-visionary-classics
 visualDna:
-  aesthetic: Delicate magical-girl ornament style with emblematic ritual motifs, gentle enchantment, and luminous innocence
-  form_and_line: Fine 90s cel contours, ribbon-flow gesture accents, emblem-framing circles, and graceful silhouette articulation
-  color_palette: Pastel jewel harmony with soft pink-lilac cores, mint-cyan glints, and controlled golden sparkle highlights
-  lighting_setup: Soft radiant bloom, haloed key lights, tender rim glows, and low-contrast magical diffusion
-  material_texture: Silk-and-ribbon softness, particle sparkle layering, watercolor-backed cel fields, and analog grain warmth
-  render_quality: Elegant vintage-anime magical rendering with high decorative clarity and emotionally gentle polish
-  spatial_distortion: Lightly elongated fairytale proportions with floating motif depth and graceful compositional lift
-  atmosphere: Tender, hopeful, radiant, whimsical, reassuring
+  aesthetic: >-
+    Delicate magical-girl ornament style with emblematic ritual motifs, gentle enchantment, and luminous
+    innocence
+  subject_treatment: >-
+    Fine 90s cel contours, ribbon-flow gesture accents, emblem-framing circles, and graceful silhouette
+    articulation
+  color_and_tone: >-
+    Pastel jewel harmony with soft pink-lilac cores, mint-cyan glints, and controlled golden sparkle
+    highlights
+  lighting_and_shadow: Soft radiant bloom, haloed key lights, tender rim glows, and low-contrast magical diffusion
+  texture_and_material: Silk-and-ribbon softness, particle sparkle layering, watercolor-backed cel fields, and analog grain warmth
+  camera_and_composition: Lightly elongated fairytale proportions with floating motif depth and graceful compositional lift
+  atmosphere_and_mood: Tender, hopeful, radiant, whimsical, reassuring
+  rendering_and_quality: Elegant vintage-anime magical rendering with high decorative clarity and emotionally gentle polish
   key_features: Emblematic ritual motifs, ribbon choreography, soft magical bloom, decorative pastel harmony
   creative_brief: >-
     Preserve this preset through ornamental magic grammar: emblem circles, ribbon-flow silhouettes, and soft
-    jewel-pastel luminance should remain the transferable identity beyond specific character archetypes. Apply this
-    anime/IP-title grammar over any input: preserve its emotional staging, line behavior, palette, symbolic motifs, and
-    production cues while avoiding a required cast, lore event, location, prop, or fixed scene.
+    jewel-pastel luminance should remain the transferable identity beyond specific character archetypes. Apply
+    this anime/IP-title grammar over any input: preserve its emotional staging, line behavior, palette,
+    symbolic motifs, and production cues while avoiding a required cast, lore event, location, prop, or fixed
+    scene.
 avoidRules:
   - realistic
   - 3d render
@@ -43,8 +50,8 @@ assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-020.webp
 attributes:
   negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark,
-    text, signature
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts,
+    watermark, text, signature
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle

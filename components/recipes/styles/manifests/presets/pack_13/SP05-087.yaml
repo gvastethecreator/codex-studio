@@ -13,32 +13,26 @@ tags:
   - slice-of-life-and-moe
 visualDna:
   aesthetic: >-
-    Pastoral breathing-room anime stillness where spacious quiet, tiny rituals, seasonal air, and
-    childlike softness slow the image down
-  form_and_line: >-
-    Low-tension contours, simplified gentle gestures, open negative-space framing, and minimal
-    dramatic pose pressure
-  color_palette: >-
-    Sunlit green, sky soft blue, straw beige, warm wood, muted earth, and low-contrast pastel
-    accents
-  lighting_setup: Broad afternoon wash, cicada-hour warmth, soft sky fill, and long low-drama shadow planes
-  material_texture: >-
-    Grass softness, wood grain, paper matte, cotton fabric, dust motes, and lightly weathered rural
-    tactility
-  render_quality: >-
-    Slow-life anime finish with clean open readability, warm nostalgia, and quiet everyday
-    tenderness
-  spatial_distortion: >-
-    Large breathing-room spacing, gentle horizon calm, and tiny subject emphasis without forcing
-    landscape content
-  atmosphere: Quiet, nostalgic, spacious, tender, sun-warmed
+    Pastoral breathing-room anime stillness where spacious quiet, tiny rituals, seasonal air, and childlike
+    softness slow the image down
+  subject_treatment: >-
+    Low-tension contours, simplified gentle gestures, open negative-space framing, and minimal dramatic pose
+    pressure
+  color_and_tone: Sunlit green, sky soft blue, straw beige, warm wood, muted earth, and low-contrast pastel accents
+  lighting_and_shadow: Broad afternoon wash, cicada-hour warmth, soft sky fill, and long low-drama shadow planes
+  texture_and_material: Grass softness, wood grain, paper matte, cotton fabric, dust motes, and lightly weathered rural tactility
+  camera_and_composition: >-
+    Large breathing-room spacing, gentle horizon calm, and tiny subject emphasis without forcing landscape
+    content
+  atmosphere_and_mood: Quiet, nostalgic, spacious, tender, sun-warmed
+  rendering_and_quality: Slow-life anime finish with clean open readability, warm nostalgia, and quiet everyday tenderness
   key_features: >-
-    Open negative space, tiny ritual focus, summer-air softness, childlike gesture economy, and
-    pastoral tonal calm
+    Open negative space, tiny ritual focus, summer-air softness, childlike gesture economy, and pastoral tonal
+    calm
   creative_brief: >-
-    Use Non Non Biyori as style anchor for pastoral breathing-room stillness. Any prompt should gain
-    spacious air, tiny ritual attention, sunlit softness, and low-pressure nostalgia. Rural roads,
-    schools, bus stops, and countryside scenes are optional.
+    Use Non Non Biyori as style anchor for pastoral breathing-room stillness. Any prompt should gain spacious
+    air, tiny ritual attention, sunlit softness, and low-pressure nostalgia. Rural roads, schools, bus stops,
+    and countryside scenes are optional.
 avoidRules:
   - realistic
   - 3d render
@@ -56,8 +50,8 @@ assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-087.webp
 attributes:
   negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, text, signature
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts,
+    watermark, text, signature
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle

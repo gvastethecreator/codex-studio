@@ -13,15 +13,18 @@ tags:
   - portrait-and-studio
 visualDna:
   aesthetic: Awkward yearbook studio
-  form_and_line: Stiff centered composition
-  color_palette: Blue mottled background
-  lighting_setup: Flat studio
-  material_texture: Cheesy studio texture
-  render_quality: Nostalgic, cheesy
-  spatial_distortion: Forced frontal stiffness
-  atmosphere: Awkward, funny
+  subject_treatment: Stiff centered composition
+  color_and_tone: Blue mottled background
+  lighting_and_shadow: Flat studio
+  texture_and_material: Cheesy studio texture
+  camera_and_composition: Forced frontal stiffness
+  atmosphere_and_mood: Awkward, funny
+  rendering_and_quality: Nostalgic, cheesy
   key_features: Laser background
-  creative_brief: 'School-portrait style makes any subject awkwardly official: flat studio light, stiff centered pose, blue mottled or laser backdrop, nostalgic cheese, and forced composure. Keep yearbook discomfort without requiring students, smiles, faces, or adolescence.'
+  creative_brief: >-
+    School-portrait style makes any subject awkwardly official: flat studio light, stiff centered pose, blue
+    mottled or laser backdrop, nostalgic cheese, and forced composure. Keep yearbook discomfort without
+    requiring students, smiles, faces, or adolescence.
 avoidRules:
   - cool
   - candid

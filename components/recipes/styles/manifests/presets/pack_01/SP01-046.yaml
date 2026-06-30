@@ -13,15 +13,18 @@ tags:
   - documentary-and-street
 visualDna:
   aesthetic: Documentary candid moment
-  form_and_line: Messy composition
-  color_palette: High contrast B&W or gritty color
-  lighting_setup: Natural
-  material_texture: Grain
-  render_quality: Cartier-Bresson, decisive moment
-  spatial_distortion: Motion blur
-  atmosphere: Real, fleeting
+  subject_treatment: Messy composition
+  color_and_tone: High contrast B&W or gritty color
+  lighting_and_shadow: Natural
+  texture_and_material: Grain
+  camera_and_composition: Motion blur
+  atmosphere_and_mood: Real, fleeting
+  rendering_and_quality: Cartier-Bresson, decisive moment
   key_features: Decisive moment tension
-  creative_brief: 'Candid documentary timing turns any subject into a decisive moment: imperfect framing, natural light, grain, motion trace, and the feeling of truth caught before it could pose. Keep street-photography immediacy without requiring city, pavement, passerby, or urban context.'
+  creative_brief: >-
+    Candid documentary timing turns any subject into a decisive moment: imperfect framing, natural light,
+    grain, motion trace, and the feeling of truth caught before it could pose. Keep street-photography
+    immediacy without requiring city, pavement, passerby, or urban context.
 avoidRules:
   - posed
   - studio

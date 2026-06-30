@@ -13,20 +13,23 @@ tags:
   - hard-surface-and-product-cgi
 visualDna:
   aesthetic: Game-asset PBR optimization
-  form_and_line: Normal map details
-  color_palette: Albedo map
-  lighting_setup: Marmoset asset viewer lighting, turntable glory
-  material_texture: Roughness/Metalness, PBR surfacing
-  render_quality: Game ready, portfolio turntable
-  spatial_distortion: None
-  atmosphere: Functional, clean, asset-showcase
+  subject_treatment: Normal map details
+  color_and_tone: Albedo map
+  lighting_and_shadow: Marmoset asset viewer lighting, turntable glory
+  texture_and_material: Roughness/Metalness, PBR surfacing
+  camera_and_composition: >-
+    Lookdev camera for Game Asset (PBR): three-quarter or orthographic framing, clean silhouette read,
+    material highlights, controlled depth, and vertical card composition.
+  atmosphere_and_mood: Functional, clean, asset-showcase
+  rendering_and_quality: Game ready, portfolio turntable
   key_features: Asset-ready PBR, normal map detail
   creative_brief: >-
-    Make the input engine-ready with PBR discipline: clean albedo/roughness/ metallic/normal behavior, readable edge
-    wear and performance-minded material hierarchy. If it is a prop or asset, make it level-editor credible; otherwise
-    apply game-asset clarity without forcing a prop. Apply Game Asset as a portable 3D/render style system over any
-    input: preserve its renderer logic, material behavior, geometry language, lighting grammar, and production cues
-    while avoiding a required character, vehicle, prop, environment, UI screen, product shot, or scene template.
+    Make the input engine-ready with PBR discipline: clean albedo/roughness/ metallic/normal behavior,
+    readable edge wear and performance-minded material hierarchy. If it is a prop or asset, make it
+    level-editor credible; otherwise apply game-asset clarity without forcing a prop. Apply Game Asset as a
+    portable 3D/render style system over any input: preserve its renderer logic, material behavior, geometry
+    language, lighting grammar, and production cues while avoiding a required character, vehicle, prop,
+    environment, UI screen, product shot, or scene template.
 avoidRules:
   - high poly
   - unoptimized

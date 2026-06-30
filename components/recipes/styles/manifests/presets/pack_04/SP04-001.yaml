@@ -13,19 +13,18 @@ tags:
   - comic-book-styles
 visualDna:
   aesthetic: 1940s flagship hero comic, Superman style, golden-age boldness, truth-justice-energy, pulp optimism
-  form_and_line: Thick ink
-  color_palette: CMYK dots (Ben-Day), primary hero primaries, newsprint nostalgia
-  lighting_setup: Flat, high-key fill, minimal shadows
-  material_texture: Cheap paper
-  render_quality: Vintage, bold, four-color grit, golden-age optimism
-  spatial_distortion: Heroic pose
-  atmosphere: Action, classic, square-jawed heroism, serial cliffhanger
+  subject_treatment: Thick ink
+  color_and_tone: CMYK dots (Ben-Day), primary hero primaries, newsprint nostalgia
+  lighting_and_shadow: Flat, high-key fill, minimal shadows
+  texture_and_material: Cheap paper
+  camera_and_composition: Heroic pose
+  atmosphere_and_mood: Action, classic, square-jawed heroism, serial cliffhanger
+  rendering_and_quality: Vintage, bold, four-color grit, golden-age optimism
   key_features: 4-color process, halftone pattern, speech balloon
   creative_brief: >-
-    Apply golden-age comic grammar to the input: thick confident ink, Ben-Day
-    dots, cheap newsprint texture and primary-color pulp optimism. If a hero or
-    character exists, push defiant square-jawed energy; otherwise keep the
-    four-color graphic force without forcing a heroic pose or sky backdrop.
+    Apply golden-age comic grammar to the input: thick confident ink, Ben-Day dots, cheap newsprint texture
+    and primary-color pulp optimism. If a hero or character exists, push defiant square-jawed energy;
+    otherwise keep the four-color graphic force without forcing a heroic pose or sky backdrop.
 avoidRules:
   - modern digital color
 assets:

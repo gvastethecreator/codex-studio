@@ -14,15 +14,25 @@ tags:
   - monochrome-tarot-and-bestiary-plates
   - stained-glass-bestiary
 visualDna:
-  aesthetic: Medieval stained glass bestiary icon with lead lines, simplified beasts, chapel color, and luminous flat panes.
-  subject_treatment: A stained-glass manticore martyr with broad feathered wings, lion body, scorpion tail curled like a halo, and tiny chapel towers under its paws, all built from big luminous panes.
-  color_and_tone: Ivory lead gaps, muted ruby mane panes, cobalt wings, amber body, emerald tail, pale cyan halo glass, and restrained black leading.
+  aesthetic: >-
+    Medieval stained glass bestiary icon with lead lines, simplified beasts, chapel color, and luminous flat
+    panes.
+  subject_treatment: >-
+    A stained-glass manticore martyr with broad feathered wings, lion body, scorpion tail curled like a halo,
+    and tiny chapel towers under its paws, all built from big luminous panes.
+  color_and_tone: >-
+    Ivory lead gaps, muted ruby mane panes, cobalt wings, amber body, emerald tail, pale cyan halo glass, and
+    restrained black leading.
   lighting_and_shadow: Even backlit chapel glow, flat luminous color, and almost no cast shadow.
   texture_and_material: Large smooth glass panes, clean lead lines, subtle chips, denoised glow, and broad color blocks.
-  camera_and_composition: Tall arched window crop, centered manticore silhouette, wing span fills upper card, tail halo frames head, and no inscriptions.
+  camera_and_composition: >-
+    Tall arched window crop, centered manticore silhouette, wing span fills upper card, tail halo frames head,
+    and no inscriptions.
   atmosphere_and_mood: Sacred, monstrous, luminous, and medieval.
   rendering_and_quality: Clean stained-glass illustration with broad panes, crisp contours, and no noisy dark lead buildup.
-  creative_brief: Stained-glass bestiary style for sacred creatures, chapel monsters, relic icons, and fantasy faction imagery.
+  creative_brief: >-
+    Stained-glass bestiary style for sacred creatures, chapel monsters, relic icons, and fantasy faction
+    imagery.
 avoidRules:
   - readable church text
   - kaleidoscope clutter
@@ -33,6 +43,10 @@ avoidRules:
   - text
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP17-041.webp
+attributes:
+  negativePrompt: >-
+    readable church text, kaleidoscope clutter, black lead noise, photoreal window glare, explicit gore,
+    watermark, text
 taxonomy:
   packId: pack_17
   packName: Medieval Fantasy & Dungeon Zine

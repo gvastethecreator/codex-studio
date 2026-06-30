@@ -13,22 +13,20 @@ tags:
   - ink-and-print
 visualDna:
   aesthetic: >-
-    Linocut relief-print style with carved-negatives contrast, artisan process evidence, and bold
-    democratic graphic force
-  form_and_line: >-
-    White gouge-cut channels and chunky relief edges with high black-mass balance and knife-path
-    rhythm
-  color_palette: Black ink, single-color assertion, bold monochrome
-  lighting_setup: None, ink-only, no shading hierarchy
-  material_texture: Ink roll texture
-  render_quality: Handmade, bold, craft-process evidence, folk authenticity
-  spatial_distortion: Chunky lines
-  atmosphere: Folk, strong, print-workshop resolve, democratic art
+    Linocut relief-print style with carved-negatives contrast, artisan process evidence, and bold democratic
+    graphic force
+  subject_treatment: White gouge-cut channels and chunky relief edges with high black-mass balance and knife-path rhythm
+  color_and_tone: Black ink, single-color assertion, bold monochrome
+  lighting_and_shadow: Ink-only mark hierarchy with no simulated lighting
+  texture_and_material: Ink roll texture
+  camera_and_composition: Chunky lines
+  atmosphere_and_mood: Folk, strong, print-workshop resolve, democratic art
+  rendering_and_quality: Handmade, bold, craft-process evidence, folk authenticity
   key_features: No fine detail, gouge marks, carved texture
   creative_brief: >-
-    Apply linocut relief-print grammar to any input: carved negative marks, heavy black transfer,
-    gouge cadence, chunky relief edges, and folk-print force should carry identity without requiring
-    folk scenes, workshops, portraits, animals, posters, or specific democratic-art subjects.
+    Apply linocut relief-print grammar to any input: carved negative marks, heavy black transfer, gouge
+    cadence, chunky relief edges, and folk-print force should carry identity without requiring folk scenes,
+    workshops, portraits, animals, posters, or specific democratic-art subjects.
 avoidRules:
   - grey
   - gradient

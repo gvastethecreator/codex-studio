@@ -13,19 +13,18 @@ tags:
   - comic-book-styles
 visualDna:
   aesthetic: High-energy action manga in monochrome print language
-  form_and_line: Aggressive contour weight shifts, speed-line fields, impact burst geometry
-  color_palette: Black, white, and screentone grayscale hierarchy
-  lighting_setup: Hard-contrast shadow cuts with directional momentum accents
-  material_texture: Visible screentone raster and ink-solid blacks
-  render_quality: Dynamic editorial panel finish with sharp kinetic readability
-  spatial_distortion: Exaggerated perspective and motion warping during impact moments
-  atmosphere: Intense, competitive, escalation-driven
+  subject_treatment: Aggressive contour weight shifts, speed-line fields, impact burst geometry
+  color_and_tone: Black, white, and screentone grayscale hierarchy
+  lighting_and_shadow: Hard-contrast shadow cuts with directional momentum accents
+  texture_and_material: Visible screentone raster and ink-solid blacks
+  camera_and_composition: Exaggerated perspective and motion warping during impact moments
+  atmosphere_and_mood: Intense, competitive, escalation-driven
+  rendering_and_quality: Dynamic editorial panel finish with sharp kinetic readability
   key_features: Speed vectors, panel impact framing, energy-emphasis effects
   creative_brief: >-
-    Apply shonen manga action grammar to any input: bold black masses, screentone modulation,
-    speed-line fields, impact burst geometry, and perspective exaggeration should make motion
-    readable at a glance without requiring fighters, tournament beats, attacks, arenas, or a fixed
-    action scene.
+    Apply shonen manga action grammar to any input: bold black masses, screentone modulation, speed-line
+    fields, impact burst geometry, and perspective exaggeration should make motion readable at a glance
+    without requiring fighters, tournament beats, attacks, arenas, or a fixed action scene.
 avoidRules:
   - color
   - american comic

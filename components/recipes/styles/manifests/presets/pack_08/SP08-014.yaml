@@ -13,18 +13,18 @@ tags:
   - subcultures
 visualDna:
   aesthetic: Field utility textile styling, expedition-readiness logic, rugged utility silhouette
-  form_and_line: Boxy utility blocks, pocket density, modular grid, carrier-like bulk, bloused taper
-  color_palette: Olive Drab, Camo, Desert Tan, multiscale camouflage breakup, ranger green, coyote brown
-  lighting_setup: Harsh outdoor, high-noon sun, dust-haze diffusion, overcast tactical grey
-  material_texture: Heavy canvas, abrasion-resistant nylon, dirt, parkerized metal, coated technical fabric
-  render_quality: Tough functional finish, field-worn authenticity, surplus-grade veracity
-  spatial_distortion: Bulky silhouette
-  atmosphere: Serious, ready, field tension, repair focus, quiet professionalism
+  subject_treatment: Boxy utility blocks, pocket density, modular grid, carrier-like bulk, bloused taper
+  color_and_tone: Olive Drab, Camo, Desert Tan, multiscale camouflage breakup, ranger green, coyote brown
+  lighting_and_shadow: Harsh outdoor, high-noon sun, dust-haze diffusion, overcast tactical grey
+  texture_and_material: Heavy canvas, abrasion-resistant nylon, dirt, parkerized metal, coated technical fabric
+  camera_and_composition: Bulky silhouette
+  atmosphere_and_mood: Serious, ready, field tension, repair focus, quiet professionalism
+  rendering_and_quality: Tough functional finish, field-worn authenticity, surplus-grade veracity
   key_features: Utility pockets, webbing pouches, cap cues, rugged boot logic, patch accents
   creative_brief: >-
-    Convert the input into field-utility textile: olive drab, camo breakup, modular grids, carrier-like bulk, coated-nylon
-    abrasion, patch accents and pocket logic. Keep readiness and field wear without requiring a soldier persona,
-    battlefield, weapon, patrol scene or combat narrative.
+    Convert the input into field-utility textile: olive drab, camo breakup, modular grids, carrier-like bulk,
+    coated-nylon abrasion, patch accents and pocket logic. Keep readiness and field wear without requiring a
+    soldier persona, battlefield, weapon, patrol scene or combat narrative.
 avoidRules:
   - bright
   - delicate

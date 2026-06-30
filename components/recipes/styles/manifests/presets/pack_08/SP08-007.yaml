@@ -13,18 +13,18 @@ tags:
   - subcultures
 visualDna:
   aesthetic: Traditional goth style, mourning revival, darkwave elegance
-  form_and_line: Sharp edges, spikes, fishtail hem, coffin-cut shoulders, cinched seam logic and elongated dark silhouette
-  color_palette: Black on Black, jet black, raven, midnight, void-black, deep aubergine shadow
-  lighting_setup: Moonlit silver rim light, candle-flicker ambiance, low-key velvet shadow
-  material_texture: Velvet devore, Chantilly lace, patent leather, polished silver, pewter hardware, fishnet
-  render_quality: Dramatic elegant finish, nocturnal refinement, cryptic couture atmosphere
-  spatial_distortion: Cinched seam logic and nocturnal silhouette compression
-  atmosphere: Melancholic, dark, romantic, moonlit longing, eternal twilight, beautiful decay
+  subject_treatment: Sharp edges, spikes, fishtail hem, coffin-cut shoulders, cinched seam logic and elongated dark silhouette
+  color_and_tone: Black on Black, jet black, raven, midnight, void-black, deep aubergine shadow
+  lighting_and_shadow: Moonlit silver rim light, candle-flicker ambiance, low-key velvet shadow
+  texture_and_material: Velvet devore, Chantilly lace, patent leather, polished silver, pewter hardware, fishnet
+  camera_and_composition: Cinched seam logic and nocturnal silhouette compression
+  atmosphere_and_mood: Melancholic, dark, romantic, moonlit longing, eternal twilight, beautiful decay
+  rendering_and_quality: Dramatic elegant finish, nocturnal refinement, cryptic couture atmosphere
   key_features: Black-on-black layering, silver occult jewelry, platform-boot mass, corset or lace cues
   creative_brief: >-
-    Cast the input in goth darkwave styling: black velvet depth, lace transparency, patent shine, pewter hardware and
-    occult silver accents. Preserve mourning romance and beautiful decay without requiring pale skin, crypt architecture,
-    graveyard mist, corseted body staging or a specific gothic character.
+    Cast the input in goth darkwave styling: black velvet depth, lace transparency, patent shine, pewter
+    hardware and occult silver accents. Preserve mourning romance and beautiful decay without requiring pale
+    skin, crypt architecture, graveyard mist, corseted body staging or a specific gothic character.
 avoidRules:
   - cheerful pastel daylight
   - sunny cute palette

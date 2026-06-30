@@ -13,15 +13,19 @@ tags:
   - textile-and-ornamental-patterns
 visualDna:
   aesthetic: Criss-cross bands
-  form_and_line: Straight lines
-  color_palette: Red, Green, Blue
-  lighting_setup: Flat
-  material_texture: Flannel
-  render_quality: Traditional, cozy
-  spatial_distortion: Weave
-  atmosphere: Classic, warm
+  subject_treatment: Straight lines
+  color_and_tone: Red, Green, Blue
+  lighting_and_shadow: Flat
+  texture_and_material: Flannel
+  camera_and_composition: Weave
+  atmosphere_and_mood: Classic, warm
+  rendering_and_quality: Traditional, cozy
   key_features: Grid
-  creative_brief: Apply tartan as coded woven grid over the input with crossing red-green-blue bands, flannel softness, layered warp and weft, warm tradition, and color intersections that behave like inherited structure. Preserve subject shape while wrapping or segmenting it; do not require highlands, hearths, or costume context.
+  creative_brief: >-
+    Apply tartan as coded woven grid over the input with crossing red-green-blue bands, flannel softness,
+    layered warp and weft, warm tradition, and color intersections that behave like inherited structure.
+    Preserve subject shape while wrapping or segmenting it; do not require highlands, hearths, or costume
+    context.
 avoidRules:
   - curved lines
 assets:

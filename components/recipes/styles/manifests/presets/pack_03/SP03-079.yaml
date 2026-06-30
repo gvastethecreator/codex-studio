@@ -13,19 +13,23 @@ tags:
   - materials
 visualDna:
   aesthetic: Cast bronze sculptural material
-  form_and_line: Sculpted details
-  color_palette: Bronze, Patina (Green), verdigris aging
-  lighting_setup: Specular highlights, metal-luster
-  material_texture: Metal, weathering, cast-texture
-  render_quality: Monument, classic, sculpture-garden
-  atmosphere: Timeless, heavy, historical gravity
+  subject_treatment: Sculpted details
+  color_and_tone: Bronze, Patina (Green), verdigris aging
+  lighting_and_shadow: Specular highlights, metal-luster
+  texture_and_material: Metal, weathering, cast-texture
+  camera_and_composition: >-
+    Lookdev camera for Bronze Statue: close three-quarter or macro material framing, strong highlight planes,
+    readable surface curvature, and controlled depth.
+  atmosphere_and_mood: Timeless, heavy, historical gravity
+  rendering_and_quality: Monument, classic, sculpture-garden
   key_features: Patina in crevices, cast-metal detail
   creative_brief: >-
-    Cast the input in bronze-sculpture language: warm metal luster, verdigris in crevices, mold texture, heavy shadows
-    and monument-grade surface gravity. If figurative forms exist, preserve them; otherwise apply sculptural metal
-    permanence without forcing a statue garden or human figure. Apply Bronze Statue as a portable 3D/render style system
-    over any input: preserve its renderer logic, material behavior, geometry language, lighting grammar, and production
-    cues while avoiding a required character, vehicle, prop, environment, UI screen, product shot, or scene template.
+    Cast the input in bronze-sculpture language: warm metal luster, verdigris in crevices, mold texture, heavy
+    shadows and monument-grade surface gravity. If figurative forms exist, preserve them; otherwise apply
+    sculptural metal permanence without forcing a statue garden or human figure. Apply Bronze Statue as a
+    portable 3D/render style system over any input: preserve its renderer logic, material behavior, geometry
+    language, lighting grammar, and production cues while avoiding a required character, vehicle, prop,
+    environment, UI screen, product shot, or scene template.
 avoidRules:
   - flesh
   - color

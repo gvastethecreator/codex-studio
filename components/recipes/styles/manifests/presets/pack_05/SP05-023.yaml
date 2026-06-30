@@ -15,21 +15,30 @@ visualDna:
   aesthetic: >-
     Elastic-adventure shonen style with exaggerated expression physics, optimistic open-horizon energy, and
     carnival-scale freedom tone
-  form_and_line: >-
-    Rubberized silhouette stretching, expressive facial exaggeration, playful action arcs, and high-clarity contour
-    timing
-  color_palette: Sunlit high-saturation primaries with tropical cyan-azure fields, warm accent bursts, and cheerful contrast control
-  lighting_setup: Bright open-sky keys, clean cel highlights, soft gradient fill, and lively rim accents for buoyant readability
-  material_texture: Smooth cel-polish surfaces, low-noise digital grain, crisp effect overlays, and clean line-art compositing
-  render_quality: Early-digital adventure anime finish emphasizing exuberant readability, elastic staging, and colorful momentum
-  spatial_distortion: Stretch-and-squash perspective logic with playful foreshortening and horizon-expanding exploratory framing
-  atmosphere: Joyful, adventurous, playful, free, high-spirited
-  key_features: Elastic expression grammar, high-sun adventure palette, playful action deformation, exploratory kinetic framing
+  subject_treatment: >-
+    Rubberized silhouette stretching, expressive facial exaggeration, playful action arcs, and high-clarity
+    contour timing
+  color_and_tone: >-
+    Sunlit high-saturation primaries with tropical cyan-azure fields, warm accent bursts, and cheerful
+    contrast control
+  lighting_and_shadow: >-
+    Bright open-sky keys, clean cel highlights, soft gradient fill, and lively rim accents for buoyant
+    readability
+  texture_and_material: Smooth cel-polish surfaces, low-noise digital grain, crisp effect overlays, and clean line-art compositing
+  camera_and_composition: Stretch-and-squash perspective logic with playful foreshortening and horizon-expanding exploratory framing
+  atmosphere_and_mood: Joyful, adventurous, playful, free, high-spirited
+  rendering_and_quality: >-
+    Early-digital adventure anime finish emphasizing exuberant readability, elastic staging, and colorful
+    momentum
+  key_features: >-
+    Elastic expression grammar, high-sun adventure palette, playful action deformation, exploratory kinetic
+    framing
   creative_brief: >-
-    Keep identity anchored in elastic expressive physics and bright exploratory momentum; the style should communicate
-    boundless adventure energy without relying on specific faction, ship, sea, or lore motifs. Apply this anime/IP-title
-    grammar over any input: preserve its motion language, line economy, emotional staging, palette logic, and symbolic
-    cues while avoiding a required cast, lore event, weapon, arena, school, ship, or fixed scene.
+    Keep identity anchored in elastic expressive physics and bright exploratory momentum; the style should
+    communicate boundless adventure energy without relying on specific faction, ship, sea, or lore motifs.
+    Apply this anime/IP-title grammar over any input: preserve its motion language, line economy, emotional
+    staging, palette logic, and symbolic cues while avoiding a required cast, lore event, weapon, arena,
+    school, ship, or fixed scene.
 avoidRules:
   - realistic
   - 3d render
@@ -47,8 +56,8 @@ assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-023.webp
 attributes:
   negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark,
-    text, signature
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts,
+    watermark, text, signature
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds

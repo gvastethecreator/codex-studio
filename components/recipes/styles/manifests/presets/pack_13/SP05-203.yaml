@@ -13,32 +13,28 @@ tags:
   - slice-of-life-and-moe
 visualDna:
   aesthetic: >-
-    Horizon-forward anime momentum where sincerity, friendship propulsion, bright readiness, and
-    ordinary courage turn any subject toward adventure
-  form_and_line: >-
-    Forward-pull silhouettes, practical contour emphasis, ensemble momentum arcs, and
-    horizon-expansion composition
-  color_palette: >-
-    Polar white, sky cyan, navy anchors, orange determination accents, sunlit peach, and clean
-    ice-blue shadow
-  lighting_setup: Crisp travel-day daylight, high-albedo bounce, warm departure glow, and bright reveal highlights
-  material_texture: >-
-    Nylon utility, insulated fabric, paper fiber, frost-kissed surfaces, transit scuffs, and clean
-    atmospheric grain
-  render_quality: >-
-    Inspirational anime finish with atmospheric breadth, clean emotional propulsion, and practical
-    readiness detail
-  spatial_distortion: >-
-    Horizon expansion and forward perspective that amplify collective motion without requiring
-    literal travel
-  atmosphere: Hopeful, brave, bright, uplifting, forward
+    Horizon-forward anime momentum where sincerity, friendship propulsion, bright readiness, and ordinary
+    courage turn any subject toward adventure
+  subject_treatment: >-
+    Forward-pull silhouettes, practical contour emphasis, ensemble momentum arcs, and horizon-expansion
+    composition
+  color_and_tone: Polar white, sky cyan, navy anchors, orange determination accents, sunlit peach, and clean ice-blue shadow
+  lighting_and_shadow: Crisp travel-day daylight, high-albedo bounce, warm departure glow, and bright reveal highlights
+  texture_and_material: >-
+    Nylon utility, insulated fabric, paper fiber, frost-kissed surfaces, transit scuffs, and clean atmospheric
+    grain
+  camera_and_composition: Horizon expansion and forward perspective that amplify collective motion without requiring literal travel
+  atmosphere_and_mood: Hopeful, brave, bright, uplifting, forward
+  rendering_and_quality: >-
+    Inspirational anime finish with atmospheric breadth, clean emotional propulsion, and practical readiness
+    detail
   key_features: >-
-    Sky-heavy optimism, forward motion, practical readiness, friendship momentum, bright horizon
-    expansion, and sincere courage
+    Sky-heavy optimism, forward motion, practical readiness, friendship momentum, bright horizon expansion,
+    and sincere courage
   creative_brief: >-
-    Use A Place Further Than the Universe as style anchor for horizon-forward youth momentum. Any
-    prompt should feel ready to cross distance: bright air, forward pull, practical detail, and
-    sincere courage. Uniforms, maps, gear, travel-prep, and expedition scenes are optional.
+    Use A Place Further Than the Universe as style anchor for horizon-forward youth momentum. Any prompt
+    should feel ready to cross distance: bright air, forward pull, practical detail, and sincere courage.
+    Uniforms, maps, gear, travel-prep, and expedition scenes are optional.
 avoidRules:
   - realistic
   - 3d render
@@ -56,8 +52,8 @@ assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-203.webp
 attributes:
   negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, text, signature
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts,
+    watermark, text, signature
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle

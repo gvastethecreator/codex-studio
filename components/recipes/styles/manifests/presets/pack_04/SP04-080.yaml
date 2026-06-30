@@ -13,18 +13,19 @@ tags:
   - ink-and-print
 visualDna:
   aesthetic: Expressive monochrome brush-ink gestural rendering
-  form_and_line: Pressure-reactive strokes from razor taper to saturated belly
-  color_palette: Carbon black, diluted gray washes, paper-white negative space
-  lighting_setup: Value implied through wash layering and dry-brush breakup
-  material_texture: Absorbent rice-paper bloom with feathered bleed fringes
-  render_quality: Minimal yet controlled, emphasizing breath-like stroke economy
-  spatial_distortion: Intentional looseness with calligraphic balance preservation
-  atmosphere: Quiet, contemplative, fluid, meditative immediacy
+  subject_treatment: Pressure-reactive strokes from razor taper to saturated belly
+  color_and_tone: Carbon black, diluted gray washes, paper-white negative space
+  lighting_and_shadow: Value implied through wash layering and dry-brush breakup
+  texture_and_material: Absorbent rice-paper bloom with feathered bleed fringes
+  camera_and_composition: Intentional looseness with calligraphic balance preservation
+  atmosphere_and_mood: Quiet, contemplative, fluid, meditative immediacy
+  rendering_and_quality: Minimal yet controlled, emphasizing breath-like stroke economy
   key_features: One-breath gesture arcs, dry-brush fractures, water-ink diffusion gradients
   creative_brief: >-
-    Apply brush-pen ink rendering to any input: pressure-sensitive strokes, dry-brush skips, wet pooling, feathered
-    edges, controlled splatter, and confident negative space. Keep it usable on subjects, products, spaces, or
-    abstractions without requiring calligraphy text, bamboo, landscapes, or traditional scene motifs.
+    Apply brush-pen ink rendering to any input: pressure-sensitive strokes, dry-brush skips, wet pooling,
+    feathered edges, controlled splatter, and confident negative space. Keep it usable on subjects, products,
+    spaces, or abstractions without requiring calligraphy text, bamboo, landscapes, or traditional scene
+    motifs.
 avoidRules:
   - stiff
   - pencil

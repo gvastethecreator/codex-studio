@@ -12,18 +12,18 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'steampunk civic machinery as a flat illustrated cooperative poster with simplified citizens, brass commons, large gears, valve shapes, and civic engine silhouettes.',
-      form_and_line:
+      subject_treatment:
         'Broad mechanical silhouettes, chunky ink contours, labor-poster spacing, and tactile industrial rhythm. Core composition uses brass commons, valve glyphs, simplified civic silhouettes, gear shadows, civic machine scale, and open shape areas.',
-      color_palette: 'smoky brass, oiled umber, tarnished copper, warm cream',
-      lighting_setup:
+      color_and_tone: 'smoky brass, oiled umber, tarnished copper, warm cream',
+      lighting_and_shadow:
         'posterized amber machine glow, soft steam color blocks, rimlit gear teeth as simple graphic accents',
-      material_texture:
+      texture_and_material:
         'broad brass plates, flat soot washes, leather belt silhouettes, glass gauge color dots, sparse screenprint wear',
-      render_quality:
-        'Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity, moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material simulation, or hyper-detail.',
-      spatial_distortion:
+      camera_and_composition:
         'Readable workshops, rail platforms, docks, streets, or civic machine halls without becoming a corridor. Keep depth legible and avoid default hallway, aisle, or empty studio staging.',
-      atmosphere: 'practical optimism, union craft, warm mechanical density',
+      atmosphere_and_mood: 'practical optimism, union craft, warm mechanical density',
+      rendering_and_quality:
+        'Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity, moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material simulation, or hyper-detail.',
       key_features:
         'brass commons, valve glyphs, visible civic silhouettes, gear shadows, civic machine scale',
       creative_brief:
@@ -39,18 +39,18 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'dieselpunk rail signal poster built around civilian rail logistics with locomotive silhouettes, semaphore gantries, small simplified switch crews, coal-fog shape blocks, and red signal geometry.',
-      form_and_line:
+      subject_treatment:
         'Broad mechanical silhouettes, chunky ink contours, labor-poster spacing, and tactile industrial rhythm. Core composition uses headlamp circles, rail silhouettes, semaphore blocks, heavy engine masses, small worker marks, and open charcoal planes.',
-      color_palette: 'coal black, signal red, sodium amber, gunmetal gray',
-      lighting_setup:
+      color_and_tone: 'coal black, signal red, sodium amber, gunmetal gray',
+      lighting_and_shadow:
         'posterized red signal blocks, amber fog planes, locomotive headlight circles, open charcoal midtones',
-      material_texture:
+      texture_and_material:
         'broad steel masses, flat coal-dust washes, canvas coat silhouettes, cracked enamel color blocks, sparse rail reflections',
-      render_quality:
-        'Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity, moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material simulation, or hyper-detail.',
-      spatial_distortion:
+      camera_and_composition:
         'Readable workshops, rail platforms, docks, streets, or civic machine halls without becoming a corridor. Keep depth legible and avoid default hallway, aisle, or empty studio staging.',
-      atmosphere: 'tense logistics, soot, late-night industrial pressure',
+      atmosphere_and_mood: 'tense logistics, soot, late-night industrial pressure',
+      rendering_and_quality:
+        'Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity, moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material simulation, or hyper-detail.',
       key_features:
         'headlamp cones, rail silhouettes, semaphore lights, heavy engines, worker clusters',
       creative_brief:
@@ -66,18 +66,18 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'steampunk automata poster built around a single simplified porcelain-mask mechanism, pressure valves, broad brass struts, and elegant clockwork gesture.',
-      form_and_line:
+      subject_treatment:
         'Mechanical silhouettes, chunky ink contours, labor-poster spacing, and tactile industrial rhythm. Core composition uses broad struts, pressure gauges, articulated hand shapes, porcelain mask geometry, and sparse brass needlework.',
-      color_palette: 'porcelain white, oxidized brass, tea stain, pale blue glass',
-      lighting_setup:
+      color_and_tone: 'porcelain white, oxidized brass, tea stain, pale blue glass',
+      lighting_and_shadow:
         'soft display glow as posterized cream-blue blocks, small pressure sparks, translucent steam shapes',
-      material_texture:
+      texture_and_material:
         'broad porcelain planes, sparse brass linework, rubber seals, etched glass accents, velvet shadow blocks',
-      render_quality:
-        'Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity, moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material simulation, or hyper-detail.',
-      spatial_distortion:
+      camera_and_composition:
         'Readable workshops, rail platforms, docks, streets, or civic machine halls without becoming a corridor. Keep depth legible and avoid default hallway, aisle, or empty studio staging.',
-      atmosphere: 'elegant, uncanny, precision-made',
+      atmosphere_and_mood: 'elegant, uncanny, precision-made',
+      rendering_and_quality:
+        'Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity, moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material simulation, or hyper-detail.',
       key_features:
         'lace struts, pressure gauges, articulated hands, porcelain faces, brass needlework',
       creative_brief:
@@ -93,18 +93,18 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'dieselpunk civilian radio convoy poster built around mobile broadcast trucks, field antennas, signal citizens as small silhouettes, and improvised signal-map shapes.',
-      form_and_line:
+      subject_treatment:
         'Mechanical silhouettes, chunky ink contours, labor-poster spacing, and tactile industrial rhythm. Core composition uses antenna forests, abstract map boards, field radios, truck silhouettes, and bold route marks.',
-      color_palette: 'olive drab, rust red, black rubber, pale radio green',
-      lighting_setup:
+      color_and_tone: 'olive drab, rust red, black rubber, pale radio green',
+      lighting_and_shadow:
         'storm-cloud color blocks, dashboard glow, antenna sparks, headlight cuts as graphic wedges',
-      material_texture:
+      texture_and_material:
         'corrugated metal planes, rubber tire shapes, field canvas blocks, chipped paint marks, sparse road grit',
-      render_quality:
-        'Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity, moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material simulation, or hyper-detail.',
-      spatial_distortion:
+      camera_and_composition:
         'Readable workshops, rail platforms, docks, streets, or civic machine halls without becoming a corridor. Keep depth legible and avoid default hallway, aisle, or empty studio staging.',
-      atmosphere: 'signal urgency, radio mystery, convoy coordination',
+      atmosphere_and_mood: 'signal urgency, radio mystery, convoy coordination',
+      rendering_and_quality:
+        'Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity, moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material simulation, or hyper-detail.',
       key_features: 'antenna forests, map boards, field radios, truck silhouettes, mud tracks',
       creative_brief:
         'Build a diesel-era civilian signal convoy around mobile broadcast trucks, antenna rigs, signal citizens, and abstract route-light coordination, not a generic trench soldier portrait, army convoy, flag scene, or lone vehicle poster. Keep people small and simplified; make antenna canopies, route-light shapes, and convoy silhouettes carry the identity. Keep the result representative rather than over-abstract; make one character in their environment the anchor, with motifs as background, costume, weather, architecture, or social pressure instead of a foreground prop. Favor screenprint poster, risograph poster, cel-shaded graphic-novel card art, flat-to-painterly digital illustration, or gouache poster aesthetics over realism, cinematic key art, or hyper-detailed concept art. Use few bold color/value zones, moderate texture, large shapes, clean surfaces, and finish denoised with no excessive noise or ultra-fine detail.',
@@ -119,17 +119,18 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'clockpunk civic assembly poster built around a clocktower mechanism, guild workers, exposed escapements, and unreadable graphic placard shapes.',
-      form_and_line:
+      subject_treatment:
         'Mechanical silhouettes, chunky ink contours, labor-poster spacing, and tactile industrial rhythm. Core composition uses escapement symbols, unreadable poster blocks, clock shadows, guild coat silhouettes, and stepped civic geometry.',
-      color_palette: 'aged ivory, blue-charcoal ink, brass, brick red',
-      lighting_setup: 'late-afternoon civic color blocks, clock-face shadows, warm placard glow',
-      material_texture:
+      color_and_tone: 'aged ivory, blue-charcoal ink, brass, brick red',
+      lighting_and_shadow:
+        'late-afternoon civic color blocks, clock-face shadows, warm placard glow',
+      texture_and_material:
         'paper poster blocks, brass escapements, wool coat silhouettes, brick planes, ink texture',
-      render_quality:
-        'Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity, moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material simulation, or hyper-detail.',
-      spatial_distortion:
+      camera_and_composition:
         'Readable workshops, rail platforms, docks, streets, or civic machine halls without becoming a corridor. Keep depth legible and avoid default hallway, aisle, or empty studio staging.',
-      atmosphere: 'defiant, clever, civic, rhythmic',
+      atmosphere_and_mood: 'defiant, clever, civic, rhythmic',
+      rendering_and_quality:
+        'Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity, moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material simulation, or hyper-detail.',
       key_features: 'escapement symbols, strike posters, clock shadows, guild coats, public stairs',
       creative_brief:
         'Turn clockpunk into social motion: synchronized gears, civic assembly, unreadable placard shapes, and handmade devices, avoiding sterile clock diagrams, political flag hero shots, or readable slogans. Keep the result representative rather than over-abstract; make one character in their environment the anchor, with motifs as background, costume, weather, architecture, or social pressure instead of a foreground prop. Favor screenprint poster, risograph poster, cel-shaded graphic-novel card art, flat-to-painterly digital illustration, or gouache poster aesthetics over realism, cinematic key art, or hyper-detailed concept art. Use few bold color/value zones, moderate texture, large shapes, clean surfaces, and finish denoised with no excessive noise or ultra-fine detail.',
@@ -144,17 +145,18 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'steampunk print foundry poster built around pneumatic tubes, ink rollers, hot-type blocks, paper motion, and simplified editor/printer silhouettes.',
-      form_and_line:
+      subject_treatment:
         'Mechanical silhouettes, chunky ink contours, labor-poster spacing, and tactile industrial rhythm. Core composition uses pneumatic tubes, hot-type trays, print rollers, unreadable paper blocks, and inked hand shapes.',
-      color_palette: 'ink black, cream paper, brass, cherry red',
-      lighting_setup: 'furnace orange planes, paper-white bounce light, black ink shadow blocks',
-      material_texture:
+      color_and_tone: 'ink black, cream paper, brass, cherry red',
+      lighting_and_shadow:
+        'furnace orange planes, paper-white bounce light, black ink shadow blocks',
+      texture_and_material:
         'letterpress metal planes, ink slabs, brass tubing, paper stacks as broad shapes, hot iron accents',
-      render_quality:
-        'Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity, moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material simulation, or hyper-detail.',
-      spatial_distortion:
+      camera_and_composition:
         'Readable workshops, rail platforms, docks, streets, or civic machine halls without becoming a corridor. Keep depth legible and avoid default hallway, aisle, or empty studio staging.',
-      atmosphere: 'urgent, noisy, persuasive, handmade',
+      atmosphere_and_mood: 'urgent, noisy, persuasive, handmade',
+      rendering_and_quality:
+        'Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity, moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material simulation, or hyper-detail.',
       key_features:
         'pneumatic tubes, hot-type trays, print rollers, unreadable paper blocks, inked hand shapes',
       creative_brief:
@@ -170,18 +172,18 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'diesel-steam airship infrastructure flat-to-painterly poster card built around a smoggy airship mooring dock with simplified ground crews, broad gantries, rope arcs, and cargo-signal beacons.',
-      form_and_line:
+      subject_treatment:
         'Mechanical silhouettes, clean drawn contours, labor-poster spacing, and tactile industrial rhythm. Core composition uses mooring lines, beacon color dots, gantry silhouettes, small ground crew scale, and hazy airship mass.',
-      color_palette: 'smog gray, brass ochre, black tar, cargo orange',
-      lighting_setup:
+      color_and_tone: 'smog gray, brass ochre, black tar, cargo orange',
+      lighting_and_shadow:
         'flat smog sun block, beacon color dots, silhouette backlight, simple illustrated glints',
-      material_texture:
+      texture_and_material:
         'canvas hull planes, tar rope shapes, broad gantry blocks, rain-dark dock planes, brass fittings',
-      render_quality:
-        'Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity, moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material simulation, or hyper-detail.',
-      spatial_distortion:
+      camera_and_composition:
         'Readable workshops, rail platforms, docks, streets, or civic machine halls without becoming a corridor. Keep depth legible and avoid default hallway, aisle, or empty studio staging.',
-      atmosphere: 'adventurous, heavy, atmospheric, practical',
+      atmosphere_and_mood: 'adventurous, heavy, atmospheric, practical',
+      rendering_and_quality:
+        'Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity, moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material simulation, or hyper-detail.',
       key_features:
         'mooring lines, beacon dots, gantry silhouettes, ground crew scale, hazy airship mass',
       creative_brief:
@@ -197,18 +199,18 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'industrial sacred-machinery poster built around a tall workshop where riveted machines form monumental craft geometry without church literalism.',
-      form_and_line:
+      subject_treatment:
         'Mechanical silhouettes, chunky ink contours, labor-poster spacing, and tactile industrial rhythm. Core composition uses vertical machine ribs, welding halos, broad rivet arcs, tool plinths, and small worker silhouettes.',
-      color_palette: 'iron black, rust umber, wax gold, concrete gray',
-      lighting_setup:
+      color_and_tone: 'iron black, rust umber, wax gold, concrete gray',
+      lighting_and_shadow:
         'flat overhead light blocks, welding halo, matte smoke shapes, shallow poster depth',
-      material_texture:
+      texture_and_material:
         'iron rib planes, broad rivet arcs, concrete blocks, waxed leather accents, welding slag marks',
-      render_quality:
-        'Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity, moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material simulation, or hyper-detail.',
-      spatial_distortion:
+      camera_and_composition:
         'Readable workshops, rail platforms, docks, streets, or civic machine halls without becoming a corridor. Keep depth legible and avoid default hallway, aisle, or empty studio staging.',
-      atmosphere: 'solemn craft, machine reverence, monumental labor',
+      atmosphere_and_mood: 'solemn craft, machine reverence, monumental labor',
+      rendering_and_quality:
+        'Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity, moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material simulation, or hyper-detail.',
       key_features:
         'vertical machine ribs, welding halos, broad rivet arcs, tool plinths, worker silhouettes',
       creative_brief:

@@ -14,16 +14,37 @@ tags:
   - rainpunk
   - waterworks
 visualDna:
-  aesthetic: rainpunk civic water system as a flat-to-painterly poster card built around public rainwater instruments, cistern blocks, gutter-harp arcs, umbrella crews, and blue ceramic channels.
-  form_and_line: Repair-culture shapes, civic infrastructure, practical climate machines, and human-scaled commons. Core composition uses gutter harps, cisterns, umbrella crews, water channels, rain rhythm.
-  color_palette: rain blue, slate, ceramic white, brass pipe
-  lighting_setup: overcast glow blocks, broad rain rhythm marks, flat cistern color, small warm accent dots
-  material_texture: ceramic channel planes, brass gutter arcs, rubber boot shapes, wet stone color blocks, umbrella fabric planes
-  render_quality: Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity, moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material simulation, or hyper-detail.
-  spatial_distortion: Rooftops, riversides, roofs, blocks, terraces, and outdoor workshops with lived-in pragmatism. Keep depth legible and avoid default hallway, aisle, or empty studio staging.
-  atmosphere: musical, civic, wet, coordinated
+  aesthetic: >-
+    rainpunk civic water system as a flat-to-painterly poster card built around public rainwater instruments,
+    cistern blocks, gutter-harp arcs, umbrella crews, and blue ceramic channels.
+  subject_treatment: >-
+    Repair-culture shapes, civic infrastructure, practical climate machines, and human-scaled commons. Core
+    composition uses gutter harps, cisterns, umbrella crews, water channels, rain rhythm.
+  color_and_tone: rain blue, slate, ceramic white, brass pipe
+  lighting_and_shadow: overcast glow blocks, broad rain rhythm marks, flat cistern color, small warm accent dots
+  texture_and_material: >-
+    ceramic channel planes, brass gutter arcs, rubber boot shapes, wet stone color blocks, umbrella fabric
+    planes
+  camera_and_composition: >-
+    Rooftops, riversides, roofs, blocks, terraces, and outdoor workshops with lived-in pragmatism. Keep depth
+    legible and avoid default hallway, aisle, or empty studio staging.
+  atmosphere_and_mood: musical, civic, wet, coordinated
+  rendering_and_quality: >-
+    Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly
+    planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity,
+    moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material
+    simulation, or hyper-detail.
   key_features: gutter harps, cisterns, umbrella crews, water channels, rain rhythm
-  creative_brief: 'Rainpunk as civic water music: people tune and maintain water systems, no empty rainy alley clone, lamp/window fixation, photoreal rain, or logo-like water symbols on clothes/walls/channels. Keep the result representative rather than over-abstract; make one character in their environment the anchor, with motifs as background, costume, weather, architecture, or social pressure instead of a foreground prop. Favor flat-to-painterly editorial illustration, gouache poster aesthetics, clean graphic-novel card art, or stylized animation-background art over realism, photoreal photoreal painterly realism, cinematic key art, scratchy print noise, or hyper-detailed concept art. Use few bold color/value zones, low-to-moderate texture, large shapes, clean surfaces, shallow poster depth, and finish denoised with no excessive noise or ultra-fine detail.'
+  creative_brief: >-
+    Rainpunk as civic water music: people tune and maintain water systems, no empty rainy alley clone,
+    lamp/window fixation, photoreal rain, or logo-like water symbols on clothes/walls/channels. Keep the
+    result representative rather than over-abstract; make one character in their environment the anchor, with
+    motifs as background, costume, weather, architecture, or social pressure instead of a foreground prop.
+    Favor flat-to-painterly editorial illustration, gouache poster aesthetics, clean graphic-novel card art,
+    or stylized animation-background art over realism, photoreal photoreal painterly realism, cinematic key
+    art, scratchy print noise, or hyper-detailed concept art. Use few bold color/value zones, low-to-moderate
+    texture, large shapes, clean surfaces, shallow poster depth, and finish denoised with no excessive noise
+    or ultra-fine detail.
 avoidRules:
   - photoreal
   - watermark
@@ -37,7 +58,22 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP15-023.webp
 attributes:
-  negativePrompt: photoreal, hyperreal, realistic render, photoreal photoreal painterly realism, cinematic realism, AAA key art, cinematic concept-art render, photographic skin pores, realistic foreground portrait, realistic facial hair detail, lens blur, bokeh, depth-of-field photo look, realistic perspective drama, generic soldier hero, guard pin-up, weapon-first pose, water-drop logo, wave icon, badge symbol, emblem on clothing, symbol on wall, symbol on channel, empty rainy alley, lamp fixation, window fixation, photoreal rain reflections, umbrella crowd clutter, musical stage, readable signs, HDR lens realism, 3D render look, PBR material simulation, hyper-detailed concept art, scratchy print noise, tiny black linework, watermark, text, logo, generic style, over-abstract, interchangeable preset, duplicated motifs, generic glass utopia, unmotivated market aisle, unmotivated library aisle, fantasy corridor, random camera held by subject, studio wall fixation, chair fixation, curtain fixation, lamp fixation, scarf fixation, pedestal fixation, bird fixation, excessive noise, ultra-fine detail, over-sharpened microtexture, over-rendered machinery, noisy grime, tiny rivets everywhere, busy texture chatter, realistic uniform portrait, uniformed officer hero, foreground guard portrait, detailed tattoo focus, dense machinery wallpaper, overcrowded scene, high-frequency surface detail, cinematic close-up portrait, flat black fill, crushed black, pure black masses, muddy black fields, generic American illustration, generic Western RPG card art
+  negativePrompt: >-
+    photoreal, hyperreal, realistic render, photoreal photoreal painterly realism, cinematic realism, AAA key
+    art, cinematic concept-art render, photographic skin pores, realistic foreground portrait, realistic
+    facial hair detail, lens blur, bokeh, depth-of-field photo look, realistic perspective drama, generic
+    soldier hero, guard pin-up, weapon-first pose, water-drop logo, wave icon, badge symbol, emblem on
+    clothing, symbol on wall, symbol on channel, empty rainy alley, lamp fixation, window fixation, photoreal
+    rain reflections, umbrella crowd clutter, musical stage, readable signs, HDR lens realism, 3D render look,
+    PBR material simulation, hyper-detailed concept art, scratchy print noise, tiny black linework, watermark,
+    text, logo, generic style, over-abstract, interchangeable preset, duplicated motifs, generic glass utopia,
+    unmotivated market aisle, unmotivated library aisle, fantasy corridor, random camera held by subject,
+    studio wall fixation, chair fixation, curtain fixation, lamp fixation, scarf fixation, pedestal fixation,
+    bird fixation, excessive noise, ultra-fine detail, over-sharpened microtexture, over-rendered machinery,
+    noisy grime, tiny rivets everywhere, busy texture chatter, realistic uniform portrait, uniformed officer
+    hero, foreground guard portrait, detailed tattoo focus, dense machinery wallpaper, overcrowded scene,
+    high-frequency surface detail, cinematic close-up portrait, flat black fill, crushed black, pure black
+    masses, muddy black fields, generic American illustration, generic Western RPG card art
 taxonomy:
   packId: pack_15
   packName: Punk Spectrum Vault

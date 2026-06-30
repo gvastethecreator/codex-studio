@@ -12,11 +12,17 @@ tags:
   - essential-art-styles
   - game-art-directions-and-ui
 visualDna:
-  aesthetic: Soulslike dark-fantasy art direction with eroded grandeur, oppressive negative space, and tarnished material poetry.
-  subject_treatment: Make any subject feel ancient, burdened, and monumental through worn edges, severe silhouette, and ritual scale.
+  aesthetic: >-
+    Soulslike dark-fantasy art direction with eroded grandeur, oppressive negative space, and tarnished
+    material poetry.
+  subject_treatment: >-
+    Make any subject feel ancient, burdened, and monumental through worn edges, severe silhouette, and ritual
+    scale.
   color_and_tone: Ash-gray, old gold, bruised umber, corpse-green accents, and desaturated highlights over deep blacks.
   lighting_and_shadow: Thin holy backlight, torch-warm pin glows, huge soft shadow masses, and mist-diffused silhouettes.
-  texture_and_material: Corroded metal, cracked stone, dry dust, old cloth grain, soot, and weathered ornament as surface language.
+  texture_and_material: >-
+    Corroded metal, cracked stone, dry dust, old cloth grain, soot, and weathered ornament as surface
+    language.
   camera_and_composition: Low, patient framing with monumental empty space, vertical pressure, and slow-burn focal hierarchy.
   atmosphere_and_mood: Decayed, sacred, hostile mood without requiring castles, bosses, armor, weapons, or ruins.
   rendering_and_quality: Painterly AAA concept finish, restrained detail outside focal areas, no UI or readable text.

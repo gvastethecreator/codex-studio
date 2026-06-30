@@ -13,19 +13,18 @@ tags:
   - printmaking
 visualDna:
   aesthetic: Relief block print
-  form_and_line: Thick, angular, gouged
-  color_palette: Black and White high contrast
-  lighting_setup: Stark
-  material_texture: Wood grain, ink squash
-  render_quality: German expressionism, bold
-  spatial_distortion: Angular forms
-  atmosphere: Dramatic, primitive
+  subject_treatment: Thick, angular, gouged
+  color_and_tone: Black and White high contrast
+  lighting_and_shadow: Stark
+  texture_and_material: Wood grain, ink squash
+  camera_and_composition: Angular forms
+  atmosphere_and_mood: Dramatic, primitive
+  rendering_and_quality: German expressionism, bold
   key_features: Gouge marks
   creative_brief: >-
-    Apply woodcut print logic to any input: gouged white channels, raised black
-    ink shapes, visible wood grain, rough relief edges, and reduction-carved
-    contrast. Keep block-print force without requiring folk scenes, waves,
-    landscapes, animals, or historical illustration.
+    Apply woodcut print logic to any input: gouged white channels, raised black ink shapes, visible wood
+    grain, rough relief edges, and reduction-carved contrast. Keep block-print force without requiring folk
+    scenes, waves, landscapes, animals, or historical illustration.
 avoidRules:
   - photo
   - realistic
@@ -45,7 +44,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP06-032.webp
 attributes:
-  negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border
+  negativePrompt: >-
+    photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy,
+    watermark, text, signature, frame, border
 taxonomy:
   packId: pack_06
   packName: Essential Art Styles

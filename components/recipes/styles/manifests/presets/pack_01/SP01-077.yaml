@@ -13,15 +13,20 @@ tags:
   - technical-and-specialist-imaging
 visualDna:
   aesthetic: Clinical medical documentation
-  form_and_line: Clean hyper-detailed framing
-  color_palette: Sterile red-blue accents
-  lighting_setup: Bright surgical light
-  material_texture: Sterile surface, metal, medical sheen
-  render_quality: Clinical, sharp
-  spatial_distortion: None
-  atmosphere: Sterile, intense
+  subject_treatment: Clean hyper-detailed framing
+  color_and_tone: Sterile red-blue accents
+  lighting_and_shadow: Bright surgical light
+  texture_and_material: Sterile surface, metal, medical sheen
+  camera_and_composition: >-
+    Camera setup native to Medical Photography: lens choice, crop distance, depth of field, and focal
+    hierarchy support 7. Technical And Specialist Imaging without generic framing.
+  atmosphere_and_mood: Sterile, intense
+  rendering_and_quality: Clinical, sharp
   key_features: Clean background
-  creative_brief: Medical photography applies bright surgical clarity, sterile color accents, sharp close detail, and unemotional documentation to any subject. Keep clinical intensity without requiring anatomy, surgery, flesh, wounds, scrubs, or medical procedure.
+  creative_brief: >-
+    Medical photography applies bright surgical clarity, sterile color accents, sharp close detail, and
+    unemotional documentation to any subject. Keep clinical intensity without requiring anatomy, surgery,
+    flesh, wounds, scrubs, or medical procedure.
 avoidRules:
   - artistic
   - moody shadow

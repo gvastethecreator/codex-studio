@@ -14,16 +14,37 @@ tags:
   - seapunk
   - arcade
 visualDna:
-  aesthetic: playful seapunk arcade as a flat graphic digital-illustration card built around a coastal arcade boardwalk tangled with kelp cables, abstract neon fish lights, players, and salt-stained cabinets.
-  form_and_line: Terrain-specific silhouettes, waterline arcs, ice facets, salt grids, stilt structures, and wind-tensioned forms. Core composition uses kelp cables, arcade cabinets, players, neon fish shapes, boardwalk planks.
-  color_palette: kelp green, arcade pink, salt white, ocean blue
-  lighting_setup: arcade neon, sunset bounce, cabinet glow, wet-board reflections
-  material_texture: arcade plastic color blocks, broad kelp cable arcs, salt crust marks, painted wood planes, rain-jacket silhouettes
-  render_quality: Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity, moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material simulation, or hyper-detail.
-  spatial_distortion: Coasts, piers, marinas, glacier towns, salt flats, and swamps with strong environmental identity. Keep depth legible and avoid default hallway, aisle, or empty studio staging.
-  atmosphere: fun, strange, salty, energetic
+  aesthetic: >-
+    playful seapunk arcade as a flat graphic digital-illustration card built around a coastal arcade boardwalk
+    tangled with kelp cables, abstract neon fish lights, players, and salt-stained cabinets.
+  subject_treatment: >-
+    Terrain-specific silhouettes, waterline arcs, ice facets, salt grids, stilt structures, and wind-tensioned
+    forms. Core composition uses kelp cables, arcade cabinets, players, neon fish shapes, boardwalk planks.
+  color_and_tone: kelp green, arcade pink, salt white, ocean blue
+  lighting_and_shadow: arcade neon, sunset bounce, cabinet glow, wet-board reflections
+  texture_and_material: >-
+    arcade plastic color blocks, broad kelp cable arcs, salt crust marks, painted wood planes, rain-jacket
+    silhouettes
+  camera_and_composition: >-
+    Coasts, piers, marinas, glacier towns, salt flats, and swamps with strong environmental identity. Keep
+    depth legible and avoid default hallway, aisle, or empty studio staging.
+  atmosphere_and_mood: fun, strange, salty, energetic
+  rendering_and_quality: >-
+    Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly
+    planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity,
+    moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material
+    simulation, or hyper-detail.
   key_features: kelp cables, arcade cabinets, players, neon fish shapes, boardwalk planks
-  creative_brief: 'A seapunk entertainment preset: one boardwalk arcade runner/player protagonist, machines, and kelp tech, not object-only cabinet still life. Keep it representative through a short coastal boardwalk corner, player silhouettes, chunky arcade cabinet shapes, broad kelp-cable arcs, and abstract neon fish lights without text. Favor flat graphic digital illustration, clean editorial illustration, cel-shaded poster art, gouache poster aesthetics, graphic-novel card art, or stylized animation-background art over realism, photoreal painterly realism, cinematic key art, scratchy print noise, or hyper-detailed concept art. Use few bold color/value zones, simplified brush planes, matte surfaces, low-to-moderate texture, large shapes, clean surfaces, shallow poster depth, and finish denoised with no excessive noise or ultra-fine detail.'
+  creative_brief: >-
+    A seapunk entertainment preset: one boardwalk arcade runner/player protagonist, machines, and kelp tech,
+    not object-only cabinet still life. Keep it representative through a short coastal boardwalk corner,
+    player silhouettes, chunky arcade cabinet shapes, broad kelp-cable arcs, and abstract neon fish lights
+    without text. Favor flat graphic digital illustration, clean editorial illustration, cel-shaded poster
+    art, gouache poster aesthetics, graphic-novel card art, or stylized animation-background art over realism,
+    photoreal painterly realism, cinematic key art, scratchy print noise, or hyper-detailed concept art. Use
+    few bold color/value zones, simplified brush planes, matte surfaces, low-to-moderate texture, large
+    shapes, clean surfaces, shallow poster depth, and finish denoised with no excessive noise or ultra-fine
+    detail.
 avoidRules:
   - photoreal
   - watermark
@@ -37,7 +58,22 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP15-035.webp
 attributes:
-  negativePrompt: photoreal, hyperreal, realistic render, photoreal painterly realism, cinematic realism, AAA key art, cinematic concept-art render, photobash polish, realistic material rendering, photographic skin pores, realistic foreground portrait, realistic facial hair detail, lens blur, bokeh, depth-of-field photo look, generic soldier hero, guard pin-up, weapon-first pose, readable screen UI, game title text, logos, mascot poster, object-only arcade cabinet, long boardwalk corridor, market pier, photoreal wet reflections, dense cable kelp spaghetti, HDR lens realism, 3D render look, PBR material simulation, hyper-detailed concept art, scratchy print noise, tiny black linework, watermark, text, logo, generic style, over-abstract, interchangeable preset, duplicated motifs, generic glass utopia, unmotivated market aisle, unmotivated library aisle, fantasy corridor, random camera held by subject, studio wall fixation, chair fixation, curtain fixation, lamp fixation, scarf fixation, pedestal fixation, bird fixation, excessive noise, ultra-fine detail, over-sharpened microtexture, over-rendered machinery, noisy grime, tiny rivets everywhere, busy texture chatter, realistic uniform portrait, uniformed officer hero, foreground guard portrait, detailed tattoo focus, dense machinery wallpaper, overcrowded scene, high-frequency surface detail, cinematic close-up portrait, flat black fill, crushed black, pure black masses, muddy black fields, generic American illustration, generic Western RPG card art
+  negativePrompt: >-
+    photoreal, hyperreal, realistic render, photoreal painterly realism, cinematic realism, AAA key art,
+    cinematic concept-art render, photobash polish, realistic material rendering, photographic skin pores,
+    realistic foreground portrait, realistic facial hair detail, lens blur, bokeh, depth-of-field photo look,
+    generic soldier hero, guard pin-up, weapon-first pose, readable screen UI, game title text, logos, mascot
+    poster, object-only arcade cabinet, long boardwalk corridor, market pier, photoreal wet reflections, dense
+    cable kelp spaghetti, HDR lens realism, 3D render look, PBR material simulation, hyper-detailed concept
+    art, scratchy print noise, tiny black linework, watermark, text, logo, generic style, over-abstract,
+    interchangeable preset, duplicated motifs, generic glass utopia, unmotivated market aisle, unmotivated
+    library aisle, fantasy corridor, random camera held by subject, studio wall fixation, chair fixation,
+    curtain fixation, lamp fixation, scarf fixation, pedestal fixation, bird fixation, excessive noise,
+    ultra-fine detail, over-sharpened microtexture, over-rendered machinery, noisy grime, tiny rivets
+    everywhere, busy texture chatter, realistic uniform portrait, uniformed officer hero, foreground guard
+    portrait, detailed tattoo focus, dense machinery wallpaper, overcrowded scene, high-frequency surface
+    detail, cinematic close-up portrait, flat black fill, crushed black, pure black masses, muddy black
+    fields, generic American illustration, generic Western RPG card art
 taxonomy:
   packId: pack_15
   packName: Punk Spectrum Vault

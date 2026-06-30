@@ -15,32 +15,30 @@ visualDna:
   aesthetic: >-
     Extreme body-horror anime transformed into clinical anatomical abstraction, crimson-black dread,
     biological pattern obsession, and transgressive nightmare beauty
-  form_and_line: >-
-    Hyper-precise anatomical linework, fiber-like stippling, vein-network crosshatching, bone-like
-    texture rendering, and obsessive biological detail
-  color_palette: >-
-    Fresh-blood crimson, viscera pink, bone-bleach white, bruise-spectrum purple-to-black, bile
-    yellow-green, iron-oxide rust, surgical steel blue
-  lighting_setup: >-
-    Clinical operating-theater light, harsh single-source casting deep shadows into wounds,
-    wet-glint highlights on exposed tissue
-  material_texture: >-
-    Wet striation, porous bone-like surfaces, coagulated red gloss, membrane translucency, and
-    organic gleam
-  render_quality: >-
-    Medical-textbook horror anime, anatomically precise abstraction, beautiful-disgusting rendering,
-    and nightmare-poetry visual
-  spatial_distortion: >-
-    Anatomy opens into impossible diagram-space, biological schematics overlay subjects, spiral
-    distortion consumes depth
-  atmosphere: Horrifying, transgressive, darkly beautiful, mesmerizing disgust, anatomical nightmare
+  subject_treatment: >-
+    Hyper-precise anatomical linework, fiber-like stippling, vein-network crosshatching, bone-like texture
+    rendering, and obsessive biological detail
+  color_and_tone: >-
+    Fresh-blood crimson, viscera pink, bone-bleach white, bruise-spectrum purple-to-black, bile yellow-green,
+    iron-oxide rust, surgical steel blue
+  lighting_and_shadow: >-
+    Clinical operating-theater light, harsh single-source casting deep shadows into wounds, wet-glint
+    highlights on exposed tissue
+  texture_and_material: Wet striation, porous bone-like surfaces, coagulated red gloss, membrane translucency, and organic gleam
+  camera_and_composition: >-
+    Anatomy opens into impossible diagram-space, biological schematics overlay subjects, spiral distortion
+    consumes depth
+  atmosphere_and_mood: Horrifying, transgressive, darkly beautiful, mesmerizing disgust, anatomical nightmare
+  rendering_and_quality: >-
+    Medical-textbook horror anime, anatomically precise abstraction, beautiful-disgusting rendering, and
+    nightmare-poetry visual
   key_features: >-
-    Anatomical pattern density, red-black clinical dread, bone-texture rendering,
-    biological-precision abstraction, spiral contamination motifs
+    Anatomical pattern density, red-black clinical dread, bone-texture rendering, biological-precision
+    abstraction, spiral contamination motifs
   creative_brief: >-
     Use visceral horror anime as anatomical-abstraction grammar. Any prompt should become clinical,
-    high-contrast, pattern-dense, and dread-weighted through biological shapes and crimson-black
-    pressure. Bodies, wounds, monsters, and shock scenes are optional.
+    high-contrast, pattern-dense, and dread-weighted through biological shapes and crimson-black pressure.
+    Bodies, wounds, monsters, and shock scenes are optional.
 avoidRules:
   - cute
   - clean

@@ -12,16 +12,27 @@ tags:
   - cinematic-and-media
   - caricature-and-cartoon-styles
 visualDna:
-  aesthetic: Childlike notebook scribble, wonky circles, deliberately bad proportions, joyful incompetence, crayon-on-paper energy
-  form_and_line: Loose wobbly graphite, multiple overlapping attempt lines, eraser smudges still visible, uncertain pen pressure
-  color_palette: Wax crayon primaries, coloring-outside-the-lines chaos, cheap children's marker bleed, construction-paper bright
-  lighting_setup: No lighting logic, flat fills with zero shading, rejecting dimension
-  material_texture: Lined notebook paper grain, crayon wax buildup, marker bleeding through to reverse side
-  render_quality: Intentionally childish, proudly amateur, naive-art celebration, anti-skill philosophy, five-year-old masterpiece
-  spatial_distortion: Scale mistakes, no perspective whatsoever, flattened spatial guesses, naive symbol logic
-  atmosphere: Innocent, joyful chaos, giggling anarchy, pure creative abandon
+  aesthetic: >-
+    Childlike notebook scribble, wonky circles, deliberately bad proportions, joyful incompetence,
+    crayon-on-paper energy
+  subject_treatment: >-
+    Loose wobbly graphite, multiple overlapping attempt lines, eraser smudges still visible, uncertain pen
+    pressure
+  color_and_tone: >-
+    Wax crayon primaries, coloring-outside-the-lines chaos, cheap children's marker bleed, construction-paper
+    bright
+  lighting_and_shadow: No lighting logic, flat fills with zero shading, rejecting dimension
+  texture_and_material: Lined notebook paper grain, crayon wax buildup, marker bleeding through to reverse side
+  camera_and_composition: Scale mistakes, no perspective whatsoever, flattened spatial guesses, naive symbol logic
+  atmosphere_and_mood: Innocent, joyful chaos, giggling anarchy, pure creative abandon
+  rendering_and_quality: >-
+    Intentionally childish, proudly amateur, naive-art celebration, anti-skill philosophy, five-year-old
+    masterpiece
   key_features: Wobbly attempts, crayon overflow, simple symbols, eraser smudges, flat naive layout
-  creative_brief: 'Render any input as joyful amateur doodle: wobbling attempt lines, crayon overflow, lined paper, marker bleed, naive proportions, and zero concern for perspective. Avoid forcing houses, suns, flowers, limbs, or faces. The value is pure making before polish, not a fixed child-art subject.'
+  creative_brief: >-
+    Render any input as joyful amateur doodle: wobbling attempt lines, crayon overflow, lined paper, marker
+    bleed, naive proportions, and zero concern for perspective. Avoid forcing houses, suns, flowers, limbs, or
+    faces. The value is pure making before polish, not a fixed child-art subject.
 avoidRules:
   - realistic
   - proportional

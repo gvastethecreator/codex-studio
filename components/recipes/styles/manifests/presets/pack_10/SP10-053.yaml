@@ -13,18 +13,18 @@ tags:
   - textile-and-ornamental-patterns
 visualDna:
   aesthetic: Spiral dye pattern
-  form_and_line: Bleeding edges
-  color_palette: Rainbow, vibrant
-  lighting_setup: Flat
-  material_texture: Cotton
-  render_quality: Hippie, handmade
-  spatial_distortion: Spiral
-  atmosphere: Groovy, fun
+  subject_treatment: Bleeding edges
+  color_and_tone: Rainbow, vibrant
+  lighting_and_shadow: Flat
+  texture_and_material: Cotton
+  camera_and_composition: Spiral
+  atmosphere_and_mood: Groovy, fun
+  rendering_and_quality: Hippie, handmade
   key_features: Spiral center
   creative_brief: >-
-    Apply tie-dye behavior to the input: radial folds, pigment blooms, spiral
-    bleed, unpredictable color rings, and fabric-like saturation should make
-    surfaces feel hand-dyed without requiring shirts or festival context.
+    Apply tie-dye behavior to the input: radial folds, pigment blooms, spiral bleed, unpredictable color
+    rings, and fabric-like saturation should make surfaces feel hand-dyed without requiring shirts or festival
+    context.
 avoidRules:
   - sharp lines
 assets:

@@ -13,18 +13,18 @@ tags:
   - technical-and-specialist-imaging
 visualDna:
   aesthetic: Surveillance footage
-  form_and_line: Low resolution, interlaced
-  color_palette: Desaturated or B&W
-  lighting_setup: High contrast, night vision
-  material_texture: Compression artifacts, scanlines
-  render_quality: Gritty, crime
-  spatial_distortion: Wide angle distortion
-  atmosphere: Creepy, voyeuristic
+  subject_treatment: Low resolution, interlaced
+  color_and_tone: Desaturated or B&W
+  lighting_and_shadow: High contrast, night vision
+  texture_and_material: Compression artifacts, scanlines
+  camera_and_composition: Wide angle distortion
+  atmosphere_and_mood: Creepy, voyeuristic
+  rendering_and_quality: Gritty, crime
   key_features: Surveillance UI burn-in
   creative_brief: >-
-    Apply CCTV surveillance optics to the input: low-resolution compression,
-    scanlines, wide-angle distortion, harsh security contrast, and timestamp-like
-    burn-in marks without readable text should make any subject feel observed.
+    Apply CCTV surveillance optics to the input: low-resolution compression, scanlines, wide-angle distortion,
+    harsh security contrast, and timestamp-like burn-in marks without readable text should make any subject
+    feel observed.
 avoidRules:
   - hd
   - 4k

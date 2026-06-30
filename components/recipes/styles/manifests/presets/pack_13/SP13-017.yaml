@@ -12,20 +12,31 @@ tags:
   - anime-character-and-lifestyle
   - anime
 visualDna:
-  aesthetic: Ink-driven anime noir language with psychological austerity, midnight isolation, and clue-like focal tension
-  form_and_line: Hard-edged contour blocks, bold black massing, angular coat-like silhouettes, and graphic shadow slicing inspired by crime-poster composition
-  color_palette: Monochrome black-white dominance with restrained crimson accent channels reserved for focal evidence or emotional stress points
-  lighting_setup: Severe lateral key, venetian-shadow banding, wet specular cuts, and controlled negative fill for noir depth retention
-  material_texture: Rough matte paper-like grain, light drizzle particulate, damp sheen, and low-gloss textile surfaces
-  render_quality: Poster-grade anime noir rendering with high legibility, disciplined value contrast, and cinematic restraint at card scale
-  spatial_distortion: Tight focal framing with compressed depth to heighten claustrophobic deduction mood
-  atmosphere: Intriguing, solitary, tense, and cerebral
-  key_features: Trenchcoat-like silhouette authority, central evidence-like anchor, striped shadow patterning, and crimson clue-emphasis logic
+  aesthetic: >-
+    Ink-driven anime noir language with psychological austerity, midnight isolation, and clue-like focal
+    tension
+  subject_treatment: >-
+    Hard-edged contour blocks, bold black massing, angular coat-like silhouettes, and graphic shadow slicing
+    inspired by crime-poster composition
+  color_and_tone: >-
+    Monochrome black-white dominance with restrained crimson accent channels reserved for focal evidence or
+    emotional stress points
+  lighting_and_shadow: >-
+    Severe lateral key, venetian-shadow banding, wet specular cuts, and controlled negative fill for noir
+    depth retention
+  texture_and_material: Rough matte paper-like grain, light drizzle particulate, damp sheen, and low-gloss textile surfaces
+  camera_and_composition: Tight focal framing with compressed depth to heighten claustrophobic deduction mood
+  atmosphere_and_mood: Intriguing, solitary, tense, and cerebral
+  rendering_and_quality: >-
+    Poster-grade anime noir rendering with high legibility, disciplined value contrast, and cinematic
+    restraint at card scale
+  key_features: >-
+    Trenchcoat-like silhouette authority, central evidence-like anchor, striped shadow patterning, and crimson
+    clue-emphasis logic
   creative_brief: >-
-    Use Ink Noir Detective as style anchor for cerebral shadow tension:
-    monochrome ink massing, selective crimson focal accents, and hard lateral
-    shadow architecture should transfer without requiring detective, evidence,
-    trenchcoat, city, or crime scene.
+    Use Ink Noir Detective as style anchor for cerebral shadow tension: monochrome ink massing, selective
+    crimson focal accents, and hard lateral shadow architecture should transfer without requiring detective,
+    evidence, trenchcoat, city, or crime scene.
 avoidRules:
   - photoreal
   - colorful-rainbow

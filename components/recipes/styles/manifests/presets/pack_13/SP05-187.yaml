@@ -12,20 +12,35 @@ tags:
   - anime-character-and-lifestyle
   - shojo-magical-girl-and-visionary-classics
 visualDna:
-  aesthetic: Showbiz-revenge transformation shojo language with theatrical performance intensity, mask-symbol emotion, and self-reinvention through acting craft
-  form_and_line: Dramatic expression-line spikes, spotlight-blocking silhouette shifts, persona-switch pose language, and costume-driven contour emphasis
-  color_palette: Spotlight golds, dramatic magenta-violet accents, backstage neutrals, and high-contrast starburst effect colors
-  lighting_setup: Audition-like and stage-practical spotlights, contrast pools, theatrical bloom accents, and identity-shift rim highlights
-  material_texture: Performance costume textiles, makeup sheen cues, matte rehearsal-like surfaces, and graphic overlay motifs (mask/starburst) used as emotion carriers
-  render_quality: High-drama showbiz shojo rendering with strong persona readability, kinetic emotional staging, and polished theatrical clarity
-  spatial_distortion: Stage-perspective exaggeration and compressed identity-space depth to support transformation beats and persona contrast
-  atmosphere: Driven, theatrical, glittering, intense
-  key_features: Showbiz costume logic, performance-space pressure, mask symbolism, revenge-expression spikes, starburst comedic effects
+  aesthetic: >-
+    Showbiz-revenge transformation shojo language with theatrical performance intensity, mask-symbol emotion,
+    and self-reinvention through acting craft
+  subject_treatment: >-
+    Dramatic expression-line spikes, spotlight-blocking silhouette shifts, persona-switch pose language, and
+    costume-driven contour emphasis
+  color_and_tone: >-
+    Spotlight golds, dramatic magenta-violet accents, backstage neutrals, and high-contrast starburst effect
+    colors
+  lighting_and_shadow: >-
+    Audition-like and stage-practical spotlights, contrast pools, theatrical bloom accents, and identity-shift
+    rim highlights
+  texture_and_material: >-
+    Performance costume textiles, makeup sheen cues, matte rehearsal-like surfaces, and graphic overlay motifs
+    (mask/starburst) used as emotion carriers
+  camera_and_composition: >-
+    Stage-perspective exaggeration and compressed identity-space depth to support transformation beats and
+    persona contrast
+  atmosphere_and_mood: Driven, theatrical, glittering, intense
+  rendering_and_quality: >-
+    High-drama showbiz shojo rendering with strong persona readability, kinetic emotional staging, and
+    polished theatrical clarity
+  key_features: >-
+    Showbiz costume logic, performance-space pressure, mask symbolism, revenge-expression spikes, starburst
+    comedic effects
   creative_brief: >-
-    Perform the input as revenge idol stardom: spotlight gold, magenta-violet
-    persona shifts, mask-symbol emotion, starburst spikes, and costume-contour
-    intensity can reinvent any subject without requiring an idol stage,
-    audition room, audience, or literal celebrity plot.
+    Perform the input as revenge idol stardom: spotlight gold, magenta-violet persona shifts, mask-symbol
+    emotion, starburst spikes, and costume-contour intensity can reinvent any subject without requiring an
+    idol stage, audition room, audience, or literal celebrity plot.
 avoidRules:
   - realistic
   - 3d render
@@ -42,7 +57,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-187.webp
 attributes:
-  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
+  negativePrompt: >-
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts,
+    watermark, text, signature
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle

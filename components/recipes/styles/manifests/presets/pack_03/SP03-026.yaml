@@ -13,19 +13,23 @@ tags:
   - 3d-styles
 visualDna:
   aesthetic: Disassembled parts arranged
-  form_and_line: 90 degree angles
-  color_palette: Clean background, component contrast
-  lighting_setup: Top down, shadow-free
-  material_texture: Clean parts, disassembly beauty
-  render_quality: Organized exploded-layout clarity
-  atmosphere: Satisfying, organized, design-museum
+  subject_treatment: 90 degree angles
+  color_and_tone: Clean background, component contrast
+  lighting_and_shadow: Top down, shadow-free
+  texture_and_material: Clean parts, disassembly beauty
+  camera_and_composition: >-
+    Overhead orthographic flat-lay composition with measured spacing, clean object separation, and strong
+    negative-space rhythm for Knolling (Flat Lay).
+  atmosphere_and_mood: Satisfying, organized, design-museum
+  rendering_and_quality: Organized exploded-layout clarity
   key_features: Grid layout, 90-degree arrangement
   creative_brief: >-
-    Recompose the input as knolled structure: top-down orthographic order, right-angle spacing, exploded relationships
-    and shadow-free museum clarity. If the subject has parts, separate them; otherwise translate its visual elements
-    into a precise grid. Do not require a product teardown. Apply Knolling as a portable 3D/render style system over any
-    input: preserve its renderer logic, material behavior, geometry language, lighting grammar, and production cues
-    while avoiding a required character, vehicle, prop, environment, UI screen, product shot, or scene template.
+    Recompose the input as knolled structure: top-down orthographic order, right-angle spacing, exploded
+    relationships and shadow-free museum clarity. If the subject has parts, separate them; otherwise translate
+    its visual elements into a precise grid. Do not require a product teardown. Apply Knolling as a portable
+    3D/render style system over any input: preserve its renderer logic, material behavior, geometry language,
+    lighting grammar, and production cues while avoiding a required character, vehicle, prop, environment, UI
+    screen, product shot, or scene template.
 avoidRules:
   - messy
   - piled

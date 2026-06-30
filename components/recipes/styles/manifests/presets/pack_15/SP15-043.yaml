@@ -14,16 +14,35 @@ tags:
   - synthpunk
   - basement-show
 visualDna:
-  aesthetic: riot synthpunk basement as a flat graphic digital-illustration card built around a basement show where synth rigs, barricade furniture, patched amps, and a crowd share protest electricity.
-  form_and_line: Handmade graphics, patched clothes, improvised machines, crew energy, protest rhythm, and rough edges. Core composition uses synth rigs, patched amps, crowd silhouettes, improvised barricade, cable tangles.
-  color_palette: charcoal, magenta, plywood brown, electric blue
-  lighting_setup: stage LEDs, cheap bulbs, amp glow, smoky low ceiling
-  material_texture: plywood blocks, duct tape strips, thick cable trails, worn speaker shapes, jacket silhouettes
-  render_quality: Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity, moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material simulation, or hyper-detail.
-  spatial_distortion: Safehouses, skateparks, warehouses, booths, yards, clinics, and shared kitchens with visible use. Keep depth legible and avoid default hallway, aisle, or empty studio staging.
-  atmosphere: loud, cramped, defiant, electric
+  aesthetic: >-
+    riot synthpunk basement as a flat graphic digital-illustration card built around a basement show where
+    synth rigs, barricade furniture, patched amps, and a crowd share protest electricity.
+  subject_treatment: >-
+    Handmade graphics, patched clothes, improvised machines, crew energy, protest rhythm, and rough edges.
+    Core composition uses synth rigs, patched amps, crowd silhouettes, improvised barricade, cable tangles.
+  color_and_tone: charcoal, magenta, plywood brown, electric blue
+  lighting_and_shadow: stage LEDs, cheap bulbs, amp glow, smoky low ceiling
+  texture_and_material: plywood blocks, duct tape strips, thick cable trails, worn speaker shapes, jacket silhouettes
+  camera_and_composition: >-
+    Safehouses, skateparks, warehouses, booths, yards, clinics, and shared kitchens with visible use. Keep
+    depth legible and avoid default hallway, aisle, or empty studio staging.
+  atmosphere_and_mood: loud, cramped, defiant, electric
+  rendering_and_quality: >-
+    Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly
+    planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity,
+    moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material
+    simulation, or hyper-detail.
   key_features: synth rigs, patched amps, crowd silhouettes, improvised barricade, cable tangles
-  creative_brief: 'Make riot energy musical and cramped: one synth operator performer protagonist, crowd silhouettes, gear, and barricade shapes without becoming abstract waveform art. Keep it representative through low-ceiling basement show, performer silhouettes at synth rigs, patched amp blocks, small crowd silhouette band, plywood barricade shapes, magenta/electric-blue light slabs, and only a few thick cable trails. Favor flat graphic digital illustration, clean editorial illustration, cel-shaded poster art, gouache poster aesthetics, graphic-novel card art, or stylized animation-background art over realism, photoreal painterly realism, cinematic key art, scratchy print noise, or hyper-detailed concept art. Use few bold color/value zones, simplified brush planes, matte surfaces, low-to-moderate texture, large shapes, clean surfaces, shallow poster depth, and finish denoised with no excessive noise or ultra-fine detail.'
+  creative_brief: >-
+    Make riot energy musical and cramped: one synth operator performer protagonist, crowd silhouettes, gear,
+    and barricade shapes without becoming abstract waveform art. Keep it representative through low-ceiling
+    basement show, performer silhouettes at synth rigs, patched amp blocks, small crowd silhouette band,
+    plywood barricade shapes, magenta/electric-blue light slabs, and only a few thick cable trails. Favor flat
+    graphic digital illustration, clean editorial illustration, cel-shaded poster art, gouache poster
+    aesthetics, graphic-novel card art, or stylized animation-background art over realism, photoreal painterly
+    realism, cinematic key art, scratchy print noise, or hyper-detailed concept art. Use few bold color/value
+    zones, simplified brush planes, matte surfaces, low-to-moderate texture, large shapes, clean surfaces,
+    shallow poster depth, and finish denoised with no excessive noise or ultra-fine detail.
 avoidRules:
   - photoreal
   - watermark
@@ -37,7 +56,22 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP15-043.webp
 attributes:
-  negativePrompt: photoreal, hyperreal, realistic render, photoreal painterly realism, cinematic realism, AAA key art, cinematic concept-art render, photobash polish, realistic material rendering, photographic skin pores, realistic foreground portrait, realistic facial hair detail, lens blur, bokeh, depth-of-field photo look, generic soldier hero, guard pin-up, weapon-first pose, readable band posters, stage signage, logo stickers, nightclub glamour, empty instrument still life, weapon barricade, police riot scene, long basement corridor, dense cable nest, photoreal smoke, HDR lens realism, 3D render look, PBR material simulation, hyper-detailed concept art, scratchy print noise, tiny black linework, watermark, text, logo, generic style, over-abstract, interchangeable preset, duplicated motifs, generic glass utopia, unmotivated market aisle, unmotivated library aisle, fantasy corridor, random camera held by subject, studio wall fixation, chair fixation, curtain fixation, lamp fixation, scarf fixation, pedestal fixation, bird fixation, excessive noise, ultra-fine detail, over-sharpened microtexture, over-rendered machinery, noisy grime, tiny rivets everywhere, busy texture chatter, realistic uniform portrait, uniformed officer hero, foreground guard portrait, detailed tattoo focus, dense machinery wallpaper, overcrowded scene, high-frequency surface detail, cinematic close-up portrait, flat black fill, crushed black, pure black masses, muddy black fields, generic American illustration, generic Western RPG card art
+  negativePrompt: >-
+    photoreal, hyperreal, realistic render, photoreal painterly realism, cinematic realism, AAA key art,
+    cinematic concept-art render, photobash polish, realistic material rendering, photographic skin pores,
+    realistic foreground portrait, realistic facial hair detail, lens blur, bokeh, depth-of-field photo look,
+    generic soldier hero, guard pin-up, weapon-first pose, readable band posters, stage signage, logo
+    stickers, nightclub glamour, empty instrument still life, weapon barricade, police riot scene, long
+    basement corridor, dense cable nest, photoreal smoke, HDR lens realism, 3D render look, PBR material
+    simulation, hyper-detailed concept art, scratchy print noise, tiny black linework, watermark, text, logo,
+    generic style, over-abstract, interchangeable preset, duplicated motifs, generic glass utopia, unmotivated
+    market aisle, unmotivated library aisle, fantasy corridor, random camera held by subject, studio wall
+    fixation, chair fixation, curtain fixation, lamp fixation, scarf fixation, pedestal fixation, bird
+    fixation, excessive noise, ultra-fine detail, over-sharpened microtexture, over-rendered machinery, noisy
+    grime, tiny rivets everywhere, busy texture chatter, realistic uniform portrait, uniformed officer hero,
+    foreground guard portrait, detailed tattoo focus, dense machinery wallpaper, overcrowded scene,
+    high-frequency surface detail, cinematic close-up portrait, flat black fill, crushed black, pure black
+    masses, muddy black fields, generic American illustration, generic Western RPG card art
 taxonomy:
   packId: pack_15
   packName: Punk Spectrum Vault

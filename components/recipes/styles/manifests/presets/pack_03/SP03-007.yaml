@@ -13,20 +13,21 @@ tags:
   - render-engines
 visualDna:
   aesthetic: Product design render
-  form_and_line: Studio-isolated presentation, controlled silhouette, clean design-read
-  color_palette: Accurate plastics/metals, brand-specific
-  lighting_setup: HDRI studio, real-time ray tracing
-  material_texture: Mold tech textures, scientifically accurate
-  render_quality: Industrial design, packaging comp
-  spatial_distortion: None
-  atmosphere: Clean, commercial, premium retail
+  subject_treatment: Studio-isolated presentation, controlled silhouette, clean design-read
+  color_and_tone: Accurate plastics/metals, brand-specific
+  lighting_and_shadow: HDRI studio, real-time ray tracing
+  texture_and_material: Mold tech textures, scientifically accurate
+  camera_and_composition: >-
+    Lookdev camera for KeyShot Product Studio Renderer: three-quarter or orthographic framing, clean
+    silhouette read, material highlights, controlled depth, and vertical card composition.
+  atmosphere_and_mood: Clean, commercial, premium retail
+  rendering_and_quality: Industrial design, packaging comp
   key_features: Controlled studio reflections, accurate material swatches, interactive-render polish
   creative_brief: >-
-    Give the input KeyShot product-studio treatment: HDRI studio reflections,
-    scientifically accurate plastics/metals, Pantone-like color discipline,
-    polymer texture fidelity and premium catalog isolation. Keep commerce-ready
-    clarity without requiring a consumer product, packaging comp, floating object
-    or empty studio void.
+    Give the input KeyShot product-studio treatment: HDRI studio reflections, scientifically accurate
+    plastics/metals, Pantone-like color discipline, polymer texture fidelity and premium catalog isolation.
+    Keep commerce-ready clarity without requiring a consumer product, packaging comp, floating object or empty
+    studio void.
 avoidRules:
   - environment
   - messy

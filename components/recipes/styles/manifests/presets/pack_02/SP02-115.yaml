@@ -12,16 +12,21 @@ tags:
   - cinematic-and-media
   - tv-and-broadcast
 visualDna:
-  aesthetic: Improvised marker-edge sitcom cartoon, dry marker linework, awkward anti-slick timing, homemade creativity, hand-drawn TV softness
-  form_and_line: Dry marker outlines, awkward hand wobble, simple blocking, improv-timing spacing
-  color_palette: Felt-tip muted primaries, school-paper beige, faded blue, dry red, washed green, marker black
-  lighting_setup: Flat TV lighting, no atmosphere, handmade sitcom readability
-  material_texture: Marker bleed, paper softness, VHS-era TV blur, low-budget cel texture
-  render_quality: Improvised hand-drawn TV softness, anti-slick sitcom cartooning, handmade charm
-  spatial_distortion: Awkward blocking gaps, simple staged poses, marker-edge drift, low-budget composition
-  atmosphere: Awkward, homemade, earnest, low-key funny
+  aesthetic: >-
+    Improvised marker-edge sitcom cartoon, dry marker linework, awkward anti-slick timing, homemade
+    creativity, hand-drawn TV softness
+  subject_treatment: Dry marker outlines, awkward hand wobble, simple blocking, improv-timing spacing
+  color_and_tone: Felt-tip muted primaries, school-paper beige, faded blue, dry red, washed green, marker black
+  lighting_and_shadow: Flat TV lighting, no atmosphere, handmade sitcom readability
+  texture_and_material: Marker bleed, paper softness, VHS-era TV blur, low-budget cel texture
+  camera_and_composition: Awkward blocking gaps, simple staged poses, marker-edge drift, low-budget composition
+  atmosphere_and_mood: Awkward, homemade, earnest, low-key funny
+  rendering_and_quality: Improvised hand-drawn TV softness, anti-slick sitcom cartooning, handmade charm
   key_features: Marker-like linework, simple staging, improvised poses, handmade TV charm, awkward pause spacing
-  creative_brief: 'Use marker-edge improvised sitcom grammar on any input: dry felt-tip outlines, flat TV softness, awkward timing, simple staging, and handmade anti-slick charm. Avoid kids, school projects, suburban rooms, or fixed show premises. The style should feel improvised and human.'
+  creative_brief: >-
+    Use marker-edge improvised sitcom grammar on any input: dry felt-tip outlines, flat TV softness, awkward
+    timing, simple staging, and handmade anti-slick charm. Avoid kids, school projects, suburban rooms, or
+    fixed show premises. The style should feel improvised and human.
 avoidRules:
   - digital
   - HD

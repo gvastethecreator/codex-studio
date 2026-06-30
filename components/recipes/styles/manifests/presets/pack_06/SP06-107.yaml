@@ -12,11 +12,19 @@ tags:
   - essential-art-styles
   - game-art-directions-and-ui
 visualDna:
-  aesthetic: Premium MOBA splash-art rendering with heroic readability, sculpted form language, and ability-color drama.
-  subject_treatment: Elevate any subject into a readable champion-like focal form with exaggerated silhouette logic and clear role cues.
-  color_and_tone: Rich complementary palette, one dominant ability hue, cinematic darks, and polished high-saturation accents.
+  aesthetic: >-
+    Premium MOBA splash-art rendering with heroic readability, sculpted form language, and ability-color
+    drama.
+  subject_treatment: >-
+    Elevate any subject into a readable champion-like focal form with exaggerated silhouette logic and clear
+    role cues.
+  color_and_tone: >-
+    Rich complementary palette, one dominant ability hue, cinematic darks, and polished high-saturation
+    accents.
   lighting_and_shadow: Multi-source rim lighting, spell-like bloom accents, deep shadow carving, and luminous focal gradients.
-  texture_and_material: Smooth digital paint, sharpened material reads, brushed energy trails, and controlled polish on focal surfaces.
+  texture_and_material: >-
+    Smooth digital paint, sharpened material reads, brushed energy trails, and controlled polish on focal
+    surfaces.
   camera_and_composition: Diagonal splash composition, low-to-mid heroic angle, large shape hierarchy, and strong poster crop.
   atmosphere_and_mood: Epic, competitive, high-skill fantasy without requiring heroes, battles, weapons, or arenas.
   rendering_and_quality: Finished key-art quality, crisp focal detail, controlled atmospheric depth, no UI or title text.

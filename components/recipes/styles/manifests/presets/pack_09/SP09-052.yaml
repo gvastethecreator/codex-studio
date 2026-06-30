@@ -13,22 +13,22 @@ tags:
   - elemental-and-fx
 visualDna:
   aesthetic: Tesla coil arc
-  form_and_line: Jagged bolts
-  color_palette: Blue, White, Purple
-  lighting_setup: Bright flash
-  material_texture: Plasma
-  render_quality: High energy
-  spatial_distortion: None
-  atmosphere: Shocking, fast
+  subject_treatment: Jagged bolts
+  color_and_tone: Blue, White, Purple
+  lighting_and_shadow: Bright flash
+  texture_and_material: Plasma
+  camera_and_composition: 'Compose for Electricity/Lightning using its key spatial cues: Branching.'
+  atmosphere_and_mood: Shocking, fast
+  rendering_and_quality: High energy
   key_features: Branching
   creative_brief: >-
-    Compose the branching violence of electrical discharge where plasma bolts fork through darkness in veins of
-    blue-white-purple energy, each tendril a tree of light that grows and dies in the same instantaneous moment. The arc
-    should feel fierce and directional, a pathfinding intelligence seeking ground through the path of least resistance.
-    Capture the architecture of pure force, energy made visible as sculpture. Use Electricity/Lightning as portable
-    surface/render behavior over any input: map its texture, light response, edge wear, color chemistry, and tactile
-    rhythm onto the subject instead of requiring a literal material sample, macro tile, wall, landscape, source object,
-    or scene where the material naturally appears.
+    Compose the branching violence of electrical discharge where plasma bolts fork through darkness in veins
+    of blue-white-purple energy, each tendril a tree of light that grows and dies in the same instantaneous
+    moment. The arc should feel fierce and directional, a pathfinding intelligence seeking ground through the
+    path of least resistance. Capture the architecture of pure force, energy made visible as sculpture. Use
+    Electricity/Lightning as portable surface/render behavior over any input: map its texture, light response,
+    edge wear, color chemistry, and tactile rhythm onto the subject instead of requiring a literal material
+    sample, macro tile, wall, landscape, source object, or scene where the material naturally appears.
 avoidRules:
   - fire
   - smoke

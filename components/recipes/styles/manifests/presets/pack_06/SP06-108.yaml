@@ -14,11 +14,17 @@ tags:
 visualDna:
   aesthetic: Visual-novel backdrop style with neon emotional grading, clean anime paint, and interactive-scene clarity.
   subject_treatment: Present any subject as a polished story-backdrop element with simplified planes and readable mood coding.
-  color_and_tone: Violet-blue ambient wash, saturated neon accents, gentle pastel fills, and controlled contrast for UI legibility.
+  color_and_tone: >-
+    Violet-blue ambient wash, saturated neon accents, gentle pastel fills, and controlled contrast for UI
+    legibility.
   lighting_and_shadow: Soft environmental glow, colored rim edges, broad shadow pools, and late-evening luminous haze.
   texture_and_material: Smooth anime-style digital paint, subtle bloom, gentle gradient noise, and restrained line cleanup.
-  camera_and_composition: Symmetrical or slightly off-center VN framing with open dialogue-safe negative space and shallow depth cues.
-  atmosphere_and_mood: Melancholic, intimate, story-charged mood without requiring classrooms, students, desks, or dialogue boxes.
+  camera_and_composition: >-
+    Symmetrical or slightly off-center VN framing with open dialogue-safe negative space and shallow depth
+    cues.
+  atmosphere_and_mood: >-
+    Melancholic, intimate, story-charged mood without requiring classrooms, students, desks, or dialogue
+    boxes.
   rendering_and_quality: Clean background-art finish, no readable text, no UI chrome, enough detail for repeated viewing.
 avoidRules:
   - watermark

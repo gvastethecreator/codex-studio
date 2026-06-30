@@ -13,15 +13,23 @@ tags:
   - lighting-and-atmosphere
 visualDna:
   aesthetic: Product photography
-  form_and_line: None
-  color_palette: Perfect white balance, neutral grey, accurate local color, clean commercial tones
-  lighting_setup: Large diffuse source, softbox wrap, shadowless fill
-  material_texture: Smooth gradients, seamless paper, clean backdrop
-  render_quality: Professional, clean, commercial polish, catalog-perfect
-  spatial_distortion: None
-  atmosphere: Commercial, perfect, aspirational, sterile beauty
+  subject_treatment: >-
+    Treat subjects as believable filmed or broadcast subjects under Softbox Studio: casting, wardrobe, props,
+    motion cues, and silhouette hierarchy follow 5. Lighting And Atmosphere cinematic and broadcast grammar
+    without locking to one plot beat.
+  color_and_tone: Perfect white balance, neutral grey, accurate local color, clean commercial tones
+  lighting_and_shadow: Large diffuse source, softbox wrap, shadowless fill
+  texture_and_material: Smooth gradients, seamless paper, clean backdrop
+  camera_and_composition: >-
+    Camera language native to Softbox Studio: genre-aware framing, lens character, focal hierarchy, motion
+    cue, and vertical style-card composition.
+  atmosphere_and_mood: Commercial, perfect, aspirational, sterile beauty
+  rendering_and_quality: Professional, clean, commercial polish, catalog-perfect
   key_features: Soft shadows, seamless sweep, isolated form, diffuse wrap, clean backdrop
-  creative_brief: 'Apply softbox studio grammar to any input: large diffuse source, seamless sweep, clean backdrop, accurate color, soft gradients, and controlled shadow. Avoid making it product-only or portrait-only. The result should feel catalog-clean without losing the subject intent.'
+  creative_brief: >-
+    Apply softbox studio grammar to any input: large diffuse source, seamless sweep, clean backdrop, accurate
+    color, soft gradients, and controlled shadow. Avoid making it product-only or portrait-only. The result
+    should feel catalog-clean without losing the subject intent.
 avoidRules:
   - harsh shadows
 assets:

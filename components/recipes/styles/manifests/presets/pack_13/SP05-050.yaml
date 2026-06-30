@@ -12,20 +12,35 @@ tags:
   - anime-character-and-lifestyle
   - shojo-magical-girl-and-visionary-classics
 visualDna:
-  aesthetic: Cozy tactile romance built from warm communication, careful gestures, soft winter intimacy, quiet attention, and tender distance-closing
-  form_and_line: Delicate romance linework, fine hair-thin strokes, graceful flowing contours, soft eyelash detail, and hand-led gesture clarity
-  color_palette: Warm creams, soft winter blues, rose-tinted blush, pearl luminosity, muted florals, and amber comfort accents
-  lighting_setup: Soft bloom, gentle rim light, butterfly portrait lighting, diffuse romantic glow, and small warm practical halos
-  material_texture: Airy fabrics, soft knit cues, silk sheen, delicate lace textures, chiffon translucency, and skin-warm tactile softness
-  render_quality: Luminous romance-anime frame with ethereal bloom, soft-focus beauty, gesture readability, and dreamy chromatic softness
-  spatial_distortion: Graceful elongated proportions, close-range emotional depth, hand-to-face focus drift, and romantic silhouette styling
-  atmosphere: Cozy, intimate, tender, warm
-  key_features: Tactile communication, careful hand gestures, soft winter warmth, tender micro-expressions, close-range emotional readability
+  aesthetic: >-
+    Cozy tactile romance built from warm communication, careful gestures, soft winter intimacy, quiet
+    attention, and tender distance-closing
+  subject_treatment: >-
+    Delicate romance linework, fine hair-thin strokes, graceful flowing contours, soft eyelash detail, and
+    hand-led gesture clarity
+  color_and_tone: >-
+    Warm creams, soft winter blues, rose-tinted blush, pearl luminosity, muted florals, and amber comfort
+    accents
+  lighting_and_shadow: >-
+    Soft bloom, gentle rim light, butterfly portrait lighting, diffuse romantic glow, and small warm practical
+    halos
+  texture_and_material: >-
+    Airy fabrics, soft knit cues, silk sheen, delicate lace textures, chiffon translucency, and skin-warm
+    tactile softness
+  camera_and_composition: >-
+    Graceful elongated proportions, close-range emotional depth, hand-to-face focus drift, and romantic
+    silhouette styling
+  atmosphere_and_mood: Cozy, intimate, tender, warm
+  rendering_and_quality: >-
+    Luminous romance-anime frame with ethereal bloom, soft-focus beauty, gesture readability, and dreamy
+    chromatic softness
+  key_features: >-
+    Tactile communication, careful hand gestures, soft winter warmth, tender micro-expressions, close-range
+    emotional readability
   creative_brief: >-
-    Use the sign-language romance title as a style anchor for tactile intimacy:
-    gesture clarity, warm quiet attention, and soft winter tenderness should
-    transfer without requiring city dates, scarves, festivals, coffee shops, or
-    a fixed couple scene.
+    Use the sign-language romance title as a style anchor for tactile intimacy: gesture clarity, warm quiet
+    attention, and soft winter tenderness should transfer without requiring city dates, scarves, festivals,
+    coffee shops, or a fixed couple scene.
 avoidRules:
   - realistic
   - 3d render
@@ -42,7 +57,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-050.webp
 attributes:
-  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
+  negativePrompt: >-
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts,
+    watermark, text, signature
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle

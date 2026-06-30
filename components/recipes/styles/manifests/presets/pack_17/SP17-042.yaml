@@ -14,8 +14,12 @@ tags:
   - monochrome-tarot-and-bestiary-plates
   - tapestry-creature
 visualDna:
-  aesthetic: Medieval tapestry creature legend with woven flat shapes, courtly beasts, decorative flora, and quiet narrative panels.
-  subject_treatment: 'A tapestry creature legend: unicorn-like hunt spirit, lion-bird, or wyvern crossing woven hills with small court hunters in profile.'
+  aesthetic: >-
+    Medieval tapestry creature legend with woven flat shapes, courtly beasts, decorative flora, and quiet
+    narrative panels.
+  subject_treatment: >-
+    A tapestry creature legend: unicorn-like hunt spirit, lion-bird, or wyvern crossing woven hills with small
+    court hunters in profile.
   color_and_tone: Linen, faded red, moss green, muted blue, ochre, dark brown outline, and soft cream fields.
   lighting_and_shadow: No cinematic light; use flat woven value and color contrast.
   texture_and_material: Clean woven texture, broad thread-like color blocks, sparse floral details, and no fuzzy noise.
@@ -33,6 +37,10 @@ avoidRules:
   - text
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP17-042.webp
+attributes:
+  negativePrompt: >-
+    fuzzy textile noise, overcrowded floral carpet, readable border text, realistic forest depth, explicit
+    gore, watermark, text
 taxonomy:
   packId: pack_17
   packName: Medieval Fantasy & Dungeon Zine

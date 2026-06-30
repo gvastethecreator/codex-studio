@@ -13,15 +13,21 @@ tags:
   - film-genres
 visualDna:
   aesthetic: Indie film
-  form_and_line: None
-  color_palette: Natural, low contrast, flat daylight, ungraded look
-  lighting_setup: Available light, practical lamps, window spill
-  material_texture: Digital video, DSLR sensor, consumer camera
-  render_quality: 'Real, awkward, improvised dialogue, unpolished truth'
-  spatial_distortion: Out of focus, soft rack, distracted framing
-  atmosphere: Intimate, awkward, honest discomfort
+  subject_treatment: >-
+    Treat subjects as believable filmed or broadcast subjects under Mumblecore: casting, wardrobe, props,
+    motion cues, and silhouette hierarchy follow 1. Film Genres cinematic and broadcast grammar without
+    locking to one plot beat.
+  color_and_tone: Natural, low contrast, flat daylight, ungraded look
+  lighting_and_shadow: Available light, practical lamps, window spill
+  texture_and_material: Digital video, DSLR sensor, consumer camera
+  camera_and_composition: Out of focus, soft rack, distracted framing
+  atmosphere_and_mood: Intimate, awkward, honest discomfort
+  rendering_and_quality: Real, awkward, improvised dialogue, unpolished truth
   key_features: Handheld, accidental framing, available light
-  creative_brief: 'Mumblecore style lets any subject stay unpolished: available light, DSLR sensor texture, distracted handheld framing, low contrast, soft rack focus, and accidental honesty. Keep indie intimacy without requiring conversations, apartments, people, or relationship drama.'
+  creative_brief: >-
+    Mumblecore style lets any subject stay unpolished: available light, DSLR sensor texture, distracted
+    handheld framing, low contrast, soft rack focus, and accidental honesty. Keep indie intimacy without
+    requiring conversations, apartments, people, or relationship drama.
 avoidRules:
   - polished
   - scripted

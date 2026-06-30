@@ -12,19 +12,24 @@ tags:
   - anime-battle-and-worlds
   - modern-shonen-and-action
 visualDna:
-  aesthetic: Filthy contract-horror action, with industrial grime, youth burnout, deadpan panic, and ridiculous violence.
-  form_and_line: Jagged contours, broken impact strokes, exhausted body rhythm, industrial diagonals, and unstable comic timing.
-  color_palette: Grease black, dried crimson, sickly yellow, concrete gray, rust orange, and harsh fluorescent green.
-  lighting_setup: Dirty practical glare, hard flash cuts, low fluorescent buzz, and sudden overexposed impact highlights.
-  material_texture: Grease film, concrete dust, metal scratches, sticky ink splatter, oily cel bloom, and urban particulate haze.
-  render_quality: Sharp modern anime finish with controlled filth, panic readability, and deadpan shock contrast.
-  spatial_distortion: Wide-angle impact compression, ragdoll-like motion arcs, and grimy depth lanes that feel unstable.
-  atmosphere: Chaotic, filthy, feral, desperate
+  aesthetic: >-
+    Filthy contract-horror action, with industrial grime, youth burnout, deadpan panic, and ridiculous
+    violence.
+  subject_treatment: >-
+    Jagged contours, broken impact strokes, exhausted body rhythm, industrial diagonals, and unstable comic
+    timing.
+  color_and_tone: Grease black, dried crimson, sickly yellow, concrete gray, rust orange, and harsh fluorescent green.
+  lighting_and_shadow: Dirty practical glare, hard flash cuts, low fluorescent buzz, and sudden overexposed impact highlights.
+  texture_and_material: >-
+    Grease film, concrete dust, metal scratches, sticky ink splatter, oily cel bloom, and urban particulate
+    haze.
+  camera_and_composition: Wide-angle impact compression, ragdoll-like motion arcs, and grimy depth lanes that feel unstable.
+  atmosphere_and_mood: Chaotic, filthy, feral, desperate
+  rendering_and_quality: Sharp modern anime finish with controlled filth, panic readability, and deadpan shock contrast.
   key_features: Industrial splatter, burnout posture, grime haze, deadpan shock, contract-panic energy.
   creative_brief: >-
-    Make any prompt feel grimy, desperate, and absurdly violent through grease
-    texture, hard fluorescent glare, jagged impact rhythm, and deadpan panic
-    without locking it to a specific hunter job or city scene.
+    Make any prompt feel grimy, desperate, and absurdly violent through grease texture, hard fluorescent
+    glare, jagged impact rhythm, and deadpan panic without locking it to a specific hunter job or city scene.
 avoidRules:
   - realistic
   - 3d render
@@ -41,7 +46,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-122.webp
 attributes:
-  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
+  negativePrompt: >-
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts,
+    watermark, text, signature
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds

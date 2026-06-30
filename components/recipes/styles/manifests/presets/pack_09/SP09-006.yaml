@@ -13,15 +13,19 @@ tags:
   - natural-materials
 visualDna:
   aesthetic: White Italian marble
-  form_and_line: Grey veins
-  color_palette: White, Grey
-  lighting_setup: Subsurface scattering
-  material_texture: Smooth, cold
-  render_quality: Sculpture, premium
-  spatial_distortion: None
-  atmosphere: Classic, pure
+  subject_treatment: Grey veins
+  color_and_tone: White, Grey
+  lighting_and_shadow: Subsurface scattering
+  texture_and_material: Smooth, cold
+  camera_and_composition: 'Compose for Marble (Carrara) using its key spatial cues: Veining.'
+  atmosphere_and_mood: Classic, pure
+  rendering_and_quality: Sculpture, premium
   key_features: Veining
-  creative_brief: "Apply Carrara marble as a luminous material transformation: translucent alabaster white, smoke-like grey veining, cold polished smoothness, and soft internal glow. Preserve the input's subject while giving its surfaces sculptural premium weight, as if stone were trying to become cloud without requiring classical architecture or a fixed sculpture."
+  creative_brief: >-
+    Apply Carrara marble as a luminous material transformation: translucent alabaster white, smoke-like grey
+    veining, cold polished smoothness, and soft internal glow. Preserve the input's subject while giving its
+    surfaces sculptural premium weight, as if stone were trying to become cloud without requiring classical
+    architecture or a fixed sculpture.
 avoidRules:
   - dirty
   - yellow

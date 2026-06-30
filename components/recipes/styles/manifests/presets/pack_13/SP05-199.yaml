@@ -12,20 +12,27 @@ tags:
   - anime-character-and-lifestyle
   - shojo-magical-girl-and-visionary-classics
 visualDna:
-  aesthetic: Crimson folk-fantasy resolve, loyal-guardian warmth, travel hardship, romance, devotion, and destiny abstracted into wind-worn heroic chroma
-  form_and_line: Heroic journey silhouette language, cloak-flow contour emphasis, ornamented tension balance, and determined profile readability
-  color_palette: Crimson focal hair tones, sandstone ochres, dusk violets, royal indigo accents, and campfire amber highlights
-  lighting_setup: Harsh journey daylight, desert-like sunset gradients, and torchlit night pockets with directional contrast
-  material_texture: Weathered cloth wraps, leather straps, metal charm patina, polished stone cues, and wind-worn surface wear
-  render_quality: Folk-fantasy shojo rendering with journey-scale clarity and resolve-forward character emphasis
-  spatial_distortion: Horizon-stretch perspective reinforcing pilgrimage momentum and leadership ascent
-  atmosphere: Resolute, romantic, sweeping, brave
-  key_features: Wind-worn silhouettes, crimson focal points, wilderness-to-regal contrast, guardian-like ensemble staging, heroic profile poses
+  aesthetic: >-
+    Crimson folk-fantasy resolve, loyal-guardian warmth, travel hardship, romance, devotion, and destiny
+    abstracted into wind-worn heroic chroma
+  subject_treatment: >-
+    Heroic journey silhouette language, cloak-flow contour emphasis, ornamented tension balance, and
+    determined profile readability
+  color_and_tone: >-
+    Crimson focal hair tones, sandstone ochres, dusk violets, royal indigo accents, and campfire amber
+    highlights
+  lighting_and_shadow: Harsh journey daylight, desert-like sunset gradients, and torchlit night pockets with directional contrast
+  texture_and_material: Weathered cloth wraps, leather straps, metal charm patina, polished stone cues, and wind-worn surface wear
+  camera_and_composition: Horizon-stretch perspective reinforcing pilgrimage momentum and leadership ascent
+  atmosphere_and_mood: Resolute, romantic, sweeping, brave
+  rendering_and_quality: Folk-fantasy shojo rendering with journey-scale clarity and resolve-forward character emphasis
+  key_features: >-
+    Wind-worn silhouettes, crimson focal points, wilderness-to-regal contrast, guardian-like ensemble staging,
+    heroic profile poses
   creative_brief: >-
-    Lead the input through crimson princess resolve: wind-worn cloth rhythm,
-    sandstone ochres, dusk-violet depth, crimson focal hierarchy, and guardian
-    ensemble warmth can heroicize any subject without requiring a princess,
-    travel party, battlefield, throne, or wilderness journey.
+    Lead the input through crimson princess resolve: wind-worn cloth rhythm, sandstone ochres, dusk-violet
+    depth, crimson focal hierarchy, and guardian ensemble warmth can heroicize any subject without requiring a
+    princess, travel party, battlefield, throne, or wilderness journey.
 avoidRules:
   - realistic
   - 3d render
@@ -42,7 +49,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-199.webp
 attributes:
-  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
+  negativePrompt: >-
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts,
+    watermark, text, signature
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle

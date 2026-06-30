@@ -13,34 +13,32 @@ tags:
   - anime-style-spectrum
 visualDna:
   aesthetic: >-
-    Internet-age saturated excess, glitch-effect overlays, color-bleed corruption, avatar-pop
-    maximalism, chromatic aberration, holographic sparkle, and song-cover energy
-  form_and_line: >-
-    Sharp digital vector outlines, occasional scanline breakage, datamosh distortion zones,
-    pixel-sorted edge artifacts
-  color_palette: >-
-    #FF00FF magenta, #00FFFF cyan, toxic-slime green, electric lavender, candy-flip spectrum,
-    RGB-split borders, eye-searing saturation
-  lighting_setup: >-
-    Ring-light glow, neon-tube accents, bounce-reflected magenta, screen glow, and club-strobe
-    rhythm
-  material_texture: >-
-    Holographic foil shimmer, plastic-LCD screen diffusion, glitter-dust particle overlay, glossy
-    phone-screen reflection
-  render_quality: >-
+    Internet-age saturated excess, glitch-effect overlays, color-bleed corruption, avatar-pop maximalism,
+    chromatic aberration, holographic sparkle, and song-cover energy
+  subject_treatment: >-
+    Sharp digital vector outlines, occasional scanline breakage, datamosh distortion zones, pixel-sorted edge
+    artifacts
+  color_and_tone: >-
+    #FF00FF magenta, #00FFFF cyan, toxic-slime green, electric lavender, candy-flip spectrum, RGB-split
+    borders, eye-searing saturation
+  lighting_and_shadow: Ring-light glow, neon-tube accents, bounce-reflected magenta, screen glow, and club-strobe rhythm
+  texture_and_material: >-
+    Holographic foil shimmer, plastic-LCD screen diffusion, glitter-dust particle overlay, glossy phone-screen
+    reflection
+  camera_and_composition: >-
+    Glitch-displaced body parts, RGB-channel-offset doubling, screen-wrap distortion, fish-eye music-video
+    lens
+  atmosphere_and_mood: Euphoric, overstimulated, terminally-online joy, digital-nativity celebration
+  rendering_and_quality: >-
     Hyper-digital anime frame, filter-maximalist aesthetic, internet-native visual language,
     saturated-beyond-natural rendering
-  spatial_distortion: >-
-    Glitch-displaced body parts, RGB-channel-offset doubling, screen-wrap distortion, fish-eye
-    music-video lens
-  atmosphere: Euphoric, overstimulated, terminally-online joy, digital-nativity celebration
   key_features: >-
-    Chromatic aberration edges, RGB channel split, holographic overlay, internet-culture signal
-    language, digital glitch artifacts
+    Chromatic aberration edges, RGB channel split, holographic overlay, internet-culture signal language,
+    digital glitch artifacts
   creative_brief: >-
-    Use neon hyperpop anime as digital excess grammar. Any prompt should become RGB-split,
-    glow-stacked, holographic, corrupted, and avatar-bright. The identity comes from signal overload
-    and candy-color pressure, not from internet props or music-cover staging.
+    Use neon hyperpop anime as digital excess grammar. Any prompt should become RGB-split, glow-stacked,
+    holographic, corrupted, and avatar-bright. The identity comes from signal overload and candy-color
+    pressure, not from internet props or music-cover staging.
 avoidRules:
   - muted
   - subtle

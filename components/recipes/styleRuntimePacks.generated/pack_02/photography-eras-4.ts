@@ -10,13 +10,14 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'color, paper',
     style: {
       aesthetic: 'Silver plate photo',
-      form_and_line: 'None',
-      color_palette: 'Metallic B&W, mirrored silver, smoky shadow, mercury gleam',
-      lighting_setup: 'Long exposure, skylight studio, minutes-long stillness',
-      material_texture: 'Scratches, tarnish, silver plate, copper backing',
-      render_quality: 'Ghostly, ancient, mirror-reflection depth, 1840s stillness',
-      spatial_distortion: 'Long-exposure drift, breath ghost, mirrored plate depth',
-      atmosphere: 'Haunting, history, frozen time, Victorian silence',
+      subject_treatment:
+        'Treat subjects as believable filmed or broadcast subjects under Daguerreotype (1840s): casting, wardrobe, props, motion cues, and silhouette hierarchy follow 4. Photography Eras cinematic and broadcast grammar without locking to one plot beat.',
+      color_and_tone: 'Metallic B&W, mirrored silver, smoky shadow, mercury gleam',
+      lighting_and_shadow: 'Long exposure, skylight studio, minutes-long stillness',
+      texture_and_material: 'Scratches, tarnish, silver plate, copper backing',
+      camera_and_composition: 'Long-exposure drift, breath ghost, mirrored plate depth',
+      atmosphere_and_mood: 'Haunting, history, frozen time, Victorian silence',
+      rendering_and_quality: 'Ghostly, ancient, mirror-reflection depth, 1840s stillness',
       key_features: 'Vignette, brass frame, chemical bloom, tarnished edge',
       creative_brief:
         'Render the input as a polished silver daguerreotype: mirrored plate depth, mercury gleam, tarnished edges, long-exposure softness, and a sense of time fixed onto metal. Avoid portrait-only framing or sitter-specific artifacts. What matters is the luminous silver surface, chemical bloom, and heavy 1840s stillness. Apply Daguerreotype as a portable cinematic/camera style over any input: preserve its lens behavior, color process, lighting setup, artifact pattern, and deformation grammar while avoiding a required actor, room, prop, brand, readable text, fixed IP scene, or narrative setup.',
@@ -29,13 +30,15 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'clean, white',
     style: {
       aesthetic: 'Metal plate photo',
-      form_and_line: 'None',
-      color_palette: 'Dark Sepia, iron grey, chocolate brown, muddy cream',
-      lighting_setup: 'Flat daylight, harsh skylight, no fill, stark contrast',
-      material_texture: 'Chemical stains, iron plate, collodion pour, hand-poured edge',
-      render_quality: 'Rough, historic, iron-plate authenticity, unvarnished truth',
-      spatial_distortion: 'None',
-      atmosphere: 'Serious, old, stoic endurance, documentary gravity',
+      subject_treatment:
+        'Treat subjects as believable filmed or broadcast subjects under Tintype (Civil War): casting, wardrobe, props, motion cues, and silhouette hierarchy follow 4. Photography Eras cinematic and broadcast grammar without locking to one plot beat.',
+      color_and_tone: 'Dark Sepia, iron grey, chocolate brown, muddy cream',
+      lighting_and_shadow: 'Flat daylight, harsh skylight, no fill, stark contrast',
+      texture_and_material: 'Chemical stains, iron plate, collodion pour, hand-poured edge',
+      camera_and_composition:
+        'Camera language native to Tintype (Civil War): genre-aware framing, lens character, focal hierarchy, motion cue, and vertical style-card composition.',
+      atmosphere_and_mood: 'Serious, old, stoic endurance, documentary gravity',
+      rendering_and_quality: 'Rough, historic, iron-plate authenticity, unvarnished truth',
       key_features: 'Black edges, iron oxidation, thumb-mark, plate wear',
       creative_brief:
         'Treat the prompt as a rough tintype artifact: dark iron plate, muddy sepia contrast, collodion stains, blackened edges, thumb-marks, and unpolished daylight severity. Avoid forcing wartime content or portrait faces. The image should feel carried through time on metal, scarred by process and handling. Apply Tintype as a portable cinematic/camera style over any input: preserve its lens behavior, color process, lighting setup, artifact pattern, and deformation grammar while avoiding a required actor, room, prop, brand, readable text, fixed IP scene, or narrative setup.',
@@ -48,13 +51,15 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'sharp, digital color',
     style: {
       aesthetic: 'First color photo',
-      form_and_line: 'None',
-      color_palette: 'Pointillist grain, stippled pastel, lavender, rose, moss',
-      lighting_setup: 'Soft, dreamy, diffuse daylight, window glow',
-      material_texture: 'Potato starch grain, dyed starch, random RGB mosaic',
-      render_quality: 'Impressionist photo, pointillism, painterly light capture',
-      spatial_distortion: 'None',
-      atmosphere: 'Dreamy, vintage, Belle Epoque warmth, first-color wonder',
+      subject_treatment:
+        'Treat subjects as believable filmed or broadcast subjects under Autochrome (1900s): casting, wardrobe, props, motion cues, and silhouette hierarchy follow 4. Photography Eras cinematic and broadcast grammar without locking to one plot beat.',
+      color_and_tone: 'Pointillist grain, stippled pastel, lavender, rose, moss',
+      lighting_and_shadow: 'Soft, dreamy, diffuse daylight, window glow',
+      texture_and_material: 'Potato starch grain, dyed starch, random RGB mosaic',
+      camera_and_composition:
+        'Camera language native to Autochrome (1900s): genre-aware framing, lens character, focal hierarchy, motion cue, and vertical style-card composition.',
+      atmosphere_and_mood: 'Dreamy, vintage, Belle Epoque warmth, first-color wonder',
+      rendering_and_quality: 'Impressionist photo, pointillism, painterly light capture',
       key_features: 'Grainy color, starch-speckle, luminous pastels',
       creative_brief:
         'Reinterpret the input as early Autochrome color: dyed starch mosaic, stippled pastel grain, diffuse daylight, and a delicate impressionist veil over photographic form. Avoid requiring gardens, flowers, or period subjects. Every color should arrive through tiny scattered grains, as if the familiar world were being seen in color for the first time.',
@@ -67,13 +72,15 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'faded, digital',
     style: {
       aesthetic: 'National Geographic slide',
-      form_and_line: 'None',
-      color_palette: 'Rich Red/Yellow, Kodachrome red, golden wheat, azure sky',
-      lighting_setup: 'High contrast sun, travel-magazine daylight, crisp shadow',
-      material_texture: 'Fine grain, dye-cloud smooth, archival stability',
-      render_quality: 'Vivid, nostalgic, mid-century optimism, slide-projector glow',
-      spatial_distortion: 'None',
-      atmosphere: 'Sunny, classic, optimistic, slide-projector memory',
+      subject_treatment:
+        'Treat subjects as believable filmed or broadcast subjects under Kodachrome (50s): casting, wardrobe, props, motion cues, and silhouette hierarchy follow 4. Photography Eras cinematic and broadcast grammar without locking to one plot beat.',
+      color_and_tone: 'Rich Red/Yellow, Kodachrome red, golden wheat, azure sky',
+      lighting_and_shadow: 'High contrast sun, travel-magazine daylight, crisp shadow',
+      texture_and_material: 'Fine grain, dye-cloud smooth, archival stability',
+      camera_and_composition:
+        'Camera language native to Kodachrome (50s): genre-aware framing, lens character, focal hierarchy, motion cue, and vertical style-card composition.',
+      atmosphere_and_mood: 'Sunny, classic, optimistic, slide-projector memory',
+      rendering_and_quality: 'Vivid, nostalgic, mid-century optimism, slide-projector glow',
       key_features: 'Deep blacks, red pop, golden highlights, fine grain, projected slide glow',
       creative_brief:
         'Push the input through 1950s Kodachrome slide language: saturated reds, rich yellows, deep blacks, crisp daylight contrast, fine dye-cloud grain, and carousel-projector warmth. Avoid forcing cars, highways, motels, or Americana props. The style should make any subject feel archival, vivid, sunny, and confidently mid-century.',
@@ -86,13 +93,14 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'sharp, hd',
     style: {
       aesthetic: 'Instant film',
-      form_and_line: 'None',
-      color_palette: 'Green/Blue cast, cool shift, muted pastel, cream border',
-      lighting_setup: 'Flash, direct pop, close-range glare, redeye bounce',
-      material_texture: 'Soft focus, plastic lens, diffusion, chemical developer',
-      render_quality: 'Personal, memory, snapshot intimacy, instant nostalgia',
-      spatial_distortion: 'Chemical leak, developer smear, edge imperfection',
-      atmosphere: 'Nostalgic, fun, tactile memory, scrapbook intimacy',
+      subject_treatment:
+        'Treat subjects as believable filmed or broadcast subjects under Polaroid (Instant): casting, wardrobe, props, motion cues, and silhouette hierarchy follow 4. Photography Eras cinematic and broadcast grammar without locking to one plot beat.',
+      color_and_tone: 'Green/Blue cast, cool shift, muted pastel, cream border',
+      lighting_and_shadow: 'Flash, direct pop, close-range glare, redeye bounce',
+      texture_and_material: 'Soft focus, plastic lens, diffusion, chemical developer',
+      camera_and_composition: 'Chemical leak, developer smear, edge imperfection',
+      atmosphere_and_mood: 'Nostalgic, fun, tactile memory, scrapbook intimacy',
+      rendering_and_quality: 'Personal, memory, snapshot intimacy, instant nostalgia',
       key_features:
         'White border, square format, chemical fog, developer smear, soft plastic-lens focus',
       creative_brief:
@@ -106,14 +114,15 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'professional lighting',
     style: {
       aesthetic: 'Disposable 90s snapshot',
-      form_and_line: 'None',
-      color_palette:
+      subject_treatment:
+        'Treat subjects as believable filmed or broadcast subjects under Disposable Camera (90s): casting, wardrobe, props, motion cues, and silhouette hierarchy follow 4. Photography Eras cinematic and broadcast grammar without locking to one plot beat.',
+      color_and_tone:
         'High contrast, punchy saturation, blown highlights, muddy shadow, cheap lab color',
-      lighting_setup: 'Harsh flash, direct frontal, overexposed 3-feet-away',
-      material_texture: 'Grainy 400 ISO, plastic-lens softness, color fringe',
-      render_quality: 'Candid, unposed, cheap-lens spontaneity, one-roll urgency',
-      spatial_distortion: 'Flash reflection, red-edge glare, plastic lens warp',
-      atmosphere: 'Memory, casual, 90s, disposable immediacy',
+      lighting_and_shadow: 'Harsh flash, direct frontal, overexposed 3-feet-away',
+      texture_and_material: 'Grainy 400 ISO, plastic-lens softness, color fringe',
+      camera_and_composition: 'Flash reflection, red-edge glare, plastic lens warp',
+      atmosphere_and_mood: 'Memory, casual, 90s, disposable immediacy',
+      rendering_and_quality: 'Candid, unposed, cheap-lens spontaneity, one-roll urgency',
       key_features:
         'Vignette, flash hotspot, crooked horizon, plastic-lens softness, lab-scan grain',
       creative_brief:
@@ -127,14 +136,15 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'correct color',
     style: {
       aesthetic: 'Toy camera (Holga)',
-      form_and_line: 'None',
-      color_palette:
+      subject_treatment:
+        'Treat subjects as believable filmed or broadcast subjects under Lomography: casting, wardrobe, props, motion cues, and silhouette hierarchy follow 4. Photography Eras cinematic and broadcast grammar without locking to one plot beat.',
+      color_and_tone:
         'Cross processed, color-shifted, purple drift, green cast, unpredictable palette',
-      lighting_setup: 'Leak, light-struck frame, accidental exposure, red window',
-      material_texture: 'Plastic lens blur, toy-optics softness, zone focus mush',
-      render_quality: 'Artsy, weird, lo-fi aesthetic, happy accident',
-      spatial_distortion: 'Vignette blur, edge falloff, tunnel softness',
-      atmosphere: 'Experimental, fun, rule-breaking, analog play',
+      lighting_and_shadow: 'Leak, light-struck frame, accidental exposure, red window',
+      texture_and_material: 'Plastic lens blur, toy-optics softness, zone focus mush',
+      camera_and_composition: 'Vignette blur, edge falloff, tunnel softness',
+      atmosphere_and_mood: 'Experimental, fun, rule-breaking, analog play',
+      rendering_and_quality: 'Artsy, weird, lo-fi aesthetic, happy accident',
       key_features: 'Light leaks, sprocket holes, film rebate, double-exposure ghost',
       creative_brief:
         'Let the prompt surrender to toy-camera accidents: cross-processed color, plastic-lens blur, vignetting, edge falloff, light leaks, sprocket traces, and double-exposure ghosts. Avoid subject-specific color rules or portrait assumptions. Perfection is removed; the artifact, leak, and mistake become the composition. Apply Lomography as a portable cinematic/camera style over any input: preserve its lens behavior, color process, lighting setup, artifact pattern, and deformation grammar while avoiding a required actor, room, prop, brand, readable text, fixed IP scene, or narrative setup.',
@@ -147,13 +157,14 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'clean',
     style: {
       aesthetic: 'Glass plate negative',
-      form_and_line: 'None',
-      color_palette: 'Cream/Black, warm ivory, amber shadow, silver nitrate',
-      lighting_setup: 'Shallow DOF, wide-open brass lens, thin focal plane',
-      material_texture: 'Chemical swirls, collodion pour, edge imperfection, hand-coating',
-      render_quality: 'Handmade, fine art, alchemical process, one-of-one artifact',
-      spatial_distortion: 'Peeling emulsion, lifted edge, craquelure decay',
-      atmosphere: 'Timeless, alchemical, eternal stillness, process-haunted',
+      subject_treatment:
+        'Treat subjects as believable filmed or broadcast subjects under Wet Plate Collodion: casting, wardrobe, props, motion cues, and silhouette hierarchy follow 4. Photography Eras cinematic and broadcast grammar without locking to one plot beat.',
+      color_and_tone: 'Cream/Black, warm ivory, amber shadow, silver nitrate',
+      lighting_and_shadow: 'Shallow DOF, wide-open brass lens, thin focal plane',
+      texture_and_material: 'Chemical swirls, collodion pour, edge imperfection, hand-coating',
+      camera_and_composition: 'Peeling emulsion, lifted edge, craquelure decay',
+      atmosphere_and_mood: 'Timeless, alchemical, eternal stillness, process-haunted',
+      rendering_and_quality: 'Handmade, fine art, alchemical process, one-of-one artifact',
       key_features: 'Focus falloff, petzval swirl, glass-plate negative',
       creative_brief:
         'Render the input as a wet-plate collodion artifact: glass-plate depth, hand-poured chemistry, Petzval swirl, shallow focal plane, peeling emulsion, and one-of-one alchemical imperfection. Avoid portrait-only or war-ghost assumptions. The subject should feel captured by unstable chemistry while the edges decay into handmade beauty. Apply Wet Plate Collodion as a portable cinematic/camera style over any input: preserve its lens behavior, color process, lighting setup, artifact pattern, and deformation grammar while avoiding a required actor, room, prop, brand, readable text, fixed IP scene, or narrative setup.',
@@ -166,14 +177,16 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'natural color',
     style: {
       aesthetic: 'False color IR',
-      form_and_line: 'None',
-      color_palette:
+      subject_treatment:
+        'Treat subjects as believable filmed or broadcast subjects under Infrared Film (Aerochrome): casting, wardrobe, props, motion cues, and silhouette hierarchy follow 4. Photography Eras cinematic and broadcast grammar without locking to one plot beat.',
+      color_and_tone:
         'False-color magenta, coral red, cyan shadow, white infrared response, spectral pink',
-      lighting_setup: 'Surreal, invisible-spectrum, infrared reflectance',
-      material_texture: 'Grainy, false-color emulsion, IR-sensitive layer',
-      render_quality: 'Psychedelic, weird, alien biosphere, dreamscape',
-      spatial_distortion: 'None',
-      atmosphere: 'Alien, dream, invisible-spectrum hallucination',
+      lighting_and_shadow: 'Surreal, invisible-spectrum, infrared reflectance',
+      texture_and_material: 'Grainy, false-color emulsion, IR-sensitive layer',
+      camera_and_composition:
+        'Camera language native to Infrared Film (Aerochrome): genre-aware framing, lens character, focal hierarchy, motion cue, and vertical style-card composition.',
+      atmosphere_and_mood: 'Alien, dream, invisible-spectrum hallucination',
+      rendering_and_quality: 'Psychedelic, weird, alien biosphere, dreamscape',
       key_features:
         'False-color mapping, infrared reflectance, cyan-magenta split, spectral white bloom',
       creative_brief:
@@ -187,13 +200,15 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'color',
     style: {
       aesthetic: 'Blue print photo',
-      form_and_line: 'None',
-      color_palette: 'Prussian Blue/White, deep indigo, cerulean, paper-white',
-      lighting_setup: 'Sunlight, UV exposure, contact-print daylight',
-      material_texture: 'Paper fiber, watercolor paper, pulp grain',
-      render_quality: 'Blueprint, art, scientific aesthetic, photogram precision',
-      spatial_distortion: 'None',
-      atmosphere: 'Calm, blue, scientific, contemplative',
+      subject_treatment:
+        'Treat subjects as believable filmed or broadcast subjects under Cyanotype (Photo): casting, wardrobe, props, motion cues, and silhouette hierarchy follow 4. Photography Eras cinematic and broadcast grammar without locking to one plot beat.',
+      color_and_tone: 'Prussian Blue/White, deep indigo, cerulean, paper-white',
+      lighting_and_shadow: 'Sunlight, UV exposure, contact-print daylight',
+      texture_and_material: 'Paper fiber, watercolor paper, pulp grain',
+      camera_and_composition:
+        'Camera language native to Cyanotype (Photo): genre-aware framing, lens character, focal hierarchy, motion cue, and vertical style-card composition.',
+      atmosphere_and_mood: 'Calm, blue, scientific, contemplative',
+      rendering_and_quality: 'Blueprint, art, scientific aesthetic, photogram precision',
       key_features:
         'Monochrome blue, contact-print silhouette, paper fiber, UV exposure edge, Prussian wash',
       creative_brief:
@@ -207,13 +222,14 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'film grain',
     style: {
       aesthetic: '2 Megapixel camera',
-      form_and_line: 'None',
-      color_palette: 'Noisy shadows, purple fringing, CCD magenta, muddy chroma',
-      lighting_setup: 'Flat, pop-up flash, no dynamic range',
-      material_texture: 'Jpeg artifacts, compression blocks, color banding',
-      render_quality: 'Low res, nostalgic, 2MP chunky, digital infancy',
-      spatial_distortion: 'Pixelation, stair-step edge, aliasing jaggies',
-      atmosphere: 'Y2K, candid, early-upload memory, digital infancy',
+      subject_treatment:
+        'Treat subjects as believable filmed or broadcast subjects under Early Digital (2000s): casting, wardrobe, props, motion cues, and silhouette hierarchy follow 4. Photography Eras cinematic and broadcast grammar without locking to one plot beat.',
+      color_and_tone: 'Noisy shadows, purple fringing, CCD magenta, muddy chroma',
+      lighting_and_shadow: 'Flat, pop-up flash, no dynamic range',
+      texture_and_material: 'Jpeg artifacts, compression blocks, color banding',
+      camera_and_composition: 'Pixelation, stair-step edge, aliasing jaggies',
+      atmosphere_and_mood: 'Y2K, candid, early-upload memory, digital infancy',
+      rendering_and_quality: 'Low res, nostalgic, 2MP chunky, digital infancy',
       key_features:
         'Low resolution, compression blocks, purple fringing, clipped highlights, noisy shadow',
       creative_brief:
@@ -228,20 +244,20 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         "Pinhole Camera within 4. Photography Eras: a reusable Cinematic & Media visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Pinhole Camera's specific style identity.",
-      form_and_line:
+      subject_treatment:
         'Define Pinhole Camera through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
-      color_palette:
+      color_and_tone:
         'Use a Pinhole Camera-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
-      lighting_setup:
+      lighting_and_shadow:
         'Use lighting that makes Pinhole Camera recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
-      material_texture:
+      texture_and_material:
         'Use materials and textures that reinforce Pinhole Camera: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
-      render_quality:
-        'Render Pinhole Camera with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
-      spatial_distortion:
+      camera_and_composition:
         'Use spatial behavior that fits Pinhole Camera: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
-      atmosphere:
+      atmosphere_and_mood:
         'Set a mood that belongs to Pinhole Camera: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+      rendering_and_quality:
+        'Render Pinhole Camera with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       key_features:
         "Prioritize Pinhole Camera's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
@@ -255,13 +271,13 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'surface detail',
     style: {
       aesthetic: 'Internal structure',
-      form_and_line: 'Bones/Structure',
-      color_palette: 'Black/White/Blue, indigo ghost, bone-white, translucent cyan',
-      lighting_setup: 'Translucent, backlit negative, see-through glow',
-      material_texture: 'Film, radiographic sheet, phosphor plate',
-      render_quality: 'Medical, scientific, diagnostic clarity, ghostly penetration',
-      spatial_distortion: 'Transparency, density mapping, interior-only view',
-      atmosphere: 'Clinical, spooky, diagnostic, hidden structure',
+      subject_treatment: 'Bones/Structure',
+      color_and_tone: 'Black/White/Blue, indigo ghost, bone-white, translucent cyan',
+      lighting_and_shadow: 'Translucent, backlit negative, see-through glow',
+      texture_and_material: 'Film, radiographic sheet, phosphor plate',
+      camera_and_composition: 'Transparency, density mapping, interior-only view',
+      atmosphere_and_mood: 'Clinical, spooky, diagnostic, hidden structure',
+      rendering_and_quality: 'Medical, scientific, diagnostic clarity, ghostly penetration',
       key_features:
         'Inverted density map, translucent layers, phosphor glow, radiographic negative',
       creative_brief:
@@ -275,13 +291,16 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'visible light',
     style: {
       aesthetic: 'Heat map',
-      form_and_line: 'None',
-      color_palette: 'Ironbow (Purple to Yellow), white-hot, cool-to-warm gradient, black-cold',
-      lighting_setup: 'Emissive heat, self-illumination, temperature glow',
-      material_texture: 'Digital, sensor noise, microbolometer grid',
-      render_quality: 'FLIR aesthetic, sensor-driven, heat-signature mapping, diagnostic clarity',
-      spatial_distortion: 'None',
-      atmosphere: 'Tech, analytical, sensor-vision, invisible-energy',
+      subject_treatment:
+        'Treat subjects as believable filmed or broadcast subjects under Thermal Camera: casting, wardrobe, props, motion cues, and silhouette hierarchy follow 4. Photography Eras cinematic and broadcast grammar without locking to one plot beat.',
+      color_and_tone: 'Ironbow (Purple to Yellow), white-hot, cool-to-warm gradient, black-cold',
+      lighting_and_shadow: 'Emissive heat, self-illumination, temperature glow',
+      texture_and_material: 'Digital, sensor noise, microbolometer grid',
+      camera_and_composition:
+        'Camera language native to Thermal Camera: genre-aware framing, lens character, focal hierarchy, motion cue, and vertical style-card composition.',
+      atmosphere_and_mood: 'Tech, analytical, sensor-vision, invisible-energy',
+      rendering_and_quality:
+        'FLIR aesthetic, sensor-driven, heat-signature mapping, diagnostic clarity',
       key_features:
         'White-hot peaks, black-cold lows, ironbow gradient, microbolometer noise, heat-edge bloom',
       creative_brief:
@@ -295,13 +314,15 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'color',
     style: {
       aesthetic: 'Intensifier tube',
-      form_and_line: 'None',
-      color_palette: 'Phosphor Green, monochrome green, bright-green highlight, black-green shadow',
-      lighting_setup: 'Grainy gain, image intensifier, amplified starlight',
-      material_texture: 'Scintillation noise, electron cascade, static snow',
-      render_quality: 'Low-light clarity, intensifier artifacts, amplified-starlight detail',
-      spatial_distortion: 'Bloom, tube flare, halo around bright sources',
-      atmosphere: 'Hidden, nocturnal, phosphor eerie, low-light uncanny',
+      subject_treatment:
+        'Treat subjects as believable filmed or broadcast subjects under Night Vision (Green): casting, wardrobe, props, motion cues, and silhouette hierarchy follow 4. Photography Eras cinematic and broadcast grammar without locking to one plot beat.',
+      color_and_tone:
+        'Phosphor Green, monochrome green, bright-green highlight, black-green shadow',
+      lighting_and_shadow: 'Grainy gain, image intensifier, amplified starlight',
+      texture_and_material: 'Scintillation noise, electron cascade, static snow',
+      camera_and_composition: 'Bloom, tube flare, halo around bright sources',
+      atmosphere_and_mood: 'Hidden, nocturnal, phosphor eerie, low-light uncanny',
+      rendering_and_quality: 'Low-light clarity, intensifier artifacts, amplified-starlight detail',
       key_features: 'Monochrome green, scintillation noise, tube halo, gain grain, phosphor bloom',
       creative_brief:
         'Render the input through green night-vision intensifier optics: monochrome phosphor, amplified starlight, gain grain, scintillation noise, tube halos, and blooming bright sources. Avoid military, spy, predator, or operation scenes. Darkness should become visible through sensor artifacts rather than natural color. Apply Night Vision as a portable cinematic/camera style over any input: preserve its lens behavior, color process, lighting setup, artifact pattern, and deformation grammar while avoiding a required actor, room, prop, brand, readable text, fixed IP scene, or narrative setup.',

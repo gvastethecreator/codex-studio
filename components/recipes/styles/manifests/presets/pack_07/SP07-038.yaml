@@ -12,20 +12,23 @@ tags:
   - architecture-and-interior
   - civic-infrastructure-and-specialty-spaces
 visualDna:
-  aesthetic: Chalky subterranean mineral language where calcic module, buried pressure and historic reverence define surface.
-  form_and_line: Calcic modular repetition, low sequenced arches, compressed niches and chalk-like bands without fixed funeral corridor.
-  color_palette: Bone white, dirt, sepia age, calcium yellow, shadow brown, cartilage cream
-  lighting_setup: Low warm points, flicker across calcium and dense shadows in compressed depth.
-  material_texture: Chalky calcium, mineral porosity, dusty mortar and damp transitions of buried stone.
-  render_quality: Low-light archaeological fidelity with legible mineral microtexture and no explicit horror.
-  spatial_distortion: Compressed subterranean pressure and repetitive calcic stacking.
-  atmosphere: Solemn, compressed and reverential, with deep-time stillness.
+  aesthetic: >-
+    Chalky subterranean mineral language where calcic module, buried pressure and historic reverence define
+    surface.
+  subject_treatment: >-
+    Calcic modular repetition, low sequenced arches, compressed niches and chalk-like bands without fixed
+    funeral corridor.
+  color_and_tone: Bone white, dirt, sepia age, calcium yellow, shadow brown, cartilage cream
+  lighting_and_shadow: Low warm points, flicker across calcium and dense shadows in compressed depth.
+  texture_and_material: Chalky calcium, mineral porosity, dusty mortar and damp transitions of buried stone.
+  camera_and_composition: Compressed subterranean pressure and repetitive calcic stacking.
+  atmosphere_and_mood: Solemn, compressed and reverential, with deep-time stillness.
+  rendering_and_quality: Low-light archaeological fidelity with legible mineral microtexture and no explicit horror.
   key_features: Calcic courses, crossed bands, mineral niches and low-vault pressure.
   creative_brief: >-
-    Organize any composition through chalky mineral module, subterranean pressure
-    and low reverent light. Repetition, dust and porosity carry the style without
-    depending on corridors, literal catacombs, bone/remains language, exposed
-    human remains, gore, fresh remains, horror display or closed ritual scene.
+    Organize any composition through chalky mineral module, subterranean pressure and low reverent light.
+    Repetition, dust and porosity carry the style without depending on corridors, literal catacombs,
+    bone/remains language, exposed human remains, gore, fresh remains, horror display or closed ritual scene.
 avoidRules:
   - bone/remains language
   - exposed human remains

@@ -103,6 +103,18 @@ export interface StylePresetCatalogSearchPackPlanInput {
 }
 
 const DEFAULT_STYLE_PRESET_SUPPORTED_TASKS = ['image_generate', 'image_edit', 'style_preset_card'];
+const DEFAULT_STYLE_PRESET_AVOID_RULES = ['watermark', 'text'];
+const REQUIRED_STYLE_VISUAL_DNA_FIELDS = [
+  'aesthetic',
+  'subject_treatment',
+  'color_and_tone',
+  'lighting_and_shadow',
+  'texture_and_material',
+  'camera_and_composition',
+  'atmosphere_and_mood',
+  'rendering_and_quality',
+] as const;
+const PLACEHOLDER_STYLE_TEXT_PATTERN = /^(standard|default|none|n\/a|na|tbd|todo|placeholder)$/i;
 
 function normalizeCategory(category?: string) {
   return category?.trim() || 'General';
@@ -154,21 +166,27 @@ function isNonEmptyString(value: unknown) {
   return typeof value === 'string' && value.trim().length > 0;
 }
 
-function sameStringList(a: readonly string[] = [], b: readonly string[] = []) {
-  return a.length === b.length && a.every((value, index) => value === b[index]);
+function isCompletePresetText(value: unknown) {
+  if (typeof value !== 'string') return false;
+  const trimmed = value.trim();
+  return trimmed.length > 0 && !PLACEHOLDER_STYLE_TEXT_PATTERN.test(trimmed);
 }
 
-function hasAnyVisualDnaText(value: Record<string, unknown>) {
-  return Object.values(value).some(isNonEmptyString);
+function hasNonEmptyStringList(value: unknown) {
+  return Array.isArray(value) && value.some(isCompletePresetText);
+}
+
+function sameStringList(a: readonly string[] = [], b: readonly string[] = []) {
+  return a.length === b.length && a.every((value, index) => value === b[index]);
 }
 
 export function toStylePresetManifestRef(packId: string, presetId: string) {
   return `${packId}/${presetId}.yaml`;
 }
 
-function createAttributes(preset: StyleRuntimePreset) {
-  const attributes = {
-    ...(preset.negativePrompt ? { negativePrompt: preset.negativePrompt } : {}),
+function createAttributes(preset: StyleRuntimePreset, avoidRules: string[]) {
+  return {
+    negativePrompt: preset.negativePrompt ?? avoidRules.join(', '),
     ...(preset.camera !== undefined ? { camera: preset.camera } : {}),
     ...(preset.render !== undefined ? { render: preset.render } : {}),
     ...(preset.type !== undefined ? { type: preset.type } : {}),
@@ -178,8 +196,6 @@ function createAttributes(preset: StyleRuntimePreset) {
     ...(preset.print !== undefined ? { print: preset.print } : {}),
     ...(preset.digital !== undefined ? { digital: preset.digital } : {}),
   };
-
-  return Object.keys(attributes).length > 0 ? attributes : undefined;
 }
 
 function createNegativePrompt(preset: StylePresetManifest) {
@@ -219,6 +235,9 @@ export function createStylePresetManifests(packs: StyleRuntimePack[]): StylePres
   return packs.flatMap((pack) =>
     pack.presets.map((preset) => {
       const category = normalizeCategory(preset.category);
+      const parsedAvoidRules = parseAvoidRules(preset.negativePrompt);
+      const avoidRules =
+        parsedAvoidRules.length > 0 ? parsedAvoidRules : DEFAULT_STYLE_PRESET_AVOID_RULES;
       return {
         schemaVersion: 1,
         id: preset.id,
@@ -234,7 +253,7 @@ export function createStylePresetManifests(packs: StyleRuntimePack[]): StylePres
           preset.domain ? slugify(preset.domain) : null,
         ].filter((tag): tag is string => Boolean(tag)),
         visualDna: preset.style,
-        avoidRules: parseAvoidRules(preset.negativePrompt),
+        avoidRules,
         assets: {
           defaultImage: `/assets/recipes/styles/defaults/${preset.id}.webp`,
         },
@@ -252,7 +271,7 @@ export function createStylePresetManifests(packs: StyleRuntimePack[]): StylePres
           supportedTasks: ['image_generate', 'image_edit', 'style_preset_card'],
           hasDefaultImage: true,
         },
-        ...(createAttributes(preset) ? { attributes: createAttributes(preset) } : {}),
+        attributes: createAttributes(preset, avoidRules),
       } satisfies StylePresetManifest;
     }),
   );
@@ -313,6 +332,9 @@ export function validateStyleManifestGraph(
     }
     if (!isNonEmptyString(pack.name)) {
       errors.push(`Style pack ${pack.id} has empty name`);
+    }
+    if (!isCompletePresetText(pack.description)) {
+      errors.push(`Style pack ${pack.id} has empty description`);
     }
 
     const packPresetRefs = new Set<string>();
@@ -392,11 +414,57 @@ export function validateStyleManifestGraph(
     if (!Number.isInteger(preset.version) || preset.version < 1) {
       errors.push(`Style preset ${preset.id} has invalid version: ${preset.version}`);
     }
-    if (preset.supportedTasks.length === 0) {
+    if (!Array.isArray(preset.supportedTasks) || preset.supportedTasks.length === 0) {
       errors.push(`Style preset ${preset.id} has no supportedTasks`);
     }
-    if (!hasAnyVisualDnaText(preset.visualDna)) {
+    if (!hasNonEmptyStringList(preset.tags)) {
+      errors.push(`Style preset ${preset.id} has no tags`);
+    }
+    if (!preset.visualDna || typeof preset.visualDna !== 'object') {
       errors.push(`Style preset ${preset.id} has empty visualDna`);
+    } else {
+      for (const field of REQUIRED_STYLE_VISUAL_DNA_FIELDS) {
+        if (!isCompletePresetText(preset.visualDna[field])) {
+          errors.push(`Style preset ${preset.id} visualDna.${field} is missing or placeholder`);
+        }
+      }
+    }
+    if (!hasNonEmptyStringList(preset.avoidRules)) {
+      errors.push(`Style preset ${preset.id} has no avoidRules`);
+    }
+    if (!isCompletePresetText(preset.assets?.defaultImage)) {
+      errors.push(`Style preset ${preset.id} has empty assets.defaultImage`);
+    }
+    if (!isCompletePresetText(preset.attributes?.negativePrompt)) {
+      errors.push(`Style preset ${preset.id} has empty attributes.negativePrompt`);
+    }
+    if (!preset.taxonomy) {
+      errors.push(`Style preset ${preset.id} has no taxonomy`);
+    } else {
+      if (!isCompletePresetText(preset.taxonomy.packId)) {
+        errors.push(`Style preset ${preset.id} taxonomy has empty packId`);
+      }
+      if (!isCompletePresetText(preset.taxonomy.packName)) {
+        errors.push(`Style preset ${preset.id} taxonomy has empty packName`);
+      }
+      if (!isCompletePresetText(preset.taxonomy.categoryId)) {
+        errors.push(`Style preset ${preset.id} taxonomy has empty categoryId`);
+      }
+      if (!isCompletePresetText(preset.taxonomy.categoryName)) {
+        errors.push(`Style preset ${preset.id} taxonomy has empty categoryName`);
+      }
+      if (!hasNonEmptyStringList(preset.taxonomy.tags)) {
+        errors.push(`Style preset ${preset.id} taxonomy has no tags`);
+      }
+      if (
+        !Array.isArray(preset.taxonomy.supportedTasks) ||
+        preset.taxonomy.supportedTasks.length === 0
+      ) {
+        errors.push(`Style preset ${preset.id} taxonomy has no supportedTasks`);
+      }
+      if (typeof preset.taxonomy.hasDefaultImage !== 'boolean') {
+        errors.push(`Style preset ${preset.id} taxonomy has invalid hasDefaultImage`);
+      }
     }
   }
 

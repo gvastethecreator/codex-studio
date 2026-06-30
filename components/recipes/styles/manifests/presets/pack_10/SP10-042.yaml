@@ -13,15 +13,19 @@ tags:
   - surrealism-and-dream
 visualDna:
   aesthetic: Cartoonish fine art
-  form_and_line: Smooth painting
-  color_palette: Vibrant, candy
-  lighting_setup: Soft
-  material_texture: Acrylic
-  render_quality: Juxtapoz, weird
-  spatial_distortion: Big eyes
-  atmosphere: Playful, creepy
+  subject_treatment: Smooth painting
+  color_and_tone: Vibrant, candy
+  lighting_and_shadow: Soft
+  texture_and_material: Acrylic
+  camera_and_composition: Big eyes
+  atmosphere_and_mood: Playful, creepy
+  rendering_and_quality: Juxtapoz, weird
   key_features: Cute but dark
-  creative_brief: Apply lowbrow pop-surrealism over the input with candy-vibrant acrylic smoothness, cartoon exaggeration, cute-dark tension, big-eye motifs only when characters or icons exist, and polished weirdness that sits between toy shelf and gallery wall. Keep the subject flexible; make it playful, creepy, and self-aware without forcing a mascot.
+  creative_brief: >-
+    Apply lowbrow pop-surrealism over the input with candy-vibrant acrylic smoothness, cartoon exaggeration,
+    cute-dark tension, big-eye motifs only when characters or icons exist, and polished weirdness that sits
+    between toy shelf and gallery wall. Keep the subject flexible; make it playful, creepy, and self-aware
+    without forcing a mascot.
 avoidRules:
   - serious
   - fine art

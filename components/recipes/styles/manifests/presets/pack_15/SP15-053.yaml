@@ -14,16 +14,34 @@ tags:
   - media-occult
   - crt
 visualDna:
-  aesthetic: media occult booth built around a small booth where CRT static, folded hands, candles, and cable halos create analog devotion.
-  form_and_line: CRT geometry, analog signal bands, vapor gradients, mall-era surfaces, tape artifacts, and digital slippage. Core composition uses CRT halo, booth framing, candles, cable loops, human presence, static texture.
-  color_palette: static white, black, candle gold, phosphor green
-  lighting_setup: CRT flicker, candle edge light, dark booth shadows
-  material_texture: CRT glass, wax, plastic casing, cable loops, worn vinyl
-  render_quality: Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity, moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material simulation, or hyper-detail.
-  spatial_distortion: Pools, arcades, stations, atriums, kiosks, malls, observatories, and broadcast corners with media texture. Keep depth legible and avoid default hallway, aisle, or empty studio staging.
-  atmosphere: quiet, eerie, intimate, analog-sacred
+  aesthetic: >-
+    media occult booth built around a small booth where CRT static, folded hands, candles, and cable halos
+    create analog devotion.
+  subject_treatment: >-
+    CRT geometry, analog signal bands, vapor gradients, mall-era surfaces, tape artifacts, and digital
+    slippage. Core composition uses CRT halo, booth framing, candles, cable loops, human presence, static
+    texture.
+  color_and_tone: static white, black, candle gold, phosphor green
+  lighting_and_shadow: CRT flicker, candle edge light, dark booth shadows
+  texture_and_material: CRT glass, wax, plastic casing, cable loops, worn vinyl
+  camera_and_composition: >-
+    Pools, arcades, stations, atriums, kiosks, malls, observatories, and broadcast corners with media texture.
+    Keep depth legible and avoid default hallway, aisle, or empty studio staging.
+  atmosphere_and_mood: quiet, eerie, intimate, analog-sacred
+  rendering_and_quality: >-
+    Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly
+    planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity,
+    moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material
+    simulation, or hyper-detail.
   key_features: CRT halo, booth framing, candles, cable loops, human presence, static texture
-  creative_brief: 'Treat media like ritual without full fantasy: analog booth, human gesture, static, and cable halo. Keep the result representative rather than over-abstract; make one character in their environment the anchor, with motifs as background, costume, weather, architecture, or social pressure instead of a foreground prop. Favor clean graphic-novel card art, stylized 2D digital illustration, controlled digital painting, cel-shaded poster art, or gouache-poster color blocking over realism, photoreal painterly realism, cinematic key art, or hyper-detailed concept art. Use few bold color/value zones, moderate texture, large shapes, clean surfaces, and finish denoised with no excessive noise or ultra-fine detail.'
+  creative_brief: >-
+    Treat media like ritual without full fantasy: analog booth, human gesture, static, and cable halo. Keep
+    the result representative rather than over-abstract; make one character in their environment the anchor,
+    with motifs as background, costume, weather, architecture, or social pressure instead of a foreground
+    prop. Favor clean graphic-novel card art, stylized 2D digital illustration, controlled digital painting,
+    cel-shaded poster art, or gouache-poster color blocking over realism, photoreal painterly realism,
+    cinematic key art, or hyper-detailed concept art. Use few bold color/value zones, moderate texture, large
+    shapes, clean surfaces, and finish denoised with no excessive noise or ultra-fine detail.
 avoidRules:
   - photoreal
   - watermark
@@ -37,7 +55,20 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP15-053.webp
 attributes:
-  negativePrompt: photoreal, hyperreal, realistic render, painterly realism, realistic paint finish, cinematic realism, AAA key art, photographic skin pores, realistic foreground portrait, realistic facial hair detail, lens blur, bokeh, depth-of-field photo look, cross, religious icon, readable symbols, sigils, altar, skull, chapel corridor, candle shrine fixation, generic soldier hero, guard pin-up, weapon-first pose, HDR lens realism, 3D render look, PBR material simulation, hyper-detailed concept art, watermark, text, logo, generic style, over-abstract, interchangeable preset, duplicated motifs, generic glass utopia, unmotivated market aisle, unmotivated library aisle, fantasy corridor, random camera held by subject, studio wall fixation, chair fixation, curtain fixation, lamp fixation, scarf fixation, pedestal fixation, bird fixation, excessive noise, ultra-fine detail, over-sharpened microtexture, over-rendered machinery, noisy grime, tiny rivets everywhere, busy texture chatter, realistic uniform portrait, uniformed officer hero, foreground guard portrait, detailed tattoo focus, dense machinery wallpaper, overcrowded scene, high-frequency surface detail, cinematic close-up portrait, flat black fill, crushed black, pure black masses, muddy black fields, generic American illustration, generic Western RPG card art
+  negativePrompt: >-
+    photoreal, hyperreal, realistic render, painterly realism, realistic paint finish, cinematic realism, AAA
+    key art, photographic skin pores, realistic foreground portrait, realistic facial hair detail, lens blur,
+    bokeh, depth-of-field photo look, cross, religious icon, readable symbols, sigils, altar, skull, chapel
+    corridor, candle shrine fixation, generic soldier hero, guard pin-up, weapon-first pose, HDR lens realism,
+    3D render look, PBR material simulation, hyper-detailed concept art, watermark, text, logo, generic style,
+    over-abstract, interchangeable preset, duplicated motifs, generic glass utopia, unmotivated market aisle,
+    unmotivated library aisle, fantasy corridor, random camera held by subject, studio wall fixation, chair
+    fixation, curtain fixation, lamp fixation, scarf fixation, pedestal fixation, bird fixation, excessive
+    noise, ultra-fine detail, over-sharpened microtexture, over-rendered machinery, noisy grime, tiny rivets
+    everywhere, busy texture chatter, realistic uniform portrait, uniformed officer hero, foreground guard
+    portrait, detailed tattoo focus, dense machinery wallpaper, overcrowded scene, high-frequency surface
+    detail, cinematic close-up portrait, flat black fill, crushed black, pure black masses, muddy black
+    fields, generic American illustration, generic Western RPG card art
 taxonomy:
   packId: pack_15
   packName: Punk Spectrum Vault

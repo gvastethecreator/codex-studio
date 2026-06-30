@@ -12,16 +12,26 @@ tags:
   - cinematic-and-media
   - lighting-and-atmosphere
 visualDna:
-  aesthetic: Bioluminescent self-illumination, Avatar forest as style anchor, organic phosphor glow, otherworldly photosynthesis
-  form_and_line: None
-  color_palette: Neon Blue/Green, cyan bioluminescence, teal glow, purple accent, deep night
-  lighting_setup: Internal glow, self-illuminating materials, no external source
-  material_texture: Organic glow, phosphorescent surface, luminous cellular texture
-  render_quality: Magical, alien ecology, glowing wonder, self-lit material response
-  spatial_distortion: None
-  atmosphere: Wonder, night, biosphere dream, silent phosphorescence
+  aesthetic: >-
+    Bioluminescent self-illumination, Avatar forest as style anchor, organic phosphor glow, otherworldly
+    photosynthesis
+  subject_treatment: >-
+    Treat subjects as believable filmed or broadcast subjects under Bioluminescence: casting, wardrobe, props,
+    motion cues, and silhouette hierarchy follow 5. Lighting And Atmosphere cinematic and broadcast grammar
+    without locking to one plot beat.
+  color_and_tone: Neon Blue/Green, cyan bioluminescence, teal glow, purple accent, deep night
+  lighting_and_shadow: Internal glow, self-illuminating materials, no external source
+  texture_and_material: Organic glow, phosphorescent surface, luminous cellular texture
+  camera_and_composition: >-
+    Camera language native to Bioluminescence: genre-aware framing, lens character, focal hierarchy, motion
+    cue, and vertical style-card composition.
+  atmosphere_and_mood: Wonder, night, biosphere dream, silent phosphorescence
+  rendering_and_quality: Magical, alien ecology, glowing wonder, self-lit material response
   key_features: Internal cyan glow, phosphor trails, luminous particles, self-lit edges
-  creative_brief: 'Use bioluminescence as material logic: surfaces emit cyan-teal light from within, particles glow softly, and external illumination recedes. Avoid requiring forests, plants, spores, or Avatar-like scenes. Any subject should become an organism or object whose own light defines form.'
+  creative_brief: >-
+    Use bioluminescence as material logic: surfaces emit cyan-teal light from within, particles glow softly,
+    and external illumination recedes. Avoid requiring forests, plants, spores, or Avatar-like scenes. Any
+    subject should become an organism or object whose own light defines form.
 avoidRules:
   - sunlight
 assets:

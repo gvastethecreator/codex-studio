@@ -13,19 +13,23 @@ tags:
   - lighting-and-atmosphere
 visualDna:
   aesthetic: HDRI matched-light integration
-  form_and_line: Realistic reflections
-  color_palette: Natural, environment-derived
-  lighting_setup: Image based lighting, spherical harmony
-  material_texture: Real world reflection, ambient integration
-  render_quality: Photorealistic integration, composited realism
-  atmosphere: Grounded, location-accurate
+  subject_treatment: Realistic reflections
+  color_and_tone: Natural, environment-derived
+  lighting_and_shadow: Image based lighting, spherical harmony
+  texture_and_material: Real world reflection, ambient integration
+  camera_and_composition: >-
+    Lighting-study camera for HDRI Environment: stable three-quarter framing, visible depth layers, clear
+    shadow planes, and a vertical style-card crop.
+  atmosphere_and_mood: Grounded, location-accurate
+  rendering_and_quality: Photorealistic integration, composited realism
   key_features: Matched lighting, reflection authenticity
   creative_brief: >-
-    Integrate the input with HDRI truth: matched reflections, contact shadows, ambient color wrap and unseen-environment
-    lighting that gives CG weight. Use location cues only as reflection language; do not require a sunset, mountaintop,
-    city square or object placement. Apply HDRI Environment as a portable 3D/render style system over any input:
-    preserve its renderer logic, material behavior, geometry language, lighting grammar, and production cues while
-    avoiding a required character, vehicle, prop, environment, UI screen, product shot, or scene template.
+    Integrate the input with HDRI truth: matched reflections, contact shadows, ambient color wrap and
+    unseen-environment lighting that gives CG weight. Use location cues only as reflection language; do not
+    require a sunset, mountaintop, city square or object placement. Apply HDRI Environment as a portable
+    3D/render style system over any input: preserve its renderer logic, material behavior, geometry language,
+    lighting grammar, and production cues while avoiding a required character, vehicle, prop, environment, UI
+    screen, product shot, or scene template.
 avoidRules:
   - studio background
 assets:

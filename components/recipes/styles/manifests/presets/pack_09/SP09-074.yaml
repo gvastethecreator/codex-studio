@@ -13,21 +13,22 @@ tags:
   - tactile-surfaces
 visualDna:
   aesthetic: 70s rug
-  form_and_line: Long fibers
-  color_palette: Orange or Green
-  lighting_setup: Soft
-  material_texture: Deep pile
-  render_quality: Retro, soft
-  spatial_distortion: Matted
-  atmosphere: Cozy, retro
+  subject_treatment: Long fibers
+  color_and_tone: Orange or Green
+  lighting_and_shadow: Soft
+  texture_and_material: Deep pile
+  camera_and_composition: Matted
+  atmosphere_and_mood: Cozy, retro
+  rendering_and_quality: Retro, soft
   key_features: Messy pile
   creative_brief: >-
-    Summon the deep pile of shag carpet in audacious orange or avocado green, where long nylon fibers create a landscape
-    of matted valleys and tufted peaks that swallow light and sound with equal enthusiasm. The texture should feel like
-    visual noise, a field of synthetic softness that invites bare feet and collects the ghosts of a decade. Capture the
-    brazen comfort of retro rebellion. Use Carpet as portable surface/render behavior over any input: map its texture,
-    light response, edge wear, color chemistry, and tactile rhythm onto the subject instead of requiring a literal
-    material sample, macro tile, wall, landscape, source object, or scene where the material naturally appears.
+    Summon the deep pile of shag carpet in audacious orange or avocado green, where long nylon fibers create a
+    landscape of matted valleys and tufted peaks that swallow light and sound with equal enthusiasm. The
+    texture should feel like visual noise, a field of synthetic softness that invites bare feet and collects
+    the ghosts of a decade. Capture the brazen comfort of retro rebellion. Use Carpet as portable
+    surface/render behavior over any input: map its texture, light response, edge wear, color chemistry, and
+    tactile rhythm onto the subject instead of requiring a literal material sample, macro tile, wall,
+    landscape, source object, or scene where the material naturally appears.
 avoidRules:
   - berber
   - flat

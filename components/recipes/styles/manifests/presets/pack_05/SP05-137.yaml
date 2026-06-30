@@ -12,19 +12,23 @@ tags:
   - anime-battle-and-worlds
   - modern-shonen-and-action
 visualDna:
-  aesthetic: Science kingdom action blueprint, with invention optimism, tactical intelligence, bright diagrams, and survival-to-civilization energy.
-  form_and_line: Blueprint overlays, clean schematic arrows, confident expression beats, toolpath-like lines, and construction rhythm.
-  color_palette: Blueprint cyan, mineral green, warm sunlight yellow, chalk white, earth brown, and invention spark orange.
-  lighting_setup: Clear daylight, diagram glow, discovery flashes, and optimistic rim light around practical breakthroughs.
-  material_texture: Chalk marks, paper diagrams, rough natural grain, glass glints, mineral dust, and handmade device polish.
-  render_quality: Bright modern anime finish with readable invention logic, strategic clarity, and optimistic action pacing.
-  spatial_distortion: Process-step composition, diagrammatic depth, and assembly-like motion that makes knowledge kinetic.
-  atmosphere: Inventive, bold, optimistic, strategic
+  aesthetic: >-
+    Science kingdom action blueprint, with invention optimism, tactical intelligence, bright diagrams, and
+    survival-to-civilization energy.
+  subject_treatment: >-
+    Blueprint overlays, clean schematic arrows, confident expression beats, toolpath-like lines, and
+    construction rhythm.
+  color_and_tone: Blueprint cyan, mineral green, warm sunlight yellow, chalk white, earth brown, and invention spark orange.
+  lighting_and_shadow: Clear daylight, diagram glow, discovery flashes, and optimistic rim light around practical breakthroughs.
+  texture_and_material: Chalk marks, paper diagrams, rough natural grain, glass glints, mineral dust, and handmade device polish.
+  camera_and_composition: Process-step composition, diagrammatic depth, and assembly-like motion that makes knowledge kinetic.
+  atmosphere_and_mood: Inventive, bold, optimistic, strategic
+  rendering_and_quality: Bright modern anime finish with readable invention logic, strategic clarity, and optimistic action pacing.
   key_features: Blueprint logic, invention spark, practical optimism, science symbols, constructive momentum.
   creative_brief: >-
-    Render any prompt as clever invention in motion: use blueprint overlays,
-    practical materials, bright discovery light, and tactical clarity without
-    requiring wilderness, devices, science props, or rebuilding scenes.
+    Render any prompt as clever invention in motion: use blueprint overlays, practical materials, bright
+    discovery light, and tactical clarity without requiring wilderness, devices, science props, or rebuilding
+    scenes.
 avoidRules:
   - realistic
   - 3d render
@@ -41,7 +45,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-137.webp
 attributes:
-  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
+  negativePrompt: >-
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts,
+    watermark, text, signature
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds

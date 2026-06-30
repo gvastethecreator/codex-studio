@@ -13,32 +13,25 @@ tags:
   - mecha-and-cyberpunk
 visualDna:
   aesthetic: >-
-    Scrap-metal anime velocity where cyber resilience, junk-steel humanity, compact impact arcs, and
-    spark-lit grit make motion emotional
-  form_and_line: >-
-    Hard-edged mechanical contours, close-quarters arcs, stacked metal rhythms, compact body-force
-    geometry, and sharp hatch detail.
-  color_palette: Scrap silver, rust orange, oil black, electric teal, bruised violet, and spark white.
-  lighting_setup: >-
-    Industrial underglow, specular streaks, harsh fluorescent cuts, and impact sparks that trace
-    motion.
-  material_texture: >-
-    Dented alloy, brushed steel, oily polymer, cable grain, carbon weave, and scarred composite
-    surfaces.
-  render_quality: >-
-    High-detail sci-fi anime finish with intimate machine detail, speed clarity, and resilient
-    emotional grit.
-  spatial_distortion: >-
-    Velocity tunnels, stacked vertical pressure, and close-range impact compression without fixed
-    arena framing.
-  atmosphere: Raw, fast, scrapyard, determined
+    Scrap-metal anime velocity where cyber resilience, junk-steel humanity, compact impact arcs, and spark-lit
+    grit make motion emotional
+  subject_treatment: >-
+    Hard-edged mechanical contours, close-quarters arcs, stacked metal rhythms, compact body-force geometry,
+    and sharp hatch detail.
+  color_and_tone: Scrap silver, rust orange, oil black, electric teal, bruised violet, and spark white.
+  lighting_and_shadow: Industrial underglow, specular streaks, harsh fluorescent cuts, and impact sparks that trace motion.
+  texture_and_material: Dented alloy, brushed steel, oily polymer, cable grain, carbon weave, and scarred composite surfaces.
+  camera_and_composition: >-
+    Velocity tunnels, stacked vertical pressure, and close-range impact compression without fixed arena
+    framing.
+  atmosphere_and_mood: Raw, fast, scrapyard, determined
+  rendering_and_quality: High-detail sci-fi anime finish with intimate machine detail, speed clarity, and resilient emotional grit.
   key_features: >-
-    Dented metal, cyber resilience, speed compression, spark trails, ferocious close motion, and
-    battered humanity
+    Dented metal, cyber resilience, speed compression, spark trails, ferocious close motion, and battered
+    humanity
   creative_brief: >-
-    Use Battle Angel Alita as style anchor for scrap velocity resilience. Any prompt should feel
-    fast, dented, tough, and human under metal. Cyborgs, races, scrapyards, arenas, and combat
-    setups are optional.
+    Use Battle Angel Alita as style anchor for scrap velocity resilience. Any prompt should feel fast, dented,
+    tough, and human under metal. Cyborgs, races, scrapyards, arenas, and combat setups are optional.
 avoidRules:
   - realistic
   - 3d render
@@ -56,8 +49,8 @@ assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-225.webp
 attributes:
   negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, text, signature
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts,
+    watermark, text, signature
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds

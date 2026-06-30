@@ -19,6 +19,7 @@ export interface CreateStyleBrowserProcessedDataInput {
   currentPackId: string;
   favoritesPackId: string;
   favoritePresets: StyleRuntimePreset[];
+  searchPresets?: StyleRuntimePreset[];
   favoriteIds: string[];
   searchQuery: string;
   sortOrder: StyleBrowserSortOrder;
@@ -83,25 +84,47 @@ function compareStyleCategoryNames(first: string, second: string) {
   });
 }
 
+function describeSearchValue(value: unknown): string {
+  if (typeof value === 'string') return value;
+  if (typeof value === 'number' || typeof value === 'boolean') return `${value}`;
+  return '';
+}
+
+function createStylePresetSearchText(preset: StyleRuntimePreset) {
+  return [
+    preset.id,
+    preset.name,
+    preset.category,
+    preset.domain,
+    ...Object.values(preset.style).map(describeSearchValue),
+  ]
+    .filter(Boolean)
+    .join(' ')
+    .toLowerCase();
+}
+
 export function createStyleBrowserProcessedData({
   activePack,
   currentPackId,
   favoritesPackId,
   favoritePresets,
+  searchPresets,
   favoriteIds,
   searchQuery,
   sortOrder,
   showFavoritesOnly,
 }: CreateStyleBrowserProcessedDataInput): StyleBrowserProcessedData {
-  const normalizedSearch = searchQuery.toLowerCase();
+  const normalizedSearch = searchQuery.trim().toLowerCase();
   const favoriteSet = new Set(favoriteIds);
-  const rawPresets = currentPackId === favoritesPackId ? favoritePresets : activePack.presets || [];
+  const rawPresets =
+    normalizedSearch && searchPresets
+      ? searchPresets
+      : currentPackId === favoritesPackId
+        ? favoritePresets
+        : activePack.presets || [];
   let filtered = rawPresets.filter((preset) => {
-    return (
-      preset.name.toLowerCase().includes(normalizedSearch) ||
-      preset.style.aesthetic.toLowerCase().includes(normalizedSearch) ||
-      preset.category?.toLowerCase().includes(normalizedSearch)
-    );
+    if (!normalizedSearch) return true;
+    return createStylePresetSearchText(preset).includes(normalizedSearch);
   });
 
   if (showFavoritesOnly && currentPackId !== favoritesPackId) {

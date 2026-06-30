@@ -14,16 +14,35 @@ tags:
   - glitchpunk
   - kiosk
 visualDna:
-  aesthetic: glitchpunk street kiosk built around a kiosk with broken displays, vendors, warped product silhouettes, scanline ghosts, and chromatic errors.
-  form_and_line: CRT geometry, analog signal bands, vapor gradients, mall-era surfaces, tape artifacts, and digital slippage. Core composition uses glitched kiosk, vendor silhouettes, scanline ghosts, warped goods, RGB splits.
-  color_palette: RGB split red, blue, green, black kiosk
-  lighting_setup: broken screen glow, neon spill, scanline flicker, wet street bounce
-  material_texture: cheap plastic, scratched screens, tarps, wet metal, pixel smear
-  render_quality: Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity, moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material simulation, or hyper-detail.
-  spatial_distortion: Pools, arcades, stations, atriums, kiosks, malls, observatories, and broadcast corners with media texture. Keep depth legible and avoid default hallway, aisle, or empty studio staging.
-  atmosphere: unstable, commercial, noisy-but-controlled, urban
+  aesthetic: >-
+    glitchpunk street kiosk built around a kiosk with broken displays, vendors, warped product silhouettes,
+    scanline ghosts, and chromatic errors.
+  subject_treatment: >-
+    CRT geometry, analog signal bands, vapor gradients, mall-era surfaces, tape artifacts, and digital
+    slippage. Core composition uses glitched kiosk, vendor silhouettes, scanline ghosts, warped goods, RGB
+    splits.
+  color_and_tone: RGB split red, blue, green, black kiosk
+  lighting_and_shadow: broken screen glow, neon spill, scanline flicker, wet street bounce
+  texture_and_material: cheap plastic, scratched screens, tarps, wet metal, pixel smear
+  camera_and_composition: >-
+    Pools, arcades, stations, atriums, kiosks, malls, observatories, and broadcast corners with media texture.
+    Keep depth legible and avoid default hallway, aisle, or empty studio staging.
+  atmosphere_and_mood: unstable, commercial, noisy-but-controlled, urban
+  rendering_and_quality: >-
+    Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly
+    planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity,
+    moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material
+    simulation, or hyper-detail.
   key_features: glitched kiosk, vendor silhouettes, scanline ghosts, warped goods, RGB splits
-  creative_brief: Use glitch as distortion over one compact street kiosk, not pure abstract glitch texture, screen-wall, or a full market aisle. Keep the result representative rather than over-abstract; make one character in their environment the anchor, with motifs as background, costume, weather, architecture, or social pressure instead of a foreground prop. Favor clean graphic-novel card art, stylized 2D digital illustration, controlled digital painting, cel-shaded poster art, or gouache-poster color blocking over realism, photoreal painterly realism, cinematic key art, or hyper-detailed concept art. Use few bold color/value zones, moderate texture, large shapes, clean surfaces, and finish denoised with no excessive noise or ultra-fine detail.
+  creative_brief: >-
+    Use glitch as distortion over one compact street kiosk, not pure abstract glitch texture, screen-wall, or
+    a full market aisle. Keep the result representative rather than over-abstract; make one character in their
+    environment the anchor, with motifs as background, costume, weather, architecture, or social pressure
+    instead of a foreground prop. Favor clean graphic-novel card art, stylized 2D digital illustration,
+    controlled digital painting, cel-shaded poster art, or gouache-poster color blocking over realism,
+    photoreal painterly realism, cinematic key art, or hyper-detailed concept art. Use few bold color/value
+    zones, moderate texture, large shapes, clean surfaces, and finish denoised with no excessive noise or
+    ultra-fine detail.
 avoidRules:
   - photoreal
   - watermark
@@ -37,7 +56,21 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP15-054.webp
 attributes:
-  negativePrompt: photoreal, hyperreal, realistic render, painterly realism, realistic paint finish, cinematic realism, AAA key art, photographic skin pores, realistic foreground portrait, realistic facial hair detail, lens blur, bokeh, depth-of-field photo look, screen-wall, many monitors, detailed UI panels, readable product labels, logos, UI screens, bazaar corridor, endless stalls, grocery aisle, market aisle, mascot poster, camera prop, photoreal wet street, RGB noise storm, generic soldier hero, guard pin-up, weapon-first pose, HDR lens realism, 3D render look, PBR material simulation, hyper-detailed concept art, watermark, text, logo, generic style, over-abstract, interchangeable preset, duplicated motifs, generic glass utopia, unmotivated market aisle, unmotivated library aisle, fantasy corridor, random camera held by subject, studio wall fixation, chair fixation, curtain fixation, lamp fixation, scarf fixation, pedestal fixation, bird fixation, excessive noise, ultra-fine detail, over-sharpened microtexture, over-rendered machinery, noisy grime, tiny rivets everywhere, busy texture chatter, realistic uniform portrait, uniformed officer hero, foreground guard portrait, detailed tattoo focus, dense machinery wallpaper, overcrowded scene, high-frequency surface detail, cinematic close-up portrait, flat black fill, crushed black, pure black masses, muddy black fields, generic American illustration, generic Western RPG card art
+  negativePrompt: >-
+    photoreal, hyperreal, realistic render, painterly realism, realistic paint finish, cinematic realism, AAA
+    key art, photographic skin pores, realistic foreground portrait, realistic facial hair detail, lens blur,
+    bokeh, depth-of-field photo look, screen-wall, many monitors, detailed UI panels, readable product labels,
+    logos, UI screens, bazaar corridor, endless stalls, grocery aisle, market aisle, mascot poster, camera
+    prop, photoreal wet street, RGB noise storm, generic soldier hero, guard pin-up, weapon-first pose, HDR
+    lens realism, 3D render look, PBR material simulation, hyper-detailed concept art, watermark, text, logo,
+    generic style, over-abstract, interchangeable preset, duplicated motifs, generic glass utopia, unmotivated
+    market aisle, unmotivated library aisle, fantasy corridor, random camera held by subject, studio wall
+    fixation, chair fixation, curtain fixation, lamp fixation, scarf fixation, pedestal fixation, bird
+    fixation, excessive noise, ultra-fine detail, over-sharpened microtexture, over-rendered machinery, noisy
+    grime, tiny rivets everywhere, busy texture chatter, realistic uniform portrait, uniformed officer hero,
+    foreground guard portrait, detailed tattoo focus, dense machinery wallpaper, overcrowded scene,
+    high-frequency surface detail, cinematic close-up portrait, flat black fill, crushed black, pure black
+    masses, muddy black fields, generic American illustration, generic Western RPG card art
 taxonomy:
   packId: pack_15
   packName: Punk Spectrum Vault

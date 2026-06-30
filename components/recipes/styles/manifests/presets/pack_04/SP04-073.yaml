@@ -13,19 +13,18 @@ tags:
   - ink-and-print
 visualDna:
   aesthetic: Refined ink-calligraphic illustration with formal stroke cadence
-  form_and_line: High contrast hairline-to-broad transitions via pressure and angle control
-  color_palette: Deep black ink, warm neutral paper, subtle sepia oxidation hints
-  lighting_setup: Wet-ink sheen accents with controlled pooling at stroke terminals
-  material_texture: Smooth vellum-like surface with minimal drag
-  render_quality: Polished and fluid, prioritizing disciplined stroke elegance
-  spatial_distortion: None; proportion preserved through calligraphic structure
-  atmosphere: Ceremonial, classic, literate, archival quietness
+  subject_treatment: High contrast hairline-to-broad transitions via pressure and angle control
+  color_and_tone: Deep black ink, warm neutral paper, subtle sepia oxidation hints
+  lighting_and_shadow: Wet-ink sheen accents with controlled pooling at stroke terminals
+  texture_and_material: Smooth vellum-like surface with minimal drag
+  camera_and_composition: Flat calligraphic composition; proportion preserved through calligraphic structure
+  atmosphere_and_mood: Ceremonial, classic, literate, archival quietness
+  rendering_and_quality: Polished and fluid, prioritizing disciplined stroke elegance
   key_features: Flex-width modulation, tapered entry/exit strokes, deliberate rhythm spacing
   creative_brief: >-
-    Apply fountain-pen calligraphic grammar to any input: hairline-to-broad modulation, wet-ink
-    pooling, tapered stroke entries, vellum warmth, and deliberate rhythm spacing should build form
-    through stroke choreography without requiring writing, manuscripts, letters, signatures, or
-    archival props.
+    Apply fountain-pen calligraphic grammar to any input: hairline-to-broad modulation, wet-ink pooling,
+    tapered stroke entries, vellum warmth, and deliberate rhythm spacing should build form through stroke
+    choreography without requiring writing, manuscripts, letters, signatures, or archival props.
 avoidRules:
   - pencil
   - dry

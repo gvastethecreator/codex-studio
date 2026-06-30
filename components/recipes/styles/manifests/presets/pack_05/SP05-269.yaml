@@ -12,20 +12,25 @@ tags:
   - anime-battle-and-worlds
   - dark-fantasy-and-seinen
 visualDna:
-  aesthetic: Smoke-filled calculation, stillness as menace, predatory patience, psychological warfare abstraction, heavy-lidded shadow tension, ritualized risk
-  form_and_line: Dense mature-anime linework, heavy crosshatching, weighted contour variation, gritty ink density
-  color_palette: Muted earths, blood reds, cold moonlit tones, desaturated horror palette, bruised shadow hues
-  lighting_setup: Ominous directional shadows, single-source drama light, deep chiaroscuro, low-key shadow lift
-  material_texture: Cigarette-smoke haze, worn surface gloss, dry paper grain, shadow-softened skin texture, amber ash glow, stale enclosed atmosphere
-  render_quality: Gritty dramatic anime frame, film-noir rendering, heavy shadow compression, textured midtone grit
-  spatial_distortion: Still-hand suspense geometry, smoke-layer depth, predatory close framing, ritual spacing, slow pressure compression
-  atmosphere: Predatory, smoky, cerebral, merciless
+  aesthetic: >-
+    Smoke-filled calculation, stillness as menace, predatory patience, psychological warfare abstraction,
+    heavy-lidded shadow tension, ritualized risk
+  subject_treatment: Dense mature-anime linework, heavy crosshatching, weighted contour variation, gritty ink density
+  color_and_tone: Muted earths, blood reds, cold moonlit tones, desaturated horror palette, bruised shadow hues
+  lighting_and_shadow: Ominous directional shadows, single-source drama light, deep chiaroscuro, low-key shadow lift
+  texture_and_material: >-
+    Cigarette-smoke haze, worn surface gloss, dry paper grain, shadow-softened skin texture, amber ash glow,
+    stale enclosed atmosphere
+  camera_and_composition: >-
+    Still-hand suspense geometry, smoke-layer depth, predatory close framing, ritual spacing, slow pressure
+    compression
+  atmosphere_and_mood: Predatory, smoky, cerebral, merciless
+  rendering_and_quality: Gritty dramatic anime frame, film-noir rendering, heavy shadow compression, textured midtone grit
   key_features: Smoke haze, stillness suspense, hard shadow light, calculation pressure, predatory close framing
-  creative_brief: >
-    Render any subject as a cerebral duel of patience and risk: smoke layers,
-    hard shadows, still gestures, and ritual spacing should create predatory
-    calculation without fixed play structures, surfaces, props, ages, or
-    competition scenes.
+  creative_brief: >-
+    Render any subject as a cerebral duel of patience and risk: smoke layers, hard shadows, still gestures,
+    and ritual spacing should create predatory calculation without fixed play structures, surfaces, props,
+    ages, or competition scenes.
 avoidRules:
   - realistic
   - 3d render
@@ -42,7 +47,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-269.webp
 attributes:
-  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
+  negativePrompt: >-
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts,
+    watermark, text, signature
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds

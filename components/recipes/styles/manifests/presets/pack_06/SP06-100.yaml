@@ -12,16 +12,38 @@ tags:
   - essential-art-styles
   - retro-game-visual-systems
 visualDna:
-  aesthetic: Nintendo Game Boy Camera aesthetic, 128x112 CMOS sensor digital photo, 4-shade greyscale thermal-printer dot-matrix, tiny Game Boy Printer paper-roll, fisheye lens abstraction, stamp-mode tiling, 1998 handheld photography miracle, thermal-paper fading over time, chiptune-photo-shoot vibe
-  form_and_line: 128x112 extreme low-resolution, Game Boy Camera CMOS sensor contours, thermal-printer dot-matrix lines, fisheye-lens panorama distortion, stamp-mode tile grid
-  color_palette: 4-shade-Game-Boy-greyscale, thermal-dot-white, light-grey, dark-grey, black, paper-white-background, thermal-chemical-blue-when-fresh
-  lighting_setup: CMOS-sensor low-dynamic-range, Game Boy screen display glow, flash-none-available feel, ambient CRT or outdoor light, terrible low-light noise
-  material_texture: Thermal-printer dot-matrix, Game Boy Printer paper-roll texture, fading thermal-print chemical, CMOS sensor noise grain, Game Boy Camera plastic-lens distortion, sticker-print peel backing
-  render_quality: Game-Boy-Camera-photo aesthetic, thermal-printer-dot-art, 128x112-extreme-low-resolution, 1998-digital-photography-beauty
-  spatial_distortion: Fisheye CMOS lens distortion, 128x112 proportions, stamp-mode tile arrangement, Game Boy Printer paper-roll curling, mini thermal-print scale
-  atmosphere: 1998-tech wonder, handheld-photo creativity, playful low-fi silliness, thermal-print memory fading, Game Boy peripheral magic
-  key_features: 128x112 thermal greyscale, Game Boy Camera CMOS grain, thermal-printer dot-matrix, fisheye-lens distortion, stamp-mode tiling, 4-shade greyscale only, thermal-paper texture
-  creative_brief: A 128x112 CMOS sensor turns any prompt into four shades of thermal grey. Fisheye distortion, dot-matrix printing, stamp tiling and fading paper chemistry make the image feel like handheld photography discovering itself.
+  aesthetic: >-
+    Nintendo Game Boy Camera aesthetic, 128x112 CMOS sensor digital photo, 4-shade greyscale thermal-printer
+    dot-matrix, tiny Game Boy Printer paper-roll, fisheye lens abstraction, stamp-mode tiling, 1998 handheld
+    photography miracle, thermal-paper fading over time, chiptune-photo-shoot vibe
+  subject_treatment: >-
+    128x112 extreme low-resolution, Game Boy Camera CMOS sensor contours, thermal-printer dot-matrix lines,
+    fisheye-lens panorama distortion, stamp-mode tile grid
+  color_and_tone: >-
+    4-shade-Game-Boy-greyscale, thermal-dot-white, light-grey, dark-grey, black, paper-white-background,
+    thermal-chemical-blue-when-fresh
+  lighting_and_shadow: >-
+    CMOS-sensor low-dynamic-range, Game Boy screen display glow, no-flash-available feel, ambient CRT or
+    outdoor light, terrible low-light noise
+  texture_and_material: >-
+    Thermal-printer dot-matrix, Game Boy Printer paper-roll texture, fading thermal-print chemical, CMOS
+    sensor noise grain, Game Boy Camera plastic-lens distortion, sticker-print peel backing
+  camera_and_composition: >-
+    Fisheye CMOS lens distortion, 128x112 proportions, stamp-mode tile arrangement, Game Boy Printer
+    paper-roll curling, mini thermal-print scale
+  atmosphere_and_mood: >-
+    1998-tech wonder, handheld-photo creativity, playful low-fi silliness, thermal-print memory fading, Game
+    Boy peripheral magic
+  rendering_and_quality: >-
+    Game-Boy-Camera-photo aesthetic, thermal-printer-dot-art, 128x112-extreme-low-resolution,
+    1998-digital-photography-beauty
+  key_features: >-
+    128x112 thermal greyscale, Game Boy Camera CMOS grain, thermal-printer dot-matrix, fisheye-lens
+    distortion, stamp-mode tiling, 4-shade greyscale only, thermal-paper texture
+  creative_brief: >-
+    A 128x112 CMOS sensor turns any prompt into four shades of thermal grey. Fisheye distortion, dot-matrix
+    printing, stamp tiling and fading paper chemistry make the image feel like handheld photography
+    discovering itself.
 avoidRules:
   - smooth
   - HD

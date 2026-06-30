@@ -13,25 +13,24 @@ tags:
   - concept-art
 visualDna:
   aesthetic: >-
-    Early low-poly 3D concept style defined by geometric economy, hardware-era constraints, and
-    nostalgic polygonal abstraction
-  form_and_line: >-
-    Triangle-dominant faceting with minimal smoothing, hard-edge silhouette readability, and UV-era
-    shape simplification
-  color_palette: Flat shading, vertex-colored, low-spec palette
-  lighting_setup: Vertex light, gouraud shading, no real-time lighting
-  material_texture: Pixelated
-  render_quality: >-
-    Retro first-gen 3D rendering fidelity emphasizing constrained geometry, affine-era texture
-    behavior, and deliberate technical limitation aesthetics
-  spatial_distortion: Blocky
-  atmosphere: Nostalgic, simple, CD-ROM childhood, fifth-gen warmth
+    Early low-poly 3D concept style defined by geometric economy, hardware-era constraints, and nostalgic
+    polygonal abstraction
+  subject_treatment: >-
+    Triangle-dominant faceting with minimal smoothing, hard-edge silhouette readability, and UV-era shape
+    simplification
+  color_and_tone: Flat shading, vertex-colored, low-spec palette
+  lighting_and_shadow: Vertex light, gouraud shading, no real-time lighting
+  texture_and_material: Pixelated
+  camera_and_composition: Blocky
+  atmosphere_and_mood: Nostalgic, simple, CD-ROM childhood, fifth-gen warmth
+  rendering_and_quality: >-
+    Retro first-gen 3D rendering fidelity emphasizing constrained geometry, affine-era texture behavior, and
+    deliberate technical limitation aesthetics
   key_features: Polygons, unfiltered textures, affine warping
   creative_brief: >-
-    Apply low-poly constraint grammar to any input: faceted geometry, hard-edge silhouettes,
-    vertex-color ramps, affine texture cues, and fixed-function shading simplicity should create
-    early-3D warmth without requiring games, consoles, characters, terrain, or specific polygon
-    scenes.
+    Apply low-poly constraint grammar to any input: faceted geometry, hard-edge silhouettes, vertex-color
+    ramps, affine texture cues, and fixed-function shading simplicity should create early-3D warmth without
+    requiring games, consoles, characters, terrain, or specific polygon scenes.
 avoidRules:
   - smooth
   - high res

@@ -12,19 +12,30 @@ tags:
   - anime-character-and-lifestyle
   - anime
 visualDna:
-  aesthetic: End-of-season finale anime language with mature reflection, horizon-scale closure, and restrained emotional catharsis
-  form_and_line: Foreground silhouette anchoring, wind-reactive linework, broad horizon layering, and clean negative-space framing for narrative finality
-  color_palette: Twilight orange gradients, deep cobalt-blue distance fields, softened charcoal shadows, and sparse amber accents
-  lighting_setup: Low-sun rear key halo, long-shadow foreground shaping, subtle rim highlights on figure edges, and controlled atmospheric glow
-  material_texture: Wind-brushed fabric folds, distant light haze, clean evening sky gradation, and matte structural surfaces
-  render_quality: Elegant cinematic anime still quality with high compositional discipline, emotional clarity, and poster-like finale readability
-  spatial_distortion: Wide establishing composition with foreground-to-horizon scale contrast and stable horizon control
-  atmosphere: Resolute, nostalgic, contemplative, and future-facing
-  key_features: Backlit silhouette framing, sunset horizon stratification, wind-motion line cues, and farewell-tone color orchestration
+  aesthetic: >-
+    End-of-season finale anime language with mature reflection, horizon-scale closure, and restrained
+    emotional catharsis
+  subject_treatment: >-
+    Foreground silhouette anchoring, wind-reactive linework, broad horizon layering, and clean negative-space
+    framing for narrative finality
+  color_and_tone: >-
+    Twilight orange gradients, deep cobalt-blue distance fields, softened charcoal shadows, and sparse amber
+    accents
+  lighting_and_shadow: >-
+    Low-sun rear key halo, long-shadow foreground shaping, subtle rim highlights on figure edges, and
+    controlled atmospheric glow
+  texture_and_material: Wind-brushed fabric folds, distant light haze, clean evening sky gradation, and matte structural surfaces
+  camera_and_composition: Wide establishing composition with foreground-to-horizon scale contrast and stable horizon control
+  atmosphere_and_mood: Resolute, nostalgic, contemplative, and future-facing
+  rendering_and_quality: >-
+    Elegant cinematic anime still quality with high compositional discipline, emotional clarity, and
+    poster-like finale readability
+  key_features: >-
+    Backlit silhouette framing, sunset horizon stratification, wind-motion line cues, and farewell-tone color
+    orchestration
   creative_brief: >-
-    Use Final Episode Skyline as style anchor for reflective closure:
-    sunset-backlit silhouette, wide horizon staging, and restrained end-episode
-    tonality should transfer without requiring skyline, rooftop, hero-back
+    Use Final Episode Skyline as style anchor for reflective closure: sunset-backlit silhouette, wide horizon
+    staging, and restrained end-episode tonality should transfer without requiring skyline, rooftop, hero-back
     pose, city lights, or finale scene.
 avoidRules:
   - photoreal

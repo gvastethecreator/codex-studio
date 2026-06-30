@@ -12,22 +12,24 @@ tags:
   - essential-art-styles
   - mixed-media
 visualDna:
-  aesthetic: Pinned planning-board style with layered intent, thread logic, soft cork texture, and provisional composition
-  form_and_line: Pins, string
-  color_palette: Varied
-  lighting_setup: Room light
-  material_texture: Cork, paper
-  render_quality: Personal, planning
-  spatial_distortion: None
-  atmosphere: Hopeful, messy
+  aesthetic: >-
+    Pinned planning-board style with layered intent, thread logic, soft cork texture, and provisional
+    composition
+  subject_treatment: Pins, string
+  color_and_tone: Varied
+  lighting_and_shadow: Room light
+  texture_and_material: Cork, paper
+  camera_and_composition: 'Compose for Pinned Planning Board using its key spatial cues: Pinned items.'
+  atmosphere_and_mood: Hopeful, messy
+  rendering_and_quality: Personal, planning
   key_features: Pinned items
   creative_brief: >-
-    Cork-like texture, pins, tape, and thread create a provisional planning surface where relationships matter more than
-    individual fragments. Lines connect zones, clusters imply priority, and empty gaps become part of the system. Keep
-    the style about visible planning grammar, not wishes, clippings, conspiracy walls, or readable goals. Apply this
-    mixed-media process over any input: preserve material assembly, edge evidence, surface treatment, layering logic,
-    and handmade artifacts while avoiding required clippings, readable text, boards, fire, studio setup, or literal
-    craft-table scene.
+    Cork-like texture, pins, tape, and thread create a provisional planning surface where relationships matter
+    more than individual fragments. Lines connect zones, clusters imply priority, and empty gaps become part
+    of the system. Keep the style about visible planning grammar, not wishes, clippings, conspiracy walls, or
+    readable goals. Apply this mixed-media process over any input: preserve material assembly, edge evidence,
+    surface treatment, layering logic, and handmade artifacts while avoiding required clippings, readable
+    text, boards, fire, studio setup, or literal craft-table scene.
 avoidRules:
   - photo
   - realistic
@@ -51,8 +53,8 @@ assets:
   defaultImage: /assets/recipes/styles/defaults/SP06-070.webp
 attributes:
   negativePrompt: >-
-    photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark,
-    text, signature, frame, border, conspiracy board, readable goals, clipping requirement
+    photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy,
+    watermark, text, signature, frame, border, conspiracy board, readable goals, clipping requirement
 taxonomy:
   packId: pack_06
   packName: Essential Art Styles

@@ -13,18 +13,20 @@ tags:
   - 3d-styles
 visualDna:
   aesthetic: Orthographic projection
-  form_and_line: Parallel lines
-  color_palette: Pastel, clean, gradient-friendly
-  lighting_setup: Soft studio, shadow-casting consistency
-  material_texture: Smooth, isometric-unity feel
-  render_quality: Mobile game, icon, asset-store ready
-  atmosphere: Organized, tiny, isometric clarity
+  subject_treatment: Parallel lines
+  color_and_tone: Pastel, clean, gradient-friendly
+  lighting_and_shadow: Soft studio, shadow-casting consistency
+  texture_and_material: Smooth, isometric-unity feel
+  camera_and_composition: >-
+    Lookdev camera for Isometric 3D: three-quarter or orthographic framing, clean silhouette read, material
+    highlights, controlled depth, and vertical card composition.
+  atmosphere_and_mood: Organized, tiny, isometric clarity
+  rendering_and_quality: Mobile game, icon, asset-store ready
   key_features: 30 degree angle, parallel projection
   creative_brief: >-
-    Convert the input to clean isometric projection: locked parallel lines,
-    thirty-degree tilt, pastel gradients and consistent soft shadows. Keep
-    asset-store readability and miniature charm without requiring an everyday
-    everyday setup, diorama world, or story vignette.
+    Convert the input to clean isometric projection: locked parallel lines, thirty-degree tilt, pastel
+    gradients and consistent soft shadows. Keep asset-store readability and miniature charm without requiring
+    an everyday everyday setup, diorama world, or story vignette.
 avoidRules:
   - perspective
   - distortion

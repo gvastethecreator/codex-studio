@@ -11,13 +11,14 @@ export const GENERATED_STYLE_PRESETS = [
       'photo, drawing, painting, sketch, 2d, flat, noise, grain, low resolution, jpeg artifacts, watermark, text',
     style: {
       aesthetic: 'GPU path traced render',
-      form_and_line: 'Sharp, physically correct',
-      color_palette: 'Vibrant, high contrast',
-      lighting_setup: 'Bloom, spectral dispersion',
-      material_texture: 'Glossy, detailed',
-      render_quality: 'ArtStation trending, portfolio-ready, 4K',
-      spatial_distortion: 'None',
-      atmosphere: 'Cinematic, slick, hyper-polished',
+      subject_treatment: 'Sharp, physically correct',
+      color_and_tone: 'Vibrant, high contrast',
+      lighting_and_shadow: 'Bloom, spectral dispersion',
+      texture_and_material: 'Glossy, detailed',
+      camera_and_composition:
+        'Lookdev camera for Octane Spectral GPU Path Tracer: three-quarter or orthographic framing, clean silhouette read, material highlights, controlled depth, and vertical card composition.',
+      atmosphere_and_mood: 'Cinematic, slick, hyper-polished',
+      rendering_and_quality: 'ArtStation trending, portfolio-ready, 4K',
       key_features: 'Octane signature spectral bloom',
       creative_brief:
         'Render any input with Octane spectral GPU path-tracer polish: physically precise glossy reflections, spectral dispersion, clean caustic hints, high-contrast bloom, and portfolio-grade material clarity. Keep photon-rich luxury without requiring a product pedestal, car, jewelry object, or studio still life.',
@@ -30,13 +31,15 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'pre-rendered, low poly',
     style: {
       aesthetic: 'Real-time next-gen game-engine rendering',
-      form_and_line: 'Lumen global illumination',
-      color_palette: 'Realistic, dynamic, physically based',
-      lighting_setup: 'Ray traced shadows, Nanite-lit',
-      material_texture: 'Nanite geometry detail',
-      render_quality: 'AAA game fidelity, virtual production polish, real-time final-frame clarity',
-      spatial_distortion: 'None',
-      atmosphere: 'Immersive, interactive, cinematic depth',
+      subject_treatment: 'Lumen global illumination',
+      color_and_tone: 'Realistic, dynamic, physically based',
+      lighting_and_shadow: 'Ray traced shadows, Nanite-lit',
+      texture_and_material: 'Nanite geometry detail',
+      camera_and_composition:
+        'Lookdev camera for Unreal Engine 5 Next-Gen Real-Time Engine: three-quarter or orthographic framing, clean silhouette read, material highlights, controlled depth, and vertical card composition.',
+      atmosphere_and_mood: 'Immersive, interactive, cinematic depth',
+      rendering_and_quality:
+        'AAA game fidelity, virtual production polish, real-time final-frame clarity',
       key_features: 'High fidelity, real-time path tracing',
       creative_brief:
         'Render the input with Unreal Engine 5 language: Nanite-like geometric density, Lumen-style bounce, ray-traced shadows, volumetric depth and real-time virtual-production polish. Keep AAA game immediacy without requiring a full world, screenshot, level, character, or playable setup.',
@@ -51,20 +54,20 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         "Redshift Biased GPU Renderer within 1. Render Engines: a reusable 3D & CGI Rendering visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Redshift Biased GPU Renderer's specific style identity.",
-      form_and_line:
+      subject_treatment:
         'Define Redshift Biased GPU Renderer through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
-      color_palette:
+      color_and_tone:
         'Use a Redshift Biased GPU Renderer-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
-      lighting_setup:
+      lighting_and_shadow:
         'Use lighting that makes Redshift Biased GPU Renderer recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
-      material_texture:
+      texture_and_material:
         'Use materials and textures that reinforce Redshift Biased GPU Renderer: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
-      render_quality:
-        'Render Redshift Biased GPU Renderer with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
-      spatial_distortion:
+      camera_and_composition:
         'Use spatial behavior that fits Redshift Biased GPU Renderer: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
-      atmosphere:
+      atmosphere_and_mood:
         'Set a mood that belongs to Redshift Biased GPU Renderer: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+      rendering_and_quality:
+        'Render Redshift Biased GPU Renderer with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       key_features:
         "Prioritize Redshift Biased GPU Renderer's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
@@ -79,13 +82,14 @@ export const GENERATED_STYLE_PRESETS = [
       'photo, drawing, painting, sketch, 2d, flat, noise, grain, low resolution, jpeg artifacts, watermark, text',
     style: {
       aesthetic: 'CPU path traced movie VFX',
-      form_and_line: 'Incredibly realistic',
-      color_palette: 'Natural, filmic, ACES color-managed',
-      lighting_setup: 'Complex bounces, unclamped GI',
-      material_texture: 'Micro-displacement, layered materials',
-      render_quality: 'Hollywood VFX, film-standard',
-      spatial_distortion: 'None',
-      atmosphere: 'Realistic, grounded, cinematic gravitas',
+      subject_treatment: 'Incredibly realistic',
+      color_and_tone: 'Natural, filmic, ACES color-managed',
+      lighting_and_shadow: 'Complex bounces, unclamped GI',
+      texture_and_material: 'Micro-displacement, layered materials',
+      camera_and_composition:
+        'Lookdev camera for Arnold Feature Film Path Tracer: three-quarter or orthographic framing, clean silhouette read, material highlights, controlled depth, and vertical card composition.',
+      atmosphere_and_mood: 'Realistic, grounded, cinematic gravitas',
+      rendering_and_quality: 'Hollywood VFX, feature-film grade',
       key_features: 'Physical accuracy, volume scattering',
       creative_brief:
         'Render any input with Arnold feature-film path tracing: unclamped global illumination, ACES color discipline, micro-displacement detail, soft indirect bounce, and cinema-grade material response. Keep Hollywood render authority without requiring characters, creatures, sets, props, or VFX shot staging.',
@@ -98,13 +102,14 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'eevee, realtime',
     style: {
       aesthetic: 'Open source path tracing',
-      form_and_line: 'Sharp',
-      color_palette: 'Filmic log encoding, view-transform ready',
-      lighting_setup: 'Global Illumination, denoised',
-      material_texture: 'Procedural nodes, shader graph',
-      render_quality: 'Blender Guru creator-friendly, detailed, community-driven excellence',
-      spatial_distortion: 'None',
-      atmosphere: 'Creative, solid, accessible artistry',
+      subject_treatment: 'Sharp',
+      color_and_tone: 'Filmic log encoding, view-transform ready',
+      lighting_and_shadow: 'Global Illumination, denoised',
+      texture_and_material: 'Procedural nodes, shader graph',
+      camera_and_composition:
+        'Lookdev camera for Blender Cycles Open Path Tracer: three-quarter or orthographic framing, clean silhouette read, material highlights, controlled depth, and vertical card composition.',
+      atmosphere_and_mood: 'Creative, solid, accessible artistry',
+      rendering_and_quality: 'Blender Guru creator-friendly, detailed, community-driven excellence',
       key_features: 'Principled BSDF, GPU+CPU hybrid',
       creative_brief:
         'Render any input through Blender Cycles lookdev: Principled BSDF material variety, Filmic log highlight rolloff, path-traced bounce, open-source geometry cleanliness, and creator-friendly polish. Keep flexible CG craft without requiring a benchmark object, product turntable, demo setup, or gallery environment.',
@@ -118,13 +123,15 @@ export const GENERATED_STYLE_PRESETS = [
       'photo, drawing, painting, sketch, 2d, flat, noise, grain, low resolution, jpeg artifacts, watermark, text',
     style: {
       aesthetic: 'Architectural visualization',
-      form_and_line: 'Precise',
-      color_palette: 'Warm neutral exposure, architectural balance, believable material color',
-      lighting_setup: 'IES lights, sun, adaptive dome',
-      material_texture: 'Photorealistic materials, layered BRDF',
-      render_quality: 'ArchViz clarity, catalog realism, interior-design lighting discipline',
-      spatial_distortion: 'None',
-      atmosphere: 'Inviting, expensive, aspirational, clean real-estate polish',
+      subject_treatment: 'Precise',
+      color_and_tone: 'Warm neutral exposure, architectural balance, believable material color',
+      lighting_and_shadow: 'IES lights, sun, adaptive dome',
+      texture_and_material: 'Photorealistic materials, layered BRDF',
+      camera_and_composition:
+        'Lookdev camera for V-Ray ArchViz Raytracer: three-quarter or orthographic framing, clean silhouette read, material highlights, controlled depth, and vertical card composition.',
+      atmosphere_and_mood: 'Inviting, expensive, aspirational, clean real-estate polish',
+      rendering_and_quality:
+        'ArchViz clarity, catalog realism, interior-design lighting discipline',
       key_features: 'Clean lines, adaptive sampling',
       creative_brief:
         'Apply V-Ray ArchViz discipline to the input: calibrated IES light, adaptive dome softness, layered BRDF materials, warm exposure, straight-line clarity and expensive catalog realism. It can make architecture feel habitable, but must not force an interior, window wall, furniture layout, or lifestyle setup.',
@@ -137,13 +144,14 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'environment, messy',
     style: {
       aesthetic: 'Product design render',
-      form_and_line: 'Studio-isolated presentation, controlled silhouette, clean design-read',
-      color_palette: 'Accurate plastics/metals, brand-specific',
-      lighting_setup: 'HDRI studio, real-time ray tracing',
-      material_texture: 'Mold tech textures, scientifically accurate',
-      render_quality: 'Industrial design, packaging comp',
-      spatial_distortion: 'None',
-      atmosphere: 'Clean, commercial, premium retail',
+      subject_treatment: 'Studio-isolated presentation, controlled silhouette, clean design-read',
+      color_and_tone: 'Accurate plastics/metals, brand-specific',
+      lighting_and_shadow: 'HDRI studio, real-time ray tracing',
+      texture_and_material: 'Mold tech textures, scientifically accurate',
+      camera_and_composition:
+        'Lookdev camera for KeyShot Product Studio Renderer: three-quarter or orthographic framing, clean silhouette read, material highlights, controlled depth, and vertical card composition.',
+      atmosphere_and_mood: 'Clean, commercial, premium retail',
+      rendering_and_quality: 'Industrial design, packaging comp',
       key_features:
         'Controlled studio reflections, accurate material swatches, interactive-render polish',
       creative_brief:
@@ -157,13 +165,13 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'anime, 2d',
     style: {
       aesthetic: 'High end animation',
-      form_and_line: 'Soft shapes',
-      color_palette: 'Vibrant, cinematic, storybook saturation',
-      lighting_setup: 'Artistic control, per-light AOVs',
-      material_texture: 'Stylized realism, feature-animation material pipeline',
-      render_quality: 'Disney/Pixar family feature animation, heartfelt, timeless',
-      spatial_distortion: 'Squash and stretch',
-      atmosphere: 'Magical, emotional resonance, family-feature warmth',
+      subject_treatment: 'Soft shapes',
+      color_and_tone: 'Vibrant, cinematic, storybook saturation',
+      lighting_and_shadow: 'Artistic control, per-light AOVs',
+      texture_and_material: 'Stylized realism, feature-animation material pipeline',
+      camera_and_composition: 'Squash and stretch',
+      atmosphere_and_mood: 'Magical, emotional resonance, family-feature warmth',
+      rendering_and_quality: 'Disney/Pixar family feature animation, heartfelt, timeless',
       key_features: 'Subsurface scattering, deep compositing',
       creative_brief:
         'Render the input with feature-animation warmth: soft shapes, stylized-real material response, subsurface edge glow, squash-and-stretch elasticity and deep-composited light control. Preserve Pixar/RenderMan emotional polish without requiring characters, skin, fabric, story pose or family-film setup.',
@@ -176,13 +184,13 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'textured, low poly',
     style: {
       aesthetic: 'Digital clay sculpt',
-      form_and_line: 'Matcap shader',
-      color_palette: 'Grey or Red wax, clay brown',
-      lighting_setup: 'Rim light, sculpting-studio setup',
-      material_texture: 'Clay strokes, matcap highlights',
-      render_quality: 'High poly model, sculpted detail',
-      spatial_distortion: 'Sculptural anatomy optional',
-      atmosphere: 'Artistic, raw, hands-on feel',
+      subject_treatment: 'Matcap shader',
+      color_and_tone: 'Grey or Red wax, clay brown',
+      lighting_and_shadow: 'Rim light, sculpting-studio setup',
+      texture_and_material: 'Clay strokes, matcap highlights',
+      camera_and_composition: 'Sculptural anatomy optional',
+      atmosphere_and_mood: 'Artistic, raw, hands-on feel',
+      rendering_and_quality: 'High poly model, sculpted detail',
       key_features: 'Matcap material, dynamesh topology',
       creative_brief:
         'Treat the input as a ZBrush digital-clay sculpt: matcap highlights, dynamesh topology, visible stylus pressure, wax/clay monochrome and raw high-poly form. Anatomy may emerge when relevant, but the preset should not require a body study, standing model or untextured character bust. Apply ZBrush Digital Clay Sculpt as a portable 3D/render style system over any input: preserve its renderer logic, material behavior, geometry language, lighting grammar, and production cues while avoiding a required character, vehicle, prop, environment, UI screen, product shot, or scene template.',
@@ -195,13 +203,14 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'mobile game',
     style: {
       aesthetic: 'High definition game engine',
-      form_and_line: 'Sharp',
-      color_palette: 'Post-processed, filmic tonemap',
-      lighting_setup: 'Volumetric fog, real-time GI',
-      material_texture: 'PBR materials, substance integrations',
-      render_quality: 'Game cinematic, cutscene-grade',
-      spatial_distortion: 'None',
-      atmosphere: 'Dynamic, interactive-feeling, cinematic real-time energy',
+      subject_treatment: 'Sharp',
+      color_and_tone: 'Post-processed, filmic tonemap',
+      lighting_and_shadow: 'Volumetric fog, real-time GI',
+      texture_and_material: 'PBR materials, substance integrations',
+      camera_and_composition:
+        'Lookdev camera for Unity HDRP High-End Game Pipeline: three-quarter or orthographic framing, clean silhouette read, material highlights, controlled depth, and vertical card composition.',
+      atmosphere_and_mood: 'Dynamic, interactive-feeling, cinematic real-time energy',
+      rendering_and_quality: 'Game cinematic, cutscene-grade',
       key_features: 'Lens flares, HDRP pipeline',
       creative_brief:
         'Apply Unity HDRP polish to the input: volumetric fog, filmic tonemapping, lens flares, real-time GI and Substance-style PBR texture integration. Keep cutscene-grade energy without requiring a player, loading screen, game world, level layout, or character action.',

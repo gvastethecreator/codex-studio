@@ -13,22 +13,22 @@ tags:
   - elemental-and-fx
 visualDna:
   aesthetic: Nickelodeon slime
-  form_and_line: Drips
-  color_palette: Neon Green
-  lighting_setup: Wet gloss
-  material_texture: Viscous liquid
-  render_quality: Gross, fun
-  spatial_distortion: Melting
-  atmosphere: Playful, sticky
+  subject_treatment: Drips
+  color_and_tone: Neon Green
+  lighting_and_shadow: Wet gloss
+  texture_and_material: Viscous liquid
+  camera_and_composition: Melting
+  atmosphere_and_mood: Playful, sticky
+  rendering_and_quality: Gross, fun
   key_features: Drips
   creative_brief: >-
-    Render the viscous theater of neon slime oozing in thick rivulets of impossible green, where surface tension pulls
-    the liquid into glossy drips and stretched membranes that catch wet highlights at every curve. The goo should feel
-    simultaneously gross and delightful, a contradiction of texture made spectacle in lurid color. Capture the
-    aesthetics of controlled mess, the sublime in the sticky and absurd. Use Slime/Goo as portable surface/render
-    behavior over any input: map its texture, light response, edge wear, color chemistry, and tactile rhythm onto the
-    subject instead of requiring a literal material sample, macro tile, wall, landscape, source object, or scene where
-    the material naturally appears.
+    Render the viscous theater of neon slime oozing in thick rivulets of impossible green, where surface
+    tension pulls the liquid into glossy drips and stretched membranes that catch wet highlights at every
+    curve. The goo should feel simultaneously gross and delightful, a contradiction of texture made spectacle
+    in lurid color. Capture the aesthetics of controlled mess, the sublime in the sticky and absurd. Use
+    Slime/Goo as portable surface/render behavior over any input: map its texture, light response, edge wear,
+    color chemistry, and tactile rhythm onto the subject instead of requiring a literal material sample, macro
+    tile, wall, landscape, source object, or scene where the material naturally appears.
 avoidRules:
   - solid
   - dry

@@ -13,19 +13,18 @@ tags:
   - fabric-and-texture-focus
 visualDna:
   aesthetic: Transparent plastic fashion, weather-ready futurism, clear-shell chic
-  form_and_line: Highlights, trans-seasonal trench, A-line volume, drawstring-waist cinch, hood-frame arc
-  color_palette: Clear, tint, optic-clear, smoked-grey, amber-tint, cyan, translucent-white, rose
-  lighting_setup: Reflective wet-surface glare, rain-streak catchlights, refraction highlights, overcast diffusion
-  material_texture: Clear vinyl, TPU film, heat-sealed seams, nylon webbing, rubberized zipper, transparent PVC
-  render_quality: Waterproof, modern, wet-weather editorial, transparent-tech sophistication
-  spatial_distortion: See-through
-  atmosphere: Wet, tech, downpour-preparedness, future-commute cool, clear-shell precision
+  subject_treatment: Highlights, trans-seasonal trench, A-line volume, drawstring-waist cinch, hood-frame arc
+  color_and_tone: Clear, tint, optic-clear, smoked-grey, amber-tint, cyan, translucent-white, rose
+  lighting_and_shadow: Reflective wet-surface glare, rain-streak catchlights, refraction highlights, overcast diffusion
+  texture_and_material: Clear vinyl, TPU film, heat-sealed seams, nylon webbing, rubberized zipper, transparent PVC
+  camera_and_composition: See-through
+  atmosphere_and_mood: Wet, tech, downpour-preparedness, future-commute cool, clear-shell precision
+  rendering_and_quality: Waterproof, modern, wet-weather editorial, transparent-tech sophistication
   key_features: Transparency, heat-sealed seams, layered visibility, rain droplets, reflective trim
   creative_brief: >-
-    Wrap the input in transparent plastic logic: clear TPU, heat-sealed seams,
-    layered visibility, refraction, rain beads, smoked tint and reflective trim.
-    Keep weather-ready futurism without requiring a raincoat wearer, streetlamp,
-    downpour scene or commute.
+    Wrap the input in transparent plastic logic: clear TPU, heat-sealed seams, layered visibility, refraction,
+    rain beads, smoked tint and reflective trim. Keep weather-ready futurism without requiring a raincoat
+    wearer, streetlamp, downpour scene or commute.
 avoidRules:
   - opaque
 assets:

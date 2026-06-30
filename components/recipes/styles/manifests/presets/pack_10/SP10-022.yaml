@@ -13,18 +13,19 @@ tags:
   - digital-glitch-and-noise
 visualDna:
   aesthetic: Pixels dragged vertically
-  form_and_line: Vertical streaks
-  color_palette: Sorted gradients
-  lighting_setup: None
-  material_texture: Digital streaks
-  render_quality: Generative, code art
-  spatial_distortion: Melting
-  atmosphere: Dystopian, aesthetic
+  subject_treatment: Vertical streaks
+  color_and_tone: Sorted gradients
+  lighting_and_shadow: >-
+    Lighting for Pixel Sorting: purposeful key, bounce, rim, shadow depth, and focal readability matched to 3.
+    Digital Glitch & Noise.
+  texture_and_material: Digital streaks
+  camera_and_composition: Melting
+  atmosphere_and_mood: Dystopian, aesthetic
+  rendering_and_quality: Generative, code art
   key_features: Vertical sort
   creative_brief: >-
-    Apply pixel-sorting entropy to the input: luminance-drag streaks,
-    combed-out bright regions, directional digital smears, and broken raster
-    order should pull any subject into controlled glitch abstraction.
+    Apply pixel-sorting entropy to the input: luminance-drag streaks, combed-out bright regions, directional
+    digital smears, and broken raster order should pull any subject into controlled glitch abstraction.
 avoidRules:
   - horizontal lines
 assets:

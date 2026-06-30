@@ -13,19 +13,23 @@ tags:
   - materials
 visualDna:
   aesthetic: Carved ice
-  form_and_line: Chiseled edges
-  color_palette: Clear, Blue tint, frosty translucence
-  lighting_setup: Refractive, ice-crystal dispersion
-  material_texture: Smooth, frosty, cold-surface
-  render_quality: Event, art, gala-tier sculpture
-  atmosphere: Cold, temporary, ephemeral beauty
+  subject_treatment: Chiseled edges
+  color_and_tone: Clear, Blue tint, frosty translucence
+  lighting_and_shadow: Refractive, ice-crystal dispersion
+  texture_and_material: Smooth, frosty, cold-surface
+  camera_and_composition: >-
+    Lookdev camera for Ice Sculpture: close three-quarter or macro material framing, strong highlight planes,
+    readable surface curvature, and controlled depth.
+  atmosphere_and_mood: Cold, temporary, ephemeral beauty
+  rendering_and_quality: Event, art, gala-tier sculpture
   key_features: Transparency, melt-edge detail
   creative_brief: >-
     Carve the input into ice-sculpture material: cold translucence, blue-tinted refraction, chiseled edges,
-    melt-softened corners and frosty dispersion. Preserve gala-tier ephemerality without forcing a literal sculpture or
-    event setting. Apply Ice Sculpture as a portable 3D/render style system over any input: preserve its renderer logic,
-    material behavior, geometry language, lighting grammar, and production cues while avoiding a required character,
-    vehicle, prop, environment, UI screen, product shot, or scene template.
+    melt-softened corners and frosty dispersion. Preserve gala-tier ephemerality without forcing a literal
+    sculpture or event setting. Apply Ice Sculpture as a portable 3D/render style system over any input:
+    preserve its renderer logic, material behavior, geometry language, lighting grammar, and production cues
+    while avoiding a required character, vehicle, prop, environment, UI screen, product shot, or scene
+    template.
 avoidRules:
   - warm
   - melted

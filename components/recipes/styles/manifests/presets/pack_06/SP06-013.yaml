@@ -13,19 +13,18 @@ tags:
   - traditional-painting
 visualDna:
   aesthetic: Retro 80s airbrush art
-  form_and_line: Soft gradients, no brush marks
-  color_palette: Chrome, neon, sunset
-  lighting_setup: Hyper-real, glossy
-  material_texture: Smooth, grainless
-  render_quality: Retrofuturist commercial airbrush polish with chrome-smooth gradients
-  spatial_distortion: Idealized forms
-  atmosphere: Retro, slick
+  subject_treatment: Soft gradients, no brush marks
+  color_and_tone: Chrome, neon, sunset
+  lighting_and_shadow: Hyper-real, glossy
+  texture_and_material: Smooth, grainless
+  camera_and_composition: Idealized forms
+  atmosphere_and_mood: Retro, slick
+  rendering_and_quality: Retrofuturist commercial airbrush polish with chrome-smooth gradients
   key_features: Smooth gradients
   creative_brief: >-
-    Apply 80s airbrush finish to any input: atomized gradients, chrome-smooth
-    highlights, vapor-soft transitions, glossy synthetic color, and retro
-    commercial glow. Keep frictionless fantasy without requiring pinups, cars,
-    chrome logos, sunset grids, or mall-poster compositions.
+    Apply 80s airbrush finish to any input: atomized gradients, chrome-smooth highlights, vapor-soft
+    transitions, glossy synthetic color, and retro commercial glow. Keep frictionless fantasy without
+    requiring pinups, cars, chrome logos, sunset grids, or mall-poster compositions.
 avoidRules:
   - photo
   - realistic
@@ -45,7 +44,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP06-013.webp
 attributes:
-  negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border
+  negativePrompt: >-
+    photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy,
+    watermark, text, signature, frame, border
 taxonomy:
   packId: pack_06
   packName: Essential Art Styles

@@ -13,15 +13,20 @@ tags:
   - tv-and-broadcast
 visualDna:
   aesthetic: Live sports broadcast
-  form_and_line: Scorebug graphic structure
-  color_palette: Saturated field green, team-color accents, sky blue
-  lighting_setup: Stadium lights, multi-source flood, uniform exposure
-  material_texture: HD slow-motion crispness, droplet-perfect detail
-  render_quality: Telephoto action, field-level compression, subject isolation
-  spatial_distortion: None
-  atmosphere: Exciting, live, roaring crowd, championship tension
+  subject_treatment: Scorebug graphic structure
+  color_and_tone: Saturated field green, team-color accents, sky blue
+  lighting_and_shadow: Stadium lights, multi-source flood, uniform exposure
+  texture_and_material: HD slow-motion crispness, droplet-perfect detail
+  camera_and_composition: >-
+    Camera language native to Sports Broadcast: genre-aware framing, lens character, focal hierarchy, motion
+    cue, and vertical style-card composition.
+  atmosphere_and_mood: Exciting, live, roaring crowd, championship tension
+  rendering_and_quality: Telephoto action, field-level compression, subject isolation
   key_features: Scorebug feel, replay wipe, telestrator circle
-  creative_brief: 'Sports broadcast style gives any subject live-game energy: saturated field color, stadium-like floodlight, telephoto compression, replay-wipe graphics, scorebug structure, and slow-motion crispness. Keep championship tension without requiring athletes, grass, crowd, scoreboards, or teams.'
+  creative_brief: >-
+    Sports broadcast style gives any subject live-game energy: saturated field color, stadium-like floodlight,
+    telephoto compression, replay-wipe graphics, scorebug structure, and slow-motion crispness. Keep
+    championship tension without requiring athletes, grass, crowd, scoreboards, or teams.
 avoidRules:
   - movie
 assets:

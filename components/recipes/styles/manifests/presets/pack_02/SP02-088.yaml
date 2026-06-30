@@ -12,16 +12,29 @@ tags:
   - cinematic-and-media
   - caricature-and-cartoon-styles
 visualDna:
-  aesthetic: Crude childhood nightmare-art, jagged triangle symbols, uneven circles, chaotic crayon scribbles, kindergarten fridge-gallery horror
-  form_and_line: Heavy greasy crayon pressure, wax-clogged paper grain, multiple angry coloring attempts, drawing-off-the-page energy
-  color_palette: Broken crayon colors, orange-purple-green chaos, heavy-handed single-pass coloring, mixed-brand crayon clash
-  lighting_setup: None, aggressive coloring regardless of light logic, pure expression over representation
-  material_texture: Construction-paper tooth, crayon wax smears, graphite pencil underdrawing, ripped-paper tension
-  render_quality: First-grade art class, refrigerator-door masterpiece, pure unfiltered expression, zero technique maximum soul
-  spatial_distortion: Wrong scale, mismatched parts, impossible attachment points, no perspective
-  atmosphere: Wild, unfiltered, pure-id creativity, beautifully terrible, wonderfully wrong
+  aesthetic: >-
+    Crude childhood nightmare-art, jagged triangle symbols, uneven circles, chaotic crayon scribbles,
+    kindergarten fridge-gallery horror
+  subject_treatment: >-
+    Heavy greasy crayon pressure, wax-clogged paper grain, multiple angry coloring attempts,
+    drawing-off-the-page energy
+  color_and_tone: >-
+    Broken crayon colors, orange-purple-green chaos, heavy-handed single-pass coloring, mixed-brand crayon
+    clash
+  lighting_and_shadow: >-
+    Expressionist color field with aggressive coloring regardless of light logic, pure expression over
+    representation
+  texture_and_material: Construction-paper tooth, crayon wax smears, graphite pencil underdrawing, ripped-paper tension
+  camera_and_composition: Wrong scale, mismatched parts, impossible attachment points, no perspective
+  atmosphere_and_mood: Wild, unfiltered, pure-id creativity, beautifully terrible, wonderfully wrong
+  rendering_and_quality: >-
+    First-grade art class, refrigerator-door masterpiece, pure unfiltered expression, zero technique maximum
+    soul
   key_features: Jagged triangle marks, uneven circles, scribble texture, construction-paper tooth, uncolored gaps
-  creative_brief: 'Render the input as crude crayon fear: heavy wax pressure, jagged triangle symbols, uneven circles, construction-paper tooth, uncolored gaps, and no perspective. Avoid requiring monsters, teeth, eyes, fur, claws, or bodies. The style should feel like pure childhood nightmare logic applied to any subject.'
+  creative_brief: >-
+    Render the input as crude crayon fear: heavy wax pressure, jagged triangle symbols, uneven circles,
+    construction-paper tooth, uncolored gaps, and no perspective. Avoid requiring monsters, teeth, eyes, fur,
+    claws, or bodies. The style should feel like pure childhood nightmare logic applied to any subject.
 avoidRules:
   - digital
   - smooth

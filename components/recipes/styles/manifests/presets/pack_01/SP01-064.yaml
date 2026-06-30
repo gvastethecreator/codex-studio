@@ -13,15 +13,20 @@ tags:
   - documentary-and-street
 visualDna:
   aesthetic: Concert-stage lighting
-  form_and_line: Silhouettes in beam fog
-  color_palette: Stage lights (Red/Blue)
-  lighting_setup: Beams, spots
-  material_texture: Fog, heat sheen, grain
-  render_quality: Loud live-event realism
-  spatial_distortion: None
-  atmosphere: Energetic, loud
+  subject_treatment: Silhouettes in beam fog
+  color_and_tone: Stage lights (Red/Blue)
+  lighting_and_shadow: Beams, spots
+  texture_and_material: Fog, heat sheen, grain
+  camera_and_composition: >-
+    Camera setup native to Concert Photography: lens choice, crop distance, depth of field, and focal
+    hierarchy support 4. Documentary And Street without generic framing.
+  atmosphere_and_mood: Energetic, loud
+  rendering_and_quality: Loud live-event realism
   key_features: Beam-and-fog energy
-  creative_brief: Concert photography translates any subject through red/blue stage beams, fog volume, hard spotlights, grainy darkness, and loud silhouette energy. Keep live-event intensity without requiring band, crowd hands, instruments, stage performers, or music venue.
+  creative_brief: >-
+    Concert photography translates any subject through red/blue stage beams, fog volume, hard spotlights,
+    grainy darkness, and loud silhouette energy. Keep live-event intensity without requiring band, crowd
+    hands, instruments, stage performers, or music venue.
 avoidRules:
   - quiet
   - bright

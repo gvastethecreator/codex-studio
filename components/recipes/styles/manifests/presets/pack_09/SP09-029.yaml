@@ -13,21 +13,22 @@ tags:
   - tactile-surfaces
 visualDna:
   aesthetic: Luxury cloth
-  form_and_line: Soft folds
-  color_palette: Deep Red or Blue
-  lighting_setup: Rim light sheen
-  material_texture: Fuzzy
-  render_quality: Royal, theater
-  spatial_distortion: Soft drape
-  atmosphere: Rich, soft
+  subject_treatment: Soft folds
+  color_and_tone: Deep Red or Blue
+  lighting_and_shadow: Rim light sheen
+  texture_and_material: Fuzzy
+  camera_and_composition: Soft drape
+  atmosphere_and_mood: Rich, soft
+  rendering_and_quality: Royal, theater
   key_features: Sheen on folds
   creative_brief: >-
-    Summon the deep luxury of velvet where piled fibers catch light at the crest of each soft fold, creating a landscape
-    of deep shadows and rich highlights that shift with the angle of view. The surface should feel like visual touch, a
-    textile that drinks light and returns it as color deepened by surrounding darkness. Render the sensuality of fabric
-    that seems to breathe. Use Velvet Fabric as portable surface/render behavior over any input: map its texture, light
-    response, edge wear, color chemistry, and tactile rhythm onto the subject instead of requiring a literal material
-    sample, macro tile, wall, landscape, source object, or scene where the material naturally appears.
+    Summon the deep luxury of velvet where piled fibers catch light at the crest of each soft fold, creating a
+    landscape of deep shadows and rich highlights that shift with the angle of view. The surface should feel
+    like visual touch, a textile that drinks light and returns it as color deepened by surrounding darkness.
+    Render the sensuality of fabric that seems to breathe. Use Velvet Fabric as portable surface/render
+    behavior over any input: map its texture, light response, edge wear, color chemistry, and tactile rhythm
+    onto the subject instead of requiring a literal material sample, macro tile, wall, landscape, source
+    object, or scene where the material naturally appears.
 avoidRules:
   - cotton
   - flat

@@ -12,17 +12,17 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'seapunk cyber-marina as a flat graphic digital-illustration card built around coral-like circuit pylons, divers, neon buoys, and wet boardwalk tech.',
-      form_and_line:
+      subject_treatment:
         'Terrain-specific silhouettes, waterline arcs, ice facets, salt grids, stilt structures, and wind-tensioned forms. Core composition uses coral pylons, divers, neon buoys, wet boardwalk, circuit reefs.',
-      color_palette: 'coral pink, aqua, deep blue-gray water, pearl white',
-      lighting_setup: 'underwater glow, buoy LEDs, wet deck reflections, sunset cyan',
-      material_texture:
+      color_and_tone: 'coral pink, aqua, deep blue-gray water, pearl white',
+      lighting_and_shadow: 'underwater glow, buoy LEDs, wet deck reflections, sunset cyan',
+      texture_and_material:
         'coral ceramic shapes, simple rope arcs, neoprene silhouettes, LED buoy dots, flat dark boardwalk planes',
-      render_quality:
-        'Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity, moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material simulation, or hyper-detail.',
-      spatial_distortion:
+      camera_and_composition:
         'Coasts, piers, marinas, glacier towns, salt flats, and swamps with strong environmental identity. Keep depth legible and avoid default hallway, aisle, or empty studio staging.',
-      atmosphere: 'playful, briny, luminous, technical',
+      atmosphere_and_mood: 'playful, briny, luminous, technical',
+      rendering_and_quality:
+        'Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity, moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material simulation, or hyper-detail.',
       key_features: 'coral pylons, divers, neon buoys, wet boardwalk, circuit reefs',
       creative_brief:
         'Seapunk with real marina function: one distinctive marina diver-technician protagonist, buoys, coral circuitry, and wet decks, not generic mermaid fantasy. Keep it representative through a compact working marina, coral-circuit pylons, diver/technician silhouettes, buoy dots, and circuit-reef arcs below the waterline. Favor flat graphic digital illustration, clean editorial illustration, cel-shaded poster art, gouache poster aesthetics, graphic-novel card art, or stylized animation-background art over realism, photoreal painterly realism, cinematic key art, scratchy print noise, or hyper-detailed concept art. Use few bold color/value zones, simplified brush planes, matte surfaces, low-to-moderate texture, large shapes, clean surfaces, shallow poster depth, and finish denoised with no excessive noise or ultra-fine detail.',
@@ -37,17 +37,17 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'submerged transit seapunk as a flat graphic digital-illustration card built around a tideglass subway platform where commuters move behind thick water windows and reef-lit tracks.',
-      form_and_line:
+      subject_treatment:
         'Terrain-specific silhouettes, waterline arcs, ice facets, salt grids, stilt structures, and wind-tensioned forms. Core composition uses tide windows, commuters, reef-lit tracks, wet tiles, pressure doors.',
-      color_palette: 'sea glass green, subway chrome, deep blue, safety orange',
-      lighting_setup: 'water-window caustics, platform strips, reef glow, train headlights',
-      material_texture:
+      color_and_tone: 'sea glass green, subway chrome, deep blue, safety orange',
+      lighting_and_shadow: 'water-window caustics, platform strips, reef glow, train headlights',
+      texture_and_material:
         'thick glass color blocks, wet tile planes, simple rail strip, seaweed shadow shapes, rubber boot silhouettes',
-      render_quality:
-        'Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity, moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material simulation, or hyper-detail.',
-      spatial_distortion:
+      camera_and_composition:
         'Coasts, piers, marinas, glacier towns, salt flats, and swamps with strong environmental identity. Keep depth legible and avoid default hallway, aisle, or empty studio staging.',
-      atmosphere: 'surreal, public, aquatic, contained',
+      atmosphere_and_mood: 'surreal, public, aquatic, contained',
+      rendering_and_quality:
+        'Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity, moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material simulation, or hyper-detail.',
       key_features: 'tide windows, commuters, reef-lit tracks, wet tiles, pressure doors',
       creative_brief:
         'Make aquatic transit believable through one tideglass commuter or transit keeper protagonist in public space, not concept art of an empty tunnel. Keep it representative through a cropped platform, thick tideglass water window, commuter silhouettes, reef-lit track strip, pressure doors, and broad tile planes. Favor flat graphic digital illustration, clean editorial illustration, cel-shaded poster art, gouache poster aesthetics, graphic-novel card art, or stylized animation-background art over realism, photoreal painterly realism, cinematic key art, scratchy print noise, or hyper-detailed concept art. Use few bold color/value zones, simplified brush planes, matte surfaces, low-to-moderate texture, large shapes, clean surfaces, shallow poster depth, and finish denoised with no excessive noise or ultra-fine detail.',
@@ -62,17 +62,17 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'playful seapunk arcade as a flat graphic digital-illustration card built around a coastal arcade boardwalk tangled with kelp cables, abstract neon fish lights, players, and salt-stained cabinets.',
-      form_and_line:
+      subject_treatment:
         'Terrain-specific silhouettes, waterline arcs, ice facets, salt grids, stilt structures, and wind-tensioned forms. Core composition uses kelp cables, arcade cabinets, players, neon fish shapes, boardwalk planks.',
-      color_palette: 'kelp green, arcade pink, salt white, ocean blue',
-      lighting_setup: 'arcade neon, sunset bounce, cabinet glow, wet-board reflections',
-      material_texture:
+      color_and_tone: 'kelp green, arcade pink, salt white, ocean blue',
+      lighting_and_shadow: 'arcade neon, sunset bounce, cabinet glow, wet-board reflections',
+      texture_and_material:
         'arcade plastic color blocks, broad kelp cable arcs, salt crust marks, painted wood planes, rain-jacket silhouettes',
-      render_quality:
-        'Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity, moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material simulation, or hyper-detail.',
-      spatial_distortion:
+      camera_and_composition:
         'Coasts, piers, marinas, glacier towns, salt flats, and swamps with strong environmental identity. Keep depth legible and avoid default hallway, aisle, or empty studio staging.',
-      atmosphere: 'fun, strange, salty, energetic',
+      atmosphere_and_mood: 'fun, strange, salty, energetic',
+      rendering_and_quality:
+        'Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity, moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material simulation, or hyper-detail.',
       key_features: 'kelp cables, arcade cabinets, players, neon fish shapes, boardwalk planks',
       creative_brief:
         'A seapunk entertainment preset: one boardwalk arcade runner/player protagonist, machines, and kelp tech, not object-only cabinet still life. Keep it representative through a short coastal boardwalk corner, player silhouettes, chunky arcade cabinet shapes, broad kelp-cable arcs, and abstract neon fish lights without text. Favor flat graphic digital illustration, clean editorial illustration, cel-shaded poster art, gouache poster aesthetics, graphic-novel card art, or stylized animation-background art over realism, photoreal painterly realism, cinematic key art, scratchy print noise, or hyper-detailed concept art. Use few bold color/value zones, simplified brush planes, matte surfaces, low-to-moderate texture, large shapes, clean surfaces, shallow poster depth, and finish denoised with no excessive noise or ultra-fine detail.',
@@ -87,17 +87,17 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'shell-built civic seapunk as a flat graphic digital-illustration card built around a metro pier grown from shell-like panels, ticket gates, ferry crowds, and tidal service machines.',
-      form_and_line:
+      subject_treatment:
         'Terrain-specific silhouettes, waterline arcs, ice facets, salt grids, stilt structures, and wind-tensioned forms. Core composition uses shell panels, ferry crowd, service machines, tidal gates, wet pier geometry.',
-      color_palette: 'shell ivory, teal, rust orange, deep tide gray',
-      lighting_setup: 'pier canopy light, tidal reflections, ticket-gate LEDs',
-      material_texture:
+      color_and_tone: 'shell ivory, teal, rust orange, deep tide gray',
+      lighting_and_shadow: 'pier canopy light, tidal reflections, ticket-gate LEDs',
+      texture_and_material:
         'shell ceramic panels, salt metal blocks, simple ferry rope arcs, wet concrete planes, blank enamel shapes',
-      render_quality:
-        'Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity, moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material simulation, or hyper-detail.',
-      spatial_distortion:
+      camera_and_composition:
         'Coasts, piers, marinas, glacier towns, salt flats, and swamps with strong environmental identity. Keep depth legible and avoid default hallway, aisle, or empty studio staging.',
-      atmosphere: 'busy, civic, brackish, architectural',
+      atmosphere_and_mood: 'busy, civic, brackish, architectural',
+      rendering_and_quality:
+        'Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity, moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material simulation, or hyper-detail.',
       key_features: 'shell panels, ferry crowd, service machines, tidal gates, wet pier geometry',
       creative_brief:
         'Make seapunk civic and transport-heavy: one ferry-pier transit keeper or commuter protagonist framed by shell architecture and machines, not fantasy palace shells. Keep it representative through ferry-pier entrance, shell canopy panels, simple ticket-gate blocks, ferry crowd silhouettes, and tidal service machines. Favor flat graphic digital illustration, clean editorial illustration, cel-shaded poster art, gouache poster aesthetics, graphic-novel card art, or stylized animation-background art over realism, photoreal painterly realism, cinematic key art, scratchy print noise, or hyper-detailed concept art. Use few bold color/value zones, simplified brush planes, matte surfaces, low-to-moderate texture, large shapes, clean surfaces, shallow poster depth, and finish denoised with no excessive noise or ultra-fine detail.',
@@ -112,17 +112,17 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'icepunk harbor settlement as a flat graphic digital-illustration card built around an ice harbor town with lantern-lit breakers, insulated crews, sled machines, and frozen docks.',
-      form_and_line:
+      subject_treatment:
         'Terrain-specific silhouettes, waterline arcs, ice facets, salt grids, stilt structures, and wind-tensioned forms. Core composition uses icebreakers, lanterns, insulated crews, sled machines, frozen docks.',
-      color_palette: 'ice blue, lantern amber, navy wool, rusted red',
-      lighting_setup: 'lantern warmth in blue cold, snow bounce, aurora hints',
-      material_texture:
+      color_and_tone: 'ice blue, lantern amber, navy wool, rusted red',
+      lighting_and_shadow: 'lantern warmth in blue cold, snow bounce, aurora hints',
+      texture_and_material:
         'ice slabs, wool parka silhouettes, rust metal blocks, frosted glass shapes, simple rope arcs',
-      render_quality:
-        'Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity, moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material simulation, or hyper-detail.',
-      spatial_distortion:
+      camera_and_composition:
         'Coasts, piers, marinas, glacier towns, salt flats, and swamps with strong environmental identity. Keep depth legible and avoid default hallway, aisle, or empty studio staging.',
-      atmosphere: 'cold, communal, stubborn, warm-hearted',
+      atmosphere_and_mood: 'cold, communal, stubborn, warm-hearted',
+      rendering_and_quality:
+        'Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity, moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material simulation, or hyper-detail.',
       key_features: 'icebreakers, lanterns, insulated crews, sled machines, frozen docks',
       creative_brief:
         'Icepunk should contrast cold survival with human warmth: harbor work, lanterns, crews, and machines, not empty glaciers. Keep it representative through compact frozen harbor town, plain blocky icebreaker silhouette, warm lantern clusters, insulated crew figures in plain coats, sled-machine shape, and frozen dock slabs. Favor flat graphic digital illustration, clean editorial illustration, cel-shaded poster art, gouache poster aesthetics, graphic-novel card art, or stylized animation-background art over realism, photoreal painterly realism, cinematic key art, scratchy print noise, or hyper-detailed concept art. Use few bold color/value zones, simplified brush planes, matte surfaces, low-to-moderate texture, large shapes, clean surfaces, shallow poster depth, and finish denoised with no excessive noise or ultra-fine detail.',
@@ -137,17 +137,17 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'icepunk data refuge as a flat graphic digital-illustration card built around a glacier-cooled server refuge with technicians, frost vents, cable braids, and blue-white silence.',
-      form_and_line:
+      subject_treatment:
         'Terrain-specific silhouettes, waterline arcs, ice facets, salt grids, stilt structures, and wind-tensioned forms. Core composition uses server racks, frost vents, technician robes, cable braids, ice chambers.',
-      color_palette: 'glacier white, cobalt, black cable, silver frost',
-      lighting_setup: 'cold server glow, narrow skylight, frost haze, tiny amber human light',
-      material_texture:
+      color_and_tone: 'glacier white, cobalt, black cable, silver frost',
+      lighting_and_shadow: 'cold server glow, narrow skylight, frost haze, tiny amber human light',
+      texture_and_material:
         'ice wall planes, sparse cable braids, brushed metal blocks, wool coat silhouettes, simple frost crystals',
-      render_quality:
-        'Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity, moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material simulation, or hyper-detail.',
-      spatial_distortion:
+      camera_and_composition:
         'Coasts, piers, marinas, glacier towns, salt flats, and swamps with strong environmental identity. Keep depth legible and avoid default hallway, aisle, or empty studio staging.',
-      atmosphere: 'silent, disciplined, remote, technological',
+      atmosphere_and_mood: 'silent, disciplined, remote, technological',
+      rendering_and_quality:
+        'Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity, moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material simulation, or hyper-detail.',
       key_features: 'server racks, frost vents, technician robes, cable braids, ice chambers',
       creative_brief:
         'Treat the monastery as mood not religion literalism: cold data refuge, people maintaining machines, and glacial calm. Keep it representative through cropped interior data-refuge alcove, broad visible plain server-rack faces as dark vented rectangles, frost vents, technician robe/coat silhouette maintaining a rack, sparse cable braids, angular ice planes, and a tiny amber human light. Favor flat graphic digital illustration, clean editorial illustration, cel-shaded poster art, gouache poster aesthetics, graphic-novel card art, or stylized animation-background art over realism, photoreal painterly realism, cinematic key art, scratchy print noise, or hyper-detailed concept art. Use few bold color/value zones, simplified brush planes, matte surfaces, low-to-moderate texture, large shapes, clean surfaces, shallow poster depth, and finish denoised with no excessive noise or ultra-fine detail.',
@@ -162,17 +162,17 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'saltpunk wind industry as a flat graphic digital-illustration card built around a salt-flat foundry using kite turbines, mirrored pans, mineral carts, and sun-armored workers.',
-      form_and_line:
+      subject_treatment:
         'Terrain-specific silhouettes, waterline arcs, ice facets, salt grids, stilt structures, and wind-tensioned forms. Core composition uses kite turbines, salt pans, workers, mineral carts, horizon lines.',
-      color_palette: 'salt white, sky blue, rust, black shadow',
-      lighting_setup: 'blinding sun, mirrored bounce, hard kite shadows, heat shimmer',
-      material_texture:
+      color_and_tone: 'salt white, sky blue, rust, black shadow',
+      lighting_and_shadow: 'blinding sun, mirrored bounce, hard kite shadows, heat shimmer',
+      texture_and_material:
         'salt-crust planes, canvas kite triangles, mineral cart blocks, plain sun armor, rusted frame shapes',
-      render_quality:
-        'Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity, moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material simulation, or hyper-detail.',
-      spatial_distortion:
+      camera_and_composition:
         'Coasts, piers, marinas, glacier towns, salt flats, and swamps with strong environmental identity. Keep depth legible and avoid default hallway, aisle, or empty studio staging.',
-      atmosphere: 'bright, severe, inventive, wind-driven',
+      atmosphere_and_mood: 'bright, severe, inventive, wind-driven',
+      rendering_and_quality:
+        'Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity, moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material simulation, or hyper-detail.',
       key_features: 'kite turbines, salt pans, workers, mineral carts, horizon lines',
       creative_brief:
         'Terrain punk from salt and wind: vast brightness, kite machines, and labor, avoiding desert oasis or generic solar farms. Keep it representative through kite-turbine triangles, mineral cart, worker silhouettes, mirrored salt pans, rust frame blocks, and hard black kite shadows. Favor flat graphic digital illustration, clean editorial illustration, cel-shaded poster art, gouache poster aesthetics, graphic-novel card art, or stylized animation-background art over realism, photoreal painterly realism, cinematic key art, scratchy print noise, or hyper-detailed concept art. Use few bold color/value zones, simplified brush planes, matte surfaces, low-to-moderate texture, large shapes, clean surfaces, shallow poster depth, and finish denoised with no excessive noise or ultra-fine detail.',
@@ -187,17 +187,17 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'swamppunk signal settlement as a flat graphic digital-illustration card built around a swamp stilt settlement with radio antennas, boat repair, moss, lanterns, and mud-splashed operators.',
-      form_and_line:
+      subject_treatment:
         'Terrain-specific silhouettes, waterline arcs, ice facets, salt grids, stilt structures, and wind-tensioned forms. Core composition uses stilt houses, radio antennas, boat repair, moss drape, lantern operators.',
-      color_palette: 'moss green, muddy brown, lantern orange, radio black',
-      lighting_setup: 'humid lantern glow, green water reflections, dusk haze',
-      material_texture:
+      color_and_tone: 'moss green, muddy brown, lantern orange, radio black',
+      lighting_and_shadow: 'humid lantern glow, green water reflections, dusk haze',
+      texture_and_material:
         'wet wood planes, moss drape shapes, sparse radio wire arcs, boat-paint blocks, rubber boot silhouettes, flat mud planes',
-      render_quality:
-        'Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity, moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material simulation, or hyper-detail.',
-      spatial_distortion:
+      camera_and_composition:
         'Coasts, piers, marinas, glacier towns, salt flats, and swamps with strong environmental identity. Keep depth legible and avoid default hallway, aisle, or empty studio staging.',
-      atmosphere: 'humid, secretive, local, resilient',
+      atmosphere_and_mood: 'humid, secretive, local, resilient',
+      rendering_and_quality:
+        'Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity, moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material simulation, or hyper-detail.',
       key_features: 'stilt houses, radio antennas, boat repair, moss drape, lantern operators',
       creative_brief:
         'Swamppunk as signal and survival: stiltworks, radios, boats, and people, not fantasy swamp corridor. Keep it representative through compact stilt repair platform, plain radio mast, boat-repair operators, half-repaired skiff, moss drape, sparse radio wires, and lantern dots as support only. Favor flat graphic digital illustration, clean editorial illustration, cel-shaded poster art, gouache poster aesthetics, graphic-novel card art, or stylized animation-background art over realism, photoreal painterly realism, cinematic key art, scratchy print noise, or hyper-detailed concept art. Use few bold color/value zones, simplified brush planes, matte surfaces, low-to-moderate texture, large shapes, clean surfaces, shallow poster depth, and finish denoised with no excessive noise or ultra-fine detail.',

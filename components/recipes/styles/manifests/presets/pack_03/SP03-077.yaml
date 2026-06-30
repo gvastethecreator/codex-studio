@@ -13,19 +13,18 @@ tags:
   - 3d-styles
 visualDna:
   aesthetic: Toy-brick construction, stud-and-tube logic
-  form_and_line: Studs
-  color_palette: Plastic primary colors, brick-bright palette
-  lighting_setup: Plastic gloss, animated-film lighting
-  material_texture: Plastic, fingerprints, ABS material
-  render_quality: Lego Movie toy-brick feature energy, everything is awesome
-  spatial_distortion: Brick steps
-  atmosphere: Playful, constructive, brick-by-brick magic
+  subject_treatment: Studs
+  color_and_tone: Plastic primary colors, brick-bright palette
+  lighting_and_shadow: Plastic gloss, animated-film lighting
+  texture_and_material: Plastic, fingerprints, ABS material
+  camera_and_composition: Brick steps
+  atmosphere_and_mood: Playful, constructive, brick-by-brick magic
+  rendering_and_quality: Lego Movie toy-brick feature energy, everything is awesome
   key_features: Studs on top, clutch power
   creative_brief: >-
-    Convert the input into toy-brick construction: studs, clutch-power seams,
-    ABS gloss, primary-color modules and stepped approximations of curves. Keep
-    Lego Movie feature energy without forcing a brick world, playset or specific
-    setup.
+    Convert the input into toy-brick construction: studs, clutch-power seams, ABS gloss, primary-color modules
+    and stepped approximations of curves. Keep Lego Movie feature energy without forcing a brick world,
+    playset or specific setup.
 avoidRules:
   - smooth
   - melted

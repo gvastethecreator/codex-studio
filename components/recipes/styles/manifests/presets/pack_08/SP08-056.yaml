@@ -13,20 +13,21 @@ tags:
   - fabric-and-texture-focus
 visualDna:
   aesthetic: Silk couture minimalism, liquid-light elegance, soft-luxury sheen
-  form_and_line: Fluid drape, bias-cut flow, cowl-fold waterfall, ribbon-thin line, floor-grazing sweep
-  color_palette: Champagne, Red, oyster, rose-quartz, midnight-navy, ivory, blush, emerald
-  lighting_setup: Soft sheen, candlelight ripple, warm silk glow, low-contrast specular roll
-  material_texture: Smooth silk charmeuse, liquid satin, crepe de chine, sand-washed silk, hammered satin, silk georgette
-  render_quality: Elegant, soft, editorial luxury, light-caught-on-fabric poetry
-  spatial_distortion: None
-  atmosphere: Delicate, expensive, champagne-bubble softness, liquid-fabric luxury
+  subject_treatment: Fluid drape, bias-cut flow, cowl-fold waterfall, ribbon-thin line, floor-grazing sweep
+  color_and_tone: Champagne, Red, oyster, rose-quartz, midnight-navy, ivory, blush, emerald
+  lighting_and_shadow: Soft sheen, candlelight ripple, warm silk glow, low-contrast specular roll
+  texture_and_material: Smooth silk charmeuse, liquid satin, crepe de chine, sand-washed silk, hammered satin, silk georgette
+  camera_and_composition: >-
+    Compose for Liquid Satin Drape using its key spatial cues: Drape folds, bias-cut flow, cowl folds,
+    ribbon-thin detailing, liquid-sheen movement.
+  atmosphere_and_mood: Delicate, expensive, champagne-bubble softness, liquid-fabric luxury
+  rendering_and_quality: Elegant, soft, editorial luxury, light-caught-on-fabric poetry
   key_features: Drape folds, bias-cut flow, cowl folds, ribbon-thin detailing, liquid-sheen movement
   creative_brief: >-
-    Pour silk/satin behavior over the input: charmeuse shine, bias-cut flow,
-    cowl folds, hammered satin ripples and champagne specular highlights.
-    Keep intimate luxury as mood only; avoid bedroom scenes, body cling,
-    slip-dress framing or portrait-first glamour. Preserve liquid highlight
-    roll, non-clinging drape, trim cues and soft-luxury material attitude.
+    Pour silk/satin behavior over the input: charmeuse shine, bias-cut flow, cowl folds, hammered satin
+    ripples and champagne specular highlights. Keep intimate luxury as mood only; avoid bedroom scenes, body
+    cling, slip-dress framing or portrait-first glamour. Preserve liquid highlight roll, non-clinging drape,
+    trim cues and soft-luxury material attitude.
 avoidRules:
   - rough
   - matte

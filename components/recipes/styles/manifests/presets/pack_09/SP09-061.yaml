@@ -13,15 +13,19 @@ tags:
   - elemental-and-fx
 visualDna:
   aesthetic: Heavy floor fog
-  form_and_line: Rolling clouds
-  color_palette: White
-  lighting_setup: Soft
-  material_texture: Dense gas
-  render_quality: Low, cold, theatrical
-  spatial_distortion: Heavy gas
-  atmosphere: Eerie, stage
+  subject_treatment: Rolling clouds
+  color_and_tone: White
+  lighting_and_shadow: Soft
+  texture_and_material: Dense gas
+  camera_and_composition: Heavy gas
+  atmosphere_and_mood: Eerie, stage
+  rendering_and_quality: Low, cold, theatrical
   key_features: Low lying
-  creative_brief: 'Apply dry-ice fog as low cold atmosphere around the input: dense white clouds that pool and pour like liquid, gravity-hugging volume, soft theatrical light, and liminal concealment near the base of forms. If floor, stage, ritual, or object base exists, make fog gather there; otherwise use low-lying vapor to ground the subject without requiring a theatre scene.'
+  creative_brief: >-
+    Apply dry-ice fog as low cold atmosphere around the input: dense white clouds that pool and pour like
+    liquid, gravity-hugging volume, soft theatrical light, and liminal concealment near the base of forms. If
+    floor, stage, ritual, or object base exists, make fog gather there; otherwise use low-lying vapor to
+    ground the subject without requiring a theatre scene.
 avoidRules:
   - steam
   - hot

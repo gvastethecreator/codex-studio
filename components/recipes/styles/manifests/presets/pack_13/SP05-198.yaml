@@ -12,19 +12,26 @@ tags:
   - anime-character-and-lifestyle
   - shojo-magical-girl-and-visionary-classics
 visualDna:
-  aesthetic: Otaku eccentricity, fashion makeovers, jellyfish softness, outsider-sisterhood warmth, frills and insecurity rendered with bright empathy
-  form_and_line: Accessory-heavy contour play, frill-density line clustering, jellyfish-curvature motifs, and makeover-before/after silhouette contrast
-  color_palette: Aquarium cyan, translucent lilac, bubblegum pink accents, dusty apartment neutrals, and glossy fashion highlights
-  lighting_setup: Window-soft fill, fitting-room-like sparkle, and selective glamour highlights over cozy clutter bases
-  material_texture: Synthetic lace, beadwork, layered fabric trims, posters and print textures, and glossy cosmetic surface cues
-  render_quality: Empathetic makeover-shojo rendering with quirky-density detail and soft bioluminescent color harmony
-  spatial_distortion: Soft underwater-like drift in framing transitions to suggest emotional emergence
-  atmosphere: Eccentric, sweet, transformative, cozy
+  aesthetic: >-
+    Otaku eccentricity, fashion makeovers, jellyfish softness, outsider-sisterhood warmth, frills and
+    insecurity rendered with bright empathy
+  subject_treatment: >-
+    Accessory-heavy contour play, frill-density line clustering, jellyfish-curvature motifs, and
+    makeover-before/after silhouette contrast
+  color_and_tone: >-
+    Aquarium cyan, translucent lilac, bubblegum pink accents, dusty apartment neutrals, and glossy fashion
+    highlights
+  lighting_and_shadow: Window-soft fill, fitting-room-like sparkle, and selective glamour highlights over cozy clutter bases
+  texture_and_material: >-
+    Synthetic lace, beadwork, layered fabric trims, posters and print textures, and glossy cosmetic surface
+    cues
+  camera_and_composition: Soft underwater-like drift in framing transitions to suggest emotional emergence
+  atmosphere_and_mood: Eccentric, sweet, transformative, cozy
+  rendering_and_quality: Empathetic makeover-shojo rendering with quirky-density detail and soft bioluminescent color harmony
   key_features: Jellyfish motifs, frilly fabric detail, cozy clutter density, makeover contrasts, sisterhood group energy
   creative_brief: >-
-    Preserve jelly-color makeover grammar as a reusable style language:
-    otaku-clutter warmth, aquatic-soft chroma cues, and fashion-identity
-    transformation contrast should stay coherent across subjects.
+    Preserve jelly-color makeover grammar as a reusable style language: otaku-clutter warmth, aquatic-soft
+    chroma cues, and fashion-identity transformation contrast should stay coherent across subjects.
 avoidRules:
   - realistic
   - 3d render
@@ -41,7 +48,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-198.webp
 attributes:
-  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
+  negativePrompt: >-
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts,
+    watermark, text, signature
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle

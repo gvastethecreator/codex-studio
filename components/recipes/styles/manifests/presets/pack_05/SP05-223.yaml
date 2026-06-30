@@ -13,34 +13,34 @@ tags:
   - mecha-and-cyberpunk
 visualDna:
   aesthetic: >-
-    Retro cyber-noir anime armor glamour with segmented articulation, analog-tech voltage,
-    aggressive chrome femininity, and precision ornament
-  form_and_line: >-
-    Hard contour inking, segmented armor seam logic, angular silhouette blocking, technical hatch
-    accents, high-clarity line discipline
-  color_palette: >-
-    Acid cyan-magenta duality, graphite neutrals, electric violet sparks, cold steel midtones,
-    selective hot-pink highlights
-  lighting_setup: >-
-    High-contrast practical glow with hard rim separation, tube-light specular streaks, and
-    controlled reflective bounce
-  material_texture: >-
-    Brushed alloy plates, high-gloss polymer inserts, carbon weave panels, clean mechatronic seams,
-    mirrored trim flashes
-  render_quality: >-
-    Premium cel-anime mecha finish with dense micro-detail, crisp compositing, and polished
-    techno-surface readability
-  spatial_distortion: >-
-    Dynamic foreshortening with engineered silhouette priority, diagonal velocity framing, technical
-    depth layering
-  atmosphere: Sleek, high-voltage, assertive, dangerous, stylishly militant
+    Retro cyber-noir anime armor glamour with segmented articulation, analog-tech voltage, aggressive chrome
+    femininity, and precision ornament
+  subject_treatment: >-
+    Hard contour inking, segmented armor seam logic, angular silhouette blocking, technical hatch accents,
+    high-clarity line discipline
+  color_and_tone: >-
+    Acid cyan-magenta duality, graphite neutrals, electric violet sparks, cold steel midtones, selective
+    hot-pink highlights
+  lighting_and_shadow: >-
+    High-contrast practical glow with hard rim separation, tube-light specular streaks, and controlled
+    reflective bounce
+  texture_and_material: >-
+    Brushed alloy plates, high-gloss polymer inserts, carbon weave panels, clean mechatronic seams, mirrored
+    trim flashes
+  camera_and_composition: >-
+    Dynamic foreshortening with engineered silhouette priority, diagonal velocity framing, technical depth
+    layering
+  atmosphere_and_mood: Sleek, high-voltage, assertive, dangerous, stylishly militant
+  rendering_and_quality: >-
+    Premium cel-anime mecha finish with dense micro-detail, crisp compositing, and polished techno-surface
+    readability
   key_features: >-
-    Segmented armor grammar, specular edge choreography, neon-metal contrast, analog glamour,
-    abrasion detail, and mechanical elegance
+    Segmented armor grammar, specular edge choreography, neon-metal contrast, analog glamour, abrasion detail,
+    and mechanical elegance
   creative_brief: >-
-    Use Bubblegum Crisis as style anchor for armored chrome noir elegance. Any prompt should read
-    through segmented shine, neon voltage, analog grit, and precision linework. Power suits, hunts,
-    gangs, alleys, and fixed cyberpunk settings are optional.
+    Use Bubblegum Crisis as style anchor for armored chrome noir elegance. Any prompt should read through
+    segmented shine, neon voltage, analog grit, and precision linework. Power suits, hunts, gangs, alleys, and
+    fixed cyberpunk settings are optional.
 avoidRules:
   - realistic
   - 3d render
@@ -58,8 +58,8 @@ assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-223.webp
 attributes:
   negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, text, signature
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts,
+    watermark, text, signature
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds

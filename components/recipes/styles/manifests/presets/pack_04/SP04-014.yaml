@@ -13,18 +13,18 @@ tags:
   - comic-book-styles
 visualDna:
   aesthetic: Retro pixel-comic language rooted in 16-bit sprite constraints
-  form_and_line: Pixel-stepped contours with strict tile/grid alignment
-  color_palette: Limited indexed palette with controlled dithering ramps
-  lighting_setup: Baked sprite shading via cluster placement and dither gradients
-  material_texture: Explicit pixel grid with intentional aliasing
-  render_quality: Crisp low-resolution sprite craft with compositional economy
-  spatial_distortion: Chunked perspective and proportion adapted to sprite readability
-  atmosphere: Nostalgic, arcade-coded, playful
+  subject_treatment: Pixel-stepped contours with strict tile/grid alignment
+  color_and_tone: Limited indexed palette with controlled dithering ramps
+  lighting_and_shadow: Baked sprite shading via cluster placement and dither gradients
+  texture_and_material: Explicit pixel grid with intentional aliasing
+  camera_and_composition: Chunked perspective and proportion adapted to sprite readability
+  atmosphere_and_mood: Nostalgic, arcade-coded, playful
+  rendering_and_quality: Crisp low-resolution sprite craft with compositional economy
   key_features: Palette discipline, cluster logic, hard-edge silhouettes, frame-efficient detail
   creative_brief: >-
-    Apply retro pixel-comic constraints to any input: indexed palette economy, tile-grid alignment,
-    cluster logic, hard aliasing, and deliberate dithering should drive readability without
-    requiring game sprites, combat frames, platforms, UI, characters, or fixed 16-bit scenes.
+    Apply retro pixel-comic constraints to any input: indexed palette economy, tile-grid alignment, cluster
+    logic, hard aliasing, and deliberate dithering should drive readability without requiring game sprites,
+    combat frames, platforms, UI, characters, or fixed 16-bit scenes.
 avoidRules:
   - vector
   - smooth

@@ -12,16 +12,36 @@ tags:
   - essential-art-styles
   - retro-game-visual-systems
 visualDna:
-  aesthetic: Glowing vector cathode-ray lines, Asteroids, Tempest and Battlezone as vector-display anchors, pure glowing line art on infinite black void, 1979 arcade cabinet vector display, electron-beam drawing in real-time
-  form_and_line: Pure glowing geometric strokes, wireframe polygon meshes, no filled surfaces, beam-drawn contour lines only, vector-coordinate precision
-  color_palette: Phosphor green on void black, occasional amber-orange screens, blue-white vector glow, single-color per display, no RGB mixing
-  lighting_setup: Self-illuminated phosphor lines, electron-beam persistence glow, brighter at stroke starts, dimming at stroke ends
-  material_texture: CRT phosphor glow, analog vector display bloom, line-intersection brightening, phosphor-persistence afterglow, no pixels just beams
-  render_quality: Vector arcade display, analog CRT beauty, electron-beam line art, retro-electronic aesthetic
-  spatial_distortion: Vector-perspective wireframe grids, rotating coordinate structures, infinite blank black space, no occlusion just transparency
-  atmosphere: Retro-futuristic, electronic, arcade-darkness, analog-computing soul, early-CGI wonder, abstract voltage theater
-  key_features: Glowing vector lines on black, wireframe-only geometry, phosphor bloom at line intersections, no filled surfaces, raster-scan absent
-  creative_brief: Pure electron beams sweep abstract geometry onto phosphor glass, brighter where lines cross and softer where they fade. Any subject becomes transparent vector coordinates, voltage translated into luminous contour instead of surface.
+  aesthetic: >-
+    Glowing vector cathode-ray lines, Asteroids, Tempest and Battlezone as vector-display anchors, pure
+    glowing line art on infinite black void, 1979 arcade cabinet vector display, electron-beam drawing in
+    real-time
+  subject_treatment: >-
+    Pure glowing geometric strokes, wireframe polygon meshes, no filled surfaces, beam-drawn contour lines
+    only, vector-coordinate precision
+  color_and_tone: >-
+    Phosphor green on void black, occasional amber-orange screens, blue-white vector glow, single-color per
+    display, no RGB mixing
+  lighting_and_shadow: >-
+    Self-illuminated phosphor lines, electron-beam persistence glow, brighter at stroke starts, dimming at
+    stroke ends
+  texture_and_material: >-
+    CRT phosphor glow, analog vector display bloom, line-intersection brightening, phosphor-persistence
+    afterglow, no pixels just beams
+  camera_and_composition: >-
+    Vector-perspective wireframe grids, rotating coordinate structures, infinite blank black space, no
+    occlusion just transparency
+  atmosphere_and_mood: >-
+    Retro-futuristic, electronic, arcade-darkness, analog-computing soul, early-CGI wonder, abstract voltage
+    theater
+  rendering_and_quality: Vector arcade display, analog CRT beauty, electron-beam line art, retro-electronic aesthetic
+  key_features: >-
+    Glowing vector lines on black, wireframe-only geometry, phosphor bloom at line intersections, no filled
+    surfaces, raster-scan absent
+  creative_brief: >-
+    Pure electron beams sweep abstract geometry onto phosphor glass, brighter where lines cross and softer
+    where they fade. Any subject becomes transparent vector coordinates, voltage translated into luminous
+    contour instead of surface.
 avoidRules:
   - filled
   - solid

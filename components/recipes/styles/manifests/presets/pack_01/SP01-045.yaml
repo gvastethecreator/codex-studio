@@ -13,18 +13,18 @@ tags:
   - lighting-techniques
 visualDna:
   aesthetic: Long exposure light trails
-  form_and_line: Glowing streaks
-  color_palette: Neon trails
-  lighting_setup: Moving source
-  material_texture: Smooth light
-  render_quality: Creative, night
-  spatial_distortion: Light scribbles
-  atmosphere: Magical, kinetic
+  subject_treatment: Glowing streaks
+  color_and_tone: Neon trails
+  lighting_and_shadow: Moving source
+  texture_and_material: Smooth light
+  camera_and_composition: Light scribbles
+  atmosphere_and_mood: Magical, kinetic
+  rendering_and_quality: Creative, night
   key_features: Dark background
   creative_brief: >-
-    Apply light-painting exposure to the input: luminous trails, long-shutter
-    neon ribbons, gestural calligraphy, and duration marks should draw around or
-    through the subject without requiring a dancer or performance setup.
+    Apply light-painting exposure to the input: luminous trails, long-shutter neon ribbons, gestural
+    calligraphy, and duration marks should draw around or through the subject without requiring a dancer or
+    performance setup.
 avoidRules:
   - static light
 assets:

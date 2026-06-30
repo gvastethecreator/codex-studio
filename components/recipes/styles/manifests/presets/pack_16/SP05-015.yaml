@@ -12,19 +12,34 @@ tags:
   - anime-classics-and-prestige
   - 90s-golden-era
 visualDna:
-  aesthetic: Cerebral cyber-ops noir with tactical precision, hyperconnected paranoia, and philosophical machine-age vertigo.
-  form_and_line: Crisp 90s anime linework, technical contour discipline, modular blocking, interface-like overlays, and measured motion cuts.
-  color_palette: Cold cyan, signal green, gunmetal blue, pale skin light, amber warning accents, and dense charcoal shadows.
-  lighting_setup: Hard cel contrast mixed with monitor glow, scanning rim highlights, data-layer bloom, and sterile institutional key light.
-  material_texture: Painted environmental grain, glass reflections, matte tactical fabric, brushed alloy, CRT noise, and cel overlay texture.
-  render_quality: Golden-era cyber anime frame polish with sharp cel definition, clean tech readability, and moody color discipline.
-  spatial_distortion: Layered grid depth, surveillance-angle cropping, neural-network overlays, and compressed tactical sightlines.
-  atmosphere: Thoughtful, moody, paranoid, cerebral
-  key_features: Interface ghosts, tactical stillness, network-grid depth, reflective tech surfaces, and human doubt inside clean geometry.
+  aesthetic: >-
+    Cerebral cyber-ops noir with tactical precision, hyperconnected paranoia, and philosophical machine-age
+    vertigo.
+  subject_treatment: >-
+    Crisp 90s anime linework, technical contour discipline, modular blocking, interface-like overlays, and
+    measured motion cuts.
+  color_and_tone: >-
+    Cold cyan, signal green, gunmetal blue, pale skin light, amber warning accents, and dense charcoal
+    shadows.
+  lighting_and_shadow: >-
+    Hard cel contrast mixed with monitor glow, scanning rim highlights, data-layer bloom, and sterile
+    institutional key light.
+  texture_and_material: >-
+    Painted environmental grain, glass reflections, matte tactical fabric, brushed alloy, CRT noise, and cel
+    overlay texture.
+  camera_and_composition: >-
+    Layered grid depth, surveillance-angle cropping, neural-network overlays, and compressed tactical
+    sightlines.
+  atmosphere_and_mood: Thoughtful, moody, paranoid, cerebral
+  rendering_and_quality: >-
+    Golden-era cyber anime frame polish with sharp cel definition, clean tech readability, and moody color
+    discipline.
+  key_features: >-
+    Interface ghosts, tactical stillness, network-grid depth, reflective tech surfaces, and human doubt inside
+    clean geometry.
   creative_brief: >-
-    Build a reusable philosophical-cyber-ops vertigo grammar for any subject or
-    input image: tactical clarity, network paranoia, glass-and-metal
-    reflection, cerebral noir, and 90s cel tech precision without imposing
+    Build a reusable philosophical-cyber-ops vertigo grammar for any subject or input image: tactical clarity,
+    network paranoia, glass-and-metal reflection, cerebral noir, and 90s cel tech precision without imposing
     cities, squads, robots, government intrigue, grids, or specific ops scenes.
 avoidRules:
   - realistic
@@ -42,7 +57,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-015.webp
 attributes:
-  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
+  negativePrompt: >-
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts,
+    watermark, text, signature
 taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige

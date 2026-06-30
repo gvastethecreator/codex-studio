@@ -13,15 +13,19 @@ tags:
   - natural-materials
 visualDna:
   aesthetic: Stone covered in green
-  form_and_line: Fuzzy outline
-  color_palette: Grey stone, Green moss
-  lighting_setup: Soft dappled light
-  material_texture: Velvet moss on hard stone
-  render_quality: Damp, ancient
-  spatial_distortion: Softened edges
-  atmosphere: Ancient, quiet
+  subject_treatment: Fuzzy outline
+  color_and_tone: Grey stone, Green moss
+  lighting_and_shadow: Soft dappled light
+  texture_and_material: Velvet moss on hard stone
+  camera_and_composition: Softened edges
+  atmosphere_and_mood: Ancient, quiet
+  rendering_and_quality: Damp, ancient
   key_features: Growth pattern
-  creative_brief: 'Apply moss-on-stone contrast to the input: velvet green growth softening grey mineral hardness, fuzzy ridges catching soft dappled light, damp edges, and softened silhouettes. If rock, ruin, plant, or terrain exists, intensify it; otherwise use moss colonization as surface behavior without forcing a woodland floor.'
+  creative_brief: >-
+    Apply moss-on-stone contrast to the input: velvet green growth softening grey mineral hardness, fuzzy
+    ridges catching soft dappled light, damp edges, and softened silhouettes. If rock, ruin, plant, or terrain
+    exists, intensify it; otherwise use moss colonization as surface behavior without forcing a woodland
+    floor.
 avoidRules:
   - dry
   - city

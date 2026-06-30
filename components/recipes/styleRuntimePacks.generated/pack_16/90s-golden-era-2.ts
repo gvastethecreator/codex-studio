@@ -12,20 +12,20 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         "Generational Aura Clash Style within 3. 90s Golden Era: a reusable Anime Classics & Prestige visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Generational Aura Clash Style's specific style identity.",
-      form_and_line:
+      subject_treatment:
         'Define Generational Aura Clash Style through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
-      color_palette:
+      color_and_tone:
         'Use a Generational Aura Clash Style-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
-      lighting_setup:
+      lighting_and_shadow:
         'Use lighting that makes Generational Aura Clash Style recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
-      material_texture:
+      texture_and_material:
         'Use materials and textures that reinforce Generational Aura Clash Style: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
-      render_quality:
-        'Render Generational Aura Clash Style with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
-      spatial_distortion:
+      camera_and_composition:
         'Use spatial behavior that fits Generational Aura Clash Style: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
-      atmosphere:
+      atmosphere_and_mood:
         'Set a mood that belongs to Generational Aura Clash Style: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+      rendering_and_quality:
+        'Render Generational Aura Clash Style with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       key_features:
         "Prioritize Generational Aura Clash Style's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
@@ -41,20 +41,20 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         "Sparkling Magical Chorus Style within 3. 90s Golden Era: a reusable Anime Classics & Prestige visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Sparkling Magical Chorus Style's specific style identity.",
-      form_and_line:
+      subject_treatment:
         'Define Sparkling Magical Chorus Style through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
-      color_palette:
+      color_and_tone:
         'Use a Sparkling Magical Chorus Style-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
-      lighting_setup:
+      lighting_and_shadow:
         'Use lighting that makes Sparkling Magical Chorus Style recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
-      material_texture:
+      texture_and_material:
         'Use materials and textures that reinforce Sparkling Magical Chorus Style: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
-      render_quality:
-        'Render Sparkling Magical Chorus Style with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
-      spatial_distortion:
+      camera_and_composition:
         'Use spatial behavior that fits Sparkling Magical Chorus Style: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
-      atmosphere:
+      atmosphere_and_mood:
         'Set a mood that belongs to Sparkling Magical Chorus Style: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+      rendering_and_quality:
+        'Render Sparkling Magical Chorus Style with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       key_features:
         "Prioritize Sparkling Magical Chorus Style's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
@@ -70,19 +70,19 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         '90s space-noir cool with jazz melancholy, stylish restraint, drifting loneliness, and retro-future elegance.',
-      form_and_line:
+      subject_treatment:
         'Crisp cel-era contour, relaxed silhouette rhythm, smoke-like gesture trails, and clean action accents held in reserve.',
-      color_palette:
+      color_and_tone:
         'Muted blues, amber lounge glow, teal neon accents, dusty mauves, and deep black cel-shadow pools.',
-      lighting_setup:
+      lighting_and_shadow:
         'Low-key noir contrast, rim light through haze, soft neon edge spill, and isolated warm highlights.',
-      material_texture:
+      texture_and_material:
         'Painted background grain, smoky translucency, brushed metal glints, worn matte surfaces, and cel overlay texture.',
-      render_quality:
-        'Golden-era anime frame polish with sharp cel definition, sophisticated color grading, and silhouette-first staging.',
-      spatial_distortion:
+      camera_and_composition:
         'Wide negative space, slow orbital depth, oblique noir framing, and compressed solitude around the focal subject.',
-      atmosphere: 'Cool, wistful, lonely, stylish',
+      atmosphere_and_mood: 'Cool, wistful, lonely, stylish',
+      rendering_and_quality:
+        'Golden-era anime frame polish with sharp cel definition, sophisticated color grading, and silhouette-first staging.',
       key_features:
         'Haze ribbons, cool negative space, amber-cyan noir contrast, iconic lonely silhouettes, and restrained stylish motion.',
       creative_brief:
@@ -98,19 +98,19 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Cerebral cyber-ops noir with tactical precision, hyperconnected paranoia, and philosophical machine-age vertigo.',
-      form_and_line:
+      subject_treatment:
         'Crisp 90s anime linework, technical contour discipline, modular blocking, interface-like overlays, and measured motion cuts.',
-      color_palette:
+      color_and_tone:
         'Cold cyan, signal green, gunmetal blue, pale skin light, amber warning accents, and dense charcoal shadows.',
-      lighting_setup:
+      lighting_and_shadow:
         'Hard cel contrast mixed with monitor glow, scanning rim highlights, data-layer bloom, and sterile institutional key light.',
-      material_texture:
+      texture_and_material:
         'Painted environmental grain, glass reflections, matte tactical fabric, brushed alloy, CRT noise, and cel overlay texture.',
-      render_quality:
-        'Golden-era cyber anime frame polish with sharp cel definition, clean tech readability, and moody color discipline.',
-      spatial_distortion:
+      camera_and_composition:
         'Layered grid depth, surveillance-angle cropping, neural-network overlays, and compressed tactical sightlines.',
-      atmosphere: 'Thoughtful, moody, paranoid, cerebral',
+      atmosphere_and_mood: 'Thoughtful, moody, paranoid, cerebral',
+      rendering_and_quality:
+        'Golden-era cyber anime frame polish with sharp cel definition, clean tech readability, and moody color discipline.',
       key_features:
         'Interface ghosts, tactical stillness, network-grid depth, reflective tech surfaces, and human doubt inside clean geometry.',
       creative_brief:
@@ -126,19 +126,19 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         '90s supernatural pressure style with disciplined confrontation, spectral charge, and restrained power escalation.',
-      form_and_line:
+      subject_treatment:
         'Crisp cel-era linework, defined contours, tense stance geometry, aura edges, and impact strokes that imply force without fixed choreography.',
-      color_palette:
+      color_and_tone:
         'Violet shadows, acid-green spirit accents, hot magenta energy pops, bruised blues, and warm skin-light contrast.',
-      lighting_setup:
+      lighting_and_shadow:
         'High-contrast cel lighting with stark rim separation, aura bloom, and hard cuts between darkness and charged highlights.',
-      material_texture:
+      texture_and_material:
         'Painted background grain, cel overlay texture, smoky aura particulate, rough impact dust, and inked shadow bands.',
-      render_quality:
-        'Golden-era anime frame polish with sharp cel definition, saturated grading, and readable silhouette hierarchy.',
-      spatial_distortion:
+      camera_and_composition:
         'Compressed confrontation space, elastic foreshortening, energy-field warping, and diagonal pressure vectors.',
-      atmosphere: 'Supernatural, intense, fierce, pressurized.',
+      atmosphere_and_mood: 'Supernatural, intense, fierce, pressurized.',
+      rendering_and_quality:
+        'Golden-era anime frame polish with sharp cel definition, saturated grading, and readable silhouette hierarchy.',
       key_features:
         'Spectral aura contrast, disciplined stance rhythm, explosive pause, bold silhouette design, and impact-ready visual storytelling.',
       creative_brief:
@@ -154,19 +154,19 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         '90s atonement drama style with wind-cut melancholy, restrained violence memory, and noble emotional restraint.',
-      form_and_line:
+      subject_treatment:
         'Crisp cel-era contour, long drape rhythms, quiet posture tension, controlled action arcs, and expressive ink accents.',
-      color_palette:
+      color_and_tone:
         'Washed sakura pinks, dusk blues, muted earth tones, soft ivory light, and restrained crimson memory accents.',
-      lighting_setup:
+      lighting_and_shadow:
         'Gentle rim light, high-contrast cel shadow, breeze-carried highlights, and poetic backlight on quiet silhouettes.',
-      material_texture:
+      texture_and_material:
         'Layered watercolor backgrounds, fabric grain, brushed metal glints, blossom-like particulate, and cel overlay texture.',
-      render_quality:
-        'Golden-era anime frame polish with sharp cel definition, lyrical color grading, and strong emotional readability.',
-      spatial_distortion:
+      camera_and_composition:
         'Long-depth staging, wind-swept negative space, diagonal pause before motion, and intimate aftermath framing.',
-      atmosphere: 'Noble, reflective, sorrowful, poetic.',
+      atmosphere_and_mood: 'Noble, reflective, sorrowful, poetic.',
+      rendering_and_quality:
+        'Golden-era anime frame polish with sharp cel definition, lyrical color grading, and strong emotional readability.',
       key_features:
         'Wind rhythm, vow-like restraint, soft particulate drift, iconic solitary silhouette, and grief held in clean linework.',
       creative_brief:
@@ -182,19 +182,19 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Dusty space-western absurdity, reckless comedy-action contrast, sunburnt loneliness, and elastic cool-to-chaos expression.',
-      form_and_line:
+      subject_treatment:
         'Crisp 90s cel contours, exaggerated gesture snaps, long coat-like silhouette rhythms, and slapstick-to-danger timing lines.',
-      color_palette:
+      color_and_tone:
         'Sun-bleached ochres, turquoise sky accents, hot red impact pops, faded mauves, and scorched black cel shadows.',
-      lighting_setup:
+      lighting_and_shadow:
         'Harsh high-noon cel contrast, heat-haze bloom, hard rim light, and dry highlight separation on metal or fabric.',
-      material_texture:
+      texture_and_material:
         'Painted dust grain, worn leather-like surfaces, scratched metal glints, sanded matte color, and cel overlay texture.',
-      render_quality:
-        'Golden-era anime frame polish with sharp cel definition, warm grading, and readable absurd-action silhouette design.',
-      spatial_distortion:
+      camera_and_composition:
         'Heat-warped horizon pressure, extreme foreshortening, comedic snap framing, and empty-space loneliness.',
-      atmosphere: 'Chaotic, lonely, reckless, wild.',
+      atmosphere_and_mood: 'Chaotic, lonely, reckless, wild.',
+      rendering_and_quality:
+        'Golden-era anime frame polish with sharp cel definition, warm grading, and readable absurd-action silhouette design.',
       key_features:
         'Dust haze, oversized attitude, elastic expression contrast, dry kinetic impact, and absurd danger rendered with sincerity.',
       creative_brief:
@@ -210,20 +210,20 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         "Planetary Aura Impact Style within 3. 90s Golden Era: a reusable Anime Classics & Prestige visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Planetary Aura Impact Style's specific style identity.",
-      form_and_line:
+      subject_treatment:
         'Define Planetary Aura Impact Style through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
-      color_palette:
+      color_and_tone:
         'Use a Planetary Aura Impact Style-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
-      lighting_setup:
+      lighting_and_shadow:
         'Use lighting that makes Planetary Aura Impact Style recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
-      material_texture:
+      texture_and_material:
         'Use materials and textures that reinforce Planetary Aura Impact Style: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
-      render_quality:
-        'Render Planetary Aura Impact Style with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
-      spatial_distortion:
+      camera_and_composition:
         'Use spatial behavior that fits Planetary Aura Impact Style: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
-      atmosphere:
+      atmosphere_and_mood:
         'Set a mood that belongs to Planetary Aura Impact Style: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+      rendering_and_quality:
+        'Render Planetary Aura Impact Style with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       key_features:
         "Prioritize Planetary Aura Impact Style's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
@@ -239,20 +239,20 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         "Smoke-Jazz Noir Cool Style within 3. 90s Golden Era: a reusable Anime Classics & Prestige visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Smoke-Jazz Noir Cool Style's specific style identity.",
-      form_and_line:
+      subject_treatment:
         'Define Smoke-Jazz Noir Cool Style through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
-      color_palette:
+      color_and_tone:
         'Use a Smoke-Jazz Noir Cool Style-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
-      lighting_setup:
+      lighting_and_shadow:
         'Use lighting that makes Smoke-Jazz Noir Cool Style recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
-      material_texture:
+      texture_and_material:
         'Use materials and textures that reinforce Smoke-Jazz Noir Cool Style: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
-      render_quality:
-        'Render Smoke-Jazz Noir Cool Style with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
-      spatial_distortion:
+      camera_and_composition:
         'Use spatial behavior that fits Smoke-Jazz Noir Cool Style: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
-      atmosphere:
+      atmosphere_and_mood:
         'Set a mood that belongs to Smoke-Jazz Noir Cool Style: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+      rendering_and_quality:
+        'Render Smoke-Jazz Noir Cool Style with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       key_features:
         "Prioritize Smoke-Jazz Noir Cool Style's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
@@ -268,20 +268,20 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         "Wet Techno-Noir Consciousness Style within 3. 90s Golden Era: a reusable Anime Classics & Prestige visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Wet Techno-Noir Consciousness Style's specific style identity.",
-      form_and_line:
+      subject_treatment:
         'Define Wet Techno-Noir Consciousness Style through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
-      color_palette:
+      color_and_tone:
         'Use a Wet Techno-Noir Consciousness Style-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
-      lighting_setup:
+      lighting_and_shadow:
         'Use lighting that makes Wet Techno-Noir Consciousness Style recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
-      material_texture:
+      texture_and_material:
         'Use materials and textures that reinforce Wet Techno-Noir Consciousness Style: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
-      render_quality:
-        'Render Wet Techno-Noir Consciousness Style with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
-      spatial_distortion:
+      camera_and_composition:
         'Use spatial behavior that fits Wet Techno-Noir Consciousness Style: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
-      atmosphere:
+      atmosphere_and_mood:
         'Set a mood that belongs to Wet Techno-Noir Consciousness Style: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+      rendering_and_quality:
+        'Render Wet Techno-Noir Consciousness Style with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       key_features:
         "Prioritize Wet Techno-Noir Consciousness Style's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
@@ -297,20 +297,20 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         "Spirit Pressure Rivalry Style within 3. 90s Golden Era: a reusable Anime Classics & Prestige visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Spirit Pressure Rivalry Style's specific style identity.",
-      form_and_line:
+      subject_treatment:
         'Define Spirit Pressure Rivalry Style through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
-      color_palette:
+      color_and_tone:
         'Use a Spirit Pressure Rivalry Style-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
-      lighting_setup:
+      lighting_and_shadow:
         'Use lighting that makes Spirit Pressure Rivalry Style recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
-      material_texture:
+      texture_and_material:
         'Use materials and textures that reinforce Spirit Pressure Rivalry Style: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
-      render_quality:
-        'Render Spirit Pressure Rivalry Style with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
-      spatial_distortion:
+      camera_and_composition:
         'Use spatial behavior that fits Spirit Pressure Rivalry Style: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
-      atmosphere:
+      atmosphere_and_mood:
         'Set a mood that belongs to Spirit Pressure Rivalry Style: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+      rendering_and_quality:
+        'Render Spirit Pressure Rivalry Style with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       key_features:
         "Prioritize Spirit Pressure Rivalry Style's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
@@ -326,20 +326,20 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         "Redemption Restraint Style within 3. 90s Golden Era: a reusable Anime Classics & Prestige visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Redemption Restraint Style's specific style identity.",
-      form_and_line:
+      subject_treatment:
         'Define Redemption Restraint Style through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
-      color_palette:
+      color_and_tone:
         'Use a Redemption Restraint Style-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
-      lighting_setup:
+      lighting_and_shadow:
         'Use lighting that makes Redemption Restraint Style recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
-      material_texture:
+      texture_and_material:
         'Use materials and textures that reinforce Redemption Restraint Style: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
-      render_quality:
-        'Render Redemption Restraint Style with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
-      spatial_distortion:
+      camera_and_composition:
         'Use spatial behavior that fits Redemption Restraint Style: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
-      atmosphere:
+      atmosphere_and_mood:
         'Set a mood that belongs to Redemption Restraint Style: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+      rendering_and_quality:
+        'Render Redemption Restraint Style with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       key_features:
         "Prioritize Redemption Restraint Style's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
@@ -355,20 +355,20 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         "Engine-Trail Outlaw Adventure Style within 3. 90s Golden Era: a reusable Anime Classics & Prestige visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Engine-Trail Outlaw Adventure Style's specific style identity.",
-      form_and_line:
+      subject_treatment:
         'Define Engine-Trail Outlaw Adventure Style through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
-      color_palette:
+      color_and_tone:
         'Use a Engine-Trail Outlaw Adventure Style-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
-      lighting_setup:
+      lighting_and_shadow:
         'Use lighting that makes Engine-Trail Outlaw Adventure Style recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
-      material_texture:
+      texture_and_material:
         'Use materials and textures that reinforce Engine-Trail Outlaw Adventure Style: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
-      render_quality:
-        'Render Engine-Trail Outlaw Adventure Style with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
-      spatial_distortion:
+      camera_and_composition:
         'Use spatial behavior that fits Engine-Trail Outlaw Adventure Style: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
-      atmosphere:
+      atmosphere_and_mood:
         'Set a mood that belongs to Engine-Trail Outlaw Adventure Style: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+      rendering_and_quality:
+        'Render Engine-Trail Outlaw Adventure Style with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       key_features:
         "Prioritize Engine-Trail Outlaw Adventure Style's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
@@ -384,20 +384,20 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         "Wired Identity Dissolution Style within 3. 90s Golden Era: a reusable Anime Classics & Prestige visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Wired Identity Dissolution Style's specific style identity.",
-      form_and_line:
+      subject_treatment:
         'Define Wired Identity Dissolution Style through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
-      color_palette:
+      color_and_tone:
         'Use a Wired Identity Dissolution Style-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
-      lighting_setup:
+      lighting_and_shadow:
         'Use lighting that makes Wired Identity Dissolution Style recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
-      material_texture:
+      texture_and_material:
         'Use materials and textures that reinforce Wired Identity Dissolution Style: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
-      render_quality:
-        'Render Wired Identity Dissolution Style with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
-      spatial_distortion:
+      camera_and_composition:
         'Use spatial behavior that fits Wired Identity Dissolution Style: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
-      atmosphere:
+      atmosphere_and_mood:
         'Set a mood that belongs to Wired Identity Dissolution Style: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+      rendering_and_quality:
+        'Render Wired Identity Dissolution Style with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       key_features:
         "Prioritize Wired Identity Dissolution Style's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
@@ -413,20 +413,20 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         "Storybook Seal Magic Style within 3. 90s Golden Era: a reusable Anime Classics & Prestige visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Storybook Seal Magic Style's specific style identity.",
-      form_and_line:
+      subject_treatment:
         'Define Storybook Seal Magic Style through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
-      color_palette:
+      color_and_tone:
         'Use a Storybook Seal Magic Style-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
-      lighting_setup:
+      lighting_and_shadow:
         'Use lighting that makes Storybook Seal Magic Style recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
-      material_texture:
+      texture_and_material:
         'Use materials and textures that reinforce Storybook Seal Magic Style: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
-      render_quality:
-        'Render Storybook Seal Magic Style with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
-      spatial_distortion:
+      camera_and_composition:
         'Use spatial behavior that fits Storybook Seal Magic Style: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
-      atmosphere:
+      atmosphere_and_mood:
         'Set a mood that belongs to Storybook Seal Magic Style: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+      rendering_and_quality:
+        'Render Storybook Seal Magic Style with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       key_features:
         "Prioritize Storybook Seal Magic Style's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
@@ -442,20 +442,20 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         "Dust-Warm Pacifist Melancholy Style within 3. 90s Golden Era: a reusable Anime Classics & Prestige visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Dust-Warm Pacifist Melancholy Style's specific style identity.",
-      form_and_line:
+      subject_treatment:
         'Define Dust-Warm Pacifist Melancholy Style through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
-      color_palette:
+      color_and_tone:
         'Use a Dust-Warm Pacifist Melancholy Style-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
-      lighting_setup:
+      lighting_and_shadow:
         'Use lighting that makes Dust-Warm Pacifist Melancholy Style recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
-      material_texture:
+      texture_and_material:
         'Use materials and textures that reinforce Dust-Warm Pacifist Melancholy Style: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
-      render_quality:
-        'Render Dust-Warm Pacifist Melancholy Style with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
-      spatial_distortion:
+      camera_and_composition:
         'Use spatial behavior that fits Dust-Warm Pacifist Melancholy Style: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
-      atmosphere:
+      atmosphere_and_mood:
         'Set a mood that belongs to Dust-Warm Pacifist Melancholy Style: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+      rendering_and_quality:
+        'Render Dust-Warm Pacifist Melancholy Style with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       key_features:
         "Prioritize Dust-Warm Pacifist Melancholy Style's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
@@ -471,20 +471,20 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         "Iron Ruin Tragedy Style within 3. 90s Golden Era: a reusable Anime Classics & Prestige visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Iron Ruin Tragedy Style's specific style identity.",
-      form_and_line:
+      subject_treatment:
         'Define Iron Ruin Tragedy Style through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
-      color_palette:
+      color_and_tone:
         'Use a Iron Ruin Tragedy Style-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
-      lighting_setup:
+      lighting_and_shadow:
         'Use lighting that makes Iron Ruin Tragedy Style recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
-      material_texture:
+      texture_and_material:
         'Use materials and textures that reinforce Iron Ruin Tragedy Style: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
-      render_quality:
-        'Render Iron Ruin Tragedy Style with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
-      spatial_distortion:
+      camera_and_composition:
         'Use spatial behavior that fits Iron Ruin Tragedy Style: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
-      atmosphere:
+      atmosphere_and_mood:
         'Set a mood that belongs to Iron Ruin Tragedy Style: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+      rendering_and_quality:
+        'Render Iron Ruin Tragedy Style with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       key_features:
         "Prioritize Iron Ruin Tragedy Style's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
@@ -500,20 +500,20 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         "Rose Ritual Symbolism Style within 3. 90s Golden Era: a reusable Anime Classics & Prestige visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Rose Ritual Symbolism Style's specific style identity.",
-      form_and_line:
+      subject_treatment:
         'Define Rose Ritual Symbolism Style through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
-      color_palette:
+      color_and_tone:
         'Use a Rose Ritual Symbolism Style-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
-      lighting_setup:
+      lighting_and_shadow:
         'Use lighting that makes Rose Ritual Symbolism Style recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
-      material_texture:
+      texture_and_material:
         'Use materials and textures that reinforce Rose Ritual Symbolism Style: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
-      render_quality:
-        'Render Rose Ritual Symbolism Style with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
-      spatial_distortion:
+      camera_and_composition:
         'Use spatial behavior that fits Rose Ritual Symbolism Style: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
-      atmosphere:
+      atmosphere_and_mood:
         'Set a mood that belongs to Rose Ritual Symbolism Style: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+      rendering_and_quality:
+        'Render Rose Ritual Symbolism Style with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       key_features:
         "Prioritize Rose Ritual Symbolism Style's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
@@ -529,20 +529,20 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         "Warm Rivalry Portrait Style within 3. 90s Golden Era: a reusable Anime Classics & Prestige visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Warm Rivalry Portrait Style's specific style identity.",
-      form_and_line:
+      subject_treatment:
         'Define Warm Rivalry Portrait Style through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
-      color_palette:
+      color_and_tone:
         'Use a Warm Rivalry Portrait Style-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
-      lighting_setup:
+      lighting_and_shadow:
         'Use lighting that makes Warm Rivalry Portrait Style recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
-      material_texture:
+      texture_and_material:
         'Use materials and textures that reinforce Warm Rivalry Portrait Style: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
-      render_quality:
-        'Render Warm Rivalry Portrait Style with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
-      spatial_distortion:
+      camera_and_composition:
         'Use spatial behavior that fits Warm Rivalry Portrait Style: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
-      atmosphere:
+      atmosphere_and_mood:
         'Set a mood that belongs to Warm Rivalry Portrait Style: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+      rendering_and_quality:
+        'Render Warm Rivalry Portrait Style with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       key_features:
         "Prioritize Warm Rivalry Portrait Style's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
@@ -558,20 +558,20 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         "Precision Action Cel Style within 3. 90s Golden Era: a reusable Anime Classics & Prestige visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Precision Action Cel Style's specific style identity.",
-      form_and_line:
+      subject_treatment:
         'Define Precision Action Cel Style through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
-      color_palette:
+      color_and_tone:
         'Use a Precision Action Cel Style-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
-      lighting_setup:
+      lighting_and_shadow:
         'Use lighting that makes Precision Action Cel Style recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
-      material_texture:
+      texture_and_material:
         'Use materials and textures that reinforce Precision Action Cel Style: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
-      render_quality:
-        'Render Precision Action Cel Style with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
-      spatial_distortion:
+      camera_and_composition:
         'Use spatial behavior that fits Precision Action Cel Style: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
-      atmosphere:
+      atmosphere_and_mood:
         'Set a mood that belongs to Precision Action Cel Style: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+      rendering_and_quality:
+        'Render Precision Action Cel Style with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       key_features:
         "Prioritize Precision Action Cel Style's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:

@@ -13,18 +13,18 @@ tags:
   - editorial-and-poster
 visualDna:
   aesthetic: Art Nouveau decorative lithograph (Alphonse Mucha influence)
-  form_and_line: Sinuous flowing contour integrating hair, vines, and ornamental framing
-  color_palette: Peach, sage, ivory, and muted gold with floral pastel harmonics
-  lighting_setup: Flat luminous treatment with halo-centered emphasis
-  material_texture: Poster-lithograph grain and ink-flat ornamental finish
-  render_quality: Highly decorative, elegant, and pattern-rich composition
-  spatial_distortion: Organic curve dominance over rigid perspective structure
-  atmosphere: Romantic, ornamental, reverent
+  subject_treatment: Sinuous flowing contour integrating hair, vines, and ornamental framing
+  color_and_tone: Peach, sage, ivory, and muted gold with floral pastel harmonics
+  lighting_and_shadow: Flat luminous treatment with halo-centered emphasis
+  texture_and_material: Poster-lithograph grain and ink-flat ornamental finish
+  camera_and_composition: Organic curve dominance over rigid perspective structure
+  atmosphere_and_mood: Romantic, ornamental, reverent
+  rendering_and_quality: Highly decorative, elegant, and pattern-rich composition
   key_features: Circular nimbus motifs, botanical arabesques, integrated border systems
   creative_brief: >-
-    Apply Art Nouveau lithograph flow to any input: sinuous contour, botanical arabesque, halo
-    framing, muted gold, integrated borders, and ornamental curve dominance should unify subject and
-    decoration without requiring women, hair, flowers, posters, or fixed portrait staging.
+    Apply Art Nouveau lithograph flow to any input: sinuous contour, botanical arabesque, halo framing, muted
+    gold, integrated borders, and ornamental curve dominance should unify subject and decoration without
+    requiring women, hair, flowers, posters, or fixed portrait staging.
 avoidRules:
   - straight lines
   - minimal

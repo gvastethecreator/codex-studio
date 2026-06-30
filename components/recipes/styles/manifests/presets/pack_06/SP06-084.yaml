@@ -12,16 +12,34 @@ tags:
   - essential-art-styles
   - retro-game-visual-systems
 visualDna:
-  aesthetic: CG-rendered-to-sprite look, Donkey Kong Country and Killer Instinct as pre-render anchors, 1994 Silicon Graphics magic, 3D forms baked into 2D sprite logic, dithering-to-fit-palette artifacts, 256-color quantization charm
-  form_and_line: CGI contours baked to pixels, aliased pre-render edges, dithering-approximated soft shading, frame-by-frame rendered silhouette logic
-  color_palette: 256-color quantized palette, dither-pattern transitions, banded gradient approximation, CGI-to-cartridge color space compression
-  lighting_setup: Raytraced studio lighting baked into sprites, pre-computed shadows, specular highlight dithering, no realtime lighting
-  material_texture: Dithered gradient banding, CGI-to-pixel quantization noise, pre-rendered texture compression artifacts, frame-buffer dither patterns
-  render_quality: Pre-rendered sprite magic, FMV-to-game compression aesthetic, 90s CGI nostalgia, Silicon Graphics beauty
-  spatial_distortion: 3D volume baked to flat sprite-plane, isometric or orthographic pre-rendered perspective, frame-interpolation ghost traces
-  atmosphere: 90s CGI wonder, technological marvel of its time, pre-rendered beauty, cartridge-compressed ambition
-  key_features: CGI dithering artifacts, 256-color banding, baked 3D-to-2D sprites, pre-rendered animation loops, palette quantization
-  creative_brief: Smooth 3D volume is precomputed, flattened and squeezed into 256 colors. Any subject becomes CGI that remembers compression, with dithered gradients, baked highlights and frame-buffer ghosts replacing modern cleanliness.
+  aesthetic: >-
+    CG-rendered-to-sprite look, Donkey Kong Country and Killer Instinct as pre-render anchors, 1994 Silicon
+    Graphics magic, 3D forms baked into 2D sprite logic, dithering-to-fit-palette artifacts, 256-color
+    quantization charm
+  subject_treatment: >-
+    CGI contours baked to pixels, aliased pre-render edges, dithering-approximated soft shading,
+    frame-by-frame rendered silhouette logic
+  color_and_tone: >-
+    256-color quantized palette, dither-pattern transitions, banded gradient approximation, CGI-to-cartridge
+    color space compression
+  lighting_and_shadow: >-
+    Raytraced studio lighting baked into sprites, pre-computed shadows, specular highlight dithering, no
+    realtime lighting
+  texture_and_material: >-
+    Dithered gradient banding, CGI-to-pixel quantization noise, pre-rendered texture compression artifacts,
+    frame-buffer dither patterns
+  camera_and_composition: >-
+    3D volume baked to flat sprite-plane, isometric or orthographic pre-rendered perspective,
+    frame-interpolation ghost traces
+  atmosphere_and_mood: 90s CGI wonder, technological marvel of its time, pre-rendered beauty, cartridge-compressed ambition
+  rendering_and_quality: Pre-rendered sprite magic, FMV-to-game compression aesthetic, 90s CGI nostalgia, Silicon Graphics beauty
+  key_features: >-
+    CGI dithering artifacts, 256-color banding, baked 3D-to-2D sprites, pre-rendered animation loops, palette
+    quantization
+  creative_brief: >-
+    Smooth 3D volume is precomputed, flattened and squeezed into 256 colors. Any subject becomes CGI that
+    remembers compression, with dithered gradients, baked highlights and frame-buffer ghosts replacing modern
+    cleanliness.
 avoidRules:
   - real-time
   - hand-drawn

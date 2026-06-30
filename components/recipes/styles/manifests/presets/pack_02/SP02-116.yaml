@@ -12,16 +12,23 @@ tags:
   - cinematic-and-media
   - caricature-and-cartoon-styles
 visualDna:
-  aesthetic: Notebook-color anxiety cartoon, adolescent embarrassment as mood anchor, gentle daydream logic, simple flat backgrounds, internal monologue cartooning, soft marker color
-  form_and_line: Soft simple ink, diary-doodle contour, awkward posture marks, gentle daydream curves
-  color_palette: Notebook cover teal, soft marker purple, peach anxiety, pale yellow, faded red, school-paper cream
-  lighting_setup: Flat friendly TV light, daydream glow inserts, low-contrast comfort
-  material_texture: Notebook-paper tooth, marker softness, light scan grain, softened cel fill
-  render_quality: Wistful notebook cartoon, internal-monologue softness, gentle anxious TV style
-  spatial_distortion: Daydream overlay drift, margin-like framing, softened scale changes, awkward negative space
-  atmosphere: Nervous, sweet, relatable, wistful
-  key_features: Notebook-like color fields, awkward posture logic, diary-energy framing, daydream insert logic, soft marker flatness
-  creative_brief: 'Apply notebook anxiety cartooning to any prompt: soft marker fields, flat backgrounds, diary-like framing, gentle daydream inserts, and awkward internal-monologue rhythm. Avoid schools, neighborhoods, kids, props, or social scenes as requirements. The style should feel wistful and nervous.'
+  aesthetic: >-
+    Notebook-color anxiety cartoon, adolescent embarrassment as mood anchor, gentle daydream logic, simple
+    flat backgrounds, internal monologue cartooning, soft marker color
+  subject_treatment: Soft simple ink, diary-doodle contour, awkward posture marks, gentle daydream curves
+  color_and_tone: Notebook cover teal, soft marker purple, peach anxiety, pale yellow, faded red, school-paper cream
+  lighting_and_shadow: Flat friendly TV light, daydream glow inserts, low-contrast comfort
+  texture_and_material: Notebook-paper tooth, marker softness, light scan grain, softened cel fill
+  camera_and_composition: Daydream overlay drift, margin-like framing, softened scale changes, awkward negative space
+  atmosphere_and_mood: Nervous, sweet, relatable, wistful
+  rendering_and_quality: Wistful notebook cartoon, internal-monologue softness, gentle anxious TV style
+  key_features: >-
+    Notebook-like color fields, awkward posture logic, diary-energy framing, daydream insert logic, soft
+    marker flatness
+  creative_brief: >-
+    Apply notebook anxiety cartooning to any prompt: soft marker fields, flat backgrounds, diary-like framing,
+    gentle daydream inserts, and awkward internal-monologue rhythm. Avoid schools, neighborhoods, kids, props,
+    or social scenes as requirements. The style should feel wistful and nervous.
 avoidRules:
   - digital
   - HD

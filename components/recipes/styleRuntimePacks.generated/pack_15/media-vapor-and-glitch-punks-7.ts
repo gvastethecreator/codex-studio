@@ -12,16 +12,16 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'vaporpunk pool CRT dream built around a tiled pool space filled with CRT reflections, swimmers or loungers, pastel fog, and cathode glow.',
-      form_and_line:
+      subject_treatment:
         'CRT geometry, analog signal bands, vapor gradients, mall-era surfaces, tape artifacts, and digital slippage. Core composition uses CRT reflections, pool tiles, figures, chrome rails, vapor haze.',
-      color_palette: 'pool aqua, magenta, cream tile, violet shadow',
-      lighting_setup: 'CRT glow on water, pastel skylight, soft neon haze',
-      material_texture: 'ceramic tile, water, CRT glass, chrome rails, synthetic towels',
-      render_quality:
-        'Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity, moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material simulation, or hyper-detail.',
-      spatial_distortion:
+      color_and_tone: 'pool aqua, magenta, cream tile, violet shadow',
+      lighting_and_shadow: 'CRT glow on water, pastel skylight, soft neon haze',
+      texture_and_material: 'ceramic tile, water, CRT glass, chrome rails, synthetic towels',
+      camera_and_composition:
         'Pools, arcades, stations, atriums, kiosks, malls, observatories, and broadcast corners with media texture. Keep depth legible and avoid default hallway, aisle, or empty studio staging.',
-      atmosphere: 'dreamy, humid, retro, unreal',
+      atmosphere_and_mood: 'dreamy, humid, retro, unreal',
+      rendering_and_quality:
+        'Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity, moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material simulation, or hyper-detail.',
       key_features: 'CRT reflections, pool tiles, figures, chrome rails, vapor haze',
       creative_brief:
         'Vaporpunk with scene and bodies: pool, CRTs, water light, and retro dream logic, not empty gradient abstraction. Keep the result representative rather than over-abstract; make one character in their environment the anchor, with motifs as background, costume, weather, architecture, or social pressure instead of a foreground prop. Favor clean graphic-novel card art, stylized 2D digital illustration, controlled digital painting, cel-shaded poster art, or gouache-poster color blocking over realism, photoreal painterly realism, cinematic key art, or hyper-detailed concept art. Use few bold color/value zones, moderate texture, large shapes, clean surfaces, and finish denoised with no excessive noise or ultra-fine detail.',
@@ -36,16 +36,16 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'vaporwave arcade mirage built around an arcade fading into pastel gradient mirage with players, cabinets, checker floors, and sunset grid glow.',
-      form_and_line:
+      subject_treatment:
         'CRT geometry, analog signal bands, vapor gradients, mall-era surfaces, tape artifacts, and digital slippage. Core composition uses arcade players, checker floors, cabinet rows, sunset grid, pastel bloom.',
-      color_palette: 'peach, cyan, violet, black grid',
-      lighting_setup: 'cabinet glow, sunset gradient, reflected checker tiles',
-      material_texture: 'arcade plastic, laminate floor, glass screens, chrome trim',
-      render_quality:
-        'Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity, moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material simulation, or hyper-detail.',
-      spatial_distortion:
+      color_and_tone: 'peach, cyan, violet, black grid',
+      lighting_and_shadow: 'cabinet glow, sunset gradient, reflected checker tiles',
+      texture_and_material: 'arcade plastic, laminate floor, glass screens, chrome trim',
+      camera_and_composition:
         'Pools, arcades, stations, atriums, kiosks, malls, observatories, and broadcast corners with media texture. Keep depth legible and avoid default hallway, aisle, or empty studio staging.',
-      atmosphere: 'nostalgic, synthetic, playful, hazy',
+      atmosphere_and_mood: 'nostalgic, synthetic, playful, hazy',
+      rendering_and_quality:
+        'Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity, moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material simulation, or hyper-detail.',
       key_features: 'arcade players, checker floors, cabinet rows, sunset grid, pastel bloom',
       creative_brief:
         'Let vaporwave be recognizable through arcade scene and palette, not a blank gradient card. Keep the result representative rather than over-abstract; make one character in their environment the anchor, with motifs as background, costume, weather, architecture, or social pressure instead of a foreground prop. Favor clean graphic-novel card art, stylized 2D digital illustration, controlled digital painting, cel-shaded poster art, or gouache-poster color blocking over realism, photoreal painterly realism, cinematic key art, or hyper-detailed concept art. Use few bold color/value zones, moderate texture, large shapes, clean surfaces, and finish denoised with no excessive noise or ultra-fine detail.',
@@ -60,16 +60,16 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'cassette futurism climate desk built around a weather station built from cassette decks, analog dials, field coats, maps, and magnetic tape ribbons.',
-      form_and_line:
+      subject_treatment:
         'CRT geometry, analog signal bands, vapor gradients, mall-era surfaces, tape artifacts, and digital slippage. Core composition uses cassette decks, tape ribbons, weather maps, field operators, dial clusters.',
-      color_palette: 'cassette gray, orange oxide, sky blue, beige plastic',
-      lighting_setup: 'overcast window light, dial lamps, tape shimmer, desk lamp pools',
-      material_texture: 'plastic decks, magnetic tape, paper maps, wool coats, metal antennas',
-      render_quality:
-        'Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity, moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material simulation, or hyper-detail.',
-      spatial_distortion:
+      color_and_tone: 'cassette gray, orange oxide, sky blue, beige plastic',
+      lighting_and_shadow: 'overcast window light, dial lamps, tape shimmer, desk lamp pools',
+      texture_and_material: 'plastic decks, magnetic tape, paper maps, wool coats, metal antennas',
+      camera_and_composition:
         'Pools, arcades, stations, atriums, kiosks, malls, observatories, and broadcast corners with media texture. Keep depth legible and avoid default hallway, aisle, or empty studio staging.',
-      atmosphere: 'analog, nerdy, field-science, tactile',
+      atmosphere_and_mood: 'analog, nerdy, field-science, tactile',
+      rendering_and_quality:
+        'Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity, moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material simulation, or hyper-detail.',
       key_features: 'cassette decks, tape ribbons, weather maps, field operators, dial clusters',
       creative_brief:
         'Cassette futurism as useful instrument culture: tactile decks and weather work, no product-only still life. Keep the result representative rather than over-abstract; make one character in their environment the anchor, with motifs as background, costume, weather, architecture, or social pressure instead of a foreground prop. Favor clean graphic-novel card art, stylized 2D digital illustration, controlled digital painting, cel-shaded poster art, or gouache-poster color blocking over realism, photoreal painterly realism, cinematic key art, or hyper-detailed concept art. Use few bold color/value zones, moderate texture, large shapes, clean surfaces, and finish denoised with no excessive noise or ultra-fine detail.',
@@ -84,16 +84,16 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'broadcast punk public media built around a public atrium hijacked by pirate TV crews, stacked monitors, cables, tripods, and crowd attention.',
-      form_and_line:
+      subject_treatment:
         'CRT geometry, analog signal bands, vapor gradients, mall-era surfaces, tape artifacts, and digital slippage. Core composition uses monitor stacks, pirate crew, crowd, coax coils, camera gear as production context.',
-      color_palette: 'broadcast blue, red tally light, concrete gray, black cable',
-      lighting_setup: 'monitor wall glow, red tally sparks, atrium daylight, cable shadows',
-      material_texture: 'CRT glass, concrete, coax cable, folding chairs, denim jackets',
-      render_quality:
-        'Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity, moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material simulation, or hyper-detail.',
-      spatial_distortion:
+      color_and_tone: 'broadcast blue, red tally light, concrete gray, black cable',
+      lighting_and_shadow: 'monitor wall glow, red tally sparks, atrium daylight, cable shadows',
+      texture_and_material: 'CRT glass, concrete, coax cable, folding chairs, denim jackets',
+      camera_and_composition:
         'Pools, arcades, stations, atriums, kiosks, malls, observatories, and broadcast corners with media texture. Keep depth legible and avoid default hallway, aisle, or empty studio staging.',
-      atmosphere: 'public, disruptive, media-saturated, alert',
+      atmosphere_and_mood: 'public, disruptive, media-saturated, alert',
+      rendering_and_quality:
+        'Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity, moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material simulation, or hyper-detail.',
       key_features:
         'monitor stacks, pirate crew, crowd, coax coils, camera gear as production context',
       creative_brief:
@@ -109,16 +109,16 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'media occult booth built around a small booth where CRT static, folded hands, candles, and cable halos create analog devotion.',
-      form_and_line:
+      subject_treatment:
         'CRT geometry, analog signal bands, vapor gradients, mall-era surfaces, tape artifacts, and digital slippage. Core composition uses CRT halo, booth framing, candles, cable loops, human presence, static texture.',
-      color_palette: 'static white, black, candle gold, phosphor green',
-      lighting_setup: 'CRT flicker, candle edge light, dark booth shadows',
-      material_texture: 'CRT glass, wax, plastic casing, cable loops, worn vinyl',
-      render_quality:
-        'Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity, moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material simulation, or hyper-detail.',
-      spatial_distortion:
+      color_and_tone: 'static white, black, candle gold, phosphor green',
+      lighting_and_shadow: 'CRT flicker, candle edge light, dark booth shadows',
+      texture_and_material: 'CRT glass, wax, plastic casing, cable loops, worn vinyl',
+      camera_and_composition:
         'Pools, arcades, stations, atriums, kiosks, malls, observatories, and broadcast corners with media texture. Keep depth legible and avoid default hallway, aisle, or empty studio staging.',
-      atmosphere: 'quiet, eerie, intimate, analog-sacred',
+      atmosphere_and_mood: 'quiet, eerie, intimate, analog-sacred',
+      rendering_and_quality:
+        'Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity, moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material simulation, or hyper-detail.',
       key_features: 'CRT halo, booth framing, candles, cable loops, human presence, static texture',
       creative_brief:
         'Treat media like ritual without full fantasy: analog booth, human gesture, static, and cable halo. Keep the result representative rather than over-abstract; make one character in their environment the anchor, with motifs as background, costume, weather, architecture, or social pressure instead of a foreground prop. Favor clean graphic-novel card art, stylized 2D digital illustration, controlled digital painting, cel-shaded poster art, or gouache-poster color blocking over realism, photoreal painterly realism, cinematic key art, or hyper-detailed concept art. Use few bold color/value zones, moderate texture, large shapes, clean surfaces, and finish denoised with no excessive noise or ultra-fine detail.',
@@ -133,16 +133,16 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'glitchpunk street kiosk built around a kiosk with broken displays, vendors, warped product silhouettes, scanline ghosts, and chromatic errors.',
-      form_and_line:
+      subject_treatment:
         'CRT geometry, analog signal bands, vapor gradients, mall-era surfaces, tape artifacts, and digital slippage. Core composition uses glitched kiosk, vendor silhouettes, scanline ghosts, warped goods, RGB splits.',
-      color_palette: 'RGB split red, blue, green, black kiosk',
-      lighting_setup: 'broken screen glow, neon spill, scanline flicker, wet street bounce',
-      material_texture: 'cheap plastic, scratched screens, tarps, wet metal, pixel smear',
-      render_quality:
-        'Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity, moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material simulation, or hyper-detail.',
-      spatial_distortion:
+      color_and_tone: 'RGB split red, blue, green, black kiosk',
+      lighting_and_shadow: 'broken screen glow, neon spill, scanline flicker, wet street bounce',
+      texture_and_material: 'cheap plastic, scratched screens, tarps, wet metal, pixel smear',
+      camera_and_composition:
         'Pools, arcades, stations, atriums, kiosks, malls, observatories, and broadcast corners with media texture. Keep depth legible and avoid default hallway, aisle, or empty studio staging.',
-      atmosphere: 'unstable, commercial, noisy-but-controlled, urban',
+      atmosphere_and_mood: 'unstable, commercial, noisy-but-controlled, urban',
+      rendering_and_quality:
+        'Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity, moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material simulation, or hyper-detail.',
       key_features: 'glitched kiosk, vendor silhouettes, scanline ghosts, warped goods, RGB splits',
       creative_brief:
         'Use glitch as distortion over one compact street kiosk, not pure abstract glitch texture, screen-wall, or a full market aisle. Keep the result representative rather than over-abstract; make one character in their environment the anchor, with motifs as background, costume, weather, architecture, or social pressure instead of a foreground prop. Favor clean graphic-novel card art, stylized 2D digital illustration, controlled digital painting, cel-shaded poster art, or gouache-poster color blocking over realism, photoreal painterly realism, cinematic key art, or hyper-detailed concept art. Use few bold color/value zones, moderate texture, large shapes, clean surfaces, and finish denoised with no excessive noise or ultra-fine detail.',
@@ -157,16 +157,16 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'mallsoft network ritual built around an emptying mall fountain turned into an uplink with teens, coins, plants, fiber cables, and pastel storefront glow.',
-      form_and_line:
+      subject_treatment:
         'CRT geometry, analog signal bands, vapor gradients, mall-era surfaces, tape artifacts, and digital slippage. Core composition uses fountain uplink, teen crew, fiber cables, coins, storefront glow.',
-      color_palette: 'mall pink, fountain blue, beige tile, fiber cyan',
-      lighting_setup: 'skylight wash, fountain reflection, storefront neon, fiber glints',
-      material_texture: 'tile, water, plastic plants, fiber cable, chrome benches',
-      render_quality:
-        'Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity, moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material simulation, or hyper-detail.',
-      spatial_distortion:
+      color_and_tone: 'mall pink, fountain blue, beige tile, fiber cyan',
+      lighting_and_shadow: 'skylight wash, fountain reflection, storefront neon, fiber glints',
+      texture_and_material: 'tile, water, plastic plants, fiber cable, chrome benches',
+      camera_and_composition:
         'Pools, arcades, stations, atriums, kiosks, malls, observatories, and broadcast corners with media texture. Keep depth legible and avoid default hallway, aisle, or empty studio staging.',
-      atmosphere: 'melancholy, social, softly uncanny, retro',
+      atmosphere_and_mood: 'melancholy, social, softly uncanny, retro',
+      rendering_and_quality:
+        'Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity, moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material simulation, or hyper-detail.',
       key_features: 'fountain uplink, teen crew, fiber cables, coins, storefront glow',
       creative_brief:
         'Mallsoft meets network ritual: a cropped mall fountain, simplified people, cables, and nostalgia, avoiding faceless corridor repetition. Keep the result representative rather than over-abstract; use flat graphic illustration, gouache-poster shapes, cel-poster blocking, and controlled digital painting over realism or generic concept art. Use few bold color/value zones, large matte shapes, clean surfaces, low-to-moderate detail, and finish denoised with no excessive noise or ultra-fine detail.',
@@ -181,16 +181,16 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'analog signal observatory built around a hilltop or roof observatory using tape reels, signal dishes, CRT scopes, and windblown technicians.',
-      form_and_line:
+      subject_treatment:
         'CRT geometry, analog signal bands, vapor gradients, mall-era surfaces, tape artifacts, and digital slippage. Core composition uses tape reels, signal dishes, technicians, CRT scopes, wind lines.',
-      color_palette: 'midnight blue, tape brown, phosphor green, moon white',
-      lighting_setup: 'moonlight, CRT phosphor, dish rim light, tiny red LEDs',
-      material_texture: 'magnetic tape, metal dishes, wool coats, concrete roof, glass scopes',
-      render_quality:
-        'Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity, moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material simulation, or hyper-detail.',
-      spatial_distortion:
+      color_and_tone: 'midnight blue, tape brown, phosphor green, moon white',
+      lighting_and_shadow: 'moonlight, CRT phosphor, dish rim light, tiny red LEDs',
+      texture_and_material: 'magnetic tape, metal dishes, wool coats, concrete roof, glass scopes',
+      camera_and_composition:
         'Pools, arcades, stations, atriums, kiosks, malls, observatories, and broadcast corners with media texture. Keep depth legible and avoid default hallway, aisle, or empty studio staging.',
-      atmosphere: 'lonely, scientific, haunted, analog',
+      atmosphere_and_mood: 'lonely, scientific, haunted, analog',
+      rendering_and_quality:
+        'Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity, moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material simulation, or hyper-detail.',
       key_features: 'tape reels, signal dishes, technicians, CRT scopes, wind lines',
       creative_brief:
         'Analog cosmic listening: one windblown technician protagonist, tape, dishes, and weather, not readable screens or random floating UI. Keep the result representative rather than over-abstract; use flat graphic illustration, gouache-poster shapes, cel-poster blocking, and controlled digital painting over realism or generic concept art. Use few bold color/value zones, large matte shapes, clean surfaces, low-to-moderate detail, and finish denoised with no excessive noise or ultra-fine detail.',

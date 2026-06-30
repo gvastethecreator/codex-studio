@@ -13,22 +13,22 @@ tags:
   - micro-macro
 visualDna:
   aesthetic: Seed parachute, dispersal-wonder, wind-botany, flight-without-wings, dandelion-clock
-  form_and_line: Fine hairs, pappus-bristle, filament-stalk, cypsela-seed, parachute-canopy, radial-fluff
-  color_palette: White, translucent-silver, seed-brown, backlit-gold, stem-green, sky-blue bokeh
-  lighting_setup: Backlit sun, through-pappus glow, filament-silhouette, golden-hour, contre-jour
-  material_texture: Fluff, pappus-plume, barbed-filament, aerodynamic-surface, seed-attachment, hydrophobic-pappus
-  render_quality: Delicate, wind, time-lapse flight, dandelion-wish, botanical-aeronautics, airborne-seed
-  spatial_distortion: Flying, mid-air suspension, wind-current, pappus-sphere, cypsela-weight, descent-velocity
-  atmosphere: Wish, soft, meadow-breeze, spring-dispersal, make-a-wish, childhood-breath, floating-dream
+  subject_treatment: Fine hairs, pappus-bristle, filament-stalk, cypsela-seed, parachute-canopy, radial-fluff
+  color_and_tone: White, translucent-silver, seed-brown, backlit-gold, stem-green, sky-blue bokeh
+  lighting_and_shadow: Backlit sun, through-pappus glow, filament-silhouette, golden-hour, contre-jour
+  texture_and_material: Fluff, pappus-plume, barbed-filament, aerodynamic-surface, seed-attachment, hydrophobic-pappus
+  camera_and_composition: Flying, mid-air suspension, wind-current, pappus-sphere, cypsela-weight, descent-velocity
+  atmosphere_and_mood: Wish, soft, meadow-breeze, spring-dispersal, make-a-wish, childhood-breath, floating-dream
+  rendering_and_quality: Delicate, wind, time-lapse flight, dandelion-wish, botanical-aeronautics, airborne-seed
   key_features: >-
     Parachute, pappus-filaments, cypsela-seed, radial-symmetry, backlit-glow, airborne-suspension, wind-drift,
     dandelion-stem
   creative_brief: >-
-    Frame dandelion dispersal as lightweight aerodynamics: radial pappus geometry, translucent backlight, and suspended
-    drift motion. Preserve botanical delicacy and airborne fragility without narrative scene lock. Apply Dandelion Seed
-    as a portable style system over any input: preserve its construction grammar, material cues, scale logic, and
-    signature rendering behavior while avoiding a required franchise, literal prop, fixed specimen, classroom sample,
-    product shot, or scene template.
+    Frame dandelion dispersal as lightweight aerodynamics: radial pappus geometry, translucent backlight, and
+    suspended drift motion. Preserve botanical delicacy and airborne fragility without narrative scene lock.
+    Apply Dandelion Seed as a portable style system over any input: preserve its construction grammar,
+    material cues, scale logic, and signature rendering behavior while avoiding a required franchise, literal
+    prop, fixed specimen, classroom sample, product shot, or scene template.
 avoidRules:
   - heavy
 assets:

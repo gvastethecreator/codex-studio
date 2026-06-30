@@ -12,16 +12,32 @@ tags:
   - essential-art-styles
   - retro-game-visual-systems
 visualDna:
-  aesthetic: Classic 16-bit Mode 7 effect, pseudo-3D affine transform, rotating flat-plane depth illusion, sprite-scaled motifs approaching from distance, SNES hardware magic, Final Fantasy VI, Super Mario Kart and F-Zero as transform anchors only
-  form_and_line: Scanline-stepped pseudo-perspective, sprite-scaling contour, tile-based planar rotation, chunky affine mapping, any subject flattened into perspective-warped texture logic
-  color_palette: 256-color SNES palette, vibrant mode-7 blues, checkerboard or banded tile chroma, 15-bit color depth charm
-  lighting_setup: Palette-cycled water shimmer, gradient-sky fake lighting, sprite brightness for depth, no real light, pure hardware trickery
-  material_texture: Affine-transformed tile repetition, no-mipmap chunky scaling, scanline rendering artifacts, cartridge-memory limitations visible
-  render_quality: SNES Mode 7 capture, 16-bit pseudo-3D nostalgia, hardware-trick aesthetic, retro-technical beauty
-  spatial_distortion: Perspective-transformed flat plane, sprite-scale depth illusion, horizon-like division when useful, no true vertical camera
-  atmosphere: Nostalgic, technically miraculous, kinetic, hardware-driven
-  key_features: Affine-transformed plane, scaled sprite layering, scanline artifact lines, banded color fields, 256-color charm
-  creative_brief: Depth is faked by rotating and stretching a flat surface until it starts behaving like space. Any prompt becomes an affine hardware trick, with motifs scaling toward the viewer while resolution stays stubbornly chunky.
+  aesthetic: >-
+    Classic 16-bit Mode 7 effect, pseudo-3D affine transform, rotating flat-plane depth illusion,
+    sprite-scaled motifs approaching from distance, SNES hardware magic, Final Fantasy VI, Super Mario Kart
+    and F-Zero as transform anchors only
+  subject_treatment: >-
+    Scanline-stepped pseudo-perspective, sprite-scaling contour, tile-based planar rotation, chunky affine
+    mapping, any subject flattened into perspective-warped texture logic
+  color_and_tone: 256-color SNES palette, vibrant mode-7 blues, checkerboard or banded tile chroma, 15-bit color depth charm
+  lighting_and_shadow: >-
+    Palette-cycled water shimmer, gradient-sky fake lighting, sprite brightness for depth, no real light, pure
+    hardware trickery
+  texture_and_material: >-
+    Affine-transformed tile repetition, no-mipmap chunky scaling, scanline rendering artifacts,
+    cartridge-memory limitations visible
+  camera_and_composition: >-
+    Perspective-transformed flat plane, sprite-scale depth illusion, horizon-like division when useful, no
+    true vertical camera
+  atmosphere_and_mood: Nostalgic, technically miraculous, kinetic, hardware-driven
+  rendering_and_quality: SNES Mode 7 capture, 16-bit pseudo-3D nostalgia, hardware-trick aesthetic, retro-technical beauty
+  key_features: >-
+    Affine-transformed plane, scaled sprite layering, scanline artifact lines, banded color fields, 256-color
+    charm
+  creative_brief: >-
+    Depth is faked by rotating and stretching a flat surface until it starts behaving like space. Any prompt
+    becomes an affine hardware trick, with motifs scaling toward the viewer while resolution stays stubbornly
+    chunky.
 avoidRules:
   - realistic perspective
   - 3d rendering

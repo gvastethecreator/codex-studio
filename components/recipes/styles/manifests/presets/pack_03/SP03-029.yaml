@@ -13,19 +13,23 @@ tags:
   - 3d-styles
 visualDna:
   aesthetic: Mandelbulb complexity
-  form_and_line: Infinite detail
-  color_palette: Psychedelic, infinite recursion tones
-  lighting_setup: Deep shadows, cave-detail
-  material_texture: Mathematical patterns, procedural surface
-  render_quality: Math art, infinite, algorithmic wonder
-  atmosphere: Trippy, alien, mind-bending
+  subject_treatment: Infinite detail
+  color_and_tone: Psychedelic, infinite recursion tones
+  lighting_and_shadow: Deep shadows, cave-detail
+  texture_and_material: Mathematical patterns, procedural surface
+  camera_and_composition: >-
+    Lookdev camera for Fractal 3D: three-quarter or orthographic framing, clean silhouette read, material
+    highlights, controlled depth, and vertical card composition.
+  atmosphere_and_mood: Trippy, alien, mind-bending
+  rendering_and_quality: Math art, infinite, algorithmic wonder
   key_features: Self-similarity, fractal recursion
   creative_brief: >-
-    Infuse the input with fractal recursion: self-similar detail at multiple scales, Mandelbulb density, algorithmic
-    ridges and psychedelic procedural color. Keep alien mathematical wonder without forcing a cathedral, cave or
-    traversable fractal landscape. Apply Fractal 3D as a portable 3D/render style system over any input: preserve its
-    renderer logic, material behavior, geometry language, lighting grammar, and production cues while avoiding a
-    required character, vehicle, prop, environment, UI screen, product shot, or scene template.
+    Infuse the input with fractal recursion: self-similar detail at multiple scales, Mandelbulb density,
+    algorithmic ridges and psychedelic procedural color. Keep alien mathematical wonder without forcing a
+    cathedral, cave or traversable fractal landscape. Apply Fractal 3D as a portable 3D/render style system
+    over any input: preserve its renderer logic, material behavior, geometry language, lighting grammar, and
+    production cues while avoiding a required character, vehicle, prop, environment, UI screen, product shot,
+    or scene template.
 avoidRules:
   - simple
   - clean

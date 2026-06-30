@@ -13,34 +13,34 @@ tags:
   - anime-style-spectrum
 visualDna:
   aesthetic: >-
-    Green-phosphor sensor vision with monochrome glow, HUD-like corner logic, intensifier grain,
-    vignette falloff, and mediated vulnerability
-  form_and_line: >-
-    Phosphor scan-line contours, image-intensifier grain defining edges, HUD-overlay line elements,
-    and reticle-like alignment marks
-  color_palette: >-
-    Phosphor-green-monochrome, black-level-crushed-shadows, overexposed-bloom-white,
-    NVG-emerald-tube-tint, no-other-colors-at-all
-  lighting_setup: >-
+    Green-phosphor sensor vision with monochrome glow, HUD-like corner logic, intensifier grain, vignette
+    falloff, and mediated vulnerability
+  subject_treatment: >-
+    Phosphor scan-line contours, image-intensifier grain defining edges, HUD-overlay line elements, and
+    reticle-like alignment marks
+  color_and_tone: >-
+    Phosphor-green-monochrome, black-level-crushed-shadows, overexposed-bloom-white, NVG-emerald-tube-tint,
+    no-other-colors-at-all
+  lighting_and_shadow: >-
     Infrared illuminator beam, amplified moon-ambient, sensor-overload bloom, and distant hot-source
     registration as white
-  material_texture: >-
+  texture_and_material: >-
     Image-intensifier-scintillation-noise, phosphor-screen-grain, CMOS-night-sensor-artifacts,
     lens-tube-vignette, dust-on-optic-specks
-  render_quality: >-
-    Night-vision-footage aesthetic, tactical-body-cam realism, military-surveillance-grain,
-    green-phosphor-beauty, ghost-through-technology vision
-  spatial_distortion: >-
+  camera_and_composition: >-
     Fisheye lens distortion, HUD elements composited over subject space, body-cam-like motion blur,
     reticle-centered framing
-  atmosphere: Tactical, tense, nocturnal, high-tech vulnerability, ghostly green paranoia
+  atmosphere_and_mood: Tactical, tense, nocturnal, high-tech vulnerability, ghostly green paranoia
+  rendering_and_quality: >-
+    Night-vision-footage aesthetic, tactical-body-cam realism, military-surveillance-grain,
+    green-phosphor-beauty, ghost-through-technology vision
   key_features: >-
-    Phosphor monochrome, intensifier grain, reticle-like alignment, lens vignette, infrared points,
-    and sensor-mediated framing
+    Phosphor monochrome, intensifier grain, reticle-like alignment, lens vignette, infrared points, and
+    sensor-mediated framing
   creative_brief: >-
-    Use phosphor sensor-vision grain as mediated-sight grammar. Any prompt should feel seen through
-    noisy green intensifier optics, HUD framing, vignette, and fragile visibility. Tactical scenes,
-    weapons, battlefields, explosions, and body cameras are optional.
+    Use phosphor sensor-vision grain as mediated-sight grammar. Any prompt should feel seen through noisy
+    green intensifier optics, HUD framing, vignette, and fragile visibility. Tactical scenes, weapons,
+    battlefields, explosions, and body cameras are optional.
 avoidRules:
   - colorful
   - bright

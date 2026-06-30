@@ -12,20 +12,32 @@ tags:
   - anime-character-and-lifestyle
   - shojo-magical-girl-and-visionary-classics
 visualDna:
-  aesthetic: Epistolary romance-shojo style with period elegance, contemplative stillness, and emotionally luminous restraint
-  form_and_line: Fine calligraphic linework, delicate hand-gesture focus, graceful portrait contours, and posture-driven longing cues
-  color_palette: Amber-rose twilight tones, pearl neutrals, muted jewel accents, and soft sepia warmth for memory-like intimacy
-  lighting_setup: Window-lamp dual glow, low-intensity bloom halos, gentle rim caress, and still-life portrait luminance balance
-  material_texture: Paper-fiber tactility, ink trace softness, lace and satin micro-detail, watercolor-like background transitions
-  render_quality: Cinematic shojo rendering optimized for intimate emotional legibility and period-textile precision
-  spatial_distortion: Intimate depth compression with gentle elongation to prioritize correspondence-era emotional proximity
-  atmosphere: Tender, wistful, elegant, reflective, intimate
-  key_features: Epistolary gesture grammar, amber correspondence lighting, period fabric delicacy, longing-through-stillness framing
+  aesthetic: >-
+    Epistolary romance-shojo style with period elegance, contemplative stillness, and emotionally luminous
+    restraint
+  subject_treatment: >-
+    Fine calligraphic linework, delicate hand-gesture focus, graceful portrait contours, and posture-driven
+    longing cues
+  color_and_tone: >-
+    Amber-rose twilight tones, pearl neutrals, muted jewel accents, and soft sepia warmth for memory-like
+    intimacy
+  lighting_and_shadow: >-
+    Window-lamp dual glow, low-intensity bloom halos, gentle rim caress, and still-life portrait luminance
+    balance
+  texture_and_material: >-
+    Paper-fiber tactility, ink trace softness, lace and satin micro-detail, watercolor-like background
+    transitions
+  camera_and_composition: Intimate depth compression with gentle elongation to prioritize correspondence-era emotional proximity
+  atmosphere_and_mood: Tender, wistful, elegant, reflective, intimate
+  rendering_and_quality: Cinematic shojo rendering optimized for intimate emotional legibility and period-textile precision
+  key_features: >-
+    Epistolary gesture grammar, amber correspondence lighting, period fabric delicacy,
+    longing-through-stillness framing
   creative_brief: >-
-    Preserve identity via epistolary intimacy: paper-ink tactility, amber portrait lighting, and restrained romantic
-    stillness should define this style independent of specific story letters. Apply this anime/IP-title grammar over any
-    input: preserve its emotional staging, line behavior, palette, symbolic motifs, and production cues while avoiding a
-    required cast, lore event, location, prop, or fixed scene.
+    Preserve identity via epistolary intimacy: paper-ink tactility, amber portrait lighting, and restrained
+    romantic stillness should define this style independent of specific story letters. Apply this
+    anime/IP-title grammar over any input: preserve its emotional staging, line behavior, palette, symbolic
+    motifs, and production cues while avoiding a required cast, lore event, location, prop, or fixed scene.
 avoidRules:
   - realistic
   - 3d render
@@ -43,8 +55,8 @@ assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-046.webp
 attributes:
   negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark,
-    text, signature
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts,
+    watermark, text, signature
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle

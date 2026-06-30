@@ -13,19 +13,19 @@ tags:
   - ink-and-print
 visualDna:
   aesthetic: Aerosol handstyle signature with velocity-led linework
-  form_and_line: Continuous flowing strokes, pressure-width variation, drip tails
-  color_palette: Chrome silver, matte black, occasional high-contrast accent pops
-  lighting_setup: Surface sheen and overspray bloom define form, not volumetric light
-  material_texture: Concrete/brick grain with soft spray edge diffusion
-  render_quality: Fast, confident, one-pass execution with visible can control
-  spatial_distortion: Elastic letter compression, directional slant, motion-stretch curves
-  atmosphere: Nocturnal, kinetic, urban, improvised immediacy
+  subject_treatment: Continuous flowing strokes, pressure-width variation, drip tails
+  color_and_tone: Chrome silver, matte black, occasional high-contrast accent pops
+  lighting_and_shadow: Surface sheen and overspray bloom define form, not volumetric light
+  texture_and_material: Concrete/brick grain with soft spray edge diffusion
+  camera_and_composition: Elastic letter compression, directional slant, motion-stretch curves
+  atmosphere_and_mood: Nocturnal, kinetic, urban, improvised immediacy
+  rendering_and_quality: Fast, confident, one-pass execution with visible can control
   key_features: Handstyle ligatures, overspray halos, gravity drips, cap-radius consistency
   creative_brief: >-
-    Apply tag-handstyle graffiti logic to any input as a portable aerosol signature style: speedline strokes, cap-width
-    variation, overspray, drips, marker ghosts, chromatic shadow offsets, and wall-weathered edge noise. If the prompt
-    has no text, convert its main shapes into gestural tag-like contours and motion accents without requiring readable
-    words, names, walls, signatures, or an urban scene.
+    Apply tag-handstyle graffiti logic to any input as a portable aerosol signature style: speedline strokes,
+    cap-width variation, overspray, drips, marker ghosts, chromatic shadow offsets, and wall-weathered edge
+    noise. If the prompt has no text, convert its main shapes into gestural tag-like contours and motion
+    accents without requiring readable words, names, walls, signatures, or an urban scene.
 avoidRules:
   - clean
   - font

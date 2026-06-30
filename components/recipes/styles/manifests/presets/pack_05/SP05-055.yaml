@@ -13,32 +13,30 @@ tags:
   - mecha-and-cyberpunk
 visualDna:
   aesthetic: >-
-    Sacred industrial techno-dread with bio-synthetic unease, black-metal sheen, hollow verticality,
-    and restrained philosophical menace
-  form_and_line: >-
-    Severe hard-edge linework, ribbed verticals, grotesque silhouette pressure, fine hatchwork, and
-    solemn contour spacing.
-  color_palette: Blackened teal, oxidized violet, dim cyan, bone ivory, cold steel, and rare acidic highlights.
-  lighting_setup: >-
-    Subterranean low glow, chapel-like shafts abstracted into geometry, rim-lit machinery, and
-    negative-fill dread.
-  material_texture: >-
-    Damp metal, bio-organic membrane hints, worn stone-like surfaces, black lacquer, and corroded
-    polymer.
-  render_quality: >-
-    Premium gothic-cyber anime finish with refined dread, precise surface hierarchy, and quiet
-    high-detail menace.
-  spatial_distortion: >-
-    Vertical compression, sacred-scale symmetry, deep axial recession, and hollow negative space
-    around the subject.
-  atmosphere: Brooding, cerebral, existential, haunting
+    Sacred industrial techno-dread with bio-synthetic unease, black-metal sheen, hollow verticality, and
+    restrained philosophical menace
+  subject_treatment: >-
+    Severe hard-edge linework, ribbed verticals, grotesque silhouette pressure, fine hatchwork, and solemn
+    contour spacing.
+  color_and_tone: Blackened teal, oxidized violet, dim cyan, bone ivory, cold steel, and rare acidic highlights.
+  lighting_and_shadow: >-
+    Subterranean low glow, chapel-like shafts abstracted into geometry, rim-lit machinery, and negative-fill
+    dread.
+  texture_and_material: Damp metal, bio-organic membrane hints, worn stone-like surfaces, black lacquer, and corroded polymer.
+  camera_and_composition: >-
+    Vertical compression, sacred-scale symmetry, deep axial recession, and hollow negative space around the
+    subject.
+  atmosphere_and_mood: Brooding, cerebral, existential, haunting
+  rendering_and_quality: >-
+    Premium gothic-cyber anime finish with refined dread, precise surface hierarchy, and quiet high-detail
+    menace.
   key_features: >-
-    Sacred-industrial geometry, bio-tech unease, black-metal gloss, hollow vertical space, ritual
-    stillness, and elegant decay
+    Sacred-industrial geometry, bio-tech unease, black-metal gloss, hollow vertical space, ritual stillness,
+    and elegant decay
   creative_brief: >-
-    Use gothic tech existential dread as ritualized machine-anxiety grammar. Any prompt should feel
-    hollow, elegant, synthetic, and sacredly wrong. Cathedrals, monsters, facilities, figures, and
-    horror set pieces are optional.
+    Use gothic tech existential dread as ritualized machine-anxiety grammar. Any prompt should feel hollow,
+    elegant, synthetic, and sacredly wrong. Cathedrals, monsters, facilities, figures, and horror set pieces
+    are optional.
 avoidRules:
   - realistic
   - 3d render
@@ -56,8 +54,8 @@ assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-055.webp
 attributes:
   negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, text, signature
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts,
+    watermark, text, signature
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds

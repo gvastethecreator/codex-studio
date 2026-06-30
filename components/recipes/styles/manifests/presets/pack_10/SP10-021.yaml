@@ -13,18 +13,18 @@ tags:
   - digital-glitch-and-noise
 visualDna:
   aesthetic: Video compression artifact
-  form_and_line: Motion vectors
-  color_palette: Bleeding pixels
-  lighting_setup: Broken
-  material_texture: Macroblocks
-  render_quality: Glitch art, broken
-  spatial_distortion: Pixel drag
-  atmosphere: Chaotic, digital
+  subject_treatment: Motion vectors
+  color_and_tone: Bleeding pixels
+  lighting_and_shadow: Broken
+  texture_and_material: Macroblocks
+  camera_and_composition: Pixel drag
+  atmosphere_and_mood: Chaotic, digital
+  rendering_and_quality: Glitch art, broken
   key_features: I-Frame destruction
   creative_brief: >-
-    Apply datamosh failure to the input: inter-frame smears, motion-block bleed,
-    codec ghosts, and liquefied temporal edges should corrupt subject movement
-    or contours while retaining enough identity to read the prompt.
+    Apply datamosh failure to the input: inter-frame smears, motion-block bleed, codec ghosts, and liquefied
+    temporal edges should corrupt subject movement or contours while retaining enough identity to read the
+    prompt.
 avoidRules:
   - clean
   - perfect

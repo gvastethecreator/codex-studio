@@ -13,18 +13,19 @@ tags:
   - subcultures
 visualDna:
   aesthetic: 50s rockabilly Americana, hot-rod romance, rebel polish
-  form_and_line: Cuffed jeans, leather, motorcycle-jacket taper, pencil-skirt curve, victory-roll volume
-  color_palette: Black, Red, Denim, cherry-bomb red, indigo raw, chrome, ivory
-  lighting_setup: Sunny chrome-gleam reflections, warm neon accent, afternoon-sun flare
-  material_texture: Horsehide leather, raw selvedge denim, cotton bandana, pomade shine, swallow-embroidered satin
-  render_quality: Retro, cool, Rockabilly jukebox, vintage-hot-rod spirit
-  spatial_distortion: Pompadour hair
-  atmosphere: Rebellious, fun, Saturday-night swagger, hot-rod adrenaline, soda-shop cool
+  subject_treatment: Cuffed jeans, leather, motorcycle-jacket taper, pencil-skirt curve, victory-roll volume
+  color_and_tone: Black, Red, Denim, cherry-bomb red, indigo raw, chrome, ivory
+  lighting_and_shadow: Sunny chrome-gleam reflections, warm neon accent, afternoon-sun flare
+  texture_and_material: Horsehide leather, raw selvedge denim, cotton bandana, pomade shine, swallow-embroidered satin
+  camera_and_composition: Pompadour hair
+  atmosphere_and_mood: Rebellious, fun, Saturday-night swagger, hot-rod adrenaline, soda-shop cool
+  rendering_and_quality: Retro, cool, Rockabilly jukebox, vintage-hot-rod spirit
   key_features: Sailor-style ink cues, rolled sleeve logic, cuffed jeans, engineer boots, chrome-red contrast
   creative_brief: >-
-    Apply rockabilly Americana to the input: horsehide leather, cuffed denim, pomade gloss, victory-roll volume,
-    swallow embroidery, sailor-ink cues and chrome-red contrast. Keep hot-rod swagger without requiring a diner, drag
-    race, greaser portrait, pinup body, literal motorcycle/car or tattooed rebel persona.
+    Apply rockabilly Americana to the input: horsehide leather, cuffed denim, pomade gloss, victory-roll
+    volume, swallow embroidery, sailor-ink cues and chrome-red contrast. Keep hot-rod swagger without
+    requiring a diner, drag race, greaser portrait, pinup body, literal motorcycle/car or tattooed rebel
+    persona.
 avoidRules:
   - modern
 assets:

@@ -13,21 +13,24 @@ tags:
   - lighting-and-atmosphere
 visualDna:
   aesthetic: Blurry lights
-  form_and_line: None
-  color_palette: Soft optical discs, warm amber blur, cool cyan blur, pastel specular circles
-  lighting_setup: Defocused points, out-of-focus speculars, aperture-projected glow
-  material_texture: Creamy blur, cat's-eye shape, soap-bubble edge
-  render_quality: Dreamy, abstract, lens-artist blur, optical softness
-  spatial_distortion: Circles, aperture shape projection, specular discs, cat-eye edges
-  atmosphere: Soft, optical, intimate, romantic haze
+  subject_treatment: >-
+    Treat subjects as believable filmed or broadcast subjects under Bokeh (Macro): casting, wardrobe, props,
+    motion cues, and silhouette hierarchy follow 5. Lighting And Atmosphere cinematic and broadcast grammar
+    without locking to one plot beat.
+  color_and_tone: Soft optical discs, warm amber blur, cool cyan blur, pastel specular circles
+  lighting_and_shadow: Defocused points, out-of-focus speculars, aperture-projected glow
+  texture_and_material: Creamy blur, cat's-eye shape, soap-bubble edge
+  camera_and_composition: Circles, aperture shape projection, specular discs, cat-eye edges
+  atmosphere_and_mood: Soft, optical, intimate, romantic haze
+  rendering_and_quality: Dreamy, abstract, lens-artist blur, optical softness
   key_features: Shallow DOF, background abstraction, specular discs, creamy falloff
   creative_brief: >-
     Make depth of field the style: narrow focus, creamy optical blur, aperture-shaped highlights, cat-eye edge
-    distortion, and abstracted background color. Avoid decorative orb-only compositions or fixed night setups. Bokeh
-    should support the input by simplifying everything outside the focal plane. Apply Bokeh as a portable
-    cinematic/camera style over any input: preserve its lens behavior, color process, lighting setup, artifact pattern,
-    and deformation grammar while avoiding a required actor, room, prop, brand, readable text, fixed IP scene, or
-    narrative setup.
+    distortion, and abstracted background color. Avoid decorative orb-only compositions or fixed night setups.
+    Bokeh should support the input by simplifying everything outside the focal plane. Apply Bokeh as a
+    portable cinematic/camera style over any input: preserve its lens behavior, color process, lighting setup,
+    artifact pattern, and deformation grammar while avoiding a required actor, room, prop, brand, readable
+    text, fixed IP scene, or narrative setup.
 avoidRules:
   - deep focus
 assets:

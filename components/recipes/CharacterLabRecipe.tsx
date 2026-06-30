@@ -1602,8 +1602,9 @@ export const CharacterLabRecipe: React.FC<CharacterLabRecipeProps> = ({
           <button
             type="button"
             onClick={() => runAction(selectedAction)}
-            disabled={isGenerating}
-            className="group absolute bottom-3 right-3 z-30 flex min-h-11 w-fit min-w-[172px] items-center justify-center gap-2 rounded-xl border border-violet-400/40 bg-violet-500/20 px-3 py-2 text-left text-white shadow-[0_18px_38px_rgba(0,0,0,0.38),0_12px_28px_rgba(139,92,246,0.18)] backdrop-blur-md transition-[border-color,background-color,opacity,transform] duration-150 hover:-translate-y-0.5 hover:border-violet-300/60 hover:bg-violet-500/30 disabled:cursor-wait disabled:opacity-60 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-violet-400/70 focus-visible:ring-offset-2 focus-visible:ring-offset-black"
+            data-character-lab-generate-button
+            data-generate-active={isGenerating ? 'true' : 'false'}
+            className="group absolute bottom-3 right-3 z-30 flex min-h-11 w-fit min-w-[172px] items-center justify-center gap-2 rounded-xl border border-violet-400/40 bg-violet-500/20 px-3 py-2 text-left text-white shadow-[0_18px_38px_rgba(0,0,0,0.38),0_12px_28px_rgba(139,92,246,0.18)] backdrop-blur-md transition-[border-color,background-color,opacity,transform] duration-150 hover:-translate-y-0.5 hover:border-violet-300/60 hover:bg-violet-500/30 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-violet-400/70 focus-visible:ring-offset-2 focus-visible:ring-offset-black"
           >
             <span className="grid size-8 shrink-0 place-items-center rounded-lg bg-black">
               {isGenerating ? (
@@ -1614,7 +1615,7 @@ export const CharacterLabRecipe: React.FC<CharacterLabRecipeProps> = ({
             </span>
             <span className="min-w-0">
               <span className="block truncate text-[10px] font-black uppercase tracking-widest">
-                Generate
+                {isGenerating ? 'Queue' : 'Generate'}
               </span>
               <span className="mt-0.5 block truncate text-[8px] font-bold uppercase tracking-wider text-violet-200/70">
                 Current action

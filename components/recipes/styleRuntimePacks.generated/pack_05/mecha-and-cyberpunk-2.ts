@@ -12,19 +12,19 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Heroic ignition anime through sharp geometry, flat-shaded heat, pastel-neon urgency, and clean angular optimism',
-      form_and_line:
+      subject_treatment:
         'Triangular contour rhythm, blocky urgent silhouettes, explosive straight vectors, hard graphic cuts, and heroic angular posing.',
-      color_palette:
+      color_and_tone:
         'Hot magenta, cyan flame edges, lemon yellow, coral orange, black graphic anchors, and clean white highlights.',
-      lighting_setup:
+      lighting_and_shadow:
         'Flat flame glow, hard cel highlights, color-block rim light, geometric bloom, and crisp emergency-heat contrast.',
-      material_texture:
+      texture_and_material:
         'Smooth enamel, clean graphic smoke, matte panels, stylized heat shimmer, and polished high-chroma surfaces.',
-      render_quality:
-        'Premium hypergraphic anime finish with perfect shape readability, bright vector energy, and controlled chaos.',
-      spatial_distortion:
+      camera_and_composition:
         'Triangle-led perspective, explosive foreshortening, angular depth slices, and speed-grid compression around action.',
-      atmosphere: 'Hyper, triumphant, chaotic, spirited',
+      atmosphere_and_mood: 'Hyper, triumphant, chaotic, spirited',
+      rendering_and_quality:
+        'Premium hypergraphic anime finish with perfect shape readability, bright vector energy, and controlled chaos.',
       key_features:
         'Triangular heat shapes, urgent diagonals, pastel-neon flame, heroic geometry, readable chaos, and hot color blocking',
       creative_brief:
@@ -40,19 +40,19 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Grounded civic sci-fi procedure with practical engineering, maintenance realism, bureaucratic calm, utility palettes, and low-key humor',
-      form_and_line:
+      subject_treatment:
         'Hard-edged machinery, panel-line discipline, procedural diagram shapes, maintenance geometry, and civic layout grids.',
-      color_palette:
+      color_and_tone:
         'Utility white, municipal blue, hazard orange, wet asphalt gray, paperwork beige, and hydraulic steel.',
-      lighting_setup:
+      lighting_and_shadow:
         'Overcast practical light, fluorescent bay glow, wet-surface reflections, and low-drama operational highlights.',
-      material_texture:
+      texture_and_material:
         'Brushed metal, rubber seals, rain sheen, concrete grain, paperwork flatness, and oily mechanical joints.',
-      render_quality:
-        'High-detail grounded sci-fi anime finish with practical machines, precise engineering, and civic realism.',
-      spatial_distortion:
+      camera_and_composition:
         'Procedure-first perspective, inspection-angle framing, and infrastructure depth without fixed city or cockpit views.',
-      atmosphere: 'Procedural, grounded, urban, practical',
+      atmosphere_and_mood: 'Procedural, grounded, urban, practical',
+      rendering_and_quality:
+        'High-detail grounded sci-fi anime finish with practical machines, precise engineering, and civic realism.',
       key_features:
         'Civic machinery logic, maintenance grids, paperwork humor, utility color, procedural diagrams, and practical engineering surfaces',
       creative_brief:
@@ -68,19 +68,19 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Clean tactical futurism with sterile arcology pressure, ceramic hard surfaces, bio-political restraint, and polished control geometry',
-      form_and_line:
+      subject_treatment:
         'Hard-edged tactical contours, clean arcology grids, exoshell-like segmentation, corridor perspective, and severe panel discipline.',
-      color_palette:
+      color_and_tone:
         'Ceramic white, tactical gray, cold cyan, muted olive, warning red, and polished black.',
-      lighting_setup:
+      lighting_and_shadow:
         'Clinical overhead glow, hard tactical rims, glass reflection planes, and cold specular control.',
-      material_texture:
+      texture_and_material:
         'Ceramic armor sheen, brushed composite, glassy architecture, carbon weave, sterile floor reflection, and synthetic dust.',
-      render_quality:
-        'High-detail sci-fi anime finish with polished hard surfaces, severe clarity, and tactical civic scale.',
-      spatial_distortion:
+      camera_and_composition:
         'Clean corridor depth, grid vanishing points, and controlled hard-surface perspective without fixed squad staging.',
-      atmosphere: 'Tactical, polished, civic, severe',
+      atmosphere_and_mood: 'Tactical, polished, civic, severe',
+      rendering_and_quality:
+        'High-detail sci-fi anime finish with polished hard surfaces, severe clarity, and tactical civic scale.',
       key_features:
         'Sterile grids, ceramic reflections, severe civic control, polished tactical geometry, cold material contrast, and bio-political pressure',
       creative_brief:
@@ -96,19 +96,19 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Pale machine elegy with enamel decay, post-collapse silence, lonely contrast, worn synthetic surfaces, and dust-haze mortality',
-      form_and_line:
+      subject_treatment:
         'Elegant mechanical curves, sparse black-white silhouettes, long empty contours, and slow mythic action lines.',
-      color_palette:
+      color_and_tone:
         'Chalk white, ash gray, dead black, pale blue, rust whisper orange, and faint gold memory.',
-      lighting_setup:
+      lighting_and_shadow:
         'Bleached overcast, soft rim isolation, dust diffusion, and almost-shadowless elegiac light.',
-      material_texture:
+      texture_and_material:
         'Powder dust, worn enamel, chipped metal, dry polymer, wind-erased grain, and soft cel haze.',
-      render_quality:
-        'High-detail sci-fi anime finish with restrained ruin texture, pale clarity, and mythic loneliness.',
-      spatial_distortion:
+      camera_and_composition:
         'Empty horizon expansion, small-figure isolation, and entropy-soft depth without fixed wasteland staging.',
-      atmosphere: 'Elegiac, pale, lonely, mythic',
+      atmosphere_and_mood: 'Elegiac, pale, lonely, mythic',
+      rendering_and_quality:
+        'High-detail sci-fi anime finish with restrained ruin texture, pale clarity, and mythic loneliness.',
       key_features:
         'Pale entropy, worn enamel, elegant machinery, dust silence, lonely contrast, and machine mortality',
       creative_brief:
@@ -124,20 +124,20 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         "Compact Attrition Hardware within 7. Mecha & Cyberpunk: a reusable Anime Battle & Worlds visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Compact Attrition Hardware's specific style identity.",
-      form_and_line:
+      subject_treatment:
         'Define Compact Attrition Hardware through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
-      color_palette:
+      color_and_tone:
         'Use a Compact Attrition Hardware-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
-      lighting_setup:
+      lighting_and_shadow:
         'Use lighting that makes Compact Attrition Hardware recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
-      material_texture:
+      texture_and_material:
         'Use materials and textures that reinforce Compact Attrition Hardware: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
-      render_quality:
-        'Render Compact Attrition Hardware with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
-      spatial_distortion:
+      camera_and_composition:
         'Use spatial behavior that fits Compact Attrition Hardware: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
-      atmosphere:
+      atmosphere_and_mood:
         'Set a mood that belongs to Compact Attrition Hardware: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+      rendering_and_quality:
+        'Render Compact Attrition Hardware with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       key_features:
         "Prioritize Compact Attrition Hardware's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
@@ -153,20 +153,20 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         "Tokusatsu Digital Grid Scale within 7. Mecha & Cyberpunk: a reusable Anime Battle & Worlds visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Tokusatsu Digital Grid Scale's specific style identity.",
-      form_and_line:
+      subject_treatment:
         'Define Tokusatsu Digital Grid Scale through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
-      color_palette:
+      color_and_tone:
         'Use a Tokusatsu Digital Grid Scale-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
-      lighting_setup:
+      lighting_and_shadow:
         'Use lighting that makes Tokusatsu Digital Grid Scale recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
-      material_texture:
+      texture_and_material:
         'Use materials and textures that reinforce Tokusatsu Digital Grid Scale: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
-      render_quality:
-        'Render Tokusatsu Digital Grid Scale with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
-      spatial_distortion:
+      camera_and_composition:
         'Use spatial behavior that fits Tokusatsu Digital Grid Scale: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
-      atmosphere:
+      atmosphere_and_mood:
         'Set a mood that belongs to Tokusatsu Digital Grid Scale: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+      rendering_and_quality:
+        'Render Tokusatsu Digital Grid Scale with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       key_features:
         "Prioritize Tokusatsu Digital Grid Scale's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
@@ -182,20 +182,20 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         "Tri-Fire Riot Geometry within 7. Mecha & Cyberpunk: a reusable Anime Battle & Worlds visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Tri-Fire Riot Geometry's specific style identity.",
-      form_and_line:
+      subject_treatment:
         'Define Tri-Fire Riot Geometry through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
-      color_palette:
+      color_and_tone:
         'Use a Tri-Fire Riot Geometry-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
-      lighting_setup:
+      lighting_and_shadow:
         'Use lighting that makes Tri-Fire Riot Geometry recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
-      material_texture:
+      texture_and_material:
         'Use materials and textures that reinforce Tri-Fire Riot Geometry: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
-      render_quality:
-        'Render Tri-Fire Riot Geometry with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
-      spatial_distortion:
+      camera_and_composition:
         'Use spatial behavior that fits Tri-Fire Riot Geometry: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
-      atmosphere:
+      atmosphere_and_mood:
         'Set a mood that belongs to Tri-Fire Riot Geometry: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+      rendering_and_quality:
+        'Render Tri-Fire Riot Geometry with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       key_features:
         "Prioritize Tri-Fire Riot Geometry's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
@@ -211,19 +211,19 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'High-voltage kinetic alloy anime where velocity lines, prosthetic elegance, reflective machinery, and tragic momentum fuse into engineered motion',
-      form_and_line:
+      subject_treatment:
         'Aggressive motion-vector inking, segmented mechanical contour logic, diagonal force-lines, crisp technical edge discipline',
-      color_palette:
+      color_and_tone:
         'Electric cyan-magenta spikes over steel neutrals, deep violet shadows, selective hazard-orange micro-accents',
-      lighting_setup:
+      lighting_and_shadow:
         'Dynamic rim bursts, strobing practical spill, high-speed specular streaking, sharp contrast pockets under moving glow',
-      material_texture:
+      texture_and_material:
         'Lightweight alloy limbs, polymer joint housings, brushed composite plates, reflective performance coatings, circuit-trace details',
-      render_quality:
-        'Premium action-cel rendering with high temporal clarity, dense technical detail, and polished mecha-athletic finish',
-      spatial_distortion:
+      camera_and_composition:
         'Extreme foreshortening and directional depth tunnels to amplify acceleration and trajectory readability',
-      atmosphere: 'Urgent, cathartic, intense, adrenaline-charged',
+      atmosphere_and_mood: 'Urgent, cathartic, intense, adrenaline-charged',
+      rendering_and_quality:
+        'Premium action-cel rendering with high temporal clarity, dense technical detail, and polished mecha-athletic finish',
       key_features:
         'Velocity vectors, alloy reflection, engineered body rhythm, neon motion trails, sprint compression, and emotional acceleration',
       creative_brief:
@@ -239,19 +239,19 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Bureaucratic techno-control rendered through verdict logic, clinical sorting, cold grid authority, and institutional paranoia',
-      form_and_line:
+      subject_treatment:
         'Hard-edged anime linework, precise machine-adjacent contours, segmented panel strokes, rigid geometry, and clean blocking.',
-      color_palette:
+      color_and_tone:
         'Acid cyan, magenta status pops, dark steel neutrals, cold violet shadows, and sterile white alert accents.',
-      lighting_setup:
+      lighting_and_shadow:
         'Fluorescent grid glow, digital reflections, severe underlight, wet-surface specularity, and scanline-like rim highlights.',
-      material_texture:
+      texture_and_material:
         'Glossy polymer, brushed metal grain, glassy overlays, carbon-fiber hints, and rain-slick synthetic finish.',
-      render_quality:
-        'High-detail cyber-anime rendering with sharp interface discipline, specular richness, and cold forensic clarity.',
-      spatial_distortion:
+      camera_and_composition:
         'Wireframe vanishing points, surveillance overlays, flattened authority zones, and compressed perspective corridors of control.',
-      atmosphere: 'Clinical, oppressive, dystopian, cold',
+      atmosphere_and_mood: 'Clinical, oppressive, dystopian, cold',
+      rendering_and_quality:
+        'High-detail cyber-anime rendering with sharp interface discipline, specular richness, and cold forensic clarity.',
       key_features:
         'Verdict glyphs, coefficient overlays, cold authority grids, glass reflections, machine-readable distance, and social-pressure geometry',
       creative_brief:
@@ -267,19 +267,19 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Operatic luminous anime conflict rendered through sleek heroic geometry, psychic color pressure, radiant scale, and melodramatic energy staging',
-      form_and_line:
+      subject_treatment:
         'Clean heroic hard-edge linework, long beam diagonals, crisp panel accents, elegant silhouette contrast, and elevated stance framing.',
-      color_palette:
+      color_and_tone:
         'White-hot cores, saturated red-blue primaries, violet void shadows, chrome neutrals, and aurora-like particle color.',
-      lighting_setup:
+      lighting_and_shadow:
         'Radiant beam keys, flare bloom, colored rim clashes, distant black-field contrast, and luminous particulate haze.',
-      material_texture:
+      texture_and_material:
         'Polished alloy sheen, smooth enamel planes, energy bloom, transparent particles, and cel-era specular snaps.',
-      render_quality:
-        'Premium space-opera anime finish with clear heroic hierarchy, bright chroma discipline, and polished luminous drama.',
-      spatial_distortion:
+      camera_and_composition:
         'Grand diagonal scale, beam-led depth, telephoto compression, and cosmic negative space around the focal silhouette.',
-      atmosphere: 'Dramatic, luminous, operatic, cosmic',
+      atmosphere_and_mood: 'Dramatic, luminous, operatic, cosmic',
+      rendering_and_quality:
+        'Premium space-opera anime finish with clear heroic hierarchy, bright chroma discipline, and polished luminous drama.',
       key_features:
         'Beam diagonals, psychic bloom, operatic silhouette contrast, luminous particles, strategic negative space, and radiant scale',
       creative_brief:
@@ -295,19 +295,19 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Sacred industrial techno-dread with bio-synthetic unease, black-metal sheen, hollow verticality, and restrained philosophical menace',
-      form_and_line:
+      subject_treatment:
         'Severe hard-edge linework, ribbed verticals, grotesque silhouette pressure, fine hatchwork, and solemn contour spacing.',
-      color_palette:
+      color_and_tone:
         'Blackened teal, oxidized violet, dim cyan, bone ivory, cold steel, and rare acidic highlights.',
-      lighting_setup:
+      lighting_and_shadow:
         'Subterranean low glow, chapel-like shafts abstracted into geometry, rim-lit machinery, and negative-fill dread.',
-      material_texture:
+      texture_and_material:
         'Damp metal, bio-organic membrane hints, worn stone-like surfaces, black lacquer, and corroded polymer.',
-      render_quality:
-        'Premium gothic-cyber anime finish with refined dread, precise surface hierarchy, and quiet high-detail menace.',
-      spatial_distortion:
+      camera_and_composition:
         'Vertical compression, sacred-scale symmetry, deep axial recession, and hollow negative space around the subject.',
-      atmosphere: 'Brooding, cerebral, existential, haunting',
+      atmosphere_and_mood: 'Brooding, cerebral, existential, haunting',
+      rendering_and_quality:
+        'Premium gothic-cyber anime finish with refined dread, precise surface hierarchy, and quiet high-detail menace.',
       key_features:
         'Sacred-industrial geometry, bio-tech unease, black-metal gloss, hollow vertical space, ritual stillness, and elegant decay',
       creative_brief:
@@ -323,19 +323,19 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Sleek post-collapse tenderness where polished fragility, sunset loneliness, floral-tech melancholy, and engineered intimacy carry emotion',
-      form_and_line:
+      subject_treatment:
         'Smooth aerodynamic contours, delicate hard-edge panel accents, paired silhouette tension, and vulnerable negative-space framing.',
-      color_palette:
+      color_and_tone:
         'Peach sunset, pale rose, white polymer, cool blue-gray, soft red accents, and muted violet shadow.',
-      lighting_setup:
+      lighting_and_shadow:
         'Sunset backlight, soft specular skin, cool technical fill, warm rim glow, and quiet bloom around emotional focal points.',
-      material_texture:
+      texture_and_material:
         'Polished synthetic cloth, enamel shell surfaces, soft petal-like highlights, dust haze, and clean composite sheen.',
-      render_quality:
-        'Premium glossy anime finish with emotional clarity, sleek surface control, and bittersweet high-detail restraint.',
-      spatial_distortion:
+      camera_and_composition:
         'Intimate compression against broad empty space, soft horizon drag, and paired-vector composition without fixed setting.',
-      atmosphere: 'Vulnerable, sleek, bittersweet, romantic',
+      atmosphere_and_mood: 'Vulnerable, sleek, bittersweet, romantic',
+      rendering_and_quality:
+        'Premium glossy anime finish with emotional clarity, sleek surface control, and bittersweet high-detail restraint.',
       key_features:
         'Paired-silhouette rhythm, petal-tech motifs, sunset ruin color, polished melancholy, fragile intimacy, and glossy edge softness',
       creative_brief:
@@ -351,19 +351,19 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Remote conflict grief anime built from cold command logic, system pressure, disciplined tragedy, and vulnerable distance',
-      form_and_line:
+      subject_treatment:
         'Hard-edged tactical linework, thin command vectors, segmented armor-like shapes, restrained faces, and precise formation spacing.',
-      color_palette:
+      color_and_tone:
         'Ash gray, military olive, cold screen blue, muted rust, black graphite, and restrained red warning accents.',
-      lighting_setup:
+      lighting_and_shadow:
         'Cold monitor glow, smoke-softened daylight, minimal rim light, command-screen blue wash, and low-contrast grief shadows.',
-      material_texture:
+      texture_and_material:
         'Matte plating, fabric grit, dusty optics, chipped edge paint, worn interface glass, and dry particulate haze.',
-      render_quality:
-        'Premium tactical anime rendering with sober clarity, controlled detail density, and emotional restraint under pressure.',
-      spatial_distortion:
+      camera_and_composition:
         'Remote-control framing, compressed command depth, map-like overlays, and emotional distance between subject layers.',
-      atmosphere: 'Tragic, disciplined, somber, remote',
+      atmosphere_and_mood: 'Tragic, disciplined, somber, remote',
+      rendering_and_quality:
+        'Premium tactical anime rendering with sober clarity, controlled detail density, and emotional restraint under pressure.',
       key_features:
         'Cold command overlays, muted tactical palette, grief distance, hard-edged systems pressure, and restrained emotional damage',
       creative_brief:
@@ -379,19 +379,19 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Procedural cyber cognition with modular overlays, optical transparency, network pressure, identity uncertainty, and calm investigative tension',
-      form_and_line:
+      subject_treatment:
         'Clean technical linework, modular contour blocks, thin overlay vectors, precise facial restraint, and grounded cyber-anime silhouettes.',
-      color_palette:
+      color_and_tone:
         'Blue-gray steel, muted teal, signal green, amber interface points, black glass, and pale skin-warm accents.',
-      lighting_setup:
+      lighting_and_shadow:
         'Monitor wash, soft urban-noir glow, optical shimmer, low practical highlights, and controlled specular edge light.',
-      material_texture:
+      texture_and_material:
         'Interface glass, matte polymer, subtle rain sheen, brushed technical surfaces, and ghosted transparent overlays.',
-      render_quality:
-        'Premium procedural cyber-anime finish with cool-headed readability, interface discipline, and high-detail restraint.',
-      spatial_distortion:
+      camera_and_composition:
         'Network-layer parallax, transparent overlay depth, surveillance compression, and modular data planes around subject forms.',
-      atmosphere: 'Tactical, cool-headed, procedural, cerebral',
+      atmosphere_and_mood: 'Tactical, cool-headed, procedural, cerebral',
+      rendering_and_quality:
+        'Premium procedural cyber-anime finish with cool-headed readability, interface discipline, and high-detail restraint.',
       key_features:
         'Transparent data planes, modular tactical overlays, identity fracture, optical layering, network pressure, and cyber-noir clarity',
       creative_brief:
@@ -407,19 +407,19 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Elegant orbital anime rivalry where high-altitude pressure, gravity defiance, crystalline seams, and strategic grandeur shape the frame',
-      form_and_line:
+      subject_treatment:
         'Long elegant technical-adjacent lines, thin luminous seams, sharp orbital arcs, balanced opposing silhouettes, and calm tactical posing.',
-      color_palette:
+      color_and_tone:
         'Deep orbital blue, white crystalline glow, magenta ion accents, cool alloy gray, and black-violet vacuum shadows.',
-      lighting_setup:
+      lighting_and_shadow:
         'High-altitude rim light, ion glow, hard specular glints, black-field contrast, and luminous descent streaks.',
-      material_texture:
+      texture_and_material:
         'Polished alloy, crystalline energy seams, heat bloom, smooth armor-like surfaces, and faint atmospheric haze.',
-      render_quality:
-        'Premium orbital anime finish with elegant surface control, strategic readability, and luminous high-scale polish.',
-      spatial_distortion:
+      camera_and_composition:
         'Gravity-bending arcs, top-down compression, orbital negative space, and opposing-vector composition across large scale.',
-      atmosphere: 'Grand, competitive, epic, political',
+      atmosphere_and_mood: 'Grand, competitive, epic, political',
+      rendering_and_quality:
+        'Premium orbital anime finish with elegant surface control, strategic readability, and luminous high-scale polish.',
       key_features:
         'Orbital arcs, crystalline seams, rivalry symmetry, high-altitude glow, strategic negative space, and graceful technical contrast',
       creative_brief:
@@ -435,19 +435,19 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Broadcast-pop mecha emotion where concert light, contrail calligraphy, engineered romance, and signal layers collide in glossy motion',
-      form_and_line:
+      subject_treatment:
         'Hard-edged mechanical contours, music-wave arcs, contrail swarms, panel-line rhythm, and stage-light silhouette cuts.',
-      color_palette:
+      color_and_tone:
         'Idol pink, signal cyan, deep space navy, missile white, alloy gray, and hopeful gold.',
-      lighting_setup:
+      lighting_and_shadow:
         'Stage beams crossing combat glow, broadcast bloom, specular metal streaks, and pop-concert rim accents.',
-      material_texture:
+      texture_and_material:
         'Brushed alloy, glossy polymer, holographic signal grain, vapor trails, carbon panels, and sparkle-light overlays.',
-      render_quality:
-        'High-detail sci-fi anime finish with precise machinery, pop emotion, and luminous motion readability.',
-      spatial_distortion:
+      camera_and_composition:
         'Aerial vector depth, broadcast-layer overlays, and sweeping contrail perspective without fixed cockpit framing.',
-      atmosphere: 'Aerial, poppy, heroic, romantic',
+      atmosphere_and_mood: 'Aerial, poppy, heroic, romantic',
+      rendering_and_quality:
+        'High-detail sci-fi anime finish with precise machinery, pop emotion, and luminous motion readability.',
       key_features:
         'Signal-pop lighting, contrail rhythm, broadcast overlays, engineered romance, glossy motion, and stage-scale emotional color',
       creative_brief:
@@ -463,19 +463,19 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Retro cyber-noir anime armor glamour with segmented articulation, analog-tech voltage, aggressive chrome femininity, and precision ornament',
-      form_and_line:
+      subject_treatment:
         'Hard contour inking, segmented armor seam logic, angular silhouette blocking, technical hatch accents, high-clarity line discipline',
-      color_palette:
+      color_and_tone:
         'Acid cyan-magenta duality, graphite neutrals, electric violet sparks, cold steel midtones, selective hot-pink highlights',
-      lighting_setup:
+      lighting_and_shadow:
         'High-contrast practical glow with hard rim separation, tube-light specular streaks, and controlled reflective bounce',
-      material_texture:
+      texture_and_material:
         'Brushed alloy plates, high-gloss polymer inserts, carbon weave panels, clean mechatronic seams, mirrored trim flashes',
-      render_quality:
-        'Premium cel-anime mecha finish with dense micro-detail, crisp compositing, and polished techno-surface readability',
-      spatial_distortion:
+      camera_and_composition:
         'Dynamic foreshortening with engineered silhouette priority, diagonal velocity framing, technical depth layering',
-      atmosphere: 'Sleek, high-voltage, assertive, dangerous, stylishly militant',
+      atmosphere_and_mood: 'Sleek, high-voltage, assertive, dangerous, stylishly militant',
+      rendering_and_quality:
+        'Premium cel-anime mecha finish with dense micro-detail, crisp compositing, and polished techno-surface readability',
       key_features:
         'Segmented armor grammar, specular edge choreography, neon-metal contrast, analog glamour, abrasion detail, and mechanical elegance',
       creative_brief:
@@ -491,19 +491,19 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Scrap-metal anime velocity where cyber resilience, junk-steel humanity, compact impact arcs, and spark-lit grit make motion emotional',
-      form_and_line:
+      subject_treatment:
         'Hard-edged mechanical contours, close-quarters arcs, stacked metal rhythms, compact body-force geometry, and sharp hatch detail.',
-      color_palette:
+      color_and_tone:
         'Scrap silver, rust orange, oil black, electric teal, bruised violet, and spark white.',
-      lighting_setup:
+      lighting_and_shadow:
         'Industrial underglow, specular streaks, harsh fluorescent cuts, and impact sparks that trace motion.',
-      material_texture:
+      texture_and_material:
         'Dented alloy, brushed steel, oily polymer, cable grain, carbon weave, and scarred composite surfaces.',
-      render_quality:
-        'High-detail sci-fi anime finish with intimate machine detail, speed clarity, and resilient emotional grit.',
-      spatial_distortion:
+      camera_and_composition:
         'Velocity tunnels, stacked vertical pressure, and close-range impact compression without fixed arena framing.',
-      atmosphere: 'Raw, fast, scrapyard, determined',
+      atmosphere_and_mood: 'Raw, fast, scrapyard, determined',
+      rendering_and_quality:
+        'High-detail sci-fi anime finish with intimate machine detail, speed clarity, and resilient emotional grit.',
       key_features:
         'Dented metal, cyber resilience, speed compression, spark trails, ferocious close motion, and battered humanity',
       creative_brief:
@@ -519,19 +519,19 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Cyber-goth anime dread with abandoned modernism, concrete emptiness, rain-dark reflection, black silhouette severity, and personhood anxiety',
-      form_and_line:
+      subject_treatment:
         'Severe black silhouettes, brutalist negative space, rigid contour restraint, and philosophical stillness.',
-      color_palette:
+      color_and_tone:
         'Concrete gray, rain black, cold cyan, corpse white, muted violet, and faint sodium amber.',
-      lighting_setup:
+      lighting_and_shadow:
         'Funereal top light, wet reflections, distant industrial glow, and minimal rim cuts against oppressive shadow.',
-      material_texture:
+      texture_and_material:
         'Rain-dark concrete, matte black fabric, oxidized metal, glass streaks, and low-grain digital polish.',
-      render_quality:
-        'High-detail cyber-goth anime finish with bleak restraint, architectural dread, and precise silence.',
-      spatial_distortion:
+      camera_and_composition:
         'Vast empty planes, oppressive verticals, and isolation framing that makes consciousness feel trapped.',
-      atmosphere: 'Bleak, cerebral, cool, funereal',
+      atmosphere_and_mood: 'Bleak, cerebral, cool, funereal',
+      rendering_and_quality:
+        'High-detail cyber-goth anime finish with bleak restraint, architectural dread, and precise silence.',
       key_features:
         'Concrete voids, rain reflection, black silhouettes, cold self-awareness, abandoned modernism, and mausoleum stillness',
       creative_brief:
@@ -547,19 +547,19 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Gritty enforcement cyberpunk anime with punitive tech iconography, warning-light discipline, analog surveillance mood, and hardboiled abrasion',
-      form_and_line:
+      subject_treatment:
         'Dense industrial inking, rigid angular anatomy, mechanical panel etching, severe contour weight shifts',
-      color_palette:
+      color_and_tone:
         'Polluted tungsten ambers, toxic cyans, bruised violets, dirty steel greys, constrained red warning accents',
-      lighting_setup:
+      lighting_and_shadow:
         'Harsh top-lit practicals, strip-light reflections, narrow rim passes, low-key contrast with localized glow bursts',
-      material_texture:
+      texture_and_material:
         'Scuffed metal casings, worn polymer shells, cable abrasion marks, oxidized fasteners, oily reflective film',
-      render_quality:
-        'Mature seinen-mecha finish emphasizing grime realism, mechanical fidelity, and disciplined compositing',
-      spatial_distortion:
+      camera_and_composition:
         'Compressed telephoto pressure mixed with abrupt perspective breaks for tactical hostility and visual tension',
-      atmosphere: 'Coercive, paranoid, punitive, claustrophobic, electrically unstable',
+      atmosphere_and_mood: 'Coercive, paranoid, punitive, claustrophobic, electrically unstable',
+      rendering_and_quality:
+        'Mature seinen-mecha finish emphasizing grime realism, mechanical fidelity, and disciplined compositing',
       key_features:
         'Warning lights, enforcement-tech silhouettes, worn armor texture, surveillance-era detail, hard neon vice, and mechanical severity',
       creative_brief:
@@ -575,19 +575,19 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Endless industrial anime silence with recursive concrete, terminal scale, sparse machine light, tiny markers, and civilization beyond meaning',
-      form_and_line:
+      subject_treatment:
         'Brutal hard-edge geometry, tiny scale markers, recursive corridor lines, terminal void shapes, and severe panel discipline.',
-      color_palette:
+      color_and_tone:
         'Concrete gray, abyss black, terminal green, cold white, rust shadow, and faint warning red.',
-      lighting_setup:
+      lighting_and_shadow:
         'Sparse industrial glow, distant strip lights, hard underlighting, and huge shadow masses.',
-      material_texture:
+      texture_and_material:
         'Raw concrete, oxidized metal, dust film, scratched panels, cable scars, and cold digital grain.',
-      render_quality:
-        'High-detail sci-fi anime finish with monumental clarity, machine silence, and oppressive architectural precision.',
-      spatial_distortion:
+      camera_and_composition:
         'Abyssal vanishing points, recursive scale, and impossible depth that dwarfs any subject.',
-      atmosphere: 'Monumental, empty, lethal, alienated',
+      atmosphere_and_mood: 'Monumental, empty, lethal, alienated',
+      rendering_and_quality:
+        'High-detail sci-fi anime finish with monumental clarity, machine silence, and oppressive architectural precision.',
       key_features:
         'Recursive architecture, concrete void, terminal scale, sparse machine light, tiny markers, and industrial silence',
       creative_brief:
@@ -603,20 +603,20 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         "Coral Resonance Liturgy within 7. Mecha & Cyberpunk: a reusable Anime Battle & Worlds visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Coral Resonance Liturgy's specific style identity.",
-      form_and_line:
+      subject_treatment:
         'Define Coral Resonance Liturgy through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
-      color_palette:
+      color_and_tone:
         'Use a Coral Resonance Liturgy-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
-      lighting_setup:
+      lighting_and_shadow:
         'Use lighting that makes Coral Resonance Liturgy recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
-      material_texture:
+      texture_and_material:
         'Use materials and textures that reinforce Coral Resonance Liturgy: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
-      render_quality:
-        'Render Coral Resonance Liturgy with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
-      spatial_distortion:
+      camera_and_composition:
         'Use spatial behavior that fits Coral Resonance Liturgy: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
-      atmosphere:
+      atmosphere_and_mood:
         'Set a mood that belongs to Coral Resonance Liturgy: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+      rendering_and_quality:
+        'Render Coral Resonance Liturgy with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       key_features:
         "Prioritize Coral Resonance Liturgy's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
@@ -632,20 +632,20 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         "Dustfront Drone Lament within 7. Mecha & Cyberpunk: a reusable Anime Battle & Worlds visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Dustfront Drone Lament's specific style identity.",
-      form_and_line:
+      subject_treatment:
         'Define Dustfront Drone Lament through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
-      color_palette:
+      color_and_tone:
         'Use a Dustfront Drone Lament-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
-      lighting_setup:
+      lighting_and_shadow:
         'Use lighting that makes Dustfront Drone Lament recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
-      material_texture:
+      texture_and_material:
         'Use materials and textures that reinforce Dustfront Drone Lament: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
-      render_quality:
-        'Render Dustfront Drone Lament with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
-      spatial_distortion:
+      camera_and_composition:
         'Use spatial behavior that fits Dustfront Drone Lament: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
-      atmosphere:
+      atmosphere_and_mood:
         'Set a mood that belongs to Dustfront Drone Lament: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+      rendering_and_quality:
+        'Render Dustfront Drone Lament with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       key_features:
         "Prioritize Dustfront Drone Lament's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
@@ -661,20 +661,20 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         "Vacuum-Fortress Survival Discipline within 7. Mecha & Cyberpunk: a reusable Anime Battle & Worlds visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Vacuum-Fortress Survival Discipline's specific style identity.",
-      form_and_line:
+      subject_treatment:
         'Define Vacuum-Fortress Survival Discipline through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
-      color_palette:
+      color_and_tone:
         'Use a Vacuum-Fortress Survival Discipline-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
-      lighting_setup:
+      lighting_and_shadow:
         'Use lighting that makes Vacuum-Fortress Survival Discipline recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
-      material_texture:
+      texture_and_material:
         'Use materials and textures that reinforce Vacuum-Fortress Survival Discipline: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
-      render_quality:
-        'Render Vacuum-Fortress Survival Discipline with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
-      spatial_distortion:
+      camera_and_composition:
         'Use spatial behavior that fits Vacuum-Fortress Survival Discipline: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
-      atmosphere:
+      atmosphere_and_mood:
         'Set a mood that belongs to Vacuum-Fortress Survival Discipline: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+      rendering_and_quality:
+        'Render Vacuum-Fortress Survival Discipline with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       key_features:
         "Prioritize Vacuum-Fortress Survival Discipline's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
@@ -690,20 +690,20 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         "Extinction Interface Command within 7. Mecha & Cyberpunk: a reusable Anime Battle & Worlds visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Extinction Interface Command's specific style identity.",
-      form_and_line:
+      subject_treatment:
         'Define Extinction Interface Command through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
-      color_palette:
+      color_and_tone:
         'Use a Extinction Interface Command-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
-      lighting_setup:
+      lighting_and_shadow:
         'Use lighting that makes Extinction Interface Command recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
-      material_texture:
+      texture_and_material:
         'Use materials and textures that reinforce Extinction Interface Command: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
-      render_quality:
-        'Render Extinction Interface Command with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
-      spatial_distortion:
+      camera_and_composition:
         'Use spatial behavior that fits Extinction Interface Command: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
-      atmosphere:
+      atmosphere_and_mood:
         'Set a mood that belongs to Extinction Interface Command: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+      rendering_and_quality:
+        'Render Extinction Interface Command with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       key_features:
         "Prioritize Extinction Interface Command's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
@@ -719,20 +719,20 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         "Pop-Cyber Simulation Gloss within 7. Mecha & Cyberpunk: a reusable Anime Battle & Worlds visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Pop-Cyber Simulation Gloss's specific style identity.",
-      form_and_line:
+      subject_treatment:
         'Define Pop-Cyber Simulation Gloss through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
-      color_palette:
+      color_and_tone:
         'Use a Pop-Cyber Simulation Gloss-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
-      lighting_setup:
+      lighting_and_shadow:
         'Use lighting that makes Pop-Cyber Simulation Gloss recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
-      material_texture:
+      texture_and_material:
         'Use materials and textures that reinforce Pop-Cyber Simulation Gloss: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
-      render_quality:
-        'Render Pop-Cyber Simulation Gloss with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
-      spatial_distortion:
+      camera_and_composition:
         'Use spatial behavior that fits Pop-Cyber Simulation Gloss: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
-      atmosphere:
+      atmosphere_and_mood:
         'Set a mood that belongs to Pop-Cyber Simulation Gloss: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+      rendering_and_quality:
+        'Render Pop-Cyber Simulation Gloss with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       key_features:
         "Prioritize Pop-Cyber Simulation Gloss's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
@@ -748,20 +748,20 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         "Monumental Ignition Sacrifice within 7. Mecha & Cyberpunk: a reusable Anime Battle & Worlds visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Monumental Ignition Sacrifice's specific style identity.",
-      form_and_line:
+      subject_treatment:
         'Define Monumental Ignition Sacrifice through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
-      color_palette:
+      color_and_tone:
         'Use a Monumental Ignition Sacrifice-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
-      lighting_setup:
+      lighting_and_shadow:
         'Use lighting that makes Monumental Ignition Sacrifice recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
-      material_texture:
+      texture_and_material:
         'Use materials and textures that reinforce Monumental Ignition Sacrifice: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
-      render_quality:
-        'Render Monumental Ignition Sacrifice with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
-      spatial_distortion:
+      camera_and_composition:
         'Use spatial behavior that fits Monumental Ignition Sacrifice: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
-      atmosphere:
+      atmosphere_and_mood:
         'Set a mood that belongs to Monumental Ignition Sacrifice: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+      rendering_and_quality:
+        'Render Monumental Ignition Sacrifice with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       key_features:
         "Prioritize Monumental Ignition Sacrifice's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
@@ -777,20 +777,20 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         "Bubblegum Cosmic Overdrive within 7. Mecha & Cyberpunk: a reusable Anime Battle & Worlds visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Bubblegum Cosmic Overdrive's specific style identity.",
-      form_and_line:
+      subject_treatment:
         'Define Bubblegum Cosmic Overdrive through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
-      color_palette:
+      color_and_tone:
         'Use a Bubblegum Cosmic Overdrive-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
-      lighting_setup:
+      lighting_and_shadow:
         'Use lighting that makes Bubblegum Cosmic Overdrive recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
-      material_texture:
+      texture_and_material:
         'Use materials and textures that reinforce Bubblegum Cosmic Overdrive: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
-      render_quality:
-        'Render Bubblegum Cosmic Overdrive with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
-      spatial_distortion:
+      camera_and_composition:
         'Use spatial behavior that fits Bubblegum Cosmic Overdrive: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
-      atmosphere:
+      atmosphere_and_mood:
         'Set a mood that belongs to Bubblegum Cosmic Overdrive: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+      rendering_and_quality:
+        'Render Bubblegum Cosmic Overdrive with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       key_features:
         "Prioritize Bubblegum Cosmic Overdrive's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
@@ -806,19 +806,19 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Cybernetic nihilism rendered through oxidized wire, failing light, cable abrasion, hard shadow, and downward social pressure',
-      form_and_line:
+      subject_treatment:
         'Rigid amputated geometry, rust-wire diagonals, severe low silhouettes, tunnel-like compression, and brutal panel cuts.',
-      color_palette:
+      color_and_tone:
         'Rust brown, dead black, sickly green, old fluorescent white, bloodless gray, and oxidized orange.',
-      lighting_setup:
+      lighting_and_shadow:
         'Failing tube light, harsh underlighting, narrow glow seams, and deep oppressive shadow blocks.',
-      material_texture:
+      texture_and_material:
         'Rust streaks, cable abrasion, scarred metal, damp concrete, oxidized fasteners, and oily reflective film.',
-      render_quality:
-        'Mature sci-fi anime finish with abrasive grime, mechanical fidelity, and oppressive compositing.',
-      spatial_distortion:
+      camera_and_composition:
         'Downward compression, subterranean depth, and claustrophobic perspective breaks.',
-      atmosphere: 'Nihilistic, rusted, oppressive, cold',
+      atmosphere_and_mood: 'Nihilistic, rusted, oppressive, cold',
+      rendering_and_quality:
+        'Mature sci-fi anime finish with abrasive grime, mechanical fidelity, and oppressive compositing.',
       key_features:
         'Rust-wire texture, cable scars, failing fluorescent light, oppressive descent, hard-shadow nihilism, and dead machinery',
       creative_brief:
@@ -834,19 +834,19 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Industrial anime weight under repeated attrition, hydraulic strain, scarred plating, mud-heavy motion, and pressure-tested endurance',
-      form_and_line:
+      subject_treatment:
         'Blocky hard-edge linework, piston-like contour rhythm, bolted silhouette mass, compressed stances, and blunt impact diagonals.',
-      color_palette:
+      color_and_tone:
         'Oil black, worn steel, oxidized orange, bruised olive, emergency amber, and dull blue shadow.',
-      lighting_setup:
+      lighting_and_shadow:
         'Low industrial glow, welding sparks, smoky backlight, hard practical highlights, and grime-muted rim separation.',
-      material_texture:
+      texture_and_material:
         'Scratched plating, hydraulic grease, soot, chipped paint, rough rubber, and particulate dust over dense surfaces.',
-      render_quality:
-        'Premium heavy-tech anime rendering with tactile mass, readable layered parts, and controlled grime detail.',
-      spatial_distortion:
+      camera_and_composition:
         'Low-angle compression, heavy foreground mass, flattened depth under pressure, and recoil-like perspective drag.',
-      atmosphere: 'Gruff, pressured, gritty, mechanical',
+      atmosphere_and_mood: 'Gruff, pressured, gritty, mechanical',
+      rendering_and_quality:
+        'Premium heavy-tech anime rendering with tactile mass, readable layered parts, and controlled grime detail.',
       key_features:
         'Hydraulic compression, scarred plating, dirty sparks, compact stance energy, worn mechanical rhythm, and impact-fatigue texture',
       creative_brief:

@@ -14,16 +14,35 @@ tags:
   - icepunk
   - harbor
 visualDna:
-  aesthetic: icepunk harbor settlement as a flat graphic digital-illustration card built around an ice harbor town with lantern-lit breakers, insulated crews, sled machines, and frozen docks.
-  form_and_line: Terrain-specific silhouettes, waterline arcs, ice facets, salt grids, stilt structures, and wind-tensioned forms. Core composition uses icebreakers, lanterns, insulated crews, sled machines, frozen docks.
-  color_palette: ice blue, lantern amber, navy wool, rusted red
-  lighting_setup: lantern warmth in blue cold, snow bounce, aurora hints
-  material_texture: ice slabs, wool parka silhouettes, rust metal blocks, frosted glass shapes, simple rope arcs
-  render_quality: Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity, moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material simulation, or hyper-detail.
-  spatial_distortion: Coasts, piers, marinas, glacier towns, salt flats, and swamps with strong environmental identity. Keep depth legible and avoid default hallway, aisle, or empty studio staging.
-  atmosphere: cold, communal, stubborn, warm-hearted
+  aesthetic: >-
+    icepunk harbor settlement as a flat graphic digital-illustration card built around an ice harbor town with
+    lantern-lit breakers, insulated crews, sled machines, and frozen docks.
+  subject_treatment: >-
+    Terrain-specific silhouettes, waterline arcs, ice facets, salt grids, stilt structures, and wind-tensioned
+    forms. Core composition uses icebreakers, lanterns, insulated crews, sled machines, frozen docks.
+  color_and_tone: ice blue, lantern amber, navy wool, rusted red
+  lighting_and_shadow: lantern warmth in blue cold, snow bounce, aurora hints
+  texture_and_material: ice slabs, wool parka silhouettes, rust metal blocks, frosted glass shapes, simple rope arcs
+  camera_and_composition: >-
+    Coasts, piers, marinas, glacier towns, salt flats, and swamps with strong environmental identity. Keep
+    depth legible and avoid default hallway, aisle, or empty studio staging.
+  atmosphere_and_mood: cold, communal, stubborn, warm-hearted
+  rendering_and_quality: >-
+    Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly
+    planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity,
+    moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material
+    simulation, or hyper-detail.
   key_features: icebreakers, lanterns, insulated crews, sled machines, frozen docks
-  creative_brief: 'Icepunk should contrast cold survival with human warmth: harbor work, lanterns, crews, and machines, not empty glaciers. Keep it representative through compact frozen harbor town, plain blocky icebreaker silhouette, warm lantern clusters, insulated crew figures in plain coats, sled-machine shape, and frozen dock slabs. Favor flat graphic digital illustration, clean editorial illustration, cel-shaded poster art, gouache poster aesthetics, graphic-novel card art, or stylized animation-background art over realism, photoreal painterly realism, cinematic key art, scratchy print noise, or hyper-detailed concept art. Use few bold color/value zones, simplified brush planes, matte surfaces, low-to-moderate texture, large shapes, clean surfaces, shallow poster depth, and finish denoised with no excessive noise or ultra-fine detail.'
+  creative_brief: >-
+    Icepunk should contrast cold survival with human warmth: harbor work, lanterns, crews, and machines, not
+    empty glaciers. Keep it representative through compact frozen harbor town, plain blocky icebreaker
+    silhouette, warm lantern clusters, insulated crew figures in plain coats, sled-machine shape, and frozen
+    dock slabs. Favor flat graphic digital illustration, clean editorial illustration, cel-shaded poster art,
+    gouache poster aesthetics, graphic-novel card art, or stylized animation-background art over realism,
+    photoreal painterly realism, cinematic key art, scratchy print noise, or hyper-detailed concept art. Use
+    few bold color/value zones, simplified brush planes, matte surfaces, low-to-moderate texture, large
+    shapes, clean surfaces, shallow poster depth, and finish denoised with no excessive noise or ultra-fine
+    detail.
 avoidRules:
   - photoreal
   - watermark
@@ -37,7 +56,23 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP15-037.webp
 attributes:
-  negativePrompt: photoreal, hyperreal, realistic render, photoreal painterly realism, cinematic realism, AAA key art, cinematic concept-art render, photobash polish, realistic material rendering, photographic skin pores, realistic foreground portrait, realistic facial hair detail, lens blur, bokeh, depth-of-field photo look, generic soldier hero, guard pin-up, weapon-first pose, snowflake emblem, heraldic badge, faction symbol, flag logo, banner symbol, readable marks, empty glacier, polar explorer portrait, cozy cabin postcard, lighthouse hero, fantasy winter village, aurora-photo spectacle, lantern-only still life, photoreal snow haze, HDR lens realism, 3D render look, PBR material simulation, hyper-detailed concept art, scratchy print noise, tiny black linework, watermark, text, logo, generic style, over-abstract, interchangeable preset, duplicated motifs, generic glass utopia, unmotivated market aisle, unmotivated library aisle, fantasy corridor, random camera held by subject, studio wall fixation, chair fixation, curtain fixation, lamp fixation, scarf fixation, pedestal fixation, bird fixation, excessive noise, ultra-fine detail, over-sharpened microtexture, over-rendered machinery, noisy grime, tiny rivets everywhere, busy texture chatter, realistic uniform portrait, uniformed officer hero, foreground guard portrait, detailed tattoo focus, dense machinery wallpaper, overcrowded scene, high-frequency surface detail, cinematic close-up portrait, flat black fill, crushed black, pure black masses, muddy black fields, generic American illustration, generic Western RPG card art
+  negativePrompt: >-
+    photoreal, hyperreal, realistic render, photoreal painterly realism, cinematic realism, AAA key art,
+    cinematic concept-art render, photobash polish, realistic material rendering, photographic skin pores,
+    realistic foreground portrait, realistic facial hair detail, lens blur, bokeh, depth-of-field photo look,
+    generic soldier hero, guard pin-up, weapon-first pose, snowflake emblem, heraldic badge, faction symbol,
+    flag logo, banner symbol, readable marks, empty glacier, polar explorer portrait, cozy cabin postcard,
+    lighthouse hero, fantasy winter village, aurora-photo spectacle, lantern-only still life, photoreal snow
+    haze, HDR lens realism, 3D render look, PBR material simulation, hyper-detailed concept art, scratchy
+    print noise, tiny black linework, watermark, text, logo, generic style, over-abstract, interchangeable
+    preset, duplicated motifs, generic glass utopia, unmotivated market aisle, unmotivated library aisle,
+    fantasy corridor, random camera held by subject, studio wall fixation, chair fixation, curtain fixation,
+    lamp fixation, scarf fixation, pedestal fixation, bird fixation, excessive noise, ultra-fine detail,
+    over-sharpened microtexture, over-rendered machinery, noisy grime, tiny rivets everywhere, busy texture
+    chatter, realistic uniform portrait, uniformed officer hero, foreground guard portrait, detailed tattoo
+    focus, dense machinery wallpaper, overcrowded scene, high-frequency surface detail, cinematic close-up
+    portrait, flat black fill, crushed black, pure black masses, muddy black fields, generic American
+    illustration, generic Western RPG card art
 taxonomy:
   packId: pack_15
   packName: Punk Spectrum Vault

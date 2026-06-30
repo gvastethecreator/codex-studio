@@ -14,16 +14,36 @@ tags:
   - lunarpunk
   - acoustic-ritual
 visualDna:
-  aesthetic: lunar ritual acoustics built around a standout crater choir conductor, resonant dishes, blank fabric planes, acoustic rigs, and silent choir silhouettes.
-  form_and_line: Atomic signage, rocket-age curves, raygun geometry, orbital equipment, chrome kitsch, and cosmic civic forms. Core composition uses crater dishes, astronaut choir, white flags, acoustic rigs, earthrise.
-  color_palette: chalk white, crater gray, cobalt shadow, signal gold
-  lighting_setup: earthrise glow, flat dish highlights, suit glow dots, crater shadow
-  material_texture: regolith dust, acoustic dish shapes, plain white fabric blocks, suit glass, gold foil accents
-  render_quality: Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity, moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material simulation, or hyper-detail.
-  spatial_distortion: Promenades, diners, outposts, salvage yards, rails, lunar farms, craters, and isotope-lit plazas. Keep depth legible and avoid default hallway, aisle, or empty studio staging.
-  atmosphere: solemn, cosmic, resonant, spare
-  key_features: crater choir conductor, crater dishes, choir silhouettes, plain white fabric blocks, acoustic rigs, earthrise
-  creative_brief: 'A lunar ritual preset with sparse human ceremony and equipment: one standout crater choir conductor as the main character in a simplified moon suit, arms raised like tuning signal, plus crater dishes, tiny choir silhouettes, acoustic rigs, earthrise, and blank white fabric planes behind them. Keep the result representative rather than over-abstract; use non-photographic stylized illustration, editorial digital painting, ligne-claire sci-fi comic clarity, gouache-cel shapes, drawn contours, broad painted planes, and controlled color design over realism or generic concept art. Avoid workers-only composition. Use few bold color/value zones, large matte shapes, clean surfaces, low-to-moderate detail, and finish denoised with no excessive noise or ultra-fine detail.'
+  aesthetic: >-
+    lunar ritual acoustics built around a standout crater choir conductor, resonant dishes, blank fabric
+    planes, acoustic rigs, and silent choir silhouettes.
+  subject_treatment: >-
+    Atomic signage, rocket-age curves, raygun geometry, orbital equipment, chrome kitsch, and cosmic civic
+    forms. Core composition uses crater dishes, astronaut choir, white flags, acoustic rigs, earthrise.
+  color_and_tone: chalk white, crater gray, cobalt shadow, signal gold
+  lighting_and_shadow: earthrise glow, flat dish highlights, suit glow dots, crater shadow
+  texture_and_material: regolith dust, acoustic dish shapes, plain white fabric blocks, suit glass, gold foil accents
+  camera_and_composition: >-
+    Promenades, diners, outposts, salvage yards, rails, lunar farms, craters, and isotope-lit plazas. Keep
+    depth legible and avoid default hallway, aisle, or empty studio staging.
+  atmosphere_and_mood: solemn, cosmic, resonant, spare
+  rendering_and_quality: >-
+    Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly
+    planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity,
+    moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material
+    simulation, or hyper-detail.
+  key_features: >-
+    crater choir conductor, crater dishes, choir silhouettes, plain white fabric blocks, acoustic rigs,
+    earthrise
+  creative_brief: >-
+    A lunar ritual preset with sparse human ceremony and equipment: one standout crater choir conductor as the
+    main character in a simplified moon suit, arms raised like tuning signal, plus crater dishes, tiny choir
+    silhouettes, acoustic rigs, earthrise, and blank white fabric planes behind them. Keep the result
+    representative rather than over-abstract; use non-photographic stylized illustration, editorial digital
+    painting, ligne-claire sci-fi comic clarity, gouache-cel shapes, drawn contours, broad painted planes, and
+    controlled color design over realism or generic concept art. Avoid workers-only composition. Use few bold
+    color/value zones, large matte shapes, clean surfaces, low-to-moderate detail, and finish denoised with no
+    excessive noise or ultra-fine detail.
 avoidRules:
   - photoreal
   - watermark
@@ -37,7 +57,22 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP15-072.webp
 attributes:
-  negativePrompt: photoreal, hyperreal, realistic render, photoreal painterly realism, cinematic realism, AAA key art, photographic skin pores, realistic foreground portrait, realistic facial hair detail, realistic astronaut anatomy, detailed face, workers-only composition, anonymous worker crew, lens blur, bokeh, depth-of-field photo look, flags, cross, religious icon, altar, readable marks, mission logo, UI, starfield wallpaper, fantasy temple, choir robe portrait, photoreal suit glass, realistic dish metal, PBR dishes, hard-surface render, generic soldier hero, guard pin-up, weapon-first pose, HDR lens realism, 3D render look, hyper-detailed concept art, watermark, text, logo, generic style, over-abstract, interchangeable preset, duplicated motifs, generic glass utopia, unmotivated market aisle, unmotivated library aisle, fantasy corridor, random camera held by subject, studio wall fixation, chair fixation, curtain fixation, lamp fixation, scarf fixation, pedestal fixation, bird fixation, excessive noise, ultra-fine detail, over-sharpened microtexture, over-rendered machinery, noisy grime, tiny rivets everywhere, busy texture chatter, realistic uniform portrait, uniformed officer hero, foreground guard portrait, detailed tattoo focus, dense machinery wallpaper, overcrowded scene, high-frequency surface detail, cinematic close-up portrait, flat black fill, crushed black, pure black masses, muddy black fields, generic American illustration, generic Western RPG card art
+  negativePrompt: >-
+    photoreal, hyperreal, realistic render, photoreal painterly realism, cinematic realism, AAA key art,
+    photographic skin pores, realistic foreground portrait, realistic facial hair detail, realistic astronaut
+    anatomy, detailed face, workers-only composition, anonymous worker crew, lens blur, bokeh, depth-of-field
+    photo look, flags, cross, religious icon, altar, readable marks, mission logo, UI, starfield wallpaper,
+    fantasy temple, choir robe portrait, photoreal suit glass, realistic dish metal, PBR dishes, hard-surface
+    render, generic soldier hero, guard pin-up, weapon-first pose, HDR lens realism, 3D render look,
+    hyper-detailed concept art, watermark, text, logo, generic style, over-abstract, interchangeable preset,
+    duplicated motifs, generic glass utopia, unmotivated market aisle, unmotivated library aisle, fantasy
+    corridor, random camera held by subject, studio wall fixation, chair fixation, curtain fixation, lamp
+    fixation, scarf fixation, pedestal fixation, bird fixation, excessive noise, ultra-fine detail,
+    over-sharpened microtexture, over-rendered machinery, noisy grime, tiny rivets everywhere, busy texture
+    chatter, realistic uniform portrait, uniformed officer hero, foreground guard portrait, detailed tattoo
+    focus, dense machinery wallpaper, overcrowded scene, high-frequency surface detail, cinematic close-up
+    portrait, flat black fill, crushed black, pure black masses, muddy black fields, generic American
+    illustration, generic Western RPG card art
 taxonomy:
   packId: pack_15
   packName: Punk Spectrum Vault

@@ -13,15 +13,19 @@ tags:
   - mixed-media
 visualDna:
   aesthetic: Scrapbook layering style with taped ephemera, soft nostalgia, and handmade page rhythm
-  form_and_line: Tape, stickers
-  color_palette: Pastel, vintage
-  lighting_setup: Flat lay
-  material_texture: Paper fibers, tape sheen, sticker edges, paper shadows, and optional non-readable handwriting texture
-  render_quality: Personal, cute
-  spatial_distortion: Layered
-  atmosphere: Nostalgic, sweet
+  subject_treatment: Tape, stickers
+  color_and_tone: Pastel, vintage
+  lighting_and_shadow: Flat lay
+  texture_and_material: Paper fibers, tape sheen, sticker edges, paper shadows, and optional non-readable handwriting texture
+  camera_and_composition: Layered
+  atmosphere_and_mood: Nostalgic, sweet
+  rendering_and_quality: Personal, cute
   key_features: Page layout
-  creative_brief: Ephemera-like layers arrange into a memory-coded page rhythm, each fragment selected for texture, color, and emotional residue rather than literal content. Tape, stickers, torn corners, and soft paper shadows create a curated accident of affection. Keep nostalgia material and compositional, without requiring tickets, flowers, handwriting, people, or readable notes.
+  creative_brief: >-
+    Ephemera-like layers arrange into a memory-coded page rhythm, each fragment selected for texture, color,
+    and emotional residue rather than literal content. Tape, stickers, torn corners, and soft paper shadows
+    create a curated accident of affection. Keep nostalgia material and compositional, without requiring
+    tickets, flowers, handwriting, people, or readable notes.
 avoidRules:
   - photo
   - realistic
@@ -44,7 +48,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP06-065.webp
 attributes:
-  negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border, readable handwriting, ticket requirement, flower requirement
+  negativePrompt: >-
+    photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy,
+    watermark, text, signature, frame, border, readable handwriting, ticket requirement, flower requirement
 taxonomy:
   packId: pack_06
   packName: Essential Art Styles

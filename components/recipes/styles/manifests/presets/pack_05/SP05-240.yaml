@@ -13,36 +13,37 @@ tags:
   - mecha-and-cyberpunk
 visualDna:
   aesthetic: >-
-    Tri-Fire Riot Geometry within 7. Mecha & Cyberpunk: a reusable Anime Battle & Worlds visual language with a clear
-    stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects
-    while preserving Tri-Fire Riot Geometry's specific style identity.
-  form_and_line: >-
-    Define Tri-Fire Riot Geometry through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional,
-    and reusable beyond one literal scene.
-  color_palette: >-
-    Use a Tri-Fire Riot Geometry-specific palette with clear dominant, secondary, and accent roles. Keep contrast
-    deliberate and avoid generic color wash.
-  lighting_setup: >-
-    Use lighting that makes Tri-Fire Riot Geometry recognizable: purposeful key, rim, bounce, shadow, and glow behavior
-    with readable hierarchy.
-  material_texture: >-
-    Use materials and textures that reinforce Tri-Fire Riot Geometry: surface response, grain, patina, polish, or wear
-    should feel intentional and style-defining.
-  render_quality: >-
-    Render Tri-Fire Riot Geometry with high production clarity, strong silhouette reads, clean detail priority, and no
-    accidental UI, text, logos, or watermark.
-  spatial_distortion: >-
-    Use spatial behavior that fits Tri-Fire Riot Geometry: perspective, compression, exaggeration, or depth should
-    support the style without forcing one fixed location.
-  atmosphere: >-
-    Set a mood that belongs to Tri-Fire Riot Geometry: specific, coherent, and distinct, with emotional tone carried by
-    visual systems rather than narrative captioning.
+    Tri-Fire Riot Geometry within 7. Mecha & Cyberpunk: a reusable Anime Battle & Worlds visual language with
+    a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable
+    across subjects while preserving Tri-Fire Riot Geometry's specific style identity.
+  subject_treatment: >-
+    Define Tri-Fire Riot Geometry through line, mass, contour, spacing, and rhythm. Keep forms readable,
+    intentional, and reusable beyond one literal scene.
+  color_and_tone: >-
+    Use a Tri-Fire Riot Geometry-specific palette with clear dominant, secondary, and accent roles. Keep
+    contrast deliberate and avoid generic color wash.
+  lighting_and_shadow: >-
+    Use lighting that makes Tri-Fire Riot Geometry recognizable: purposeful key, rim, bounce, shadow, and glow
+    behavior with readable hierarchy.
+  texture_and_material: >-
+    Use materials and textures that reinforce Tri-Fire Riot Geometry: surface response, grain, patina, polish,
+    or wear should feel intentional and style-defining.
+  camera_and_composition: >-
+    Use spatial behavior that fits Tri-Fire Riot Geometry: perspective, compression, exaggeration, or depth
+    should support the style without forcing one fixed location.
+  atmosphere_and_mood: >-
+    Set a mood that belongs to Tri-Fire Riot Geometry: specific, coherent, and distinct, with emotional tone
+    carried by visual systems rather than narrative captioning.
+  rendering_and_quality: >-
+    Render Tri-Fire Riot Geometry with high production clarity, strong silhouette reads, clean detail
+    priority, and no accidental UI, text, logos, or watermark.
   key_features: >-
-    Prioritize Tri-Fire Riot Geometry's key features: recognizable shape language, palette logic, material cues,
-    lighting behavior, and composition rules.
+    Prioritize Tri-Fire Riot Geometry's key features: recognizable shape language, palette logic, material
+    cues, lighting behavior, and composition rules.
   creative_brief: >-
-    Create a style-card that translates Tri-Fire Riot Geometry into a portable visual system for 7. Mecha & Cyberpunk.
-    Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.
+    Create a style-card that translates Tri-Fire Riot Geometry into a portable visual system for 7. Mecha &
+    Cyberpunk. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or
+    story beat.
 avoidRules:
   - realistic
   - 3d render
@@ -60,8 +61,8 @@ assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-240.webp
 attributes:
   negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark,
-    text, signature
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts,
+    watermark, text, signature
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds

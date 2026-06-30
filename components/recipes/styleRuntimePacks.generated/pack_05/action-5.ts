@@ -10,15 +10,15 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'photoreal, static-pose, low-detail, watermark, text, logo',
     style: {
       aesthetic: 'High-impact anime action with compressed urgency and forward-rush pressure.',
-      form_and_line:
+      subject_treatment:
         'Kinetic lines, aggressive silhouettes, elastic anatomy, and directional force bands.',
-      color_palette: 'Dark blue, energy red and contrast white.',
-      lighting_setup: 'Flash-burst lighting with dynamic rim and hard motion accents.',
-      material_texture:
+      color_and_tone: 'Dark blue, energy red and contrast white.',
+      lighting_and_shadow: 'Flash-burst lighting with dynamic rim and hard motion accents.',
+      texture_and_material:
         'Grit overlays, dust plumes, and stylized sparks without fixed urban surface.',
-      render_quality: 'Sharp combat keyframe with instant readability.',
-      spatial_distortion: 'Forced perspective that amplifies speed.',
-      atmosphere: 'Urgency, adrenaline, and imminent danger.',
+      camera_and_composition: 'Forced perspective that amplifies speed.',
+      atmosphere_and_mood: 'Urgency, adrenaline, and imminent danger.',
+      rendering_and_quality: 'Sharp combat keyframe with instant readability.',
       key_features: 'Motion lines, extreme rush angle, compressed background, impact flash.',
       creative_brief:
         'Apply alley-rush energy as a transferable action treatment: any subject should feel accelerated, compressed, and impact-ready without requiring a fixed hero, location, chase, or acrobatic sprint.',
@@ -32,22 +32,22 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Vertigo-height energy crossing, aerial pressure, luminous collision rhythm, heroic tension as abstract directional force.',
-      form_and_line:
+      subject_treatment:
         'Firm contours, extreme diagonal posture, crossing impact vectors, sharp contour snap, and readable kinetic silhouettes.',
-      color_palette: 'Cyan, fire orange, and deep black.',
-      lighting_setup:
+      color_and_tone: 'Cyan, fire orange, and deep black.',
+      lighting_and_shadow:
         'High backlight, shock flare, cyan-orange rim clash, and luminous particle edges.',
-      material_texture:
+      texture_and_material:
         'Fractured energy grain, wind-sheared cloth texture, glowing particulate dust, and clean cel-surface polish.',
-      render_quality:
-        'Maximum clarity action illustration with strong silhouette readability and crisp energy separation.',
-      spatial_distortion:
+      camera_and_composition:
         'Wide-angle vertigo, crossing-vector depth, lifted horizon pressure, and dramatic negative-space height.',
-      atmosphere: 'Epic, elevated, kinetic, tense.',
+      atmosphere_and_mood: 'Epic, elevated, kinetic, tense.',
+      rendering_and_quality:
+        'Maximum clarity action illustration with strong silhouette readability and crisp energy separation.',
       key_features:
         'Crossing energy vectors, vertigo framing, luminous trails, high backlight, clean impact readability.',
       creative_brief:
-        'Render any subject with elevated collision energy: cyan-orange force lines, high backlight, vertigo depth, and crossing luminous trails should create aerial intensity without fixed characters, props, environment, or confrontation premise.\n',
+        'Render any subject with elevated collision energy: cyan-orange force lines, high backlight, vertigo depth, and crossing luminous trails should create aerial intensity without fixed characters, props, environment, or confrontation premise.',
     },
   },
   {
@@ -58,23 +58,23 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Neon vector discharge, tactical charge, violet-blue pressure, clean sci-fi anime precision, decisive technical momentum.',
-      form_and_line:
+      subject_treatment:
         'Sharp technical linework, long discharge vectors, stylized tactical angles, precise edge discipline, and clean silhouette logic.',
-      color_palette:
+      color_and_tone:
         'Violet, neon blue, graphite gray, cold white cores, and restrained magenta accents.',
-      lighting_setup:
+      lighting_and_shadow:
         'Electric discharge as main key, hard rim contrast, wet specular bounce, and blue-violet backflare.',
-      material_texture:
+      texture_and_material:
         'Wet graphite sheen, electric smoke, cold polymer, brushed metal grain, and vapor-lit particles.',
-      render_quality:
-        'Clean focused impact frame with high technical readability and crisp luminous hierarchy.',
-      spatial_distortion:
+      camera_and_composition:
         'Strong diagonal vanishing point, vector-led depth, compressed technical planes, and fast electric parallax.',
-      atmosphere: 'Tactical, charged, precise, technological.',
+      atmosphere_and_mood: 'Tactical, charged, precise, technological.',
+      rendering_and_quality:
+        'Clean focused impact frame with high technical readability and crisp luminous hierarchy.',
       key_features:
         'Electric discharge vectors, violet-blue backlight, wet specular surfaces, diagonal technical depth, clean impact focus.',
       creative_brief:
-        'Apply neon vector discharge to any subject: hard electric keys, violet-blue diagonals, wet graphite texture, and precise tactical linework should define the style without fixed vantage points, horizons, firearms, shots, or urban settings.\n',
+        'Apply neon vector discharge to any subject: hard electric keys, violet-blue diagonals, wet graphite texture, and precise tactical linework should define the style without fixed vantage points, horizons, firearms, shots, or urban settings.',
     },
   },
   {
@@ -85,23 +85,23 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Monumental impact burst, competitive crescendo, crimson-gold triumph pressure, controlled debris abstraction, final-frame intensity.',
-      form_and_line:
+      subject_treatment:
         'Hard strokes, athletic contour energy, controlled FX arcs, thick impact silhouettes, and heavy compression lines.',
-      color_palette:
+      color_and_tone:
         'Crimson, gold, charcoal red, hot white impact cores, and smoky black anchors.',
-      lighting_setup:
+      lighting_and_shadow:
         'Punctual burst key, high overhead flare, rimmed dust glow, and hard celebratory contrast.',
-      material_texture:
+      texture_and_material:
         'Cracked surface abstraction, impact dust, hot particles, matte sweat sheen, and compressed shockwave grain.',
-      render_quality:
-        'Fight-climax anime finish with crisp focal hierarchy, readable burst geometry, and polished action clarity.',
-      spatial_distortion:
+      camera_and_composition:
         'Low-angle monumentality, impact-center expansion, compressed foreground scale, and burst-led perspective pull.',
-      atmosphere: 'Explosive, triumphant, competitive, dramatic.',
+      atmosphere_and_mood: 'Explosive, triumphant, competitive, dramatic.',
+      rendering_and_quality:
+        'Fight-climax anime finish with crisp focal hierarchy, readable burst geometry, and polished action clarity.',
       key_features:
         'Burst geometry, monumental low angle, crimson-gold pressure, controlled debris texture, climax-frame readability.',
       creative_brief:
-        'Render any subject as a decisive impact crescendo: low-angle scale, crimson-gold burst light, controlled shock texture, and heavy contour rhythm should create final-frame drama without venues, spectators, named roles, signature moves, or required debris.\n',
+        'Render any subject as a decisive impact crescendo: low-angle scale, crimson-gold burst light, controlled shock texture, and heavy contour rhythm should create final-frame drama without venues, spectators, named roles, signature moves, or required debris.',
     },
   },
   {
@@ -112,22 +112,22 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Upward thunder momentum, electrical determination, vertical force buildup, white-blue overload, shonen intensity as abstract ascent.',
-      form_and_line:
+      subject_treatment:
         'Powerful contour, forward thrust posture, branching energy paths, vertical compression, and force-loaded silhouette rhythm.',
-      color_palette: 'Electric blue, intense white, and deep black.',
-      lighting_setup:
+      color_and_tone: 'Electric blue, intense white, and deep black.',
+      lighting_and_shadow:
         'Electric halo, intense white core glow, blue rim flare, and black negative-fill contrast.',
-      material_texture:
+      texture_and_material:
         'Sparks, vapor haze, charged metal sheen, ionized dust, and clean cel-surface polish.',
-      render_quality:
-        'Overload key frame with crisp electric hierarchy and high-impact contour clarity.',
-      spatial_distortion:
+      camera_and_composition:
         'Aggressive frontal perspective, upward force compression, radial current pull, and vertical frame pressure.',
-      atmosphere: 'Fierce, ascending, charged, determined.',
+      atmosphere_and_mood: 'Fierce, ascending, charged, determined.',
+      rendering_and_quality:
+        'Overload key frame with crisp electric hierarchy and high-impact contour clarity.',
       key_features:
         'Branched electric rays, white-blue overload, vertical momentum, charged surface sheen, decisive silhouette force.',
       creative_brief:
-        'Apply upward thunder momentum to any subject: vertical force, branched blue light, intense white cores, vapor haze, and decisive silhouette pressure should define the style without fixed body parts, equipment, lead roles, strike choreography, or metamorphosis premise.\n',
+        'Apply upward thunder momentum to any subject: vertical force, branched blue light, intense white cores, vapor haze, and decisive silhouette pressure should define the style without fixed body parts, equipment, lead roles, strike choreography, or metamorphosis premise.',
     },
   },
 ] as unknown as StyleRuntimePreset[];

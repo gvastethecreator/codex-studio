@@ -13,21 +13,26 @@ tags:
   - photography-eras
 visualDna:
   aesthetic: False color IR
-  form_and_line: None
-  color_palette: False-color magenta, coral red, cyan shadow, white infrared response, spectral pink
-  lighting_setup: Surreal, invisible-spectrum, infrared reflectance
-  material_texture: Grainy, false-color emulsion, IR-sensitive layer
-  render_quality: Psychedelic, weird, alien biosphere, dreamscape
-  spatial_distortion: None
-  atmosphere: Alien, dream, invisible-spectrum hallucination
+  subject_treatment: >-
+    Treat subjects as believable filmed or broadcast subjects under Infrared Film (Aerochrome): casting,
+    wardrobe, props, motion cues, and silhouette hierarchy follow 4. Photography Eras cinematic and broadcast
+    grammar without locking to one plot beat.
+  color_and_tone: False-color magenta, coral red, cyan shadow, white infrared response, spectral pink
+  lighting_and_shadow: Surreal, invisible-spectrum, infrared reflectance
+  texture_and_material: Grainy, false-color emulsion, IR-sensitive layer
+  camera_and_composition: >-
+    Camera language native to Infrared Film (Aerochrome): genre-aware framing, lens character, focal
+    hierarchy, motion cue, and vertical style-card composition.
+  atmosphere_and_mood: Alien, dream, invisible-spectrum hallucination
+  rendering_and_quality: Psychedelic, weird, alien biosphere, dreamscape
   key_features: False-color mapping, infrared reflectance, cyan-magenta split, spectral white bloom
   creative_brief: >-
-    Map the prompt through Aerochrome-style infrared response: invisible wavelengths become magenta, coral, cyan, and
-    ghostly white according to material reflectance. Avoid requiring vegetation, forests, grass, or landscapes. The
-    subject should remain recognizable while its color logic shifts into a coherent false-spectrum hallucination. Apply
-    Infrared Film as a portable cinematic/camera style over any input: preserve its lens behavior, color process,
-    lighting setup, artifact pattern, and deformation grammar while avoiding a required actor, room, prop, brand,
-    readable text, fixed IP scene, or narrative setup.
+    Map the prompt through Aerochrome-style infrared response: invisible wavelengths become magenta, coral,
+    cyan, and ghostly white according to material reflectance. Avoid requiring vegetation, forests, grass, or
+    landscapes. The subject should remain recognizable while its color logic shifts into a coherent
+    false-spectrum hallucination. Apply Infrared Film as a portable cinematic/camera style over any input:
+    preserve its lens behavior, color process, lighting setup, artifact pattern, and deformation grammar while
+    avoiding a required actor, room, prop, brand, readable text, fixed IP scene, or narrative setup.
 avoidRules:
   - natural color
 assets:

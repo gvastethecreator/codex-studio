@@ -13,18 +13,17 @@ tags:
   - fluid-and-organic
 visualDna:
   aesthetic: Magnetic liquid spikes
-  form_and_line: Spikes
-  color_palette: Black, reflective
-  lighting_setup: Studio highlight
-  material_texture: Liquid metal
-  render_quality: Scientific, alien
-  spatial_distortion: Magnetic field
-  atmosphere: Dark, sci-fi
+  subject_treatment: Spikes
+  color_and_tone: Black, reflective
+  lighting_and_shadow: Studio highlight
+  texture_and_material: Liquid metal
+  camera_and_composition: Magnetic field
+  atmosphere_and_mood: Dark, sci-fi
+  rendering_and_quality: Scientific, alien
   key_features: Spikes
   creative_brief: >-
-    Apply ferrofluid magnetism to the input: glossy black liquid metal, field-led
-    spikes, radial clustering, and alien surface tension should make any subject
-    feel pulled into magnetic order.
+    Apply ferrofluid magnetism to the input: glossy black liquid metal, field-led spikes, radial clustering,
+    and alien surface tension should make any subject feel pulled into magnetic order.
 avoidRules:
   - soft
   - colorful

@@ -13,18 +13,20 @@ tags:
   - subcultures
 visualDna:
   aesthetic: Lolita couture, storybook Victorian sweetness, porcelain-pastel refinement
-  form_and_line: Ruffles, bell architecture, tiered volume, mutton-leg sleeve, high-neck lace collar
-  color_palette: Pink, White, Blue, mint, lavender, saxon blue, dusty rose, milk-white
-  lighting_setup: Soft diffused light, petal-pink bounce, porcelain-bright warmth
-  material_texture: Cotton lace, satin ribbons, pintucked voile, broderie anglaise, tulle underlayers, faux-pearl buttons
-  render_quality: Cute elaborate couture, confectionary precision, porcelain-finish restraint
-  spatial_distortion: None
-  atmosphere: Sweet, storybook serenity, lace-gloved delicacy, porcelain calm
+  subject_treatment: Ruffles, bell architecture, tiered volume, mutton-leg sleeve, high-neck lace collar
+  color_and_tone: Pink, White, Blue, mint, lavender, saxon blue, dusty rose, milk-white
+  lighting_and_shadow: Soft diffused light, petal-pink bounce, porcelain-bright warmth
+  texture_and_material: Cotton lace, satin ribbons, pintucked voile, broderie anglaise, tulle underlayers, faux-pearl buttons
+  camera_and_composition: >-
+    Compose for Lolita Fashion using its key spatial cues: Bell-volume silhouette, lace tiers, ribbon
+    structure, porcelain palette, pintuck rhythm.
+  atmosphere_and_mood: Sweet, storybook serenity, lace-gloved delicacy, porcelain calm
+  rendering_and_quality: Cute elaborate couture, confectionary precision, porcelain-finish restraint
   key_features: Bell-volume silhouette, lace tiers, ribbon structure, porcelain palette, pintuck rhythm
   creative_brief: >-
-    Render the input through Lolita construction: bell architecture, tiered ruffles, satin ribbons, pintucked voile,
-    bonnet cues, lace gloves and porcelain-pastel restraint. Keep tea-party fantasy as mood only; avoid Harajuku
-    streets, dollhouse parlors, childlike figure lock or literal party scenes.
+    Render the input through Lolita construction: bell architecture, tiered ruffles, satin ribbons, pintucked
+    voile, bonnet cues, lace gloves and porcelain-pastel restraint. Keep tea-party fantasy as mood only; avoid
+    Harajuku streets, dollhouse parlors, childlike figure lock or literal party scenes.
 avoidRules:
   - plain contemporary casualwear
   - trouser-dominant outfit

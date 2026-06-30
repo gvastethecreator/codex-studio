@@ -12,16 +12,21 @@ tags:
   - cinematic-and-media
   - caricature-and-cartoon-styles
 visualDna:
-  aesthetic: 90s Nickelodeon grossness, weird stalk-like accents, grime, sewer-slime palette, childlike rebellion, junkyard textures, lumpy asymmetry, playful ugly-cute horror for kids
-  form_and_line: Chunky lopsided outlines, uneven monster curves, jittery slime accents, crude expressive contour
-  color_palette: Slime green, bruise purple, rust orange, toxic pink, sewer-water teal, moldy yellow
-  lighting_setup: Grate-like shafts, dank green underlight, junkyard reflected glare, moist shadow pockets
-  material_texture: Sludge, pitted surface, peeling grime, scuff dirt, wet brick-like texture, trash-bag shine
-  render_quality: 90s gross-kids-cartoon texture, tactile ugliness, lumpy creature-school charm, sewer-funk fidelity
-  spatial_distortion: Mismatched extensions, stacked feature logic, torso-like blobs, lumpy asymmetry
-  atmosphere: Rowdy, gross, mischievous, lovable
+  aesthetic: >-
+    90s Nickelodeon grossness, weird stalk-like accents, grime, sewer-slime palette, childlike rebellion,
+    junkyard textures, lumpy asymmetry, playful ugly-cute horror for kids
+  subject_treatment: Chunky lopsided outlines, uneven monster curves, jittery slime accents, crude expressive contour
+  color_and_tone: Slime green, bruise purple, rust orange, toxic pink, sewer-water teal, moldy yellow
+  lighting_and_shadow: Grate-like shafts, dank green underlight, junkyard reflected glare, moist shadow pockets
+  texture_and_material: Sludge, pitted surface, peeling grime, scuff dirt, wet brick-like texture, trash-bag shine
+  camera_and_composition: Mismatched extensions, stacked feature logic, torso-like blobs, lumpy asymmetry
+  atmosphere_and_mood: Rowdy, gross, mischievous, lovable
+  rendering_and_quality: 90s gross-kids-cartoon texture, tactile ugliness, lumpy creature-school charm, sewer-funk fidelity
   key_features: Asymmetric lumps, grime, rubbery accents, weird feature placement, urban sludge detail
-  creative_brief: 'Use 90s gross-kids cartoon logic on any input: lumpy asymmetry, slime greens, junk textures, pitted surfaces, grate-light, and playful ugliness. Avoid monster-school scenes, sewer locations, claws, eyes, or bodies as requirements. Charm should come from gross texture and rebellious shape.'
+  creative_brief: >-
+    Use 90s gross-kids cartoon logic on any input: lumpy asymmetry, slime greens, junk textures, pitted
+    surfaces, grate-light, and playful ugliness. Avoid monster-school scenes, sewer locations, claws, eyes, or
+    bodies as requirements. Charm should come from gross texture and rebellious shape.
 avoidRules:
   - digital
   - HD

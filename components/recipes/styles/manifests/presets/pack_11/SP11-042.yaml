@@ -13,20 +13,20 @@ tags:
   - aesthetics
 visualDna:
   aesthetic: Frutiger Aero Y2K-era glossy UI optimism and skeuomorphic futurism
-  form_and_line: Glossy curves, rounded-rect silhouettes, bubble-button contours, aqua-orb profiles
-  color_palette: Cyan, Green, White, aqua-bubble blue, grass-green, brushed-metal grey, traffic-light amber
-  lighting_setup: Bright, glossy, window-reflection streak, soft-overhead ambient, screen-glow-backlight, inset-shadow depth
-  material_texture: Glass, water bubbles, brushed-aluminum, aqua-gel buttons, acrylic-transparency, droplet-lens
-  render_quality: Polished early-2000s interface rendering with optimistic consumer-tech tone
-  spatial_distortion: Floating icons, dock-magnification, widget-flyout, layer-drop-shadow separation
-  atmosphere: Fresh, clean, future, login-screen possibility, broadband-dawn, digital-optimism
+  subject_treatment: Glossy curves, rounded-rect silhouettes, bubble-button contours, aqua-orb profiles
+  color_and_tone: Cyan, Green, White, aqua-bubble blue, grass-green, brushed-metal grey, traffic-light amber
+  lighting_and_shadow: Bright, glossy, window-reflection streak, soft-overhead ambient, screen-glow-backlight, inset-shadow depth
+  texture_and_material: Glass, water bubbles, brushed-aluminum, aqua-gel buttons, acrylic-transparency, droplet-lens
+  camera_and_composition: Floating icons, dock-magnification, widget-flyout, layer-drop-shadow separation
+  atmosphere_and_mood: Fresh, clean, future, login-screen possibility, broadband-dawn, digital-optimism
+  rendering_and_quality: Polished early-2000s interface rendering with optimistic consumer-tech tone
   key_features: Lens flare, glossy-aqua button, grass-green progress bar, brushed-metal window chrome, droplet-reflection
   creative_brief: >-
-    Build a Frutiger Aero system from glossy rounded controls, aqua translucency, and bright eco-tech accents. Maintain
-    optimistic Y2K interface energy with modular UI motifs that can adapt across multiple subjects. Apply Frutiger Aero
-    as a portable style system over any input: preserve its construction grammar, material cues, scale logic, and
-    signature rendering behavior while avoiding a required franchise, literal prop, fixed specimen, classroom sample,
-    product shot, or scene template.
+    Build a Frutiger Aero system from glossy rounded controls, aqua translucency, and bright eco-tech accents.
+    Maintain optimistic Y2K interface energy with modular UI motifs that can adapt across multiple subjects.
+    Apply Frutiger Aero as a portable style system over any input: preserve its construction grammar, material
+    cues, scale logic, and signature rendering behavior while avoiding a required franchise, literal prop,
+    fixed specimen, classroom sample, product shot, or scene template.
 avoidRules:
   - flat
   - matte

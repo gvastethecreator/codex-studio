@@ -13,19 +13,18 @@ tags:
   - digital-art
 visualDna:
   aesthetic: 3D cubes
-  form_and_line: Cubes
-  color_palette: Vibrant
-  lighting_setup: AO
-  material_texture: None
-  render_quality: Voxel-art finish with cube-unit discipline and playful AO depth
-  spatial_distortion: Blocky
-  atmosphere: Cute, digital
+  subject_treatment: Cubes
+  color_and_tone: Vibrant
+  lighting_and_shadow: AO
+  texture_and_material: "Surface treatment follows Voxel Art's material cues: Cubes."
+  camera_and_composition: Blocky
+  atmosphere_and_mood: Cute, digital
+  rendering_and_quality: Voxel-art finish with cube-unit discipline and playful AO depth
   key_features: Cubes
   creative_brief: >-
-    Apply voxel-art construction to any input: cubic sampling, repeated block
-    units, stepped curves, crevice ambient occlusion, and toy-like volumetric
-    readability. Keep voxel grammar without requiring Minecraft worlds, terrain,
-    buildings, or game dioramas.
+    Apply voxel-art construction to any input: cubic sampling, repeated block units, stepped curves, crevice
+    ambient occlusion, and toy-like volumetric readability. Keep voxel grammar without requiring Minecraft
+    worlds, terrain, buildings, or game dioramas.
 avoidRules:
   - photo
   - realistic
@@ -48,7 +47,10 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP06-052.webp
 attributes:
-  negativePrompt: photo, realistic, photorealistic, smooth generic 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border, Minecraft branding, building requirement, landscape requirement
+  negativePrompt: >-
+    photo, realistic, photorealistic, smooth generic 3d render, octane render, noise, blurry, deformed, ugly,
+    bad anatomy, watermark, text, signature, frame, border, Minecraft branding, building requirement,
+    landscape requirement
 taxonomy:
   packId: pack_06
   packName: Essential Art Styles

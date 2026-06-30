@@ -13,14 +13,23 @@ tags:
   - film-genres
 visualDna:
   aesthetic: Modern action movie
-  form_and_line: None
-  color_palette: Teal shadows, orange highlights, complementary grade, cyan bias
-  lighting_setup: High contrast, backlit rim, dramatic underlight
-  material_texture: Digital clean, noise-free, slick compositing
-  spatial_distortion: Lens flare, anamorphic streak, specular bloom
-  atmosphere: Intense, cinematic, bombastic spectacle, summer tentpole
+  subject_treatment: >-
+    Treat subjects as believable filmed or broadcast subjects under Blockbuster Teal & Orange: casting,
+    wardrobe, props, motion cues, and silhouette hierarchy follow 1. Film Genres cinematic and broadcast
+    grammar without locking to one plot beat.
+  color_and_tone: Teal shadows, orange highlights, complementary grade, cyan bias
+  lighting_and_shadow: High contrast, backlit rim, dramatic underlight
+  texture_and_material: Digital clean, noise-free, slick compositing
+  camera_and_composition: Lens flare, anamorphic streak, specular bloom
+  atmosphere_and_mood: Intense, cinematic, bombastic spectacle, summer tentpole
+  rendering_and_quality: >-
+    Polished tentpole digital-cinema finish with clean compositing, high-contrast grade, crisp rim light,
+    controlled bloom, and no text or watermark.
   key_features: Teal-orange grade, rim light, spectacle bloom
-  creative_brief: 'Blockbuster teal-orange grade makes any subject feel tentpole-scale: cyan shadows, orange highlights, slick compositing, rim light, anamorphic streaks, bloom, and suspended spectacle texture. Keep action-movie intensity without requiring hero walk, debris, skin tones, explosions, or burning sky.'
+  creative_brief: >-
+    Blockbuster teal-orange grade makes any subject feel tentpole-scale: cyan shadows, orange highlights,
+    slick compositing, rim light, anamorphic streaks, bloom, and suspended spectacle texture. Keep
+    action-movie intensity without requiring hero walk, debris, skin tones, explosions, or burning sky.
 avoidRules:
   - natural color
 assets:

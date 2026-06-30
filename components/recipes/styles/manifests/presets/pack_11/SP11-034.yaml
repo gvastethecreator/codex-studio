@@ -13,20 +13,23 @@ tags:
   - micro-macro
 visualDna:
   aesthetic: Radiographic transparency, density-layer scan art, shadow-bone logic, Roentgen spectral imaging
-  form_and_line: Bone density, marrow-gradient contour, trabecular-web lattice, cortical-bone edge
-  color_palette: Black and White negative, bone-white-on-void, tissue-grey gradient, lead-apron silhouette
-  lighting_setup: Backlit, light-box glow, radiograph-viewer luminance, cold-blue-white transmission
-  material_texture: Film grain, silver-halide emulsion, radiation-speckle noise, acetate-base curl, developer-chemistry stain
-  render_quality: Medical, spooky, internal, diagnostic-penetration, see-through-magic, radiograph precision
-  spatial_distortion: Interior revelation, nested transparency, density-stacked projection, skeletal or structural ghosting
-  atmosphere: Scientific, raw, clinical, mortality-aware, interior mystery
-  key_features: Bone-like density, joint-space gaps when anatomy exists, metallic artifacts, fracture-line shadows, trabecular grain
+  subject_treatment: Bone density, marrow-gradient contour, trabecular-web lattice, cortical-bone edge
+  color_and_tone: Black and White negative, bone-white-on-void, tissue-grey gradient, lead-apron silhouette
+  lighting_and_shadow: Backlit, light-box glow, radiograph-viewer luminance, cold-blue-white transmission
+  texture_and_material: Film grain, silver-halide emulsion, radiation-speckle noise, acetate-base curl, developer-chemistry stain
+  camera_and_composition: Interior revelation, nested transparency, density-stacked projection, skeletal or structural ghosting
+  atmosphere_and_mood: Scientific, raw, clinical, mortality-aware, interior mystery
+  rendering_and_quality: Medical, spooky, internal, diagnostic-penetration, see-through-magic, radiograph precision
+  key_features: >-
+    Bone-like density, joint-space gaps when anatomy exists, metallic artifacts, fracture-line shadows,
+    trabecular grain
   creative_brief: >-
     Define identity through radiograph grammar: density-layer projection, monochrome transmission mapping, and
-    internal-structure hierarchy should carry the style. If the input has a body, reveal skeletal contrast; if it is an
-    object, expose its hidden construction without forcing a hospital frame. Apply X-Ray as a portable style system over
-    any input: preserve its construction grammar, material cues, scale logic, and signature rendering behavior while
-    avoiding a required franchise, literal prop, fixed specimen, classroom sample, product shot, or scene template.
+    internal-structure hierarchy should carry the style. If the input has a body, reveal skeletal contrast; if
+    it is an object, expose its hidden construction without forcing a hospital frame. Apply X-Ray as a
+    portable style system over any input: preserve its construction grammar, material cues, scale logic, and
+    signature rendering behavior while avoiding a required franchise, literal prop, fixed specimen, classroom
+    sample, product shot, or scene template.
 avoidRules:
   - skin
   - color

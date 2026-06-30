@@ -13,15 +13,18 @@ tags:
   - film-and-analog-process
 visualDna:
   aesthetic: 19th century tintype
-  form_and_line: Extremely shallow focus
-  color_palette: Sepia, silver
-  lighting_setup: Long exposure
-  material_texture: Chemical pours, scratches
-  render_quality: Antique, haunting
-  spatial_distortion: Blurry edges (Petzval)
-  atmosphere: Ghostly, ancient
+  subject_treatment: Extremely shallow focus
+  color_and_tone: Sepia, silver
+  lighting_and_shadow: Long exposure
+  texture_and_material: Chemical pours, scratches
+  camera_and_composition: Blurry edges (Petzval)
+  atmosphere_and_mood: Ghostly, ancient
+  rendering_and_quality: Antique, haunting
   key_features: Chemical artifacts
-  creative_brief: 'Silver and patience translated into tintype atmosphere: shallow focus, Petzval edge falloff, sepia-silver tonality, chemical pours, scratches, and exposure tremor. Any subject should feel summoned onto a fragile plate, antique without requiring sitters or period portraiture.'
+  creative_brief: >-
+    Silver and patience translated into tintype atmosphere: shallow focus, Petzval edge falloff, sepia-silver
+    tonality, chemical pours, scratches, and exposure tremor. Any subject should feel summoned onto a fragile
+    plate, antique without requiring sitters or period portraiture.
 avoidRules:
   - color
   - modern

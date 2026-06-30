@@ -13,15 +13,19 @@ tags:
   - man-made-materials
 visualDna:
   aesthetic: Chopped fiber composite
-  form_and_line: Random flakes
-  color_palette: Black/Grey marble look
-  lighting_setup: Glossy clear coat
-  material_texture: Smooth but visual depth
-  render_quality: High tech, performance
-  spatial_distortion: None
-  atmosphere: Fast, expensive
+  subject_treatment: Random flakes
+  color_and_tone: Black/Grey marble look
+  lighting_and_shadow: Glossy clear coat
+  texture_and_material: Smooth but visual depth
+  camera_and_composition: 'Compose for Carbon Fiber (Forged) using its key spatial cues: Random flakes.'
+  atmosphere_and_mood: Fast, expensive
+  rendering_and_quality: High tech, performance
   key_features: Random flakes
-  creative_brief: 'Render forged carbon fiber as performance material over the input: random black and grey flakes suspended in glossy resin, marble-like chaos, visual depth under clear coat, and engineered speed made solid. If vehicles, armor, tools, or tech exist, make them feel high-performance; otherwise apply chopped composite depth without requiring a supercar.'
+  creative_brief: >-
+    Render forged carbon fiber as performance material over the input: random black and grey flakes suspended
+    in glossy resin, marble-like chaos, visual depth under clear coat, and engineered speed made solid. If
+    vehicles, armor, tools, or tech exist, make them feel high-performance; otherwise apply chopped composite
+    depth without requiring a supercar.
 avoidRules:
   - woven pattern
 assets:

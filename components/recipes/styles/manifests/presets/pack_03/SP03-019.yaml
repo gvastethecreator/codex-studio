@@ -13,18 +13,20 @@ tags:
   - materials
 visualDna:
   aesthetic: Projected light construct
-  form_and_line: Scanlines, interference
-  color_palette: Cyan, Blue transparent, interference spectrum
-  lighting_setup: Emissive, volumetric projection
-  material_texture: Digital noise, scanline grain
-  render_quality: Sci-fi interface, AR overlay
-  atmosphere: Futuristic, tech, ghost-data
+  subject_treatment: Scanlines, interference
+  color_and_tone: Cyan, Blue transparent, interference spectrum
+  lighting_and_shadow: Emissive, volumetric projection
+  texture_and_material: Digital noise, scanline grain
+  camera_and_composition: >-
+    Lookdev camera for Hologram: close three-quarter or macro material framing, strong highlight planes,
+    readable surface curvature, and controlled depth.
+  atmosphere_and_mood: Futuristic, tech, ghost-data
+  rendering_and_quality: Sci-fi interface, AR overlay
   key_features: Transparency, flickering projection
   creative_brief: >-
-    Rebuild the input as ghost-data: cyan scanlines, transparent interference,
-    volumetric flicker, AR registration seams and blueprint-like light constructs.
-    Preserve sci-fi interface presence without requiring a floating object,
-    architecture mockup or physical room.
+    Rebuild the input as ghost-data: cyan scanlines, transparent interference, volumetric flicker, AR
+    registration seams and blueprint-like light constructs. Preserve sci-fi interface presence without
+    requiring a floating object, architecture mockup or physical room.
 avoidRules:
   - solid
   - opaque

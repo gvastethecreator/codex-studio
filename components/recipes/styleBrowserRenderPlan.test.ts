@@ -36,6 +36,52 @@ function pack(presets: StyleRuntimePreset[]): StyleRuntimePack {
 }
 
 describe('styleBrowserRenderPlan', () => {
+  it('searches across loaded style packs instead of only the active pack', () => {
+    const activePackPreset = preset('photo-a', 'Photography');
+    const otherPackPreset = preset('game-a', 'Arcade Worlds');
+    otherPackPreset.style.aesthetic = 'Sega Genesis dungeon staging';
+
+    const processedData = createStyleBrowserProcessedData({
+      activePack: pack([activePackPreset]),
+      currentPackId: 'pack_01',
+      favoritesPackId: 'favorites',
+      favoritePresets: [],
+      searchPresets: [activePackPreset, otherPackPreset],
+      favoriteIds: [],
+      searchQuery: 'genesis',
+      sortOrder: 'az',
+      showFavoritesOnly: false,
+    });
+
+    expect(processedData.favorites).toEqual([]);
+    expect(
+      Object.values(processedData.groups)
+        .flat()
+        .map((item) => item.id),
+    ).toEqual(['game-a']);
+  });
+
+  it('applies favorites filtering to global style search results', () => {
+    const activePackPreset = preset('photo-a', 'Photography');
+    const favoriteOtherPackPreset = preset('game-a', 'Arcade Worlds');
+    favoriteOtherPackPreset.style.aesthetic = 'Sega Genesis dungeon staging';
+
+    const processedData = createStyleBrowserProcessedData({
+      activePack: pack([activePackPreset]),
+      currentPackId: 'pack_01',
+      favoritesPackId: 'favorites',
+      favoritePresets: [],
+      searchPresets: [activePackPreset, favoriteOtherPackPreset],
+      favoriteIds: ['game-a'],
+      searchQuery: 'genesis',
+      sortOrder: 'az',
+      showFavoritesOnly: true,
+    });
+
+    expect(processedData.favorites.map((item) => item.id)).toEqual(['game-a']);
+    expect(Object.values(processedData.groups).flat()).toEqual([]);
+  });
+
   it('matches Styles browser category window and eager render behavior', () => {
     const presets = [
       ...Array.from({ length: 20 }, (_, index) => preset(`a-${index}`, 'A')),

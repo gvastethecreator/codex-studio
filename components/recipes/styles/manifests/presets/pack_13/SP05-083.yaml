@@ -15,32 +15,28 @@ visualDna:
   aesthetic: >-
     Low-stakes otaku-banter anime flatness where conversational rhythm, tiny personality deltas, and
     comfortable repetition carry the image
-  form_and_line: >-
-    Relaxed everyday contours, stable talk-circle composition, expression-over-action priority, and
-    low-drama gesture pacing
-  color_palette: >-
-    Gentle indoor pastels, cream neutrals, mint accents, snack-warm highlights, and balanced
-    low-contrast skin tones
-  lighting_setup: >-
+  subject_treatment: >-
+    Relaxed everyday contours, stable talk-circle composition, expression-over-action priority, and low-drama
+    gesture pacing
+  color_and_tone: >-
+    Gentle indoor pastels, cream neutrals, mint accents, snack-warm highlights, and balanced low-contrast skin
+    tones
+  lighting_and_shadow: >-
     Soft ambient fill, mild daylight wash, minimal dramatic shadow, and steady tonal consistency for
     dialogue-led viewing
-  material_texture: >-
-    Flat simple surfaces, soft textile hints, low-noise small details, and unobtrusive environmental
-    supports
-  render_quality: >-
-    Dialogue-forward anime finish with crisp expression readability, consistent polish, and episodic
-    comfort pacing
-  spatial_distortion: >-
-    Stable conversational framing, mild cute stylization, and clear line-of-sight geometry around
-    any subject
-  atmosphere: Casual, nerdy, witty, comfortable, low-pressure
+  texture_and_material: Flat simple surfaces, soft textile hints, low-noise small details, and unobtrusive environmental supports
+  camera_and_composition: Stable conversational framing, mild cute stylization, and clear line-of-sight geometry around any subject
+  atmosphere_and_mood: Casual, nerdy, witty, comfortable, low-pressure
+  rendering_and_quality: >-
+    Dialogue-forward anime finish with crisp expression readability, consistent polish, and episodic comfort
+    pacing
   key_features: >-
-    Banter pacing, low-contrast calm, tiny reaction shifts, talk-circle composition, and relaxed
-    social continuity
+    Banter pacing, low-contrast calm, tiny reaction shifts, talk-circle composition, and relaxed social
+    continuity
   creative_brief: >-
-    Use Lucky Star as style anchor for low-stakes banter flatness. Any prompt should feel
-    conversational: clean flat colors, tiny timing changes, calm repetition, and personality
-    microacting. Seated groups, snacks, classrooms, and living rooms are optional.
+    Use Lucky Star as style anchor for low-stakes banter flatness. Any prompt should feel conversational:
+    clean flat colors, tiny timing changes, calm repetition, and personality microacting. Seated groups,
+    snacks, classrooms, and living rooms are optional.
 avoidRules:
   - realistic
   - 3d render
@@ -58,8 +54,8 @@ assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-083.webp
 attributes:
   negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, text, signature
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts,
+    watermark, text, signature
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle

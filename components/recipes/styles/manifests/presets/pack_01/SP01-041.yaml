@@ -13,18 +13,20 @@ tags:
   - lighting-techniques
 visualDna:
   aesthetic: Glowing organic light
-  form_and_line: Soft glow
-  color_palette: Neon Blue, Green
-  lighting_setup: Self-illuminated
-  material_texture: Organic phosphor glow
-  render_quality: Photoreal self-illumination
-  spatial_distortion: None
-  atmosphere: Magical, alien
+  subject_treatment: Soft glow
+  color_and_tone: Neon Blue, Green
+  lighting_and_shadow: Self-illuminated
+  texture_and_material: Organic phosphor glow
+  camera_and_composition: >-
+    Camera setup native to Bioluminescence: lens choice, crop distance, depth of field, and focal hierarchy
+    support 2. Lighting Techniques without generic framing.
+  atmosphere_and_mood: Magical, alien
+  rendering_and_quality: Photoreal self-illumination
   key_features: Dark background
   creative_brief: >-
-    Apply bioluminescent self-illumination to the input: blue-green phosphor
-    glow, dark-background separation, soft emissive edges, and alien organic
-    rhythm should light any subject from within without requiring water or creatures.
+    Apply bioluminescent self-illumination to the input: blue-green phosphor glow, dark-background separation,
+    soft emissive edges, and alien organic rhythm should light any subject from within without requiring water
+    or creatures.
 avoidRules:
   - sun
   - day

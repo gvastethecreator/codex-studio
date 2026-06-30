@@ -13,19 +13,18 @@ tags:
   - childrens-illustration
 visualDna:
   aesthetic: Chibi super-deformed character language with mascot-forward charm
-  form_and_line: Thick clean outlines and simplified interior detail economy
-  color_palette: Bright candy-saturated palette with high contrast readability
-  lighting_setup: Flat cel shading with minimal soft ambient accents
-  material_texture: Smooth digital finish with toy-like surface clarity
-  render_quality: Highly stylized cute rendering tuned for instant emotional read
-  spatial_distortion: Extreme head-to-body ratio (~2 heads tall)
-  atmosphere: Playful, comedic, lighthearted
+  subject_treatment: Thick clean outlines and simplified interior detail economy
+  color_and_tone: Bright candy-saturated palette with high contrast readability
+  lighting_and_shadow: Flat cel shading with minimal soft ambient accents
+  texture_and_material: Smooth digital finish with toy-like surface clarity
+  camera_and_composition: Extreme head-to-body ratio (~2 heads tall)
+  atmosphere_and_mood: Playful, comedic, lighthearted
+  rendering_and_quality: Highly stylized cute rendering tuned for instant emotional read
   key_features: Oversized head, tiny limbs, exaggerated props and expression icons
   creative_brief: >-
-    Prioritize silhouette charm through extreme proportion stylization. If a
-    character or mascot exists, use oversized head, tiny limbs and expression
-    icons; otherwise apply the style to any input by translating the subject into bouncy simplified chibi
-    proportions usable across stickers, panels and UI-style contexts.
+    Prioritize silhouette charm through extreme proportion stylization. If a character or mascot exists, use
+    oversized head, tiny limbs and expression icons; otherwise apply the style to any input by translating the
+    subject into bouncy simplified chibi proportions usable across stickers, panels and UI-style contexts.
 avoidRules:
   - tall
   - realistic

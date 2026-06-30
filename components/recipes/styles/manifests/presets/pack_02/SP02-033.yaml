@@ -13,15 +13,22 @@ tags:
   - animation-styles
 visualDna:
   aesthetic: Stylized family-animation CG, Pixar-era warmth, emotional precision, lovable imperfection
-  form_and_line: None
-  color_palette: Vibrant, subsurface, warm bounce, saturated primaries, soft pastel accent
-  lighting_setup: Cinematic 3D, global illumination, soft bounce, ambient occlusion
-  material_texture: Stylized realism, clay-model surface, fabric nap, polished plastic, soft subsurface
-  render_quality: High budget, cute, emotionally precise, technically invisible
-  spatial_distortion: Soft exaggeration, rounded forms, expressive proportions, appeal-focused silhouette
-  atmosphere: Heartwarming, fun, sincere, emotionally readable
+  subject_treatment: >-
+    Treat subjects as believable filmed or broadcast subjects under Pixar Style Family Feature CG: casting,
+    wardrobe, props, motion cues, and silhouette hierarchy follow 3. Animation Styles cinematic and broadcast
+    grammar without locking to one plot beat.
+  color_and_tone: Vibrant, subsurface, warm bounce, saturated primaries, soft pastel accent
+  lighting_and_shadow: Cinematic 3D, global illumination, soft bounce, ambient occlusion
+  texture_and_material: Stylized realism, clay-model surface, fabric nap, polished plastic, soft subsurface
+  camera_and_composition: Soft exaggeration, rounded forms, expressive proportions, appeal-focused silhouette
+  atmosphere_and_mood: Heartwarming, fun, sincere, emotionally readable
+  rendering_and_quality: High budget, cute, emotionally precise, technically invisible
   key_features: Soft shadows, appeal silhouette, rounded bevels, warm bounce light, material storytelling
-  creative_brief: 'Render any prompt as high-budget family-feature CG: simplified forms, tactile materials, warm global illumination, and expressive staging that reads instantly without needing a fixed story object. Surfaces should look designed for emotional clarity rather than photoreal neutrality. Push charm through shape language, bounce light, and carefully tuned material imperfections.'
+  creative_brief: >-
+    Render any prompt as high-budget family-feature CG: simplified forms, tactile materials, warm global
+    illumination, and expressive staging that reads instantly without needing a fixed story object. Surfaces
+    should look designed for emotional clarity rather than photoreal neutrality. Push charm through shape
+    language, bounce light, and carefully tuned material imperfections.
 avoidRules:
   - 2d
   - anime

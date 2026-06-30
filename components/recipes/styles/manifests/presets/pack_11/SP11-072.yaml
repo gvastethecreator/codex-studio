@@ -13,24 +13,24 @@ tags:
   - micro-macro
 visualDna:
   aesthetic: Chemical garden, crystal-lab, mineral-precipitation, geode-formation, silica-garden
-  form_and_line: Sharp geometric edges, crystal-facet planes, acicular-needles, dendrite-spikes, trigonal-pyramid
-  color_palette: >-
-    Vibrant chemical colors, copper-sulfate blue, chrome-alum purple, ferric-oxide rust, nickel-nitrate emerald,
-    manganese-pink
-  lighting_setup: Internal reflection, facet-sparkle, dark-field, polarizing-filter, birefringence-rainbow
-  material_texture: Glassy, sharp, crystal-facet, conchoidal-fracture, vitreous-luster, cleavage-plane, growth- terrace
-  render_quality: Geology, chemistry, crystal-growing, microscope-mineral, lab-grown-gem, facet-perfection
-  spatial_distortion: Spikes, acicular-cluster, drusy-surface, needle-point, geode-cavity, radial-aggregate
-  atmosphere: Sharp, growing, crystallization-quiet, mineral-time, supersaturated-magic, geological-patience
+  subject_treatment: Sharp geometric edges, crystal-facet planes, acicular-needles, dendrite-spikes, trigonal-pyramid
+  color_and_tone: >-
+    Vibrant chemical colors, copper-sulfate blue, chrome-alum purple, ferric-oxide rust, nickel-nitrate
+    emerald, manganese-pink
+  lighting_and_shadow: Internal reflection, facet-sparkle, dark-field, polarizing-filter, birefringence-rainbow
+  texture_and_material: Glassy, sharp, crystal-facet, conchoidal-fracture, vitreous-luster, cleavage-plane, growth- terrace
+  camera_and_composition: Spikes, acicular-cluster, drusy-surface, needle-point, geode-cavity, radial-aggregate
+  atmosphere_and_mood: Sharp, growing, crystallization-quiet, mineral-time, supersaturated-magic, geological-patience
+  rendering_and_quality: Geology, chemistry, crystal-growing, microscope-mineral, lab-grown-gem, facet-perfection
   key_features: >-
     Facets, crystal-termination, growth-terrace, cleavage-plane, acicular-spike, drusy-crust, geode-cavity,
     birefringence-color
   creative_brief: >-
-    Emphasize crystallization geometry through facet planes, growth terraces, and supersaturation-driven morphology
-    shifts. Preserve lab-mineral precision and color-chemical identity while keeping compositions open-ended. Apply
-    Crystal Growth as a portable style system over any input: preserve its construction grammar, material cues, scale
-    logic, and signature rendering behavior while avoiding a required franchise, literal prop, fixed specimen, classroom
-    sample, product shot, or scene template.
+    Emphasize crystallization geometry through facet planes, growth terraces, and supersaturation-driven
+    morphology shifts. Preserve lab-mineral precision and color-chemical identity while keeping compositions
+    open-ended. Apply Crystal Growth as a portable style system over any input: preserve its construction
+    grammar, material cues, scale logic, and signature rendering behavior while avoiding a required franchise,
+    literal prop, fixed specimen, classroom sample, product shot, or scene template.
 avoidRules:
   - round
 assets:

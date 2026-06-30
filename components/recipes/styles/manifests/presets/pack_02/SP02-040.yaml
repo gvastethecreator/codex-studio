@@ -13,21 +13,24 @@ tags:
   - animation-styles
 visualDna:
   aesthetic: Construction paper
-  form_and_line: None
-  color_palette: Flat paper, primary crayon, construction-paper tones, snow white
-  lighting_setup: Drop shadow, paper-cut separation, simple depth
-  material_texture: Paper texture, cutout edge, construction-paper grain
-  render_quality: Crude, funny, intentionally cheap, deadpan delivery
-  spatial_distortion: Waddle, paper-doll walk cycle, limited joint movement
-  atmosphere: Satire, simple, blunt, intentionally crude
+  subject_treatment: >-
+    Treat subjects as believable filmed or broadcast subjects under South Park Style: casting, wardrobe,
+    props, motion cues, and silhouette hierarchy follow 3. Animation Styles cinematic and broadcast grammar
+    without locking to one plot beat.
+  color_and_tone: Flat paper, primary crayon, construction-paper tones, snow white
+  lighting_and_shadow: Drop shadow, paper-cut separation, simple depth
+  texture_and_material: Paper texture, cutout edge, construction-paper grain
+  camera_and_composition: Waddle, paper-doll walk cycle, limited joint movement
+  atmosphere_and_mood: Satire, simple, blunt, intentionally crude
+  rendering_and_quality: Crude, funny, intentionally cheap, deadpan delivery
   key_features: Cutout layers, paper edge, flat drop shadow, simple geometric construction, limited joints
   creative_brief: >-
-    Reduce the prompt into crude construction-paper animation: flat shapes, visible cut edges, pasted layers, tiny drop
-    shadows, and intentionally basic geometry. Do not require town settings, clothing, faces, or character templates.
-    The style should feel blunt, cheap, and readable because the paper construction itself is the visual language. Apply
-    South Park Style as a portable cinematic/camera style over any input: preserve its lens behavior, color process,
-    lighting setup, artifact pattern, and deformation grammar while avoiding a required actor, room, prop, brand,
-    readable text, fixed IP scene, or narrative setup.
+    Reduce the prompt into crude construction-paper animation: flat shapes, visible cut edges, pasted layers,
+    tiny drop shadows, and intentionally basic geometry. Do not require town settings, clothing, faces, or
+    character templates. The style should feel blunt, cheap, and readable because the paper construction
+    itself is the visual language. Apply South Park Style as a portable cinematic/camera style over any input:
+    preserve its lens behavior, color process, lighting setup, artifact pattern, and deformation grammar while
+    avoiding a required actor, room, prop, brand, readable text, fixed IP scene, or narrative setup.
 avoidRules:
   - drawn
   - 3d

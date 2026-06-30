@@ -13,18 +13,18 @@ tags:
   - surrealism-and-dream
 visualDna:
   aesthetic: 80s computer aesthetic
-  form_and_line: Grid
-  color_palette: Pink, Cyan
-  lighting_setup: Neon
-  material_texture: Marble bust, palm tree
-  render_quality: Aesthetic, retro
-  spatial_distortion: Glitch
-  atmosphere: Chill, nostalgic
+  subject_treatment: Grid
+  color_and_tone: Pink, Cyan
+  lighting_and_shadow: Neon
+  texture_and_material: Marble bust, palm tree
+  camera_and_composition: Glitch
+  atmosphere_and_mood: Chill, nostalgic
+  rendering_and_quality: Aesthetic, retro
   key_features: Windows 95 UI
   creative_brief: >-
-    Apply vaporwave nostalgia to the input: chrome gradients, pastel magenta-cyan
-    haze, faux-classical fragments, sunset grids, and slowed consumer-future
-    melancholy should stylize any subject without requiring a mall, bust, or palm backdrop.
+    Apply vaporwave nostalgia to the input: chrome gradients, pastel magenta-cyan haze, faux-classical
+    fragments, sunset grids, and slowed consumer-future melancholy should stylize any subject without
+    requiring a mall, bust, or palm backdrop.
 avoidRules:
   - modern
   - nature

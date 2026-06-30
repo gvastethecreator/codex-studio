@@ -13,18 +13,19 @@ tags:
   - concept-art
 visualDna:
   aesthetic: Speculative creature-design sheet with layered anatomical logic and believable biological imagination
-  form_and_line: Construction underdrawings, skeletal overlays, muscular contour notes
-  color_palette: Neutral sketch tones with limited functional overlay coding
-  lighting_setup: Form-reading study light with selective translucency cues
-  material_texture: Mixed biological surfaces (scale, fur, membrane, carapace) as comparative tests
-  render_quality: Iterative concept-study fidelity prioritizing function over polish
-  spatial_distortion: Multi-pose and layered ghost-view layout for structural analysis
-  atmosphere: Scientific, exploratory, speculative naturalism
+  subject_treatment: Construction underdrawings, skeletal overlays, muscular contour notes
+  color_and_tone: Neutral sketch tones with limited functional overlay coding
+  lighting_and_shadow: Form-reading study light with selective translucency cues
+  texture_and_material: Mixed biological surfaces (scale, fur, membrane, carapace) as comparative tests
+  camera_and_composition: Multi-pose and layered ghost-view layout for structural analysis
+  atmosphere_and_mood: Scientific, exploratory, speculative naturalism
+  rendering_and_quality: Iterative concept-study fidelity prioritizing function over polish
   key_features: Anatomy callouts, adaptation variants, transparent layer studies, locomotion-read checks
   creative_brief: >-
-    Apply creature-design iteration language to any input: anatomy-like layering, silhouette mutations, material
-    biology, exploratory appendage rhythms, and evolutionary variant marks. If no creature exists, translate the subject
-    into biomorphic design studies without requiring animals, monsters, or a final character render.
+    Apply creature-design iteration language to any input: anatomy-like layering, silhouette mutations,
+    material biology, exploratory appendage rhythms, and evolutionary variant marks. If no creature exists,
+    translate the subject into biomorphic design studies without requiring animals, monsters, or a final
+    character render.
 avoidRules:
   - human
   - normal

@@ -13,19 +13,18 @@ tags:
   - traditional-painting
 visualDna:
   aesthetic: Soft watercolor painting
-  form_and_line: Fluid, bleeding edges
-  color_palette: Translucent, pastel, washed out
-  lighting_setup: Soft, diffuse, paper white highlights
-  material_texture: Cold press paper grain, water stains
-  render_quality: Delicate, artistic
-  spatial_distortion: Colors bleeding outside lines
-  atmosphere: Dreamy, soft, nostalgic
+  subject_treatment: Fluid, bleeding edges
+  color_and_tone: Translucent, pastel, washed out
+  lighting_and_shadow: Soft, diffuse, paper white highlights
+  texture_and_material: Cold press paper grain, water stains
+  camera_and_composition: Colors bleeding outside lines
+  atmosphere_and_mood: Dreamy, soft, nostalgic
+  rendering_and_quality: Delicate, artistic
   key_features: Watery texture
   creative_brief: >-
-    Apply soft watercolor behavior to any input: translucent washes, pigment
-    blooms, feathered wet edges, paper-white luminosity, granulation, and gentle
-    value layering. Keep airy water-media softness without requiring florals,
-    landscapes, sketchbook pages, or botanical study.
+    Apply soft watercolor behavior to any input: translucent washes, pigment blooms, feathered wet edges,
+    paper-white luminosity, granulation, and gentle value layering. Keep airy water-media softness without
+    requiring florals, landscapes, sketchbook pages, or botanical study.
 avoidRules:
   - photo
   - realistic
@@ -45,7 +44,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP06-002.webp
 attributes:
-  negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border
+  negativePrompt: >-
+    photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy,
+    watermark, text, signature, frame, border
 taxonomy:
   packId: pack_06
   packName: Essential Art Styles

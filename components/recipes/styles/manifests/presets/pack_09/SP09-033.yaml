@@ -13,15 +13,19 @@ tags:
   - weathering-and-decay
 visualDna:
   aesthetic: Peeling painted surface
-  form_and_line: Cracked flakes
-  color_palette: White paint, Grey wood under
-  lighting_setup: Shadows under flakes
-  material_texture: Flaky
-  render_quality: Abandoned, old
-  spatial_distortion: Curled edges
-  atmosphere: Neglected, textured
+  subject_treatment: Cracked flakes
+  color_and_tone: White paint, Grey wood under
+  lighting_and_shadow: Shadows under flakes
+  texture_and_material: Flaky
+  camera_and_composition: Curled edges
+  atmosphere_and_mood: Neglected, textured
+  rendering_and_quality: Abandoned, old
   key_features: Random peeling
-  creative_brief: 'Apply peeling-paint aging to the input: curled flakes, cracked white layers, grey substrate glimpsed underneath, and small shadows pooling beneath lifting edges. If wall, wood, prop, sign, or architecture exists, age it directly; otherwise turn surfaces into layered paint releasing its grip without requiring a house wall.'
+  creative_brief: >-
+    Apply peeling-paint aging to the input: curled flakes, cracked white layers, grey substrate glimpsed
+    underneath, and small shadows pooling beneath lifting edges. If wall, wood, prop, sign, or architecture
+    exists, age it directly; otherwise turn surfaces into layered paint releasing its grip without requiring a
+    house wall.
 avoidRules:
   - fresh paint
 assets:

@@ -13,30 +13,26 @@ tags:
   - slice-of-life-and-moe
 visualDna:
   aesthetic: >-
-    Incremental-ascent anime confidence where effort, crisp air, supportive rhythm, and small
-    progress reveals make the image feel earned
-  form_and_line: >-
-    Upward route-like composition, practical silhouette clarity, encouragement gestures, breathable
-    spacing, and stepwise progression lines
-  color_palette: >-
-    High-altitude blue, pine green, sunlit ochre, gear neutral, rosy effort highlights, and bright
-    cloud white
-  lighting_setup: Clear daylight, edge rim light, cool shadow fill, and reveal-like brightness for progress beats
-  material_texture: >-
-    Technical fabric, nylon strap tactility, rocky grit, bark texture, breathable knit, and dry air
-    sparkle
-  render_quality: >-
-    Outdoor-hobby anime finish with clean clarity, uplifting progression tone, and sincere
-    confidence-building warmth
-  spatial_distortion: Elevation-gain perspective used as emotional progress, without requiring mountains or trails
-  atmosphere: Fresh, supportive, scenic, uplifting, crisp
+    Incremental-ascent anime confidence where effort, crisp air, supportive rhythm, and small progress reveals
+    make the image feel earned
+  subject_treatment: >-
+    Upward route-like composition, practical silhouette clarity, encouragement gestures, breathable spacing,
+    and stepwise progression lines
+  color_and_tone: High-altitude blue, pine green, sunlit ochre, gear neutral, rosy effort highlights, and bright cloud white
+  lighting_and_shadow: Clear daylight, edge rim light, cool shadow fill, and reveal-like brightness for progress beats
+  texture_and_material: Technical fabric, nylon strap tactility, rocky grit, bark texture, breathable knit, and dry air sparkle
+  camera_and_composition: Elevation-gain perspective used as emotional progress, without requiring mountains or trails
+  atmosphere_and_mood: Fresh, supportive, scenic, uplifting, crisp
+  rendering_and_quality: >-
+    Outdoor-hobby anime finish with clean clarity, uplifting progression tone, and sincere confidence-building
+    warmth
   key_features: >-
-    Upward rhythm, incremental confidence, supportive gestures, crisp daylight, practical texture,
-    and reveal lighting
+    Upward rhythm, incremental confidence, supportive gestures, crisp daylight, practical texture, and reveal
+    lighting
   creative_brief: >-
-    Use Yama no Susume as style anchor for incremental-ascent confidence light. Any prompt should
-    feel like progress made visible: upward composition, fresh air, practical texture, and
-    supportive brightness. Mountains, gear, trails, summits, and schoolgirls are optional.
+    Use Yama no Susume as style anchor for incremental-ascent confidence light. Any prompt should feel like
+    progress made visible: upward composition, fresh air, practical texture, and supportive brightness.
+    Mountains, gear, trails, summits, and schoolgirls are optional.
 avoidRules:
   - realistic
   - 3d render
@@ -54,8 +50,8 @@ assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-218.webp
 attributes:
   negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, text, signature
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts,
+    watermark, text, signature
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle

@@ -13,19 +13,18 @@ tags:
   - editorial-and-poster
 visualDna:
   aesthetic: Risograph zine print language with analog imperfection as feature
-  form_and_line: Grain-bearing contours and stencil-like shape separation
-  color_palette: Limited fluorescent/soy-ink channels with bold overprint interactions
-  lighting_setup: Layered translucent ink behavior instead of naturalistic light modeling
-  material_texture: High grain, registration drift, roller noise, and paper absorbency artifacts
-  render_quality: DIY indie-print finish with deliberate production irregularities
-  spatial_distortion: Channel misalignment and offset halos around forms
-  atmosphere: Handmade, rebellious, art-press energy
+  subject_treatment: Grain-bearing contours and stencil-like shape separation
+  color_and_tone: Limited fluorescent/soy-ink channels with bold overprint interactions
+  lighting_and_shadow: Layered translucent ink behavior instead of naturalistic light modeling
+  texture_and_material: High grain, registration drift, roller noise, and paper absorbency artifacts
+  camera_and_composition: Channel misalignment and offset halos around forms
+  atmosphere_and_mood: Handmade, rebellious, art-press energy
+  rendering_and_quality: DIY indie-print finish with deliberate production irregularities
   key_features: Overprint collisions, halftone grain fields, registration mismatch signatures
   creative_brief: >-
-    Apply risograph mechanics to any input: limited soy-ink channels, imperfect registration,
-    overprint collisions, halftone grain, roller noise, and paper absorbency should make the image
-    materially printed without requiring zines, posters, typography, badges, flyers, or fixed
-    print-shop content.
+    Apply risograph mechanics to any input: limited soy-ink channels, imperfect registration, overprint
+    collisions, halftone grain, roller noise, and paper absorbency should make the image materially printed
+    without requiring zines, posters, typography, badges, flyers, or fixed print-shop content.
 avoidRules:
   - perfect registration
 assets:

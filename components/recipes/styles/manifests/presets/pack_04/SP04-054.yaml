@@ -13,17 +13,17 @@ tags:
   - concept-art
 visualDna:
   aesthetic: >-
-    Prop-design presentation style with isolated artifact focus, material storytelling, and
-    game-ready readability
-  form_and_line: >-
-    Clean technical-art contouring with form-break accents, silhouette-first readability, and
-    callout-friendly structure
-  color_palette: Material render, PBR-reference, asset-library spectrum
-  lighting_setup: Studio, product-isolation light, neutral-pedestal
-  material_texture: Wear and tear
-  render_quality: RPG item, detailed, asset-sheet polish, loot-table charm
-  spatial_distortion: None
-  atmosphere: Valuable, useful, item-card significance, inventory worth
+    Prop-design presentation style with isolated artifact focus, material storytelling, and game-ready
+    readability
+  subject_treatment: >-
+    Clean technical-art contouring with form-break accents, silhouette-first readability, and callout-friendly
+    structure
+  color_and_tone: Material render, PBR-reference, asset-library spectrum
+  lighting_and_shadow: Studio, product-isolation light, neutral-pedestal
+  texture_and_material: Wear and tear
+  camera_and_composition: 'Compose for Prop Design using its key spatial cues: Isolated, orthographic view, material breakdown.'
+  atmosphere_and_mood: Valuable, useful, item-card significance, inventory worth
+  rendering_and_quality: RPG item, detailed, asset-sheet polish, loot-table charm
   key_features: Isolated, orthographic view, material breakdown
   creative_brief: >-
     Apply prop-design presentation grammar to any input: isolated silhouette, material-history cues,

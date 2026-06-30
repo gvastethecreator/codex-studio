@@ -25,8 +25,8 @@ import type { CodexModel, CodexModelCatalogResponse } from '../packages/shared/s
 import {
   filterPersistableInlineAttachments,
   isInlineImageDataUrl,
-  MAX_PERSISTED_INLINE_ATTACHMENT_BYTES,
 } from '../lib/browserPersistenceBudget';
+import { createContextImageDataUrl } from '../utils/imageUtils';
 
 interface UseGenerationConfigProps {
   log: (message: string) => void;
@@ -36,6 +36,12 @@ interface CodexModelCatalogState {
   catalog: CodexModelCatalogResponse | null;
   isLoading: boolean;
   error: string | null;
+}
+
+function toWebpAttachmentName(name: string) {
+  const trimmed = name.trim() || 'reference';
+  const withoutExt = trimmed.replace(/\.[a-z0-9]+$/i, '');
+  return `${withoutExt || 'reference'}.webp`;
 }
 
 export function prepareGenerationConfigForPersist(
@@ -215,29 +221,39 @@ export const useGenerationConfig = ({ log }: UseGenerationConfigProps) => {
       const results = await Promise.all(
         filesToProcess.map(async (file) => {
           try {
-            const dataUrl = await new Promise<string>((resolve, reject) => {
+            const rawDataUrl = await new Promise<string>((resolve, reject) => {
               const reader = new FileReader();
               reader.onload = () => resolve(reader.result as string);
               reader.onerror = reject;
               reader.readAsDataURL(file);
             });
+            const contextImage = await createContextImageDataUrl(rawDataUrl).catch((error) => {
+              log(
+                `WebP conversion failed for "${file.name}": ${formatErrorMessage(error)}. Using original image for handoff.`,
+              );
+              return {
+                dataUrl: rawDataUrl,
+                width: null,
+                height: null,
+                fileSizeBytes: rawDataUrl.length,
+              };
+            });
+            const dataUrl = contextImage.dataUrl;
+            const attachmentName = toWebpAttachmentName(file.name);
 
             const attachment: Attachment = {
               id: `att-${Date.now()}-${Math.random().toString(36).substring(2, 9)}`,
-              name: file.name,
+              name: attachmentName,
               dataUrl,
               strength: 0.5,
             };
 
-            if (
-              isInlineImageDataUrl(dataUrl) &&
-              dataUrl.length > MAX_PERSISTED_INLINE_ATTACHMENT_BYTES
-            ) {
+            if (isInlineImageDataUrl(dataUrl)) {
               try {
                 const handoff = await createReferenceHandoff({
                   references: [
                     {
-                      name: file.name,
+                      name: attachmentName,
                       dataUrl,
                       strength: attachment.strength,
                     },
@@ -255,7 +271,7 @@ export const useGenerationConfig = ({ log }: UseGenerationConfigProps) => {
                 }
               } catch (err) {
                 log(
-                  `Reference handoff failed for "${file.name}": ${formatErrorMessage(err)}. The image will remain browser-only until generation starts.`,
+                  `Reference handoff failed for "${file.name}": ${formatErrorMessage(err)}. The WebP image will remain browser-only until generation starts.`,
                 );
               }
             }

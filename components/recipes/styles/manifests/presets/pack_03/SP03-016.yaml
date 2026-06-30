@@ -13,20 +13,21 @@ tags:
   - materials
 visualDna:
   aesthetic: Groomed fur simulation
-  form_and_line: Individual strands
-  color_palette: Soft gradient
-  lighting_setup: Rim light on fuzz
-  material_texture: Fluffy, soft, dimensional volume
-  render_quality: XGen groom simulation, every strand deliberate
-  spatial_distortion: Wind blown
-  atmosphere: Cozy, tactile warmth, groomed softness
+  subject_treatment: Individual strands
+  color_and_tone: Soft gradient
+  lighting_and_shadow: Rim light on fuzz
+  texture_and_material: Fluffy, soft, dimensional volume
+  camera_and_composition: Wind blown
+  atmosphere_and_mood: Cozy, tactile warmth, groomed softness
+  rendering_and_quality: XGen groom simulation, every strand deliberate
   key_features: Hair strands, clump variation
   creative_brief: >-
-    Grow groomed fur or hair over the input: XGen-like strand control, clump variation, rim-lit fuzz, density gradients
-    and wind-frozen filament behavior. It may imply creature warmth, but should not require an animal, character, field
-    metaphor or living body. Apply Fur & Hair as a portable 3D/render style system over any input: preserve its renderer
-    logic, material behavior, geometry language, lighting grammar, and production cues while avoiding a required
-    character, vehicle, prop, environment, UI screen, product shot, or scene template.
+    Grow groomed fur or hair over the input: XGen-like strand control, clump variation, rim-lit fuzz, density
+    gradients and wind-frozen filament behavior. It may imply creature warmth, but should not require an
+    animal, character, field metaphor or living body. Apply Fur & Hair as a portable 3D/render style system
+    over any input: preserve its renderer logic, material behavior, geometry language, lighting grammar, and
+    production cues while avoiding a required character, vehicle, prop, environment, UI screen, product shot,
+    or scene template.
 avoidRules:
   - bald
   - smooth

@@ -13,23 +13,22 @@ tags:
   - toy-craft-and-miniature-architecture
 visualDna:
   aesthetic: Festive edible construction with confectionery ornament logic and handmade storybook mass.
-  form_and_line: >-
-    Piped icing contours, scalloped cookie tiling, repeated candy columns and rounded pretzel frames.
-  color_palette: >-
-    Baked ginger brown, royal-icing white, peppermint red, sugar green, candy pink accents, warm
-    caramel notes, and sprinkle multicolor highlights
-  lighting_setup: Warm amber interior glow, sugar-crystal sparkle, soft festive twinkle and low-contrast cozy shadow.
-  material_texture: >-
-    Baked cookie grain, raised icing relief, crystalline sugar dust, hard candy gloss and chocolate glaze accents.
-  render_quality: High-detail confection architecture with legible edible materiality and precise handmade decoration.
-  spatial_distortion: Icing seam swelling, sugar sag, candy-module compression and softened baked geometry.
-  atmosphere: Festive, indulgent and cozy, with celebratory craft ritual.
-  key_features: >-
-    Icing seams, gumdrop nodes, cookie-roof rhythm, peppermint line motifs and sprinkle microdetail.
+  subject_treatment: Piped icing contours, scalloped cookie tiling, repeated candy columns and rounded pretzel frames.
+  color_and_tone: >-
+    Baked ginger brown, royal-icing white, peppermint red, sugar green, candy pink accents, warm caramel
+    notes, and sprinkle multicolor highlights
+  lighting_and_shadow: Warm amber interior glow, sugar-crystal sparkle, soft festive twinkle and low-contrast cozy shadow.
+  texture_and_material: >-
+    Baked cookie grain, raised icing relief, crystalline sugar dust, hard candy gloss and chocolate glaze
+    accents.
+  camera_and_composition: Icing seam swelling, sugar sag, candy-module compression and softened baked geometry.
+  atmosphere_and_mood: Festive, indulgent and cozy, with celebratory craft ritual.
+  rendering_and_quality: High-detail confection architecture with legible edible materiality and precise handmade decoration.
+  key_features: Icing seams, gumdrop nodes, cookie-roof rhythm, peppermint line motifs and sprinkle microdetail.
   creative_brief: >-
-    Turn any theme into an edible ornamental system: icing as construction line, cookie as mass,
-    sugar as texture and candy as modular accent. It can suggest storybook architecture, but does
-    not require a holiday gingerbread house, bakery product photo or dessert table.
+    Turn any theme into an edible ornamental system: icing as construction line, cookie as mass, sugar as
+    texture and candy as modular accent. It can suggest storybook architecture, but does not require a holiday
+    gingerbread house, bakery product photo or dessert table.
 avoidRules:
   - literal gingerbread house only
   - bakery product photo

@@ -13,18 +13,17 @@ tags:
   - digital-glitch-and-noise
 visualDna:
   aesthetic: Close up screen
-  form_and_line: RGB phosphor mask
-  color_palette: Glowing phosphors
-  lighting_setup: Screen glow
-  material_texture: Shadow mask grid
-  render_quality: Retro tech
-  spatial_distortion: Curved screen
-  atmosphere: Retro, tech
+  subject_treatment: RGB phosphor mask
+  color_and_tone: Glowing phosphors
+  lighting_and_shadow: Screen glow
+  texture_and_material: Shadow mask grid
+  camera_and_composition: Curved screen
+  atmosphere_and_mood: Retro, tech
+  rendering_and_quality: Retro tech
   key_features: Scanlines
   creative_brief: >-
-    Apply CRT phosphor display logic to the input: RGB triad texture, scanline
-    hum, curved-glass bloom, warm electronic glow, and slight convergence errors
-    should make any subject feel emitted by an old monitor.
+    Apply CRT phosphor display logic to the input: RGB triad texture, scanline hum, curved-glass bloom, warm
+    electronic glow, and slight convergence errors should make any subject feel emitted by an old monitor.
 avoidRules:
   - lcd
   - sharp pixels

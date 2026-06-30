@@ -12,16 +12,21 @@ tags:
   - cinematic-and-media
   - tv-and-broadcast
 visualDna:
-  aesthetic: Analog sports replay package, telestrator energy, freeze-frame analysis, stadium-video compression as style anchor, urgent motion breakdown
-  form_and_line: Dynamic arrows, replay boxes, cropped action zones, diagonal analysis marks, no readable labels
-  color_palette: Broadcast green, replay yellow, scoreboard red, cold white, VHS shadow blue
-  lighting_setup: Harsh arena-style illumination, blown highlights, compressed shadow detail, replay exposure
-  material_texture: VHS smear, motion combing, field-line aliasing, overlay graphics, tape ghosting
-  render_quality: Kinetic, analytical, noisy, analog replay clarity
-  spatial_distortion: Freeze-frame doubling, slow-motion blur, inset replay crop, diagonal tracking artifacts
-  atmosphere: Competitive, urgent, analytical, broadcast-tense
+  aesthetic: >-
+    Analog sports replay package, telestrator energy, freeze-frame analysis, stadium-video compression as
+    style anchor, urgent motion breakdown
+  subject_treatment: Dynamic arrows, replay boxes, cropped action zones, diagonal analysis marks, no readable labels
+  color_and_tone: Broadcast green, replay yellow, scoreboard red, cold white, VHS shadow blue
+  lighting_and_shadow: Harsh arena-style illumination, blown highlights, compressed shadow detail, replay exposure
+  texture_and_material: VHS smear, motion combing, field-line aliasing, overlay graphics, tape ghosting
+  camera_and_composition: Freeze-frame doubling, slow-motion blur, inset replay crop, diagonal tracking artifacts
+  atmosphere_and_mood: Competitive, urgent, analytical, broadcast-tense
+  rendering_and_quality: Kinetic, analytical, noisy, analog replay clarity
   key_features: Telestrator marks, replay inset, motion combing, VHS ghost, freeze-frame crop
-  creative_brief: 'Apply analog sports replay grammar to any prompt: freeze-frame crop, telestrator-like arrows, VHS motion combing, inset replay boxes, and compressed highlight detail. Avoid actual teams, stadiums, scoreboards, athletes, or readable graphics as requirements. The image should feel analyzed by a noisy broadcast truck.'
+  creative_brief: >-
+    Apply analog sports replay grammar to any prompt: freeze-frame crop, telestrator-like arrows, VHS motion
+    combing, inset replay boxes, and compressed highlight detail. Avoid actual teams, stadiums, scoreboards,
+    athletes, or readable graphics as requirements. The image should feel analyzed by a noisy broadcast truck.
 avoidRules:
   - filmic slow cinema
   - clean vector

@@ -13,18 +13,19 @@ tags:
   - concept-art
 visualDna:
   aesthetic: Kinetic gesture sketch language with motion-first drawing priority and animation rough energy
-  form_and_line: Long sweeping arcs, repeated search lines, pressure-led scribble massing
-  color_palette: Monochrome drawing media on warm paper base
-  lighting_setup: Value implied by stroke density rather than rendered light
-  material_texture: Dry graphite/charcoal drag, smudge trails, tooth-sensitive mark breakup
-  render_quality: Loose and energetic draft quality emphasizing movement over finish
-  spatial_distortion: Dynamic foreshortening and action-curve exaggeration
-  atmosphere: Urgent, alive, improvisational studio energy
+  subject_treatment: Long sweeping arcs, repeated search lines, pressure-led scribble massing
+  color_and_tone: Monochrome drawing media on warm paper base
+  lighting_and_shadow: Value implied by stroke density rather than rendered light
+  texture_and_material: Dry graphite/charcoal drag, smudge trails, tooth-sensitive mark breakup
+  camera_and_composition: Dynamic foreshortening and action-curve exaggeration
+  atmosphere_and_mood: Urgent, alive, improvisational studio energy
+  rendering_and_quality: Loose and energetic draft quality emphasizing movement over finish
   key_features: Motion trails, layered search marks, anatomy-suggestive rather than anatomical detail
   creative_brief: >-
-    Apply loose gesture-sketch energy to any input: searching lines, weight shifts, elastic contours, directional force
-    marks, erased construction ghosts, and minimal value accents. If there is no body or action, convert the main forms
-    into gestural movement studies without requiring anatomy poses, animation frames, or characters.
+    Apply loose gesture-sketch energy to any input: searching lines, weight shifts, elastic contours,
+    directional force marks, erased construction ghosts, and minimal value accents. If there is no body or
+    action, convert the main forms into gestural movement studies without requiring anatomy poses, animation
+    frames, or characters.
 avoidRules:
   - tight
   - clean

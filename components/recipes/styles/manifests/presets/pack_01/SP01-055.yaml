@@ -13,15 +13,18 @@ tags:
   - nature-and-wildlife
 visualDna:
   aesthetic: Submerged subject
-  form_and_line: Weightless drifting contours
-  color_palette: Cyan, Blue cast
-  lighting_setup: Caustics (light rays)
-  material_texture: Bubbles, caustics, refraction
-  render_quality: Dreamy, weightless
-  spatial_distortion: Refraction distortion
-  atmosphere: Silent, deep
+  subject_treatment: Weightless drifting contours
+  color_and_tone: Cyan, Blue cast
+  lighting_and_shadow: Caustics (light rays)
+  texture_and_material: Bubbles, caustics, refraction
+  camera_and_composition: Refraction distortion
+  atmosphere_and_mood: Silent, deep
+  rendering_and_quality: Dreamy, weightless
   key_features: Blue tint
-  creative_brief: Submerged optics transform any subject through blue cast, caustic rays, bubble texture, softened contrast, refraction distortion, and weightless contour drift. The style is underwater light physics, not mandatory hair, fabric, land/sea setting, or swimmer staging.
+  creative_brief: >-
+    Submerged optics transform any subject through blue cast, caustic rays, bubble texture, softened contrast,
+    refraction distortion, and weightless contour drift. The style is underwater light physics, not mandatory
+    hair, fabric, land/sea setting, or swimmer staging.
 avoidRules:
   - dry studio light
   - harsh land lighting

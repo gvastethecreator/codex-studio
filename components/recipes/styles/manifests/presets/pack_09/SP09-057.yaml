@@ -13,21 +13,22 @@ tags:
   - elemental-and-fx
 visualDna:
   aesthetic: Puddle rainbow
-  form_and_line: Swirls
-  color_palette: Thin film interference
-  lighting_setup: Reflective
-  material_texture: Liquid
-  render_quality: Iridescent, fluid
-  spatial_distortion: Fluid
-  atmosphere: Dirty but pretty
+  subject_treatment: Swirls
+  color_and_tone: Thin film interference
+  lighting_and_shadow: Reflective
+  texture_and_material: Liquid
+  camera_and_composition: Fluid
+  atmosphere_and_mood: Dirty but pretty
+  rendering_and_quality: Iridescent, fluid
   key_features: Rainbow
   creative_brief: >-
     Compose oil-on-water interference as fluid color behavior over the input: thin-film rainbow swirls,
-    magenta-cyan-gold calligraphy, dark liquid underlayer, and mesmerizing surface contamination. If puddle, water,
-    street, or industrial context exists, reinforce it; otherwise use iridescent film as abstract overlay without
-    forcing parking lot or gutter. Use Oil on Water as portable surface/render behavior over any input: map its texture,
-    light response, edge wear, color chemistry, and tactile rhythm onto the subject instead of requiring a literal
-    material sample, macro tile, wall, landscape, source object, or scene where the material naturally appears.
+    magenta-cyan-gold calligraphy, dark liquid underlayer, and mesmerizing surface contamination. If puddle,
+    water, street, or industrial context exists, reinforce it; otherwise use iridescent film as abstract
+    overlay without forcing parking lot or gutter. Use Oil on Water as portable surface/render behavior over
+    any input: map its texture, light response, edge wear, color chemistry, and tactile rhythm onto the
+    subject instead of requiring a literal material sample, macro tile, wall, landscape, source object, or
+    scene where the material naturally appears.
 avoidRules:
   - clean water
 assets:

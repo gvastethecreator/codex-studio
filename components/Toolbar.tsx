@@ -1171,12 +1171,14 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
             <button
               type="button"
               onClick={handleTriggerGenerate}
+              data-studio-generate-button
+              data-generate-active={isGenerating ? 'true' : 'false'}
               className={`
                     group relative h-8 px-3 sm:h-9 sm:px-4 rounded-lg flex items-center justify-center gap-2 sm:ml-1 overflow-hidden
                     text-[10px] tracking-[0.2em] font-black uppercase transition-[color,background-color,border-color,opacity,transform,box-shadow] cursor-pointer
                     ${
                       isGenerating
-                        ? 'bg-gradient-to-b from-accent-800 to-accent-950 text-accent-400 border border-accent-700/30 shadow-lg'
+                        ? 'bg-gradient-to-b from-accent-800 to-accent-950 text-accent-200 border border-accent-500/30 shadow-lg hover:border-accent-300/45 hover:text-white active:scale-95'
                         : 'bg-gradient-to-b from-accent-700 via-accent-800 to-accent-950 hover:from-accent-600 hover:via-accent-700 hover:to-accent-900 text-accent-100 border-t border-accent-500/20 shadow-[0_4px_20px_rgba(0,0,0,0.5)] hover:shadow-[0_0_25px_rgba(var(--accent-600),0.3)] active:scale-95'
                     }
                 `}
@@ -1200,8 +1202,11 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
               <div className="relative z-10 flex items-center gap-2">
                 {isGenerating ? (
                   <>
-                    <Loader2 size={14} className="animate-spin text-accent-500" />
-                    <span className="w-16 text-center tabular-nums">{elapsedTime}s</span>
+                    <Send size={14} className="text-accent-200" />
+                    <span className="text-white">QUEUE</span>
+                    <span className="hidden w-12 text-right text-[8px] tabular-nums text-accent-300/80 sm:inline">
+                      {elapsedTime}s
+                    </span>
                   </>
                 ) : (
                   <>

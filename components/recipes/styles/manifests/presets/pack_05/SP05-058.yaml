@@ -13,35 +13,35 @@ tags:
   - mecha-and-cyberpunk
 visualDna:
   aesthetic: >-
-    Remote conflict grief anime built from cold command logic, system pressure, disciplined tragedy,
-    and vulnerable distance
-  form_and_line: >-
-    Hard-edged tactical linework, thin command vectors, segmented armor-like shapes, restrained
-    faces, and precise formation spacing.
-  color_palette: >-
-    Ash gray, military olive, cold screen blue, muted rust, black graphite, and restrained red
-    warning accents.
-  lighting_setup: >-
-    Cold monitor glow, smoke-softened daylight, minimal rim light, command-screen blue wash, and
-    low-contrast grief shadows.
-  material_texture: >-
-    Matte plating, fabric grit, dusty optics, chipped edge paint, worn interface glass, and dry
-    particulate haze.
-  render_quality: >-
-    Premium tactical anime rendering with sober clarity, controlled detail density, and emotional
-    restraint under pressure.
-  spatial_distortion: >-
-    Remote-control framing, compressed command depth, map-like overlays, and emotional distance
-    between subject layers.
-  atmosphere: Tragic, disciplined, somber, remote
+    Remote conflict grief anime built from cold command logic, system pressure, disciplined tragedy, and
+    vulnerable distance
+  subject_treatment: >-
+    Hard-edged tactical linework, thin command vectors, segmented armor-like shapes, restrained faces, and
+    precise formation spacing.
+  color_and_tone: >-
+    Ash gray, military olive, cold screen blue, muted rust, black graphite, and restrained red warning
+    accents.
+  lighting_and_shadow: >-
+    Cold monitor glow, smoke-softened daylight, minimal rim light, command-screen blue wash, and low-contrast
+    grief shadows.
+  texture_and_material: >-
+    Matte plating, fabric grit, dusty optics, chipped edge paint, worn interface glass, and dry particulate
+    haze.
+  camera_and_composition: >-
+    Remote-control framing, compressed command depth, map-like overlays, and emotional distance between
+    subject layers.
+  atmosphere_and_mood: Tragic, disciplined, somber, remote
+  rendering_and_quality: >-
+    Premium tactical anime rendering with sober clarity, controlled detail density, and emotional restraint
+    under pressure.
   key_features: >-
-    Cold command overlays, muted tactical palette, grief distance, hard-edged systems pressure, and
-    restrained emotional damage
+    Cold command overlays, muted tactical palette, grief distance, hard-edged systems pressure, and restrained
+    emotional damage
   creative_brief: >-
-    Use remote command grief as distance-and-control grammar. Any prompt should feel operated from
-    afar, disciplined, young, and burdened by systems. If characters or machines appear, imply remote
-    interface, cockpit logic, uniform restraint, or weapon-system pressure; vehicles, rooms, and
-    battle scenes remain optional.
+    Use remote command grief as distance-and-control grammar. Any prompt should feel operated from afar,
+    disciplined, young, and burdened by systems. If characters or machines appear, imply remote interface,
+    cockpit logic, uniform restraint, or weapon-system pressure; vehicles, rooms, and battle scenes remain
+    optional.
 avoidRules:
   - realistic
   - 3d render
@@ -59,8 +59,8 @@ assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-058.webp
 attributes:
   negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, text, signature
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts,
+    watermark, text, signature
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds

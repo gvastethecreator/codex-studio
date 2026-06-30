@@ -13,18 +13,20 @@ tags:
   - historical-and-fantasy
 visualDna:
   aesthetic: Victorian mourning regalia, grief ritual formality, gaslit-sorrow pageantry
-  form_and_line: Heavy layers, floor-length column, cape-volume drape, high-neck severity, long-sleeve enclosure
-  color_palette: Black matte, jet, raven, deep crepe-black, jet-bead black, unrelieved midnight
-  lighting_setup: Gloomy overcast grey, candle-flicker dimness, rain-streaked softness
-  material_texture: Matte crepe, black veiling, jet beads, crape de chine, bombazine, lace-mitt texture
-  render_quality: Formal funereal stillness, ritual gravity, mourning-grade finish
-  spatial_distortion: None
-  atmosphere: Somber, gothic, ritual sorrow, enclosed textile isolation, eternal-mourning silence
+  subject_treatment: Heavy layers, floor-length column, cape-volume drape, high-neck severity, long-sleeve enclosure
+  color_and_tone: Black matte, jet, raven, deep crepe-black, jet-bead black, unrelieved midnight
+  lighting_and_shadow: Gloomy overcast grey, candle-flicker dimness, rain-streaked softness
+  texture_and_material: Matte crepe, black veiling, jet beads, crape de chine, bombazine, lace-mitt texture
+  camera_and_composition: >-
+    Compose for Victorian Mourning using its key spatial cues: Black veil, jet brooch, mourning-cap cues,
+    black-bordered textile accents.
+  atmosphere_and_mood: Somber, gothic, ritual sorrow, enclosed textile isolation, eternal-mourning silence
+  rendering_and_quality: Formal funereal stillness, ritual gravity, mourning-grade finish
   key_features: Black veil, jet brooch, mourning-cap cues, black-bordered textile accents
   creative_brief: >-
-    Shroud the input in Victorian mourning codes: matte crepe, bombazine, jet beads, black veiling, mourning-cap cues
-    and floor-length black enclosure. Keep grief ritual and gothic severity without requiring a widow persona, face,
-    window tableau, graveyard or portrait setup.
+    Shroud the input in Victorian mourning codes: matte crepe, bombazine, jet beads, black veiling,
+    mourning-cap cues and floor-length black enclosure. Keep grief ritual and gothic severity without
+    requiring a widow persona, face, window tableau, graveyard or portrait setup.
 avoidRules:
   - color
   - happy

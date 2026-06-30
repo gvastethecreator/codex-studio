@@ -13,19 +13,22 @@ tags:
   - food-and-drink
 visualDna:
   aesthetic: Liquid refraction glamour, mixology material art, chilled glass optics, cocktail-macro polish
-  form_and_line: Glass rim, coupe-bowl curve, highball-column, garnish-skewer line, citrus-peel spiral
-  color_palette: Liquid gradient, negroni-crimson, gin-clear, blue-curacao ocean, Campari-ruby, mint-green, lime-wheel bright
-  lighting_setup: Backlit refraction, through-glass beam, ice-cube caustic, rim-light-on-condensation, bar-shelf amber
-  material_texture: Condensation, ice, frosted-glass chill, sugar-rim crystal, mint-leaf vein, citrus-oil slick
-  render_quality: Refreshing, cold, happy-hour glamour, sip-ready desire, liquid-lens beauty
-  spatial_distortion: Bubbles, carbonation-trail, ice-stack architecture, citrus-wheel plane, garnish-suspension
-  atmosphere: Relaxed, luxurious, chilled, ice-clink rhythm, evening-glamour
-  key_features: Ice cubes, condensation-beads, citrus-peel twist, sugar-rim, cocktail-pick, carbonation-stream, mint-slap bruise
+  subject_treatment: Glass rim, coupe-bowl curve, highball-column, garnish-skewer line, citrus-peel spiral
+  color_and_tone: >-
+    Liquid gradient, negroni-crimson, gin-clear, blue-curacao ocean, Campari-ruby, mint-green, lime-wheel
+    bright
+  lighting_and_shadow: Backlit refraction, through-glass beam, ice-cube caustic, rim-light-on-condensation, bar-shelf amber
+  texture_and_material: Condensation, ice, frosted-glass chill, sugar-rim crystal, mint-leaf vein, citrus-oil slick
+  camera_and_composition: Bubbles, carbonation-trail, ice-stack architecture, citrus-wheel plane, garnish-suspension
+  atmosphere_and_mood: Relaxed, luxurious, chilled, ice-clink rhythm, evening-glamour
+  rendering_and_quality: Refreshing, cold, happy-hour glamour, sip-ready desire, liquid-lens beauty
+  key_features: >-
+    Ice cubes, condensation-beads, citrus-peel twist, sugar-rim, cocktail-pick, carbonation-stream, mint-slap
+    bruise
   creative_brief: >-
-    Apply cocktail-macro optics to the input: refraction through glass,
-    condensation microdetail, ice caustics, liquid gradients, and garnish-like
-    accent architecture. Keep it luxurious and tactile without requiring a bar,
-    party, or specific drink recipe.
+    Apply cocktail-macro optics to the input: refraction through glass, condensation microdetail, ice
+    caustics, liquid gradients, and garnish-like accent architecture. Keep it luxurious and tactile without
+    requiring a bar, party, or specific drink recipe.
 avoidRules:
   - opaque
 assets:

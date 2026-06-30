@@ -13,15 +13,20 @@ tags:
   - portrait-and-studio
 visualDna:
   aesthetic: Newborn studio softness
-  form_and_line: Curled gentle forms
-  color_palette: Cream, beige, soft
-  lighting_setup: Window light
-  material_texture: Knitted softness, delicate surface
-  render_quality: Peaceful studio tenderness
-  spatial_distortion: None
-  atmosphere: Tiny, fragile
+  subject_treatment: Curled gentle forms
+  color_and_tone: Cream, beige, soft
+  lighting_and_shadow: Window light
+  texture_and_material: Knitted softness, delicate surface
+  camera_and_composition: >-
+    Camera setup native to Newborn Photography: lens choice, crop distance, depth of field, and focal
+    hierarchy support 1. Portrait And Studio without generic framing.
+  atmosphere_and_mood: Tiny, fragile
+  rendering_and_quality: Peaceful studio tenderness
   key_features: Resting tenderness
-  creative_brief: 'Newborn photography translates into ultra-soft cream/beige tenderness: window light, knitted texture, curled gentle forms, shallow quiet, and fragile scale cues. Keep peaceful studio delicacy without requiring babies, fingers, sleeping, blankets, or Anne Geddes staging.'
+  creative_brief: >-
+    Newborn photography translates into ultra-soft cream/beige tenderness: window light, knitted texture,
+    curled gentle forms, shallow quiet, and fragile scale cues. Keep peaceful studio delicacy without
+    requiring babies, fingers, sleeping, blankets, or Anne Geddes staging.
 avoidRules:
   - harsh
   - chaotic

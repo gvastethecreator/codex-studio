@@ -36,6 +36,7 @@ export interface PersistentJobIntakeDependencies {
     sourceSpec: GenerationTaskSpec | null,
     references: CreateJobRequest['references'],
     persistedRefs: unknown[],
+    libraryDir: string,
   ) => GenerationTaskSpec | null;
   readLibraryDir: () => string;
   resolveProviderExecutionBlocker: (providerId: string) => unknown;
@@ -177,17 +178,19 @@ export function createPersistentJobIntake({
 
       let finalPrompt = prompt;
       try {
+        const libraryDir = readLibraryDir();
         const processedReferences = await processReferences(
           jobId,
           prompt,
           request.references || [],
-          readLibraryDir(),
+          libraryDir,
         );
         finalPrompt = processedReferences.augmentedPrompt;
         sourceSpec = hydrateSourceSpecAssetPaths(
           sourceSpec,
           request.references || [],
           processedReferences.persistedRefs,
+          libraryDir,
         );
       } catch (error) {
         if (isReferenceProcessingError(error)) {

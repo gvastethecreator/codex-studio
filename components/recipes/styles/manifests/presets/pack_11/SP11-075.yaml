@@ -13,16 +13,20 @@ tags:
   - micro-macro
 visualDna:
   aesthetic: Kitchen sponge zoom, foam-cell, open-cell-structure, absorbent-micro, cleaning-surface
-  form_and_line: Holes, bubbles, strut-network contours, cell-window edges, pore-space geometry
-  color_palette: Yellow, Pink, cleaning-spectrum, scrubber-green, dish-blue, foam-pastels, cellulose-tan
-  lighting_setup: Soft, macro-diffused, shadow-in-pores, cell-depth contrast, flat-reflective on strut
-  material_texture: Porous foam, open-cell polyurethane, cellulose-sponge fiber, abrasive-scrub layer, water-saturated weight
-  render_quality: Absorbent, texture, cleaning-tool macro, kitchen-necessity, pore-architecture
-  spatial_distortion: Holes, pore-size distribution, cell-connectivity, strut-thickness variation, surface-membrane
-  atmosphere: Clean, soft, kitchen-sink quiet, dish-duty, cleaning-ritual, water-warm
-  key_features: Pores, cell-windows, strut-network, scrub-layer, water-bead, soap-bubble residue, cellulose-fiber, abrasive-grit surface
+  subject_treatment: Holes, bubbles, strut-network contours, cell-window edges, pore-space geometry
+  color_and_tone: Yellow, Pink, cleaning-spectrum, scrubber-green, dish-blue, foam-pastels, cellulose-tan
+  lighting_and_shadow: Soft, macro-diffused, shadow-in-pores, cell-depth contrast, flat-reflective on strut
+  texture_and_material: Porous foam, open-cell polyurethane, cellulose-sponge fiber, abrasive-scrub layer, water-saturated weight
+  camera_and_composition: Holes, pore-size distribution, cell-connectivity, strut-thickness variation, surface-membrane
+  atmosphere_and_mood: Clean, soft, kitchen-sink quiet, dish-duty, cleaning-ritual, water-warm
+  rendering_and_quality: Absorbent, texture, cleaning-tool macro, kitchen-necessity, pore-architecture
+  key_features: >-
+    Pores, cell-windows, strut-network, scrub-layer, water-bead, soap-bubble residue, cellulose-fiber,
+    abrasive-grit surface
   creative_brief: >-
-    Render porous sponge material through open-cell networks, strut lattices, and moisture-retention microphysics. Keep absorbency-driven structure and tactile cleanliness cues reusable across foam-like subjects.
+    Render porous sponge material through open-cell networks, strut lattices, and moisture-retention
+    microphysics. Keep absorbency-driven structure and tactile cleanliness cues reusable across foam-like
+    subjects.
 avoidRules:
   - solid
 assets:

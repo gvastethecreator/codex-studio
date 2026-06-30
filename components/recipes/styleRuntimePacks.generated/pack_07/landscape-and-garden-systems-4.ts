@@ -11,19 +11,20 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Formal landscape classicism where clipped vegetation expresses power, protocol and territorial order.',
-      form_and_line:
+      subject_treatment:
         'Clipped hedge bands, mirrored parterre logic, long perspective pressure and measured control points without forcing one fountain-axis composition.',
-      color_palette:
+      color_and_tone:
         'Green, Gravel Beige, Boxwood Dark, Seasonal Bedding Red, Water-reflection Silver, Limestone',
-      lighting_setup:
+      lighting_and_shadow:
         'Planimetric sunlight, long-shadow axial drama and restrained reflective glints.',
-      material_texture:
+      texture_and_material:
         'Millimeter-clipped hedges, raked gravel, limestone edging, controlled turf pattern and optional reflective water as texture, not required centerpiece.',
-      render_quality:
-        'Landscape-design precision with ceremonial depth and strict topiary readability.',
-      spatial_distortion:
+      camera_and_composition:
         'Planimetric garden order, mirrored axes and clipped-depth compression that can wrap any subject or surface.',
-      atmosphere: 'Ceremonial, monumental and disciplined, with intentional visual authority.',
+      atmosphere_and_mood:
+        'Ceremonial, monumental and disciplined, with intentional visual authority.',
+      rendering_and_quality:
+        'Landscape-design precision with ceremonial depth and strict topiary readability.',
       key_features:
         'Embroidered parterres, hedge planes, axial reflection logic, ceremonial nodes and distant control points.',
       creative_brief:
@@ -38,20 +39,20 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         "Cottage Bloom Layering within 4. Landscape And Garden Systems: a reusable Architecture & Interior visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Cottage Bloom Layering's specific style identity.",
-      form_and_line:
+      subject_treatment:
         'Define Cottage Bloom Layering through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
-      color_palette:
+      color_and_tone:
         'Use a Cottage Bloom Layering-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
-      lighting_setup:
+      lighting_and_shadow:
         'Use lighting that makes Cottage Bloom Layering recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
-      material_texture:
+      texture_and_material:
         'Use materials and textures that reinforce Cottage Bloom Layering: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
-      render_quality:
-        'Render Cottage Bloom Layering with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
-      spatial_distortion:
+      camera_and_composition:
         'Use spatial behavior that fits Cottage Bloom Layering: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
-      atmosphere:
+      atmosphere_and_mood:
         'Set a mood that belongs to Cottage Bloom Layering: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+      rendering_and_quality:
+        'Render Cottage Bloom Layering with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       key_features:
         "Prioritize Cottage Bloom Layering's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
@@ -66,18 +67,18 @@ export const GENERATED_STYLE_PRESETS = [
       'lush planting, pond, running water, spa rock decor, blank-field dominance, empty texture-only output',
     style: {
       aesthetic: 'Dry mineral abstraction, material contemplation and extreme economy of gesture.',
-      form_and_line:
+      subject_treatment:
         'Intentionally raked waves, calm planes, two or three tactile mineral anchors and asymmetric balance.',
-      color_palette: 'Grey, White, Moss, Granite Black, Silver sand, Lichen Green',
-      lighting_setup:
+      color_and_tone: 'Grey, White, Moss, Granite Black, Silver sand, Lichen Green',
+      lighting_and_shadow:
         'Low-angle raking light, furrow shadows and crisp early-hour contrast under eaves.',
-      material_texture:
+      texture_and_material:
         'Fine sand/gravel, weathered granite, crushed quartz and pinpoint velvet moss grain.',
-      render_quality:
-        'Hyperclean minimalism with granular precision and disciplined compositional silence.',
-      spatial_distortion:
+      camera_and_composition:
         'Raked field compression, asymmetrical mineral anchoring and scale reduction through quiet planes.',
-      atmosphere: 'Focused quiet, ritual order and suspended time.',
+      atmosphere_and_mood: 'Focused quiet, ritual order and suspended time.',
+      rendering_and_quality:
+        'Hyperclean minimalism with granular precision and disciplined compositional silence.',
       key_features:
         'Raked fields, mineral anchors, selective living matter and austere containment.',
       creative_brief:
@@ -92,20 +93,20 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         "Postindustrial Ecological Promenade within 4. Landscape And Garden Systems: a reusable Architecture & Interior visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Postindustrial Ecological Promenade's specific style identity.",
-      form_and_line:
+      subject_treatment:
         'Define Postindustrial Ecological Promenade through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
-      color_palette:
+      color_and_tone:
         'Use a Postindustrial Ecological Promenade-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
-      lighting_setup:
+      lighting_and_shadow:
         'Use lighting that makes Postindustrial Ecological Promenade recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
-      material_texture:
+      texture_and_material:
         'Use materials and textures that reinforce Postindustrial Ecological Promenade: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
-      render_quality:
-        'Render Postindustrial Ecological Promenade with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
-      spatial_distortion:
+      camera_and_composition:
         'Use spatial behavior that fits Postindustrial Ecological Promenade: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
-      atmosphere:
+      atmosphere_and_mood:
         'Set a mood that belongs to Postindustrial Ecological Promenade: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+      rendering_and_quality:
+        'Render Postindustrial Ecological Promenade with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       key_features:
         "Prioritize Postindustrial Ecological Promenade's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
@@ -120,20 +121,20 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         "Xeriscape Climate Grammar within 4. Landscape And Garden Systems: a reusable Architecture & Interior visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Xeriscape Climate Grammar's specific style identity.",
-      form_and_line:
+      subject_treatment:
         'Define Xeriscape Climate Grammar through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
-      color_palette:
+      color_and_tone:
         'Use a Xeriscape Climate Grammar-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
-      lighting_setup:
+      lighting_and_shadow:
         'Use lighting that makes Xeriscape Climate Grammar recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
-      material_texture:
+      texture_and_material:
         'Use materials and textures that reinforce Xeriscape Climate Grammar: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
-      render_quality:
-        'Render Xeriscape Climate Grammar with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
-      spatial_distortion:
+      camera_and_composition:
         'Use spatial behavior that fits Xeriscape Climate Grammar: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
-      atmosphere:
+      atmosphere_and_mood:
         'Set a mood that belongs to Xeriscape Climate Grammar: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+      rendering_and_quality:
+        'Render Xeriscape Climate Grammar with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       key_features:
         "Prioritize Xeriscape Climate Grammar's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
@@ -148,20 +149,20 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         "Water-Horizon Hospitality within 4. Landscape And Garden Systems: a reusable Architecture & Interior visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Water-Horizon Hospitality's specific style identity.",
-      form_and_line:
+      subject_treatment:
         'Define Water-Horizon Hospitality through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
-      color_palette:
+      color_and_tone:
         'Use a Water-Horizon Hospitality-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
-      lighting_setup:
+      lighting_and_shadow:
         'Use lighting that makes Water-Horizon Hospitality recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
-      material_texture:
+      texture_and_material:
         'Use materials and textures that reinforce Water-Horizon Hospitality: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
-      render_quality:
-        'Render Water-Horizon Hospitality with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
-      spatial_distortion:
+      camera_and_composition:
         'Use spatial behavior that fits Water-Horizon Hospitality: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
-      atmosphere:
+      atmosphere_and_mood:
         'Set a mood that belongs to Water-Horizon Hospitality: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+      rendering_and_quality:
+        'Render Water-Horizon Hospitality with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       key_features:
         "Prioritize Water-Horizon Hospitality's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
@@ -176,20 +177,20 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Formal vegetative maze grammar based on playful disorientation and clipped enclosure.',
-      form_and_line:
+      subject_treatment:
         'Orthogonal hedge logic, rhythmic dead-end pressure, partial-route hierarchy and continuous tall living-wall mass.',
-      color_palette:
+      color_and_tone:
         'Dark Green, Yew-shadow Black, Gravel-path Grey, Statue-stone Cream, Sky ceiling Blue',
-      lighting_setup:
+      lighting_and_shadow:
         'Shaded passages, narrow sun bands, distant light stops and mottled gravel pattern.',
-      material_texture:
+      texture_and_material:
         'Densely clipped hedge, compact leaf surface, transit gravel and stone/moss node accents.',
-      render_quality:
-        'Precise topiary geometry with wayfinding tension and readable route pressure.',
-      spatial_distortion:
+      camera_and_composition:
         'Maze-like route compression, false-node rhythm and living-wall enclosure without requiring a literal maze plan or central destination.',
-      atmosphere:
+      atmosphere_and_mood:
         'Curious disorientation, playful anxiety and enclosed progression toward uncertain resolution.',
+      rendering_and_quality:
+        'Precise topiary geometry with wayfinding tension and readable route pressure.',
       key_features:
         'Clipped living enclosure, node rhythm, gravel-route texture, controlled sightline breaks and false exits.',
       creative_brief:
@@ -204,19 +205,19 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Elevated biophilic layer system with refined outdoor minimalism and calm geometric planting rhythm.',
-      form_and_line:
+      subject_treatment:
         'Modular planting bands, low horizontal planes, light shade, softened orthogonal hardscape and airy edge layers.',
-      color_palette:
+      color_and_tone:
         'Desaturated greens, warm mineral neutrals, muted blue-greys, rusted corten accents, low-intensity amber highlights',
-      lighting_setup:
+      lighting_and_shadow:
         'Warm twilight gradient with soft integrated points and low-contrast edge identification.',
-      material_texture:
+      texture_and_material:
         'Oiled wood accent, matte painted metal, mineral gravel, woven outdoor textile and brushed zinc.',
-      render_quality:
-        'Premium landscape finish with clean hierarchy, contained bloom and legible material tactility.',
-      spatial_distortion:
+      camera_and_composition:
         'Long-axis pull, shallow vertical compression and stacked biophilic edge layering.',
-      atmosphere: 'Quiet, restorative and contemplative, with breathable design comfort.',
+      atmosphere_and_mood: 'Quiet, restorative and contemplative, with breathable design comfort.',
+      rendering_and_quality:
+        'Premium landscape finish with clean hierarchy, contained bloom and legible material tactility.',
       key_features:
         'Modular planting bands, warm deck-like planes, integrated light and green-hardscape contrast.',
       creative_brief:
@@ -231,20 +232,20 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         "Tournament Turf Strategy within 4. Landscape And Garden Systems: a reusable Architecture & Interior visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Tournament Turf Strategy's specific style identity.",
-      form_and_line:
+      subject_treatment:
         'Define Tournament Turf Strategy through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
-      color_palette:
+      color_and_tone:
         'Use a Tournament Turf Strategy-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
-      lighting_setup:
+      lighting_and_shadow:
         'Use lighting that makes Tournament Turf Strategy recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
-      material_texture:
+      texture_and_material:
         'Use materials and textures that reinforce Tournament Turf Strategy: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
-      render_quality:
-        'Render Tournament Turf Strategy with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
-      spatial_distortion:
+      camera_and_composition:
         'Use spatial behavior that fits Tournament Turf Strategy: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
-      atmosphere:
+      atmosphere_and_mood:
         'Set a mood that belongs to Tournament Turf Strategy: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+      rendering_and_quality:
+        'Render Tournament Turf Strategy with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       key_features:
         "Prioritize Tournament Turf Strategy's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
@@ -259,18 +260,19 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Historic iron-and-glass botanical conservatory logic with controlled humid climate.',
-      form_and_line:
+      subject_treatment:
         'Ribbed glazed vaults, cast-iron modular repetition and vertical botanical layering.',
-      color_palette:
+      color_and_tone:
         'White, Green, Tropical-flower Magenta, Iron-grey, Glass-reflected Blue, warm Humidity-silver',
-      lighting_setup:
+      lighting_and_shadow:
         'Diffuse greenhouse brightness, condensation prisms, rain-on-glass sparkle and warm glow over ironwork.',
-      material_texture: 'Wet glass, cast iron, terracotta tile and broad-leaf tropical texture.',
-      render_quality:
-        'Museum-grade conservatory clarity with technically credible humid atmosphere.',
-      spatial_distortion:
+      texture_and_material:
+        'Wet glass, cast iron, terracotta tile and broad-leaf tropical texture.',
+      camera_and_composition:
         'Ribbed-glass repetition, condensation refraction and layered botanical depth without requiring a fixed greenhouse room.',
-      atmosphere: 'Enclosed lushness, humid cultivation calm and curated botanical awe.',
+      atmosphere_and_mood: 'Enclosed lushness, humid cultivation calm and curated botanical awe.',
+      rendering_and_quality:
+        'Museum-grade conservatory clarity with technically credible humid atmosphere.',
       key_features:
         'Iron lattice bays, prismatic condensed glass, layered tropical canopies and clean circulation logic.',
       creative_brief:

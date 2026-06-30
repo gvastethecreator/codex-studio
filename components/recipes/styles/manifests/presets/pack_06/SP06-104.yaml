@@ -12,13 +12,19 @@ tags:
   - essential-art-styles
   - game-art-directions-and-ui
 visualDna:
-  aesthetic: Cyberpunk game-interface overlay style with luminous diegetic panels, scanline grime, and tactical data density.
-  subject_treatment: Wrap any subject in translucent interface strata, segmented targeting brackets, and modular status geometry.
+  aesthetic: >-
+    Cyberpunk game-interface overlay style with luminous diegetic panels, scanline grime, and tactical data
+    density.
+  subject_treatment: >-
+    Wrap any subject in translucent interface strata, segmented targeting brackets, and modular status
+    geometry.
   color_and_tone: Cyan-magenta warning palette, black glass fields, acid-green micro accents, and clipped neon contrast.
   lighting_and_shadow: Screen-glow lighting, edge bloom, reflected UI color, and dark underlayers for readable overlays.
   texture_and_material: CRT scanlines, transparent glassmorphism, pixel glitches, chromatic fringing, and scratched display haze.
   camera_and_composition: Layered HUD composition with safe margins, asymmetric grids, and focal brackets instead of fixed screens.
-  atmosphere_and_mood: Paranoid, high-tech, compressed signal energy without requiring cities, hackers, weapons, or readable text.
+  atmosphere_and_mood: >-
+    Paranoid, high-tech, compressed signal energy without requiring cities, hackers, weapons, or readable
+    text.
   rendering_and_quality: Sharp vector-like UI edges, no legible copy, controlled bloom, and clean hierarchy at small size.
 avoidRules:
   - watermark

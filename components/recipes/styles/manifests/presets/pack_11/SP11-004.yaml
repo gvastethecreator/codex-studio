@@ -13,20 +13,20 @@ tags:
   - toys-and-crafts
 visualDna:
   aesthetic: Low-poly papercraft construction with folded-cardstock geometry
-  form_and_line: Sharp paper folds, triangular facets, crease lines, angular edges
-  color_palette: Flat paper colors, matte cardstock spectrum, subdued hues, uncoated finish
-  lighting_setup: Soft shadows, directional key light, facet-defining contrast, gentle ambient
-  material_texture: Paper grain, glue tabs, cardstock weight, fiber texture, construction-paper feel
-  render_quality: Hand-assembled geometric craft finish with precise fold logic
-  spatial_distortion: Faceted geometry, polygon-mesh appearance, triangulated surface, angular decomposition
-  atmosphere: Delicate, handmade, clean, zen precision, patient craft, geometric calm
+  subject_treatment: Sharp paper folds, triangular facets, crease lines, angular edges
+  color_and_tone: Flat paper colors, matte cardstock spectrum, subdued hues, uncoated finish
+  lighting_and_shadow: Soft shadows, directional key light, facet-defining contrast, gentle ambient
+  texture_and_material: Paper grain, glue tabs, cardstock weight, fiber texture, construction-paper feel
+  camera_and_composition: Faceted geometry, polygon-mesh appearance, triangulated surface, angular decomposition
+  atmosphere_and_mood: Delicate, handmade, clean, zen precision, patient craft, geometric calm
+  rendering_and_quality: Hand-assembled geometric craft finish with precise fold logic
   key_features: Visible fold lines, tab-and-slot joins, score marks, polygon faces
   creative_brief: >-
-    Build forms through visible fold architecture: facets, score lines, and tab joins should define silhouette and
-    volume. Keep surfaces matte and planar so the style reads as handcrafted papercraft rather than smooth CG modeling.
-    Apply Papercraft Low Poly as a portable style system over any input: preserve its construction grammar, material
-    cues, scale logic, and signature rendering behavior while avoiding a required franchise, literal prop, fixed
-    specimen, classroom sample, product shot, or scene template.
+    Build forms through visible fold architecture: facets, score lines, and tab joins should define silhouette
+    and volume. Keep surfaces matte and planar so the style reads as handcrafted papercraft rather than smooth
+    CG modeling. Apply Papercraft Low Poly as a portable style system over any input: preserve its
+    construction grammar, material cues, scale logic, and signature rendering behavior while avoiding a
+    required franchise, literal prop, fixed specimen, classroom sample, product shot, or scene template.
 avoidRules:
   - curved
   - smooth

@@ -12,16 +12,23 @@ tags:
   - cinematic-and-media
   - caricature-and-cartoon-styles
 visualDna:
-  aesthetic: Cheerful cartoony setup smashed by hyper-detailed disgusting close-up, SpongeBob gross-up freeze-frame as style anchor, deranged reaction insert, slapstick whiplash
-  form_and_line: Simple bright cartoon contours interrupted by hyper-detailed gross-up brushwork
-  color_palette: Cheerful yellow-blue base, sickly pink close-up accents, pore red, greasy beige, seafoam green
-  lighting_setup: Flat happy setup light interrupted by cruel macro glare
-  material_texture: Cel fill colliding with pores, wrinkles, follicles, wet gloss, and painterly gross texture
-  render_quality: Style-whiplash freeze frame, bright cartoon plus revolting macro insert
-  spatial_distortion: Crash-zoom proximity, sudden scale jump, normal-to-gross transformation, invasive crop
-  atmosphere: Cheery, revolting, whiplash-funny, manic
-  key_features: Normal-to-gross style contrast, close-up texture detail, reaction-frame jump scare, bright-to-revolting whiplash
-  creative_brief: 'Apply gross-up freeze-frame contrast to any prompt: cheerful flat cartoon setup interrupted by invasive hyper-detailed texture, pores, folds, and uncomfortable proximity. Avoid undersea props, sponge forms, faces, or fixed characters. The gag should be the sudden style jump.'
+  aesthetic: >-
+    Cheerful cartoony setup smashed by hyper-detailed disgusting close-up, SpongeBob gross-up freeze-frame as
+    style anchor, deranged reaction insert, slapstick whiplash
+  subject_treatment: Simple bright cartoon contours interrupted by hyper-detailed gross-up brushwork
+  color_and_tone: Cheerful yellow-blue base, sickly pink close-up accents, pore red, greasy beige, seafoam green
+  lighting_and_shadow: Flat happy setup light interrupted by cruel macro glare
+  texture_and_material: Cel fill colliding with pores, wrinkles, follicles, wet gloss, and painterly gross texture
+  camera_and_composition: Crash-zoom proximity, sudden scale jump, normal-to-gross transformation, invasive crop
+  atmosphere_and_mood: Cheery, revolting, whiplash-funny, manic
+  rendering_and_quality: Style-whiplash freeze frame, bright cartoon plus revolting macro insert
+  key_features: >-
+    Normal-to-gross style contrast, close-up texture detail, reaction-frame jump scare, bright-to-revolting
+    whiplash
+  creative_brief: >-
+    Apply gross-up freeze-frame contrast to any prompt: cheerful flat cartoon setup interrupted by invasive
+    hyper-detailed texture, pores, folds, and uncomfortable proximity. Avoid undersea props, sponge forms,
+    faces, or fixed characters. The gag should be the sudden style jump.
 avoidRules:
   - digital
   - HD

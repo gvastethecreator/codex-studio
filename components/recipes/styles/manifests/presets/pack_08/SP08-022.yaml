@@ -13,18 +13,20 @@ tags:
   - subcultures
 visualDna:
   aesthetic: 90s slouch-grunge, flannel melancholy, lo-fi dishevelment
-  form_and_line: Loose, layered, cardigan-over-tee drape, ripped-knee baggy, beanie-slouch silhouette
-  color_palette: Faded plaid, denim, olive drab, washed-out black, mustard, vintage-burgundy check
-  lighting_setup: Dim overcast grey, basement-amber warmth, rainy-flat low contrast
-  material_texture: Brushed flannel, distressed knit, stonewashed denim, thermal waffle, worn canvas sneaker texture
-  render_quality: Messy, cool, apathy, lo-fi honesty, garage-band authenticity
-  spatial_distortion: None
-  atmosphere: Angst, relaxed, quiet desperation, feedback-hum ennui, careless sincerity
+  subject_treatment: Loose, layered, cardigan-over-tee drape, ripped-knee baggy, beanie-slouch silhouette
+  color_and_tone: Faded plaid, denim, olive drab, washed-out black, mustard, vintage-burgundy check
+  lighting_and_shadow: Dim overcast grey, basement-amber warmth, rainy-flat low contrast
+  texture_and_material: Brushed flannel, distressed knit, stonewashed denim, thermal waffle, worn canvas sneaker texture
+  camera_and_composition: >-
+    Compose for Grunge (90s) using its key spatial cues: Flannel shirt, ripped jeans, cardigan, beanie,
+    unbranded canvas low-top sneakers.
+  atmosphere_and_mood: Angst, relaxed, quiet desperation, feedback-hum ennui, careless sincerity
+  rendering_and_quality: Messy, cool, apathy, lo-fi honesty, garage-band authenticity
   key_features: Flannel shirt, ripped jeans, cardigan, beanie, unbranded canvas low-top sneakers
   creative_brief: >-
-    Push the input into grunge slouch: brushed flannel, distressed knits, stonewashed denim, waffle thermal, canvas
-    sneakers and deliberately poor fit. Keep lo-fi melancholy without requiring Seattle, rehearsal rooms, rainy
-    sidewalks, band references, bedroom-sulk staging or a human slacker persona.
+    Push the input into grunge slouch: brushed flannel, distressed knits, stonewashed denim, waffle thermal,
+    canvas sneakers and deliberately poor fit. Keep lo-fi melancholy without requiring Seattle, rehearsal
+    rooms, rainy sidewalks, band references, bedroom-sulk staging or a human slacker persona.
 avoidRules:
   - clean
   - ironed

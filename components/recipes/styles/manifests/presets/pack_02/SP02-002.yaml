@@ -12,16 +12,24 @@ tags:
   - cinematic-and-media
   - film-genres
 visualDna:
-  aesthetic: Dusty operatic frontier cinema, Sergio Leone style, extreme close-up tension, widescreen heat, Morricone mood
-  form_and_line: None
-  color_palette: Warm, dusty yellow, sun-bleached ochre, deep brown
-  lighting_setup: Harsh sun, unflinching overhead, high noon glare
-  material_texture: Techniscope grain, gritty dust, weathered surface
-  render_quality: Epic, gritty, widescreen, sun-baked
-  spatial_distortion: Extreme close-up compression, tension squeeze
-  atmosphere: Tense, hot, dry wind, looming death
+  aesthetic: >-
+    Dusty operatic frontier cinema, Sergio Leone style, extreme close-up tension, widescreen heat, Morricone
+    mood
+  subject_treatment: >-
+    Treat subjects as believable filmed or broadcast subjects under Spaghetti Western: casting, wardrobe,
+    props, motion cues, and silhouette hierarchy follow 1. Film Genres cinematic and broadcast grammar without
+    locking to one plot beat.
+  color_and_tone: Warm, dusty yellow, sun-bleached ochre, deep brown
+  lighting_and_shadow: Harsh sun, unflinching overhead, high noon glare
+  texture_and_material: Techniscope grain, gritty dust, weathered surface
+  camera_and_composition: Extreme close-up compression, tension squeeze
+  atmosphere_and_mood: Tense, hot, dry wind, looming death
+  rendering_and_quality: Epic, gritty, widescreen, sun-baked
   key_features: Wide framing, extreme close tension, dust haze
-  creative_brief: 'Spaghetti western style applies harsh noon glare, ochre dust, Techniscope grain, and operatic widescreen tension to any subject. Use Leone-like close/wide contrast and sun-baked texture without requiring desert, guns, holsters, lone riders, or frontier props.'
+  creative_brief: >-
+    Spaghetti western style applies harsh noon glare, ochre dust, Techniscope grain, and operatic widescreen
+    tension to any subject. Use Leone-like close/wide contrast and sun-baked texture without requiring desert,
+    guns, holsters, lone riders, or frontier props.
 avoidRules:
   - modern
   - clean

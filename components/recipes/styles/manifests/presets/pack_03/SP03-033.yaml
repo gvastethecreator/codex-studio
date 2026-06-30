@@ -13,19 +13,20 @@ tags:
   - environment-and-worldbuilding
 visualDna:
   aesthetic: Cyberpunk neon-rain lookdev
-  form_and_line: Reflections
-  color_palette: Pink, Cyan, Purple
-  lighting_setup: Emissive signs
-  material_texture: Wet reflective surfaces, emissive haze
-  render_quality: Blade Runner rain-soaked neon megacity
-  spatial_distortion: None
-  atmosphere: Dystopian, cool, future-noir
+  subject_treatment: Reflections
+  color_and_tone: Pink, Cyan, Purple
+  lighting_and_shadow: Emissive signs
+  texture_and_material: Wet reflective surfaces, emissive haze
+  camera_and_composition: >-
+    Production-preview camera for Neon City (Cyberpunk): readable hero scale, foreground/midground/background
+    depth, clean silhouette, and practical vertical crop.
+  atmosphere_and_mood: Dystopian, cool, future-noir
+  rendering_and_quality: Blade Runner rain-soaked neon megacity
   key_features: Neon glow
   creative_brief: >-
-    Apply cyberpunk neon-rain treatment to the input: magenta/cyan emissive
-    bleed, wet reflective sheen, holographic haze, high-contrast future-noir
-    shadows and ozone atmosphere. It may hint at signage or urban density, but
-    must not force streets, alleys, kanji, pedestrians or a literal city.
+    Apply cyberpunk neon-rain treatment to the input: magenta/cyan emissive bleed, wet reflective sheen,
+    holographic haze, high-contrast future-noir shadows and ozone atmosphere. It may hint at signage or urban
+    density, but must not force streets, alleys, kanji, pedestrians or a literal city.
 avoidRules:
   - daylight
   - sun

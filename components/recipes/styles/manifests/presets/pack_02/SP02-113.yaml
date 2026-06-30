@@ -13,23 +13,23 @@ tags:
   - caricature-and-cartoon-styles
 visualDna:
   aesthetic: >-
-    Mutant suburbia satire, malformed silhouettes, environmental rot, class-divide cartoon cruelty, trailer-park
-    grotesquerie as style anchor, deformity normalized into routine, poisoned world whimsy
-  form_and_line: Malformed clean outlines, lopsided silhouettes, class-satire exaggeration, friendly deformity marks
-  color_palette: Toxic yellow, smoke grey, bruised mauve, landfill green, cheap tan, muted domestic pink
-  lighting_setup: Flat polluted ambience, sour daylight, no glamour, environmental haze
-  material_texture: Grime, cheap fabric, polluted residue, dented plastic, dusty TV cel texture
-  render_quality: Mutant suburbia satire, poisoned whimsy, class-coded grotesque warmth
-  spatial_distortion: Lopsided silhouette logic, compressed domestic forms, toxic asymmetry, normalized deformity
-  atmosphere: Bleak, satirical, mutated, weirdly cozy
+    Mutant suburbia satire, malformed silhouettes, environmental rot, class-divide cartoon cruelty,
+    trailer-park grotesquerie as style anchor, deformity normalized into routine, poisoned world whimsy
+  subject_treatment: Malformed clean outlines, lopsided silhouettes, class-satire exaggeration, friendly deformity marks
+  color_and_tone: Toxic yellow, smoke grey, bruised mauve, landfill green, cheap tan, muted domestic pink
+  lighting_and_shadow: Flat polluted ambience, sour daylight, no glamour, environmental haze
+  texture_and_material: Grime, cheap fabric, polluted residue, dented plastic, dusty TV cel texture
+  camera_and_composition: Lopsided silhouette logic, compressed domestic forms, toxic asymmetry, normalized deformity
+  atmosphere_and_mood: Bleak, satirical, mutated, weirdly cozy
+  rendering_and_quality: Mutant suburbia satire, poisoned whimsy, class-coded grotesque warmth
   key_features: Malformed silhouettes, toxic backdrop hints, trashy domestic texture, odd asymmetries, resigned humor
   creative_brief: >-
-    Use toxic suburb satire as style: malformed silhouettes, polluted color, class-coded clutter, lopsided warmth, and
-    environmental rot embedded in shape. Avoid families, portraits, trailers, smokestacks, or bodies as required
-    content. The image should feel poisoned yet weirdly cozy. Apply The Oblongs - Toxic Suburb Family as a portable
-    cinematic/camera style over any input: preserve its lens behavior, color process, lighting setup, artifact pattern,
-    and deformation grammar while avoiding a required actor, room, prop, brand, readable text, fixed IP scene, or
-    narrative setup.
+    Use toxic suburb satire as style: malformed silhouettes, polluted color, class-coded clutter, lopsided
+    warmth, and environmental rot embedded in shape. Avoid families, portraits, trailers, smokestacks, or
+    bodies as required content. The image should feel poisoned yet weirdly cozy. Apply The Oblongs - Toxic
+    Suburb Family as a portable cinematic/camera style over any input: preserve its lens behavior, color
+    process, lighting setup, artifact pattern, and deformation grammar while avoiding a required actor, room,
+    prop, brand, readable text, fixed IP scene, or narrative setup.
 avoidRules:
   - digital
   - HD

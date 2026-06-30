@@ -20,7 +20,10 @@ visualDna:
   camera_and_composition: 85mm editorial lens, f/2.0, eye-level, off-center right, rule-of-thirds
   atmosphere_and_mood: Quiet confidence, editorial intimacy, relaxed morning light
   rendering_and_quality: Photorealistic, 8k, fine lens optics, natural chromatic aberration
-  creative_brief: 'Soft window editorial applies relaxed morning light to any subject: warm side glow, ambient fill, retained natural texture, shallow bokeh, and quiet rule-of-thirds intimacy. Preserve fashion-lifestyle softness without requiring eyes, skin, hair, room, or human portrait.'
+  creative_brief: >-
+    Soft window editorial applies relaxed morning light to any subject: warm side glow, ambient fill, retained
+    natural texture, shallow bokeh, and quiet rule-of-thirds intimacy. Preserve fashion-lifestyle softness
+    without requiring eyes, skin, hair, room, or human portrait.
 avoidRules:
   - illustration
   - painting
@@ -35,10 +38,12 @@ avoidRules:
   - studio strobe
   - harsh shadows
   - overexposed
-attributes:
-  negativePrompt: illustration, painting, 3d render, cartoon, anime, watermark, text, signature, flash photography, harsh shadows, overexposed
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP01-081.webp
+attributes:
+  negativePrompt: >-
+    illustration, painting, 3d render, cartoon, anime, watermark, text, signature, flash photography, harsh
+    shadows, overexposed
 taxonomy:
   packId: pack_01
   packName: Photography & Realism

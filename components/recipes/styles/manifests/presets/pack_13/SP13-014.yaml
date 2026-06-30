@@ -12,19 +12,32 @@ tags:
   - anime-character-and-lifestyle
   - anime
 visualDna:
-  aesthetic: Ritualized stillness anime language with disciplined minimalism, dusk-noir restraint, and pre-impact tension
-  form_and_line: Elongated opposing silhouettes, blade-like directional vectors, narrow axial composition, and stillness-biased geometry
-  color_palette: Ink blue shadows, muted crimson accents, weathered stone beige, lantern amber highlights, and steel-gray reflective notes
-  lighting_setup: Warm lantern-like pockets against cool dusk ambient, crossing hard shadow diagonals, and selective blade-edge rim accents
-  material_texture: Rain-darkened stone texture, woven traditional textiles, polished worn steel surfaces, and fine mist particulate layers
-  render_quality: Precision pre-impact key-visual rendering with strong pose readability, restrained FX noise, and high emotional tension clarity
-  spatial_distortion: Central vanishing-point compression reinforcing confrontation symmetry and imminent-impact focus
-  atmosphere: Honorable, silent, severe, and imminently explosive
-  key_features: Opposition-lock silhouettes, rain-thread depth cues, blade-highlight discipline, and lantern-shadow conflict lines
+  aesthetic: >-
+    Ritualized stillness anime language with disciplined minimalism, dusk-noir restraint, and pre-impact
+    tension
+  subject_treatment: >-
+    Elongated opposing silhouettes, blade-like directional vectors, narrow axial composition, and
+    stillness-biased geometry
+  color_and_tone: >-
+    Ink blue shadows, muted crimson accents, weathered stone beige, lantern amber highlights, and steel-gray
+    reflective notes
+  lighting_and_shadow: >-
+    Warm lantern-like pockets against cool dusk ambient, crossing hard shadow diagonals, and selective
+    blade-edge rim accents
+  texture_and_material: >-
+    Rain-darkened stone texture, woven traditional textiles, polished worn steel surfaces, and fine mist
+    particulate layers
+  camera_and_composition: Central vanishing-point compression reinforcing confrontation symmetry and imminent-impact focus
+  atmosphere_and_mood: Honorable, silent, severe, and imminently explosive
+  rendering_and_quality: >-
+    Precision pre-impact key-visual rendering with strong pose readability, restrained FX noise, and high
+    emotional tension clarity
+  key_features: >-
+    Opposition-lock silhouettes, rain-thread depth cues, blade-highlight discipline, and lantern-shadow
+    conflict lines
   creative_brief: >-
-    Use Ronin Alley Duel as style anchor for ritualized stillness:
-    pre-impact restraint, lantern-versus-dusk contrast, and silhouette-driven
-    blade tension should transfer without requiring ronin, alley, katana, two
+    Use Ronin Alley Duel as style anchor for ritualized stillness: pre-impact restraint, lantern-versus-dusk
+    contrast, and silhouette-driven blade tension should transfer without requiring ronin, alley, katana, two
     combatants, or duel event.
 avoidRules:
   - photoreal

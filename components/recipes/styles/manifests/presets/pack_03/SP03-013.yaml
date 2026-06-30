@@ -13,19 +13,18 @@ tags:
   - materials
 visualDna:
   aesthetic: Translucent material (wax, skin, jade)
-  form_and_line: Soft light penetration
-  color_palette: Glowing from inside, warm subsurface hues
-  lighting_setup: Backlit, rim-penetration
-  material_texture: Waxy, organic, light-permeable
-  render_quality: Realistic organic material, portrait-grade softness when relevant
-  spatial_distortion: Soft edges
-  atmosphere: Soft, organic, life-like warmth
+  subject_treatment: Soft light penetration
+  color_and_tone: Glowing from inside, warm subsurface hues
+  lighting_and_shadow: Backlit, rim-penetration
+  texture_and_material: Waxy, organic, light-permeable
+  camera_and_composition: Soft edges
+  atmosphere_and_mood: Soft, organic, life-like warmth
+  rendering_and_quality: Realistic organic material, portrait-grade softness when relevant
   key_features: Inner glow
   creative_brief: >-
-    Give the input subsurface scattering: light penetration, warm internal
-    bounce, wax/jade/alabaster softness, backlit rim glow and organic depth.
-    Keep life-like warmth without requiring skin, portrait framing, a child's
-    ear or a biological subject.
+    Give the input subsurface scattering: light penetration, warm internal bounce, wax/jade/alabaster
+    softness, backlit rim glow and organic depth. Keep life-like warmth without requiring skin, portrait
+    framing, a child's ear or a biological subject.
 avoidRules:
   - hard
   - plastic

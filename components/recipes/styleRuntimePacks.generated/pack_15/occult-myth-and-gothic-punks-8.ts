@@ -12,17 +12,18 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'witchpunk electrical ritual built around one neon switchyard practitioner commanding protective current around transformers and cables.',
-      form_and_line:
+      subject_treatment:
         'Ritual diagrams, gothic silhouettes, folk hardware, talismanic machines, and mythic street-level staging. Core composition uses transformer mass, plain neon oval glow, cable staffs, rubber-glove gesture, and one witch technician protagonist.',
-      color_palette: 'neon violet, transformer gray, black rubber, hot pink',
-      lighting_setup: 'coil arcs, plain neon oval glow, storm cloud flashes, sodium work lights',
-      material_texture:
+      color_and_tone: 'neon violet, transformer gray, black rubber, hot pink',
+      lighting_and_shadow:
+        'coil arcs, plain neon oval glow, storm cloud flashes, sodium work lights',
+      texture_and_material:
         'rubber gloves, copper cable, cracked concrete, neon paint, transformer steel',
-      render_quality:
-        'Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity, moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material simulation, or hyper-detail.',
-      spatial_distortion:
+      camera_and_composition:
         'Switchyards, foundries, chapels, cairns, repair shops, salons, processions, and rural transformers. Keep depth legible and avoid default hallway, aisle, or empty studio staging.',
-      atmosphere: 'charged, occult, urban, protective',
+      atmosphere_and_mood: 'charged, occult, urban, protective',
+      rendering_and_quality:
+        'Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity, moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material simulation, or hyper-detail.',
       key_features:
         'transformer mass, plain neon oval glow, copper cable arcs, rubber-glove gesture, witch technician protagonist',
       creative_brief:
@@ -38,16 +39,16 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'tarot-tech industrial occult built around a foundry casting circuit-like tarot plates with workers, molten lines, and symbolic machine presses.',
-      form_and_line:
+      subject_treatment:
         'Ritual diagrams, gothic silhouettes, folk hardware, talismanic machines, and mythic street-level staging. Core composition uses tarot plates, machine presses, workers, molten traces, card geometry without readable text.',
-      color_palette: 'burned gold, black iron, card cream, red ember',
-      lighting_setup: 'molten gold lines, press shadows, ember glow, overhead smoke',
-      material_texture: 'iron presses, card stock, molten metal, soot, engraved copper',
-      render_quality:
-        'Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity, moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material simulation, or hyper-detail.',
-      spatial_distortion:
+      color_and_tone: 'burned gold, black iron, card cream, red ember',
+      lighting_and_shadow: 'molten gold lines, press shadows, ember glow, overhead smoke',
+      texture_and_material: 'iron presses, card stock, molten metal, soot, engraved copper',
+      camera_and_composition:
         'Switchyards, foundries, chapels, cairns, repair shops, salons, processions, and rural transformers. Keep depth legible and avoid default hallway, aisle, or empty studio staging.',
-      atmosphere: 'fateful, industrial, symbolic, heavy',
+      atmosphere_and_mood: 'fateful, industrial, symbolic, heavy',
+      rendering_and_quality:
+        'Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity, moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material simulation, or hyper-detail.',
       key_features:
         'tarot plates, machine presses, workers, molten traces, card geometry without readable text',
       creative_brief:
@@ -63,16 +64,16 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'gothpunk communications built around a gothic relay room with black lace cables, radio operators, pointed arches as silhouettes, and red indicator light.',
-      form_and_line:
+      subject_treatment:
         'Ritual diagrams, gothic silhouettes, folk hardware, talismanic machines, and mythic street-level staging. Core composition uses relay operators, pointed silhouettes, cable lace, red indicators, dark coats.',
-      color_palette: 'charcoal, oxblood, cold white, tarnished silver',
-      lighting_setup: 'red indicator lamps, cold moon cuts, radio glow, deep shadows',
-      material_texture: 'black cable, lace-like mesh, tarnished metal, stone, velvet coats',
-      render_quality:
-        'Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity, moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material simulation, or hyper-detail.',
-      spatial_distortion:
+      color_and_tone: 'charcoal, oxblood, cold white, tarnished silver',
+      lighting_and_shadow: 'red indicator lamps, cold moon cuts, radio glow, deep shadows',
+      texture_and_material: 'black cable, lace-like mesh, tarnished metal, stone, velvet coats',
+      camera_and_composition:
         'Switchyards, foundries, chapels, cairns, repair shops, salons, processions, and rural transformers. Keep depth legible and avoid default hallway, aisle, or empty studio staging.',
-      atmosphere: 'romantic, severe, communicative, nocturnal',
+      atmosphere_and_mood: 'romantic, severe, communicative, nocturnal',
+      rendering_and_quality:
+        'Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity, moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material simulation, or hyper-detail.',
       key_features: 'relay operators, pointed silhouettes, cable lace, red indicators, dark coats',
       creative_brief:
         'Gothpunk communications: relay gear, radio mast, small operators, cable arches, and gothic shape language, not empty cathedral literalism. Keep the result representative rather than over-abstract; use flat graphic illustration, gouache-poster shapes, cel-poster blocking, and controlled digital painting over realism or generic concept art. Use few bold color/value zones, large matte shapes, clean surfaces, low-to-moderate detail, and finish denoised with no excessive noise or ultra-fine detail.',
@@ -87,16 +88,16 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'bonepunk signal ritual built around a cairn of bone-white signal horns, limewash marks, field technicians, and wind-carved hill light.',
-      form_and_line:
+      subject_treatment:
         'Ritual diagrams, gothic silhouettes, folk hardware, talismanic machines, and mythic street-level staging. Core composition uses signal horns, cairn stack, technicians, lime glyphs, hill wind.',
-      color_palette: 'bone white, lime green, storm gray, rawhide brown',
-      lighting_setup: 'cloud breaks, horn rimlight, cold field glow, tiny signal lamps',
-      material_texture: 'bone-like resin, limewash, rawhide straps, field canvas, stone',
-      render_quality:
-        'Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity, moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material simulation, or hyper-detail.',
-      spatial_distortion:
+      color_and_tone: 'bone white, lime green, storm gray, rawhide brown',
+      lighting_and_shadow: 'cloud breaks, horn rimlight, cold field glow, tiny signal lamps',
+      texture_and_material: 'bone-like resin, limewash, rawhide straps, field canvas, stone',
+      camera_and_composition:
         'Switchyards, foundries, chapels, cairns, repair shops, salons, processions, and rural transformers. Keep depth legible and avoid default hallway, aisle, or empty studio staging.',
-      atmosphere: 'ancient, stark, practical, eerie',
+      atmosphere_and_mood: 'ancient, stark, practical, eerie',
+      rendering_and_quality:
+        'Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity, moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material simulation, or hyper-detail.',
       key_features: 'signal horns, cairn stack, technicians, lime glyphs, hill wind',
       creative_brief:
         'Bonepunk without gore: bone-like resin engineering, horn signal function, plain field workers, lime plates, and austere ritual texture. Keep the result representative rather than over-abstract; use flat graphic illustration, gouache-poster shapes, cel-poster blocking, and controlled digital painting over realism or generic concept art. Use few bold color/value zones, large matte shapes, clean surfaces, low-to-moderate detail, and finish denoised with no excessive noise or ultra-fine detail.',
@@ -111,16 +112,16 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'necrotech audio repair built around one distinctive repairer protagonist, antique phones, bone-white receivers, hand-tuned copper coils, and ghostly audio lines implying absent voices.',
-      form_and_line:
+      subject_treatment:
         'Ritual diagrams, gothic silhouettes, folk hardware, talismanic machines, and mythic street-level staging. Core composition uses a medium-crop necrotech repairer, oversized phone receiver, compact repair bench, ghost audio lines, hand gesture, copper coils.',
-      color_palette: 'ivory, black bakelite, sickly green, warm wood',
-      lighting_setup: 'simple dusty window light, phosphor audio glow, one soft bench glow',
-      material_texture: 'bakelite, bone resin, wood benches, copper wire, dust',
-      render_quality:
-        'Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity, moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material simulation, or hyper-detail.',
-      spatial_distortion:
+      color_and_tone: 'ivory, black bakelite, sickly green, warm wood',
+      lighting_and_shadow: 'simple dusty window light, phosphor audio glow, one soft bench glow',
+      texture_and_material: 'bakelite, bone resin, wood benches, copper wire, dust',
+      camera_and_composition:
         'Switchyards, foundries, chapels, cairns, repair shops, salons, processions, and rural transformers. Keep depth legible and avoid default hallway, aisle, or empty studio staging.',
-      atmosphere: 'eerie, tender, antique, technical',
+      atmosphere_and_mood: 'eerie, tender, antique, technical',
+      rendering_and_quality:
+        'Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity, moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material simulation, or hyper-detail.',
       key_features:
         'necrotech repairer protagonist, oversized phone receiver, repair bench, ghost audio lines, copper coils',
       creative_brief:
@@ -136,16 +137,17 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'mythpunk civic engine built around one distinctive shrine-engine keeper or courier, moving shrine-like engine cart, cable garlands, blank cloth strips, brass glow, and sparse public silhouettes.',
-      form_and_line:
+      subject_treatment:
         'Ritual diagrams, gothic silhouettes, folk hardware, talismanic machines, and mythic street-level staging. Core composition uses shrine-engine keeper/courier, engine cart, cable garlands, blank cloth strips, brass engine glow, sparse public silhouettes.',
-      color_palette: 'saffron, engine black, turquoise, brass',
-      lighting_setup: 'engine glow, street dusk, flat banner shadows, sparse warm procession dots',
-      material_texture: 'brass, painted wood, cable garlands, plain cloth strips, worn shoes',
-      render_quality:
-        'Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity, moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material simulation, or hyper-detail.',
-      spatial_distortion:
+      color_and_tone: 'saffron, engine black, turquoise, brass',
+      lighting_and_shadow:
+        'engine glow, street dusk, flat banner shadows, sparse warm procession dots',
+      texture_and_material: 'brass, painted wood, cable garlands, plain cloth strips, worn shoes',
+      camera_and_composition:
         'Switchyards, foundries, chapels, cairns, repair shops, salons, processions, and rural transformers. Keep depth legible and avoid default hallway, aisle, or empty studio staging.',
-      atmosphere: 'ceremonial, public, moving, mechanical',
+      atmosphere_and_mood: 'ceremonial, public, moving, mechanical',
+      rendering_and_quality:
+        'Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity, moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material simulation, or hyper-detail.',
       key_features:
         'shrine-engine keeper protagonist, engine cart, cable garlands, blank cloth color strips, brass engine glow',
       creative_brief:
@@ -161,16 +163,16 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'gothic cyber salon built around one distinctive nocturnal data-salon protagonist, velvet terminal furniture, red data glass, antique terminals, and social tension.',
-      form_and_line:
+      subject_treatment:
         'Ritual diagrams, gothic silhouettes, folk hardware, talismanic machines, and mythic street-level staging. Core composition uses data-salon protagonist, velvet terminal table, hand gesture, red data glass, antique screens, night windows.',
-      color_palette: 'velvet black, blood red, pale ivory, chrome',
-      lighting_setup: 'red data-glass glow, candle-like LED dots, moonlit window cuts',
-      material_texture: 'velvet, antique terminals, glass screens, chrome nails, dark wood',
-      render_quality:
-        'Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity, moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material simulation, or hyper-detail.',
-      spatial_distortion:
+      color_and_tone: 'velvet black, blood red, pale ivory, chrome',
+      lighting_and_shadow: 'red data-glass glow, candle-like LED dots, moonlit window cuts',
+      texture_and_material: 'velvet, antique terminals, glass screens, chrome nails, dark wood',
+      camera_and_composition:
         'Switchyards, foundries, chapels, cairns, repair shops, salons, processions, and rural transformers. Keep depth legible and avoid default hallway, aisle, or empty studio staging.',
-      atmosphere: 'decadent, dangerous, elegant, social',
+      atmosphere_and_mood: 'decadent, dangerous, elegant, social',
+      rendering_and_quality:
+        'Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity, moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material simulation, or hyper-detail.',
       key_features:
         'nocturnal data-salon protagonist, velvet terminal table, red data glass, antique screens, night windows',
       creative_brief:
@@ -186,16 +188,17 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'rural occult infrastructure built around one distinctive signal-keeper protagonist, transformer pole omen-machine, ceramic insulators, straw warning bundles, blank ribbons, and dusk farmland.',
-      form_and_line:
+      subject_treatment:
         'Ritual diagrams, gothic silhouettes, folk hardware, talismanic machines, and mythic street-level staging. Core composition uses rural signal-keeper protagonist, transformer pole, ceramic insulators, straw warning bundles, blank ribbons, farmland silhouettes.',
-      color_palette: 'straw yellow, transformer gray, blood-orange dusk, field black',
-      lighting_setup: 'dusk backlight, transformer hum glow, sparse warm dots, long field shadows',
-      material_texture: 'straw, ceramic insulators, mud, ribbon, galvanized metal',
-      render_quality:
-        'Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity, moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material simulation, or hyper-detail.',
-      spatial_distortion:
+      color_and_tone: 'straw yellow, transformer gray, blood-orange dusk, field black',
+      lighting_and_shadow:
+        'dusk backlight, transformer hum glow, sparse warm dots, long field shadows',
+      texture_and_material: 'straw, ceramic insulators, mud, ribbon, galvanized metal',
+      camera_and_composition:
         'Switchyards, foundries, chapels, cairns, repair shops, salons, processions, and rural transformers. Keep depth legible and avoid default hallway, aisle, or empty studio staging.',
-      atmosphere: 'uneasy, rural, grounded, superstitious',
+      atmosphere_and_mood: 'uneasy, rural, grounded, superstitious',
+      rendering_and_quality:
+        'Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity, moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material simulation, or hyper-detail.',
       key_features:
         'rural signal-keeper protagonist, transformer pole, ceramic insulators, straw warning bundles, blank ribbons',
       creative_brief:

@@ -13,18 +13,17 @@ tags:
   - digital-glitch-and-noise
 visualDna:
   aesthetic: Text characters
-  form_and_line: Typographic
-  color_palette: Green on Black
-  lighting_setup: Character density
-  material_texture: Monospace font
-  render_quality: Hacker, terminal
-  spatial_distortion: Low resolution
-  atmosphere: Cyber, code
+  subject_treatment: Typographic
+  color_and_tone: Green on Black
+  lighting_and_shadow: Character density
+  texture_and_material: Monospace font
+  camera_and_composition: Low resolution
+  atmosphere_and_mood: Cyber, code
+  rendering_and_quality: Hacker, terminal
   key_features: Grid alignment
   creative_brief: >-
-    Apply ASCII-art conversion to the input: monospace symbol density,
-    character-cell shading, terminal contrast, and typographic pixel logic should
-    rebuild forms without requiring readable words or UI.
+    Apply ASCII-art conversion to the input: monospace symbol density, character-cell shading, terminal
+    contrast, and typographic pixel logic should rebuild forms without requiring readable words or UI.
 avoidRules:
   - image
   - pixels

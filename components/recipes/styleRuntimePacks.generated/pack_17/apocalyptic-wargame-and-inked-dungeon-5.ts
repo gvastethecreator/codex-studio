@@ -96,7 +96,7 @@ export const GENERATED_STYLE_PRESETS = [
       aesthetic:
         'Old-world sepulcher warband engraving with carved linework, funeral armor, heraldic masses, and siege-icon composition.',
       subject_treatment:
-        'An engraved tomb wagon pulled by a skeletal ox with tiny standard bearers and tomb guards, reduced to bold cut lines and sepulcher rhythm.',
+        'An engraved tomb wagon pulled by a skeletal ox with tiny banner bearers and tomb guards, reduced to bold cut lines and sepulcher rhythm.',
       color_and_tone:
         'Ink black, bone paper, tarnished silver, sepia wash, oxidized green, and small wax-red accents.',
       lighting_and_shadow:
@@ -150,7 +150,7 @@ export const GENERATED_STYLE_PRESETS = [
       aesthetic:
         'Folk-horror medieval covenant with witch-knights, thorn chapels, bone charms, black woods, and candlelit oath armor.',
       subject_treatment:
-        'An antlered witch-knight covenant icon with living root standard, mask, chapel charm, and forest relic shapes, ritual but not generic.',
+        'An antlered witch-knight covenant icon with living root banner, mask, chapel charm, and forest relic shapes, ritual but not generic.',
       color_and_tone:
         'Pine black, bone white, candle amber, dried berry red, moss green, and cold moon gray.',
       lighting_and_shadow:

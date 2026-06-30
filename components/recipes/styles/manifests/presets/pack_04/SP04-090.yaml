@@ -13,18 +13,19 @@ tags:
   - concept-art
 visualDna:
   aesthetic: Prop-variant design sheet with progression and function-first comparison
-  form_and_line: Clean orthographic contours, aligned variant rows, leader-line annotations
-  color_palette: Material-coded neutrals with restrained accent hierarchy for tier differentiation
-  lighting_setup: Standardized neutral lighting to preserve apples-to-apples comparison
-  material_texture: Controlled finish studies (grain, brushed metal, wrap, wear, inset materials)
-  render_quality: Production-oriented iterative sheet balancing readability and specificity
-  spatial_distortion: Grid-aligned side views with detail magnification and exploded subsets
-  atmosphere: Methodical, engineering-aware, iterative craft discipline
+  subject_treatment: Clean orthographic contours, aligned variant rows, leader-line annotations
+  color_and_tone: Material-coded neutrals with restrained accent hierarchy for tier differentiation
+  lighting_and_shadow: Controlled neutral lighting to preserve apples-to-apples comparison
+  texture_and_material: Controlled finish studies (grain, brushed metal, wrap, wear, inset materials)
+  camera_and_composition: Grid-aligned side views with detail magnification and exploded subsets
+  atmosphere_and_mood: Methodical, engineering-aware, iterative craft discipline
+  rendering_and_quality: Production-oriented iterative sheet balancing readability and specificity
   key_features: Variant taxonomy, functional callouts, scale references, modular part breakdown
   creative_brief: >-
-    Apply prop-variant design logic to any input: functional shape families, material swaps, modular silhouettes,
-    construction notes as graphic marks, and option-to-option progression. If no prop exists, convert the subject into
-    useful object-design variants without requiring weapons, inventory sheets, or literal items.
+    Apply prop-variant design logic to any input: functional shape families, material swaps, modular
+    silhouettes, construction notes as graphic marks, and option-to-option progression. If no prop exists,
+    convert the subject into useful object-design variants without requiring weapons, inventory sheets, or
+    literal items.
 avoidRules:
   - one version
   - single design

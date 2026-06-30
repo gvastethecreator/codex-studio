@@ -13,15 +13,19 @@ tags:
   - natural-materials
 visualDna:
   aesthetic: Wet compacted sand
-  form_and_line: Ripples
-  color_palette: Beige
-  lighting_setup: Sunlight
-  material_texture: Grainy
-  render_quality: Wet, granular
-  spatial_distortion: Compaction marks
-  atmosphere: Relaxing, warm
+  subject_treatment: Ripples
+  color_and_tone: Beige
+  lighting_and_shadow: Sunlight
+  texture_and_material: Grainy
+  camera_and_composition: Compaction marks
+  atmosphere_and_mood: Relaxing, warm
+  rendering_and_quality: Wet, granular
   key_features: Grains
-  creative_brief: 'Apply wet compacted sand as granular surface logic: beige ripples, dense water-darkened grain, tiny crystalline sparkle, shallow compaction marks, and sunlight caught in miniature ridges. If beach, shore, footprint, or terrain exists, reinforce it; otherwise transform planes and bases into damp sand texture without requiring vacation scenery.'
+  creative_brief: >-
+    Apply wet compacted sand as granular surface logic: beige ripples, dense water-darkened grain, tiny
+    crystalline sparkle, shallow compaction marks, and sunlight caught in miniature ridges. If beach, shore,
+    footprint, or terrain exists, reinforce it; otherwise transform planes and bases into damp sand texture
+    without requiring vacation scenery.
 avoidRules:
   - desert dunes
 assets:

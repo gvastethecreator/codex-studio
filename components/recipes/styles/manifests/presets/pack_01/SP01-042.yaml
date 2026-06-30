@@ -13,15 +13,20 @@ tags:
   - lighting-techniques
 visualDna:
   aesthetic: Frozen motion
-  form_and_line: Sharp edges
-  color_palette: Cool white
-  lighting_setup: Instant flash
-  material_texture: Crisp frozen microdetail
-  render_quality: High speed photography
-  spatial_distortion: None
-  atmosphere: Energetic, frozen
+  subject_treatment: Sharp edges
+  color_and_tone: Cool white
+  lighting_and_shadow: Instant flash
+  texture_and_material: Crisp frozen microdetail
+  camera_and_composition: >-
+    Camera setup native to Strobe Light: lens choice, crop distance, depth of field, and focal hierarchy
+    support 2. Lighting Techniques without generic framing.
+  atmosphere_and_mood: Energetic, frozen
+  rendering_and_quality: High speed photography
   key_features: Motion freeze
-  creative_brief: 'Instant flash arrests motion into cool-white precision: razor edges, frozen microdetail, high-speed clarity, and kinetic energy locked mid-transition. Use strobe grammar on any subject without requiring droplets, splash, sports, or scientific demo context.'
+  creative_brief: >-
+    Instant flash arrests motion into cool-white precision: razor edges, frozen microdetail, high-speed
+    clarity, and kinetic energy locked mid-transition. Use strobe grammar on any subject without requiring
+    droplets, splash, sports, or scientific demo context.
 avoidRules:
   - blur
   - soft

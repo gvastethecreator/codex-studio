@@ -13,21 +13,23 @@ tags:
   - technical-and-specialist-imaging
 visualDna:
   aesthetic: Simple composition
-  form_and_line: Negative space
-  color_palette: Two or three tones
-  lighting_setup: Flat
-  material_texture: Smooth
-  render_quality: Fine art, graphic
-  spatial_distortion: None
-  atmosphere: Calm, empty
+  subject_treatment: Negative space
+  color_and_tone: Two or three tones
+  lighting_and_shadow: Flat
+  texture_and_material: Smooth
+  camera_and_composition: >-
+    Camera setup native to Minimalist Photo: lens choice, crop distance, depth of field, and focal hierarchy
+    support 7. Technical And Specialist Imaging without generic framing.
+  atmosphere_and_mood: Calm, empty
+  rendering_and_quality: Fine art, graphic
   key_features: Isolation
   creative_brief: >-
-    One thing, one place, one thought: the frame breathes around its subject like silence around a struck bell. An
-    economy of tones whispers where abundance would shout, the isolated form suspended in a field of stillness that
-    makes it more present by subtraction. The image does not merely illustrate emptiness but practices it, every absent
-    element an act of disciplined love for what remains. Apply this photographic look over any input: preserve lens
-    behavior, exposure logic, color response, framing discipline, and artifact pattern while avoiding a required place,
-    face, travel scene, landscape, or narrative setup.
+    One thing, one place, one thought: the frame breathes around its subject like silence around a struck
+    bell. An economy of tones whispers where abundance would shout, the isolated form suspended in a field of
+    stillness that makes it more present by subtraction. The image does not merely illustrate emptiness but
+    practices it, every absent element an act of disciplined love for what remains. Apply this photographic
+    look over any input: preserve lens behavior, exposure logic, color response, framing discipline, and
+    artifact pattern while avoiding a required place, face, travel scene, landscape, or narrative setup.
 avoidRules:
   - busy
   - detailed

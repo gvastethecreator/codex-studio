@@ -13,19 +13,18 @@ tags:
   - environment-and-worldbuilding
 visualDna:
   aesthetic: Immersive VR presence
-  form_and_line: 360 degree feel
-  color_palette: Vibrant
-  lighting_setup: Baked
-  material_texture: Optimized, real-time ready
-  render_quality: Oculus headset-ready, immersive VR presence
-  spatial_distortion: Wide FOV
-  atmosphere: Presence, digital, embodied experience
+  subject_treatment: 360 degree feel
+  color_and_tone: Vibrant
+  lighting_and_shadow: Baked
+  texture_and_material: Optimized, real-time ready
+  camera_and_composition: Wide FOV
+  atmosphere_and_mood: Presence, digital, embodied experience
+  rendering_and_quality: Oculus headset-ready, immersive VR presence
   key_features: Player scale, 180-degree depth
   creative_brief: >-
-    Render the input with VR presence: player-scale cues, stereo-depth thinking,
-    peripheral composition, parallax-ready layers and interaction-distance
-    clarity. It can feel inhabitable without requiring a full room, environment
-    or place narrative.
+    Render the input with VR presence: player-scale cues, stereo-depth thinking, peripheral composition,
+    parallax-ready layers and interaction-distance clarity. It can feel inhabitable without requiring a full
+    room, environment or place narrative.
 avoidRules:
   - 2d
   - flat

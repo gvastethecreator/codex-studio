@@ -13,18 +13,18 @@ tags:
   - textile-and-ornamental-patterns
 visualDna:
   aesthetic: Hexagonal grid
-  form_and_line: Hexagons
-  color_palette: Yellow, Amber
-  lighting_setup: Translucent wax
-  material_texture: Wax
-  render_quality: Natural, geometric
-  spatial_distortion: None
-  atmosphere: Sweet, orderly
+  subject_treatment: Hexagons
+  color_and_tone: Yellow, Amber
+  lighting_and_shadow: Translucent wax
+  texture_and_material: Wax
+  camera_and_composition: 'Compose for Honeycomb using its key spatial cues: Hexagon grid.'
+  atmosphere_and_mood: Sweet, orderly
+  rendering_and_quality: Natural, geometric
   key_features: Hexagon grid
   creative_brief: >-
-    Apply honeycomb tessellation to the input: hexagonal packing, waxy golden
-    cells, efficient modular repetition, and shallow cavity shadows should turn
-    forms into organic lattice without requiring bees or hives.
+    Apply honeycomb tessellation to the input: hexagonal packing, waxy golden cells, efficient modular
+    repetition, and shallow cavity shadows should turn forms into organic lattice without requiring bees or
+    hives.
 avoidRules:
   - square
   - circle

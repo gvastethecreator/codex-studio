@@ -13,22 +13,23 @@ tags:
   - elemental-and-fx
 visualDna:
   aesthetic: Floating spheres
-  form_and_line: Thin film
-  color_palette: Iridescent
-  lighting_setup: Reflective
-  material_texture: Liquid surface
-  render_quality: Delicate, childhood
-  spatial_distortion: Sphere
-  atmosphere: Light, fun
+  subject_treatment: Thin film
+  color_and_tone: Iridescent
+  lighting_and_shadow: Reflective
+  texture_and_material: Liquid surface
+  camera_and_composition: Sphere
+  atmosphere_and_mood: Light, fun
+  rendering_and_quality: Delicate, childhood
   key_features: Transparency
   creative_brief: >-
-    Capture the fragile cosmology of soap bubbles where iridescent films swirl across perfect spheres like miniature
-    weather systems on liquid planets, transparency layering reality behind shifting curtains of spectral color. Each
-    sphere should catch the world in convex miniature while its surface shimmers with approaching dissolution. Render
-    the poetics of the temporary, geometry that lives only to catch light before it pops. Use Soap Bubbles as portable
-    surface/render behavior over any input: map its texture, light response, edge wear, color chemistry, and tactile
-    rhythm onto the subject instead of requiring a literal material sample, macro tile, wall, landscape, source object,
-    or scene where the material naturally appears.
+    Capture the fragile cosmology of soap bubbles where iridescent films swirl across perfect spheres like
+    miniature weather systems on liquid planets, transparency layering reality behind shifting curtains of
+    spectral color. Each sphere should catch the world in convex miniature while its surface shimmers with
+    approaching dissolution. Render the poetics of the temporary, geometry that lives only to catch light
+    before it pops. Use Soap Bubbles as portable surface/render behavior over any input: map its texture,
+    light response, edge wear, color chemistry, and tactile rhythm onto the subject instead of requiring a
+    literal material sample, macro tile, wall, landscape, source object, or scene where the material naturally
+    appears.
 avoidRules:
   - plastic ball
 assets:

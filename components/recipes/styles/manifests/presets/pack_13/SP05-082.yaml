@@ -13,32 +13,30 @@ tags:
   - slice-of-life-and-moe
 visualDna:
   aesthetic: >-
-    Absurd anime timing system where calm mundane baseline snaps into surreal elastic impact, then
-    returns to deadpan clarity
-  form_and_line: >-
-    Fast-switch contour elasticity, punchline silhouettes, reaction breakpoints, and deformation
-    bursts held inside readable staging
-  color_palette: >-
-    Daily-life pastels, neutral soft bases, sudden saturation spikes, comic accent primaries, and
-    clean pale backgrounds
-  lighting_setup: Flat readable baseline with abrupt gag-apex highlight emphasis and minimal shadow complexity
-  material_texture: >-
-    Simplified everyday surfaces kept secondary to timing, with detail spikes only where the joke
-    needs focus
-  render_quality: >-
-    High-clarity comedy anime finish optimized for reaction readability, elastic escalation, and
-    immediate visual punchlines
-  spatial_distortion: >-
-    Rhythmic reality warps, perspective snaps, and scale exaggerations that land comedy without
-    losing subject legibility
-  atmosphere: Chaotic, witty, absurd, bright, hyper-alert
+    Absurd anime timing system where calm mundane baseline snaps into surreal elastic impact, then returns to
+    deadpan clarity
+  subject_treatment: >-
+    Fast-switch contour elasticity, punchline silhouettes, reaction breakpoints, and deformation bursts held
+    inside readable staging
+  color_and_tone: >-
+    Daily-life pastels, neutral soft bases, sudden saturation spikes, comic accent primaries, and clean pale
+    backgrounds
+  lighting_and_shadow: Flat readable baseline with abrupt gag-apex highlight emphasis and minimal shadow complexity
+  texture_and_material: Simplified everyday surfaces kept secondary to timing, with detail spikes only where the joke needs focus
+  camera_and_composition: >-
+    Rhythmic reality warps, perspective snaps, and scale exaggerations that land comedy without losing subject
+    legibility
+  atmosphere_and_mood: Chaotic, witty, absurd, bright, hyper-alert
+  rendering_and_quality: >-
+    High-clarity comedy anime finish optimized for reaction readability, elastic escalation, and immediate
+    visual punchlines
   key_features: >-
-    Deadpan baseline, explosive deformation, elastic reaction faces, sudden scale jumps, and
-    punchline-focused composition
+    Deadpan baseline, explosive deformation, elastic reaction faces, sudden scale jumps, and punchline-focused
+    composition
   creative_brief: >-
-    Use Nichijou as style anchor for deadpan-explosion timing. Any prompt can become a calm visual
-    setup interrupted by impossible elastic comedy, sharp reaction beats, and sudden saturation
-    spikes. School and classroom staging are optional.
+    Use Nichijou as style anchor for deadpan-explosion timing. Any prompt can become a calm visual setup
+    interrupted by impossible elastic comedy, sharp reaction beats, and sudden saturation spikes. School and
+    classroom staging are optional.
 avoidRules:
   - realistic
   - 3d render
@@ -56,8 +54,8 @@ assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-082.webp
 attributes:
   negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, text, signature
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts,
+    watermark, text, signature
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle

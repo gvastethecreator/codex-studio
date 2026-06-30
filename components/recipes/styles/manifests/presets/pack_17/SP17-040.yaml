@@ -14,15 +14,21 @@ tags:
   - monochrome-tarot-and-bestiary-plates
   - heraldic-bestiary
 visualDna:
-  aesthetic: Heraldic medieval fantasy plate with chimeras, shields without readable emblems, banners, crowns, and clean courtly geometry.
-  subject_treatment: A heraldic chimera crest with two-headed lion, eagle wing, serpent tail, or shield-guardian beast symmetry, no human subject.
+  aesthetic: >-
+    Heraldic medieval fantasy plate with chimeras, shields without readable emblems, banners, crowns, and
+    clean courtly geometry.
+  subject_treatment: >-
+    A heraldic chimera crest with two-headed lion, eagle wing, serpent tail, or shield-guardian beast
+    symmetry, no human subject.
   color_and_tone: Bone, black ink, dull gold, muted red, navy, and forest green in flat separated blocks.
   lighting_and_shadow: Flat heraldic values, simple rim separation, and no murky atmosphere.
   texture_and_material: Smooth enamel-like color, crisp ink contours, simple cloth folds, and minimal weathering.
   camera_and_composition: Symmetrical crest layout, centered beast silhouette, clean shield or banner shapes with no letters.
   atmosphere_and_mood: Noble, ominous, ceremonial, and antique.
   rendering_and_quality: Graphic heraldic illustration with bold shapes, restrained detail, and denoised color fields.
-  creative_brief: Original heraldic bestiary language for knight houses, monsters, faction icons, banners, and medieval fantasy crests.
+  creative_brief: >-
+    Original heraldic bestiary language for knight houses, monsters, faction icons, banners, and medieval
+    fantasy crests.
 avoidRules:
   - readable coats of arms
   - letters
@@ -33,6 +39,10 @@ avoidRules:
   - text
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP17-040.webp
+attributes:
+  negativePrompt: >-
+    readable coats of arms, letters, tiny repeated scales, glossy vector flatness, explicit gore, watermark,
+    text
 taxonomy:
   packId: pack_17
   packName: Medieval Fantasy & Dungeon Zine

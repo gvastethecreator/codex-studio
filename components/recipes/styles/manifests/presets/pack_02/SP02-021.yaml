@@ -13,15 +13,21 @@ tags:
   - tv-and-broadcast
 visualDna:
   aesthetic: Late-90s luxury music-video fisheye, Hype Williams fishbowl, tunnel vision, opulent gloss
-  form_and_line: None
-  color_palette: Chrome, platinum, ice white, purple velvet
-  lighting_setup: Studio tunnel, keyed spot, dramatic back silhouette
-  material_texture: Fisheye lens, curved glass, spherical distortion
-  render_quality: Glossy, expensive, music-video maximalism, diamond-studded
-  spatial_distortion: Distorted wide angle, fishbowl warp, tunnel perspective
-  atmosphere: Cool, flashy, hip-hop royalty, aspirational excess
+  subject_treatment: >-
+    Treat subjects as believable filmed or broadcast subjects under Hype Williams Fisheye Glam Video: casting,
+    wardrobe, props, motion cues, and silhouette hierarchy follow 2. TV And Broadcast cinematic and broadcast
+    grammar without locking to one plot beat.
+  color_and_tone: Chrome, platinum, ice white, purple velvet
+  lighting_and_shadow: Studio tunnel, keyed spot, dramatic back silhouette
+  texture_and_material: Fisheye lens, curved glass, spherical distortion
+  camera_and_composition: Distorted wide angle, fishbowl warp, tunnel perspective
+  atmosphere_and_mood: Cool, flashy, hip-hop royalty, aspirational excess
+  rendering_and_quality: Glossy, expensive, music-video maximalism, diamond-studded
   key_features: Fisheye warp, chrome gloss, slow-motion opulence
-  creative_brief: 'Hype Williams fisheye glam makes any subject curve into luxury spectacle: fishbowl distortion, chrome/platinum palette, dramatic back silhouette, glossy excess, tunnel perspective, and slow-motion opulence. Keep music-video swagger without requiring suits, bodies, rims, or performance.'
+  creative_brief: >-
+    Hype Williams fisheye glam makes any subject curve into luxury spectacle: fishbowl distortion,
+    chrome/platinum palette, dramatic back silhouette, glossy excess, tunnel perspective, and slow-motion
+    opulence. Keep music-video swagger without requiring suits, bodies, rims, or performance.
 avoidRules:
   - boring
   - normal

@@ -13,19 +13,23 @@ tags:
   - hard-surface-and-product-cgi
 visualDna:
   aesthetic: Parts floating apart
-  form_and_line: Assembly lines
-  color_palette: Technical, assembly-color coding
-  lighting_setup: Flat, diagram clarity
-  material_texture: Internal parts, cross-section surfaces
-  render_quality: Engineering, diagram, instructional
-  atmosphere: Technical, complex, assembly logic
+  subject_treatment: Assembly lines
+  color_and_tone: Technical, assembly-color coding
+  lighting_and_shadow: Flat, diagram clarity
+  texture_and_material: Internal parts, cross-section surfaces
+  camera_and_composition: >-
+    Lookdev camera for Exploded View: three-quarter or orthographic framing, clean silhouette read, material
+    highlights, controlled depth, and vertical card composition.
+  atmosphere_and_mood: Technical, complex, assembly logic
+  rendering_and_quality: Engineering, diagram, instructional
   key_features: Alignment, explosion direction
   creative_brief: >-
-    Split the input into exploded-view logic: invisible assembly axes, precise spacing, subsystem color coding and
-    cross-section surfaces that explain structure. If there are parts, separate them; otherwise infer component layers
-    without forcing screws, housings or a manufactured product. Apply Exploded View as a portable 3D/render style system
-    over any input: preserve its renderer logic, material behavior, geometry language, lighting grammar, and production
-    cues while avoiding a required character, vehicle, prop, environment, UI screen, product shot, or scene template.
+    Split the input into exploded-view logic: invisible assembly axes, precise spacing, subsystem color coding
+    and cross-section surfaces that explain structure. If there are parts, separate them; otherwise infer
+    component layers without forcing screws, housings or a manufactured product. Apply Exploded View as a
+    portable 3D/render style system over any input: preserve its renderer logic, material behavior, geometry
+    language, lighting grammar, and production cues while avoiding a required character, vehicle, prop,
+    environment, UI screen, product shot, or scene template.
 avoidRules:
   - assembled
   - solid

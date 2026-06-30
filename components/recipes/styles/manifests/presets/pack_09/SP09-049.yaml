@@ -13,22 +13,22 @@ tags:
   - man-made-materials
 visualDna:
   aesthetic: Hook and loop
-  form_and_line: Tiny hooks
-  color_palette: Black
-  lighting_setup: Plastic glint
-  material_texture: Scratchy
-  render_quality: Utility, fastener
-  spatial_distortion: None
-  atmosphere: Functional
+  subject_treatment: Tiny hooks
+  color_and_tone: Black
+  lighting_and_shadow: Plastic glint
+  texture_and_material: Scratchy
+  camera_and_composition: 'Compose for Velcro using its key spatial cues: Rows of hooks.'
+  atmosphere_and_mood: Functional
+  rendering_and_quality: Utility, fastener
   key_features: Rows of hooks
   creative_brief: >-
-    Compose the functional micro-landscape of hook-side Velcro where tiny plastic barbs stand in rows like a nylon
-    forest awaiting its loop partner, each hook a mushroom-cap curve waiting to catch and hold. The surface should look
-    scratchy even to the eye, catching plastic glints across the regimented geometry. Capture the beauty of the
-    fastener, engineered grip designed at millimeter scale. Use Velcro as portable surface/render behavior over any
-    input: map its texture, light response, edge wear, color chemistry, and tactile rhythm onto the subject instead of
-    requiring a literal material sample, macro tile, wall, landscape, source object, or scene where the material
-    naturally appears.
+    Compose the functional micro-landscape of hook-side Velcro where tiny plastic barbs stand in rows like a
+    nylon forest awaiting its loop partner, each hook a mushroom-cap curve waiting to catch and hold. The
+    surface should look scratchy even to the eye, catching plastic glints across the regimented geometry.
+    Capture the beauty of the fastener, engineered grip designed at millimeter scale. Use Velcro as portable
+    surface/render behavior over any input: map its texture, light response, edge wear, color chemistry, and
+    tactile rhythm onto the subject instead of requiring a literal material sample, macro tile, wall,
+    landscape, source object, or scene where the material naturally appears.
 avoidRules:
   - smooth
 assets:

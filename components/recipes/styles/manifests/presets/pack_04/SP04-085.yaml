@@ -13,18 +13,18 @@ tags:
   - concept-art
 visualDna:
   aesthetic: Color-script environmental painting driven by temporal light progression
-  form_and_line: Soft mass blocking with low line dependency and edge hierarchy by depth
-  color_palette: Sequenced temperature arcs from cool dawn to warm noon to nocturnal desaturation
-  lighting_setup: Volumetric scattering, shadow temperature contrast, time-of-day key shifts
-  material_texture: Haze layers, particulate glow, diffuse cloud/fog transitions
-  render_quality: Atmospheric study pass prioritizing mood continuity over detail finish
-  spatial_distortion: Space defined through color recession and layered atmospheric perspective
-  atmosphere: Cinematic, emotive, transitional, light-led storytelling
+  subject_treatment: Soft mass blocking with low line dependency and edge hierarchy by depth
+  color_and_tone: Sequenced temperature arcs from cool dawn to warm noon to nocturnal desaturation
+  lighting_and_shadow: Volumetric scattering, shadow temperature contrast, time-of-day key shifts
+  texture_and_material: Haze layers, particulate glow, diffuse cloud/fog transitions
+  camera_and_composition: Space defined through color recession and layered atmospheric perspective
+  atmosphere_and_mood: Cinematic, emotive, transitional, light-led storytelling
+  rendering_and_quality: Atmospheric study pass prioritizing mood continuity over detail finish
   key_features: Multi-frame mood continuity, temperature mapping, depth via fog stratification
   creative_brief: >-
-    Apply mood color-script treatment to any input: sequential lighting moods, palette blocks, value keys, atmospheric
-    transitions, and cinematic color continuity. If there is no environment, turn the prompt into a color-script
-    abstraction without requiring location panels, story beats, or a film scene.
+    Apply mood color-script treatment to any input: sequential lighting moods, palette blocks, value keys,
+    atmospheric transitions, and cinematic color continuity. If there is no environment, turn the prompt into
+    a color-script abstraction without requiring location panels, story beats, or a film scene.
 avoidRules:
   - detailed linework
   - finished rendering
@@ -35,7 +35,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP04-085.webp
 attributes:
-  negativePrompt: detailed linework, finished rendering, sharp focus, character close-up, subject-dominant, tight composition
+  negativePrompt: >-
+    detailed linework, finished rendering, sharp focus, character close-up, subject-dominant, tight
+    composition
 taxonomy:
   packId: pack_04
   packName: Illustration & Graphic Novel

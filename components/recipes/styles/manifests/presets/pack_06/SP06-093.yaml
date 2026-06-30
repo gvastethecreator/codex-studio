@@ -12,16 +12,36 @@ tags:
   - essential-art-styles
   - retro-game-visual-systems
 visualDna:
-  aesthetic: MSX2-Japanese-8-bit-computer-art, bright-vibrant-pixel-palette unique to Japanese-home-computers, Metal Gear, Ys and Konami MSX as visual anchors only, compact Japanese pixel style, SCREEN-mode graphics layering, disk-BASIC and cassette loading texture
-  form_and_line: Compact-pixel design, 256x212-screen-resolution, 8x8 character-cell influence, sprite-pattern-table limits, layered screen planes
-  color_palette: MSX2-bright-palette, vivid-saturated-japanese-8-bit, emerald-greens, cherry-reds, sky-blues, golden-yellows, pastel-pinks unique to platform, 256-colors-from-palette
-  lighting_setup: Flat-sprite-lighting, bright-color-fields, no-shading-on-simple-sprites, SCREEN-layer-transparency-overlay
-  material_texture: MSX-pixel-grid, Japanese character-cell texture without readable text, disk-BASIC-interface framing, cassette-data-screech sonic texture, YM2413-FM-synth-chip sound as visual equivalent
-  render_quality: MSX2-Japanese-computer pixel aesthetic, Konami-8-bit-beauty, bright-home-computer art, 1985-Japan-tech nostalgia
-  spatial_distortion: 256x212-Japanese-resolution, SCREEN-mode-layering, vertical-scanline-rendering, character-cell overlay texture, pixel-aspect-specific-to-MSX
-  atmosphere: 80s-Japan-tech wonder, cassette-tape-patience, early-stealth mood, Akihabara-electronics soul, bright home-computer optimism
-  key_features: MSX2-vibrant-palette, compact-pixel-resolution, SCREEN-mode-layering, Japanese character-cell support, Konami-era charm, Japanese-8-bit-brightness, 256x212 proportions
-  creative_brief: Any input is compressed into compact Japanese home-computer pixels, bright emeralds, reds, blues and layered SCREEN modes. Character-cell texture and FM-synth energy add platform identity without forcing a game scene.
+  aesthetic: >-
+    MSX2-Japanese-8-bit-computer-art, bright-vibrant-pixel-palette unique to Japanese-home-computers, Metal
+    Gear, Ys and Konami MSX as visual anchors only, compact Japanese pixel style, SCREEN-mode graphics
+    layering, disk-BASIC and cassette loading texture
+  subject_treatment: >-
+    Compact-pixel design, 256x212-screen-resolution, 8x8 character-cell influence, sprite-pattern-table
+    limits, layered screen planes
+  color_and_tone: >-
+    MSX2-bright-palette, vivid-saturated-japanese-8-bit, emerald-greens, cherry-reds, sky-blues,
+    golden-yellows, pastel-pinks unique to platform, 256-colors-from-palette
+  lighting_and_shadow: Flat-sprite-lighting, bright-color-fields, no-shading-on-simple-sprites, SCREEN-layer-transparency-overlay
+  texture_and_material: >-
+    MSX-pixel-grid, Japanese character-cell texture without readable text, disk-BASIC-interface framing,
+    cassette-data-screech sonic texture, YM2413-FM-synth-chip sound as visual equivalent
+  camera_and_composition: >-
+    256x212-Japanese-resolution, SCREEN-mode-layering, vertical-scanline-rendering, character-cell overlay
+    texture, pixel-aspect-specific-to-MSX
+  atmosphere_and_mood: >-
+    80s-Japan-tech wonder, cassette-tape-patience, early-stealth mood, Akihabara-electronics soul, bright
+    home-computer optimism
+  rendering_and_quality: >-
+    MSX2-Japanese-computer pixel aesthetic, Konami-8-bit-beauty, bright-home-computer art, 1985-Japan-tech
+    nostalgia
+  key_features: >-
+    MSX2-vibrant-palette, compact-pixel-resolution, SCREEN-mode-layering, Japanese character-cell support,
+    Konami-era charm, Japanese-8-bit-brightness, 256x212 proportions
+  creative_brief: >-
+    Any input is compressed into compact Japanese home-computer pixels, bright emeralds, reds, blues and
+    layered SCREEN modes. Character-cell texture and FM-synth energy add platform identity without forcing a
+    game scene.
 avoidRules:
   - western
   - modern

@@ -13,15 +13,20 @@ tags:
   - lighting-techniques
 visualDna:
   aesthetic: Neon noir lighting
-  form_and_line: Rim lights
-  color_palette: Pink and Teal
-  lighting_setup: Colored practical lights
-  material_texture: Wet reflective sheen
-  render_quality: Cinematic, stylized
-  spatial_distortion: None
-  atmosphere: Cool, futuristic
+  subject_treatment: Rim lights
+  color_and_tone: Pink and Teal
+  lighting_and_shadow: Colored practical lights
+  texture_and_material: Wet reflective sheen
+  camera_and_composition: >-
+    Camera setup native to Neon Noir: lens choice, crop distance, depth of field, and focal hierarchy support
+    2. Lighting Techniques without generic framing.
+  atmosphere_and_mood: Cool, futuristic
+  rendering_and_quality: Cinematic, stylized
   key_features: Dual color light
-  creative_brief: Pink and cyan practical lights cut across darkness, turning any reflective surface into noir electricity. Wet sheen, rim highlights, and saturated color separation create a cinematic future-night mood without requiring streets, city, chrome props, or rain-slick pavement.
+  creative_brief: >-
+    Pink and cyan practical lights cut across darkness, turning any reflective surface into noir electricity.
+    Wet sheen, rim highlights, and saturated color separation create a cinematic future-night mood without
+    requiring streets, city, chrome props, or rain-slick pavement.
 avoidRules:
   - daylight
   - sun

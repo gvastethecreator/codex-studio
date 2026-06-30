@@ -13,27 +13,26 @@ tags:
   - civic-infrastructure-and-specialty-spaces
 visualDna:
   aesthetic: Critical data infrastructure focused on operational continuity and machine-first logic.
-  form_and_line: Modular series, thermal-containment lanes, orthogonal trays and functional perforated-panel repetition.
-  color_palette: Black, Blue LED, Blinking Amber, Cool White fluorescent, Signal Green status, Grey metal
-  lighting_setup: >-
-    Continuous cold artificial light, rack-like glow, service strips and status
-    LED constellations with visible thermal containment.
-  material_texture: >-
-    Powder-coated steel, braided fiber, perforated mesh, rubberized technical
-    surfaces and intake-dust residue.
-  render_quality: >-
-    Facility-grade realism with high information density and system readability
-    under technical lighting.
-  spatial_distortion: >-
-    Modular redundancy, thermal-lane compression and machine-grid repetition
-    without forcing racks, aisles or a data-center corridor.
-  atmosphere: Controlled urgency, infrastructural surveillance and minimal human occupation.
-  key_features: Status LED clusters, thermal containment cues, cable-routing logic, patch-field rhythm and redundant repetition.
+  subject_treatment: Modular series, thermal-containment lanes, orthogonal trays and functional perforated-panel repetition.
+  color_and_tone: Black, Blue LED, Blinking Amber, Cool White fluorescent, Signal Green status, Grey metal
+  lighting_and_shadow: >-
+    Continuous cold artificial light, rack-like glow, service strips and status LED constellations with
+    visible thermal containment.
+  texture_and_material: >-
+    Powder-coated steel, braided fiber, perforated mesh, rubberized technical surfaces and intake-dust
+    residue.
+  camera_and_composition: >-
+    Modular redundancy, thermal-lane compression and machine-grid repetition without forcing racks, aisles or
+    a data-center corridor.
+  atmosphere_and_mood: Controlled urgency, infrastructural surveillance and minimal human occupation.
+  rendering_and_quality: Facility-grade realism with high information density and system readability under technical lighting.
+  key_features: >-
+    Status LED clusters, thermal containment cues, cable-routing logic, patch-field rhythm and redundant
+    repetition.
   creative_brief: >-
-    Turn any input into critical infrastructure: modular redundancy, thermal
-    containment, status-light logic and machine-first surfaces. It should feel
-    like guarded operational continuity, not generic science fiction or a fixed
-    server room scene.
+    Turn any input into critical infrastructure: modular redundancy, thermal containment, status-light logic
+    and machine-first surfaces. It should feel like guarded operational continuity, not generic science
+    fiction or a fixed server room scene.
 avoidRules:
   - messy
   - organic clutter

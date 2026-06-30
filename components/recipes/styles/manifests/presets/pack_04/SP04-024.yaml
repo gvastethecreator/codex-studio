@@ -13,18 +13,18 @@ tags:
   - childrens-illustration
 visualDna:
   aesthetic: Plasticine stop-motion aesthetic (Aardman-inspired tactile charm)
-  form_and_line: Sculpted volume with minimal drawn contour reliance
-  color_palette: Matte clay chroma set with earthy and playful saturation balance
-  lighting_setup: Controlled studio key-fill to maintain frame-consistent form read
-  material_texture: Fingerprint impressions, sculpt-tool seams, soft clay compression
-  render_quality: Hand-built stop-motion look with physical model believability
-  spatial_distortion: Chunky silhouettes and compressed proportion stylization
-  atmosphere: Whimsical, handcrafted, comedic warmth
+  subject_treatment: Sculpted volume with minimal drawn contour reliance
+  color_and_tone: Matte clay chroma set with earthy and playful saturation balance
+  lighting_and_shadow: Controlled studio key-fill to maintain frame-consistent form read
+  texture_and_material: Fingerprint impressions, sculpt-tool seams, soft clay compression
+  camera_and_composition: Chunky silhouettes and compressed proportion stylization
+  atmosphere_and_mood: Whimsical, handcrafted, comedic warmth
+  rendering_and_quality: Hand-built stop-motion look with physical model believability
   key_features: Tactile surface dents, clay seam lines, armature-informed posing hints
   creative_brief: >-
-    Apply plasticine stop-motion tactility to any input: fingerprints, seam traces, chunky
-    silhouettes, matte clay chroma, and armature-informed posing should preserve physical model
-    charm without requiring comedy characters, sets, props, studios, or hard-coded pose beats.
+    Apply plasticine stop-motion tactility to any input: fingerprints, seam traces, chunky silhouettes, matte
+    clay chroma, and armature-informed posing should preserve physical model charm without requiring comedy
+    characters, sets, props, studios, or hard-coded pose beats.
 avoidRules:
   - 2d
   - drawn

@@ -12,20 +12,33 @@ tags:
   - anime-character-and-lifestyle
   - shojo-magical-girl-and-visionary-classics
 visualDna:
-  aesthetic: Velvet gothic shojo romance built from nocturnal longing, lace-like delicacy, moonlit secrecy, forbidden elegance, and melancholy ornament
-  form_and_line: Delicate romance linework, fine hair-thin strokes, graceful flowing contours, soft eyelash detail, and gothic vertical accenting
-  color_palette: Deep velvet blacks, moonlit silvers, wine-red accents, pearl skin glow, faded rose tones, and muted violet shadows
-  lighting_setup: Soft bloom, moon-rim light, candle-warm accent points, diffuse romantic glow, and luminous halation inside dark value fields
-  material_texture: Velvet softness, lace textures, silk sheen, mahogany-like polish, petal softness, and chiffon translucency
-  render_quality: Luminous gothic-romance frame with ethereal bloom, soft-focus beauty, dark-value control, and dreamy chromatic softness
-  spatial_distortion: Graceful elongated proportions, corridor-like depth compression as optional mood, fashion elegance, and romantic silhouette styling
-  atmosphere: Gothic, yearning, mysterious, melancholic
-  key_features: Nocturnal longing, velvet-lace materiality, moon-silver contrast, gothic romantic restraint, expressive eye detail
+  aesthetic: >-
+    Velvet gothic shojo romance built from nocturnal longing, lace-like delicacy, moonlit secrecy, forbidden
+    elegance, and melancholy ornament
+  subject_treatment: >-
+    Delicate romance linework, fine hair-thin strokes, graceful flowing contours, soft eyelash detail, and
+    gothic vertical accenting
+  color_and_tone: >-
+    Deep velvet blacks, moonlit silvers, wine-red accents, pearl skin glow, faded rose tones, and muted violet
+    shadows
+  lighting_and_shadow: >-
+    Soft bloom, moon-rim light, candle-warm accent points, diffuse romantic glow, and luminous halation inside
+    dark value fields
+  texture_and_material: Velvet softness, lace textures, silk sheen, mahogany-like polish, petal softness, and chiffon translucency
+  camera_and_composition: >-
+    Graceful elongated proportions, corridor-like depth compression as optional mood, fashion elegance, and
+    romantic silhouette styling
+  atmosphere_and_mood: Gothic, yearning, mysterious, melancholic
+  rendering_and_quality: >-
+    Luminous gothic-romance frame with ethereal bloom, soft-focus beauty, dark-value control, and dreamy
+    chromatic softness
+  key_features: >-
+    Nocturnal longing, velvet-lace materiality, moon-silver contrast, gothic romantic restraint, expressive
+    eye detail
   creative_brief: >-
-    Use the gothic academy title as a style anchor for nocturnal shojo longing:
-    velvet darkness, lace delicacy, and forbidden romantic pressure should
-    transfer without requiring school, corridors, lake, furniture, gardens, or
-    libraries.
+    Use the gothic academy title as a style anchor for nocturnal shojo longing: velvet darkness, lace
+    delicacy, and forbidden romantic pressure should transfer without requiring school, corridors, lake,
+    furniture, gardens, or libraries.
 avoidRules:
   - realistic
   - 3d render
@@ -42,7 +55,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-049.webp
 attributes:
-  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
+  negativePrompt: >-
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts,
+    watermark, text, signature
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle

@@ -13,23 +13,23 @@ tags:
   - tv-and-broadcast
 visualDna:
   aesthetic: >-
-    Doppler weather broadcast graphic, storm-cell color fields, radar sweep, meteorological overlay abstraction,
-    emergency color mapping
-  form_and_line: Contour bands, radar arcs, gridded map-like fields, translucent overlay blocks, no readable labels
-  color_palette: Radar green, storm yellow, alert red, violet core, map grey, broadcast blue
-  lighting_setup: Self-lit screen glow, studio monitor luminance, emissive overlay hierarchy
-  material_texture: Pixelated radar noise, compression blocks, translucent graphic layers, scanline shimmer
-  render_quality: Informational, synthetic, urgent, screen-native weather visual
-  spatial_distortion: Top-down map flattening, radar sweep curvature, overlay layer stacking
-  atmosphere: Alert, analytical, atmospheric, system-driven
+    Doppler weather broadcast graphic, storm-cell color fields, radar sweep, meteorological overlay
+    abstraction, emergency color mapping
+  subject_treatment: Contour bands, radar arcs, gridded map-like fields, translucent overlay blocks, no readable labels
+  color_and_tone: Radar green, storm yellow, alert red, violet core, map grey, broadcast blue
+  lighting_and_shadow: Self-lit screen glow, studio monitor luminance, emissive overlay hierarchy
+  texture_and_material: Pixelated radar noise, compression blocks, translucent graphic layers, scanline shimmer
+  camera_and_composition: Top-down map flattening, radar sweep curvature, overlay layer stacking
+  atmosphere_and_mood: Alert, analytical, atmospheric, system-driven
+  rendering_and_quality: Informational, synthetic, urgent, screen-native weather visual
   key_features: Radar sweep, storm-cell blobs, contour bands, broadcast grid, no readable labels
   creative_brief: >-
-    Map the input through weather-radar broadcast design: storm-color blobs, contour bands, radar arcs, gridded
-    overlays, screen glow, and compression artifacts. Avoid literal maps, meteorologists, cities, labels, or readable
-    warnings as requirements. The result should feel like form translated into Doppler data. Apply Weather Radar Doppler
-    Graphic as a portable cinematic/camera style over any input: preserve its lens behavior, color process, lighting
-    setup, artifact pattern, and deformation grammar while avoiding a required actor, room, prop, brand, readable text,
-    fixed IP scene, or narrative setup.
+    Map the input through weather-radar broadcast design: storm-color blobs, contour bands, radar arcs,
+    gridded overlays, screen glow, and compression artifacts. Avoid literal maps, meteorologists, cities,
+    labels, or readable warnings as requirements. The result should feel like form translated into Doppler
+    data. Apply Weather Radar Doppler Graphic as a portable cinematic/camera style over any input: preserve
+    its lens behavior, color process, lighting setup, artifact pattern, and deformation grammar while avoiding
+    a required actor, room, prop, brand, readable text, fixed IP scene, or narrative setup.
 avoidRules:
   - photoreal weather
   - natural color

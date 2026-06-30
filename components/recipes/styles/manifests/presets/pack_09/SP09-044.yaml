@@ -13,21 +13,22 @@ tags:
   - natural-materials
 visualDna:
   aesthetic: Natural bath sponge
-  form_and_line: Holes
-  color_palette: Tan, Yellow
-  lighting_setup: Soft
-  material_texture: Porous, dry
-  render_quality: Natural, bath
-  spatial_distortion: Irregular holes
-  atmosphere: Clean, natural
+  subject_treatment: Holes
+  color_and_tone: Tan, Yellow
+  lighting_and_shadow: Soft
+  texture_and_material: Porous, dry
+  camera_and_composition: Irregular holes
+  atmosphere_and_mood: Clean, natural
+  rendering_and_quality: Natural, bath
   key_features: Pores
   creative_brief: >-
-    Capture the organic porosity of sea sponge where irregular holes and channels create a labyrinth of negative space
-    in warm tan and yellow, each cavity a breathing chamber in a natural architecture of filtration. The surface should
-    feel dry but ready to absorb, soft organic matter that once lived now preserved as texture. Render the beauty of the
-    useful grown rather than made. Use Sponge as portable surface/render behavior over any input: map its texture, light
-    response, edge wear, color chemistry, and tactile rhythm onto the subject instead of requiring a literal material
-    sample, macro tile, wall, landscape, source object, or scene where the material naturally appears.
+    Capture the organic porosity of sea sponge where irregular holes and channels create a labyrinth of
+    negative space in warm tan and yellow, each cavity a breathing chamber in a natural architecture of
+    filtration. The surface should feel dry but ready to absorb, soft organic matter that once lived now
+    preserved as texture. Render the beauty of the useful grown rather than made. Use Sponge as portable
+    surface/render behavior over any input: map its texture, light response, edge wear, color chemistry, and
+    tactile rhythm onto the subject instead of requiring a literal material sample, macro tile, wall,
+    landscape, source object, or scene where the material naturally appears.
 avoidRules:
   - kitchen sponge
   - square

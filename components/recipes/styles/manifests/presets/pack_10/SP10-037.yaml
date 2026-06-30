@@ -13,18 +13,18 @@ tags:
   - surrealism-and-dream
 visualDna:
   aesthetic: Impossible geometry
-  form_and_line: Woodcut lines
-  color_palette: Black and White
-  lighting_setup: Flat
-  material_texture: Hatching
-  render_quality: Mathematical, puzzle
-  spatial_distortion: Infinite loop
-  atmosphere: Intellectual, confusing
+  subject_treatment: Woodcut lines
+  color_and_tone: Black and White
+  lighting_and_shadow: Flat
+  texture_and_material: Hatching
+  camera_and_composition: Infinite loop
+  atmosphere_and_mood: Intellectual, confusing
+  rendering_and_quality: Mathematical, puzzle
   key_features: Tessellation
   creative_brief: >-
-    Apply Escher-like impossible logic to the input: recursive geometry,
-    reversible figure-ground, paradoxical depth, and locally plausible edges
-    should make any subject structurally impossible without requiring stairs.
+    Apply Escher-like impossible logic to the input: recursive geometry, reversible figure-ground, paradoxical
+    depth, and locally plausible edges should make any subject structurally impossible without requiring
+    stairs.
 avoidRules:
   - color
   - normal physics

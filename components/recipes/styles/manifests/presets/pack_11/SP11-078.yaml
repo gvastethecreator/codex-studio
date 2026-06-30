@@ -13,24 +13,24 @@ tags:
   - micro-macro
 visualDna:
   aesthetic: Wine cork zoom, bottle-stopper, bark-product, Quercus-suber, compressed-tradition
-  form_and_line: Wood cells, prismatic-cell contours, lenticel-pores, radial-section, tangential-section
-  color_palette: Tan, Brown, cork-bark spectrum, wine-stain magenta, burnt-brand, aged-patina amber, suberin-wax cream
-  lighting_setup: Matte, shadow-in-pores, low-angle-texture, soft-diffuse, natural-daylight
-  material_texture: >-
-    Compressed wood, suberin-cellular, lenticel-tube, elastic-recovery, pressed-granule, stopper-cylinder, bottle-neck
-    impression
-  render_quality: Natural, dry, bottle-closure, wine-cellar macro, bark-harvest craft, sustainable-texture
-  spatial_distortion: Holes, lenticel-cylinder, cell-honeycomb, stopper-cylinder curve, extraction-helix
-  atmosphere: Rustic, dry, wine-bottle quiet, cork-pop anticipation, cellar-coolness, natural-craft
+  subject_treatment: Wood cells, prismatic-cell contours, lenticel-pores, radial-section, tangential-section
+  color_and_tone: Tan, Brown, cork-bark spectrum, wine-stain magenta, burnt-brand, aged-patina amber, suberin-wax cream
+  lighting_and_shadow: Matte, shadow-in-pores, low-angle-texture, soft-diffuse, natural-daylight
+  texture_and_material: >-
+    Compressed wood, suberin-cellular, lenticel-tube, elastic-recovery, pressed-granule, stopper-cylinder,
+    bottle-neck impression
+  camera_and_composition: Holes, lenticel-cylinder, cell-honeycomb, stopper-cylinder curve, extraction-helix
+  atmosphere_and_mood: Rustic, dry, wine-bottle quiet, cork-pop anticipation, cellar-coolness, natural-craft
+  rendering_and_quality: Natural, dry, bottle-closure, wine-cellar macro, bark-harvest craft, sustainable-texture
   key_features: >-
-    Texture, lenticel-pores, cellular-structure, wine-stain, bottle-neck imprint, cork-brand, extraction-spiral,
-    suberin-wax sheen
+    Texture, lenticel-pores, cellular-structure, wine-stain, bottle-neck imprint, cork-brand,
+    extraction-spiral, suberin-wax sheen
   creative_brief: >-
-    Highlight cork as breathable bark-engineered material with lenticel channels, elastic cellular compression, and
-    matte natural grain. Preserve wine-closure heritage cues while keeping applications broader than a single bottle
-    moment. Apply Cork as a portable style system over any input: preserve its construction grammar, material cues,
-    scale logic, and signature rendering behavior while avoiding a required franchise, literal prop, fixed specimen,
-    classroom sample, product shot, or scene template.
+    Highlight cork as breathable bark-engineered material with lenticel channels, elastic cellular
+    compression, and matte natural grain. Preserve wine-closure heritage cues while keeping applications
+    broader than a single bottle moment. Apply Cork as a portable style system over any input: preserve its
+    construction grammar, material cues, scale logic, and signature rendering behavior while avoiding a
+    required franchise, literal prop, fixed specimen, classroom sample, product shot, or scene template.
 avoidRules:
   - smooth
 assets:

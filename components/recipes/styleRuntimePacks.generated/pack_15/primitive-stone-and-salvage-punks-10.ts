@@ -12,17 +12,17 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'stonepunk sacred mechanics built around a standout basalt gearwright, carved gears, rope pulleys, and torchlit mechanical shadows.',
-      form_and_line:
+      subject_treatment:
         'Stone tools, rope mechanics, carved engines, low-tech power rigs, salvage sails, and rough handmade engineering. Core composition uses carved gears, rope pulleys, stone engineers, basalt arches, torch shadows.',
-      color_palette: 'basalt black, ash gray, torch orange, bone chalk',
-      lighting_setup:
+      color_and_tone: 'basalt black, ash gray, torch orange, bone chalk',
+      lighting_and_shadow:
         'torch-orange glow blocks, stone shadow cuts, ember glow, cave-mouth daylight',
-      material_texture: 'basalt, rope, carved stone planes, ash, blank chalk strokes',
-      render_quality:
-        'Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity, moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material simulation, or hyper-detail.',
-      spatial_distortion:
+      texture_and_material: 'basalt, rope, carved stone planes, ash, blank chalk strokes',
+      camera_and_composition:
         'Sanctuaries, markets, camps, bridges, battery houses, and shore commons built from elemental materials. Keep depth legible and avoid default hallway, aisle, or empty studio staging.',
-      atmosphere: 'ancient, heavy, engineered, solemn',
+      atmosphere_and_mood: 'ancient, heavy, engineered, solemn',
+      rendering_and_quality:
+        'Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity, moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material simulation, or hyper-detail.',
       key_features: 'basalt gearwright, carved gears, rope pulleys, basalt arches, torch shadows',
       creative_brief:
         'Stonepunk as sacred mechanics: one standout basalt gearwright as the main character with broad stone apron silhouette and empty hands silhouetted before a rope-pulley arc, plus simplified carved basalt gear machine, chunky basalt blocks, torch-orange glow shapes, and blank chalk strokes behind them, not fantasy dungeon corridor or heraldic workshop. Secondary engineers may be tiny background silhouettes only. Keep the result representative rather than over-abstract; use non-photographic stylized illustration, editorial digital painting, ligne-claire adventure comic clarity, gouache-cel shapes, drawn contours, broad painted planes, and controlled color design over realism or generic concept art. Avoid workers-only composition. Use few bold color/value zones, large matte shapes, clean surfaces, low-to-moderate detail, and finish denoised with no excessive noise or ultra-fine detail.',
@@ -37,17 +37,17 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'stonepunk trade mechanics built around a standout flint engine trader-inventor, compact engine stall, carved wheels, smoke, and leather tool rolls.',
-      form_and_line:
+      subject_treatment:
         'Stone tools, rope mechanics, carved engines, low-tech power rigs, salvage sails, and rough handmade engineering. Core composition uses flint engines, traders, leather tool rolls, smoke, carved wheels.',
-      color_palette: 'flint gray, smoke black, ochre, hide brown',
-      lighting_setup: 'firelight blocks, smoky daylight, polished flint highlights',
-      material_texture:
+      color_and_tone: 'flint gray, smoke black, ochre, hide brown',
+      lighting_and_shadow: 'firelight blocks, smoky daylight, polished flint highlights',
+      texture_and_material:
         'flint planes, hide-brown material blocks, clay pot shapes, wood wheels, blank pins',
-      render_quality:
-        'Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity, moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material simulation, or hyper-detail.',
-      spatial_distortion:
+      camera_and_composition:
         'Sanctuaries, markets, camps, bridges, battery houses, and shore commons built from elemental materials. Keep depth legible and avoid default hallway, aisle, or empty studio staging.',
-      atmosphere: 'busy, primal, inventive, tactile',
+      atmosphere_and_mood: 'busy, primal, inventive, tactile',
+      rendering_and_quality:
+        'Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity, moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material simulation, or hyper-detail.',
       key_features:
         'flint engine trader-inventor, engine stall, leather tool rolls, smoke, carved wheels',
       creative_brief:
@@ -63,16 +63,16 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'stone-age precision identity led by one obsidian water-clock timekeeper, with ceremonial water timing translated into bold graphic channels, reflective bowls, and firelit stone geometry.',
-      form_and_line:
+      subject_treatment:
         'Stone tools, rope mechanics, carved engines, low-tech power rigs, salvage sails, and rough handmade engineering. Core composition uses one main timekeeper, obsidian channels, drip bowls, carved stone slabs, reflected fire.',
-      color_palette: 'obsidian gray-black, water blue, chalk white, fire amber',
-      lighting_setup: 'water reflections, low firelight, glossy obsidian glints',
-      material_texture: 'obsidian, water, carved stone, clay bowls, woven cloth',
-      render_quality:
-        'Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity, moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material simulation, or hyper-detail.',
-      spatial_distortion:
+      color_and_tone: 'obsidian gray-black, water blue, chalk white, fire amber',
+      lighting_and_shadow: 'water reflections, low firelight, glossy obsidian glints',
+      texture_and_material: 'obsidian, water, carved stone, clay bowls, woven cloth',
+      camera_and_composition:
         'Sanctuaries, markets, camps, bridges, battery houses, and shore commons built from elemental materials. Keep depth legible and avoid default hallway, aisle, or empty studio staging.',
-      atmosphere: 'precise, ritual, reflective, ancient',
+      atmosphere_and_mood: 'precise, ritual, reflective, ancient',
+      rendering_and_quality:
+        'Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity, moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material simulation, or hyper-detail.',
       key_features:
         'main timekeeper, obsidian channels, drip bowls, carved stone slabs, reflected fire',
       creative_brief:
@@ -88,16 +88,16 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'bonepunk low-tech signal identity led by one weathered signal-mast herald, using bone-like spars, hide sails, drum-coded rhythm, and storm-field communication as graphic motifs.',
-      form_and_line:
+      subject_treatment:
         'Stone tools, rope mechanics, carved engines, low-tech power rigs, salvage sails, and rough handmade engineering. Core composition uses one main herald, signal mast, hide sails, drum codes, rope lashings.',
-      color_palette: 'bone white, rawhide tan, storm blue, charcoal',
-      lighting_setup: 'storm-edge light, mast rimlight, small fire signals, hide translucency',
-      material_texture: 'bone-like spars, rawhide, charcoal, stone weights, rope lashings',
-      render_quality:
-        'Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity, moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material simulation, or hyper-detail.',
-      spatial_distortion:
+      color_and_tone: 'bone white, rawhide tan, storm blue, charcoal',
+      lighting_and_shadow: 'storm-edge light, mast rimlight, small fire signals, hide translucency',
+      texture_and_material: 'bone-like spars, rawhide, charcoal, stone weights, rope lashings',
+      camera_and_composition:
         'Sanctuaries, markets, camps, bridges, battery houses, and shore commons built from elemental materials. Keep depth legible and avoid default hallway, aisle, or empty studio staging.',
-      atmosphere: 'stark, mobile, communicative, tribal',
+      atmosphere_and_mood: 'stark, mobile, communicative, tribal',
+      rendering_and_quality:
+        'Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity, moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material simulation, or hyper-detail.',
       key_features: 'main signal herald, signal mast, hide sails, drum codes, rope lashings',
       creative_brief:
         'Bonepunk without gore and without fantasy RPG hero styling: let the signal mast, hide sails, drum rhythm, and one integrated herald form a field-communication poster plate. Vary crop and composition; avoid centered full-body adventurer poses, skull shrine, tribal stereotype, battlefield banner, or workers-only staging. Favor folk-modernist poster structure, controlled digital painting, clean matte shapes, and handmade material poetry over American RPG/sourcebook illustration, cinematic key art, or hyper-detailed concept art. Use few bold color/value zones, moderate texture, large shapes, clean surfaces, and finish denoised with no excessive noise or ultra-fine detail.',
@@ -112,16 +112,16 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'low-tech kinetic power led by one rope-bridge runner-engineer, where walking motion, bridge tension, wooden generators, pulleys, and lantern lines become readable graphic mechanics.',
-      form_and_line:
+      subject_treatment:
         'Stone tools, rope mechanics, carved engines, low-tech power rigs, salvage sails, and rough handmade engineering. Core composition uses one main runner-engineer, rope bridge, wooden generators, pulley systems, lantern lines.',
-      color_palette: 'rope tan, forest green, lantern amber, dark wood',
-      lighting_setup: 'lantern strings, forest shafts, pulley highlights, mist glow',
-      material_texture: 'rope, wood, leather sandals, pulley stones, woven baskets',
-      render_quality:
-        'Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity, moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material simulation, or hyper-detail.',
-      spatial_distortion:
+      color_and_tone: 'rope tan, forest green, lantern amber, dark wood',
+      lighting_and_shadow: 'lantern strings, forest shafts, pulley highlights, mist glow',
+      texture_and_material: 'rope, wood, leather sandals, pulley stones, woven baskets',
+      camera_and_composition:
         'Sanctuaries, markets, camps, bridges, battery houses, and shore commons built from elemental materials. Keep depth legible and avoid default hallway, aisle, or empty studio staging.',
-      atmosphere: 'clever, precarious, communal, kinetic',
+      atmosphere_and_mood: 'clever, precarious, communal, kinetic',
+      rendering_and_quality:
+        'Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity, moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material simulation, or hyper-detail.',
       key_features:
         'main runner-engineer, rope bridge, wooden generators, pulley systems, lantern lines',
       creative_brief:
@@ -137,16 +137,16 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'earth-tech energy storage led by one mud-brick battery keeper, with ceramic cells, copper jars, shade-cooled courtyards, and clay geometry becoming the style grammar.',
-      form_and_line:
+      subject_treatment:
         'Stone tools, rope mechanics, carved engines, low-tech power rigs, salvage sails, and rough handmade engineering. Core composition uses one main battery keeper, ceramic batteries, mud-brick walls, copper jars, shade courtyard.',
-      color_palette: 'clay red, copper green, shade blue, cream',
-      lighting_setup: 'courtyard shade, copper cell glow, warm doorway light',
-      material_texture: 'mud brick, ceramic cells, copper jars, woven mats, clay dust',
-      render_quality:
-        'Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity, moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material simulation, or hyper-detail.',
-      spatial_distortion:
+      color_and_tone: 'clay red, copper green, shade blue, cream',
+      lighting_and_shadow: 'courtyard shade, copper cell glow, warm doorway light',
+      texture_and_material: 'mud brick, ceramic cells, copper jars, woven mats, clay dust',
+      camera_and_composition:
         'Sanctuaries, markets, camps, bridges, battery houses, and shore commons built from elemental materials. Keep depth legible and avoid default hallway, aisle, or empty studio staging.',
-      atmosphere: 'grounded, warm, ingenious, communal',
+      atmosphere_and_mood: 'grounded, warm, ingenious, communal',
+      rendering_and_quality:
+        'Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity, moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material simulation, or hyper-detail.',
       key_features:
         'main battery keeper, ceramic batteries, mud-brick walls, copper jars, shade courtyard',
       creative_brief:
@@ -162,16 +162,16 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'coastal sailpunk salvage identity led by one wind-pulled salvage sailwright-captain, with patched sails, reused hull curves, rope winches, and communal wind rigs behind.',
-      form_and_line:
+      subject_treatment:
         'Stone tools, rope mechanics, carved engines, low-tech power rigs, salvage sails, and rough handmade engineering. Core composition uses one main sailwright-captain, salvage sails, patched hulls, rope winches, coastal rigs.',
-      color_palette: 'canvas white, rust, sea blue, tar gray',
-      lighting_setup: 'coastal sunlight, sail translucency, welding glints, water bounce',
-      material_texture: 'canvas, drift metal, rope, tar, patched hulls, salt wood',
-      render_quality:
-        'Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity, moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material simulation, or hyper-detail.',
-      spatial_distortion:
+      color_and_tone: 'canvas white, rust, sea blue, tar gray',
+      lighting_and_shadow: 'coastal sunlight, sail translucency, welding glints, water bounce',
+      texture_and_material: 'canvas, drift metal, rope, tar, patched hulls, salt wood',
+      camera_and_composition:
         'Sanctuaries, markets, camps, bridges, battery houses, and shore commons built from elemental materials. Keep depth legible and avoid default hallway, aisle, or empty studio staging.',
-      atmosphere: 'windy, communal, rough, optimistic',
+      atmosphere_and_mood: 'windy, communal, rough, optimistic',
+      rendering_and_quality:
+        'Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity, moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material simulation, or hyper-detail.',
       key_features:
         'main sailwright-captain, salvage sails, patched hulls, rope winches, coastal rigs',
       creative_brief:
@@ -187,16 +187,16 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'primitive salvage wind-camp identity led by one resilient wind-tender camp elder, with handmade driftwood turbines, patched tents, ember light, and shared power as the thematic world.',
-      form_and_line:
+      subject_treatment:
         'Stone tools, rope mechanics, carved engines, low-tech power rigs, salvage sails, and rough handmade engineering. Core composition uses one main wind-tender, driftwood turbines, patched tents, campfire, scrap blades.',
-      color_palette: 'driftwood brown, canvas tan, turbine blue, ember orange',
-      lighting_setup: 'campfire warmth, dusk sky, turbine rimlight, soft dust',
-      material_texture: 'driftwood, canvas, scrap blades, rope, ash, patched fabric',
-      render_quality:
-        'Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity, moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material simulation, or hyper-detail.',
-      spatial_distortion:
+      color_and_tone: 'driftwood brown, canvas tan, turbine blue, ember orange',
+      lighting_and_shadow: 'campfire warmth, dusk sky, turbine rimlight, soft dust',
+      texture_and_material: 'driftwood, canvas, scrap blades, rope, ash, patched fabric',
+      camera_and_composition:
         'Sanctuaries, markets, camps, bridges, battery houses, and shore commons built from elemental materials. Keep depth legible and avoid default hallway, aisle, or empty studio staging.',
-      atmosphere: 'humble, resilient, handmade, coastal',
+      atmosphere_and_mood: 'humble, resilient, handmade, coastal',
+      rendering_and_quality:
+        'Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity, moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material simulation, or hyper-detail.',
       key_features: 'main wind-tender, driftwood turbines, patched tents, campfire, scrap blades',
       creative_brief:
         'Close the pack with human salvage life without sage/adventure hero styling: make the elder, handmade turbine, campfire plane, patched tents, and wind machinery feel like one quiet infrastructure poster. Vary crop and composition; avoid centered full-body adventurer poses, family-camp postcard, generic refugee camp, eco-symbol abstraction, object-only turbine render, or workers-only staging. Favor folk-modernist poster structure, controlled digital painting, clean matte shapes, and handmade material poetry over American RPG/sourcebook illustration, cinematic key art, or hyper-detailed concept art. Use few bold color/value zones, moderate texture, large shapes, clean surfaces, and finish denoised with no excessive noise or ultra-fine detail.',

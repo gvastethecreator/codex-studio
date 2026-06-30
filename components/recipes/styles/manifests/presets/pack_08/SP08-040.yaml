@@ -13,19 +13,20 @@ tags:
   - fantasy-sci-fi-costume
 visualDna:
   aesthetic: Retro EVA suit language, archival space-age optimism and beta-cloth engineering.
-  form_and_line: Bulky pressurized segmentation, hose-connector geometry, glove-gasket bulk and backpack-box volume.
-  color_palette: White, silver, muted flag accent, visor-gold, beta-cloth cream, mission-patch color
-  lighting_setup: Harsh vacuum-like key light, unfiltered solar glare, helmet-interior bounce and gold-visor reflection.
-  material_texture: Beta cloth, gold-film visor, rubber gaskets, aluminum connectors, nylon webbing and Velcro patch texture.
-  render_quality: Historic tech clarity, archival optimism and vacuum-silence precision without agency logos.
-  spatial_distortion: None
-  atmosphere: Heroic exploration, mission-control suspense, giant-leap awe and restrained archival optimism.
+  subject_treatment: Bulky pressurized segmentation, hose-connector geometry, glove-gasket bulk and backpack-box volume.
+  color_and_tone: White, silver, muted flag accent, visor-gold, beta-cloth cream, mission-patch color
+  lighting_and_shadow: Harsh vacuum-like key light, unfiltered solar glare, helmet-interior bounce and gold-visor reflection.
+  texture_and_material: Beta cloth, gold-film visor, rubber gaskets, aluminum connectors, nylon webbing and Velcro patch texture.
+  camera_and_composition: >-
+    Compose for Space Suit (Retro) using its key spatial cues: Bubble helmet geometry, gold visor reflection,
+    gasket rings, umbilical-hose rhythm and moon-boot mass.
+  atmosphere_and_mood: Heroic exploration, mission-control suspense, giant-leap awe and restrained archival optimism.
+  rendering_and_quality: Historic tech clarity, archival optimism and vacuum-silence precision without agency logos.
   key_features: Bubble helmet geometry, gold visor reflection, gasket rings, umbilical-hose rhythm and moon-boot mass.
   creative_brief: >-
-    Translate the input into retro EVA suit language: beta cloth, bubble-helmet
-    geometry, gold visor, rubber gaskets, umbilical-hose rhythm and aluminum
-    rings. Keep space-age optimism and vacuum clarity without requiring logos,
-    flag patches, lunar surface, astronaut hero pose or NASA archive reenactment.
+    Translate the input into retro EVA suit language: beta cloth, bubble-helmet geometry, gold visor, rubber
+    gaskets, umbilical-hose rhythm and aluminum rings. Keep space-age optimism and vacuum clarity without
+    requiring logos, flag patches, lunar surface, astronaut hero pose or NASA archive reenactment.
 avoidRules:
   - modern sleek
   - readable agency logo

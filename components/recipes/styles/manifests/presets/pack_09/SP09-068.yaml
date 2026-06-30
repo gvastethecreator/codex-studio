@@ -13,21 +13,22 @@ tags:
   - natural-materials
 visualDna:
   aesthetic: Basalt
-  form_and_line: Sharp edges
-  color_palette: Black
-  lighting_setup: Matte
-  material_texture: Porous, sharp
-  render_quality: Volcanic, porous
-  spatial_distortion: Flow lines
-  atmosphere: Desolate, hard
+  subject_treatment: Sharp edges
+  color_and_tone: Black
+  lighting_and_shadow: Matte
+  texture_and_material: Porous, sharp
+  camera_and_composition: Flow lines
+  atmosphere_and_mood: Desolate, hard
+  rendering_and_quality: Volcanic, porous
   key_features: Air holes
   creative_brief: >-
-    Render cooled basalt as volcanic surface treatment over the input: matte black porosity, sharp broken edges, frozen
-    gas bubbles, flow lines, and lightweight hardness. If rock, terrain, weapon, armor, or object exists, give it
-    lava-born scars; otherwise apply basaltic pores and cooled-flow geometry without forcing a barren landscape. Use
-    Lava Rock as portable surface/render behavior over any input: map its texture, light response, edge wear, color
-    chemistry, and tactile rhythm onto the subject instead of requiring a literal material sample, macro tile, wall,
-    landscape, source object, or scene where the material naturally appears.
+    Render cooled basalt as volcanic surface treatment over the input: matte black porosity, sharp broken
+    edges, frozen gas bubbles, flow lines, and lightweight hardness. If rock, terrain, weapon, armor, or
+    object exists, give it lava-born scars; otherwise apply basaltic pores and cooled-flow geometry without
+    forcing a barren landscape. Use Lava Rock as portable surface/render behavior over any input: map its
+    texture, light response, edge wear, color chemistry, and tactile rhythm onto the subject instead of
+    requiring a literal material sample, macro tile, wall, landscape, source object, or scene where the
+    material naturally appears.
 avoidRules:
   - smooth stone
 assets:

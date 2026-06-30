@@ -13,30 +13,24 @@ tags:
   - slice-of-life-and-moe
 visualDna:
   aesthetic: >-
-    Soft-surreal anime deadpan where mundane calm accepts dreamlike oddity with gentle timing,
-    minimal aggression, and understated weirdness
-  form_and_line: >-
-    Simple friendly contours, subtle deformation cues, low-intensity reaction acting, and
-    conversational composition for quiet absurdity
-  color_palette: >-
-    Quiet pastel, warm neutral, mint support, beige softness, pale blue wash, and mild surreal
-    accent hues
-  lighting_setup: Even daytime ambient, soft fill, minimal drama, and slight atmospheric lift during strange beats
-  material_texture: >-
-    Light everyday surfaces, low-noise background detail, soft paper/fabric tactility, and faint
-    dream haze
-  render_quality: >-
-    Gentle surreal-slice anime finish emphasizing expression nuance, timing, and quiet oddity over
-    spectacle
-  spatial_distortion: Mostly stable perspective with light dream bending, scale oddities, and soft uncanny punctuation
-  atmosphere: Sweet, dreamy, odd, quietly funny, gentle
+    Soft-surreal anime deadpan where mundane calm accepts dreamlike oddity with gentle timing, minimal
+    aggression, and understated weirdness
+  subject_treatment: >-
+    Simple friendly contours, subtle deformation cues, low-intensity reaction acting, and conversational
+    composition for quiet absurdity
+  color_and_tone: Quiet pastel, warm neutral, mint support, beige softness, pale blue wash, and mild surreal accent hues
+  lighting_and_shadow: Even daytime ambient, soft fill, minimal drama, and slight atmospheric lift during strange beats
+  texture_and_material: Light everyday surfaces, low-noise background detail, soft paper/fabric tactility, and faint dream haze
+  camera_and_composition: Mostly stable perspective with light dream bending, scale oddities, and soft uncanny punctuation
+  atmosphere_and_mood: Sweet, dreamy, odd, quietly funny, gentle
+  rendering_and_quality: Gentle surreal-slice anime finish emphasizing expression nuance, timing, and quiet oddity over spectacle
   key_features: >-
-    Deadpan reactions, calm baseline, soft surreal inserts, understated timing, gentle deformation,
-    and everyday continuity
+    Deadpan reactions, calm baseline, soft surreal inserts, understated timing, gentle deformation, and
+    everyday continuity
   creative_brief: >-
-    Use Azumanga Daioh as style anchor for soft-surreal deadpan drift. Any prompt should feel calm
-    until a tiny impossible note appears: gentle timing, muted palette, and quiet weirdness.
-    Classrooms, schools, and fixed gag props are optional.
+    Use Azumanga Daioh as style anchor for soft-surreal deadpan drift. Any prompt should feel calm until a
+    tiny impossible note appears: gentle timing, muted palette, and quiet weirdness. Classrooms, schools, and
+    fixed gag props are optional.
 avoidRules:
   - realistic
   - 3d render
@@ -54,8 +48,8 @@ assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-089.webp
 attributes:
   negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, text, signature
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts,
+    watermark, text, signature
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle

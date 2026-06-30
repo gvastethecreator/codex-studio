@@ -13,22 +13,22 @@ tags:
   - megastructure-and-impossible-space
 visualDna:
   aesthetic: High-altitude aerostatic retrofuture between modernist luxury and serene suspended balance.
-  form_and_line: >-
-    Layered circular platforms, curved aerodynamic canopies, needle fins and suspended concentric rings.
-  color_palette: >-
-    Sunset amber haze, pearl ivory superstructures, rose-gold cloud gradients, muted champagne
-    metallics, and cool silver edge highlights
-  lighting_setup: Horizon-diffused ambience, soft beacons, warm backscatter and controlled bloom in high atmosphere.
-  material_texture: Satin alloy cladding, polished composite skin, low-grain glass and precision seams.
-  render_quality: Premium speculative architecture, readable at distance and separated by elegant atmospheric layers.
-  spatial_distortion: >-
-    Stacked floating tier depth, long vertical voids and gentle perspective curvature without surreal deformation.
-  atmosphere: Refined, tranquil and aspirational, with diplomatic technological grace.
+  subject_treatment: Layered circular platforms, curved aerodynamic canopies, needle fins and suspended concentric rings.
+  color_and_tone: >-
+    Sunset amber haze, pearl ivory superstructures, rose-gold cloud gradients, muted champagne metallics, and
+    cool silver edge highlights
+  lighting_and_shadow: Horizon-diffused ambience, soft beacons, warm backscatter and controlled bloom in high atmosphere.
+  texture_and_material: Satin alloy cladding, polished composite skin, low-grain glass and precision seams.
+  camera_and_composition: >-
+    Stacked floating tier depth, long vertical voids and gentle perspective curvature without surreal
+    deformation.
+  atmosphere_and_mood: Refined, tranquil and aspirational, with diplomatic technological grace.
+  rendering_and_quality: Premium speculative architecture, readable at distance and separated by elegant atmospheric layers.
   key_features: Concentric platform hierarchy, suspended crowns, soft perimeter beacons and pristine metallic contour.
   creative_brief: >-
-    Define transferable aerostatic retrofuture: floating tiers, satin surfaces, sunset atmosphere, soft beacons
-    and elegant vertical void. Suggest height, suspension and technological luxury without depending on sky-city,
-    airport terminal, licensed city, or a total absence of ground/base context.
+    Define transferable aerostatic retrofuture: floating tiers, satin surfaces, sunset atmosphere, soft
+    beacons and elegant vertical void. Suggest height, suspension and technological luxury without depending
+    on sky-city, airport terminal, licensed city, or a total absence of ground/base context.
 avoidRules:
   - flat ground-level city
   - airport terminal lock

@@ -13,19 +13,21 @@ tags:
   - photography-eras
 visualDna:
   aesthetic: 2 Megapixel camera
-  form_and_line: None
-  color_palette: Noisy shadows, purple fringing, CCD magenta, muddy chroma
-  lighting_setup: Flat, pop-up flash, no dynamic range
-  material_texture: Jpeg artifacts, compression blocks, color banding
-  render_quality: Low res, nostalgic, 2MP chunky, digital infancy
-  spatial_distortion: Pixelation, stair-step edge, aliasing jaggies
-  atmosphere: Y2K, candid, early-upload memory, digital infancy
+  subject_treatment: >-
+    Treat subjects as believable filmed or broadcast subjects under Early Digital (2000s): casting, wardrobe,
+    props, motion cues, and silhouette hierarchy follow 4. Photography Eras cinematic and broadcast grammar
+    without locking to one plot beat.
+  color_and_tone: Noisy shadows, purple fringing, CCD magenta, muddy chroma
+  lighting_and_shadow: Flat, pop-up flash, no dynamic range
+  texture_and_material: Jpeg artifacts, compression blocks, color banding
+  camera_and_composition: Pixelation, stair-step edge, aliasing jaggies
+  atmosphere_and_mood: Y2K, candid, early-upload memory, digital infancy
+  rendering_and_quality: Low res, nostalgic, 2MP chunky, digital infancy
   key_features: Low resolution, compression blocks, purple fringing, clipped highlights, noisy shadow
   creative_brief: >-
-    Apply early-2000s digital-camera limits to any subject: 2MP softness, JPEG
-    compression blocks, stair-step aliasing, purple fringing, noisy shadows,
-    clipped pop-up flash highlights, and muddy CCD chroma. Keep upload-era
-    immediacy without requiring parties, webcams, family snapshots, or dated UI.
+    Apply early-2000s digital-camera limits to any subject: 2MP softness, JPEG compression blocks, stair-step
+    aliasing, purple fringing, noisy shadows, clipped pop-up flash highlights, and muddy CCD chroma. Keep
+    upload-era immediacy without requiring parties, webcams, family snapshots, or dated UI.
 avoidRules:
   - film grain
 assets:

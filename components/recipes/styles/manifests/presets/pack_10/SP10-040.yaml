@@ -13,15 +13,19 @@ tags:
   - surrealism-and-dream
 visualDna:
   aesthetic: Vintage magazine cutouts
-  form_and_line: Scissor edges
-  color_palette: Faded print
-  lighting_setup: Mismatched
-  material_texture: Paper
-  render_quality: Dada, retro
-  spatial_distortion: Scale mismatch
-  atmosphere: Absurd, funny
+  subject_treatment: Scissor edges
+  color_and_tone: Faded print
+  lighting_and_shadow: Mismatched
+  texture_and_material: Paper
+  camera_and_composition: Scale mismatch
+  atmosphere_and_mood: Absurd, funny
+  rendering_and_quality: Dada, retro
   key_features: Cutout look
-  creative_brief: Apply collage surrealism as cut-paper recombination over the input with faded magazine stock, scissor edges, mismatched lighting, abrupt scale shifts, and absurd fragments assembled without seamless blending. If people, animals, products, or props exist, recombine them; otherwise fracture the subject into mass-culture cutouts without requiring a specific hybrid gag.
+  creative_brief: >-
+    Apply collage surrealism as cut-paper recombination over the input with faded magazine stock, scissor
+    edges, mismatched lighting, abrupt scale shifts, and absurd fragments assembled without seamless blending.
+    If people, animals, products, or props exist, recombine them; otherwise fracture the subject into
+    mass-culture cutouts without requiring a specific hybrid gag.
 avoidRules:
   - seamless
 assets:

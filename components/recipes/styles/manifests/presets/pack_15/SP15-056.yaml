@@ -14,16 +14,31 @@ tags:
   - analog-signal
   - observatory
 visualDna:
-  aesthetic: analog signal observatory built around a hilltop or roof observatory using tape reels, signal dishes, CRT scopes, and windblown technicians.
-  form_and_line: CRT geometry, analog signal bands, vapor gradients, mall-era surfaces, tape artifacts, and digital slippage. Core composition uses tape reels, signal dishes, technicians, CRT scopes, wind lines.
-  color_palette: midnight blue, tape brown, phosphor green, moon white
-  lighting_setup: moonlight, CRT phosphor, dish rim light, tiny red LEDs
-  material_texture: magnetic tape, metal dishes, wool coats, concrete roof, glass scopes
-  render_quality: Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity, moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material simulation, or hyper-detail.
-  spatial_distortion: Pools, arcades, stations, atriums, kiosks, malls, observatories, and broadcast corners with media texture. Keep depth legible and avoid default hallway, aisle, or empty studio staging.
-  atmosphere: lonely, scientific, haunted, analog
+  aesthetic: >-
+    analog signal observatory built around a hilltop or roof observatory using tape reels, signal dishes, CRT
+    scopes, and windblown technicians.
+  subject_treatment: >-
+    CRT geometry, analog signal bands, vapor gradients, mall-era surfaces, tape artifacts, and digital
+    slippage. Core composition uses tape reels, signal dishes, technicians, CRT scopes, wind lines.
+  color_and_tone: midnight blue, tape brown, phosphor green, moon white
+  lighting_and_shadow: moonlight, CRT phosphor, dish rim light, tiny red LEDs
+  texture_and_material: magnetic tape, metal dishes, wool coats, concrete roof, glass scopes
+  camera_and_composition: >-
+    Pools, arcades, stations, atriums, kiosks, malls, observatories, and broadcast corners with media texture.
+    Keep depth legible and avoid default hallway, aisle, or empty studio staging.
+  atmosphere_and_mood: lonely, scientific, haunted, analog
+  rendering_and_quality: >-
+    Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly
+    planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity,
+    moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material
+    simulation, or hyper-detail.
   key_features: tape reels, signal dishes, technicians, CRT scopes, wind lines
-  creative_brief: 'Analog cosmic listening: one windblown technician protagonist, tape, dishes, and weather, not readable screens or random floating UI. Keep the result representative rather than over-abstract; use flat graphic illustration, gouache-poster shapes, cel-poster blocking, and controlled digital painting over realism or generic concept art. Use few bold color/value zones, large matte shapes, clean surfaces, low-to-moderate detail, and finish denoised with no excessive noise or ultra-fine detail.'
+  creative_brief: >-
+    Analog cosmic listening: one windblown technician protagonist, tape, dishes, and weather, not readable
+    screens or random floating UI. Keep the result representative rather than over-abstract; use flat graphic
+    illustration, gouache-poster shapes, cel-poster blocking, and controlled digital painting over realism or
+    generic concept art. Use few bold color/value zones, large matte shapes, clean surfaces, low-to-moderate
+    detail, and finish denoised with no excessive noise or ultra-fine detail.
 avoidRules:
   - photoreal
   - watermark
@@ -37,7 +52,21 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP15-056.webp
 attributes:
-  negativePrompt: photoreal, hyperreal, realistic render, painterly realism, realistic paint finish, cinematic realism, AAA key art, photographic skin pores, realistic foreground portrait, realistic facial hair detail, lens blur, bokeh, depth-of-field photo look, screen text, fake interface lines, readable monitor marks, satellite-photoreal dish, telescope observatory dome, starfield wallpaper, control-room wall, UI screens, readable scope marks, tiny LED carpet, cable spaghetti, generic soldier hero, guard pin-up, weapon-first pose, HDR lens realism, 3D render look, PBR material simulation, hyper-detailed concept art, watermark, text, logo, generic style, over-abstract, interchangeable preset, duplicated motifs, generic glass utopia, unmotivated market aisle, unmotivated library aisle, fantasy corridor, random camera held by subject, studio wall fixation, chair fixation, curtain fixation, lamp fixation, scarf fixation, pedestal fixation, bird fixation, excessive noise, ultra-fine detail, over-sharpened microtexture, over-rendered machinery, noisy grime, tiny rivets everywhere, busy texture chatter, realistic uniform portrait, uniformed officer hero, foreground guard portrait, detailed tattoo focus, dense machinery wallpaper, overcrowded scene, high-frequency surface detail, cinematic close-up portrait, flat black fill, crushed black, pure black masses, muddy black fields, generic American illustration, generic Western RPG card art
+  negativePrompt: >-
+    photoreal, hyperreal, realistic render, painterly realism, realistic paint finish, cinematic realism, AAA
+    key art, photographic skin pores, realistic foreground portrait, realistic facial hair detail, lens blur,
+    bokeh, depth-of-field photo look, screen text, fake interface lines, readable monitor marks,
+    satellite-photoreal dish, telescope observatory dome, starfield wallpaper, control-room wall, UI screens,
+    readable scope marks, tiny LED carpet, cable spaghetti, generic soldier hero, guard pin-up, weapon-first
+    pose, HDR lens realism, 3D render look, PBR material simulation, hyper-detailed concept art, watermark,
+    text, logo, generic style, over-abstract, interchangeable preset, duplicated motifs, generic glass utopia,
+    unmotivated market aisle, unmotivated library aisle, fantasy corridor, random camera held by subject,
+    studio wall fixation, chair fixation, curtain fixation, lamp fixation, scarf fixation, pedestal fixation,
+    bird fixation, excessive noise, ultra-fine detail, over-sharpened microtexture, over-rendered machinery,
+    noisy grime, tiny rivets everywhere, busy texture chatter, realistic uniform portrait, uniformed officer
+    hero, foreground guard portrait, detailed tattoo focus, dense machinery wallpaper, overcrowded scene,
+    high-frequency surface detail, cinematic close-up portrait, flat black fill, crushed black, pure black
+    masses, muddy black fields, generic American illustration, generic Western RPG card art
 taxonomy:
   packId: pack_15
   packName: Punk Spectrum Vault

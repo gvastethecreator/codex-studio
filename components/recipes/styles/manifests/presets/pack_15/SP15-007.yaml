@@ -14,16 +14,36 @@ tags:
   - airship
   - diesel-steam
 visualDna:
-  aesthetic: diesel-steam airship infrastructure flat-to-painterly poster card built around a smoggy airship mooring dock with simplified ground crews, broad gantries, rope arcs, and cargo-signal beacons.
-  form_and_line: Mechanical silhouettes, clean drawn contours, labor-poster spacing, and tactile industrial rhythm. Core composition uses mooring lines, beacon color dots, gantry silhouettes, small ground crew scale, and hazy airship mass.
-  color_palette: smog gray, brass ochre, black tar, cargo orange
-  lighting_setup: flat smog sun block, beacon color dots, silhouette backlight, simple illustrated glints
-  material_texture: canvas hull planes, tar rope shapes, broad gantry blocks, rain-dark dock planes, brass fittings
-  render_quality: Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity, moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material simulation, or hyper-detail.
-  spatial_distortion: Readable workshops, rail platforms, docks, streets, or civic machine halls without becoming a corridor. Keep depth legible and avoid default hallway, aisle, or empty studio staging.
-  atmosphere: adventurous, heavy, atmospheric, practical
+  aesthetic: >-
+    diesel-steam airship infrastructure flat-to-painterly poster card built around a smoggy airship mooring
+    dock with simplified ground crews, broad gantries, rope arcs, and cargo-signal beacons.
+  subject_treatment: >-
+    Mechanical silhouettes, clean drawn contours, labor-poster spacing, and tactile industrial rhythm. Core
+    composition uses mooring lines, beacon color dots, gantry silhouettes, small ground crew scale, and hazy
+    airship mass.
+  color_and_tone: smog gray, brass ochre, black tar, cargo orange
+  lighting_and_shadow: flat smog sun block, beacon color dots, silhouette backlight, simple illustrated glints
+  texture_and_material: canvas hull planes, tar rope shapes, broad gantry blocks, rain-dark dock planes, brass fittings
+  camera_and_composition: >-
+    Readable workshops, rail platforms, docks, streets, or civic machine halls without becoming a corridor.
+    Keep depth legible and avoid default hallway, aisle, or empty studio staging.
+  atmosphere_and_mood: adventurous, heavy, atmospheric, practical
+  rendering_and_quality: >-
+    Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly
+    planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity,
+    moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material
+    simulation, or hyper-detail.
   key_features: mooring lines, beacon dots, gantry silhouettes, ground crew scale, hazy airship mass
-  creative_brief: 'Show airship culture as logistics and weather: docks, crews, rigging, and mooring signals, not a fantasy castle corridor, floating palace, lamp hero, or airship-only postcard. Keep people simplified and secondary to the dock/airship silhouette. Keep the result representative rather than over-abstract; make one character in their environment the anchor, with motifs as background, costume, weather, architecture, or social pressure instead of a foreground prop. Favor flat-to-painterly editorial illustration, gouache poster aesthetics, clean graphic-novel card art, or stylized animation-background art over realism, photoreal photoreal painterly realism, cinematic key art, scratchy print noise, or hyper-detailed concept art. Use few bold color/value zones, low-to-moderate texture, large shapes, clean surfaces, shallow poster depth, and finish denoised with no excessive noise or ultra-fine detail.'
+  creative_brief: >-
+    Show airship culture as logistics and weather: docks, crews, rigging, and mooring signals, not a fantasy
+    castle corridor, floating palace, lamp hero, or airship-only postcard. Keep people simplified and
+    secondary to the dock/airship silhouette. Keep the result representative rather than over-abstract; make
+    one character in their environment the anchor, with motifs as background, costume, weather, architecture,
+    or social pressure instead of a foreground prop. Favor flat-to-painterly editorial illustration, gouache
+    poster aesthetics, clean graphic-novel card art, or stylized animation-background art over realism,
+    photoreal photoreal painterly realism, cinematic key art, scratchy print noise, or hyper-detailed concept
+    art. Use few bold color/value zones, low-to-moderate texture, large shapes, clean surfaces, shallow poster
+    depth, and finish denoised with no excessive noise or ultra-fine detail.
 avoidRules:
   - photoreal
   - watermark
@@ -37,7 +57,23 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP15-007.webp
 attributes:
-  negativePrompt: photoreal, hyperreal, realistic render, photoreal photoreal painterly realism, cinematic realism, AAA key art, cinematic concept-art render, photographic skin pores, realistic foreground portrait, realistic facial hair detail, lens blur, bokeh, depth-of-field photo look, realistic perspective drama, generic soldier hero, guard pin-up, weapon-first pose, foreground dock worker, gas-mask worker hero, rope-pulling character closeup, realistic dock scene, dense scaffold grid, rendered metal realism, volumetric fog realism, HDR lens realism, 3D render look, PBR material simulation, hyper-detailed concept art, scratchy print noise, tiny black linework, watermark, text, logo, generic style, over-abstract, interchangeable preset, duplicated motifs, generic glass utopia, unmotivated market aisle, unmotivated library aisle, fantasy corridor, floating palace, castle corridor, lamp hero, airship-only postcard, random camera held by subject, studio wall fixation, chair fixation, curtain fixation, lamp fixation, scarf fixation, pedestal fixation, bird fixation, excessive noise, ultra-fine detail, over-sharpened microtexture, over-rendered machinery, noisy grime, tiny rivets everywhere, busy texture chatter, realistic uniform portrait, uniformed officer hero, foreground guard portrait, detailed tattoo focus, dense machinery wallpaper, overcrowded scene, high-frequency surface detail, cinematic close-up portrait, flat black fill, crushed black, pure black masses, muddy black fields, generic American illustration, generic Western RPG card art
+  negativePrompt: >-
+    photoreal, hyperreal, realistic render, photoreal photoreal painterly realism, cinematic realism, AAA key
+    art, cinematic concept-art render, photographic skin pores, realistic foreground portrait, realistic
+    facial hair detail, lens blur, bokeh, depth-of-field photo look, realistic perspective drama, generic
+    soldier hero, guard pin-up, weapon-first pose, foreground dock worker, gas-mask worker hero, rope-pulling
+    character closeup, realistic dock scene, dense scaffold grid, rendered metal realism, volumetric fog
+    realism, HDR lens realism, 3D render look, PBR material simulation, hyper-detailed concept art, scratchy
+    print noise, tiny black linework, watermark, text, logo, generic style, over-abstract, interchangeable
+    preset, duplicated motifs, generic glass utopia, unmotivated market aisle, unmotivated library aisle,
+    fantasy corridor, floating palace, castle corridor, lamp hero, airship-only postcard, random camera held
+    by subject, studio wall fixation, chair fixation, curtain fixation, lamp fixation, scarf fixation,
+    pedestal fixation, bird fixation, excessive noise, ultra-fine detail, over-sharpened microtexture,
+    over-rendered machinery, noisy grime, tiny rivets everywhere, busy texture chatter, realistic uniform
+    portrait, uniformed officer hero, foreground guard portrait, detailed tattoo focus, dense machinery
+    wallpaper, overcrowded scene, high-frequency surface detail, cinematic close-up portrait, flat black fill,
+    crushed black, pure black masses, muddy black fields, generic American illustration, generic Western RPG
+    card art
 taxonomy:
   packId: pack_15
   packName: Punk Spectrum Vault

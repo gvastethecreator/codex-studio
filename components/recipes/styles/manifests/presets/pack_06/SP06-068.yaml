@@ -13,15 +13,19 @@ tags:
   - mixed-media
 visualDna:
   aesthetic: Xerox zine reproduction style with crushed contrast, toner grain, and DIY assembly artifacts
-  form_and_line: High contrast, grainy
-  color_palette: Black and White
-  lighting_setup: Xerox flash
-  material_texture: Toner, tape
-  render_quality: DIY, punk
-  spatial_distortion: Rough cuts
-  atmosphere: Raw, underground
+  subject_treatment: High contrast, grainy
+  color_and_tone: Black and White
+  lighting_and_shadow: Xerox flash
+  texture_and_material: Toner, tape
+  camera_and_composition: Rough cuts
+  atmosphere_and_mood: Raw, underground
+  rendering_and_quality: DIY, punk
   key_features: Xerox grain
-  creative_brief: Photocopy logic flattens everything into high-contrast grain, shadows becoming solid black, highlights burning to paper white. Toner dust, tape shadows, rough crop edges, and repeated-copy degradation become the aesthetic. The image lives in reproduction, without requiring booklets, staples, pages, text, or punk slogans.
+  creative_brief: >-
+    Photocopy logic flattens everything into high-contrast grain, shadows becoming solid black, highlights
+    burning to paper white. Toner dust, tape shadows, rough crop edges, and repeated-copy degradation become
+    the aesthetic. The image lives in reproduction, without requiring booklets, staples, pages, text, or punk
+    slogans.
 avoidRules:
   - photo
   - realistic
@@ -44,7 +48,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP06-068.webp
 attributes:
-  negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border, readable slogan, booklet requirement, staple requirement
+  negativePrompt: >-
+    photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy,
+    watermark, text, signature, frame, border, readable slogan, booklet requirement, staple requirement
 taxonomy:
   packId: pack_06
   packName: Essential Art Styles

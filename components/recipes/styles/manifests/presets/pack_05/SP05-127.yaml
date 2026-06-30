@@ -12,19 +12,22 @@ tags:
   - anime-battle-and-worlds
   - modern-shonen-and-action
 visualDna:
-  aesthetic: Poison-garden executioner style, with floral horror, sacred violence, hallucinogenic beauty, and fatalistic calm.
-  form_and_line: Sharp ceremonial contours, petal-like cut geometry, toxic tendril arcs, restrained posture, and lethal negative space.
-  color_palette: Poison magenta, lotus pink, jade green, black ink, bone cream, and arterial red accents.
-  lighting_setup: Lush overbright bloom, poisonous rim color, soft sacred haze, and sudden lethal shadow cuts.
-  material_texture: Petal translucency, wet ink, pollen dust, lacquered edge glints, organic gloss, and botanical grain.
-  render_quality: Premium modern anime finish with lethal elegance, botanical density, and beautiful-horror readability.
-  spatial_distortion: Paradise-like compression, floral overgrowth framing, and depth that feels seductive but fatal.
-  atmosphere: Lethal, lush, mystical, brutal
+  aesthetic: >-
+    Poison-garden executioner style, with floral horror, sacred violence, hallucinogenic beauty, and
+    fatalistic calm.
+  subject_treatment: >-
+    Sharp ceremonial contours, petal-like cut geometry, toxic tendril arcs, restrained posture, and lethal
+    negative space.
+  color_and_tone: Poison magenta, lotus pink, jade green, black ink, bone cream, and arterial red accents.
+  lighting_and_shadow: Lush overbright bloom, poisonous rim color, soft sacred haze, and sudden lethal shadow cuts.
+  texture_and_material: Petal translucency, wet ink, pollen dust, lacquered edge glints, organic gloss, and botanical grain.
+  camera_and_composition: Paradise-like compression, floral overgrowth framing, and depth that feels seductive but fatal.
+  atmosphere_and_mood: Lethal, lush, mystical, brutal
+  rendering_and_quality: Premium modern anime finish with lethal elegance, botanical density, and beautiful-horror readability.
   key_features: Floral lethality, poison bloom, sacred violence, fatalistic stillness, beautiful-horror contrast.
   creative_brief: >-
-    Render any prompt as poisonous paradise: beauty should feel lethal through
-    petal geometry, sacred haze, toxic color, and fatal calm without requiring
-    executioners, islands, monsters, blades, or criminal setup.
+    Render any prompt as poisonous paradise: beauty should feel lethal through petal geometry, sacred haze,
+    toxic color, and fatal calm without requiring executioners, islands, monsters, blades, or criminal setup.
 avoidRules:
   - realistic
   - 3d render
@@ -41,7 +44,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-127.webp
 attributes:
-  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
+  negativePrompt: >-
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts,
+    watermark, text, signature
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds

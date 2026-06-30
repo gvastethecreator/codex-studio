@@ -13,22 +13,22 @@ tags:
   - elemental-and-fx
 visualDna:
   aesthetic: Sci-fi shield
-  form_and_line: Forcefield
-  color_palette: Neon Cyan/Magenta
-  lighting_setup: Glowing
-  material_texture: Energy ripple
-  render_quality: Sci-fi, shield
-  spatial_distortion: Warping
-  atmosphere: Futuristic, protected
+  subject_treatment: Forcefield
+  color_and_tone: Neon Cyan/Magenta
+  lighting_and_shadow: Glowing
+  texture_and_material: Energy ripple
+  camera_and_composition: Warping
+  atmosphere_and_mood: Futuristic, protected
+  rendering_and_quality: Sci-fi, shield
   key_features: Hex grid (optional)
   creative_brief: >-
-    Render the impossible physics of an energy shield where ripples of neon cyan and magenta race across an invisible
-    surface like pebbles dropped in pure light, the forcefield pattern buzzing with contained power. The barrier should
-    feel simultaneously present and immaterial, a force made visible through its own distortion of space. Capture the
-    membrane between safety and annihilation, protection rendered as light. Use Plasma/Energy as portable surface/render
-    behavior over any input: map its texture, light response, edge wear, color chemistry, and tactile rhythm onto the
-    subject instead of requiring a literal material sample, macro tile, wall, landscape, source object, or scene where
-    the material naturally appears.
+    Render the impossible physics of an energy shield where ripples of neon cyan and magenta race across an
+    invisible surface like pebbles dropped in pure light, the forcefield pattern buzzing with contained power.
+    The barrier should feel simultaneously present and immaterial, a force made visible through its own
+    distortion of space. Capture the membrane between safety and annihilation, protection rendered as light.
+    Use Plasma/Energy as portable surface/render behavior over any input: map its texture, light response,
+    edge wear, color chemistry, and tactile rhythm onto the subject instead of requiring a literal material
+    sample, macro tile, wall, landscape, source object, or scene where the material naturally appears.
 avoidRules:
   - fire
   - gas

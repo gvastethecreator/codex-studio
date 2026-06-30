@@ -13,15 +13,24 @@ tags:
   - photography-eras
 visualDna:
   aesthetic: National Geographic slide
-  form_and_line: None
-  color_palette: Rich Red/Yellow, Kodachrome red, golden wheat, azure sky
-  lighting_setup: High contrast sun, travel-magazine daylight, crisp shadow
-  material_texture: Fine grain, dye-cloud smooth, archival stability
-  render_quality: Vivid, nostalgic, mid-century optimism, slide-projector glow
-  spatial_distortion: None
-  atmosphere: Sunny, classic, optimistic, slide-projector memory
+  subject_treatment: >-
+    Treat subjects as believable filmed or broadcast subjects under Kodachrome (50s): casting, wardrobe,
+    props, motion cues, and silhouette hierarchy follow 4. Photography Eras cinematic and broadcast grammar
+    without locking to one plot beat.
+  color_and_tone: Rich Red/Yellow, Kodachrome red, golden wheat, azure sky
+  lighting_and_shadow: High contrast sun, travel-magazine daylight, crisp shadow
+  texture_and_material: Fine grain, dye-cloud smooth, archival stability
+  camera_and_composition: >-
+    Camera language native to Kodachrome (50s): genre-aware framing, lens character, focal hierarchy, motion
+    cue, and vertical style-card composition.
+  atmosphere_and_mood: Sunny, classic, optimistic, slide-projector memory
+  rendering_and_quality: Vivid, nostalgic, mid-century optimism, slide-projector glow
   key_features: Deep blacks, red pop, golden highlights, fine grain, projected slide glow
-  creative_brief: 'Push the input through 1950s Kodachrome slide language: saturated reds, rich yellows, deep blacks, crisp daylight contrast, fine dye-cloud grain, and carousel-projector warmth. Avoid forcing cars, highways, motels, or Americana props. The style should make any subject feel archival, vivid, sunny, and confidently mid-century.'
+  creative_brief: >-
+    Push the input through 1950s Kodachrome slide language: saturated reds, rich yellows, deep blacks, crisp
+    daylight contrast, fine dye-cloud grain, and carousel-projector warmth. Avoid forcing cars, highways,
+    motels, or Americana props. The style should make any subject feel archival, vivid, sunny, and confidently
+    mid-century.
 avoidRules:
   - faded
   - digital

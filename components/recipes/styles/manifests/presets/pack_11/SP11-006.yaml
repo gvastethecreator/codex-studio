@@ -13,20 +13,20 @@ tags:
   - artistic-mediums
 visualDna:
   aesthetic: Chalkboard drawing language on dark slate surfaces
-  form_and_line: Chalk dust, variable thickness, smudged contours, broken strokes, re-drawn corrections
-  color_palette: White chalk on Black board, soft pastel chalks, muted color spectrum, dusty desaturation
-  lighting_setup: Flat, even overhead fluorescents, no glare, diffused ambient
-  material_texture: Slate grain, eraser smudges, chalk dust, ghosted afterimages, rough tooth
-  render_quality: Ephemeral hand-drawn chalk finish with visible correction history
-  spatial_distortion: Hand-drawn imperfections, slightly tilted lettering, uneven scale, organic spacing
-  atmosphere: Casual, temporary, rustic, creative, fleeting, nostalgic melancholy
+  subject_treatment: Chalk dust, variable thickness, smudged contours, broken strokes, re-drawn corrections
+  color_and_tone: White chalk on Black board, soft pastel chalks, muted color spectrum, dusty desaturation
+  lighting_and_shadow: Flat, even overhead fluorescents, no glare, diffused ambient
+  texture_and_material: Slate grain, eraser smudges, chalk dust, ghosted afterimages, rough tooth
+  camera_and_composition: Hand-drawn imperfections, slightly tilted lettering, uneven scale, organic spacing
+  atmosphere_and_mood: Casual, temporary, rustic, creative, fleeting, nostalgic melancholy
+  rendering_and_quality: Ephemeral hand-drawn chalk finish with visible correction history
   key_features: Dusty background, chalk-dust halo, eraser streak ghosts, fingertip blending
   creative_brief: >-
-    Compose with dusty, pressure-variable chalk marks over a textured dark board. Preserve eraser ghosts, smudge
-    transitions, and imperfect lettering rhythm to emphasize temporary handmade expression. Apply Chalkboard Art as a
-    portable style system over any input: preserve its construction grammar, material cues, scale logic, and signature
-    rendering behavior while avoiding a required franchise, literal prop, fixed specimen, classroom sample, product
-    shot, or scene template.
+    Compose with dusty, pressure-variable chalk marks over a textured dark board. Preserve eraser ghosts,
+    smudge transitions, and imperfect lettering rhythm to emphasize temporary handmade expression. Apply
+    Chalkboard Art as a portable style system over any input: preserve its construction grammar, material
+    cues, scale logic, and signature rendering behavior while avoiding a required franchise, literal prop,
+    fixed specimen, classroom sample, product shot, or scene template.
 avoidRules:
   - paper
   - ink

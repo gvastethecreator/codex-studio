@@ -13,20 +13,20 @@ tags:
   - fabric-and-texture-focus
 visualDna:
   aesthetic: Burlap-and-rag austerity, homespun endurance, rough-fiber humility
-  form_and_line: Loose weave, gathered drape, rope-cinch logic, hood-cowl cues, patchwork falloff
-  color_palette: Brown, Grey, undyed-flax, mud, oatmeal, ash, weathered-hemp
-  lighting_setup: Flat overcast light, dim warm practical, rough-fiber revealing side light
-  material_texture: Rough fiber, burlap jute, coarse hemp, hand-woven linen, homespun wool, frayed-edge cotton, rope cord
-  render_quality: Scratchy, raw, weathered-fiber authenticity, rough textile honesty
-  spatial_distortion: None
-  atmosphere: Humble, rough, enduring, resilient, materially stripped-back
+  subject_treatment: Loose weave, gathered drape, rope-cinch logic, hood-cowl cues, patchwork falloff
+  color_and_tone: Brown, Grey, undyed-flax, mud, oatmeal, ash, weathered-hemp
+  lighting_and_shadow: Flat overcast light, dim warm practical, rough-fiber revealing side light
+  texture_and_material: Rough fiber, burlap jute, coarse hemp, hand-woven linen, homespun wool, frayed-edge cotton, rope cord
+  camera_and_composition: >-
+    Compose for Burlap/Rags using its key spatial cues: Fraying, rope-cinch logic, rough patches, raw edges,
+    homespun texture.
+  atmosphere_and_mood: Humble, rough, enduring, resilient, materially stripped-back
+  rendering_and_quality: Scratchy, raw, weathered-fiber authenticity, rough textile honesty
   key_features: Fraying, rope-cinch logic, rough patches, raw edges, homespun texture
   creative_brief: >-
-    Roughen the input with burlap-rag materiality: jute fiber, coarse hemp,
-    homespun wool, rope-cinch logic, frayed edges, raw patches and weathered
-    oatmeal-brown tones. Keep humble endurance as fiber attitude only; do not
-    require peasants, harvest fields, cottage windows, poverty portrait or
-    literal tunic body.
+    Roughen the input with burlap-rag materiality: jute fiber, coarse hemp, homespun wool, rope-cinch logic,
+    frayed edges, raw patches and weathered oatmeal-brown tones. Keep humble endurance as fiber attitude only;
+    do not require peasants, harvest fields, cottage windows, poverty portrait or literal tunic body.
 avoidRules:
   - silk
   - clean

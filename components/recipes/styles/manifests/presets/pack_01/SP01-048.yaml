@@ -13,15 +13,18 @@ tags:
   - nature-and-wildlife
 visualDna:
   aesthetic: Extreme close-up
-  form_and_line: Shallow depth of field
-  color_palette: Vibrant detail
-  lighting_setup: Ring flash
-  material_texture: Enlarged surface microtexture
-  render_quality: Scientific, abstract
-  spatial_distortion: Blurry background
-  atmosphere: Alien, detailed
+  subject_treatment: Shallow depth of field
+  color_and_tone: Vibrant detail
+  lighting_and_shadow: Ring flash
+  texture_and_material: Enlarged surface microtexture
+  camera_and_composition: Blurry background
+  atmosphere_and_mood: Alien, detailed
+  rendering_and_quality: Scientific, abstract
   key_features: Tiny world
-  creative_brief: 'Extreme close focus turns any subject into a miniature world: shallow depth, enlarged surface microtexture, vibrant detail, and background blur that isolates the near plane. Use macro vision without requiring insects, leaves, pollen, dewdrops, or biological content.'
+  creative_brief: >-
+    Extreme close focus turns any subject into a miniature world: shallow depth, enlarged surface
+    microtexture, vibrant detail, and background blur that isolates the near plane. Use macro vision without
+    requiring insects, leaves, pollen, dewdrops, or biological content.
 avoidRules:
   - wide angle
   - blurry subject

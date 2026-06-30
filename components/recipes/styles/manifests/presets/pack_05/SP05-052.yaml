@@ -13,34 +13,30 @@ tags:
   - mecha-and-cyberpunk
 visualDna:
   aesthetic: >-
-    Bureaucratic techno-control rendered through verdict logic, clinical sorting, cold grid
-    authority, and institutional paranoia
-  form_and_line: >-
-    Hard-edged anime linework, precise machine-adjacent contours, segmented panel strokes, rigid
-    geometry, and clean blocking.
-  color_palette: >-
-    Acid cyan, magenta status pops, dark steel neutrals, cold violet shadows, and sterile white
-    alert accents.
-  lighting_setup: >-
-    Fluorescent grid glow, digital reflections, severe underlight, wet-surface specularity, and
-    scanline-like rim highlights.
-  material_texture: >-
-    Glossy polymer, brushed metal grain, glassy overlays, carbon-fiber hints, and rain-slick
-    synthetic finish.
-  render_quality: >-
-    High-detail cyber-anime rendering with sharp interface discipline, specular richness, and cold
-    forensic clarity.
-  spatial_distortion: >-
-    Wireframe vanishing points, surveillance overlays, flattened authority zones, and compressed
-    perspective corridors of control.
-  atmosphere: Clinical, oppressive, dystopian, cold
+    Bureaucratic techno-control rendered through verdict logic, clinical sorting, cold grid authority, and
+    institutional paranoia
+  subject_treatment: >-
+    Hard-edged anime linework, precise machine-adjacent contours, segmented panel strokes, rigid geometry, and
+    clean blocking.
+  color_and_tone: Acid cyan, magenta status pops, dark steel neutrals, cold violet shadows, and sterile white alert accents.
+  lighting_and_shadow: >-
+    Fluorescent grid glow, digital reflections, severe underlight, wet-surface specularity, and scanline-like
+    rim highlights.
+  texture_and_material: Glossy polymer, brushed metal grain, glassy overlays, carbon-fiber hints, and rain-slick synthetic finish.
+  camera_and_composition: >-
+    Wireframe vanishing points, surveillance overlays, flattened authority zones, and compressed perspective
+    corridors of control.
+  atmosphere_and_mood: Clinical, oppressive, dystopian, cold
+  rendering_and_quality: >-
+    High-detail cyber-anime rendering with sharp interface discipline, specular richness, and cold forensic
+    clarity.
   key_features: >-
-    Verdict glyphs, coefficient overlays, cold authority grids, glass reflections, machine-readable
-    distance, and social-pressure geometry
+    Verdict glyphs, coefficient overlays, cold authority grids, glass reflections, machine-readable distance,
+    and social-pressure geometry
   creative_brief: >-
-    Use surveillance verdict grid as institutional data grammar. Any prompt should feel measured,
-    sorted, scored, and judged by cold systems. Police, citizens, terminals, city incidents, and
-    readable UI text are optional.
+    Use surveillance verdict grid as institutional data grammar. Any prompt should feel measured, sorted,
+    scored, and judged by cold systems. Police, citizens, terminals, city incidents, and readable UI text are
+    optional.
 avoidRules:
   - realistic
   - 3d render
@@ -58,8 +54,8 @@ assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-052.webp
 attributes:
   negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, text, signature
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts,
+    watermark, text, signature
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds

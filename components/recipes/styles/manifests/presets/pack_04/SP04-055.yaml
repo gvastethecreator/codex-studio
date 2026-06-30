@@ -13,23 +13,20 @@ tags:
   - concept-art
 visualDna:
   aesthetic: >-
-    Narrative keyframe concept style centered on emotional turning-point composition and cinematic
-    visual impact
-  form_and_line: >-
-    Shape-led cinematic blocking with selective edge control, focal hierarchy, and frame-rhythm
-    precision
-  color_palette: Color graded, cinematic LUT, emotional-tone timing
-  lighting_setup: Cinematic, framed intent, motivated light source
-  material_texture: Painted
-  render_quality: Movie still, emotional, screen-grab gravity, story-beat resonance
-  spatial_distortion: None
-  atmosphere: Story beat, narrative tension, turning-point weight
+    Narrative keyframe concept style centered on emotional turning-point composition and cinematic visual
+    impact
+  subject_treatment: Shape-led cinematic blocking with selective edge control, focal hierarchy, and frame-rhythm precision
+  color_and_tone: Color graded, cinematic LUT, emotional-tone timing
+  lighting_and_shadow: Cinematic, framed intent, motivated light source
+  texture_and_material: Painted
+  camera_and_composition: 'Compose for Keyframe Art using its key spatial cues: 16:9 ratio, letterbox framing, cinematic composition.'
+  atmosphere_and_mood: Story beat, narrative tension, turning-point weight
+  rendering_and_quality: Movie still, emotional, screen-grab gravity, story-beat resonance
   key_features: 16:9 ratio, letterbox framing, cinematic composition
   creative_brief: >-
-    Apply narrative keyframe grammar to any input: story-pivot composition, cinematic focal control,
-    motivated light, color-temperature emotion mapping, and letterbox pressure should create
-    turning-point weight without requiring characters, plot scenes, battles, dialogue, or a specific
-    beat.
+    Apply narrative keyframe grammar to any input: story-pivot composition, cinematic focal control, motivated
+    light, color-temperature emotion mapping, and letterbox pressure should create turning-point weight
+    without requiring characters, plot scenes, battles, dialogue, or a specific beat.
 avoidRules:
   - sketchy
   - rough

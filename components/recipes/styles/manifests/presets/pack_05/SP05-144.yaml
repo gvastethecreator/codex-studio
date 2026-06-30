@@ -13,18 +13,20 @@ tags:
   - modern-shonen-and-action
 visualDna:
   aesthetic: Lo-fi Edo swagger, with hip-hop timing, dusty sun, anachronistic cool, and loose kinetic rhythm.
-  form_and_line: Clean early-digital strokes, swing-beat diagonals, relaxed contour attitude, scratch-cut transitions, and offbeat pose timing.
-  color_palette: Dust gold, faded indigo, warm brown, muted teal, sunbaked cream, and vinyl black.
-  lighting_setup: Low sun wash, soft rim glow, analog warm haze, and beat-accent highlight pops.
-  material_texture: Film grain, paper dust, worn cloth flats, vinyl scratch overlays, and smooth cel compositing.
-  render_quality: Early-2000s digital-cel finish with lo-fi warmth, crisp readability, and rhythm-first action style.
-  spatial_distortion: Beat-driven framing shifts, relaxed perspective snaps, and sample-loop motion cadence.
-  atmosphere: Loose, stylish, sunbaked, rebellious
+  subject_treatment: >-
+    Clean early-digital strokes, swing-beat diagonals, relaxed contour attitude, scratch-cut transitions, and
+    offbeat pose timing.
+  color_and_tone: Dust gold, faded indigo, warm brown, muted teal, sunbaked cream, and vinyl black.
+  lighting_and_shadow: Low sun wash, soft rim glow, analog warm haze, and beat-accent highlight pops.
+  texture_and_material: Film grain, paper dust, worn cloth flats, vinyl scratch overlays, and smooth cel compositing.
+  camera_and_composition: Beat-driven framing shifts, relaxed perspective snaps, and sample-loop motion cadence.
+  atmosphere_and_mood: Loose, stylish, sunbaked, rebellious
+  rendering_and_quality: Early-2000s digital-cel finish with lo-fi warmth, crisp readability, and rhythm-first action style.
   key_features: Lo-fi grain, hip-hop timing, dusty sunlight, relaxed swagger, anachronistic rhythm.
   creative_brief: >-
-    Apply lo-fi historical swagger to any prompt through vinyl-scratch pacing,
-    dusty warmth, relaxed motion, and offbeat cuts without requiring swords,
-    road travel, period setting, costume detail, or specific wanderers.
+    Apply lo-fi historical swagger to any prompt through vinyl-scratch pacing, dusty warmth, relaxed motion,
+    and offbeat cuts without requiring swords, road travel, period setting, costume detail, or specific
+    wanderers.
 avoidRules:
   - realistic
   - 3d render
@@ -41,7 +43,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-144.webp
 attributes:
-  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
+  negativePrompt: >-
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts,
+    watermark, text, signature
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds

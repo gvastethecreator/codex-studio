@@ -13,19 +13,18 @@ tags:
   - traditional-painting
 visualDna:
   aesthetic: Milk-based paint illustration
-  form_and_line: Matte, velvety
-  color_palette: High chroma, matte
-  lighting_setup: Soft, illustrative
-  material_texture: Smooth, durable
-  render_quality: Vintage illustration
-  spatial_distortion: Clean shapes
-  atmosphere: Classic, sturdy
+  subject_treatment: Matte, velvety
+  color_and_tone: High chroma, matte
+  lighting_and_shadow: Soft, illustrative
+  texture_and_material: Smooth, durable
+  camera_and_composition: Clean shapes
+  atmosphere_and_mood: Classic, sturdy
+  rendering_and_quality: Vintage illustration
   key_features: Velvet matte finish
   creative_brief: >-
-    Apply casein-paint surface logic to any input: milk-protein matte pigment,
-    powdered-stone opacity, fast opaque layering, crisp illustration edges, and
-    waterproof permanence. Keep quiet durable color without requiring vintage
-    posters, editorial illustration, packaging, or dairy-themed subject matter.
+    Apply casein-paint surface logic to any input: milk-protein matte pigment, powdered-stone opacity, fast
+    opaque layering, crisp illustration edges, and waterproof permanence. Keep quiet durable color without
+    requiring vintage posters, editorial illustration, packaging, or dairy-themed subject matter.
 avoidRules:
   - photo
   - realistic
@@ -45,7 +44,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP06-014.webp
 attributes:
-  negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border
+  negativePrompt: >-
+    photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy,
+    watermark, text, signature, frame, border
 taxonomy:
   packId: pack_06
   packName: Essential Art Styles

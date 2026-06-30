@@ -13,21 +13,22 @@ tags:
   - natural-materials
 visualDna:
   aesthetic: Plumage
-  form_and_line: Barbs and rachis
-  color_palette: Iridescent Blue/Green
-  lighting_setup: Sheen
-  material_texture: Soft but structured
-  render_quality: Bird wing, delicate
-  spatial_distortion: Layered
-  atmosphere: Light, natural
+  subject_treatment: Barbs and rachis
+  color_and_tone: Iridescent Blue/Green
+  lighting_and_shadow: Sheen
+  texture_and_material: Soft but structured
+  camera_and_composition: Layered
+  atmosphere_and_mood: Light, natural
+  rendering_and_quality: Bird wing, delicate
   key_features: Overlapping
   creative_brief: >-
-    Capture the delicate engineering of plumage where individual barbs interlock into surfaces that catch and split
-    light into spectral blues and greens, each feather a miracle of aerodynamics rendered as ornament. The overlapping
-    structure should feel weightless yet precise, a cascade of color built on invisible order. The image must float
-    between fragility and resilience. Use Bird Feathers as portable surface/render behavior over any input: map its
-    texture, light response, edge wear, color chemistry, and tactile rhythm onto the subject instead of requiring a
-    literal material sample, macro tile, wall, landscape, source object, or scene where the material naturally appears.
+    Capture the delicate engineering of plumage where individual barbs interlock into surfaces that catch and
+    split light into spectral blues and greens, each feather a miracle of aerodynamics rendered as ornament.
+    The overlapping structure should feel weightless yet precise, a cascade of color built on invisible order.
+    The image must float between fragility and resilience. Use Bird Feathers as portable surface/render
+    behavior over any input: map its texture, light response, edge wear, color chemistry, and tactile rhythm
+    onto the subject instead of requiring a literal material sample, macro tile, wall, landscape, source
+    object, or scene where the material naturally appears.
 avoidRules:
   - fur
   - messy

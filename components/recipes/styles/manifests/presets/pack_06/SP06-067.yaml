@@ -13,15 +13,19 @@ tags:
   - mixed-media
 visualDna:
   aesthetic: Paint plus objects
-  form_and_line: Varied
-  color_palette: Messy, layered
-  lighting_setup: Texture relief
-  material_texture: Sand, paper, paint
-  render_quality: Fine art, abstract
-  spatial_distortion: None
-  atmosphere: Expressive
+  subject_treatment: Varied
+  color_and_tone: Messy, layered
+  lighting_and_shadow: Texture relief
+  texture_and_material: Sand, paper, paint
+  camera_and_composition: 'Compose for Mixed Media Canvas using its key spatial cues: Heavy texture.'
+  atmosphere_and_mood: Expressive
+  rendering_and_quality: Fine art, abstract
   key_features: Heavy texture
-  creative_brief: Paint meets grit, paper, fibers, and anything that can hold pigment, building a surface where relief becomes content. Texture rises into the image until support and subject negotiate equal weight. The artwork asserts objecthood through material truth, without requiring newspaper, fabric, or canvas as fixed props.
+  creative_brief: >-
+    Paint meets grit, paper, fibers, and anything that can hold pigment, building a surface where relief
+    becomes content. Texture rises into the image until support and subject negotiate equal weight. The
+    artwork asserts objecthood through material truth, without requiring newspaper, fabric, or canvas as fixed
+    props.
 avoidRules:
   - photo
   - realistic
@@ -44,7 +48,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP06-067.webp
 attributes:
-  negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border, readable newspaper, fabric requirement, canvas requirement
+  negativePrompt: >-
+    photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy,
+    watermark, text, signature, frame, border, readable newspaper, fabric requirement, canvas requirement
 taxonomy:
   packId: pack_06
   packName: Essential Art Styles

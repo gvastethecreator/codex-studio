@@ -13,18 +13,19 @@ tags:
   - fantasy-sci-fi-costume
 visualDna:
   aesthetic: Four-color heroic costume language, emblematic idealism and panel-breaking dynamism.
-  form_and_line: Cape-sweep drama, emblem-centered geometry, gauntlet-to-boot rhythm and bold seam blocking.
-  color_palette: Primary Colors, flag-blue, signal-red, gold-yellow, ink-black, optic-white
-  lighting_setup: Rim light, heroic edge-highlight, two-source drama and comic-ink contrast.
-  material_texture: Matte performance knit, printed color blocking, vinyl cape, rubber sole and metallic accents.
-  render_quality: Bold splash-page costume energy with original heroic clarity, not franchise imitation.
-  spatial_distortion: Iconic silhouette exaggeration.
-  atmosphere: Bold, brave, civic-myth clarity, splash-page dynamism and unwavering resolve.
+  subject_treatment: Cape-sweep drama, emblem-centered geometry, gauntlet-to-boot rhythm and bold seam blocking.
+  color_and_tone: Primary Colors, flag-blue, signal-red, gold-yellow, ink-black, optic-white
+  lighting_and_shadow: Rim light, heroic edge-highlight, two-source drama and comic-ink contrast.
+  texture_and_material: Matte performance knit, printed color blocking, vinyl cape, rubber sole and metallic accents.
+  camera_and_composition: Iconic silhouette exaggeration.
+  atmosphere_and_mood: Bold, brave, civic-myth clarity, splash-page dynamism and unwavering resolve.
+  rendering_and_quality: Bold splash-page costume energy with original heroic clarity, not franchise imitation.
   key_features: Emblem panel, cape logic, utility belt geometry, mask-like cues and heroic boot finish.
   creative_brief: >-
     Recast any input in heroic costume language: emblem-first panel geometry, cape sweep, utility-belt logic,
-    heroic boot finish and four-color ink contrast. Preserve optimism and silhouette clarity without silver-age
-    artist imitation, bodybuilder anatomy, muscle shading, franchise icon, action pose, city rescue or fixed comic panel.
+    heroic boot finish and four-color ink contrast. Preserve optimism and silhouette clarity without
+    silver-age artist imitation, bodybuilder anatomy, muscle shading, franchise icon, action pose, city rescue
+    or fixed comic panel.
 avoidRules:
   - loose clothes
   - franchise icon

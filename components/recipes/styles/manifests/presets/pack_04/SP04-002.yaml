@@ -13,26 +13,26 @@ tags:
   - comic-book-styles
 visualDna:
   aesthetic: >-
-    Silver-age cosmic comic dynamism with atom-era optimism, crackling energy fields, and mythic
-    interstellar scale
-  form_and_line: >-
+    Silver-age cosmic comic dynamism with atom-era optimism, crackling energy fields, and mythic interstellar
+    scale
+  subject_treatment: >-
     High-velocity foreshortened contouring, dense energy-dot fields, radiation burst linework, and
     impact-first panel rhythm
-  color_palette: Bright primary, comic pop spectrum, magenta/cyan punch
-  lighting_setup: Dramatic, cosmic backlight, heroic rim glow
-  material_texture: Newsprint
-  render_quality: >-
-    Bold classic-comic rendering focused on energetic readability, cosmic spectacle, and iconic
-    action silhouette clarity
-  spatial_distortion: Exaggerated perspective
-  atmosphere: Epic, sci-fi, super-powered wonder, interstellar drama
+  color_and_tone: Bright primary, comic pop spectrum, magenta/cyan punch
+  lighting_and_shadow: Dramatic, cosmic backlight, heroic rim glow
+  texture_and_material: Newsprint
+  camera_and_composition: Exaggerated perspective
+  atmosphere_and_mood: Epic, sci-fi, super-powered wonder, interstellar drama
+  rendering_and_quality: >-
+    Bold classic-comic rendering focused on energetic readability, cosmic spectacle, and iconic action
+    silhouette clarity
   key_features: >-
-    Energy-dot crackle grammar, cosmic burst halos, dynamic foreshortening thrust, atom-age heroic
-    panel cadence
+    Energy-dot crackle grammar, cosmic burst halos, dynamic foreshortening thrust, atom-age heroic panel
+    cadence
   creative_brief: >-
-    Apply silver-age cosmic action grammar to any input: crackling energy-dot fields, atom-age burst
-    halos, optimistic interstellar scale, and aggressive foreshortened panel rhythm should define
-    identity without requiring heroes, capes, planets, battles, rockets, or a fixed cosmic scene.
+    Apply silver-age cosmic action grammar to any input: crackling energy-dot fields, atom-age burst halos,
+    optimistic interstellar scale, and aggressive foreshortened panel rhythm should define identity without
+    requiring heroes, capes, planets, battles, rockets, or a fixed cosmic scene.
 avoidRules:
   - dark
   - gritty

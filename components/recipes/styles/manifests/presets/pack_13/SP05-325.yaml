@@ -13,24 +13,22 @@ tags:
   - anime-style-spectrum
 visualDna:
   aesthetic: >-
-    Rough concrete-poetry adolescence, scratchy linework, sacred-ugly texture, restless drift, and
-    emotional sketch energy
-  form_and_line: Scratchy uneven contour, dry-ink scribble, architectural scrawl, and unstable proportion rhythm
-  color_palette: Cement grey, faded blue, rust orange, dirty cream, bruised purple, asphalt black
-  lighting_setup: Hazy daylight, sodium-vapor night bleed, and flat overcast concrete gloom
-  material_texture: Dry-brush grit, photocopy grain, rough wall scrape, cracked paint, pencil scuff
-  render_quality: Gritty sketch-urban rendering with rough poetic abstraction and tactile city-line immediacy
-  spatial_distortion: >-
-    Loose proportion logic, tilted perspective, sketched motion drift, and uneven scale
-    relationships
-  atmosphere: Restless, rough, spiritual, urban
+    Rough concrete-poetry adolescence, scratchy linework, sacred-ugly texture, restless drift, and emotional
+    sketch energy
+  subject_treatment: Scratchy uneven contour, dry-ink scribble, architectural scrawl, and unstable proportion rhythm
+  color_and_tone: Cement grey, faded blue, rust orange, dirty cream, bruised purple, asphalt black
+  lighting_and_shadow: Hazy daylight, sodium-vapor night bleed, and flat overcast concrete gloom
+  texture_and_material: Dry-brush grit, photocopy grain, rough wall scrape, cracked paint, pencil scuff
+  camera_and_composition: Loose proportion logic, tilted perspective, sketched motion drift, and uneven scale relationships
+  atmosphere_and_mood: Restless, rough, spiritual, urban
+  rendering_and_quality: Gritty sketch-urban rendering with rough poetic abstraction and tactile city-line immediacy
   key_features: >-
-    Scratchy concrete textures, tilted silhouettes, adolescent motion, rough civic iconography,
-    sacred-ugly weirdness
+    Scratchy concrete textures, tilted silhouettes, adolescent motion, rough civic iconography, sacred-ugly
+    weirdness
   creative_brief: >-
-    Use Taiyo Matsumoto as style anchor for scratchy concrete-poetry drift. Any prompt should feel
-    rough, sacred-ugly, restless, dry-inked, and emotionally sketched. Bikes, rooftops, city
-    streets, youth characters, and urban scenes are optional.
+    Use Taiyo Matsumoto as style anchor for scratchy concrete-poetry drift. Any prompt should feel rough,
+    sacred-ugly, restless, dry-inked, and emotionally sketched. Bikes, rooftops, city streets, youth
+    characters, and urban scenes are optional.
 avoidRules:
   - clean glossy polish
   - perfect symmetry
@@ -40,9 +38,7 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-325.webp
 attributes:
-  negativePrompt: >-
-    clean glossy polish, perfect symmetry, sterile gradients, ultra-smooth linework, fantasy
-    ornament overuse
+  negativePrompt: clean glossy polish, perfect symmetry, sterile gradients, ultra-smooth linework, fantasy ornament overuse
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle

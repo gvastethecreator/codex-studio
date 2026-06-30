@@ -13,15 +13,19 @@ tags:
   - surrealism-and-dream
 visualDna:
   aesthetic: Melting clocks style
-  form_and_line: Realistic rendering
-  color_palette: Warm uncanny neutrals
-  lighting_setup: Long shadows
-  material_texture: Smooth oil
-  render_quality: Fine art, bizarre
-  spatial_distortion: Melting, elongated
-  atmosphere: Dreamlike, weird
+  subject_treatment: Realistic rendering
+  color_and_tone: Warm uncanny neutrals
+  lighting_and_shadow: Long shadows
+  texture_and_material: Smooth oil
+  camera_and_composition: Melting, elongated
+  atmosphere_and_mood: Dreamlike, weird
+  rendering_and_quality: Fine art, bizarre
   key_features: Impossible liquefaction
-  creative_brief: Apply Dali-like surreal logic to the input with precise oil-rendered forms, long-shadow stillness, warm uncanny neutrals, liquefied edges, elongated proportions, and rational detail serving irrational transformation. If clocks, branches, horizons, or architecture already exist, bend them; otherwise melt and stretch the subject without forcing a desert setting.
+  creative_brief: >-
+    Apply Dali-like surreal logic to the input with precise oil-rendered forms, long-shadow stillness, warm
+    uncanny neutrals, liquefied edges, elongated proportions, and rational detail serving irrational
+    transformation. If clocks, branches, horizons, or architecture already exist, bend them; otherwise melt
+    and stretch the subject without forcing a desert setting.
 avoidRules:
   - normal
   - logical

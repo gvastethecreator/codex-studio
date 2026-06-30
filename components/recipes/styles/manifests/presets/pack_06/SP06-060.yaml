@@ -13,19 +13,18 @@ tags:
   - digital-art
 visualDna:
   aesthetic: ASCII-density image style built from monospaced glyph fields and terminal-era tonal logic
-  form_and_line: Repeating keyboard glyphs used as value cells, line clusters, and contour-density bands
-  color_palette: Monochrome green/black
-  lighting_setup: Density based
-  material_texture: Text grid
-  render_quality: Retro, hacker
-  spatial_distortion: Low res
-  atmosphere: Tech, code
+  subject_treatment: Repeating keyboard glyphs used as value cells, line clusters, and contour-density bands
+  color_and_tone: Monochrome green/black
+  lighting_and_shadow: Density based
+  texture_and_material: Text grid
+  camera_and_composition: Low res
+  atmosphere_and_mood: Tech, code
+  rendering_and_quality: Retro, hacker
   key_features: Glyph density image, monospaced grid, terminal glow
   creative_brief: >-
-    Apply ASCII-art construction to any input: monospaced glyph density, symbol
-    fields as tonal pixels, terminal-era spacing, low-resolution contrast, and
-    character-set geometry. Keep text-as-image abstraction while avoiding
-    readable words, captions, signatures, or logos.
+    Apply ASCII-art construction to any input: monospaced glyph density, symbol fields as tonal pixels,
+    terminal-era spacing, low-resolution contrast, and character-set geometry. Keep text-as-image abstraction
+    while avoiding readable words, captions, signatures, or logos.
 avoidRules:
   - photo
   - realistic
@@ -45,7 +44,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP06-060.webp
 attributes:
-  negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, readable words, signature, frame, border
+  negativePrompt: >-
+    photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy,
+    watermark, readable words, signature, frame, border
 taxonomy:
   packId: pack_06
   packName: Essential Art Styles

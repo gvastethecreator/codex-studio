@@ -13,20 +13,20 @@ tags:
   - micro-macro
 visualDna:
   aesthetic: Heat map camera, predator-vision, infrared-surveillance, temperature-portrait
-  form_and_line: Heat gradients, thermal-blob contours, isotherm-boundary curves, heat-plume wisps
-  color_palette: Rainbow (Red hot, Blue cold), ironbow-spectrum, white-hot core, magenta-warm, cyan-cool
-  lighting_setup: Emission, self-illuminated heat, body-heat radiance, engine-exhaust glow, no external source
-  material_texture: Digital noise, sensor-speckle, hot-pixel artifacts, low-res thermal grain, calibration-barrier banding
-  render_quality: Military, predator, seeker-head vision, FLIR-targeting, night-hunt aesthetic
-  spatial_distortion: Blobby heat zones, thermal-plume bloom, heat-bleed blur, convection-trail smear
-  atmosphere: Tactical, hunting, infrared-silence, predator-stalk, heat-signature dread
+  subject_treatment: Heat gradients, thermal-blob contours, isotherm-boundary curves, heat-plume wisps
+  color_and_tone: Rainbow (Red hot, Blue cold), ironbow-spectrum, white-hot core, magenta-warm, cyan-cool
+  lighting_and_shadow: Emission, self-illuminated heat, body-heat radiance, engine-exhaust glow, no external source
+  texture_and_material: Digital noise, sensor-speckle, hot-pixel artifacts, low-res thermal grain, calibration-barrier banding
+  camera_and_composition: Blobby heat zones, thermal-plume bloom, heat-bleed blur, convection-trail smear
+  atmosphere_and_mood: Tactical, hunting, infrared-silence, predator-stalk, heat-signature dread
+  rendering_and_quality: Military, predator, seeker-head vision, FLIR-targeting, night-hunt aesthetic
   key_features: Heat glow, temperature-scale bar, crosshair-reticle, hot-spot bloom, cold-background contrast
   creative_brief: >-
     Preserve this preset through thermal-imaging grammar: emissive heat maps, false-color temperature bands,
-    sensor-noise artifacts, and blob-based isotherm contours should define identity beyond tactical hunt narratives.
-    Apply Thermal Vision as a portable style system over any input: preserve its construction grammar, material cues,
-    scale logic, and signature rendering behavior while avoiding a required franchise, literal prop, fixed specimen,
-    classroom sample, product shot, or scene template.
+    sensor-noise artifacts, and blob-based isotherm contours should define identity beyond tactical hunt
+    narratives. Apply Thermal Vision as a portable style system over any input: preserve its construction
+    grammar, material cues, scale logic, and signature rendering behavior while avoiding a required franchise,
+    literal prop, fixed specimen, classroom sample, product shot, or scene template.
 avoidRules:
   - natural colors
 assets:

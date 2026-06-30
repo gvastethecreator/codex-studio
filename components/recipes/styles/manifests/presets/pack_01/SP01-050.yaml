@@ -13,18 +13,20 @@ tags:
   - commercial-and-product
 visualDna:
   aesthetic: Clean commercial object
-  form_and_line: Sharp edges
-  color_palette: Accurate, clean
-  lighting_setup: Studio softbox
-  material_texture: Perfect surface
-  render_quality: Apple ad, commercial
-  spatial_distortion: None
-  atmosphere: Professional, desire
+  subject_treatment: Sharp edges
+  color_and_tone: Accurate, clean
+  lighting_and_shadow: Studio softbox
+  texture_and_material: Perfect surface
+  camera_and_composition: >-
+    Camera setup native to Product Photography: lens choice, crop distance, depth of field, and focal
+    hierarchy support 5. Commercial And Product without generic framing.
+  atmosphere_and_mood: Professional, desire
+  rendering_and_quality: Apple ad, commercial
   key_features: White/Grey background
   creative_brief: >-
-    Apply premium product-photography isolation to the input: controlled void
-    background, wrapped highlight gradients, crisp contour reveal, clean shadow
-    grounding, and desire-focused polish should elevate any subject as an object.
+    Apply premium product-photography isolation to the input: controlled void background, wrapped highlight
+    gradients, crisp contour reveal, clean shadow grounding, and desire-focused polish should elevate any
+    subject as an object.
 avoidRules:
   - dust
   - scratches

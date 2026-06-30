@@ -15,21 +15,23 @@ visualDna:
   aesthetic: >-
     Desk-doodle freakout pushed full frame, permanent-marker chaos, rude iconography, sketchbook rebellion,
     bored-student aggression, malformed margin forms
-  form_and_line: Permanent-marker aggression, desk-doodle scratches, malformed margin contours, vandal-energy hatching
-  color_palette: Toxic marker green, black ink, red correction pen, highlighter yellow, notebook blue, cheap purple
-  lighting_setup: Flat desk light, overhead classroom-like glare, no atmospheric depth, marker-first readability
-  material_texture: Marker bleed, scratched desk surface, notebook paper tooth, ink feathering, smudged graphite
-  render_quality: Rebellious marker doodle, juvenile freakout composition, toxic margin-art expansion
-  spatial_distortion: Margin doodles expanding full-frame, warped symbols, malformed scale, restless edge crowding
-  atmosphere: Rebellious, messy, hyperactive, juvenile
-  key_features: Permanent-marker texture, desk-doodle iconography, malformed margin forms, vandal-energy linework, adolescent chaos
+  subject_treatment: Permanent-marker aggression, desk-doodle scratches, malformed margin contours, vandal-energy hatching
+  color_and_tone: Toxic marker green, black ink, red correction pen, highlighter yellow, notebook blue, cheap purple
+  lighting_and_shadow: Flat desk light, overhead classroom-like glare, no atmospheric depth, marker-first readability
+  texture_and_material: Marker bleed, scratched desk surface, notebook paper tooth, ink feathering, smudged graphite
+  camera_and_composition: Margin doodles expanding full-frame, warped symbols, malformed scale, restless edge crowding
+  atmosphere_and_mood: Rebellious, messy, hyperactive, juvenile
+  rendering_and_quality: Rebellious marker doodle, juvenile freakout composition, toxic margin-art expansion
+  key_features: >-
+    Permanent-marker texture, desk-doodle iconography, malformed margin forms, vandal-energy linework,
+    adolescent chaos
   creative_brief: >-
-    Use toxic marker classroom freakout as style: permanent-marker bleed, desk-doodle symbols, malformed margin forms,
-    vandal-energy linework, and hyperactive juvenile composition. Avoid classrooms, students, lessons, monsters, or
-    readable rude text as requirements. The page should feel colonized by rebellious marks. Apply Toxic Marker Classroom
-    Freakout as a portable cinematic/camera style over any input: preserve its lens behavior, color process, lighting
-    setup, artifact pattern, and deformation grammar while avoiding a required actor, room, prop, brand, readable text,
-    fixed IP scene, or narrative setup.
+    Use toxic marker classroom freakout as style: permanent-marker bleed, desk-doodle symbols, malformed
+    margin forms, vandal-energy linework, and hyperactive juvenile composition. Avoid classrooms, students,
+    lessons, monsters, or readable rude text as requirements. The page should feel colonized by rebellious
+    marks. Apply Toxic Marker Classroom Freakout as a portable cinematic/camera style over any input: preserve
+    its lens behavior, color process, lighting setup, artifact pattern, and deformation grammar while avoiding
+    a required actor, room, prop, brand, readable text, fixed IP scene, or narrative setup.
 avoidRules:
   - digital
   - HD

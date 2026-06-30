@@ -13,19 +13,20 @@ tags:
   - drawing-and-sketching
 visualDna:
   aesthetic: One-line drawing
-  form_and_line: Unbroken single line
-  color_palette: Black on White
-  lighting_setup: None
-  material_texture: Smooth
-  render_quality: Picasso, minimalist
-  spatial_distortion: Abstracted
-  atmosphere: Fluid, simple
+  subject_treatment: Unbroken single line
+  color_and_tone: Black on White
+  lighting_and_shadow: >-
+    Lighting for Continuous Line: purposeful key, bounce, rim, shadow depth, and focal readability matched to
+    2. Drawing & Sketching.
+  texture_and_material: Smooth
+  camera_and_composition: Abstracted
+  atmosphere_and_mood: Fluid, simple
+  rendering_and_quality: Picasso, minimalist
   key_features: Single line
   creative_brief: >-
-    Apply continuous-line drawing to any input: one unbroken contour path,
-    looping simplification, minimal lifts, expressive detours, and structure
-    built from uninterrupted connection. Keep elegant line discipline without
-    requiring faces, hands, figure studies, sketchbook margins, or cafe scenes.
+    Apply continuous-line drawing to any input: one unbroken contour path, looping simplification, minimal
+    lifts, expressive detours, and structure built from uninterrupted connection. Keep elegant line discipline
+    without requiring faces, hands, figure studies, sketchbook margins, or cafe scenes.
 avoidRules:
   - photo
   - realistic
@@ -45,7 +46,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP06-030.webp
 attributes:
-  negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border
+  negativePrompt: >-
+    photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy,
+    watermark, text, signature, frame, border
 taxonomy:
   packId: pack_06
   packName: Essential Art Styles

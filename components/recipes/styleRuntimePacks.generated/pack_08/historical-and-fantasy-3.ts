@@ -10,18 +10,19 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'contemporary tailoring dominance, generic modern streetwear',
     style: {
       aesthetic: 'Ancient Egyptian regalia, Nile-divinity splendor, carved-relief majesty',
-      form_and_line:
+      subject_treatment:
         'Pleated linen, columnar drape, usekh-collar spread, nemes-headdress frame, sheath-silhouette',
-      color_palette:
+      color_and_tone:
         'White, Gold, Lapis Blue, turquoise, carnelian red, malachite green, ebony, electrum',
-      lighting_setup:
+      lighting_and_shadow:
         'Desert-gold sun, relief-shadow contrast, torchlight flicker, lapis highlight',
-      material_texture:
+      texture_and_material:
         'Fine linen, gold leaf, faience beads, lapis lazuli inlay, hammered electrum, braided papyrus sandals',
-      render_quality: 'Royal, ancient, tomb-painting precision, pharaonic grandeur',
-      spatial_distortion: 'None',
-      atmosphere:
+      camera_and_composition:
+        'Compose for Ancient Egyptian using its key spatial cues: Usekh spread geometry, kohl-line cues, relief-line ornament, pleated linen rhythm, faience-lapis accents.',
+      atmosphere_and_mood:
         'Regal, divine, eternal-Nile serenity, incense reverence, absolute-power stillness',
+      rendering_and_quality: 'Royal, ancient, tomb-painting precision, pharaonic grandeur',
       key_features:
         'Usekh spread geometry, kohl-line cues, relief-line ornament, pleated linen rhythm, faience-lapis accents',
       creative_brief:
@@ -36,16 +37,18 @@ export const GENERATED_STYLE_PRESETS = [
       'city, clean, weapon draw, holsters, saloons, street standoffs, cowboy portrait',
     style: {
       aesthetic: 'Frontier workwear myth, dust-worn practicality and sun-baked material tension.',
-      form_and_line:
+      subject_treatment:
         'Duster-length sweep, waistcoat taper, bandana-triangle geometry, boot-leather rhythm and strap-yoke structure.',
-      color_palette: 'Brown, Tan, Denim, tobacco, saddle, dust, black-hat black, calico print',
-      lighting_setup:
+      color_and_tone: 'Brown, Tan, Denim, tobacco, saddle, dust, black-hat black, calico print',
+      lighting_and_shadow:
         'Dry sun glare, merciless warm light, amber practical warmth and campfire flicker.',
-      material_texture:
+      texture_and_material:
         'Oilskin leather, trail dust, raw denim, wool serape, brass hardware and worn boot leather.',
-      render_quality: 'Iconic, rugged, frontier-photograph clarity with workwear grit.',
-      spatial_distortion: 'None',
-      atmosphere: 'Tough, lonely, dry-sun tension, frontier solitude and weathered resolve.',
+      camera_and_composition:
+        'Compose for Frontier Workwear using its key spatial cues: Brim geometry, bandana folds, duster sweep, brass hardware, boot-leather wear and yoke stitching.',
+      atmosphere_and_mood:
+        'Tough, lonely, dry-sun tension, frontier solitude and weathered resolve.',
+      rendering_and_quality: 'Iconic, rugged, frontier-photograph clarity with workwear grit.',
       key_features:
         'Brim geometry, bandana folds, duster sweep, brass hardware, boot-leather wear and yoke stitching.',
       creative_brief:
@@ -60,17 +63,18 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Ceremonial lacquer armor regalia with silk-laced discipline and red-black-gold craft pressure.',
-      form_and_line:
+      subject_treatment:
         'Laced plate rhythm, do-chest breadth, sode-shoulder square, haidate paneling and crest geometry.',
-      color_palette: 'Red lacquer, Black, Gold, indigo silk, burnished iron, copper-gilt, ivory',
-      lighting_setup:
+      color_and_tone: 'Red lacquer, Black, Gold, indigo silk, burnished iron, copper-gilt, ivory',
+      lighting_and_shadow:
         'Dramatic dawn-mist light, lacquer edge shine, indigo shadow and gold-leaf glint.',
-      material_texture:
+      texture_and_material:
         'Lacquered iron, silk odoshi lacing, hammered gold leaf, braided silk cord and iron mask finish.',
-      render_quality:
+      camera_and_composition:
+        'Compose for Samurai Armor using its key spatial cues: Helmet-like crest geometry, lacquered plates, silk lacing, layered shoulder panels and vertical banner-like rhythm.',
+      atmosphere_and_mood: 'Reverent, still, impermanent, pre-dawn calm and disciplined.',
+      rendering_and_quality:
         'Detailed ceremonial craft, disciplined silhouette clarity, historical-fantasy gravitas',
-      spatial_distortion: 'None',
-      atmosphere: 'Reverent, still, impermanent, pre-dawn calm and disciplined.',
       key_features:
         'Helmet-like crest geometry, lacquered plates, silk lacing, layered shoulder panels and vertical banner-like rhythm.',
       creative_brief:
@@ -84,15 +88,18 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'modern, simple, cheap',
     style: {
       aesthetic: '16th century court regalia, early-modern majesty, painted-court splendor',
-      form_and_line:
+      subject_treatment:
         'Heavy layers, ruffs, farthingale cone, slashed sleeves, stiffened bodice architecture',
-      color_palette: 'Deep Red, Gold, Velvet Blue, imperial purple, cloth-of-gold, ermine white',
-      lighting_setup: 'Oil-painting light, chiaroscuro depth, stained-glass warmth, candlelit gold',
-      material_texture:
+      color_and_tone: 'Deep Red, Gold, Velvet Blue, imperial purple, cloth-of-gold, ermine white',
+      lighting_and_shadow:
+        'Oil-painting light, chiaroscuro depth, stained-glass warmth, candlelit gold',
+      texture_and_material:
         'Cut velvet, silver brocade, seed pearls, cloth-of-gold tissue, mink trim, jeweled net caul',
-      render_quality: 'Historical museum-grade finish, painted-court realism, formal gravitas',
-      spatial_distortion: 'Stiffened garment architecture',
-      atmosphere: 'Regal, serious, wealthy, courtly intrigue, absolute power, gilded formality',
+      camera_and_composition: 'Stiffened garment architecture',
+      atmosphere_and_mood:
+        'Regal, serious, wealthy, courtly intrigue, absolute power, gilded formality',
+      rendering_and_quality:
+        'Historical museum-grade finish, painted-court realism, formal gravitas',
       key_features:
         'Ornate details, neck ruff, jeweled bodice, structured court headwear, ceremonial trim',
       creative_brief:
@@ -106,17 +113,18 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'color, happy, drawn curtain, window tableau, graveyard, portrait setup',
     style: {
       aesthetic: 'Victorian mourning regalia, grief ritual formality, gaslit-sorrow pageantry',
-      form_and_line:
+      subject_treatment:
         'Heavy layers, floor-length column, cape-volume drape, high-neck severity, long-sleeve enclosure',
-      color_palette:
+      color_and_tone:
         'Black matte, jet, raven, deep crepe-black, jet-bead black, unrelieved midnight',
-      lighting_setup: 'Gloomy overcast grey, candle-flicker dimness, rain-streaked softness',
-      material_texture:
+      lighting_and_shadow: 'Gloomy overcast grey, candle-flicker dimness, rain-streaked softness',
+      texture_and_material:
         'Matte crepe, black veiling, jet beads, crape de chine, bombazine, lace-mitt texture',
-      render_quality: 'Formal funereal stillness, ritual gravity, mourning-grade finish',
-      spatial_distortion: 'None',
-      atmosphere:
+      camera_and_composition:
+        'Compose for Victorian Mourning using its key spatial cues: Black veil, jet brooch, mourning-cap cues, black-bordered textile accents.',
+      atmosphere_and_mood:
         'Somber, gothic, ritual sorrow, enclosed textile isolation, eternal-mourning silence',
+      rendering_and_quality: 'Formal funereal stillness, ritual gravity, mourning-grade finish',
       key_features: 'Black veil, jet brooch, mourning-cap cues, black-bordered textile accents',
       creative_brief:
         'Shroud the input in Victorian mourning codes: matte crepe, bombazine, jet beads, black veiling, mourning-cap cues and floor-length black enclosure. Keep grief ritual and gothic severity without requiring a widow persona, face, window tableau, graveyard or portrait setup.',
@@ -130,17 +138,18 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         '1950s domestic-pop polish, technicolor nostalgia, cheerful mid-century presentation grammar',
-      form_and_line:
+      subject_treatment:
         'Cinched sweep, circle-volume arcs, petticoat lift, scalloped trim rhythm, tidy accent geometry',
-      color_palette:
+      color_and_tone:
         'Polka dots, pastel pink/blue, cherry red, mint green, buttercup yellow, gingham check',
-      lighting_setup:
+      lighting_and_shadow:
         'Bright Technicolor saturation, neon-cheer accents, sun-drenched retro warmth',
-      material_texture:
+      texture_and_material:
         'Crisp cotton poplin, hairspray lacquer, taffeta rustle, crinoline scratch, satin ribbon trim',
-      render_quality: 'Retro, polished, Kodachrome nostalgia, lacquered presentation charm',
-      spatial_distortion: 'None',
-      atmosphere: 'Nostalgic, buoyant, orderly, jukebox-bright sweetness, social optimism',
+      camera_and_composition:
+        'Compose for Vintage 1950s using its key spatial cues: Cat-eye graphic cues, victory-roll rhythm, polka-dot punctuation, crinoline lift logic.',
+      atmosphere_and_mood: 'Nostalgic, buoyant, orderly, jukebox-bright sweetness, social optimism',
+      rendering_and_quality: 'Retro, polished, Kodachrome nostalgia, lacquered presentation charm',
       key_features:
         'Cat-eye graphic cues, victory-roll rhythm, polka-dot punctuation, crinoline lift logic',
       creative_brief:
@@ -154,16 +163,18 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'long dress, modern, party scene, dancer, cigarette-holder prop, portrait body',
     style: {
       aesthetic: 'Jazz-age eveningwear, speakeasy decadence, Art Deco nocturne splendor',
-      form_and_line:
+      subject_treatment:
         'Straight silhouette, dropped-waist column, scalloped hem, fringe-cascade movement, T-strap elongation',
-      color_palette: 'Gold, Black, Silver, champagne, oyster, Art Deco jade, peacock, plum',
-      lighting_setup:
+      color_and_tone: 'Gold, Black, Silver, champagne, oyster, Art Deco jade, peacock, plum',
+      lighting_and_shadow:
         'Chandelier sparkle, feathered edge glow, champagne-bubble ambience, soft smoky gleam',
-      material_texture:
+      texture_and_material:
         'Beaded fringe, sequined net, silk charmeuse, ostrich-feather trim, Art Deco crystal, velvet ribbon',
-      render_quality: 'Vintage eveningwear polish, speakeasy glamour, Deco-era elegance',
-      spatial_distortion: 'None',
-      atmosphere: 'Retro, champagne-fizz excitement, dance-marathon energy, illicit-night thrill',
+      camera_and_composition:
+        'Compose for Roaring 20s (Flapper) using its key spatial cues: Cloche cues, feather headband logic, T-strap elongation, bead-fringe rhythm, Deco crystal accents.',
+      atmosphere_and_mood:
+        'Retro, champagne-fizz excitement, dance-marathon energy, illicit-night thrill',
+      rendering_and_quality: 'Vintage eveningwear polish, speakeasy glamour, Deco-era elegance',
       key_features:
         'Cloche cues, feather headband logic, T-strap elongation, bead-fringe rhythm, Deco crystal accents',
       creative_brief:
@@ -177,15 +188,16 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'clean, suit, arena combat, weapon pose, crowd, literal gladiator body',
     style: {
       aesthetic: 'Roman ceremonial regalia, martial pageantry, bronze-and-oxblood material gravity',
-      form_and_line:
+      subject_treatment:
         'Armor articulation, segmentata-plate rhythm, balteus cinch logic, greave taper, pteruges fringe cadence',
-      color_palette: 'Bronze, red, iron-grey, oxblood, dusted tan, leather-brown',
-      lighting_setup: 'Harsh sun, dust-haze contrast, torch-smoke shadows, bronze edge light',
-      material_texture:
+      color_and_tone: 'Bronze, red, iron-grey, oxblood, dusted tan, leather-brown',
+      lighting_and_shadow: 'Harsh sun, dust-haze contrast, torch-smoke shadows, bronze edge light',
+      texture_and_material:
         'Bronze plate, oiled leather straps, iron chainmail, sand-grit patina, linen pteruges',
-      render_quality: 'Tough, historical, dust-patina authenticity, ceremonial grit',
-      spatial_distortion: 'None',
-      atmosphere: 'Martial, pressurized, ceremonial, defiant, processional gravity',
+      camera_and_composition:
+        'Compose for Roman Ceremonial Regalia using its key spatial cues: Crest cues, curved shield geometry, armored manica, pteruges rhythm, bronze articulation.',
+      atmosphere_and_mood: 'Martial, pressurized, ceremonial, defiant, processional gravity',
+      rendering_and_quality: 'Tough, historical, dust-patina authenticity, ceremonial grit',
       key_features:
         'Crest cues, curved shield geometry, armored manica, pteruges rhythm, bronze articulation',
       creative_brief:
@@ -199,17 +211,19 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'boring, matte, named venue, named band',
     style: {
       aesthetic: '70s disco styling, mirror-ball swagger, polyester-dream confidence',
-      form_and_line:
+      subject_treatment:
         'Flared pants, wide-lapel opening, high-waist flare, pointed-collar drama, platform-sole elevation',
-      color_palette:
+      color_and_tone:
         'White suit, Gold, burgundy, burnt orange, avocado green, shiny-black, metallic silver',
-      lighting_setup:
+      lighting_and_shadow:
         'Mirror-ball fragments, colored-light squares, tri-light beams, fog-machine haze',
-      material_texture:
+      texture_and_material:
         'Polyester crepe, liquid satin, gold lame, Qiana nylon, crushed velvet, patent leather',
-      render_quality: 'Fun, dance, 1970s mirror-ball nightlife energy, polyester sparkle',
-      spatial_distortion: 'None',
-      atmosphere: 'Groovy, energetic, mirror-ball transcendence, warm nightlife confidence',
+      camera_and_composition:
+        'Compose for Disco (70s) using its key spatial cues: Bell-bottom flare, wide-collar geometry, gold medallion glints, platform-sole elevation and mirror-ball sparkle.',
+      atmosphere_and_mood:
+        'Groovy, energetic, mirror-ball transcendence, warm nightlife confidence',
+      rendering_and_quality: 'Fun, dance, 1970s mirror-ball nightlife energy, polyester sparkle',
       key_features:
         'Bell-bottom flare, wide-collar geometry, gold medallion glints, platform-sole elevation and mirror-ball sparkle',
       creative_brief:
@@ -223,18 +237,18 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'contemporary casualwear dominance, generic modern streetwear',
     style: {
       aesthetic: 'Rococo court excess, powdered aristocratic texture, pre-revolution glamour',
-      form_and_line:
+      subject_treatment:
         'Wide hips (panniers), robe-a-la-francaise volume, stomacher-center line, engageantes-sleeve froth, train-sweep',
-      color_palette:
+      color_and_tone:
         'Pastel Silk, powder blue, rose pompadour, celadon, buttercream, silver tissue, dove',
-      lighting_setup:
+      lighting_and_shadow:
         'Chandelier sparkle, gilded reflection warmth, candlelit shimmer, mirrored bounce',
-      material_texture:
+      texture_and_material:
         'Silk taffeta, lace engageantes, powdered texture cues, ostrich plume accents, ribbon garlands, paste-jewel ornament',
-      render_quality: 'Excessive, royal, Rococo-froth magnificence, petit-Trianon fantasy',
-      spatial_distortion: 'Pannier volume and court-pageant silhouette exaggeration',
-      atmosphere:
+      camera_and_composition: 'Pannier volume and court-pageant silhouette exaggeration',
+      atmosphere_and_mood:
         'Decadent, fragile, champagne-bubble impermanence, gilded-cage beauty, pre-revolution tension',
+      rendering_and_quality: 'Excessive, royal, Rococo-froth magnificence, petit-Trianon fantasy',
       key_features:
         'Powdered texture cues, beauty-patch dots, ribbon choker logic, pannier side-hoops, court ornament density',
       creative_brief:
@@ -249,15 +263,17 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Norse seafaring regalia, fjord-weathered resilience, saga-forged material culture',
-      form_and_line:
+      subject_treatment:
         'Fur mantle layering, leather strap lattice, tunic-panel rhythm, rune-band geometry, cloak-pin gather',
-      color_palette: 'Brown, Grey, Blue, moss, woad, rust, iron, wolf-pelt grey, amber',
-      lighting_setup: 'Cold overcast grey, firelight warmth, mist diffusion, iron-edge highlights',
-      material_texture:
+      color_and_tone: 'Brown, Grey, Blue, moss, woad, rust, iron, wolf-pelt grey, amber',
+      lighting_and_shadow:
+        'Cold overcast grey, firelight warmth, mist diffusion, iron-edge highlights',
+      texture_and_material:
         'Wolf fur, riveted chainmail, oil-tanned leather, coarse wool wadmal, iron boss, bone toggle',
-      render_quality: 'Rugged, weathered, saga-page authenticity, north-sea grit',
-      spatial_distortion: 'None',
-      atmosphere: 'Tough, cold, sea-spray resolve, saga warmth, raven-flight omen',
+      camera_and_composition:
+        'Compose for Norse Seafaring Regalia using its key spatial cues: Amulet silhouette, round metal geometry, fur mantle edge, knotwork or rune detail.',
+      atmosphere_and_mood: 'Tough, cold, sea-spray resolve, saga warmth, raven-flight omen',
+      rendering_and_quality: 'Rugged, weathered, saga-page authenticity, north-sea grit',
       key_features:
         'Amulet silhouette, round metal geometry, fur mantle edge, knotwork or rune detail',
       creative_brief:

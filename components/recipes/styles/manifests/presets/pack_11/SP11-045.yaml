@@ -13,16 +13,22 @@ tags:
   - aesthetics
 visualDna:
   aesthetic: Psychedelic optical recursion where color, line, and form melt into high-intensity perceptual feedback
-  form_and_line: Paisley whorls, melting contours, nested mandalas, flame tongues, vibrating curves, morphing edge loops
-  color_palette: Day-Glo rainbow, blacklight purple, neon chartreuse, hot magenta, acid cyan, saturated orange, op-art contrast
-  lighting_setup: Internal chromatic glow, blacklight saturation, high contrast optical vibration, color-field pulsing
-  material_texture: Poster ink, liquid gradient bands, vibrating print grain, glossy ink pools, hand-drawn optical waves
-  render_quality: Maximal, hallucinatory, dense, flowing, deliberately unstable, with intense graphic clarity
-  spatial_distortion: Recursive warping, swirl pull, contour melt, scale loops, radial feedback, figure-ground reversal
-  atmosphere: Trippy, euphoric, saturated, unstable, mesmerizing, loud
-  key_features: Paisley recursion, mandala centers, liquid contours, blacklight glow, vibrating color clashes, fractal spiral pressure
+  subject_treatment: Paisley whorls, melting contours, nested mandalas, flame tongues, vibrating curves, morphing edge loops
+  color_and_tone: >-
+    Day-Glo rainbow, blacklight purple, neon chartreuse, hot magenta, acid cyan, saturated orange, op-art
+    contrast
+  lighting_and_shadow: Internal chromatic glow, blacklight saturation, high contrast optical vibration, color-field pulsing
+  texture_and_material: Poster ink, liquid gradient bands, vibrating print grain, glossy ink pools, hand-drawn optical waves
+  camera_and_composition: Recursive warping, swirl pull, contour melt, scale loops, radial feedback, figure-ground reversal
+  atmosphere_and_mood: Trippy, euphoric, saturated, unstable, mesmerizing, loud
+  rendering_and_quality: Maximal, hallucinatory, dense, flowing, deliberately unstable, with intense graphic clarity
+  key_features: >-
+    Paisley recursion, mandala centers, liquid contours, blacklight glow, vibrating color clashes, fractal
+    spiral pressure
   creative_brief: >-
-    Drive any input through psychedelic perception mechanics: recursive ornament, liquid contours, color clashes, and optical vibration. Keep it style-first; avoid fixed venues, posters, bands, characters, or narrative drug imagery.
+    Drive any input through psychedelic perception mechanics: recursive ornament, liquid contours, color
+    clashes, and optical vibration. Keep it style-first; avoid fixed venues, posters, bands, characters, or
+    narrative drug imagery.
 avoidRules:
   - boring
   - straight

@@ -13,21 +13,22 @@ tags:
   - weathering-and-decay
 visualDna:
   aesthetic: Potato sack
-  form_and_line: Coarse weave
-  color_palette: Tan, Brown
-  lighting_setup: Matte
-  material_texture: Rough fiber
-  render_quality: Rustic, cheap
-  spatial_distortion: Loose weave
-  atmosphere: Poor, rural
+  subject_treatment: Coarse weave
+  color_and_tone: Tan, Brown
+  lighting_and_shadow: Matte
+  texture_and_material: Rough fiber
+  camera_and_composition: Loose weave
+  atmosphere_and_mood: Poor, rural
+  rendering_and_quality: Rustic, cheap
   key_features: Grid weave
   creative_brief: >-
-    Capture the rough honesty of burlap where coarse jute fibers interlace in a grid of tan and brown utility, each
-    thread a visible record of plant turned to purpose. The surface must feel dry and scratchy to the eye, a loose weave
-    that hints at the grain it once carried. Render the dignity of the cheap and functional, beauty found in necessity's
-    simplest weave. Use Burlap Sack as portable surface/render behavior over any input: map its texture, light response,
-    edge wear, color chemistry, and tactile rhythm onto the subject instead of requiring a literal material sample,
-    macro tile, wall, landscape, source object, or scene where the material naturally appears.
+    Capture the rough honesty of burlap where coarse jute fibers interlace in a grid of tan and brown utility,
+    each thread a visible record of plant turned to purpose. The surface must feel dry and scratchy to the
+    eye, a loose weave that hints at the grain it once carried. Render the dignity of the cheap and
+    functional, beauty found in necessity's simplest weave. Use Burlap Sack as portable surface/render
+    behavior over any input: map its texture, light response, edge wear, color chemistry, and tactile rhythm
+    onto the subject instead of requiring a literal material sample, macro tile, wall, landscape, source
+    object, or scene where the material naturally appears.
 avoidRules:
   - silk
   - smooth

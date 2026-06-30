@@ -13,23 +13,20 @@ tags:
   - landscape-and-garden-systems
 visualDna:
   aesthetic: Historic iron-and-glass botanical conservatory logic with controlled humid climate.
-  form_and_line: Ribbed glazed vaults, cast-iron modular repetition and vertical botanical layering.
-  color_palette: White, Green, Tropical-flower Magenta, Iron-grey, Glass-reflected Blue, warm Humidity-silver
-  lighting_setup: >-
-    Diffuse greenhouse brightness, condensation prisms, rain-on-glass sparkle
-    and warm glow over ironwork.
-  material_texture: Wet glass, cast iron, terracotta tile and broad-leaf tropical texture.
-  render_quality: Museum-grade conservatory clarity with technically credible humid atmosphere.
-  spatial_distortion: >-
-    Ribbed-glass repetition, condensation refraction and layered botanical depth
-    without requiring a fixed greenhouse room.
-  atmosphere: Enclosed lushness, humid cultivation calm and curated botanical awe.
+  subject_treatment: Ribbed glazed vaults, cast-iron modular repetition and vertical botanical layering.
+  color_and_tone: White, Green, Tropical-flower Magenta, Iron-grey, Glass-reflected Blue, warm Humidity-silver
+  lighting_and_shadow: Diffuse greenhouse brightness, condensation prisms, rain-on-glass sparkle and warm glow over ironwork.
+  texture_and_material: Wet glass, cast iron, terracotta tile and broad-leaf tropical texture.
+  camera_and_composition: >-
+    Ribbed-glass repetition, condensation refraction and layered botanical depth without requiring a fixed
+    greenhouse room.
+  atmosphere_and_mood: Enclosed lushness, humid cultivation calm and curated botanical awe.
+  rendering_and_quality: Museum-grade conservatory clarity with technically credible humid atmosphere.
   key_features: Iron lattice bays, prismatic condensed glass, layered tropical canopies and clean circulation logic.
   creative_brief: >-
-    Combine rhythmic ironwork, humid glass and dense exhibition botany. Any
-    subject should feel climate-curated, with visible structure as important as
-    foliage, without requiring an exterior garden, tourist conservatory or fixed
-    greenhouse scene.
+    Combine rhythmic ironwork, humid glass and dense exhibition botany. Any subject should feel
+    climate-curated, with visible structure as important as foliage, without requiring an exterior garden,
+    tourist conservatory or fixed greenhouse scene.
 avoidRules:
   - exterior garden
 assets:

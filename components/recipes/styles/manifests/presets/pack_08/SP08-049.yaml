@@ -13,20 +13,19 @@ tags:
   - fantasy-sci-fi-costume
 visualDna:
   aesthetic: Pelagic fantasy couture, deep-ocean enchantment, tidal iridescence
-  form_and_line: Scale lattices, fin-ridge undulation, tidal-flare geometry, liquid drape, floating-curve rhythm
-  color_palette: Iridescent Green, teal, abalone, moonlight-pearl, aquamarine, bioluminescent-blue, coral-pink
-  lighting_setup: Caustic-light dapple, surface-sunbeam shafts, bioluminescent glow, reef-filtered turquoise
-  material_texture: Iridescent scales, wet-look silicone, pearlescent finish, shell texture, liquid organza, nacre sheen
-  render_quality: Magical, mythical, lagoon-dream ethereality, oceanic enchantment
-  spatial_distortion: Optional tail-flare exaggeration
-  atmosphere: Beautiful, wet, deep-ocean mystery, coral-reef serenity, moon-tide magic
+  subject_treatment: Scale lattices, fin-ridge undulation, tidal-flare geometry, liquid drape, floating-curve rhythm
+  color_and_tone: Iridescent Green, teal, abalone, moonlight-pearl, aquamarine, bioluminescent-blue, coral-pink
+  lighting_and_shadow: Caustic-light dapple, surface-sunbeam shafts, bioluminescent glow, reef-filtered turquoise
+  texture_and_material: Iridescent scales, wet-look silicone, pearlescent finish, shell texture, liquid organza, nacre sheen
+  camera_and_composition: Optional tail-flare exaggeration
+  atmosphere_and_mood: Beautiful, wet, deep-ocean mystery, coral-reef serenity, moon-tide magic
+  rendering_and_quality: Magical, mythical, lagoon-dream ethereality, oceanic enchantment
   key_features: Fin cues, scale texture, pearlescent shell detail, liquid organza flow, nacre highlights
   creative_brief: >-
-    Give the input a pelagic-couture transformation: iridescent scales, fin
-    ridges, pearlescent shell detail, wet-look silicone, liquid organza and
-    caustic turquoise light. Let aquatic geometry stay abstract and
-    fashion-forward; avoid requiring a mermaid body, siren portrait, coral set,
-    underwater hair or humanoid anatomy.
+    Give the input a pelagic-couture transformation: iridescent scales, fin ridges, pearlescent shell detail,
+    wet-look silicone, liquid organza and caustic turquoise light. Let aquatic geometry stay abstract and
+    fashion-forward; avoid requiring a mermaid body, siren portrait, coral set, underwater hair or humanoid
+    anatomy.
 avoidRules:
   - dry casualwear
 assets:

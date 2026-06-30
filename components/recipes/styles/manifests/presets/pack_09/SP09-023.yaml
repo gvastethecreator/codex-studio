@@ -13,21 +13,22 @@ tags:
   - man-made-materials
 visualDna:
   aesthetic: Old masonry
-  form_and_line: Mortar lines
-  color_palette: Red, Brown, White mortar
-  lighting_setup: Rough
-  material_texture: Rough clay
-  render_quality: Urban, historic
-  spatial_distortion: Chipped corners
-  atmosphere: Solid, history
+  subject_treatment: Mortar lines
+  color_and_tone: Red, Brown, White mortar
+  lighting_and_shadow: Rough
+  texture_and_material: Rough clay
+  camera_and_composition: Chipped corners
+  atmosphere_and_mood: Solid, history
+  rendering_and_quality: Urban, historic
   key_features: Running bond
   creative_brief: >-
-    Capture the warm disorder of aged brick where every unit carries a unique blush of kiln fire and crumbling mortar
-    maps the passage of decades between red clay bodies. The running bond pattern should feel like a woven tapestry of
-    earth and fire, rough and uneven. Render the accumulated imperfection of walls that have learned to breathe through
-    chipped corners and softened edges. Use Brick Wall as portable surface/render behavior over any input: map its
-    texture, light response, edge wear, color chemistry, and tactile rhythm onto the subject instead of requiring a
-    literal material sample, macro tile, wall, landscape, source object, or scene where the material naturally appears.
+    Capture the warm disorder of aged brick where every unit carries a unique blush of kiln fire and crumbling
+    mortar maps the passage of decades between red clay bodies. The running bond pattern should feel like a
+    woven tapestry of earth and fire, rough and uneven. Render the accumulated imperfection of walls that have
+    learned to breathe through chipped corners and softened edges. Use Brick Wall as portable surface/render
+    behavior over any input: map its texture, light response, edge wear, color chemistry, and tactile rhythm
+    onto the subject instead of requiring a literal material sample, macro tile, wall, landscape, source
+    object, or scene where the material naturally appears.
 avoidRules:
   - new
   - perfect

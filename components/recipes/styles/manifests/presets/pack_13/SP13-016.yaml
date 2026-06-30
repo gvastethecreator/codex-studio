@@ -12,19 +12,32 @@ tags:
   - anime-character-and-lifestyle
   - anime
 visualDna:
-  aesthetic: Arcane stormcast anime language with elemental authority, ritual-combat iconography, and high-impact fantasy dynamism
-  form_and_line: Commanding silhouette, cape-like motion vectors, rune-circle geometry anchors, and upward gesture lines emphasizing energy-release force
-  color_palette: Storm blue foundations, electric white discharge cores, violet arcane shadows, and selective silver highlights for energy separation
-  lighting_setup: Spell-like emission as dominant key source, secondary rune uplight, high-contrast rim flashes, and particulate glow falloff control
-  material_texture: Layered ritual textiles, embossed sigil surfaces, charged air particle trails, and luminous rune-inscription edges
-  render_quality: Premium combat-anime rendering with sharp energy readability, disciplined effects layering, and strong pose-to-energy coherence
-  spatial_distortion: Low-angle upward perspective with radial energy wrap and controlled context warping around focal point
-  atmosphere: Urgent, powerful, grand, and arcane-charged
-  key_features: Central magic-circle architecture, lightning discharge hierarchy, dominant stance geometry, and rune-particle choreography
+  aesthetic: >-
+    Arcane stormcast anime language with elemental authority, ritual-combat iconography, and high-impact
+    fantasy dynamism
+  subject_treatment: >-
+    Commanding silhouette, cape-like motion vectors, rune-circle geometry anchors, and upward gesture lines
+    emphasizing energy-release force
+  color_and_tone: >-
+    Storm blue foundations, electric white discharge cores, violet arcane shadows, and selective silver
+    highlights for energy separation
+  lighting_and_shadow: >-
+    Spell-like emission as dominant key source, secondary rune uplight, high-contrast rim flashes, and
+    particulate glow falloff control
+  texture_and_material: >-
+    Layered ritual textiles, embossed sigil surfaces, charged air particle trails, and luminous
+    rune-inscription edges
+  camera_and_composition: Low-angle upward perspective with radial energy wrap and controlled context warping around focal point
+  atmosphere_and_mood: Urgent, powerful, grand, and arcane-charged
+  rendering_and_quality: >-
+    Premium combat-anime rendering with sharp energy readability, disciplined effects layering, and strong
+    pose-to-energy coherence
+  key_features: >-
+    Central magic-circle architecture, lightning discharge hierarchy, dominant stance geometry, and
+    rune-particle choreography
   creative_brief: >-
-    Use Battle Mage Stormcast as style anchor for arcane impact:
-    rune-anchored geometry, electric-violet energy hierarchy, and low-angle
-    dominance should transfer without requiring a mage, spell duel, cape,
+    Use Battle Mage Stormcast as style anchor for arcane impact: rune-anchored geometry, electric-violet
+    energy hierarchy, and low-angle dominance should transfer without requiring a mage, spell duel, cape,
     floor circle, or battle event.
 avoidRules:
   - photoreal

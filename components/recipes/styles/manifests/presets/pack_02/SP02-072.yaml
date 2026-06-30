@@ -13,20 +13,26 @@ tags:
   - lighting-and-atmosphere
 visualDna:
   aesthetic: Candlelit pre-electric warmth
-  form_and_line: None
-  color_palette: Warm Orange, amber flame, honey glow, deep umber falloff
-  lighting_setup: Flickering low, single-candle key, flame dance, warm underlight
-  material_texture: Soft shadows, gentle roll-off, intimate darkness
-  render_quality: Intimate, old, pre-electric warmth, flame-source authenticity
-  spatial_distortion: None
-  atmosphere: Romantic, secret, flickering intimacy, warm darkness
+  subject_treatment: >-
+    Treat subjects as believable filmed or broadcast subjects under Candlelight: casting, wardrobe, props,
+    motion cues, and silhouette hierarchy follow 5. Lighting And Atmosphere cinematic and broadcast grammar
+    without locking to one plot beat.
+  color_and_tone: Warm Orange, amber flame, honey glow, deep umber falloff
+  lighting_and_shadow: Flickering low, single-candle key, flame dance, warm underlight
+  texture_and_material: Soft shadows, gentle roll-off, intimate darkness
+  camera_and_composition: >-
+    Camera language native to Candlelight: genre-aware framing, lens character, focal hierarchy, motion cue,
+    and vertical style-card composition.
+  atmosphere_and_mood: Romantic, secret, flickering intimacy, warm darkness
+  rendering_and_quality: Intimate, old, pre-electric warmth, flame-source authenticity
   key_features: Low warm key, flame flicker, amber falloff, moving shadow edge
   creative_brief: >-
     Apply candlelight as a low warm source: flame flicker, amber underglow, fast falloff, moving shadows, and
-    pre-electric intimacy. Avoid period-drama rooms, faces, hands, wax props, or conspiracy scenes. The subject should
-    appear shaped by unstable flame rather than modern lighting. Apply Candlelight as a portable cinematic/camera style
-    over any input: preserve its lens behavior, color process, lighting setup, artifact pattern, and deformation grammar
-    while avoiding a required actor, room, prop, brand, readable text, fixed IP scene, or narrative setup.
+    pre-electric intimacy. Avoid period-drama rooms, faces, hands, wax props, or conspiracy scenes. The
+    subject should appear shaped by unstable flame rather than modern lighting. Apply Candlelight as a
+    portable cinematic/camera style over any input: preserve its lens behavior, color process, lighting setup,
+    artifact pattern, and deformation grammar while avoiding a required actor, room, prop, brand, readable
+    text, fixed IP scene, or narrative setup.
 avoidRules:
   - electric light
 assets:

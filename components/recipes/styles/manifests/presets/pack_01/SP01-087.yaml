@@ -13,15 +13,18 @@ tags:
   - commercial-and-product
 visualDna:
   aesthetic: Marketplace listing photo
-  form_and_line: Straight-on readable silhouette
-  color_palette: Pure white, neutral shadow grey
-  lighting_setup: Even high-key studio box
-  material_texture: Accurate material, no styling noise
-  render_quality: Clean online retail image
-  spatial_distortion: Orthographic-like clarity
-  atmosphere: Functional, trustworthy, searchable
+  subject_treatment: Straight-on readable silhouette
+  color_and_tone: Pure white, neutral shadow grey
+  lighting_and_shadow: Even high-key studio box
+  texture_and_material: Accurate material, no styling noise
+  camera_and_composition: Orthographic-like clarity
+  atmosphere_and_mood: Functional, trustworthy, searchable
+  rendering_and_quality: Clean online retail image
   key_features: White sweep with soft contact shadow
-  creative_brief: 'E-commerce white sweep makes any subject readable fast: pure white background, even high-key light, soft contact shadow, accurate material, and marketplace clarity. It prioritizes search-result legibility without forcing packaging, props, brand marks, or decorative staging.'
+  creative_brief: >-
+    E-commerce white sweep makes any subject readable fast: pure white background, even high-key light, soft
+    contact shadow, accurate material, and marketplace clarity. It prioritizes search-result legibility
+    without forcing packaging, props, brand marks, or decorative staging.
 avoidRules:
   - lifestyle scene
   - dramatic lighting

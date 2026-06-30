@@ -13,34 +13,26 @@ tags:
   - slice-of-life-and-moe
 visualDna:
   aesthetic: >-
-    Bundled warmth-pocket anime where cold space makes comfort feel deliberate, tactile, and shared
-    without requiring outdoors
-  form_and_line: >-
-    Practical silhouette clarity, rounded bundled shapes, circular warmth-flow composition, and
-    compact comfort against wider cool fields
-  color_palette: >-
-    Winter blue, pine green, orange heat glow, canvas neutral, star indigo, fleece cream, and muted
-    graphite
-  lighting_setup: >-
-    Warm practical key, cold ambient fill, tiny lantern points, crisp dawn diffusion, and soft
-    thermal spill
-  material_texture: >-
-    Nylon weave, quilted padding, enamel gloss, worn metal, frosted particulate, insulated cloth,
-    and soft vapor edges
-  render_quality: >-
-    Cozy cold-weather anime rendering with practical fidelity, tactile comfort, and restorative
-    social calm
-  spatial_distortion: >-
-    Circular compression concentrates shared warmth while cooler negative space breathes around the
-    subject
-  atmosphere: Cozy, crisp, friendly, restorative, tactile
+    Bundled warmth-pocket anime where cold space makes comfort feel deliberate, tactile, and shared without
+    requiring outdoors
+  subject_treatment: >-
+    Practical silhouette clarity, rounded bundled shapes, circular warmth-flow composition, and compact
+    comfort against wider cool fields
+  color_and_tone: Winter blue, pine green, orange heat glow, canvas neutral, star indigo, fleece cream, and muted graphite
+  lighting_and_shadow: Warm practical key, cold ambient fill, tiny lantern points, crisp dawn diffusion, and soft thermal spill
+  texture_and_material: >-
+    Nylon weave, quilted padding, enamel gloss, worn metal, frosted particulate, insulated cloth, and soft
+    vapor edges
+  camera_and_composition: Circular compression concentrates shared warmth while cooler negative space breathes around the subject
+  atmosphere_and_mood: Cozy, crisp, friendly, restorative, tactile
+  rendering_and_quality: Cozy cold-weather anime rendering with practical fidelity, tactile comfort, and restorative social calm
   key_features: >-
-    Bundled contours, cold-warm contrast, warmth pockets, practical textile cues, crisp air, and
-    quiet friendship light
+    Bundled contours, cold-warm contrast, warmth pockets, practical textile cues, crisp air, and quiet
+    friendship light
   creative_brief: >-
-    Use Laid-Back Camp as style anchor for bundled warmth pockets. Apply cold-blue fields, practical
-    orange heat, padded texture, and calm shared comfort to any prompt. Campsites, stoves, tents,
-    food, and flame scenes are optional.
+    Use Laid-Back Camp as style anchor for bundled warmth pockets. Apply cold-blue fields, practical orange
+    heat, padded texture, and calm shared comfort to any prompt. Campsites, stoves, tents, food, and flame
+    scenes are optional.
 avoidRules:
   - realistic
   - 3d render
@@ -58,8 +50,8 @@ assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-216.webp
 attributes:
   negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, text, signature
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts,
+    watermark, text, signature
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle

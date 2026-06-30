@@ -13,22 +13,22 @@ tags:
   - man-made-materials
 visualDna:
   aesthetic: Fencing wire
-  form_and_line: Twisted wire + barbs
-  color_palette: Rusty metal
-  lighting_setup: Sharp highlights
-  material_texture: Sharp
-  render_quality: Prison, war
-  spatial_distortion: Coiled
-  atmosphere: Dangerous, forbidden
+  subject_treatment: Twisted wire + barbs
+  color_and_tone: Rusty metal
+  lighting_and_shadow: Sharp highlights
+  texture_and_material: Sharp
+  camera_and_composition: Coiled
+  atmosphere_and_mood: Dangerous, forbidden
+  rendering_and_quality: Prison, war
   key_features: Barbs every few inches
   creative_brief: >-
-    Render the hostile geometry of barbed wire where twisted strands spiral around a core line, sharpened barbs
-    bristling at regular intervals like a metal vine bred for pain, rust painting the surface in oranges of exposure.
-    Each barb should catch a sharp highlight, a glint of warning written in steel along the coil. Capture the aesthetics
-    of the forbidden, a line drawn in wire and consequence. Use Barbed Wire as portable surface/render behavior over any
-    input: map its texture, light response, edge wear, color chemistry, and tactile rhythm onto the subject instead of
-    requiring a literal material sample, macro tile, wall, landscape, source object, or scene where the material
-    naturally appears.
+    Render the hostile geometry of barbed wire where twisted strands spiral around a core line, sharpened
+    barbs bristling at regular intervals like a metal vine bred for pain, rust painting the surface in oranges
+    of exposure. Each barb should catch a sharp highlight, a glint of warning written in steel along the coil.
+    Capture the aesthetics of the forbidden, a line drawn in wire and consequence. Use Barbed Wire as portable
+    surface/render behavior over any input: map its texture, light response, edge wear, color chemistry, and
+    tactile rhythm onto the subject instead of requiring a literal material sample, macro tile, wall,
+    landscape, source object, or scene where the material naturally appears.
 avoidRules:
   - smooth wire
 assets:

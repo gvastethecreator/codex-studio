@@ -13,18 +13,18 @@ tags:
   - editorial-and-poster
 visualDna:
   aesthetic: Art Deco poster language with streamlined geometric glamour
-  form_and_line: Symmetry-aware curves, stepped geometry, and aerodynamic motifs
-  color_palette: Black, teal, gold, and metallic-adjacent accent hierarchy
-  lighting_setup: Stylized gradient bands and radial sunburst emphasis
-  material_texture: Smooth poster print with soft airbrush-like transitions
-  render_quality: Decorative high-finish composition with era-authentic polish
-  spatial_distortion: Streamlined elongation and geometric simplification
-  atmosphere: Luxurious, optimistic, metropolitan
+  subject_treatment: Symmetry-aware curves, stepped geometry, and aerodynamic motifs
+  color_and_tone: Black, teal, gold, and metallic-adjacent accent hierarchy
+  lighting_and_shadow: Stylized gradient bands and radial sunburst emphasis
+  texture_and_material: Smooth poster print with soft airbrush-like transitions
+  camera_and_composition: Streamlined elongation and geometric simplification
+  atmosphere_and_mood: Luxurious, optimistic, metropolitan
+  rendering_and_quality: Decorative high-finish composition with era-authentic polish
   key_features: Sunbursts, frame borders, speed motifs, ornamental geometry
   creative_brief: >-
-    Apply Art Deco poster grammar to any input: stepped geometry, sunburst rhythm, metallic-adjacent
-    color blocking, streamlined elongation, and elegant frame discipline should make the image
-    iconic without requiring cities, travel posters, skyscrapers, products, or period scenery.
+    Apply Art Deco poster grammar to any input: stepped geometry, sunburst rhythm, metallic-adjacent color
+    blocking, streamlined elongation, and elegant frame discipline should make the image iconic without
+    requiring cities, travel posters, skyscrapers, products, or period scenery.
 avoidRules:
   - messy
   - organic

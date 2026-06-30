@@ -12,21 +12,23 @@ tags:
   - miscellaneous-and-fun
   - aesthetics
 visualDna:
-  aesthetic: Gothic scholarly interior style with candlelit intellectual mood, archival intimacy, and old-world academic romance
-  form_and_line: Detailed, gothic, arch-window contours, columnar rhythm, ornate typography
-  color_palette: Brown, Tweed, Black, Gold, mahogany-warm, oxblood-leather, brass-fixture shimmer, parchment-cream
-  lighting_setup: Candlelight, dim, desk-lamp pool, fireplace flicker, window-shaft dust-mote drama
-  material_texture: Old paper, leather books, wood, wax-drip candle stacks, wool-blend jackets, ink-stained fingertips
-  render_quality: Intellectual, moody, historic, dusty-spine mystery, thesis-night ambiance, secret-society elegance
-  spatial_distortion: None, towering bookshelf compression, vaulted-ceiling vertigo, cloistered intimacy
-  atmosphere: Serious, studious, mysterious, rain-on-glass melancholy, ancient-knowledge reverence, midnight revelation
+  aesthetic: >-
+    Gothic scholarly interior style with candlelit intellectual mood, archival intimacy, and old-world
+    academic romance
+  subject_treatment: Detailed, gothic, arch-window contours, columnar rhythm, ornate typography
+  color_and_tone: Brown, Tweed, Black, Gold, mahogany-warm, oxblood-leather, brass-fixture shimmer, parchment-cream
+  lighting_and_shadow: Candlelight, dim, desk-lamp pool, fireplace flicker, window-shaft dust-mote drama
+  texture_and_material: Old paper, leather books, wood, wax-drip candle stacks, wool-blend jackets, ink-stained fingertips
+  camera_and_composition: Towering bookshelf compression, vaulted-ceiling vertigo, cloistered intimacy
+  atmosphere_and_mood: Serious, studious, mysterious, rain-on-glass melancholy, ancient-knowledge reverence, midnight revelation
+  rendering_and_quality: Intellectual, moody, historic, dusty-spine mystery, thesis-night ambiance, secret-society elegance
   key_features: Books and coffee, quill-and-inkwell, brass reading lamps, leather-bound stacks
   creative_brief: >-
-    Preserve identity through gothic-academic atmosphere grammar: mahogany, leather, dust-lit shafts, and candle-warm
-    chiaroscuro should carry the preset without tying it to one specific institution or room. Apply Dark Academia as a
-    portable style system over any input: preserve its construction grammar, material cues, scale logic, and signature
-    rendering behavior while avoiding a required franchise, literal prop, fixed specimen, classroom sample, product
-    shot, or scene template.
+    Preserve identity through gothic-academic atmosphere grammar: mahogany, leather, dust-lit shafts, and
+    candle-warm chiaroscuro should carry the preset without tying it to one specific institution or room.
+    Apply Dark Academia as a portable style system over any input: preserve its construction grammar, material
+    cues, scale logic, and signature rendering behavior while avoiding a required franchise, literal prop,
+    fixed specimen, classroom sample, product shot, or scene template.
 avoidRules:
   - bright
   - modern

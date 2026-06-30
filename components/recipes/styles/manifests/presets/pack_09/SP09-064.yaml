@@ -13,15 +13,19 @@ tags:
   - weathering-and-decay
 visualDna:
   aesthetic: Cracked dry mud
-  form_and_line: Puzzle cracks
-  color_palette: Tan, Brown
-  lighting_setup: Hard dry light
-  material_texture: Dry clay
-  render_quality: Arid, brittle
-  spatial_distortion: Curled plates
-  atmosphere: Thirsty, hot
+  subject_treatment: Puzzle cracks
+  color_and_tone: Tan, Brown
+  lighting_and_shadow: Hard dry light
+  texture_and_material: Dry clay
+  camera_and_composition: Curled plates
+  atmosphere_and_mood: Thirsty, hot
+  rendering_and_quality: Arid, brittle
   key_features: Crack pattern
-  creative_brief: 'Apply cracked-mud desiccation to the input: tan-brown puzzle plates, curled brittle edges, shrinking-clay gaps, and thin shadows under hard dry light. If ground, terrain, clay, skin-like surface, or object exists, fracture it directly; otherwise use drought geometry as surface pattern without forcing a desert landscape.'
+  creative_brief: >-
+    Apply cracked-mud desiccation to the input: tan-brown puzzle plates, curled brittle edges, shrinking-clay
+    gaps, and thin shadows under hard dry light. If ground, terrain, clay, skin-like surface, or object
+    exists, fracture it directly; otherwise use drought geometry as surface pattern without forcing a desert
+    landscape.
 avoidRules:
   - wet mud
 assets:

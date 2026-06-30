@@ -13,20 +13,23 @@ tags:
   - organic-character-and-bio-cgi
 visualDna:
   aesthetic: Organic modeling flow
-  form_and_line: Flowing topology
-  color_palette: Skin tones, green
-  lighting_setup: Subsurface scattering
-  material_texture: Skin, bark, organic texture map
-  render_quality: ZBrush digital sculpt, organic flow, natural forms
-  spatial_distortion: None
-  atmosphere: Alive, natural, organic credibility
+  subject_treatment: Flowing topology
+  color_and_tone: Skin tones, green
+  lighting_and_shadow: Subsurface scattering
+  texture_and_material: Skin, bark, organic texture map
+  camera_and_composition: >-
+    Lookdev camera for Organic Modeling: three-quarter or orthographic framing, clean silhouette read,
+    material highlights, controlled depth, and vertical card composition.
+  atmosphere_and_mood: Alive, natural, organic credibility
+  rendering_and_quality: ZBrush digital sculpt, organic flow, natural forms
   key_features: Muscle/Growth flow, dynamesh topology
   creative_brief: >-
-    Push the input through organic-modeling language: flowing topology, dynamesh sculptural mass, branching or muscular
-    rhythm, subsurface warmth and evolution-like surface logic. It may become creature/plant-like when useful, but must
-    not require a living body, forest or biological subject. Apply Organic Modeling as a portable 3D/render style system
-    over any input: preserve its renderer logic, material behavior, geometry language, lighting grammar, and production
-    cues while avoiding a required character, vehicle, prop, environment, UI screen, product shot, or scene template.
+    Push the input through organic-modeling language: flowing topology, dynamesh sculptural mass, branching or
+    muscular rhythm, subsurface warmth and evolution-like surface logic. It may become creature/plant-like
+    when useful, but must not require a living body, forest or biological subject. Apply Organic Modeling as a
+    portable 3D/render style system over any input: preserve its renderer logic, material behavior, geometry
+    language, lighting grammar, and production cues while avoiding a required character, vehicle, prop,
+    environment, UI screen, product shot, or scene template.
 avoidRules:
   - hard edge
   - robot

@@ -13,20 +13,24 @@ tags:
   - fabric-and-texture-focus
 visualDna:
   aesthetic: Hardened leather utility, stealth-ready modularity, shadowcraft pragmatism
-  form_and_line: Strap geometry, stud punctuation, asymmetrical harness logic, pauldron cues, bracer-wrap rhythm, hooded depth
-  color_palette: Brown, Black, oxblood, oiled-chestnut, shadow-black, bronze-stud, smoke
-  lighting_setup: Torch-amber rim, moonlit shadow, leather-grain side light, low-key stealth contrast
-  material_texture: Worn leather, oil-tanned hide, distressed leather, brass studs, iron buckles, suede lining, tooled-leather panel
-  render_quality: Tough, flexible, stealth-gear authenticity, worn-hide precision
-  spatial_distortion: None
-  atmosphere: Stealthy, tough, modular, nocturnal, quietly tactical
+  subject_treatment: >-
+    Strap geometry, stud punctuation, asymmetrical harness logic, pauldron cues, bracer-wrap rhythm, hooded
+    depth
+  color_and_tone: Brown, Black, oxblood, oiled-chestnut, shadow-black, bronze-stud, smoke
+  lighting_and_shadow: Torch-amber rim, moonlit shadow, leather-grain side light, low-key stealth contrast
+  texture_and_material: >-
+    Worn leather, oil-tanned hide, distressed leather, brass studs, iron buckles, suede lining, tooled-leather
+    panel
+  camera_and_composition: >-
+    Compose for Leather Armor using its key spatial cues: Buckles, hood cues, hidden-pouch logic, bracer
+    wraps, asymmetrical harness.
+  atmosphere_and_mood: Stealthy, tough, modular, nocturnal, quietly tactical
+  rendering_and_quality: Tough, flexible, stealth-gear authenticity, worn-hide precision
   key_features: Buckles, hood cues, hidden-pouch logic, bracer wraps, asymmetrical harness
   creative_brief: >-
-    Armor the input with stealth leather grammar: oil-tanned hide,
-    asymmetrical harness logic, brass studs, buckles, bracer wraps, tooled
-    panels and hidden-pouch utility. Keep rogue pragmatism as material attitude
-    only; do not require weapons, dungeon corridors, lockpicking, shadow
-    alleys or humanoid adventurer body.
+    Armor the input with stealth leather grammar: oil-tanned hide, asymmetrical harness logic, brass studs,
+    buckles, bracer wraps, tooled panels and hidden-pouch utility. Keep rogue pragmatism as material attitude
+    only; do not require weapons, dungeon corridors, lockpicking, shadow alleys or humanoid adventurer body.
 avoidRules:
   - plate-metal armor dominance
   - plain soft cloth dominance

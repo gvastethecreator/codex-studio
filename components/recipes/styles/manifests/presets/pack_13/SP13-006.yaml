@@ -12,20 +12,31 @@ tags:
   - anime-character-and-lifestyle
   - anime
 visualDna:
-  aesthetic: Spiritual twilight anime language with folkloric reverence, liminal fantasy atmosphere, ceremonial restraint, and sacred hush
-  form_and_line: Organic contour flow, traditional fold rhythm, gate-like depth cadence, and softened silhouette transitions for ethereal readability
-  color_palette: Indigo dusk fields, twilight amber highlights, washi-paper ivory, muted vermilion accents, and low-saturation forest neutrals
-  lighting_setup: Warm rear halo backlight, diffuse twilight ambient fill, soft volumetric mist scattering, and selective lantern-like accent points
-  material_texture: Weathered timber grain, fibrous washi surfaces, stone humidity patina, and fine fog particulate softness
-  render_quality: High-clarity mystical anime rendering with controlled sacred tone, balanced ornamental detail, and stable atmospheric depth
-  spatial_distortion: Layered ceremonial-axis depth with mild perspective compression through repeated gate-like intervals
-  atmosphere: Reverent, tranquil, mysterious, and spiritually liminal
-  key_features: Gate-depth cadence, ceremonial silhouette rhythm, twilight halo lighting, sacred material authenticity, and restrained supernatural cues
+  aesthetic: >-
+    Spiritual twilight anime language with folkloric reverence, liminal fantasy atmosphere, ceremonial
+    restraint, and sacred hush
+  subject_treatment: >-
+    Organic contour flow, traditional fold rhythm, gate-like depth cadence, and softened silhouette
+    transitions for ethereal readability
+  color_and_tone: >-
+    Indigo dusk fields, twilight amber highlights, washi-paper ivory, muted vermilion accents, and
+    low-saturation forest neutrals
+  lighting_and_shadow: >-
+    Warm rear halo backlight, diffuse twilight ambient fill, soft volumetric mist scattering, and selective
+    lantern-like accent points
+  texture_and_material: Weathered timber grain, fibrous washi surfaces, stone humidity patina, and fine fog particulate softness
+  camera_and_composition: Layered ceremonial-axis depth with mild perspective compression through repeated gate-like intervals
+  atmosphere_and_mood: Reverent, tranquil, mysterious, and spiritually liminal
+  rendering_and_quality: >-
+    High-clarity mystical anime rendering with controlled sacred tone, balanced ornamental detail, and stable
+    atmospheric depth
+  key_features: >-
+    Gate-depth cadence, ceremonial silhouette rhythm, twilight halo lighting, sacred material authenticity,
+    and restrained supernatural cues
   creative_brief: >-
-    Use Spirit Shrine Twilight as style anchor for reverent liminality:
-    layered ceremonial depth, indigo-amber dusk, and mist-lit sacred atmosphere
-    should transfer without requiring a shrine, torii, forest, ritual clothing,
-    or fixed folklore scene.
+    Use Spirit Shrine Twilight as style anchor for reverent liminality: layered ceremonial depth, indigo-amber
+    dusk, and mist-lit sacred atmosphere should transfer without requiring a shrine, torii, forest, ritual
+    clothing, or fixed folklore scene.
 avoidRules:
   - photoreal
   - horror-gore

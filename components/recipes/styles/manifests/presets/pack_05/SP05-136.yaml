@@ -12,19 +12,23 @@ tags:
   - anime-battle-and-worlds
   - modern-shonen-and-action
 visualDna:
-  aesthetic: Grimoire thunder squad style, with scrappy underdog drive, loud magical ambition, and ragged force versus noble polish.
-  form_and_line: Booklike aura panels, thunder diagonals, rough-edged silhouettes, squad-rhythm spacing, and shout-like energy bursts.
-  color_palette: Thunder gold, black-clover green, ragged brown, royal violet, anti-magic black, and bright rivalry blue.
-  lighting_setup: Explosive magical backlight, page-glow flashes, hard thunder rims, and loud high-contrast aura blooms.
-  material_texture: Parchment grain, torn cloth, crackling aura particles, rough stone dust, and polished spell overlays.
-  render_quality: Premium modern anime finish with loud energy, readable team rhythm, and underdog intensity.
-  spatial_distortion: Aura shockwaves push perspective outward, while squad spacing creates forward pressure.
-  atmosphere: Determined, loud, magical, scrappy
+  aesthetic: >-
+    Grimoire thunder squad style, with scrappy underdog drive, loud magical ambition, and ragged force versus
+    noble polish.
+  subject_treatment: >-
+    Booklike aura panels, thunder diagonals, rough-edged silhouettes, squad-rhythm spacing, and shout-like
+    energy bursts.
+  color_and_tone: Thunder gold, black-clover green, ragged brown, royal violet, anti-magic black, and bright rivalry blue.
+  lighting_and_shadow: Explosive magical backlight, page-glow flashes, hard thunder rims, and loud high-contrast aura blooms.
+  texture_and_material: Parchment grain, torn cloth, crackling aura particles, rough stone dust, and polished spell overlays.
+  camera_and_composition: Aura shockwaves push perspective outward, while squad spacing creates forward pressure.
+  atmosphere_and_mood: Determined, loud, magical, scrappy
+  rendering_and_quality: Premium modern anime finish with loud energy, readable team rhythm, and underdog intensity.
   key_features: Page-glow force, thunder squad rhythm, ragged ambition, anti-magic contrast, loud underdog aura.
   creative_brief: >-
-    Apply loud underdog magic to any prompt through page-glow geometry, thunder
-    diagonals, ragged texture, and defiant aura pressure without requiring
-    specific props, teams, vertical power symbols, conflict sites, or hierarchy scenes.
+    Apply loud underdog magic to any prompt through page-glow geometry, thunder diagonals, ragged texture, and
+    defiant aura pressure without requiring specific props, teams, vertical power symbols, conflict sites, or
+    hierarchy scenes.
 avoidRules:
   - realistic
   - 3d render
@@ -41,7 +45,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-136.webp
 attributes:
-  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
+  negativePrompt: >-
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts,
+    watermark, text, signature
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds

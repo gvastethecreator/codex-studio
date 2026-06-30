@@ -13,19 +13,23 @@ tags:
   - materials
 visualDna:
   aesthetic: Woven composite material
-  form_and_line: Weave pattern
-  color_palette: Black/Grey anisotropic, carbon weave contrast
-  lighting_setup: Clear coat reflection, directional anisotropy
-  material_texture: Geometric weave, layered composite
-  render_quality: High tech, automotive, motorsport-grade
-  atmosphere: Fast, strong, engineering precision
+  subject_treatment: Weave pattern
+  color_and_tone: Black/Grey anisotropic, carbon weave contrast
+  lighting_and_shadow: Clear coat reflection, directional anisotropy
+  texture_and_material: Geometric weave, layered composite
+  camera_and_composition: >-
+    Lookdev camera for Carbon Fiber: close three-quarter or macro material framing, strong highlight planes,
+    readable surface curvature, and controlled depth.
+  atmosphere_and_mood: Fast, strong, engineering precision
+  rendering_and_quality: High tech, automotive, motorsport-grade
   key_features: Weave pattern, carbon-fiber direction
   creative_brief: >-
-    Wrap the input in carbon-fiber engineering language: visible weave direction, clear-coat depth, anisotropic glints
-    and weightless-strength precision. Keep motorsport tension as material attitude only; do not force pit lanes,
-    vehicles or racing context. Apply Carbon Fiber as a portable 3D/render style system over any input: preserve its
-    renderer logic, material behavior, geometry language, lighting grammar, and production cues while avoiding a
-    required character, vehicle, prop, environment, UI screen, product shot, or scene template.
+    Wrap the input in carbon-fiber engineering language: visible weave direction, clear-coat depth,
+    anisotropic glints and weightless-strength precision. Keep motorsport tension as material attitude only;
+    do not force pit lanes, vehicles or racing context. Apply Carbon Fiber as a portable 3D/render style
+    system over any input: preserve its renderer logic, material behavior, geometry language, lighting
+    grammar, and production cues while avoiding a required character, vehicle, prop, environment, UI screen,
+    product shot, or scene template.
 avoidRules:
   - smooth
   - paint

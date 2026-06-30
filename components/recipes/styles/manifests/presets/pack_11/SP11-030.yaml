@@ -13,19 +13,20 @@ tags:
   - toys-and-crafts
 visualDna:
   aesthetic: Layered sand strata, granular color sediment, gravity-poured craft, grain-by-grain art
-  form_and_line: Granular edges, gravity-settled contour, pour-line strata, grain-slope profiles
-  color_palette: Earth tones, Dyed sand, ochre-desert spectrum, terra-cotta, turquoise-lagoon, sunset-layering
-  lighting_setup: Flat, jar-through-daylight, backlit-strata glow, glass-vessel diffusion
-  material_texture: Grains of sand, fine-ground mineral, pouring-trickle flow, settled-weight compaction, layered-density contrast
-  render_quality: Fragile, temporary, shake-to-destroy impermanence, tourist-stall craft, precision-pour technique
-  spatial_distortion: Gravity layers, horizontal-strata formation, contour-band compression, sediment slope illusion
-  atmosphere: Patience, sun-baked stillness, handmade precision, mineral quiet, temporary balance
+  subject_treatment: Granular edges, gravity-settled contour, pour-line strata, grain-slope profiles
+  color_and_tone: Earth tones, Dyed sand, ochre-desert spectrum, terra-cotta, turquoise-lagoon, sunset-layering
+  lighting_and_shadow: Flat, jar-through-daylight, backlit-strata glow, glass-vessel diffusion
+  texture_and_material: >-
+    Grains of sand, fine-ground mineral, pouring-trickle flow, settled-weight compaction, layered-density
+    contrast
+  camera_and_composition: Gravity layers, horizontal-strata formation, contour-band compression, sediment slope illusion
+  atmosphere_and_mood: Patience, sun-baked stillness, handmade precision, mineral quiet, temporary balance
+  rendering_and_quality: Fragile, temporary, shake-to-destroy impermanence, tourist-stall craft, precision-pour technique
   key_features: Layers, color-strata bands, granular edge noise, settled-density shifts, optional glass-vessel distortion
   creative_brief: >-
-    Apply gravity-layered sand grammar to the input: stratified pour bands,
-    granular edge behavior, sediment compression, and mineral color separation
-    should define the style. Bottle curvature may appear as a framing cue, but
-    do not require a souvenir bottle, desert scene, camel, or beach memory.
+    Apply gravity-layered sand grammar to the input: stratified pour bands, granular edge behavior, sediment
+    compression, and mineral color separation should define the style. Bottle curvature may appear as a
+    framing cue, but do not require a souvenir bottle, desert scene, camel, or beach memory.
 avoidRules:
   - water
   - paint

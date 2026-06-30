@@ -13,21 +13,20 @@ tags:
   - architectural-movements-and-vernaculars
 visualDna:
   aesthetic: Earthen adobe vernacular with thermal mass, desert domesticity and handmade territorial rootedness.
-  form_and_line: >-
-    Thick monolithic walls, softened edges, stepped roofs, deep openings and low parapets.
-  color_palette: Terracotta, sand, warm ochre, sage, cinnamon and sunlit clay.
-  lighting_setup: Hard desert sun, deep reveal shadows, thermal-niche glow and warm bounce under eaves.
-  material_texture: >-
-    Limewashed earth render, visible vegetal fiber, hand-trowel marks, discreet exposed vigas and worn clay tile.
-  render_quality: Material honesty with climate-aware realism and plausible handmade imperfection.
-  spatial_distortion: Gentle hand-built wall undulation while retaining tectonic stability.
-  atmosphere: Thermal shelter, arid calm and ancestral continuity.
-  key_features: >-
-    Deep openings, carved mass, thermal niches, recessed thermal-niche geometry and softened handmade edges.
+  subject_treatment: Thick monolithic walls, softened edges, stepped roofs, deep openings and low parapets.
+  color_and_tone: Terracotta, sand, warm ochre, sage, cinnamon and sunlit clay.
+  lighting_and_shadow: Hard desert sun, deep reveal shadows, thermal-niche glow and warm bounce under eaves.
+  texture_and_material: >-
+    Limewashed earth render, visible vegetal fiber, hand-trowel marks, discreet exposed vigas and worn clay
+    tile.
+  camera_and_composition: Gentle hand-built wall undulation while retaining tectonic stability.
+  atmosphere_and_mood: Thermal shelter, arid calm and ancestral continuity.
+  rendering_and_quality: Material honesty with climate-aware realism and plausible handmade imperfection.
+  key_features: Deep openings, carved mass, thermal niches, recessed thermal-niche geometry and softened handmade edges.
   creative_brief: >-
-    Keep portable adobe grammar centered on thermal inertia, deep apertures and visible hand finish.
-    It should communicate climate adaptation and construction rootedness, not exotic scenic staging
-    or fixed pueblo-room props.
+    Keep portable adobe grammar centered on thermal inertia, deep apertures and visible hand finish. It should
+    communicate climate adaptation and construction rootedness, not exotic scenic staging or fixed pueblo-room
+    props.
 avoidRules:
   - sharp edges
   - log-cabin wood dominance

@@ -13,20 +13,20 @@ tags:
   - contemporary-fashion
 visualDna:
   aesthetic: Gala formalwear grandeur, flash-lit luxury, broadcast-event elegance
-  form_and_line: Column drape, train-like extension, elongated sweep, jeweled trim rhythm, formal contour control
-  color_palette: Red, Gold, Black, ruby, champagne, midnight sapphire, liquid-silver, emerald
-  lighting_setup: Flash photography, jeweled strobe sparkle, arrival-glow warmth, telephoto compression
-  material_texture: Silk charmeuse, bugle-bead sequins, Chantilly lace overlay, velvet burnout, crystal mesh
-  render_quality: Glamorous, expensive, broadcast-polish precision, diamond-season finish
-  spatial_distortion: None
-  atmosphere: Ceremonial, elevated, flashbulb electricity, prestige-night anticipation
+  subject_treatment: Column drape, train-like extension, elongated sweep, jeweled trim rhythm, formal contour control
+  color_and_tone: Red, Gold, Black, ruby, champagne, midnight sapphire, liquid-silver, emerald
+  lighting_and_shadow: Flash photography, jeweled strobe sparkle, arrival-glow warmth, telephoto compression
+  texture_and_material: Silk charmeuse, bugle-bead sequins, Chantilly lace overlay, velvet burnout, crystal mesh
+  camera_and_composition: >-
+    Compose for Red Carpet Gown using its key spatial cues: Train extension, statement jewels, liquid drape,
+    crystal articulation, formal sweep.
+  atmosphere_and_mood: Ceremonial, elevated, flashbulb electricity, prestige-night anticipation
+  rendering_and_quality: Glamorous, expensive, broadcast-polish precision, diamond-season finish
   key_features: Train extension, statement jewels, liquid drape, crystal articulation, formal sweep
   creative_brief: >-
-    Push the input through gala formalwear logic: silk charmeuse, crystal mesh,
-    elongated drape, train-like sweep, statement-jewel articulation and
-    flashbulb sparkle. Keep prestige-event electricity as finish only; do not
-    require a gown body, carpet, paparazzi wall, step-and-repeat or walking
-    celebrity figure.
+    Push the input through gala formalwear logic: silk charmeuse, crystal mesh, elongated drape, train-like
+    sweep, statement-jewel articulation and flashbulb sparkle. Keep prestige-event electricity as finish only;
+    do not require a gown body, carpet, paparazzi wall, step-and-repeat or walking celebrity figure.
 avoidRules:
   - casual
   - short

@@ -13,29 +13,22 @@ tags:
   - mecha-and-cyberpunk
 visualDna:
   aesthetic: >-
-    Pale machine elegy with enamel decay, post-collapse silence, lonely contrast, worn synthetic
-    surfaces, and dust-haze mortality
-  form_and_line: >-
-    Elegant mechanical curves, sparse black-white silhouettes, long empty contours, and slow mythic
-    action lines.
-  color_palette: Chalk white, ash gray, dead black, pale blue, rust whisper orange, and faint gold memory.
-  lighting_setup: Bleached overcast, soft rim isolation, dust diffusion, and almost-shadowless elegiac light.
-  material_texture: Powder dust, worn enamel, chipped metal, dry polymer, wind-erased grain, and soft cel haze.
-  render_quality: >-
-    High-detail sci-fi anime finish with restrained ruin texture, pale clarity, and mythic
-    loneliness.
-  spatial_distortion: >-
-    Empty horizon expansion, small-figure isolation, and entropy-soft depth without fixed wasteland
-    staging.
-  atmosphere: Elegiac, pale, lonely, mythic
-  key_features: >-
-    Pale entropy, worn enamel, elegant machinery, dust silence, lonely contrast, and machine
-    mortality
+    Pale machine elegy with enamel decay, post-collapse silence, lonely contrast, worn synthetic surfaces, and
+    dust-haze mortality
+  subject_treatment: >-
+    Elegant mechanical curves, sparse black-white silhouettes, long empty contours, and slow mythic action
+    lines.
+  color_and_tone: Chalk white, ash gray, dead black, pale blue, rust whisper orange, and faint gold memory.
+  lighting_and_shadow: Bleached overcast, soft rim isolation, dust diffusion, and almost-shadowless elegiac light.
+  texture_and_material: Powder dust, worn enamel, chipped metal, dry polymer, wind-erased grain, and soft cel haze.
+  camera_and_composition: Empty horizon expansion, small-figure isolation, and entropy-soft depth without fixed wasteland staging.
+  atmosphere_and_mood: Elegiac, pale, lonely, mythic
+  rendering_and_quality: High-detail sci-fi anime finish with restrained ruin texture, pale clarity, and mythic loneliness.
+  key_features: Pale entropy, worn enamel, elegant machinery, dust silence, lonely contrast, and machine mortality
   creative_brief: >-
-    Use Casshern Sins as style anchor for white machine elegy. Any prompt should feel pale, silent,
-    synthetic, lonely, and worn by time. If figure or object exists, suggest enamel machine surfaces,
-    worn synthetic joints, or robot elegy; ruins, wastelands, heroism, and combat against entropy
-    remain optional.
+    Use Casshern Sins as style anchor for white machine elegy. Any prompt should feel pale, silent, synthetic,
+    lonely, and worn by time. If figure or object exists, suggest enamel machine surfaces, worn synthetic
+    joints, or robot elegy; ruins, wastelands, heroism, and combat against entropy remain optional.
 avoidRules:
   - realistic
   - 3d render
@@ -53,8 +46,8 @@ assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-228.webp
 attributes:
   negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, text, signature
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts,
+    watermark, text, signature
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds

@@ -13,34 +13,26 @@ tags:
   - mecha-and-cyberpunk
 visualDna:
   aesthetic: >-
-    Gritty enforcement cyberpunk anime with punitive tech iconography, warning-light discipline,
-    analog surveillance mood, and hardboiled abrasion
-  form_and_line: >-
-    Dense industrial inking, rigid angular anatomy, mechanical panel etching, severe contour weight
-    shifts
-  color_palette: >-
-    Polluted tungsten ambers, toxic cyans, bruised violets, dirty steel greys, constrained red
-    warning accents
-  lighting_setup: >-
-    Harsh top-lit practicals, strip-light reflections, narrow rim passes, low-key contrast with
-    localized glow bursts
-  material_texture: >-
-    Scuffed metal casings, worn polymer shells, cable abrasion marks, oxidized fasteners, oily
-    reflective film
-  render_quality: >-
-    Mature seinen-mecha finish emphasizing grime realism, mechanical fidelity, and disciplined
-    compositing
-  spatial_distortion: >-
-    Compressed telephoto pressure mixed with abrupt perspective breaks for tactical hostility and
-    visual tension
-  atmosphere: Coercive, paranoid, punitive, claustrophobic, electrically unstable
+    Gritty enforcement cyberpunk anime with punitive tech iconography, warning-light discipline, analog
+    surveillance mood, and hardboiled abrasion
+  subject_treatment: Dense industrial inking, rigid angular anatomy, mechanical panel etching, severe contour weight shifts
+  color_and_tone: Polluted tungsten ambers, toxic cyans, bruised violets, dirty steel greys, constrained red warning accents
+  lighting_and_shadow: >-
+    Harsh top-lit practicals, strip-light reflections, narrow rim passes, low-key contrast with localized glow
+    bursts
+  texture_and_material: Scuffed metal casings, worn polymer shells, cable abrasion marks, oxidized fasteners, oily reflective film
+  camera_and_composition: >-
+    Compressed telephoto pressure mixed with abrupt perspective breaks for tactical hostility and visual
+    tension
+  atmosphere_and_mood: Coercive, paranoid, punitive, claustrophobic, electrically unstable
+  rendering_and_quality: Mature seinen-mecha finish emphasizing grime realism, mechanical fidelity, and disciplined compositing
   key_features: >-
-    Warning lights, enforcement-tech silhouettes, worn armor texture, surveillance-era detail, hard
-    neon vice, and mechanical severity
+    Warning lights, enforcement-tech silhouettes, worn armor texture, surveillance-era detail, hard neon vice,
+    and mechanical severity
   creative_brief: >-
-    Use Cyber City Oedo 808 as style anchor for punitive neon vice texture. Any prompt should feel
-    abrasive, surveilled, constrained, and neon-hard. Prisoners, hackers, police, missions, alleys,
-    and fixed story beats are optional.
+    Use Cyber City Oedo 808 as style anchor for punitive neon vice texture. Any prompt should feel abrasive,
+    surveilled, constrained, and neon-hard. Prisoners, hackers, police, missions, alleys, and fixed story
+    beats are optional.
 avoidRules:
   - realistic
   - 3d render
@@ -58,8 +50,8 @@ assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-229.webp
 attributes:
   negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, text, signature
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts,
+    watermark, text, signature
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds

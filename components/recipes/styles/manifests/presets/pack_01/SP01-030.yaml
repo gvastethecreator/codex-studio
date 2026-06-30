@@ -13,15 +13,20 @@ tags:
   - technical-and-specialist-imaging
 visualDna:
   aesthetic: Deep space astrophotography
-  form_and_line: Luminous diffuse structures
-  color_palette: False color (NASA palette)
-  lighting_setup: Emissive deep-field glow
-  material_texture: Ionized haze, dustlike speckle
-  render_quality: Space-telescope false color
-  spatial_distortion: None
-  atmosphere: Awe-inspiring, vast
+  subject_treatment: Luminous diffuse structures
+  color_and_tone: False color (NASA palette)
+  lighting_and_shadow: Emissive deep-field glow
+  texture_and_material: Ionized haze, dustlike speckle
+  camera_and_composition: >-
+    Camera setup native to Telescope (Hubble): lens choice, crop distance, depth of field, and focal hierarchy
+    support 7. Technical And Specialist Imaging without generic framing.
+  atmosphere_and_mood: Awe-inspiring, vast
+  rendering_and_quality: Space-telescope false color
   key_features: Deep-field false color
-  creative_brief: 'Space-telescope processing applied as visual grammar: false-color spectral mapping, luminous haze, deep-field speckle, vast black separation, and emissive detail emerging from darkness. Let any subject read through Hubble-like cosmic scale without requiring literal nebulae, stars, or outer space.'
+  creative_brief: >-
+    Space-telescope processing applied as visual grammar: false-color spectral mapping, luminous haze,
+    deep-field speckle, vast black separation, and emissive detail emerging from darkness. Let any subject
+    read through Hubble-like cosmic scale without requiring literal nebulae, stars, or outer space.
 avoidRules:
   - earth
   - ground

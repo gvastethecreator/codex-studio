@@ -14,16 +14,35 @@ tags:
   - steampunk
   - print-foundry
 visualDna:
-  aesthetic: steampunk print foundry poster built around pneumatic tubes, ink rollers, hot-type blocks, paper motion, and simplified editor/printer silhouettes.
-  form_and_line: Mechanical silhouettes, chunky ink contours, labor-poster spacing, and tactile industrial rhythm. Core composition uses pneumatic tubes, hot-type trays, print rollers, unreadable paper blocks, and inked hand shapes.
-  color_palette: ink black, cream paper, brass, cherry red
-  lighting_setup: furnace orange planes, paper-white bounce light, black ink shadow blocks
-  material_texture: letterpress metal planes, ink slabs, brass tubing, paper stacks as broad shapes, hot iron accents
-  render_quality: Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity, moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material simulation, or hyper-detail.
-  spatial_distortion: Readable workshops, rail platforms, docks, streets, or civic machine halls without becoming a corridor. Keep depth legible and avoid default hallway, aisle, or empty studio staging.
-  atmosphere: urgent, noisy, persuasive, handmade
+  aesthetic: >-
+    steampunk print foundry poster built around pneumatic tubes, ink rollers, hot-type blocks, paper motion,
+    and simplified editor/printer silhouettes.
+  subject_treatment: >-
+    Mechanical silhouettes, chunky ink contours, labor-poster spacing, and tactile industrial rhythm. Core
+    composition uses pneumatic tubes, hot-type trays, print rollers, unreadable paper blocks, and inked hand
+    shapes.
+  color_and_tone: ink black, cream paper, brass, cherry red
+  lighting_and_shadow: furnace orange planes, paper-white bounce light, black ink shadow blocks
+  texture_and_material: letterpress metal planes, ink slabs, brass tubing, paper stacks as broad shapes, hot iron accents
+  camera_and_composition: >-
+    Readable workshops, rail platforms, docks, streets, or civic machine halls without becoming a corridor.
+    Keep depth legible and avoid default hallway, aisle, or empty studio staging.
+  atmosphere_and_mood: urgent, noisy, persuasive, handmade
+  rendering_and_quality: >-
+    Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly
+    planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity,
+    moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material
+    simulation, or hyper-detail.
   key_features: pneumatic tubes, hot-type trays, print rollers, unreadable paper blocks, inked hand shapes
-  creative_brief: 'Make media production physical: tubes, presses, one simplified figure posture, paper motion, ink rhythm, and typography only as unreadable texture blocks, with no readable text, logo reliance, work-lamp hero, or cluttered desk scene. Keep the result representative rather than over-abstract; make one character in their environment the anchor, with motifs as background, costume, weather, architecture, or social pressure instead of a foreground prop. Favor screenprint poster, risograph poster, cel-shaded graphic-novel card art, flat-to-painterly digital illustration, or gouache poster aesthetics over realism, cinematic key art, or hyper-detailed concept art. Use few bold color/value zones, moderate texture, large shapes, clean surfaces, and finish denoised with no excessive noise or ultra-fine detail.'
+  creative_brief: >-
+    Make media production physical: tubes, presses, one simplified figure posture, paper motion, ink rhythm,
+    and typography only as unreadable texture blocks, with no readable text, logo reliance, work-lamp hero, or
+    cluttered desk scene. Keep the result representative rather than over-abstract; make one character in
+    their environment the anchor, with motifs as background, costume, weather, architecture, or social
+    pressure instead of a foreground prop. Favor screenprint poster, risograph poster, cel-shaded
+    graphic-novel card art, flat-to-painterly digital illustration, or gouache poster aesthetics over realism,
+    cinematic key art, or hyper-detailed concept art. Use few bold color/value zones, moderate texture, large
+    shapes, clean surfaces, and finish denoised with no excessive noise or ultra-fine detail.
 avoidRules:
   - photoreal
   - watermark
@@ -37,7 +56,19 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP15-006.webp
 attributes:
-  negativePrompt: photoreal, hyperreal, realistic render, cinematic realism, AAA key art, photographic skin pores, realistic foreground portrait, realistic facial hair detail, lens blur, bokeh, depth-of-field photo look, generic soldier hero, guard pin-up, weapon-first pose, HDR lens realism, 3D render look, PBR material simulation, hyper-detailed concept art, watermark, text, logo, generic style, over-abstract, interchangeable preset, duplicated motifs, generic glass utopia, unmotivated market aisle, unmotivated library aisle, fantasy corridor, random camera held by subject, studio wall fixation, chair fixation, curtain fixation, lamp fixation, scarf fixation, pedestal fixation, bird fixation, excessive noise, ultra-fine detail, over-sharpened microtexture, over-rendered machinery, noisy grime, tiny rivets everywhere, busy texture chatter, realistic uniform portrait, uniformed officer hero, foreground guard portrait, detailed tattoo focus, dense machinery wallpaper, overcrowded scene, high-frequency surface detail, cinematic close-up portrait, flat black fill, crushed black, pure black masses, muddy black fields, generic American illustration, generic Western RPG card art
+  negativePrompt: >-
+    photoreal, hyperreal, realistic render, cinematic realism, AAA key art, photographic skin pores, realistic
+    foreground portrait, realistic facial hair detail, lens blur, bokeh, depth-of-field photo look, generic
+    soldier hero, guard pin-up, weapon-first pose, HDR lens realism, 3D render look, PBR material simulation,
+    hyper-detailed concept art, watermark, text, logo, generic style, over-abstract, interchangeable preset,
+    duplicated motifs, generic glass utopia, unmotivated market aisle, unmotivated library aisle, fantasy
+    corridor, random camera held by subject, studio wall fixation, chair fixation, curtain fixation, lamp
+    fixation, scarf fixation, pedestal fixation, bird fixation, excessive noise, ultra-fine detail,
+    over-sharpened microtexture, over-rendered machinery, noisy grime, tiny rivets everywhere, busy texture
+    chatter, realistic uniform portrait, uniformed officer hero, foreground guard portrait, detailed tattoo
+    focus, dense machinery wallpaper, overcrowded scene, high-frequency surface detail, cinematic close-up
+    portrait, flat black fill, crushed black, pure black masses, muddy black fields, generic American
+    illustration, generic Western RPG card art
 taxonomy:
   packId: pack_15
   packName: Punk Spectrum Vault

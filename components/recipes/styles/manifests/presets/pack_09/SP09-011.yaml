@@ -13,15 +13,19 @@ tags:
   - natural-materials
 visualDna:
   aesthetic: Thick animal coat
-  form_and_line: Hair strands
-  color_palette: Grey, White, Black tips
-  lighting_setup: Soft sheen
-  material_texture: Fluffy, layered
-  render_quality: Warm, directional
-  spatial_distortion: Flowing hair
-  atmosphere: Wild, soft
+  subject_treatment: Hair strands
+  color_and_tone: Grey, White, Black tips
+  lighting_and_shadow: Soft sheen
+  texture_and_material: Fluffy, layered
+  camera_and_composition: Flowing hair
+  atmosphere_and_mood: Wild, soft
+  rendering_and_quality: Warm, directional
   key_features: Fur direction
-  creative_brief: 'Apply wolf-fur architecture as directional material: grey and white guard hairs floating over dense warm undercoat, strand flow following form, soft sheen tracing contours, and wild softness with hidden strength. If the input includes a creature or character, let the coat transform it; otherwise use fur as a tactile surface treatment without requiring an animal reveal.'
+  creative_brief: >-
+    Apply wolf-fur architecture as directional material: grey and white guard hairs floating over dense warm
+    undercoat, strand flow following form, soft sheen tracing contours, and wild softness with hidden
+    strength. If the input includes a creature or character, let the coat transform it; otherwise use fur as a
+    tactile surface treatment without requiring an animal reveal.
 avoidRules:
   - matted
   - wet

@@ -13,19 +13,18 @@ tags:
   - drawing-and-sketching
 visualDna:
   aesthetic: Crayon-like drawing
-  form_and_line: Thick, waxy, chunky
-  color_palette: Bold, unblended
-  lighting_setup: Flat
-  material_texture: Sticky wax, sgraffito
-  render_quality: Direct, tactile, expressive
-  spatial_distortion: Rough shapes
-  atmosphere: Playful, bold
+  subject_treatment: Thick, waxy, chunky
+  color_and_tone: Bold, unblended
+  lighting_and_shadow: Flat
+  texture_and_material: Sticky wax, sgraffito
+  camera_and_composition: Rough shapes
+  atmosphere_and_mood: Playful, bold
+  rendering_and_quality: Direct, tactile, expressive
   key_features: Chunky texture
   creative_brief: >-
-    Apply oil-pastel force to any input: wax-bound pigment, chunky residue,
-    visible pressure ridges, scraped interruptions, saturated nonblended color,
-    and tactile friction. Keep assertive mark-making without requiring child-art
-    cues, paper closeups, still-life subjects, or classroom materials.
+    Apply oil-pastel force to any input: wax-bound pigment, chunky residue, visible pressure ridges, scraped
+    interruptions, saturated nonblended color, and tactile friction. Keep assertive mark-making without
+    requiring child-art cues, paper closeups, still-life subjects, or classroom materials.
 avoidRules:
   - photo
   - realistic
@@ -45,7 +44,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP06-022.webp
 attributes:
-  negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border
+  negativePrompt: >-
+    photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy,
+    watermark, text, signature, frame, border
 taxonomy:
   packId: pack_06
   packName: Essential Art Styles

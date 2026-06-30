@@ -10,13 +10,13 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'white background',
     style: {
       aesthetic: 'Scratchboard engraving language with subtractive light reveal',
-      form_and_line: 'White incised strokes on black ground, varying incision density',
-      color_palette: 'Strict black-white inverse contrast system',
-      lighting_setup: 'Highlight structure carved through negative subtraction',
-      material_texture: 'Knife/scratch marks, hatch scratches, burr-like edge chatter',
-      render_quality: 'Intricate high-contrast detail with printlike precision',
-      spatial_distortion: 'Stable proportions, depth suggested via hatch frequency',
-      atmosphere: 'Nocturnal, theatrical, mysterious',
+      subject_treatment: 'White incised strokes on black ground, varying incision density',
+      color_and_tone: 'Strict black-white inverse contrast system',
+      lighting_and_shadow: 'Highlight structure carved through negative subtraction',
+      texture_and_material: 'Knife/scratch marks, hatch scratches, burr-like edge chatter',
+      camera_and_composition: 'Stable proportions, depth suggested via hatch frequency',
+      atmosphere_and_mood: 'Nocturnal, theatrical, mysterious',
+      rendering_and_quality: 'Intricate high-contrast detail with printlike precision',
       key_features: 'Dark-field base, luminous scratch marks, reverse-value composition',
       creative_brief:
         'Apply scratchboard inversion to any input: remove darkness through incision rhythm, hatch density, burr-like chatter, and directional scratch patterns to define focal hierarchy without requiring animals, night scenes, portraits, theatrical props, or fixed black-ground compositions.',
@@ -30,14 +30,14 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Linocut relief-print style with carved-negatives contrast, artisan process evidence, and bold democratic graphic force',
-      form_and_line:
+      subject_treatment:
         'White gouge-cut channels and chunky relief edges with high black-mass balance and knife-path rhythm',
-      color_palette: 'Black ink, single-color assertion, bold monochrome',
-      lighting_setup: 'None, ink-only, no shading hierarchy',
-      material_texture: 'Ink roll texture',
-      render_quality: 'Handmade, bold, craft-process evidence, folk authenticity',
-      spatial_distortion: 'Chunky lines',
-      atmosphere: 'Folk, strong, print-workshop resolve, democratic art',
+      color_and_tone: 'Black ink, single-color assertion, bold monochrome',
+      lighting_and_shadow: 'Ink-only mark hierarchy with no simulated lighting',
+      texture_and_material: 'Ink roll texture',
+      camera_and_composition: 'Chunky lines',
+      atmosphere_and_mood: 'Folk, strong, print-workshop resolve, democratic art',
+      rendering_and_quality: 'Handmade, bold, craft-process evidence, folk authenticity',
       key_features: 'No fine detail, gouge marks, carved texture',
       creative_brief:
         'Apply linocut relief-print grammar to any input: carved negative marks, heavy black transfer, gouge cadence, chunky relief edges, and folk-print force should carry identity without requiring folk scenes, workshops, portraits, animals, posters, or specific democratic-art subjects.',
@@ -51,15 +51,16 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Engraved etching style with document-grade line security, old-master precision, and tonal density through incision logic',
-      form_and_line:
+      subject_treatment:
         'Fine crosshatch weave with controlled burin-like stroke layering and micro-line directional modulation',
-      color_palette: 'Black ink, tonal-hash spectrum, burin-precision value',
-      lighting_setup: 'Line density, hatching-as-light, cumulative shadow depth',
-      material_texture: 'Paper',
-      render_quality:
+      color_and_tone: 'Black ink, tonal-hash spectrum, burin-precision value',
+      lighting_and_shadow: 'Line density, hatching-as-light, cumulative shadow depth',
+      texture_and_material: 'Paper',
+      camera_and_composition:
+        'Compose for Etching (Engraving) using its key spatial cues: Hatching, crosshatching, fine-line density.',
+      atmosphere_and_mood: 'Serious, valuable, mint-condition reverence, time-capsule gravitas',
+      rendering_and_quality:
         'High-precision engraving fidelity emphasizing line-depth hierarchy, anti-counterfeit visual complexity, and archival print character',
-      spatial_distortion: 'None',
-      atmosphere: 'Serious, valuable, mint-condition reverence, time-capsule gravitas',
       key_features: 'Hatching, crosshatching, fine-line density',
       creative_brief:
         'Apply engraved etching grammar to any input: dense crosshatch tonality, burin-like incision, archival paper, document-authority detail, and micro-line direction should create old-master precision without requiring banknotes, documents, portraits, maps, seals, or antique scenes.',
@@ -73,14 +74,14 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Classical ukiyo-e woodblock seascape language with rhythmic wave massing, carved contour elegance, and floating-world calm',
-      form_and_line: 'Variable width',
-      color_palette: 'Flat gradients (Bokashi), Edo-period restraint, indigo-prussian depth',
-      lighting_setup: 'Flat, no shadow, graphic elegance, woodblock tradition',
-      material_texture: 'Wood grain',
-      render_quality:
+      subject_treatment: 'Variable width',
+      color_and_tone: 'Flat gradients (Bokashi), Edo-period restraint, indigo-prussian depth',
+      lighting_and_shadow: 'Flat, no shadow, graphic elegance, woodblock tradition',
+      texture_and_material: 'Wood grain',
+      camera_and_composition: 'Flattened perspective',
+      atmosphere_and_mood: 'Nature, calm, ukiyo-e transience, seasonal reverence',
+      rendering_and_quality:
         'Traditional woodblock print fidelity emphasizing carved-line discipline, restrained elegance, and repeatable impression clarity',
-      spatial_distortion: 'Flattened perspective',
-      atmosphere: 'Nature, calm, ukiyo-e transience, seasonal reverence',
       key_features: 'Outline, gradient band, seal signature',
       creative_brief:
         'Apply ukiyo-e woodblock grammar to any input: carved contour rhythm, bokashi gradients, Prussian-indigo restraint, flattened perspective, and repeatable impression clarity should define style without requiring waves, landscapes, actors, seals, nature scenes, or named masterworks.',
@@ -94,14 +95,14 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Stipple dotwork style with meditative tonal accumulation and precision-built monochrome form emergence',
-      form_and_line:
+      subject_treatment:
         'Dot-only mark system with density-controlled gradients, cluster rhythm, and no continuous stroke dependency',
-      color_palette: 'Black ink, pointillist-mono, dot-gradient depth',
-      lighting_setup: 'Dot density, stipple-as-value, cumulative point shadow',
-      material_texture: 'Skin/Paper',
-      render_quality: 'Detailed, slow, meditative precision, hand-poke patience',
-      spatial_distortion: 'Gradient by dots',
-      atmosphere: 'Obsessive, soft, pointillist trance, meticulous calm',
+      color_and_tone: 'Black ink, pointillist-mono, dot-gradient depth',
+      lighting_and_shadow: 'Dot density, stipple-as-value, cumulative point shadow',
+      texture_and_material: 'Skin/Paper',
+      camera_and_composition: 'Gradient by dots',
+      atmosphere_and_mood: 'Obsessive, soft, pointillist trance, meticulous calm',
+      rendering_and_quality: 'Detailed, slow, meditative precision, hand-poke patience',
       key_features: 'Dots only, stipple gradient, point-by-point tone',
       creative_brief:
         'Apply stipple dotwork grammar to any input: point-density value modeling, dot-cluster edges, stroke-less tonal construction, slow monochrome accumulation, and meditative texture should define form without requiring tattoos, skin, portraits, animals, or fixed illustration context.',
@@ -115,15 +116,16 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Stone-lithography style with grease-crayon mark character, tonal grain softness, and chemical-print process identity',
-      form_and_line:
+      subject_treatment:
         'Grainy litho-crayon contouring with soft edge diffusion and pressure-sensitive wax-mark variation',
-      color_palette: 'Black or Sepia, single-stone tone, litho-crayon warmth',
-      lighting_setup: 'Soft grain, stone-texture diffusion, atmospheric softness',
-      material_texture: 'Stone grain',
-      render_quality:
+      color_and_tone: 'Black or Sepia, single-stone tone, litho-crayon warmth',
+      lighting_and_shadow: 'Soft grain, stone-texture diffusion, atmospheric softness',
+      texture_and_material: 'Stone grain',
+      camera_and_composition:
+        'Compose for Lithograph using its key spatial cues: Grain, stone texture, crayon registration.',
+      atmosphere_and_mood: 'Classic, soft, print-studio quiet, optical wonder',
+      rendering_and_quality:
         'Classical lithographic fidelity emphasizing stone-grain tonal transitions, press transfer nuance, and atmospheric print softness',
-      spatial_distortion: 'None',
-      atmosphere: 'Classic, soft, print-studio quiet, optical wonder',
       key_features: 'Grain, stone texture, crayon registration',
       creative_brief:
         'Apply lithographic print grammar to any input: grease-crayon marks, stone-grain softness, pressure-sensitive wax variation, atmospheric tone, and press-transfer nuance should carry identity without requiring geometry, posters, portraits, print studios, or specific subjects.',
@@ -137,14 +139,15 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Pop-serigraph style with repetition logic, flat-process color authority, and media-reproduction iconography',
-      form_and_line:
+      subject_treatment:
         'Layered flat-shape construction with screen-offset edges, halftone contour cues, and repeat-grid compositional rhythm',
-      color_palette: 'Misaligned layers, pop-art separation, silkscreen offset',
-      lighting_setup: 'Halftone, mesh-screen texture, dot-pattern shadow',
-      material_texture: 'Mesh pattern',
-      render_quality: 'Pop art, mass produced, factory repetition, consumer-culture critique',
-      spatial_distortion: 'Offset color',
-      atmosphere: 'Bold, commercial, screenprint bazaar, poster-shop energy',
+      color_and_tone: 'Misaligned layers, pop-art separation, silkscreen offset',
+      lighting_and_shadow: 'Halftone, mesh-screen texture, dot-pattern shadow',
+      texture_and_material: 'Mesh pattern',
+      camera_and_composition: 'Offset color',
+      atmosphere_and_mood: 'Bold, commercial, screenprint bazaar, poster-shop energy',
+      rendering_and_quality:
+        'Pop art, mass produced, factory repetition, consumer-culture critique',
       key_features: 'Layer overlap, color misregistration, halftone rosette',
       creative_brief:
         'Apply pop-serigraph grammar to any input: repeatable flat layers, mesh-screen texture, misregistration offsets, halftone rosettes, and consumer-media color authority should create process impact without requiring celebrities, cans, products, posters, or repeat grids.',
@@ -158,14 +161,14 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Monotype one-off print style with painterly transfer unpredictability and unique impression-first identity',
-      form_and_line:
+      subject_treatment:
         'Smudged plate-transfer marks with pressure-variant edges, ghost traces, and spontaneous ink movement',
-      color_palette: 'Ink wash, single-pass tone, monoprint spontaneity',
-      lighting_setup: 'Unpredictable, plate-pressure variation, unique ghost-artifact',
-      material_texture: 'Plate texture',
-      render_quality: 'Painterly print, one-chance drama, artistic gamble',
-      spatial_distortion: 'Squashed ink',
-      atmosphere: 'Expressive, unique, printmaking surprise, serendipitous beauty',
+      color_and_tone: 'Ink wash, single-pass tone, monoprint spontaneity',
+      lighting_and_shadow: 'Unpredictable, plate-pressure variation, unique ghost-artifact',
+      texture_and_material: 'Plate texture',
+      camera_and_composition: 'Squashed ink',
+      atmosphere_and_mood: 'Expressive, unique, printmaking surprise, serendipitous beauty',
+      rendering_and_quality: 'Painterly print, one-chance drama, artistic gamble',
       key_features: 'Ghost image, ink-bleed edge, plate-memory residue',
       creative_brief:
         'Apply monotype print grammar to any input: one-pass transfer, pressure-born variation, ghosting, smudged plate edges, and non-repeatable ink movement should create unique impression energy without requiring abstract figures, print plates, studios, or one expressive scene.',
@@ -179,15 +182,15 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Cyanotype contact-print style with UV-driven silhouette capture and deep Prussian monochrome chemistry',
-      form_and_line:
+      subject_treatment:
         'White-negative silhouettes with soft contact edges and exposure-based tonal falloff on coated paper',
-      color_palette: 'Prussian Blue, monochrome cyan, sun-print depth',
-      lighting_setup: 'Negative, UV exposure, solar-contact alchemy',
-      material_texture: 'Watercolor paper',
-      render_quality:
+      color_and_tone: 'Prussian Blue, monochrome cyan, sun-print depth',
+      lighting_and_shadow: 'Negative, UV exposure, solar-contact alchemy',
+      texture_and_material: 'Watercolor paper',
+      camera_and_composition: 'Soft edges',
+      atmosphere_and_mood: 'Dreamy, blue, alternative-process magic, Victorian science',
+      rendering_and_quality:
         'Alternative-process print fidelity emphasizing UV exposure behavior, washout dynamics, and historic photogram aesthetics',
-      spatial_distortion: 'Soft edges',
-      atmosphere: 'Dreamy, blue, alternative-process magic, Victorian science',
       key_features: 'Blue only, contact shadow, silhouette photogram',
       creative_brief:
         'Apply cyanotype contact-print grammar to any input: Prussian-blue wash, UV-contact silhouettes, soft exposure falloff, coated-paper texture, and chemistry-led tonal emergence should define style without requiring botanicals, photograms, objects on paper, science props, or Victorian scenes.',
@@ -201,14 +204,14 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Rubber-stamp impression style with bureaucratic authority cues, imperfect transfer, and analogue office artifact character',
-      form_and_line:
+      subject_treatment:
         'Thick broken contour forms with pressure-loss gaps, edge breakup, and frame-first stamp geometry',
-      color_palette: 'Red or Black ink, stamp-pad economy, official pigment',
-      lighting_setup: 'Uneven pressure, ink-starvation pattern, hand-stamped irregularity',
-      material_texture: 'Ink starvation',
-      render_quality: 'Office, rough, bureaucrat artefact, rubber-worn character',
-      spatial_distortion: 'Missing parts',
-      atmosphere: 'Official, bureaucratic, desk-clerk authority, document-weight',
+      color_and_tone: 'Red or Black ink, stamp-pad economy, official pigment',
+      lighting_and_shadow: 'Uneven pressure, ink-starvation pattern, hand-stamped irregularity',
+      texture_and_material: 'Ink starvation',
+      camera_and_composition: 'Missing parts',
+      atmosphere_and_mood: 'Official, bureaucratic, desk-clerk authority, document-weight',
+      rendering_and_quality: 'Office, rough, bureaucrat artefact, rubber-worn character',
       key_features: 'Border, stamp frame, ink-fade authenticity',
       creative_brief:
         'Apply rubber-stamp impression grammar to any input: uneven pressure, ink-starvation gaps, frame-locked geometry, red-black stamp-pad economy, and official-mark roughness should define style without requiring documents, offices, seals, labels, bureaucracy scenes, or readable text.',
@@ -221,13 +224,13 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'white background, lines',
     style: {
       aesthetic: 'Subtractive chiaroscuro print with deep black fields',
-      form_and_line: 'Minimal contour lines; value-driven form modeling',
-      color_palette: 'Velvet black, graphite charcoal, warm ivory highlight accents',
-      lighting_setup: 'Burnished highlight reveal over fully darkened plate structure',
-      material_texture: 'Fine rocker tooth, polished burnish transitions, plate-grain softness',
-      render_quality: 'High tonal drama with smooth gradients from mass-black to glow',
-      spatial_distortion: 'Flat print plane with depth implied through tonal recession',
-      atmosphere: 'Nocturnal, contemplative, austere, museum-print gravitas',
+      subject_treatment: 'Minimal contour lines; value-driven form modeling',
+      color_and_tone: 'Velvet black, graphite charcoal, warm ivory highlight accents',
+      lighting_and_shadow: 'Burnished highlight reveal over fully darkened plate structure',
+      texture_and_material: 'Fine rocker tooth, polished burnish transitions, plate-grain softness',
+      camera_and_composition: 'Flat print plane with depth implied through tonal recession',
+      atmosphere_and_mood: 'Nocturnal, contemplative, austere, museum-print gravitas',
+      rendering_and_quality: 'High tonal drama with smooth gradients from mass-black to glow',
       key_features:
         'Continuous black ground, staged highlight recovery, velvety midtone transitions',
       creative_brief:
@@ -241,13 +244,14 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'sharp lines',
     style: {
       aesthetic: 'Granular tonal etching with wash-like shadow fields',
-      form_and_line: 'Light etched scaffolding under dominant tonal masses',
-      color_palette: 'Smoke black, sepia umber, aged paper cream, muted iron gray',
-      lighting_setup: 'Diffused tonal bloom with softly merged edge falloff',
-      material_texture: 'Rosin-grain stipple, acid-bitten porosity, powdery plate tone',
-      render_quality: 'Atmospheric print depth with layered tonal veils and subtle edge dissolve',
-      spatial_distortion: 'Stable print geometry; depth built by tone stacking',
-      atmosphere: 'Somber, introspective, gothic-romantic, haunted stillness',
+      subject_treatment: 'Light etched scaffolding under dominant tonal masses',
+      color_and_tone: 'Smoke black, sepia umber, aged paper cream, muted iron gray',
+      lighting_and_shadow: 'Diffused tonal bloom with softly merged edge falloff',
+      texture_and_material: 'Rosin-grain stipple, acid-bitten porosity, powdery plate tone',
+      camera_and_composition: 'Stable print geometry; depth built by tone stacking',
+      atmosphere_and_mood: 'Somber, introspective, gothic-romantic, haunted stillness',
+      rendering_and_quality:
+        'Atmospheric print depth with layered tonal veils and subtle edge dissolve',
       key_features: 'Grain-anchored gradients, soft shadow pooling, reduced hard edge contrast',
       creative_brief:
         'Apply aquatint tonal-etch grammar to any input: rosin-grain gradients, acid-bitten porosity, misted tone stacking, submerged contours, and soft shadow pools should make atmosphere primary without requiring gothic scenes, landscapes, figures, ruins, or fixed somber subjects.',
@@ -260,13 +264,13 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'paint, thick',
     style: {
       aesthetic: 'Notebook-ink illustration with obsessive micro-hatching',
-      form_and_line: 'Fine pressure-variable pen lines, spiral and contour doodle logic',
-      color_palette: 'Ballpoint blue, desaturated navy, off-white notebook stock',
-      lighting_setup: 'Density-built shading through layered hatch accumulation',
-      material_texture: 'Light paper tooth, occasional indent drag, tiny ink clots',
-      render_quality: 'Raw, intimate, highly detailed pen-work with handmade variance',
-      spatial_distortion: 'Minor line wobble and pooled-ink nodes in dense zones',
-      atmosphere: 'Casual yet meticulous, study-desk focus, spontaneous craft energy',
+      subject_treatment: 'Fine pressure-variable pen lines, spiral and contour doodle logic',
+      color_and_tone: 'Ballpoint blue, desaturated navy, off-white notebook stock',
+      lighting_and_shadow: 'Density-built shading through layered hatch accumulation',
+      texture_and_material: 'Light paper tooth, occasional indent drag, tiny ink clots',
+      camera_and_composition: 'Minor line wobble and pooled-ink nodes in dense zones',
+      atmosphere_and_mood: 'Casual yet meticulous, study-desk focus, spontaneous craft energy',
+      rendering_and_quality: 'Raw, intimate, highly detailed pen-work with handmade variance',
       key_features: 'Blue-only mark system, pressure-led value changes, margin-sketch rhythm',
       creative_brief:
         'Apply ballpoint notebook-ink grammar to any input: blue pressure-variable lines, cumulative hatching, ink clots, margin-sketch rhythm, and paper-indent drag should resolve form through pen flow without requiring notebooks, desks, studies, doodles, or fixed intimate scenes.',
@@ -279,13 +283,15 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'pencil, dry',
     style: {
       aesthetic: 'Refined ink-calligraphic illustration with formal stroke cadence',
-      form_and_line: 'High contrast hairline-to-broad transitions via pressure and angle control',
-      color_palette: 'Deep black ink, warm neutral paper, subtle sepia oxidation hints',
-      lighting_setup: 'Wet-ink sheen accents with controlled pooling at stroke terminals',
-      material_texture: 'Smooth vellum-like surface with minimal drag',
-      render_quality: 'Polished and fluid, prioritizing disciplined stroke elegance',
-      spatial_distortion: 'None; proportion preserved through calligraphic structure',
-      atmosphere: 'Ceremonial, classic, literate, archival quietness',
+      subject_treatment:
+        'High contrast hairline-to-broad transitions via pressure and angle control',
+      color_and_tone: 'Deep black ink, warm neutral paper, subtle sepia oxidation hints',
+      lighting_and_shadow: 'Wet-ink sheen accents with controlled pooling at stroke terminals',
+      texture_and_material: 'Smooth vellum-like surface with minimal drag',
+      camera_and_composition:
+        'Flat calligraphic composition; proportion preserved through calligraphic structure',
+      atmosphere_and_mood: 'Ceremonial, classic, literate, archival quietness',
+      rendering_and_quality: 'Polished and fluid, prioritizing disciplined stroke elegance',
       key_features: 'Flex-width modulation, tapered entry/exit strokes, deliberate rhythm spacing',
       creative_brief:
         'Apply fountain-pen calligraphic grammar to any input: hairline-to-broad modulation, wet-ink pooling, tapered stroke entries, vellum warmth, and deliberate rhythm spacing should build form through stroke choreography without requiring writing, manuscripts, letters, signatures, or archival props.',
@@ -298,13 +304,13 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'fine detail',
     style: {
       aesthetic: 'Permanent-marker illustration with assertive graphic massing',
-      form_and_line: 'Thick chisel-tip strokes, blunt corners, bleed-expanded contours',
-      color_palette: 'Carbon black, occasional cool gray marker layering',
-      lighting_setup: 'Minimal modeled light; contrast from bold fill-to-paper opposition',
-      material_texture: 'Fiber soak, edge feathering, back-bleed ghosting',
-      render_quality: 'Loud, raw, high-impact marks with uncorrected gesture energy',
-      spatial_distortion: 'Slight blob expansion and edge pooling in saturated regions',
-      atmosphere: 'Urgent, unapologetic, direct, poster-like confidence',
+      subject_treatment: 'Thick chisel-tip strokes, blunt corners, bleed-expanded contours',
+      color_and_tone: 'Carbon black, occasional cool gray marker layering',
+      lighting_and_shadow: 'Minimal modeled light; contrast from bold fill-to-paper opposition',
+      texture_and_material: 'Fiber soak, edge feathering, back-bleed ghosting',
+      camera_and_composition: 'Slight blob expansion and edge pooling in saturated regions',
+      atmosphere_and_mood: 'Urgent, unapologetic, direct, poster-like confidence',
+      rendering_and_quality: 'Loud, raw, high-impact marks with uncorrected gesture energy',
       key_features: 'Heavy contour weight, visible nib angle behavior, permanent-ink spread',
       creative_brief:
         'Apply permanent-marker grammar to any input: chisel-tip strokes, broad black masses, fiber soak, edge feathering, back-bleed ghosts, and no-undo commitment should create graphic force without requiring posters, graffiti, labels, signage, or fixed sketch subjects.',
@@ -317,13 +323,13 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'realistic, soft',
     style: {
       aesthetic: 'Traditional flash-sheet tattoo graphic language',
-      form_and_line: 'Heavy black contour with simplified internal separators',
-      color_palette: 'Classic flash primaries (red, yellow, green, black) with flat opaque fills',
-      lighting_setup: 'Minimal realism; depth through selective whip/pepper shading motifs',
-      material_texture: 'Slight paper aging and ink edge texture',
-      render_quality: 'Bold, iconic, high legibility at distance and small scale',
-      spatial_distortion: 'Intentionally flat emblematic composition',
-      atmosphere: 'Tough, nostalgic, craft-shop heritage, ceremonial permanence',
+      subject_treatment: 'Heavy black contour with simplified internal separators',
+      color_and_tone: 'Classic flash primaries (red, yellow, green, black) with flat opaque fills',
+      lighting_and_shadow: 'Minimal realism; depth through selective whip/pepper shading motifs',
+      texture_and_material: 'Slight paper aging and ink edge texture',
+      camera_and_composition: 'Intentionally flat emblematic composition',
+      atmosphere_and_mood: 'Tough, nostalgic, craft-shop heritage, ceremonial permanence',
+      rendering_and_quality: 'Bold, iconic, high legibility at distance and small scale',
       key_features: 'Bold-will-hold geometry, limited palette discipline, emblem-first silhouettes',
       creative_brief:
         'Apply traditional tattoo-flash grammar to any input: bold-will-hold outlines, compact emblem silhouettes, flat classic primaries, pepper shading, and sheet-ready clarity should make motifs durable without requiring skulls, roses, daggers, skin, flash sheets, or tattoo-shop scenes.',
@@ -336,13 +342,14 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'clean, font',
     style: {
       aesthetic: 'Aerosol handstyle signature with velocity-led linework',
-      form_and_line: 'Continuous flowing strokes, pressure-width variation, drip tails',
-      color_palette: 'Chrome silver, matte black, occasional high-contrast accent pops',
-      lighting_setup: 'Surface sheen and overspray bloom define form, not volumetric light',
-      material_texture: 'Concrete/brick grain with soft spray edge diffusion',
-      render_quality: 'Fast, confident, one-pass execution with visible can control',
-      spatial_distortion: 'Elastic letter compression, directional slant, motion-stretch curves',
-      atmosphere: 'Nocturnal, kinetic, urban, improvised immediacy',
+      subject_treatment: 'Continuous flowing strokes, pressure-width variation, drip tails',
+      color_and_tone: 'Chrome silver, matte black, occasional high-contrast accent pops',
+      lighting_and_shadow: 'Surface sheen and overspray bloom define form, not volumetric light',
+      texture_and_material: 'Concrete/brick grain with soft spray edge diffusion',
+      camera_and_composition:
+        'Elastic letter compression, directional slant, motion-stretch curves',
+      atmosphere_and_mood: 'Nocturnal, kinetic, urban, improvised immediacy',
+      rendering_and_quality: 'Fast, confident, one-pass execution with visible can control',
       key_features: 'Handstyle ligatures, overspray halos, gravity drips, cap-radius consistency',
       creative_brief:
         'Apply tag-handstyle graffiti logic to any input as a portable aerosol signature style: speedline strokes, cap-width variation, overspray, drips, marker ghosts, chromatic shadow offsets, and wall-weathered edge noise. If the prompt has no text, convert its main shapes into gestural tag-like contours and motion accents without requiring readable words, names, walls, signatures, or an urban scene.',
@@ -355,13 +362,13 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'tag, messy',
     style: {
       aesthetic: 'Wildstyle mural composition with layered letter architecture',
-      form_and_line: 'Multi-layer outlines, interlocking fills, arrows and extension bars',
-      color_palette: 'High-saturation spray spectrum with complementary contrast blocking',
-      lighting_setup: 'Graphic bevel highlights and controlled glow accents for depth cues',
-      material_texture: 'Masonry wall grain under aerosol gradients and cutbacks',
-      render_quality: 'Complex and polished mural rendering with deliberate hierarchy',
-      spatial_distortion: 'Aggressive perspective bends, angular connectors, kinetic skew',
-      atmosphere: 'Celebratory, competitive, showcase-wall intensity',
+      subject_treatment: 'Multi-layer outlines, interlocking fills, arrows and extension bars',
+      color_and_tone: 'High-saturation spray spectrum with complementary contrast blocking',
+      lighting_and_shadow: 'Graphic bevel highlights and controlled glow accents for depth cues',
+      texture_and_material: 'Masonry wall grain under aerosol gradients and cutbacks',
+      camera_and_composition: 'Aggressive perspective bends, angular connectors, kinetic skew',
+      atmosphere_and_mood: 'Celebratory, competitive, showcase-wall intensity',
+      rendering_and_quality: 'Complex and polished mural rendering with deliberate hierarchy',
       key_features:
         'Nested outlines, dimensional drop logic, connector lattice, readable abstraction',
       creative_brief:
@@ -375,13 +382,13 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'round, modern',
     style: {
       aesthetic: 'Gothic blackletter calligraphy with architectural stroke logic',
-      form_and_line: 'Broad-nib vertical stress, diamond joins, angular counters',
-      color_palette: 'Dense black ink, parchment beige, muted antique gold accents',
-      lighting_setup: 'Mostly flat manuscript illumination with subtle warm edge lift',
-      material_texture: 'Fibrous parchment grain with slight ink feather control',
-      render_quality: 'Formal, weighty, high-discipline lettering with ornamental restraint',
-      spatial_distortion: 'Structured ornament extension without breaking text rhythm',
-      atmosphere: 'Liturgical, solemn, archival, ceremonial stillness',
+      subject_treatment: 'Broad-nib vertical stress, diamond joins, angular counters',
+      color_and_tone: 'Dense black ink, parchment beige, muted antique gold accents',
+      lighting_and_shadow: 'Mostly flat manuscript illumination with subtle warm edge lift',
+      texture_and_material: 'Fibrous parchment grain with slight ink feather control',
+      camera_and_composition: 'Structured ornament extension without breaking text rhythm',
+      atmosphere_and_mood: 'Liturgical, solemn, archival, ceremonial stillness',
+      rendering_and_quality: 'Formal, weighty, high-discipline lettering with ornamental restraint',
       key_features:
         'Strong vertical columns, broken curves, tight spacing cadence, serifed terminals',
       creative_brief:
@@ -395,13 +402,13 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'stiff, pencil',
     style: {
       aesthetic: 'Expressive monochrome brush-ink gestural rendering',
-      form_and_line: 'Pressure-reactive strokes from razor taper to saturated belly',
-      color_palette: 'Carbon black, diluted gray washes, paper-white negative space',
-      lighting_setup: 'Value implied through wash layering and dry-brush breakup',
-      material_texture: 'Absorbent rice-paper bloom with feathered bleed fringes',
-      render_quality: 'Minimal yet controlled, emphasizing breath-like stroke economy',
-      spatial_distortion: 'Intentional looseness with calligraphic balance preservation',
-      atmosphere: 'Quiet, contemplative, fluid, meditative immediacy',
+      subject_treatment: 'Pressure-reactive strokes from razor taper to saturated belly',
+      color_and_tone: 'Carbon black, diluted gray washes, paper-white negative space',
+      lighting_and_shadow: 'Value implied through wash layering and dry-brush breakup',
+      texture_and_material: 'Absorbent rice-paper bloom with feathered bleed fringes',
+      camera_and_composition: 'Intentional looseness with calligraphic balance preservation',
+      atmosphere_and_mood: 'Quiet, contemplative, fluid, meditative immediacy',
+      rendering_and_quality: 'Minimal yet controlled, emphasizing breath-like stroke economy',
       key_features: 'One-breath gesture arcs, dry-brush fractures, water-ink diffusion gradients',
       creative_brief:
         'Apply brush-pen ink rendering to any input: pressure-sensitive strokes, dry-brush skips, wet pooling, feathered edges, controlled splatter, and confident negative space. Keep it usable on subjects, products, spaces, or abstractions without requiring calligraphy text, bamboo, landscapes, or traditional scene motifs.',

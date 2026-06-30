@@ -12,17 +12,29 @@ tags:
   - miscellaneous-and-fun
   - aesthetics
 visualDna:
-  aesthetic: Strict retro raster system with tile logic, hard pixel edges, indexed palettes, and low-resolution silhouette discipline
-  form_and_line: Square-grid clusters, stair-step diagonals, one-pixel outlines, chunky negative shapes, tile-aligned contours
-  color_palette: Limited indexed color ramps, hardware brights, restrained shadow steps, dithered blends, clean black separators
-  lighting_setup: Palette-step shading with no soft gradients, cluster highlights, hard shadow cells, and readable value bands
-  material_texture: Pixel blocks, ordered dithering, tile repeats, aliased edges, screen-grid crispness
-  render_quality: Low-res, intentional, readable, iconic, mechanically constrained, with no painterly smoothing
-  spatial_distortion: Resolution compression, tile repetition, stair-stepped curves, sprite-scale simplification, grid-snapped perspective
-  atmosphere: Playful, constrained, retro-computational, crisp, graphic
+  aesthetic: >-
+    Strict retro raster system with tile logic, hard pixel edges, indexed palettes, and low-resolution
+    silhouette discipline
+  subject_treatment: >-
+    Square-grid clusters, stair-step diagonals, one-pixel outlines, chunky negative shapes, tile-aligned
+    contours
+  color_and_tone: >-
+    Limited indexed color ramps, hardware brights, restrained shadow steps, dithered blends, clean black
+    separators
+  lighting_and_shadow: >-
+    Palette-step shading with no soft gradients, cluster highlights, hard shadow cells, and readable value
+    bands
+  texture_and_material: Pixel blocks, ordered dithering, tile repeats, aliased edges, screen-grid crispness
+  camera_and_composition: >-
+    Resolution compression, tile repetition, stair-stepped curves, sprite-scale simplification, grid-snapped
+    perspective
+  atmosphere_and_mood: Playful, constrained, retro-computational, crisp, graphic
+  rendering_and_quality: Low-res, intentional, readable, iconic, mechanically constrained, with no painterly smoothing
   key_features: Pixel grid alignment, cluster control, ordered dithering, indexed ramps, hard silhouettes, tile-map rhythm
   creative_brief: >-
-    Convert any input into a low-resolution indexed-pixel treatment. The style must come from grid discipline, palette limits, dithering, and silhouette compression, not from specific game scenes, sprites, props, or environments.
+    Convert any input into a low-resolution indexed-pixel treatment. The style must come from grid discipline,
+    palette limits, dithering, and silhouette compression, not from specific game scenes, sprites, props, or
+    environments.
 avoidRules:
   - hd
   - vector

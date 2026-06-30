@@ -13,24 +13,27 @@ tags:
   - food-and-drink
 visualDna:
   aesthetic: Kyaraben organization, compartment-cute design, edible character abstraction, playful obento precision
-  form_and_line: Compartments, divider-lines, nori-cutout silhouettes, rice-ball triangles, sausage-octopus contours
-  color_palette: Colorful, organized, tamago-yellow, spinach-green, umeboshi-red, salmon-pink, nori-black, cherry-tomato red
-  lighting_setup: Flat lay, overhead-bento, lunch-box-open, natural-daylight, desk-lunch ambient
-  material_texture: Rice, seaweed, tamago-egg layers, sesame-sprinkle, cherry-tomato skin, broccoli-floret, sausage-gloss
-  render_quality: Kawaii, organized, lunchtime-love, bento-box art, edible-character, Japanese-motherhood
-  spatial_distortion: >-
-    Compartment compression, edible character abstraction, rice-ball simplification, cutout-face geometry, carrot-flower
-    ornament
-  atmosphere: Cute, hungry, organized, lunch-break-joy, surprise-and-delight
+  subject_treatment: Compartments, divider-lines, nori-cutout silhouettes, rice-ball triangles, sausage-octopus contours
+  color_and_tone: >-
+    Colorful, organized, tamago-yellow, spinach-green, umeboshi-red, salmon-pink, nori-black, cherry-tomato
+    red
+  lighting_and_shadow: Flat lay, overhead-bento, lunch-box-open, natural-daylight, desk-lunch ambient
+  texture_and_material: Rice, seaweed, tamago-egg layers, sesame-sprinkle, cherry-tomato skin, broccoli-floret, sausage-gloss
+  camera_and_composition: >-
+    Compartment compression, edible character abstraction, rice-ball simplification, cutout-face geometry,
+    carrot-flower ornament
+  atmosphere_and_mood: Cute, hungry, organized, lunch-break-joy, surprise-and-delight
+  rendering_and_quality: Kawaii, organized, lunchtime-love, bento-box art, edible-character, Japanese-motherhood
   key_features: >-
-    Nori-cutout faces, rice-ball geometry, tamagoyaki-roll bands, cherry-tomato accents, grass-separator rhythm,
-    bento-pick flags
+    Nori-cutout faces, rice-ball geometry, tamagoyaki-roll bands, cherry-tomato accents, grass-separator
+    rhythm, bento-pick flags
   creative_brief: >-
-    Map the input into kyaraben design logic: compartment balance, character-like simplification, precise decorative
-    cuts, cute food motifs, and organized color blocks. Bento boxes and animal shapes can reinforce the style, but avoid
-    requiring one lunchbox, one mascot, or a fixed meal. Apply Bento Box as a portable style system over any input:
-    preserve its construction grammar, material cues, scale logic, and signature rendering behavior while avoiding a
-    required franchise, literal prop, fixed specimen, classroom sample, product shot, or scene template.
+    Map the input into kyaraben design logic: compartment balance, character-like simplification, precise
+    decorative cuts, cute food motifs, and organized color blocks. Bento boxes and animal shapes can reinforce
+    the style, but avoid requiring one lunchbox, one mascot, or a fixed meal. Apply Bento Box as a portable
+    style system over any input: preserve its construction grammar, material cues, scale logic, and signature
+    rendering behavior while avoiding a required franchise, literal prop, fixed specimen, classroom sample,
+    product shot, or scene template.
 avoidRules:
   - messy
 assets:

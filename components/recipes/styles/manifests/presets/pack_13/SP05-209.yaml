@@ -13,26 +13,22 @@ tags:
   - slice-of-life-and-moe
 visualDna:
   aesthetic: >-
-    Sugar-cotton moe hospitality where tiny-world charm, lace delicacy, dessertlike softness, and
-    inviting symmetry make the subject feel plush
-  form_and_line: >-
-    Tiny silhouette language, decorative neat contours, rounded service-like gestures, and balanced
-    compact composition
-  color_palette: Whipped cream white, strawberry pink, mint accent, caramel brown, warm gold, and cocoa shadow
-  lighting_setup: Pendant-like warm pools, pastry-glow diffusion, gentle fill, and soft specular accents
-  material_texture: >-
-    Lace weave, ceramic glaze, foam microtexture, polished wood, confection gloss, and plush textile
-    softness
-  render_quality: >-
-    Decorative moe finish with high legibility, plush surface control, and inviting miniature
-    hospitality tone
-  spatial_distortion: Compact tiny-world framing and soft scale compression around any subject
-  atmosphere: Sugary, tiny, cute, soothing, welcoming
+    Sugar-cotton moe hospitality where tiny-world charm, lace delicacy, dessertlike softness, and inviting
+    symmetry make the subject feel plush
+  subject_treatment: >-
+    Tiny silhouette language, decorative neat contours, rounded service-like gestures, and balanced compact
+    composition
+  color_and_tone: Whipped cream white, strawberry pink, mint accent, caramel brown, warm gold, and cocoa shadow
+  lighting_and_shadow: Pendant-like warm pools, pastry-glow diffusion, gentle fill, and soft specular accents
+  texture_and_material: Lace weave, ceramic glaze, foam microtexture, polished wood, confection gloss, and plush textile softness
+  camera_and_composition: Compact tiny-world framing and soft scale compression around any subject
+  atmosphere_and_mood: Sugary, tiny, cute, soothing, welcoming
+  rendering_and_quality: Decorative moe finish with high legibility, plush surface control, and inviting miniature hospitality tone
   key_features: Lace delicacy, dessertlike softness, plush texture, compact symmetry, and hospitality rhythm
   creative_brief: >-
-    Use Is the Order a Rabbit? as style anchor for sugar-cotton hospitality miniature. Any prompt
-    should become plush, symmetrical, softly decorated, and warmly inviting. Cafes, counters,
-    uniforms, desserts, and teacups are optional.
+    Use Is the Order a Rabbit? as style anchor for sugar-cotton hospitality miniature. Any prompt should
+    become plush, symmetrical, softly decorated, and warmly inviting. Cafes, counters, uniforms, desserts, and
+    teacups are optional.
 avoidRules:
   - realistic
   - 3d render
@@ -50,8 +46,8 @@ assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-209.webp
 attributes:
   negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, text, signature
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts,
+    watermark, text, signature
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle

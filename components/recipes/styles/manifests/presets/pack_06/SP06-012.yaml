@@ -13,19 +13,18 @@ tags:
   - traditional-painting
 visualDna:
   aesthetic: Aerosol paint style with stencil drift, overspray halos, and bold graphic immediacy
-  form_and_line: Soft spray edges, drips
-  color_palette: Neon, vibrant, aerosol
-  lighting_setup: Flat graphic light with sprayed edge bloom and high-contrast color hits
-  material_texture: Aerosol mist, layered overspray, drips, stencil ghosts, and rough receptive surface grain
-  render_quality: Raw, high-impact, wall-scale paint language without requiring a wall or city scene
-  spatial_distortion: Stylized forms
-  atmosphere: Urgent, improvised, graphic
+  subject_treatment: Soft spray edges, drips
+  color_and_tone: Neon, vibrant, aerosol
+  lighting_and_shadow: Flat graphic light with sprayed edge bloom and high-contrast color hits
+  texture_and_material: Aerosol mist, layered overspray, drips, stencil ghosts, and rough receptive surface grain
+  camera_and_composition: Stylized forms
+  atmosphere_and_mood: Urgent, improvised, graphic
+  rendering_and_quality: Raw, high-impact, wall-scale paint language without requiring a wall or city scene
   key_features: Spray texture
   creative_brief: >-
-    Apply aerosol spray-paint logic to any input: feathered overspray, stencil
-    silhouettes, pressure halos, layered color clouds, drips, and fast public-mark
-    energy. Keep risky graphic immediacy without requiring walls, streets, tags,
-    graffiti words, or protest context.
+    Apply aerosol spray-paint logic to any input: feathered overspray, stencil silhouettes, pressure halos,
+    layered color clouds, drips, and fast public-mark energy. Keep risky graphic immediacy without requiring
+    walls, streets, tags, graffiti words, or protest context.
 avoidRules:
   - photo
   - realistic
@@ -47,7 +46,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP06-012.webp
 attributes:
-  negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border, readable tag, city wall requirement
+  negativePrompt: >-
+    photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy,
+    watermark, text, signature, frame, border, readable tag, city wall requirement
 taxonomy:
   packId: pack_06
   packName: Essential Art Styles

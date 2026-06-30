@@ -14,16 +14,35 @@ tags:
   - biopunk
   - body-horror
 visualDna:
-  aesthetic: elegant unsettling biotech as a flat graphic digital-illustration conservatory card where organic circuits and soft red membrane patterns integrate with glasshouse machinery.
-  form_and_line: Organic circuitry, fungal branching, lab-craft silhouettes, soft biotech forms, and handmade mutation logic. Core composition uses organic circuit veins, glasshouse ribs, membrane curtains, gold traces, careful figures.
-  color_palette: deep crimson, pale ivory, black green, gold trace lines
-  lighting_setup: greenhouse shafts, red membrane glow, gold circuit glints
-  material_texture: abstract membrane panels, brass tracework, glasshouse ribs, matte leaves, polished bone shapes
-  render_quality: Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity, moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material simulation, or hyper-detail.
-  spatial_distortion: Clinics, transit spines, bridges, plazas, conservatories, and worktables that feel grown not installed. Keep depth legible and avoid default hallway, aisle, or empty studio staging.
-  atmosphere: beautiful, unsettling, lush, controlled
+  aesthetic: >-
+    elegant unsettling biotech as a flat graphic digital-illustration conservatory card where organic circuits
+    and soft red membrane patterns integrate with glasshouse machinery.
+  subject_treatment: >-
+    Organic circuitry, fungal branching, lab-craft silhouettes, soft biotech forms, and handmade mutation
+    logic. Core composition uses organic circuit veins, glasshouse ribs, membrane curtains, gold traces,
+    careful figures.
+  color_and_tone: deep crimson, pale ivory, black green, gold trace lines
+  lighting_and_shadow: greenhouse shafts, red membrane glow, gold circuit glints
+  texture_and_material: abstract membrane panels, brass tracework, glasshouse ribs, matte leaves, polished bone shapes
+  camera_and_composition: >-
+    Clinics, transit spines, bridges, plazas, conservatories, and worktables that feel grown not installed.
+    Keep depth legible and avoid default hallway, aisle, or empty studio staging.
+  atmosphere_and_mood: beautiful, unsettling, lush, controlled
+  rendering_and_quality: >-
+    Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly
+    planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity,
+    moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material
+    simulation, or hyper-detail.
   key_features: organic circuit veins, glasshouse ribs, membrane curtains, gold traces, careful figures
-  creative_brief: 'Allow body-horror mood without explicit gore: elegant organic circuits, unsettling beauty, and controlled biotech atmosphere. Keep it representative through conservatory structure, careful worker figures, glasshouse ribs, and abstract membrane panels, not realistic flesh. Favor flat graphic digital illustration, clean editorial illustration, cel-shaded poster art, gouache poster aesthetics, graphic-novel card art, or stylized animation-background art over realism, photoreal photoreal painterly realism, cinematic key art, scratchy print noise, or hyper-detailed concept art. Use few bold color/value zones, simplified brush planes, matte surfaces, low-to-moderate texture, large shapes, clean surfaces, shallow poster depth, and finish denoised with no excessive noise or ultra-fine detail.'
+  creative_brief: >-
+    Allow body-horror mood without explicit gore: elegant organic circuits, unsettling beauty, and controlled
+    biotech atmosphere. Keep it representative through conservatory structure, careful worker figures,
+    glasshouse ribs, and abstract membrane panels, not realistic flesh. Favor flat graphic digital
+    illustration, clean editorial illustration, cel-shaded poster art, gouache poster aesthetics,
+    graphic-novel card art, or stylized animation-background art over realism, photoreal photoreal painterly
+    realism, cinematic key art, scratchy print noise, or hyper-detailed concept art. Use few bold color/value
+    zones, simplified brush planes, matte surfaces, low-to-moderate texture, large shapes, clean surfaces,
+    shallow poster depth, and finish denoised with no excessive noise or ultra-fine detail.
 avoidRules:
   - photoreal
   - watermark
@@ -37,7 +56,22 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP15-031.webp
 attributes:
-  negativePrompt: photoreal, hyperreal, realistic render, photoreal photoreal painterly realism, cinematic realism, AAA key art, cinematic concept-art render, photobash polish, realistic material rendering, photographic skin pores, realistic foreground portrait, realistic facial hair detail, lens blur, bokeh, depth-of-field photo look, generic soldier hero, guard pin-up, weapon-first pose, exposed organs, bloody membrane, fleshy body parts, wet horror wall, erotic body-horror pose, realistic greenhouse render, glasshouse archviz, corridor, HDR lens realism, 3D render look, PBR material simulation, hyper-detailed concept art, scratchy print noise, tiny black linework, watermark, text, logo, generic style, over-abstract, interchangeable preset, duplicated motifs, generic glass utopia, unmotivated market aisle, unmotivated library aisle, fantasy corridor, random camera held by subject, studio wall fixation, chair fixation, curtain fixation, lamp fixation, scarf fixation, pedestal fixation, bird fixation, excessive noise, ultra-fine detail, over-sharpened microtexture, over-rendered machinery, noisy grime, tiny rivets everywhere, busy texture chatter, realistic uniform portrait, uniformed officer hero, foreground guard portrait, detailed tattoo focus, dense machinery wallpaper, overcrowded scene, high-frequency surface detail, cinematic close-up portrait, flat black fill, crushed black, pure black masses, muddy black fields, generic American illustration, generic Western RPG card art
+  negativePrompt: >-
+    photoreal, hyperreal, realistic render, photoreal photoreal painterly realism, cinematic realism, AAA key
+    art, cinematic concept-art render, photobash polish, realistic material rendering, photographic skin
+    pores, realistic foreground portrait, realistic facial hair detail, lens blur, bokeh, depth-of-field photo
+    look, generic soldier hero, guard pin-up, weapon-first pose, exposed organs, bloody membrane, fleshy body
+    parts, wet horror wall, erotic body-horror pose, realistic greenhouse render, glasshouse archviz,
+    corridor, HDR lens realism, 3D render look, PBR material simulation, hyper-detailed concept art, scratchy
+    print noise, tiny black linework, watermark, text, logo, generic style, over-abstract, interchangeable
+    preset, duplicated motifs, generic glass utopia, unmotivated market aisle, unmotivated library aisle,
+    fantasy corridor, random camera held by subject, studio wall fixation, chair fixation, curtain fixation,
+    lamp fixation, scarf fixation, pedestal fixation, bird fixation, excessive noise, ultra-fine detail,
+    over-sharpened microtexture, over-rendered machinery, noisy grime, tiny rivets everywhere, busy texture
+    chatter, realistic uniform portrait, uniformed officer hero, foreground guard portrait, detailed tattoo
+    focus, dense machinery wallpaper, overcrowded scene, high-frequency surface detail, cinematic close-up
+    portrait, flat black fill, crushed black, pure black masses, muddy black fields, generic American
+    illustration, generic Western RPG card art
 taxonomy:
   packId: pack_15
   packName: Punk Spectrum Vault

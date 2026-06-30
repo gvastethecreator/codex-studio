@@ -14,16 +14,36 @@ tags:
   - dieselpunk
   - radio-convoy
 visualDna:
-  aesthetic: dieselpunk civilian radio convoy poster built around mobile broadcast trucks, field antennas, signal citizens as small silhouettes, and improvised signal-map shapes.
-  form_and_line: Mechanical silhouettes, chunky ink contours, labor-poster spacing, and tactile industrial rhythm. Core composition uses antenna forests, abstract map boards, field radios, truck silhouettes, and bold route marks.
-  color_palette: olive drab, rust red, black rubber, pale radio green
-  lighting_setup: storm-cloud color blocks, dashboard glow, antenna sparks, headlight cuts as graphic wedges
-  material_texture: corrugated metal planes, rubber tire shapes, field canvas blocks, chipped paint marks, sparse road grit
-  render_quality: Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity, moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material simulation, or hyper-detail.
-  spatial_distortion: Readable workshops, rail platforms, docks, streets, or civic machine halls without becoming a corridor. Keep depth legible and avoid default hallway, aisle, or empty studio staging.
-  atmosphere: signal urgency, radio mystery, convoy coordination
+  aesthetic: >-
+    dieselpunk civilian radio convoy poster built around mobile broadcast trucks, field antennas, signal
+    citizens as small silhouettes, and improvised signal-map shapes.
+  subject_treatment: >-
+    Mechanical silhouettes, chunky ink contours, labor-poster spacing, and tactile industrial rhythm. Core
+    composition uses antenna forests, abstract map boards, field radios, truck silhouettes, and bold route
+    marks.
+  color_and_tone: olive drab, rust red, black rubber, pale radio green
+  lighting_and_shadow: storm-cloud color blocks, dashboard glow, antenna sparks, headlight cuts as graphic wedges
+  texture_and_material: corrugated metal planes, rubber tire shapes, field canvas blocks, chipped paint marks, sparse road grit
+  camera_and_composition: >-
+    Readable workshops, rail platforms, docks, streets, or civic machine halls without becoming a corridor.
+    Keep depth legible and avoid default hallway, aisle, or empty studio staging.
+  atmosphere_and_mood: signal urgency, radio mystery, convoy coordination
+  rendering_and_quality: >-
+    Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly
+    planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity,
+    moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material
+    simulation, or hyper-detail.
   key_features: antenna forests, map boards, field radios, truck silhouettes, mud tracks
-  creative_brief: Build a diesel-era civilian signal convoy around mobile broadcast trucks, antenna rigs, signal citizens, and abstract route-light coordination, not a generic trench soldier portrait, army convoy, flag scene, or lone vehicle poster. Keep people small and simplified; make antenna canopies, route-light shapes, and convoy silhouettes carry the identity. Keep the result representative rather than over-abstract; make one character in their environment the anchor, with motifs as background, costume, weather, architecture, or social pressure instead of a foreground prop. Favor screenprint poster, risograph poster, cel-shaded graphic-novel card art, flat-to-painterly digital illustration, or gouache poster aesthetics over realism, cinematic key art, or hyper-detailed concept art. Use few bold color/value zones, moderate texture, large shapes, clean surfaces, and finish denoised with no excessive noise or ultra-fine detail.
+  creative_brief: >-
+    Build a diesel-era civilian signal convoy around mobile broadcast trucks, antenna rigs, signal citizens,
+    and abstract route-light coordination, not a generic trench soldier portrait, army convoy, flag scene, or
+    lone vehicle poster. Keep people small and simplified; make antenna canopies, route-light shapes, and
+    convoy silhouettes carry the identity. Keep the result representative rather than over-abstract; make one
+    character in their environment the anchor, with motifs as background, costume, weather, architecture, or
+    social pressure instead of a foreground prop. Favor screenprint poster, risograph poster, cel-shaded
+    graphic-novel card art, flat-to-painterly digital illustration, or gouache poster aesthetics over realism,
+    cinematic key art, or hyper-detailed concept art. Use few bold color/value zones, moderate texture, large
+    shapes, clean surfaces, and finish denoised with no excessive noise or ultra-fine detail.
 avoidRules:
   - photoreal
   - watermark
@@ -37,7 +57,20 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP15-004.webp
 attributes:
-  negativePrompt: photoreal, hyperreal, realistic render, cinematic realism, AAA key art, photographic skin pores, realistic foreground portrait, realistic facial hair detail, lens blur, bokeh, depth-of-field photo look, generic soldier hero, guard pin-up, weapon-first pose, soldier, guard, officer, uniform hero, faction coat, political flag, red flag, handheld lantern hero, checkpoint scene, weapon, military staging, HDR lens realism, 3D render look, PBR material simulation, hyper-detailed concept art, watermark, text, logo, generic style, over-abstract, interchangeable preset, duplicated motifs, generic glass utopia, unmotivated market aisle, unmotivated library aisle, fantasy corridor, random camera held by subject, studio wall fixation, chair fixation, curtain fixation, lamp fixation, scarf fixation, pedestal fixation, bird fixation, excessive noise, ultra-fine detail, over-sharpened microtexture, over-rendered machinery, noisy grime, tiny rivets everywhere, busy texture chatter, realistic uniform portrait, uniformed officer hero, foreground guard portrait, detailed tattoo focus, dense machinery wallpaper, overcrowded scene, high-frequency surface detail, cinematic close-up portrait, flat black fill, crushed black, pure black masses, muddy black fields, generic American illustration, generic Western RPG card art
+  negativePrompt: >-
+    photoreal, hyperreal, realistic render, cinematic realism, AAA key art, photographic skin pores, realistic
+    foreground portrait, realistic facial hair detail, lens blur, bokeh, depth-of-field photo look, generic
+    soldier hero, guard pin-up, weapon-first pose, soldier, guard, officer, uniform hero, faction coat,
+    political flag, red flag, handheld lantern hero, checkpoint scene, weapon, military staging, HDR lens
+    realism, 3D render look, PBR material simulation, hyper-detailed concept art, watermark, text, logo,
+    generic style, over-abstract, interchangeable preset, duplicated motifs, generic glass utopia, unmotivated
+    market aisle, unmotivated library aisle, fantasy corridor, random camera held by subject, studio wall
+    fixation, chair fixation, curtain fixation, lamp fixation, scarf fixation, pedestal fixation, bird
+    fixation, excessive noise, ultra-fine detail, over-sharpened microtexture, over-rendered machinery, noisy
+    grime, tiny rivets everywhere, busy texture chatter, realistic uniform portrait, uniformed officer hero,
+    foreground guard portrait, detailed tattoo focus, dense machinery wallpaper, overcrowded scene,
+    high-frequency surface detail, cinematic close-up portrait, flat black fill, crushed black, pure black
+    masses, muddy black fields, generic American illustration, generic Western RPG card art
 taxonomy:
   packId: pack_15
   packName: Punk Spectrum Vault

@@ -11,20 +11,20 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         "Michelin Fine-Dining Editorial within 4. Food And Drink: a reusable Miscellaneous & Fun visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Michelin Fine-Dining Editorial's specific style identity.",
-      form_and_line:
+      subject_treatment:
         'Define Michelin Fine-Dining Editorial through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
-      color_palette:
+      color_and_tone:
         'Use a Michelin Fine-Dining Editorial-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
-      lighting_setup:
+      lighting_and_shadow:
         'Use lighting that makes Michelin Fine-Dining Editorial recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
-      material_texture:
+      texture_and_material:
         'Use materials and textures that reinforce Michelin Fine-Dining Editorial: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
-      render_quality:
-        'Render Michelin Fine-Dining Editorial with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
-      spatial_distortion:
+      camera_and_composition:
         'Use spatial behavior that fits Michelin Fine-Dining Editorial: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
-      atmosphere:
+      atmosphere_and_mood:
         'Set a mood that belongs to Michelin Fine-Dining Editorial: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+      rendering_and_quality:
+        'Render Michelin Fine-Dining Editorial with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       key_features:
         "Prioritize Michelin Fine-Dining Editorial's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
@@ -39,19 +39,20 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Confectionery material fantasy, edible-color systems, sugar-gloss transformation, gumdrop whimsy',
-      form_and_line:
+      subject_treatment:
         'Sugar coating, candy-cane stripes, lollipop-spiral, frosting-swirl, gumdrop-dome profiles',
-      color_palette:
+      color_and_tone:
         'Pink, Blue, Sugar, candy-floss spectrum, marshmallow-white, licorice-black, jellybean-rainbow, cotton-candy pastel',
-      lighting_setup:
+      lighting_and_shadow:
         'Bright, sparkly, sugar-crystal glitter, fairy-light twinkle, gumdrop-glow backlight',
-      material_texture:
+      texture_and_material:
         'Sugar crystals, gummy, icing-smooth, fondant-mat, hard-candy gloss, chocolate-shell snap, sprinkle-crunch',
-      render_quality:
-        'Sweet, magical, Willy-Wonka wonder, candy-land fantasy, sugar-rush dream, gumdrop-path joy',
-      spatial_distortion:
+      camera_and_composition:
         'Edible material substitution, lollipop spiral geometry, gingerbread block proportions, frosting drips, candy-cane striping',
-      atmosphere: 'Happy, hungry, sugar-plum brightness, candy-shop awe, high-sugar unreality',
+      atmosphere_and_mood:
+        'Happy, hungry, sugar-plum brightness, candy-shop awe, high-sugar unreality',
+      rendering_and_quality:
+        'Sweet, magical, Willy-Wonka wonder, candy-land fantasy, sugar-rush dream, gumdrop-path joy',
       key_features:
         'Sugar crystals, gumdrop translucency, frosting drips, candy-cane stripes, chocolate gloss, sprinkle-confetti',
       creative_brief:
@@ -66,19 +67,19 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Omakase precision layout, sashimi-fresh surface logic, disciplined cut geometry, itamae restraint',
-      form_and_line:
+      subject_treatment:
         'Knife cuts, single-stroke-slice, hira-zukuri rectangles, sogi-zukuri bevel, sashimi-fan arrangement',
-      color_palette:
+      color_and_tone:
         'Orange (Salmon), Red (Tuna), hamachi-amber, shiso-green, gari-pink, nori-black, wasabi-pale-green',
-      lighting_setup:
+      lighting_and_shadow:
         'Glossy oil highlights, clean counter-like spotlight, lacquer contrast, wasabi-grain texture light',
-      material_texture:
+      texture_and_material:
         'Raw fish, rice, flesh-marbling, shari-grain, nori-crisp, ikura-bead, torched-aburi char',
-      render_quality:
-        'Fresh, restrained, Edomae-inspired, knife-skill reverence, minimalist premium finish',
-      spatial_distortion:
+      camera_and_composition:
         'Natural proportion, lacquer-board framing, sashimi-fan geometry, nigiri-oval balance, disciplined spacing',
-      atmosphere: 'Clean, tasty, quiet, precise, fresh-cut anticipation',
+      atmosphere_and_mood: 'Clean, tasty, quiet, precise, fresh-cut anticipation',
+      rendering_and_quality:
+        'Fresh, restrained, Edomae-inspired, knife-skill reverence, minimalist premium finish',
       key_features:
         'Rice grains, shari-pearl definition, nori-wrap band, wasabi-dot, pickled-ginger mound, soy-sauce dish',
       creative_brief:
@@ -93,20 +94,20 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Quick-service commercial gloss, crave-engineering, food-styling trickery, high-impact appetizing polish',
-      form_and_line:
+      subject_treatment:
         'Perfect stack layers, rounded hero contours, ruffled edges, sear-like texture rings, draped melt curves',
-      color_palette:
+      color_and_tone:
         'Saturated Orange, Brown, Heinz-red, lettuce-chlorophyll green, sesame-gold, pickle-neon green',
-      lighting_setup:
+      lighting_and_shadow:
         'High key studio, backlight-through-bun, rim-light on cheese, oil-sheen catch, steam-backlit glow',
-      material_texture:
+      texture_and_material:
         'Melting cheese, water drops, sesame-seed nub, grill-mark char, condensation-bead, oil-slick gloss',
-      render_quality:
-        'Unrealistic perfection, food-stylist magic, spray-bottle mist, tweezer-placement, hunger-trap',
-      spatial_distortion:
+      camera_and_composition:
         'Flying ingredients, levitation-burst, ingredient-explosion, suspended-motion, mid-air assembly',
-      atmosphere:
+      atmosphere_and_mood:
         'Exciting, hungry, late-night craving, guilty-pleasure, glossy commercial intensity',
+      rendering_and_quality:
+        'Unrealistic perfection, food-stylist magic, spray-bottle mist, tweezer-placement, hunger-trap',
       key_features:
         'Sesame seeds, cheese-pull stretch, condensation water-beads, grill-mark cross-hatch, lettuce-edge frill, patty-juice sheen',
       creative_brief:
@@ -121,18 +122,19 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Liquid refraction glamour, mixology material art, chilled glass optics, cocktail-macro polish',
-      form_and_line:
+      subject_treatment:
         'Glass rim, coupe-bowl curve, highball-column, garnish-skewer line, citrus-peel spiral',
-      color_palette:
+      color_and_tone:
         'Liquid gradient, negroni-crimson, gin-clear, blue-curacao ocean, Campari-ruby, mint-green, lime-wheel bright',
-      lighting_setup:
+      lighting_and_shadow:
         'Backlit refraction, through-glass beam, ice-cube caustic, rim-light-on-condensation, bar-shelf amber',
-      material_texture:
+      texture_and_material:
         'Condensation, ice, frosted-glass chill, sugar-rim crystal, mint-leaf vein, citrus-oil slick',
-      render_quality: 'Refreshing, cold, happy-hour glamour, sip-ready desire, liquid-lens beauty',
-      spatial_distortion:
+      camera_and_composition:
         'Bubbles, carbonation-trail, ice-stack architecture, citrus-wheel plane, garnish-suspension',
-      atmosphere: 'Relaxed, luxurious, chilled, ice-clink rhythm, evening-glamour',
+      atmosphere_and_mood: 'Relaxed, luxurious, chilled, ice-clink rhythm, evening-glamour',
+      rendering_and_quality:
+        'Refreshing, cold, happy-hour glamour, sip-ready desire, liquid-lens beauty',
       key_features:
         'Ice cubes, condensation-beads, citrus-peel twist, sugar-rim, cocktail-pick, carbonation-stream, mint-slap bruise',
       creative_brief:
@@ -147,19 +149,19 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Artisan bakehouse texture, crust-and-crumb warmth, pastry laminate detail, yeast-rise glow',
-      form_and_line:
+      subject_treatment:
         'Crust cracks, ear-score lines, boule-dome contour, baguette-slash, croissant-laminate layers',
-      color_palette:
+      color_and_tone:
         'Golden Brown, crust-mahogany, crumb-cream, egg-wash amber, rye-earth, sesame-toast, butter-yellow',
-      lighting_setup:
+      lighting_and_shadow:
         'Warm yellow, bakery-window morning, incandescent-gold, crust-sheen catch, steam-haze diffusion',
-      material_texture:
+      texture_and_material:
         'Flour, flaky crust, dusting-flour, shatter-crust, air-pocket honeycomb, butter-laminate, steam-gelatinized starch',
-      render_quality:
-        'Warm, homey, crackling-crust symphony, butter-scent memory, artisan-oven, break-fast ritual',
-      spatial_distortion:
+      camera_and_composition:
         'Rising dough, proofed-volume, oven-spring bloom, ear-and-gringe expansion, scoring-blade slash',
-      atmosphere: 'Comfort, warmth, yeast-aroma, crust-tap satisfaction, carb-comfort',
+      atmosphere_and_mood: 'Comfort, warmth, yeast-aroma, crust-tap satisfaction, carb-comfort',
+      rendering_and_quality:
+        'Warm, homey, crackling-crust symphony, butter-scent memory, artisan-oven, break-fast ritual',
       key_features:
         'Steam, flour-dusting, scoring-blade marks, crust-crack fissure, golden-crumb honeycomb, parchment-paper, banneton-ring',
       creative_brief:
@@ -174,19 +176,20 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'High-speed freshness burst, juice-splash photography, cut-surface color energy, orchard-dynamism',
-      form_and_line:
+      subject_treatment:
         'Splash lines, parabolic-arc droplets, knife-slice plane, fruit-half contour, peel-curl spiral',
-      color_palette:
+      color_and_tone:
         'Juicy brights, watermelon-crimson, citrus-sunburst, berry-stain purple, kiwi-emerald, mango-golden',
-      lighting_setup:
+      lighting_and_shadow:
         'High speed flash, freeze-motion strobe, water-droplet sparkle, juice-mist backlight, shadow-free key',
-      material_texture:
+      texture_and_material:
         'Juice, pulp, seed-speckle, rind-texture, flesh-grain, droplet-surface-tension',
-      render_quality:
-        'Fresh, dynamic, frozen-in-flight, split-second-splash, fruit-ninja zen, liquid-sculpture',
-      spatial_distortion:
+      camera_and_composition:
         'Exploding, radial-burst, centrifugal-juice, peel-unfurling, seed-launch trajectory',
-      atmosphere: 'Energy, vitamin-bright, fresh, splash-play, life-force, morning-juice vitality',
+      atmosphere_and_mood:
+        'Energy, vitamin-bright, fresh, splash-play, life-force, morning-juice vitality',
+      rendering_and_quality:
+        'Fresh, dynamic, frozen-in-flight, split-second-splash, fruit-ninja zen, liquid-sculpture',
       key_features:
         'Juice drops, seed-suspension, peel-spiral, pulp-splash, knife-blade reflection, fruit-half cross-section, mid-air-droplet constellation',
       creative_brief:
@@ -201,19 +204,19 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Viscous cocoa flow, tempered dark gloss, molten confection surface, dense ribbon liquidity',
-      form_and_line:
+      subject_treatment:
         'Thick waves, viscous-ribbon contours, pour-cascade, drip-tongue edges, swirl-vortex',
-      color_palette:
+      color_and_tone:
         'Dark Brown, couverture-ebony, ganache-mahogany, milk-chocolate amber, cocoa-dust, tempered-sheen',
-      lighting_setup:
+      lighting_and_shadow:
         'Satin gloss, ribbon-highlight catch, soft-box reflection, warm-overhead, tempered-surface mirror',
-      material_texture:
+      texture_and_material:
         'Smooth liquid chocolate, tempered-crystal snap, ganache-velvet, cocoa-butter silk, molten-viscosity',
-      render_quality:
-        'Rich, decadent, chocolatier-art, tempering-perfection, dessert-seduction, cocoa-bean poetry',
-      spatial_distortion:
+      camera_and_composition:
         'Flowing, pour-path meander, chocolate-cascade, drip-icicle descent, fold-and-ripple',
-      atmosphere: 'Indulgent, sweet, luxurious, cocoa-comfort, melting-moment',
+      atmosphere_and_mood: 'Indulgent, sweet, luxurious, cocoa-comfort, melting-moment',
+      rendering_and_quality:
+        'Rich, decadent, chocolatier-art, tempering-perfection, dessert-seduction, cocoa-bean poetry',
       key_features:
         'Smoothness, tempered-chocolate sheen, drip-formation, cocoa-butter gloss, ganache-satin, chocolate-shavings curl',
       creative_brief:
@@ -228,19 +231,19 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Kyaraben organization, compartment-cute design, edible character abstraction, playful obento precision',
-      form_and_line:
+      subject_treatment:
         'Compartments, divider-lines, nori-cutout silhouettes, rice-ball triangles, sausage-octopus contours',
-      color_palette:
+      color_and_tone:
         'Colorful, organized, tamago-yellow, spinach-green, umeboshi-red, salmon-pink, nori-black, cherry-tomato red',
-      lighting_setup:
+      lighting_and_shadow:
         'Flat lay, overhead-bento, lunch-box-open, natural-daylight, desk-lunch ambient',
-      material_texture:
+      texture_and_material:
         'Rice, seaweed, tamago-egg layers, sesame-sprinkle, cherry-tomato skin, broccoli-floret, sausage-gloss',
-      render_quality:
-        'Kawaii, organized, lunchtime-love, bento-box art, edible-character, Japanese-motherhood',
-      spatial_distortion:
+      camera_and_composition:
         'Compartment compression, edible character abstraction, rice-ball simplification, cutout-face geometry, carrot-flower ornament',
-      atmosphere: 'Cute, hungry, organized, lunch-break-joy, surprise-and-delight',
+      atmosphere_and_mood: 'Cute, hungry, organized, lunch-break-joy, surprise-and-delight',
+      rendering_and_quality:
+        'Kawaii, organized, lunchtime-love, bento-box art, edible-character, Japanese-motherhood',
       key_features:
         'Nori-cutout faces, rice-ball geometry, tamagoyaki-roll bands, cherry-tomato accents, grass-separator rhythm, bento-pick flags',
       creative_brief:
@@ -255,19 +258,19 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Molten cheese-pull dynamics, pizzeria warmth, elastic melt gloss, commercial craving energy',
-      form_and_line:
+      subject_treatment:
         'Stretchy cheese, mozzarella-strand curves, slice-triangle, crust-blister edge, pepperoni-curl cup',
-      color_palette:
+      color_and_tone:
         'Red, Yellow, White, sauce-crimson, mozzarella-ivory, crust-golden, pepperoni-charred, basil-green, oregano-fleck',
-      lighting_setup:
+      lighting_and_shadow:
         'Warm, pizzeria-glow, oven-door amber, cheese-oil sheen, crust-underlight, box-steam',
-      material_texture:
+      texture_and_material:
         'Grease, cheese, oil-slick-pool, crust-blister, pepperoni-crisp-edge, melted-mozzarella-strand, semolina-dust',
-      render_quality:
-        'Cheesy, hot, cheese-pull porn, Friday-night ritual, fold-the-slice, New-York-style',
-      spatial_distortion:
+      camera_and_composition:
         'Stretching, cheese-strand elongation, slice-fold geometry, topping-drift, grease-separation pool',
-      atmosphere: 'Craving, greasy, hot, elastic, box-steam warmth',
+      atmosphere_and_mood: 'Craving, greasy, hot, elastic, box-steam warmth',
+      rendering_and_quality:
+        'Cheesy, hot, cheese-pull porn, Friday-night ritual, fold-the-slice, New-York-style',
       key_features:
         'Pepperoni, cheese-stretch strand, crust-blister, grease-pool, oregano-fleck, pepperoni-cup, box-corner-grease-stain, garlic-knot companion',
       creative_brief:

@@ -13,21 +13,22 @@ tags:
   - man-made-materials
 visualDna:
   aesthetic: Broken window
-  form_and_line: Sharp cracks
-  color_palette: Clear, Green edge
-  lighting_setup: Refractive sparkles
-  material_texture: Sharp shards
-  render_quality: Destruction, accident
-  spatial_distortion: Fragmented
-  atmosphere: Dangerous, sudden
+  subject_treatment: Sharp cracks
+  color_and_tone: Clear, Green edge
+  lighting_and_shadow: Refractive sparkles
+  texture_and_material: Sharp shards
+  camera_and_composition: Fragmented
+  atmosphere_and_mood: Dangerous, sudden
+  rendering_and_quality: Destruction, accident
   key_features: Spiderweb crack
   creative_brief: >-
-    Compose the frozen violence of shattered glass where radial cracks bloom from an impact center in a spiderweb of
-    sharp light, green edges catching refractive glints like dangerous confetti. Each shard must retain its own angle of
-    reflection, fragmenting the world behind it into a cubist mosaic. Capture the moment between integrity and collapse,
-    transparent catastrophe arrested mid-breath. Use Glass as portable surface/render behavior over any input: map its
-    texture, light response, edge wear, color chemistry, and tactile rhythm onto the subject instead of requiring a
-    literal material sample, macro tile, wall, landscape, source object, or scene where the material naturally appears.
+    Compose the frozen violence of shattered glass where radial cracks bloom from an impact center in a
+    spiderweb of sharp light, green edges catching refractive glints like dangerous confetti. Each shard must
+    retain its own angle of reflection, fragmenting the world behind it into a cubist mosaic. Capture the
+    moment between integrity and collapse, transparent catastrophe arrested mid-breath. Use Glass as portable
+    surface/render behavior over any input: map its texture, light response, edge wear, color chemistry, and
+    tactile rhythm onto the subject instead of requiring a literal material sample, macro tile, wall,
+    landscape, source object, or scene where the material naturally appears.
 avoidRules:
   - window
   - clean

@@ -13,19 +13,21 @@ tags:
   - fantasy-sci-fi-costume
 visualDna:
   aesthetic: Partially invisible, refraction-mirage wonder, optical concealment mystery
-  form_and_line: Distortion edge, partially-missing contour, refractive-bend silhouette, glass-lens warp, suspended concealment shape
-  color_palette: Background-match, refractive-rainbow fringe, glass-blue edge, transparency-neutral, partial-reveal tones
-  lighting_setup: Refraction, lens-warp caustics, glass-bend highlights, environmental-pass light, chromatic-shift edge
-  material_texture: Glass-like, lens-distortion surface, heat-shimmer wave, refractive-prism, liquid-crystal, adaptive-camo
-  render_quality: Stealth, optical-illusion wonder, refractive concealment mystery
-  spatial_distortion: Missing parts
-  atmosphere: Hidden, disappearing-presence wonder, see-but-not-see mystique, veil-between-worlds poetry
+  subject_treatment: >-
+    Distortion edge, partially-missing contour, refractive-bend silhouette, glass-lens warp, suspended
+    concealment shape
+  color_and_tone: Background-match, refractive-rainbow fringe, glass-blue edge, transparency-neutral, partial-reveal tones
+  lighting_and_shadow: Refraction, lens-warp caustics, glass-bend highlights, environmental-pass light, chromatic-shift edge
+  texture_and_material: Glass-like, lens-distortion surface, heat-shimmer wave, refractive-prism, liquid-crystal, adaptive-camo
+  camera_and_composition: Missing parts
+  atmosphere_and_mood: Hidden, disappearing-presence wonder, see-but-not-see mystique, veil-between-worlds poetry
+  rendering_and_quality: Stealth, optical-illusion wonder, refractive concealment mystery
   key_features: Distortion, bend-light edge, partial reveal, environment-through-body, glass-warp seam
   creative_brief: >-
     Apply invisibility-cloak optics to any input: refractive edge distortion, background-matching
     transparency, glass-blue seams, chromatic fringe and adaptive-camo shimmer. Preserve the
-    disappearing-presence effect without forcing a body, hand reveal, wizard scene, garment wearer
-    or specific environment.
+    disappearing-presence effect without forcing a body, hand reveal, wizard scene, garment wearer or specific
+    environment.
 avoidRules:
   - fully opaque normal fabric
 assets:

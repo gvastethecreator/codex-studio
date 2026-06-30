@@ -13,22 +13,22 @@ tags:
   - tactile-surfaces
 visualDna:
   aesthetic: Fake grass
-  form_and_line: Plastic blades
-  color_palette: Unnatural Green
-  lighting_setup: Plastic shine
-  material_texture: Plastic strips
-  render_quality: Artificial, sports
-  spatial_distortion: None
-  atmosphere: Fake, clean
+  subject_treatment: Plastic blades
+  color_and_tone: Unnatural Green
+  lighting_and_shadow: Plastic shine
+  texture_and_material: Plastic strips
+  camera_and_composition: 'Compose for Astroturf using its key spatial cues: Uniform height.'
+  atmosphere_and_mood: Fake, clean
+  rendering_and_quality: Artificial, sports
   key_features: Uniform height
   creative_brief: >-
-    Render the uncanny uniformity of artificial turf where identical plastic blades stand in regimented rows of
-    unnatural green, catching a plastic sheen that real grass would never yield under any sun. The surface should feel
-    fake in its very perfection, a lawn that needs no water and holds no secrets. Capture the aesthetics of the
-    substitute, nature made reliable at the cost of its soul. Use Astroturf as portable surface/render behavior over any
-    input: map its texture, light response, edge wear, color chemistry, and tactile rhythm onto the subject instead of
-    requiring a literal material sample, macro tile, wall, landscape, source object, or scene where the material
-    naturally appears.
+    Render the uncanny uniformity of artificial turf where identical plastic blades stand in regimented rows
+    of unnatural green, catching a plastic sheen that real grass would never yield under any sun. The surface
+    should feel fake in its very perfection, a lawn that needs no water and holds no secrets. Capture the
+    aesthetics of the substitute, nature made reliable at the cost of its soul. Use Astroturf as portable
+    surface/render behavior over any input: map its texture, light response, edge wear, color chemistry, and
+    tactile rhythm onto the subject instead of requiring a literal material sample, macro tile, wall,
+    landscape, source object, or scene where the material naturally appears.
 avoidRules:
   - real grass
 assets:

@@ -13,18 +13,18 @@ tags:
   - geometric-abstraction
 visualDna:
   aesthetic: Functional design
-  form_and_line: Clean lines
-  color_palette: Red, Yellow, Blue, Black
-  lighting_setup: Flat
-  material_texture: Matte paper
-  render_quality: Modernist, clean
-  spatial_distortion: Simplified forms
-  atmosphere: Rational, bold
+  subject_treatment: Clean lines
+  color_and_tone: Red, Yellow, Blue, Black
+  lighting_and_shadow: Flat
+  texture_and_material: Matte paper
+  camera_and_composition: Simplified forms
+  atmosphere_and_mood: Rational, bold
+  rendering_and_quality: Modernist, clean
   key_features: Primary colors
   creative_brief: >-
-    Apply Bauhaus reduction to the input: primary-color blocks, strict circles,
-    bars, grids, and functional negative space should strip any subject to clear
-    modular construction without becoming a poster-only layout.
+    Apply Bauhaus reduction to the input: primary-color blocks, strict circles, bars, grids, and functional
+    negative space should strip any subject to clear modular construction without becoming a poster-only
+    layout.
 avoidRules:
   - organic
   - messy

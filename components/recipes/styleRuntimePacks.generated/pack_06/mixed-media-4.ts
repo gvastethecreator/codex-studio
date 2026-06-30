@@ -11,13 +11,13 @@ export const GENERATED_STYLE_PRESETS = [
       'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border, shadow box requirement, literal collection',
     style: {
       aesthetic: '3D object collage',
-      form_and_line: 'Physical objects',
-      color_palette: 'Found object colors',
-      lighting_setup: 'Box lighting',
-      material_texture: 'Rust, wood, plastic',
-      render_quality: 'Sculptural, box art',
-      spatial_distortion: 'None',
-      atmosphere: 'Mysterious, collection',
+      subject_treatment: 'Physical objects',
+      color_and_tone: 'Found object colors',
+      lighting_and_shadow: 'Box lighting',
+      texture_and_material: 'Rust, wood, plastic',
+      camera_and_composition: 'Compose for Assemblage using its key spatial cues: Shadow box.',
+      atmosphere_and_mood: 'Mysterious, collection',
+      rendering_and_quality: 'Sculptural, box art',
       key_features: 'Shadow box',
       creative_brief:
         'Found-material logic becomes spatial composition, with rust dialoguing with plastic, wood with glass, and the found speaking to the made across material boundaries. Shadow, depth, and object scale create a sculptural collage grammar without requiring boxes, dioramas, or literal collections. Taxonomy turns into poetics through placement.',
@@ -31,13 +31,13 @@ export const GENERATED_STYLE_PRESETS = [
       'realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border, portrait requirement, literal memory photo',
     style: {
       aesthetic: 'Thread stitched over photo',
-      form_and_line: 'Thread lines',
-      color_palette: 'Photo + Thread accent',
-      lighting_setup: 'Photo lighting',
-      material_texture: 'Glossy photo, matte thread',
-      render_quality: 'Artistic, altered',
-      spatial_distortion: 'Stitched details',
-      atmosphere: 'Personal, tactile',
+      subject_treatment: 'Thread lines',
+      color_and_tone: 'Photo + Thread accent',
+      lighting_and_shadow: 'Photo lighting',
+      texture_and_material: 'Glossy photo, matte thread',
+      camera_and_composition: 'Stitched details',
+      atmosphere_and_mood: 'Personal, tactile',
+      rendering_and_quality: 'Artistic, altered',
       key_features: 'Thread texture',
       creative_brief:
         'Thread pierces an image surface, adding texture to captured light or flat print, the stitch becoming a third dimension over a two-dimensional base. Needle holes, floss color, and matte thread turn the substrate into a tactile field. The visible mend becomes the art without requiring portraits, memories, or literal photographs.',
@@ -51,13 +51,13 @@ export const GENERATED_STYLE_PRESETS = [
       'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border, mug ring requirement, kitchen mood',
     style: {
       aesthetic: 'Painted with coffee',
-      form_and_line: 'Liquid stains',
-      color_palette: 'Sepia, brown',
-      lighting_setup: 'Soft',
-      material_texture: 'Watercolor paper, granules',
-      render_quality: 'Organic, warm',
-      spatial_distortion: 'Fluid',
-      atmosphere: 'Warm, organic, stained',
+      subject_treatment: 'Liquid stains',
+      color_and_tone: 'Sepia, brown',
+      lighting_and_shadow: 'Soft',
+      texture_and_material: 'Watercolor paper, granules',
+      camera_and_composition: 'Fluid',
+      atmosphere_and_mood: 'Warm, organic, stained',
+      rendering_and_quality: 'Organic, warm',
       key_features: 'Monochrome brown',
       creative_brief:
         'Coffee-like organic pigment leaves sepia stains on absorbent paper, the process warm, fluid, and domestic in material feel. Rings, blooms, granules, and tide marks become compositional elements, accidents welcomed into the frame. The style should feel stained and aromatic without requiring mugs, kitchens, mornings, or beverage props.',
@@ -72,13 +72,13 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Trash-polka graphic collision style with black realism shards, red vector strikes, and splatter tension',
-      form_and_line: 'Realistic vs graphic',
-      color_palette: 'Black, Grey, Red',
-      lighting_setup: 'High contrast',
-      material_texture: 'Ink, splatter',
-      render_quality: 'Aggressive, modern',
-      spatial_distortion: 'Collage',
-      atmosphere: 'Intense, chaotic',
+      subject_treatment: 'Realistic vs graphic',
+      color_and_tone: 'Black, Grey, Red',
+      lighting_and_shadow: 'High contrast',
+      texture_and_material: 'Ink, splatter',
+      camera_and_composition: 'Collage',
+      atmosphere_and_mood: 'Intense, chaotic',
+      rendering_and_quality: 'Aggressive, modern',
       key_features: 'Red and Black',
       creative_brief:
         'Black ink and red accents dominate a world where realistic fragments collide with graphic abstraction. Splatter, smear, stencil, and hard typography-like blocks share one aggressive composition without requiring skin, tattoos, arms, blood, or readable lettering. The style should feel dangerous through contrast and collision, not gore.',
@@ -93,13 +93,13 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Xerox zine reproduction style with crushed contrast, toner grain, and DIY assembly artifacts',
-      form_and_line: 'High contrast, grainy',
-      color_palette: 'Black and White',
-      lighting_setup: 'Xerox flash',
-      material_texture: 'Toner, tape',
-      render_quality: 'DIY, punk',
-      spatial_distortion: 'Rough cuts',
-      atmosphere: 'Raw, underground',
+      subject_treatment: 'High contrast, grainy',
+      color_and_tone: 'Black and White',
+      lighting_and_shadow: 'Xerox flash',
+      texture_and_material: 'Toner, tape',
+      camera_and_composition: 'Rough cuts',
+      atmosphere_and_mood: 'Raw, underground',
+      rendering_and_quality: 'DIY, punk',
       key_features: 'Xerox grain',
       creative_brief:
         'Photocopy logic flattens everything into high-contrast grain, shadows becoming solid black, highlights burning to paper white. Toner dust, tape shadows, rough crop edges, and repeated-copy degradation become the aesthetic. The image lives in reproduction, without requiring booklets, staples, pages, text, or punk slogans.',
@@ -114,13 +114,14 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Moodboard color-story layout with coordinated fragments, swatches, texture samples, and provisional design logic',
-      form_and_line: 'Grid or pile',
-      color_palette: 'Coordinated palette',
-      lighting_setup: 'Flat',
-      material_texture: 'Digital or paper',
-      render_quality: 'Design, inspiration',
-      spatial_distortion: 'None',
-      atmosphere: 'Aesthetic',
+      subject_treatment: 'Grid or pile',
+      color_and_tone: 'Coordinated palette',
+      lighting_and_shadow: 'Flat',
+      texture_and_material: 'Digital or paper',
+      camera_and_composition:
+        'Compose for Moodboard Color Story using its key spatial cues: Color theme.',
+      atmosphere_and_mood: 'Aesthetic',
+      rendering_and_quality: 'Design, inspiration',
       key_features: 'Color theme',
       creative_brief:
         'Fragments cluster around a color story, each piece chosen not for what it depicts but for the note it strikes in a visual chord. The arrangement is temporary, repositionable, and intentionally unresolved. Feeling crystallizes through palette, rhythm, spacing, swatches, and texture samples without requiring literal photos or captions.',
@@ -135,13 +136,14 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Pinned planning-board style with layered intent, thread logic, soft cork texture, and provisional composition',
-      form_and_line: 'Pins, string',
-      color_palette: 'Varied',
-      lighting_setup: 'Room light',
-      material_texture: 'Cork, paper',
-      render_quality: 'Personal, planning',
-      spatial_distortion: 'None',
-      atmosphere: 'Hopeful, messy',
+      subject_treatment: 'Pins, string',
+      color_and_tone: 'Varied',
+      lighting_and_shadow: 'Room light',
+      texture_and_material: 'Cork, paper',
+      camera_and_composition:
+        'Compose for Pinned Planning Board using its key spatial cues: Pinned items.',
+      atmosphere_and_mood: 'Hopeful, messy',
+      rendering_and_quality: 'Personal, planning',
       key_features: 'Pinned items',
       creative_brief:
         'Cork-like texture, pins, tape, and thread create a provisional planning surface where relationships matter more than individual fragments. Lines connect zones, clusters imply priority, and empty gaps become part of the system. Keep the style about visible planning grammar, not wishes, clippings, conspiracy walls, or readable goals. Apply this mixed-media process over any input: preserve material assembly, edge evidence, surface treatment, layering logic, and handmade artifacts while avoiding required clippings, readable text, boards, fire, studio setup, or literal craft-table scene.',
@@ -155,13 +157,14 @@ export const GENERATED_STYLE_PRESETS = [
       'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border, readable typography, advertisement requirement, school craft mood',
     style: {
       aesthetic: 'Torn paper image',
-      form_and_line: 'Torn edges',
-      color_palette: 'Magazine scraps',
-      lighting_setup: 'Flat',
-      material_texture: 'Paper fibers',
-      render_quality: 'Craft mosaic finish with distance-read coherence and fiber-edge tactility',
-      spatial_distortion: 'Pixelated by scraps',
-      atmosphere: 'Creative, recycled',
+      subject_treatment: 'Torn edges',
+      color_and_tone: 'Magazine scraps',
+      lighting_and_shadow: 'Flat',
+      texture_and_material: 'Paper fibers',
+      camera_and_composition: 'Pixelated by scraps',
+      atmosphere_and_mood: 'Creative, recycled',
+      rendering_and_quality:
+        'Craft mosaic finish with distance-read coherence and fiber-edge tactility',
       key_features: 'Torn bits',
       creative_brief:
         'Torn paper fragments reassemble into image at distance, coherence appearing only when the eye surrenders detail. Each scrap carries its own color, fiber edge, and print residue, but no readable typography or ad content should dominate. The image is a mosaic of material decisions, each tessera partly belonging and partly refusing. Apply this mixed-media process over any input: preserve material assembly, edge evidence, surface treatment, layering logic, and handmade artifacts while avoiding required clippings, readable text, boards, fire, studio setup, or literal craft-table scene.',
@@ -175,14 +178,14 @@ export const GENERATED_STYLE_PRESETS = [
       'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border, wall requirement, street context',
     style: {
       aesthetic: 'Image made of tape',
-      form_and_line: 'Straight tape lines',
-      color_palette: 'Masking tape, duct tape',
-      lighting_setup: 'Flat',
-      material_texture: 'Tape layers',
-      render_quality:
+      subject_treatment: 'Straight tape lines',
+      color_and_tone: 'Masking tape, duct tape',
+      lighting_and_shadow: 'Flat',
+      texture_and_material: 'Tape layers',
+      camera_and_composition: 'Geometric',
+      atmosphere_and_mood: 'Temporary, geometric, improvised',
+      rendering_and_quality:
         'Tape-strip construction with installation-like precision but no required wall or street context',
-      spatial_distortion: 'Geometric',
-      atmosphere: 'Temporary, geometric, improvised',
       key_features: 'Tape strips',
       creative_brief:
         'Adhesive strips become line, become form, become image, the tape refusing to be merely functional, demanding aesthetic recognition. The lines are straight because tape cannot curve, the image bound by the geometry of its medium. Each strip catches light differently, matte against gloss, creating dimension from adhesive. Apply this mixed-media process over any input: preserve material assembly, edge evidence, surface treatment, layering logic, and handmade artifacts while avoiding required clippings, readable text, boards, fire, studio setup, or literal craft-table scene.',
@@ -196,14 +199,14 @@ export const GENERATED_STYLE_PRESETS = [
       'realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border, literal photo requirement, portrait requirement',
     style: {
       aesthetic: 'Acrylic strokes on photo',
-      form_and_line: 'Brush strokes',
-      color_palette: 'Photo + Paint',
-      lighting_setup: 'Mixed',
-      material_texture: 'Paint texture',
-      render_quality:
+      subject_treatment: 'Brush strokes',
+      color_and_tone: 'Photo + Paint',
+      lighting_and_shadow: 'Mixed',
+      texture_and_material: 'Paint texture',
+      camera_and_composition: 'Obscured details',
+      atmosphere_and_mood: 'Abstracted reality',
+      rendering_and_quality:
         'Expressive overpainted-print finish with smeared opacity and obscured detail',
-      spatial_distortion: 'Obscured details',
-      atmosphere: 'Abstracted reality',
       key_features: 'Smeared paint',
       creative_brief:
         'Thick acrylic strokes drag across an existing image surface, obscuring and revealing in the same gesture, paint acting as both veil and window. The brush risks the base layer through smear, opacity, and interruption. The image lives in friction between printed certainty and applied gesture, without requiring photographic realism.',
@@ -217,14 +220,14 @@ export const GENERATED_STYLE_PRESETS = [
       'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border',
     style: {
       aesthetic: 'Gilded illustration',
-      form_and_line: 'Gold accents',
-      color_palette: 'Gold, Black',
-      lighting_setup: 'Reflective',
-      material_texture: 'Metal foil, cracks',
-      render_quality:
+      subject_treatment: 'Gold accents',
+      color_and_tone: 'Gold, Black',
+      lighting_and_shadow: 'Reflective',
+      texture_and_material: 'Metal foil, cracks',
+      camera_and_composition: 'Flat gold areas',
+      atmosphere_and_mood: 'Rich, ornamental',
+      rendering_and_quality:
         'Ornamental gilded finish with metallic leaf behavior and decorative flatness',
-      spatial_distortion: 'Flat gold areas',
-      atmosphere: 'Rich, ornamental',
       key_features: 'Metallic shine',
       creative_brief:
         'Gold leaf adheres with breathlike delicacy, the slightest air current threatening to fold the foil into oblivion. The metal catches light and throws it back as radiance, an active source rather than passive surface. The image should feel precious through material reflectivity and ornament, not through any fixed subject. Apply this mixed-media process over any input: preserve material assembly, edge evidence, surface treatment, layering logic, and handmade artifacts while avoiding required clippings, readable text, boards, fire, studio setup, or literal craft-table scene.',
@@ -239,14 +242,14 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Stencil graphic style with hard cut bridges, repeatable silhouettes, and spray-edge urgency',
-      form_and_line: 'Hard edges, bridges',
-      color_palette: 'Black, Red, White',
-      lighting_setup: 'Flat',
-      material_texture: 'Wall, spray paint',
-      render_quality:
+      subject_treatment: 'Hard edges, bridges',
+      color_and_tone: 'Black, Red, White',
+      lighting_and_shadow: 'Flat',
+      texture_and_material: 'Wall, spray paint',
+      camera_and_composition: 'Simplified',
+      atmosphere_and_mood: 'Bold, urgent, reproducible',
+      rendering_and_quality:
         'Graphic reproducible stencil finish without requiring street walls, protest text, or slogans',
-      spatial_distortion: 'Simplified',
-      atmosphere: 'Bold, urgent, reproducible',
       key_features: 'Stencil bridges',
       creative_brief:
         'Negative space becomes positive through bridges that hold isolated shapes in place, the stencil declaring its method in every uncut connection. Detail is sacrificed to reproducibility, and spray edges reveal the process. The style should feel repeatable and urgent without requiring letters, slogans, walls, or protest scenes.',
@@ -261,13 +264,13 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Varnished decoupage surface with layered paper skin, crackle glaze, and aged adhesive depth',
-      form_and_line: 'Torn edges',
-      color_palette: 'Faded, yellowed',
-      lighting_setup: 'Glossy varnish',
-      material_texture: 'Crackle glaze',
-      render_quality: 'Craft, vintage',
-      spatial_distortion: 'Surface wrap',
-      atmosphere: 'Antique, homey',
+      subject_treatment: 'Torn edges',
+      color_and_tone: 'Faded, yellowed',
+      lighting_and_shadow: 'Glossy varnish',
+      texture_and_material: 'Crackle glaze',
+      camera_and_composition: 'Surface wrap',
+      atmosphere_and_mood: 'Antique, homey',
+      rendering_and_quality: 'Craft, vintage',
       key_features: 'Varnish shine',
       creative_brief:
         'Layers of paper seal under glossy varnish, edges softened by age, fragments surrendering their context to a new surface. Crackle glaze maps time in fissures, a network of years spreading across the image like a second composition. The style works as palimpsest, with old paper, varnish, and surface wrap becoming the subject. Apply this mixed-media process over any input: preserve material assembly, edge evidence, surface treatment, layering logic, and handmade artifacts while avoiding required clippings, readable text, boards, fire, studio setup, or literal craft-table scene.',
@@ -282,14 +285,14 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Scrapbook layering style with taped ephemera, soft nostalgia, and handmade page rhythm',
-      form_and_line: 'Tape, stickers',
-      color_palette: 'Pastel, vintage',
-      lighting_setup: 'Flat lay',
-      material_texture:
+      subject_treatment: 'Tape, stickers',
+      color_and_tone: 'Pastel, vintage',
+      lighting_and_shadow: 'Flat lay',
+      texture_and_material:
         'Paper fibers, tape sheen, sticker edges, paper shadows, and optional non-readable handwriting texture',
-      render_quality: 'Personal, cute',
-      spatial_distortion: 'Layered',
-      atmosphere: 'Nostalgic, sweet',
+      camera_and_composition: 'Layered',
+      atmosphere_and_mood: 'Nostalgic, sweet',
+      rendering_and_quality: 'Personal, cute',
       key_features: 'Page layout',
       creative_brief:
         'Ephemera-like layers arrange into a memory-coded page rhythm, each fragment selected for texture, color, and emotional residue rather than literal content. Tape, stickers, torn corners, and soft paper shadows create a curated accident of affection. Keep nostalgia material and compositional, without requiring tickets, flowers, handwriting, people, or readable notes.',
@@ -304,20 +307,20 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         "Digital Collage within 5. Mixed Media: a reusable Essential Art Styles visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Digital Collage's specific style identity.",
-      form_and_line:
+      subject_treatment:
         'Define Digital Collage through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
-      color_palette:
+      color_and_tone:
         'Use a Digital Collage-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
-      lighting_setup:
+      lighting_and_shadow:
         'Use lighting that makes Digital Collage recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
-      material_texture:
+      texture_and_material:
         'Use materials and textures that reinforce Digital Collage: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
-      render_quality:
-        'Render Digital Collage with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
-      spatial_distortion:
+      camera_and_composition:
         'Use spatial behavior that fits Digital Collage: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
-      atmosphere:
+      atmosphere_and_mood:
         'Set a mood that belongs to Digital Collage: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+      rendering_and_quality:
+        'Render Digital Collage with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       key_features:
         "Prioritize Digital Collage's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
@@ -332,13 +335,13 @@ export const GENERATED_STYLE_PRESETS = [
       'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border, face requirement, city requirement, object gag requirement',
     style: {
       aesthetic: 'Seamless photo blending',
-      form_and_line: 'Invisible',
-      color_palette: 'Unified grading',
-      lighting_setup: 'Matched',
-      material_texture: 'Photo',
-      render_quality: 'Surreal, advertising',
-      spatial_distortion: 'Impossible scale',
-      atmosphere: 'Dreamlike',
+      subject_treatment: 'Invisible',
+      color_and_tone: 'Unified grading',
+      lighting_and_shadow: 'Matched',
+      texture_and_material: 'Photo',
+      camera_and_composition: 'Impossible scale',
+      atmosphere_and_mood: 'Dreamlike',
+      rendering_and_quality: 'Surreal, advertising',
       key_features: 'Realistic blend',
       creative_brief:
         'Image fragments blend at the pixel level, one visual plane flowing into another through gradients of transparency, the join so seamless it becomes uncanny. Scale shifts without warning, impossible relationships presented with banal compositing confidence. The image disturbs through plausibility, not fantasy, without requiring faces, cities, objects, or passport-photo framing.',
@@ -352,13 +355,14 @@ export const GENERATED_STYLE_PRESETS = [
       'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border, readable newspaper, fabric requirement, canvas requirement',
     style: {
       aesthetic: 'Paint plus objects',
-      form_and_line: 'Varied',
-      color_palette: 'Messy, layered',
-      lighting_setup: 'Texture relief',
-      material_texture: 'Sand, paper, paint',
-      render_quality: 'Fine art, abstract',
-      spatial_distortion: 'None',
-      atmosphere: 'Expressive',
+      subject_treatment: 'Varied',
+      color_and_tone: 'Messy, layered',
+      lighting_and_shadow: 'Texture relief',
+      texture_and_material: 'Sand, paper, paint',
+      camera_and_composition:
+        'Compose for Mixed Media Canvas using its key spatial cues: Heavy texture.',
+      atmosphere_and_mood: 'Expressive',
+      rendering_and_quality: 'Fine art, abstract',
       key_features: 'Heavy texture',
       creative_brief:
         'Paint meets grit, paper, fibers, and anything that can hold pigment, building a surface where relief becomes content. Texture rises into the image until support and subject negotiate equal weight. The artwork asserts objecthood through material truth, without requiring newspaper, fabric, or canvas as fixed props.',
@@ -372,13 +376,13 @@ export const GENERATED_STYLE_PRESETS = [
       'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border, visible flame requirement',
     style: {
       aesthetic: 'Soot on paper',
-      form_and_line: 'Soft smoke trails',
-      color_palette: 'Black soot, white paper',
-      lighting_setup: 'Soft',
-      material_texture: 'Smoke residue',
-      render_quality: 'Surreal, delicate',
-      spatial_distortion: 'Ghostly',
-      atmosphere: 'Ethereal, dark',
+      subject_treatment: 'Soft smoke trails',
+      color_and_tone: 'Black soot, white paper',
+      lighting_and_shadow: 'Soft',
+      texture_and_material: 'Smoke residue',
+      camera_and_composition: 'Ghostly',
+      atmosphere_and_mood: 'Ethereal, dark',
+      rendering_and_quality: 'Surreal, delicate',
       key_features: 'Smoke patterns',
       creative_brief:
         'Flame deposits soot in patterns determined by airflow and chance, the image drawn by smoke rather than hand. Carbon traces create ghostly gradations that seem to hover above the surface. The style is soft, dangerous, residue-based, and never reliant on literal fire imagery. Apply this mixed-media process over any input: preserve material assembly, edge evidence, surface treatment, layering logic, and handmade artifacts while avoiding required clippings, readable text, boards, fire, studio setup, or literal craft-table scene.',
@@ -392,13 +396,13 @@ export const GENERATED_STYLE_PRESETS = [
       'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border',
     style: {
       aesthetic: 'Suminagashi or Ebru',
-      form_and_line: 'Fluid swirls',
-      color_palette: 'Psychedelic, oil',
-      lighting_setup: 'Flat',
-      material_texture: 'Paper, oil slick',
-      render_quality: 'Abstract, pattern',
-      spatial_distortion: 'Liquid distortion',
-      atmosphere: 'Trippy, fluid',
+      subject_treatment: 'Fluid swirls',
+      color_and_tone: 'Psychedelic, oil',
+      lighting_and_shadow: 'Flat',
+      texture_and_material: 'Paper, oil slick',
+      camera_and_composition: 'Liquid distortion',
+      atmosphere_and_mood: 'Trippy, fluid',
+      rendering_and_quality: 'Abstract, pattern',
       key_features: 'Oil patterns',
       creative_brief:
         'Pigment floats on the surface tension of thickened water, swirled into patterns by comb and stylus, then transferred to paper in a single decisive contact. No two pulls are identical, no two patterns repeatable, the medium encoding uniqueness into every sheet. The image is a liquid moment frozen, a turbulence caught becoming design. Apply this mixed-media process over any input: preserve material assembly, edge evidence, surface treatment, layering logic, and handmade artifacts while avoiding required clippings, readable text, boards, fire, studio setup, or literal craft-table scene.',
@@ -413,20 +417,20 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         "Analog Cut-Paper Collage within 5. Mixed Media: a reusable Essential Art Styles visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Analog Cut-Paper Collage's specific style identity.",
-      form_and_line:
+      subject_treatment:
         'Define Analog Cut-Paper Collage through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
-      color_palette:
+      color_and_tone:
         'Use a Analog Cut-Paper Collage-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
-      lighting_setup:
+      lighting_and_shadow:
         'Use lighting that makes Analog Cut-Paper Collage recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
-      material_texture:
+      texture_and_material:
         'Use materials and textures that reinforce Analog Cut-Paper Collage: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
-      render_quality:
-        'Render Analog Cut-Paper Collage with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
-      spatial_distortion:
+      camera_and_composition:
         'Use spatial behavior that fits Analog Cut-Paper Collage: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
-      atmosphere:
+      atmosphere_and_mood:
         'Set a mood that belongs to Analog Cut-Paper Collage: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+      rendering_and_quality:
+        'Render Analog Cut-Paper Collage with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       key_features:
         "Prioritize Analog Cut-Paper Collage's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:

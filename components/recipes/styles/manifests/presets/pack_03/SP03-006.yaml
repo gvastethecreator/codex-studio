@@ -13,19 +13,20 @@ tags:
   - render-engines
 visualDna:
   aesthetic: Architectural visualization
-  form_and_line: Precise
-  color_palette: Warm neutral exposure, architectural balance, believable material color
-  lighting_setup: IES lights, sun, adaptive dome
-  material_texture: Photorealistic materials, layered BRDF
-  render_quality: ArchViz clarity, catalog realism, interior-design lighting discipline
-  spatial_distortion: None
-  atmosphere: Inviting, expensive, aspirational, clean real-estate polish
+  subject_treatment: Precise
+  color_and_tone: Warm neutral exposure, architectural balance, believable material color
+  lighting_and_shadow: IES lights, sun, adaptive dome
+  texture_and_material: Photorealistic materials, layered BRDF
+  camera_and_composition: >-
+    Lookdev camera for V-Ray ArchViz Raytracer: three-quarter or orthographic framing, clean silhouette read,
+    material highlights, controlled depth, and vertical card composition.
+  atmosphere_and_mood: Inviting, expensive, aspirational, clean real-estate polish
+  rendering_and_quality: ArchViz clarity, catalog realism, interior-design lighting discipline
   key_features: Clean lines, adaptive sampling
   creative_brief: >-
-    Apply V-Ray ArchViz discipline to the input: calibrated IES light, adaptive
-    dome softness, layered BRDF materials, warm exposure, straight-line clarity
-    and expensive catalog realism. It can make architecture feel habitable, but
-    must not force an interior, window wall, furniture layout, or lifestyle setup.
+    Apply V-Ray ArchViz discipline to the input: calibrated IES light, adaptive dome softness, layered BRDF
+    materials, warm exposure, straight-line clarity and expensive catalog realism. It can make architecture
+    feel habitable, but must not force an interior, window wall, furniture layout, or lifestyle setup.
 avoidRules:
   - photo
   - drawing

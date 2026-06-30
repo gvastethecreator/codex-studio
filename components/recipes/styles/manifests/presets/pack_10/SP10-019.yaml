@@ -13,18 +13,17 @@ tags:
   - fluid-and-organic
 visualDna:
   aesthetic: Sand on vibrating plate
-  form_and_line: Geometric nodes
-  color_palette: White sand, Black plate
-  lighting_setup: Top down
-  material_texture: Grainy
-  render_quality: Physics, pattern
-  spatial_distortion: Symmetrical
-  atmosphere: Scientific, orderly
+  subject_treatment: Geometric nodes
+  color_and_tone: White sand, Black plate
+  lighting_and_shadow: Top down
+  texture_and_material: Grainy
+  camera_and_composition: Symmetrical
+  atmosphere_and_mood: Scientific, orderly
+  rendering_and_quality: Physics, pattern
   key_features: Mandala
   creative_brief: >-
-    Apply cymatic vibration to the input: radial frequency nodes, sand-like
-    particle ridges, resonance rings, and frozen sound-wave geometry should make
-    any subject feel organized by invisible audio pressure.
+    Apply cymatic vibration to the input: radial frequency nodes, sand-like particle ridges, resonance rings,
+    and frozen sound-wave geometry should make any subject feel organized by invisible audio pressure.
 avoidRules:
   - random
 assets:

@@ -12,20 +12,27 @@ tags:
   - anime-character-and-lifestyle
   - shojo-magical-girl-and-visionary-classics
 visualDna:
-  aesthetic: Moonlit magical-radiance style with transformation symbolism, romantic justice energy, and luminous heroic optimism
-  form_and_line: Crisp vintage-cel contouring, transformation ribbon trajectories, emblem-forward silhouette clarity, and expressive heroic gesture language
-  color_palette: Jewel-pastel fusion with moon-silver highlights, pink-cyan-lilac harmonies, and high-contrast magical accent pulses
-  lighting_setup: Moonlit backlight halos, transformation glow blooms, heroic rim partitions, and night reflective luminance
-  material_texture: Shimmer particle overlays, satin-ribbon sheen, watercolor-cel depth layering, and subtle analog grain warmth
-  render_quality: Golden-era magical-action anime finish with strong transformation readability and radiant polished clarity
-  spatial_distortion: Dynamic but graceful foreshortening supporting transformation arcs and multi-silhouette staging
-  atmosphere: Radiant, romantic, heroic, hopeful, graceful
+  aesthetic: >-
+    Moonlit magical-radiance style with transformation symbolism, romantic justice energy, and luminous heroic
+    optimism
+  subject_treatment: >-
+    Crisp vintage-cel contouring, transformation ribbon trajectories, emblem-forward silhouette clarity, and
+    expressive heroic gesture language
+  color_and_tone: >-
+    Jewel-pastel fusion with moon-silver highlights, pink-cyan-lilac harmonies, and high-contrast magical
+    accent pulses
+  lighting_and_shadow: Moonlit backlight halos, transformation glow blooms, heroic rim partitions, and night reflective luminance
+  texture_and_material: >-
+    Shimmer particle overlays, satin-ribbon sheen, watercolor-cel depth layering, and subtle analog grain
+    warmth
+  camera_and_composition: Dynamic but graceful foreshortening supporting transformation arcs and multi-silhouette staging
+  atmosphere_and_mood: Radiant, romantic, heroic, hopeful, graceful
+  rendering_and_quality: Golden-era magical-action anime finish with strong transformation readability and radiant polished clarity
   key_features: Transformation symbolism, moon-emblem light logic, jewel-tone magic effects, multi-silhouette choreography
   creative_brief: >-
-    Transform the input through moonlit ribbon justice: flowing ribbon arcs,
-    moon-emblem halos, jewel-pastel glow blooms, heroic rim partitions, and
-    compassionate magical radiance should reshape any subject without requiring
-    a literal sailor uniform, wand, city rooftop, or transformation pose.
+    Transform the input through moonlit ribbon justice: flowing ribbon arcs, moon-emblem halos, jewel-pastel
+    glow blooms, heroic rim partitions, and compassionate magical radiance should reshape any subject without
+    requiring a literal sailor uniform, wand, city rooftop, or transformation pose.
 avoidRules:
   - realistic
   - 3d render
@@ -42,7 +49,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-162.webp
 attributes:
-  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
+  negativePrompt: >-
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts,
+    watermark, text, signature
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle

@@ -14,15 +14,25 @@ tags:
   - apocalyptic-wargame-and-inked-dungeon
   - inked-dungeon
 visualDna:
-  aesthetic: Harsh ink dungeon crawl with angular heroes, torchlight panic, heavy black cuts, and exaggerated stress shadows.
-  subject_treatment: A hunched lantern rogue cornered by a wall-mouth monster and carved dungeon props, expressive and angular, with stress-ink body language.
-  color_and_tone: Near-black ink, parchment tan, torch orange, sickness green, desaturated crimson, and chalky white highlights.
+  aesthetic: >-
+    Harsh ink dungeon crawl with angular heroes, torchlight panic, heavy black cuts, and exaggerated stress
+    shadows.
+  subject_treatment: >-
+    A hunched lantern rogue cornered by a wall-mouth monster and carved dungeon props, expressive and angular,
+    with stress-ink body language.
+  color_and_tone: >-
+    Near-black ink, parchment tan, torch orange, sickness green, desaturated crimson, and chalky white
+    highlights.
   lighting_and_shadow: Torch cones and hard ink shadows carve faces, hands, walls, and monsters into bold graphic planes.
   texture_and_material: Brush ink, dry crosshatching, rough paper, chipped stone, wax, leather, and denoised paper texture.
-  camera_and_composition: Cropped comic-panel drama, tilted dungeon planes, character-vs-shadow hierarchy, and readable central action.
+  camera_and_composition: >-
+    Cropped comic-panel drama, tilted dungeon planes, character-vs-shadow hierarchy, and readable central
+    action.
   atmosphere_and_mood: Anxious, tactical, grimly theatrical, claustrophobic, and adventure-ready.
   rendering_and_quality: Clean high-contrast ink illustration with controlled paper texture, no dirty low-light speckle.
-  creative_brief: Original stress-ink dungeon aesthetic for party portraits, monsters, rooms, traps, and dramatic crawl scenes.
+  creative_brief: >-
+    Original stress-ink dungeon aesthetic for party portraits, monsters, rooms, traps, and dramatic crawl
+    scenes.
 avoidRules:
   - copied game characters
   - smooth fantasy realism
@@ -33,6 +43,10 @@ avoidRules:
   - text
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP17-027.webp
+attributes:
+  negativePrompt: >-
+    copied game characters, smooth fantasy realism, excessive noise, unreadable black crush, explicit gore,
+    watermark, text
 taxonomy:
   packId: pack_17
   packName: Medieval Fantasy & Dungeon Zine

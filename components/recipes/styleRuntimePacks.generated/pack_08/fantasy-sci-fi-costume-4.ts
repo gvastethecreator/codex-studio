@@ -10,19 +10,20 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'modern sleek, readable agency logo',
     style: {
       aesthetic: 'Retro EVA suit language, archival space-age optimism and beta-cloth engineering.',
-      form_and_line:
+      subject_treatment:
         'Bulky pressurized segmentation, hose-connector geometry, glove-gasket bulk and backpack-box volume.',
-      color_palette:
+      color_and_tone:
         'White, silver, muted flag accent, visor-gold, beta-cloth cream, mission-patch color',
-      lighting_setup:
+      lighting_and_shadow:
         'Harsh vacuum-like key light, unfiltered solar glare, helmet-interior bounce and gold-visor reflection.',
-      material_texture:
+      texture_and_material:
         'Beta cloth, gold-film visor, rubber gaskets, aluminum connectors, nylon webbing and Velcro patch texture.',
-      render_quality:
-        'Historic tech clarity, archival optimism and vacuum-silence precision without agency logos.',
-      spatial_distortion: 'None',
-      atmosphere:
+      camera_and_composition:
+        'Compose for Space Suit (Retro) using its key spatial cues: Bubble helmet geometry, gold visor reflection, gasket rings, umbilical-hose rhythm and moon-boot mass.',
+      atmosphere_and_mood:
         'Heroic exploration, mission-control suspense, giant-leap awe and restrained archival optimism.',
+      rendering_and_quality:
+        'Historic tech clarity, archival optimism and vacuum-silence precision without agency logos.',
       key_features:
         'Bubble helmet geometry, gold visor reflection, gasket rings, umbilical-hose rhythm and moon-boot mass.',
       creative_brief:
@@ -38,17 +39,18 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Convention-grade costume craft, stylized transformation energy, handmade fabrication spectacle',
-      form_and_line:
+      subject_treatment:
         'Exaggerated contour blocking, modular trim logic, foam-armor segmentation, accessory-scale geometry',
-      color_palette:
+      color_and_tone:
         'Bright synthetic colors, candy-neon saturation, cell-shaded contrast, vibrant cel hues',
-      lighting_setup:
+      lighting_and_shadow:
         'Controlled craft lighting, colored gel accents, fabrication highlights and theatrical rim',
-      material_texture:
+      texture_and_material:
         'Heat-resistant wig fiber, EVA foam armor with Worbla overlay, thermoplastic detailing, holographic spandex',
-      render_quality: 'Detailed, playful, craftsmanship-forward, competition-grade finish',
-      spatial_distortion: 'None',
-      atmosphere: 'Playful, fabricated, convention-floor pride, handmade spectacle',
+      camera_and_composition:
+        'Compose for Convention Craft Costume using its key spatial cues: Styled fiber sheen, foam seam lines, thermoplastic edgework, modular accessory detailing.',
+      atmosphere_and_mood: 'Playful, fabricated, convention-floor pride, handmade spectacle',
+      rendering_and_quality: 'Detailed, playful, craftsmanship-forward, competition-grade finish',
       key_features:
         'Styled fiber sheen, foam seam lines, thermoplastic edgework, modular accessory detailing',
       creative_brief:
@@ -63,20 +65,20 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         "Ethereal Fantasy within 4. Fantasy Sci-Fi Costume: a reusable Fashion & Costume visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Ethereal Fantasy's specific style identity.",
-      form_and_line:
+      subject_treatment:
         'Define Ethereal Fantasy through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
-      color_palette:
+      color_and_tone:
         'Use a Ethereal Fantasy-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
-      lighting_setup:
+      lighting_and_shadow:
         'Use lighting that makes Ethereal Fantasy recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
-      material_texture:
+      texture_and_material:
         'Use materials and textures that reinforce Ethereal Fantasy: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
-      render_quality:
-        'Render Ethereal Fantasy with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
-      spatial_distortion:
+      camera_and_composition:
         'Use spatial behavior that fits Ethereal Fantasy: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
-      atmosphere:
+      atmosphere_and_mood:
         'Set a mood that belongs to Ethereal Fantasy: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+      rendering_and_quality:
+        'Render Ethereal Fantasy with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       key_features:
         "Prioritize Ethereal Fantasy's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
@@ -91,18 +93,19 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Victorian retrofuturist attire, clockwork expedition romance, pressure-built regalia',
-      form_and_line:
+      subject_treatment:
         'Gearwork articulation, goggle-casing geometry, waistcoat-or-corset structure, chain drape, vertical hat logic, bustle-back volume',
-      color_palette:
+      color_and_tone:
         'Bronze, Brown Leather, Copper, brass patina, burnished mahogany, verdigris green',
-      lighting_setup: 'Sepia tone, steam-softened gaslight warmth, amber glow, brass reflection',
-      material_texture:
+      lighting_and_shadow:
+        'Sepia tone, steam-softened gaslight warmth, amber glow, brass reflection',
+      texture_and_material:
         'Full-grain leather, engraved brass, Harris tweed, clockwork gears, riveted copper, pocket-watch crystal',
-      render_quality:
-        'Detailed retro-industrial craftsmanship, cogs-and-brass opulence, fantasy-engineered finish',
-      spatial_distortion: 'Mechanical limbs (optional)',
-      atmosphere:
+      camera_and_composition: 'Mechanical limbs (optional)',
+      atmosphere_and_mood:
         'Adventurous, retro, inventive, clockwork wonder, airship-era ambition, tea-and-tinker curiosity',
+      rendering_and_quality:
+        'Detailed retro-industrial craftsmanship, cogs-and-brass opulence, fantasy-engineered finish',
       key_features: 'Brass accessories, aviator goggles, gear-motif jewelry, leather tool belt',
       creative_brief:
         'Translate the input into steampunk engineering attire: brass constellations, tinted goggle casings, leather tool-belt logic, waistcoat-or-corset structure, clockwork ornament and sepia gaslight. Keep mechanical-limb hints optional and useful, but do not force an inventor persona, aviator body, workshop, hangar or expedition scene.',
@@ -116,17 +119,19 @@ export const GENERATED_STYLE_PRESETS = [
       'vintage, natural, soft, surveillance camera, mercenary, weapon, operator portrait',
     style: {
       aesthetic: 'Cyberpunk technical utility, modular outerwear systems, rain-slicked futurewear',
-      form_and_line:
+      subject_treatment:
         'Straps, buckles, pockets, articulated knee darts, webbing harness geometry, asymmetrical zip lines',
-      color_palette:
+      color_and_tone:
         'Matte Black, Dark Grey, charcoal shadow, stealth anthracite, muted olive-black',
-      lighting_setup:
+      lighting_and_shadow:
         'Neon edge spill, wet-surface reflections, sodium-vapor amber, holographic accent light',
-      material_texture:
+      texture_and_material:
         'Waterproof technical fabric, waterproof membrane, UHMWPE composite panels, laser-cut nylon, bonded seam tape',
-      render_quality: 'Technical utility precision, dystopian functional polish, modular restraint',
-      spatial_distortion: 'Optional hooded volume or layered collar geometry',
-      atmosphere: 'Dark, prepared, cool, anticipatory stillness, modular survival, urban restraint',
+      camera_and_composition: 'Optional hooded volume or layered collar geometry',
+      atmosphere_and_mood:
+        'Dark, prepared, cool, anticipatory stillness, modular survival, urban restraint',
+      rendering_and_quality:
+        'Technical utility precision, dystopian functional polish, modular restraint',
       key_features: 'Utility focus, MOLLE webbing, magnetic technical closures, articulated hood',
       creative_brief:
         'Mechanize the input through cyberpunk techwear: bonded seams, UHMWPE composite panels, harness geometry, magnetic closures, layered hood volume and neon edge reflections. Keep the language technical and modular without requiring a city alley, mercenary scene, weapon, surveillance camera, body-first operator read or fixed character role.',
@@ -139,18 +144,18 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'fully opaque normal fabric, no refraction edge, no partial reveal',
     style: {
       aesthetic: 'Partially invisible, refraction-mirage wonder, optical concealment mystery',
-      form_and_line:
+      subject_treatment:
         'Distortion edge, partially-missing contour, refractive-bend silhouette, glass-lens warp, suspended concealment shape',
-      color_palette:
+      color_and_tone:
         'Background-match, refractive-rainbow fringe, glass-blue edge, transparency-neutral, partial-reveal tones',
-      lighting_setup:
+      lighting_and_shadow:
         'Refraction, lens-warp caustics, glass-bend highlights, environmental-pass light, chromatic-shift edge',
-      material_texture:
+      texture_and_material:
         'Glass-like, lens-distortion surface, heat-shimmer wave, refractive-prism, liquid-crystal, adaptive-camo',
-      render_quality: 'Stealth, optical-illusion wonder, refractive concealment mystery',
-      spatial_distortion: 'Missing parts',
-      atmosphere:
+      camera_and_composition: 'Missing parts',
+      atmosphere_and_mood:
         'Hidden, disappearing-presence wonder, see-but-not-see mystique, veil-between-worlds poetry',
+      rendering_and_quality: 'Stealth, optical-illusion wonder, refractive concealment mystery',
       key_features:
         'Distortion, bend-light edge, partial reveal, environment-through-body, glass-warp seam',
       creative_brief:
@@ -164,19 +169,20 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'franchise icon, helmet visor, neon vehicle, grid arena',
     style: {
       aesthetic: 'Neon grid suiting, electroluminescent circuit couture, digital frontier energy',
-      form_and_line:
+      subject_treatment:
         'Glowing linework, hex-circuit geometry, modular panel segmentation, emitter plates and luminescent contour breaks',
-      color_palette:
+      color_and_tone:
         'Black + Cyan, grid-blue, emitter white, amber-iso, hot orange, deep-circuit black',
-      lighting_setup:
+      lighting_and_shadow:
         'Self-illuminated, emissive-glow bloom, dark-grid contrast, disc-edge rim light',
-      material_texture:
+      texture_and_material:
         'Light, electroluminescent panel, matte neoprene, polycarbonate plate, luminous-flex circuit, silicone grip',
-      render_quality:
-        'Sci-fi digital polish, crisp emissive edges, neon circuit couture without franchise literalism',
-      spatial_distortion: 'None',
-      atmosphere:
+      camera_and_composition:
+        'Compose for Neon Light Suit using its key spatial cues: Cyan circuit tracery, illuminated piping, matte black panels, emitter-disc accents and modular EL seams.',
+      atmosphere_and_mood:
         'Future, tech, grid-frontier freedom, data-stream electricity, programmatic drama',
+      rendering_and_quality:
+        'Sci-fi digital polish, crisp emissive edges, neon circuit couture without franchise literalism',
       key_features:
         'Cyan circuit tracery, illuminated piping, matte black panels, emitter-disc accents and modular EL seams',
       creative_brief:
@@ -191,19 +197,19 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Monochrome sci-fi hologram, distant-transmission shimmer, long-range signal urgency',
-      form_and_line:
+      subject_treatment:
         'Scanlines, horizontal-interlaced banding, ghost-flicker edge, translucent signal contour, projection-field taper',
-      color_palette:
+      color_and_tone:
         'Blue monochrome, hologram azure, transmission-static white, fade-to-transparent edge, flicker-blue',
-      lighting_setup:
+      lighting_and_shadow:
         'Self-lit emissive-blue glow, projection-cone light, low-background contrast and flicker-instability pulse',
-      material_texture:
+      texture_and_material:
         'Light interference, scanline-grid pattern, signal-degradation static, transparency-fade, projection-grain, chromatic-fringe',
-      render_quality:
-        'Sci-fi glitch precision, unstable signal urgency, transmission-grade shimmer',
-      spatial_distortion: 'Transparent',
-      atmosphere:
+      camera_and_composition: 'Transparent',
+      atmosphere_and_mood:
         'Tech, message, urgent intimacy, distant-signal nostalgia, fragile transmission hope',
+      rendering_and_quality:
+        'Sci-fi glitch precision, unstable signal urgency, transmission-grade shimmer',
       key_features:
         'Scanlines, blue monochrome, flicker instability, transparent contour, projection-field falloff',
       creative_brief:
@@ -218,16 +224,18 @@ export const GENERATED_STYLE_PRESETS = [
       'bright cheerful lighting, fully illuminated surface, high-key friendly mood, featureless black card',
     style: {
       aesthetic: 'Shadow-form materiality, void-edge mystery, darkness-as-surface presence',
-      form_and_line:
+      subject_treatment:
         'Blurry, undefined-edge silhouette, smoke-like boundary, absence-contour, negative-space shape',
-      color_palette: 'Black, void, abyss, pitch, ink, unlit, dark-matter',
-      lighting_setup:
+      color_and_tone: 'Black, void, abyss, pitch, ink, unlit, dark-matter',
+      lighting_and_shadow:
         'Minimal rim separation, light-absence void, negative-fill darkness, silhouette-against-light, rim-light-only edge',
-      material_texture:
+      texture_and_material:
         'Darkness, light-absorbent void, shadow-cast density, absence-of-matter, velvety-black, depth-without-surface',
-      render_quality: 'Void material poetry, light-swallowing depth, readable silhouette contour',
-      spatial_distortion: 'Silhouette',
-      atmosphere: 'Mystery, primeval-darkness stillness, unnamed-fear quiet, shadow silence',
+      camera_and_composition: 'Silhouette',
+      atmosphere_and_mood:
+        'Mystery, primeval-darkness stillness, unnamed-fear quiet, shadow silence',
+      rendering_and_quality:
+        'Void material poetry, light-swallowing depth, readable silhouette contour',
       key_features:
         'Rim separation, smoke-edge texture, velvet grain, light-absorbing depth, negative shape, silhouette contour',
       creative_brief:
@@ -242,19 +250,20 @@ export const GENERATED_STYLE_PRESETS = [
       'literal school uniform, modern streetwear, prop-only wizard cliche, library scene lock',
     style: {
       aesthetic: 'Classic mage regalia, arcane scholar mystique and spellcraft textile language.',
-      form_and_line:
+      subject_treatment:
         'Flowing robe columns, bell-sleeve drape, hooded-cowl depth, layered hems and occasional apex geometry',
-      color_palette:
+      color_and_tone:
         'Deep Blue, Stars, burgundy, amethyst, midnight, silver-thread constellations, emerald',
-      lighting_setup:
+      lighting_and_shadow:
         'Arcane glow, silver rim, warm scholarly glow, jewel luminescence and embroidered highlight glints',
-      material_texture:
+      texture_and_material:
         'Velvet, silver-thread embroidery, astrological silk, crystal beads, aged leather, moonstone inlay',
-      render_quality: 'Magical, wise, illuminated-manuscript wonder, arcane-academia gravitas',
-      spatial_distortion:
+      camera_and_composition:
         'Draped-column elongation, constellation-stitch rhythm and cowl-shadow depth compression.',
-      atmosphere:
+      atmosphere_and_mood:
         'Mysterious, powerful, forbidden-knowledge awe, incantation tension, arcane focus',
+      rendering_and_quality:
+        'Magical, wise, illuminated-manuscript wonder, arcane-academia gravitas',
       key_features:
         'Rune-embroidered robe, silver constellation thread, crystal pendant, deep cowl and arcane accessory cues when useful',
       creative_brief:
@@ -269,19 +278,19 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Distressed outbreak utilitywear with patched survival layers, field repair logic and emergency pragmatism.',
-      form_and_line:
+      subject_treatment:
         'Dirty layers, scavenged onion bulk, duct-tape reinforcement, wrapped-forearm binding and boot-cut pragmatism',
-      color_palette: 'Grey, mud brown, rust, faded olive, dried crimson accent, ash grey',
-      lighting_setup:
+      color_and_tone: 'Grey, mud brown, rust, faded olive, dried crimson accent, ash grey',
+      lighting_and_shadow:
         'Gritty overcast grey, dust-haze shadow, emergency-orange rim and dirty practical light',
-      material_texture:
+      texture_and_material:
         'Dirt-embedded denim, duct-tape patches, torn flannel, sweat-worn cotton, abraded leather and dried emergency stains.',
-      render_quality:
-        'Survival editorial realism with worn textile clarity and grounded material distress.',
-      spatial_distortion:
+      camera_and_composition:
         'Layered protection bulk, patched seam interruptions and improvised field-repair asymmetry.',
-      atmosphere:
+      atmosphere_and_mood:
         'Tough, vigilant, exhausted and resourceful without gore, zombie spectacle or weapon focus.',
+      rendering_and_quality:
+        'Survival editorial realism with worn textile clarity and grounded material distress.',
       key_features:
         'Backpack straps, fingerless gloves, duct-tape patches, bite-protection layers and relic accessory cues',
       creative_brief:
@@ -295,17 +304,19 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'plain everyday minimalwear, contemporary Earth-uniform literalism',
     style: {
       aesthetic: 'Operatic space-court couture, sovereign nebular regality, diplomatic authority',
-      form_and_line:
+      subject_treatment:
         'Elaborate cranial halo, ceremonial train sweep, corseted architecture, bell-sleeve drama, court-pageant verticality',
-      color_palette:
+      color_and_tone:
         'Red, Gold, alien pearl, crimson, electrum, plasma-pink, teal signal accents, midnight velvet',
-      lighting_setup: 'Dramatic ceremonial glow, stained-glass fantasy light, diplomatic backlight',
-      material_texture:
+      lighting_and_shadow:
+        'Dramatic ceremonial glow, stained-glass fantasy light, diplomatic backlight',
+      texture_and_material:
         'Rare off-world fabric, iridescent organza, feather-trim, beaded net, liquid-metal threads, luminescent silk',
-      render_quality: 'Regal alien opulence, galactic-court high fashion, ceremonial precision',
-      spatial_distortion: 'Ceremonial halo exaggeration',
-      atmosphere:
+      camera_and_composition: 'Ceremonial halo exaggeration',
+      atmosphere_and_mood:
         'Serious, political, galactic-court gravity, doomed-romance elegance, diplomatic tension',
+      rendering_and_quality:
+        'Regal alien opulence, galactic-court high fashion, ceremonial precision',
       key_features:
         'Ceremonial signal-paint cues, halo headpiece logic, gown architecture, feathered cape',
       creative_brief:
@@ -320,16 +331,18 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Four-color heroic costume language, emblematic idealism and panel-breaking dynamism.',
-      form_and_line:
+      subject_treatment:
         'Cape-sweep drama, emblem-centered geometry, gauntlet-to-boot rhythm and bold seam blocking.',
-      color_palette: 'Primary Colors, flag-blue, signal-red, gold-yellow, ink-black, optic-white',
-      lighting_setup: 'Rim light, heroic edge-highlight, two-source drama and comic-ink contrast.',
-      material_texture:
+      color_and_tone: 'Primary Colors, flag-blue, signal-red, gold-yellow, ink-black, optic-white',
+      lighting_and_shadow:
+        'Rim light, heroic edge-highlight, two-source drama and comic-ink contrast.',
+      texture_and_material:
         'Matte performance knit, printed color blocking, vinyl cape, rubber sole and metallic accents.',
-      render_quality:
+      camera_and_composition: 'Iconic silhouette exaggeration.',
+      atmosphere_and_mood:
+        'Bold, brave, civic-myth clarity, splash-page dynamism and unwavering resolve.',
+      rendering_and_quality:
         'Bold splash-page costume energy with original heroic clarity, not franchise imitation.',
-      spatial_distortion: 'Iconic silhouette exaggeration.',
-      atmosphere: 'Bold, brave, civic-myth clarity, splash-page dynamism and unwavering resolve.',
       key_features:
         'Emblem panel, cape logic, utility belt geometry, mask-like cues and heroic boot finish.',
       creative_brief:
@@ -345,19 +358,20 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Xeno-couture editorial logic with late-90s sci-fi energy, synthetic rebellion and artificial glamour.',
-      form_and_line:
+      subject_treatment:
         'Strange cutouts, geometric-negative-space, structural strap lattice, asymmetrical paneling, tab-constructed sleeves',
-      color_palette:
+      color_and_tone:
         'Orange, Plastic, optic-white, safety-yellow, chrome, rubber-black, sky-blue, metallic-mint',
-      lighting_setup:
+      lighting_and_shadow:
         'Bright sci-fi editorial glow, chrome-reflection bounce, sterile overhead, neon-advertisement spill',
-      material_texture:
+      texture_and_material:
         'Orange rubber, clear plastic, chrome vinyl, white elastic webbing, molded neoprene, holographic PVC',
-      render_quality:
-        'Futuristic couture precision with weird synthetic material clarity and editorial spectacle.',
-      spatial_distortion: 'None',
-      atmosphere:
+      camera_and_composition:
+        'Compose for Alien Fashion using its key spatial cues: Straps, lattice harness cues, cutout geometry, contrast stitching, utility ring.',
+      atmosphere_and_mood:
         'Xeno-fashion attitude, zero-g couture poise, cosmic glamour and rebellious artificiality',
+      rendering_and_quality:
+        'Futuristic couture precision with weird synthetic material clarity and editorial spectacle.',
       key_features:
         'Straps, lattice harness cues, cutout geometry, contrast stitching, utility ring',
       creative_brief:
@@ -372,20 +386,20 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Scavenged wasteland utility couture with oxidized survival layers, fuel-scarcity grit and chrome myth.',
-      form_and_line:
+      subject_treatment:
         'Rags, armor, scavenged-layer chaos, shoulder-pad bulk, wrapped-limb binding and improvised asymmetry',
-      color_palette:
+      color_and_tone:
         'Dust, Brown, Rust, sun-bleached tan, oxidized copper, dark oxidized rust, chalk-white road paint, desert-ochre',
-      lighting_setup:
+      lighting_and_shadow:
         'Harsh sun, heat-shimmer distortion, dust diffusion, repair-fire orange accents and wind-haze',
-      material_texture:
+      texture_and_material:
         'Dirty canvas, torn leather, salvaged tire rubber, oxidized chain texture, scrap-panel armor, gauze wraps, weathered denim',
-      render_quality:
-        'Survival couture realism with gritty material hierarchy and improvised engineering clarity.',
-      spatial_distortion:
+      camera_and_composition:
         'Scavenged-layer asymmetry, strapped compression, heat-haze edges and armor-fragment silhouette breaks.',
-      atmosphere:
+      atmosphere_and_mood:
         'Tough resource-scarcity tension, wind-burned solitude and ferocious repair culture.',
+      rendering_and_quality:
+        'Survival couture realism with gritty material hierarchy and improvised engineering clarity.',
       key_features:
         'Optional goggles, shoulder pad, bandolier-like straps, respirator cues and improvised armor fragments',
       creative_brief:
@@ -399,16 +413,18 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'modern, messy',
     style: {
       aesthetic: 'Gothic nocturnal aristocracy, immortal-danger elegance, old-world menace',
-      form_and_line:
+      subject_treatment:
         'High collar, cape-volume sweep, tailcoat-waist taper, cravat-neck precision, heraldic signet accents',
-      color_palette: 'Black, Red lining, blood-crimson, ivory, silver, deep burgundy, moon-white',
-      lighting_setup:
+      color_and_tone: 'Black, Red lining, blood-crimson, ivory, silver, deep burgundy, moon-white',
+      lighting_and_shadow:
         'Moonlight silver rim, low amber flicker, fog-diffused ambiance, deep gothic shadow contrast',
-      material_texture:
+      texture_and_material:
         'Velvet, silk satin lining, brocade vest, starched wing collar, onyx ring, opera cape wool',
-      render_quality: 'Gothic, theatrical, old-novel atmosphere, aristocratic horror elegance',
-      spatial_distortion: 'None',
-      atmosphere: 'Elegant, ancient-hunger menace, moonlit danger and aristocratic dread',
+      camera_and_composition:
+        'Compose for Vampire Lord using its key spatial cues: Opera cape, high collar, medallion, heraldic signet, crimson lining.',
+      atmosphere_and_mood: 'Elegant, ancient-hunger menace, moonlit danger and aristocratic dread',
+      rendering_and_quality:
+        'Gothic, theatrical, old-novel atmosphere, aristocratic horror elegance',
       key_features: 'Opera cape, high collar, medallion, heraldic signet, crimson lining',
       creative_brief:
         "Style the input through vampire-aristocratic costume grammar: black velvet cape, crimson silk lining, high collar, cravat precision, onyx heraldic accents and moonlit silver edging. Keep immortal menace and old-world elegance without requiring a castle, fangs, widow's peak, portrait bust or a named vampire scene.",
@@ -421,16 +437,19 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'casual, latex body read, cockpit lock, franchise suit',
     style: {
       aesthetic: 'Biomech interfacewear, sync-signal shine and pressure-system readiness.',
-      form_and_line:
+      subject_treatment:
         'Armored panel lines, capsule-contour geometry, sealed-edge bands, connector plates and ergonomic seam maps.',
-      color_palette: 'Glossy white/red, biotech violet, alert orange, caution-yellow, matte-black',
-      lighting_setup:
+      color_and_tone: 'Glossy white/red, biotech violet, alert orange, caution-yellow, matte-black',
+      lighting_and_shadow:
         'Amber system glow, display backlight, capsule bioluminescence and sync-alert rim.',
-      material_texture:
+      texture_and_material:
         'Molded polymer, neoprene support, carbon-fiber panel, rubberized connector plates and memory-foam inner pads.',
-      render_quality: 'Original sci-fi engineering polish with high-spec interfacewear clarity.',
-      spatial_distortion: 'None',
-      atmosphere: 'Ready, technical, machine-linked and tense without anime-franchise identity.',
+      camera_and_composition:
+        'Compose for Mech Pilot Suit using its key spatial cues: Connector collar cues, neural-port-like detailing, pilot-panel seams and sealed support bands.',
+      atmosphere_and_mood:
+        'Ready, technical, machine-linked and tense without anime-franchise identity.',
+      rendering_and_quality:
+        'Original sci-fi engineering polish with high-spec interfacewear clarity.',
       key_features:
         'Connector collar cues, neural-port-like detailing, pilot-panel seams and sealed support bands.',
       creative_brief:
@@ -445,19 +464,19 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Cyborg couture, transhuman evolution and precision augmentation grammar without requiring a human host',
-      form_and_line:
+      subject_treatment:
         'Interface seams, implant-ridge channels, carbon-fiber contour bands, graft plates and modular prosthetic breaks',
-      color_palette:
+      color_and_tone:
         'Titanium, graphite, bio-luminescent blue, carbon-black, circuit-gold, surgical white, cool neutral substrate',
-      lighting_setup:
+      lighting_and_shadow:
         'Sterile key light, ring-reflection highlights, cold overhead spill and pinpoint LED status glow',
-      material_texture:
+      texture_and_material:
         'Brushed titanium, carbon-fiber weave, medical silicone, polycarbonate, bio-gel interface and anodized alloy',
-      render_quality:
-        'Sci-fi couture precision, augment-realism clarity and clinically finished surface integration',
-      spatial_distortion: 'Optional modular augmentation break or replacement logic',
-      atmosphere:
+      camera_and_composition: 'Optional modular augmentation break or replacement logic',
+      atmosphere_and_mood:
         'Transhuman, cool, identity-through-augmentation tension and clinical future-surface wonder',
+      rendering_and_quality:
+        'Sci-fi couture precision, augment-realism clarity and clinically finished surface integration',
       key_features:
         'Seam-line integration, exposed circuitry, optical sensor cues, neural ports and modular plated insertions',
       creative_brief:
@@ -471,17 +490,18 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'dry casualwear',
     style: {
       aesthetic: 'Pelagic fantasy couture, deep-ocean enchantment, tidal iridescence',
-      form_and_line:
+      subject_treatment:
         'Scale lattices, fin-ridge undulation, tidal-flare geometry, liquid drape, floating-curve rhythm',
-      color_palette:
+      color_and_tone:
         'Iridescent Green, teal, abalone, moonlight-pearl, aquamarine, bioluminescent-blue, coral-pink',
-      lighting_setup:
+      lighting_and_shadow:
         'Caustic-light dapple, surface-sunbeam shafts, bioluminescent glow, reef-filtered turquoise',
-      material_texture:
+      texture_and_material:
         'Iridescent scales, wet-look silicone, pearlescent finish, shell texture, liquid organza, nacre sheen',
-      render_quality: 'Magical, mythical, lagoon-dream ethereality, oceanic enchantment',
-      spatial_distortion: 'Optional tail-flare exaggeration',
-      atmosphere: 'Beautiful, wet, deep-ocean mystery, coral-reef serenity, moon-tide magic',
+      camera_and_composition: 'Optional tail-flare exaggeration',
+      atmosphere_and_mood:
+        'Beautiful, wet, deep-ocean mystery, coral-reef serenity, moon-tide magic',
+      rendering_and_quality: 'Magical, mythical, lagoon-dream ethereality, oceanic enchantment',
       key_features:
         'Fin cues, scale texture, pearlescent shell detail, liquid organza flow, nacre highlights',
       creative_brief:

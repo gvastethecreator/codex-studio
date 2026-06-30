@@ -13,37 +13,38 @@ tags:
   - anime-style-spectrum
 visualDna:
   aesthetic: >-
-    Osamu Dezaki - Postcard Memory Freeze within 12. Anime Style Spectrum: a reusable Anime Character & Lifestyle visual
-    language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result
-    transferable across subjects while preserving Osamu Dezaki - Postcard Memory Freeze's specific style identity.
-  form_and_line: >-
-    Define Osamu Dezaki - Postcard Memory Freeze through line, mass, contour, spacing, and rhythm. Keep forms readable,
-    intentional, and reusable beyond one literal scene.
-  color_palette: >-
-    Use a Osamu Dezaki - Postcard Memory Freeze-specific palette with clear dominant, secondary, and accent roles. Keep
-    contrast deliberate and avoid generic color wash.
-  lighting_setup: >-
-    Use lighting that makes Osamu Dezaki - Postcard Memory Freeze recognizable: purposeful key, rim, bounce, shadow, and
-    glow behavior with readable hierarchy.
-  material_texture: >-
-    Use materials and textures that reinforce Osamu Dezaki - Postcard Memory Freeze: surface response, grain, patina,
-    polish, or wear should feel intentional and style-defining.
-  render_quality: >-
-    Render Osamu Dezaki - Postcard Memory Freeze with high production clarity, strong silhouette reads, clean detail
-    priority, and no accidental UI, text, logos, or watermark.
-  spatial_distortion: >-
-    Use spatial behavior that fits Osamu Dezaki - Postcard Memory Freeze: perspective, compression, exaggeration, or
-    depth should support the style without forcing one fixed location.
-  atmosphere: >-
-    Set a mood that belongs to Osamu Dezaki - Postcard Memory Freeze: specific, coherent, and distinct, with emotional
-    tone carried by visual systems rather than narrative captioning.
+    Osamu Dezaki - Postcard Memory Freeze within 12. Anime Style Spectrum: a reusable Anime Character &
+    Lifestyle visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction.
+    Keep the result transferable across subjects while preserving Osamu Dezaki - Postcard Memory Freeze's
+    specific style identity.
+  subject_treatment: >-
+    Define Osamu Dezaki - Postcard Memory Freeze through line, mass, contour, spacing, and rhythm. Keep forms
+    readable, intentional, and reusable beyond one literal scene.
+  color_and_tone: >-
+    Use a Osamu Dezaki - Postcard Memory Freeze-specific palette with clear dominant, secondary, and accent
+    roles. Keep contrast deliberate and avoid generic color wash.
+  lighting_and_shadow: >-
+    Use lighting that makes Osamu Dezaki - Postcard Memory Freeze recognizable: purposeful key, rim, bounce,
+    shadow, and glow behavior with readable hierarchy.
+  texture_and_material: >-
+    Use materials and textures that reinforce Osamu Dezaki - Postcard Memory Freeze: surface response, grain,
+    patina, polish, or wear should feel intentional and style-defining.
+  camera_and_composition: >-
+    Use spatial behavior that fits Osamu Dezaki - Postcard Memory Freeze: perspective, compression,
+    exaggeration, or depth should support the style without forcing one fixed location.
+  atmosphere_and_mood: >-
+    Set a mood that belongs to Osamu Dezaki - Postcard Memory Freeze: specific, coherent, and distinct, with
+    emotional tone carried by visual systems rather than narrative captioning.
+  rendering_and_quality: >-
+    Render Osamu Dezaki - Postcard Memory Freeze with high production clarity, strong silhouette reads, clean
+    detail priority, and no accidental UI, text, logos, or watermark.
   key_features: >-
-    Prioritize Osamu Dezaki - Postcard Memory Freeze's key features: recognizable shape language, palette logic,
-    material cues, lighting behavior, and composition rules.
+    Prioritize Osamu Dezaki - Postcard Memory Freeze's key features: recognizable shape language, palette
+    logic, material cues, lighting behavior, and composition rules.
   creative_brief: >-
-    Create a style-card that translates Osamu Dezaki - Postcard Memory Freeze into a portable visual system for 12.
-    Anime Style Spectrum. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or
-    story beat.
+    Create a style-card that translates Osamu Dezaki - Postcard Memory Freeze into a portable visual system
+    for 12. Anime Style Spectrum. Preserve the preset identity through style mechanics, not a fixed scene,
+    character, prop, or story beat.
 avoidRules:
   - casual snapshot
   - low-drama realism
@@ -56,8 +57,8 @@ assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-327.webp
 attributes:
   negativePrompt: >-
-    casual snapshot, low-drama realism, flat documentary lighting, cluttered background, muddy color, weak focal
-    emotion, generic modern polish
+    casual snapshot, low-drama realism, flat documentary lighting, cluttered background, muddy color, weak
+    focal emotion, generic modern polish
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle

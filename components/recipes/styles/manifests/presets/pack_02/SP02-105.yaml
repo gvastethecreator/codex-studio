@@ -12,16 +12,23 @@ tags:
   - cinematic-and-media
   - caricature-and-cartoon-styles
 visualDna:
-  aesthetic: Boiling-outline scam cartoon energy, stretched expression logic, loud adolescent nonsense, sticky summer heat, doomed-plan slapstick, Canadian tween chaos
-  form_and_line: Wobbly vibrating outlines, stretched smear frames, erratic contour boil, high-energy cartoon scribble
-  color_palette: Summer-heat yellows, candy red, pool chlorine blue, peach skin, dirty pavement grey
-  lighting_setup: Flat hot daylight, heat-haze color pressure, readability-first cartoon illumination
-  material_texture: Cel paint wobble, analog TV softness, sticky summer haze, rough pencil boil
-  render_quality: Boiling-line TV cartoon, adolescent scam energy, loud pre-digital slapstick
-  spatial_distortion: Stretch smears, vibrating outlines, elastic overreaction, diagram-like plan collapse
-  atmosphere: Hyper, sweaty, scammy, loud
-  key_features: Boiling line art, stretched shapes, sticky heat color, doomed-plan diagram energy, exaggerated reaction takes
-  creative_brief: 'Use boiling-line scam-cartoon grammar on any prompt: vibrating contours, stretched forms, sticky summer palette, frantic diagram energy, and exaggerated reaction timing. Avoid suburban streets, candy, gadgets, characters, or fixed schemes. The style should feel like a plan vibrating apart before it begins.'
+  aesthetic: >-
+    Boiling-outline scam cartoon energy, stretched expression logic, loud adolescent nonsense, sticky summer
+    heat, doomed-plan slapstick, Canadian tween chaos
+  subject_treatment: Wobbly vibrating outlines, stretched smear frames, erratic contour boil, high-energy cartoon scribble
+  color_and_tone: Summer-heat yellows, candy red, pool chlorine blue, peach skin, dirty pavement grey
+  lighting_and_shadow: Flat hot daylight, heat-haze color pressure, readability-first cartoon illumination
+  texture_and_material: Cel paint wobble, analog TV softness, sticky summer haze, rough pencil boil
+  camera_and_composition: Stretch smears, vibrating outlines, elastic overreaction, diagram-like plan collapse
+  atmosphere_and_mood: Hyper, sweaty, scammy, loud
+  rendering_and_quality: Boiling-line TV cartoon, adolescent scam energy, loud pre-digital slapstick
+  key_features: >-
+    Boiling line art, stretched shapes, sticky heat color, doomed-plan diagram energy, exaggerated reaction
+    takes
+  creative_brief: >-
+    Use boiling-line scam-cartoon grammar on any prompt: vibrating contours, stretched forms, sticky summer
+    palette, frantic diagram energy, and exaggerated reaction timing. Avoid suburban streets, candy, gadgets,
+    characters, or fixed schemes. The style should feel like a plan vibrating apart before it begins.
 avoidRules:
   - digital
   - HD

@@ -21,9 +21,8 @@ visualDna:
   atmosphere_and_mood: Emotional, dramatic, intense, narrative, moody
   rendering_and_quality: 4K cinematic render, filmic look, high production value
   creative_brief: >-
-    Apply cinematic close-up language to any subject: shallow focus, anamorphic
-    flares, teal-orange tension, tight emotional framing, and film-still drama
-    without requiring eyes or a human close-up.
+    Apply cinematic close-up language to any subject: shallow focus, anamorphic flares, teal-orange tension,
+    tight emotional framing, and film-still drama without requiring eyes or a human close-up.
 avoidRules:
   - illustration
   - painting
@@ -43,7 +42,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP01-005.webp
 attributes:
-  negativePrompt: illustration, painting, drawing, 3d render, cartoon, anime, sketch, blurry, noisy, low resolution, watermark, text, signature, bad anatomy, deformed
+  negativePrompt: >-
+    illustration, painting, drawing, 3d render, cartoon, anime, sketch, blurry, noisy, low resolution,
+    watermark, text, signature, bad anatomy, deformed
 taxonomy:
   packId: pack_01
   packName: Photography & Realism

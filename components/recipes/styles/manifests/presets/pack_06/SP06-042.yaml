@@ -13,19 +13,18 @@ tags:
   - printmaking
 visualDna:
   aesthetic: Vintage halftone newsprint reproduction
-  form_and_line: Dot pattern
-  color_palette: Black dots on newsprint
-  lighting_setup: Flat
-  material_texture: Cheap paper, ink smudge
-  render_quality: Low res, mass media
-  spatial_distortion: Pixelated by dots
-  atmosphere: Vintage, gritty
+  subject_treatment: Dot pattern
+  color_and_tone: Black dots on newsprint
+  lighting_and_shadow: Flat
+  texture_and_material: Cheap paper, ink smudge
+  camera_and_composition: Pixelated by dots
+  atmosphere_and_mood: Vintage, gritty
+  rendering_and_quality: Low res, mass media
   key_features: Visible dots
   creative_brief: >-
-    Apply newspaper halftone to any input: visible dot matrix, grey through dot
-    spacing, cheap yellowing paper, ink absorption, coarse reproduction, and
-    degraded mass-print urgency. Keep press texture without requiring headlines,
-    captions, columns, photos, or newspaper layout.
+    Apply newspaper halftone to any input: visible dot matrix, grey through dot spacing, cheap yellowing
+    paper, ink absorption, coarse reproduction, and degraded mass-print urgency. Keep press texture without
+    requiring headlines, captions, columns, photos, or newspaper layout.
 avoidRules:
   - photo
   - realistic
@@ -47,7 +46,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP06-042.webp
 attributes:
-  negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border, readable headline, newspaper layout requirement
+  negativePrompt: >-
+    photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy,
+    watermark, text, signature, frame, border, readable headline, newspaper layout requirement
 taxonomy:
   packId: pack_06
   packName: Essential Art Styles

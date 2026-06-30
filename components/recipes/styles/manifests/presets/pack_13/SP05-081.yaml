@@ -13,34 +13,34 @@ tags:
   - slice-of-life-and-moe
 visualDna:
   aesthetic: >-
-    KyoAni-inspired shared-warmth moe built from post-effort softness, ensemble eye-lines, tiny
-    social beats, and comfort that feels earned rather than decorative
-  form_and_line: >-
+    KyoAni-inspired shared-warmth moe built from post-effort softness, ensemble eye-lines, tiny social beats,
+    and comfort that feels earned rather than decorative
+  subject_treatment: >-
     Rounded clean contours, small elastic expression shifts, hands and shoulders used as emotional
     punctuation, and group-focus composition that can wrap any subject
-  color_palette: >-
+  color_and_tone: >-
     Cream paper neutrals, butter-yellow warmth, soft mint accents, tea browns, rose blush notes, and
     low-saturation pastel supports
-  lighting_setup: >-
-    Diffuse afternoon key, gentle practical bounce, low-contrast highlight rolloff, and soft rim
-    warmth that keeps every form approachable
-  material_texture: >-
-    Polished-but-lived-in surfaces, brushed fabric folds, matte ceramic softness, faint wood grain,
-    and mild handling wear used as comfort texture
-  render_quality: >-
-    Premium slice-of-life anime finish with soft polish, expression readability, tiny gesture
-    fidelity, and no hard cinematic aggression
-  spatial_distortion: >-
-    Intimate medium-close staging, mild cute-proportion compression, and shared-attention geometry
-    rather than prop-led composition
-  atmosphere: Warm, relaxed, affectionate, quietly funny, socially comfortable
+  lighting_and_shadow: >-
+    Diffuse afternoon key, gentle practical bounce, low-contrast highlight rolloff, and soft rim warmth that
+    keeps every form approachable
+  texture_and_material: >-
+    Polished-but-lived-in surfaces, brushed fabric folds, matte ceramic softness, faint wood grain, and mild
+    handling wear used as comfort texture
+  camera_and_composition: >-
+    Intimate medium-close staging, mild cute-proportion compression, and shared-attention geometry rather than
+    prop-led composition
+  atmosphere_and_mood: Warm, relaxed, affectionate, quietly funny, socially comfortable
+  rendering_and_quality: >-
+    Premium slice-of-life anime finish with soft polish, expression readability, tiny gesture fidelity, and no
+    hard cinematic aggression
   key_features: >-
-    Microacting clusters, warm shared-focus cues, tea-toned comfort fields, soft domestic tactility,
-    and gentle ensemble rhythm
+    Microacting clusters, warm shared-focus cues, tea-toned comfort fields, soft domestic tactility, and
+    gentle ensemble rhythm
   creative_brief: >-
-    Use K-On!/KyoAni as style anchor for shared-warmth microacting. Any prompt should become soft
-    ensemble emotion: tiny gestures, clean pastel polish, lived-in comfort, and post-effort glow.
-    Music, clubrooms, uniforms, and instruments are optional, never required.
+    Use K-On!/KyoAni as style anchor for shared-warmth microacting. Any prompt should become soft ensemble
+    emotion: tiny gestures, clean pastel polish, lived-in comfort, and post-effort glow. Music, clubrooms,
+    uniforms, and instruments are optional, never required.
 avoidRules:
   - realistic
   - 3d render
@@ -58,8 +58,8 @@ assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-081.webp
 attributes:
   negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, text, signature
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts,
+    watermark, text, signature
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle

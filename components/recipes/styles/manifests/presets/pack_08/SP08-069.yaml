@@ -13,19 +13,20 @@ tags:
   - fabric-and-texture-focus
 visualDna:
   aesthetic: Liquid couture illusion, hydro-sculpture wonder, elemental fluid transformation
-  form_and_line: Splashes, sheet-flow drape, droplet-spray volume, surface-tension curves, rippling flow lines
-  color_palette: Clear Blue, aquamarine, crystal-clear, deep-ocean, turquoise, glacier-blue, refractive-white
-  lighting_setup: Refraction, caustic-light dapple, underwater-beam shafts, rim-light sparkle, pool-reflection bounce
-  material_texture: Liquid, surface-tension skin, splash-droplet dispersion, flow-sheet film, waterfall-veil, meniscus-edge curvature
-  render_quality: Magical, fluid, hydro-sculpture wonder, elemental-transformation poetry
-  spatial_distortion: Flowing
-  atmosphere: Pure, fluid, serene, refractive, elemental, dissolving
+  subject_treatment: Splashes, sheet-flow drape, droplet-spray volume, surface-tension curves, rippling flow lines
+  color_and_tone: Clear Blue, aquamarine, crystal-clear, deep-ocean, turquoise, glacier-blue, refractive-white
+  lighting_and_shadow: Refraction, caustic-light dapple, underwater-beam shafts, rim-light sparkle, pool-reflection bounce
+  texture_and_material: >-
+    Liquid, surface-tension skin, splash-droplet dispersion, flow-sheet film, waterfall-veil, meniscus-edge
+    curvature
+  camera_and_composition: Flowing
+  atmosphere_and_mood: Pure, fluid, serene, refractive, elemental, dissolving
+  rendering_and_quality: Magical, fluid, hydro-sculpture wonder, elemental-transformation poetry
   key_features: Droplets, splash arrest, surface tension, liquid-sheet transparency, flow lines
   creative_brief: >-
-    Make the input liquid-couture: sheet-flow drape, surface tension, arrested
-    droplets, meniscus edges, caustic light and transparent aquamarine volume.
-    Keep elemental transformation as fluid behavior only; do not require a
-    torso, waterfall, gown, water nymph or underwater scene.
+    Make the input liquid-couture: sheet-flow drape, surface tension, arrested droplets, meniscus edges,
+    caustic light and transparent aquamarine volume. Keep elemental transformation as fluid behavior only; do
+    not require a torso, waterfall, gown, water nymph or underwater scene.
 avoidRules:
   - dry
 assets:

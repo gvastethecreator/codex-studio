@@ -13,15 +13,18 @@ tags:
   - commercial-and-product
 visualDna:
   aesthetic: Catalog packshot clarity
-  form_and_line: Centered object geometry
-  color_palette: Neutral whites and controlled greys
-  lighting_setup: Shadowless softbox sweep
-  material_texture: Clean true surface
-  render_quality: Retail catalog precision
-  spatial_distortion: Corrected perspective
-  atmosphere: Objective, premium, frictionless
+  subject_treatment: Centered object geometry
+  color_and_tone: Neutral whites and controlled greys
+  lighting_and_shadow: Shadowless softbox sweep
+  texture_and_material: Clean true surface
+  camera_and_composition: Corrected perspective
+  atmosphere_and_mood: Objective, premium, frictionless
+  rendering_and_quality: Retail catalog precision
   key_features: Seamless background
-  creative_brief: 'Packshot photography reduces any subject to clean commercial certainty: seamless sweep background, centered geometry, softbox evenness, corrected perspective, honest texture, and zero narrative clutter. Useful for making prompts read as sellable objects without forcing a specific product type.'
+  creative_brief: >-
+    Packshot photography reduces any subject to clean commercial certainty: seamless sweep background,
+    centered geometry, softbox evenness, corrected perspective, honest texture, and zero narrative clutter.
+    Useful for making prompts read as sellable objects without forcing a specific product type.
 avoidRules:
   - clutter
   - dramatic shadow

@@ -14,16 +14,37 @@ tags:
   - retro-space
   - diner
 visualDna:
-  aesthetic: retro space roadside built around one distinctive ray-age diner rider or counter-courier, roadside diner strip, blank orbit signs, rocket cars, and chrome counters at blue hour.
-  form_and_line: Atomic signage, rocket-age curves, raygun geometry, orbital equipment, chrome kitsch, and cosmic civic forms. Core composition uses diner rider/courier protagonist, blank orbit signs, rocket-car silhouettes, chrome counters, night asphalt.
-  color_palette: chrome silver, cherry red, star blue, cream
-  lighting_setup: blue-hour neon, diner window glow, chrome reflections
-  material_texture: chrome color blocks, vinyl booth shapes, blank enamel sign forms, asphalt, glass blocks
-  render_quality: Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity, moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material simulation, or hyper-detail.
-  spatial_distortion: Promenades, diners, outposts, salvage yards, rails, lunar farms, craters, and isotope-lit plazas. Keep depth legible and avoid default hallway, aisle, or empty studio staging.
-  atmosphere: fun, roadside, retro, social
-  key_features: diner rider/courier protagonist, blank orbit sign shapes, rocket-car silhouettes, chrome counter curves, night asphalt
-  creative_brief: 'Ray-age roadside culture through one character: a distinctive diner rider or counter-courier beside a compact diner facade, rocket-car silhouette, chrome counter curve, blank orbit sign shapes, and blue-hour asphalt without readable logos or empty car render. The diner supports the protagonist; it must not become an object-only facade. Avoid diner crowd as main subject, worker service poster, restaurant photo, mall food court, market aisle, or glossy car ad. Keep the result representative rather than over-abstract; use flat graphic illustration, gouache-poster shapes, cel-poster blocking, and controlled digital painting over realism or generic concept art. Use few bold color/value zones, large matte shapes, clean surfaces, low-to-moderate detail, and finish denoised with no excessive noise or ultra-fine detail.'
+  aesthetic: >-
+    retro space roadside built around one distinctive ray-age diner rider or counter-courier, roadside diner
+    strip, blank orbit signs, rocket cars, and chrome counters at blue hour.
+  subject_treatment: >-
+    Atomic signage, rocket-age curves, raygun geometry, orbital equipment, chrome kitsch, and cosmic civic
+    forms. Core composition uses diner rider/courier protagonist, blank orbit signs, rocket-car silhouettes,
+    chrome counters, night asphalt.
+  color_and_tone: chrome silver, cherry red, star blue, cream
+  lighting_and_shadow: blue-hour neon, diner window glow, chrome reflections
+  texture_and_material: chrome color blocks, vinyl booth shapes, blank enamel sign forms, asphalt, glass blocks
+  camera_and_composition: >-
+    Promenades, diners, outposts, salvage yards, rails, lunar farms, craters, and isotope-lit plazas. Keep
+    depth legible and avoid default hallway, aisle, or empty studio staging.
+  atmosphere_and_mood: fun, roadside, retro, social
+  rendering_and_quality: >-
+    Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly
+    planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity,
+    moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material
+    simulation, or hyper-detail.
+  key_features: >-
+    diner rider/courier protagonist, blank orbit sign shapes, rocket-car silhouettes, chrome counter curves,
+    night asphalt
+  creative_brief: >-
+    Ray-age roadside culture through one character: a distinctive diner rider or counter-courier beside a
+    compact diner facade, rocket-car silhouette, chrome counter curve, blank orbit sign shapes, and blue-hour
+    asphalt without readable logos or empty car render. The diner supports the protagonist; it must not become
+    an object-only facade. Avoid diner crowd as main subject, worker service poster, restaurant photo, mall
+    food court, market aisle, or glossy car ad. Keep the result representative rather than over-abstract; use
+    flat graphic illustration, gouache-poster shapes, cel-poster blocking, and controlled digital painting
+    over realism or generic concept art. Use few bold color/value zones, large matte shapes, clean surfaces,
+    low-to-moderate detail, and finish denoised with no excessive noise or ultra-fine detail.
 avoidRules:
   - photoreal
   - watermark
@@ -37,7 +58,21 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP15-067.webp
 attributes:
-  negativePrompt: photoreal, hyperreal, realistic render, photoreal painterly realism, cinematic realism, AAA key art, photographic skin pores, realistic foreground portrait, realistic facial hair detail, lens blur, bokeh, depth-of-field photo look, readable signs, diner logo, brand logo, letters, numbers, menu boards, license plates, photoreal chrome, glossy car ad, empty car render, luxury mall, market aisle, generic soldier hero, guard pin-up, weapon-first pose, HDR lens realism, 3D render look, PBR material simulation, hyper-detailed concept art, watermark, text, logo, generic style, over-abstract, interchangeable preset, duplicated motifs, generic glass utopia, unmotivated library aisle, fantasy corridor, random camera held by subject, studio wall fixation, chair fixation, curtain fixation, lamp fixation, scarf fixation, pedestal fixation, bird fixation, excessive noise, ultra-fine detail, over-sharpened microtexture, over-rendered machinery, noisy grime, tiny rivets everywhere, busy texture chatter, realistic uniform portrait, uniformed officer hero, foreground guard portrait, detailed tattoo focus, dense machinery wallpaper, overcrowded scene, high-frequency surface detail, cinematic close-up portrait, flat black fill, crushed black, pure black masses, muddy black fields, generic American illustration, generic Western RPG card art
+  negativePrompt: >-
+    photoreal, hyperreal, realistic render, photoreal painterly realism, cinematic realism, AAA key art,
+    photographic skin pores, realistic foreground portrait, realistic facial hair detail, lens blur, bokeh,
+    depth-of-field photo look, readable signs, diner logo, brand logo, letters, numbers, menu boards, license
+    plates, photoreal chrome, glossy car ad, empty car render, luxury mall, market aisle, generic soldier
+    hero, guard pin-up, weapon-first pose, HDR lens realism, 3D render look, PBR material simulation,
+    hyper-detailed concept art, watermark, text, logo, generic style, over-abstract, interchangeable preset,
+    duplicated motifs, generic glass utopia, unmotivated library aisle, fantasy corridor, random camera held
+    by subject, studio wall fixation, chair fixation, curtain fixation, lamp fixation, scarf fixation,
+    pedestal fixation, bird fixation, excessive noise, ultra-fine detail, over-sharpened microtexture,
+    over-rendered machinery, noisy grime, tiny rivets everywhere, busy texture chatter, realistic uniform
+    portrait, uniformed officer hero, foreground guard portrait, detailed tattoo focus, dense machinery
+    wallpaper, overcrowded scene, high-frequency surface detail, cinematic close-up portrait, flat black fill,
+    crushed black, pure black masses, muddy black fields, generic American illustration, generic Western RPG
+    card art
 taxonomy:
   packId: pack_15
   packName: Punk Spectrum Vault

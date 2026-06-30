@@ -13,15 +13,19 @@ tags:
   - man-made-materials
 visualDna:
   aesthetic: Tight rubber
-  form_and_line: Stretch lines
-  color_palette: Black or Red
-  lighting_setup: High specularity
-  material_texture: Smooth, sticky
-  render_quality: Sleek, high-specular
-  spatial_distortion: Tight fit
-  atmosphere: Intense, sleek
+  subject_treatment: Stretch lines
+  color_and_tone: Black or Red
+  lighting_and_shadow: High specularity
+  texture_and_material: Smooth, sticky
+  camera_and_composition: Tight fit
+  atmosphere_and_mood: Intense, sleek
+  rendering_and_quality: Sleek, high-specular
   key_features: Highlights
-  creative_brief: 'Compose shiny latex as a tight reflective surface treatment over the input: liquid specular highlights, black or red high-gloss tension, stretch lines following form, and a slick second-skin fit. If character, costume, or object exists, wrap it closely; otherwise use latex reflectivity and smoothness as abstract finish without requiring a body pose or genre scene.'
+  creative_brief: >-
+    Compose shiny latex as a tight reflective surface treatment over the input: liquid specular highlights,
+    black or red high-gloss tension, stretch lines following form, and a slick second-skin fit. If character,
+    costume, or object exists, wrap it closely; otherwise use latex reflectivity and smoothness as abstract
+    finish without requiring a body pose or genre scene.
 avoidRules:
   - matte
   - cloth

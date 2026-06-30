@@ -13,21 +13,22 @@ tags:
   - natural-materials
 visualDna:
   aesthetic: Compressed ancient ice
-  form_and_line: Cracks and bubbles
-  color_palette: Deep Cyan/Blue
-  lighting_setup: Internal glow
-  material_texture: Smooth but cracked
-  render_quality: Arctic, cold
-  spatial_distortion: Massive
-  atmosphere: Freezing, ancient
+  subject_treatment: Cracks and bubbles
+  color_and_tone: Deep Cyan/Blue
+  lighting_and_shadow: Internal glow
+  texture_and_material: Smooth but cracked
+  camera_and_composition: Massive
+  atmosphere_and_mood: Freezing, ancient
+  rendering_and_quality: Arctic, cold
   key_features: Blue depth
   creative_brief: >-
-    Summon the compressed time of glacial ice, where millennia of pressure have squeezed air into blue oblivion and
-    internal cracks map the stress of slow, patient movement. An internal luminescence should glow from within, a cyan
-    heart beating in frozen sleep that deepens toward the center. The material must feel ancient, patient, and
-    terrifyingly fragile. Use Glacier Ice as portable surface/render behavior over any input: map its texture, light
-    response, edge wear, color chemistry, and tactile rhythm onto the subject instead of requiring a literal material
-    sample, macro tile, wall, landscape, source object, or scene where the material naturally appears.
+    Summon the compressed time of glacial ice, where millennia of pressure have squeezed air into blue
+    oblivion and internal cracks map the stress of slow, patient movement. An internal luminescence should
+    glow from within, a cyan heart beating in frozen sleep that deepens toward the center. The material must
+    feel ancient, patient, and terrifyingly fragile. Use Glacier Ice as portable surface/render behavior over
+    any input: map its texture, light response, edge wear, color chemistry, and tactile rhythm onto the
+    subject instead of requiring a literal material sample, macro tile, wall, landscape, source object, or
+    scene where the material naturally appears.
 avoidRules:
   - clear
   - glass

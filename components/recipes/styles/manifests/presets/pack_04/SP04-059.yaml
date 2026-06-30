@@ -13,23 +13,22 @@ tags:
   - concept-art
 visualDna:
   aesthetic: >-
-    Diegetic HUD interface style with tactical readability, layered data hierarchy, and immersive
-    screen-space integration
-  form_and_line: >-
-    Thin vector line discipline with modular widget framing, reticle geometry, and precision
-    micro-typographic structure
-  color_palette: Neon Cyan/Orange, sci-fi HUD spectrum, AR-overlay contrast
-  lighting_setup: Glow, emissive interface, screen-space radiance
-  material_texture: Screen
-  render_quality: Futuristic, functional, diegetic elegance, heads-up immersion
-  spatial_distortion: None
-  atmosphere: Tech, info, augmented awareness, mission-ops focus
+    Diegetic HUD interface style with tactical readability, layered data hierarchy, and immersive screen-space
+    integration
+  subject_treatment: >-
+    Thin vector line discipline with modular widget framing, reticle geometry, and precision micro-typographic
+    structure
+  color_and_tone: Neon Cyan/Orange, sci-fi HUD spectrum, AR-overlay contrast
+  lighting_and_shadow: Glow, emissive interface, screen-space radiance
+  texture_and_material: Screen
+  camera_and_composition: 'Compose for UI/HUD Design using its key spatial cues: Floating, thin rule-lines, data readout.'
+  atmosphere_and_mood: Tech, info, augmented awareness, mission-ops focus
+  rendering_and_quality: Futuristic, functional, diegetic elegance, heads-up immersion
   key_features: Floating, thin rule-lines, data readout
   creative_brief: >-
-    Apply diegetic HUD interface grammar to any input: translucent data layers, reticle geometry,
-    modular widgets, emissive cyan-orange hierarchy, and screen-space vector precision should add
-    augmented awareness without requiring missions, weapons, helmets, screens, maps, or readable UI
-    text.
+    Apply diegetic HUD interface grammar to any input: translucent data layers, reticle geometry, modular
+    widgets, emissive cyan-orange hierarchy, and screen-space vector precision should add augmented awareness
+    without requiring missions, weapons, helmets, screens, maps, or readable UI text.
 avoidRules:
   - organic
   - messy

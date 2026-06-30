@@ -13,8 +13,12 @@ tags:
   - game-art-directions-and-ui
 visualDna:
   aesthetic: Compact JRPG pixel-art diorama language with nostalgic 16-bit readability and toy-like spatial charm.
-  subject_treatment: Translate any subject into small modular clusters, readable silhouettes, stepped edge logic, and charm-first simplification.
-  color_and_tone: Warm limited ramps, soft dusk accents, separated roof-light/shadow bands, and selective jewel-color highlights.
+  subject_treatment: >-
+    Translate any subject into small modular clusters, readable silhouettes, stepped edge logic, and
+    charm-first simplification.
+  color_and_tone: >-
+    Warm limited ramps, soft dusk accents, separated roof-light/shadow bands, and selective jewel-color
+    highlights.
   lighting_and_shadow: Stable top-left pixel lighting with blocky cast shadows and simple ambient occlusion under forms.
   texture_and_material: Hand-placed dithering, tiny tile noise, one-pixel highlight ticks, and restrained pattern repetition.
   camera_and_composition: Locked isometric or three-quarter diorama framing with stacked depth layers and tidy grid rhythm.
@@ -32,7 +36,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP06-101.webp
 attributes:
-  negativePrompt: motion blur, inconsistent proportions, changing costume, background scene, literal town requirement, npc crowd requirement, watermark, text
+  negativePrompt: >-
+    motion blur, inconsistent proportions, changing costume, background scene, literal town requirement, npc
+    crowd requirement, watermark, text
   layout:
     preferredFrameCount: 8
     frameGrid: 4x2

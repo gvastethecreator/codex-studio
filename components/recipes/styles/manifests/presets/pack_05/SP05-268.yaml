@@ -12,20 +12,27 @@ tags:
   - anime-battle-and-worlds
   - dark-fantasy-and-seinen
 visualDna:
-  aesthetic: Neon despair pressure, fluorescent sweat, jagged adult-anime caricature, impossible financial tension, ruin made graphic and unflattering
-  form_and_line: Dense mature-anime linework, heavy crosshatching, weighted contour variation, gritty ink density
-  color_palette: Muted earths, blood reds, cold moonlit tones, desaturated horror palette, bruised shadow hues
-  lighting_setup: Ominous directional shadows, single-source drama light, deep chiaroscuro, low-key shadow lift
-  material_texture: Fluorescent sweat sheen, cheap plastic glare, damp paper texture, sticky surface gloss, rough skin grain, stale air haze
-  render_quality: Gritty dramatic anime frame, film-noir rendering, heavy shadow compression, textured midtone grit
-  spatial_distortion: Pressure-cooker close-ups, jagged facial exaggeration, claustrophobic negative space, tilted risk geometry, collapse-edge framing
-  atmosphere: Desperate, electric, ugly, suspenseful
-  key_features: Sweat-heavy close-ups, fluorescent pressure, jagged anxious silhouettes, risk-geometry distortion, brink-of-collapse acting
-  creative_brief: >
-    Treat any prompt as a pressure chamber of debt, shame, and impossible stakes:
-    fluorescent sweat, jagged exaggeration, tilted geometry, and ugly honesty
-    should define the look without fixed surfaces, play structures, settings,
-    currency props, or named competition.
+  aesthetic: >-
+    Neon despair pressure, fluorescent sweat, jagged adult-anime caricature, impossible financial tension,
+    ruin made graphic and unflattering
+  subject_treatment: Dense mature-anime linework, heavy crosshatching, weighted contour variation, gritty ink density
+  color_and_tone: Muted earths, blood reds, cold moonlit tones, desaturated horror palette, bruised shadow hues
+  lighting_and_shadow: Ominous directional shadows, single-source drama light, deep chiaroscuro, low-key shadow lift
+  texture_and_material: >-
+    Fluorescent sweat sheen, cheap plastic glare, damp paper texture, sticky surface gloss, rough skin grain,
+    stale air haze
+  camera_and_composition: >-
+    Pressure-cooker close-ups, jagged facial exaggeration, claustrophobic negative space, tilted risk
+    geometry, collapse-edge framing
+  atmosphere_and_mood: Desperate, electric, ugly, suspenseful
+  rendering_and_quality: Gritty dramatic anime frame, film-noir rendering, heavy shadow compression, textured midtone grit
+  key_features: >-
+    Sweat-heavy close-ups, fluorescent pressure, jagged anxious silhouettes, risk-geometry distortion,
+    brink-of-collapse acting
+  creative_brief: >-
+    Treat any prompt as a pressure chamber of debt, shame, and impossible stakes: fluorescent sweat, jagged
+    exaggeration, tilted geometry, and ugly honesty should define the look without fixed surfaces, play
+    structures, settings, currency props, or named competition.
 avoidRules:
   - realistic
   - 3d render
@@ -42,7 +49,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-268.webp
 attributes:
-  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
+  negativePrompt: >-
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts,
+    watermark, text, signature
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds

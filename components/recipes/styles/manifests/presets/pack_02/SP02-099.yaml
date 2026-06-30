@@ -12,16 +12,32 @@ tags:
   - cinematic-and-media
   - caricature-and-cartoon-styles
 visualDna:
-  aesthetic: DIY photocopied-punk-zine aesthetic, cutout-letter shapes without readable text, deliberately bad photocopier distortion, tape marks holding collage elements, found-image recontextualization, glue-stick residue and scissor cuts, repeated photocopy generation loss
-  form_and_line: Cut-and-paste scissor edges, photocopy-contrast-blackening, tape-strip-transparency, staple-marks, torn-paper contours
-  color_palette: Black-and-white Xerox, high-contrast photocopy, occasional highlight-marker pink, newspaper-clipping grey, security-envelope-blue-pattern background
-  lighting_setup: Photocopier-flatbed harshness, high-contrast blown-out whites, detail-lost-in-shadow-blacks, no nuance
-  material_texture: Photocopy-toner grain, paper-curl from glue-stick moisture, scotch-tape gloss, newsprint-collage varied paper stocks, staple-metal glint
-  render_quality: Punk-zine photocopy aesthetic, DIY-publication energy, anti-design roughness, copy-of-a-copy degradation
-  spatial_distortion: Cut-out elements tilted angrily, no-alignment layout, overlapping collage depth, tape holding elements askew
-  atmosphere: Angry, urgent, anti-establishment, DIY-or-die, back-bedroom-publishing revolution, creative-resistance
-  key_features: Photocopier high-contrast, cutout glyph shapes, cut-and-paste collage, tape marks, staple binding, toner grain, glue-stick wrinkles
-  creative_brief: 'Apply punk zine collage to any input: Xerox contrast, cut paper edges, tape gloss, staple marks, toner grain, glue wrinkles, and angry misalignment. Avoid readable ransom text, fixed politics, or specific publication content. Degradation and hand assembly should be the main visual force.'
+  aesthetic: >-
+    DIY photocopied-punk-zine aesthetic, cutout-letter shapes without readable text, deliberately bad
+    photocopier distortion, tape marks holding collage elements, found-image recontextualization, glue-stick
+    residue and scissor cuts, repeated photocopy generation loss
+  subject_treatment: >-
+    Cut-and-paste scissor edges, photocopy-contrast-blackening, tape-strip-transparency, staple-marks,
+    torn-paper contours
+  color_and_tone: >-
+    Black-and-white Xerox, high-contrast photocopy, occasional highlight-marker pink, newspaper-clipping grey,
+    security-envelope-blue-pattern background
+  lighting_and_shadow: Photocopier-flatbed harshness, high-contrast blown-out whites, detail-lost-in-shadow-blacks, no nuance
+  texture_and_material: >-
+    Photocopy-toner grain, paper-curl from glue-stick moisture, scotch-tape gloss, newsprint-collage varied
+    paper stocks, staple-metal glint
+  camera_and_composition: >-
+    Cut-out elements tilted angrily, no-alignment layout, overlapping collage depth, tape holding elements
+    askew
+  atmosphere_and_mood: Angry, urgent, anti-establishment, DIY-or-die, back-bedroom-publishing revolution, creative-resistance
+  rendering_and_quality: Punk-zine photocopy aesthetic, DIY-publication energy, anti-design roughness, copy-of-a-copy degradation
+  key_features: >-
+    Photocopier high-contrast, cutout glyph shapes, cut-and-paste collage, tape marks, staple binding, toner
+    grain, glue-stick wrinkles
+  creative_brief: >-
+    Apply punk zine collage to any input: Xerox contrast, cut paper edges, tape gloss, staple marks, toner
+    grain, glue wrinkles, and angry misalignment. Avoid readable ransom text, fixed politics, or specific
+    publication content. Degradation and hand assembly should be the main visual force.
 avoidRules:
   - digital
   - clean

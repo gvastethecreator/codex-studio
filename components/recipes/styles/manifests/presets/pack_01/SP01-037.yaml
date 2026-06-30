@@ -13,20 +13,20 @@ tags:
   - lighting-techniques
 visualDna:
   aesthetic: Subject against light
-  form_and_line: Outline
-  color_palette: Black subject
-  lighting_setup: Behind subject
-  material_texture: Rim light
-  render_quality: Dramatic, shape based
-  spatial_distortion: No detail
-  atmosphere: Epic, anonymous
+  subject_treatment: Outline
+  color_and_tone: Black subject
+  lighting_and_shadow: Behind subject
+  texture_and_material: Rim light
+  camera_and_composition: No detail
+  atmosphere_and_mood: Epic, anonymous
+  rendering_and_quality: Dramatic, shape based
   key_features: Dark subject
   creative_brief: >-
-    Identity reduced to its boldest geometry, a dark monument against a luminous veil. Features surrender to outline,
-    the subject becoming archetype through the erasure of detail. Anonymity elevated to universality, where what is
-    obscured speaks louder than what is shown. Apply this photographic look over any input: preserve lens behavior,
-    exposure logic, color response, framing discipline, and artifact pattern while avoiding a required place, face,
-    travel scene, landscape, or narrative setup.
+    Identity reduced to its boldest geometry, a dark monument against a luminous veil. Features surrender to
+    outline, the subject becoming archetype through the erasure of detail. Anonymity elevated to universality,
+    where what is obscured speaks louder than what is shown. Apply this photographic look over any input:
+    preserve lens behavior, exposure logic, color response, framing discipline, and artifact pattern while
+    avoiding a required place, face, travel scene, landscape, or narrative setup.
 avoidRules:
   - front light
   - detail

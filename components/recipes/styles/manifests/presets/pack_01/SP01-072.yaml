@@ -13,18 +13,17 @@ tags:
   - technical-and-specialist-imaging
 visualDna:
   aesthetic: Miniature tilt-shift effect
-  form_and_line: Blur top and bottom
-  color_palette: Saturated
-  lighting_setup: Daylight
-  material_texture: Toylike surface crispness
-  render_quality: Miniature diorama realism
-  spatial_distortion: Selective focus plane
-  atmosphere: Tiny, cute
+  subject_treatment: Blur top and bottom
+  color_and_tone: Saturated
+  lighting_and_shadow: Daylight
+  texture_and_material: Toylike surface crispness
+  camera_and_composition: Selective focus plane
+  atmosphere_and_mood: Tiny, cute
+  rendering_and_quality: Miniature diorama realism
   key_features: Miniature effect
   creative_brief: >-
-    Apply tilt-shift miniature optics to the input: selective focus band,
-    top-bottom blur, saturated daylight, and toy-scale clarity should shrink any
-    subject into diorama logic without requiring cities or playsets.
+    Apply tilt-shift miniature optics to the input: selective focus band, top-bottom blur, saturated daylight,
+    and toy-scale clarity should shrink any subject into diorama logic without requiring cities or playsets.
 avoidRules:
   - sharp everywhere
 assets:

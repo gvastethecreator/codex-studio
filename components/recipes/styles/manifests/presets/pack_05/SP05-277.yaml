@@ -12,20 +12,25 @@ tags:
   - anime-battle-and-worlds
   - dark-fantasy-and-seinen
 visualDna:
-  aesthetic: Rusted neon dread, broken youth interiority, violet-night melancholy, fractured chronology, faint unreality threading through ordinary damage
-  form_and_line: Dense mature-anime linework, heavy crosshatching, weighted contour variation, gritty ink density
-  color_palette: Muted earths, blood reds, cold moonlit tones, desaturated horror palette, bruised shadow hues
-  lighting_setup: Ominous directional shadows, single-source drama light, deep chiaroscuro, low-key shadow lift
-  material_texture: Rusted neon bleed, industrial dust, violet film grain, damp concrete-neutral scuffing, analog static, worn wall texture
-  render_quality: Gritty dramatic anime frame, film-noir rendering, heavy shadow compression, textured midtone grit
-  spatial_distortion: Fragmented chronology cuts, violet-night compression, interior dread depth, static-layer repetition, memory-broken framing
-  atmosphere: Melancholic, fragmented, nocturnal, ghostly
+  aesthetic: >-
+    Rusted neon dread, broken youth interiority, violet-night melancholy, fractured chronology, faint
+    unreality threading through ordinary damage
+  subject_treatment: Dense mature-anime linework, heavy crosshatching, weighted contour variation, gritty ink density
+  color_and_tone: Muted earths, blood reds, cold moonlit tones, desaturated horror palette, bruised shadow hues
+  lighting_and_shadow: Ominous directional shadows, single-source drama light, deep chiaroscuro, low-key shadow lift
+  texture_and_material: >-
+    Rusted neon bleed, industrial dust, violet film grain, damp concrete-neutral scuffing, analog static, worn
+    wall texture
+  camera_and_composition: >-
+    Fragmented chronology cuts, violet-night compression, interior dread depth, static-layer repetition,
+    memory-broken framing
+  atmosphere_and_mood: Melancholic, fragmented, nocturnal, ghostly
+  rendering_and_quality: Gritty dramatic anime frame, film-noir rendering, heavy shadow compression, textured midtone grit
   key_features: Violet night tones, rusted neon bleed, fragmented framing, interior dread, static-haunted melancholy
-  creative_brief: >
-    Give any prompt a rusted-neon psychological treatment: violet haze, analog
-    static, fractured time, and damaged interiority should define the style
-    without fixed institutions, passageways, myths, public spaces, urban scale, or haunting
-    setup.
+  creative_brief: >-
+    Give any prompt a rusted-neon psychological treatment: violet haze, analog static, fractured time, and
+    damaged interiority should define the style without fixed institutions, passageways, myths, public spaces,
+    urban scale, or haunting setup.
 avoidRules:
   - realistic
   - 3d render
@@ -42,7 +47,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-277.webp
 attributes:
-  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
+  negativePrompt: >-
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts,
+    watermark, text, signature
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds

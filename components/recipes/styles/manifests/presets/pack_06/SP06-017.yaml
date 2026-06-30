@@ -13,19 +13,18 @@ tags:
   - drawing-and-sketching
 visualDna:
   aesthetic: Loose charcoal sketch
-  form_and_line: Thick, smudged, bold
-  color_palette: Deep black, grey
-  lighting_setup: Dramatic contrast
-  material_texture: Rough paper, dust
-  render_quality: Emotional, raw
-  spatial_distortion: Gestural
-  atmosphere: Dark, intense
+  subject_treatment: Thick, smudged, bold
+  color_and_tone: Deep black, grey
+  lighting_and_shadow: Dramatic contrast
+  texture_and_material: Rough paper, dust
+  camera_and_composition: Gestural
+  atmosphere_and_mood: Dark, intense
+  rendering_and_quality: Emotional, raw
   key_features: Smudged texture
   creative_brief: >-
-    Apply expressive charcoal drawing to any input: dusty black deposits, rough
-    paper tooth, broad smudges, erased highlights, pressure haze, and unstable
-    edge softness. Keep dramatic subtraction without requiring figure studies,
-    studio easels, life drawing, or monochrome portrait framing.
+    Apply expressive charcoal drawing to any input: dusty black deposits, rough paper tooth, broad smudges,
+    erased highlights, pressure haze, and unstable edge softness. Keep dramatic subtraction without requiring
+    figure studies, studio easels, life drawing, or monochrome portrait framing.
 avoidRules:
   - photo
   - realistic
@@ -45,7 +44,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP06-017.webp
 attributes:
-  negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border
+  negativePrompt: >-
+    photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy,
+    watermark, text, signature, frame, border
 taxonomy:
   packId: pack_06
   packName: Essential Art Styles

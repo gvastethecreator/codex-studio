@@ -12,9 +12,13 @@ tags:
   - essential-art-styles
   - game-art-directions-and-ui
 visualDna:
-  aesthetic: Survival-horror save-room style with static-camera dread, low-resource warmth, and PS2-era atmospheric grime.
+  aesthetic: >-
+    Survival-horror save-room style with static-camera dread, low-resource warmth, and PS2-era atmospheric
+    grime.
   subject_treatment: Make any subject feel temporarily protected yet unsafe through restrained staging and fragile focal calm.
-  color_and_tone: Greenish blacks, tobacco browns, dirty cream highlights, small warm safety accents, and crushed low values.
+  color_and_tone: >-
+    Greenish blacks, tobacco browns, dirty cream highlights, small warm safety accents, and crushed low
+    values.
   lighting_and_shadow: Weak lamp pools, vignetted corners, deep occlusion, and suspenseful off-frame darkness.
   texture_and_material: Low-poly grime, old wallpaper grain, dust, compression softness, scratched surfaces, and analog noise.
   camera_and_composition: Fixed-camera composition, slightly awkward perspective, negative-space tension, and deliberate stillness.

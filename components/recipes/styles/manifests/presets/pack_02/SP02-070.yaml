@@ -13,15 +13,23 @@ tags:
   - lighting-and-atmosphere
 visualDna:
   aesthetic: High-front glamour lighting
-  form_and_line: None
-  color_palette: Flattering neutral warmth, peach glow, pearl highlight, clean beauty tones
-  lighting_setup: High front key, overhead beauty dish, central downward shadow cue
-  material_texture: Smooth diffusion, retouched surface, soft highlight gradients
-  render_quality: Beauty, studio, magazine-cover polish, glamour perfection
-  spatial_distortion: None
-  atmosphere: Beautiful, clean, aspirational elegance, fashion confidence
+  subject_treatment: >-
+    Treat subjects as believable filmed or broadcast subjects under Butterfly Lighting: casting, wardrobe,
+    props, motion cues, and silhouette hierarchy follow 5. Lighting And Atmosphere cinematic and broadcast
+    grammar without locking to one plot beat.
+  color_and_tone: Flattering neutral warmth, peach glow, pearl highlight, clean beauty tones
+  lighting_and_shadow: High front key, overhead beauty dish, central downward shadow cue
+  texture_and_material: Smooth diffusion, retouched surface, soft highlight gradients
+  camera_and_composition: >-
+    Camera language native to Butterfly Lighting: genre-aware framing, lens character, focal hierarchy, motion
+    cue, and vertical style-card composition.
+  atmosphere_and_mood: Beautiful, clean, aspirational elegance, fashion confidence
+  rendering_and_quality: Beauty, studio, magazine-cover polish, glamour perfection
   key_features: Beauty-dish catchlight, centered top key, soft frontal fill, pearl highlight
-  creative_brief: 'Use butterfly lighting as a polished beauty-light grammar: high frontal key, centered catchlight, soft fill, pearl highlights, and minimal harsh side shadow. Avoid making the preset depend on faces, skin, cheekbones, or fashion subjects. Any input should become clean, flattering, and studio-elegant.'
+  creative_brief: >-
+    Use butterfly lighting as a polished beauty-light grammar: high frontal key, centered catchlight, soft
+    fill, pearl highlights, and minimal harsh side shadow. Avoid making the preset depend on faces, skin,
+    cheekbones, or fashion subjects. Any input should become clean, flattering, and studio-elegant.
 avoidRules:
   - harsh shadows
 assets:

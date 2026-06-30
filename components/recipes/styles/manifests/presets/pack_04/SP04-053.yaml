@@ -13,23 +13,22 @@ tags:
   - concept-art
 visualDna:
   aesthetic: >-
-    Storyboard previsualization style prioritizing shot communication, camera intent, and narrative
-    beat sequencing
-  form_and_line: >-
-    Loose pencil-marker shorthand with fast gesture notation, camera-arrow semantics, and
-    frame-priority readability
-  color_palette: Greyscale + Arrows, monochrome clarity, directional red accent
-  lighting_setup: Value study, light-plan sweep, shot-design intent
-  material_texture: Paper
-  render_quality: Cinematic flow, directorial shorthand, shot-language clarity
-  spatial_distortion: Motion blur lines
-  atmosphere: Action, plan, pre-vis intensity, production hustle
+    Storyboard previsualization style prioritizing shot communication, camera intent, and narrative beat
+    sequencing
+  subject_treatment: >-
+    Loose pencil-marker shorthand with fast gesture notation, camera-arrow semantics, and frame-priority
+    readability
+  color_and_tone: Greyscale + Arrows, monochrome clarity, directional red accent
+  lighting_and_shadow: Value study, light-plan sweep, shot-design intent
+  texture_and_material: Paper
+  camera_and_composition: Motion blur lines
+  atmosphere_and_mood: Action, plan, pre-vis intensity, production hustle
+  rendering_and_quality: Cinematic flow, directorial shorthand, shot-language clarity
   key_features: Frame border, camera arrows, shot description
   creative_brief: >-
-    Apply storyboard previsualization grammar to any input: framing boxes, motion arrows,
-    value-priority blocking, camera shorthand, and shot-intent marks should communicate direction
-    without requiring action sequences, panels of characters, captions, film scenes, or one concrete
-    beat.
+    Apply storyboard previsualization grammar to any input: framing boxes, motion arrows, value-priority
+    blocking, camera shorthand, and shot-intent marks should communicate direction without requiring action
+    sequences, panels of characters, captions, film scenes, or one concrete beat.
 avoidRules:
   - color
   - detailed

@@ -12,17 +12,27 @@ tags:
   - miscellaneous-and-fun
   - aesthetics
 visualDna:
-  aesthetic: Synthwave voltage system with neon geometry, analog-video nostalgia, chrome accents, and clean retro-futurist depth
-  form_and_line: Wireframe planes, parallel grid recurrences, sharp vector silhouettes, triangular solar motifs, chrome edge cuts
-  color_palette: High-voltage magenta, cyan beams, deep violet shadow, near-black base, chrome white accents, hot sunset bands
-  lighting_setup: Neon rim emission, gradient voltage glow, hard backlight silhouettes, analog screen bloom, dark-field contrast
-  material_texture: VHS scanlines, chrome sheen, vector grid glow, smooth plastic black, analog display noise
-  render_quality: Crisp, polished, retro-computational, cinematic, luminous, with controlled graphic depth
-  spatial_distortion: Wireframe recession, horizon compression, scanline drift, chrome reflection bend, geometric depth slicing
-  atmosphere: Nocturnal, fast, polished, nostalgic, electric, aspirational
+  aesthetic: >-
+    Synthwave voltage system with neon geometry, analog-video nostalgia, chrome accents, and clean
+    retro-futurist depth
+  subject_treatment: >-
+    Wireframe planes, parallel grid recurrences, sharp vector silhouettes, triangular solar motifs, chrome
+    edge cuts
+  color_and_tone: >-
+    High-voltage magenta, cyan beams, deep violet shadow, near-black base, chrome white accents, hot sunset
+    bands
+  lighting_and_shadow: >-
+    Neon rim emission, gradient voltage glow, hard backlight silhouettes, analog screen bloom, dark-field
+    contrast
+  texture_and_material: VHS scanlines, chrome sheen, vector grid glow, smooth plastic black, analog display noise
+  camera_and_composition: Wireframe recession, horizon compression, scanline drift, chrome reflection bend, geometric depth slicing
+  atmosphere_and_mood: Nocturnal, fast, polished, nostalgic, electric, aspirational
+  rendering_and_quality: Crisp, polished, retro-computational, cinematic, luminous, with controlled graphic depth
   key_features: Neon gradients, wireframe lattice, chrome accents, analog patina, horizon-band depth, vector geometry
   creative_brief: >-
-    Apply synthwave through voltage, geometry, and analog-display artifacts. The input should inherit neon rim light, wireframe depth, chrome accents, and dark-field contrast without requiring cars, sunsets, roads, grids, or 1980s props.
+    Apply synthwave through voltage, geometry, and analog-display artifacts. The input should inherit neon rim
+    light, wireframe depth, chrome accents, and dark-field contrast without requiring cars, sunsets, roads,
+    grids, or 1980s props.
 avoidRules:
   - nature
   - green

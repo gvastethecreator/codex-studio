@@ -13,19 +13,18 @@ tags:
   - printmaking
 visualDna:
   aesthetic: Security engraving style with guilloche precision and anti-counterfeit line density
-  form_and_line: Precise parallel lines
-  color_palette: Green, Grey, Monochrome
-  lighting_setup: Linear shading
-  material_texture: Cotton paper
-  render_quality: Official high-detail engraving without requiring currency, certificates, seals, or portraits
-  spatial_distortion: None
-  atmosphere: Serious, valuable
+  subject_treatment: Precise parallel lines
+  color_and_tone: Green, Grey, Monochrome
+  lighting_and_shadow: Linear shading
+  texture_and_material: Cotton paper
+  camera_and_composition: 'Compose for Security Engraving using its key spatial cues: Guilloche patterns.'
+  atmosphere_and_mood: Serious, valuable
+  rendering_and_quality: Official high-detail engraving without requiring currency, certificates, seals, or portraits
   key_features: Guilloche patterns
   creative_brief: >-
-    Apply security-engraving precision to any input: ultra-fine parallel lines,
-    guilloche geometry, micro-pattern density, exact hatch curvature, and
-    anti-counterfeit line discipline. Keep trust-through-detail without
-    requiring currency, portraits, seals, certificates, or denominations.
+    Apply security-engraving precision to any input: ultra-fine parallel lines, guilloche geometry,
+    micro-pattern density, exact hatch curvature, and anti-counterfeit line discipline. Keep
+    trust-through-detail without requiring currency, portraits, seals, certificates, or denominations.
 avoidRules:
   - photo
   - realistic
@@ -48,7 +47,10 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP06-043.webp
 attributes:
-  negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border, currency requirement, readable denomination, portrait requirement
+  negativePrompt: >-
+    photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy,
+    watermark, text, signature, frame, border, currency requirement, readable denomination, portrait
+    requirement
 taxonomy:
   packId: pack_06
   packName: Essential Art Styles

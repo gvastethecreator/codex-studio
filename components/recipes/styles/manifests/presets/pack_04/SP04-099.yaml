@@ -13,18 +13,19 @@ tags:
   - concept-art
 visualDna:
   aesthetic: Game HUD wireframe concept balancing diegetic and overlay paradigms
-  form_and_line: Clean bounding-box architecture with spacing, flow, and hierarchy guides
-  color_palette: Functional UI neutrals with semantic accent colors for state signaling
-  lighting_setup: Flat interface contrast with optional interaction glow cues
-  material_texture: Minimalist screen-surface treatment; precision-first wireframe presentation
-  render_quality: UX concept fidelity focused on clarity, density control, and usability
-  spatial_distortion: Safe-zone aware screen layout plus world-anchored UI option studies
-  atmosphere: Functional, restrained, information-priority design
+  subject_treatment: Clean bounding-box architecture with spacing, flow, and hierarchy guides
+  color_and_tone: Functional UI neutrals with semantic accent colors for state signaling
+  lighting_and_shadow: Flat interface contrast with optional interaction glow cues
+  texture_and_material: Minimalist screen-surface treatment; precision-first wireframe presentation
+  camera_and_composition: Safe-zone aware screen layout plus world-anchored UI option studies
+  atmosphere_and_mood: Functional, restrained, information-priority design
+  rendering_and_quality: UX concept fidelity focused on clarity, density control, and usability
   key_features: Radial-vs-linear alternatives, stat cluster prototypes, readability checkpoints
   creative_brief: >-
-    Apply UI/HUD wireframe concept language to any input: modular panels, safe-zone framing, scanline grids, reticles,
-    status blocks, icon placeholders, and layered interface hierarchy. If no software/game context exists, translate the
-    prompt into abstract interface architecture without requiring readable UI text, screenshots, or a game scene.
+    Apply UI/HUD wireframe concept language to any input: modular panels, safe-zone framing, scanline grids,
+    reticles, status blocks, icon placeholders, and layered interface hierarchy. If no software/game context
+    exists, translate the prompt into abstract interface architecture without requiring readable UI text,
+    screenshots, or a game scene.
 avoidRules:
   - finished
   - polished

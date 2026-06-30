@@ -13,19 +13,19 @@ tags:
   - fantasy-and-mythic-architecture
 visualDna:
   aesthetic: Deep-earth megalithic forge gravity, mineral heat and ancestral stonecraft doctrine.
-  form_and_line: Megalithic pillar grids, chiseled mass geometry, rune-banded arches and heavy-load vaults.
-  color_palette: Grey Stone, Gold, Fire, Vein-Metal Copper, Lava Orange, Gem-cluster Ruby, Deep Black
-  lighting_setup: Forge thermal glow, amber crystal glow, torchlike rhythm and orange mineral heat.
-  material_texture: Carved granite, chisel marks, hammered gold, cast iron, crystal veins and dense leather.
-  render_quality: Epic forge-fortress fidelity with material weight and blunt structural gravity.
-  spatial_distortion: Low-vault compression, heat-channel axial pull and overbuilt megalithic load rhythm.
-  atmosphere: Ancestral resilience, clan authority and deep-earth solemnity.
+  subject_treatment: Megalithic pillar grids, chiseled mass geometry, rune-banded arches and heavy-load vaults.
+  color_and_tone: Grey Stone, Gold, Fire, Vein-Metal Copper, Lava Orange, Gem-cluster Ruby, Deep Black
+  lighting_and_shadow: Forge thermal glow, amber crystal glow, torchlike rhythm and orange mineral heat.
+  texture_and_material: Carved granite, chisel marks, hammered gold, cast iron, crystal veins and dense leather.
+  camera_and_composition: Low-vault compression, heat-channel axial pull and overbuilt megalithic load rhythm.
+  atmosphere_and_mood: Ancestral resilience, clan authority and deep-earth solemnity.
+  rendering_and_quality: Epic forge-fortress fidelity with material weight and blunt structural gravity.
   key_features: Runic supports, forge cores, thermal channels, hammer-marked metal and monumental axial weight.
   creative_brief: >-
     Carry any form toward ancestral weight: megalithic pillars, chisel marks, forge heat and hammered metal.
-    It should feel built to survive centuries under load, not like a generic dwarf fortress or hero set.
-    Keep megalithic weight, mineral heat, load-bearing scale and ancestral solemnity without requiring
-    building, landscape, creature or fixed scene.
+    It should feel built to survive centuries under load, not like a generic dwarf fortress or hero set. Keep
+    megalithic weight, mineral heat, load-bearing scale and ancestral solemnity without requiring building,
+    landscape, creature or fixed scene.
 avoidRules:
   - wood-dominant finish
   - lightweight construction

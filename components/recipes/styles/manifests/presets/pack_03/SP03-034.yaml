@@ -13,18 +13,20 @@ tags:
   - lighting-and-atmosphere
 visualDna:
   aesthetic: Perfect product/portrait
-  form_and_line: Key, Fill, Rim
-  color_palette: Balanced, broadcast-safe
-  lighting_setup: Controlled, key-fill-rim triangle
-  material_texture: Clean, studio-perfect
-  render_quality: Commercial, professional, portrait-ready
-  atmosphere: Professional, polished confidence
+  subject_treatment: Key, Fill, Rim
+  color_and_tone: Balanced, broadcast-safe
+  lighting_and_shadow: Controlled, key-fill-rim triangle
+  texture_and_material: Clean, studio-perfect
+  camera_and_composition: >-
+    Lighting-study camera for Studio Lighting (3 Point): stable three-quarter framing, visible depth layers,
+    clear shadow planes, and a vertical style-card crop.
+  atmosphere_and_mood: Professional, polished confidence
+  rendering_and_quality: Commercial, professional, portrait-ready
   key_features: Rim light, three-point separation
   creative_brief: >-
-    Apply premium studio lighting discipline to the input: controlled key/fill/rim
-    ratios, softbox gradients, clean shadow approval and broadcast-safe polish.
-    Works for product, portrait or abstract subject without forcing any one of
-    those formats.
+    Apply premium studio lighting discipline to the input: controlled key/fill/rim ratios, softbox gradients,
+    clean shadow approval and broadcast-safe polish. Works for product, portrait or abstract subject without
+    forcing any one of those formats.
 avoidRules:
   - flat
   - outdoor

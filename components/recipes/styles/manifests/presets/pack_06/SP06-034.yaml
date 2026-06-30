@@ -13,19 +13,18 @@ tags:
   - printmaking
 visualDna:
   aesthetic: Stone print
-  form_and_line: Crayon-like texture
-  color_palette: Soft blacks, greys
-  lighting_setup: Soft
-  material_texture: Limestone grain
-  render_quality: Stone-print poster softness with faithfully transferred crayon grain
-  spatial_distortion: None
-  atmosphere: Artistic, soft
+  subject_treatment: Crayon-like texture
+  color_and_tone: Soft blacks, greys
+  lighting_and_shadow: Soft
+  texture_and_material: Limestone grain
+  camera_and_composition: 'Compose for Lithography using its key spatial cues: Grainy texture.'
+  atmosphere_and_mood: Artistic, soft
+  rendering_and_quality: Stone-print poster softness with faithfully transferred crayon grain
   key_features: Grainy texture
   creative_brief: >-
-    Apply lithographic print behavior to any input: crayon-like stone grain,
-    grease-water separation, soft tonal transfer, paper pressure, and subtle
-    speckled drawing texture. Keep chemical print softness without requiring
-    posters, portraits, theatre bills, stones, or edition markings.
+    Apply lithographic print behavior to any input: crayon-like stone grain, grease-water separation, soft
+    tonal transfer, paper pressure, and subtle speckled drawing texture. Keep chemical print softness without
+    requiring posters, portraits, theatre bills, stones, or edition markings.
 avoidRules:
   - photo
   - realistic
@@ -45,7 +44,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP06-034.webp
 attributes:
-  negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border
+  negativePrompt: >-
+    photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy,
+    watermark, text, signature, frame, border
 taxonomy:
   packId: pack_06
   packName: Essential Art Styles

@@ -32,7 +32,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP06-102.webp
 attributes:
-  negativePrompt: motion blur, inconsistent proportions, changing costume, background scene, literal dungeon requirement, monster requirement, watermark, text
+  negativePrompt: >-
+    motion blur, inconsistent proportions, changing costume, background scene, literal dungeon requirement,
+    monster requirement, watermark, text
   layout:
     preferredFrameCount: 8
     frameGrid: 4x2

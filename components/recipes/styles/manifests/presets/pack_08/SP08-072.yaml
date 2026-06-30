@@ -12,22 +12,27 @@ tags:
   - fashion-and-costume
   - fabric-and-texture-focus
 visualDna:
-  aesthetic: Tattoo-style graphic surface mapping, ceremonial ink devotion, body-art logic translated into transferable pattern language
-  form_and_line: Ink-line flow, sleeve-to-field continuity, wave-band framing, panel-like coverage transitions, back-piece spread logic
-  color_palette: Tebori indigo, iron black, oxidized red, aged yellow, moss green accent, parchment-neutral ground
-  lighting_setup: Even saturation light, healed-ink clarity, soft rim separation, low-glare surface read
-  material_texture: Healed-ink surface, needle-point grain, raised-line relief, stippled shading, varnished pigment depth
-  render_quality: Artistic, deliberate, irezumi-grade precision, surface-mapping discipline
-  spatial_distortion: None
-  atmosphere: Committed, ritualized, graphic, surface-history gravity
+  aesthetic: >-
+    Tattoo-style graphic surface mapping, ceremonial ink devotion, body-art logic translated into transferable
+    pattern language
+  subject_treatment: >-
+    Ink-line flow, sleeve-to-field continuity, wave-band framing, panel-like coverage transitions, back-piece
+    spread logic
+  color_and_tone: Tebori indigo, iron black, oxidized red, aged yellow, moss green accent, parchment-neutral ground
+  lighting_and_shadow: Even saturation light, healed-ink clarity, soft rim separation, low-glare surface read
+  texture_and_material: Healed-ink surface, needle-point grain, raised-line relief, stippled shading, varnished pigment depth
+  camera_and_composition: >-
+    Compose for Tattoo Skin using its key spatial cues: Ink coverage logic, irezumi waves, wind bars,
+    healed-depth read, sleeve-to-field connection.
+  atmosphere_and_mood: Committed, ritualized, graphic, surface-history gravity
+  rendering_and_quality: Artistic, deliberate, irezumi-grade precision, surface-mapping discipline
   key_features: Ink coverage logic, irezumi waves, wind bars, healed-depth read, sleeve-to-field connection
   creative_brief: >-
-    Recast the input through tattoo-surface mapping: tebori indigo, iron-black
-    linework, old-school accent notes, irezumi waves, wind bars, stippled
-    shading and healed-ink depth should behave like transferable graphic
-    coverage. Keep skin devotion optional and let the marks map onto surfaces,
-    garments, objects, figures, or material fields; do not require a torso,
-    nude body, chest panel, tattoo-parlor scene or portrait setup.
+    Recast the input through tattoo-surface mapping: tebori indigo, iron-black linework, old-school accent
+    notes, irezumi waves, wind bars, stippled shading and healed-ink depth should behave like transferable
+    graphic coverage. Keep skin devotion optional and let the marks map onto surfaces, garments, objects,
+    figures, or material fields; do not require a torso, nude body, chest panel, tattoo-parlor scene or
+    portrait setup.
 avoidRules:
   - blank unmarked surface
 assets:

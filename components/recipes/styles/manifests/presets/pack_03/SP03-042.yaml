@@ -13,19 +13,22 @@ tags:
   - lighting-and-atmosphere
 visualDna:
   aesthetic: Miniature tilt-shift treatment
-  form_and_line: Tilt-shift blur
-  color_palette: Saturated, cozy, miniature palette
-  lighting_setup: Warm, close, macro-lighting
-  material_texture: Handmade feel, model-kit texture
-  render_quality: Cute, small, tilt-shift magic
-  atmosphere: Playful, tiny, tabletop wonder
+  subject_treatment: Tilt-shift blur
+  color_and_tone: Saturated, cozy, miniature palette
+  lighting_and_shadow: Warm, close, macro-lighting
+  texture_and_material: Handmade feel, model-kit texture
+  camera_and_composition: >-
+    Lighting-study camera for Diorama Lighting: stable three-quarter framing, visible depth layers, clear
+    shadow planes, and a vertical style-card crop.
+  atmosphere_and_mood: Playful, tiny, tabletop wonder
+  rendering_and_quality: Cute, small, tilt-shift magic
   key_features: Miniature, depth-of-field isolation
   creative_brief: >-
-    Miniaturize the input through tilt-shift optics: macro-scale warmth, saturated model-kit color, creamy near/far blur
-    and handcrafted surface cues. Do not require trees, buildings, tabletop worlds or a literal diorama. Apply Diorama
-    Lighting as a portable 3D/render style system over any input: preserve its renderer logic, material behavior,
-    geometry language, lighting grammar, and production cues while avoiding a required character, vehicle, prop,
-    environment, UI screen, product shot, or scene template.
+    Miniaturize the input through tilt-shift optics: macro-scale warmth, saturated model-kit color, creamy
+    near/far blur and handcrafted surface cues. Do not require trees, buildings, tabletop worlds or a literal
+    diorama. Apply Diorama Lighting as a portable 3D/render style system over any input: preserve its renderer
+    logic, material behavior, geometry language, lighting grammar, and production cues while avoiding a
+    required character, vehicle, prop, environment, UI screen, product shot, or scene template.
 avoidRules:
   - flat
   - realistic scale

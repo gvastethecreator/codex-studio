@@ -12,19 +12,33 @@ tags:
   - anime-character-and-lifestyle
   - shojo-magical-girl-and-visionary-classics
 visualDna:
-  aesthetic: 90s fashion-atelier shojo grammar with handmade-accessory culture, Harajuku pop layering, and creative coming-of-age energy
-  form_and_line: Expressive fashion-silhouette linework, accessory-forward contour emphasis, playful pose asymmetry, and display-like compositional rhythm
-  color_palette: Saturated candy pops, denim and black streetwear anchors, pastel accessory accents, sticker-bright highlights, and warm skin tones
-  lighting_setup: Window-display glow, overcast diffusion, neon-sign accent spill, and soft tungsten warmth for craft moments
-  material_texture: Denim grain, knit and canvas layering, handmade bead and fabric trim detail, paper-pattern scraps, and glossy plastic charm accents
-  render_quality: Vibrant retro-shojo rendering with trend-culture readability, handcrafted detail density, and youthful editorial polish
-  spatial_distortion: Fashion-illustration elongation with dynamic angle framing and accessory-scale emphasis
-  atmosphere: Cute, stylish, youthful, crafty
-  key_features: Handmade accessories, Harajuku color, craft-pattern cues, street-fashion silhouettes, youthful romance staging
+  aesthetic: >-
+    90s fashion-atelier shojo grammar with handmade-accessory culture, Harajuku pop layering, and creative
+    coming-of-age energy
+  subject_treatment: >-
+    Expressive fashion-silhouette linework, accessory-forward contour emphasis, playful pose asymmetry, and
+    display-like compositional rhythm
+  color_and_tone: >-
+    Saturated candy pops, denim and black streetwear anchors, pastel accessory accents, sticker-bright
+    highlights, and warm skin tones
+  lighting_and_shadow: >-
+    Window-display glow, overcast diffusion, neon-sign accent spill, and soft tungsten warmth for craft
+    moments
+  texture_and_material: >-
+    Denim grain, knit and canvas layering, handmade bead and fabric trim detail, paper-pattern scraps, and
+    glossy plastic charm accents
+  camera_and_composition: Fashion-illustration elongation with dynamic angle framing and accessory-scale emphasis
+  atmosphere_and_mood: Cute, stylish, youthful, crafty
+  rendering_and_quality: >-
+    Vibrant retro-shojo rendering with trend-culture readability, handcrafted detail density, and youthful
+    editorial polish
+  key_features: >-
+    Handmade accessories, Harajuku color, craft-pattern cues, street-fashion silhouettes, youthful romance
+    staging
   creative_brief: >-
-    Preserve neighborhood-story fashion grammar as a reusable style language:
-    handmade accessory density, Harajuku color-layer logic, and creative-youth
-    editorial energy should remain consistent across subject changes.
+    Preserve neighborhood-story fashion grammar as a reusable style language: handmade accessory density,
+    Harajuku color-layer logic, and creative-youth editorial energy should remain consistent across subject
+    changes.
 avoidRules:
   - realistic
   - 3d render
@@ -41,7 +55,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-195.webp
 attributes:
-  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
+  negativePrompt: >-
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts,
+    watermark, text, signature
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle

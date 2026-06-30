@@ -13,19 +13,20 @@ tags:
   - fantasy-and-mythic-architecture
 visualDna:
   aesthetic: Neo-Victorian retroindustrial steam grammar, brass pressure systems and speculative mechanical utility.
-  form_and_line: Riveted pipe networks, vertical venting rhythms, gear nodes and load-bearing structural arches.
-  color_palette: Bronze, Brick, Smoke, Copper patina, warm Gaslight Yellow, Coal Black, Brass-bright
-  lighting_setup: Amber gaslight, diffuse smog glow, mechanical sparks and visible steam venting.
-  material_texture: Metal and brick, riveted copper, wood paneling, leather and soot deposits across surfaces.
-  render_quality: High-detail steampunk with mechanical plausibility and retroindustrial legibility.
-  spatial_distortion: None
-  atmosphere: Industrial momentum, smoky ambition and anxious mechanical progress.
-  key_features: >-
-    Venting rhythm, brass conduits, clockwork surfaces, boiler nodes and visible pressure hierarchies.
+  subject_treatment: Riveted pipe networks, vertical venting rhythms, gear nodes and load-bearing structural arches.
+  color_and_tone: Bronze, Brick, Smoke, Copper patina, warm Gaslight Yellow, Coal Black, Brass-bright
+  lighting_and_shadow: Amber gaslight, diffuse smog glow, mechanical sparks and visible steam venting.
+  texture_and_material: Metal and brick, riveted copper, wood paneling, leather and soot deposits across surfaces.
+  camera_and_composition: >-
+    Compose for Neo-Victorian Steamwork using its key spatial cues: Venting rhythm, brass conduits, clockwork
+    surfaces, boiler nodes and visible pressure hierarchies.
+  atmosphere_and_mood: Industrial momentum, smoky ambition and anxious mechanical progress.
+  rendering_and_quality: High-detail steampunk with mechanical plausibility and retroindustrial legibility.
+  key_features: Venting rhythm, brass conduits, clockwork surfaces, boiler nodes and visible pressure hierarchies.
   creative_brief: >-
-    Apply a Neo-Victorian steam grammar to any input: brass articulations, functional rivets,
-    legible pipework, material soot and gaslight glow. Mechanical utility should feel plausible
-    and hierarchical without requiring a skyline, vehicle or specific transit system.
+    Apply a Neo-Victorian steam grammar to any input: brass articulations, functional rivets, legible
+    pipework, material soot and gaslight glow. Mechanical utility should feel plausible and hierarchical
+    without requiring a skyline, vehicle or specific transit system.
 avoidRules:
   - clean energy
 assets:

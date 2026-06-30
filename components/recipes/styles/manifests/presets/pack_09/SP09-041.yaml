@@ -13,22 +13,22 @@ tags:
   - weathering-and-decay
 visualDna:
   aesthetic: Abrasive grit
-  form_and_line: None
-  color_palette: Red Oxide, Brown
-  lighting_setup: Sparkle on grit
-  material_texture: Rough, sharp
-  render_quality: Industrial, dry
-  spatial_distortion: None
-  atmosphere: Rough, functional
+  subject_treatment: "Treat subjects through Sandpaper's signature cues: Uniform grit."
+  color_and_tone: Red Oxide, Brown
+  lighting_and_shadow: Sparkle on grit
+  texture_and_material: Rough, sharp
+  camera_and_composition: 'Compose for Sandpaper using its key spatial cues: Uniform grit.'
+  atmosphere_and_mood: Rough, functional
+  rendering_and_quality: Industrial, dry
   key_features: Uniform grit
   creative_brief: >-
-    Capture the uniform grit of sandpaper where sharp mineral particles bristle in ordered ranks across a red-brown
-    field of abrasive purpose, each speck a microscopic tooth awaiting contact. The surface should feel hostile to the
-    touch, a constellation of cutting edges that catches light as tiny sparks of silver on rust. Render the beauty of
-    aggressive function, texture designed to erase other textures. Use Sandpaper as portable surface/render behavior
-    over any input: map its texture, light response, edge wear, color chemistry, and tactile rhythm onto the subject
-    instead of requiring a literal material sample, macro tile, wall, landscape, source object, or scene where the
-    material naturally appears.
+    Capture the uniform grit of sandpaper where sharp mineral particles bristle in ordered ranks across a
+    red-brown field of abrasive purpose, each speck a microscopic tooth awaiting contact. The surface should
+    feel hostile to the touch, a constellation of cutting edges that catches light as tiny sparks of silver on
+    rust. Render the beauty of aggressive function, texture designed to erase other textures. Use Sandpaper as
+    portable surface/render behavior over any input: map its texture, light response, edge wear, color
+    chemistry, and tactile rhythm onto the subject instead of requiring a literal material sample, macro tile,
+    wall, landscape, source object, or scene where the material naturally appears.
 avoidRules:
   - smooth
   - glossy

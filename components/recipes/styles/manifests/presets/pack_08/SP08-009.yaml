@@ -13,18 +13,21 @@ tags:
   - fantasy-sci-fi-costume
 visualDna:
   aesthetic: Victorian retrofuturist attire, clockwork expedition romance, pressure-built regalia
-  form_and_line: Gearwork articulation, goggle-casing geometry, waistcoat-or-corset structure, chain drape, vertical hat logic, bustle-back volume
-  color_palette: Bronze, Brown Leather, Copper, brass patina, burnished mahogany, verdigris green
-  lighting_setup: Sepia tone, steam-softened gaslight warmth, amber glow, brass reflection
-  material_texture: Full-grain leather, engraved brass, Harris tweed, clockwork gears, riveted copper, pocket-watch crystal
-  render_quality: Detailed retro-industrial craftsmanship, cogs-and-brass opulence, fantasy-engineered finish
-  spatial_distortion: Mechanical limbs (optional)
-  atmosphere: Adventurous, retro, inventive, clockwork wonder, airship-era ambition, tea-and-tinker curiosity
+  subject_treatment: >-
+    Gearwork articulation, goggle-casing geometry, waistcoat-or-corset structure, chain drape, vertical hat
+    logic, bustle-back volume
+  color_and_tone: Bronze, Brown Leather, Copper, brass patina, burnished mahogany, verdigris green
+  lighting_and_shadow: Sepia tone, steam-softened gaslight warmth, amber glow, brass reflection
+  texture_and_material: Full-grain leather, engraved brass, Harris tweed, clockwork gears, riveted copper, pocket-watch crystal
+  camera_and_composition: Mechanical limbs (optional)
+  atmosphere_and_mood: Adventurous, retro, inventive, clockwork wonder, airship-era ambition, tea-and-tinker curiosity
+  rendering_and_quality: Detailed retro-industrial craftsmanship, cogs-and-brass opulence, fantasy-engineered finish
   key_features: Brass accessories, aviator goggles, gear-motif jewelry, leather tool belt
   creative_brief: >-
-    Translate the input into steampunk engineering attire: brass constellations, tinted goggle casings, leather tool-belt
-    logic, waistcoat-or-corset structure, clockwork ornament and sepia gaslight. Keep mechanical-limb hints optional and
-    useful, but do not force an inventor persona, aviator body, workshop, hangar or expedition scene.
+    Translate the input into steampunk engineering attire: brass constellations, tinted goggle casings,
+    leather tool-belt logic, waistcoat-or-corset structure, clockwork ornament and sepia gaslight. Keep
+    mechanical-limb hints optional and useful, but do not force an inventor persona, aviator body, workshop,
+    hangar or expedition scene.
 avoidRules:
   - modern
   - plastic

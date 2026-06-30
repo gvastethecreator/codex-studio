@@ -12,16 +12,23 @@ tags:
   - cinematic-and-media
   - caricature-and-cartoon-styles
 visualDna:
-  aesthetic: Shouting primary-color lunacy, absurd slapstick, huge scale mismatch, anti-subtle cartoon vulgarity, exaggerated rubbery ugliness, jagged gross comedy
-  form_and_line: Thick crude contours, jagged gross-comedy marks, rubbery stretch, blunt graphic impact
-  color_palette: Shouting red, chicken-yellow, electric blue, toxic green, black outline, cheap poster white
-  lighting_setup: Flat poster illumination, no atmosphere, maximum readability, anti-subtle exposure
-  material_texture: Poster-paint cel fill, cheap TV scan softness, sticky marker edge, rubbery gross surface
-  render_quality: Loud primary-color TV cartoon, vulgar slapstick, anti-subtle comedic aggression
-  spatial_distortion: Giant accent shapes, tiny support masses, rubbery scale mismatch, compressed slapstick poses
-  atmosphere: Loud, shameless, unruly, ridiculous
-  key_features: Primary-color saturation, giant shape accents, screaming graphic bursts, rubbery scale mismatch, vulgar slapstick timing
-  creative_brief: 'Apply loud primary derangement to any input: saturated primaries, rubbery ugliness, jagged comic bursts, scale mismatch, and zero-subtlety slapstick. Avoid siblings, hallways, mouths, limbs, or specific characters. The image should feel shouted into existence.'
+  aesthetic: >-
+    Shouting primary-color lunacy, absurd slapstick, huge scale mismatch, anti-subtle cartoon vulgarity,
+    exaggerated rubbery ugliness, jagged gross comedy
+  subject_treatment: Thick crude contours, jagged gross-comedy marks, rubbery stretch, blunt graphic impact
+  color_and_tone: Shouting red, chicken-yellow, electric blue, toxic green, black outline, cheap poster white
+  lighting_and_shadow: Flat poster illumination, no atmosphere, maximum readability, anti-subtle exposure
+  texture_and_material: Poster-paint cel fill, cheap TV scan softness, sticky marker edge, rubbery gross surface
+  camera_and_composition: Giant accent shapes, tiny support masses, rubbery scale mismatch, compressed slapstick poses
+  atmosphere_and_mood: Loud, shameless, unruly, ridiculous
+  rendering_and_quality: Loud primary-color TV cartoon, vulgar slapstick, anti-subtle comedic aggression
+  key_features: >-
+    Primary-color saturation, giant shape accents, screaming graphic bursts, rubbery scale mismatch, vulgar
+    slapstick timing
+  creative_brief: >-
+    Apply loud primary derangement to any input: saturated primaries, rubbery ugliness, jagged comic bursts,
+    scale mismatch, and zero-subtlety slapstick. Avoid siblings, hallways, mouths, limbs, or specific
+    characters. The image should feel shouted into existence.
 avoidRules:
   - digital
   - HD

@@ -13,18 +13,17 @@ tags:
   - digital-glitch-and-noise
 visualDna:
   aesthetic: Deep fried meme
-  form_and_line: Mosquito noise
-  color_palette: Banding
-  lighting_setup: Flat
-  material_texture: Compression blocks
-  render_quality: Low quality, internet
-  spatial_distortion: Blocky edges
-  atmosphere: Funny, trashy
+  subject_treatment: Mosquito noise
+  color_and_tone: Banding
+  lighting_and_shadow: Flat
+  texture_and_material: Compression blocks
+  camera_and_composition: Blocky edges
+  atmosphere_and_mood: Funny, trashy
+  rendering_and_quality: Low quality, internet
   key_features: 8x8 blocks
   creative_brief: >-
-    Apply JPEG degradation to the input: block artifacts, ringing halos,
-    chroma-subsampling mush, macroblock banding, and lossy edge damage should
-    make any subject feel compressed until failure becomes style.
+    Apply JPEG degradation to the input: block artifacts, ringing halos, chroma-subsampling mush, macroblock
+    banding, and lossy edge damage should make any subject feel compressed until failure becomes style.
 avoidRules:
   - png
   - lossless

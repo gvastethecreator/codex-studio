@@ -12,20 +12,27 @@ tags:
   - anime-battle-and-worlds
   - dark-fantasy-and-seinen
 visualDna:
-  aesthetic: Rose-black decadence, baroque gothic machinery, moonlit aristocratic stillness, predatory romance, elegant ruin pressure, ornamental darkness in motion
-  form_and_line: Dense mature-anime linework, heavy crosshatching, weighted contour variation, gritty ink density
-  color_palette: Muted earths, blood reds, cold moonlit tones, desaturated horror palette, bruised shadow hues
-  lighting_setup: Ominous directional shadows, single-source drama light, deep chiaroscuro, low-key shadow lift
-  material_texture: Baroque filigree grain, moonlit enamel, rose-dark velvet, corroded ornament, polished black lacquer, dusty metallic trim
-  render_quality: Gritty dramatic anime frame, film-noir rendering, heavy shadow compression, textured midtone grit
-  spatial_distortion: Ornamental frame compression, moonlit silhouette elongation, aristocratic spacing, rose-black diagonal drift, decayed grandeur scale
-  atmosphere: Elegant, predatory, moonlit, decadent
-  key_features: Rose-black ornament, aristocratic silhouette pressure, moonlit enamel, baroque frame detail, decadent gothic machinery
-  creative_brief: >
-    Give any prompt a decadent rose-black baroque treatment: ornamental frames,
-    moonlit lacquer, predatory elegance, and ruined luxury should define the
-    image without fixed architecture, roles, transport forms, lore taxonomy, or
-    pursuit structure.
+  aesthetic: >-
+    Rose-black decadence, baroque gothic machinery, moonlit aristocratic stillness, predatory romance, elegant
+    ruin pressure, ornamental darkness in motion
+  subject_treatment: Dense mature-anime linework, heavy crosshatching, weighted contour variation, gritty ink density
+  color_and_tone: Muted earths, blood reds, cold moonlit tones, desaturated horror palette, bruised shadow hues
+  lighting_and_shadow: Ominous directional shadows, single-source drama light, deep chiaroscuro, low-key shadow lift
+  texture_and_material: >-
+    Baroque filigree grain, moonlit enamel, rose-dark velvet, corroded ornament, polished black lacquer, dusty
+    metallic trim
+  camera_and_composition: >-
+    Ornamental frame compression, moonlit silhouette elongation, aristocratic spacing, rose-black diagonal
+    drift, decayed grandeur scale
+  atmosphere_and_mood: Elegant, predatory, moonlit, decadent
+  rendering_and_quality: Gritty dramatic anime frame, film-noir rendering, heavy shadow compression, textured midtone grit
+  key_features: >-
+    Rose-black ornament, aristocratic silhouette pressure, moonlit enamel, baroque frame detail, decadent
+    gothic machinery
+  creative_brief: >-
+    Give any prompt a decadent rose-black baroque treatment: ornamental frames, moonlit lacquer, predatory
+    elegance, and ruined luxury should define the image without fixed architecture, roles, transport forms,
+    lore taxonomy, or pursuit structure.
 avoidRules:
   - realistic
   - 3d render
@@ -42,7 +49,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-265.webp
 attributes:
-  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
+  negativePrompt: >-
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts,
+    watermark, text, signature
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds

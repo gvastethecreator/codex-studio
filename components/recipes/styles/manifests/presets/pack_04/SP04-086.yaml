@@ -13,18 +13,18 @@ tags:
   - concept-art
 visualDna:
   aesthetic: Technical callout sheet for production handoff
-  form_and_line: Uniform orthographic linework with strict weight hierarchy
-  color_palette: Neutral monochrome base with limited annotation accent colors
-  lighting_setup: Flat functional illumination for uncompromised shape legibility
-  material_texture: Diagrammatic hatching, section fills, and exploded-part separators
-  render_quality: High-clarity specification drawing with low interpretive ambiguity
-  spatial_distortion: Pure orthographic alignment plus controlled exploded/cutaway views
-  atmosphere: Clinical, exact, instruction-driven
+  subject_treatment: Uniform orthographic linework with strict weight hierarchy
+  color_and_tone: Neutral monochrome base with limited annotation accent colors
+  lighting_and_shadow: Flat functional illumination for uncompromised shape legibility
+  texture_and_material: Diagrammatic hatching, section fills, and exploded-part separators
+  camera_and_composition: Pure orthographic alignment plus controlled exploded/cutaway views
+  atmosphere_and_mood: Clinical, exact, instruction-driven
+  rendering_and_quality: High-clarity specification drawing with low interpretive ambiguity
   key_features: Multi-view orthos, dimension strings, labeled leaders, scale references
   creative_brief: >-
-    Apply callout-detail sheet design to any input: orthographic fragments, exploded layers, cutaway windows, magnified
-    inserts, measurement-like ticks, and technical line hierarchy. Keep labels optional/graphic only; do not require
-    readable dimensions, machinery, weapons, vehicles, or a literal product schematic.
+    Apply callout-detail sheet design to any input: orthographic fragments, exploded layers, cutaway windows,
+    magnified inserts, measurement-like ticks, and technical line hierarchy. Keep labels optional/graphic
+    only; do not require readable dimensions, machinery, weapons, vehicles, or a literal product schematic.
 avoidRules:
   - single view
   - one angle

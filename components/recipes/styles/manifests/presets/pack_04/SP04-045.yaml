@@ -13,35 +13,26 @@ tags:
   - editorial-and-poster
 visualDna:
   aesthetic: >-
-    Limited-ink screenprint gig-poster style with loud typographic presence, tactile print
-    imperfection, and venue-energy graphic impact
-  form_and_line: >-
+    Limited-ink screenprint gig-poster style with loud typographic presence, tactile print imperfection, and
+    venue-energy graphic impact
+  subject_treatment: >-
     Thick ink contours with hand-pulled edge variance, halftone transitions, and letterform-dominant
     compositional structure
-  color_palette: >-
-    Three-spot high-contrast palette with deliberate overprint interactions and poster-impact chroma
-    economy
-  lighting_setup: >-
-    Halftone-value illusion and flat print lighting logic prioritizing tonal punch over realistic
-    illumination
-  material_texture: >-
-    Fibrous poster stock with squeegee drag traces, ink density fluctuation, and worn-edge distress
-    artifacts
-  render_quality: >-
+  color_and_tone: Three-spot high-contrast palette with deliberate overprint interactions and poster-impact chroma economy
+  lighting_and_shadow: Halftone-value illusion and flat print lighting logic prioritizing tonal punch over realistic illumination
+  texture_and_material: Fibrous poster stock with squeegee drag traces, ink density fluctuation, and worn-edge distress artifacts
+  camera_and_composition: Distressed print deformation with slight misregistration and compositionally intentional grit accents
+  atmosphere_and_mood: Loud, raw, energetic, gritty, live
+  rendering_and_quality: >-
     Handmade print-shop fidelity emphasizing process evidence, tactile ink layering, and immediate
     event-readability
-  spatial_distortion: >-
-    Distressed print deformation with slight misregistration and compositionally intentional grit
-    accents
-  atmosphere: Loud, raw, energetic, gritty, live
   key_features: >-
     Overprint zone behavior, registration offset cues, distressed border treatment, headline-weight
     typographic lockups
   creative_brief: >-
-    Apply screenprint gig-poster grammar to any input: limited spot colors, overprint logic,
-    distressed borders, squeegee drag, headline-weight shapes, and tactile registration drift should
-    create live-event energy without requiring bands, venues, instruments, readable typography, or
-    posters.
+    Apply screenprint gig-poster grammar to any input: limited spot colors, overprint logic, distressed
+    borders, squeegee drag, headline-weight shapes, and tactile registration drift should create live-event
+    energy without requiring bands, venues, instruments, readable typography, or posters.
 avoidRules:
   - digital gradient
 assets:

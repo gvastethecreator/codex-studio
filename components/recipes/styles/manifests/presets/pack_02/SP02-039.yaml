@@ -13,19 +13,18 @@ tags:
   - animation-styles
 visualDna:
   aesthetic: 50s minimalism
-  form_and_line: Graphic
-  color_palette: Offset blocks, teal, mustard, brick red, charcoal, cream
-  lighting_setup: None, flat graphic, negative space contrast
-  material_texture: Paper, matte, poster-print, graphic-design surface
-  render_quality: Design, flat, modernist composition, elegant simplicity
-  spatial_distortion: Abstract shapes, geometric reduction, angular stylization
-  atmosphere: Jazz, modern, mid-century optimism, cool intellectual
+  subject_treatment: Graphic
+  color_and_tone: Offset blocks, teal, mustard, brick red, charcoal, cream
+  lighting_and_shadow: Flat graphic, negative space contrast
+  texture_and_material: Paper, matte, poster-print, graphic-design surface
+  camera_and_composition: Abstract shapes, geometric reduction, angular stylization
+  atmosphere_and_mood: Jazz, modern, mid-century optimism, cool intellectual
+  rendering_and_quality: Design, flat, modernist composition, elegant simplicity
   key_features: Flatness, limited animation, graphic silhouette
   creative_brief: >-
-    Apply UPA mid-century reduction to any subject: flat geometric planes,
-    deliberate negative space, limited-animation silhouette logic, teal-mustard
-    poster color, matte paper texture, and clean modernist linework. Keep jazz-age
-    graphic wit without requiring characters, city offices, domestic settings, or
+    Apply UPA mid-century reduction to any subject: flat geometric planes, deliberate negative space,
+    limited-animation silhouette logic, teal-mustard poster color, matte paper texture, and clean modernist
+    linework. Keep jazz-age graphic wit without requiring characters, city offices, domestic settings, or
     literal retro props.
 avoidRules:
   - realistic

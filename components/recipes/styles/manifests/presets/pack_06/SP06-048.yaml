@@ -13,19 +13,18 @@ tags:
   - digital-art
 visualDna:
   aesthetic: Matte-painting extension style with seamless photobash integration and atmospheric scale logic
-  form_and_line: Invisible
-  color_palette: Cinematic, atmospheric
-  lighting_setup: Natural, consistent
-  material_texture: Photo textures
-  render_quality: Cinematic background/extension finish without requiring landscapes, skies, or architecture
-  spatial_distortion: None
-  atmosphere: Expansive, coherent, cinematic
+  subject_treatment: Invisible
+  color_and_tone: Cinematic, atmospheric
+  lighting_and_shadow: Natural, consistent
+  texture_and_material: Photo textures
+  camera_and_composition: 'Compose for Matte Painting Extension using its key spatial cues: Seamless blend.'
+  atmosphere_and_mood: Expansive, coherent, cinematic
+  rendering_and_quality: Cinematic background/extension finish without requiring landscapes, skies, or architecture
   key_features: Seamless blend
   creative_brief: >-
-    Apply matte-painting extension logic to any input: phototexture integration,
-    painted continuity, atmospheric depth, cinematic color matching, and seamless
-    scale expansion. Keep VFX-believable cohesion without requiring skies,
-    architecture, vistas, plate photography, or environment-only subjects.
+    Apply matte-painting extension logic to any input: phototexture integration, painted continuity,
+    atmospheric depth, cinematic color matching, and seamless scale expansion. Keep VFX-believable cohesion
+    without requiring skies, architecture, vistas, plate photography, or environment-only subjects.
 avoidRules:
   - photo
   - realistic
@@ -48,7 +47,10 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP06-048.webp
 attributes:
-  negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border, landscape requirement, architecture requirement, sky requirement
+  negativePrompt: >-
+    photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy,
+    watermark, text, signature, frame, border, landscape requirement, architecture requirement, sky
+    requirement
 taxonomy:
   packId: pack_06
   packName: Essential Art Styles

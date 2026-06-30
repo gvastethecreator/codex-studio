@@ -13,28 +13,25 @@ tags:
   - megastructure-and-impossible-space
 visualDna:
   aesthetic: Impossible-perspective spatial paradox, mathematical optical ambiguity, and impossible circulation.
-  form_and_line: >-
-    Interlocked loops, reversible arches, isometric meshes, and floor-wall-ceiling
-    permutation through closed circulation paths.
-  color_palette: >-
-    Monochrome gray spectrum, warm print-paper cream, deep ink black linework, subtle sepia
-    undertones, and cool shadow modulation bands
-  lighting_setup: >-
-    Even print-like exposure with deliberately conflicting shadows and moderate contrast
-    that keeps the illusion legible.
-  material_texture: Lithographic paper grain, engraved ink hatching, and flat matte abstract-stone treatment.
-  render_quality: >-
-    High-precision optical illusion, strict geometric coherence, and destabilizing
-    but readable topology.
-  spatial_distortion: Multi-gravity inversion loops and perspective-locked paradox compression across connected planes
-  atmosphere: Cerebral, elegant, and disorienting, with unresolved infinity.
+  subject_treatment: >-
+    Interlocked loops, reversible arches, isometric meshes, and floor-wall-ceiling permutation through closed
+    circulation paths.
+  color_and_tone: >-
+    Monochrome gray spectrum, warm print-paper cream, deep ink black linework, subtle sepia undertones, and
+    cool shadow modulation bands
+  lighting_and_shadow: >-
+    Even print-like exposure with deliberately conflicting shadows and moderate contrast that keeps the
+    illusion legible.
+  texture_and_material: Lithographic paper grain, engraved ink hatching, and flat matte abstract-stone treatment.
+  camera_and_composition: Multi-gravity inversion loops and perspective-locked paradox compression across connected planes
+  atmosphere_and_mood: Cerebral, elegant, and disorienting, with unresolved infinity.
+  rendering_and_quality: High-precision optical illusion, strict geometric coherence, and destabilizing but readable topology.
   key_features: >-
-    Multi-gravity circuits, impossible arch transitions, perspective-locked loops, and
-    lithographic line hierarchy.
+    Multi-gravity circuits, impossible arch transitions, perspective-locked loops, and lithographic line
+    hierarchy.
   creative_brief: >-
-    Use impossible architecture as transferable style: contradictory gravity, closed loops,
-    floor-wall-ceiling transitions, and disciplined lithographic linework. Aim for readable
-    paradox, not one specific staircase.
+    Use impossible architecture as transferable style: contradictory gravity, closed loops, floor-wall-ceiling
+    transitions, and disciplined lithographic linework. Aim for readable paradox, not one specific staircase.
 avoidRules:
   - logical physics
 assets:

@@ -12,16 +12,36 @@ tags:
   - essential-art-styles
   - retro-game-visual-systems
 visualDna:
-  aesthetic: Terminal-based roguelike art, ASCII/ANSI abstraction, CP437 code-page characters, Dwarf Fortress and NetHack as symbolic-display anchors, ancient BBS door-game art, text-mode worldbuilding where glyphs replace literal drawing
-  form_and_line: Fixed-width character grid, monospace font construction, glyph-symbol representation, ASCII-art contour building, character-cell precision
-  color_palette: 16-color ANSI palette, DOS-blue or black terminal background, bright role-coded glyphs, yellow value marks, green hash fields, cyan tilde fields
-  lighting_setup: No lighting, pure symbolic display, color-coding for object type, ANSI-color depth cue, terminal-background ambient
-  material_texture: Monospace pixel-glyph grid, terminal-phosphor glow, text-mode character aliasing, CRT-character bleed bloom, scanline text overlay
-  render_quality: Text-mode game display, ANSI-art dungeon, terminal-gaming aesthetic, code-page visual language, pure-symbolic rendering
-  spatial_distortion: Character-grid field, ASCII-symbol perspective, text-cell depth layering, fixed-width tile space, terminal-window framing
-  atmosphere: Arcane, scholarly, pure imagination, text-as-world, programmer-mystic, deep-systems reverence
-  key_features: ASCII/ANSI character representation, fixed-width grid, 16-color terminal palette, glyph-symbolic abstraction, code-page 437 characters
-  creative_brief: 'The image assembles from 256 glyphs on a 16-color grid. Any prompt becomes a symbolic terminal artifact, where letters, blocks and punctuation stand in for mass, texture and depth while imagination supplies missing pixels.'
+  aesthetic: >-
+    Terminal-based roguelike art, ASCII/ANSI abstraction, CP437 code-page characters, Dwarf Fortress and
+    NetHack as symbolic-display anchors, ancient BBS door-game art, text-mode worldbuilding where glyphs
+    replace literal drawing
+  subject_treatment: >-
+    Fixed-width character grid, monospace font construction, glyph-symbol representation, ASCII-art contour
+    building, character-cell precision
+  color_and_tone: >-
+    16-color ANSI palette, DOS-blue or black terminal background, bright role-coded glyphs, yellow value
+    marks, green hash fields, cyan tilde fields
+  lighting_and_shadow: >-
+    No lighting, pure symbolic display, color-coding for object type, ANSI-color depth cue,
+    terminal-background ambient
+  texture_and_material: >-
+    Monospace pixel-glyph grid, terminal-phosphor glow, text-mode character aliasing, CRT-character bleed
+    bloom, scanline text overlay
+  camera_and_composition: >-
+    Character-grid field, ASCII-symbol perspective, text-cell depth layering, fixed-width tile space,
+    terminal-window framing
+  atmosphere_and_mood: Arcane, scholarly, pure imagination, text-as-world, programmer-mystic, deep-systems reverence
+  rendering_and_quality: >-
+    Text-mode game display, ANSI-art dungeon, terminal-gaming aesthetic, code-page visual language,
+    pure-symbolic rendering
+  key_features: >-
+    ASCII/ANSI character representation, fixed-width grid, 16-color terminal palette, glyph-symbolic
+    abstraction, code-page 437 characters
+  creative_brief: >-
+    The image assembles from 256 glyphs on a 16-color grid. Any prompt becomes a symbolic terminal artifact,
+    where letters, blocks and punctuation stand in for mass, texture and depth while imagination supplies
+    missing pixels.
 avoidRules:
   - graphical
   - realistic

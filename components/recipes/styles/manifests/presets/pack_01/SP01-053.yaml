@@ -13,19 +13,20 @@ tags:
   - nature-and-wildlife
 visualDna:
   aesthetic: Patient telephoto field realism
-  form_and_line: Telephoto compression
-  color_palette: Natural muted field color
-  lighting_setup: Golden hour
-  material_texture: Fine natural surface detail
-  render_quality: Nat Geo field sharpness
-  spatial_distortion: None
-  atmosphere: Patient, observant
+  subject_treatment: Telephoto compression
+  color_and_tone: Natural muted field color
+  lighting_and_shadow: Golden hour
+  texture_and_material: Fine natural surface detail
+  camera_and_composition: >-
+    Camera setup native to Wildlife Photography: lens choice, crop distance, depth of field, and focal
+    hierarchy support 6. Nature And Wildlife without generic framing.
+  atmosphere_and_mood: Patient, observant
+  rendering_and_quality: Nat Geo field sharpness
   key_features: Blurred background
   creative_brief: >-
-    Wildlife photography becomes patient telephoto grammar: compressed distance,
-    soft background, golden field light, natural camouflage color, and fine
-    surface detail. Apply an observant, nonintrusive field-photo look to any
-    subject without forcing animals, forest, fur, feathers, or nature setting.
+    Wildlife photography becomes patient telephoto grammar: compressed distance, soft background, golden field
+    light, natural camouflage color, and fine surface detail. Apply an observant, nonintrusive field-photo
+    look to any subject without forcing animals, forest, fur, feathers, or nature setting.
 avoidRules:
   - zoo
   - cage

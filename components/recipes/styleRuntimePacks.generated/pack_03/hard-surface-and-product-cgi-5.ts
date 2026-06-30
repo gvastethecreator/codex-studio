@@ -10,12 +10,14 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'organic, smooth',
     style: {
       aesthetic: 'Complex mechanical detail',
-      form_and_line: 'Greebles',
-      color_palette: 'Grey, metal, industrial wear',
-      lighting_setup: 'AO dirt, rim-detail',
-      material_texture: 'Mechanical parts, greeble density',
-      render_quality: 'Concept art, detailed, blockbuster sci-fi',
-      atmosphere: 'Industrial, complex, constructed chaos',
+      subject_treatment: 'Greebles',
+      color_and_tone: 'Grey, metal, industrial wear',
+      lighting_and_shadow: 'AO dirt, rim-detail',
+      texture_and_material: 'Mechanical parts, greeble density',
+      camera_and_composition:
+        'Lookdev camera for Kitbash: three-quarter or orthographic framing, clean silhouette read, material highlights, controlled depth, and vertical card composition.',
+      atmosphere_and_mood: 'Industrial, complex, constructed chaos',
+      rendering_and_quality: 'Concept art, detailed, blockbuster sci-fi',
       key_features: 'Dense detail, mechanical storytelling',
       creative_brief:
         'Densify the input with kitbash logic: greebles, panel seams, rivets, worn industrial metal and ambient-occlusion pockets that imply functional assembly. It can hint at starship/mecha engineering when suitable, but must not force a vehicle hull, battle staging, or specific sci-fi set. Apply Kitbash as a portable 3D/render style system over any input: preserve its renderer logic, material behavior, geometry language, lighting grammar, and production cues while avoiding a required character, vehicle, prop, environment, UI screen, product shot, or scene template.',
@@ -28,13 +30,14 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'high poly, unoptimized',
     style: {
       aesthetic: 'Game-asset PBR optimization',
-      form_and_line: 'Normal map details',
-      color_palette: 'Albedo map',
-      lighting_setup: 'Marmoset asset viewer lighting, turntable glory',
-      material_texture: 'Roughness/Metalness, PBR surfacing',
-      render_quality: 'Game ready, portfolio turntable',
-      spatial_distortion: 'None',
-      atmosphere: 'Functional, clean, asset-showcase',
+      subject_treatment: 'Normal map details',
+      color_and_tone: 'Albedo map',
+      lighting_and_shadow: 'Marmoset asset viewer lighting, turntable glory',
+      texture_and_material: 'Roughness/Metalness, PBR surfacing',
+      camera_and_composition:
+        'Lookdev camera for Game Asset (PBR): three-quarter or orthographic framing, clean silhouette read, material highlights, controlled depth, and vertical card composition.',
+      atmosphere_and_mood: 'Functional, clean, asset-showcase',
+      rendering_and_quality: 'Game ready, portfolio turntable',
       key_features: 'Asset-ready PBR, normal map detail',
       creative_brief:
         'Make the input engine-ready with PBR discipline: clean albedo/roughness/ metallic/normal behavior, readable edge wear and performance-minded material hierarchy. If it is a prop or asset, make it level-editor credible; otherwise apply game-asset clarity without forcing a prop. Apply Game Asset as a portable 3D/render style system over any input: preserve its renderer logic, material behavior, geometry language, lighting grammar, and production cues while avoiding a required character, vehicle, prop, environment, UI screen, product shot, or scene template.',
@@ -47,12 +50,14 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'messy, lived in',
     style: {
       aesthetic: 'Architectural visualization render system',
-      form_and_line: 'Straight verticals',
-      color_palette: 'Beige, White, Wood, natural-material tones',
-      lighting_setup: 'Sunlight, window-daylight simulation',
-      material_texture: 'Realistic materials, lived-in warmth',
-      render_quality: 'Real estate brochure, lifestyle luxury',
-      atmosphere: 'Aspirational, clean, designer-curated',
+      subject_treatment: 'Straight verticals',
+      color_and_tone: 'Beige, White, Wood, natural-material tones',
+      lighting_and_shadow: 'Sunlight, window-daylight simulation',
+      texture_and_material: 'Realistic materials, lived-in warmth',
+      camera_and_composition:
+        'Lookdev camera for Architectural Visualization: three-quarter or orthographic framing, clean silhouette read, material highlights, controlled depth, and vertical card composition.',
+      atmosphere_and_mood: 'Aspirational, clean, designer-curated',
+      rendering_and_quality: 'Real estate brochure, lifestyle luxury',
       key_features: 'Straight verticals, daylight material truth',
       creative_brief:
         'Give the input ArchViz discipline: straight verticals, daylight simulation, calibrated natural materials, clean brochure contrast and designer-curated warmth. If architecture or interiors exist, clarify them; otherwise apply architectural lighting logic without forcing a house, furniture layout, lifestyle props, or real-estate setup. Apply Architectural Visualization as a portable 3D/render style system over any input: preserve its renderer logic, material behavior, geometry language, lighting grammar, and production cues while avoiding a required character, vehicle, prop, environment, UI screen, product shot, or scene template.',
@@ -65,13 +70,14 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'dust, scratches',
     style: {
       aesthetic: 'Premium product-render discipline',
-      form_and_line: 'Sleek curves',
-      color_palette: 'Brand colors',
-      lighting_setup: 'Studio reflection',
-      material_texture: 'Matte plastic, aluminum, premium finish',
-      render_quality: 'Apple flagship product launch, minimalist perfection',
-      spatial_distortion: 'None',
-      atmosphere: 'Desirable, expensive, luxury reveal',
+      subject_treatment: 'Sleek curves',
+      color_and_tone: 'Brand colors',
+      lighting_and_shadow: 'Studio reflection',
+      texture_and_material: 'Matte plastic, aluminum, premium finish',
+      camera_and_composition:
+        'Lookdev camera for Product Render: three-quarter or orthographic framing, clean silhouette read, material highlights, controlled depth, and vertical card composition.',
+      atmosphere_and_mood: 'Desirable, expensive, luxury reveal',
+      rendering_and_quality: 'Apple flagship product launch, minimalist perfection',
       key_features: 'Controlled reflections, premium reveal',
       creative_brief:
         'Treat the input with flagship product-render polish: minimal context, controlled reflection sweeps, premium material transitions, clean silhouette hierarchy and launch-keynote desire. Do not require consumer electronics, a floating object, wallet cue or infinite white void. Apply Product Render as a portable 3D/render style system over any input: preserve its renderer logic, material behavior, geometry language, lighting grammar, and production cues while avoiding a required character, vehicle, prop, environment, UI screen, product shot, or scene template.',
@@ -84,12 +90,14 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'dirty, dented',
     style: {
       aesthetic: 'Automotive launch-film finish',
-      form_and_line: 'Aerodynamic lines',
-      color_palette: 'Metallic paint, color-shift finish',
-      lighting_setup: 'Studio sweep, highlight-catch reflections',
-      material_texture: 'Metallic paint, rubber/glass cues when relevant',
-      render_quality: 'High end, pristine, launch-film quality',
-      atmosphere: 'Fast, luxury, aerodynamic desire',
+      subject_treatment: 'Aerodynamic lines',
+      color_and_tone: 'Metallic paint, color-shift finish',
+      lighting_and_shadow: 'Studio sweep, highlight-catch reflections',
+      texture_and_material: 'Metallic paint, rubber/glass cues when relevant',
+      camera_and_composition:
+        'Lookdev camera for Automotive Render: three-quarter or orthographic framing, clean silhouette read, material highlights, controlled depth, and vertical card composition.',
+      atmosphere_and_mood: 'Fast, luxury, aerodynamic desire',
+      rendering_and_quality: 'High end, pristine, launch-film quality',
       key_features: 'Reflection lines, body-contour flow',
       creative_brief:
         'Apply automotive launch-film rendering to the input: long reflection sweeps, color-shifting metallic finish, aerodynamic highlight flow and pristine material separation. If a vehicle is present, enhance grille/tail/rubber/ glass truth; otherwise use automotive surface language without forcing a car.',
@@ -102,12 +110,14 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'dull, plastic',
     style: {
       aesthetic: 'Diamond ring macro',
-      form_and_line: 'Facets',
-      color_palette: 'Sparkle, Gold, Silver, gemstone fire',
-      lighting_setup: 'Caustics, dispersion, brilliant-cut',
-      material_texture: 'Metal polish, carat-level clarity',
-      render_quality: 'Luxury, expensive, high-jewelry showcase',
-      atmosphere: 'Elegant, rich, bridal-prestige',
+      subject_treatment: 'Facets',
+      color_and_tone: 'Sparkle, Gold, Silver, gemstone fire',
+      lighting_and_shadow: 'Caustics, dispersion, brilliant-cut',
+      texture_and_material: 'Metal polish, carat-level clarity',
+      camera_and_composition:
+        'Lookdev camera for Jewelry Render: three-quarter or orthographic framing, clean silhouette read, material highlights, controlled depth, and vertical card composition.',
+      atmosphere_and_mood: 'Elegant, rich, bridal-prestige',
+      rendering_and_quality: 'Luxury, expensive, high-jewelry showcase',
       key_features: 'Sparkle, facet-fire dispersion',
       creative_brief:
         'Render any input with jewelry-bench macro polish: prismatic facet fire, carat-level clarity, gold or platinum specular control, tiny inclusion detail, shallow macro depth, and premium caustic sparkle. Keep bridal-luxury precision without requiring rings, gemstones, boxes, hands, or proposal staging.',
@@ -120,12 +130,14 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'organic, soft',
     style: {
       aesthetic: 'Hard-surface mecha engineering',
-      form_and_line: 'Bevels, panel lines',
-      color_palette: 'Gunmetal, painted metal, military-grade',
-      lighting_setup: 'Rim light, mechanical edge-pop',
-      material_texture: 'Scratched metal, machined wear',
-      render_quality: 'Mech-design precision, machined credibility',
-      atmosphere: 'Industrial, tactical, engineered grit',
+      subject_treatment: 'Bevels, panel lines',
+      color_and_tone: 'Gunmetal, painted metal, military-grade',
+      lighting_and_shadow: 'Rim light, mechanical edge-pop',
+      texture_and_material: 'Scratched metal, machined wear',
+      camera_and_composition:
+        'Lookdev camera for Hard Surface Modeling: three-quarter or orthographic framing, clean silhouette read, material highlights, controlled depth, and vertical card composition.',
+      atmosphere_and_mood: 'Industrial, tactical, engineered grit',
+      rendering_and_quality: 'Mech-design precision, machined credibility',
       key_features: 'Functional parts, panel-line definition',
       creative_brief:
         'Give the input hard-surface/mecha discipline: bevel hierarchy, panel-line logic, service seams, machined wear and believable component density. If a character or object exists, it may mechanize toward mecha; avoid forcing weapons, combat, or military staging. Apply Hard Surface Modeling as a portable 3D/render style system over any input: preserve its renderer logic, material behavior, geometry language, lighting grammar, and production cues while avoiding a required character, vehicle, prop, environment, UI screen, product shot, or scene template.',
@@ -138,12 +150,14 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'assembled, solid',
     style: {
       aesthetic: 'Parts floating apart',
-      form_and_line: 'Assembly lines',
-      color_palette: 'Technical, assembly-color coding',
-      lighting_setup: 'Flat, diagram clarity',
-      material_texture: 'Internal parts, cross-section surfaces',
-      render_quality: 'Engineering, diagram, instructional',
-      atmosphere: 'Technical, complex, assembly logic',
+      subject_treatment: 'Assembly lines',
+      color_and_tone: 'Technical, assembly-color coding',
+      lighting_and_shadow: 'Flat, diagram clarity',
+      texture_and_material: 'Internal parts, cross-section surfaces',
+      camera_and_composition:
+        'Lookdev camera for Exploded View: three-quarter or orthographic framing, clean silhouette read, material highlights, controlled depth, and vertical card composition.',
+      atmosphere_and_mood: 'Technical, complex, assembly logic',
+      rendering_and_quality: 'Engineering, diagram, instructional',
       key_features: 'Alignment, explosion direction',
       creative_brief:
         'Split the input into exploded-view logic: invisible assembly axes, precise spacing, subsystem color coding and cross-section surfaces that explain structure. If there are parts, separate them; otherwise infer component layers without forcing screws, housings or a manufactured product. Apply Exploded View as a portable 3D/render style system over any input: preserve its renderer logic, material behavior, geometry language, lighting grammar, and production cues while avoiding a required character, vehicle, prop, environment, UI screen, product shot, or scene template.',
@@ -156,13 +170,13 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'flesh only',
     style: {
       aesthetic: 'Tech merged with body',
-      form_and_line: 'Integration lines',
-      color_palette: 'Chrome, LED',
-      lighting_setup: 'Sci-fi',
-      material_texture: 'Metal/Skin transition, bio-mech fusion',
-      render_quality: 'Deus Ex transhuman sci-fi, augmented identity',
-      spatial_distortion: 'Prosthetic',
-      atmosphere: 'Futuristic, body horror, identity tension',
+      subject_treatment: 'Integration lines',
+      color_and_tone: 'Chrome, LED',
+      lighting_and_shadow: 'Sci-fi',
+      texture_and_material: 'Metal/Skin transition, bio-mech fusion',
+      camera_and_composition: 'Prosthetic',
+      atmosphere_and_mood: 'Futuristic, body horror, identity tension',
+      rendering_and_quality: 'Deus Ex transhuman sci-fi, augmented identity',
       key_features: 'Seamless blend, implant integration',
       creative_brief:
         'Apply cybernetic integration to the input: chrome/organic seams, LED status glows, prosthetic geometry and bio-mech fusion lines. If a body or character exists, augment it; otherwise embed transhuman interface cues into the subject without forcing flesh, portrait framing or body horror.',
@@ -176,18 +190,20 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         "Glassmorphism UI within 5. Hard Surface And Product CGI: a reusable 3D & CGI Rendering visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Glassmorphism UI's specific style identity.",
-      form_and_line:
+      subject_treatment:
         'Define Glassmorphism UI through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
-      color_palette:
+      color_and_tone:
         'Use a Glassmorphism UI-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
-      lighting_setup:
+      lighting_and_shadow:
         'Use lighting that makes Glassmorphism UI recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
-      material_texture:
+      texture_and_material:
         'Use materials and textures that reinforce Glassmorphism UI: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
-      render_quality:
-        'Render Glassmorphism UI with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
-      atmosphere:
+      camera_and_composition:
+        'Lookdev camera for Glassmorphism UI: three-quarter or orthographic framing, clean silhouette read, material highlights, controlled depth, and vertical card composition.',
+      atmosphere_and_mood:
         'Set a mood that belongs to Glassmorphism UI: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+      rendering_and_quality:
+        'Render Glassmorphism UI with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       key_features:
         "Prioritize Glassmorphism UI's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
@@ -201,12 +217,14 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'flat, print',
     style: {
       aesthetic: 'Glowing glass tubes',
-      form_and_line: 'Tube shape',
-      color_palette: 'Neon Red/Blue, electric glow',
-      lighting_setup: 'Glow, wall reflection, ambient spill',
-      material_texture: 'Glass, metal supports, tube fittings',
-      render_quality: 'Nightlife, sign, urban-branding',
-      atmosphere: 'Urban, cool, nighttime energy',
+      subject_treatment: 'Tube shape',
+      color_and_tone: 'Neon Red/Blue, electric glow',
+      lighting_and_shadow: 'Glow, wall reflection, ambient spill',
+      texture_and_material: 'Glass, metal supports, tube fittings',
+      camera_and_composition:
+        'Lookdev camera for Neon Sign 3D: three-quarter or orthographic framing, clean silhouette read, material highlights, controlled depth, and vertical card composition.',
+      atmosphere_and_mood: 'Urban, cool, nighttime energy',
+      rendering_and_quality: 'Nightlife, sign, urban-branding',
       key_features: 'Tube connections, gas-glow realism',
       creative_brief:
         'Rebuild the input in neon-tube construction: bent glass, gas glow, transformer fittings, colored bloom and emissive spill. It may feel like signage or nightlife, but must not require brick walls, bars, text or an urban setting. Apply Neon Sign 3D as a portable 3D/render style system over any input: preserve its renderer logic, material behavior, geometry language, lighting grammar, and production cues while avoiding a required character, vehicle, prop, environment, UI screen, product shot, or scene template.',

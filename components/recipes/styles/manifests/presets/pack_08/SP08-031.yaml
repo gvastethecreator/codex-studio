@@ -13,18 +13,20 @@ tags:
   - historical-and-fantasy
 visualDna:
   aesthetic: Jazz-age eveningwear, speakeasy decadence, Art Deco nocturne splendor
-  form_and_line: Straight silhouette, dropped-waist column, scalloped hem, fringe-cascade movement, T-strap elongation
-  color_palette: Gold, Black, Silver, champagne, oyster, Art Deco jade, peacock, plum
-  lighting_setup: Chandelier sparkle, feathered edge glow, champagne-bubble ambience, soft smoky gleam
-  material_texture: Beaded fringe, sequined net, silk charmeuse, ostrich-feather trim, Art Deco crystal, velvet ribbon
-  render_quality: Vintage eveningwear polish, speakeasy glamour, Deco-era elegance
-  spatial_distortion: None
-  atmosphere: Retro, champagne-fizz excitement, dance-marathon energy, illicit-night thrill
+  subject_treatment: Straight silhouette, dropped-waist column, scalloped hem, fringe-cascade movement, T-strap elongation
+  color_and_tone: Gold, Black, Silver, champagne, oyster, Art Deco jade, peacock, plum
+  lighting_and_shadow: Chandelier sparkle, feathered edge glow, champagne-bubble ambience, soft smoky gleam
+  texture_and_material: Beaded fringe, sequined net, silk charmeuse, ostrich-feather trim, Art Deco crystal, velvet ribbon
+  camera_and_composition: >-
+    Compose for Roaring 20s (Flapper) using its key spatial cues: Cloche cues, feather headband logic, T-strap
+    elongation, bead-fringe rhythm, Deco crystal accents.
+  atmosphere_and_mood: Retro, champagne-fizz excitement, dance-marathon energy, illicit-night thrill
+  rendering_and_quality: Vintage eveningwear polish, speakeasy glamour, Deco-era elegance
   key_features: Cloche cues, feather headband logic, T-strap elongation, bead-fringe rhythm, Deco crystal accents
   creative_brief: >-
-    Give the input flapper-era glamour: dropped waists, beaded fringe, scalloped hems, sequined net, cloche cues,
-    ostrich trim and Art Deco champagne-black geometry. Keep speakeasy thrill and jazz-age exuberance as surface energy
-    only, not as a party, dancer, cigarette-holder prop, portrait body or Gatsby-ball scene.
+    Give the input flapper-era glamour: dropped waists, beaded fringe, scalloped hems, sequined net, cloche
+    cues, ostrich trim and Art Deco champagne-black geometry. Keep speakeasy thrill and jazz-age exuberance as
+    surface energy only, not as a party, dancer, cigarette-holder prop, portrait body or Gatsby-ball scene.
 avoidRules:
   - long dress
   - modern

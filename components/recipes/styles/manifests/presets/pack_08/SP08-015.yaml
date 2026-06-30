@@ -13,20 +13,21 @@ tags:
   - fantasy-sci-fi-costume
 visualDna:
   aesthetic: Convention-grade costume craft, stylized transformation energy, handmade fabrication spectacle
-  form_and_line: Exaggerated contour blocking, modular trim logic, foam-armor segmentation, accessory-scale geometry
-  color_palette: Bright synthetic colors, candy-neon saturation, cell-shaded contrast, vibrant cel hues
-  lighting_setup: Controlled craft lighting, colored gel accents, fabrication highlights and theatrical rim
-  material_texture: Heat-resistant wig fiber, EVA foam armor with Worbla overlay, thermoplastic detailing, holographic spandex
-  render_quality: Detailed, playful, craftsmanship-forward, competition-grade finish
-  spatial_distortion: None
-  atmosphere: Playful, fabricated, convention-floor pride, handmade spectacle
+  subject_treatment: Exaggerated contour blocking, modular trim logic, foam-armor segmentation, accessory-scale geometry
+  color_and_tone: Bright synthetic colors, candy-neon saturation, cell-shaded contrast, vibrant cel hues
+  lighting_and_shadow: Controlled craft lighting, colored gel accents, fabrication highlights and theatrical rim
+  texture_and_material: Heat-resistant wig fiber, EVA foam armor with Worbla overlay, thermoplastic detailing, holographic spandex
+  camera_and_composition: >-
+    Compose for Convention Craft Costume using its key spatial cues: Styled fiber sheen, foam seam lines,
+    thermoplastic edgework, modular accessory detailing.
+  atmosphere_and_mood: Playful, fabricated, convention-floor pride, handmade spectacle
+  rendering_and_quality: Detailed, playful, craftsmanship-forward, competition-grade finish
   key_features: Styled fiber sheen, foam seam lines, thermoplastic edgework, modular accessory detailing
   creative_brief: >-
-    Translate the input into polished cosplay craft language: styled synthetic
-    fiber, EVA and Worbla seam logic, thermoplastic edgework, holographic
-    stretch surfaces and exaggerated convention-build clarity. Keep transformation
-    as fabrication energy, not as a named character, replica
-    pose, portrait body or convention-hall scene.
+    Translate the input into polished cosplay craft language: styled synthetic fiber, EVA and Worbla seam
+    logic, thermoplastic edgework, holographic stretch surfaces and exaggerated convention-build clarity. Keep
+    transformation as fabrication energy, not as a named character, replica pose, portrait body or
+    convention-hall scene.
 avoidRules:
   - licensed-character replica
   - low-effort costume
@@ -34,7 +35,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP08-015.webp
 attributes:
-  negativePrompt: licensed-character replica, low-effort costume, flat convention snapshot, named character, franchise cues, logos
+  negativePrompt: >-
+    licensed-character replica, low-effort costume, flat convention snapshot, named character, franchise cues,
+    logos
 taxonomy:
   packId: pack_08
   packName: Fashion & Costume

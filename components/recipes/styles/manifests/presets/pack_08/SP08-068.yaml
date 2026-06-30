@@ -13,19 +13,20 @@ tags:
   - fabric-and-texture-focus
 visualDna:
   aesthetic: Smoke-borne couture, evanescent form poetry, vapor-sculpture impossibility
-  form_and_line: Swirling plumes, tendril curls, dissolving edges, columnar lift, volume-without-surface logic
-  color_palette: Grey, White, charcoal-wisp, pearl-haze, silver-smoke, blue-grey, ethereal-mist
-  lighting_setup: Volumetric, god-ray penetration, smoke-halo backlight, theatrical-haze ambiance, laser-shaft definition
-  material_texture: Gas, particulate-suspension wisp, layered-veil translucency, turbulent-curl, still-stratum band, wisp-edge diffusion
-  render_quality: Ethereal, impossible, volumetric-light poetry, ghost-presence majesty
-  spatial_distortion: Dissolving
-  atmosphere: Ghostly, diffused, melancholic, incense-like, phantasmic
+  subject_treatment: Swirling plumes, tendril curls, dissolving edges, columnar lift, volume-without-surface logic
+  color_and_tone: Grey, White, charcoal-wisp, pearl-haze, silver-smoke, blue-grey, ethereal-mist
+  lighting_and_shadow: Volumetric, god-ray penetration, smoke-halo backlight, theatrical-haze ambiance, laser-shaft definition
+  texture_and_material: >-
+    Gas, particulate-suspension wisp, layered-veil translucency, turbulent-curl, still-stratum band, wisp-edge
+    diffusion
+  camera_and_composition: Dissolving
+  atmosphere_and_mood: Ghostly, diffused, melancholic, incense-like, phantasmic
+  rendering_and_quality: Ethereal, impossible, volumetric-light poetry, ghost-presence majesty
   key_features: No edges, wisp boundary, volume-without-surface, light-through-form, tendril dissolution
   creative_brief: >-
-    Turn the input into smoke-borne materiality: particulate wisps, billowing
-    plumes, dissolving edges, volumetric shafts and layers of grey-white vapor.
-    Keep ghostly couture as atmospheric behavior only; do not require a body,
-    figure, hemline, ritual, stage or laser-show scene.
+    Turn the input into smoke-borne materiality: particulate wisps, billowing plumes, dissolving edges,
+    volumetric shafts and layers of grey-white vapor. Keep ghostly couture as atmospheric behavior only; do
+    not require a body, figure, hemline, ritual, stage or laser-show scene.
 avoidRules:
   - solid
 assets:

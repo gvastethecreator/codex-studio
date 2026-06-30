@@ -12,16 +12,38 @@ tags:
   - essential-art-styles
   - retro-game-visual-systems
 visualDna:
-  aesthetic: Commodore-Amiga-DeluxePaint aesthetic, HAM-6 Hold-And-Modify mode 4096 colors, copper-list rainbow gradients, 80s-computer-art software, Defender of the Crown, Shadow of the Beast and Warhol Amiga as color anchors, video-toaster-workstation soul
-  form_and_line: Fat-Amiga-pixels, HAM-fringing-artifacts, copper-list-gradient-banding, 320x256-or-320x512-interlaced-workbench, 16-color-sprite-over-4096-background
-  color_palette: 4096-color HAM mode, rainbow copper-list gradients, jewel golds, deep steel greys, Amiga Workbench blue, video-toaster spectrum, HAM-fringing magenta-cyan edges
-  lighting_setup: Copper-list-gradient-as-sky-lighting, HAM-palette-gradient-shading, 16-color-sprite-lighting on 4096-backgrounds, no-real-time-light-but-beautiful-gradients
-  material_texture: HAM-fringing-edge-artifacts, copper-list-gradient-band-texture, DeluxePaint-brush-patterns, Amiga-hold-and-modify-color-bleed, NTSC-PAL-artifact-texture
-  render_quality: Amiga-DeluxePaint aesthetic, HAM-mode-beauty, 80s-computer-art software rendering, copper-list-rainbow, 4096-color-1985-miracle
-  spatial_distortion: 320x256 overscan resolution, HAM-fringing edge pixels, copper-list vertical-gradient spatial logic, workbench-window framing, PAL-interlace spatial texture
-  atmosphere: 80s-computer-art revolution, video-production dream, demo-scene energy, Amiga-workbench creativity, copper-list programming art
-  key_features: HAM6-Hold-And-Modify-fringing, copper-list-rainbow-gradients, 4096-color-mode, DeluxePaint-brush-patterns, Amiga-Workbench-blue, 320x256-resolution, video-toaster-aesthetic
-  creative_brief: Hold-and-Modify mode makes any prompt shimmer through borrowed neighbor colors. Copper-list gradients, HAM fringing and DeluxePaint brush logic turn the image into 80s workstation art where color abundance still shows its machine trick.
+  aesthetic: >-
+    Commodore-Amiga-DeluxePaint aesthetic, HAM-6 Hold-And-Modify mode 4096 colors, copper-list rainbow
+    gradients, 80s-computer-art software, Defender of the Crown, Shadow of the Beast and Warhol Amiga as color
+    anchors, video-toaster-workstation soul
+  subject_treatment: >-
+    Fat-Amiga-pixels, HAM-fringing-artifacts, copper-list-gradient-banding,
+    320x256-or-320x512-interlaced-workbench, 16-color-sprite-over-4096-background
+  color_and_tone: >-
+    4096-color HAM mode, rainbow copper-list gradients, jewel golds, deep steel greys, Amiga Workbench blue,
+    video-toaster spectrum, HAM-fringing magenta-cyan edges
+  lighting_and_shadow: >-
+    Copper-list-gradient-as-sky-lighting, HAM-palette-gradient-shading, 16-color-sprite-lighting on
+    4096-backgrounds, no-real-time-light-but-beautiful-gradients
+  texture_and_material: >-
+    HAM-fringing-edge-artifacts, copper-list-gradient-band-texture, DeluxePaint-brush-patterns,
+    Amiga-hold-and-modify-color-bleed, NTSC-PAL-artifact-texture
+  camera_and_composition: >-
+    320x256 overscan resolution, HAM-fringing edge pixels, copper-list vertical-gradient spatial logic,
+    workbench-window framing, PAL-interlace spatial texture
+  atmosphere_and_mood: >-
+    80s-computer-art revolution, video-production dream, demo-scene energy, Amiga-workbench creativity,
+    copper-list programming art
+  rendering_and_quality: >-
+    Amiga-DeluxePaint aesthetic, HAM-mode-beauty, 80s-computer-art software rendering, copper-list-rainbow,
+    4096-color-1985-miracle
+  key_features: >-
+    HAM6-Hold-And-Modify-fringing, copper-list-rainbow-gradients, 4096-color-mode, DeluxePaint-brush-patterns,
+    Amiga-Workbench-blue, 320x256-resolution, video-toaster-aesthetic
+  creative_brief: >-
+    Hold-and-Modify mode makes any prompt shimmer through borrowed neighbor colors. Copper-list gradients, HAM
+    fringing and DeluxePaint brush logic turn the image into 80s workstation art where color abundance still
+    shows its machine trick.
 avoidRules:
   - limited palette
   - modern

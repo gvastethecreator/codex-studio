@@ -13,19 +13,21 @@ tags:
   - materials
 visualDna:
   aesthetic: Light focusing through glass/water
-  form_and_line: Bright patterns
-  color_palette: Prismatic, light-concentration bands
-  lighting_setup: Focused intensity, photon convergence
-  material_texture: Light patterns, refractive surfaces
-  render_quality: Physically correct, optical precision
-  atmosphere: Ethereal, complex, underwater magic
+  subject_treatment: Bright patterns
+  color_and_tone: Prismatic, light-concentration bands
+  lighting_and_shadow: Focused intensity, photon convergence
+  texture_and_material: Light patterns, refractive surfaces
+  camera_and_composition: >-
+    Lookdev camera for Caustics: close three-quarter or macro material framing, strong highlight planes,
+    readable surface curvature, and controlled depth.
+  atmosphere_and_mood: Ethereal, complex, underwater magic
+  rendering_and_quality: Physically correct, optical precision
   key_features: Light dancing, photon mapping
   creative_brief: >-
-    Apply caustic light behavior to any input: concentrated photon webs,
-    prismatic separation, refractive patterning, bright surface pools, and
-    optical precision from water or crystal-like bending. Keep the caustic effect
-    as lighting grammar without requiring underwater content, glass props, pools,
-    or a specific refractive object.
+    Apply caustic light behavior to any input: concentrated photon webs, prismatic separation, refractive
+    patterning, bright surface pools, and optical precision from water or crystal-like bending. Keep the
+    caustic effect as lighting grammar without requiring underwater content, glass props, pools, or a specific
+    refractive object.
 avoidRules:
   - diffuse
   - matte

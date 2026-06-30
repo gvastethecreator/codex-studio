@@ -13,18 +13,18 @@ tags:
   - editorial-and-poster
 visualDna:
   aesthetic: Bauhaus poster modernism with function-first geometry
-  form_and_line: Grid-governed composition using circles, squares, triangles, and bars
-  color_palette: Primary triad with black/white neutral anchors
-  lighting_setup: Flat functional value treatment, no decorative shading
-  material_texture: Matte print-surface simplicity
-  render_quality: Precise typographic-layout discipline and asymmetrical balance
-  spatial_distortion: Diagonal type and geometric tension as compositional drivers
-  atmosphere: Rational, didactic, constructive
+  subject_treatment: Grid-governed composition using circles, squares, triangles, and bars
+  color_and_tone: Primary triad with black/white neutral anchors
+  lighting_and_shadow: Flat functional value treatment, no decorative shading
+  texture_and_material: Matte print-surface simplicity
+  camera_and_composition: Diagonal type and geometric tension as compositional drivers
+  atmosphere_and_mood: Rational, didactic, constructive
+  rendering_and_quality: Precise typographic-layout discipline and asymmetrical balance
   key_features: Modular grid, primary blocks, asymmetric equilibrium, typographic integration
   creative_brief: >-
-    Apply Bauhaus poster economy to any input: grid-governed primitives, primary blocks, asymmetric
-    balance, diagonal typographic tension, and matte functional clarity should make purpose visible
-    without requiring school posters, readable type, furniture, buildings, or one message.
+    Apply Bauhaus poster economy to any input: grid-governed primitives, primary blocks, asymmetric balance,
+    diagonal typographic tension, and matte functional clarity should make purpose visible without requiring
+    school posters, readable type, furniture, buildings, or one message.
 avoidRules:
   - decorative
   - floral

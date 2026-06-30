@@ -11,19 +11,19 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Rapid concept-speedpainting style focused on ideation clarity, mood-first block-in, and exploratory visual decision-making',
-      form_and_line:
+      subject_treatment:
         'Gestural brush massing with minimal contour commitment, directional stroke flow, and value-shape-first structure',
-      color_palette:
+      color_and_tone:
         'Mood-driven tonal clusters with controlled atmospheric bleed and broad hue families for fast read hierarchy',
-      lighting_setup:
+      lighting_and_shadow:
         'Ambient atmospheric lighting established through large value masses and early-stage contrast anchors',
-      material_texture:
+      texture_and_material:
         'Visible digital brush grain with layered opacity passes, rough-edge blending, and process-forward stroke evidence',
-      render_quality:
-        'Loose concept-stage rendering emphasizing composition testing, readable silhouettes, and iterative velocity over polish',
-      spatial_distortion:
+      camera_and_composition:
         'Intentionally unresolved edge zones with simplified depth grouping and suggestive form abstraction',
-      atmosphere: 'Energetic, exploratory, rough, expressive, iterative',
+      atmosphere_and_mood: 'Energetic, exploratory, rough, expressive, iterative',
+      rendering_and_quality:
+        'Loose concept-stage rendering emphasizing composition testing, readable silhouettes, and iterative velocity over polish',
       key_features:
         'Value-block workflow, gestural stroke hierarchy, composition-first framing, selective detail suppression',
       creative_brief:
@@ -37,13 +37,15 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'cartoon, sketch',
     style: {
       aesthetic: 'Movie background',
-      form_and_line: 'None',
-      color_palette: 'Photorealistic, natural-world spectrum, cinematic grade',
-      lighting_setup: 'Cinematic, God-light rays, atmospheric perspective',
-      material_texture: 'Photo bash',
-      render_quality: 'Epic, detailed, world-building scale, invisible compositing',
-      spatial_distortion: 'None',
-      atmosphere: 'Vast, invisible, suspension-of-disbelief, epic silence',
+      subject_treatment:
+        "Treat subjects through Matte Painting's signature cues: Horizon line, depth layering, atmospheric haze.",
+      color_and_tone: 'Photorealistic, natural-world spectrum, cinematic grade',
+      lighting_and_shadow: 'Cinematic, God-light rays, atmospheric perspective',
+      texture_and_material: 'Photo bash',
+      camera_and_composition:
+        'Compose for Matte Painting using its key spatial cues: Horizon line, depth layering, atmospheric haze.',
+      atmosphere_and_mood: 'Vast, invisible, suspension-of-disbelief, epic silence',
+      rendering_and_quality: 'Epic, detailed, world-building scale, invisible compositing',
       key_features: 'Horizon line, depth layering, atmospheric haze',
       creative_brief:
         'Apply cinematic matte-painting grammar to any input: atmospheric depth, horizon layering, photobash seams, god-ray structure, haze scale, and invisible-composite realism should make world weight carry emotion without requiring mountains, landscapes, backgrounds, castles, skies, or vast scenery.',
@@ -57,15 +59,15 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Production character-turnaround style focused on design legibility, neutral presentation, and pipeline handoff clarity',
-      form_and_line:
+      subject_treatment:
         'Clean contour hierarchy with construction-line discipline, silhouette consistency, and annotation-friendly edge clarity',
-      color_palette: 'Flat + Occlusion, neutral reference palette, material IDs',
-      lighting_setup: 'Neutral, studio-reference, shadow-accurate fidelity',
-      material_texture: 'Material callouts',
-      render_quality: 'Production ready, pipeline clarity, handoff precision',
-      spatial_distortion:
-        'Neutral stance standardization with proportion-locked turnaround consistency across orthographic views',
-      atmosphere: 'Neutral, design, professional review, iterative feedback',
+      color_and_tone: 'Flat + Occlusion, neutral reference palette, material IDs',
+      lighting_and_shadow: 'Neutral, studio-reference, shadow-accurate fidelity',
+      texture_and_material: 'Material callouts',
+      camera_and_composition:
+        'Neutral stance consistency with proportion-locked turnaround consistency across orthographic views',
+      atmosphere_and_mood: 'Neutral, design, professional review, iterative feedback',
+      rendering_and_quality: 'Production ready, pipeline clarity, handoff precision',
       key_features: 'Scale, turnaround views, callout annotations',
       creative_brief:
         'Apply character-turnaround sheet grammar to any input: proportion locking, neutral lighting, orthographic consistency, material callouts, annotation-ready edges, and scale discipline should support design handoff without requiring humanoid characters, T-poses, expression sheets, labels, or fixed sheet layouts.',
@@ -79,14 +81,15 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Environment concept-development style with mood-led worldbuilding, navigable composition logic, and place-first visual storytelling',
-      form_and_line:
+      subject_treatment:
         'Perspective-grid anchored block design with readable silhouette layering and path-guided spatial rhythm',
-      color_palette: 'Atmospheric, mood-grade spectrum, location-feel depth',
-      lighting_setup: 'Key light, dramatic spotlight, environmental storytelling',
-      material_texture: 'Painted',
-      render_quality: 'Immersive, vast, sense-of-place conviction, environmental narrative',
-      spatial_distortion: 'None',
-      atmosphere: 'Adventure, place, exploration wonder, threshold excitement',
+      color_and_tone: 'Atmospheric, mood-grade spectrum, location-feel depth',
+      lighting_and_shadow: 'Key light, dramatic spotlight, environmental storytelling',
+      texture_and_material: 'Painted',
+      camera_and_composition:
+        'Compose for Environment Concept using its key spatial cues: Scale figure, perspective grid, environmental storytelling.',
+      atmosphere_and_mood: 'Adventure, place, exploration wonder, threshold excitement',
+      rendering_and_quality: 'Immersive, vast, sense-of-place conviction, environmental narrative',
       key_features: 'Scale figure, perspective grid, environmental storytelling',
       creative_brief:
         'Apply environment-concept grammar to any input: atmospheric depth, scale cues, path-guided composition, readable silhouette layering, and mood-led worldbuilding should create place-feel without requiring landscapes, ruins, level design, tiny figures, architecture, or one narrative location.',
@@ -100,15 +103,16 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Futurist vehicle concept style balancing industrial plausibility with aspirational speed-form language',
-      form_and_line:
+      subject_treatment:
         'Technical line discipline with aerodynamic panel segmentation, functional contour logic, and engineering-forward silhouette design',
-      color_palette: 'Industrial, gunmetal primaries, functional-finish spectrum',
-      lighting_setup: 'Studio, product-shot key, technical highlight',
-      material_texture: 'Metal, dirt',
-      render_quality:
+      color_and_tone: 'Industrial, gunmetal primaries, functional-finish spectrum',
+      lighting_and_shadow: 'Studio, product-shot key, technical highlight',
+      texture_and_material: 'Metal, dirt',
+      camera_and_composition:
+        'Compose for Vehicle Design using its key spatial cues: Perspective, technical form-language, callout detail.',
+      atmosphere_and_mood: 'Fast, tech, prototype adrenaline, engineering cool',
+      rendering_and_quality:
         'High-fidelity industrial concept rendering emphasizing material separation, manufacturable form language, and mobility-focused intent',
-      spatial_distortion: 'None',
-      atmosphere: 'Fast, tech, prototype adrenaline, engineering cool',
       key_features: 'Perspective, technical form-language, callout detail',
       creative_brief:
         'Apply vehicle-design concept grammar to any input: aerodynamic surface logic, functional panel hierarchy, studio highlight control, material separation, and engineering-forward silhouette should create mobility intent without requiring cars, spacecraft, wheels, cockpits, callouts, or a specific sci-fi model.',
@@ -122,15 +126,15 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Creature-concept development style driven by ecological plausibility, adaptive morphology, and silhouette threat readability',
-      form_and_line:
+      subject_treatment:
         'Anatomical construction logic with biomechanical cue layering, functional limb articulation, and predator-profile contour control',
-      color_palette: 'Skin tones, organic chromatics, creature-flesh spectrum',
-      lighting_setup: 'Rim light, silhouette reveal, ambient dread',
-      material_texture: 'Scales, fur',
-      render_quality: 'Scary, biological, anatomical conviction, apex-predator presence',
-      spatial_distortion:
+      color_and_tone: 'Skin tones, organic chromatics, creature-flesh spectrum',
+      lighting_and_shadow: 'Rim light, silhouette reveal, ambient dread',
+      texture_and_material: 'Scales, fur',
+      camera_and_composition:
         'Speculative anatomy distortions guided by functional adaptation, not random mutation, with balanced asymmetry control',
-      atmosphere: 'Dangerous, alive, predatory stillness, ecological tension',
+      atmosphere_and_mood: 'Dangerous, alive, predatory stillness, ecological tension',
+      rendering_and_quality: 'Scary, biological, anatomical conviction, apex-predator presence',
       key_features: 'Silhouette, anatomical breakdown, adaptive feature',
       creative_brief:
         'Apply creature-design grammar to any input: adaptive morphology, habitat-driven features, anatomical construction, predator-profile silhouette, and biological material logic should create living threat without requiring monsters, beasts, claws, fangs, horror scenes, or one creature vignette.',
@@ -144,19 +148,19 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Isometric systems-art style with modular worldbuilding clarity, playful simulation readability, and toy-scale urban abstraction',
-      form_and_line:
+      subject_treatment:
         'Clean vector-pixel hybrid contours, grid-disciplined shape language, and module-first construction logic',
-      color_palette:
+      color_and_tone:
         'Bright ordered saturation with zone-based hue grouping, clear functional contrast, and tile-friendly color separation',
-      lighting_setup:
+      lighting_and_shadow:
         'Consistent directional isometric lighting with uniform shadow logic and readability-first highlight placement',
-      material_texture:
+      texture_and_material:
         'Tile-ready clean surfaces with subtle pattern repetition cues and low-noise asset cohesion',
-      render_quality:
-        'Production-grade simulation asset finish emphasizing legibility at scale, modular coherence, and system clarity',
-      spatial_distortion:
+      camera_and_composition:
         'Isometric orthographic logic with fixed-angle depth mapping and no perspective convergence',
-      atmosphere: 'Ordered, playful, clean, constructive, serene',
+      atmosphere_and_mood: 'Ordered, playful, clean, constructive, serene',
+      rendering_and_quality:
+        'Production-grade simulation asset finish emphasizing legibility at scale, modular coherence, and system clarity',
       key_features:
         'Isometric angle discipline, modular tile-grid composition, systems readability hierarchy, toy-scale abstraction',
       creative_brief:
@@ -171,14 +175,14 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Storyboard previsualization style prioritizing shot communication, camera intent, and narrative beat sequencing',
-      form_and_line:
+      subject_treatment:
         'Loose pencil-marker shorthand with fast gesture notation, camera-arrow semantics, and frame-priority readability',
-      color_palette: 'Greyscale + Arrows, monochrome clarity, directional red accent',
-      lighting_setup: 'Value study, light-plan sweep, shot-design intent',
-      material_texture: 'Paper',
-      render_quality: 'Cinematic flow, directorial shorthand, shot-language clarity',
-      spatial_distortion: 'Motion blur lines',
-      atmosphere: 'Action, plan, pre-vis intensity, production hustle',
+      color_and_tone: 'Greyscale + Arrows, monochrome clarity, directional red accent',
+      lighting_and_shadow: 'Value study, light-plan sweep, shot-design intent',
+      texture_and_material: 'Paper',
+      camera_and_composition: 'Motion blur lines',
+      atmosphere_and_mood: 'Action, plan, pre-vis intensity, production hustle',
+      rendering_and_quality: 'Cinematic flow, directorial shorthand, shot-language clarity',
       key_features: 'Frame border, camera arrows, shot description',
       creative_brief:
         'Apply storyboard previsualization grammar to any input: framing boxes, motion arrows, value-priority blocking, camera shorthand, and shot-intent marks should communicate direction without requiring action sequences, panels of characters, captions, film scenes, or one concrete beat.',
@@ -192,14 +196,15 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Prop-design presentation style with isolated artifact focus, material storytelling, and game-ready readability',
-      form_and_line:
+      subject_treatment:
         'Clean technical-art contouring with form-break accents, silhouette-first readability, and callout-friendly structure',
-      color_palette: 'Material render, PBR-reference, asset-library spectrum',
-      lighting_setup: 'Studio, product-isolation light, neutral-pedestal',
-      material_texture: 'Wear and tear',
-      render_quality: 'RPG item, detailed, asset-sheet polish, loot-table charm',
-      spatial_distortion: 'None',
-      atmosphere: 'Valuable, useful, item-card significance, inventory worth',
+      color_and_tone: 'Material render, PBR-reference, asset-library spectrum',
+      lighting_and_shadow: 'Studio, product-isolation light, neutral-pedestal',
+      texture_and_material: 'Wear and tear',
+      camera_and_composition:
+        'Compose for Prop Design using its key spatial cues: Isolated, orthographic view, material breakdown.',
+      atmosphere_and_mood: 'Valuable, useful, item-card significance, inventory worth',
+      rendering_and_quality: 'RPG item, detailed, asset-sheet polish, loot-table charm',
       key_features: 'Isolated, orthographic view, material breakdown',
       creative_brief:
         'Apply prop-design presentation grammar to any input: isolated silhouette, material-history cues, orthographic clarity, callout-friendly edges, and utility-read composition should create asset significance without requiring RPG items, weapons, inventory cards, labels, or fixed lore.',
@@ -213,14 +218,15 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Narrative keyframe concept style centered on emotional turning-point composition and cinematic visual impact',
-      form_and_line:
+      subject_treatment:
         'Shape-led cinematic blocking with selective edge control, focal hierarchy, and frame-rhythm precision',
-      color_palette: 'Color graded, cinematic LUT, emotional-tone timing',
-      lighting_setup: 'Cinematic, framed intent, motivated light source',
-      material_texture: 'Painted',
-      render_quality: 'Movie still, emotional, screen-grab gravity, story-beat resonance',
-      spatial_distortion: 'None',
-      atmosphere: 'Story beat, narrative tension, turning-point weight',
+      color_and_tone: 'Color graded, cinematic LUT, emotional-tone timing',
+      lighting_and_shadow: 'Cinematic, framed intent, motivated light source',
+      texture_and_material: 'Painted',
+      camera_and_composition:
+        'Compose for Keyframe Art using its key spatial cues: 16:9 ratio, letterbox framing, cinematic composition.',
+      atmosphere_and_mood: 'Story beat, narrative tension, turning-point weight',
+      rendering_and_quality: 'Movie still, emotional, screen-grab gravity, story-beat resonance',
       key_features: '16:9 ratio, letterbox framing, cinematic composition',
       creative_brief:
         'Apply narrative keyframe grammar to any input: story-pivot composition, cinematic focal control, motivated light, color-temperature emotion mapping, and letterbox pressure should create turning-point weight without requiring characters, plot scenes, battles, dialogue, or a specific beat.',
@@ -234,15 +240,15 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Photobash concept style using multi-source realism synthesis with fast iteration and art-direction cohesion',
-      form_and_line:
+      subject_treatment:
         'Hybrid photo-paint seam management with compositional masking, perspective harmonization, and silhouette cleanup passes',
-      color_palette: 'Unified grading, photobash-comped, multi-source harmony',
-      lighting_setup: 'Realistic, ambient-match, multi-photo consistency',
-      material_texture: 'Photo',
-      render_quality: 'Realistic, fast, iterative pitching, concept-development speed',
-      spatial_distortion:
+      color_and_tone: 'Unified grading, photobash-comped, multi-source harmony',
+      lighting_and_shadow: 'Realistic, ambient-match, multi-photo consistency',
+      texture_and_material: 'Photo',
+      camera_and_composition:
         'Controlled source-scale mismatches intentionally corrected through grading, edge treatment, and depth harmonization',
-      atmosphere: 'Realism, concept, speculative design, art-department urgency',
+      atmosphere_and_mood: 'Realism, concept, speculative design, art-department urgency',
+      rendering_and_quality: 'Realistic, fast, iterative pitching, concept-development speed',
       key_features: 'Texture clash, photo-fragment seam, value-unify grading',
       creative_brief:
         'Apply photobash concept grammar to any input: multi-source texture assembly, perspective harmonization, seam-disguise compositing, unified grading, and silhouette cleanup should create art-direction realism without requiring environments, sci-fi concepts, vehicles, ruins, or one scene.',
@@ -256,14 +262,14 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Blueprint schematic style with engineering communication clarity, drafting-era precision, and specification-forward layout discipline',
-      form_and_line:
+      subject_treatment:
         'White technical line hierarchy with orthographic rigor, dimension-callout logic, and exploded-view readability',
-      color_palette: 'Blue background, white-line cyan, blueprint nostalgia',
-      lighting_setup: 'None, diagrammatic, machine-drawing clarity',
-      material_texture: 'Grid paper',
-      render_quality: 'Engineering, precise, shop-floor accuracy, technical authority',
-      spatial_distortion: 'Exploded view',
-      atmosphere: 'Smart, plan, drafting-table focus, patent-office gravity',
+      color_and_tone: 'Blue background, white-line cyan, blueprint nostalgia',
+      lighting_and_shadow: 'Diagrammatic machine-drawing clarity with no simulated lighting',
+      texture_and_material: 'Grid paper',
+      camera_and_composition: 'Exploded view',
+      atmosphere_and_mood: 'Smart, plan, drafting-table focus, patent-office gravity',
+      rendering_and_quality: 'Engineering, precise, shop-floor accuracy, technical authority',
       key_features: 'Measurements, dimension lines, grid sub-base',
       creative_brief:
         'Apply blueprint schematic grammar to any input: orthographic projection, measurement hierarchy, exploded-view logic, grid sub-base, and white technical linework should create drafting authority without requiring machines, labels, title blocks, patents, vehicles, or readable dimensions.',
@@ -277,15 +283,15 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Early low-poly 3D concept style defined by geometric economy, hardware-era constraints, and nostalgic polygonal abstraction',
-      form_and_line:
+      subject_treatment:
         'Triangle-dominant faceting with minimal smoothing, hard-edge silhouette readability, and UV-era shape simplification',
-      color_palette: 'Flat shading, vertex-colored, low-spec palette',
-      lighting_setup: 'Vertex light, gouraud shading, no real-time lighting',
-      material_texture: 'Pixelated',
-      render_quality:
+      color_and_tone: 'Flat shading, vertex-colored, low-spec palette',
+      lighting_and_shadow: 'Vertex light, gouraud shading, no real-time lighting',
+      texture_and_material: 'Pixelated',
+      camera_and_composition: 'Blocky',
+      atmosphere_and_mood: 'Nostalgic, simple, CD-ROM childhood, fifth-gen warmth',
+      rendering_and_quality:
         'Retro first-gen 3D rendering fidelity emphasizing constrained geometry, affine-era texture behavior, and deliberate technical limitation aesthetics',
-      spatial_distortion: 'Blocky',
-      atmosphere: 'Nostalgic, simple, CD-ROM childhood, fifth-gen warmth',
       key_features: 'Polygons, unfiltered textures, affine warping',
       creative_brief:
         'Apply low-poly constraint grammar to any input: faceted geometry, hard-edge silhouettes, vertex-color ramps, affine texture cues, and fixed-function shading simplicity should create early-3D warmth without requiring games, consoles, characters, terrain, or specific polygon scenes.',
@@ -299,14 +305,15 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Diegetic HUD interface style with tactical readability, layered data hierarchy, and immersive screen-space integration',
-      form_and_line:
+      subject_treatment:
         'Thin vector line discipline with modular widget framing, reticle geometry, and precision micro-typographic structure',
-      color_palette: 'Neon Cyan/Orange, sci-fi HUD spectrum, AR-overlay contrast',
-      lighting_setup: 'Glow, emissive interface, screen-space radiance',
-      material_texture: 'Screen',
-      render_quality: 'Futuristic, functional, diegetic elegance, heads-up immersion',
-      spatial_distortion: 'None',
-      atmosphere: 'Tech, info, augmented awareness, mission-ops focus',
+      color_and_tone: 'Neon Cyan/Orange, sci-fi HUD spectrum, AR-overlay contrast',
+      lighting_and_shadow: 'Glow, emissive interface, screen-space radiance',
+      texture_and_material: 'Screen',
+      camera_and_composition:
+        'Compose for UI/HUD Design using its key spatial cues: Floating, thin rule-lines, data readout.',
+      atmosphere_and_mood: 'Tech, info, augmented awareness, mission-ops focus',
+      rendering_and_quality: 'Futuristic, functional, diegetic elegance, heads-up immersion',
       key_features: 'Floating, thin rule-lines, data readout',
       creative_brief:
         'Apply diegetic HUD interface grammar to any input: translucent data layers, reticle geometry, modular widgets, emissive cyan-orange hierarchy, and screen-space vector precision should add augmented awareness without requiring missions, weapons, helmets, screens, maps, or readable UI text.',
@@ -320,14 +327,15 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Weapon concept-sheet style with functional lethality readability, industrial precision, and controlled silhouette authority',
-      form_and_line:
+      subject_treatment:
         'Mechanical contour logic with component segmentation, ergonomic line flow, and side-profile specification clarity',
-      color_palette: 'Gunmetal, tactical finish, weapon-grade metals',
-      lighting_setup: 'Rim light, barrel gleam, tactical edge highlight',
-      material_texture: 'Scratched metal',
-      render_quality: 'FPS game, lethal, armory-model rigor, weapon-fan detail',
-      spatial_distortion: 'None',
-      atmosphere: 'Dangerous, heavy, trigger discipline, combat-readiness',
+      color_and_tone: 'Gunmetal, tactical finish, weapon-grade metals',
+      lighting_and_shadow: 'Rim light, barrel gleam, tactical edge highlight',
+      texture_and_material: 'Scratched metal',
+      camera_and_composition:
+        'Compose for Weapon Design using its key spatial cues: Side view, mechanical detail, magazine/guard.',
+      atmosphere_and_mood: 'Dangerous, heavy, trigger discipline, combat-readiness',
+      rendering_and_quality: 'FPS game, lethal, armory-model rigor, weapon-fan detail',
       key_features: 'Side view, mechanical detail, magazine/guard',
       creative_brief:
         'Apply weapon-design concept grammar to any input: component hierarchy, side-profile clarity, industrial material wear, ergonomic line flow, and tactical edge highlights should create controlled silhouette authority without requiring guns, blades, armories, combat, magazines, or battle stories.',
@@ -342,13 +350,13 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Value-thumbnail silhouette ideation focused on shape readability and rapid production-design iteration',
-      form_and_line: 'Bold filled contours with minimal or no internal linework',
-      color_palette: 'Strict 3-value grayscale (black, mid gray, white)',
-      lighting_setup: 'Light logic expressed only through value grouping and rim separation',
-      material_texture: 'Matte digital block-fill with slight brush-edge variance',
-      render_quality: 'Deliberately rough ideation pass prioritizing quantity and clarity',
-      spatial_distortion: 'Controlled proportion and mass variation across comparative grid',
-      atmosphere: 'Exploratory, energetic, design-lab momentum',
+      subject_treatment: 'Bold filled contours with minimal or no internal linework',
+      color_and_tone: 'Strict 3-value grayscale (black, mid gray, white)',
+      lighting_and_shadow: 'Light logic expressed only through value grouping and rim separation',
+      texture_and_material: 'Matte digital block-fill with slight brush-edge variance',
+      camera_and_composition: 'Controlled proportion and mass variation across comparative grid',
+      atmosphere_and_mood: 'Exploratory, energetic, design-lab momentum',
+      rendering_and_quality: 'Deliberately rough ideation pass prioritizing quantity and clarity',
       key_features:
         'Multi-variant silhouette grid, negative-space testing, high read-at-a-glance contrast',
       creative_brief:
@@ -363,14 +371,14 @@ export const GENERATED_STYLE_PRESETS = [
       'clean, pure illustration, single medium, hand-painted only, smooth, finished, final, one-pass, unlayered',
     style: {
       aesthetic: 'Hybrid photobash-and-paintover concept rendering',
-      form_and_line: 'Cutout-based structural edges softened by targeted paint integration',
-      color_palette: 'Source-photo gamut unified by global grade and paint harmonization',
-      lighting_setup:
+      subject_treatment: 'Cutout-based structural edges softened by targeted paint integration',
+      color_and_tone: 'Source-photo gamut unified by global grade and paint harmonization',
+      lighting_and_shadow:
         'Mixed-source lighting normalized through paint corrections and value balancing',
-      material_texture: 'Photo-detail patches with visible brush unification passes',
-      render_quality: 'Fast mixed-media visualization with controlled seam management',
-      spatial_distortion: 'Perspective reconciliation of disparate source fragments',
-      atmosphere: 'Pragmatic, production-driven, high-iteration studio workflow',
+      texture_and_material: 'Photo-detail patches with visible brush unification passes',
+      camera_and_composition: 'Perspective reconciliation of disparate source fragments',
+      atmosphere_and_mood: 'Pragmatic, production-driven, high-iteration studio workflow',
+      rendering_and_quality: 'Fast mixed-media visualization with controlled seam management',
       key_features:
         'Composite seam blending, adjustment-grade cohesion, overpainted focal hierarchy',
       creative_brief:
@@ -386,13 +394,14 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Kinetic gesture sketch language with motion-first drawing priority and animation rough energy',
-      form_and_line: 'Long sweeping arcs, repeated search lines, pressure-led scribble massing',
-      color_palette: 'Monochrome drawing media on warm paper base',
-      lighting_setup: 'Value implied by stroke density rather than rendered light',
-      material_texture: 'Dry graphite/charcoal drag, smudge trails, tooth-sensitive mark breakup',
-      render_quality: 'Loose and energetic draft quality emphasizing movement over finish',
-      spatial_distortion: 'Dynamic foreshortening and action-curve exaggeration',
-      atmosphere: 'Urgent, alive, improvisational studio energy',
+      subject_treatment: 'Long sweeping arcs, repeated search lines, pressure-led scribble massing',
+      color_and_tone: 'Monochrome drawing media on warm paper base',
+      lighting_and_shadow: 'Value implied by stroke density rather than rendered light',
+      texture_and_material:
+        'Dry graphite/charcoal drag, smudge trails, tooth-sensitive mark breakup',
+      camera_and_composition: 'Dynamic foreshortening and action-curve exaggeration',
+      atmosphere_and_mood: 'Urgent, alive, improvisational studio energy',
+      rendering_and_quality: 'Loose and energetic draft quality emphasizing movement over finish',
       key_features:
         'Motion trails, layered search marks, anatomy-suggestive rather than anatomical detail',
       creative_brief:
@@ -407,14 +416,15 @@ export const GENERATED_STYLE_PRESETS = [
       'uniform, single material, untextured, flat, smooth, same everywhere, homogeneous, finished piece, single surface',
     style: {
       aesthetic: 'Material-study board integrating design sketch and comparative swatches',
-      form_and_line: 'Precise contour drawing with leader-line callouts and inset annotations',
-      color_palette: 'Material-true hues organized by functional group',
-      lighting_setup: 'Consistent neutral studio lighting for cross-material comparison',
-      material_texture: 'Macro texture insets (grain, weave, brushed metal, translucency, patina)',
-      render_quality: 'Technical-art hybrid sheet optimized for readability and handoff',
-      spatial_distortion:
+      subject_treatment: 'Precise contour drawing with leader-line callouts and inset annotations',
+      color_and_tone: 'Material-true hues organized by functional group',
+      lighting_and_shadow: 'Consistent neutral studio lighting for cross-material comparison',
+      texture_and_material:
+        'Macro texture insets (grain, weave, brushed metal, translucency, patina)',
+      camera_and_composition:
         'Orthogonal layout with magnified callout circles and structured grid spacing',
-      atmosphere: 'Analytical, didactic, workshop-reference clarity',
+      atmosphere_and_mood: 'Analytical, didactic, workshop-reference clarity',
+      rendering_and_quality: 'Technical-art hybrid sheet optimized for readability and handoff',
       key_features:
         'Swatch matrix, labeled material zones, detail zooms, controlled comparison framework',
       creative_brief:
@@ -429,15 +439,17 @@ export const GENERATED_STYLE_PRESETS = [
       'detailed linework, finished rendering, sharp focus, character close-up, subject-dominant, tight composition',
     style: {
       aesthetic: 'Color-script environmental painting driven by temporal light progression',
-      form_and_line: 'Soft mass blocking with low line dependency and edge hierarchy by depth',
-      color_palette:
+      subject_treatment: 'Soft mass blocking with low line dependency and edge hierarchy by depth',
+      color_and_tone:
         'Sequenced temperature arcs from cool dawn to warm noon to nocturnal desaturation',
-      lighting_setup: 'Volumetric scattering, shadow temperature contrast, time-of-day key shifts',
-      material_texture: 'Haze layers, particulate glow, diffuse cloud/fog transitions',
-      render_quality: 'Atmospheric study pass prioritizing mood continuity over detail finish',
-      spatial_distortion:
+      lighting_and_shadow:
+        'Volumetric scattering, shadow temperature contrast, time-of-day key shifts',
+      texture_and_material: 'Haze layers, particulate glow, diffuse cloud/fog transitions',
+      camera_and_composition:
         'Space defined through color recession and layered atmospheric perspective',
-      atmosphere: 'Cinematic, emotive, transitional, light-led storytelling',
+      atmosphere_and_mood: 'Cinematic, emotive, transitional, light-led storytelling',
+      rendering_and_quality:
+        'Atmospheric study pass prioritizing mood continuity over detail finish',
       key_features:
         'Multi-frame mood continuity, temperature mapping, depth via fog stratification',
       creative_brief:
@@ -452,13 +464,13 @@ export const GENERATED_STYLE_PRESETS = [
       'single view, one angle, no annotations, mystery, undefined, vague, ambiguous, unclear, unlabeled',
     style: {
       aesthetic: 'Technical callout sheet for production handoff',
-      form_and_line: 'Uniform orthographic linework with strict weight hierarchy',
-      color_palette: 'Neutral monochrome base with limited annotation accent colors',
-      lighting_setup: 'Flat functional illumination for uncompromised shape legibility',
-      material_texture: 'Diagrammatic hatching, section fills, and exploded-part separators',
-      render_quality: 'High-clarity specification drawing with low interpretive ambiguity',
-      spatial_distortion: 'Pure orthographic alignment plus controlled exploded/cutaway views',
-      atmosphere: 'Clinical, exact, instruction-driven',
+      subject_treatment: 'Uniform orthographic linework with strict weight hierarchy',
+      color_and_tone: 'Neutral monochrome base with limited annotation accent colors',
+      lighting_and_shadow: 'Flat functional illumination for uncompromised shape legibility',
+      texture_and_material: 'Diagrammatic hatching, section fills, and exploded-part separators',
+      camera_and_composition: 'Pure orthographic alignment plus controlled exploded/cutaway views',
+      atmosphere_and_mood: 'Clinical, exact, instruction-driven',
+      rendering_and_quality: 'High-clarity specification drawing with low interpretive ambiguity',
       key_features: 'Multi-view orthos, dimension strings, labeled leaders, scale references',
       creative_brief:
         'Apply callout-detail sheet design to any input: orthographic fragments, exploded layers, cutaway windows, magnified inserts, measurement-like ticks, and technical line hierarchy. Keep labels optional/graphic only; do not require readable dimensions, machinery, weapons, vehicles, or a literal product schematic.',
@@ -472,13 +484,13 @@ export const GENERATED_STYLE_PRESETS = [
       'detailed, rendered, colored, one design, final, finished, internal detail, texture, single silhouette',
     style: {
       aesthetic: 'Comparative silhouette iteration board for shape-language selection',
-      form_and_line: 'Filled contour-only forms with zero interior detail dependency',
-      color_palette: 'Binary black-white with optional neutral gray grouping aids',
-      lighting_setup: 'Non-rendered; readability entirely silhouette-based',
-      material_texture: 'Flat fill blocks with crisp edge control',
-      render_quality: 'Systematic early-stage design study emphasizing variation breadth',
-      spatial_distortion: 'Normalized scale grid enabling direct mass/proportion comparison',
-      atmosphere: 'Methodical, exploratory, selection-oriented',
+      subject_treatment: 'Filled contour-only forms with zero interior detail dependency',
+      color_and_tone: 'Binary black-white with optional neutral gray grouping aids',
+      lighting_and_shadow: 'Non-rendered; readability entirely silhouette-based',
+      texture_and_material: 'Flat fill blocks with crisp edge control',
+      camera_and_composition: 'Normalized scale grid enabling direct mass/proportion comparison',
+      atmosphere_and_mood: 'Methodical, exploratory, selection-oriented',
+      rendering_and_quality: 'Systematic early-stage design study emphasizing variation breadth',
       key_features:
         'High-contrast silhouette matrix, archetype spread (round/square/triangular/spiky), immediate read testing',
       creative_brief:
@@ -494,14 +506,14 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Rough environment blockout with macro-shape worldbuilding focus and painterly pre-production scale',
-      form_and_line: 'Broad brush masses, low-detail edge control, minimal explicit linework',
-      color_palette: 'Depth-driven warm/cool separation with fog-desaturated distance bands',
-      lighting_setup: 'Single clear key direction with volumetric atmosphere indication',
-      material_texture: 'Painterly large-stroke texture and soft haze transitions',
-      render_quality: 'Early environment pass prioritizing composition, scale, and mood',
-      spatial_distortion:
+      subject_treatment: 'Broad brush masses, low-detail edge control, minimal explicit linework',
+      color_and_tone: 'Depth-driven warm/cool separation with fog-desaturated distance bands',
+      lighting_and_shadow: 'Single clear key direction with volumetric atmosphere indication',
+      texture_and_material: 'Painterly large-stroke texture and soft haze transitions',
+      camera_and_composition:
         'Foreground exaggeration and atmospheric compression for depth readability',
-      atmosphere: 'Expansive, exploratory, pre-production wonder',
+      atmosphere_and_mood: 'Expansive, exploratory, pre-production wonder',
+      rendering_and_quality: 'Early environment pass prioritizing composition, scale, and mood',
       key_features:
         'Big-shape hierarchy, focal light anchor, layered recession planes, thumbnail legibility',
       creative_brief:
@@ -517,14 +529,14 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Speculative creature-design sheet with layered anatomical logic and believable biological imagination',
-      form_and_line: 'Construction underdrawings, skeletal overlays, muscular contour notes',
-      color_palette: 'Neutral sketch tones with limited functional overlay coding',
-      lighting_setup: 'Form-reading study light with selective translucency cues',
-      material_texture:
+      subject_treatment: 'Construction underdrawings, skeletal overlays, muscular contour notes',
+      color_and_tone: 'Neutral sketch tones with limited functional overlay coding',
+      lighting_and_shadow: 'Form-reading study light with selective translucency cues',
+      texture_and_material:
         'Mixed biological surfaces (scale, fur, membrane, carapace) as comparative tests',
-      render_quality: 'Iterative concept-study fidelity prioritizing function over polish',
-      spatial_distortion: 'Multi-pose and layered ghost-view layout for structural analysis',
-      atmosphere: 'Scientific, exploratory, speculative naturalism',
+      camera_and_composition: 'Multi-pose and layered ghost-view layout for structural analysis',
+      atmosphere_and_mood: 'Scientific, exploratory, speculative naturalism',
+      rendering_and_quality: 'Iterative concept-study fidelity prioritizing function over polish',
       key_features:
         'Anatomy callouts, adaptation variants, transparent layer studies, locomotion-read checks',
       creative_brief:
@@ -539,15 +551,18 @@ export const GENERATED_STYLE_PRESETS = [
       'one version, single design, no comparison, no annotation, unclear, vague, floating, contextless, unlabeled',
     style: {
       aesthetic: 'Prop-variant design sheet with progression and function-first comparison',
-      form_and_line: 'Clean orthographic contours, aligned variant rows, leader-line annotations',
-      color_palette:
+      subject_treatment:
+        'Clean orthographic contours, aligned variant rows, leader-line annotations',
+      color_and_tone:
         'Material-coded neutrals with restrained accent hierarchy for tier differentiation',
-      lighting_setup: 'Standardized neutral lighting to preserve apples-to-apples comparison',
-      material_texture:
+      lighting_and_shadow: 'Controlled neutral lighting to preserve apples-to-apples comparison',
+      texture_and_material:
         'Controlled finish studies (grain, brushed metal, wrap, wear, inset materials)',
-      render_quality: 'Production-oriented iterative sheet balancing readability and specificity',
-      spatial_distortion: 'Grid-aligned side views with detail magnification and exploded subsets',
-      atmosphere: 'Methodical, engineering-aware, iterative craft discipline',
+      camera_and_composition:
+        'Grid-aligned side views with detail magnification and exploded subsets',
+      atmosphere_and_mood: 'Methodical, engineering-aware, iterative craft discipline',
+      rendering_and_quality:
+        'Production-oriented iterative sheet balancing readability and specificity',
       key_features:
         'Variant taxonomy, functional callouts, scale references, modular part breakdown',
       creative_brief:
@@ -562,13 +577,13 @@ export const GENERATED_STYLE_PRESETS = [
       'detailed, rendered, textured, realistic, photo, final building, polished, interior, furniture',
     style: {
       aesthetic: 'Handmade architectural massing model study',
-      form_and_line: 'Blocky volumetric planes with rough-cut contour fidelity',
-      color_palette: 'Neutral model-shop tones (foam white, chipboard gray, wood tan)',
-      lighting_setup: 'Simple studio top/side light to emphasize shadow mass separation',
-      material_texture: 'Visible foam core edges, wood grain hints, glue seam artifacts',
-      render_quality: 'Early-phase physical prototype realism with low-finish honesty',
-      spatial_distortion: 'Scale-model compression with contextual block simplification',
-      atmosphere: 'Workshop-iterative, practical, form-discovery focus',
+      subject_treatment: 'Blocky volumetric planes with rough-cut contour fidelity',
+      color_and_tone: 'Neutral model-shop tones (foam white, chipboard gray, wood tan)',
+      lighting_and_shadow: 'Simple studio top/side light to emphasize shadow mass separation',
+      texture_and_material: 'Visible foam core edges, wood grain hints, glue seam artifacts',
+      camera_and_composition: 'Scale-model compression with contextual block simplification',
+      atmosphere_and_mood: 'Workshop-iterative, practical, form-discovery focus',
+      rendering_and_quality: 'Early-phase physical prototype realism with low-finish honesty',
       key_features: 'Volumetric hierarchy, scale cues, handcrafted assembly traces',
       creative_brief:
         'Apply architecture-massing model style to any input: foam-core planes, blocky volume studies, cast-shadow massing, chipboard texture, seam lines, and scale-model lighting. If no architecture exists, reinterpret the subject as spatial mass and structural rhythm without requiring buildings, city blocks, or a physical maquette.',
@@ -582,14 +597,14 @@ export const GENERATED_STYLE_PRESETS = [
       'finished, one version, no comparison, no swatches, unlabeled, vague, single option, no fabric',
     style: {
       aesthetic: 'Costume exploration board combining silhouette, fabric, and colorway studies',
-      form_and_line:
+      subject_treatment:
         'Clean croquis-based variants with annotation leaders and modular panel layout',
-      color_palette: 'Multi-fabric palette families organized by role, era, and accent logic',
-      lighting_setup: 'Neutral comparison lighting with controlled sheen read on textiles',
-      material_texture: 'Swatch-forward surface representation (weave, nap, grain, luster)',
-      render_quality: 'Concept-development board clarity over final-fashion polish',
-      spatial_distortion: 'Grid/pinboard organization for side-by-side option evaluation',
-      atmosphere: 'Iterative studio workflow, design-review readiness',
+      color_and_tone: 'Multi-fabric palette families organized by role, era, and accent logic',
+      lighting_and_shadow: 'Neutral comparison lighting with controlled sheen read on textiles',
+      texture_and_material: 'Swatch-forward surface representation (weave, nap, grain, luster)',
+      camera_and_composition: 'Grid/pinboard organization for side-by-side option evaluation',
+      atmosphere_and_mood: 'Iterative studio workflow, design-review readiness',
+      rendering_and_quality: 'Concept-development board clarity over final-fashion polish',
       key_features: 'Silhouette matrices, swatch clusters, trim notes, color strip comparisons',
       creative_brief:
         'Apply costume-design exploration to any input: silhouette breaks, fabric behavior, trim systems, palette swatches, accessory rhythm, and material contrast. If no wardrobe or character exists, translate forms into fashion/costume language without requiring a model sheet, clothing catalog, or posed figure.',
@@ -604,19 +619,20 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Iterative color-script style focused on controlled multi-pass illumination studies and mood transfer through light alone',
-      form_and_line:
+      subject_treatment:
         'Stable compositional scaffold with constant geometry, variation expressed through light patterning, edge softness, and shadow behavior',
-      color_palette:
+      color_and_tone:
         'Phase-based palette families from cool pre-dawn violets to warm amber daylight, magenta dusk transitions, and deep nocturnal indigos',
-      lighting_setup:
+      lighting_and_shadow:
         'Systematic key-angle sweeps, temperature-shift ladders, variable diffusion density, calibrated contrast steps across render passes',
-      material_texture:
+      texture_and_material:
         'Per-pass volumetric response variation, haze density modulation, shadow hardness tuning, reflective intensity mapping',
-      render_quality:
-        'Production-grade lighting development board aesthetic with coherent comparability between passes and disciplined cinematic polish',
-      spatial_distortion:
+      camera_and_composition:
         'Fixed camera and structure with depth perception driven by atmosphere and luminance distribution changes',
-      atmosphere: 'Analytical yet emotional, cinematic, temporal, expressive, study-driven',
+      atmosphere_and_mood:
+        'Analytical yet emotional, cinematic, temporal, expressive, study-driven',
+      rendering_and_quality:
+        'Production-grade lighting development board aesthetic with coherent comparability between passes and disciplined cinematic polish',
       key_features:
         'Multi-pass lighting matrix, color-temperature progression, shadow-arc logic, atmospheric phase control, mood-through-illumination methodology',
       creative_brief:
@@ -632,15 +648,15 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Educational anatomical reference plate with layered structural clarity and classical medical-plate influence',
-      form_and_line: 'Precise technical linework for muscle, bone, and tendon mapping',
-      color_palette:
-        'Standardized didactic coding (muscle warm, bone neutral, vascular cool/warm accents)',
-      lighting_setup: 'Even clinical illumination for unambiguous form legibility',
-      material_texture: 'Plate-style paper and wash overlays with minimal decorative noise',
-      render_quality: 'Reference-grade illustration optimized for study and instruction',
-      spatial_distortion:
+      subject_treatment: 'Precise technical linework for muscle, bone, and tendon mapping',
+      color_and_tone:
+        'Consistent didactic coding (muscle warm, bone neutral, vascular cool/warm accents)',
+      lighting_and_shadow: 'Even clinical illumination for unambiguous form legibility',
+      texture_and_material: 'Plate-style paper and wash overlays with minimal decorative noise',
+      camera_and_composition:
         'Multi-view orthographic layout with transparent overlays and inset details',
-      atmosphere: 'Scientific, disciplined, pedagogical',
+      atmosphere_and_mood: 'Scientific, disciplined, pedagogical',
+      rendering_and_quality: 'Reference-grade illustration optimized for study and instruction',
       key_features:
         'Layered anatomy views, insertion/origin callouts, proportion guides, sectional clarity',
       creative_brief:
@@ -656,16 +672,17 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Vegetation design kit with broad botanical shape-library coverage, natural poetry, and production readability',
-      form_and_line:
+      subject_treatment:
         'Organic contour families spanning canopy, shrub, vine, and groundcover archetypes',
-      color_palette: 'Seasonal green-driven spectrum with bark/flower accent channels',
-      lighting_setup: 'Dappled canopy light with subsurface hints and cool understory shadow',
-      material_texture:
+      color_and_tone: 'Seasonal green-driven spectrum with bark/flower accent channels',
+      lighting_and_shadow: 'Dappled canopy light with subsurface hints and cool understory shadow',
+      texture_and_material:
         'Differentiated plant surface behaviors (waxy, fibrous, rough bark, soft moss)',
-      render_quality: 'Reference-oriented foliage exploration balancing stylization and realism',
-      spatial_distortion:
+      camera_and_composition:
         'Layered ecosystem depth from foreground clusters to atmospheric canopy fade',
-      atmosphere: 'Lush, breathable, ecosystem-rich',
+      atmosphere_and_mood: 'Lush, breathable, ecosystem-rich',
+      rendering_and_quality:
+        'Reference-oriented foliage exploration balancing stylization and realism',
       key_features:
         'Silhouette readability sets, species variation matrices, season-state alternatives',
       creative_brief:
@@ -680,14 +697,16 @@ export const GENERATED_STYLE_PRESETS = [
       'one version, static, no comparison, flat, no materials, unlabeled, single option, no evolution, just final',
     style: {
       aesthetic: 'Tiered equipment progression sheet emphasizing upgrade readability',
-      form_and_line: 'Stable base silhouette with controlled complexity increase per tier',
-      color_palette:
+      subject_treatment: 'Stable base silhouette with controlled complexity increase per tier',
+      color_and_tone:
         'Structured rarity progression from muted utilitarian to luminous high-tier accents',
-      lighting_setup: 'Standardized comparison light with incremental specular/emissive escalation',
-      material_texture: 'Progressive material sophistication (wear, polish, inlay, arcane finish)',
-      render_quality: 'Comparative design board optimized for progression clarity',
-      spatial_distortion: 'Fixed-view horizontal evolution layout with optional detail insets',
-      atmosphere: 'Aspirational, reward-centric, game-economy legibility',
+      lighting_and_shadow:
+        'Controlled comparison light with incremental specular/emissive escalation',
+      texture_and_material:
+        'Progressive material sophistication (wear, polish, inlay, arcane finish)',
+      camera_and_composition: 'Fixed-view horizontal evolution layout with optional detail insets',
+      atmosphere_and_mood: 'Aspirational, reward-centric, game-economy legibility',
+      rendering_and_quality: 'Comparative design board optimized for progression clarity',
       key_features:
         'Multi-tier continuity, rarity-coded visual jumps, consistent proportion baseline',
       creative_brief:
@@ -703,14 +722,16 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Composition thumbnail grid for shot-language exploration and suspense-focused camera grammar',
-      form_and_line: 'Loose value thumbnails with framing guides and camera-angle markers',
-      color_palette:
+      subject_treatment: 'Loose value thumbnails with framing guides and camera-angle markers',
+      color_and_tone:
         'Predominantly grayscale with optional restrained warm/cool key differentiation',
-      lighting_setup: 'Per-frame key direction studies using simple value grouping',
-      material_texture: 'Marker/pencil roughness retained for planning immediacy',
-      render_quality: 'Previsualization-grade roughs prioritizing sequence rhythm over polish',
-      spatial_distortion: 'Multi-panel grid enabling rapid comparison of lens/angle/depth setups',
-      atmosphere: 'Analytical, cinematic, pre-production momentum',
+      lighting_and_shadow: 'Per-frame key direction studies using simple value grouping',
+      texture_and_material: 'Marker/pencil roughness retained for planning immediacy',
+      camera_and_composition:
+        'Multi-panel grid enabling rapid comparison of lens/angle/depth setups',
+      atmosphere_and_mood: 'Analytical, cinematic, pre-production momentum',
+      rendering_and_quality:
+        'Previsualization-grade roughs prioritizing sequence rhythm over polish',
       key_features: 'Shot-size variety, perspective alternation, compositional cadence mapping',
       creative_brief:
         'Apply composition-thumbnail grid logic to any input: camera/value alternatives, crop experiments, focal hierarchy tests, lens-like framing, and miniature layout variants. It should generate composition diversity without requiring storyboards, film scenes, characters, or sequential narrative panels.',
@@ -725,20 +746,20 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Mythic hand-drafted cartographic illustration with ornamental navigation grammar and editorial worldbuilding clarity',
-      form_and_line:
+      subject_treatment:
         'Calligraphic contour hierarchy, iconographic terrain symbols, radial navigation geometry, decorative border cadence',
-      color_palette:
+      color_and_tone:
         'Aged parchment neutrals, iron-gall sepia ink, oxidized teal accents, muted mineral greens, restrained vermillion highlights',
-      lighting_setup:
+      lighting_and_shadow:
         'Uniform document-style illumination, low-specular paper response, subtle edge-vignette to emphasize plate readability',
-      material_texture:
+      texture_and_material:
         'Fibrous vellum grain, dry-ink bleed, pressure-variant line deposition, fold-memory wear, wax-like residue details',
-      render_quality:
-        'High-fidelity illustrated atlas plate finish with controlled print-era imperfections and deliberate artisan irregularity',
-      spatial_distortion:
+      camera_and_composition:
         'Orthographic map-plane logic with symbolic scale compression and layered annotation depth',
-      atmosphere:
+      atmosphere_and_mood:
         'Scholarly, arcane, exploratory, archival, crafted for interpretive reading rather than literal realism',
+      rendering_and_quality:
+        'High-fidelity illustrated atlas plate finish with controlled print-era imperfections and deliberate artisan irregularity',
       key_features:
         'Compass geometry motifs, rhumb-line rhythm, cartouche typography framing, etched terrain icon system, weathered paper patina',
       creative_brief:
@@ -753,14 +774,15 @@ export const GENERATED_STYLE_PRESETS = [
       'finished, polished, colorful, final UI, rendered, textured, photo, busy, cluttered, beautiful art',
     style: {
       aesthetic: 'Game HUD wireframe concept balancing diegetic and overlay paradigms',
-      form_and_line: 'Clean bounding-box architecture with spacing, flow, and hierarchy guides',
-      color_palette: 'Functional UI neutrals with semantic accent colors for state signaling',
-      lighting_setup: 'Flat interface contrast with optional interaction glow cues',
-      material_texture:
+      subject_treatment: 'Clean bounding-box architecture with spacing, flow, and hierarchy guides',
+      color_and_tone: 'Functional UI neutrals with semantic accent colors for state signaling',
+      lighting_and_shadow: 'Flat interface contrast with optional interaction glow cues',
+      texture_and_material:
         'Minimalist screen-surface treatment; precision-first wireframe presentation',
-      render_quality: 'UX concept fidelity focused on clarity, density control, and usability',
-      spatial_distortion: 'Safe-zone aware screen layout plus world-anchored UI option studies',
-      atmosphere: 'Functional, restrained, information-priority design',
+      camera_and_composition: 'Safe-zone aware screen layout plus world-anchored UI option studies',
+      atmosphere_and_mood: 'Functional, restrained, information-priority design',
+      rendering_and_quality:
+        'UX concept fidelity focused on clarity, density control, and usability',
       key_features:
         'Radial-vs-linear alternatives, stat cluster prototypes, readability checkpoints',
       creative_brief:
@@ -775,13 +797,17 @@ export const GENERATED_STYLE_PRESETS = [
       'single creature, no reference, unclear scale, vague proportions, tiny, only one, human-centric, no comparison',
     style: {
       aesthetic: 'Size-comparison chart with educational scale framing',
-      form_and_line: 'Baseline-aligned silhouettes with measurement ticks and reference markers',
-      color_palette: 'Neutral comparative scheme with restrained atmospheric scaling cues',
-      lighting_setup: 'Consistent silhouette rim/read light for cross-subject legibility',
-      material_texture: 'Clean chartboard finish with minimal atmospheric fade on largest entries',
-      render_quality: 'Infographic-style concept sheet optimized for proportional comprehension',
-      spatial_distortion: 'Left-to-right ascending scale progression with fixed ground reference',
-      atmosphere: 'Awe-oriented yet analytical, museum-chart clarity',
+      subject_treatment:
+        'Baseline-aligned silhouettes with measurement ticks and reference markers',
+      color_and_tone: 'Neutral comparative scheme with restrained atmospheric scaling cues',
+      lighting_and_shadow: 'Consistent silhouette rim/read light for cross-subject legibility',
+      texture_and_material:
+        'Clean chartboard finish with minimal atmospheric fade on largest entries',
+      camera_and_composition:
+        'Left-to-right ascending scale progression with fixed ground reference',
+      atmosphere_and_mood: 'Awe-oriented yet analytical, museum-chart clarity',
+      rendering_and_quality:
+        'Infographic-style concept sheet optimized for proportional comprehension',
       key_features:
         'Human and real-world benchmarks, incremental height logic, clear unit hierarchy',
       creative_brief:

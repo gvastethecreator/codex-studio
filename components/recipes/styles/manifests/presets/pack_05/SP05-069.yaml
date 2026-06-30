@@ -12,20 +12,27 @@ tags:
   - anime-battle-and-worlds
   - dark-fantasy-and-seinen
 visualDna:
-  aesthetic: Procedural low-fantasy severity, dirty-metal pragmatism, tactical light discipline, merciless efficiency as composition, dice-like tension without literal gameplay
-  form_and_line: Dense mature-anime linework, heavy crosshatching, weighted contour variation, gritty ink density
-  color_palette: Muted earths, blood reds, cold moonlit tones, desaturated horror palette, bruised shadow hues
-  lighting_setup: Ominous directional shadows, single-source drama light, deep chiaroscuro, low-key shadow lift
-  material_texture: Dirty metal scuffing, torch-smoked grain, worn leatherlike matte, damp stone-neutral grit, practical cloth abrasion, dry blood-brown staining
-  render_quality: Gritty dramatic anime frame, film-noir rendering, heavy shadow compression, textured midtone grit
-  spatial_distortion: Tactical corridor-like compression, step-by-step composition, narrow light cones, practical silhouette economy, procedural threat spacing
-  atmosphere: Tactical, grim, relentless, procedural
-  key_features: Heavy atmosphere, narrative weight, oppressive mood building, visceral consequence framing, story-first visual language
-  creative_brief: >
-    Treat any subject as harsh practical fantasy rendered through procedure,
-    restraint, and problem-solving grit. Use narrow light, dirty metal texture,
-    smoky shadow, and economical silhouettes while keeping all figures, props,
-    locations, enemies, and game-signifiers non-specific.
+  aesthetic: >-
+    Procedural low-fantasy severity, dirty-metal pragmatism, tactical light discipline, merciless efficiency
+    as composition, dice-like tension without literal gameplay
+  subject_treatment: Dense mature-anime linework, heavy crosshatching, weighted contour variation, gritty ink density
+  color_and_tone: Muted earths, blood reds, cold moonlit tones, desaturated horror palette, bruised shadow hues
+  lighting_and_shadow: Ominous directional shadows, single-source drama light, deep chiaroscuro, low-key shadow lift
+  texture_and_material: >-
+    Dirty metal scuffing, torch-smoked grain, worn leatherlike matte, damp stone-neutral grit, practical cloth
+    abrasion, dry blood-brown staining
+  camera_and_composition: >-
+    Tactical corridor-like compression, step-by-step composition, narrow light cones, practical silhouette
+    economy, procedural threat spacing
+  atmosphere_and_mood: Tactical, grim, relentless, procedural
+  rendering_and_quality: Gritty dramatic anime frame, film-noir rendering, heavy shadow compression, textured midtone grit
+  key_features: >-
+    Heavy atmosphere, narrative weight, oppressive mood building, visceral consequence framing, story-first
+    visual language
+  creative_brief: >-
+    Treat any subject as harsh practical fantasy rendered through procedure, restraint, and problem-solving
+    grit. Use narrow light, dirty metal texture, smoky shadow, and economical silhouettes while keeping all
+    figures, props, locations, enemies, and game-signifiers non-specific.
 avoidRules:
   - realistic
   - 3d render
@@ -42,7 +49,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-069.webp
 attributes:
-  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
+  negativePrompt: >-
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts,
+    watermark, text, signature
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds

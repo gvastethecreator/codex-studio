@@ -13,18 +13,18 @@ tags:
   - surrealism-and-dream
 visualDna:
   aesthetic: Alien style
-  form_and_line: Ribs, tubes
-  color_palette: Monochrome, dark
-  lighting_setup: Rim light
-  material_texture: Slimy, metallic
-  render_quality: Horror, intricate
-  spatial_distortion: Flesh/Metal fusion
-  atmosphere: Terrifying, sexual
+  subject_treatment: Ribs, tubes
+  color_and_tone: Monochrome, dark
+  lighting_and_shadow: Rim light
+  texture_and_material: Slimy, metallic
+  camera_and_composition: Flesh/Metal fusion
+  atmosphere_and_mood: Terrifying, sexual
+  rendering_and_quality: Horror, intricate
   key_features: Ribbed pattern
   creative_brief: >-
-    Apply biomechanical fusion to the input: bone-like struts, cable tendons,
-    ribbed chassis forms, slick dark surfaces, and organic-machine seams should
-    make subjects feel engineered from anatomy without requiring a humanoid body.
+    Apply biomechanical fusion to the input: bone-like struts, cable tendons, ribbed chassis forms, slick dark
+    surfaces, and organic-machine seams should make subjects feel engineered from anatomy without requiring a
+    humanoid body.
 avoidRules:
   - clean
   - cute

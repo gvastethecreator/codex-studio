@@ -13,18 +13,18 @@ tags:
   - childrens-illustration
 visualDna:
   aesthetic: Chalk pastel illustration with atmospheric soft-focus blending
-  form_and_line: Broad dusty marks with reduced hard-edge dependency
-  color_palette: Muted pastel spectrum with powdery warm-cool balance
-  lighting_setup: Diffuse low-contrast illumination through chalk scatter
-  material_texture: Strong paper tooth pickup, smudge trails, airborne dust bloom
-  render_quality: Dreamlike, velvety, softly resolved pastel finish
-  spatial_distortion: Edge blur and gentle form diffusion
-  atmosphere: Nostalgic, calm, bedtime softness
+  subject_treatment: Broad dusty marks with reduced hard-edge dependency
+  color_and_tone: Muted pastel spectrum with powdery warm-cool balance
+  lighting_and_shadow: Diffuse low-contrast illumination through chalk scatter
+  texture_and_material: Strong paper tooth pickup, smudge trails, airborne dust bloom
+  camera_and_composition: Edge blur and gentle form diffusion
+  atmosphere_and_mood: Nostalgic, calm, bedtime softness
+  rendering_and_quality: Dreamlike, velvety, softly resolved pastel finish
   key_features: Smudged transitions, dust halos, matte bloom highlights
   creative_brief: >-
-    Apply chalk pastel atmosphere to any input: powdery transitions, tooth catch, smudge blending,
-    dust halos, matte bloom, and reduced hard edges should build mood without requiring bedtime
-    scenes, landscapes, portraits, seasonal motifs, or a fixed soft-focus subject.
+    Apply chalk pastel atmosphere to any input: powdery transitions, tooth catch, smudge blending, dust halos,
+    matte bloom, and reduced hard edges should build mood without requiring bedtime scenes, landscapes,
+    portraits, seasonal motifs, or a fixed soft-focus subject.
 avoidRules:
   - sharp
   - pen

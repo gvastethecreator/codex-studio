@@ -13,18 +13,18 @@ tags:
   - textile-and-ornamental-patterns
 visualDna:
   aesthetic: Grid of circles
-  form_and_line: Circles
-  color_palette: Two tone
-  lighting_setup: Flat
-  material_texture: Print
-  render_quality: Pop, simple
-  spatial_distortion: None
-  atmosphere: Fun, retro
+  subject_treatment: Circles
+  color_and_tone: Two tone
+  lighting_and_shadow: Flat
+  texture_and_material: Print
+  camera_and_composition: 'Compose for Polka Dot using its key spatial cues: Dots.'
+  atmosphere_and_mood: Fun, retro
+  rendering_and_quality: Pop, simple
   key_features: Dots
   creative_brief: >-
-    Apply polka-dot rhythm to the input: repeated circular marks, playful scale
-    variation, crisp figure-ground spacing, and bright graphic cadence should
-    wrap or segment forms without requiring fabric or fashion staging.
+    Apply polka-dot rhythm to the input: repeated circular marks, playful scale variation, crisp figure-ground
+    spacing, and bright graphic cadence should wrap or segment forms without requiring fabric or fashion
+    staging.
 avoidRules:
   - square
   - line

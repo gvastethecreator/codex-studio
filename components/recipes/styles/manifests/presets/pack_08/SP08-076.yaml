@@ -13,19 +13,24 @@ tags:
   - fabric-and-texture-focus
 visualDna:
   aesthetic: Viscous gel material, glossy couture surface, ectoplasmic wet gloss
-  form_and_line: Drips, gravity-pull tendrils, sagging-weight deformation, viscosity-drape silhouette, drip-trail elongation
-  color_palette: Neon Green, chartreuse, radioactive-amber, bioluminescent-blue, translucent teal, sickly-yellow
-  lighting_setup: Glossy wet-look specular, blacklight-UV fluorescence, contained neon edge glow and controlled gel highlights
-  material_texture: Viscous, methylcellulose slime, gel-thickness body, stringy-elastic drip, gelatinous-surface, bubble-suspension
-  render_quality: Sci-fi gel couture, ectoplasm gloss, controlled viscous material read
-  spatial_distortion: Melting
-  atmosphere: Weird, sticky, tactile, oozing-drip tension
+  subject_treatment: >-
+    Drips, gravity-pull tendrils, sagging-weight deformation, viscosity-drape silhouette, drip-trail
+    elongation
+  color_and_tone: Neon Green, chartreuse, radioactive-amber, bioluminescent-blue, translucent teal, sickly-yellow
+  lighting_and_shadow: >-
+    Glossy wet-look specular, blacklight-UV fluorescence, contained neon edge glow and controlled gel
+    highlights
+  texture_and_material: >-
+    Viscous, methylcellulose slime, gel-thickness body, stringy-elastic drip, gelatinous-surface,
+    bubble-suspension
+  camera_and_composition: Melting
+  atmosphere_and_mood: Weird, sticky, tactile, oozing-drip tension
+  rendering_and_quality: Sci-fi gel couture, ectoplasm gloss, controlled viscous material read
   key_features: Drips, stringy tendrils, bubble suspension, wet-gloss surface, gravity-sag form
   creative_brief: >-
-    Cover the input in viscous gel dynamics: chartreuse viscosity, stringy
-    tendrils, wet speculars, bubble suspension, gravity sag and UV fluorescence.
-    Keep the material strange without requiring shoulder-like anatomy,
-    floor puddles, body beneath, lab accident or creature scene.
+    Cover the input in viscous gel dynamics: chartreuse viscosity, stringy tendrils, wet speculars, bubble
+    suspension, gravity sag and UV fluorescence. Keep the material strange without requiring shoulder-like
+    anatomy, floor puddles, body beneath, lab accident or creature scene.
 avoidRules:
   - dry
 assets:

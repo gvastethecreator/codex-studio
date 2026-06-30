@@ -12,16 +12,24 @@ tags:
   - cinematic-and-media
   - tv-and-broadcast
 visualDna:
-  aesthetic: Late-night infomercial broadcast, overlit demonstration gloss, cheap miracle-product persuasion, callout graphics without readable text
-  form_and_line: Before-after split logic, pointing callout shapes, product-demo center framing, exaggerated benefit composition
-  color_palette: Hotline red, bargain yellow, electric blue, clean white, plastic chrome, saturated orange
-  lighting_setup: Overbright studio key, hard tabletop reflection, sparkle highlights, no subtle shadow
-  material_texture: Plastic gloss, camcorder sharpness, compressed color, cheap acrylic set surface
-  render_quality: Persuasive, loud, overproduced-on-a-budget, glossy TV sales clarity
-  spatial_distortion: Split-screen comparison, zoom burst, callout bubble shapes, oversaturated close crop
-  atmosphere: Urgent, salesy, artificial, enthusiastic
+  aesthetic: >-
+    Late-night infomercial broadcast, overlit demonstration gloss, cheap miracle-product persuasion, callout
+    graphics without readable text
+  subject_treatment: >-
+    Before-after split logic, pointing callout shapes, product-demo center framing, exaggerated benefit
+    composition
+  color_and_tone: Hotline red, bargain yellow, electric blue, clean white, plastic chrome, saturated orange
+  lighting_and_shadow: Overbright studio key, hard tabletop reflection, sparkle highlights, no subtle shadow
+  texture_and_material: Plastic gloss, camcorder sharpness, compressed color, cheap acrylic set surface
+  camera_and_composition: Split-screen comparison, zoom burst, callout bubble shapes, oversaturated close crop
+  atmosphere_and_mood: Urgent, salesy, artificial, enthusiastic
+  rendering_and_quality: Persuasive, loud, overproduced-on-a-budget, glossy TV sales clarity
   key_features: Split layout, callout shapes, hard gloss, overlit demo, no readable text
-  creative_brief: 'Use late-night infomercial gloss as treatment: overlit demo clarity, split-screen comparison, hard plastic shine, callout shapes, saturated bargain colors, and camcorder sharpness. Avoid specific products, presenters, phone numbers, or readable sales copy. The style should make any subject feel aggressively demonstrated.'
+  creative_brief: >-
+    Use late-night infomercial gloss as treatment: overlit demo clarity, split-screen comparison, hard plastic
+    shine, callout shapes, saturated bargain colors, and camcorder sharpness. Avoid specific products,
+    presenters, phone numbers, or readable sales copy. The style should make any subject feel aggressively
+    demonstrated.
 avoidRules:
   - subtle lighting
   - tasteful minimalism

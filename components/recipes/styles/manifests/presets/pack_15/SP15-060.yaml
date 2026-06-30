@@ -14,16 +14,31 @@ tags:
   - bonepunk
   - signal
 visualDna:
-  aesthetic: bonepunk signal ritual built around a cairn of bone-white signal horns, limewash marks, field technicians, and wind-carved hill light.
-  form_and_line: Ritual diagrams, gothic silhouettes, folk hardware, talismanic machines, and mythic street-level staging. Core composition uses signal horns, cairn stack, technicians, lime glyphs, hill wind.
-  color_palette: bone white, lime green, storm gray, rawhide brown
-  lighting_setup: cloud breaks, horn rimlight, cold field glow, tiny signal lamps
-  material_texture: bone-like resin, limewash, rawhide straps, field canvas, stone
-  render_quality: Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity, moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material simulation, or hyper-detail.
-  spatial_distortion: Switchyards, foundries, chapels, cairns, repair shops, salons, processions, and rural transformers. Keep depth legible and avoid default hallway, aisle, or empty studio staging.
-  atmosphere: ancient, stark, practical, eerie
+  aesthetic: >-
+    bonepunk signal ritual built around a cairn of bone-white signal horns, limewash marks, field technicians,
+    and wind-carved hill light.
+  subject_treatment: >-
+    Ritual diagrams, gothic silhouettes, folk hardware, talismanic machines, and mythic street-level staging.
+    Core composition uses signal horns, cairn stack, technicians, lime glyphs, hill wind.
+  color_and_tone: bone white, lime green, storm gray, rawhide brown
+  lighting_and_shadow: cloud breaks, horn rimlight, cold field glow, tiny signal lamps
+  texture_and_material: bone-like resin, limewash, rawhide straps, field canvas, stone
+  camera_and_composition: >-
+    Switchyards, foundries, chapels, cairns, repair shops, salons, processions, and rural transformers. Keep
+    depth legible and avoid default hallway, aisle, or empty studio staging.
+  atmosphere_and_mood: ancient, stark, practical, eerie
+  rendering_and_quality: >-
+    Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly
+    planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity,
+    moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material
+    simulation, or hyper-detail.
   key_features: signal horns, cairn stack, technicians, lime glyphs, hill wind
-  creative_brief: 'Bonepunk without gore: bone-like resin engineering, horn signal function, plain field workers, lime plates, and austere ritual texture. Keep the result representative rather than over-abstract; use flat graphic illustration, gouache-poster shapes, cel-poster blocking, and controlled digital painting over realism or generic concept art. Use few bold color/value zones, large matte shapes, clean surfaces, low-to-moderate detail, and finish denoised with no excessive noise or ultra-fine detail.'
+  creative_brief: >-
+    Bonepunk without gore: bone-like resin engineering, horn signal function, plain field workers, lime
+    plates, and austere ritual texture. Keep the result representative rather than over-abstract; use flat
+    graphic illustration, gouache-poster shapes, cel-poster blocking, and controlled digital painting over
+    realism or generic concept art. Use few bold color/value zones, large matte shapes, clean surfaces,
+    low-to-moderate detail, and finish denoised with no excessive noise or ultra-fine detail.
 avoidRules:
   - photoreal
   - watermark
@@ -37,7 +52,21 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP15-060.webp
 attributes:
-  negativePrompt: photoreal, hyperreal, realistic render, photoreal painterly realism, cinematic realism, AAA key art, photographic skin pores, realistic foreground portrait, realistic facial hair detail, lens blur, bokeh, depth-of-field photo look, flags, banners, crescent marks, circular emblems, clothing symbols, real bones, skulls, gore, teeth, animal carcass, readable glyphs, tribal emblem, religious altar, runic text, giant horn monster, fantasy cave, empty hill panorama, tiny lamp carpets, generic soldier hero, guard pin-up, weapon-first pose, HDR lens realism, 3D render look, PBR material simulation, hyper-detailed concept art, watermark, text, logo, generic style, over-abstract, interchangeable preset, duplicated motifs, generic glass utopia, unmotivated market aisle, unmotivated library aisle, fantasy corridor, random camera held by subject, studio wall fixation, chair fixation, curtain fixation, lamp fixation, scarf fixation, pedestal fixation, bird fixation, excessive noise, ultra-fine detail, over-sharpened microtexture, over-rendered machinery, noisy grime, tiny rivets everywhere, busy texture chatter, realistic uniform portrait, uniformed officer hero, foreground guard portrait, detailed tattoo focus, dense machinery wallpaper, overcrowded scene, high-frequency surface detail, cinematic close-up portrait, flat black fill, crushed black, pure black masses, muddy black fields, generic American illustration, generic Western RPG card art
+  negativePrompt: >-
+    photoreal, hyperreal, realistic render, photoreal painterly realism, cinematic realism, AAA key art,
+    photographic skin pores, realistic foreground portrait, realistic facial hair detail, lens blur, bokeh,
+    depth-of-field photo look, flags, banners, crescent marks, circular emblems, clothing symbols, real bones,
+    skulls, gore, teeth, animal carcass, readable glyphs, tribal emblem, religious altar, runic text, giant
+    horn monster, fantasy cave, empty hill panorama, tiny lamp carpets, generic soldier hero, guard pin-up,
+    weapon-first pose, HDR lens realism, 3D render look, PBR material simulation, hyper-detailed concept art,
+    watermark, text, logo, generic style, over-abstract, interchangeable preset, duplicated motifs, generic
+    glass utopia, unmotivated market aisle, unmotivated library aisle, fantasy corridor, random camera held by
+    subject, studio wall fixation, chair fixation, curtain fixation, lamp fixation, scarf fixation, pedestal
+    fixation, bird fixation, excessive noise, ultra-fine detail, over-sharpened microtexture, over-rendered
+    machinery, noisy grime, tiny rivets everywhere, busy texture chatter, realistic uniform portrait,
+    uniformed officer hero, foreground guard portrait, detailed tattoo focus, dense machinery wallpaper,
+    overcrowded scene, high-frequency surface detail, cinematic close-up portrait, flat black fill, crushed
+    black, pure black masses, muddy black fields, generic American illustration, generic Western RPG card art
 taxonomy:
   packId: pack_15
   packName: Punk Spectrum Vault

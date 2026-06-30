@@ -14,8 +14,12 @@ tags:
   - futuristic-medieval-and-rune-tech
   - stained-glass
 visualDna:
-  aesthetic: Futuristic stained-glass medieval fantasy with starforged geometry, black lead lines, and radiant cosmic color.
-  subject_treatment: A stained-glass starforge dragon, angelic smith, or haloed armor pane flattened into luminous cathedral geometry and symbolic forge gestures.
+  aesthetic: >-
+    Futuristic stained-glass medieval fantasy with starforged geometry, black lead lines, and radiant cosmic
+    color.
+  subject_treatment: >-
+    A stained-glass starforge dragon, angelic smith, or haloed armor pane flattened into luminous cathedral
+    geometry and symbolic forge gestures.
   color_and_tone: Sapphire, ruby, emerald, solar gold, black leading, and luminous white star points.
   lighting_and_shadow: Backlit glass glow dominates, with black outlines creating graphic shadow and sacred separation.
   texture_and_material: Leaded glass, etched metal, prism bloom, tiny cracks, dust motes, and molten star-metal accents.
@@ -33,6 +37,8 @@ avoidRules:
   - text
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP17-024.webp
+attributes:
+  negativePrompt: photorealism, soft oil painting, flat clip art, modern logo, explicit gore, watermark, text
 taxonomy:
   packId: pack_17
   packName: Medieval Fantasy & Dungeon Zine

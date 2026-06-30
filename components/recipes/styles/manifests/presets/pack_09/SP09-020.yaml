@@ -13,15 +13,19 @@ tags:
   - man-made-materials
 visualDna:
   aesthetic: Aged copper patina
-  form_and_line: Drips
-  color_palette: Verdigris (Teal/Green)
-  lighting_setup: Matte
-  material_texture: Chalky oxidation
-  render_quality: Historic, oxidized
-  spatial_distortion: None
-  atmosphere: Historic, weathered
+  subject_treatment: Drips
+  color_and_tone: Verdigris (Teal/Green)
+  lighting_and_shadow: Matte
+  texture_and_material: Chalky oxidation
+  camera_and_composition: 'Compose for Copper Patina using its key spatial cues: Green stains.'
+  atmosphere_and_mood: Historic, weathered
+  rendering_and_quality: Historic, oxidized
   key_features: Green stains
-  creative_brief: 'Apply aged copper patina as time made visible: teal and green verdigris blooms, chalky mineral crust, vertical oxidation drips, and muted metallic undertone. If the input has metal, architecture, statue, object, or armor, age it directly; otherwise use copper corrosion as pigment, edge staining, and weathered surface logic without requiring rooftops or monuments.'
+  creative_brief: >-
+    Apply aged copper patina as time made visible: teal and green verdigris blooms, chalky mineral crust,
+    vertical oxidation drips, and muted metallic undertone. If the input has metal, architecture, statue,
+    object, or armor, age it directly; otherwise use copper corrosion as pigment, edge staining, and weathered
+    surface logic without requiring rooftops or monuments.
 avoidRules:
   - new penny
 assets:

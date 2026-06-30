@@ -12,21 +12,32 @@ tags:
   - anime-character-and-lifestyle
   - anime
 visualDna:
-  aesthetic: Industrial ignition anime language with monumental machine pressure, maintenance-bay realism as texture, and pre-deployment tension
-  form_and_line: Dense mechanical panel segmentation, articulated joint geometry, heavy silhouette anchoring, and infrastructural line grids supporting scale cues
-  color_palette: Cold steel grays, deep navy undertones, signal orange safety accents, and constrained warning-light reds
-  lighting_setup: High-bay spotlight beams, hard metallic rim accents, intermittent spark accents, and low ambient fill for mass emphasis
-  material_texture: Brushed and worn metal plates, hydraulic residue traces, exposed cabling bundles, heat-stressed paint edges, and matte industrial surfaces
-  render_quality: High-detail mechanical key-visual rendering with disciplined readability, layered depth hierarchy, and production-grade anime polish
-  spatial_distortion: Wide-angle industrial depth exaggeration with controlled perspective convergence to reinforce scale
-  atmosphere: Pressurized, anticipatory, technical, and power-laden
-  key_features: Monument-scale mechanical silhouette, articulated panel logic, industrial support-line context, launch-readiness lighting cues, and scale contrast markers
+  aesthetic: >-
+    Industrial ignition anime language with monumental machine pressure, maintenance-bay realism as texture,
+    and pre-deployment tension
+  subject_treatment: >-
+    Dense mechanical panel segmentation, articulated joint geometry, heavy silhouette anchoring, and
+    infrastructural line grids supporting scale cues
+  color_and_tone: Cold steel grays, deep navy undertones, signal orange safety accents, and constrained warning-light reds
+  lighting_and_shadow: >-
+    High-bay spotlight beams, hard metallic rim accents, intermittent spark accents, and low ambient fill for
+    mass emphasis
+  texture_and_material: >-
+    Brushed and worn metal plates, hydraulic residue traces, exposed cabling bundles, heat-stressed paint
+    edges, and matte industrial surfaces
+  camera_and_composition: Wide-angle industrial depth exaggeration with controlled perspective convergence to reinforce scale
+  atmosphere_and_mood: Pressurized, anticipatory, technical, and power-laden
+  rendering_and_quality: >-
+    High-detail mechanical key-visual rendering with disciplined readability, layered depth hierarchy, and
+    production-grade anime polish
+  key_features: >-
+    Monument-scale mechanical silhouette, articulated panel logic, industrial support-line context,
+    launch-readiness lighting cues, and scale contrast markers
   creative_brief: >-
-    Use Mecha Hangar Ignition as style anchor for industrial scale drama:
-    heavy mechanical construction, hard technical light, and infrastructure-like
-    contrast should transfer by mechanizing the input when useful, adding
-    robot-scale mass, panel logic, or launch-readiness cues without fixing a
-    hangar, operator, or launch scene.
+    Use Mecha Hangar Ignition as style anchor for industrial scale drama: heavy mechanical construction, hard
+    technical light, and infrastructure-like contrast should transfer by mechanizing the input when useful,
+    adding robot-scale mass, panel logic, or launch-readiness cues without fixing a hangar, operator, or
+    launch scene.
 avoidRules:
   - photoreal
   - toy-like

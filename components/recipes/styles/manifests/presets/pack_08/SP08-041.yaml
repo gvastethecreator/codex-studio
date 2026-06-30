@@ -13,19 +13,25 @@ tags:
   - fantasy-sci-fi-costume
 visualDna:
   aesthetic: Cyborg couture, transhuman evolution and precision augmentation grammar without requiring a human host
-  form_and_line: Interface seams, implant-ridge channels, carbon-fiber contour bands, graft plates and modular prosthetic breaks
-  color_palette: Titanium, graphite, bio-luminescent blue, carbon-black, circuit-gold, surgical white, cool neutral substrate
-  lighting_setup: Sterile key light, ring-reflection highlights, cold overhead spill and pinpoint LED status glow
-  material_texture: Brushed titanium, carbon-fiber weave, medical silicone, polycarbonate, bio-gel interface and anodized alloy
-  render_quality: Sci-fi couture precision, augment-realism clarity and clinically finished surface integration
-  spatial_distortion: Optional modular augmentation break or replacement logic
-  atmosphere: Transhuman, cool, identity-through-augmentation tension and clinical future-surface wonder
+  subject_treatment: >-
+    Interface seams, implant-ridge channels, carbon-fiber contour bands, graft plates and modular prosthetic
+    breaks
+  color_and_tone: >-
+    Titanium, graphite, bio-luminescent blue, carbon-black, circuit-gold, surgical white, cool neutral
+    substrate
+  lighting_and_shadow: Sterile key light, ring-reflection highlights, cold overhead spill and pinpoint LED status glow
+  texture_and_material: >-
+    Brushed titanium, carbon-fiber weave, medical silicone, polycarbonate, bio-gel interface and anodized
+    alloy
+  camera_and_composition: Optional modular augmentation break or replacement logic
+  atmosphere_and_mood: Transhuman, cool, identity-through-augmentation tension and clinical future-surface wonder
+  rendering_and_quality: Sci-fi couture precision, augment-realism clarity and clinically finished surface integration
   key_features: Seam-line integration, exposed circuitry, optical sensor cues, neural ports and modular plated insertions
   creative_brief: >-
-    Mechanize any input through cybernetic augmentation grammar: titanium seams, carbon-fiber contour, medical silicone,
-    optical-sensor cues, neural ports and bio-luminescent circuit glow. Preserve transhuman tension while allowing any
-    subject or surface to gain implant logic instead of forcing exposed flesh, portrait framing, lab scenery or a full
-    prosthetic limb showcase.
+    Mechanize any input through cybernetic augmentation grammar: titanium seams, carbon-fiber contour, medical
+    silicone, optical-sensor cues, neural ports and bio-luminescent circuit glow. Preserve transhuman tension
+    while allowing any subject or surface to gain implant logic instead of forcing exposed flesh, portrait
+    framing, lab scenery or a full prosthetic limb showcase.
 avoidRules:
   - unmodified plain surface
 assets:

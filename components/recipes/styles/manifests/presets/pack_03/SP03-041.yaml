@@ -13,19 +13,23 @@ tags:
   - lighting-and-atmosphere
 visualDna:
   aesthetic: Volumetric light-shaft rendering
-  form_and_line: Shafts of light
-  color_palette: Warm or Cool beams, gradient shafts
-  lighting_setup: Directional, atmosphere-piercing
-  material_texture: Dust motes, particulate volume
-  render_quality: Epic volumetric scattering, spiritual scale
-  atmosphere: Hopeful, grand, transcendent awe
+  subject_treatment: Shafts of light
+  color_and_tone: Warm or Cool beams, gradient shafts
+  lighting_and_shadow: Directional, atmosphere-piercing
+  texture_and_material: Dust motes, particulate volume
+  camera_and_composition: >-
+    Lighting-study camera for God Rays (Volumetric): stable three-quarter framing, visible depth layers, clear
+    shadow planes, and a vertical style-card crop.
+  atmosphere_and_mood: Hopeful, grand, transcendent awe
+  rendering_and_quality: Epic volumetric scattering, spiritual scale
   key_features: Light beams, atmospheric scattering
   creative_brief: >-
-    Add volumetric light shafts to the input: directional beams, dust motes, particulate scattering and warm/cool
-    gradient columns that make air visible. Keep spiritual scale without forcing windows, trees, cathedral space or
-    forest canopy. Apply God Rays as a portable 3D/render style system over any input: preserve its renderer logic,
-    material behavior, geometry language, lighting grammar, and production cues while avoiding a required character,
-    vehicle, prop, environment, UI screen, product shot, or scene template.
+    Add volumetric light shafts to the input: directional beams, dust motes, particulate scattering and
+    warm/cool gradient columns that make air visible. Keep spiritual scale without forcing windows, trees,
+    cathedral space or forest canopy. Apply God Rays as a portable 3D/render style system over any input:
+    preserve its renderer logic, material behavior, geometry language, lighting grammar, and production cues
+    while avoiding a required character, vehicle, prop, environment, UI screen, product shot, or scene
+    template.
 avoidRules:
   - clear
   - sharp

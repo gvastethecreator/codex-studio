@@ -13,23 +13,27 @@ tags:
   - caricature-and-cartoon-styles
 visualDna:
   aesthetic: >-
-    Features melting like hot wax, Salvador Dali meets Tex Avery, fever-dream structural collapse, reality losing
-    integrity, psychedelic cartoon meltdown
-  form_and_line: Sinking contour lines, drooping outlines, vertical stretch deformation, no anchoring bone structure
-  color_palette: Melting wax pastels, bruise-spectrum purples and yellows, jaundice-glow skin, ice-cream drip tones
-  lighting_setup: Shifting light sources, inconsistent shadow direction accenting the wrong places, disorienting illumination
-  material_texture: Molten wax surface, glossy drip trails, taffy stretch, viscoelastic surface flow
-  render_quality: Psychedelic cartoon surrealism, liquid-reality rendering, Max Fleischer nightmare, experimental animation aesthetic
-  spatial_distortion: Entire form cascading downward, parts migrating off-register, pooled mass, temporal distortion
-  atmosphere: Disorienting, hypnotic, deeply weird, mescaline cartoon
+    Features melting like hot wax, Salvador Dali meets Tex Avery, fever-dream structural collapse, reality
+    losing integrity, psychedelic cartoon meltdown
+  subject_treatment: Sinking contour lines, drooping outlines, vertical stretch deformation, no anchoring bone structure
+  color_and_tone: Melting wax pastels, bruise-spectrum purples and yellows, jaundice-glow skin, ice-cream drip tones
+  lighting_and_shadow: >-
+    Shifting light sources, inconsistent shadow direction accenting the wrong places, disorienting
+    illumination
+  texture_and_material: Molten wax surface, glossy drip trails, taffy stretch, viscoelastic surface flow
+  camera_and_composition: Entire form cascading downward, parts migrating off-register, pooled mass, temporal distortion
+  atmosphere_and_mood: Disorienting, hypnotic, deeply weird, mescaline cartoon
+  rendering_and_quality: >-
+    Psychedelic cartoon surrealism, liquid-reality rendering, Max Fleischer nightmare, experimental animation
+    aesthetic
   key_features: Vertical drip lines, pooled forms, runny edges, wax-clock deformation, liquid contour
   creative_brief: >-
-    Use liquid-melt caricature as form collapse: outlines droop, surfaces behave like wax, vertical drips stretch
-    structure, and stable geometry becomes a slow-motion cascade. Avoid requiring faces, eyes, noses, bodies, or
-    anatomy. The subject should look like reality is losing viscosity. Apply Liquid Melt Caricature as a portable
-    cinematic/camera style over any input: preserve its lens behavior, color process, lighting setup, artifact pattern,
-    and deformation grammar while avoiding a required actor, room, prop, brand, readable text, fixed IP scene, or
-    narrative setup.
+    Use liquid-melt caricature as form collapse: outlines droop, surfaces behave like wax, vertical drips
+    stretch structure, and stable geometry becomes a slow-motion cascade. Avoid requiring faces, eyes, noses,
+    bodies, or anatomy. The subject should look like reality is losing viscosity. Apply Liquid Melt Caricature
+    as a portable cinematic/camera style over any input: preserve its lens behavior, color process, lighting
+    setup, artifact pattern, and deformation grammar while avoiding a required actor, room, prop, brand,
+    readable text, fixed IP scene, or narrative setup.
 avoidRules:
   - sharp
   - clean

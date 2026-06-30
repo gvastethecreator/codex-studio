@@ -13,18 +13,18 @@ tags:
   - concept-art
 visualDna:
   aesthetic: Composition thumbnail grid for shot-language exploration and suspense-focused camera grammar
-  form_and_line: Loose value thumbnails with framing guides and camera-angle markers
-  color_palette: Predominantly grayscale with optional restrained warm/cool key differentiation
-  lighting_setup: Per-frame key direction studies using simple value grouping
-  material_texture: Marker/pencil roughness retained for planning immediacy
-  render_quality: Previsualization-grade roughs prioritizing sequence rhythm over polish
-  spatial_distortion: Multi-panel grid enabling rapid comparison of lens/angle/depth setups
-  atmosphere: Analytical, cinematic, pre-production momentum
+  subject_treatment: Loose value thumbnails with framing guides and camera-angle markers
+  color_and_tone: Predominantly grayscale with optional restrained warm/cool key differentiation
+  lighting_and_shadow: Per-frame key direction studies using simple value grouping
+  texture_and_material: Marker/pencil roughness retained for planning immediacy
+  camera_and_composition: Multi-panel grid enabling rapid comparison of lens/angle/depth setups
+  atmosphere_and_mood: Analytical, cinematic, pre-production momentum
+  rendering_and_quality: Previsualization-grade roughs prioritizing sequence rhythm over polish
   key_features: Shot-size variety, perspective alternation, compositional cadence mapping
   creative_brief: >-
-    Apply composition-thumbnail grid logic to any input: camera/value alternatives, crop experiments, focal hierarchy
-    tests, lens-like framing, and miniature layout variants. It should generate composition diversity without requiring
-    storyboards, film scenes, characters, or sequential narrative panels.
+    Apply composition-thumbnail grid logic to any input: camera/value alternatives, crop experiments, focal
+    hierarchy tests, lens-like framing, and miniature layout variants. It should generate composition
+    diversity without requiring storyboards, film scenes, characters, or sequential narrative panels.
 avoidRules:
   - rendered
   - polished

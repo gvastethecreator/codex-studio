@@ -13,18 +13,21 @@ tags:
   - subcultures
 visualDna:
   aesthetic: Sunlit bohemian layering, handcrafted wanderer romance, fringe-and-lace reverie
-  form_and_line: Flowing layers, fringe cascades, tiered drape, bell-sleeve billow, relaxed artisan ease
-  color_palette: Earth tones, floral prints, terracotta, ochre, dusty rose, sun-bleached coral
-  lighting_setup: Golden hour sun, lens flare warmth, backlit halo, dust-mote glow
-  material_texture: Lace, crochet, denim, eyelet cotton, macrame knots, worn-in suede, cheesecloth gauze
-  render_quality: Craft-led bohemian editorial, weathered softness, sun-drenched naturalism
-  spatial_distortion: None
-  atmosphere: Free, happy, natural, carefree wanderlust, sun-warmed nostalgia, handmade ease
+  subject_treatment: Flowing layers, fringe cascades, tiered drape, bell-sleeve billow, relaxed artisan ease
+  color_and_tone: Earth tones, floral prints, terracotta, ochre, dusty rose, sun-bleached coral
+  lighting_and_shadow: Golden hour sun, lens flare warmth, backlit halo, dust-mote glow
+  texture_and_material: Lace, crochet, denim, eyelet cotton, macrame knots, worn-in suede, cheesecloth gauze
+  camera_and_composition: >-
+    Compose for Boho Festival using its key spatial cues: Accessories (hats, jewelry), layered necklaces,
+    wide-brim felt hat, turquoise rings.
+  atmosphere_and_mood: Free, happy, natural, carefree wanderlust, sun-warmed nostalgia, handmade ease
+  rendering_and_quality: Craft-led bohemian editorial, weathered softness, sun-drenched naturalism
   key_features: Accessories (hats, jewelry), layered necklaces, wide-brim felt hat, turquoise rings
   creative_brief: >-
-    Filter the input through bohemian layering: crochet apertures, fringe motion, turquoise glints, worn suede, eyelet
-    cotton and sun-bleached florals. Keep the golden handmade drift and wind-touched ease as styling pressure only, not
-    as a fixed desert festival, crowd, stage, barefoot traveler or prescribed body setup.
+    Filter the input through bohemian layering: crochet apertures, fringe motion, turquoise glints, worn
+    suede, eyelet cotton and sun-bleached florals. Keep the golden handmade drift and wind-touched ease as
+    styling pressure only, not as a fixed desert festival, crowd, stage, barefoot traveler or prescribed body
+    setup.
 avoidRules:
   - suit
   - strict

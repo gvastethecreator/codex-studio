@@ -13,19 +13,18 @@ tags:
   - digital-art
 visualDna:
   aesthetic: 2D geometric triangulation
-  form_and_line: Triangles
-  color_palette: Gradients per triangle
-  lighting_setup: Flat
-  material_texture: None
-  render_quality: Vector, modern
-  spatial_distortion: Geometric
-  atmosphere: Clean, sharp
+  subject_treatment: Triangles
+  color_and_tone: Gradients per triangle
+  lighting_and_shadow: Flat
+  texture_and_material: "Surface treatment follows Polygon Art's material cues: Triangular mesh."
+  camera_and_composition: Geometric
+  atmosphere_and_mood: Clean, sharp
+  rendering_and_quality: Vector, modern
   key_features: Triangular mesh
   creative_brief: >-
-    Apply polygon-art tessellation to any input: triangular facets, angular
-    tonal decisions, low-resolution form memory, and flat geometric patchwork.
-    Keep geometry as the art system without requiring portraits, animals,
-    landscapes, or stock low-poly subjects.
+    Apply polygon-art tessellation to any input: triangular facets, angular tonal decisions, low-resolution
+    form memory, and flat geometric patchwork. Keep geometry as the art system without requiring portraits,
+    animals, landscapes, or stock low-poly subjects.
 avoidRules:
   - photo
   - realistic
@@ -46,7 +45,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP06-058.webp
 attributes:
-  negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border, face requirement
+  negativePrompt: >-
+    photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy,
+    watermark, text, signature, frame, border, face requirement
 taxonomy:
   packId: pack_06
   packName: Essential Art Styles

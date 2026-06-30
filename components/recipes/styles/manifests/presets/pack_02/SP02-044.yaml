@@ -12,22 +12,25 @@ tags:
   - cinematic-and-media
   - animation-styles
 visualDna:
-  aesthetic: Moving oil-paint canvas, Loving Vincent style, impasto frame by frame, brushstroke life, sheer artistic devotion
-  form_and_line: Brush strokes
-  color_palette: Impressionist, sunlit yellow, cobalt shadow, viridian green, violet dusk
-  lighting_setup: Painted light, brush-rendered glow, canvas-luminosity
-  material_texture: Thick impasto, palette-knife ridges, bristle strokes, layered scumble
-  render_quality: Masterpiece, moving art, frame-by-frame painting, gallery-grade
-  spatial_distortion: Swirling brush current, paint-flow drift, animated impasto displacement
-  atmosphere: Artistic, emotional, painterly devotion, melancholic beauty
+  aesthetic: >-
+    Moving oil-paint canvas, Loving Vincent style, impasto frame by frame, brushstroke life, sheer artistic
+    devotion
+  subject_treatment: Brush strokes
+  color_and_tone: Impressionist, sunlit yellow, cobalt shadow, viridian green, violet dusk
+  lighting_and_shadow: Painted light, brush-rendered glow, canvas-luminosity
+  texture_and_material: Thick impasto, palette-knife ridges, bristle strokes, layered scumble
+  camera_and_composition: Swirling brush current, paint-flow drift, animated impasto displacement
+  atmosphere_and_mood: Artistic, emotional, painterly devotion, melancholic beauty
+  rendering_and_quality: Masterpiece, moving art, frame-by-frame painting, gallery-grade
   key_features: Brush direction, visible stroke, canvas weave, palette texture
   creative_brief: >-
-    Make the input feel painted frame by frame in thick oil: directional brushwork, ridged impasto, palette-knife
-    texture, canvas weave, and color movement that seems alive between strokes. Avoid fixed skies, fields, or
-    art-historical composition quotes. The result should prioritize material paint behavior and gallery-grade movement
-    over literal subject changes. Apply Oil Paint Animation as a portable cinematic/camera style over any input:
-    preserve its lens behavior, color process, lighting setup, artifact pattern, and deformation grammar while avoiding
-    a required actor, room, prop, brand, readable text, fixed IP scene, or narrative setup.
+    Make the input feel painted frame by frame in thick oil: directional brushwork, ridged impasto,
+    palette-knife texture, canvas weave, and color movement that seems alive between strokes. Avoid fixed
+    skies, fields, or art-historical composition quotes. The result should prioritize material paint behavior
+    and gallery-grade movement over literal subject changes. Apply Oil Paint Animation as a portable
+    cinematic/camera style over any input: preserve its lens behavior, color process, lighting setup, artifact
+    pattern, and deformation grammar while avoiding a required actor, room, prop, brand, readable text, fixed
+    IP scene, or narrative setup.
 avoidRules:
   - digital
   - sharp

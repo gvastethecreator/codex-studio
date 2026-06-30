@@ -13,15 +13,20 @@ tags:
   - lighting-techniques
 visualDna:
   aesthetic: Glamour lighting
-  form_and_line: Centered lower cast shadow
-  color_palette: Flattering
-  lighting_setup: High frontal
-  material_texture: Smooth frontal polish
-  render_quality: Beauty-light studio polish
-  spatial_distortion: None
-  atmosphere: Beautiful
+  subject_treatment: Centered lower cast shadow
+  color_and_tone: Flattering
+  lighting_and_shadow: High frontal
+  texture_and_material: Smooth frontal polish
+  camera_and_composition: >-
+    Camera setup native to Butterfly Lighting: lens choice, crop distance, depth of field, and focal hierarchy
+    support 2. Lighting Techniques without generic framing.
+  atmosphere_and_mood: Beautiful
+  rendering_and_quality: Beauty-light studio polish
   key_features: Symmetrical lower shadow
-  creative_brief: 'High frontal light creates symmetrical glamour structure: polished surfaces, controlled falloff, centered lower cast shadow, and old-Hollywood smoothness. Apply the butterfly-light signature to any subject without requiring a nose, face, makeup, or human beauty setup.'
+  creative_brief: >-
+    High frontal light creates symmetrical glamour structure: polished surfaces, controlled falloff, centered
+    lower cast shadow, and old-Hollywood smoothness. Apply the butterfly-light signature to any subject
+    without requiring a nose, face, makeup, or human beauty setup.
 avoidRules:
   - side light
 assets:

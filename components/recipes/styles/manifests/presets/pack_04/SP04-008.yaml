@@ -15,22 +15,22 @@ visualDna:
   aesthetic: >-
     Hard-boiled monochrome noir style built on brutal contrast logic and silhouette-dominant visual
     storytelling
-  form_and_line: >-
-    Negative-space carving with razor-edged contour breaks, stark shape blocking, and
-    subtraction-first figure construction
-  color_palette: Black and White only, stark binary, zero greyscale
-  lighting_setup: Harsh, single-source key, knife-edge cast shadows
-  material_texture: Dry ink grain, splatter accents, rough print-like edges, and gritty black-fill density variation
-  render_quality: >-
-    Ultra-contrast noir rendering prioritizing shadow hierarchy, binary value discipline, and
-    aggressive readability
-  spatial_distortion: Silhouette-forward composition with compressed midtone absence and hard cutout depth cues
-  atmosphere: Dark, menacing, tense, unforgiving, nocturnal
+  subject_treatment: >-
+    Negative-space carving with razor-edged contour breaks, stark shape blocking, and subtraction-first figure
+    construction
+  color_and_tone: Black and White only, stark binary, zero greyscale
+  lighting_and_shadow: Harsh, single-source key, knife-edge cast shadows
+  texture_and_material: Dry ink grain, splatter accents, rough print-like edges, and gritty black-fill density variation
+  camera_and_composition: Silhouette-forward composition with compressed midtone absence and hard cutout depth cues
+  atmosphere_and_mood: Dark, menacing, tense, unforgiving, nocturnal
+  rendering_and_quality: >-
+    Ultra-contrast noir rendering prioritizing shadow hierarchy, binary value discipline, and aggressive
+    readability
   key_features: No greyscale, silhouette framing, white-out rim
   creative_brief: >-
-    Apply binary noir comic discipline to any input: deep blacks, strategic white carve-outs, hard
-    silhouette verdicts, dry ink grain, and zero-gray contrast should carry narrative weight without
-    requiring alleys, detectives, violence, rain, city streets, or named noir-franchise staging.
+    Apply binary noir comic discipline to any input: deep blacks, strategic white carve-outs, hard silhouette
+    verdicts, dry ink grain, and zero-gray contrast should carry narrative weight without requiring alleys,
+    detectives, violence, rain, city streets, or named noir-franchise staging.
 avoidRules:
   - grey
   - color

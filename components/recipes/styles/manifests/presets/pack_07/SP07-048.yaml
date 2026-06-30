@@ -13,20 +13,22 @@ tags:
   - landscape-and-garden-systems
 visualDna:
   aesthetic: Elevated biophilic layer system with refined outdoor minimalism and calm geometric planting rhythm.
-  form_and_line: Modular planting bands, low horizontal planes, light shade, softened orthogonal hardscape and airy edge layers.
-  color_palette: >-
-    Desaturated greens, warm mineral neutrals, muted blue-greys, rusted corten accents,
-    low-intensity amber highlights
-  lighting_setup: Warm twilight gradient with soft integrated points and low-contrast edge identification.
-  material_texture: Oiled wood accent, matte painted metal, mineral gravel, woven outdoor textile and brushed zinc.
-  render_quality: Premium landscape finish with clean hierarchy, contained bloom and legible material tactility.
-  spatial_distortion: Long-axis pull, shallow vertical compression and stacked biophilic edge layering.
-  atmosphere: Quiet, restorative and contemplative, with breathable design comfort.
+  subject_treatment: >-
+    Modular planting bands, low horizontal planes, light shade, softened orthogonal hardscape and airy edge
+    layers.
+  color_and_tone: >-
+    Desaturated greens, warm mineral neutrals, muted blue-greys, rusted corten accents, low-intensity amber
+    highlights
+  lighting_and_shadow: Warm twilight gradient with soft integrated points and low-contrast edge identification.
+  texture_and_material: Oiled wood accent, matte painted metal, mineral gravel, woven outdoor textile and brushed zinc.
+  camera_and_composition: Long-axis pull, shallow vertical compression and stacked biophilic edge layering.
+  atmosphere_and_mood: Quiet, restorative and contemplative, with breathable design comfort.
+  rendering_and_quality: Premium landscape finish with clean hierarchy, contained bloom and legible material tactility.
   key_features: Modular planting bands, warm deck-like planes, integrated light and green-hardscape contrast.
   creative_brief: >-
     Treat any prompt as an elevated biophilic layer: planting bands, warm horizontal planes, integrated light
-    and contained edges. Height comes from layering, air, railing hints or suspended planters, not from a literal
-    luxury terrace, skyline view, rooftop deck or fixed outdoor lounge scene.
+    and contained edges. Height comes from layering, air, railing hints or suspended planters, not from a
+    literal luxury terrace, skyline view, rooftop deck or fixed outdoor lounge scene.
 avoidRules:
   - literal rooftop deck
   - skyline-view terrace

@@ -21,9 +21,8 @@ visualDna:
   atmosphere_and_mood: Mysterious, intense, serious, cinematic, brooding
   rendering_and_quality: Dramatic fine art photography, deep rich blacks, high resolution
   creative_brief: >-
-    Apply low-key portrait lighting to any subject: deep black field, single
-    decisive rim or side light, carved edge texture, and conceal/reveal tension
-    without requiring a human face.
+    Apply low-key portrait lighting to any subject: deep black field, single decisive rim or side light,
+    carved edge texture, and conceal/reveal tension without requiring a human face.
 avoidRules:
   - bright
   - white

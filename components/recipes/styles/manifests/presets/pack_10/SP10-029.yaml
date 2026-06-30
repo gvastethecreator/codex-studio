@@ -13,18 +13,17 @@ tags:
   - digital-glitch-and-noise
 visualDna:
   aesthetic: CMYK dots
-  form_and_line: Dot grid
-  color_palette: Cyan, Magenta, Yellow, Black
-  lighting_setup: Flat
-  material_texture: Paper print
-  render_quality: Pop art, print
-  spatial_distortion: Moire pattern
-  atmosphere: Retro, graphic
+  subject_treatment: Dot grid
+  color_and_tone: Cyan, Magenta, Yellow, Black
+  lighting_and_shadow: Flat
+  texture_and_material: Paper print
+  camera_and_composition: Moire pattern
+  atmosphere_and_mood: Retro, graphic
+  rendering_and_quality: Pop art, print
   key_features: Rosette pattern
   creative_brief: >-
-    Apply halftone print logic to the input: angled dot screens, CMYK rosette
-    texture, size-modulated circles, and press-like color separation should make
-    forms resolve from printed particles.
+    Apply halftone print logic to the input: angled dot screens, CMYK rosette texture, size-modulated circles,
+    and press-like color separation should make forms resolve from printed particles.
 avoidRules:
   - smooth gradient
 assets:

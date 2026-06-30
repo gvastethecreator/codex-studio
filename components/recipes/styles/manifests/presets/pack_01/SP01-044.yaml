@@ -13,18 +13,18 @@ tags:
   - lighting-techniques
 visualDna:
   aesthetic: Projected image lighting
-  form_and_line: Pattern overlay
-  color_palette: Mixed projected color
-  lighting_setup: Patterned source
-  material_texture: Pixel grid (optional)
-  render_quality: Artistic, music video
-  spatial_distortion: Surface distortion by light
-  atmosphere: Conceptual, trippy
+  subject_treatment: Pattern overlay
+  color_and_tone: Mixed projected color
+  lighting_and_shadow: Patterned source
+  texture_and_material: Pixel grid (optional)
+  camera_and_composition: Surface distortion by light
+  atmosphere_and_mood: Conceptual, trippy
+  rendering_and_quality: Artistic, music video
   key_features: Light pattern
   creative_brief: >-
-    Apply projector-light mapping to the input: pattern overlay, pixel-grid
-    texture, mixed color spill, and warped light across form should turn any
-    surface into a temporary screen without requiring faces or music-video staging.
+    Apply projector-light mapping to the input: pattern overlay, pixel-grid texture, mixed color spill, and
+    warped light across form should turn any surface into a temporary screen without requiring faces or
+    music-video staging.
 avoidRules:
   - clean light
 assets:

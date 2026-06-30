@@ -13,15 +13,21 @@ tags:
   - tv-and-broadcast
 visualDna:
   aesthetic: Surveillance footage
-  form_and_line: None
-  color_palette: Black and White, crushed greys, no midtones, hot whites
-  lighting_setup: Low dynamic range, flat sensor, blown highlights
-  material_texture: Scanlines, noise, interlacing artifacts, pixel smear
-  render_quality: Low res, grainy, surveillance-grade, compressed blockiness
-  spatial_distortion: Wide angle distortion, convex warp, overhead mount
-  atmosphere: Creepy, voyeur, institutional coldness, anonymous watching
+  subject_treatment: >-
+    Treat subjects as believable filmed or broadcast subjects under CCTV/Security Cam: casting, wardrobe,
+    props, motion cues, and silhouette hierarchy follow 2. TV And Broadcast cinematic and broadcast grammar
+    without locking to one plot beat.
+  color_and_tone: Black and White, crushed greys, no midtones, hot whites
+  lighting_and_shadow: Low dynamic range, flat sensor, blown highlights
+  texture_and_material: Scanlines, noise, interlacing artifacts, pixel smear
+  camera_and_composition: Wide angle distortion, convex warp, overhead mount
+  atmosphere_and_mood: Creepy, voyeur, institutional coldness, anonymous watching
+  rendering_and_quality: Low res, grainy, surveillance-grade, compressed blockiness
   key_features: Timestamp-like overlay, camera ID marks, motion-box geometry
-  creative_brief: 'CCTV media style fixes any subject under anonymous surveillance: black-and-white compression, convex wide-angle warp, scanlines, pixel smear, hot whites, and timestamp-like UI marks. Keep security-cam coldness without forcing people, suspects, crime, or literal readable overlays.'
+  creative_brief: >-
+    CCTV media style fixes any subject under anonymous surveillance: black-and-white compression, convex
+    wide-angle warp, scanlines, pixel smear, hot whites, and timestamp-like UI marks. Keep security-cam
+    coldness without forcing people, suspects, crime, or literal readable overlays.
 avoidRules:
   - color
   - hd

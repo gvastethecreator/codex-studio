@@ -13,19 +13,18 @@ tags:
   - comic-book-styles
 visualDna:
   aesthetic: Underground comix ink density (R. Crumb-inspired counterculture draftsmanship)
-  form_and_line: Nervous wobble contours with obsessive crosshatch layering
-  color_palette: High-contrast black-and-white with dense hatch midtones
-  lighting_setup: Shadow built by manual hatch fields and texture accumulation
-  material_texture: Rough print-paper feel with visible hand-ink irregularity
-  render_quality: Raw, hand-forged, anti-polish comic finish
-  spatial_distortion: Grotesque exaggeration and elastic anatomy choices
-  atmosphere: Subversive, satirical, abrasive, id-driven
+  subject_treatment: Nervous wobble contours with obsessive crosshatch layering
+  color_and_tone: High-contrast black-and-white with dense hatch midtones
+  lighting_and_shadow: Shadow built by manual hatch fields and texture accumulation
+  texture_and_material: Rough print-paper feel with visible hand-ink irregularity
+  camera_and_composition: Grotesque exaggeration and elastic anatomy choices
+  atmosphere_and_mood: Subversive, satirical, abrasive, id-driven
+  rendering_and_quality: Raw, hand-forged, anti-polish comic finish
   key_features: Heavy hatch webs, warped panel borders, hyper-detailed clutter zones
   creative_brief: >-
-    Apply underground comix attitude to any input: restless hand energy, crosshatch mass, unstable
-    contour rhythm, grotesque proportion shifts, and abrasive print density should carry
-    counterculture tension without requiring crowds, street satire, cluttered rooms, caricature
-    figures, or a fixed scene setup.
+    Apply underground comix attitude to any input: restless hand energy, crosshatch mass, unstable contour
+    rhythm, grotesque proportion shifts, and abrasive print density should carry counterculture tension
+    without requiring crowds, street satire, cluttered rooms, caricature figures, or a fixed scene setup.
 avoidRules:
   - clean
   - mainstream

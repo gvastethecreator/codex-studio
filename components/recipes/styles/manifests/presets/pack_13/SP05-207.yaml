@@ -13,34 +13,32 @@ tags:
   - slice-of-life-and-moe
 visualDna:
   aesthetic: >-
-    Production-workday anime cheer where task density, deadline pressure, visible coordination, and
-    hopeful camaraderie drive visual momentum
-  form_and_line: >-
-    Workflow clutter rhythm, storyboard-like panel geometry, checklist diagonals, quick reaction
-    silhouettes, and coordinated movement paths
-  color_palette: >-
-    Fluorescent neutrals, sticky-note yellow, monitor blue, coffee brown, commuter red accents, and
-    warm late-night beige
-  lighting_setup: >-
-    Mixed fluorescent top-light, cool screen spill, late-night lamp islands, and gray overtime
-    ambience with hopeful warm accents
-  material_texture: >-
-    Paper stacks, tablet plastic, cork fibers, worn desks, condensation rings, and compressed
-    work-surface detail
-  render_quality: >-
+    Production-workday anime cheer where task density, deadline pressure, visible coordination, and hopeful
+    camaraderie drive visual momentum
+  subject_treatment: >-
+    Workflow clutter rhythm, storyboard-like panel geometry, checklist diagonals, quick reaction silhouettes,
+    and coordinated movement paths
+  color_and_tone: >-
+    Fluorescent neutrals, sticky-note yellow, monitor blue, coffee brown, commuter red accents, and warm
+    late-night beige
+  lighting_and_shadow: >-
+    Mixed fluorescent top-light, cool screen spill, late-night lamp islands, and gray overtime ambience with
+    hopeful warm accents
+  texture_and_material: >-
+    Paper stacks, tablet plastic, cork fibers, worn desks, condensation rings, and compressed work-surface
+    detail
+  camera_and_composition: Tight depth stacking, deadline-compression framing, and motion-led workflow cuts around any subject
+  atmosphere_and_mood: Busy, collaborative, stressed, upbeat, productive
+  rendering_and_quality: >-
     Energetic workplace anime rendering with high task readability, controlled clutter, and upbeat
     professional stress
-  spatial_distortion: >-
-    Tight depth stacking, deadline-compression framing, and motion-led workflow cuts around any
-    subject
-  atmosphere: Busy, collaborative, stressed, upbeat, productive
   key_features: >-
-    Checklist logic, production clutter, team-chaos coherence, panel geometry, deadline compression,
-    and hopeful work warmth
+    Checklist logic, production clutter, team-chaos coherence, panel geometry, deadline compression, and
+    hopeful work warmth
   creative_brief: >-
-    Use Shirobako as style anchor for deadline-cheer workflow density. Any prompt should gain
-    coordinated hustle, readable task layers, fluorescent pressure, and optimistic professional
-    momentum. Studios, desks, scooters, coffee, and keyframes are optional.
+    Use Shirobako as style anchor for deadline-cheer workflow density. Any prompt should gain coordinated
+    hustle, readable task layers, fluorescent pressure, and optimistic professional momentum. Studios, desks,
+    scooters, coffee, and keyframes are optional.
 avoidRules:
   - realistic
   - 3d render
@@ -58,8 +56,8 @@ assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-207.webp
 attributes:
   negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, text, signature
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts,
+    watermark, text, signature
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle

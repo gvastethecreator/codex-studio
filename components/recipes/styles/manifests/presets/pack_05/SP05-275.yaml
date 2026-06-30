@@ -12,20 +12,25 @@ tags:
   - anime-battle-and-worlds
   - dark-fantasy-and-seinen
 visualDna:
-  aesthetic: Civic rumor panic, media anxiety, dream-logic intrusion, expression-driven social collapse, ordinary surfaces warped by collective pressure
-  form_and_line: Dense mature-anime linework, heavy crosshatching, weighted contour variation, gritty ink density
-  color_palette: Muted earths, blood reds, cold moonlit tones, desaturated horror palette, bruised shadow hues
-  lighting_setup: Ominous directional shadows, single-source drama light, deep chiaroscuro, low-key shadow lift
-  material_texture: Broadcast static grain, printed-paper clutter, cheap plastic sheen, urban-neutral scuffing, distorted skin tones, fluorescent haze
-  render_quality: Gritty dramatic anime frame, film-noir rendering, heavy shadow compression, textured midtone grit
-  spatial_distortion: Dream-crack perspective, rumor-wave repetition, civic pressure compression, warped familiar proportions, media-noise layering
-  atmosphere: Claustrophobic, surreal, civic, unstable
+  aesthetic: >-
+    Civic rumor panic, media anxiety, dream-logic intrusion, expression-driven social collapse, ordinary
+    surfaces warped by collective pressure
+  subject_treatment: Dense mature-anime linework, heavy crosshatching, weighted contour variation, gritty ink density
+  color_and_tone: Muted earths, blood reds, cold moonlit tones, desaturated horror palette, bruised shadow hues
+  lighting_and_shadow: Ominous directional shadows, single-source drama light, deep chiaroscuro, low-key shadow lift
+  texture_and_material: >-
+    Broadcast static grain, printed-paper clutter, cheap plastic sheen, urban-neutral scuffing, distorted skin
+    tones, fluorescent haze
+  camera_and_composition: >-
+    Dream-crack perspective, rumor-wave repetition, civic pressure compression, warped familiar proportions,
+    media-noise layering
+  atmosphere_and_mood: Claustrophobic, surreal, civic, unstable
+  rendering_and_quality: Gritty dramatic anime frame, film-noir rendering, heavy shadow compression, textured midtone grit
   key_features: Rumor-driven framing, media clutter, dream-crack cues, distorted ordinary expression, civic pressure waves
-  creative_brief: >
-    Treat any subject as a civic rumor becoming visual pressure: broadcast
-    static, warped expressions, repeated motifs, and dream cracks should create
-    breakdown without fixed aggressors, props, districts, civic roles, or
-    literal media scenes.
+  creative_brief: >-
+    Treat any subject as a civic rumor becoming visual pressure: broadcast static, warped expressions,
+    repeated motifs, and dream cracks should create breakdown without fixed aggressors, props, districts,
+    civic roles, or literal media scenes.
 avoidRules:
   - realistic
   - 3d render
@@ -42,7 +47,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-275.webp
 attributes:
-  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
+  negativePrompt: >-
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts,
+    watermark, text, signature
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds

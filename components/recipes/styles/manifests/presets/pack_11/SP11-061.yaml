@@ -13,16 +13,22 @@ tags:
   - micro-macro
 visualDna:
   aesthetic: Refraction in drop, lens-drop, optical-sphere, rain-jewel, surface-tension optic
-  form_and_line: Perfect sphere, meniscus-contact curve, capillary-bridge, pendant-drop, sessile-droplet
-  color_palette: Clear, prismatic-dispersion, rainbow-caustic, inverted-scene spectrum, bokeh-chromatic
-  lighting_setup: Lens effect, backlit-refraction, macro-spot, dark-field sparkle, ring-flash catchlight
-  material_texture: Surface tension, liquid-skin, glycerin-viscosity, water-bead elasticity, contact-angle gloss
-  render_quality: Physics, beauty, droplet-lens, refraction-magic, macro-patience, liquid-optics
-  spatial_distortion: Inverted image inside, upside-down-world, refractive-compression, lens-barrel distortion, focal-miniaturization
-  atmosphere: Calm, focus, macro-meditation, rain-pause, single-drop universe
-  key_features: Reflection, refracted-upside-down image, bokeh-background, contact-line, specular-highlight, chromatic-aberration fringing, surface-tension curvature
+  subject_treatment: Perfect sphere, meniscus-contact curve, capillary-bridge, pendant-drop, sessile-droplet
+  color_and_tone: Clear, prismatic-dispersion, rainbow-caustic, inverted-scene spectrum, bokeh-chromatic
+  lighting_and_shadow: Lens effect, backlit-refraction, macro-spot, dark-field sparkle, ring-flash catchlight
+  texture_and_material: Surface tension, liquid-skin, glycerin-viscosity, water-bead elasticity, contact-angle gloss
+  camera_and_composition: >-
+    Inverted image inside, upside-down-world, refractive-compression, lens-barrel distortion,
+    focal-miniaturization
+  atmosphere_and_mood: Calm, focus, macro-meditation, rain-pause, single-drop universe
+  rendering_and_quality: Physics, beauty, droplet-lens, refraction-magic, macro-patience, liquid-optics
+  key_features: >-
+    Reflection, refracted-upside-down image, bokeh-background, contact-line, specular-highlight,
+    chromatic-aberration fringing, surface-tension curvature
   creative_brief: >-
-    Compose liquid-lens macro imagery around spherical droplets, inverted refractive interiors, and precise contact-line behavior. Prioritize optical clarity and tension-driven curvature without fixing the style to one surface or setting.
+    Compose liquid-lens macro imagery around spherical droplets, inverted refractive interiors, and precise
+    contact-line behavior. Prioritize optical clarity and tension-driven curvature without fixing the style to
+    one surface or setting.
 avoidRules:
   - dry
 assets:

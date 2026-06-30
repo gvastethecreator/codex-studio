@@ -13,15 +13,21 @@ tags:
   - tv-and-broadcast
 visualDna:
   aesthetic: Daytime TV
-  form_and_line: None
-  color_palette: Soft focus, pastel wash, peach glow, pearl sheen
-  lighting_setup: High key, backlit, halo separation, glamour diffusion
-  material_texture: 60fps video (Soap effect), hyper-smooth motion, interlaced
-  render_quality: Dreamy, cheap, high-frame-rate unreality, studio artifice
-  spatial_distortion: Soft glow, diffusion filter haze, vaseline smear
-  atmosphere: Dramatic, romantic, suspended melodrama
+  subject_treatment: >-
+    Treat subjects as believable filmed or broadcast subjects under Soap Opera: casting, wardrobe, props,
+    motion cues, and silhouette hierarchy follow 2. TV And Broadcast cinematic and broadcast grammar without
+    locking to one plot beat.
+  color_and_tone: Soft focus, pastel wash, peach glow, pearl sheen
+  lighting_and_shadow: High key, backlit, halo separation, glamour diffusion
+  texture_and_material: 60fps video (Soap effect), hyper-smooth motion, interlaced
+  camera_and_composition: Soft glow, diffusion filter haze, vaseline smear
+  atmosphere_and_mood: Dramatic, romantic, suspended melodrama
+  rendering_and_quality: Dreamy, cheap, high-frame-rate unreality, studio artifice
   key_features: Diffusion haze, melodramatic zoom, high-frame-rate gloss
-  creative_brief: 'Soap opera style dissolves any subject into high-key melodrama: pastel wash, pearl glow, backlit halo, vaseline-lens diffusion, hyper-smooth video motion, and a suspended cliffhanger pause. Keep daytime-TV unreality without requiring romance, doorways, faces, or scandal.'
+  creative_brief: >-
+    Soap opera style dissolves any subject into high-key melodrama: pastel wash, pearl glow, backlit halo,
+    vaseline-lens diffusion, hyper-smooth video motion, and a suspended cliffhanger pause. Keep daytime-TV
+    unreality without requiring romance, doorways, faces, or scandal.
 avoidRules:
   - film look
 assets:

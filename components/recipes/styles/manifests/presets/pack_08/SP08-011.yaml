@@ -13,20 +13,21 @@ tags:
   - historical-and-fantasy
 visualDna:
   aesthetic: 1950s domestic-pop polish, technicolor nostalgia, cheerful mid-century presentation grammar
-  form_and_line: Cinched sweep, circle-volume arcs, petticoat lift, scalloped trim rhythm, tidy accent geometry
-  color_palette: Polka dots, pastel pink/blue, cherry red, mint green, buttercup yellow, gingham check
-  lighting_setup: Bright Technicolor saturation, neon-cheer accents, sun-drenched retro warmth
-  material_texture: Crisp cotton poplin, hairspray lacquer, taffeta rustle, crinoline scratch, satin ribbon trim
-  render_quality: Retro, polished, Kodachrome nostalgia, lacquered presentation charm
-  spatial_distortion: None
-  atmosphere: Nostalgic, buoyant, orderly, jukebox-bright sweetness, social optimism
+  subject_treatment: Cinched sweep, circle-volume arcs, petticoat lift, scalloped trim rhythm, tidy accent geometry
+  color_and_tone: Polka dots, pastel pink/blue, cherry red, mint green, buttercup yellow, gingham check
+  lighting_and_shadow: Bright Technicolor saturation, neon-cheer accents, sun-drenched retro warmth
+  texture_and_material: Crisp cotton poplin, hairspray lacquer, taffeta rustle, crinoline scratch, satin ribbon trim
+  camera_and_composition: >-
+    Compose for Vintage 1950s using its key spatial cues: Cat-eye graphic cues, victory-roll rhythm, polka-dot
+    punctuation, crinoline lift logic.
+  atmosphere_and_mood: Nostalgic, buoyant, orderly, jukebox-bright sweetness, social optimism
+  rendering_and_quality: Retro, polished, Kodachrome nostalgia, lacquered presentation charm
   key_features: Cat-eye graphic cues, victory-roll rhythm, polka-dot punctuation, crinoline lift logic
   creative_brief: >-
-    Rebuild the input through 1950s presentation grammar: circle-volume arcs,
-    petticoat lift, gingham and polka-dot punctuation, cherry-red accents and
-    glossy Technicolor neatness. Keep soda-fountain optimism as mood only; do
-    not require a body, pin-up figure, diner, sock hop, housewife role or
-    literal retro vignette.
+    Rebuild the input through 1950s presentation grammar: circle-volume arcs, petticoat lift, gingham and
+    polka-dot punctuation, cherry-red accents and glossy Technicolor neatness. Keep soda-fountain optimism as
+    mood only; do not require a body, pin-up figure, diner, sock hop, housewife role or literal retro
+    vignette.
 avoidRules:
   - modern
   - pants

@@ -13,18 +13,19 @@ tags:
   - concept-art
 visualDna:
   aesthetic: Handmade architectural massing model study
-  form_and_line: Blocky volumetric planes with rough-cut contour fidelity
-  color_palette: Neutral model-shop tones (foam white, chipboard gray, wood tan)
-  lighting_setup: Simple studio top/side light to emphasize shadow mass separation
-  material_texture: Visible foam core edges, wood grain hints, glue seam artifacts
-  render_quality: Early-phase physical prototype realism with low-finish honesty
-  spatial_distortion: Scale-model compression with contextual block simplification
-  atmosphere: Workshop-iterative, practical, form-discovery focus
+  subject_treatment: Blocky volumetric planes with rough-cut contour fidelity
+  color_and_tone: Neutral model-shop tones (foam white, chipboard gray, wood tan)
+  lighting_and_shadow: Simple studio top/side light to emphasize shadow mass separation
+  texture_and_material: Visible foam core edges, wood grain hints, glue seam artifacts
+  camera_and_composition: Scale-model compression with contextual block simplification
+  atmosphere_and_mood: Workshop-iterative, practical, form-discovery focus
+  rendering_and_quality: Early-phase physical prototype realism with low-finish honesty
   key_features: Volumetric hierarchy, scale cues, handcrafted assembly traces
   creative_brief: >-
-    Apply architecture-massing model style to any input: foam-core planes, blocky volume studies, cast-shadow massing,
-    chipboard texture, seam lines, and scale-model lighting. If no architecture exists, reinterpret the subject as
-    spatial mass and structural rhythm without requiring buildings, city blocks, or a physical maquette.
+    Apply architecture-massing model style to any input: foam-core planes, blocky volume studies, cast-shadow
+    massing, chipboard texture, seam lines, and scale-model lighting. If no architecture exists, reinterpret
+    the subject as spatial mass and structural rhythm without requiring buildings, city blocks, or a physical
+    maquette.
 avoidRules:
   - detailed
   - rendered

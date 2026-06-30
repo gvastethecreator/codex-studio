@@ -12,16 +12,37 @@ tags:
   - essential-art-styles
   - retro-game-visual-systems
 visualDna:
-  aesthetic: Atari-VCS-2600 extreme limitation, 40-pixel-wide sprite logic, single-color-per-scanline, stripe-color technique for multicolor, Combat, Pitfall and Adventure as constraint anchors only, hardware-limitation-as-aesthetic, 128-bytes-of-RAM universe, two-object display pressure
-  form_and_line: 40-fat-pixel-wide forms, single-scanline-height color bands, blocky-rectangle everything, missile-and-ball hardware abstractions, playfield-block backgrounds
-  color_palette: NTSC-128-color-palette, 4-colors-per-scanline, rainbow-stripe-technique, bright-primaries, Atari-warmth-color-gen, black-background-standard, TIA-chip-color-generation
-  lighting_setup: No-lighting-whatsoever, sprite-color-as-background-separation, scanline-stripe-color-for-depth, no-gradients-no-shading
-  material_texture: TIA-graphics-chip-texture, scanline-stripe-artifacts, sprite-flicker-at-object-limit, phosphor-persistence-blur, NTSC-color-bleed, RF-modulator-static-noise
-  render_quality: Atari-2600-extreme-limitation aesthetic, 1977-hardware-constraint-beauty, minimal-pixel-poetry, 128-bytes-of-RAM art
-  spatial_distortion: 40-pixel form width, 160x192 playfield resolution, scanline-color-stripe proportions, object-flicker at display limits, mirrored or repeated playfield logic
-  atmosphere: Primitive, ingenious, constraint-creativity, first-generation-home-console wonder, cartridge-dust-and-static, woodgrain-console-nostalgia
-  key_features: 40-pixel-wide forms, scanline-color-stripes, sprite-flicker multiplexing, 4-colors-per-scanline, TIA-hardware artifacts, blocky-rectangle everything, black-background standard
-  creative_brief: Any prompt is reduced until forty fat pixels can carry it. Scanline stripes, flicker multiplexing and blocky playfield logic make the image feel engineered under impossible memory pressure.
+  aesthetic: >-
+    Atari-VCS-2600 extreme limitation, 40-pixel-wide sprite logic, single-color-per-scanline, stripe-color
+    technique for multicolor, Combat, Pitfall and Adventure as constraint anchors only,
+    hardware-limitation-as-aesthetic, 128-bytes-of-RAM universe, two-object display pressure
+  subject_treatment: >-
+    40-fat-pixel-wide forms, single-scanline-height color bands, blocky-rectangle everything, missile-and-ball
+    hardware abstractions, playfield-block backgrounds
+  color_and_tone: >-
+    NTSC-128-color-palette, 4-colors-per-scanline, rainbow-stripe-technique, bright-primaries,
+    Atari-warmth-color-gen, black-background constraint, TIA-chip-color-generation
+  lighting_and_shadow: >-
+    No-lighting-whatsoever, sprite-color-as-background-separation, scanline-stripe-color-for-depth,
+    no-gradients-no-shading
+  texture_and_material: >-
+    TIA-graphics-chip-texture, scanline-stripe-artifacts, sprite-flicker-at-object-limit,
+    phosphor-persistence-blur, NTSC-color-bleed, RF-modulator-static-noise
+  camera_and_composition: >-
+    40-pixel form width, 160x192 playfield resolution, scanline-color-stripe proportions, object-flicker at
+    display limits, mirrored or repeated playfield logic
+  atmosphere_and_mood: >-
+    Primitive, ingenious, constraint-creativity, first-generation-home-console wonder,
+    cartridge-dust-and-static, woodgrain-console-nostalgia
+  rendering_and_quality: >-
+    Atari-2600-extreme-limitation aesthetic, 1977-hardware-constraint-beauty, minimal-pixel-poetry,
+    128-bytes-of-RAM art
+  key_features: >-
+    40-pixel-wide forms, scanline-color-stripes, sprite-flicker multiplexing, 4-colors-per-scanline,
+    TIA-hardware artifacts, blocky-rectangle everything, black-background constraint
+  creative_brief: >-
+    Any prompt is reduced until forty fat pixels can carry it. Scanline stripes, flicker multiplexing and
+    blocky playfield logic make the image feel engineered under impossible memory pressure.
 avoidRules:
   - detailed
   - smooth

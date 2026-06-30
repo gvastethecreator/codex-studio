@@ -13,18 +13,21 @@ tags:
   - modern-shonen-and-action
 visualDna:
   aesthetic: South Seas gun-runner grit, with humid noir, lawless heat, hardboiled cool, and gunmetal danger.
-  form_and_line: Clean early-digital contours, hardboiled silhouette blocks, recoil diagonals, smoke curls, and sharp stance economy.
-  color_palette: Gunmetal gray, tropical teal, rust orange, cigarette ember red, salt haze white, and oily black.
-  lighting_setup: Hot practical glare, humid rim bloom, low noir shadows, and polished early-digital highlight bands.
-  material_texture: Salt haze, brushed metal, sweat sheen, worn fabric, smoke grain, and smooth cel-noir surfaces.
-  render_quality: Early-2000s digital-cel action finish with crisp grit, worldly heat, and clean danger readability.
-  spatial_distortion: Low-angle threat framing, lateral escape vectors, and humid depth compression without fixed docks or vehicles.
-  atmosphere: Gruff, hot, dangerous, worldly
+  subject_treatment: >-
+    Clean early-digital contours, hardboiled silhouette blocks, recoil diagonals, smoke curls, and sharp
+    stance economy.
+  color_and_tone: Gunmetal gray, tropical teal, rust orange, cigarette ember red, salt haze white, and oily black.
+  lighting_and_shadow: Hot practical glare, humid rim bloom, low noir shadows, and polished early-digital highlight bands.
+  texture_and_material: Salt haze, brushed metal, sweat sheen, worn fabric, smoke grain, and smooth cel-noir surfaces.
+  camera_and_composition: >-
+    Low-angle threat framing, lateral escape vectors, and humid depth compression without fixed docks or
+    vehicles.
+  atmosphere_and_mood: Gruff, hot, dangerous, worldly
+  rendering_and_quality: Early-2000s digital-cel action finish with crisp grit, worldly heat, and clean danger readability.
   key_features: Humid noir, gunmetal palette, smoke tension, lawless heat, hardboiled early-digital grit.
   creative_brief: >-
-    Apply tropical noir pressure to any prompt through humid glare, gunmetal
-    texture, smoke rhythm, and lawless cool without requiring a port, dock,
-    vehicle, smoking prop, or criminal scene.
+    Apply tropical noir pressure to any prompt through humid glare, gunmetal texture, smoke rhythm, and
+    lawless cool without requiring a port, dock, vehicle, smoking prop, or criminal scene.
 avoidRules:
   - realistic
   - 3d render
@@ -41,7 +44,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-142.webp
 attributes:
-  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
+  negativePrompt: >-
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts,
+    watermark, text, signature
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds

@@ -13,18 +13,18 @@ tags:
   - subcultures
 visualDna:
   aesthetic: 1970s punk insurrection, DIY anarchy boutique, anti-polish refusal
-  form_and_line: Ripped, torn, pinned, shredded asymmetry, bondage-strap tension, drainpipe jeans
-  color_palette: Black, Red Plaid, Silver, safety-orange accent, bleached-out tartan, rusted chrome
-  lighting_setup: Flash bulb, harsh paparazzi pop, sweat-sheen glare, basement-gig strobe
-  material_texture: Destroyed denim, cone studs, safety pins, painted leather, gaffer tape, abstract tartan patches
-  render_quality: Rebellious boutique rawness, safety-pin couture abrasion, anti-polish finish
-  spatial_distortion: Jagged punk silhouette distortion
-  atmosphere: Loud, chaotic, abrasive, three-chord fury, DIY refusal
+  subject_treatment: Ripped, torn, pinned, shredded asymmetry, bondage-strap tension, drainpipe jeans
+  color_and_tone: Black, Red Plaid, Silver, safety-orange accent, bleached-out tartan, rusted chrome
+  lighting_and_shadow: Flash bulb, harsh paparazzi pop, sweat-sheen glare, basement-gig strobe
+  texture_and_material: Destroyed denim, cone studs, safety pins, painted leather, gaffer tape, abstract tartan patches
+  camera_and_composition: Jagged punk silhouette distortion
+  atmosphere_and_mood: Loud, chaotic, abrasive, three-chord fury, DIY refusal
+  rendering_and_quality: Rebellious boutique rawness, safety-pin couture abrasion, anti-polish finish
   key_features: DIY aesthetic, illegible scuffed-mark texture, padlock-necklace hardware, torn abstract patches
   creative_brief: >-
-    Push the input through punk refusal: torn tartan, painted leather, safety-pin punctuation, gaffer-tape repairs,
-    illegible scuffed marks, studs and asymmetry. The result should feel damaged by design and loud without requiring a
-    club, crime scene, body-first rebel read, mohawk or performance setting.
+    Push the input through punk refusal: torn tartan, painted leather, safety-pin punctuation, gaffer-tape
+    repairs, illegible scuffed marks, studs and asymmetry. The result should feel damaged by design and loud
+    without requiring a club, crime scene, body-first rebel read, mohawk or performance setting.
 avoidRules:
   - clean
   - expensive

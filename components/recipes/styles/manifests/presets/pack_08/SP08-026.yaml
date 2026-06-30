@@ -13,19 +13,22 @@ tags:
   - subcultures
 visualDna:
   aesthetic: Road-worn leather utility, chrome hardware and patch-like texture without gang identity.
-  form_and_line: Heavy leather mass, cut-off vest geometry, engineer-boot structure and bandana-like line.
-  color_palette: Black leather, Silver, denim-blue, muted patch color, chrome, grease-black
-  lighting_setup: Harsh chrome-reflection highlights, restrained neon hints and sun-glare heat.
-  material_texture: Heavyweight cowhide, worn embroidery, metal studs, chain, dirty denim and brass zippers.
-  render_quality: Tough asphalt authenticity, road-worn grit and durable utility finish.
-  spatial_distortion: None
-  atmosphere: Cool road defiance, anti-polish gravity and worn-material confidence.
-  key_features: Leather vest panels, engineer boots, chain hardware, grease-black wear and patch-like geometry without readable insignia.
+  subject_treatment: Heavy leather mass, cut-off vest geometry, engineer-boot structure and bandana-like line.
+  color_and_tone: Black leather, Silver, denim-blue, muted patch color, chrome, grease-black
+  lighting_and_shadow: Harsh chrome-reflection highlights, restrained neon hints and sun-glare heat.
+  texture_and_material: Heavyweight cowhide, worn embroidery, metal studs, chain, dirty denim and brass zippers.
+  camera_and_composition: >-
+    Compose for Road-Worn Biker Leather using its key spatial cues: Leather vest panels, engineer boots, chain
+    hardware, grease-black wear and patch-like geometry without readable insignia.
+  atmosphere_and_mood: Cool road defiance, anti-polish gravity and worn-material confidence.
+  rendering_and_quality: Tough asphalt authenticity, road-worn grit and durable utility finish.
+  key_features: >-
+    Leather vest panels, engineer boots, chain hardware, grease-black wear and patch-like geometry without
+    readable insignia.
   creative_brief: >-
-    Recast the input in road-worn leather utility codes: heavyweight cowhide,
-    cut-off vest structure, worn patch texture, engineer boots, grease black and
-    chrome glints. Keep defiance as style pressure without requiring gang
-    identity, intimidation, motorcycle-club scene, readable insignia or road-club identity.
+    Recast the input in road-worn leather utility codes: heavyweight cowhide, cut-off vest structure, worn
+    patch texture, engineer boots, grease black and chrome glints. Keep defiance as style pressure without
+    requiring gang identity, intimidation, motorcycle-club scene, readable insignia or road-club identity.
 avoidRules:
   - soft
   - readable insignia

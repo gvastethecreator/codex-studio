@@ -13,35 +13,29 @@ tags:
   - mecha-and-cyberpunk
 visualDna:
   aesthetic: >-
-    Grounded civic sci-fi procedure with practical engineering, maintenance realism, bureaucratic
-    calm, utility palettes, and low-key humor
-  form_and_line: >-
-    Hard-edged machinery, panel-line discipline, procedural diagram shapes, maintenance geometry,
-    and civic layout grids.
-  color_palette: >-
-    Utility white, municipal blue, hazard orange, wet asphalt gray, paperwork beige, and hydraulic
-    steel.
-  lighting_setup: >-
-    Overcast practical light, fluorescent bay glow, wet-surface reflections, and low-drama
-    operational highlights.
-  material_texture: >-
-    Brushed metal, rubber seals, rain sheen, concrete grain, paperwork flatness, and oily mechanical
-    joints.
-  render_quality: >-
-    High-detail grounded sci-fi anime finish with practical machines, precise engineering, and civic
-    realism.
-  spatial_distortion: >-
-    Procedure-first perspective, inspection-angle framing, and infrastructure depth without fixed
-    city or cockpit views.
-  atmosphere: Procedural, grounded, urban, practical
+    Grounded civic sci-fi procedure with practical engineering, maintenance realism, bureaucratic calm,
+    utility palettes, and low-key humor
+  subject_treatment: >-
+    Hard-edged machinery, panel-line discipline, procedural diagram shapes, maintenance geometry, and civic
+    layout grids.
+  color_and_tone: Utility white, municipal blue, hazard orange, wet asphalt gray, paperwork beige, and hydraulic steel.
+  lighting_and_shadow: >-
+    Overcast practical light, fluorescent bay glow, wet-surface reflections, and low-drama operational
+    highlights.
+  texture_and_material: Brushed metal, rubber seals, rain sheen, concrete grain, paperwork flatness, and oily mechanical joints.
+  camera_and_composition: >-
+    Procedure-first perspective, inspection-angle framing, and infrastructure depth without fixed city or
+    cockpit views.
+  atmosphere_and_mood: Procedural, grounded, urban, practical
+  rendering_and_quality: High-detail grounded sci-fi anime finish with practical machines, precise engineering, and civic realism.
   key_features: >-
-    Civic machinery logic, maintenance grids, paperwork humor, utility color, procedural diagrams,
-    and practical engineering surfaces
+    Civic machinery logic, maintenance grids, paperwork humor, utility color, procedural diagrams, and
+    practical engineering surfaces
   creative_brief: >-
     Use Patlabor as style anchor for municipal machine procedure. Any prompt should feel maintained,
-    regulated, useful, and civically grounded. If the subject can become machinery, give it service
-    panels, maintenance labels, rubber seals, or civic robot practicality; police, named cities,
-    patrols, and public incidents remain optional.
+    regulated, useful, and civically grounded. If the subject can become machinery, give it service panels,
+    maintenance labels, rubber seals, or civic robot practicality; police, named cities, patrols, and public
+    incidents remain optional.
 avoidRules:
   - realistic
   - 3d render
@@ -59,8 +53,8 @@ assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-222.webp
 attributes:
   negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, text, signature
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts,
+    watermark, text, signature
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds

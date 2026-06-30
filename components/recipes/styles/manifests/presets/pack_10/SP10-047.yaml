@@ -13,15 +13,19 @@ tags:
   - textile-and-ornamental-patterns
 visualDna:
   aesthetic: Damask ornamental repeat
-  form_and_line: Symmetrical floral
-  color_palette: Two tone (e.g. Red/Gold)
-  lighting_setup: Flat
-  material_texture: Silk, velvet
-  render_quality: Luxury, classic
-  spatial_distortion: Repeat
-  atmosphere: Expensive, old
+  subject_treatment: Symmetrical floral
+  color_and_tone: Two tone (e.g. Red/Gold)
+  lighting_and_shadow: Flat
+  texture_and_material: Silk, velvet
+  camera_and_composition: Repeat
+  atmosphere_and_mood: Expensive, old
+  rendering_and_quality: Luxury, classic
   key_features: Symmetry
-  creative_brief: Apply damask as luxurious repeat over the input with two-tone symmetry, acanthus and fleur-de-lis motifs, silk-velvet sheen, old-world restraint, and dense ornamental rhythm. If interiors or textiles exist, reinforce them; otherwise use damask as surface grammar without requiring wallpaper, drawing rooms, or candlelight.
+  creative_brief: >-
+    Apply damask as luxurious repeat over the input with two-tone symmetry, acanthus and fleur-de-lis motifs,
+    silk-velvet sheen, old-world restraint, and dense ornamental rhythm. If interiors or textiles exist,
+    reinforce them; otherwise use damask as surface grammar without requiring wallpaper, drawing rooms, or
+    candlelight.
 avoidRules:
   - modern
   - messy

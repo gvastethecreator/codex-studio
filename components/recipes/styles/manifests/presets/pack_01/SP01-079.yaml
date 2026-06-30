@@ -13,15 +13,18 @@ tags:
   - portrait-and-studio
 visualDna:
   aesthetic: Booking-documentation photo
-  form_and_line: Height chart
-  color_palette: Grey, flat
-  lighting_setup: Flat
-  material_texture: Rough factual surface
-  render_quality: Raw institutional record
-  spatial_distortion: Deadpan frontal flattening
-  atmosphere: Serious, trouble
+  subject_treatment: Height chart
+  color_and_tone: Grey, flat
+  lighting_and_shadow: Flat
+  texture_and_material: Rough factual surface
+  camera_and_composition: Deadpan frontal flattening
+  atmosphere_and_mood: Serious, trouble
+  rendering_and_quality: Raw institutional record
   key_features: Height lines
-  creative_brief: 'Mugshot style reduces any subject to institutional record: grey flat light, frontal deadpan composition, height-line grid, rough surface clarity, and zero glamour. Keep booking-photo severity without requiring person, face, skin, guilt, or police narrative.'
+  creative_brief: >-
+    Mugshot style reduces any subject to institutional record: grey flat light, frontal deadpan composition,
+    height-line grid, rough surface clarity, and zero glamour. Keep booking-photo severity without requiring
+    person, face, skin, guilt, or police narrative.
 avoidRules:
   - happy
   - posed

@@ -13,19 +13,19 @@ tags:
   - ink-and-print
 visualDna:
   aesthetic: Wildstyle mural composition with layered letter architecture
-  form_and_line: Multi-layer outlines, interlocking fills, arrows and extension bars
-  color_palette: High-saturation spray spectrum with complementary contrast blocking
-  lighting_setup: Graphic bevel highlights and controlled glow accents for depth cues
-  material_texture: Masonry wall grain under aerosol gradients and cutbacks
-  render_quality: Complex and polished mural rendering with deliberate hierarchy
-  spatial_distortion: Aggressive perspective bends, angular connectors, kinetic skew
-  atmosphere: Celebratory, competitive, showcase-wall intensity
+  subject_treatment: Multi-layer outlines, interlocking fills, arrows and extension bars
+  color_and_tone: High-saturation spray spectrum with complementary contrast blocking
+  lighting_and_shadow: Graphic bevel highlights and controlled glow accents for depth cues
+  texture_and_material: Masonry wall grain under aerosol gradients and cutbacks
+  camera_and_composition: Aggressive perspective bends, angular connectors, kinetic skew
+  atmosphere_and_mood: Celebratory, competitive, showcase-wall intensity
+  rendering_and_quality: Complex and polished mural rendering with deliberate hierarchy
   key_features: Nested outlines, dimensional drop logic, connector lattice, readable abstraction
   creative_brief: >-
-    Apply wildstyle graffiti-piece construction to any input as layered typographic architecture: interlocking contours,
-    arrows, bevels, bubble fills, cutback highlights, aerosol gradients, fat outlines, and paint buildup. If there are
-    no letters, transform the subject silhouette into abstract letterform structures without requiring readable words, a
-    mural wall, a train, or a street scene.
+    Apply wildstyle graffiti-piece construction to any input as layered typographic architecture: interlocking
+    contours, arrows, bevels, bubble fills, cutback highlights, aerosol gradients, fat outlines, and paint
+    buildup. If there are no letters, transform the subject silhouette into abstract letterform structures
+    without requiring readable words, a mural wall, a train, or a street scene.
 avoidRules:
   - tag
   - messy

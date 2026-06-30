@@ -12,19 +12,25 @@ tags:
   - anime-battle-and-worlds
   - modern-shonen-and-action
 visualDna:
-  aesthetic: Royal black blade opera, with severe monochrome authority, spiritual pageantry, aristocratic drama, and explosive calligraphy.
-  form_and_line: Long black silhouette sweeps, blade-like negative cuts, calligraphic effect strokes, regal posture, and palace-scale verticals.
-  color_palette: Royal black, marble white, cold blue, blood red, antique gold, and violet spiritual accents.
-  lighting_setup: Divine backlight, hard rim partitioning, opera-stage spotlight, and explosive white-black contrast.
-  material_texture: Ink-black cloth sheen, polished marble light, spiritual particle dust, metallic edge glints, and clean HDR bloom.
-  render_quality: Premium modern anime finish with ceremonial severity, high contrast, and operatic spiritual spectacle.
-  spatial_distortion: Monumental vertical compression, sweeping cloaklike motion, and reality-cut planes that enlarge the frame.
-  atmosphere: Regal, severe, explosive, mythic
+  aesthetic: >-
+    Royal black blade opera, with severe monochrome authority, spiritual pageantry, aristocratic drama, and
+    explosive calligraphy.
+  subject_treatment: >-
+    Long black silhouette sweeps, blade-like negative cuts, calligraphic effect strokes, regal posture, and
+    palace-scale verticals.
+  color_and_tone: Royal black, marble white, cold blue, blood red, antique gold, and violet spiritual accents.
+  lighting_and_shadow: Divine backlight, hard rim partitioning, opera-stage spotlight, and explosive white-black contrast.
+  texture_and_material: >-
+    Ink-black cloth sheen, polished marble light, spiritual particle dust, metallic edge glints, and clean HDR
+    bloom.
+  camera_and_composition: Monumental vertical compression, sweeping cloaklike motion, and reality-cut planes that enlarge the frame.
+  atmosphere_and_mood: Regal, severe, explosive, mythic
+  rendering_and_quality: Premium modern anime finish with ceremonial severity, high contrast, and operatic spiritual spectacle.
   key_features: Monochrome severity, calligraphic power, regal verticality, spiritual opera, blade-like contrast.
   creative_brief: >-
-    Make any prompt feel like royal spiritual opera: use black-white severity,
-    calligraphic energy, and monumental verticals without requiring uniforms,
-    palaces, weapons, named attacks, or literal war pageantry.
+    Make any prompt feel like royal spiritual opera: use black-white severity, calligraphic energy, and
+    monumental verticals without requiring uniforms, palaces, weapons, named attacks, or literal war
+    pageantry.
 avoidRules:
   - realistic
   - 3d render
@@ -41,7 +47,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-128.webp
 attributes:
-  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
+  negativePrompt: >-
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts,
+    watermark, text, signature
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds

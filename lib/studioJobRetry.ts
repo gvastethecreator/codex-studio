@@ -10,8 +10,12 @@ const RETRYABLE_JOB_STATUSES = new Set<Job['status']>([
   'cancelled',
 ]);
 
-function createRetryBatchId() {
-  return `retry-${Date.now()}-${Math.random().toString(36).slice(2, 10)}`;
+function createRetryBatchId(now = Date.now, random = Math.random) {
+  return `batch-retry-${now()}-${random().toString(36).slice(2, 10)}`;
+}
+
+function createRetrySourceSpecId(batchId: string, now = Date.now) {
+  return `spec-${batchId}-1-${now()}`;
 }
 
 export function canRetryStudioJob(status: Job['status']) {
@@ -20,13 +24,15 @@ export function canRetryStudioJob(status: Job['status']) {
 
 export function buildStudioJobRetryRequest(
   detail: JobDetailResponse,
-  options: { batchId?: string } = {},
+  options: { batchId?: string; now?: () => number } = {},
 ): CreateJobRequest {
-  const batchId = options.batchId ?? createRetryBatchId();
+  const now = options.now ?? Date.now;
+  const batchId = options.batchId ?? createRetryBatchId(now);
   const variationKey = createGenerationVariationKey('retry');
   const sourceSpec = detail.job.sourceSpec
     ? {
         ...detail.job.sourceSpec,
+        id: createRetrySourceSpecId(batchId, now),
         assets: detail.job.sourceSpec.assets.map((asset) => ({ ...asset })),
         metadata: {
           ...(detail.job.sourceSpec.metadata ?? {}),

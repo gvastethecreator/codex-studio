@@ -15,7 +15,9 @@ tags:
   - tapestry
 visualDna:
   aesthetic: Medieval legend rendered like a damaged woven tapestry with mythic silhouettes and flat ceremonial space.
-  subject_treatment: A flattened tapestry hunt scene with a lion-bird monster, fallen tower, profile riders, patterned garments, and heraldic outlines.
+  subject_treatment: >-
+    A flattened tapestry hunt scene with a lion-bird monster, fallen tower, profile riders, patterned
+    garments, and heraldic outlines.
   color_and_tone: Faded wool reds, moss green, ochre, smoke blue, dark brown linework, and aged linen base.
   lighting_and_shadow: Flat woven light with shadow described through thread density, border contrast, and dark pattern blocks.
   texture_and_material: Visible fibers, worn edges, stitched contours, frayed borders, thread gaps, and softened pigment.
@@ -33,6 +35,8 @@ avoidRules:
   - text
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP17-006.webp
+attributes:
+  negativePrompt: photorealism, modern poster layout, smooth digital gradients, anime, explicit gore, watermark, text
 taxonomy:
   packId: pack_17
   packName: Medieval Fantasy & Dungeon Zine

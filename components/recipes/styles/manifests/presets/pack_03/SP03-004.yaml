@@ -13,19 +13,20 @@ tags:
   - render-engines
 visualDna:
   aesthetic: CPU path traced movie VFX
-  form_and_line: Incredibly realistic
-  color_palette: Natural, filmic, ACES color-managed
-  lighting_setup: Complex bounces, unclamped GI
-  material_texture: Micro-displacement, layered materials
-  render_quality: Hollywood VFX, film-standard
-  spatial_distortion: None
-  atmosphere: Realistic, grounded, cinematic gravitas
+  subject_treatment: Incredibly realistic
+  color_and_tone: Natural, filmic, ACES color-managed
+  lighting_and_shadow: Complex bounces, unclamped GI
+  texture_and_material: Micro-displacement, layered materials
+  camera_and_composition: >-
+    Lookdev camera for Arnold Feature Film Path Tracer: three-quarter or orthographic framing, clean
+    silhouette read, material highlights, controlled depth, and vertical card composition.
+  atmosphere_and_mood: Realistic, grounded, cinematic gravitas
+  rendering_and_quality: Hollywood VFX, feature-film grade
   key_features: Physical accuracy, volume scattering
   creative_brief: >-
-    Render any input with Arnold feature-film path tracing: unclamped global
-    illumination, ACES color discipline, micro-displacement detail, soft indirect
-    bounce, and cinema-grade material response. Keep Hollywood render authority
-    without requiring characters, creatures, sets, props, or VFX shot staging.
+    Render any input with Arnold feature-film path tracing: unclamped global illumination, ACES color
+    discipline, micro-displacement detail, soft indirect bounce, and cinema-grade material response. Keep
+    Hollywood render authority without requiring characters, creatures, sets, props, or VFX shot staging.
 avoidRules:
   - photo
   - drawing

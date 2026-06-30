@@ -13,22 +13,22 @@ tags:
   - tactile-surfaces
 visualDna:
   aesthetic: Sidewalk drawing
-  form_and_line: Dusty stroke
-  color_palette: Pastel
-  lighting_setup: Matte
-  material_texture: Powdery
-  render_quality: Temporary, dry
-  spatial_distortion: Smear
-  atmosphere: Playful, temporary
+  subject_treatment: Dusty stroke
+  color_and_tone: Pastel
+  lighting_and_shadow: Matte
+  texture_and_material: Powdery
+  camera_and_composition: Smear
+  atmosphere_and_mood: Playful, temporary
+  rendering_and_quality: Temporary, dry
   key_features: Dust
   creative_brief: >-
-    Render the powdery ephemera of dry chalk dragged across rough surface, leaving a trail of pigmented dust that hovers
-    between presence and erasure, pastel color clinging to texture by the faintest of bonds. The mark should feel
-    temporary and defiant, a streak of powdered joy that knows it will not survive the next breeze. Capture the beauty
-    of the fugitive, art that accepts its own dissolution. Use Chalk as portable surface/render behavior over any input:
-    map its texture, light response, edge wear, color chemistry, and tactile rhythm onto the subject instead of
-    requiring a literal material sample, macro tile, wall, landscape, source object, or scene where the material
-    naturally appears.
+    Render the powdery ephemera of dry chalk dragged across rough surface, leaving a trail of pigmented dust
+    that hovers between presence and erasure, pastel color clinging to texture by the faintest of bonds. The
+    mark should feel temporary and defiant, a streak of powdered joy that knows it will not survive the next
+    breeze. Capture the beauty of the fugitive, art that accepts its own dissolution. Use Chalk as portable
+    surface/render behavior over any input: map its texture, light response, edge wear, color chemistry, and
+    tactile rhythm onto the subject instead of requiring a literal material sample, macro tile, wall,
+    landscape, source object, or scene where the material naturally appears.
 avoidRules:
   - wet paint
 assets:

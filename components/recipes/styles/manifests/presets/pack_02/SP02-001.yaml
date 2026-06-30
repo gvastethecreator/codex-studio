@@ -13,15 +13,23 @@ tags:
   - film-genres
 visualDna:
   aesthetic: 1940s noir contrast
-  form_and_line: None
-  color_palette: Black and White, deep charcoal, silver highlights
-  lighting_setup: Venetian blinds shadow, directional key, slatted light
-  material_texture: Film grain, silver gelatin, soft halation
-  render_quality: Cinematic, moody, high-contrast, shadow-rich
-  spatial_distortion: None
-  atmosphere: Suspense, dark, moral ambiguity, shadow pressure
+  subject_treatment: >-
+    Treat subjects as believable filmed or broadcast subjects under Film Noir: casting, wardrobe, props,
+    motion cues, and silhouette hierarchy follow 1. Film Genres cinematic and broadcast grammar without
+    locking to one plot beat.
+  color_and_tone: Black and White, deep charcoal, silver highlights
+  lighting_and_shadow: Venetian blinds shadow, directional key, slatted light
+  texture_and_material: Film grain, silver gelatin, soft halation
+  camera_and_composition: >-
+    Camera language native to Film Noir: genre-aware framing, lens character, focal hierarchy, motion cue, and
+    vertical style-card composition.
+  atmosphere_and_mood: Suspense, dark, moral ambiguity, shadow pressure
+  rendering_and_quality: Cinematic, moody, high-contrast, shadow-rich
   key_features: High contrast, slatted light, silver edge
-  creative_brief: 'Film noir turns any subject into silver-gelatin suspicion: venetian slat shadows, hard directional key, deep charcoal blacks, wet-look highlights, and a silhouette cut by moral darkness. Keep 1940s crime mood without forcing detective, city, sidewalk, cigarette, or femme fatale.'
+  creative_brief: >-
+    Film noir turns any subject into silver-gelatin suspicion: venetian slat shadows, hard directional key,
+    deep charcoal blacks, wet-look highlights, and a silhouette cut by moral darkness. Keep 1940s crime mood
+    without forcing detective, city, sidewalk, cigarette, or femme fatale.
 avoidRules:
   - color
   - bright

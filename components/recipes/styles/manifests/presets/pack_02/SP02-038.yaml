@@ -13,20 +13,19 @@ tags:
   - animation-styles
 visualDna:
   aesthetic: Comic book 3D
-  form_and_line: Ink lines on 3D
-  color_palette: Halftone dots, CMYK offset, Ben-Day texture, pop art primaries
-  lighting_setup: Pop art, flat graphic, comic panel direction
-  material_texture: Paper grain, ink bleed, newsprint, screen-print texture
-  render_quality: Dynamic, glitch, stylized keyframe, stepped animation, frame-drop stutter
-  spatial_distortion: Chromatic aberration, misregistration, color fringe, RGB split
-  atmosphere: Energetic, modern, comic-panel momentum, multiverse chaos
+  subject_treatment: Ink lines on 3D
+  color_and_tone: Halftone dots, CMYK offset, Ben-Day texture, pop art primaries
+  lighting_and_shadow: Pop art, flat graphic, comic panel direction
+  texture_and_material: Paper grain, ink bleed, newsprint, screen-print texture
+  camera_and_composition: Chromatic aberration, misregistration, color fringe, RGB split
+  atmosphere_and_mood: Energetic, modern, comic-panel momentum, multiverse chaos
+  rendering_and_quality: Dynamic, glitch, stylized keyframe, stepped animation, frame-drop stutter
   key_features: Low framerate feel, halftone breakup, registration offset, panel rhythm, motion lines
   creative_brief: >-
-    Apply comic-offset 3D grammar to any subject: misregistered red/cyan edges,
-    Ben-Day halftone breakup, ink-on-paper texture over dimensional form,
-    stepped animation rhythm, and panel-like motion accents. Preserve multiverse
-    comic energy without requiring masked heroes, city swings, speech bubbles, or
-    a fixed action sequence.
+    Apply comic-offset 3D grammar to any subject: misregistered red/cyan edges, Ben-Day halftone breakup,
+    ink-on-paper texture over dimensional form, stepped animation rhythm, and panel-like motion accents.
+    Preserve multiverse comic energy without requiring masked heroes, city swings, speech bubbles, or a fixed
+    action sequence.
 avoidRules:
   - smooth 3d
 assets:

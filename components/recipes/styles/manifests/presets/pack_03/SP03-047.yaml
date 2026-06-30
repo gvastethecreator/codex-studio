@@ -13,20 +13,24 @@ tags:
   - hard-surface-and-product-cgi
 visualDna:
   aesthetic: Architectural visualization render system
-  form_and_line: Straight verticals
-  color_palette: Beige, White, Wood, natural-material tones
-  lighting_setup: Sunlight, window-daylight simulation
-  material_texture: Realistic materials, lived-in warmth
-  render_quality: Real estate brochure, lifestyle luxury
-  atmosphere: Aspirational, clean, designer-curated
+  subject_treatment: Straight verticals
+  color_and_tone: Beige, White, Wood, natural-material tones
+  lighting_and_shadow: Sunlight, window-daylight simulation
+  texture_and_material: Realistic materials, lived-in warmth
+  camera_and_composition: >-
+    Lookdev camera for Architectural Visualization: three-quarter or orthographic framing, clean silhouette
+    read, material highlights, controlled depth, and vertical card composition.
+  atmosphere_and_mood: Aspirational, clean, designer-curated
+  rendering_and_quality: Real estate brochure, lifestyle luxury
   key_features: Straight verticals, daylight material truth
   creative_brief: >-
-    Give the input ArchViz discipline: straight verticals, daylight simulation, calibrated natural materials, clean
-    brochure contrast and designer-curated warmth. If architecture or interiors exist, clarify them; otherwise apply
-    architectural lighting logic without forcing a house, furniture layout, lifestyle props, or real-estate setup. Apply
-    Architectural Visualization as a portable 3D/render style system over any input: preserve its renderer logic,
-    material behavior, geometry language, lighting grammar, and production cues while avoiding a required character,
-    vehicle, prop, environment, UI screen, product shot, or scene template.
+    Give the input ArchViz discipline: straight verticals, daylight simulation, calibrated natural materials,
+    clean brochure contrast and designer-curated warmth. If architecture or interiors exist, clarify them;
+    otherwise apply architectural lighting logic without forcing a house, furniture layout, lifestyle props,
+    or real-estate setup. Apply Architectural Visualization as a portable 3D/render style system over any
+    input: preserve its renderer logic, material behavior, geometry language, lighting grammar, and production
+    cues while avoiding a required character, vehicle, prop, environment, UI screen, product shot, or scene
+    template.
 avoidRules:
   - messy
   - lived in

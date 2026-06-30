@@ -13,20 +13,22 @@ tags:
   - aesthetics
 visualDna:
   aesthetic: Grimdark cathedral-industrial war fantasy with oppressive futurism
-  form_and_line: Heavy, dirty, ceramite-plate contours, purity-seal ribbons, chainsword-teeth, servo-skull profiles
-  color_palette: Mud, Blood, Rust, boltgun-metal, purity-parchment cream, plasma-coil blue, heretic-ash grey, melta-glow orange
-  lighting_setup: Dark, harsh, gothic-arch crypt-light, muzzle-flash bursts, warp-storm flicker, candle-shrine pools
-  material_texture: Grime, scars, ceramite-ceramic, battle-damage pitting, purity-seal wax, worn-leather, adamantium-rivet
-  render_quality: Dense militarized gothic rendering with maximal wear and severity
-  spatial_distortion: Skulls everywhere, gothic-overscaling, cathedral-proportions, dreadnought-mass, flying-buttress tanks
-  atmosphere: Depressing, epic, only-war, dying-emperor, last-stand-courage, faith-as-armor
+  subject_treatment: Heavy, dirty, ceramite-plate contours, purity-seal ribbons, chainsword-teeth, servo-skull profiles
+  color_and_tone: >-
+    Mud, Blood, Rust, boltgun-metal, purity-parchment cream, plasma-coil blue, heretic-ash grey, melta-glow
+    orange
+  lighting_and_shadow: Dark, harsh, gothic-arch crypt-light, muzzle-flash bursts, warp-storm flicker, candle-shrine pools
+  texture_and_material: Grime, scars, ceramite-ceramic, battle-damage pitting, purity-seal wax, worn-leather, adamantium-rivet
+  camera_and_composition: Skulls everywhere, gothic-overscaling, cathedral-proportions, dreadnought-mass, flying-buttress tanks
+  atmosphere_and_mood: Depressing, epic, only-war, dying-emperor, last-stand-courage, faith-as-armor
+  rendering_and_quality: Dense militarized gothic rendering with maximal wear and severity
   key_features: Skull iconography, purity seals, cathedral spires, battle-scarred armor plates, relic-tech ornament
   creative_brief: >-
-    Prioritize monumental gothic-industrial massing, ritualized insignia, and heavily weathered war materials. Keep the
-    tone oppressive and fatalistic through scale, grime, and relic-tech ornament without anchoring to a specific
-    franchise scene. Apply Grimdark as a portable style system over any input: preserve its construction grammar,
-    material cues, scale logic, and signature rendering behavior while avoiding a required franchise, literal prop,
-    fixed specimen, classroom sample, product shot, or scene template.
+    Prioritize monumental gothic-industrial massing, ritualized insignia, and heavily weathered war materials.
+    Keep the tone oppressive and fatalistic through scale, grime, and relic-tech ornament without anchoring to
+    a specific franchise scene. Apply Grimdark as a portable style system over any input: preserve its
+    construction grammar, material cues, scale logic, and signature rendering behavior while avoiding a
+    required franchise, literal prop, fixed specimen, classroom sample, product shot, or scene template.
 avoidRules:
   - hope
   - light

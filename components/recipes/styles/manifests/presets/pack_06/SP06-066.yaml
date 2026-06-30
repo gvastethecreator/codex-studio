@@ -13,15 +13,19 @@ tags:
   - mixed-media
 visualDna:
   aesthetic: Trash-polka graphic collision style with black realism shards, red vector strikes, and splatter tension
-  form_and_line: Realistic vs graphic
-  color_palette: Black, Grey, Red
-  lighting_setup: High contrast
-  material_texture: Ink, splatter
-  render_quality: Aggressive, modern
-  spatial_distortion: Collage
-  atmosphere: Intense, chaotic
+  subject_treatment: Realistic vs graphic
+  color_and_tone: Black, Grey, Red
+  lighting_and_shadow: High contrast
+  texture_and_material: Ink, splatter
+  camera_and_composition: Collage
+  atmosphere_and_mood: Intense, chaotic
+  rendering_and_quality: Aggressive, modern
   key_features: Red and Black
-  creative_brief: Black ink and red accents dominate a world where realistic fragments collide with graphic abstraction. Splatter, smear, stencil, and hard typography-like blocks share one aggressive composition without requiring skin, tattoos, arms, blood, or readable lettering. The style should feel dangerous through contrast and collision, not gore.
+  creative_brief: >-
+    Black ink and red accents dominate a world where realistic fragments collide with graphic abstraction.
+    Splatter, smear, stencil, and hard typography-like blocks share one aggressive composition without
+    requiring skin, tattoos, arms, blood, or readable lettering. The style should feel dangerous through
+    contrast and collision, not gore.
 avoidRules:
   - photo
   - realistic
@@ -45,7 +49,10 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP06-066.webp
 attributes:
-  negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border, skin requirement, tattoo placement, blood literal, readable lettering
+  negativePrompt: >-
+    photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy,
+    watermark, text, signature, frame, border, skin requirement, tattoo placement, blood literal, readable
+    lettering
 taxonomy:
   packId: pack_06
   packName: Essential Art Styles

@@ -15,26 +15,26 @@ visualDna:
   aesthetic: >-
     Sparse economical anime minimalism, generous negative space, single-line expression logic,
     color-atmosphere fields, quiet indie pacing, and intentional emptiness
-  form_and_line: >-
-    Ultra-thin restrained ink lines, minimal contour economy, suggestion over statement, fewer
-    strokes more impact
-  color_palette: >-
+  subject_treatment: >-
+    Ultra-thin restrained ink lines, minimal contour economy, suggestion over statement, fewer strokes more
+    impact
+  color_and_tone: >-
     Single-hue atmospheres, sky-gradient minimalism, off-white expanses, one accent color per scene,
     monochrome restraint
-  lighting_setup: Soft overcast diffusion, single-source quiet light, crepuscular rays, and ambient emptiness
-  material_texture: Smooth digital matte, untextured simplicity, paper-white void, subtle grain whisper if any
-  render_quality: Indie-anime minimalism, arthouse restraint, quiet-production beauty, less-is-more conviction
-  spatial_distortion: >-
-    Subject scale can shrink against vast empty fields, with loneliness-accenting framing and
-    negative-space composition
-  atmosphere: Quiet, introspective, profoundly lonely, meditative stillness, held breath
+  lighting_and_shadow: Soft overcast diffusion, single-source quiet light, crepuscular rays, and ambient emptiness
+  texture_and_material: Smooth digital matte, untextured simplicity, paper-white void, subtle grain whisper if any
+  camera_and_composition: >-
+    Subject scale can shrink against vast empty fields, with loneliness-accenting framing and negative-space
+    composition
+  atmosphere_and_mood: Quiet, introspective, profoundly lonely, meditative stillness, held breath
+  rendering_and_quality: Indie-anime minimalism, arthouse restraint, quiet-production beauty, less-is-more conviction
   key_features: >-
-    Negative space dominance, minimalist line count, single-color atmospheres, scale humility,
-    intentional silence
+    Negative space dominance, minimalist line count, single-color atmospheres, scale humility, intentional
+    silence
   creative_brief: >-
-    Use minimalist indie quiet as silence-composition grammar. Any prompt should breathe through
-    negative space, low-saturation fields, sparse line economy, and scale humility. Empty space must
-    carry feeling instead of needing a specific lonely scene.
+    Use minimalist indie quiet as silence-composition grammar. Any prompt should breathe through negative
+    space, low-saturation fields, sparse line economy, and scale humility. Empty space must carry feeling
+    instead of needing a specific lonely scene.
 avoidRules:
   - busy
   - detailed

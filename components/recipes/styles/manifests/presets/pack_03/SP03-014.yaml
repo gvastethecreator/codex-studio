@@ -13,20 +13,23 @@ tags:
   - materials
 visualDna:
   aesthetic: Highly reflective surface
-  form_and_line: Sharp reflections
-  color_palette: Silver, Gold, Copper, anodized tones
-  lighting_setup: HDRI environment reflection, specular bounce
-  material_texture: Polished, mirror-grade chrome
-  render_quality: Automotive finish, showroom gloss
-  atmosphere: Sleek, futuristic, precision luxury
+  subject_treatment: Sharp reflections
+  color_and_tone: Silver, Gold, Copper, anodized tones
+  lighting_and_shadow: HDRI environment reflection, specular bounce
+  texture_and_material: Polished, mirror-grade chrome
+  camera_and_composition: >-
+    Lookdev camera for Chrome & Metal: close three-quarter or macro material framing, strong highlight planes,
+    readable surface curvature, and controlled depth.
+  atmosphere_and_mood: Sleek, futuristic, precision luxury
+  rendering_and_quality: Automotive finish, showroom gloss
   key_features: Reflection, anisotropic highlights
   creative_brief: >-
     Turn the input into a chrome-and-metal reflection study: HDRI ribbons, anisotropic highlight streaks,
-    gold/chrome/anodized shifts and hard specular confidence. It may suggest automotive or showroom polish when
-    relevant, but must not require a vehicle, product pedestal or surrounding world. Apply Chrome & Metal as a portable
-    3D/render style system over any input: preserve its renderer logic, material behavior, geometry language, lighting
-    grammar, and production cues while avoiding a required character, vehicle, prop, environment, UI screen, product
-    shot, or scene template.
+    gold/chrome/anodized shifts and hard specular confidence. It may suggest automotive or showroom polish
+    when relevant, but must not require a vehicle, product pedestal or surrounding world. Apply Chrome & Metal
+    as a portable 3D/render style system over any input: preserve its renderer logic, material behavior,
+    geometry language, lighting grammar, and production cues while avoiding a required character, vehicle,
+    prop, environment, UI screen, product shot, or scene template.
 avoidRules:
   - matte
   - rough

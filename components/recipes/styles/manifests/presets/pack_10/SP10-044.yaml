@@ -13,18 +13,18 @@ tags:
   - surrealism-and-dream
 visualDna:
   aesthetic: Nature and tech harmony
-  form_and_line: Art Nouveau curves
-  color_palette: Green, Gold, White
-  lighting_setup: Sunlight
-  material_texture: Leaves, glass
-  render_quality: Utopian, hopeful
-  spatial_distortion: None
-  atmosphere: Optimistic, bright
+  subject_treatment: Art Nouveau curves
+  color_and_tone: Green, Gold, White
+  lighting_and_shadow: Sunlight
+  texture_and_material: Leaves, glass
+  camera_and_composition: 'Compose for Solarpunk using its key spatial cues: Plants everywhere.'
+  atmosphere_and_mood: Optimistic, bright
+  rendering_and_quality: Utopian, hopeful
   key_features: Plants everywhere
   creative_brief: >-
-    Apply solarpunk symbiosis to the input: chlorophyll greens, warm sunlight,
-    visible renewable tech, botanical circuitry, and optimistic repair detail
-    should make any subject feel ecologically integrated without forcing buildings.
+    Apply solarpunk symbiosis to the input: chlorophyll greens, warm sunlight, visible renewable tech,
+    botanical circuitry, and optimistic repair detail should make any subject feel ecologically integrated
+    without forcing buildings.
 avoidRules:
   - industrial
   - dirty

@@ -13,24 +13,33 @@ tags:
   - aesthetics
 visualDna:
   aesthetic: >-
-    Retro-digital consumer-memory haze with synthetic gradients, low-res luxury, mall-air unreality, and soft ironic
-    emptiness
-  form_and_line: Pixel-sorted edges, glossy primitive geometry, UI-era grids, marble-like fragments, low-poly planes, VHS drift
-  color_palette: Pastel magenta-cyan, teal neutrals, sunset vapor, synthetic white, washed purple, soft grey marble
-  lighting_setup: Diffuse monitor glow, gradient backwash, weak ambient haze, artificial highlight bands, nostalgic screen bloom
-  material_texture: Compressed video artifacts, glossy plastic, cheap marble, CRT fuzz, low-res UI texture, airbrushed gradients
-  render_quality: Detached, glossy, synthetic, dreamlike, slightly degraded, intentionally corporate and unreal
-  spatial_distortion: >-
+    Retro-digital consumer-memory haze with synthetic gradients, low-res luxury, mall-air unreality, and soft
+    ironic emptiness
+  subject_treatment: >-
+    Pixel-sorted edges, glossy primitive geometry, UI-era grids, marble-like fragments, low-poly planes, VHS
+    drift
+  color_and_tone: Pastel magenta-cyan, teal neutrals, sunset vapor, synthetic white, washed purple, soft grey marble
+  lighting_and_shadow: >-
+    Diffuse monitor glow, gradient backwash, weak ambient haze, artificial highlight bands, nostalgic screen
+    bloom
+  texture_and_material: >-
+    Compressed video artifacts, glossy plastic, cheap marble, CRT fuzz, low-res UI texture, airbrushed
+    gradients
+  camera_and_composition: >-
     Pixel sorting, grid recession, VHS wobble, object-scale ambiguity, compression trails, liminal perspective
     flattening
-  atmosphere: Empty, ironic, nostalgic, synthetic, uncanny, cool
-  key_features: Pastel vapor gradients, analog artifacts, UI grid fragments, glossy consumer surfaces, marble-plastic contrast
+  atmosphere_and_mood: Empty, ironic, nostalgic, synthetic, uncanny, cool
+  rendering_and_quality: Detached, glossy, synthetic, dreamlike, slightly degraded, intentionally corporate and unreal
+  key_features: >-
+    Pastel vapor gradients, analog artifacts, UI grid fragments, glossy consumer surfaces, marble-plastic
+    contrast
   creative_brief: >-
-    Apply vaporwave as a mood and material system: synthetic gradients, screen artifacts, corporate nostalgia, and
-    glossy emptiness should reshape the image. Do not require statues, malls, checker floors, palm trees, or staged
-    surreal objects. Apply Liminal Consumer Vapor as a portable style system over any input: preserve its construction
-    grammar, material cues, scale logic, and signature rendering behavior while avoiding a required franchise, literal
-    prop, fixed specimen, classroom sample, product shot, or scene template.
+    Apply vaporwave as a mood and material system: synthetic gradients, screen artifacts, corporate nostalgia,
+    and glossy emptiness should reshape the image. Do not require statues, malls, checker floors, palm trees,
+    or staged surreal objects. Apply Liminal Consumer Vapor as a portable style system over any input:
+    preserve its construction grammar, material cues, scale logic, and signature rendering behavior while
+    avoiding a required franchise, literal prop, fixed specimen, classroom sample, product shot, or scene
+    template.
 avoidRules:
   - serious
   - dark

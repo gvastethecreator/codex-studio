@@ -12,22 +12,35 @@ tags:
   - anime-classics-and-prestige
   - 2000s-classics
 visualDna:
-  aesthetic: Moral alchemical fantasy with symbolic geometry, mechanical sacrifice, tragic resolve, and early-digital epic clarity.
-  form_and_line: Smooth vector-like anime strokes, crisp contour clarity, circular diagram rhythm, precise hand/edge emphasis, and grounded shonen stance.
-  color_palette: Burnished gold, oxide red, slate blue, parchment beige, steel gray, and saturated early-HD glow accents.
-  lighting_setup: Polished gradient highlights, symbolic underglow, rim on mechanical edges, and balanced key/fill for readable drama.
-  material_texture: Smooth digital cel surfaces, etched symbol marks, brushed metal, worn cloth, chalky dust, and subtle composite grain.
-  render_quality: Early-2000s digital anime production frame with clean rendering, smooth color blending, and epic moral readability.
-  spatial_distortion: Circular composition fields, equivalent-exchange symmetry, bold perspective angles, and action-ready symbolic framing.
-  atmosphere: Epic, thoughtful, tragic, philosophical
-  key_features: Symbolic circles, moral symmetry, mechanical edge highlights, tragic glow, and clear early-digital action hierarchy.
+  aesthetic: >-
+    Moral alchemical fantasy with symbolic geometry, mechanical sacrifice, tragic resolve, and early-digital
+    epic clarity.
+  subject_treatment: >-
+    Smooth vector-like anime strokes, crisp contour clarity, circular diagram rhythm, precise hand/edge
+    emphasis, and grounded shonen stance.
+  color_and_tone: Burnished gold, oxide red, slate blue, parchment beige, steel gray, and saturated early-HD glow accents.
+  lighting_and_shadow: >-
+    Polished gradient highlights, symbolic underglow, rim on mechanical edges, and balanced key/fill for
+    readable drama.
+  texture_and_material: >-
+    Smooth digital cel surfaces, etched symbol marks, brushed metal, worn cloth, chalky dust, and subtle
+    composite grain.
+  camera_and_composition: >-
+    Circular composition fields, equivalent-exchange symmetry, bold perspective angles, and action-ready
+    symbolic framing.
+  atmosphere_and_mood: Epic, thoughtful, tragic, philosophical
+  rendering_and_quality: >-
+    Early-2000s digital anime production frame with clean rendering, smooth color blending, and epic moral
+    readability.
+  key_features: >-
+    Symbolic circles, moral symmetry, mechanical edge highlights, tragic glow, and clear early-digital action
+    hierarchy.
   creative_brief: >-
-    Build a reusable alchemical-moral-geometry grammar for any subject or
-    input image: symbolic circles, sacrifice logic, clean digital-cel
-    mechanical detail, warm tragic glow, and grounded epic framing. Mechanical
-    prosthetic cues, etched metal, or equivalent-exchange diagram scars may
-    transform the input when useful, without fixing military coats, brothers,
-    transmutation scenes, philosopher stones, or faction symbols.
+    Build a reusable alchemical-moral-geometry grammar for any subject or input image: symbolic circles,
+    sacrifice logic, clean digital-cel mechanical detail, warm tragic glow, and grounded epic framing.
+    Mechanical prosthetic cues, etched metal, or equivalent-exchange diagram scars may transform the input
+    when useful, without fixing military coats, brothers, transmutation scenes, philosopher stones, or faction
+    symbols.
 avoidRules:
   - realistic
   - 3d render
@@ -44,7 +57,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-024.webp
 attributes:
-  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
+  negativePrompt: >-
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts,
+    watermark, text, signature
 taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige

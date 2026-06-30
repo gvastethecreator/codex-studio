@@ -13,15 +13,21 @@ tags:
   - tv-and-broadcast
 visualDna:
   aesthetic: Reality TV confessional interview
-  form_and_line: None
-  color_palette: Saturated, pumped skin tones, jewel accent, matte shadow
-  lighting_setup: Ring light, catchlight halo, soft frontal wrap
-  material_texture: HD video, sharp digital, retouched surface
-  render_quality: Produced, fake, manufactured drama, confessional intimacy
-  spatial_distortion: Green screen back, chroma-key spill, composited backdrop
-  atmosphere: Manufactured drama, direct intimacy
+  subject_treatment: >-
+    Treat subjects as believable filmed or broadcast subjects under Reality TV Confessional: casting,
+    wardrobe, props, motion cues, and silhouette hierarchy follow 2. TV And Broadcast cinematic and broadcast
+    grammar without locking to one plot beat.
+  color_and_tone: Saturated, pumped skin tones, jewel accent, matte shadow
+  lighting_and_shadow: Ring light, catchlight halo, soft frontal wrap
+  texture_and_material: HD video, sharp digital, retouched surface
+  camera_and_composition: Green screen back, chroma-key spill, composited backdrop
+  atmosphere_and_mood: Manufactured drama, direct intimacy
+  rendering_and_quality: Produced, fake, manufactured drama, confessional intimacy
   key_features: Direct-to-camera framing, ring catchlight, composited backdrop
-  creative_brief: 'Reality TV confessional style makes any subject overproduced and intimate: ring-light halo, saturated skinlike tones, chroma-key spill, direct-to-camera framing, and manufactured emotional closeness. Keep confessional drama without requiring chair, person, tears, or gossip plot.'
+  creative_brief: >-
+    Reality TV confessional style makes any subject overproduced and intimate: ring-light halo, saturated
+    skinlike tones, chroma-key spill, direct-to-camera framing, and manufactured emotional closeness. Keep
+    confessional drama without requiring chair, person, tears, or gossip plot.
 avoidRules:
   - scripted
 assets:

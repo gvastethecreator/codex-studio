@@ -13,25 +13,22 @@ tags:
   - concept-art
 visualDna:
   aesthetic: >-
-    Production character-turnaround style focused on design legibility, neutral presentation, and
-    pipeline handoff clarity
-  form_and_line: >-
-    Clean contour hierarchy with construction-line discipline, silhouette consistency, and
-    annotation-friendly edge clarity
-  color_palette: Flat + Occlusion, neutral reference palette, material IDs
-  lighting_setup: Neutral, studio-reference, shadow-accurate fidelity
-  material_texture: Material callouts
-  render_quality: Production ready, pipeline clarity, handoff precision
-  spatial_distortion: >-
-    Neutral stance standardization with proportion-locked turnaround consistency across orthographic
-    views
-  atmosphere: Neutral, design, professional review, iterative feedback
+    Production character-turnaround style focused on design legibility, neutral presentation, and pipeline
+    handoff clarity
+  subject_treatment: >-
+    Clean contour hierarchy with construction-line discipline, silhouette consistency, and annotation-friendly
+    edge clarity
+  color_and_tone: Flat + Occlusion, neutral reference palette, material IDs
+  lighting_and_shadow: Neutral, studio-reference, shadow-accurate fidelity
+  texture_and_material: Material callouts
+  camera_and_composition: Neutral stance consistency with proportion-locked turnaround consistency across orthographic views
+  atmosphere_and_mood: Neutral, design, professional review, iterative feedback
+  rendering_and_quality: Production ready, pipeline clarity, handoff precision
   key_features: Scale, turnaround views, callout annotations
   creative_brief: >-
-    Apply character-turnaround sheet grammar to any input: proportion locking, neutral lighting,
-    orthographic consistency, material callouts, annotation-ready edges, and scale discipline should
-    support design handoff without requiring humanoid characters, T-poses, expression sheets,
-    labels, or fixed sheet layouts.
+    Apply character-turnaround sheet grammar to any input: proportion locking, neutral lighting, orthographic
+    consistency, material callouts, annotation-ready edges, and scale discipline should support design handoff
+    without requiring humanoid characters, T-poses, expression sheets, labels, or fixed sheet layouts.
 avoidRules:
   - background
   - action

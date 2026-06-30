@@ -13,19 +13,18 @@ tags:
   - traditional-painting
 visualDna:
   aesthetic: Thick impasto knife painting
-  form_and_line: Sharp geometric paint slabs
-  color_palette: Pure unmixed paint
-  lighting_setup: High contrast texture
-  material_texture: Extreme relief, sculptural paint
-  render_quality: Expressive, modern
-  spatial_distortion: Abstracted details
-  atmosphere: Bold, energetic
+  subject_treatment: Sharp geometric paint slabs
+  color_and_tone: Pure unmixed paint
+  lighting_and_shadow: High contrast texture
+  texture_and_material: Extreme relief, sculptural paint
+  camera_and_composition: Abstracted details
+  atmosphere_and_mood: Bold, energetic
+  rendering_and_quality: Expressive, modern
   key_features: Knife marks
   creative_brief: >-
-    Apply palette-knife painting to any input: thick impasto slabs, scraped
-    ridges, blade-carved edges, compressed detail, and sculptural pigment mass.
-    Keep physical paint presence without requiring landscapes, flowers,
-    seascapes, abstract canvases, or gallery closeups.
+    Apply palette-knife painting to any input: thick impasto slabs, scraped ridges, blade-carved edges,
+    compressed detail, and sculptural pigment mass. Keep physical paint presence without requiring landscapes,
+    flowers, seascapes, abstract canvases, or gallery closeups.
 avoidRules:
   - photo
   - realistic
@@ -45,7 +44,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP06-011.webp
 attributes:
-  negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border
+  negativePrompt: >-
+    photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy,
+    watermark, text, signature, frame, border
 taxonomy:
   packId: pack_06
   packName: Essential Art Styles

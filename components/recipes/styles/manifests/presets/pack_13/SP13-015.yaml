@@ -13,20 +13,33 @@ tags:
   - anime
   - slice-of-life
 visualDna:
-  aesthetic: Feel-good confection-comedy anime language with warm slice-of-life softness, sweet color charm, and everyday social tenderness
-  form_and_line: Friendly rounded line cadence, timing-aware expression exaggeration, tabletop-like staging rhythm, and readable conversational gesture arcs
-  color_palette: Cream neutrals, strawberry pink accents, honey gold warmth, mint-soft highlights, and gentle wood-tone grounding
-  lighting_setup: Cozy practical glow, diffuse warm fill, soft tabletop-like reflections, and low-contrast value shaping for comfort tone
-  material_texture: Light-grain wood, glossy ceramic sheen, whipped-cream softness, syrup highlights, and subtle pastry-crumb detail
-  render_quality: Clean colorful anime render with comedic readability, mood-consistent polish, and balanced prop-subject hierarchy
-  spatial_distortion: Stable frontal composition with mild depth layering to keep interaction and sweet focal clarity
-  atmosphere: Cheerful, comforting, playful, and kind-hearted
-  key_features: Sweet centerpiece framing, comedic expression timing cues, warm comfort prop language, and soft convivial color rhythm
+  aesthetic: >-
+    Feel-good confection-comedy anime language with warm slice-of-life softness, sweet color charm, and
+    everyday social tenderness
+  subject_treatment: >-
+    Friendly rounded line cadence, timing-aware expression exaggeration, tabletop-like staging rhythm, and
+    readable conversational gesture arcs
+  color_and_tone: >-
+    Cream neutrals, strawberry pink accents, honey gold warmth, mint-soft highlights, and gentle wood-tone
+    grounding
+  lighting_and_shadow: >-
+    Cozy practical glow, diffuse warm fill, soft tabletop-like reflections, and low-contrast value shaping for
+    comfort tone
+  texture_and_material: >-
+    Light-grain wood, glossy ceramic sheen, whipped-cream softness, syrup highlights, and subtle pastry-crumb
+    detail
+  camera_and_composition: Stable frontal composition with mild depth layering to keep interaction and sweet focal clarity
+  atmosphere_and_mood: Cheerful, comforting, playful, and kind-hearted
+  rendering_and_quality: >-
+    Clean colorful anime render with comedic readability, mood-consistent polish, and balanced prop-subject
+    hierarchy
+  key_features: >-
+    Sweet centerpiece framing, comedic expression timing cues, warm comfort prop language, and soft convivial
+    color rhythm
   creative_brief: >-
-    Use Dessert Cafe Comedy as style anchor for sweet social warmth:
-    confection palette, expression-led timing, and cozy practical glow should
-    transfer without requiring a cafe, dessert centerpiece, tableware, or
-    interior scene.
+    Use Dessert Cafe Comedy as style anchor for sweet social warmth: confection palette, expression-led
+    timing, and cozy practical glow should transfer without requiring a cafe, dessert centerpiece, tableware,
+    or interior scene.
 avoidRules:
   - photoreal
   - horror

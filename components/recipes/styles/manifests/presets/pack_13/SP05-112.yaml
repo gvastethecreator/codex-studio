@@ -13,34 +13,32 @@ tags:
   - anime-style-spectrum
 visualDna:
   aesthetic: >-
-    Spray-drip anime fusion with wildstyle rhythm, overspray halos, rough substrate tactility,
-    stencil edges, and rebellious mural-scale motion
-  form_and_line: >-
-    Spray-can-soft-contours, stencil-sharp-edges, dripping-paint-lines,
-    fat-cap-thick-to-skinny-cap-thin transitions, overspray-soft-halos
-  color_palette: >-
-    Montana-gold-neon-spectrum, concrete-grey-background, rust-iron-stain-orange,
-    buff-paint-coverup-beige, chrome-silver-highlights, throw-up-fill-colors
-  lighting_setup: >-
-    Outdoor hardlight, overhang-like shadow bands, streetlamp sodium warmth, and rough-surface light
-    catching
-  material_texture: >-
-    Brick-wall-roughness, spray-paint-matte-finish, concrete-aggregate-grain,
-    buff-paint-roller-texture, rust-stain-mineral-deposits, drip-trail-gloss
-  render_quality: >-
-    Spray-art-anime fusion, graffiti-mural energy, rough-surface authenticity, spray-paint-and-cell
-    hybrid, vandalism-as-beauty philosophy
-  spatial_distortion: >-
-    Subjects spread as large-scale mural shapes, tag forms wrap around contours, and wall texture
-    integrates into design without fixed background dependence
-  atmosphere: Rebellious, street-art-coded, outlaw-creative, nocturnal, surface-breathing
+    Spray-drip anime fusion with wildstyle rhythm, overspray halos, rough substrate tactility, stencil edges,
+    and rebellious mural-scale motion
+  subject_treatment: >-
+    Spray-can-soft-contours, stencil-sharp-edges, dripping-paint-lines, fat-cap-thick-to-skinny-cap-thin
+    transitions, overspray-soft-halos
+  color_and_tone: >-
+    Montana-gold-neon-spectrum, concrete-grey-background, rust-iron-stain-orange, buff-paint-coverup-beige,
+    chrome-silver-highlights, throw-up-fill-colors
+  lighting_and_shadow: Outdoor hardlight, overhang-like shadow bands, streetlamp sodium warmth, and rough-surface light catching
+  texture_and_material: >-
+    Brick-wall-roughness, spray-paint-matte-finish, concrete-aggregate-grain, buff-paint-roller-texture,
+    rust-stain-mineral-deposits, drip-trail-gloss
+  camera_and_composition: >-
+    Subjects spread as large-scale mural shapes, tag forms wrap around contours, and wall texture integrates
+    into design without fixed background dependence
+  atmosphere_and_mood: Rebellious, street-art-coded, outlaw-creative, nocturnal, surface-breathing
+  rendering_and_quality: >-
+    Spray-art-anime fusion, graffiti-mural energy, rough-surface authenticity, spray-paint-and-cell hybrid,
+    vandalism-as-beauty philosophy
   key_features: >-
-    Spray drips, stencil-sharp edges, overspray halos, rough surface grain, wildstyle composition,
-    and large-scale contour energy
+    Spray drips, stencil-sharp edges, overspray halos, rough surface grain, wildstyle composition, and
+    large-scale contour energy
   creative_brief: >-
-    Use spray-drip wildstyle anime as aerosol-mark grammar. Any prompt should feel painted through
-    overspray, drips, stencil edges, rough substrate, and rebellious scale. Literal walls, readable
-    tags, alleys, and urban backgrounds are optional.
+    Use spray-drip wildstyle anime as aerosol-mark grammar. Any prompt should feel painted through overspray,
+    drips, stencil edges, rough substrate, and rebellious scale. Literal walls, readable tags, alleys, and
+    urban backgrounds are optional.
 avoidRules:
   - clean
   - polished

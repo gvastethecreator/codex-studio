@@ -13,22 +13,22 @@ tags:
   - weathering-and-decay
 visualDna:
   aesthetic: Used machinery
-  form_and_line: Random scratches
-  color_palette: Steel
-  lighting_setup: Caught in scratches
-  material_texture: Abrasive
-  render_quality: Worn, used
-  spatial_distortion: None
-  atmosphere: Industrial, hard
+  subject_treatment: Random scratches
+  color_and_tone: Steel
+  lighting_and_shadow: Caught in scratches
+  texture_and_material: Abrasive
+  camera_and_composition: 'Compose for Scratched Metal using its key spatial cues: Random direction.'
+  atmosphere_and_mood: Industrial, hard
+  rendering_and_quality: Worn, used
   key_features: Random direction
   creative_brief: >-
-    Capture the patina of use written in random scratches across steel, where each mark is a moment of contact frozen in
-    silver on grey, light catching in the abrasive grooves like tiny rivers of reflection. The random direction of the
-    scratches should tell the story of careless handling and honest work. Render the accumulating biography of a worked
-    surface, wear as a form of record-keeping. Use Scratched Metal as portable surface/render behavior over any input:
-    map its texture, light response, edge wear, color chemistry, and tactile rhythm onto the subject instead of
-    requiring a literal material sample, macro tile, wall, landscape, source object, or scene where the material
-    naturally appears.
+    Capture the patina of use written in random scratches across steel, where each mark is a moment of contact
+    frozen in silver on grey, light catching in the abrasive grooves like tiny rivers of reflection. The
+    random direction of the scratches should tell the story of careless handling and honest work. Render the
+    accumulating biography of a worked surface, wear as a form of record-keeping. Use Scratched Metal as
+    portable surface/render behavior over any input: map its texture, light response, edge wear, color
+    chemistry, and tactile rhythm onto the subject instead of requiring a literal material sample, macro tile,
+    wall, landscape, source object, or scene where the material naturally appears.
 avoidRules:
   - mirror finish
 assets:

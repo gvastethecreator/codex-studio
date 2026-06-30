@@ -13,18 +13,18 @@ tags:
   - editorial-and-poster
 visualDna:
   aesthetic: 60s psychedelic poster language with optical-vibration typography
-  form_and_line: Liquidly warped letterforms and undulating contour fields
-  color_palette: High-chroma complementary clashes and acid-neon screenprint palette
-  lighting_setup: Flat color-plane tension with no naturalistic light dependency
-  material_texture: Screenprint grain and ink-overlap artifacts
-  render_quality: Dense retro visual overload with deliberate readability disruption
-  spatial_distortion: Melting curvature and wave-like compositional drift
-  atmosphere: Countercultural, ecstatic, sensory-saturated
+  subject_treatment: Liquidly warped letterforms and undulating contour fields
+  color_and_tone: High-chroma complementary clashes and acid-neon screenprint palette
+  lighting_and_shadow: Flat color-plane tension with no naturalistic light dependency
+  texture_and_material: Screenprint grain and ink-overlap artifacts
+  camera_and_composition: Melting curvature and wave-like compositional drift
+  atmosphere_and_mood: Countercultural, ecstatic, sensory-saturated
+  rendering_and_quality: Dense retro visual overload with deliberate readability disruption
   key_features: Swirling typographic masses, radial waves, vibrating color adjacency
   creative_brief: >-
-    Apply 60s psychedelic poster grammar to any input: liquid warped forms, vibrating complementary
-    color, radial waves, dense pattern rhythm, and screenprint ink overlap should disrupt perception
-    without requiring band names, concerts, readable typography, faces, or event posters.
+    Apply 60s psychedelic poster grammar to any input: liquid warped forms, vibrating complementary color,
+    radial waves, dense pattern rhythm, and screenprint ink overlap should disrupt perception without
+    requiring band names, concerts, readable typography, faces, or event posters.
 avoidRules:
   - straight
   - readable

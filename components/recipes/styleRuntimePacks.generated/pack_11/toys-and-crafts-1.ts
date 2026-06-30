@@ -11,19 +11,19 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Modular toy-brick construction style with systemized assembly logic, playful engineering clarity, and colorful constructive energy',
-      form_and_line:
+      subject_treatment:
         'Interlocking grid geometry, stud-and-tube articulation, right-angle modular silhouettes, and seam-aware structural rhythm',
-      color_palette:
+      color_and_tone:
         'High-saturation toy primaries with clean contrast blocks and glossy plastic-friendly hue separation',
-      lighting_setup:
+      lighting_and_shadow:
         'Product-style key/rim reflection control with crisp specular highlights and clear modular edge readability',
-      material_texture:
+      texture_and_material:
         'Injection-molded ABS sheen, stud micro-relief, seam-line precision, and polished toy-surface finish',
-      render_quality:
-        'Crisp toy-assembly rendering prioritizing modular legibility, geometric coherence, and playful engineered charm',
-      spatial_distortion:
+      camera_and_composition:
         'Cubic abstraction with snap-grid proportional logic and minifigure-scale spatial simplification',
-      atmosphere: 'Playful, inventive, structured, nostalgic, constructive',
+      atmosphere_and_mood: 'Playful, inventive, structured, nostalgic, constructive',
+      rendering_and_quality:
+        'Crisp toy-assembly rendering prioritizing modular legibility, geometric coherence, and playful engineered charm',
       key_features:
         'Stud-grid grammar, modular seam legibility, toy-plastic gloss control, block-assembly composition logic',
       creative_brief:
@@ -38,20 +38,20 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         "Funko Pop Vinyl Collectible Figure within 1. Toys And Crafts: a reusable Miscellaneous & Fun visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Funko Pop Vinyl Collectible Figure's specific style identity.",
-      form_and_line:
+      subject_treatment:
         'Define Funko Pop Vinyl Collectible Figure through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
-      color_palette:
+      color_and_tone:
         'Use a Funko Pop Vinyl Collectible Figure-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
-      lighting_setup:
+      lighting_and_shadow:
         'Use lighting that makes Funko Pop Vinyl Collectible Figure recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
-      material_texture:
+      texture_and_material:
         'Use materials and textures that reinforce Funko Pop Vinyl Collectible Figure: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
-      render_quality:
-        'Render Funko Pop Vinyl Collectible Figure with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
-      spatial_distortion:
+      camera_and_composition:
         'Use spatial behavior that fits Funko Pop Vinyl Collectible Figure: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
-      atmosphere:
+      atmosphere_and_mood:
         'Set a mood that belongs to Funko Pop Vinyl Collectible Figure: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+      rendering_and_quality:
+        'Render Funko Pop Vinyl Collectible Figure with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       key_features:
         "Prioritize Funko Pop Vinyl Collectible Figure's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
@@ -66,19 +66,19 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Hand-molded dough-craft style with tactile imperfection, playful experimentation, and analog childlike sculpting energy',
-      form_and_line:
+      subject_treatment:
         'Pinched organic silhouettes, rolled-volume construction, uneven hand-shaped edges, and compression-led contour behavior',
-      color_palette:
+      color_and_tone:
         'Bright mixed primaries with marbled blend transitions and matte craft-paste chroma softness',
-      lighting_setup:
+      lighting_and_shadow:
         'Gentle diffused tabletop lighting emphasizing surface dents, soft shadows, and finger-formed volume relief',
-      material_texture:
+      texture_and_material:
         'Dough-like matte grain, thumbprint impressions, crumbly micro-cracks, tool-scrape traces, and hand-warmed surface irregularity',
-      render_quality:
-        'Tactile craft-render finish prioritizing handmade honesty, texture legibility, and playful imperfect shaping',
-      spatial_distortion:
+      camera_and_composition:
         'Smooshed uneven proportions with gravity-soft forms and non-uniform thickness distribution',
-      atmosphere: 'Playful, messy, warm, experimental, joyful',
+      atmosphere_and_mood: 'Playful, messy, warm, experimental, joyful',
+      rendering_and_quality:
+        'Tactile craft-render finish prioritizing handmade honesty, texture legibility, and playful imperfect shaping',
       key_features:
         'Fingerprint topology, pinch-and-roll morphology, matte dough crackle cues, handmade asymmetry language',
       creative_brief:
@@ -92,16 +92,17 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'curved, smooth, realistic',
     style: {
       aesthetic: 'Low-poly papercraft construction with folded-cardstock geometry',
-      form_and_line: 'Sharp paper folds, triangular facets, crease lines, angular edges',
-      color_palette: 'Flat paper colors, matte cardstock spectrum, subdued hues, uncoated finish',
-      lighting_setup:
+      subject_treatment: 'Sharp paper folds, triangular facets, crease lines, angular edges',
+      color_and_tone: 'Flat paper colors, matte cardstock spectrum, subdued hues, uncoated finish',
+      lighting_and_shadow:
         'Soft shadows, directional key light, facet-defining contrast, gentle ambient',
-      material_texture:
+      texture_and_material:
         'Paper grain, glue tabs, cardstock weight, fiber texture, construction-paper feel',
-      render_quality: 'Hand-assembled geometric craft finish with precise fold logic',
-      spatial_distortion:
+      camera_and_composition:
         'Faceted geometry, polygon-mesh appearance, triangulated surface, angular decomposition',
-      atmosphere: 'Delicate, handmade, clean, zen precision, patient craft, geometric calm',
+      atmosphere_and_mood:
+        'Delicate, handmade, clean, zen precision, patient craft, geometric calm',
+      rendering_and_quality: 'Hand-assembled geometric craft finish with precise fold logic',
       key_features: 'Visible fold lines, tab-and-slot joins, score marks, polygon faces',
       creative_brief:
         'Build forms through visible fold architecture: facets, score lines, and tab joins should define silhouette and volume. Keep surfaces matte and planar so the style reads as handcrafted papercraft rather than smooth CG modeling. Apply Papercraft Low Poly as a portable style system over any input: preserve its construction grammar, material cues, scale logic, and signature rendering behavior while avoiding a required franchise, literal prop, fixed specimen, classroom sample, product shot, or scene template.',
@@ -114,14 +115,15 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'smooth, plastic, hard',
     style: {
       aesthetic: 'Amigurumi crochet plush language with handmade yarn charm',
-      form_and_line:
+      subject_treatment:
         'Spiral stitch pattern, V-stitch rows, rounded increases, circular construction',
-      color_palette: 'Soft yarn colors, heathered pastels, cream-spectrum, gentle jewel tones',
-      lighting_setup: 'Soft, fuzzy, diffused window light, warm bounce, cozy shadows',
-      material_texture: 'Yarn fibers, polyester stuffing, looped stitch surface, plump fill',
-      render_quality: 'Soft handcrafted finish emphasizing stitch structure and tactile warmth',
-      spatial_distortion: 'Round, chibi proportions, oversized head, tiny limbs, compact body',
-      atmosphere: 'Cozy, sweet, tactile, nurturing, heartfelt, handmade love',
+      color_and_tone: 'Soft yarn colors, heathered pastels, cream-spectrum, gentle jewel tones',
+      lighting_and_shadow: 'Soft, fuzzy, diffused window light, warm bounce, cozy shadows',
+      texture_and_material: 'Yarn fibers, polyester stuffing, looped stitch surface, plump fill',
+      camera_and_composition: 'Round, chibi proportions, oversized head, tiny limbs, compact body',
+      atmosphere_and_mood: 'Cozy, sweet, tactile, nurturing, heartfelt, handmade love',
+      rendering_and_quality:
+        'Soft handcrafted finish emphasizing stitch structure and tactile warmth',
       key_features: 'Stitch texture, gauge-consistent rows, yarn halo, safety-eye shine',
       creative_brief:
         'Prioritize readable stitch topology, yarn fiber behavior, and stuffed volume balance. Keep shapes compact and endearing, with crochet construction details driving form identity across any character or object. Apply Amigurumi Crochet as a portable style system over any input: preserve its construction grammar, material cues, scale logic, and signature rendering behavior while avoiding a required franchise, literal prop, fixed specimen, classroom sample, product shot, or scene template.',
@@ -134,15 +136,17 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'hard, plastic',
     style: {
       aesthetic: 'Stuffed animal, plush companion, toy-store mascot, bedtime best-friend',
-      form_and_line: 'Seams, stuffed-round contours, soft-pillow silhouette',
-      color_palette:
+      subject_treatment: 'Seams, stuffed-round contours, soft-pillow silhouette',
+      color_and_tone:
         'Soft pastel, nursery spectrum, blush-pink, duckling-yellow, cloud-white, baby-blue',
-      lighting_setup: 'Soft studio, nursery-window glow, gentle diffusion, warm-overhead comfort',
-      material_texture: 'Faux fur, fabric, velvet-soft nap, squishy filling, micro-fiber fuzz',
-      render_quality:
+      lighting_and_shadow:
+        'Soft studio, nursery-window glow, gentle diffusion, warm-overhead comfort',
+      texture_and_material: 'Faux fur, fabric, velvet-soft nap, squishy filling, micro-fiber fuzz',
+      camera_and_composition: 'Round shapes, oversize-head proportions, stubby limbs, chunky paws',
+      atmosphere_and_mood:
+        'Comforting, soft, security-blanket warmth, bedtime safety, unconditional love',
+      rendering_and_quality:
         'Cute, huggable, snuggle-ready charm, crane-game prize, velvet-touch tenderness',
-      spatial_distortion: 'Round shapes, oversize-head proportions, stubby limbs, chunky paws',
-      atmosphere: 'Comforting, soft, security-blanket warmth, bedtime safety, unconditional love',
       key_features: 'Button eyes, stitched smile, bean-bag weight, satin-bow accent',
       creative_brief:
         'Anchor this preset in plush-toy comfort grammar: seam-led softness, oversized cuddly proportions, and velvet-fiber tactility should define identity without depending on a specific nursery storyline. Apply Plushie as a portable style system over any input: preserve its construction grammar, material cues, scale logic, and signature rendering behavior while avoiding a required franchise, literal prop, fixed specimen, classroom sample, product shot, or scene template.',
@@ -156,19 +160,19 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Retro action-toy collectible style with heroic molded proportions, shelf-display energy, and kinetic play-readiness',
-      form_and_line:
+      subject_treatment:
         'Sculpted hero contour emphasis with visible articulation seams, bold toy silhouette clarity, and pose-forward geometry',
-      color_palette:
+      color_and_tone:
         'Saturated toy primaries with metallic accent paints, molded skin-tone neutrals, and high-contrast accessory blocks',
-      lighting_setup:
+      lighting_and_shadow:
         'Retail-style overhead speculars, blister-like glare streaks, and glossy card-surface reflections for packaging realism',
-      material_texture:
+      texture_and_material:
         'Injection-mold plastic sheen, painted detail pass variation, seam-line evidence, and rigid-shell synthetic finish',
-      render_quality:
-        'High-legibility collectible rendering focused on articulation readability, toy-scale dynamics, and nostalgic mass-market polish',
-      spatial_distortion:
+      camera_and_composition:
         'Action-figure joint logic with hinge/swivel articulation cues and exaggerated heroic torso-to-limb proportioning',
-      atmosphere: 'Playful, energetic, nostalgic, bold, adventurous',
+      atmosphere_and_mood: 'Playful, energetic, nostalgic, bold, adventurous',
+      rendering_and_quality:
+        'High-legibility collectible rendering focused on articulation readability, toy-scale dynamics, and nostalgic mass-market polish',
       key_features:
         'Articulation seam grammar, molded accessory grip cues, hero-pose silhouette lock, packaged-collectible lighting behavior',
       creative_brief:
@@ -183,18 +187,20 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Twisted latex construction, balloon-sculpture grammar, squeaky inflated form language, pressure-art novelty',
-      form_and_line: 'Rounded segments, pinch-twist nodes, sausage-link sections, tubular bends',
-      color_palette:
+      subject_treatment:
+        'Rounded segments, pinch-twist nodes, sausage-link sections, tubular bends',
+      color_and_tone:
         'Shiny latex colors, carnival spectrum, bright-red, canary-yellow, sky-blue gloss',
-      lighting_setup:
+      lighting_and_shadow:
         'High specular highlights, tight glossy rim catches, overhead bounce, balloon-surface reflection',
-      material_texture:
+      texture_and_material:
         'Stretched rubber, latex skin, powder-dusted finish, taut inflation tension',
-      render_quality:
-        'Fragile, playful, inflated, balloon-twisting magic, squeak-and-sculpt, festive impermanence',
-      spatial_distortion:
+      camera_and_composition:
         'Tubular shapes, inflated segment geometry, pinch-collapsed waist, pressure-balloon form',
-      atmosphere: 'Fun, squeaky, buoyant, celebration-coded, carnival-joy, light and temporary',
+      atmosphere_and_mood:
+        'Fun, squeaky, buoyant, celebration-coded, carnival-joy, light and temporary',
+      rendering_and_quality:
+        'Fragile, playful, inflated, balloon-twisting magic, squeak-and-sculpt, festive impermanence',
       key_features:
         'Knots, twisted nodes, balloon-neck ties, air-pressure seams, glossy-highlight rings',
       creative_brief:
@@ -208,17 +214,18 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'plastic, metal',
     style: {
       aesthetic: 'Carved wood figure, traditional toy, whittled companion, heirloom plaything',
-      form_and_line: 'Wood grain, flowing-grain contours, chisel-facet marks, rounded block-forms',
-      color_palette:
+      subject_treatment:
+        'Wood grain, flowing-grain contours, chisel-facet marks, rounded block-forms',
+      color_and_tone:
         'Natural wood, painted details, warm-oak honey, beech-cream, hand-painted folk-accents',
-      lighting_setup: 'Warm, window-sill daylight, oiled-grain sheen, gentle-shadow depth',
-      material_texture:
+      lighting_and_shadow: 'Warm, window-sill daylight, oiled-grain sheen, gentle-shadow depth',
+      texture_and_material:
         'Wood grain, paint chips, sanded-smooth bevel, hand-rubbed oil, age-darkened patina',
-      render_quality:
-        'Traditional, sturdy, workshop-craft care, generation-passing durability, simple-elegance charm',
-      spatial_distortion:
+      camera_and_composition:
         'Simple geometry, block-cut forms, peg-joint assembly, turned-wood symmetry',
-      atmosphere: 'Nostalgic, simple, warm, handcrafted, old-world tenderness',
+      atmosphere_and_mood: 'Nostalgic, simple, warm, handcrafted, old-world tenderness',
+      rendering_and_quality:
+        'Traditional, sturdy, workshop-craft care, generation-passing durability, simple-elegance charm',
       key_features: 'Wood texture, visible grain rings, dovetail joints, paint-wear edges',
       creative_brief:
         'Translate the input into carved wooden-toy logic: simplified block forms, rounded peg-like joints, visible grain rings, hand-painted accents, and age-polished bevels. Keep heirloom craft warmth, but avoid requiring small hands, a workshop, or one literal toy object.',
@@ -232,18 +239,19 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Die-cut sticker, laptop-decal culture, street-art collectible, vinyl peel-and-stick',
-      form_and_line:
+      subject_treatment:
         'Thick white border, contour-cut outline, clean-vector edge, kiss-cut precision',
-      color_palette:
+      color_and_tone:
         'Vibrant flat colors, UV-resistant inks, neon-pop spectrum, spot-gloss accents',
-      lighting_setup: 'Flat, no cast-shadow, even-diffuse daylight, matte-surface clarity',
-      material_texture:
+      lighting_and_shadow: 'Flat, no cast-shadow, even-diffuse daylight, matte-surface clarity',
+      texture_and_material:
         'Glossy paper, vinyl laminate, weatherproof film, water-resistant coating, tacky adhesive back',
-      render_quality:
-        'Graphic, collectible, sticker-sheet appeal, skate-deck swagger, street-art credibility',
-      spatial_distortion:
+      camera_and_composition:
         '2D cutout, die-line silhouette, punch-out negative space, floating-object illusion',
-      atmosphere: 'Cool, decorative, urban-expression, laptop-personality, street-art rebellion',
+      atmosphere_and_mood:
+        'Cool, decorative, urban-expression, laptop-personality, street-art rebellion',
+      rendering_and_quality:
+        'Graphic, collectible, sticker-sheet appeal, skate-deck swagger, street-art credibility',
       key_features:
         'White outline, kiss-cut border, gloss-laminate sheen, color-separation registration',
       creative_brief:
@@ -258,18 +266,19 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Cozy clay stop-motion comedy style with tactile handmade humor and frame-by-frame sculpted expression',
-      form_and_line: 'Wide mouths, gummy-grin contours, expressive-brow ridges, clay-roll profiles',
-      color_palette:
+      subject_treatment:
+        'Wide mouths, gummy-grin contours, expressive-brow ridges, clay-roll profiles',
+      color_and_tone:
         'Matte clay colors, plasticine spectrum, earth-pigment tones, muted primary blends',
-      lighting_setup:
+      lighting_and_shadow:
         'Stop motion set, practical-lamp warmth, miniature-fixture key, shadow-box depth',
-      material_texture:
+      texture_and_material:
         'Fingerprints in clay, thumb-smudge surface, tool-mark trails, plasticine pliability',
-      render_quality:
-        'Handcrafted stop-motion fidelity emphasizing thumbprint evidence, expressive sculpt timing, and tactile comedic warmth',
-      spatial_distortion:
+      camera_and_composition:
         'Tooth gap, exaggerated overbite, wide-eye spacing, teacup-proportion hands',
-      atmosphere: 'Funny, charming, warm, quirky, optimistic',
+      atmosphere_and_mood: 'Funny, charming, warm, quirky, optimistic',
+      rendering_and_quality:
+        'Handcrafted stop-motion fidelity emphasizing thumbprint evidence, expressive sculpt timing, and tactile comedic warmth',
       key_features: 'Plasticine, visible thumbprints, painted-backdrop sets, wire-armature shadows',
       creative_brief:
         'Define this preset by clay stop-motion grammar: visible thumbprints, sculpted expression swaps, and miniature practical-set lighting should hold identity without referencing specific studios or characters. Apply Clay Stop-Motion Comedy as a portable style system over any input: preserve its construction grammar, material cues, scale logic, and signature rendering behavior while avoiding a required franchise, literal prop, fixed specimen, classroom sample, product shot, or scene template.',
@@ -283,19 +292,20 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Vintage wind-up robot, tin-toy nostalgia, clockwork companion, mid-century curiosity',
-      form_and_line:
+      subject_treatment:
         'Lithograph print, pressed-metal contour, rolled-edge seams, tab-slot assembly',
-      color_palette:
+      color_and_tone:
         'Metallic, Red, Gold, stamped-tin spectrum, oxidized-brass patina, litho-ink fade',
-      lighting_setup:
+      lighting_and_shadow:
         'Metallic reflection, tin-surface sparkle, warm-overhead spot, glossy-highlight bounce',
-      material_texture:
+      texture_and_material:
         'Painted metal, cold-tin shell, stamped-relief surface, hand-soldered joints, sharp-press edges',
-      render_quality: 'Retro, mechanical, wind-up wonder, gear-train heart, toy-cabinet treasure',
-      spatial_distortion:
+      camera_and_composition:
         'Boxy, rectilinear body, tube-limb geometry, keyhole-center alignment, angular-foot stance',
-      atmosphere:
+      atmosphere_and_mood:
         'Old fashioned, noisy, tick-tock romance, mantelpiece pride, mechanical nostalgia',
+      rendering_and_quality:
+        'Retro, mechanical, wind-up wonder, gear-train heart, toy-cabinet treasure',
       key_features: 'Wind-up key, stamped-brand plate, clockwork-motor hum, rivet-dot detail',
       creative_brief:
         'Keep this preset grounded in wind-up tin-toy grammar: stamped metal lithography, key-driven clockwork cues, and pressed-soldered mechanical charm should define identity beyond one mascot narrative. Apply Tin Toy as a portable style system over any input: preserve its construction grammar, material cues, scale logic, and signature rendering behavior while avoiding a required franchise, literal prop, fixed specimen, classroom sample, product shot, or scene template.',
@@ -309,19 +319,19 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Handcrafted miniature diorama style with playful stagecraft depth, layered cutout worldbuilding, and tactile craft-theater charm',
-      form_and_line:
+      subject_treatment:
         'Flat cutout silhouettes, stacked layer edges, profile-stage geometry, and parallax-driven contour readability',
-      color_palette:
+      color_and_tone:
         'Mixed handmade craft hues with construction-paper saturation, painted backdrop transitions, and collage-friendly contrast blocks',
-      lighting_setup:
+      lighting_and_shadow:
         'Miniature-box top/side illumination with focused peep-stage warmth and shadow layering that enhances depth illusion',
-      material_texture:
+      texture_and_material:
         'Cardboard grain, glue seams, felt and fiber accents, soft craft stuffing cues, and stick-frame handcrafted irregularity',
-      render_quality:
-        'Tactile craft-diorama finish emphasizing layered depth cues, handmade authenticity, and miniature theatrical legibility',
-      spatial_distortion:
+      camera_and_composition:
         'Forced-perspective micro-staging with deliberate scale compression between foreground and backdrop planes',
-      atmosphere: 'Curious, creative, intimate, playful, wonder-filled',
+      atmosphere_and_mood: 'Curious, creative, intimate, playful, wonder-filled',
+      rendering_and_quality:
+        'Tactile craft-diorama finish emphasizing layered depth cues, handmade authenticity, and miniature theatrical legibility',
       key_features:
         'Layered box-stage architecture, peephole composition logic, cutout depth stratification, tactile handmade material evidence',
       creative_brief:
@@ -336,19 +346,20 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Uncanny handcrafted button-eyed doll style with stitched-fantasy tension and eerie miniature-horror charm',
-      form_and_line: 'Stitched mouth, cross-stitch contour, needle-pull tension, seam-line grimace',
-      color_palette:
+      subject_treatment:
+        'Stitched mouth, cross-stitch contour, needle-pull tension, seam-line grimace',
+      color_and_tone:
         'Muted, creepy, faded-indigo, storm-purple, bone-cream, dust-mote grey, spiderweb-silver',
-      lighting_setup:
+      lighting_and_shadow:
         'Cinematic dark, single-source key, fog-machine haze, moon-through-cobweb, cold-blue fill',
-      material_texture:
+      texture_and_material:
         'Fabric, thread, burlap-sack weave, sawdust-stuffed cotton, button-surface sheen, waxed-thread shine',
-      render_quality:
-        'Spooky handcrafted stop-motion look emphasizing stitched unease, tactile doll materials, and dark-whimsy atmosphere',
-      spatial_distortion:
+      camera_and_composition:
         'Button eyes, stitched-mouth replacement, needle-hole pupils, thread-wound joints',
-      atmosphere:
+      atmosphere_and_mood:
         'Unsettling, magical, door-to-elsewhere, carnival-mirror dread, careful-what-you-wish-for',
+      rendering_and_quality:
+        'Spooky handcrafted stop-motion look emphasizing stitched unease, tactile doll materials, and dark-whimsy atmosphere',
       key_features:
         'Visible stitching, four-hole buttons, cross-thread tension, burlap-fabric grain, needle-impaled surfaces',
       creative_brief:
@@ -363,19 +374,20 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Roman floor art, ancient-tessera craft, bathhouse splendor, Byzantine-mosaic glory',
-      form_and_line:
+      subject_treatment:
         'Grout lines, mortar-grid contours, tessellated-edge stepping, labyrinthine-path geometry',
-      color_palette:
+      color_and_tone:
         'Stone colors, Gold glass, marble-spectrum, smalti-blue, terracotta-earth, mother-of-pearl, porphyry-purple',
-      lighting_setup:
+      lighting_and_shadow:
         'Uneven reflection, angled-light sparkle, tessera-facet glint, oil-lamp flicker',
-      material_texture:
+      texture_and_material:
         'Ceramic tiles, cut-stone cubes, glass smalti, limestone-tessera, hammered-marble surface, irregular hand-cut edge',
-      render_quality:
-        'Ancient, durable, fragmented, imperial-craft, thousand-year permanence, tessera-by-tessera devotion',
-      spatial_distortion:
+      camera_and_composition:
         'Pixelated by tiles, low-resolution stone, grid-cell color-blocking, pixel-mosaic abstraction',
-      atmosphere: 'Historic, grand, ruined-palace echo, footstep-of-empire, sun-warmed antiquity',
+      atmosphere_and_mood:
+        'Historic, grand, ruined-palace echo, footstep-of-empire, sun-warmed antiquity',
+      rendering_and_quality:
+        'Ancient, durable, fragmented, imperial-craft, thousand-year permanence, tessera-by-tessera devotion',
       key_features:
         'Grout, tessera-grid alignment, irregular-tile spacing, andamento flow-lines, gold-leaf-smalti highlight',
       creative_brief:
@@ -390,18 +402,19 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Hoop art, embroidery-craft, thread-painting, needlework tapestry, textile illustration',
-      form_and_line:
+      subject_treatment:
         'Thread thickness, satin-stitch bands, french-knot dots, running-stitch dashes, stem-stitch curves',
-      color_palette:
+      color_and_tone:
         'Thread colors, DMC-floss spectrum, variegated-gradient, metallic-floss shimmer, silk-thread luster',
-      lighting_setup: 'Soft fabric, window-light grazing, thread-sheen catch, hoop-rim shadow',
-      material_texture:
+      lighting_and_shadow: 'Soft fabric, window-light grazing, thread-sheen catch, hoop-rim shadow',
+      texture_and_material:
         'Canvas, thread loops, Aida-cloth grid, even-weave linen, hoop-drum tension, needle-pierce holes',
-      render_quality:
-        'Handmade, tactile, stitch-by-stitch labor, thread-painted artistry, embroidery-hoop patience',
-      spatial_distortion:
+      camera_and_composition:
         'Stitch resolution, pixel-like embroidery, cross-count limitation, grid-cell abstraction',
-      atmosphere: 'Homey, detailed, fireside-craft, generational skill, slow-thread meditation',
+      atmosphere_and_mood:
+        'Homey, detailed, fireside-craft, generational skill, slow-thread meditation',
+      rendering_and_quality:
+        'Handmade, tactile, stitch-by-stitch labor, thread-painted artistry, embroidery-hoop patience',
       key_features:
         'Fabric grain, embroidery-hoop frame, needle-thread tail, stitch-direction shading, floss-skein palette',
       creative_brief:
@@ -416,19 +429,20 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Layered sand strata, granular color sediment, gravity-poured craft, grain-by-grain art',
-      form_and_line:
+      subject_treatment:
         'Granular edges, gravity-settled contour, pour-line strata, grain-slope profiles',
-      color_palette:
+      color_and_tone:
         'Earth tones, Dyed sand, ochre-desert spectrum, terra-cotta, turquoise-lagoon, sunset-layering',
-      lighting_setup: 'Flat, jar-through-daylight, backlit-strata glow, glass-vessel diffusion',
-      material_texture:
+      lighting_and_shadow:
+        'Flat, jar-through-daylight, backlit-strata glow, glass-vessel diffusion',
+      texture_and_material:
         'Grains of sand, fine-ground mineral, pouring-trickle flow, settled-weight compaction, layered-density contrast',
-      render_quality:
-        'Fragile, temporary, shake-to-destroy impermanence, tourist-stall craft, precision-pour technique',
-      spatial_distortion:
+      camera_and_composition:
         'Gravity layers, horizontal-strata formation, contour-band compression, sediment slope illusion',
-      atmosphere:
+      atmosphere_and_mood:
         'Patience, sun-baked stillness, handmade precision, mineral quiet, temporary balance',
+      rendering_and_quality:
+        'Fragile, temporary, shake-to-destroy impermanence, tourist-stall craft, precision-pour technique',
       key_features:
         'Layers, color-strata bands, granular edge noise, settled-density shifts, optional glass-vessel distortion',
       creative_brief:
@@ -442,19 +456,20 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'warm, opaque',
     style: {
       aesthetic: 'Sculpture, frozen-gallery centerpiece, crystal-elegance, banquet-hall spectacle',
-      form_and_line:
+      subject_treatment:
         'Sharp, melting, chisel-facet edges, drip-softened corners, freeze-frame carve',
-      color_palette:
+      color_and_tone:
         'Clear, Blue tint, frozen-depth cyan, air-bubble white, internal-fracture silver, melt-water transparency',
-      lighting_setup:
+      lighting_and_shadow:
         'Refractive, internal, beam-through-crystal, prism-split spectrum, spotlight-brilliance',
-      material_texture:
+      texture_and_material:
         'Slippery ice, wet-glaze surface, frozen-air bubble pocket, crystalline-fracture depth, chainsaw-carve texture',
-      render_quality:
-        'Cold, temporary, crystal, melt-away impermanence, wedding-hall spectacle, ice-bar art',
-      spatial_distortion:
+      camera_and_composition:
         'Translucent, see-through volume, refractive-depth illusion, frozen-clarity, submerged-inclusion depth',
-      atmosphere: 'Elegant, freezing, zero-degree magic, slow-drip countdown, crystalline-ceremony',
+      atmosphere_and_mood:
+        'Elegant, freezing, zero-degree magic, slow-drip countdown, crystalline-ceremony',
+      rendering_and_quality:
+        'Cold, temporary, crystal, melt-away impermanence, wedding-hall spectacle, ice-bar art',
       key_features:
         'Dripping water, internal-crack networks, air-bubble constellations, chainsaw-blade marks, melt-pool reflection',
       creative_brief:

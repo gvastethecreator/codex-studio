@@ -13,16 +13,19 @@ tags:
   - micro-macro
 visualDna:
   aesthetic: Microscope record, groove-landscape, vinyl-macro, analog-waveform, LP-surface
-  form_and_line: Parallel waves, groove-modulation, lateral-cut curve, silent-groove spacing, lead-in-spiral
-  color_palette: Black plastic, vinyl-carbon, groove-shadow grey, stylus-wear silver, dust-speckle white
-  lighting_setup: Highlight along groove, grazing-incidence, vinyl-sheen, dark-field groove, stylus-reflection
-  material_texture: Dust, plastic, PVC-surface, groove-wall, anti-static-brush residue, pressing-flash, static-cling particle
-  render_quality: Audio, physical, turntable-macro, analog-ritual, sound-carved-in-plastic
-  spatial_distortion: Wavy lines, groove-spiral, modulation-wiggle, lead-in-arc, run-out-lock-groove
-  atmosphere: Music, tech, needle-drop quiet, vinyl-warmth, listening-room, hi-fi reverence
-  key_features: Grooves, spiral-lead-in, modulation-wiggle, dust-particle, stylus-reflection, lock-groove-circle, label-edge, pressing-plant matrix number
+  subject_treatment: Parallel waves, groove-modulation, lateral-cut curve, silent-groove spacing, lead-in-spiral
+  color_and_tone: Black plastic, vinyl-carbon, groove-shadow grey, stylus-wear silver, dust-speckle white
+  lighting_and_shadow: Highlight along groove, grazing-incidence, vinyl-sheen, dark-field groove, stylus-reflection
+  texture_and_material: Dust, plastic, PVC-surface, groove-wall, anti-static-brush residue, pressing-flash, static-cling particle
+  camera_and_composition: Wavy lines, groove-spiral, modulation-wiggle, lead-in-arc, run-out-lock-groove
+  atmosphere_and_mood: Music, tech, needle-drop quiet, vinyl-warmth, listening-room, hi-fi reverence
+  rendering_and_quality: Audio, physical, turntable-macro, analog-ritual, sound-carved-in-plastic
+  key_features: >-
+    Grooves, spiral-lead-in, modulation-wiggle, dust-particle, stylus-reflection, lock-groove-circle,
+    label-edge, pressing-plant matrix number
   creative_brief: >-
-    Build analog-audio macro imagery around groove modulation, spiral geometry, and dust-on-PVC microtexture. Keep tactile hi-fi character and waveform-in-material readability as reusable visual anchors.
+    Build analog-audio macro imagery around groove modulation, spiral geometry, and dust-on-PVC microtexture.
+    Keep tactile hi-fi character and waveform-in-material readability as reusable visual anchors.
 avoidRules:
   - smooth
 assets:

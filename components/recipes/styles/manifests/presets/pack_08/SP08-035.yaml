@@ -13,20 +13,23 @@ tags:
   - historical-and-fantasy
 visualDna:
   aesthetic: Ceremonial lacquer armor regalia with silk-laced discipline and red-black-gold craft pressure.
-  form_and_line: Laced plate rhythm, do-chest breadth, sode-shoulder square, haidate paneling and crest geometry.
-  color_palette: Red lacquer, Black, Gold, indigo silk, burnished iron, copper-gilt, ivory
-  lighting_setup: Dramatic dawn-mist light, lacquer edge shine, indigo shadow and gold-leaf glint.
-  material_texture: Lacquered iron, silk odoshi lacing, hammered gold leaf, braided silk cord and iron mask finish.
-  render_quality: Detailed ceremonial craft, disciplined silhouette clarity, historical-fantasy gravitas
-  spatial_distortion: None
-  atmosphere: Reverent, still, impermanent, pre-dawn calm and disciplined.
-  key_features: Helmet-like crest geometry, lacquered plates, silk lacing, layered shoulder panels and vertical banner-like rhythm.
+  subject_treatment: Laced plate rhythm, do-chest breadth, sode-shoulder square, haidate paneling and crest geometry.
+  color_and_tone: Red lacquer, Black, Gold, indigo silk, burnished iron, copper-gilt, ivory
+  lighting_and_shadow: Dramatic dawn-mist light, lacquer edge shine, indigo shadow and gold-leaf glint.
+  texture_and_material: Lacquered iron, silk odoshi lacing, hammered gold leaf, braided silk cord and iron mask finish.
+  camera_and_composition: >-
+    Compose for Samurai Armor using its key spatial cues: Helmet-like crest geometry, lacquered plates, silk
+    lacing, layered shoulder panels and vertical banner-like rhythm.
+  atmosphere_and_mood: Reverent, still, impermanent, pre-dawn calm and disciplined.
+  rendering_and_quality: Detailed ceremonial craft, disciplined silhouette clarity, historical-fantasy gravitas
+  key_features: >-
+    Helmet-like crest geometry, lacquered plates, silk lacing, layered shoulder panels and vertical
+    banner-like rhythm.
   creative_brief: >-
-    Translate any input into ceremonial armor craft language: lacquered plates,
-    silk lacing, crest geometry, shoulder panels and disciplined red-black-gold
-    construction. Preserve regalia pressure without requiring warrior identity,
-    weapons, combat, named historical roles, bamboo forests, castle interiors or
-    fixed human faces.
+    Translate any input into ceremonial armor craft language: lacquered plates, silk lacing, crest geometry,
+    shoulder panels and disciplined red-black-gold construction. Preserve regalia pressure without requiring
+    warrior identity, weapons, combat, named historical roles, bamboo forests, castle interiors or fixed human
+    faces.
 avoidRules:
   - european armor
   - weapon prop

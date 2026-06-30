@@ -13,28 +13,26 @@ tags:
   - slice-of-life-and-moe
 visualDna:
   aesthetic: >-
-    Observational mystery anime built from warm intellectual stillness, clue-forward attention,
-    polished quiet, and suspended curiosity
-  form_and_line: >-
-    Precise quiet contours, object-attention framing, restrained eye-line geometry, and small
-    inference cues embedded in composition
-  color_palette: Tea amber, library brown, soft cream, muted green-black, pale window blue, and subtle gold dust
-  lighting_setup: >-
-    Warm lamplike pools, soft window fill, focused clue highlights, and low-contrast intellectual
-    ambience
-  material_texture: Paper fiber, polished wood, ceramic matte, dust motes, cloth grain, and clean glass reflections
-  render_quality: >-
-    Polished contemplative anime finish with high detail control, clue readability, and calm
-    emotional restraint
-  spatial_distortion: Still-life compression and attention tunnels that make any subject feel quietly investigated
-  atmosphere: Curious, calm, warm, observant, restrained
+    Observational mystery anime built from warm intellectual stillness, clue-forward attention, polished
+    quiet, and suspended curiosity
+  subject_treatment: >-
+    Precise quiet contours, object-attention framing, restrained eye-line geometry, and small inference cues
+    embedded in composition
+  color_and_tone: Tea amber, library brown, soft cream, muted green-black, pale window blue, and subtle gold dust
+  lighting_and_shadow: Warm lamplike pools, soft window fill, focused clue highlights, and low-contrast intellectual ambience
+  texture_and_material: Paper fiber, polished wood, ceramic matte, dust motes, cloth grain, and clean glass reflections
+  camera_and_composition: Still-life compression and attention tunnels that make any subject feel quietly investigated
+  atmosphere_and_mood: Curious, calm, warm, observant, restrained
+  rendering_and_quality: >-
+    Polished contemplative anime finish with high detail control, clue readability, and calm emotional
+    restraint
   key_features: >-
-    Clue-focused framing, tea-light warmth, observational stillness, precise microgestures, and
-    intellectual hush
+    Clue-focused framing, tea-light warmth, observational stillness, precise microgestures, and intellectual
+    hush
   creative_brief: >-
     Use Hyouka as style anchor for tea-light observational mystery. Any prompt should feel gently
-    investigated: warm focus pools, clue hierarchy, stillness, and polished curiosity. Classrooms,
-    books, clubrooms, and tea props are optional.
+    investigated: warm focus pools, clue hierarchy, stillness, and polished curiosity. Classrooms, books,
+    clubrooms, and tea props are optional.
 avoidRules:
   - realistic
   - 3d render
@@ -52,8 +50,8 @@ assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-201.webp
 attributes:
   negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, text, signature
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts,
+    watermark, text, signature
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle

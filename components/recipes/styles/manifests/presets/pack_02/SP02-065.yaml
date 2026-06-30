@@ -13,20 +13,26 @@ tags:
   - lighting-and-atmosphere
 visualDna:
   aesthetic: Light shafts
-  form_and_line: None
-  color_palette: Dusty White, warm cream beam, cool shadow, golden particulate
-  lighting_setup: Beams through dust, volumetric shaft, aperture-cut light
-  material_texture: Atmospheric, particulate haze, floating dust motes
-  render_quality: Epic, luminous, volumetric, revelation-grade atmosphere
-  spatial_distortion: None
-  atmosphere: Sacred, still, suspended, revelation moment
+  subject_treatment: >-
+    Treat subjects as believable filmed or broadcast subjects under God Rays (Volumetric): casting, wardrobe,
+    props, motion cues, and silhouette hierarchy follow 5. Lighting And Atmosphere cinematic and broadcast
+    grammar without locking to one plot beat.
+  color_and_tone: Dusty White, warm cream beam, cool shadow, golden particulate
+  lighting_and_shadow: Beams through dust, volumetric shaft, aperture-cut light
+  texture_and_material: Atmospheric, particulate haze, floating dust motes
+  camera_and_composition: >-
+    Camera language native to God Rays (Volumetric): genre-aware framing, lens character, focal hierarchy,
+    motion cue, and vertical style-card composition.
+  atmosphere_and_mood: Sacred, still, suspended, revelation moment
+  rendering_and_quality: Epic, luminous, volumetric, revelation-grade atmosphere
   key_features: Visible beams, dust motes, shaft geometry, particulate haze
   creative_brief: >-
-    Make light visible as volume: shafts through haze, suspended particles, aperture-cut beams, and luminous negative
-    space. Avoid requiring churches, forests, windows, or spiritual scene content. The style should turn air itself into
-    the main cinematic material. Apply God Rays as a portable cinematic/camera style over any input: preserve its lens
-    behavior, color process, lighting setup, artifact pattern, and deformation grammar while avoiding a required actor,
-    room, prop, brand, readable text, fixed IP scene, or narrative setup.
+    Make light visible as volume: shafts through haze, suspended particles, aperture-cut beams, and luminous
+    negative space. Avoid requiring churches, forests, windows, or spiritual scene content. The style should
+    turn air itself into the main cinematic material. Apply God Rays as a portable cinematic/camera style over
+    any input: preserve its lens behavior, color process, lighting setup, artifact pattern, and deformation
+    grammar while avoiding a required actor, room, prop, brand, readable text, fixed IP scene, or narrative
+    setup.
 avoidRules:
   - clear air
 assets:

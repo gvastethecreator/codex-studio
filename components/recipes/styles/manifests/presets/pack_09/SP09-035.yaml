@@ -13,22 +13,23 @@ tags:
   - weathering-and-decay
 visualDna:
   aesthetic: Charred timber
-  form_and_line: Deep cracks (alligator skin)
-  color_palette: Deep Black
-  lighting_setup: Matte/Satin
-  material_texture: Charcoal
-  render_quality: Preserved, texture
-  spatial_distortion: Cracked blocks
-  atmosphere: Dark, fire
+  subject_treatment: Deep cracks (alligator skin)
+  color_and_tone: Deep Black
+  lighting_and_shadow: Matte/Satin
+  texture_and_material: Charcoal
+  camera_and_composition: Cracked blocks
+  atmosphere_and_mood: Dark, fire
+  rendering_and_quality: Preserved, texture
   key_features: Rectangular cracks
   creative_brief: >-
-    Compose the dark armor of Shou Sugi Ban charred timber where fire has transformed the surface into a cracked
-    landscape of alligator-skin carbon, rectangular fissures mapping the grain into blocks of preserved black. The char
-    should feel deep enough to fall into, a matte darkness that protects the wood beneath by becoming its own shield.
-    Capture the paradox of fire as preservative, destruction worn as durable beauty. Use Burnt Wood as portable
-    surface/render behavior over any input: map its texture, light response, edge wear, color chemistry, and tactile
-    rhythm onto the subject instead of requiring a literal material sample, macro tile, wall, landscape, source object,
-    or scene where the material naturally appears.
+    Compose the dark armor of Shou Sugi Ban charred timber where fire has transformed the surface into a
+    cracked landscape of alligator-skin carbon, rectangular fissures mapping the grain into blocks of
+    preserved black. The char should feel deep enough to fall into, a matte darkness that protects the wood
+    beneath by becoming its own shield. Capture the paradox of fire as preservative, destruction worn as
+    durable beauty. Use Burnt Wood as portable surface/render behavior over any input: map its texture, light
+    response, edge wear, color chemistry, and tactile rhythm onto the subject instead of requiring a literal
+    material sample, macro tile, wall, landscape, source object, or scene where the material naturally
+    appears.
 avoidRules:
   - ash
   - grey

@@ -12,16 +12,21 @@ tags:
   - cinematic-and-media
   - tv-and-broadcast
 visualDna:
-  aesthetic: 90s multicam sitcom broadcast, flat studio blocking, laugh-track rhythm, tape-soft comedy timing, live audience warmth
-  form_and_line: Center-weighted staging, readable blocking, broad silhouette spacing, proscenium-like composition
-  color_palette: Warm tungsten beige, set-paint teal, faded sofa red, carpet brown, broadcast-safe primaries
-  lighting_setup: Three-wall studio wash, even overhead fill, practical lamp accents, no noir contrast
-  material_texture: BetaSP softness, mild chroma bleed, interlaced tape edge, set-fabric texture
-  render_quality: Soft TV comedy polish, multicam readability, low-depth broadcast clarity
-  spatial_distortion: Slight telephoto compression, stage-front perspective, camera-switch composition
-  atmosphere: Cozy, artificial, rehearsed, broadly comic
+  aesthetic: >-
+    90s multicam sitcom broadcast, flat studio blocking, laugh-track rhythm, tape-soft comedy timing, live
+    audience warmth
+  subject_treatment: Center-weighted staging, readable blocking, broad silhouette spacing, proscenium-like composition
+  color_and_tone: Warm tungsten beige, set-paint teal, faded sofa red, carpet brown, broadcast-safe primaries
+  lighting_and_shadow: Three-wall studio wash, even overhead fill, practical lamp accents, no noir contrast
+  texture_and_material: BetaSP softness, mild chroma bleed, interlaced tape edge, set-fabric texture
+  camera_and_composition: Slight telephoto compression, stage-front perspective, camera-switch composition
+  atmosphere_and_mood: Cozy, artificial, rehearsed, broadly comic
+  rendering_and_quality: Soft TV comedy polish, multicam readability, low-depth broadcast clarity
   key_features: Studio wash, tape softness, interlace, stage blocking, laugh-track pause spacing
-  creative_brief: 'Apply analog multicam sitcom grammar to any prompt: broad readable staging, warm studio wash, tape-soft edges, mild chroma bleed, and camera-switch composition. Avoid requiring apartments, sofas, actors, or specific sitcom props. The image should feel built for broadcast timing and audience visibility.'
+  creative_brief: >-
+    Apply analog multicam sitcom grammar to any prompt: broad readable staging, warm studio wash, tape-soft
+    edges, mild chroma bleed, and camera-switch composition. Avoid requiring apartments, sofas, actors, or
+    specific sitcom props. The image should feel built for broadcast timing and audience visibility.
 avoidRules:
   - cinematic noir
   - handheld realism

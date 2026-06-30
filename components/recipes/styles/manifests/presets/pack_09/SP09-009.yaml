@@ -13,21 +13,22 @@ tags:
   - natural-materials
 visualDna:
   aesthetic: Smooth pebbles
-  form_and_line: Rounded shapes
-  color_palette: Multi-colored grey/brown
-  lighting_setup: Wet gloss
-  material_texture: Smooth, wet
-  render_quality: Riverbed, zen
-  spatial_distortion: Rounded
-  atmosphere: Calm, wet
+  subject_treatment: Rounded shapes
+  color_and_tone: Multi-colored grey/brown
+  lighting_and_shadow: Wet gloss
+  texture_and_material: Smooth, wet
+  camera_and_composition: Rounded
+  atmosphere_and_mood: Calm, wet
+  rendering_and_quality: Riverbed, zen
   key_features: Pile
   creative_brief: >-
-    Compose a meditation on smoothness earned through millennia of water's patient persuasion, each pebble a portrait of
-    surrender whose edges dissolved into curves by the relentless kindness of current. Wet gloss should catch the light
-    like a thin skin of memory, reflecting sky where stone once resisted. Render the quiet wisdom of the tumbled, the
-    beauty of edges long since forgiven. Use River Stones as portable surface/render behavior over any input: map its
-    texture, light response, edge wear, color chemistry, and tactile rhythm onto the subject instead of requiring a
-    literal material sample, macro tile, wall, landscape, source object, or scene where the material naturally appears.
+    Compose a meditation on smoothness earned through millennia of water's patient persuasion, each pebble a
+    portrait of surrender whose edges dissolved into curves by the relentless kindness of current. Wet gloss
+    should catch the light like a thin skin of memory, reflecting sky where stone once resisted. Render the
+    quiet wisdom of the tumbled, the beauty of edges long since forgiven. Use River Stones as portable
+    surface/render behavior over any input: map its texture, light response, edge wear, color chemistry, and
+    tactile rhythm onto the subject instead of requiring a literal material sample, macro tile, wall,
+    landscape, source object, or scene where the material naturally appears.
 avoidRules:
   - jagged
   - dry

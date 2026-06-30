@@ -12,16 +12,30 @@ tags:
   - cinematic-and-media
   - caricature-and-cartoon-styles
 visualDna:
-  aesthetic: Body-horror cartoon texture system, exposed inner-material logic, translucent flesh-like wrapping, MeatCanyon aesthetic, Cronenberg-meets-SpongeBob, visceral wrongness with cartoon color palette
-  form_and_line: Hyper-detailed anatomical horror on cartoon proportions, sinew-like strands, meat-fiber linework
-  color_palette: Raw meat red, exposed tendon white, vein-blue, jaundice yellow, pus-green, fresh-bruise purple, surgical pink
-  lighting_setup: Clinical overhead, wet glistening surfaces catching light, meat-locker fluorescence
-  material_texture: Wet muscle fiber, stretched translucent skin, exposed cartilage gleam, dental-enamel hyper-detail
-  render_quality: Visceral gross-out cartoon, anatomically-detailed horror comedy, MeatCanyon-style grotesque, nightmare fuel
-  spatial_distortion: Opened structure beyond physical limits, bulging forms, visible interior scaffold, flesh-puppet proportions
-  atmosphere: Nauseating, fascinating revulsion, can't-look-away horror, deeply wrong yet compelling
-  key_features: Interior texture exposure, meat-fiber rendering, translucent wrapping, stretch tension lines, surgical cartoon color
-  creative_brief: 'Apply grotesque meat-puppet rendering to any subject: cartoon proportions collide with exposed inner textures, wet fiber detail, translucent wrapping, stretch tension, and surgical fluorescence. Avoid requiring bodies, teeth, eyes, ribs, or anatomy as subject matter. The horror should come from interior material made visible.'
+  aesthetic: >-
+    Body-horror cartoon texture system, exposed inner-material logic, translucent flesh-like wrapping,
+    MeatCanyon aesthetic, Cronenberg-meets-SpongeBob, visceral wrongness with cartoon color palette
+  subject_treatment: Hyper-detailed anatomical horror on cartoon proportions, sinew-like strands, meat-fiber linework
+  color_and_tone: >-
+    Raw meat red, exposed tendon white, vein-blue, jaundice yellow, pus-green, fresh-bruise purple, surgical
+    pink
+  lighting_and_shadow: Clinical overhead, wet glistening surfaces catching light, meat-locker fluorescence
+  texture_and_material: Wet muscle fiber, stretched translucent skin, exposed cartilage gleam, dental-enamel hyper-detail
+  camera_and_composition: >-
+    Opened structure beyond physical limits, bulging forms, visible interior scaffold, flesh-puppet
+    proportions
+  atmosphere_and_mood: Nauseating, fascinating revulsion, can't-look-away horror, deeply wrong yet compelling
+  rendering_and_quality: >-
+    Visceral gross-out cartoon, anatomically-detailed horror comedy, MeatCanyon-style grotesque, nightmare
+    fuel
+  key_features: >-
+    Interior texture exposure, meat-fiber rendering, translucent wrapping, stretch tension lines, surgical
+    cartoon color
+  creative_brief: >-
+    Apply grotesque meat-puppet rendering to any subject: cartoon proportions collide with exposed inner
+    textures, wet fiber detail, translucent wrapping, stretch tension, and surgical fluorescence. Avoid
+    requiring bodies, teeth, eyes, ribs, or anatomy as subject matter. The horror should come from interior
+    material made visible.
 avoidRules:
   - smooth
   - clean

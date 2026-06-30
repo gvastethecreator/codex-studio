@@ -13,15 +13,19 @@ tags:
   - mixed-media
 visualDna:
   aesthetic: Acrylic strokes on photo
-  form_and_line: Brush strokes
-  color_palette: Photo + Paint
-  lighting_setup: Mixed
-  material_texture: Paint texture
-  render_quality: Expressive overpainted-print finish with smeared opacity and obscured detail
-  spatial_distortion: Obscured details
-  atmosphere: Abstracted reality
+  subject_treatment: Brush strokes
+  color_and_tone: Photo + Paint
+  lighting_and_shadow: Mixed
+  texture_and_material: Paint texture
+  camera_and_composition: Obscured details
+  atmosphere_and_mood: Abstracted reality
+  rendering_and_quality: Expressive overpainted-print finish with smeared opacity and obscured detail
   key_features: Smeared paint
-  creative_brief: Thick acrylic strokes drag across an existing image surface, obscuring and revealing in the same gesture, paint acting as both veil and window. The brush risks the base layer through smear, opacity, and interruption. The image lives in friction between printed certainty and applied gesture, without requiring photographic realism.
+  creative_brief: >-
+    Thick acrylic strokes drag across an existing image surface, obscuring and revealing in the same gesture,
+    paint acting as both veil and window. The brush risks the base layer through smear, opacity, and
+    interruption. The image lives in friction between printed certainty and applied gesture, without requiring
+    photographic realism.
 avoidRules:
   - realistic
   - photorealistic
@@ -42,7 +46,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP06-074.webp
 attributes:
-  negativePrompt: realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border, literal photo requirement, portrait requirement
+  negativePrompt: >-
+    realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy,
+    watermark, text, signature, frame, border, literal photo requirement, portrait requirement
 taxonomy:
   packId: pack_06
   packName: Essential Art Styles

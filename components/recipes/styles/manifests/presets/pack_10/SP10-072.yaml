@@ -13,18 +13,17 @@ tags:
   - diagram-print-and-light-systems
 visualDna:
   aesthetic: Made of tiny dots
-  form_and_line: None
-  color_palette: Optical mixing
-  lighting_setup: Soft
-  material_texture: Dots
-  render_quality: Impressionist, scientific
-  spatial_distortion: None
-  atmosphere: Calm, vibrant
+  subject_treatment: "Treat subjects through Pointillism (Seurat)'s signature cues: Dots only."
+  color_and_tone: Optical mixing
+  lighting_and_shadow: Soft
+  texture_and_material: Dots
+  camera_and_composition: 'Compose for Pointillism (Seurat) using its key spatial cues: Dots only.'
+  atmosphere_and_mood: Calm, vibrant
+  rendering_and_quality: Impressionist, scientific
   key_features: Dots only
   creative_brief: >-
-    Apply pointillist color construction to the input: tiny separated pigment
-    dots, optical color mixing, bright local marks, and distance-based cohesion
-    should let the subject assemble from painterly particles.
+    Apply pointillist color construction to the input: tiny separated pigment dots, optical color mixing,
+    bright local marks, and distance-based cohesion should let the subject assemble from painterly particles.
 avoidRules:
   - brush strokes
   - lines

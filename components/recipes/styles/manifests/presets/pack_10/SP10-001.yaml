@@ -13,18 +13,18 @@ tags:
   - geometric-abstraction
 visualDna:
   aesthetic: Fragmented objects
-  form_and_line: Sharp angles
-  color_palette: Brown, Grey, Blue
-  lighting_setup: Flat
-  material_texture: Paint strokes
-  render_quality: Picasso, Braque
-  spatial_distortion: Multiple viewpoints
-  atmosphere: Intellectual, fragmented
+  subject_treatment: Sharp angles
+  color_and_tone: Brown, Grey, Blue
+  lighting_and_shadow: Flat
+  texture_and_material: Paint strokes
+  camera_and_composition: Multiple viewpoints
+  atmosphere_and_mood: Intellectual, fragmented
+  rendering_and_quality: Picasso, Braque
   key_features: Geometric breakdown
   creative_brief: >-
-    Apply cubist fracture to the input: simultaneous viewpoints, angular planes,
-    muted ochre-blue-grey paint facets, and deliberate spatial disassembly should
-    let any subject remain readable while broken into intellectual geometry.
+    Apply cubist fracture to the input: simultaneous viewpoints, angular planes, muted ochre-blue-grey paint
+    facets, and deliberate spatial disassembly should let any subject remain readable while broken into
+    intellectual geometry.
 avoidRules:
   - realistic perspective
   - smooth

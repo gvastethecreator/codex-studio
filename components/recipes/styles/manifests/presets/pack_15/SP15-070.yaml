@@ -14,16 +14,36 @@ tags:
   - raypunk
   - transit
 visualDna:
-  aesthetic: raypunk transit commons built around one distinctive plasma-rail courier or transit guardian, ray-age arches, glowing rails, and civic transit shapes.
-  form_and_line: Atomic signage, rocket-age curves, raygun geometry, orbital equipment, chrome kitsch, and cosmic civic forms. Core composition uses plasma-rail courier/guardian protagonist, plasma rails, ray arches, station platforms, motion lines.
-  color_palette: plasma blue, orange, cream, brushed steel
-  lighting_setup: plasma rail glow, arch rimlight, broad platform light, orange motion lines
-  material_texture: brushed steel, enamel tiles, plasma glass, suit fabric, rubber flooring
-  render_quality: Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity, moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material simulation, or hyper-detail.
-  spatial_distortion: Promenades, diners, outposts, salvage yards, rails, lunar farms, craters, and isotope-lit plazas. Keep depth legible and avoid default hallway, aisle, or empty studio staging.
-  atmosphere: fast, public, sleek-retro, optimistic
+  aesthetic: >-
+    raypunk transit commons built around one distinctive plasma-rail courier or transit guardian, ray-age
+    arches, glowing rails, and civic transit shapes.
+  subject_treatment: >-
+    Atomic signage, rocket-age curves, raygun geometry, orbital equipment, chrome kitsch, and cosmic civic
+    forms. Core composition uses plasma-rail courier/guardian protagonist, plasma rails, ray arches, station
+    platforms, motion lines.
+  color_and_tone: plasma blue, orange, cream, brushed steel
+  lighting_and_shadow: plasma rail glow, arch rimlight, broad platform light, orange motion lines
+  texture_and_material: brushed steel, enamel tiles, plasma glass, suit fabric, rubber flooring
+  camera_and_composition: >-
+    Promenades, diners, outposts, salvage yards, rails, lunar farms, craters, and isotope-lit plazas. Keep
+    depth legible and avoid default hallway, aisle, or empty studio staging.
+  atmosphere_and_mood: fast, public, sleek-retro, optimistic
+  rendering_and_quality: >-
+    Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly
+    planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity,
+    moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material
+    simulation, or hyper-detail.
   key_features: plasma-rail courier/guardian protagonist, plasma rails, ray arches, station platforms, motion lines
-  creative_brief: 'Raypunk transit as public utility through one character: a distinctive plasma-rail courier or transit guardian stepping through a plasma rail arc, ray arches, platform block shapes, plasma-blue glow bands, cream tile slabs, and orange motion lines, not empty spaceship interiors. The rail supports the protagonist; it must not become an object-only transit poster. Avoid commuter crowd as main subject, subway corridor, worker transit poster, cockpit UI, route maps, or dense crowd texture. Keep the result representative rather than over-abstract; use flat graphic illustration, gouache-poster shapes, cel-poster blocking, and controlled digital painting over realism or generic concept art. Use few bold color/value zones, large matte shapes, clean surfaces, low-to-moderate detail, and finish denoised with no excessive noise or ultra-fine detail.'
+  creative_brief: >-
+    Raypunk transit as public utility through one character: a distinctive plasma-rail courier or transit
+    guardian stepping through a plasma rail arc, ray arches, platform block shapes, plasma-blue glow bands,
+    cream tile slabs, and orange motion lines, not empty spaceship interiors. The rail supports the
+    protagonist; it must not become an object-only transit poster. Avoid commuter crowd as main subject,
+    subway corridor, worker transit poster, cockpit UI, route maps, or dense crowd texture. Keep the result
+    representative rather than over-abstract; use flat graphic illustration, gouache-poster shapes, cel-poster
+    blocking, and controlled digital painting over realism or generic concept art. Use few bold color/value
+    zones, large matte shapes, clean surfaces, low-to-moderate detail, and finish denoised with no excessive
+    noise or ultra-fine detail.
 avoidRules:
   - photoreal
   - watermark
@@ -37,7 +57,21 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP15-070.webp
 attributes:
-  negativePrompt: photoreal, hyperreal, realistic render, photoreal painterly realism, cinematic realism, AAA key art, photographic skin pores, realistic foreground portrait, realistic facial hair detail, lens blur, bokeh, depth-of-field photo look, long tunnel, corridor, readable station signs, route maps, UI panels, train logo, warning labels, numbers, cockpit, weapon, photoreal glass, photoreal steel, PBR metal, dense crowd texture, market aisle, generic soldier hero, guard pin-up, weapon-first pose, HDR lens realism, 3D render look, hyper-detailed concept art, watermark, text, logo, generic style, over-abstract, interchangeable preset, duplicated motifs, generic glass utopia, unmotivated library aisle, fantasy corridor, random camera held by subject, studio wall fixation, chair fixation, curtain fixation, lamp fixation, scarf fixation, pedestal fixation, bird fixation, excessive noise, ultra-fine detail, over-sharpened microtexture, over-rendered machinery, noisy grime, tiny rivets everywhere, busy texture chatter, realistic uniform portrait, uniformed officer hero, foreground guard portrait, detailed tattoo focus, dense machinery wallpaper, overcrowded scene, high-frequency surface detail, cinematic close-up portrait, flat black fill, crushed black, pure black masses, muddy black fields, generic American illustration, generic Western RPG card art
+  negativePrompt: >-
+    photoreal, hyperreal, realistic render, photoreal painterly realism, cinematic realism, AAA key art,
+    photographic skin pores, realistic foreground portrait, realistic facial hair detail, lens blur, bokeh,
+    depth-of-field photo look, long tunnel, corridor, readable station signs, route maps, UI panels, train
+    logo, warning labels, numbers, cockpit, weapon, photoreal glass, photoreal steel, PBR metal, dense crowd
+    texture, market aisle, generic soldier hero, guard pin-up, weapon-first pose, HDR lens realism, 3D render
+    look, hyper-detailed concept art, watermark, text, logo, generic style, over-abstract, interchangeable
+    preset, duplicated motifs, generic glass utopia, unmotivated library aisle, fantasy corridor, random
+    camera held by subject, studio wall fixation, chair fixation, curtain fixation, lamp fixation, scarf
+    fixation, pedestal fixation, bird fixation, excessive noise, ultra-fine detail, over-sharpened
+    microtexture, over-rendered machinery, noisy grime, tiny rivets everywhere, busy texture chatter,
+    realistic uniform portrait, uniformed officer hero, foreground guard portrait, detailed tattoo focus,
+    dense machinery wallpaper, overcrowded scene, high-frequency surface detail, cinematic close-up portrait,
+    flat black fill, crushed black, pure black masses, muddy black fields, generic American illustration,
+    generic Western RPG card art
 taxonomy:
   packId: pack_15
   packName: Punk Spectrum Vault

@@ -13,20 +13,20 @@ tags:
   - technical-and-specialist-imaging
 visualDna:
   aesthetic: Wide angle with shallow depth
-  form_and_line: Subject pop
-  color_palette: Vibrant
-  lighting_setup: Natural
-  material_texture: Blurry background
-  render_quality: Impossible depth of field
-  spatial_distortion: Swirly bokeh
-  atmosphere: Epic portrait
+  subject_treatment: Subject pop
+  color_and_tone: Vibrant
+  lighting_and_shadow: Natural
+  texture_and_material: Blurry background
+  camera_and_composition: Swirly bokeh
+  atmosphere_and_mood: Epic portrait
+  rendering_and_quality: Impossible depth of field
   key_features: Thin focus plane
   creative_brief: >-
-    Impossible depth collapses into breath, the subject floating on a sea of dissolved light while background melts into
-    abstract devotion. This is not focus but consecration, a single point of clarity surrounded by the beautiful
-    surrender of everything else. Apply this photographic look over any input: preserve lens behavior, exposure logic,
-    color response, framing discipline, and artifact pattern while avoiding a required place, face, travel scene,
-    landscape, or narrative setup.
+    Impossible depth collapses into breath, the subject floating on a sea of dissolved light while background
+    melts into abstract devotion. This is not focus but consecration, a single point of clarity surrounded by
+    the beautiful surrender of everything else. Apply this photographic look over any input: preserve lens
+    behavior, exposure logic, color response, framing discipline, and artifact pattern while avoiding a
+    required place, face, travel scene, landscape, or narrative setup.
 avoidRules:
   - deep focus
 assets:

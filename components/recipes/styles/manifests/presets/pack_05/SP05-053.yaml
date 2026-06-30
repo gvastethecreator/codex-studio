@@ -13,33 +13,30 @@ tags:
   - mecha-and-cyberpunk
 visualDna:
   aesthetic: >-
-    Industrial anime weight under repeated attrition, hydraulic strain, scarred plating, mud-heavy
-    motion, and pressure-tested endurance
-  form_and_line: >-
-    Blocky hard-edge linework, piston-like contour rhythm, bolted silhouette mass, compressed
-    stances, and blunt impact diagonals.
-  color_palette: Oil black, worn steel, oxidized orange, bruised olive, emergency amber, and dull blue shadow.
-  lighting_setup: >-
-    Low industrial glow, welding sparks, smoky backlight, hard practical highlights, and grime-muted
-    rim separation.
-  material_texture: >-
-    Scratched plating, hydraulic grease, soot, chipped paint, rough rubber, and particulate dust
-    over dense surfaces.
-  render_quality: >-
-    Premium heavy-tech anime rendering with tactile mass, readable layered parts, and controlled
-    grime detail.
-  spatial_distortion: >-
-    Low-angle compression, heavy foreground mass, flattened depth under pressure, and recoil-like
-    perspective drag.
-  atmosphere: Gruff, pressured, gritty, mechanical
+    Industrial anime weight under repeated attrition, hydraulic strain, scarred plating, mud-heavy motion, and
+    pressure-tested endurance
+  subject_treatment: >-
+    Blocky hard-edge linework, piston-like contour rhythm, bolted silhouette mass, compressed stances, and
+    blunt impact diagonals.
+  color_and_tone: Oil black, worn steel, oxidized orange, bruised olive, emergency amber, and dull blue shadow.
+  lighting_and_shadow: >-
+    Low industrial glow, welding sparks, smoky backlight, hard practical highlights, and grime-muted rim
+    separation.
+  texture_and_material: >-
+    Scratched plating, hydraulic grease, soot, chipped paint, rough rubber, and particulate dust over dense
+    surfaces.
+  camera_and_composition: >-
+    Low-angle compression, heavy foreground mass, flattened depth under pressure, and recoil-like perspective
+    drag.
+  atmosphere_and_mood: Gruff, pressured, gritty, mechanical
+  rendering_and_quality: Premium heavy-tech anime rendering with tactile mass, readable layered parts, and controlled grime detail.
   key_features: >-
-    Hydraulic compression, scarred plating, dirty sparks, compact stance energy, worn mechanical
-    rhythm, and impact-fatigue texture
+    Hydraulic compression, scarred plating, dirty sparks, compact stance energy, worn mechanical rhythm, and
+    impact-fatigue texture
   creative_brief: >-
-    Use hydraulic attrition mass as heavy-function grammar. Any prompt should feel load-bearing,
-    stressed, dented, and built for survival. If a subject can carry hardware, add scarred plating,
-    joints, hydraulics, or operator-scale mecha hints; vehicles, weapons, trenches, and conflict
-    settings remain optional.
+    Use hydraulic attrition mass as heavy-function grammar. Any prompt should feel load-bearing, stressed,
+    dented, and built for survival. If a subject can carry hardware, add scarred plating, joints, hydraulics,
+    or operator-scale mecha hints; vehicles, weapons, trenches, and conflict settings remain optional.
 avoidRules:
   - realistic
   - 3d render
@@ -57,8 +54,8 @@ assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-053.webp
 attributes:
   negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, text, signature
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts,
+    watermark, text, signature
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds

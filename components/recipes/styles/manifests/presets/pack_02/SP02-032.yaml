@@ -12,16 +12,24 @@ tags:
   - cinematic-and-media
   - animation-styles
 visualDna:
-  aesthetic: Hand-painted nature-forward animated feature, Miyazaki film wonder, dappled memory, everyday magic, breathable stillness
-  form_and_line: Delicate
-  color_palette: Natural, mineral green, sky blue, warm cream, cherry-blossom pink, earth brown
-  lighting_setup: Dappled sunlight, leaf-filtered glow, golden late-afternoon
-  material_texture: Watercolor background, soft wash, pencil underdraw, cel overlay
-  render_quality: Luminous, lovingly observed, detailed stillness, hand-painted atmospheric depth
-  spatial_distortion: None
-  atmosphere: Nostalgic, peaceful, bittersweet wonder, human-scale awe
+  aesthetic: >-
+    Hand-painted nature-forward animated feature, Miyazaki film wonder, dappled memory, everyday magic,
+    breathable stillness
+  subject_treatment: Delicate
+  color_and_tone: Natural, mineral green, sky blue, warm cream, cherry-blossom pink, earth brown
+  lighting_and_shadow: Dappled sunlight, leaf-filtered glow, golden late-afternoon
+  texture_and_material: Watercolor background, soft wash, pencil underdraw, cel overlay
+  camera_and_composition: >-
+    Camera language native to Studio Ghibli Painterly Nature Anime: genre-aware framing, lens character, focal
+    hierarchy, motion cue, and vertical style-card composition.
+  atmosphere_and_mood: Nostalgic, peaceful, bittersweet wonder, human-scale awe
+  rendering_and_quality: Luminous, lovingly observed, detailed stillness, hand-painted atmospheric depth
   key_features: Dappled light, watercolor air, pencil underdraw, soft cel overlay, observed micro-detail
-  creative_brief: 'Translate the input into painterly animation grammar: leaf-filtered light, watercolor atmosphere, delicate pencil structure, and a sense that ordinary surfaces carry quiet spirit. Avoid requiring specific places, foods, vehicles, or characters; the style should breathe through texture, patience, and subtle environmental softness. Every subject should feel observed with care before it is stylized.'
+  creative_brief: >-
+    Translate the input into painterly animation grammar: leaf-filtered light, watercolor atmosphere, delicate
+    pencil structure, and a sense that ordinary surfaces carry quiet spirit. Avoid requiring specific places,
+    foods, vehicles, or characters; the style should breathe through texture, patience, and subtle
+    environmental softness. Every subject should feel observed with care before it is stylized.
 avoidRules:
   - ugly
   - dark

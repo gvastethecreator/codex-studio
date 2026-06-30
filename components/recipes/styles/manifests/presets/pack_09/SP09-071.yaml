@@ -13,21 +13,22 @@ tags:
   - man-made-materials
 visualDna:
   aesthetic: Construction sheet
-  form_and_line: Layers on edge
-  color_palette: Yellow pine
-  lighting_setup: Flat
-  material_texture: Rotary cut grain
-  render_quality: Construction, cheap
-  spatial_distortion: Splinters
-  atmosphere: Unfinished, work
+  subject_treatment: Layers on edge
+  color_and_tone: Yellow pine
+  lighting_and_shadow: Flat
+  texture_and_material: Rotary cut grain
+  camera_and_composition: Splinters
+  atmosphere_and_mood: Unfinished, work
+  rendering_and_quality: Construction, cheap
   key_features: Knots
   creative_brief: >-
-    Render the rotary-cut grain of construction plywood where the lathe has unrolled the log into a continuous ribbon of
-    blonde pine, now layered into structural flatness with knots punctuating the surface like dark eyes. The edge should
-    reveal the laminations, thin strata of wood bonded into a whole greater than its veneers. Capture the beauty of the
-    provisional, wood made efficient. Use Plywood as portable surface/render behavior over any input: map its texture,
-    light response, edge wear, color chemistry, and tactile rhythm onto the subject instead of requiring a literal
-    material sample, macro tile, wall, landscape, source object, or scene where the material naturally appears.
+    Render the rotary-cut grain of construction plywood where the lathe has unrolled the log into a continuous
+    ribbon of blonde pine, now layered into structural flatness with knots punctuating the surface like dark
+    eyes. The edge should reveal the laminations, thin strata of wood bonded into a whole greater than its
+    veneers. Capture the beauty of the provisional, wood made efficient. Use Plywood as portable
+    surface/render behavior over any input: map its texture, light response, edge wear, color chemistry, and
+    tactile rhythm onto the subject instead of requiring a literal material sample, macro tile, wall,
+    landscape, source object, or scene where the material naturally appears.
 avoidRules:
   - solid wood
 assets:

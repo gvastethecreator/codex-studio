@@ -13,22 +13,26 @@ tags:
   - micro-macro
 visualDna:
   aesthetic: Ice crystal macro, frozen-star, winter-hexagon, snowflake-photography, dendrite-sculpture
-  form_and_line: Fractal symmetry, six-fold-branching, fern-dendrite, plate-plane, needle-spike extension
-  color_palette: Clear, Blue background, ice-spectrum, prism-rainbow, hoar-frost white, birefringence-color, dark-field sapphire
-  lighting_setup: Sparkle, dark-field, refracted-rainbow spot, prism-split beam, supermacro-LED ring
-  material_texture: Ice crystal, hexagonal-plate, dendrite-branch, rime-coating, surface-etch, melt-rounding, sublimation-pit
-  render_quality: Perfect, fragile, Wilson-Bentley devotion, snowflake-photomicrograph, crystalline-geometry, winter-laboratory
-  spatial_distortion: Symmetrical, six-fold-rotation, hexagonal-plate, stellar-dendrite arm, capped-column crystal
-  atmosphere: Winter, beauty, falling-snow silence, crystal-uniqueness, frozen-moment, microscopic-wonder
+  subject_treatment: Fractal symmetry, six-fold-branching, fern-dendrite, plate-plane, needle-spike extension
+  color_and_tone: >-
+    Clear, Blue background, ice-spectrum, prism-rainbow, hoar-frost white, birefringence-color, dark-field
+    sapphire
+  lighting_and_shadow: Sparkle, dark-field, refracted-rainbow spot, prism-split beam, supermacro-LED ring
+  texture_and_material: Ice crystal, hexagonal-plate, dendrite-branch, rime-coating, surface-etch, melt-rounding, sublimation-pit
+  camera_and_composition: Symmetrical, six-fold-rotation, hexagonal-plate, stellar-dendrite arm, capped-column crystal
+  atmosphere_and_mood: Winter, beauty, falling-snow silence, crystal-uniqueness, frozen-moment, microscopic-wonder
+  rendering_and_quality: >-
+    Perfect, fragile, Wilson-Bentley devotion, snowflake-photomicrograph, crystalline-geometry,
+    winter-laboratory
   key_features: >-
-    Six arms, dendritic-branching, hexagonal symmetry, plate-crystal, rime-droplet capture, dark-field glow, melt-edge
-    rounding
+    Six arms, dendritic-branching, hexagonal symmetry, plate-crystal, rime-droplet capture, dark-field glow,
+    melt-edge rounding
   creative_brief: >-
-    Highlight six-fold crystal symmetry, dendritic branching, and dark-field sparkle in fragile snowflake macro
-    compositions. Keep the treatment scientifically grounded in ice morphology while flexible across crystal variants.
-    Apply Snowflake as a portable style system over any input: preserve its construction grammar, material cues, scale
-    logic, and signature rendering behavior while avoiding a required franchise, literal prop, fixed specimen, classroom
-    sample, product shot, or scene template.
+    Highlight six-fold crystal symmetry, dendritic branching, and dark-field sparkle in fragile snowflake
+    macro compositions. Keep the treatment scientifically grounded in ice morphology while flexible across
+    crystal variants. Apply Snowflake as a portable style system over any input: preserve its construction
+    grammar, material cues, scale logic, and signature rendering behavior while avoiding a required franchise,
+    literal prop, fixed specimen, classroom sample, product shot, or scene template.
 avoidRules:
   - melted
 assets:

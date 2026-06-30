@@ -13,34 +13,32 @@ tags:
   - slice-of-life-and-moe
 visualDna:
   aesthetic: >-
-    Anxiety-glitch anime comedy where grounded softness ruptures into mixed-media panic modes, then
-    releases into cathartic brightness
-  form_and_line: >-
-    Soft everyday contours broken by abrupt exaggeration modes, collapse-face elasticity, hard
-    graphic inserts, and stabilized release silhouettes
-  color_palette: >-
-    Warm pastel baseline, high-saturation anxiety spikes, magenta glitch accents, hard black-white
-    bursts, and stage-like release color
-  lighting_setup: >-
-    Calm ambient baseline switching to hard key accents, flash overlays, and cathartic glow bursts
-    during emotional overload
-  material_texture: >-
-    Soft everyday surfaces interrupted by halftone, pixel, smear, photocopy, glitch, or collage
-    overlays used as internal emotion texture
-  render_quality: >-
-    Hybrid slice-comedy anime finish with controlled mode-switching, awkward stillness, and
-    high-energy release readability
-  spatial_distortion: >-
-    Grounded social framing toggles into panic warps, mixed-media cut-ins, and stable cathartic
-    composition
-  atmosphere: Anxious, funny, vulnerable, explosive, liberating
+    Anxiety-glitch anime comedy where grounded softness ruptures into mixed-media panic modes, then releases
+    into cathartic brightness
+  subject_treatment: >-
+    Soft everyday contours broken by abrupt exaggeration modes, collapse-face elasticity, hard graphic
+    inserts, and stabilized release silhouettes
+  color_and_tone: >-
+    Warm pastel baseline, high-saturation anxiety spikes, magenta glitch accents, hard black-white bursts, and
+    stage-like release color
+  lighting_and_shadow: >-
+    Calm ambient baseline switching to hard key accents, flash overlays, and cathartic glow bursts during
+    emotional overload
+  texture_and_material: >-
+    Soft everyday surfaces interrupted by halftone, pixel, smear, photocopy, glitch, or collage overlays used
+    as internal emotion texture
+  camera_and_composition: Grounded social framing toggles into panic warps, mixed-media cut-ins, and stable cathartic composition
+  atmosphere_and_mood: Anxious, funny, vulnerable, explosive, liberating
+  rendering_and_quality: >-
+    Hybrid slice-comedy anime finish with controlled mode-switching, awkward stillness, and high-energy
+    release readability
   key_features: >-
-    Mode switching, panic inserts, glitch texture, awkward microacting, collapse/release contrast,
-    and cathartic color bursts
+    Mode switching, panic inserts, glitch texture, awkward microacting, collapse/release contrast, and
+    cathartic color bursts
   creative_brief: >-
-    Use Bocchi the Rock! as style anchor for anxiety-glitch catharsis comedy. Apply soft baseline,
-    sudden mixed-media panic, distorted self-perception, and release glow to any prompt. Band gear,
-    school, stage, and music props are optional.
+    Use Bocchi the Rock! as style anchor for anxiety-glitch catharsis comedy. Apply soft baseline, sudden
+    mixed-media panic, distorted self-perception, and release glow to any prompt. Band gear, school, stage,
+    and music props are optional.
 avoidRules:
   - realistic
   - 3d render
@@ -58,8 +56,8 @@ assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-085.webp
 attributes:
   negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, text, signature
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts,
+    watermark, text, signature
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle

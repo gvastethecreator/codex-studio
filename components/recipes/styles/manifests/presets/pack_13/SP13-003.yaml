@@ -13,19 +13,30 @@ tags:
   - anime
   - slice-of-life
 visualDna:
-  aesthetic: Soft shojo-romance language with delicate emotional framing, spring-inflected tonal warmth, and lyrical sensitivity
-  form_and_line: Fine tapered linework, elongated eye-expression geometry, gentle hand and hair gesture arcs, and open negative-space framing
-  color_palette: Pastel rose, cream, lavender, mint green, and muted blush accents with low-saturation harmony
-  lighting_setup: Diffuse late-afternoon glow, soft hair highlight ribbons, low-contrast facial fill, and subtle bloom around focal features
-  material_texture: Matte paper delicacy, lightweight fabric flow, petal-soft particulate overlays, and minimal-grain painterly finish
-  render_quality: Polished ethereal shojo render with controlled softness, stable facial readability, and emotionally transparent color grading
-  spatial_distortion: Shallow depth emphasis around expression or detail focal planes with restrained context recession
-  atmosphere: Tender, nostalgic, romantic, calm, and introspective
-  key_features: Expressive focal hierarchy, pastel harmony discipline, floating petal motion cues, fine contour elegance, and intimacy-first composition
+  aesthetic: >-
+    Soft shojo-romance language with delicate emotional framing, spring-inflected tonal warmth, and lyrical
+    sensitivity
+  subject_treatment: >-
+    Fine tapered linework, elongated eye-expression geometry, gentle hand and hair gesture arcs, and open
+    negative-space framing
+  color_and_tone: Pastel rose, cream, lavender, mint green, and muted blush accents with low-saturation harmony
+  lighting_and_shadow: >-
+    Diffuse late-afternoon glow, soft hair highlight ribbons, low-contrast facial fill, and subtle bloom
+    around focal features
+  texture_and_material: >-
+    Matte paper delicacy, lightweight fabric flow, petal-soft particulate overlays, and minimal-grain
+    painterly finish
+  camera_and_composition: Shallow depth emphasis around expression or detail focal planes with restrained context recession
+  atmosphere_and_mood: Tender, nostalgic, romantic, calm, and introspective
+  rendering_and_quality: >-
+    Polished ethereal shojo render with controlled softness, stable facial readability, and emotionally
+    transparent color grading
+  key_features: >-
+    Expressive focal hierarchy, pastel harmony discipline, floating petal motion cues, fine contour elegance,
+    and intimacy-first composition
   creative_brief: >-
-    Use Soft Shojo Spring as style anchor for gentle romantic clarity:
-    delicate line weight, pastel tonality, and expression-centered composition
-    should transfer without requiring school, romance plot, blossoms, or
+    Use Soft Shojo Spring as style anchor for gentle romantic clarity: delicate line weight, pastel tonality,
+    and expression-centered composition should transfer without requiring school, romance plot, blossoms, or
     character close-up.
 avoidRules:
   - photoreal

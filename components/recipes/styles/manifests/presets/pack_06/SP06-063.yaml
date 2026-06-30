@@ -13,21 +13,21 @@ tags:
   - mixed-media
 visualDna:
   aesthetic: Varnished decoupage surface with layered paper skin, crackle glaze, and aged adhesive depth
-  form_and_line: Torn edges
-  color_palette: Faded, yellowed
-  lighting_setup: Glossy varnish
-  material_texture: Crackle glaze
-  render_quality: Craft, vintage
-  spatial_distortion: Surface wrap
-  atmosphere: Antique, homey
+  subject_treatment: Torn edges
+  color_and_tone: Faded, yellowed
+  lighting_and_shadow: Glossy varnish
+  texture_and_material: Crackle glaze
+  camera_and_composition: Surface wrap
+  atmosphere_and_mood: Antique, homey
+  rendering_and_quality: Craft, vintage
   key_features: Varnish shine
   creative_brief: >-
-    Layers of paper seal under glossy varnish, edges softened by age, fragments surrendering their context to a new
-    surface. Crackle glaze maps time in fissures, a network of years spreading across the image like a second
-    composition. The style works as palimpsest, with old paper, varnish, and surface wrap becoming the subject. Apply
-    this mixed-media process over any input: preserve material assembly, edge evidence, surface treatment, layering
-    logic, and handmade artifacts while avoiding required clippings, readable text, boards, fire, studio setup, or
-    literal craft-table scene.
+    Layers of paper seal under glossy varnish, edges softened by age, fragments surrendering their context to
+    a new surface. Crackle glaze maps time in fissures, a network of years spreading across the image like a
+    second composition. The style works as palimpsest, with old paper, varnish, and surface wrap becoming the
+    subject. Apply this mixed-media process over any input: preserve material assembly, edge evidence, surface
+    treatment, layering logic, and handmade artifacts while avoiding required clippings, readable text,
+    boards, fire, studio setup, or literal craft-table scene.
 avoidRules:
   - photo
   - realistic
@@ -50,8 +50,8 @@ assets:
   defaultImage: /assets/recipes/styles/defaults/SP06-063.webp
 attributes:
   negativePrompt: >-
-    photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark,
-    text, signature, frame, border, decorative object requirement, readable printed motif
+    photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy,
+    watermark, text, signature, frame, border, decorative object requirement, readable printed motif
 taxonomy:
   packId: pack_06
   packName: Essential Art Styles

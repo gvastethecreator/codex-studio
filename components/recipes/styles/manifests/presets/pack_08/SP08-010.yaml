@@ -13,18 +13,20 @@ tags:
   - contemporary-fashion
 visualDna:
   aesthetic: Classic American prep, Ivy legacy polish, summer-ease refinement
-  form_and_line: Clean layers, natural shoulder, half-canvas drape, straight-leg chino, blazer roll
-  color_palette: Navy, White, Khaki, Red, Nantucket red, forest green, university-crest gold
-  lighting_setup: Daylight, autumn-gold warmth, reading-room softness, regatta-morning crispness
-  material_texture: Oxford cloth, Shetland wool knit, madras cotton, seersucker, needlepoint belt, shell cordovan
-  render_quality: Heritage prep polish, classic ease, generational refinement
-  spatial_distortion: None
-  atmosphere: Smart, wealthy, traditional, generational ease, tailored confidence, inherited polish
+  subject_treatment: Clean layers, natural shoulder, half-canvas drape, straight-leg chino, blazer roll
+  color_and_tone: Navy, White, Khaki, Red, Nantucket red, forest green, university-crest gold
+  lighting_and_shadow: Daylight, autumn-gold warmth, reading-room softness, regatta-morning crispness
+  texture_and_material: Oxford cloth, Shetland wool knit, madras cotton, seersucker, needlepoint belt, shell cordovan
+  camera_and_composition: >-
+    Compose for Preppy Ivy League using its key spatial cues: Collared shirt, repp-stripe tie, cable-knit
+    thrown over shoulders, embroidered critters.
+  atmosphere_and_mood: Smart, wealthy, traditional, generational ease, tailored confidence, inherited polish
+  rendering_and_quality: Heritage prep polish, classic ease, generational refinement
   key_features: Collared shirt, repp-stripe tie, cable-knit thrown over shoulders, embroidered critters
   creative_brief: >-
-    Apply Ivy prep styling to the input: oxford cloth, Shetland knit, repp stripes, blazer roll, needlepoint detail,
-    cordovan shine and crisp navy-khaki-red balance. Keep heritage prep cues as atmosphere only; do not
-    require a college scene, human student, country-club tableau or inherited-wealth portrait.
+    Apply Ivy prep styling to the input: oxford cloth, Shetland knit, repp stripes, blazer roll, needlepoint
+    detail, cordovan shine and crisp navy-khaki-red balance. Keep heritage prep cues as atmosphere only; do
+    not require a college scene, human student, country-club tableau or inherited-wealth portrait.
 avoidRules:
   - messy
   - ripped

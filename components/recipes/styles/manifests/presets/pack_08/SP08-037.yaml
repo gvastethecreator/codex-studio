@@ -13,19 +13,22 @@ tags:
   - historical-and-fantasy
 visualDna:
   aesthetic: Frontier workwear myth, dust-worn practicality and sun-baked material tension.
-  form_and_line: Duster-length sweep, waistcoat taper, bandana-triangle geometry, boot-leather rhythm and strap-yoke structure.
-  color_palette: Brown, Tan, Denim, tobacco, saddle, dust, black-hat black, calico print
-  lighting_setup: Dry sun glare, merciless warm light, amber practical warmth and campfire flicker.
-  material_texture: Oilskin leather, trail dust, raw denim, wool serape, brass hardware and worn boot leather.
-  render_quality: Iconic, rugged, frontier-photograph clarity with workwear grit.
-  spatial_distortion: None
-  atmosphere: Tough, lonely, dry-sun tension, frontier solitude and weathered resolve.
+  subject_treatment: >-
+    Duster-length sweep, waistcoat taper, bandana-triangle geometry, boot-leather rhythm and strap-yoke
+    structure.
+  color_and_tone: Brown, Tan, Denim, tobacco, saddle, dust, black-hat black, calico print
+  lighting_and_shadow: Dry sun glare, merciless warm light, amber practical warmth and campfire flicker.
+  texture_and_material: Oilskin leather, trail dust, raw denim, wool serape, brass hardware and worn boot leather.
+  camera_and_composition: >-
+    Compose for Frontier Workwear using its key spatial cues: Brim geometry, bandana folds, duster sweep,
+    brass hardware, boot-leather wear and yoke stitching.
+  atmosphere_and_mood: Tough, lonely, dry-sun tension, frontier solitude and weathered resolve.
+  rendering_and_quality: Iconic, rugged, frontier-photograph clarity with workwear grit.
   key_features: Brim geometry, bandana folds, duster sweep, brass hardware, boot-leather wear and yoke stitching.
   creative_brief: >-
-    Give any input frontier workwear logic: oilskin leather, duster sweep,
-    tobacco tan, denim, bandana triangles, brim geometry and brass glints. Keep
-    frontier myth as a style anchor without requiring holsters, spurs, weapons,
-    saloons, street standoffs, desert figures or cowboy portraits.
+    Give any input frontier workwear logic: oilskin leather, duster sweep, tobacco tan, denim, bandana
+    triangles, brim geometry and brass glints. Keep frontier myth as a style anchor without requiring
+    holsters, spurs, weapons, saloons, street standoffs, desert figures or cowboy portraits.
 avoidRules:
   - city
   - clean

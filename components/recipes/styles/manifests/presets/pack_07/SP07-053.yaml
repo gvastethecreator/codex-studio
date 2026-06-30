@@ -13,19 +13,20 @@ tags:
   - fantasy-and-mythic-architecture
 visualDna:
   aesthetic: Sky-borne mass sublime with suspended architectural gravity, aerial sovereignty and impossible altitude.
-  form_and_line: >-
-    Vertical spire clusters, layered floating mass, void cuts, descending vectors and wind-cut silhouettes.
-  color_palette: White, blue sky, cloud silver, golden sun edge, mist plume white, lapis upper atmosphere
-  lighting_setup: High sun, cloud bounce, volumetric rays and golden rim over suspended silhouettes.
-  material_texture: Airborne stone, base mist, crystalline edges and eroded floating strata.
-  render_quality: Fantasy sky-architecture with atmospheric depth and coherent impossible engineering.
-  spatial_distortion: Suspended-mass compression, void cuts, negated-gravity depth and mist-plume scale breaks.
-  atmosphere: High-altitude sublime, improbable calm and wind-driven grandeur.
-  key_features: Span-over-void geometry, lower cloud bands, floating undercuts, aerial vectors and dominant sky silhouette.
+  subject_treatment: Vertical spire clusters, layered floating mass, void cuts, descending vectors and wind-cut silhouettes.
+  color_and_tone: White, blue sky, cloud silver, golden sun edge, mist plume white, lapis upper atmosphere
+  lighting_and_shadow: High sun, cloud bounce, volumetric rays and golden rim over suspended silhouettes.
+  texture_and_material: Airborne stone, base mist, crystalline edges and eroded floating strata.
+  camera_and_composition: Suspended-mass compression, void cuts, negated-gravity depth and mist-plume scale breaks.
+  atmosphere_and_mood: High-altitude sublime, improbable calm and wind-driven grandeur.
+  rendering_and_quality: Fantasy sky-architecture with atmospheric depth and coherent impossible engineering.
+  key_features: >-
+    Span-over-void geometry, lower cloud bands, floating undercuts, aerial vectors and dominant sky
+    silhouette.
   creative_brief: >-
-    Any subject gains aerial sovereignty through suspended mass, undercuts, lower mist and high solar rim.
-    The anchor is coherent negated gravity and sky-scale construction, not a literal castle, waterfall scene
-    or fixed fantasy vista.
+    Any subject gains aerial sovereignty through suspended mass, undercuts, lower mist and high solar rim. The
+    anchor is coherent negated gravity and sky-scale construction, not a literal castle, waterfall scene or
+    fixed fantasy vista.
 avoidRules:
   - literal castle
   - ground-level building

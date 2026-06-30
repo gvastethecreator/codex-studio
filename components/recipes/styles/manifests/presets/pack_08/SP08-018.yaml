@@ -13,17 +13,19 @@ tags:
   - contemporary-fashion
 visualDna:
   aesthetic: Synchronized pop-performance tailoring, candy-neon coordination, comeback-polish precision
-  form_and_line: Sharp layered modularity, cropped jacket structure, high-waist tailoring, asymmetric hems, fitted rhythm
-  color_palette: Pastel, Neon, White, lavender, electric fuchsia, holographic pearl, candy-pink
-  lighting_setup: Editorial-bright beauty light, color-shifting gels, high-key rim sparkle
-  material_texture: Mixed fabrics, sequin mesh, patent vinyl, lurex knit, iridescent organza, scattered rhinestones
-  render_quality: Hyper-polished pop editorial finish, trend-tuned precision, coordinated surface clarity
-  spatial_distortion: None
-  atmosphere: Energetic, cute, cool, high-polish perfection, synchronized charisma, polished performance joy
+  subject_treatment: Sharp layered modularity, cropped jacket structure, high-waist tailoring, asymmetric hems, fitted rhythm
+  color_and_tone: Pastel, Neon, White, lavender, electric fuchsia, holographic pearl, candy-pink
+  lighting_and_shadow: Editorial-bright beauty light, color-shifting gels, high-key rim sparkle
+  texture_and_material: Mixed fabrics, sequin mesh, patent vinyl, lurex knit, iridescent organza, scattered rhinestones
+  camera_and_composition: >-
+    Compose for Pop-Performance Tailoring using its key spatial cues: Dyed-hair cues, pastel or jewel-tone
+    color, coordinated layers, statement earrings.
+  atmosphere_and_mood: Energetic, cute, cool, high-polish perfection, synchronized charisma, polished performance joy
+  rendering_and_quality: Hyper-polished pop editorial finish, trend-tuned precision, coordinated surface clarity
   key_features: Dyed-hair cues, pastel or jewel-tone color, coordinated layers, statement earrings
   creative_brief: >-
-    Rebuild the input with pop-comeback polish: cropped jackets, asymmetric hems, sequins, patent vinyl, rhinestones,
-    pastel-neon color and exact coordination. Preserve synchronized charisma as finish only, not
+    Rebuild the input with pop-comeback polish: cropped jackets, asymmetric hems, sequins, patent vinyl,
+    rhinestones, pastel-neon color and exact coordination. Preserve synchronized charisma as finish only, not
     as a face, body idol, group choreography, backstage narrative, music-show set or fandom crowd.
 avoidRules:
   - boring

@@ -13,18 +13,20 @@ tags:
   - documentary-and-street
 visualDna:
   aesthetic: Urbex decay documentary
-  form_and_line: Decay, peeling layers
-  color_palette: Desaturated, rust
-  lighting_setup: Shafts of light
-  material_texture: Dust, debris
-  render_quality: Gritty, haunting
-  spatial_distortion: None
-  atmosphere: Lonely, post-apocalyptic
+  subject_treatment: Decay, peeling layers
+  color_and_tone: Desaturated, rust
+  lighting_and_shadow: Shafts of light
+  texture_and_material: Dust, debris
+  camera_and_composition: >-
+    Camera setup native to Urbex (Urban Exploration): lens choice, crop distance, depth of field, and focal
+    hierarchy support 4. Documentary And Street without generic framing.
+  atmosphere_and_mood: Lonely, post-apocalyptic
+  rendering_and_quality: Gritty, haunting
   key_features: Ruin texture
   creative_brief: >-
-    Apply urbex abandonment to the input: desaturated rust palette, peeling
-    layers, dust, debris texture, lonely light shafts, and documentary grit
-    should age any subject without requiring buildings or post-apocalyptic setting.
+    Apply urbex abandonment to the input: desaturated rust palette, peeling layers, dust, debris texture,
+    lonely light shafts, and documentary grit should age any subject without requiring buildings or
+    post-apocalyptic setting.
 avoidRules:
   - clean
   - new

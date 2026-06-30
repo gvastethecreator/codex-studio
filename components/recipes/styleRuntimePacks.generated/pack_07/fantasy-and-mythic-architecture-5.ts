@@ -11,20 +11,20 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         "Verdant Elven Sanctuary within 5. Fantasy And Mythic Architecture: a reusable Architecture & Interior visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Verdant Elven Sanctuary's specific style identity.",
-      form_and_line:
+      subject_treatment:
         'Define Verdant Elven Sanctuary through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
-      color_palette:
+      color_and_tone:
         'Use a Verdant Elven Sanctuary-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
-      lighting_setup:
+      lighting_and_shadow:
         'Use lighting that makes Verdant Elven Sanctuary recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
-      material_texture:
+      texture_and_material:
         'Use materials and textures that reinforce Verdant Elven Sanctuary: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
-      render_quality:
-        'Render Verdant Elven Sanctuary with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
-      spatial_distortion:
+      camera_and_composition:
         'Use spatial behavior that fits Verdant Elven Sanctuary: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
-      atmosphere:
+      atmosphere_and_mood:
         'Set a mood that belongs to Verdant Elven Sanctuary: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+      rendering_and_quality:
+        'Render Verdant Elven Sanctuary with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       key_features:
         "Prioritize Verdant Elven Sanctuary's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
@@ -40,19 +40,19 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Deep-earth megalithic forge gravity, mineral heat and ancestral stonecraft doctrine.',
-      form_and_line:
+      subject_treatment:
         'Megalithic pillar grids, chiseled mass geometry, rune-banded arches and heavy-load vaults.',
-      color_palette:
+      color_and_tone:
         'Grey Stone, Gold, Fire, Vein-Metal Copper, Lava Orange, Gem-cluster Ruby, Deep Black',
-      lighting_setup:
+      lighting_and_shadow:
         'Forge thermal glow, amber crystal glow, torchlike rhythm and orange mineral heat.',
-      material_texture:
+      texture_and_material:
         'Carved granite, chisel marks, hammered gold, cast iron, crystal veins and dense leather.',
-      render_quality:
-        'Epic forge-fortress fidelity with material weight and blunt structural gravity.',
-      spatial_distortion:
+      camera_and_composition:
         'Low-vault compression, heat-channel axial pull and overbuilt megalithic load rhythm.',
-      atmosphere: 'Ancestral resilience, clan authority and deep-earth solemnity.',
+      atmosphere_and_mood: 'Ancestral resilience, clan authority and deep-earth solemnity.',
+      rendering_and_quality:
+        'Epic forge-fortress fidelity with material weight and blunt structural gravity.',
       key_features:
         'Runic supports, forge cores, thermal channels, hammer-marked metal and monumental axial weight.',
       creative_brief:
@@ -67,18 +67,19 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Sky-borne mass sublime with suspended architectural gravity, aerial sovereignty and impossible altitude.',
-      form_and_line:
+      subject_treatment:
         'Vertical spire clusters, layered floating mass, void cuts, descending vectors and wind-cut silhouettes.',
-      color_palette:
+      color_and_tone:
         'White, blue sky, cloud silver, golden sun edge, mist plume white, lapis upper atmosphere',
-      lighting_setup:
+      lighting_and_shadow:
         'High sun, cloud bounce, volumetric rays and golden rim over suspended silhouettes.',
-      material_texture: 'Airborne stone, base mist, crystalline edges and eroded floating strata.',
-      render_quality:
-        'Fantasy sky-architecture with atmospheric depth and coherent impossible engineering.',
-      spatial_distortion:
+      texture_and_material:
+        'Airborne stone, base mist, crystalline edges and eroded floating strata.',
+      camera_and_composition:
         'Suspended-mass compression, void cuts, negated-gravity depth and mist-plume scale breaks.',
-      atmosphere: 'High-altitude sublime, improbable calm and wind-driven grandeur.',
+      atmosphere_and_mood: 'High-altitude sublime, improbable calm and wind-driven grandeur.',
+      rendering_and_quality:
+        'Fantasy sky-architecture with atmospheric depth and coherent impossible engineering.',
       key_features:
         'Span-over-void geometry, lower cloud bands, floating undercuts, aerial vectors and dominant sky silhouette.',
       creative_brief:
@@ -93,20 +94,20 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         "Techno-Brutalist Compression within 5. Fantasy And Mythic Architecture: a reusable Architecture & Interior visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Techno-Brutalist Compression's specific style identity.",
-      form_and_line:
+      subject_treatment:
         'Define Techno-Brutalist Compression through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
-      color_palette:
+      color_and_tone:
         'Use a Techno-Brutalist Compression-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
-      lighting_setup:
+      lighting_and_shadow:
         'Use lighting that makes Techno-Brutalist Compression recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
-      material_texture:
+      texture_and_material:
         'Use materials and textures that reinforce Techno-Brutalist Compression: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
-      render_quality:
-        'Render Techno-Brutalist Compression with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
-      spatial_distortion:
+      camera_and_composition:
         'Use spatial behavior that fits Techno-Brutalist Compression: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
-      atmosphere:
+      atmosphere_and_mood:
         'Set a mood that belongs to Techno-Brutalist Compression: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+      rendering_and_quality:
+        'Render Techno-Brutalist Compression with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       key_features:
         "Prioritize Techno-Brutalist Compression's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
@@ -121,20 +122,20 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         "Confectionery Surrealism within 5. Fantasy And Mythic Architecture: a reusable Architecture & Interior visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Confectionery Surrealism's specific style identity.",
-      form_and_line:
+      subject_treatment:
         'Define Confectionery Surrealism through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
-      color_palette:
+      color_and_tone:
         'Use a Confectionery Surrealism-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
-      lighting_setup:
+      lighting_and_shadow:
         'Use lighting that makes Confectionery Surrealism recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
-      material_texture:
+      texture_and_material:
         'Use materials and textures that reinforce Confectionery Surrealism: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
-      render_quality:
-        'Render Confectionery Surrealism with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
-      spatial_distortion:
+      camera_and_composition:
         'Use spatial behavior that fits Confectionery Surrealism: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
-      atmosphere:
+      atmosphere_and_mood:
         'Set a mood that belongs to Confectionery Surrealism: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+      rendering_and_quality:
+        'Render Confectionery Surrealism with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       key_features:
         "Prioritize Confectionery Surrealism's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
@@ -149,20 +150,20 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         "Abyssal Deco Pressure within 5. Fantasy And Mythic Architecture: a reusable Architecture & Interior visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Abyssal Deco Pressure's specific style identity.",
-      form_and_line:
+      subject_treatment:
         'Define Abyssal Deco Pressure through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
-      color_palette:
+      color_and_tone:
         'Use a Abyssal Deco Pressure-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
-      lighting_setup:
+      lighting_and_shadow:
         'Use lighting that makes Abyssal Deco Pressure recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
-      material_texture:
+      texture_and_material:
         'Use materials and textures that reinforce Abyssal Deco Pressure: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
-      render_quality:
-        'Render Abyssal Deco Pressure with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
-      spatial_distortion:
+      camera_and_composition:
         'Use spatial behavior that fits Abyssal Deco Pressure: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
-      atmosphere:
+      atmosphere_and_mood:
         'Set a mood that belongs to Abyssal Deco Pressure: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+      rendering_and_quality:
+        'Render Abyssal Deco Pressure with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       key_features:
         "Prioritize Abyssal Deco Pressure's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
@@ -177,18 +178,19 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Neo-Victorian retroindustrial steam grammar, brass pressure systems and speculative mechanical utility.',
-      form_and_line:
+      subject_treatment:
         'Riveted pipe networks, vertical venting rhythms, gear nodes and load-bearing structural arches.',
-      color_palette:
+      color_and_tone:
         'Bronze, Brick, Smoke, Copper patina, warm Gaslight Yellow, Coal Black, Brass-bright',
-      lighting_setup:
+      lighting_and_shadow:
         'Amber gaslight, diffuse smog glow, mechanical sparks and visible steam venting.',
-      material_texture:
+      texture_and_material:
         'Metal and brick, riveted copper, wood paneling, leather and soot deposits across surfaces.',
-      render_quality:
+      camera_and_composition:
+        'Compose for Neo-Victorian Steamwork using its key spatial cues: Venting rhythm, brass conduits, clockwork surfaces, boiler nodes and visible pressure hierarchies.',
+      atmosphere_and_mood: 'Industrial momentum, smoky ambition and anxious mechanical progress.',
+      rendering_and_quality:
         'High-detail steampunk with mechanical plausibility and retroindustrial legibility.',
-      spatial_distortion: 'None',
-      atmosphere: 'Industrial momentum, smoky ambition and anxious mechanical progress.',
       key_features:
         'Venting rhythm, brass conduits, clockwork surfaces, boiler nodes and visible pressure hierarchies.',
       creative_brief:
@@ -204,20 +206,20 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         "Prismatic Mineral Megastructure within 5. Fantasy And Mythic Architecture: a reusable Architecture & Interior visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Prismatic Mineral Megastructure's specific style identity.",
-      form_and_line:
+      subject_treatment:
         'Define Prismatic Mineral Megastructure through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
-      color_palette:
+      color_and_tone:
         'Use a Prismatic Mineral Megastructure-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
-      lighting_setup:
+      lighting_and_shadow:
         'Use lighting that makes Prismatic Mineral Megastructure recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
-      material_texture:
+      texture_and_material:
         'Use materials and textures that reinforce Prismatic Mineral Megastructure: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
-      render_quality:
-        'Render Prismatic Mineral Megastructure with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
-      spatial_distortion:
+      camera_and_composition:
         'Use spatial behavior that fits Prismatic Mineral Megastructure: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
-      atmosphere:
+      atmosphere_and_mood:
         'Set a mood that belongs to Prismatic Mineral Megastructure: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+      rendering_and_quality:
+        'Render Prismatic Mineral Megastructure with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       key_features:
         "Prioritize Prismatic Mineral Megastructure's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
@@ -232,20 +234,20 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         "Bermed Round-Door Pastoral within 5. Fantasy And Mythic Architecture: a reusable Architecture & Interior visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Bermed Round-Door Pastoral's specific style identity.",
-      form_and_line:
+      subject_treatment:
         'Define Bermed Round-Door Pastoral through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
-      color_palette:
+      color_and_tone:
         'Use a Bermed Round-Door Pastoral-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
-      lighting_setup:
+      lighting_and_shadow:
         'Use lighting that makes Bermed Round-Door Pastoral recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
-      material_texture:
+      texture_and_material:
         'Use materials and textures that reinforce Bermed Round-Door Pastoral: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
-      render_quality:
-        'Render Bermed Round-Door Pastoral with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
-      spatial_distortion:
+      camera_and_composition:
         'Use spatial behavior that fits Bermed Round-Door Pastoral: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
-      atmosphere:
+      atmosphere_and_mood:
         'Set a mood that belongs to Bermed Round-Door Pastoral: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+      rendering_and_quality:
+        'Render Bermed Round-Door Pastoral with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       key_features:
         "Prioritize Bermed Round-Door Pastoral's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
@@ -260,20 +262,20 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         "Haunted Toon Deformation within 5. Fantasy And Mythic Architecture: a reusable Architecture & Interior visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Haunted Toon Deformation's specific style identity.",
-      form_and_line:
+      subject_treatment:
         'Define Haunted Toon Deformation through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
-      color_palette:
+      color_and_tone:
         'Use a Haunted Toon Deformation-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
-      lighting_setup:
+      lighting_and_shadow:
         'Use lighting that makes Haunted Toon Deformation recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
-      material_texture:
+      texture_and_material:
         'Use materials and textures that reinforce Haunted Toon Deformation: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
-      render_quality:
-        'Render Haunted Toon Deformation with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
-      spatial_distortion:
+      camera_and_composition:
         'Use spatial behavior that fits Haunted Toon Deformation: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
-      atmosphere:
+      atmosphere_and_mood:
         'Set a mood that belongs to Haunted Toon Deformation: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+      rendering_and_quality:
+        'Render Haunted Toon Deformation with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       key_features:
         "Prioritize Haunted Toon Deformation's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
@@ -289,20 +291,20 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         "Cryomorphic Palace Geometry within 5. Fantasy And Mythic Architecture: a reusable Architecture & Interior visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Cryomorphic Palace Geometry's specific style identity.",
-      form_and_line:
+      subject_treatment:
         'Define Cryomorphic Palace Geometry through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
-      color_palette:
+      color_and_tone:
         'Use a Cryomorphic Palace Geometry-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
-      lighting_setup:
+      lighting_and_shadow:
         'Use lighting that makes Cryomorphic Palace Geometry recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
-      material_texture:
+      texture_and_material:
         'Use materials and textures that reinforce Cryomorphic Palace Geometry: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
-      render_quality:
-        'Render Cryomorphic Palace Geometry with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
-      spatial_distortion:
+      camera_and_composition:
         'Use spatial behavior that fits Cryomorphic Palace Geometry: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
-      atmosphere:
+      atmosphere_and_mood:
         'Set a mood that belongs to Cryomorphic Palace Geometry: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+      rendering_and_quality:
+        'Render Cryomorphic Palace Geometry with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       key_features:
         "Prioritize Cryomorphic Palace Geometry's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
@@ -317,20 +319,20 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         "Canopy Rope Vernacular within 5. Fantasy And Mythic Architecture: a reusable Architecture & Interior visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Canopy Rope Vernacular's specific style identity.",
-      form_and_line:
+      subject_treatment:
         'Define Canopy Rope Vernacular through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
-      color_palette:
+      color_and_tone:
         'Use a Canopy Rope Vernacular-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
-      lighting_setup:
+      lighting_and_shadow:
         'Use lighting that makes Canopy Rope Vernacular recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
-      material_texture:
+      texture_and_material:
         'Use materials and textures that reinforce Canopy Rope Vernacular: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
-      render_quality:
-        'Render Canopy Rope Vernacular with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
-      spatial_distortion:
+      camera_and_composition:
         'Use spatial behavior that fits Canopy Rope Vernacular: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
-      atmosphere:
+      atmosphere_and_mood:
         'Set a mood that belongs to Canopy Rope Vernacular: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+      rendering_and_quality:
+        'Render Canopy Rope Vernacular with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       key_features:
         "Prioritize Canopy Rope Vernacular's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
@@ -344,18 +346,18 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'lush garden, cozy living space',
     style: {
       aesthetic: 'Monumental ceremonial sepulchral gravity with mineral civic scale.',
-      form_and_line:
+      subject_treatment:
         'Severe axiality, stepped masses, sealed chambers, lapidary grids and contained ritual vertical accents.',
-      color_palette:
+      color_and_tone:
         'Black basalt, bone-white marble, oxidized bronze, dim funerary gold, spectral green haze, and bruised violet shadow fields',
-      lighting_setup:
+      lighting_and_shadow:
         'Low mineral glow, pale moon diffusion, contained spectral lanterns and sealed-enclave volumetric haze.',
-      material_texture:
+      texture_and_material:
         'Eroded ashlar, cracked marble, oxidized grates, ashen paving and carved ossuary relief.',
-      render_quality:
+      camera_and_composition: 'Controlled processional depth with sepulchral compression.',
+      atmosphere_and_mood: 'Solemn, ritual and oppressive, with contained acoustic silence.',
+      rendering_and_quality:
         'High-detail architectural dark fantasy with tonal restraint and oppressive monumental readability.',
-      spatial_distortion: 'Controlled processional depth with sepulchral compression.',
-      atmosphere: 'Solemn, ritual and oppressive, with contained acoustic silence.',
       key_features:
         'Processional rhythm, sealed chambers, runic wayfinding and massive thresholds.',
       creative_brief:

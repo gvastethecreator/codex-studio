@@ -13,21 +13,24 @@ tags:
   - photography-eras
 visualDna:
   aesthetic: Silver plate photo
-  form_and_line: None
-  color_palette: Metallic B&W, mirrored silver, smoky shadow, mercury gleam
-  lighting_setup: Long exposure, skylight studio, minutes-long stillness
-  material_texture: Scratches, tarnish, silver plate, copper backing
-  render_quality: Ghostly, ancient, mirror-reflection depth, 1840s stillness
-  spatial_distortion: Long-exposure drift, breath ghost, mirrored plate depth
-  atmosphere: Haunting, history, frozen time, Victorian silence
+  subject_treatment: >-
+    Treat subjects as believable filmed or broadcast subjects under Daguerreotype (1840s): casting, wardrobe,
+    props, motion cues, and silhouette hierarchy follow 4. Photography Eras cinematic and broadcast grammar
+    without locking to one plot beat.
+  color_and_tone: Metallic B&W, mirrored silver, smoky shadow, mercury gleam
+  lighting_and_shadow: Long exposure, skylight studio, minutes-long stillness
+  texture_and_material: Scratches, tarnish, silver plate, copper backing
+  camera_and_composition: Long-exposure drift, breath ghost, mirrored plate depth
+  atmosphere_and_mood: Haunting, history, frozen time, Victorian silence
+  rendering_and_quality: Ghostly, ancient, mirror-reflection depth, 1840s stillness
   key_features: Vignette, brass frame, chemical bloom, tarnished edge
   creative_brief: >-
     Render the input as a polished silver daguerreotype: mirrored plate depth, mercury gleam, tarnished edges,
-    long-exposure softness, and a sense of time fixed onto metal. Avoid portrait-only framing or sitter-specific
-    artifacts. What matters is the luminous silver surface, chemical bloom, and heavy 1840s stillness. Apply
-    Daguerreotype as a portable cinematic/camera style over any input: preserve its lens behavior, color process,
-    lighting setup, artifact pattern, and deformation grammar while avoiding a required actor, room, prop, brand,
-    readable text, fixed IP scene, or narrative setup.
+    long-exposure softness, and a sense of time fixed onto metal. Avoid portrait-only framing or
+    sitter-specific artifacts. What matters is the luminous silver surface, chemical bloom, and heavy 1840s
+    stillness. Apply Daguerreotype as a portable cinematic/camera style over any input: preserve its lens
+    behavior, color process, lighting setup, artifact pattern, and deformation grammar while avoiding a
+    required actor, room, prop, brand, readable text, fixed IP scene, or narrative setup.
 avoidRules:
   - color
   - paper

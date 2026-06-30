@@ -12,19 +12,29 @@ tags:
   - anime-battle-and-worlds
   - modern-shonen-and-action
 visualDna:
-  aesthetic: Prestige hero impact satire, with blockbuster destruction grammar, bored overpowered calm, and sincerity cut by absurdity.
-  form_and_line: Hyper-clean impact silhouettes, deadpan flat zones, explosive contour bursts, simple reaction shapes, and punchline timing lines.
-  color_palette: Catastrophe orange, hero yellow, blank beige, concrete gray, electric blue, and crisp white impact flashes.
-  lighting_setup: Blockbuster blast illumination, calm portrait lighting, hard rim clarity, and comic contrast between scale and reaction.
-  material_texture: Crisp debris particles, polished effect shards, clean cel fields, low-noise surfaces, and theatrical smoke gradients.
-  render_quality: Top-tier modern anime action polish deliberately interrupted by anti-dramatic stillness.
-  spatial_distortion: Extreme impact foreshortening alternating with static flat framing for comedic dissonance.
-  atmosphere: Deadpan, explosive, absurd, triumphant
+  aesthetic: >-
+    Prestige hero impact satire, with blockbuster destruction grammar, bored overpowered calm, and sincerity
+    cut by absurdity.
+  subject_treatment: >-
+    Hyper-clean impact silhouettes, deadpan flat zones, explosive contour bursts, simple reaction shapes, and
+    punchline timing lines.
+  color_and_tone: >-
+    Catastrophe orange, hero yellow, blank beige, concrete gray, electric blue, and crisp white impact
+    flashes.
+  lighting_and_shadow: >-
+    Blockbuster blast illumination, calm portrait lighting, hard rim clarity, and comic contrast between scale
+    and reaction.
+  texture_and_material: >-
+    Crisp debris particles, polished effect shards, clean cel fields, low-noise surfaces, and theatrical smoke
+    gradients.
+  camera_and_composition: Extreme impact foreshortening alternating with static flat framing for comedic dissonance.
+  atmosphere_and_mood: Deadpan, explosive, absurd, triumphant
+  rendering_and_quality: Top-tier modern anime action polish deliberately interrupted by anti-dramatic stillness.
   key_features: Overkill impact, deadpan calm, blockbuster polish, flat reaction zones, satire-through-contrast.
   creative_brief: >-
-    Apply prestige impact satire to any prompt: render spectacle with maximum
-    craft, then undercut it through flat reaction space and deadpan composition
-    without requiring a hero, monster, cape, city, or crater scene.
+    Apply prestige impact satire to any prompt: render spectacle with maximum craft, then undercut it through
+    flat reaction space and deadpan composition without requiring a hero, monster, cape, city, or crater
+    scene.
 avoidRules:
   - realistic
   - 3d render
@@ -41,7 +51,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-129.webp
 attributes:
-  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
+  negativePrompt: >-
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts,
+    watermark, text, signature
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds

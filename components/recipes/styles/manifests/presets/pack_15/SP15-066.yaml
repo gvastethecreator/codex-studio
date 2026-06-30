@@ -14,16 +14,36 @@ tags:
   - atompunk
   - reactor
 visualDna:
-  aesthetic: atomic leisure infrastructure built around one distinctive reactor-promenade protagonist, observation windows, simplified suit silhouette, glowing coolant architecture, and blank safety geometry.
-  form_and_line: Atomic signage, rocket-age curves, raygun geometry, orbital equipment, chrome kitsch, and cosmic civic forms. Core composition uses reactor-promenade protagonist, reactor windows, suit silhouette, coolant glow, safety geometry.
-  color_palette: coolant blue, safety yellow, white enamel, black rubber
-  lighting_setup: coolant glow, observation-window light, clean overhead strips
-  material_texture: enamel panels, rubber suits, glass, polished concrete, warning stripes without readable text
-  render_quality: Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity, moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material simulation, or hyper-detail.
-  spatial_distortion: Promenades, diners, outposts, salvage yards, rails, lunar farms, craters, and isotope-lit plazas. Keep depth legible and avoid default hallway, aisle, or empty studio staging.
-  atmosphere: clinical, optimistic, slightly dangerous, touristic
+  aesthetic: >-
+    atomic leisure infrastructure built around one distinctive reactor-promenade protagonist, observation
+    windows, simplified suit silhouette, glowing coolant architecture, and blank safety geometry.
+  subject_treatment: >-
+    Atomic signage, rocket-age curves, raygun geometry, orbital equipment, chrome kitsch, and cosmic civic
+    forms. Core composition uses reactor-promenade protagonist, reactor windows, suit silhouette, coolant
+    glow, safety geometry.
+  color_and_tone: coolant blue, safety yellow, white enamel, black rubber
+  lighting_and_shadow: coolant glow, observation-window light, clean overhead strips
+  texture_and_material: enamel panels, rubber suits, glass, polished concrete, warning stripes without readable text
+  camera_and_composition: >-
+    Promenades, diners, outposts, salvage yards, rails, lunar farms, craters, and isotope-lit plazas. Keep
+    depth legible and avoid default hallway, aisle, or empty studio staging.
+  atmosphere_and_mood: clinical, optimistic, slightly dangerous, touristic
+  rendering_and_quality: >-
+    Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly
+    planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity,
+    moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material
+    simulation, or hyper-detail.
   key_features: reactor-promenade protagonist, reactor windows, suit silhouette, coolant glow, safety geometry
-  creative_brief: 'Make atomic leisure uncanny and specific through one character: a distinctive reactor-promenade protagonist in simplified rubber suit or atomic leisurewear, reactor window bands, coolant-blue glow, enamel blocks, and blank safety-yellow geometry, not a generic power plant diagram. The reactor supports the person; it must not become an object-only infrastructure poster. Avoid promenade crowd as main subject, worker crew, gas-mask soldier, control-room UI, or hard-surface render. Keep the result representative rather than over-abstract; use flat graphic illustration, gouache-poster shapes, cel-poster blocking, and controlled digital painting over realism or generic concept art. Use few bold color/value zones, large matte shapes, clean surfaces, low-to-moderate detail, and finish denoised with no excessive noise or ultra-fine detail.'
+  creative_brief: >-
+    Make atomic leisure uncanny and specific through one character: a distinctive reactor-promenade
+    protagonist in simplified rubber suit or atomic leisurewear, reactor window bands, coolant-blue glow,
+    enamel blocks, and blank safety-yellow geometry, not a generic power plant diagram. The reactor supports
+    the person; it must not become an object-only infrastructure poster. Avoid promenade crowd as main
+    subject, worker crew, gas-mask soldier, control-room UI, or hard-surface render. Keep the result
+    representative rather than over-abstract; use flat graphic illustration, gouache-poster shapes, cel-poster
+    blocking, and controlled digital painting over realism or generic concept art. Use few bold color/value
+    zones, large matte shapes, clean surfaces, low-to-moderate detail, and finish denoised with no excessive
+    noise or ultra-fine detail.
 avoidRules:
   - photoreal
   - watermark
@@ -37,7 +57,21 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP15-066.webp
 attributes:
-  negativePrompt: photoreal, hyperreal, realistic render, photoreal painterly realism, cinematic realism, AAA key art, photographic skin pores, realistic foreground portrait, realistic facial hair detail, lens blur, bokeh, depth-of-field photo look, readable warning text, radiation trefoil, hazard logo, control panels, cockpit UI, numbered labels, flag emblem, brand logo, gas-mask soldier, photoreal glass, PBR metal, glossy archviz, generic soldier hero, guard pin-up, weapon-first pose, HDR lens realism, 3D render look, hyper-detailed concept art, watermark, text, logo, generic style, over-abstract, interchangeable preset, duplicated motifs, generic glass utopia, unmotivated market aisle, unmotivated library aisle, fantasy corridor, random camera held by subject, studio wall fixation, chair fixation, curtain fixation, lamp fixation, scarf fixation, pedestal fixation, bird fixation, excessive noise, ultra-fine detail, over-sharpened microtexture, over-rendered machinery, noisy grime, tiny rivets everywhere, busy texture chatter, realistic uniform portrait, uniformed officer hero, foreground guard portrait, detailed tattoo focus, dense machinery wallpaper, overcrowded scene, high-frequency surface detail, cinematic close-up portrait, flat black fill, crushed black, pure black masses, muddy black fields, generic American illustration, generic Western RPG card art
+  negativePrompt: >-
+    photoreal, hyperreal, realistic render, photoreal painterly realism, cinematic realism, AAA key art,
+    photographic skin pores, realistic foreground portrait, realistic facial hair detail, lens blur, bokeh,
+    depth-of-field photo look, readable warning text, radiation trefoil, hazard logo, control panels, cockpit
+    UI, numbered labels, flag emblem, brand logo, gas-mask soldier, photoreal glass, PBR metal, glossy
+    archviz, generic soldier hero, guard pin-up, weapon-first pose, HDR lens realism, 3D render look,
+    hyper-detailed concept art, watermark, text, logo, generic style, over-abstract, interchangeable preset,
+    duplicated motifs, generic glass utopia, unmotivated market aisle, unmotivated library aisle, fantasy
+    corridor, random camera held by subject, studio wall fixation, chair fixation, curtain fixation, lamp
+    fixation, scarf fixation, pedestal fixation, bird fixation, excessive noise, ultra-fine detail,
+    over-sharpened microtexture, over-rendered machinery, noisy grime, tiny rivets everywhere, busy texture
+    chatter, realistic uniform portrait, uniformed officer hero, foreground guard portrait, detailed tattoo
+    focus, dense machinery wallpaper, overcrowded scene, high-frequency surface detail, cinematic close-up
+    portrait, flat black fill, crushed black, pure black masses, muddy black fields, generic American
+    illustration, generic Western RPG card art
 taxonomy:
   packId: pack_15
   packName: Punk Spectrum Vault

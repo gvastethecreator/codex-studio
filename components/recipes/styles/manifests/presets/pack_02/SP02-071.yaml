@@ -13,21 +13,24 @@ tags:
   - lighting-and-atmosphere
 visualDna:
   aesthetic: Fake movie night
-  form_and_line: None
-  color_palette: Blue tint, tungsten-day conversion, cold moonlight, warm underexposure
-  lighting_setup: Underexposed sun, stop-down daylight, ND-filter trickery
-  material_texture: Film, pushed stock, grain-from-underexposure
-  render_quality: Cinematic, uncanny, old-Hollywood cheat, suspension of disbelief
-  spatial_distortion: Bright sky, dark foreground paradox, impossible contrast
-  atmosphere: Moonlight, fake, studio night, theatrical illusion
+  subject_treatment: >-
+    Treat subjects as believable filmed or broadcast subjects under Day for Night: casting, wardrobe, props,
+    motion cues, and silhouette hierarchy follow 5. Lighting And Atmosphere cinematic and broadcast grammar
+    without locking to one plot beat.
+  color_and_tone: Blue tint, tungsten-day conversion, cold moonlight, warm underexposure
+  lighting_and_shadow: Underexposed sun, stop-down daylight, ND-filter trickery
+  texture_and_material: Film, pushed stock, grain-from-underexposure
+  camera_and_composition: Bright sky, dark foreground paradox, impossible contrast
+  atmosphere_and_mood: Moonlight, fake, studio night, theatrical illusion
+  rendering_and_quality: Cinematic, uncanny, old-Hollywood cheat, suspension of disbelief
   key_features: Blue cast, dark shadows at noon, noir-at-daylight
   creative_brief: >-
-    Use day-for-night as a visible cinematic cheat: daylight underexposed into false moonlight, blue filtration, crushed
-    foregrounds, and impossible bright-sky contrast. Avoid requiring outdoor noon scenes or old-Hollywood sets. The
-    output should feel like night manufactured by camera exposure rather than true darkness. Apply Day for Night as a
-    portable cinematic/camera style over any input: preserve its lens behavior, color process, lighting setup, artifact
-    pattern, and deformation grammar while avoiding a required actor, room, prop, brand, readable text, fixed IP scene,
-    or narrative setup.
+    Use day-for-night as a visible cinematic cheat: daylight underexposed into false moonlight, blue
+    filtration, crushed foregrounds, and impossible bright-sky contrast. Avoid requiring outdoor noon scenes
+    or old-Hollywood sets. The output should feel like night manufactured by camera exposure rather than true
+    darkness. Apply Day for Night as a portable cinematic/camera style over any input: preserve its lens
+    behavior, color process, lighting setup, artifact pattern, and deformation grammar while avoiding a
+    required actor, room, prop, brand, readable text, fixed IP scene, or narrative setup.
 avoidRules:
   - real night
 assets:

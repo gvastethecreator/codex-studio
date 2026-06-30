@@ -13,19 +13,18 @@ tags:
   - drawing-and-sketching
 visualDna:
   aesthetic: Chalk drawing on dark receptive ground with dusty reversal and temporary surface energy
-  form_and_line: Dusty white lines
-  color_palette: White on Black/Green
-  lighting_setup: Flat
-  material_texture: Slate-like tooth, chalk dust, ghost erasure, and powder buildup
-  render_quality: Temporary hand-drawn clarity with high contrast and rough tactile edges
-  spatial_distortion: Rough
-  atmosphere: Rustic, temporary, handmade
+  subject_treatment: Dusty white lines
+  color_and_tone: White on Black/Green
+  lighting_and_shadow: Flat
+  texture_and_material: Slate-like tooth, chalk dust, ghost erasure, and powder buildup
+  camera_and_composition: Rough
+  atmosphere_and_mood: Rustic, temporary, handmade
+  rendering_and_quality: Temporary hand-drawn clarity with high contrast and rough tactile edges
   key_features: Dusty lines
   creative_brief: >-
-    Apply chalk-dust drawing to any input: powdery white marks on dark tooth,
-    erasable residue, pressure-grain variation, soft dust halos, and handmade
-    provisional contrast. Keep temporary mark energy without requiring menus,
-    classrooms, chalkboards, or written notes.
+    Apply chalk-dust drawing to any input: powdery white marks on dark tooth, erasable residue, pressure-grain
+    variation, soft dust halos, and handmade provisional contrast. Keep temporary mark energy without
+    requiring menus, classrooms, chalkboards, or written notes.
 avoidRules:
   - photo
   - realistic
@@ -48,7 +47,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP06-027.webp
 attributes:
-  negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border, readable writing, classroom requirement, menu requirement
+  negativePrompt: >-
+    photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy,
+    watermark, text, signature, frame, border, readable writing, classroom requirement, menu requirement
 taxonomy:
   packId: pack_06
   packName: Essential Art Styles

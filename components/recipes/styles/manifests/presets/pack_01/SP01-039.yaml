@@ -13,15 +13,20 @@ tags:
   - lighting-techniques
 visualDna:
   aesthetic: Lit by fire
-  form_and_line: Soft flickering
-  color_palette: Deep Orange, Black
-  lighting_setup: Low, warm point source
-  material_texture: Soft shadows
-  render_quality: Intimate, historic
-  spatial_distortion: None
-  atmosphere: Romantic, secret
+  subject_treatment: Soft flickering
+  color_and_tone: Deep Orange, Black
+  lighting_and_shadow: Low, warm point source
+  texture_and_material: Soft shadows
+  camera_and_composition: >-
+    Camera setup native to Candlelight: lens choice, crop distance, depth of field, and focal hierarchy
+    support 2. Lighting Techniques without generic framing.
+  atmosphere_and_mood: Romantic, secret
+  rendering_and_quality: Intimate, historic
   key_features: Warm glow
-  creative_brief: Low warm flame light shapes any subject through amber point-source glow, flickering softness, black falloff, and umber shadow breathing at the edge of visibility. The style is pre-electric intimacy, not mandatory faces, rooms, candles, or historical scene dressing.
+  creative_brief: >-
+    Low warm flame light shapes any subject through amber point-source glow, flickering softness, black
+    falloff, and umber shadow breathing at the edge of visibility. The style is pre-electric intimacy, not
+    mandatory faces, rooms, candles, or historical scene dressing.
 avoidRules:
   - electric light
   - blue

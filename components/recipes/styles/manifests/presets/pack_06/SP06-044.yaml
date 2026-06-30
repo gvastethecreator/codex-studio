@@ -13,19 +13,18 @@ tags:
   - printmaking
 visualDna:
   aesthetic: Scratched metal print
-  form_and_line: Velvety, burred lines
-  color_palette: Black ink, warm paper
-  lighting_setup: Soft
-  material_texture: Ink blur
-  render_quality: Expressive, short-run
-  spatial_distortion: None
-  atmosphere: Soft, rich
+  subject_treatment: Velvety, burred lines
+  color_and_tone: Black ink, warm paper
+  lighting_and_shadow: Soft
+  texture_and_material: Ink blur
+  camera_and_composition: 'Compose for Drypoint using its key spatial cues: Burr texture.'
+  atmosphere_and_mood: Soft, rich
+  rendering_and_quality: Expressive, short-run
   key_features: Burr texture
   creative_brief: >-
-    Apply drypoint intaglio to any input: needle-scratched lines, burr-held ink,
-    velvety dark halos, plate-pressure softness, and slightly fragile edition
-    wear. Keep direct-metal intimacy without requiring portraits, landscapes,
-    antique plates, or print-shop context.
+    Apply drypoint intaglio to any input: needle-scratched lines, burr-held ink, velvety dark halos,
+    plate-pressure softness, and slightly fragile edition wear. Keep direct-metal intimacy without requiring
+    portraits, landscapes, antique plates, or print-shop context.
 avoidRules:
   - photo
   - realistic
@@ -45,7 +44,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP06-044.webp
 attributes:
-  negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border
+  negativePrompt: >-
+    photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy,
+    watermark, text, signature, frame, border
 taxonomy:
   packId: pack_06
   packName: Essential Art Styles

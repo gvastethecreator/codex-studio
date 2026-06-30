@@ -13,21 +13,21 @@ tags:
   - lighting-and-atmosphere
 visualDna:
   aesthetic: Submerged
-  form_and_line: Caustics
-  color_palette: Cyan/Blue, aquamarine, deep navy, surface-silver, turquoise
-  lighting_setup: Refracted sun, surface-dappled, caustic-net projection
-  material_texture: Water distortion, fluid lens, suspended particles
-  render_quality: Muted, floating, weightless suspension, soundless depth
-  spatial_distortion: Warped, refractive bend, swim-goggle perspective
-  atmosphere: Calm, deep, abyssal peace, submerged solitude
+  subject_treatment: Caustics
+  color_and_tone: Cyan/Blue, aquamarine, deep navy, surface-silver, turquoise
+  lighting_and_shadow: Refracted sun, surface-dappled, caustic-net projection
+  texture_and_material: Water distortion, fluid lens, suspended particles
+  camera_and_composition: Warped, refractive bend, swim-goggle perspective
+  atmosphere_and_mood: Calm, deep, abyssal peace, submerged solitude
+  rendering_and_quality: Muted, floating, weightless suspension, soundless depth
   key_features: Caustics, light-net projection, suspended particles, refractive wobble
   creative_brief: >-
-    Apply underwater optics without forcing underwater subject matter: cyan-blue attenuation, caustic nets, refractive
-    wobble, suspended particles, and softened edges through a liquid lens. Avoid bodies, hair, bubbles as required
-    props, or literal ocean environments. The image should feel filtered through depth and fluid refraction. Apply
-    Underwater Light as a portable cinematic/camera style over any input: preserve its lens behavior, color process,
-    lighting setup, artifact pattern, and deformation grammar while avoiding a required actor, room, prop, brand,
-    readable text, fixed IP scene, or narrative setup.
+    Apply underwater optics without forcing underwater subject matter: cyan-blue attenuation, caustic nets,
+    refractive wobble, suspended particles, and softened edges through a liquid lens. Avoid bodies, hair,
+    bubbles as required props, or literal ocean environments. The image should feel filtered through depth and
+    fluid refraction. Apply Underwater Light as a portable cinematic/camera style over any input: preserve its
+    lens behavior, color process, lighting setup, artifact pattern, and deformation grammar while avoiding a
+    required actor, room, prop, brand, readable text, fixed IP scene, or narrative setup.
 avoidRules:
   - dry
 assets:

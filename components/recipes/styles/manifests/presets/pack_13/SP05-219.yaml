@@ -13,32 +13,28 @@ tags:
   - slice-of-life-and-moe
 visualDna:
   aesthetic: >-
-    Mundane absurdist anime theater where dead-serious nonsense, awkward underplaying, sketch
-    timing, and banal staging make comedy dry
-  form_and_line: >-
-    Deadpan contour economy, exaggerated reaction beats, plain stage geometry, and loose ensemble
-    rhythm around the subject
-  color_palette: >-
-    Neutral gray, navy anchors, faded concrete, casual green, beige daylight, and sudden small comic
-    accent pops
-  lighting_setup: >-
-    Flat everyday daylight, casual afternoon fill, low-drama illumination, and timing-first
-    visibility
-  material_texture: >-
-    Woollike cloth, desk-edge scuffs, grass-dirt matte, cheap plastic, and plain everyday finish as
-    comic tactility
-  render_quality: >-
-    Deadpan ensemble anime finish with timing clarity, awkward body language, and low-budget absurd
-    rhythm
-  spatial_distortion: Momentary gag exaggeration and reaction-scale pops inside otherwise normal perspective
-  atmosphere: Goofy, deadpan, loose, dry, underplayed
+    Mundane absurdist anime theater where dead-serious nonsense, awkward underplaying, sketch timing, and
+    banal staging make comedy dry
+  subject_treatment: >-
+    Deadpan contour economy, exaggerated reaction beats, plain stage geometry, and loose ensemble rhythm
+    around the subject
+  color_and_tone: >-
+    Neutral gray, navy anchors, faded concrete, casual green, beige daylight, and sudden small comic accent
+    pops
+  lighting_and_shadow: Flat everyday daylight, casual afternoon fill, low-drama illumination, and timing-first visibility
+  texture_and_material: >-
+    Woollike cloth, desk-edge scuffs, grass-dirt matte, cheap plastic, and plain everyday finish as comic
+    tactility
+  camera_and_composition: Momentary gag exaggeration and reaction-scale pops inside otherwise normal perspective
+  atmosphere_and_mood: Goofy, deadpan, loose, dry, underplayed
+  rendering_and_quality: Deadpan ensemble anime finish with timing clarity, awkward body language, and low-budget absurd rhythm
   key_features: >-
-    Deadpan commitment, banal-stage framing, reaction pops, low-budget absurdism, ensemble rhythm,
-    and awkward silence
+    Deadpan commitment, banal-stage framing, reaction pops, low-budget absurdism, ensemble rhythm, and awkward
+    silence
   creative_brief: >-
-    Use Daily Lives of High School Boys as style anchor for mundane absurdist theater. Any prompt
-    should perform dead-serious nonsense through plain staging, awkward timing, and dry reaction
-    pops. Boys, hallways, riverbanks, blazers, and schools are optional.
+    Use Daily Lives of High School Boys as style anchor for mundane absurdist theater. Any prompt should
+    perform dead-serious nonsense through plain staging, awkward timing, and dry reaction pops. Boys,
+    hallways, riverbanks, blazers, and schools are optional.
 avoidRules:
   - realistic
   - 3d render
@@ -56,8 +52,8 @@ assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-219.webp
 attributes:
   negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, text, signature
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts,
+    watermark, text, signature
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle

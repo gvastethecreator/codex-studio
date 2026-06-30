@@ -13,18 +13,18 @@ tags:
   - material-surface-textures
 visualDna:
   aesthetic: Stone veins
-  form_and_line: Random veins
-  color_palette: White, Grey, Gold
-  lighting_setup: Polished reflection
-  material_texture: Stone
-  render_quality: Luxury, natural
-  spatial_distortion: None
-  atmosphere: Expensive, cold
+  subject_treatment: Random veins
+  color_and_tone: White, Grey, Gold
+  lighting_and_shadow: Polished reflection
+  texture_and_material: Stone
+  camera_and_composition: 'Compose for Marble Texture using its key spatial cues: Veins.'
+  atmosphere_and_mood: Expensive, cold
+  rendering_and_quality: Luxury, natural
   key_features: Veins
   creative_brief: >-
-    Apply marble veining to the input: polished stone depth, branching mineral
-    lines, cloudy translucency, and pressure-born elegance should harden forms
-    into geological luxury without requiring sculpture or architecture.
+    Apply marble veining to the input: polished stone depth, branching mineral lines, cloudy translucency, and
+    pressure-born elegance should harden forms into geological luxury without requiring sculpture or
+    architecture.
 avoidRules:
   - wood
   - plastic

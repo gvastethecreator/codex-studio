@@ -12,20 +12,33 @@ tags:
   - anime-character-and-lifestyle
   - anime
 visualDna:
-  aesthetic: Isekai travel anime language with warm exploratory spirit, class-coded styling, fantasy worldbuilding clarity, and friendly journey momentum
-  form_and_line: Role-coded silhouettes, layered travel-flow lines, accessory-like readability cues, and forward-motion composition arcs
-  color_palette: Forest greens, mossy neutrals, warm leather browns, soft gold accents, and sky-filtered natural highlights
-  lighting_setup: Leaf-filtered key light, dappled bounce, soft shadow pooling, and warm rim accents on travel-texture focal points
-  material_texture: Handworked wood grain, stitched travel fabrics, worn leather straps, forged low-polish metal fittings, and dust-softened surfaces
-  render_quality: Ensemble-aware anime rendering with clear hierarchy, environmental cohesion, and reliable small-card legibility
-  spatial_distortion: Layered journey composition using mild depth compression to keep subject readability without losing world scale
-  atmosphere: Adventurous, friendly, curious, and road-forward
-  key_features: Class-distinct design language, travel-texture cues, gear-like silhouette markers, and path-to-horizon compositional flow
+  aesthetic: >-
+    Isekai travel anime language with warm exploratory spirit, class-coded styling, fantasy worldbuilding
+    clarity, and friendly journey momentum
+  subject_treatment: >-
+    Role-coded silhouettes, layered travel-flow lines, accessory-like readability cues, and forward-motion
+    composition arcs
+  color_and_tone: Forest greens, mossy neutrals, warm leather browns, soft gold accents, and sky-filtered natural highlights
+  lighting_and_shadow: >-
+    Leaf-filtered key light, dappled bounce, soft shadow pooling, and warm rim accents on travel-texture focal
+    points
+  texture_and_material: >-
+    Handworked wood grain, stitched travel fabrics, worn leather straps, forged low-polish metal fittings, and
+    dust-softened surfaces
+  camera_and_composition: >-
+    Layered journey composition using mild depth compression to keep subject readability without losing world
+    scale
+  atmosphere_and_mood: Adventurous, friendly, curious, and road-forward
+  rendering_and_quality: >-
+    Ensemble-aware anime rendering with clear hierarchy, environmental cohesion, and reliable small-card
+    legibility
+  key_features: >-
+    Class-distinct design language, travel-texture cues, gear-like silhouette markers, and path-to-horizon
+    compositional flow
   creative_brief: >-
-    Use Isekai Forest Caravan as style anchor for warm fantasy travel:
-    class-readable silhouettes, nature-filtered light, and journey-centric
-    texture should transfer without requiring forest, caravan, party members,
-    mounts, or travel props.
+    Use Isekai Forest Caravan as style anchor for warm fantasy travel: class-readable silhouettes,
+    nature-filtered light, and journey-centric texture should transfer without requiring forest, caravan,
+    party members, mounts, or travel props.
 avoidRules:
   - photoreal
   - sci-fi-city

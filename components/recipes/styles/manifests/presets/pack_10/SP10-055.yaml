@@ -13,18 +13,17 @@ tags:
   - material-surface-textures
 visualDna:
   aesthetic: Tree rings
-  form_and_line: Flowing lines
-  color_palette: Brown, Tan
-  lighting_setup: Varnish gloss
-  material_texture: Wood
-  render_quality: Natural, warm
-  spatial_distortion: Knots
-  atmosphere: Rustic, solid
+  subject_treatment: Flowing lines
+  color_and_tone: Brown, Tan
+  lighting_and_shadow: Varnish gloss
+  texture_and_material: Wood
+  camera_and_composition: Knots
+  atmosphere_and_mood: Rustic, solid
+  rendering_and_quality: Natural, warm
   key_features: Directional grain
   creative_brief: >-
-    Apply wood-grain structure to the input: growth rings, warm cellulose
-    striations, knots, directional fibers, and varnished or raw grain shifts
-    should make forms feel grown and carved without requiring trees.
+    Apply wood-grain structure to the input: growth rings, warm cellulose striations, knots, directional
+    fibers, and varnished or raw grain shifts should make forms feel grown and carved without requiring trees.
 avoidRules:
   - metal
   - stone

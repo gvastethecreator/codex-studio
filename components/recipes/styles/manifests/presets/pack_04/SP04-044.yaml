@@ -13,35 +13,30 @@ tags:
   - editorial-and-poster
 visualDna:
   aesthetic: >-
-    Vintage travel-poster style with idealized destination abstraction, optimistic transit-era
-    polish, and graphic promotional clarity
-  form_and_line: >-
+    Vintage travel-poster style with idealized destination abstraction, optimistic transit-era polish, and
+    graphic promotional clarity
+  subject_treatment: >-
     Simplified geometric landmark silhouettes with clean contour economy, broad shape stacking, and
     poster-friendly horizon banding
-  color_palette: >-
-    Sunlit flat chroma blocks with warm coastal tones, sky-sea separation, and restrained retro
-    print contrast
-  lighting_setup: >-
-    Even poster illumination with soft midday optimism and minimal shadow complexity to maximize
-    graphic legibility
-  material_texture: >-
-    Lithographic print grain with subtle ink spread, paper aging cues, and lightly faded archival
-    surface character
-  render_quality: >-
+  color_and_tone: Sunlit flat chroma blocks with warm coastal tones, sky-sea separation, and restrained retro print contrast
+  lighting_and_shadow: >-
+    Even poster illumination with soft midday optimism and minimal shadow complexity to maximize graphic
+    legibility
+  texture_and_material: >-
+    Lithographic print grain with subtle ink spread, paper aging cues, and lightly faded archival surface
+    character
+  camera_and_composition: Deliberately simplified depth planes with flattened perspective and iconized environment hierarchy
+  atmosphere_and_mood: Bright, inviting, relaxed, optimistic, escapist
+  rendering_and_quality: >-
     Clean promotional illustration finish emphasizing readable forms, aspirational mood, and
     destination-forward composition
-  spatial_distortion: >-
-    Deliberately simplified depth planes with flattened perspective and iconized environment
-    hierarchy
-  atmosphere: Bright, inviting, relaxed, optimistic, escapist
   key_features: >-
-    Bottom title-lockup zone, destination-led typographic framing, simplified landmark anchors,
-    travel-poster layout discipline
+    Bottom title-lockup zone, destination-led typographic framing, simplified landmark anchors, travel-poster
+    layout discipline
   creative_brief: >-
     Apply vintage travel-poster grammar to any input: flattened scenic planes, optimistic ink bands,
     simplified landmark anchors, archival litho grain, and destination-like composition should carry
-    promotional clarity without requiring trains, beaches, mountains, cities, titles, or a real
-    destination.
+    promotional clarity without requiring trains, beaches, mountains, cities, titles, or a real destination.
 avoidRules:
   - photo
 assets:

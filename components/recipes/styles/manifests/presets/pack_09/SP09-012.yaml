@@ -13,15 +13,19 @@ tags:
   - natural-materials
 visualDna:
   aesthetic: Reptile scale tessellation
-  form_and_line: Overlapping scales
-  color_palette: Green/Black pattern
-  lighting_setup: Iridescent sheen
-  material_texture: Smooth, dry
-  render_quality: Exotic, detailed
-  spatial_distortion: Flexible armor
-  atmosphere: Cold, sleek
+  subject_treatment: Overlapping scales
+  color_and_tone: Green/Black pattern
+  lighting_and_shadow: Iridescent sheen
+  texture_and_material: Smooth, dry
+  camera_and_composition: Flexible armor
+  atmosphere_and_mood: Cold, sleek
+  rendering_and_quality: Exotic, detailed
   key_features: Scale grid
-  creative_brief: 'Compose snake-scale tessellation as flexible armor over the input: overlapping green-black shields, dry keratin smoothness, precise scale grid, and iridescent edge flicker. If a reptile or creature is present, sharpen that identity; otherwise treat the subject as alien armored geometry without requiring literal skin or a snake body.'
+  creative_brief: >-
+    Compose snake-scale tessellation as flexible armor over the input: overlapping green-black shields, dry
+    keratin smoothness, precise scale grid, and iridescent edge flicker. If a reptile or creature is present,
+    sharpen that identity; otherwise treat the subject as alien armored geometry without requiring literal
+    skin or a snake body.
 avoidRules:
   - fur
   - skin

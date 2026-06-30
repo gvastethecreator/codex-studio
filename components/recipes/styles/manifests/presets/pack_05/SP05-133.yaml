@@ -13,18 +13,21 @@ tags:
   - modern-shonen-and-action
 visualDna:
   aesthetic: Brickwall comedy spell-brawl style, where ornate magic logic is undercut by deadpan physical certainty.
-  form_and_line: Heavy blocky impact shapes, elegant spell curls interrupted by blunt force vectors, and frozen straight-faced poses.
-  color_palette: Royal academy blue, cream parchment, muscle-shadow gray, absurd gold, hot red accents, and comic white flashes.
-  lighting_setup: Prestigious magical glow abruptly flattened by gag lighting, hard impact flashes, and theatrical contrast.
-  material_texture: Chalk dust, polished magic particles, stone block grain, even flat color, and crisp gag-smear overlays.
-  render_quality: Clean modern anime comedy-action finish with readable spell polish and blunt physical punchline clarity.
-  spatial_distortion: Straight-line force breaks ornate perspective, turning elegant space into brickwall impact geometry.
-  atmosphere: Dumb, forceful, confident, hilarious
+  subject_treatment: >-
+    Heavy blocky impact shapes, elegant spell curls interrupted by blunt force vectors, and frozen
+    straight-faced poses.
+  color_and_tone: >-
+    Royal academy blue, cream parchment, muscle-shadow gray, absurd gold, hot red accents, and comic white
+    flashes.
+  lighting_and_shadow: Prestigious magical glow abruptly flattened by gag lighting, hard impact flashes, and theatrical contrast.
+  texture_and_material: Chalk dust, polished magic particles, stone block grain, even flat color, and crisp gag-smear overlays.
+  camera_and_composition: Straight-line force breaks ornate perspective, turning elegant space into brickwall impact geometry.
+  atmosphere_and_mood: Dumb, forceful, confident, hilarious
+  rendering_and_quality: Clean modern anime comedy-action finish with readable spell polish and blunt physical punchline clarity.
   key_features: Deadpan force, broken spell logic, blocky impact, ornate-to-blunt contrast, physical punchline rhythm.
   creative_brief: >-
-    Apply absurd physical certainty to any prompt: let ornate magic cues collide
-    with blunt force, deadpan stillness, and brickwall impact without requiring
-    an institution, prop, duel, or body gag setup.
+    Apply absurd physical certainty to any prompt: let ornate magic cues collide with blunt force, deadpan
+    stillness, and brickwall impact without requiring an institution, prop, duel, or body gag setup.
 avoidRules:
   - realistic
   - 3d render
@@ -41,7 +44,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-133.webp
 attributes:
-  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
+  negativePrompt: >-
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts,
+    watermark, text, signature
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds

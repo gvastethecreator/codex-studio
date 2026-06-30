@@ -13,19 +13,18 @@ tags:
   - childrens-illustration
 visualDna:
   aesthetic: Scientific botanical plate in vintage field-guide tradition
-  form_and_line: Fine controlled ink contour with diagrammatic annotation leaders
-  color_palette: Muted watercolor tints over warm archival-paper neutrals
-  lighting_setup: Flat specimen illumination prioritizing structural clarity
-  material_texture: Aged paper grain with light wash transparency
-  render_quality: High-accuracy naturalist rendering for educational reference
-  spatial_distortion: Orthographic specimen layout with sectional/dissected insets
-  atmosphere: Taxonomic, scholarly, measured
+  subject_treatment: Fine controlled ink contour with diagrammatic annotation leaders
+  color_and_tone: Muted watercolor tints over warm archival-paper neutrals
+  lighting_and_shadow: Flat specimen illumination prioritizing structural clarity
+  texture_and_material: Aged paper grain with light wash transparency
+  camera_and_composition: Orthographic specimen layout with sectional/dissected insets
+  atmosphere_and_mood: Taxonomic, scholarly, measured
+  rendering_and_quality: High-accuracy naturalist rendering for educational reference
   key_features: Nomenclature labels, anatomical callouts, curated specimen grouping
   creative_brief: >-
-    Apply vintage scientific-plate logic to the input: clean ink contour,
-    transparent tinting, annotation hierarchy and orthographic specimen clarity.
-    If flora exists, make morphology botanical; otherwise use field-guide
-    organization without forcing plants or a species study.
+    Apply vintage scientific-plate logic to the input: clean ink contour, transparent tinting, annotation
+    hierarchy and orthographic specimen clarity. If flora exists, make morphology botanical; otherwise use
+    field-guide organization without forcing plants or a species study.
 avoidRules:
   - cartoon
   - messy

@@ -13,19 +13,21 @@ tags:
   - environment-and-worldbuilding
 visualDna:
   aesthetic: Environment-design render language
-  form_and_line: Modular composition and guided depth
-  color_palette: Atmospheric perspective, distance-blue fade
-  lighting_setup: Baked global illumination, environment-lighting
-  material_texture: Tileable textures, world-building materials
-  render_quality: Level-art material logic, immersive readiness
-  atmosphere: Explorable depth, designed place energy
+  subject_treatment: Modular composition and guided depth
+  color_and_tone: Atmospheric perspective, distance-blue fade
+  lighting_and_shadow: Baked global illumination, environment-lighting
+  texture_and_material: Tileable textures, world-building materials
+  camera_and_composition: >-
+    Production-preview camera for Environment Design: readable hero scale, foreground/midground/background
+    depth, clean silhouette, and practical vertical crop.
+  atmosphere_and_mood: Explorable depth, designed place energy
+  rendering_and_quality: Level-art material logic, immersive readiness
   key_features: Modular kits, environmental-storytelling cues
   creative_brief: >-
-    Apply environment-design thinking to the input: modular material kits,
-    atmospheric perspective, baked-GI credibility and depth cues that imply
-    explorable space. If the prompt is an environment, strengthen level-art
-    readability; otherwise borrow worldbuilding texture logic without forcing
-    mountains, ruins, foliage, paths, or a game-level layout.
+    Apply environment-design thinking to the input: modular material kits, atmospheric perspective, baked-GI
+    credibility and depth cues that imply explorable space. If the prompt is an environment, strengthen
+    level-art readability; otherwise borrow worldbuilding texture logic without forcing mountains, ruins,
+    foliage, paths, or a game-level layout.
 avoidRules:
   - empty
   - boring

@@ -13,19 +13,23 @@ tags:
   - materials
 visualDna:
   aesthetic: Carved stone
-  form_and_line: Chisel marks (optional)
-  color_palette: White, Grey veins, Carrara purity
-  lighting_setup: Subsurface scattering (slight), marble translucency
-  material_texture: Stone polish, veined-crystal surface
-  render_quality: Classical art, museum, neoclassical perfection
-  atmosphere: Classic, pure, sculpted eternity
+  subject_treatment: Chisel marks (optional)
+  color_and_tone: White, Grey veins, Carrara purity
+  lighting_and_shadow: Subsurface scattering (slight), marble translucency
+  texture_and_material: Stone polish, veined-crystal surface
+  camera_and_composition: >-
+    Lookdev camera for Marble Statue: close three-quarter or macro material framing, strong highlight planes,
+    readable surface curvature, and controlled depth.
+  atmosphere_and_mood: Classic, pure, sculpted eternity
+  rendering_and_quality: Classical art, museum, neoclassical perfection
   key_features: Stone texture, vein-flow naturalism
   creative_brief: >-
-    Recast the input in Carrara-marble sculpture style: grey veining, semi-translucent stone depth, polished soft
-    reflection and optional chisel marks. Keep neoclassical dignity as material language, not a forced museum piece,
-    figure, or Michelangelo reference setup. Apply Marble Statue as a portable 3D/render style system over any input:
-    preserve its renderer logic, material behavior, geometry language, lighting grammar, and production cues while
-    avoiding a required character, vehicle, prop, environment, UI screen, product shot, or scene template.
+    Recast the input in Carrara-marble sculpture style: grey veining, semi-translucent stone depth, polished
+    soft reflection and optional chisel marks. Keep neoclassical dignity as material language, not a forced
+    museum piece, figure, or Michelangelo reference setup. Apply Marble Statue as a portable 3D/render style
+    system over any input: preserve its renderer logic, material behavior, geometry language, lighting
+    grammar, and production cues while avoiding a required character, vehicle, prop, environment, UI screen,
+    product shot, or scene template.
 avoidRules:
   - flesh
   - warm

@@ -13,21 +13,21 @@ tags:
   - render-engines
 visualDna:
   aesthetic: Digital clay sculpt
-  form_and_line: Matcap shader
-  color_palette: Grey or Red wax, clay brown
-  lighting_setup: Rim light, sculpting-studio setup
-  material_texture: Clay strokes, matcap highlights
-  render_quality: High poly model, sculpted detail
-  spatial_distortion: Sculptural anatomy optional
-  atmosphere: Artistic, raw, hands-on feel
+  subject_treatment: Matcap shader
+  color_and_tone: Grey or Red wax, clay brown
+  lighting_and_shadow: Rim light, sculpting-studio setup
+  texture_and_material: Clay strokes, matcap highlights
+  camera_and_composition: Sculptural anatomy optional
+  atmosphere_and_mood: Artistic, raw, hands-on feel
+  rendering_and_quality: High poly model, sculpted detail
   key_features: Matcap material, dynamesh topology
   creative_brief: >-
-    Treat the input as a ZBrush digital-clay sculpt: matcap highlights, dynamesh topology, visible stylus pressure,
-    wax/clay monochrome and raw high-poly form. Anatomy may emerge when relevant, but the preset should not require a
-    body study, standing model or untextured character bust. Apply ZBrush Digital Clay Sculpt as a portable 3D/render
-    style system over any input: preserve its renderer logic, material behavior, geometry language, lighting grammar,
-    and production cues while avoiding a required character, vehicle, prop, environment, UI screen, product shot, or
-    scene template.
+    Treat the input as a ZBrush digital-clay sculpt: matcap highlights, dynamesh topology, visible stylus
+    pressure, wax/clay monochrome and raw high-poly form. Anatomy may emerge when relevant, but the preset
+    should not require a body study, standing model or untextured character bust. Apply ZBrush Digital Clay
+    Sculpt as a portable 3D/render style system over any input: preserve its renderer logic, material
+    behavior, geometry language, lighting grammar, and production cues while avoiding a required character,
+    vehicle, prop, environment, UI screen, product shot, or scene template.
 avoidRules:
   - textured
   - low poly

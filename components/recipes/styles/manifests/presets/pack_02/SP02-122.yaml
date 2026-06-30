@@ -13,23 +13,25 @@ tags:
   - tv-and-broadcast
 visualDna:
   aesthetic: >-
-    Local news broadcast package, chroma-key compositing, urgent graphic polish, studio-blue authority, lower-third
-    geometry without readable text
-  form_and_line: Rectangular broadcast frames, hard graphic boxes, safe-area composition, anchor-desk symmetry abstracted into layout
-  color_palette: Broadcast blue, alert red, white headline blocks, chrome grey, saturated weather green
-  lighting_setup: Clean studio key, glossy set reflections, green-screen spill edge, high-fill news clarity
-  material_texture: Digital key edges, compressed overlay graphics, studio acrylic sheen, video sharpening halos
-  render_quality: Local TV clean, mildly dated, graphic-heavy, authority-by-template
-  spatial_distortion: Layered compositing planes, background replacement depth, boxed inset framing
-  atmosphere: Urgent, official, polished, slightly synthetic
+    Local news broadcast package, chroma-key compositing, urgent graphic polish, studio-blue authority,
+    lower-third geometry without readable text
+  subject_treatment: >-
+    Rectangular broadcast frames, hard graphic boxes, safe-area composition, anchor-desk symmetry abstracted
+    into layout
+  color_and_tone: Broadcast blue, alert red, white headline blocks, chrome grey, saturated weather green
+  lighting_and_shadow: Clean studio key, glossy set reflections, green-screen spill edge, high-fill news clarity
+  texture_and_material: Digital key edges, compressed overlay graphics, studio acrylic sheen, video sharpening halos
+  camera_and_composition: Layered compositing planes, background replacement depth, boxed inset framing
+  atmosphere_and_mood: Urgent, official, polished, slightly synthetic
+  rendering_and_quality: Local TV clean, mildly dated, graphic-heavy, authority-by-template
   key_features: Chroma halo, lower-third bars, inset rectangles, glossy blue package, no readable text
   creative_brief: >-
-    Use local-news package design as style: clean studio light, blue-red broadcast graphics, lower-third bars, inset
-    rectangles, chroma-key edge halos, and compressed video sharpness. Avoid requiring anchors, desks, maps, headlines,
-    or readable text. The input should feel composited into urgent TV grammar. Apply Local News Chroma Key Package as a
-    portable cinematic/camera style over any input: preserve its lens behavior, color process, lighting setup, artifact
-    pattern, and deformation grammar while avoiding a required actor, room, prop, brand, readable text, fixed IP scene,
-    or narrative setup.
+    Use local-news package design as style: clean studio light, blue-red broadcast graphics, lower-third bars,
+    inset rectangles, chroma-key edge halos, and compressed video sharpness. Avoid requiring anchors, desks,
+    maps, headlines, or readable text. The input should feel composited into urgent TV grammar. Apply Local
+    News Chroma Key Package as a portable cinematic/camera style over any input: preserve its lens behavior,
+    color process, lighting setup, artifact pattern, and deformation grammar while avoiding a required actor,
+    room, prop, brand, readable text, fixed IP scene, or narrative setup.
 avoidRules:
   - cinematic grain
   - handwritten text

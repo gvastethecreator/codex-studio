@@ -13,18 +13,20 @@ tags:
   - subcultures
 visualDna:
   aesthetic: Cottagecore pastoral styling, rural-romance daydream, handmade softness
-  form_and_line: Soft rural dress logic, empire-waist rise, puff-sleeve volume, midi hem drift, apron-tie cinch
-  color_palette: Cream, Sage, Floral, butter-yellow, dusty lavender, wildflower print, robin-egg blue
-  lighting_setup: Golden hour warmth, dappled shade, morning-dew sparkle, soft backlight
-  material_texture: Linen, cotton muslin, eyelet, soft gauze, knit shawl, woven straw, raw silk
-  render_quality: Whimsical, soft, fairytale illustration, sun-drenched pastoral
-  spatial_distortion: None
-  atmosphere: Peaceful, nature-adjacent, bread-baking warmth, wildflower fragility, slow-life softness
+  subject_treatment: Soft rural dress logic, empire-waist rise, puff-sleeve volume, midi hem drift, apron-tie cinch
+  color_and_tone: Cream, Sage, Floral, butter-yellow, dusty lavender, wildflower print, robin-egg blue
+  lighting_and_shadow: Golden hour warmth, dappled shade, morning-dew sparkle, soft backlight
+  texture_and_material: Linen, cotton muslin, eyelet, soft gauze, knit shawl, woven straw, raw silk
+  camera_and_composition: >-
+    Compose for Cottagecore using its key spatial cues: Apron-tie logic, woven-straw texture, straw-hat brim
+    cue, lace-up bodice, ribbon ties.
+  atmosphere_and_mood: Peaceful, nature-adjacent, bread-baking warmth, wildflower fragility, slow-life softness
+  rendering_and_quality: Whimsical, soft, fairytale illustration, sun-drenched pastoral
   key_features: Apron-tie logic, woven-straw texture, straw-hat brim cue, lace-up bodice, ribbon ties
   creative_brief: >-
-    Soften the input with cottagecore textile cues: linen, muslin, eyelet, puff sleeves, apron ties, woven straw,
-    wildflower prints and warm slow-life light. Keep rural fantasy as texture and mood, without requiring meadows,
-    orchards, basket props, bread tableaux, cottages or wandering figures.
+    Soften the input with cottagecore textile cues: linen, muslin, eyelet, puff sleeves, apron ties, woven
+    straw, wildflower prints and warm slow-life light. Keep rural fantasy as texture and mood, without
+    requiring meadows, orchards, basket props, bread tableaux, cottages or wandering figures.
 avoidRules:
   - urban
   - modern

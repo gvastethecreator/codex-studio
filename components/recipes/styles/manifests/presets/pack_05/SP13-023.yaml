@@ -13,20 +13,27 @@ tags:
   - anime
   - action
 visualDna:
-  aesthetic: Neon vector discharge, tactical charge, violet-blue pressure, clean sci-fi anime precision, decisive technical momentum.
-  form_and_line: Sharp technical linework, long discharge vectors, stylized tactical angles, precise edge discipline, and clean silhouette logic.
-  color_palette: Violet, neon blue, graphite gray, cold white cores, and restrained magenta accents.
-  lighting_setup: Electric discharge as main key, hard rim contrast, wet specular bounce, and blue-violet backflare.
-  material_texture: Wet graphite sheen, electric smoke, cold polymer, brushed metal grain, and vapor-lit particles.
-  render_quality: Clean focused impact frame with high technical readability and crisp luminous hierarchy.
-  spatial_distortion: Strong diagonal vanishing point, vector-led depth, compressed technical planes, and fast electric parallax.
-  atmosphere: Tactical, charged, precise, technological.
-  key_features: Electric discharge vectors, violet-blue backlight, wet specular surfaces, diagonal technical depth, clean impact focus.
-  creative_brief: >
-    Apply neon vector discharge to any subject: hard electric keys, violet-blue
-    diagonals, wet graphite texture, and precise tactical linework should define
-    the style without fixed vantage points, horizons, firearms, shots, or urban
-    settings.
+  aesthetic: >-
+    Neon vector discharge, tactical charge, violet-blue pressure, clean sci-fi anime precision, decisive
+    technical momentum.
+  subject_treatment: >-
+    Sharp technical linework, long discharge vectors, stylized tactical angles, precise edge discipline, and
+    clean silhouette logic.
+  color_and_tone: Violet, neon blue, graphite gray, cold white cores, and restrained magenta accents.
+  lighting_and_shadow: Electric discharge as main key, hard rim contrast, wet specular bounce, and blue-violet backflare.
+  texture_and_material: Wet graphite sheen, electric smoke, cold polymer, brushed metal grain, and vapor-lit particles.
+  camera_and_composition: >-
+    Strong diagonal vanishing point, vector-led depth, compressed technical planes, and fast electric
+    parallax.
+  atmosphere_and_mood: Tactical, charged, precise, technological.
+  rendering_and_quality: Clean focused impact frame with high technical readability and crisp luminous hierarchy.
+  key_features: >-
+    Electric discharge vectors, violet-blue backlight, wet specular surfaces, diagonal technical depth, clean
+    impact focus.
+  creative_brief: >-
+    Apply neon vector discharge to any subject: hard electric keys, violet-blue diagonals, wet graphite
+    texture, and precise tactical linework should define the style without fixed vantage points, horizons,
+    firearms, shots, or urban settings.
 avoidRules:
   - photoreal
   - medieval-only

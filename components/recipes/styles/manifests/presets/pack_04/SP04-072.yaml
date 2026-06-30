@@ -13,18 +13,18 @@ tags:
   - ink-and-print
 visualDna:
   aesthetic: Notebook-ink illustration with obsessive micro-hatching
-  form_and_line: Fine pressure-variable pen lines, spiral and contour doodle logic
-  color_palette: Ballpoint blue, desaturated navy, off-white notebook stock
-  lighting_setup: Density-built shading through layered hatch accumulation
-  material_texture: Light paper tooth, occasional indent drag, tiny ink clots
-  render_quality: Raw, intimate, highly detailed pen-work with handmade variance
-  spatial_distortion: Minor line wobble and pooled-ink nodes in dense zones
-  atmosphere: Casual yet meticulous, study-desk focus, spontaneous craft energy
+  subject_treatment: Fine pressure-variable pen lines, spiral and contour doodle logic
+  color_and_tone: Ballpoint blue, desaturated navy, off-white notebook stock
+  lighting_and_shadow: Density-built shading through layered hatch accumulation
+  texture_and_material: Light paper tooth, occasional indent drag, tiny ink clots
+  camera_and_composition: Minor line wobble and pooled-ink nodes in dense zones
+  atmosphere_and_mood: Casual yet meticulous, study-desk focus, spontaneous craft energy
+  rendering_and_quality: Raw, intimate, highly detailed pen-work with handmade variance
   key_features: Blue-only mark system, pressure-led value changes, margin-sketch rhythm
   creative_brief: >-
-    Apply ballpoint notebook-ink grammar to any input: blue pressure-variable lines, cumulative
-    hatching, ink clots, margin-sketch rhythm, and paper-indent drag should resolve form through pen
-    flow without requiring notebooks, desks, studies, doodles, or fixed intimate scenes.
+    Apply ballpoint notebook-ink grammar to any input: blue pressure-variable lines, cumulative hatching, ink
+    clots, margin-sketch rhythm, and paper-indent drag should resolve form through pen flow without requiring
+    notebooks, desks, studies, doodles, or fixed intimate scenes.
 avoidRules:
   - paint
   - thick

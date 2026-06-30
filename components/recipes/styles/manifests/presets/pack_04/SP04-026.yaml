@@ -13,19 +13,18 @@ tags:
   - childrens-illustration
 visualDna:
   aesthetic: Pop-up paper-engineering illustration language with dimensional storytelling
-  form_and_line: Die-cut contours, fold seams, and tab-slot construction edges
-  color_palette: Cardstock and kraft-derived tones with accent primaries
-  lighting_setup: Directional page-top light emphasizing fold relief and cast depth
-  material_texture: Matte paper surface, crease memory, cut-edge fuzz
-  render_quality: Structural handcrafted finish with clear mechanism readability
-  spatial_distortion: Layered fold-out depth and hinge-driven planar shifts
-  atmosphere: Playful, surprising, engineered wonder
+  subject_treatment: Die-cut contours, fold seams, and tab-slot construction edges
+  color_and_tone: Cardstock and kraft-derived tones with accent primaries
+  lighting_and_shadow: Directional page-top light emphasizing fold relief and cast depth
+  texture_and_material: Matte paper surface, crease memory, cut-edge fuzz
+  camera_and_composition: Layered fold-out depth and hinge-driven planar shifts
+  atmosphere_and_mood: Playful, surprising, engineered wonder
+  rendering_and_quality: Structural handcrafted finish with clear mechanism readability
   key_features: Tabs, slots, folds, lift layers, mechanical page architecture
   creative_brief: >-
-    Apply pop-up paper-engineering grammar to any input: die-cut contours, fold seams, tab-slot
-    construction, hinge relief, layered cardstock depth, and cast-paper shadows should make forms
-    feel foldable without requiring books, pages, children, mechanisms, theater sets, or fixed
-    narrative scenes.
+    Apply pop-up paper-engineering grammar to any input: die-cut contours, fold seams, tab-slot construction,
+    hinge relief, layered cardstock depth, and cast-paper shadows should make forms feel foldable without
+    requiring books, pages, children, mechanisms, theater sets, or fixed narrative scenes.
 avoidRules:
   - flat page
 assets:

@@ -12,20 +12,31 @@ tags:
   - anime-character-and-lifestyle
   - shojo-magical-girl-and-visionary-classics
 visualDna:
-  aesthetic: Runway-heartbreak shojo language with punk-luxe tailoring, self-invention pressure, and coming-of-age emotional volatility
-  form_and_line: Editorial fashion silhouette emphasis, sharp pose-line confidence, garment-structure contour detailing, and expressive confrontation framing
-  color_palette: Black-cherry fashion anchors, magenta and plum accents, metallic highlight notes, and selective warm skin-light contrast
-  lighting_setup: Runway spot and low practical interplay, reflective fabric edge highlights, and mood-shifting contrast tied to emotional stakes
-  material_texture: Structured couture fabrics, stitch-line tactile detail, glossy makeup and accessory surfaces, and urban-night ambient texture cues
-  render_quality: High-style shojo render with strong garment readability, emotional fashion-drama intensity, and polished adult-romance clarity
-  spatial_distortion: Catwalk-inspired perspective lines with intimate compression to balance performance and vulnerability
-  atmosphere: Chic, restless, romantic, self-inventing
+  aesthetic: >-
+    Runway-heartbreak shojo language with punk-luxe tailoring, self-invention pressure, and coming-of-age
+    emotional volatility
+  subject_treatment: >-
+    Editorial fashion silhouette emphasis, sharp pose-line confidence, garment-structure contour detailing,
+    and expressive confrontation framing
+  color_and_tone: >-
+    Black-cherry fashion anchors, magenta and plum accents, metallic highlight notes, and selective warm
+    skin-light contrast
+  lighting_and_shadow: >-
+    Runway spot and low practical interplay, reflective fabric edge highlights, and mood-shifting contrast
+    tied to emotional stakes
+  texture_and_material: >-
+    Structured couture fabrics, stitch-line tactile detail, glossy makeup and accessory surfaces, and
+    urban-night ambient texture cues
+  camera_and_composition: Catwalk-inspired perspective lines with intimate compression to balance performance and vulnerability
+  atmosphere_and_mood: Chic, restless, romantic, self-inventing
+  rendering_and_quality: >-
+    High-style shojo render with strong garment readability, emotional fashion-drama intensity, and polished
+    adult-romance clarity
   key_features: Runway silhouettes, stitch-texture cues, fashion detail, angular romantic posing, night-glamour polish
   creative_brief: >-
-    Cut the input into runway heartbreak chic: black-cherry silhouettes,
-    magenta-plum emotional pressure, garment-structure contours, stitch detail,
-    and spotlight/backstage contrast can fashionize any subject without requiring
-    a catwalk, model, studio, or literal breakup.
+    Cut the input into runway heartbreak chic: black-cherry silhouettes, magenta-plum emotional pressure,
+    garment-structure contours, stitch detail, and spotlight/backstage contrast can fashionize any subject
+    without requiring a catwalk, model, studio, or literal breakup.
 avoidRules:
   - realistic
   - 3d render
@@ -42,7 +53,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-185.webp
 attributes:
-  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
+  negativePrompt: >-
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts,
+    watermark, text, signature
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle

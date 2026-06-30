@@ -13,19 +13,23 @@ tags:
   - 3d-styles
 visualDna:
   aesthetic: Shaded topology overlay
-  form_and_line: White wires over grey model
-  color_palette: Grey and White, wire-color contrast
-  lighting_setup: Studio, dual-pass render
-  material_texture: Grid overlay, topology linework
-  render_quality: Making-of, technical, breakdown beauty
-  atmosphere: Educational, process, design-transparency
+  subject_treatment: White wires over grey model
+  color_and_tone: Grey and White, wire-color contrast
+  lighting_and_shadow: Studio, dual-pass render
+  texture_and_material: Grid overlay, topology linework
+  camera_and_composition: >-
+    Lookdev camera for Wireframe on Shaded: three-quarter or orthographic framing, clean silhouette read,
+    material highlights, controlled depth, and vertical card composition.
+  atmosphere_and_mood: Educational, process, design-transparency
+  rendering_and_quality: Making-of, technical, breakdown beauty
   key_features: Wire overlay, shaded+wireframe combo
   creative_brief: >-
-    Overlay the input with shaded-wireframe construction: visible topology, glowing edge flow, material surface retained
-    beneath technical linework. Treat mesh logic as graphic pattern; do not require a model turntable or peeled-skin
-    object. Apply Wireframe on Shaded as a portable 3D/render style system over any input: preserve its renderer logic,
-    material behavior, geometry language, lighting grammar, and production cues while avoiding a required character,
-    vehicle, prop, environment, UI screen, product shot, or scene template.
+    Overlay the input with shaded-wireframe construction: visible topology, glowing edge flow, material
+    surface retained beneath technical linework. Treat mesh logic as graphic pattern; do not require a model
+    turntable or peeled-skin object. Apply Wireframe on Shaded as a portable 3D/render style system over any
+    input: preserve its renderer logic, material behavior, geometry language, lighting grammar, and production
+    cues while avoiding a required character, vehicle, prop, environment, UI screen, product shot, or scene
+    template.
 avoidRules:
   - clean render
 assets:

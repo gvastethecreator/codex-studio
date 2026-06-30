@@ -13,18 +13,18 @@ tags:
   - geometric-abstraction
 visualDna:
   aesthetic: Tessellated star pattern
-  form_and_line: Interlaced lines
-  color_palette: Gold, Blue, Turquoise
-  lighting_setup: Flat
-  material_texture: Tile, mosaic
-  render_quality: Sacred geometry, precise
-  spatial_distortion: None
-  atmosphere: Divine, orderly
+  subject_treatment: Interlaced lines
+  color_and_tone: Gold, Blue, Turquoise
+  lighting_and_shadow: Flat
+  texture_and_material: Tile, mosaic
+  camera_and_composition: 'Compose for Islamic Geometric using its key spatial cues: Radial symmetry.'
+  atmosphere_and_mood: Divine, orderly
+  rendering_and_quality: Sacred geometry, precise
   key_features: Radial symmetry
   creative_brief: >-
-    Apply Islamic geometric order to the input: star lattices, interlocking
-    tessellations, radial symmetry, and disciplined repetition should turn any
-    subject into devotional pattern logic without requiring architecture.
+    Apply Islamic geometric order to the input: star lattices, interlocking tessellations, radial symmetry,
+    and disciplined repetition should turn any subject into devotional pattern logic without requiring
+    architecture.
 avoidRules:
   - figurative
   - random

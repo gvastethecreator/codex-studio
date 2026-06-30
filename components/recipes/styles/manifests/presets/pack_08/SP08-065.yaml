@@ -13,21 +13,22 @@ tags:
   - fantasy-sci-fi-costume
 visualDna:
   aesthetic: Neon grid suiting, electroluminescent circuit couture, digital frontier energy
-  form_and_line: >-
-    Glowing linework, hex-circuit geometry, modular panel segmentation, emitter
-    plates and luminescent contour breaks
-  color_palette: Black + Cyan, grid-blue, emitter white, amber-iso, hot orange, deep-circuit black
-  lighting_setup: Self-illuminated, emissive-glow bloom, dark-grid contrast, disc-edge rim light
-  material_texture: Light, electroluminescent panel, matte neoprene, polycarbonate plate, luminous-flex circuit, silicone grip
-  render_quality: Sci-fi digital polish, crisp emissive edges, neon circuit couture without franchise literalism
-  spatial_distortion: None
-  atmosphere: Future, tech, grid-frontier freedom, data-stream electricity, programmatic drama
+  subject_treatment: >-
+    Glowing linework, hex-circuit geometry, modular panel segmentation, emitter plates and luminescent contour
+    breaks
+  color_and_tone: Black + Cyan, grid-blue, emitter white, amber-iso, hot orange, deep-circuit black
+  lighting_and_shadow: Self-illuminated, emissive-glow bloom, dark-grid contrast, disc-edge rim light
+  texture_and_material: Light, electroluminescent panel, matte neoprene, polycarbonate plate, luminous-flex circuit, silicone grip
+  camera_and_composition: >-
+    Compose for Neon Light Suit using its key spatial cues: Cyan circuit tracery, illuminated piping, matte
+    black panels, emitter-disc accents and modular EL seams.
+  atmosphere_and_mood: Future, tech, grid-frontier freedom, data-stream electricity, programmatic drama
+  rendering_and_quality: Sci-fi digital polish, crisp emissive edges, neon circuit couture without franchise literalism
   key_features: Cyan circuit tracery, illuminated piping, matte black panels, emitter-disc accents and modular EL seams
   creative_brief: >-
-    Convert the input into neon grid suiting: cyan circuit lines, matte neoprene,
-    electroluminescent panels, emitter-plate glow and black-cyan contrast. Keep
-    digital frontier energy while avoiding a required bodysuit wearer, franchise
-    icon, vehicle, arena, helmet visor silhouette or floor-grid scene.
+    Convert the input into neon grid suiting: cyan circuit lines, matte neoprene, electroluminescent panels,
+    emitter-plate glow and black-cyan contrast. Keep digital frontier energy while avoiding a required
+    bodysuit wearer, franchise icon, vehicle, arena, helmet visor silhouette or floor-grid scene.
 avoidRules:
   - franchise icon
   - helmet visor

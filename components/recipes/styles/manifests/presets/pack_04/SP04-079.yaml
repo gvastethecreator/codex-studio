@@ -13,19 +13,19 @@ tags:
   - ink-and-print
 visualDna:
   aesthetic: Gothic blackletter calligraphy with architectural stroke logic
-  form_and_line: Broad-nib vertical stress, diamond joins, angular counters
-  color_palette: Dense black ink, parchment beige, muted antique gold accents
-  lighting_setup: Mostly flat manuscript illumination with subtle warm edge lift
-  material_texture: Fibrous parchment grain with slight ink feather control
-  render_quality: Formal, weighty, high-discipline lettering with ornamental restraint
-  spatial_distortion: Structured ornament extension without breaking text rhythm
-  atmosphere: Liturgical, solemn, archival, ceremonial stillness
+  subject_treatment: Broad-nib vertical stress, diamond joins, angular counters
+  color_and_tone: Dense black ink, parchment beige, muted antique gold accents
+  lighting_and_shadow: Mostly flat manuscript illumination with subtle warm edge lift
+  texture_and_material: Fibrous parchment grain with slight ink feather control
+  camera_and_composition: Structured ornament extension without breaking text rhythm
+  atmosphere_and_mood: Liturgical, solemn, archival, ceremonial stillness
+  rendering_and_quality: Formal, weighty, high-discipline lettering with ornamental restraint
   key_features: Strong vertical columns, broken curves, tight spacing cadence, serifed terminals
   creative_brief: >-
-    Apply blackletter calligraphic architecture to any input: nib-angle rhythm, vertical compression, thorned terminals,
-    dense counters, ink pooling, ruled spacing, and manuscript-like texture. If the prompt has no text, translate forms
-    into ornamental blackletter strokes without requiring readable words, scrolls, religious manuscript scenes, or
-    literal documents.
+    Apply blackletter calligraphic architecture to any input: nib-angle rhythm, vertical compression, thorned
+    terminals, dense counters, ink pooling, ruled spacing, and manuscript-like texture. If the prompt has no
+    text, translate forms into ornamental blackletter strokes without requiring readable words, scrolls,
+    religious manuscript scenes, or literal documents.
 avoidRules:
   - round
   - modern

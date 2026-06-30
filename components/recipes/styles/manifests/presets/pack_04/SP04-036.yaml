@@ -13,19 +13,18 @@ tags:
   - editorial-and-poster
 visualDna:
   aesthetic: Dada-style cut-and-paste photomontage collage
-  form_and_line: Hard scissor-cut boundaries and abrupt fragment intersections
-  color_palette: Found-image sepia/grayscale base with selective accent insertions
-  lighting_setup: Intentionally inconsistent source-light continuity across fragments
-  material_texture: Halftone dots, paper edges, print-scan wear artifacts
-  render_quality: Deliberate anti-polish collage assembly with conceptual friction
-  spatial_distortion: Hybridized object-body juxtapositions and scale discontinuities
-  atmosphere: Rebellious, absurdist, provocative
+  subject_treatment: Hard scissor-cut boundaries and abrupt fragment intersections
+  color_and_tone: Found-image sepia/grayscale base with selective accent insertions
+  lighting_and_shadow: Intentionally inconsistent source-light continuity across fragments
+  texture_and_material: Halftone dots, paper edges, print-scan wear artifacts
+  camera_and_composition: Hybridized object-body juxtapositions and scale discontinuities
+  atmosphere_and_mood: Rebellious, absurdist, provocative
+  rendering_and_quality: Deliberate anti-polish collage assembly with conceptual friction
   key_features: Visible seams, torn edges, fragment clash composition
   creative_brief: >-
-    Apply Dada photomontage collage to any input: hard scissor seams, mismatched fragments, halftone
-    wear, source-light contradiction, and abrupt scale discontinuity should create conceptual
-    friction without requiring human bodies, newspapers, manifestos, politics, or fixed found-image
-    scenes.
+    Apply Dada photomontage collage to any input: hard scissor seams, mismatched fragments, halftone wear,
+    source-light contradiction, and abrupt scale discontinuity should create conceptual friction without
+    requiring human bodies, newspapers, manifestos, politics, or fixed found-image scenes.
 avoidRules:
   - seamless
   - painted

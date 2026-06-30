@@ -13,19 +13,18 @@ tags:
   - drawing-and-sketching
 visualDna:
   aesthetic: Realistic pencil drawing
-  form_and_line: Precise shading, sharp lines
-  color_palette: Greyscale, graphite sheen
-  lighting_setup: Value based
-  material_texture: Paper tooth, smudge
-  render_quality: Academic, detailed
-  spatial_distortion: None
-  atmosphere: Studious, quiet
+  subject_treatment: Precise shading, sharp lines
+  color_and_tone: Greyscale, graphite sheen
+  lighting_and_shadow: Value based
+  texture_and_material: Paper tooth, smudge
+  camera_and_composition: 'Compose for Graphite Pencil using its key spatial cues: Graphite texture.'
+  atmosphere_and_mood: Studious, quiet
+  rendering_and_quality: Academic, detailed
   key_features: Graphite texture
   creative_brief: >-
-    Apply graphite-pencil rendering to any input: pressure-built grey values,
-    paper tooth, soft blending, crisp line accents, erased highlights, and subtle
-    metallic sheen. Keep patient drawing craft without requiring sketchbooks,
-    portraits, academic studies, or visible artist tools.
+    Apply graphite-pencil rendering to any input: pressure-built grey values, paper tooth, soft blending,
+    crisp line accents, erased highlights, and subtle metallic sheen. Keep patient drawing craft without
+    requiring sketchbooks, portraits, academic studies, or visible artist tools.
 avoidRules:
   - photo
   - realistic
@@ -45,7 +44,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP06-016.webp
 attributes:
-  negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border
+  negativePrompt: >-
+    photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy,
+    watermark, text, signature, frame, border
 taxonomy:
   packId: pack_06
   packName: Essential Art Styles

@@ -12,18 +12,18 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'wet cyberpunk digital-painting card built around rain-slick street-corner fragments reflected in black glass with courier silhouettes and non-readable kernel-code glow.',
-      form_and_line:
+      subject_treatment:
         'Sharp but simplified network geometry, non-readable signal-panel rhythm, a few thick cable paths, wet reflections, and hacker-era silhouettes. Core composition uses kernel glow, courier silhouettes, cable gutters, rain glass, and layered reflection blocks.',
-      color_palette: 'acid green, black glass, magenta rain, sodium gold',
-      lighting_setup:
+      color_and_tone: 'acid green, black glass, magenta rain, sodium gold',
+      lighting_and_shadow:
         'flat neon color blocks, non-readable code-panel glow, simple backlight, matte rain color shapes',
-      material_texture:
+      texture_and_material:
         'matte charcoal glass planes, wet-as-color asphalt blocks, acrylic signal panels, thick fiber cable paths, raincoat silhouettes',
-      render_quality:
-        'Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity, moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material simulation, or hyper-detail.',
-      spatial_distortion:
+      camera_and_composition:
         'Dense urban slices, service doors, clinics, relays, roofs, and alleys with clear subject hierarchy. Keep depth legible and avoid default hallway, aisle, or empty studio staging.',
-      atmosphere: 'fast, paranoid, humid, data-soaked',
+      atmosphere_and_mood: 'fast, paranoid, humid, data-soaked',
+      rendering_and_quality:
+        'Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity, moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material simulation, or hyper-detail.',
       key_features:
         'kernel glow, courier silhouettes, cable gutters, rain glass, layered reflection blocks',
       creative_brief:
@@ -39,18 +39,18 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'street mesh cyberpunk poster built around a compact mesh-network exchange with antenna canopies, modded coats, and luminous barter tech.',
-      form_and_line:
+      subject_treatment:
         'Sharp but simplified network geometry, non-readable signal-panel rhythm, a few thick cable paths, wet reflections, and hacker-era silhouettes. Core composition uses mesh antennas, modded coats, canopy silhouettes, wearable/hanging nodes, and steam color layers.',
-      color_palette: 'teal neon, hot pink, black tarp, warm noodle steam',
-      lighting_setup:
+      color_and_tone: 'teal neon, hot pink, black tarp, warm noodle steam',
+      lighting_and_shadow:
         'flat stall LED color blocks, hanging mesh-node glow, matte canopy color shapes',
-      material_texture:
+      texture_and_material:
         'tarp planes, plastic crate blocks, thick wet wire paths, warm steam layers, chrome mod accents',
-      render_quality:
-        'Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity, moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material simulation, or hyper-detail.',
-      spatial_distortion:
+      camera_and_composition:
         'Dense urban slices, service doors, clinics, relays, roofs, and alleys with clear subject hierarchy. Keep depth legible and avoid default hallway, aisle, or empty studio staging.',
-      atmosphere: 'tactile, social, illicit, compressed',
+      atmosphere_and_mood: 'tactile, social, illicit, compressed',
+      rendering_and_quality:
+        'Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity, moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material simulation, or hyper-detail.',
       key_features:
         'mesh antennas, modded coats, canopy silhouettes, wearable/hanging nodes, steam layers',
       creative_brief:
@@ -66,17 +66,17 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'netpunk rooftop relay as a flat-to-painterly poster card built around crews building pirate mesh relays from antennas, batteries, and improvised repeaters.',
-      form_and_line:
+      subject_treatment:
         'Sharp but simplified network geometry, non-readable signal rhythm, a few thick cable paths, matte rooftop planes, and hacker-era silhouettes. Core composition uses antenna arrays, battery crates, rooftop crews, signal beams, taped hardware.',
-      color_palette: 'night blue, hazard orange, bare aluminum, monitor cyan',
-      lighting_setup:
+      color_and_tone: 'night blue, hazard orange, bare aluminum, monitor cyan',
+      lighting_and_shadow:
         'flat moonlit roof edges, hazard-orange signal arcs, tower beacon color dots, simple spark blocks',
-      material_texture: 'antenna rods, duct tape, battery packs, concrete, windbreaker nylon',
-      render_quality:
-        'Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity, moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material simulation, or hyper-detail.',
-      spatial_distortion:
+      texture_and_material: 'antenna rods, duct tape, battery packs, concrete, windbreaker nylon',
+      camera_and_composition:
         'Dense urban slices, service doors, clinics, relays, roofs, and alleys with clear subject hierarchy. Keep depth legible and avoid default hallway, aisle, or empty studio staging.',
-      atmosphere: 'DIY, illegal, windy, focused',
+      atmosphere_and_mood: 'DIY, illegal, windy, focused',
+      rendering_and_quality:
+        'Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity, moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material simulation, or hyper-detail.',
       key_features: 'antenna arrays, battery crates, rooftop crews, signal beams, taped hardware',
       creative_brief:
         'Netpunk as infrastructure rebellion: one rooftop network runner, visible skyline hardware, and improvised networks, no corporate chrome showroom. Keep the result representative rather than over-abstract; make one character in their environment the anchor, with motifs as background, costume, weather, architecture, or social pressure instead of a foreground prop. Favor flat-to-painterly editorial illustration, gouache poster aesthetics, clean graphic-novel card art, or stylized animation-background art over realism, photoreal photoreal painterly realism, cinematic key art, scratchy print noise, or hyper-detailed concept art. Use few bold color/value zones, low-to-moderate texture, large shapes, clean surfaces, shallow poster depth, and finish denoised with no excessive noise or ultra-fine detail.',
@@ -91,17 +91,18 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'commons cyberdefense as a flat-to-painterly poster card built around shield-like light blooms around public terminals and volunteers.',
-      form_and_line:
+      subject_treatment:
         'Sharp but simplified network geometry, non-readable civic signal rhythm, a few thick cable paths, matte color planes, and hacker-era silhouettes. Core composition uses shield blooms, volunteer clusters, terminal rings, cable paths, civic badges without text.',
-      color_palette: 'deep blue, firewall orange, civic white, jade green',
-      lighting_setup: 'projected shield color blocks, soft terminal rings, warm civic light planes',
-      material_texture:
+      color_and_tone: 'deep blue, firewall orange, civic white, jade green',
+      lighting_and_shadow:
+        'projected shield color blocks, soft terminal rings, warm civic light planes',
+      texture_and_material:
         'public terminals, simple table planes, thick cable paths, denim color blocks, translucent non-readable shield light',
-      render_quality:
-        'Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity, moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material simulation, or hyper-detail.',
-      spatial_distortion:
+      camera_and_composition:
         'Dense urban slices, service doors, clinics, relays, roofs, and alleys with clear subject hierarchy. Keep depth legible and avoid default hallway, aisle, or empty studio staging.',
-      atmosphere: 'protective, collaborative, quietly heroic',
+      atmosphere_and_mood: 'protective, collaborative, quietly heroic',
+      rendering_and_quality:
+        'Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity, moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material simulation, or hyper-detail.',
       key_features:
         'shield blooms, volunteer clusters, terminal rings, cable braids, civic badges without text',
       creative_brief:
@@ -117,17 +118,17 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'high-contrast hacker courier as a flat-to-painterly poster card built around a courier cutting through black-ice data lanes, matte coat shapes, frozen interface shards, and hostile security light.',
-      form_and_line:
+      subject_treatment:
         'Sharp but simplified network geometry, non-readable lane rhythm, a few thick cable paths, matte dark planes, and hacker-era silhouettes. Core composition uses black ice shards, courier motion, red security beams, coat shape, data lane markings.',
-      color_palette: 'blue black, white cyan, red alert, chrome gray',
-      lighting_setup: 'hard cyan rim block, red alarm slabs, flat ice glow',
-      material_texture:
+      color_and_tone: 'blue black, white cyan, red alert, chrome gray',
+      lighting_and_shadow: 'hard cyan rim block, red alarm slabs, flat ice glow',
+      texture_and_material:
         'matte coat shapes, glass-shard silhouettes, flat chrome-gray accents, frost-like color blocks, black asphalt plane',
-      render_quality:
-        'Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity, moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material simulation, or hyper-detail.',
-      spatial_distortion:
+      camera_and_composition:
         'Dense urban slices, service doors, clinics, relays, roofs, and alleys with clear subject hierarchy. Keep depth legible and avoid default hallway, aisle, or empty studio staging.',
-      atmosphere: 'dangerous, fast, cold, precise',
+      atmosphere_and_mood: 'dangerous, fast, cold, precise',
+      rendering_and_quality:
+        'Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity, moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material simulation, or hyper-detail.',
       key_features:
         'black ice shards, courier motion, red security beams, reflective coat, data lane markings',
       creative_brief:
@@ -143,18 +144,18 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'signalpunk infrastructure shrine as a flat-to-painterly poster card built around an electrical substation treated as public signal infrastructure with coils, tokens, and maintenance operators.',
-      form_and_line:
+      subject_treatment:
         'Sharp but simplified network geometry, non-readable signal rhythm, a few thick cable paths, matte infrastructure planes, and hacker-era silhouettes. Core composition uses coil halos, signal tokens, maintenance figures, ceramic insulators, simplified fence geometry.',
-      color_palette: 'electric blue, oxidized copper, concrete gray, warning yellow',
-      lighting_setup:
+      color_and_tone: 'electric blue, oxidized copper, concrete gray, warning yellow',
+      lighting_and_shadow:
         'flat coil corona, electric-blue color blocks, simple spark arcs, dusk sky plane',
-      material_texture:
+      texture_and_material:
         'copper arcs, porcelain insulator blocks, concrete planes, matte utility shapes, rubber glove color accents',
-      render_quality:
-        'Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity, moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material simulation, or hyper-detail.',
-      spatial_distortion:
+      camera_and_composition:
         'Dense urban slices, service doors, clinics, relays, roofs, and alleys with clear subject hierarchy. Keep depth legible and avoid default hallway, aisle, or empty studio staging.',
-      atmosphere: 'charged, devotional, infrastructural',
+      atmosphere_and_mood: 'charged, devotional, infrastructural',
+      rendering_and_quality:
+        'Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity, moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material simulation, or hyper-detail.',
       key_features:
         'coil halos, signal tokens, maintenance figures, ceramic insulators, fence geometry',
       creative_brief:
@@ -170,18 +171,18 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'street drone cyberpunk as a flat-to-painterly poster card built around overpass crews painting abstract color fields with small tool-drones and hacked traffic-light dots.',
-      form_and_line:
+      subject_treatment:
         'Sharp but simplified network geometry, non-readable street rhythm, a few thick cable paths, matte concrete planes, and hacker-era silhouettes. Core composition uses paint drones, abstract spray blocks, overpass concrete, crew gestures, hacked lights.',
-      color_palette: 'spray red, toxic green, concrete gray, black night',
-      lighting_setup:
+      color_and_tone: 'spray red, toxic green, concrete gray, black night',
+      lighting_and_shadow:
         'drone LED color dots, flat projection color blocks, traffic-light cuts, underpass shadow planes',
-      material_texture:
+      texture_and_material:
         'abstract spray paint blocks, concrete planes, simple drone shells, matte dust, jacket color shapes',
-      render_quality:
-        'Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity, moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material simulation, or hyper-detail.',
-      spatial_distortion:
+      camera_and_composition:
         'Dense urban slices, service doors, clinics, relays, roofs, and alleys with clear subject hierarchy. Keep depth legible and avoid default hallway, aisle, or empty studio staging.',
-      atmosphere: 'playful, illegal, kinetic, urban',
+      atmosphere_and_mood: 'playful, illegal, kinetic, urban',
+      rendering_and_quality:
+        'Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity, moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material simulation, or hyper-detail.',
       key_features:
         'paint drones, projection mist, overpass concrete, crew gestures, hacked lights',
       creative_brief:
@@ -197,18 +198,18 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'underground med-cyberpunk as a flat-to-painterly clinic-threshold poster card built around humane caregivers, mod patients, simple tool trays, non-readable monitor glow, and rainlit entry color.',
-      form_and_line:
+      subject_treatment:
         'Sharp but simplified network geometry, non-readable clinic rhythm, a few thick cable paths, matte threshold planes, and hacker-era silhouettes. Core composition uses clinic door glow, flat tool trays, modded patients, compact monitors, rain threshold.',
-      color_palette: 'surgical teal, black vinyl, blood red accent, white neon',
-      lighting_setup:
+      color_and_tone: 'surgical teal, black vinyl, blood red accent, white neon',
+      lighting_and_shadow:
         'clinical neon color blocks, non-readable monitor glow, rainlit doorway shape, cold overhead strips as flat planes',
-      material_texture:
+      texture_and_material:
         'broad vinyl curtain plane, flat tool trays, wet coat shapes, polymer color accents, medical glass blocks',
-      render_quality:
-        'Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity, moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material simulation, or hyper-detail.',
-      spatial_distortion:
+      camera_and_composition:
         'Dense urban slices, service doors, clinics, relays, roofs, and alleys with clear subject hierarchy. Keep depth legible and avoid default hallway, aisle, or empty studio staging.',
-      atmosphere: 'intimate, risky, precise, humane',
+      atmosphere_and_mood: 'intimate, risky, precise, humane',
+      rendering_and_quality:
+        'Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity, moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material simulation, or hyper-detail.',
       key_features:
         'clinic door glow, chrome trays, modded patients, compact monitors, rain threshold',
       creative_brief:

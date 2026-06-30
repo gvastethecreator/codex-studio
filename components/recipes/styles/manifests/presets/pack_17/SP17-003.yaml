@@ -15,13 +15,19 @@ tags:
   - grimdark
 visualDna:
   aesthetic: Muddy war-torn medieval fantasy staged like a brutal siege chronicle.
-  subject_treatment: A weather-beaten siege beast, broken ram, or monster-hauler with tiny exhausted soldiers around it, emphasizing war machinery over another knight portrait.
+  subject_treatment: >-
+    A weather-beaten siege beast, broken ram, or monster-hauler with tiny exhausted soldiers around it,
+    emphasizing war machinery over another knight portrait.
   color_and_tone: Iron black, clay brown, old blood red accents, smoke gray, and pale winter sky.
-  lighting_and_shadow: Simplified smoky daylight and torch accents keep the image severe while preserving readable midtones and clean silhouettes.
+  lighting_and_shadow: >-
+    Simplified smoky daylight and torch accents keep the image severe while preserving readable midtones and
+    clean silhouettes.
   texture_and_material: Mud, chainmail, rough wool, chipped shields, wet timber, battered stone, and soot.
   camera_and_composition: Crowded foregrounds, diagonal siege lines, compressed perspective, and documentary battle staging.
   atmosphere_and_mood: Harsh, political, desperate, and unsentimental while avoiding graphic injury.
-  rendering_and_quality: Gritty historical-fantasy illustration with controlled grime, sharp drawn armor detail, and clean atmospheric planes.
+  rendering_and_quality: >-
+    Gritty historical-fantasy illustration with controlled grime, sharp drawn armor detail, and clean
+    atmospheric planes.
   creative_brief: Converts subjects into grim medieval war imagery with mud, pressure, and siege logic as the style engine.
 avoidRules:
   - clean costume drama
@@ -33,6 +39,8 @@ avoidRules:
   - text
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP17-003.webp
+attributes:
+  negativePrompt: clean costume drama, bright fairy tale, glossy armor, heroic poster pose, explicit gore, watermark, text
 taxonomy:
   packId: pack_17
   packName: Medieval Fantasy & Dungeon Zine

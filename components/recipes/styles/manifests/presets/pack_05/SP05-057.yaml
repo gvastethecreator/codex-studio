@@ -13,34 +13,32 @@ tags:
   - mecha-and-cyberpunk
 visualDna:
   aesthetic: >-
-    Sleek post-collapse tenderness where polished fragility, sunset loneliness, floral-tech
-    melancholy, and engineered intimacy carry emotion
-  form_and_line: >-
-    Smooth aerodynamic contours, delicate hard-edge panel accents, paired silhouette tension, and
-    vulnerable negative-space framing.
-  color_palette: >-
-    Peach sunset, pale rose, white polymer, cool blue-gray, soft red accents, and muted violet
-    shadow.
-  lighting_setup: >-
-    Sunset backlight, soft specular skin, cool technical fill, warm rim glow, and quiet bloom around
-    emotional focal points.
-  material_texture: >-
-    Polished synthetic cloth, enamel shell surfaces, soft petal-like highlights, dust haze, and
-    clean composite sheen.
-  render_quality: >-
-    Premium glossy anime finish with emotional clarity, sleek surface control, and bittersweet
-    high-detail restraint.
-  spatial_distortion: >-
-    Intimate compression against broad empty space, soft horizon drag, and paired-vector composition
-    without fixed setting.
-  atmosphere: Vulnerable, sleek, bittersweet, romantic
+    Sleek post-collapse tenderness where polished fragility, sunset loneliness, floral-tech melancholy, and
+    engineered intimacy carry emotion
+  subject_treatment: >-
+    Smooth aerodynamic contours, delicate hard-edge panel accents, paired silhouette tension, and vulnerable
+    negative-space framing.
+  color_and_tone: Peach sunset, pale rose, white polymer, cool blue-gray, soft red accents, and muted violet shadow.
+  lighting_and_shadow: >-
+    Sunset backlight, soft specular skin, cool technical fill, warm rim glow, and quiet bloom around emotional
+    focal points.
+  texture_and_material: >-
+    Polished synthetic cloth, enamel shell surfaces, soft petal-like highlights, dust haze, and clean
+    composite sheen.
+  camera_and_composition: >-
+    Intimate compression against broad empty space, soft horizon drag, and paired-vector composition without
+    fixed setting.
+  atmosphere_and_mood: Vulnerable, sleek, bittersweet, romantic
+  rendering_and_quality: >-
+    Premium glossy anime finish with emotional clarity, sleek surface control, and bittersweet high-detail
+    restraint.
   key_features: >-
-    Paired-silhouette rhythm, petal-tech motifs, sunset ruin color, polished melancholy, fragile
-    intimacy, and glossy edge softness
+    Paired-silhouette rhythm, petal-tech motifs, sunset ruin color, polished melancholy, fragile intimacy, and
+    glossy edge softness
   creative_brief: >-
-    Use sleek collapse romance as fragile-engineered tenderness grammar. Any prompt should feel
-    lonely, polished, hopeful, and post-catastrophic. Operators, suits, ruins, alarms, equipment,
-    and romance scenes are optional.
+    Use sleek collapse romance as fragile-engineered tenderness grammar. Any prompt should feel lonely,
+    polished, hopeful, and post-catastrophic. Operators, suits, ruins, alarms, equipment, and romance scenes
+    are optional.
 avoidRules:
   - realistic
   - 3d render
@@ -58,8 +56,8 @@ assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-057.webp
 attributes:
   negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, text, signature
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts,
+    watermark, text, signature
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds

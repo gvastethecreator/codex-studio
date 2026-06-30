@@ -13,19 +13,22 @@ tags:
   - fantasy-sci-fi-costume
 visualDna:
   aesthetic: Xeno-couture editorial logic with late-90s sci-fi energy, synthetic rebellion and artificial glamour.
-  form_and_line: Strange cutouts, geometric-negative-space, structural strap lattice, asymmetrical paneling, tab-constructed sleeves
-  color_palette: Orange, Plastic, optic-white, safety-yellow, chrome, rubber-black, sky-blue, metallic-mint
-  lighting_setup: Bright sci-fi editorial glow, chrome-reflection bounce, sterile overhead, neon-advertisement spill
-  material_texture: Orange rubber, clear plastic, chrome vinyl, white elastic webbing, molded neoprene, holographic PVC
-  render_quality: Futuristic couture precision with weird synthetic material clarity and editorial spectacle.
-  spatial_distortion: None
-  atmosphere: Xeno-fashion attitude, zero-g couture poise, cosmic glamour and rebellious artificiality
+  subject_treatment: >-
+    Strange cutouts, geometric-negative-space, structural strap lattice, asymmetrical paneling,
+    tab-constructed sleeves
+  color_and_tone: Orange, Plastic, optic-white, safety-yellow, chrome, rubber-black, sky-blue, metallic-mint
+  lighting_and_shadow: Bright sci-fi editorial glow, chrome-reflection bounce, sterile overhead, neon-advertisement spill
+  texture_and_material: Orange rubber, clear plastic, chrome vinyl, white elastic webbing, molded neoprene, holographic PVC
+  camera_and_composition: >-
+    Compose for Alien Fashion using its key spatial cues: Straps, lattice harness cues, cutout geometry,
+    contrast stitching, utility ring.
+  atmosphere_and_mood: Xeno-fashion attitude, zero-g couture poise, cosmic glamour and rebellious artificiality
+  rendering_and_quality: Futuristic couture precision with weird synthetic material clarity and editorial spectacle.
   key_features: Straps, lattice harness cues, cutout geometry, contrast stitching, utility ring
   creative_brief: >-
-    Make the input feel designed by xeno-couture logic: orange rubber,
-    clear plastic, chrome vinyl, structural strap lattices, strange cutouts,
-    tab-built sleeves and utility rings. Keep late-90s sci-fi-fashion rebellion
-    without designer/IP references, space terminal, humanoid alien body, lab or runway lock.
+    Make the input feel designed by xeno-couture logic: orange rubber, clear plastic, chrome vinyl, structural
+    strap lattices, strange cutouts, tab-built sleeves and utility rings. Keep late-90s sci-fi-fashion
+    rebellion without designer/IP references, space terminal, humanoid alien body, lab or runway lock.
 avoidRules:
   - ordinary casualwear
   - designer reference

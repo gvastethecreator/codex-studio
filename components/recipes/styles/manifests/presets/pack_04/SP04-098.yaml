@@ -12,28 +12,34 @@ tags:
   - illustration-and-graphic-novel
   - concept-art
 visualDna:
-  aesthetic: Mythic hand-drafted cartographic illustration with ornamental navigation grammar and editorial worldbuilding clarity
-  form_and_line: Calligraphic contour hierarchy, iconographic terrain symbols, radial navigation geometry, decorative border cadence
-  color_palette: >-
-    Aged parchment neutrals, iron-gall sepia ink, oxidized teal accents, muted mineral greens, restrained vermillion
-    highlights
-  lighting_setup: >-
+  aesthetic: >-
+    Mythic hand-drafted cartographic illustration with ornamental navigation grammar and editorial
+    worldbuilding clarity
+  subject_treatment: >-
+    Calligraphic contour hierarchy, iconographic terrain symbols, radial navigation geometry, decorative
+    border cadence
+  color_and_tone: >-
+    Aged parchment neutrals, iron-gall sepia ink, oxidized teal accents, muted mineral greens, restrained
+    vermillion highlights
+  lighting_and_shadow: >-
     Uniform document-style illumination, low-specular paper response, subtle edge-vignette to emphasize plate
     readability
-  material_texture: Fibrous vellum grain, dry-ink bleed, pressure-variant line deposition, fold-memory wear, wax-like residue details
-  render_quality: >-
-    High-fidelity illustrated atlas plate finish with controlled print-era imperfections and deliberate artisan
-    irregularity
-  spatial_distortion: Orthographic map-plane logic with symbolic scale compression and layered annotation depth
-  atmosphere: Scholarly, arcane, exploratory, archival, crafted for interpretive reading rather than literal realism
+  texture_and_material: >-
+    Fibrous vellum grain, dry-ink bleed, pressure-variant line deposition, fold-memory wear, wax-like residue
+    details
+  camera_and_composition: Orthographic map-plane logic with symbolic scale compression and layered annotation depth
+  atmosphere_and_mood: Scholarly, arcane, exploratory, archival, crafted for interpretive reading rather than literal realism
+  rendering_and_quality: >-
+    High-fidelity illustrated atlas plate finish with controlled print-era imperfections and deliberate
+    artisan irregularity
   key_features: >-
-    Compass geometry motifs, rhumb-line rhythm, cartouche typography framing, etched terrain icon system, weathered
-    paper patina
+    Compass geometry motifs, rhumb-line rhythm, cartouche typography framing, etched terrain icon system,
+    weathered paper patina
   creative_brief: >-
-    Apply illustrated world-map/carto graphic style to any input: parchment texture, route marks, contour coastlines,
-    inset cartouches, rhumb-line geometry, terrain icons, and aged ink. If no geography exists, turn the subject into an
-    abstract cartographic system without requiring a fictional place, compass centerpiece, readable labels, or literal
-    map accuracy.
+    Apply illustrated world-map/carto graphic style to any input: parchment texture, route marks, contour
+    coastlines, inset cartouches, rhumb-line geometry, terrain icons, and aged ink. If no geography exists,
+    turn the subject into an abstract cartographic system without requiring a fictional place, compass
+    centerpiece, readable labels, or literal map accuracy.
 avoidRules:
   - accurate
   - satellite

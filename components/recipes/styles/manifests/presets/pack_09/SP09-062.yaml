@@ -13,22 +13,22 @@ tags:
   - elemental-and-fx
 visualDna:
   aesthetic: Falling paper bits
-  form_and_line: Rectangles
-  color_palette: Multi-colored
-  lighting_setup: Flat
-  material_texture: Paper
-  render_quality: Celebration, mess
-  spatial_distortion: Falling
-  atmosphere: Happy, party
+  subject_treatment: Rectangles
+  color_and_tone: Multi-colored
+  lighting_and_shadow: Flat
+  texture_and_material: Paper
+  camera_and_composition: Falling
+  atmosphere_and_mood: Happy, party
+  rendering_and_quality: Celebration, mess
   key_features: Random rotation
   creative_brief: >-
-    Compose the joyful chaos of confetti suspended mid-fall in a frozen blizzard of colored rectangles, each scrap a
-    tiny flag of celebration caught between release and landing, random rotation creating a sense of arrested motion
-    across the frame. The paper bits should feel weightless and plentiful, a democracy of color scattered by the physics
-    of joy. Capture celebration fragmented into geometry. Use Confetti as portable surface/render behavior over any
-    input: map its texture, light response, edge wear, color chemistry, and tactile rhythm onto the subject instead of
-    requiring a literal material sample, macro tile, wall, landscape, source object, or scene where the material
-    naturally appears.
+    Compose the joyful chaos of confetti suspended mid-fall in a frozen blizzard of colored rectangles, each
+    scrap a tiny flag of celebration caught between release and landing, random rotation creating a sense of
+    arrested motion across the frame. The paper bits should feel weightless and plentiful, a democracy of
+    color scattered by the physics of joy. Capture celebration fragmented into geometry. Use Confetti as
+    portable surface/render behavior over any input: map its texture, light response, edge wear, color
+    chemistry, and tactile rhythm onto the subject instead of requiring a literal material sample, macro tile,
+    wall, landscape, source object, or scene where the material naturally appears.
 avoidRules:
   - trash
 assets:

@@ -13,15 +13,20 @@ tags:
   - lighting-techniques
 visualDna:
   aesthetic: Light beams through fog
-  form_and_line: Visible beams
-  color_palette: Hazy
-  lighting_setup: Backlit shafts
-  material_texture: Dust motes
-  render_quality: Epic volumetric realism
-  spatial_distortion: None
-  atmosphere: Atmospheric, monumental
+  subject_treatment: Visible beams
+  color_and_tone: Hazy
+  lighting_and_shadow: Backlit shafts
+  texture_and_material: Dust motes
+  camera_and_composition: >-
+    Camera setup native to God Rays (Volumetric): lens choice, crop distance, depth of field, and focal
+    hierarchy support 2. Lighting Techniques without generic framing.
+  atmosphere_and_mood: Atmospheric, monumental
+  rendering_and_quality: Epic volumetric realism
   key_features: Light shafts
-  creative_brief: Backlight becomes visible architecture through fog, dust, and suspended atmosphere. Use volumetric shafts, drifting motes, and monumental diffusion to transform any subject with tangible light; avoid turning the preset into a literal cathedral or religious setting.
+  creative_brief: >-
+    Backlight becomes visible architecture through fog, dust, and suspended atmosphere. Use volumetric shafts,
+    drifting motes, and monumental diffusion to transform any subject with tangible light; avoid turning the
+    preset into a literal cathedral or religious setting.
 avoidRules:
   - clear air
 assets:

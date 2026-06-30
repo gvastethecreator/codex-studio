@@ -14,16 +14,36 @@ tags:
   - necrotech
   - repair-shop
 visualDna:
-  aesthetic: necrotech audio repair built around one distinctive repairer protagonist, antique phones, bone-white receivers, hand-tuned copper coils, and ghostly audio lines implying absent voices.
-  form_and_line: Ritual diagrams, gothic silhouettes, folk hardware, talismanic machines, and mythic street-level staging. Core composition uses a medium-crop necrotech repairer, oversized phone receiver, compact repair bench, ghost audio lines, hand gesture, copper coils.
-  color_palette: ivory, black bakelite, sickly green, warm wood
-  lighting_setup: simple dusty window light, phosphor audio glow, one soft bench glow
-  material_texture: bakelite, bone resin, wood benches, copper wire, dust
-  render_quality: Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity, moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material simulation, or hyper-detail.
-  spatial_distortion: Switchyards, foundries, chapels, cairns, repair shops, salons, processions, and rural transformers. Keep depth legible and avoid default hallway, aisle, or empty studio staging.
-  atmosphere: eerie, tender, antique, technical
+  aesthetic: >-
+    necrotech audio repair built around one distinctive repairer protagonist, antique phones, bone-white
+    receivers, hand-tuned copper coils, and ghostly audio lines implying absent voices.
+  subject_treatment: >-
+    Ritual diagrams, gothic silhouettes, folk hardware, talismanic machines, and mythic street-level staging.
+    Core composition uses a medium-crop necrotech repairer, oversized phone receiver, compact repair bench,
+    ghost audio lines, hand gesture, copper coils.
+  color_and_tone: ivory, black bakelite, sickly green, warm wood
+  lighting_and_shadow: simple dusty window light, phosphor audio glow, one soft bench glow
+  texture_and_material: bakelite, bone resin, wood benches, copper wire, dust
+  camera_and_composition: >-
+    Switchyards, foundries, chapels, cairns, repair shops, salons, processions, and rural transformers. Keep
+    depth legible and avoid default hallway, aisle, or empty studio staging.
+  atmosphere_and_mood: eerie, tender, antique, technical
+  rendering_and_quality: >-
+    Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly
+    planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity,
+    moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material
+    simulation, or hyper-detail.
   key_features: necrotech repairer protagonist, oversized phone receiver, repair bench, ghost audio lines, copper coils
-  creative_brief: 'Necrotech as repair craft and communication with absence: one distinctive repairer protagonist at medium crop, oversized phone receiver, compact repair bench, phosphor audio waves, copper coils, and no gore or monster spectacle. Character must carry the preset through face/hood silhouette, hand gesture, listening/tuning pose, and audio-craft attitude; phone machinery supports them, never replaces them. Avoid object-only phone poster, technician crew, cluttered shop, lamp-lit realism, worker propaganda, or RPG character styling. Use curated editorial style-card structure, flat graphic illustration, gouache-poster shapes, cel-poster blocking, and controlled digital painting over realism or generic concept art. Use few bold color/value zones, large matte shapes, clean surfaces, low-to-moderate detail, and finish denoised with no excessive noise or ultra-fine detail.'
+  creative_brief: >-
+    Necrotech as repair craft and communication with absence: one distinctive repairer protagonist at medium
+    crop, oversized phone receiver, compact repair bench, phosphor audio waves, copper coils, and no gore or
+    monster spectacle. Character must carry the preset through face/hood silhouette, hand gesture,
+    listening/tuning pose, and audio-craft attitude; phone machinery supports them, never replaces them. Avoid
+    object-only phone poster, technician crew, cluttered shop, lamp-lit realism, worker propaganda, or RPG
+    character styling. Use curated editorial style-card structure, flat graphic illustration, gouache-poster
+    shapes, cel-poster blocking, and controlled digital painting over realism or generic concept art. Use few
+    bold color/value zones, large matte shapes, clean surfaces, low-to-moderate detail, and finish denoised
+    with no excessive noise or ultra-fine detail.
 avoidRules:
   - photoreal
   - watermark
@@ -37,7 +57,21 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP15-061.webp
 attributes:
-  negativePrompt: photoreal, hyperreal, realistic render, photoreal painterly realism, cinematic realism, AAA key art, photographic skin pores, realistic foreground portrait, realistic facial hair detail, lens blur, bokeh, depth-of-field photo look, crescent marks, wall emblems, clothing symbols, religious shapes, skull, ghost face, monster, gore, seance table, readable phone labels, shop signs, wall of tiny tools, bench-lamp hero, cluttered repair desk, haunted room corridor, photoreal dust, generic soldier hero, guard pin-up, weapon-first pose, HDR lens realism, 3D render look, PBR material simulation, hyper-detailed concept art, watermark, text, logo, generic style, over-abstract, interchangeable preset, duplicated motifs, generic glass utopia, unmotivated market aisle, unmotivated library aisle, fantasy corridor, random camera held by subject, studio wall fixation, chair fixation, curtain fixation, lamp fixation, scarf fixation, pedestal fixation, bird fixation, excessive noise, ultra-fine detail, over-sharpened microtexture, over-rendered machinery, noisy grime, tiny rivets everywhere, busy texture chatter, realistic uniform portrait, uniformed officer hero, foreground guard portrait, detailed tattoo focus, dense machinery wallpaper, overcrowded scene, high-frequency surface detail, cinematic close-up portrait, flat black fill, crushed black, pure black masses, muddy black fields, generic American illustration, generic Western RPG card art
+  negativePrompt: >-
+    photoreal, hyperreal, realistic render, photoreal painterly realism, cinematic realism, AAA key art,
+    photographic skin pores, realistic foreground portrait, realistic facial hair detail, lens blur, bokeh,
+    depth-of-field photo look, crescent marks, wall emblems, clothing symbols, religious shapes, skull, ghost
+    face, monster, gore, seance table, readable phone labels, shop signs, wall of tiny tools, bench-lamp hero,
+    cluttered repair desk, haunted room corridor, photoreal dust, generic soldier hero, guard pin-up,
+    weapon-first pose, HDR lens realism, 3D render look, PBR material simulation, hyper-detailed concept art,
+    watermark, text, logo, generic style, over-abstract, interchangeable preset, duplicated motifs, generic
+    glass utopia, unmotivated market aisle, unmotivated library aisle, fantasy corridor, random camera held by
+    subject, studio wall fixation, chair fixation, curtain fixation, lamp fixation, scarf fixation, pedestal
+    fixation, bird fixation, excessive noise, ultra-fine detail, over-sharpened microtexture, over-rendered
+    machinery, noisy grime, tiny rivets everywhere, busy texture chatter, realistic uniform portrait,
+    uniformed officer hero, foreground guard portrait, detailed tattoo focus, dense machinery wallpaper,
+    overcrowded scene, high-frequency surface detail, cinematic close-up portrait, flat black fill, crushed
+    black, pure black masses, muddy black fields, generic American illustration, generic Western RPG card art
 taxonomy:
   packId: pack_15
   packName: Punk Spectrum Vault

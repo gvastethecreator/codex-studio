@@ -16,7 +16,9 @@ visualDna:
   subject_treatment: Shape any subject into bold side-view forms, negative-space cutouts, and traversal-readable contours.
   color_and_tone: Deep cool shadows, muted midtones, rare toxic accents, and strong foreground/background value splits.
   lighting_and_shadow: Rim-biased side lighting with luminous pockets, heavy occlusion, and atmosphere-separated planes.
-  texture_and_material: Pixel clusters, mossy noise, mineral-like speckle, and subtle animated-glow implications without fixed scenery.
+  texture_and_material: >-
+    Pixel clusters, mossy noise, mineral-like speckle, and subtle animated-glow implications without fixed
+    scenery.
   camera_and_composition: Wide side-on composition, layered planes, strong platform-read silhouette rhythm, and stable sprite scale.
   atmosphere_and_mood: Lonely, exploratory, mysterious tone without requiring caverns, platforms, doors, or creatures.
   rendering_and_quality: Pixel-perfect edges, parallax-ready depth separation, no painterly blur, no overdetail.
@@ -32,7 +34,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP06-103.webp
 attributes:
-  negativePrompt: motion blur, inconsistent proportions, changing costume, background scene, literal cavern requirement, platform requirement, watermark, text
+  negativePrompt: >-
+    motion blur, inconsistent proportions, changing costume, background scene, literal cavern requirement,
+    platform requirement, watermark, text
   layout:
     preferredFrameCount: 8
     frameGrid: 4x2

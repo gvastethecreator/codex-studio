@@ -11,20 +11,20 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Institutional liminal horror centered on everyday order becoming psychologically unstable through subtle visual dissonance.',
-      form_and_line:
+      subject_treatment:
         'Slightly misregistered contours, straight bureaucratic lines that warp near the vanishing point, and peripheral figure suggestions.',
-      color_palette:
+      color_and_tone:
         'Fluorescent sick-green, chalk gray, nicotine beige, and restrained coagulated-red warning accents.',
-      lighting_setup:
+      lighting_and_shadow:
         'Intermittent overhead flicker pattern with alternating dead zones that create uncertain visibility cadence.',
-      material_texture:
+      texture_and_material:
         'Damp paint bloom, worn synthetic sheen, stained panel surfaces, and particulate haze.',
-      render_quality:
-        'Precise anime readability with unease-first composition, preserving mundane detail while inserting controlled anomalies.',
-      spatial_distortion:
+      camera_and_composition:
         'Tunnel-like institutional perspective stretched beyond comfort, with micro-tilt and depth drag near thresholds.',
-      atmosphere:
+      atmosphere_and_mood:
         'Social emptiness, anticipatory dread, and the feeling of being observed by architecture itself.',
+      rendering_and_quality:
+        'Precise anime readability with unease-first composition, preserving mundane detail while inserting controlled anomalies.',
       key_features:
         'Repeating institutional modules, uncertain reflections, failed flicker intervals, and threshold interruptions.',
       creative_brief:
@@ -39,19 +39,20 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Folkloric celestial horror where omen iconography dominates scale, silhouette, and emotional tonality.',
-      form_and_line:
+      subject_treatment:
         'Thin spectral contours, elongated drapery vectors, and stark silhouette cutouts against high-contrast sky masses.',
-      color_palette:
+      color_and_tone:
         'Saturated blood-crimson sky field, void-black landforms, chalk-ash highlights, and desaturated bone undertones.',
-      lighting_setup:
+      lighting_and_shadow:
         'Strong backlit celestial core with fog-driven edge bloom, keeping subjects semi-occluded and symbol-first.',
-      material_texture:
+      texture_and_material:
         'Vapor-heavy mist layers, brittle branch textures, weathered cloth translucency, and powder-dry ground surfaces.',
-      render_quality:
-        'High-impact mythic readability with deliberate shape economy and controlled atmospheric granulation.',
-      spatial_distortion:
+      camera_and_composition:
         'Vast negative-space composition where scale disproportion makes figures appear cosmically overruled.',
-      atmosphere: 'Omen fatalism, ancestral unease, and sacred fear under an indifferent sky.',
+      atmosphere_and_mood:
+        'Omen fatalism, ancestral unease, and sacred fear under an indifferent sky.',
+      rendering_and_quality:
+        'High-impact mythic readability with deliberate shape economy and controlled atmospheric granulation.',
       key_features:
         'Celestial disc dominance, suspended silhouettes, windless stillness, and barren horizon separators.',
       creative_brief:
@@ -66,20 +67,20 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Grotesque performance-horror language where theatrical elegance is corrupted by marionette anatomy and staged cruelty.',
-      form_and_line:
+      subject_treatment:
         'Twitchy contour cadence, joint segmentation, and drapery-driven framing lines that trap the focal subject.',
-      color_palette:
+      color_and_tone:
         'Congealed burgundy, nicotine ivory, oxidized brass hints, and ink-black shadow basins.',
-      lighting_setup:
+      lighting_and_shadow:
         'Isolated spotlight with aggressive falloff, leaving peripheral planes in predatory darkness.',
-      material_texture:
+      texture_and_material:
         'Splintered timber, dust-saturated velvet, cracked lacquered surfaces, and dry residue buildup.',
-      render_quality:
-        'Disturbingly crisp foreground forms against smeared peripheral darkness to sustain visual discomfort.',
-      spatial_distortion:
+      camera_and_composition:
         'Proscenium-like compression with shallow-depth pressure that makes subjects feel pinned to the viewing plane.',
-      atmosphere:
+      atmosphere_and_mood:
         'Claustrophobic spectacle, involuntary audience dread, and ritualized manipulation.',
+      rendering_and_quality:
+        'Disturbingly crisp foreground forms against smeared peripheral darkness to sustain visual discomfort.',
       key_features:
         'Marionette morphology cues, torn drapery vectors, black void patterning, and central fixation points.',
       creative_brief:
@@ -94,20 +95,20 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Void-centered horror built on subtraction, silence, and the oppressive pull of a central absence.',
-      form_and_line:
+      subject_treatment:
         'Sparse somber linework, low-detail peripheral elements, and circular anchoring forms that repeatedly return attention to the void.',
-      color_palette:
+      color_and_tone:
         'Cold indigo wash, peat-black moisture zones, mineral gray fog, and faint desaturated cyan reflections.',
-      lighting_setup:
+      lighting_and_shadow:
         'Diffuse nocturnal top-light with weak ground bounce, preserving deep occlusion around cavity edges.',
-      material_texture:
+      texture_and_material:
         'Water-dark stone porosity, saturated soil clumps, frayed fiber cues, and mist-laden air density.',
-      render_quality:
-        'Minimalist high-control rendering that avoids visual noise and concentrates dread through shape economy.',
-      spatial_distortion:
+      camera_and_composition:
         'Open negative-space layout with gravitational pull toward the central cavity and suppressed horizon cues.',
-      atmosphere:
+      atmosphere_and_mood:
         'Listening-state tension, desolation, and the conviction that something waits below perception.',
+      rendering_and_quality:
+        'Minimalist high-control rendering that avoids visual noise and concentrates dread through shape economy.',
       key_features:
         'Circular void anchors, moisture halos, decayed functional traces, and thin low-lying fog sheets in void-first framing.',
       creative_brief:
@@ -122,20 +123,20 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Ceremonial demonic folklore horror combining shrine-like precision with feral ritual escalation and symbolic intimidation.',
-      form_and_line:
+      subject_treatment:
         'Hard mask-like silhouettes, talismanic pattern bands, and radial gesture lines that imply invocation cycles.',
-      color_palette:
+      color_and_tone:
         'Oxblood reds, ash-black fields, smoke-brown mids, and tarnished gold ritual accents.',
-      lighting_setup:
+      lighting_and_shadow:
         'Low fire-ring illumination with stochastic shadow dance, emphasizing mask contours and gesture focality.',
-      material_texture:
+      texture_and_material:
         'Lacquer crackle, charred timber grain, wax drips, ash particulates, and scorched fabric edges.',
-      render_quality:
-        'High-impact folkloric clarity with aggressive focal contrast and controlled peripheral obscurity.',
-      spatial_distortion:
+      camera_and_composition:
         'Circular rite composition with centripetal pull, as if all geometry is bending toward the invocation core.',
-      atmosphere:
+      atmosphere_and_mood:
         'Taboo ceremony, escalating dread, and primal authority made visual through symbols and heat.',
+      rendering_and_quality:
+        'High-impact folkloric clarity with aggressive focal contrast and controlled peripheral obscurity.',
       key_features:
         'Dominant demonic visage language, ember ring systems, talisman clusters, and invocation choreography through heat shimmer.',
       creative_brief:

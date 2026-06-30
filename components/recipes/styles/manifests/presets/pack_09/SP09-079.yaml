@@ -13,22 +13,23 @@ tags:
   - natural-materials
 visualDna:
   aesthetic: Inside of shell
-  form_and_line: Layers
-  color_palette: Iridescent White/Pink
-  lighting_setup: Pearlescent
-  material_texture: Smooth, organic
-  render_quality: Precious, natural
-  spatial_distortion: Curved
-  atmosphere: Delicate, ocean
+  subject_treatment: Layers
+  color_and_tone: Iridescent White/Pink
+  lighting_and_shadow: Pearlescent
+  texture_and_material: Smooth, organic
+  camera_and_composition: Curved
+  atmosphere_and_mood: Delicate, ocean
+  rendering_and_quality: Precious, natural
   key_features: Luster
   creative_brief: >-
-    Compose the luminous interior of nautilus shell where iridescent layers shift between white, pink, and pale green
-    like a pastel aurora frozen in calcium, pearlescent light swimming across the curved surface without source or
-    destination. The material should glow without emitting, reflecting a spectrum that seems to come from nowhere within
-    the shell's architecture. Capture the ocean's quietest masterpiece, luster born of slow patience. Use Mother of
-    Pearl as portable surface/render behavior over any input: map its texture, light response, edge wear, color
-    chemistry, and tactile rhythm onto the subject instead of requiring a literal material sample, macro tile, wall,
-    landscape, source object, or scene where the material naturally appears.
+    Compose the luminous interior of nautilus shell where iridescent layers shift between white, pink, and
+    pale green like a pastel aurora frozen in calcium, pearlescent light swimming across the curved surface
+    without source or destination. The material should glow without emitting, reflecting a spectrum that seems
+    to come from nowhere within the shell's architecture. Capture the ocean's quietest masterpiece, luster
+    born of slow patience. Use Mother of Pearl as portable surface/render behavior over any input: map its
+    texture, light response, edge wear, color chemistry, and tactile rhythm onto the subject instead of
+    requiring a literal material sample, macro tile, wall, landscape, source object, or scene where the
+    material naturally appears.
 avoidRules:
   - plastic
 assets:

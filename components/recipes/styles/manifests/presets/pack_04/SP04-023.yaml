@@ -13,19 +13,18 @@ tags:
   - ink-and-print
 visualDna:
   aesthetic: Scratchboard engraving language with subtractive light reveal
-  form_and_line: White incised strokes on black ground, varying incision density
-  color_palette: Strict black-white inverse contrast system
-  lighting_setup: Highlight structure carved through negative subtraction
-  material_texture: Knife/scratch marks, hatch scratches, burr-like edge chatter
-  render_quality: Intricate high-contrast detail with printlike precision
-  spatial_distortion: Stable proportions, depth suggested via hatch frequency
-  atmosphere: Nocturnal, theatrical, mysterious
+  subject_treatment: White incised strokes on black ground, varying incision density
+  color_and_tone: Strict black-white inverse contrast system
+  lighting_and_shadow: Highlight structure carved through negative subtraction
+  texture_and_material: Knife/scratch marks, hatch scratches, burr-like edge chatter
+  camera_and_composition: Stable proportions, depth suggested via hatch frequency
+  atmosphere_and_mood: Nocturnal, theatrical, mysterious
+  rendering_and_quality: Intricate high-contrast detail with printlike precision
   key_features: Dark-field base, luminous scratch marks, reverse-value composition
   creative_brief: >-
-    Apply scratchboard inversion to any input: remove darkness through incision rhythm, hatch
-    density, burr-like chatter, and directional scratch patterns to define focal hierarchy without
-    requiring animals, night scenes, portraits, theatrical props, or fixed black-ground
-    compositions.
+    Apply scratchboard inversion to any input: remove darkness through incision rhythm, hatch density,
+    burr-like chatter, and directional scratch patterns to define focal hierarchy without requiring animals,
+    night scenes, portraits, theatrical props, or fixed black-ground compositions.
 avoidRules:
   - white background
 assets:

@@ -13,15 +13,18 @@ tags:
   - lighting-techniques
 visualDna:
   aesthetic: Circular frontal lighting
-  form_and_line: Ring catchlight geometry
-  color_palette: Even, bright
-  lighting_setup: Frontal circle
-  material_texture: Smooth even surface
-  render_quality: Clean creator-studio realism
-  spatial_distortion: Flat frontal depth
-  atmosphere: Modern, clean
+  subject_treatment: Ring catchlight geometry
+  color_and_tone: Even, bright
+  lighting_and_shadow: Frontal circle
+  texture_and_material: Smooth even surface
+  camera_and_composition: Flat frontal depth
+  atmosphere_and_mood: Modern, clean
+  rendering_and_quality: Clean creator-studio realism
   key_features: Ring catchlight
-  creative_brief: Circular frontal light erases harsh shadow and leaves a signature ring reflection wherever surfaces can catch it. Use creator-studio evenness, flat frontal depth, and polished visibility on any subject without requiring eyes, faces, makeup, or influencer context.
+  creative_brief: >-
+    Circular frontal light erases harsh shadow and leaves a signature ring reflection wherever surfaces can
+    catch it. Use creator-studio evenness, flat frontal depth, and polished visibility on any subject without
+    requiring eyes, faces, makeup, or influencer context.
 avoidRules:
   - shadows
 assets:

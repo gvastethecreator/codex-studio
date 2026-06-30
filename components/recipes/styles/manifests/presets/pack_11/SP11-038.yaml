@@ -13,19 +13,20 @@ tags:
   - aesthetics
 visualDna:
   aesthetic: Biopunk flesh-tech hybrid design with recombinant-lab aesthetics
-  form_and_line: Veins, flesh, sinew-strand contours, tendril-tangle, organic-tube networks
-  color_palette: Pink, Green, Flesh, viscera-spectrum, bile-yellow, hemoglobin-crimson, amniotic-amber, bruise-purple
-  lighting_setup: Wet, slime, fluorescent-incubator, surgical-key, mucous-membrane sheen, bioreactor-glow
-  material_texture: Organic matter, membrane-film, pulsating-tissue, slime-coat, chitin-shell, grown-not-built surface
-  render_quality: Visceral speculative bio-design with high organic detail density
-  spatial_distortion: Mutations, extra-limb growth, asymmetric-organ placement, tumor-bud emergence, fused-anatomy
-  atmosphere: Unsettling, biological, lab-grown, accelerated-evolution, recombinant-anxiety
-  key_features: Flesh tubes, umbilical-cord coils, amniotic-fluid drip, pulsating-vein networks, grown-eye clusters, chitin-plate armor
+  subject_treatment: Veins, flesh, sinew-strand contours, tendril-tangle, organic-tube networks
+  color_and_tone: Pink, Green, Flesh, viscera-spectrum, bile-yellow, hemoglobin-crimson, amniotic-amber, bruise-purple
+  lighting_and_shadow: Wet, slime, fluorescent-incubator, surgical-key, mucous-membrane sheen, bioreactor-glow
+  texture_and_material: Organic matter, membrane-film, pulsating-tissue, slime-coat, chitin-shell, grown-not-built surface
+  camera_and_composition: Mutations, extra-limb growth, asymmetric-organ placement, tumor-bud emergence, fused-anatomy
+  atmosphere_and_mood: Unsettling, biological, lab-grown, accelerated-evolution, recombinant-anxiety
+  rendering_and_quality: Visceral speculative bio-design with high organic detail density
+  key_features: >-
+    Flesh tubes, umbilical-cord coils, amniotic-fluid drip, pulsating-vein networks, grown-eye clusters,
+    chitin-plate armor
   creative_brief: >-
-    Transform the input through biopunk material logic: soft tissue, vascular
-    networks, engineered growth seams, wet translucency, asymmetrical mutation,
-    and lab-grown cues. Keep the result coherent and biological without
-    requiring a vivisection table, specimen chamber, or fixed creature design.
+    Transform the input through biopunk material logic: soft tissue, vascular networks, engineered growth
+    seams, wet translucency, asymmetrical mutation, and lab-grown cues. Keep the result coherent and
+    biological without requiring a vivisection table, specimen chamber, or fixed creature design.
 avoidRules:
   - metal
   - dry

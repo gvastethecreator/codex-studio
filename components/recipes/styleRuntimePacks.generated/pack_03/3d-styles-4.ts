@@ -11,20 +11,20 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         "Claymation (Stop Motion) within 4. 3D Styles: a reusable 3D & CGI Rendering visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Claymation (Stop Motion)'s specific style identity.",
-      form_and_line:
+      subject_treatment:
         'Define Claymation (Stop Motion) through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
-      color_palette:
+      color_and_tone:
         'Use a Claymation (Stop Motion)-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
-      lighting_setup:
+      lighting_and_shadow:
         'Use lighting that makes Claymation (Stop Motion) recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
-      material_texture:
+      texture_and_material:
         'Use materials and textures that reinforce Claymation (Stop Motion): surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
-      render_quality:
-        'Render Claymation (Stop Motion) with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
-      spatial_distortion:
+      camera_and_composition:
         'Use spatial behavior that fits Claymation (Stop Motion): perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
-      atmosphere:
+      atmosphere_and_mood:
         'Set a mood that belongs to Claymation (Stop Motion): specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+      rendering_and_quality:
+        'Render Claymation (Stop Motion) with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       key_features:
         "Prioritize Claymation (Stop Motion)'s key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
@@ -38,12 +38,14 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'high poly, smooth, detailed',
     style: {
       aesthetic: 'Minimalist mesh',
-      form_and_line: 'Visible triangles',
-      color_palette: 'Flat shading, vibrant stylized tones',
-      lighting_setup: 'Baked AO, ambient-fill',
-      material_texture: 'None or gradient, facet-clean',
-      render_quality: 'Indie game, retro, geometric charm',
-      atmosphere: 'Simple, clean, polygon purity',
+      subject_treatment: 'Visible triangles',
+      color_and_tone: 'Flat shading, vibrant stylized tones',
+      lighting_and_shadow: 'Baked AO, ambient-fill',
+      texture_and_material: 'Flat color or gradient, facet-clean',
+      camera_and_composition:
+        'Lookdev camera for Low Poly: three-quarter or orthographic framing, clean silhouette read, material highlights, controlled depth, and vertical card composition.',
+      atmosphere_and_mood: 'Simple, clean, polygon purity',
+      rendering_and_quality: 'Indie game, retro, geometric charm',
       key_features: 'Facets, edge visibility',
       creative_brief:
         'Reduce the input to deliberate low-poly clarity: visible facets, flat-shaded planes, ambient-occlusion crease accents and vibrant indie-game color. Treat geometry as graphic design, not a forced game world or landscape. Apply Low Poly as a portable 3D/render style system over any input: preserve its renderer logic, material behavior, geometry language, lighting grammar, and production cues while avoiding a required character, vehicle, prop, environment, UI screen, product shot, or scene template.',
@@ -56,13 +58,13 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'curves, smooth',
     style: {
       aesthetic: 'Made of cubes',
-      form_and_line: 'Grid aligned',
-      color_palette: 'Vibrant',
-      lighting_setup: 'Global illumination',
-      material_texture: 'None, clean grid faces',
-      render_quality: 'Minecraft/MagicaVoxel voxel art, cube poetry',
-      spatial_distortion: 'Blocky',
-      atmosphere: 'Cute, digital, nostalgic sandbox',
+      subject_treatment: 'Grid aligned',
+      color_and_tone: 'Vibrant',
+      lighting_and_shadow: 'Global illumination',
+      texture_and_material: 'Flat clean grid faces',
+      camera_and_composition: 'Blocky',
+      atmosphere_and_mood: 'Cute, digital, nostalgic sandbox',
+      rendering_and_quality: 'Minecraft/MagicaVoxel voxel art, cube poetry',
       key_features: 'Cubes',
       creative_brief:
         'Resolve the input into voxel grammar: cubic sampling, visible grid logic, MagicaVoxel color blocks and soft GI over hard right angles. Keep sandbox nostalgia as construction style, without requiring a block world, terrain or Minecraft-style environment.',
@@ -75,12 +77,14 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'perspective, distortion',
     style: {
       aesthetic: 'Orthographic projection',
-      form_and_line: 'Parallel lines',
-      color_palette: 'Pastel, clean, gradient-friendly',
-      lighting_setup: 'Soft studio, shadow-casting consistency',
-      material_texture: 'Smooth, isometric-unity feel',
-      render_quality: 'Mobile game, icon, asset-store ready',
-      atmosphere: 'Organized, tiny, isometric clarity',
+      subject_treatment: 'Parallel lines',
+      color_and_tone: 'Pastel, clean, gradient-friendly',
+      lighting_and_shadow: 'Soft studio, shadow-casting consistency',
+      texture_and_material: 'Smooth, isometric-unity feel',
+      camera_and_composition:
+        'Lookdev camera for Isometric 3D: three-quarter or orthographic framing, clean silhouette read, material highlights, controlled depth, and vertical card composition.',
+      atmosphere_and_mood: 'Organized, tiny, isometric clarity',
+      rendering_and_quality: 'Mobile game, icon, asset-store ready',
       key_features: '30 degree angle, parallel projection',
       creative_brief:
         'Convert the input to clean isometric projection: locked parallel lines, thirty-degree tilt, pastel gradients and consistent soft shadows. Keep asset-store readability and miniature charm without requiring an everyday everyday setup, diorama world, or story vignette.',
@@ -93,12 +97,14 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'solid, textured',
     style: {
       aesthetic: 'Mesh topology view',
-      form_and_line: 'Glowing lines',
-      color_palette: 'Black background, Neon lines, glow contrast',
-      lighting_setup: 'None, self-illuminated edges',
-      material_texture: 'Grid, topology linework',
-      render_quality: 'Technical, blueprint, debug-preview',
-      atmosphere: 'Technical, cyber, developer aesthetic',
+      subject_treatment: 'Glowing lines',
+      color_and_tone: 'Black background, Neon lines, glow contrast',
+      lighting_and_shadow: 'Unlit self-illuminated edges',
+      texture_and_material: 'Grid, topology linework',
+      camera_and_composition:
+        'Lookdev camera for Wireframe Render: three-quarter or orthographic framing, clean silhouette read, material highlights, controlled depth, and vertical card composition.',
+      atmosphere_and_mood: 'Technical, cyber, developer aesthetic',
+      rendering_and_quality: 'Technical, blueprint, debug-preview',
       key_features: 'Topology, edge-flow visibility',
       creative_brief:
         'Strip the input to topology: neon edge loops, self-illuminated mesh lines, visible edge flow and debug-viewport elegance. No need for a standalone object or black void; the style is structure made visible. Apply Wireframe Render as a portable 3D/render style system over any input: preserve its renderer logic, material behavior, geometry language, lighting grammar, and production cues while avoiding a required character, vehicle, prop, environment, UI screen, product shot, or scene template.',
@@ -111,12 +117,14 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'messy, piled',
     style: {
       aesthetic: 'Disassembled parts arranged',
-      form_and_line: '90 degree angles',
-      color_palette: 'Clean background, component contrast',
-      lighting_setup: 'Top down, shadow-free',
-      material_texture: 'Clean parts, disassembly beauty',
-      render_quality: 'Organized exploded-layout clarity',
-      atmosphere: 'Satisfying, organized, design-museum',
+      subject_treatment: '90 degree angles',
+      color_and_tone: 'Clean background, component contrast',
+      lighting_and_shadow: 'Top down, shadow-free',
+      texture_and_material: 'Clean parts, disassembly beauty',
+      camera_and_composition:
+        'Overhead orthographic flat-lay composition with measured spacing, clean object separation, and strong negative-space rhythm for Knolling (Flat Lay).',
+      atmosphere_and_mood: 'Satisfying, organized, design-museum',
+      rendering_and_quality: 'Organized exploded-layout clarity',
       key_features: 'Grid layout, 90-degree arrangement',
       creative_brief:
         'Recompose the input as knolled structure: top-down orthographic order, right-angle spacing, exploded relationships and shadow-free museum clarity. If the subject has parts, separate them; otherwise translate its visual elements into a precise grid. Do not require a product teardown. Apply Knolling as a portable 3D/render style system over any input: preserve its renderer logic, material behavior, geometry language, lighting grammar, and production cues while avoiding a required character, vehicle, prop, environment, UI screen, product shot, or scene template.',
@@ -130,18 +138,20 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         "Metaballs within 4. 3D Styles: a reusable 3D & CGI Rendering visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Metaballs's specific style identity.",
-      form_and_line:
+      subject_treatment:
         'Define Metaballs through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
-      color_palette:
+      color_and_tone:
         'Use a Metaballs-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
-      lighting_setup:
+      lighting_and_shadow:
         'Use lighting that makes Metaballs recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
-      material_texture:
+      texture_and_material:
         'Use materials and textures that reinforce Metaballs: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
-      render_quality:
-        'Render Metaballs with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
-      atmosphere:
+      camera_and_composition:
+        'Lookdev camera for Metaballs: three-quarter or orthographic framing, clean silhouette read, material highlights, controlled depth, and vertical card composition.',
+      atmosphere_and_mood:
         'Set a mood that belongs to Metaballs: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+      rendering_and_quality:
+        'Render Metaballs with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       key_features:
         "Prioritize Metaballs's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
@@ -155,12 +165,14 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'polygons, sharp',
     style: {
       aesthetic: 'Mathematically perfect curves',
-      form_and_line: 'Flow lines',
-      color_palette: 'Zebra stripe reflection, curvature analysis',
-      lighting_setup: 'Studio check, highlight continuity',
-      material_texture: 'Glossy, class-A surface',
-      render_quality: 'CAD, automotive, manufacturing-grade',
-      atmosphere: 'Perfect, engineered, mathematical precision',
+      subject_treatment: 'Flow lines',
+      color_and_tone: 'Zebra stripe reflection, curvature analysis',
+      lighting_and_shadow: 'Studio check, highlight continuity',
+      texture_and_material: 'Glossy, class-A surface',
+      camera_and_composition:
+        'Lookdev camera for Nurbs Surface: three-quarter or orthographic framing, clean silhouette read, material highlights, controlled depth, and vertical card composition.',
+      atmosphere_and_mood: 'Perfect, engineered, mathematical precision',
+      rendering_and_quality: 'CAD, automotive, manufacturing-grade',
       key_features: 'Smoothness, G2 continuity',
       creative_brief:
         'Give the input NURBS-like surface discipline: mathematically smooth curves, zebra-stripe reflection checks, G2 continuity and class-A gloss. Automotive CAD language may guide the finish, but no car, fender, or design-studio setup is required. Apply Nurbs Surface as a portable 3D/render style system over any input: preserve its renderer logic, material behavior, geometry language, lighting grammar, and production cues while avoiding a required character, vehicle, prop, environment, UI screen, product shot, or scene template.',
@@ -173,12 +185,14 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'simple, clean',
     style: {
       aesthetic: 'Mandelbulb complexity',
-      form_and_line: 'Infinite detail',
-      color_palette: 'Psychedelic, infinite recursion tones',
-      lighting_setup: 'Deep shadows, cave-detail',
-      material_texture: 'Mathematical patterns, procedural surface',
-      render_quality: 'Math art, infinite, algorithmic wonder',
-      atmosphere: 'Trippy, alien, mind-bending',
+      subject_treatment: 'Infinite detail',
+      color_and_tone: 'Psychedelic, infinite recursion tones',
+      lighting_and_shadow: 'Deep shadows, cave-detail',
+      texture_and_material: 'Mathematical patterns, procedural surface',
+      camera_and_composition:
+        'Lookdev camera for Fractal 3D: three-quarter or orthographic framing, clean silhouette read, material highlights, controlled depth, and vertical card composition.',
+      atmosphere_and_mood: 'Trippy, alien, mind-bending',
+      rendering_and_quality: 'Math art, infinite, algorithmic wonder',
       key_features: 'Self-similarity, fractal recursion',
       creative_brief:
         'Infuse the input with fractal recursion: self-similar detail at multiple scales, Mandelbulb density, algorithmic ridges and psychedelic procedural color. Keep alien mathematical wonder without forcing a cathedral, cave or traversable fractal landscape. Apply Fractal 3D as a portable 3D/render style system over any input: preserve its renderer logic, material behavior, geometry language, lighting grammar, and production cues while avoiding a required character, vehicle, prop, environment, UI screen, product shot, or scene template.',
@@ -192,18 +206,20 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         "Glitch 3D within 4. 3D Styles: a reusable 3D & CGI Rendering visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Glitch 3D's specific style identity.",
-      form_and_line:
+      subject_treatment:
         'Define Glitch 3D through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
-      color_palette:
+      color_and_tone:
         'Use a Glitch 3D-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
-      lighting_setup:
+      lighting_and_shadow:
         'Use lighting that makes Glitch 3D recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
-      material_texture:
+      texture_and_material:
         'Use materials and textures that reinforce Glitch 3D: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
-      render_quality:
-        'Render Glitch 3D with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
-      atmosphere:
+      camera_and_composition:
+        'Lookdev camera for Glitch 3D: three-quarter or orthographic framing, clean silhouette read, material highlights, controlled depth, and vertical card composition.',
+      atmosphere_and_mood:
         'Set a mood that belongs to Glitch 3D: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+      rendering_and_quality:
+        'Render Glitch 3D with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       key_features:
         "Prioritize Glitch 3D's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
@@ -218,20 +234,20 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         "Toon Shader (Cel Shaded) within 4. 3D Styles: a reusable 3D & CGI Rendering visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Toon Shader (Cel Shaded)'s specific style identity.",
-      form_and_line:
+      subject_treatment:
         'Define Toon Shader (Cel Shaded) through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
-      color_palette:
+      color_and_tone:
         'Use a Toon Shader (Cel Shaded)-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
-      lighting_setup:
+      lighting_and_shadow:
         'Use lighting that makes Toon Shader (Cel Shaded) recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
-      material_texture:
+      texture_and_material:
         'Use materials and textures that reinforce Toon Shader (Cel Shaded): surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
-      render_quality:
-        'Render Toon Shader (Cel Shaded) with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
-      spatial_distortion:
+      camera_and_composition:
         'Use spatial behavior that fits Toon Shader (Cel Shaded): perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
-      atmosphere:
+      atmosphere_and_mood:
         'Set a mood that belongs to Toon Shader (Cel Shaded): specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+      rendering_and_quality:
+        'Render Toon Shader (Cel Shaded) with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       key_features:
         "Prioritize Toon Shader (Cel Shaded)'s key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
@@ -245,12 +261,14 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'clean render',
     style: {
       aesthetic: 'Shaded topology overlay',
-      form_and_line: 'White wires over grey model',
-      color_palette: 'Grey and White, wire-color contrast',
-      lighting_setup: 'Studio, dual-pass render',
-      material_texture: 'Grid overlay, topology linework',
-      render_quality: 'Making-of, technical, breakdown beauty',
-      atmosphere: 'Educational, process, design-transparency',
+      subject_treatment: 'White wires over grey model',
+      color_and_tone: 'Grey and White, wire-color contrast',
+      lighting_and_shadow: 'Studio, dual-pass render',
+      texture_and_material: 'Grid overlay, topology linework',
+      camera_and_composition:
+        'Lookdev camera for Wireframe on Shaded: three-quarter or orthographic framing, clean silhouette read, material highlights, controlled depth, and vertical card composition.',
+      atmosphere_and_mood: 'Educational, process, design-transparency',
+      rendering_and_quality: 'Making-of, technical, breakdown beauty',
       key_features: 'Wire overlay, shaded+wireframe combo',
       creative_brief:
         'Overlay the input with shaded-wireframe construction: visible topology, glowing edge flow, material surface retained beneath technical linework. Treat mesh logic as graphic pattern; do not require a model turntable or peeled-skin object. Apply Wireframe on Shaded as a portable 3D/render style system over any input: preserve its renderer logic, material behavior, geometry language, lighting grammar, and production cues while avoiding a required character, vehicle, prop, environment, UI screen, product shot, or scene template.',
@@ -264,20 +282,20 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         "Motion Graphics within 4. 3D Styles: a reusable 3D & CGI Rendering visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Motion Graphics's specific style identity.",
-      form_and_line:
+      subject_treatment:
         'Define Motion Graphics through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
-      color_palette:
+      color_and_tone:
         'Use a Motion Graphics-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
-      lighting_setup:
+      lighting_and_shadow:
         'Use lighting that makes Motion Graphics recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
-      material_texture:
+      texture_and_material:
         'Use materials and textures that reinforce Motion Graphics: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
-      render_quality:
-        'Render Motion Graphics with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
-      spatial_distortion:
+      camera_and_composition:
         'Use spatial behavior that fits Motion Graphics: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
-      atmosphere:
+      atmosphere_and_mood:
         'Set a mood that belongs to Motion Graphics: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+      rendering_and_quality:
+        'Render Motion Graphics with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       key_features:
         "Prioritize Motion Graphics's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
@@ -291,12 +309,14 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'flat text',
     style: {
       aesthetic: 'Letters made of objects',
-      form_and_line: 'Bold font',
-      color_palette: 'Vibrant, brand-expression hues',
-      lighting_setup: 'Studio, typographic readability',
-      material_texture: 'Material letters, physical texture',
-      render_quality: 'Adobe, design, headline-striking',
-      atmosphere: 'Bold, message, visual proclamation',
+      subject_treatment: 'Bold font',
+      color_and_tone: 'Vibrant, brand-expression hues',
+      lighting_and_shadow: 'Studio, typographic readability',
+      texture_and_material: 'Material letters, physical texture',
+      camera_and_composition:
+        'Lookdev camera for 3D Typography: three-quarter or orthographic framing, clean silhouette read, material highlights, controlled depth, and vertical card composition.',
+      atmosphere_and_mood: 'Bold, message, visual proclamation',
+      rendering_and_quality: 'Adobe, design, headline-striking',
       key_features: 'Readable, letterform sculpting',
       creative_brief:
         'Apply 3D typography logic to any input: bold letterform-like massing, material-built glyph structure, studio-lit bevels, extruded volume, readable silhouette rhythm, and brand-expression color. Keep typographic sculpture without requiring readable words, slogans, alphabet props, logos, or a headline composition.',
@@ -309,13 +329,13 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'flat, 2d icon',
     style: {
       aesthetic: 'App icon render',
-      form_and_line: 'Rounded corners',
-      color_palette: 'Vibrant, gradient',
-      lighting_setup: 'Soft studio',
-      material_texture: 'Smooth plastic/glass, UI-grade finish',
-      render_quality: 'macOS Big Sur glossy modern platform icon, squircle elegance',
-      spatial_distortion: 'Squircle',
-      atmosphere: 'Friendly, UI, app-store ready',
+      subject_treatment: 'Rounded corners',
+      color_and_tone: 'Vibrant, gradient',
+      lighting_and_shadow: 'Soft studio',
+      texture_and_material: 'Smooth plastic/glass, UI-grade finish',
+      camera_and_composition: 'Squircle',
+      atmosphere_and_mood: 'Friendly, UI, app-store ready',
+      rendering_and_quality: 'macOS Big Sur glossy modern platform icon, squircle elegance',
       key_features: 'Front facing, soft shadow base',
       creative_brief:
         'Compress the input into platform-icon language: squircle discipline, UI-grade plastic/glass, vibrant gradients, soft shadow grounding and front-facing legibility. Keep macOS Big Sur polish without requiring a literal app, drawer context or standalone object.',
@@ -329,20 +349,20 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         "Retro CGI (90s) within 4. 3D Styles: a reusable 3D & CGI Rendering visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Retro CGI (90s)'s specific style identity.",
-      form_and_line:
+      subject_treatment:
         'Define Retro CGI (90s) through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
-      color_palette:
+      color_and_tone:
         'Use a Retro CGI (90s)-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
-      lighting_setup:
+      lighting_and_shadow:
         'Use lighting that makes Retro CGI (90s) recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
-      material_texture:
+      texture_and_material:
         'Use materials and textures that reinforce Retro CGI (90s): surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
-      render_quality:
-        'Render Retro CGI (90s) with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
-      spatial_distortion:
+      camera_and_composition:
         'Use spatial behavior that fits Retro CGI (90s): perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
-      atmosphere:
+      atmosphere_and_mood:
         'Set a mood that belongs to Retro CGI (90s): specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+      rendering_and_quality:
+        'Render Retro CGI (90s) with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       key_features:
         "Prioritize Retro CGI (90s)'s key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
@@ -357,18 +377,20 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         "Clay UI within 4. 3D Styles: a reusable 3D & CGI Rendering visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Clay UI's specific style identity.",
-      form_and_line:
+      subject_treatment:
         'Define Clay UI through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
-      color_palette:
+      color_and_tone:
         'Use a Clay UI-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
-      lighting_setup:
+      lighting_and_shadow:
         'Use lighting that makes Clay UI recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
-      material_texture:
+      texture_and_material:
         'Use materials and textures that reinforce Clay UI: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
-      render_quality:
-        'Render Clay UI with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
-      atmosphere:
+      camera_and_composition:
+        'Lookdev camera for Clay UI: three-quarter or orthographic framing, clean silhouette read, material highlights, controlled depth, and vertical card composition.',
+      atmosphere_and_mood:
         'Set a mood that belongs to Clay UI: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+      rendering_and_quality:
+        'Render Clay UI with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       key_features:
         "Prioritize Clay UI's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
@@ -382,12 +404,14 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'realistic, fluid',
     style: {
       aesthetic: 'Virtual paper',
-      form_and_line: 'Fold lines',
-      color_palette: 'Paper texture, craft-material tones',
-      lighting_setup: 'Shadows between layers, folded depth',
-      material_texture: 'Paper grain, craft-cardstock',
-      render_quality: 'Craft, handmade feel, origami precision',
-      atmosphere: 'Creative, delicate, art-project warmth',
+      subject_treatment: 'Fold lines',
+      color_and_tone: 'Paper texture, craft-material tones',
+      lighting_and_shadow: 'Shadows between layers, folded depth',
+      texture_and_material: 'Paper grain, craft-cardstock',
+      camera_and_composition:
+        'Lookdev camera for Papercraft 3D: three-quarter or orthographic framing, clean silhouette read, material highlights, controlled depth, and vertical card composition.',
+      atmosphere_and_mood: 'Creative, delicate, art-project warmth',
+      rendering_and_quality: 'Craft, handmade feel, origami precision',
       key_features: 'Layered depth, fold-crease definition',
       creative_brief:
         'Translate the input into papercraft construction: cardstock grain, layered-sheet depth, fold creases, cut edges and warm craft lighting. Keep handmade precision without forcing craft-table context, glue props or a paper-built world.',
@@ -400,13 +424,13 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'smooth, melted',
     style: {
       aesthetic: 'Toy-brick construction, stud-and-tube logic',
-      form_and_line: 'Studs',
-      color_palette: 'Plastic primary colors, brick-bright palette',
-      lighting_setup: 'Plastic gloss, animated-film lighting',
-      material_texture: 'Plastic, fingerprints, ABS material',
-      render_quality: 'Lego Movie toy-brick feature energy, everything is awesome',
-      spatial_distortion: 'Brick steps',
-      atmosphere: 'Playful, constructive, brick-by-brick magic',
+      subject_treatment: 'Studs',
+      color_and_tone: 'Plastic primary colors, brick-bright palette',
+      lighting_and_shadow: 'Plastic gloss, animated-film lighting',
+      texture_and_material: 'Plastic, fingerprints, ABS material',
+      camera_and_composition: 'Brick steps',
+      atmosphere_and_mood: 'Playful, constructive, brick-by-brick magic',
+      rendering_and_quality: 'Lego Movie toy-brick feature energy, everything is awesome',
       key_features: 'Studs on top, clutch power',
       creative_brief:
         'Convert the input into toy-brick construction: studs, clutch-power seams, ABS gloss, primary-color modules and stepped approximations of curves. Keep Lego Movie feature energy without forcing a brick world, playset or specific setup.',
@@ -419,12 +443,14 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'curved, smooth',
     style: {
       aesthetic: 'Folded paper model',
-      form_and_line: 'Sharp creases',
-      color_palette: 'Paper, natural-fiber tones',
-      lighting_setup: 'Soft, fold-highlighting',
-      material_texture: 'Paper grain, crease-crisp',
-      render_quality: 'Geometric, craft, zen-precision',
-      atmosphere: 'Delicate, precise, folded poetry',
+      subject_treatment: 'Sharp creases',
+      color_and_tone: 'Paper, natural-fiber tones',
+      lighting_and_shadow: 'Soft, fold-highlighting',
+      texture_and_material: 'Paper grain, crease-crisp',
+      camera_and_composition:
+        'Lookdev camera for Origami 3D: three-quarter or orthographic framing, clean silhouette read, material highlights, controlled depth, and vertical card composition.',
+      atmosphere_and_mood: 'Delicate, precise, folded poetry',
+      rendering_and_quality: 'Geometric, craft, zen-precision',
       key_features: 'No cuts, pure-fold geometry',
       creative_brief:
         'Fold the input into origami logic: single-sheet discipline, crisp crease geometry, natural-fiber paper grain and curve-free faceted planes. Keep zen precision without forcing cranes, lotus forms or traditional subject matter. Apply Origami 3D as a portable 3D/render style system over any input: preserve its renderer logic, material behavior, geometry language, lighting grammar, and production cues while avoiding a required character, vehicle, prop, environment, UI screen, product shot, or scene template.',

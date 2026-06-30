@@ -13,19 +13,23 @@ tags:
   - lighting-and-atmosphere
 visualDna:
   aesthetic: Silhouette with edge glow
-  form_and_line: Glowing outline
-  color_palette: Dark subject, bright edge, silhouette contrast
-  lighting_setup: Backlight, edge-rim accent
-  material_texture: Contrast, rim-catch surfaces
-  render_quality: Dramatic, moody, hero-reveal
-  atmosphere: Mysterious, epic, cinematic tension
+  subject_treatment: Glowing outline
+  color_and_tone: Dark subject, bright edge, silhouette contrast
+  lighting_and_shadow: Backlight, edge-rim accent
+  texture_and_material: Contrast, rim-catch surfaces
+  camera_and_composition: >-
+    Lighting-study camera for Rim Lighting: stable three-quarter framing, visible depth layers, clear shadow
+    planes, and a vertical style-card crop.
+  atmosphere_and_mood: Mysterious, epic, cinematic tension
+  rendering_and_quality: Dramatic, moody, hero-reveal
   key_features: Edge highlight, halo definition
   creative_brief: >-
-    Use rim lighting as primary style: electric silhouette edges, dark falloff, halo separation and reveal-first
-    contrast. Preserve dramatic hero energy only as lighting attitude; do not require a character, face or step-forward
-    pose. Apply Rim Lighting as a portable 3D/render style system over any input: preserve its renderer logic, material
-    behavior, geometry language, lighting grammar, and production cues while avoiding a required character, vehicle,
-    prop, environment, UI screen, product shot, or scene template.
+    Use rim lighting as primary style: electric silhouette edges, dark falloff, halo separation and
+    reveal-first contrast. Preserve dramatic hero energy only as lighting attitude; do not require a
+    character, face or step-forward pose. Apply Rim Lighting as a portable 3D/render style system over any
+    input: preserve its renderer logic, material behavior, geometry language, lighting grammar, and production
+    cues while avoiding a required character, vehicle, prop, environment, UI screen, product shot, or scene
+    template.
 avoidRules:
   - front light
   - flat

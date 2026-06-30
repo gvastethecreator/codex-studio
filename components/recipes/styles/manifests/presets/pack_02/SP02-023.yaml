@@ -13,15 +13,21 @@ tags:
   - tv-and-broadcast
 visualDna:
   aesthetic: 1990s camcorder
-  form_and_line: None
-  color_palette: Color bleed, magenta shift, yellowed warmth, cyan fringe
-  lighting_setup: On-camera flash, built-in spotlight, clipped highlights
-  material_texture: Tracking lines, head-switching noise, tape dropout
-  render_quality: Nostalgic, bad, 240p mush, magnetic degradation
-  spatial_distortion: Glitch, tearing, horizontal displacement, time-base error
-  atmosphere: Memory, raw, unguarded nostalgia
+  subject_treatment: >-
+    Treat subjects as believable filmed or broadcast subjects under VHS Home Video: casting, wardrobe, props,
+    motion cues, and silhouette hierarchy follow 2. TV And Broadcast cinematic and broadcast grammar without
+    locking to one plot beat.
+  color_and_tone: Color bleed, magenta shift, yellowed warmth, cyan fringe
+  lighting_and_shadow: On-camera flash, built-in spotlight, clipped highlights
+  texture_and_material: Tracking lines, head-switching noise, tape dropout
+  camera_and_composition: Glitch, tearing, horizontal displacement, time-base error
+  atmosphere_and_mood: Memory, raw, unguarded nostalgia
+  rendering_and_quality: Nostalgic, bad, 240p mush, magnetic degradation
   key_features: Date stamp, REC indicator, zoom wobble
-  creative_brief: 'VHS home video turns any subject into magnetic memory: color bleed, magenta shift, tracking lines, head-switching noise, date-stamp feel, zoom wobble, and tape dropout. Keep camcorder nostalgia without requiring birthdays, childhood, faces, backyards, or family setups.'
+  creative_brief: >-
+    VHS home video turns any subject into magnetic memory: color bleed, magenta shift, tracking lines,
+    head-switching noise, date-stamp feel, zoom wobble, and tape dropout. Keep camcorder nostalgia without
+    requiring birthdays, childhood, faces, backyards, or family setups.
 avoidRules:
   - hd
   - digital

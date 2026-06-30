@@ -12,16 +12,24 @@ tags:
   - cinematic-and-media
   - caricature-and-cartoon-styles
 visualDna:
-  aesthetic: Hyper-detailed gross close-up reaction frame, wet swollen surfaces, oversized pores, painterly grossout timing, John Kricfalusi close-up cruelty, feverish cartoon texture, freeze-frame revulsion played for comedy
-  form_and_line: Wobbling brush contours, vibrating line weight, swollen micro-detail lines, irregular fleshy edging
-  color_palette: Inflamed flesh pinks, nicotine yellow, clammy teal shadows, rash-red irritation, greasy beige skin
-  lighting_setup: Harsh proximity lighting, bright wet sheen, overexposed glare, ugly reaction-frame illumination
-  material_texture: Pore-heavy surface, cracked folds, greasy shine, dried-gloss streaks, wobbling paint texture
-  render_quality: Close-up grossout cartoon perfection, painful facial detail, freeze-frame reaction absurdity, ugly on purpose
-  spatial_distortion: Subject crushing into lens space, bulging surface masses, swollen forward projection, off-axis pressure
-  atmosphere: Disgusted, frantic, hilarious, deeply unflattering
+  aesthetic: >-
+    Hyper-detailed gross close-up reaction frame, wet swollen surfaces, oversized pores, painterly grossout
+    timing, John Kricfalusi close-up cruelty, feverish cartoon texture, freeze-frame revulsion played for
+    comedy
+  subject_treatment: Wobbling brush contours, vibrating line weight, swollen micro-detail lines, irregular fleshy edging
+  color_and_tone: Inflamed flesh pinks, nicotine yellow, clammy teal shadows, rash-red irritation, greasy beige skin
+  lighting_and_shadow: Harsh proximity lighting, bright wet sheen, overexposed glare, ugly reaction-frame illumination
+  texture_and_material: Pore-heavy surface, cracked folds, greasy shine, dried-gloss streaks, wobbling paint texture
+  camera_and_composition: Subject crushing into lens space, bulging surface masses, swollen forward projection, off-axis pressure
+  atmosphere_and_mood: Disgusted, frantic, hilarious, deeply unflattering
+  rendering_and_quality: >-
+    Close-up grossout cartoon perfection, painful facial detail, freeze-frame reaction absurdity, ugly on
+    purpose
   key_features: Extreme close-up distortion, swollen detail, pore-level texture, trembling folds, wet cartoon strings
-  creative_brief: 'Use gross-up close-up language on any subject: invasive framing, pore-level detail, wet sheen, swollen folds, wobbling contours, and painterly revulsion. Avoid requiring faces, gums, lips, noses, or anatomy. Comedy should come from excessive proximity and unflattering texture.'
+  creative_brief: >-
+    Use gross-up close-up language on any subject: invasive framing, pore-level detail, wet sheen, swollen
+    folds, wobbling contours, and painterly revulsion. Avoid requiring faces, gums, lips, noses, or anatomy.
+    Comedy should come from excessive proximity and unflattering texture.
 avoidRules:
   - subtle
   - flattering

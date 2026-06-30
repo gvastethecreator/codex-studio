@@ -13,20 +13,20 @@ tags:
   - toys-and-crafts
 visualDna:
   aesthetic: Die-cut sticker, laptop-decal culture, street-art collectible, vinyl peel-and-stick
-  form_and_line: Thick white border, contour-cut outline, clean-vector edge, kiss-cut precision
-  color_palette: Vibrant flat colors, UV-resistant inks, neon-pop spectrum, spot-gloss accents
-  lighting_setup: Flat, no cast-shadow, even-diffuse daylight, matte-surface clarity
-  material_texture: Glossy paper, vinyl laminate, weatherproof film, water-resistant coating, tacky adhesive back
-  render_quality: Graphic, collectible, sticker-sheet appeal, skate-deck swagger, street-art credibility
-  spatial_distortion: 2D cutout, die-line silhouette, punch-out negative space, floating-object illusion
-  atmosphere: Cool, decorative, urban-expression, laptop-personality, street-art rebellion
+  subject_treatment: Thick white border, contour-cut outline, clean-vector edge, kiss-cut precision
+  color_and_tone: Vibrant flat colors, UV-resistant inks, neon-pop spectrum, spot-gloss accents
+  lighting_and_shadow: Flat, no cast-shadow, even-diffuse daylight, matte-surface clarity
+  texture_and_material: Glossy paper, vinyl laminate, weatherproof film, water-resistant coating, tacky adhesive back
+  camera_and_composition: 2D cutout, die-line silhouette, punch-out negative space, floating-object illusion
+  atmosphere_and_mood: Cool, decorative, urban-expression, laptop-personality, street-art rebellion
+  rendering_and_quality: Graphic, collectible, sticker-sheet appeal, skate-deck swagger, street-art credibility
   key_features: White outline, kiss-cut border, gloss-laminate sheen, color-separation registration
   creative_brief: >-
-    Keep identity in die-cut sticker grammar: thick contour borders, high-saturation flat fills, and laminate gloss
-    behavior should define the preset without anchoring it to one urban micro-scene. Apply Sticker Art as a portable
-    style system over any input: preserve its construction grammar, material cues, scale logic, and signature rendering
-    behavior while avoiding a required franchise, literal prop, fixed specimen, classroom sample, product shot, or scene
-    template.
+    Keep identity in die-cut sticker grammar: thick contour borders, high-saturation flat fills, and laminate
+    gloss behavior should define the preset without anchoring it to one urban micro-scene. Apply Sticker Art
+    as a portable style system over any input: preserve its construction grammar, material cues, scale logic,
+    and signature rendering behavior while avoiding a required franchise, literal prop, fixed specimen,
+    classroom sample, product shot, or scene template.
 avoidRules:
   - 3d
   - shadow

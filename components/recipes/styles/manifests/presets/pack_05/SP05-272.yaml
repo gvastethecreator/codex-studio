@@ -12,20 +12,25 @@ tags:
   - anime-battle-and-worlds
   - dark-fantasy-and-seinen
 visualDna:
-  aesthetic: Machine mourning noir, humane futurism, forensic melancholy, rain-dark luxury, grief rendered through polished restraint and ethical weight
-  form_and_line: Dense mature-anime linework, heavy crosshatching, weighted contour variation, gritty ink density
-  color_palette: Muted earths, blood reds, cold moonlit tones, desaturated horror palette, bruised shadow hues
-  lighting_setup: Ominous directional shadows, single-source drama light, deep chiaroscuro, low-key shadow lift
-  material_texture: Rain-polished metal, quiet luxury grain, forensic matte surfaces, wet glass, brushed alloy, soft fabric shadow
-  render_quality: Gritty dramatic anime frame, film-noir rendering, heavy shadow compression, textured midtone grit
-  spatial_distortion: Noir close framing, forensic negative space, rainlit reflection depth, humane-machine symmetry, restrained investigative pacing
-  atmosphere: Somber, investigative, humane, futuristic
+  aesthetic: >-
+    Machine mourning noir, humane futurism, forensic melancholy, rain-dark luxury, grief rendered through
+    polished restraint and ethical weight
+  subject_treatment: Dense mature-anime linework, heavy crosshatching, weighted contour variation, gritty ink density
+  color_and_tone: Muted earths, blood reds, cold moonlit tones, desaturated horror palette, bruised shadow hues
+  lighting_and_shadow: Ominous directional shadows, single-source drama light, deep chiaroscuro, low-key shadow lift
+  texture_and_material: >-
+    Rain-polished metal, quiet luxury grain, forensic matte surfaces, wet glass, brushed alloy, soft fabric
+    shadow
+  camera_and_composition: >-
+    Noir close framing, forensic negative space, rainlit reflection depth, humane-machine symmetry, restrained
+    investigative pacing
+  atmosphere_and_mood: Somber, investigative, humane, futuristic
+  rendering_and_quality: Gritty dramatic anime frame, film-noir rendering, heavy shadow compression, textured midtone grit
   key_features: Mourning atmosphere, rainlit polish, forensic quiet, humane synthetic restraint, noir ethical pressure
-  creative_brief: >
-    Apply machine mourning noir to any subject: polished rain reflections,
-    forensic stillness, soft metal, and humane restraint should create grief
-    without fixed roles, synthetic beings, urban locations, interiors, or case
-    scenes.
+  creative_brief: >-
+    Apply machine mourning noir to any subject: polished rain reflections, forensic stillness, soft metal, and
+    humane restraint should create grief without fixed roles, synthetic beings, urban locations, interiors, or
+    case scenes.
 avoidRules:
   - realistic
   - 3d render
@@ -42,7 +47,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-272.webp
 attributes:
-  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
+  negativePrompt: >-
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts,
+    watermark, text, signature
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds

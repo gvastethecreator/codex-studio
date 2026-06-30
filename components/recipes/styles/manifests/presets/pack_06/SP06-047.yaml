@@ -13,19 +13,18 @@ tags:
   - digital-art
 visualDna:
   aesthetic: Quick digital sketch
-  form_and_line: Rough, energetic
-  color_palette: Bold, unrefined
-  lighting_setup: Dramatic
-  material_texture: Brush strokes
-  render_quality: Concept, loose
-  spatial_distortion: Unfinished edges
-  atmosphere: Dynamic, fast
+  subject_treatment: Rough, energetic
+  color_and_tone: Bold, unrefined
+  lighting_and_shadow: Dramatic
+  texture_and_material: Brush strokes
+  camera_and_composition: Unfinished edges
+  atmosphere_and_mood: Dynamic, fast
+  rendering_and_quality: Concept, loose
   key_features: Loose strokes
   creative_brief: >-
-    Apply speedpaint energy to any input: broad gestural strokes, loose edges,
-    compressed detail, fast value blocking, visible brush shortcuts, and
-    idea-first confidence. Keep rapid concept vitality without requiring fantasy
-    key art, YouTube process frames, characters, or unfinished sketch borders.
+    Apply speedpaint energy to any input: broad gestural strokes, loose edges, compressed detail, fast value
+    blocking, visible brush shortcuts, and idea-first confidence. Keep rapid concept vitality without
+    requiring fantasy key art, YouTube process frames, characters, or unfinished sketch borders.
 avoidRules:
   - photo
   - realistic
@@ -45,7 +44,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP06-047.webp
 attributes:
-  negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border
+  negativePrompt: >-
+    photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy,
+    watermark, text, signature, frame, border
 taxonomy:
   packId: pack_06
   packName: Essential Art Styles

@@ -13,19 +13,18 @@ tags:
   - printmaking
 visualDna:
   aesthetic: Dark to light engraving
-  form_and_line: None, rich blacks
-  color_palette: Deep black, velvet grey
-  lighting_setup: Dramatic, emerging from dark
-  material_texture: Rocker tool marks
-  render_quality: Velvety, detailed
-  spatial_distortion: None
-  atmosphere: Night, dramatic
+  subject_treatment: Subject reduced to rich black masses
+  color_and_tone: Deep black, velvet grey
+  lighting_and_shadow: Dramatic, emerging from dark
+  texture_and_material: Rocker tool marks
+  camera_and_composition: 'Compose for Mezzotint using its key spatial cues: Rich blacks.'
+  atmosphere_and_mood: Night, dramatic
+  rendering_and_quality: Velvety, detailed
   key_features: Rich blacks
   creative_brief: >-
-    Apply mezzotint darkness to any input: rocked-plate grain, velvet black
-    fields, burnished highlights, smoky tonal transitions, and light scraped out
-    of ink. Keep nocturnal print depth without requiring portraits, interiors,
-    candles, old-master subjects, or antique framing.
+    Apply mezzotint darkness to any input: rocked-plate grain, velvet black fields, burnished highlights,
+    smoky tonal transitions, and light scraped out of ink. Keep nocturnal print depth without requiring
+    portraits, interiors, candles, old-master subjects, or antique framing.
 avoidRules:
   - photo
   - realistic
@@ -45,7 +44,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP06-038.webp
 attributes:
-  negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border
+  negativePrompt: >-
+    photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy,
+    watermark, text, signature, frame, border
 taxonomy:
   packId: pack_06
   packName: Essential Art Styles

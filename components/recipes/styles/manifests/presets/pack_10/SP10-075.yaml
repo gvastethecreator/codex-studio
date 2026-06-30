@@ -13,18 +13,17 @@ tags:
   - textile-and-ornamental-patterns
 visualDna:
   aesthetic: Pixel art with thread
-  form_and_line: X stitches
-  color_palette: Thread colors
-  lighting_setup: Fabric texture
-  material_texture: Aida cloth
-  render_quality: Craft, homey
-  spatial_distortion: Low resolution
-  atmosphere: Traditional, cute
+  subject_treatment: X stitches
+  color_and_tone: Thread colors
+  lighting_and_shadow: Fabric texture
+  texture_and_material: Aida cloth
+  camera_and_composition: Low resolution
+  atmosphere_and_mood: Traditional, cute
+  rendering_and_quality: Craft, homey
   key_features: X pattern
   creative_brief: >-
-    Apply cross-stitch encoding to the input: X-shaped thread marks, linen grid,
-    limited color cells, and analog pixel logic should embroider any subject
-    without requiring samplers or readable text.
+    Apply cross-stitch encoding to the input: X-shaped thread marks, linen grid, limited color cells, and
+    analog pixel logic should embroider any subject without requiring samplers or readable text.
 avoidRules:
   - smooth
   - drawn

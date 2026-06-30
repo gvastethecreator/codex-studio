@@ -13,18 +13,18 @@ tags:
   - geometric-abstraction
 visualDna:
   aesthetic: Grid of rectangles
-  form_and_line: Thick black lines
-  color_palette: Primary colors + White
-  lighting_setup: Flat
-  material_texture: Canvas
-  render_quality: Modern art, minimal
-  spatial_distortion: Only 90 degree angles
-  atmosphere: Balanced, rigid
+  subject_treatment: Thick black lines
+  color_and_tone: Primary colors + White
+  lighting_and_shadow: Flat
+  texture_and_material: Canvas
+  camera_and_composition: Only 90 degree angles
+  atmosphere_and_mood: Balanced, rigid
+  rendering_and_quality: Modern art, minimal
   key_features: Grid structure
   creative_brief: >-
-    Apply De Stijl grid logic to the input: black orthogonal bars, white space,
-    primary color rectangles, and asymmetric balance should convert any subject
-    into disciplined planar harmony without requiring a literal painting panel.
+    Apply De Stijl grid logic to the input: black orthogonal bars, white space, primary color rectangles, and
+    asymmetric balance should convert any subject into disciplined planar harmony without requiring a literal
+    painting panel.
 avoidRules:
   - curves
   - diagonal

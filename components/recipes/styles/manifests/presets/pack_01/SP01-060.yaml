@@ -13,15 +13,20 @@ tags:
   - documentary-and-street
 visualDna:
   aesthetic: Harsh witness documentary
-  form_and_line: Chaotic factual framing
-  color_palette: Desaturated, dusty
-  lighting_setup: Harsh sun
-  material_texture: Dust, smoke, grain
-  render_quality: Raw, emotional
-  spatial_distortion: None
-  atmosphere: Unflinching, intense
+  subject_treatment: Chaotic factual framing
+  color_and_tone: Desaturated, dusty
+  lighting_and_shadow: Harsh sun
+  texture_and_material: Dust, smoke, grain
+  camera_and_composition: >-
+    Camera setup native to Documentary (War): lens choice, crop distance, depth of field, and focal hierarchy
+    support 4. Documentary And Street without generic framing.
+  atmosphere_and_mood: Unflinching, intense
+  rendering_and_quality: Raw, emotional
   key_features: Realism
-  creative_brief: 'Harsh witness photography uses desaturation, dust, smoke, hard sun, grain, and imperfect factual framing to make any subject feel reported rather than staged. Preserve raw documentary testimony without requiring battlefield, tragedy, weapons, sky, or conflict-zone narrative.'
+  creative_brief: >-
+    Harsh witness photography uses desaturation, dust, smoke, hard sun, grain, and imperfect factual framing
+    to make any subject feel reported rather than staged. Preserve raw documentary testimony without requiring
+    battlefield, tragedy, weapons, sky, or conflict-zone narrative.
 avoidRules:
   - posed
   - happy

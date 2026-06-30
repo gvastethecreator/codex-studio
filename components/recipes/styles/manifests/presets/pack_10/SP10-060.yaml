@@ -13,18 +13,18 @@ tags:
   - material-surface-textures
 visualDna:
   aesthetic: Thousands of sparkles
-  form_and_line: None
-  color_palette: Metallic, rainbow
-  lighting_setup: Sparkles
-  material_texture: Rough, shiny
-  render_quality: Party, craft
-  spatial_distortion: None
-  atmosphere: Fun, cheap
+  subject_treatment: "Treat subjects through Glitter Texture's signature cues: Sparkle density."
+  color_and_tone: Metallic, rainbow
+  lighting_and_shadow: Sparkles
+  texture_and_material: Rough, shiny
+  camera_and_composition: 'Compose for Glitter Texture using its key spatial cues: Sparkle density.'
+  atmosphere_and_mood: Fun, cheap
+  rendering_and_quality: Party, craft
   key_features: Sparkle density
   creative_brief: >-
-    Apply glitter density to the input: micro-mirror flecks, refractive sparkle,
-    dense specular scatter, and celebratory particulate geometry should make
-    surfaces flare without requiring party props or product piles.
+    Apply glitter density to the input: micro-mirror flecks, refractive sparkle, dense specular scatter, and
+    celebratory particulate geometry should make surfaces flare without requiring party props or product
+    piles.
 avoidRules:
   - matte
   - dull

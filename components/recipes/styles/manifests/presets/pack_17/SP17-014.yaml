@@ -14,11 +14,17 @@ tags:
   - acid-dungeon-zine
   - xerox-bestiary
 visualDna:
-  aesthetic: Black-and-white photocopied bestiary plates with occult medieval linework and rough underground print damage.
-  subject_treatment: A horned basilisk-lion specimen or dungeon chimera outlined like a hand-drawn field-guide beast, with exaggerated claws, horns, and no human lead.
+  aesthetic: >-
+    Black-and-white photocopied bestiary plates with occult medieval linework and rough underground print
+    damage.
+  subject_treatment: >-
+    A horned basilisk-lion specimen or dungeon chimera outlined like a hand-drawn field-guide beast, with
+    exaggerated claws, horns, and no human lead.
   color_and_tone: Mostly clean black ink and aged paper white, with optional one-color neon spot fills.
   lighting_and_shadow: Shadow appears as hatch density, clean black fills, tidy stipple fields, and graphic photocopy contrast.
-  texture_and_material: Controlled copier texture, clean toner bloom, scratchy ink, paper tooth, edge wear, and readable line reproduction.
+  texture_and_material: >-
+    Controlled copier texture, clean toner bloom, scratchy ink, paper tooth, edge wear, and readable line
+    reproduction.
   camera_and_composition: Single specimen view, label-free frame, marginal ornament, and rigid bestiary-page balance.
   atmosphere_and_mood: Arcane, handmade, archival, and dungeon-worn.
   rendering_and_quality: Controlled xerox print style with strong graphic readability, denoised darks, and rough line charm.
@@ -33,6 +39,8 @@ avoidRules:
   - text
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP17-014.webp
+attributes:
+  negativePrompt: color gradients, polished concept art, photorealism, typography, clean vector, watermark, text
 taxonomy:
   packId: pack_17
   packName: Medieval Fantasy & Dungeon Zine

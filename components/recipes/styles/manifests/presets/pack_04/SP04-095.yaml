@@ -13,19 +13,20 @@ tags:
   - concept-art
 visualDna:
   aesthetic: >-
-    Vegetation design kit with broad botanical shape-library coverage, natural poetry, and production readability
-  form_and_line: Organic contour families spanning canopy, shrub, vine, and groundcover archetypes
-  color_palette: Seasonal green-driven spectrum with bark/flower accent channels
-  lighting_setup: Dappled canopy light with subsurface hints and cool understory shadow
-  material_texture: Differentiated plant surface behaviors (waxy, fibrous, rough bark, soft moss)
-  render_quality: Reference-oriented foliage exploration balancing stylization and realism
-  spatial_distortion: Layered ecosystem depth from foreground clusters to atmospheric canopy fade
-  atmosphere: Lush, breathable, ecosystem-rich
+    Vegetation design kit with broad botanical shape-library coverage, natural poetry, and production
+    readability
+  subject_treatment: Organic contour families spanning canopy, shrub, vine, and groundcover archetypes
+  color_and_tone: Seasonal green-driven spectrum with bark/flower accent channels
+  lighting_and_shadow: Dappled canopy light with subsurface hints and cool understory shadow
+  texture_and_material: Differentiated plant surface behaviors (waxy, fibrous, rough bark, soft moss)
+  camera_and_composition: Layered ecosystem depth from foreground clusters to atmospheric canopy fade
+  atmosphere_and_mood: Lush, breathable, ecosystem-rich
+  rendering_and_quality: Reference-oriented foliage exploration balancing stylization and realism
   key_features: Silhouette readability sets, species variation matrices, season-state alternatives
   creative_brief: >-
-    Apply foliage-design-kit logic to any input: branching rhythms, leaf-shape families, botanical silhouettes, texture
-    clusters, color swatches, and growth-pattern variants. If no plants exist, translate the subject into organic growth
-    vocabulary without requiring a garden, forest, or plant catalog.
+    Apply foliage-design-kit logic to any input: branching rhythms, leaf-shape families, botanical
+    silhouettes, texture clusters, color swatches, and growth-pattern variants. If no plants exist, translate
+    the subject into organic growth vocabulary without requiring a garden, forest, or plant catalog.
 avoidRules:
   - bare
   - dead

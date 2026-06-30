@@ -13,21 +13,22 @@ tags:
   - natural-materials
 visualDna:
   aesthetic: Marine structure
-  form_and_line: Pores and branches
-  color_palette: Pink, Orange, Purple
-  lighting_setup: Caustic light
-  material_texture: Rough, porous
-  render_quality: Vibrant, porous
-  spatial_distortion: Branching
-  atmosphere: Alive, colorful
+  subject_treatment: Pores and branches
+  color_and_tone: Pink, Orange, Purple
+  lighting_and_shadow: Caustic light
+  texture_and_material: Rough, porous
+  camera_and_composition: Branching
+  atmosphere_and_mood: Alive, colorful
+  rendering_and_quality: Vibrant, porous
   key_features: Porous
   creative_brief: >-
-    Apply coral-reef materiality as living mineral architecture: porous calcium-carbonate texture, branching spires,
-    honeycombed domes, pink-orange-purple vibrancy, and caustic light moving across the surface. If marine or organic
-    content exists, reinforce it; otherwise use coral growth as abstract porous structure without forcing an underwater
-    scene. Use Coral Reef as portable surface/render behavior over any input: map its texture, light response, edge
-    wear, color chemistry, and tactile rhythm onto the subject instead of requiring a literal material sample, macro
-    tile, wall, landscape, source object, or scene where the material naturally appears.
+    Apply coral-reef materiality as living mineral architecture: porous calcium-carbonate texture, branching
+    spires, honeycombed domes, pink-orange-purple vibrancy, and caustic light moving across the surface. If
+    marine or organic content exists, reinforce it; otherwise use coral growth as abstract porous structure
+    without forcing an underwater scene. Use Coral Reef as portable surface/render behavior over any input:
+    map its texture, light response, edge wear, color chemistry, and tactile rhythm onto the subject instead
+    of requiring a literal material sample, macro tile, wall, landscape, source object, or scene where the
+    material naturally appears.
 avoidRules:
   - dead
   - bleached

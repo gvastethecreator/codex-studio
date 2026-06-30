@@ -13,18 +13,19 @@ tags:
   - historical-and-fantasy
 visualDna:
   aesthetic: 16th century court regalia, early-modern majesty, painted-court splendor
-  form_and_line: Heavy layers, ruffs, farthingale cone, slashed sleeves, stiffened bodice architecture
-  color_palette: Deep Red, Gold, Velvet Blue, imperial purple, cloth-of-gold, ermine white
-  lighting_setup: Oil-painting light, chiaroscuro depth, stained-glass warmth, candlelit gold
-  material_texture: Cut velvet, silver brocade, seed pearls, cloth-of-gold tissue, mink trim, jeweled net caul
-  render_quality: Historical museum-grade finish, painted-court realism, formal gravitas
-  spatial_distortion: Stiffened garment architecture
-  atmosphere: Regal, serious, wealthy, courtly intrigue, absolute power, gilded formality
+  subject_treatment: Heavy layers, ruffs, farthingale cone, slashed sleeves, stiffened bodice architecture
+  color_and_tone: Deep Red, Gold, Velvet Blue, imperial purple, cloth-of-gold, ermine white
+  lighting_and_shadow: Oil-painting light, chiaroscuro depth, stained-glass warmth, candlelit gold
+  texture_and_material: Cut velvet, silver brocade, seed pearls, cloth-of-gold tissue, mink trim, jeweled net caul
+  camera_and_composition: Stiffened garment architecture
+  atmosphere_and_mood: Regal, serious, wealthy, courtly intrigue, absolute power, gilded formality
+  rendering_and_quality: Historical museum-grade finish, painted-court realism, formal gravitas
   key_features: Ornate details, neck ruff, jeweled bodice, structured court headwear, ceremonial trim
   creative_brief: >-
-    Apply Renaissance court regalia to the input: cloth-of-gold weight, ruff geometry, farthingale structure, slashed
-    sleeves, seed pearls, jeweled bodice and imperial velvet. Keep painted-court authority as style anchor without
-    forcing early-modern court-portrait citation, Tudor portrait pose, candlelit hall, rigid queenly body or specific monarch.
+    Apply Renaissance court regalia to the input: cloth-of-gold weight, ruff geometry, farthingale structure,
+    slashed sleeves, seed pearls, jeweled bodice and imperial velvet. Keep painted-court authority as style
+    anchor without forcing early-modern court-portrait citation, Tudor portrait pose, candlelit hall, rigid
+    queenly body or specific monarch.
 avoidRules:
   - modern
   - simple

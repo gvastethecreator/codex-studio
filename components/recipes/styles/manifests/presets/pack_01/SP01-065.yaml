@@ -13,15 +13,18 @@ tags:
   - nature-and-wildlife
 visualDna:
   aesthetic: Playful companion portrait
-  form_and_line: Eye level
-  color_palette: Bright, happy
-  lighting_setup: Soft
-  material_texture: Soft tactile detail
-  render_quality: Cute studio warmth
-  spatial_distortion: Wide-angle near-plane exaggeration
-  atmosphere: Playful, sweet
+  subject_treatment: Eye level
+  color_and_tone: Bright, happy
+  lighting_and_shadow: Soft
+  texture_and_material: Soft tactile detail
+  camera_and_composition: Wide-angle near-plane exaggeration
+  atmosphere_and_mood: Playful, sweet
+  rendering_and_quality: Cute studio warmth
   key_features: Eye-level warmth
-  creative_brief: 'Pet-photography warmth becomes a playful close portrait grammar: eye-level camera, soft light, tactile detail, near-plane wide-angle charm, and bright approachable mood. Apply companion intimacy to any subject without requiring dog, cat, fur, creature, or camera gaze.'
+  creative_brief: >-
+    Pet-photography warmth becomes a playful close portrait grammar: eye-level camera, soft light, tactile
+    detail, near-plane wide-angle charm, and bright approachable mood. Apply companion intimacy to any subject
+    without requiring dog, cat, fur, creature, or camera gaze.
 avoidRules:
   - scary
   - menacing

@@ -13,15 +13,19 @@ tags:
   - surrealism-and-dream
 visualDna:
   aesthetic: Liminal absence field
-  form_and_line: Perspective
-  color_palette: Beige, fluorescent
-  lighting_setup: Flat artificial
-  material_texture: Carpet, tile, synthetic surfaces
-  render_quality: Unsettling, familiar
-  spatial_distortion: None
-  atmosphere: Eerie, lonely
+  subject_treatment: Perspective
+  color_and_tone: Beige, fluorescent
+  lighting_and_shadow: Flat artificial
+  texture_and_material: Carpet, tile, synthetic surfaces
+  camera_and_composition: 'Compose for Liminal Space using its key spatial cues: Transitional emptiness.'
+  atmosphere_and_mood: Eerie, lonely
+  rendering_and_quality: Unsettling, familiar
   key_features: Transitional emptiness
-  creative_brief: Apply liminal-space unease as atmosphere over the input with flat fluorescent light, beige synthetic surfaces, over-clean emptiness, transitional perspective, and a sense of purpose removed. If hallway, pool, mall, office, or room exists, empty it; otherwise make subject and background feel stranded in functional space without requiring architecture.
+  creative_brief: >-
+    Apply liminal-space unease as atmosphere over the input with flat fluorescent light, beige synthetic
+    surfaces, over-clean emptiness, transitional perspective, and a sense of purpose removed. If hallway,
+    pool, mall, office, or room exists, empty it; otherwise make subject and background feel stranded in
+    functional space without requiring architecture.
 avoidRules:
   - people
   - life

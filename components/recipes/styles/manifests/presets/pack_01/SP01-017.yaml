@@ -13,18 +13,18 @@ tags:
   - film-and-analog-process
 visualDna:
   aesthetic: Toy camera film
-  form_and_line: Soft warped edges
-  color_palette: Cross-processed, saturated
-  lighting_setup: Vignette
-  material_texture: Light leaks
-  render_quality: Lo-fi analog experiment
-  spatial_distortion: Heavy vignette
-  atmosphere: Fun, unpredictable
+  subject_treatment: Soft warped edges
+  color_and_tone: Cross-processed, saturated
+  lighting_and_shadow: Vignette
+  texture_and_material: Light leaks
+  camera_and_composition: Heavy vignette
+  atmosphere_and_mood: Fun, unpredictable
+  rendering_and_quality: Lo-fi analog experiment
   key_features: Tunnel vision
   creative_brief: >-
-    Apply Lomo LC-A plastic-lens accident to the input: cross-processed color,
-    light leaks, smeared corners, heavy vignette, and loose analog exposure
-    should make any subject playful without requiring a specific place or event.
+    Apply Lomo LC-A plastic-lens accident to the input: cross-processed color, light leaks, smeared corners,
+    heavy vignette, and loose analog exposure should make any subject playful without requiring a specific
+    place or event.
 avoidRules:
   - illustration
   - painting
@@ -42,7 +42,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP01-017.webp
 attributes:
-  negativePrompt: illustration, painting, drawing, 3d render, cartoon, anime, sketch, low resolution, watermark, text, signature, bad anatomy, deformed
+  negativePrompt: >-
+    illustration, painting, drawing, 3d render, cartoon, anime, sketch, low resolution, watermark, text,
+    signature, bad anatomy, deformed
 taxonomy:
   packId: pack_01
   packName: Photography & Realism

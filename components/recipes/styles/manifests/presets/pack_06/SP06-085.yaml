@@ -12,16 +12,38 @@ tags:
   - essential-art-styles
   - retro-game-visual-systems
 visualDna:
-  aesthetic: Japanese visual novel composite grammar, clean cel rendering over softened photographic or painterly layers, ADV interface framing without readable dialogue, Key visual-arts and Fate/stay night as mood anchors only, choice-branch tension as layout pressure
-  form_and_line: Clean cel outlines, layered UI-frame division, translucent lower-third panels, expression-sheet clarity when a subject is present, flat composited depth
-  color_palette: Anime cel colors, desaturated support layers, translucent UI gradients, gentle dusk tones, restrained accent color for selection states
-  lighting_setup: Diffuse filtered background light, independent cel-layer lighting, gentle vignette framing, soft interface glow
-  material_texture: Vector-clean cel layer against JPEG-grain or bokeh support layer, UI-glass translucency, mixed-media compositing seams
-  render_quality: Visual-novel screenshot aesthetic, ADV-game composite still, emotional interface-forward rendering, anime-game layer polish
-  spatial_distortion: Static layered background, foreground cel plane, lower-third interface band, optional choice-button overlay, flat composite depth
-  atmosphere: Intimate, quiet, suspended, narrative-focused, emotionally charged without requiring specific characters or places
-  key_features: Cel layer over softened support image, dialogue-box style framing without legible text, ADV interface geometry, gentle vignette, translucent UI glass
-  creative_brief: The style treats any prompt as a paused narrative interface. Cel-clean forms sit over softened support imagery while translucent panels and choice geometry create emotional pressure without forcing characters, schools or readable text.
+  aesthetic: >-
+    Japanese visual novel composite grammar, clean cel rendering over softened photographic or painterly
+    layers, ADV interface framing without readable dialogue, Key visual-arts and Fate/stay night as mood
+    anchors only, choice-branch tension as layout pressure
+  subject_treatment: >-
+    Clean cel outlines, layered UI-frame division, translucent lower-third panels, expression-sheet clarity
+    when a subject is present, flat composited depth
+  color_and_tone: >-
+    Anime cel colors, desaturated support layers, translucent UI gradients, gentle dusk tones, restrained
+    accent color for selection states
+  lighting_and_shadow: >-
+    Diffuse filtered background light, independent cel-layer lighting, gentle vignette framing, soft interface
+    glow
+  texture_and_material: >-
+    Vector-clean cel layer against JPEG-grain or bokeh support layer, UI-glass translucency, mixed-media
+    compositing seams
+  camera_and_composition: >-
+    Static layered background, foreground cel plane, lower-third interface band, optional choice-button
+    overlay, flat composite depth
+  atmosphere_and_mood: >-
+    Intimate, quiet, suspended, narrative-focused, emotionally charged without requiring specific characters
+    or places
+  rendering_and_quality: >-
+    Visual-novel screenshot aesthetic, ADV-game composite still, emotional interface-forward rendering,
+    anime-game layer polish
+  key_features: >-
+    Cel layer over softened support image, dialogue-box style framing without legible text, ADV interface
+    geometry, gentle vignette, translucent UI glass
+  creative_brief: >-
+    The style treats any prompt as a paused narrative interface. Cel-clean forms sit over softened support
+    imagery while translucent panels and choice geometry create emotional pressure without forcing characters,
+    schools or readable text.
 avoidRules:
   - action
   - motion

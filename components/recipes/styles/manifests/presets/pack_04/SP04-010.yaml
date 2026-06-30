@@ -12,22 +12,19 @@ tags:
   - illustration-and-graphic-novel
   - comic-book-styles
 visualDna:
-  aesthetic: >-
-    Painted realist comic illustration (Alex Ross influence with Norman Rockwell portrait
-    sensibility)
-  form_and_line: Line-minimal painterly construction through value and edge control
-  color_palette: Naturalistic gouache-like chroma with warm skin and muted secondary balance
-  lighting_setup: Classical soft-key + focused heroic spotlight modeling
-  material_texture: Visible brushwork and layered pigment transitions
-  render_quality: Fine-art comic finish with high anatomical and textile fidelity
-  spatial_distortion: Realist proportion and volume, minimal stylization
-  atmosphere: Mythic, solemn, reverential
+  aesthetic: Painted realist comic illustration (Alex Ross influence with Norman Rockwell portrait sensibility)
+  subject_treatment: Line-minimal painterly construction through value and edge control
+  color_and_tone: Naturalistic gouache-like chroma with warm skin and muted secondary balance
+  lighting_and_shadow: Classical soft-key + focused heroic spotlight modeling
+  texture_and_material: Visible brushwork and layered pigment transitions
+  camera_and_composition: Realist proportion and volume, minimal stylization
+  atmosphere_and_mood: Mythic, solemn, reverential
+  rendering_and_quality: Fine-art comic finish with high anatomical and textile fidelity
   key_features: Outline-free form definition, portrait-grade facial modeling, painterly fabric rendering
   creative_brief: >-
-    Apply painted graphic-novel gravitas to any input: nuanced value modeling, controlled edge
-    temperature, gouache-like pigment, portrait-grade realism, and solemn spotlighting should create
-    mythic human weight without requiring superheroes, capes, portraits, Americana, group tableaux,
-    or fixed poses.
+    Apply painted graphic-novel gravitas to any input: nuanced value modeling, controlled edge temperature,
+    gouache-like pigment, portrait-grade realism, and solemn spotlighting should create mythic human weight
+    without requiring superheroes, capes, portraits, Americana, group tableaux, or fixed poses.
 avoidRules:
   - line art
   - cartoon

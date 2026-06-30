@@ -13,20 +13,22 @@ tags:
   - micro-macro
 visualDna:
   aesthetic: Backlit leaf, chloroplast-window, vein-map, photosynthesis-architecture, leaf-botany
-  form_and_line: Vein network, midrib-spine, secondary-vein branching, areole-polygon mesh, margin-serration
-  color_palette: Chlorophyll Green, carotenoid-orange, xanthophyll-yellow, autumn-red, variegation-cream, mesophyll-translucency
-  lighting_setup: Translucent, backlit-through-leaf, sun-behind-canopy, chlorophyll-glow, diffused-morning
-  material_texture: Plant cells, epidermal-layer, stomata-pores, cuticle-wax, mesophyll-spongy, vein-scaffold, trichome-hairs
-  render_quality: Life, nature, photosynthesis-revealed, leaf-anatomy, pixel-leaf, botanical-illustration
-  spatial_distortion: None, leaf-plane, blade-expansion, lobe-geometry, venation-pattern
-  atmosphere: Fresh, organic, forest-floor quiet, photosynthesis-magic, chloroplast-glow, green-life
+  subject_treatment: Vein network, midrib-spine, secondary-vein branching, areole-polygon mesh, margin-serration
+  color_and_tone: >-
+    Chlorophyll Green, carotenoid-orange, xanthophyll-yellow, autumn-red, variegation-cream,
+    mesophyll-translucency
+  lighting_and_shadow: Translucent, backlit-through-leaf, sun-behind-canopy, chlorophyll-glow, diffused-morning
+  texture_and_material: Plant cells, epidermal-layer, stomata-pores, cuticle-wax, mesophyll-spongy, vein-scaffold, trichome-hairs
+  camera_and_composition: Leaf-plane, blade-expansion, lobe-geometry, venation-pattern
+  atmosphere_and_mood: Fresh, organic, forest-floor quiet, photosynthesis-magic, chloroplast-glow, green-life
+  rendering_and_quality: Life, nature, photosynthesis-revealed, leaf-anatomy, pixel-leaf, botanical-illustration
   key_features: Veins, midrib-center, secondary-vein, areole-polygon, stomata-pores, margin-edge, backlit-translucency
   creative_brief: >-
-    Frame leaves as translucent vascular maps: midrib hierarchy, venation branching, and chlorophyll-rich backlight are
-    core. Keep the style botanical, structural, and adaptable across species and seasonal palettes. Apply Leaf Veins as
-    a portable style system over any input: preserve its construction grammar, material cues, scale logic, and signature
-    rendering behavior while avoiding a required franchise, literal prop, fixed specimen, classroom sample, product
-    shot, or scene template.
+    Frame leaves as translucent vascular maps: midrib hierarchy, venation branching, and chlorophyll-rich
+    backlight are core. Keep the style botanical, structural, and adaptable across species and seasonal
+    palettes. Apply Leaf Veins as a portable style system over any input: preserve its construction grammar,
+    material cues, scale logic, and signature rendering behavior while avoiding a required franchise, literal
+    prop, fixed specimen, classroom sample, product shot, or scene template.
 avoidRules:
   - dead
 assets:

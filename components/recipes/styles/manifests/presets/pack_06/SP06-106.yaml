@@ -12,10 +12,18 @@ tags:
   - essential-art-styles
   - game-art-directions-and-ui
 visualDna:
-  aesthetic: Isometric strategy-game tile style with clean tactical geometry, beveled readability, and board-game clarity.
-  subject_treatment: Convert any subject into modular isometric masses, readable footprint shapes, and turn-based visual hierarchy.
-  color_and_tone: Controlled terrain-like ramps, faction-ready accent bands, and clear value channels for walkable vs blocked areas.
-  lighting_and_shadow: Consistent upper-left light, short cast shadows, contact darkening, and bevel highlights on every tile edge.
+  aesthetic: >-
+    Isometric strategy-game tile style with clean tactical geometry, beveled readability, and board-game
+    clarity.
+  subject_treatment: >-
+    Convert any subject into modular isometric masses, readable footprint shapes, and turn-based visual
+    hierarchy.
+  color_and_tone: >-
+    Controlled terrain-like ramps, faction-ready accent bands, and clear value channels for walkable vs
+    blocked areas.
+  lighting_and_shadow: >-
+    Consistent upper-left light, short cast shadows, contact darkening, and bevel highlights on every tile
+    edge.
   texture_and_material: Low-noise pixel texture, small material swatches, edge seams, and repeatable detail density.
   camera_and_composition: 2:1 isometric grid, stable scale, locked diagonals, and composable tile boundaries.
   atmosphere_and_mood: Strategic, ordered, readable mood without requiring terrain, armies, bases, or maps.
@@ -32,7 +40,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP06-106.webp
 attributes:
-  negativePrompt: motion blur, inconsistent proportions, changing costume, background scene, literal terrain requirement, army requirement, watermark, text
+  negativePrompt: >-
+    motion blur, inconsistent proportions, changing costume, background scene, literal terrain requirement,
+    army requirement, watermark, text
   layout:
     preferredFrameCount: 8
     frameGrid: 4x2

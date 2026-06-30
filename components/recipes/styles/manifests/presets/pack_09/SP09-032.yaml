@@ -13,22 +13,22 @@ tags:
   - man-made-materials
 visualDna:
   aesthetic: Shipping box
-  form_and_line: Corrugation lines
-  color_palette: Kraft brown
-  lighting_setup: Matte
-  material_texture: Paper pulp
-  render_quality: Cheap, disposable
-  spatial_distortion: Creased
-  atmosphere: Trash, storage
+  subject_treatment: Corrugation lines
+  color_and_tone: Kraft brown
+  lighting_and_shadow: Matte
+  texture_and_material: Paper pulp
+  camera_and_composition: Creased
+  atmosphere_and_mood: Trash, storage
+  rendering_and_quality: Cheap, disposable
   key_features: Corrugation
   creative_brief: >-
-    Capture the humble architecture of corrugated cardboard where a hidden fluted layer creates ribs of structure
-    beneath a kraft-paper skin of warm brown, edges softened by handling and corners creased with use. The surface
-    should feel dry and fibrous, a material whose very appearance suggests disposability rendered permanent. Render the
-    poetics of the temporary, the shipping box as inadvertent portrait. Use Cardboard as portable surface/render
-    behavior over any input: map its texture, light response, edge wear, color chemistry, and tactile rhythm onto the
-    subject instead of requiring a literal material sample, macro tile, wall, landscape, source object, or scene where
-    the material naturally appears.
+    Capture the humble architecture of corrugated cardboard where a hidden fluted layer creates ribs of
+    structure beneath a kraft-paper skin of warm brown, edges softened by handling and corners creased with
+    use. The surface should feel dry and fibrous, a material whose very appearance suggests disposability
+    rendered permanent. Render the poetics of the temporary, the shipping box as inadvertent portrait. Use
+    Cardboard as portable surface/render behavior over any input: map its texture, light response, edge wear,
+    color chemistry, and tactile rhythm onto the subject instead of requiring a literal material sample, macro
+    tile, wall, landscape, source object, or scene where the material naturally appears.
 avoidRules:
   - wood
   - plastic

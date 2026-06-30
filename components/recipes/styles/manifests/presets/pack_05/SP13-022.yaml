@@ -13,20 +13,25 @@ tags:
   - anime
   - action
 visualDna:
-  aesthetic: Vertigo-height energy crossing, aerial pressure, luminous collision rhythm, heroic tension as abstract directional force.
-  form_and_line: Firm contours, extreme diagonal posture, crossing impact vectors, sharp contour snap, and readable kinetic silhouettes.
-  color_palette: Cyan, fire orange, and deep black.
-  lighting_setup: High backlight, shock flare, cyan-orange rim clash, and luminous particle edges.
-  material_texture: Fractured energy grain, wind-sheared cloth texture, glowing particulate dust, and clean cel-surface polish.
-  render_quality: Maximum clarity action illustration with strong silhouette readability and crisp energy separation.
-  spatial_distortion: Wide-angle vertigo, crossing-vector depth, lifted horizon pressure, and dramatic negative-space height.
-  atmosphere: Epic, elevated, kinetic, tense.
+  aesthetic: >-
+    Vertigo-height energy crossing, aerial pressure, luminous collision rhythm, heroic tension as abstract
+    directional force.
+  subject_treatment: >-
+    Firm contours, extreme diagonal posture, crossing impact vectors, sharp contour snap, and readable kinetic
+    silhouettes.
+  color_and_tone: Cyan, fire orange, and deep black.
+  lighting_and_shadow: High backlight, shock flare, cyan-orange rim clash, and luminous particle edges.
+  texture_and_material: >-
+    Fractured energy grain, wind-sheared cloth texture, glowing particulate dust, and clean cel-surface
+    polish.
+  camera_and_composition: Wide-angle vertigo, crossing-vector depth, lifted horizon pressure, and dramatic negative-space height.
+  atmosphere_and_mood: Epic, elevated, kinetic, tense.
+  rendering_and_quality: Maximum clarity action illustration with strong silhouette readability and crisp energy separation.
   key_features: Crossing energy vectors, vertigo framing, luminous trails, high backlight, clean impact readability.
-  creative_brief: >
-    Render any subject with elevated collision energy: cyan-orange force lines,
-    high backlight, vertigo depth, and crossing luminous trails should create
-    aerial intensity without fixed characters, props, environment, or confrontation
-    premise.
+  creative_brief: >-
+    Render any subject with elevated collision energy: cyan-orange force lines, high backlight, vertigo depth,
+    and crossing luminous trails should create aerial intensity without fixed characters, props, environment,
+    or confrontation premise.
 avoidRules:
   - photoreal
   - calm-composition

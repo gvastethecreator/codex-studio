@@ -13,19 +13,18 @@ tags:
   - childrens-illustration
 visualDna:
   aesthetic: Classic watercolor storybook illustration (Beatrix Potter influence)
-  form_and_line: Light pencil underdrawing with delicate ink-free contour suggestion
-  color_palette: Botanical pastels, warm neutrals, and transparent wash layering
-  lighting_setup: Soft diffuse daylight with preserved paper-white highlights
-  material_texture: Cold-press paper grain, bloom edges, and wet-on-dry detail contrast
-  render_quality: Gentle handcrafted finish with nursery-book readability
-  spatial_distortion: Mildly anthropomorphic and soft-proportioned character stylization
-  atmosphere: Tender, pastoral, comforting
+  subject_treatment: Light pencil underdrawing with delicate ink-free contour suggestion
+  color_and_tone: Botanical pastels, warm neutrals, and transparent wash layering
+  lighting_and_shadow: Soft diffuse daylight with preserved paper-white highlights
+  texture_and_material: Cold-press paper grain, bloom edges, and wet-on-dry detail contrast
+  camera_and_composition: Mildly anthropomorphic and soft-proportioned character stylization
+  atmosphere_and_mood: Tender, pastoral, comforting
+  rendering_and_quality: Gentle handcrafted finish with nursery-book readability
   key_features: White-space breathing room, feathered wash edges, subtle detail accents
   creative_brief: >-
-    Apply watercolor storybook warmth to any input: transparent washes, cold-press paper grain, soft
-    edge transitions, observational detail, and paper-white breathing space should feel gentle and
-    timeless without requiring animals, gardens, cottages, children, pastoral scenery, or fixed
-    storybook vignettes.
+    Apply watercolor storybook warmth to any input: transparent washes, cold-press paper grain, soft edge
+    transitions, observational detail, and paper-white breathing space should feel gentle and timeless without
+    requiring animals, gardens, cottages, children, pastoral scenery, or fixed storybook vignettes.
 avoidRules:
   - digital
   - sharp

@@ -88,6 +88,10 @@ export function createReferenceRoutes({
           localPath: reference.path,
           publicUrl: toPublicAssetUrl(reference.path),
           strength: reference.strength,
+          mimeType: reference.mimeType,
+          fileSizeBytes: reference.fileSizeBytes,
+          width: reference.width,
+          height: reference.height,
         })),
       };
 

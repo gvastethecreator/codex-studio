@@ -10,15 +10,16 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'flat, 2d, sketch',
     style: {
       aesthetic: 'Glossy 3D emoji/icon language for playful digital communication',
-      form_and_line: 'Round, smooth, pill-shaped, sphere-based, soft extrusion',
-      color_palette: 'Bright Yellow, Blue, Red, vivid primaries, gradient-rich, punchy saturation',
-      lighting_setup: 'Studio softbox, rim light, gradient sky reflection, glossy hotspot',
-      material_texture:
+      subject_treatment: 'Round, smooth, pill-shaped, sphere-based, soft extrusion',
+      color_and_tone: 'Bright Yellow, Blue, Red, vivid primaries, gradient-rich, punchy saturation',
+      lighting_and_shadow: 'Studio softbox, rim light, gradient sky reflection, glossy hotspot',
+      texture_and_material:
         'Shiny plastic or glass, bubble-smooth surface, high-gloss lacquer, candy shell',
-      render_quality: 'Platform-agnostic polished icon render with toy-like gloss',
-      spatial_distortion:
+      camera_and_composition:
         'Sphere based, anthropomorphic objects, simplified features, chunky proportions',
-      atmosphere: 'Happy, expressive, digital, instant communication, friendly warmth, pixel joy',
+      atmosphere_and_mood:
+        'Happy, expressive, digital, instant communication, friendly warmth, pixel joy',
+      rendering_and_quality: 'Platform-agnostic polished icon render with toy-like gloss',
       key_features:
         'Glossy reflection, gradient highlight, white rim catchlight, squircle silhouette',
       creative_brief:
@@ -33,19 +34,19 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Strict retro raster system with tile logic, hard pixel edges, indexed palettes, and low-resolution silhouette discipline',
-      form_and_line:
+      subject_treatment:
         'Square-grid clusters, stair-step diagonals, one-pixel outlines, chunky negative shapes, tile-aligned contours',
-      color_palette:
+      color_and_tone:
         'Limited indexed color ramps, hardware brights, restrained shadow steps, dithered blends, clean black separators',
-      lighting_setup:
+      lighting_and_shadow:
         'Palette-step shading with no soft gradients, cluster highlights, hard shadow cells, and readable value bands',
-      material_texture:
+      texture_and_material:
         'Pixel blocks, ordered dithering, tile repeats, aliased edges, screen-grid crispness',
-      render_quality:
-        'Low-res, intentional, readable, iconic, mechanically constrained, with no painterly smoothing',
-      spatial_distortion:
+      camera_and_composition:
         'Resolution compression, tile repetition, stair-stepped curves, sprite-scale simplification, grid-snapped perspective',
-      atmosphere: 'Playful, constrained, retro-computational, crisp, graphic',
+      atmosphere_and_mood: 'Playful, constrained, retro-computational, crisp, graphic',
+      rendering_and_quality:
+        'Low-res, intentional, readable, iconic, mechanically constrained, with no painterly smoothing',
       key_features:
         'Pixel grid alignment, cluster control, ordered dithering, indexed ramps, hard silhouettes, tile-map rhythm',
       creative_brief:
@@ -60,19 +61,19 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Synthwave voltage system with neon geometry, analog-video nostalgia, chrome accents, and clean retro-futurist depth',
-      form_and_line:
+      subject_treatment:
         'Wireframe planes, parallel grid recurrences, sharp vector silhouettes, triangular solar motifs, chrome edge cuts',
-      color_palette:
+      color_and_tone:
         'High-voltage magenta, cyan beams, deep violet shadow, near-black base, chrome white accents, hot sunset bands',
-      lighting_setup:
+      lighting_and_shadow:
         'Neon rim emission, gradient voltage glow, hard backlight silhouettes, analog screen bloom, dark-field contrast',
-      material_texture:
+      texture_and_material:
         'VHS scanlines, chrome sheen, vector grid glow, smooth plastic black, analog display noise',
-      render_quality:
-        'Crisp, polished, retro-computational, cinematic, luminous, with controlled graphic depth',
-      spatial_distortion:
+      camera_and_composition:
         'Wireframe recession, horizon compression, scanline drift, chrome reflection bend, geometric depth slicing',
-      atmosphere: 'Nocturnal, fast, polished, nostalgic, electric, aspirational',
+      atmosphere_and_mood: 'Nocturnal, fast, polished, nostalgic, electric, aspirational',
+      rendering_and_quality:
+        'Crisp, polished, retro-computational, cinematic, luminous, with controlled graphic depth',
       key_features:
         'Neon gradients, wireframe lattice, chrome accents, analog patina, horizon-band depth, vector geometry',
       creative_brief:
@@ -87,19 +88,19 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Regenerative eco-futurist style with biophilic infrastructure language, clean-tech optimism, and balanced organic-technological harmony',
-      form_and_line:
+      subject_treatment:
         'Flowing botanical arcs merged with engineered modular structures, branch-like network geometry, and smooth growth-driven contours',
-      color_palette:
+      color_and_tone:
         'Chlorophyll-rich greens with warm solar golds, clean sky blues, and soft neutral whites for breathable visual clarity',
-      lighting_setup:
+      lighting_and_shadow:
         'Clear daylight with leaf-filtered dapple, gentle solar glints, and selective bio-luminous accents for hopeful atmosphere',
-      material_texture:
+      texture_and_material:
         'Living-wall foliage, transparent energy glass, matte photovoltaic surfaces, bamboo-like composites, and bio-grown material cues',
-      render_quality:
-        'Clean high-clarity eco-future rendering emphasizing regenerative readability and integrated nature-tech cohesion',
-      spatial_distortion:
+      camera_and_composition:
         'Vertical garden layering, canopy-network depth paths, and architecture-as-ecosystem spatial interweaving',
-      atmosphere: 'Hopeful, bright, restorative, sustainable, calm',
+      atmosphere_and_mood: 'Hopeful, bright, restorative, sustainable, calm',
+      rendering_and_quality:
+        'Clean high-clarity eco-future rendering emphasizing regenerative readability and integrated nature-tech cohesion',
       key_features:
         'Biophilic structure integration, solar-surface mosaics, layered green roofs, regenerative systems readability',
       creative_brief:
@@ -114,20 +115,20 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Diesel-industrial retrofuturism with heavy mechanical massing, soot-era infrastructure, and oppressive analog power aesthetics',
-      form_and_line:
+      subject_treatment:
         'Rivets, heavy metal plates, cast-iron curves, bolted seams, industrial silhouettes',
-      color_palette:
+      color_and_tone:
         'Oil, Grease, Steel, Rust, soot-black, oxidized copper, military-olive stain, burnt-sienna corrosion',
-      lighting_setup:
+      lighting_and_shadow:
         'Sooty, dark, industrial, caged-bulb gloom, exhaust-haze diffusion, furnace-glow warmth',
-      material_texture:
+      texture_and_material:
         'Grime, smoke, metal, cold-stamped steel, oil-slick puddles, sweat-stained leather, caked rust',
-      render_quality:
-        'Dense mechanical rendering with piston-era complexity, high material wear readability, and monumental industrial gravity',
-      spatial_distortion:
+      camera_and_composition:
         'Bulky machinery, oversized engines, vertical oppression, crushing-mass architecture',
-      atmosphere:
+      atmosphere_and_mood:
         'Dirty, loud, powerful, oppressive weight, grinding fatigue, iron-willed endurance',
+      rendering_and_quality:
+        'Dense mechanical rendering with piston-era complexity, high material wear readability, and monumental industrial gravity',
       key_features: 'Exhaust smoke, bolted armor plates, pressure gauges, colossal treads',
       creative_brief:
         'Keep identity rooted in diesel-mechanical grammar: riveted mass, soot-loaded atmosphere, and pressure-gauge industrial lighting should define the style without locking it to a single war narrative vignette. Apply Dieselpunk as a portable style system over any input: preserve its construction grammar, material cues, scale logic, and signature rendering behavior while avoiding a required franchise, literal prop, fixed specimen, classroom sample, product shot, or scene template.',
@@ -141,19 +142,19 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Soft handcrafted pastoral-romantic style centered on slow-living warmth, botanical gentleness, and domestic natural charm',
-      form_and_line:
+      subject_treatment:
         'Delicate organic contouring, airy floral tendrils, soft textile drape lines, and graceful hand-drawn edge behavior',
-      color_palette:
+      color_and_tone:
         'Muted pastel-earth harmonies with sage, cream, lavender, butter, and blush accents tuned for comforting balance',
-      lighting_setup:
+      lighting_and_shadow:
         'Diffused golden warmth with curtain-soft scatter, candlelike ambient glows, and misty morning low-contrast serenity',
-      material_texture:
+      texture_and_material:
         'Natural-fiber linens, hand-thrown ceramic matte grain, wicker weave detail, embroidered thread cues, and dried-botanical tactility',
-      render_quality:
-        'Cozy handcrafted finish emphasizing tactile intimacy, visual softness, and calm domestic-natural storytelling',
-      spatial_distortion:
+      camera_and_composition:
         'Natural human-scale proportions with close-range framing and gently compressed depth for intimate mood',
-      atmosphere: 'Peaceful, tender, cozy, romantic, unhurried',
+      atmosphere_and_mood: 'Peaceful, tender, cozy, romantic, unhurried',
+      rendering_and_quality:
+        'Cozy handcrafted finish emphasizing tactile intimacy, visual softness, and calm domestic-natural storytelling',
       key_features:
         'Botanical motif density, textile-and-ceramic warmth, handmade domestic texture stack, slow-living compositional pacing',
       creative_brief:
@@ -168,19 +169,20 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Gothic scholarly interior style with candlelit intellectual mood, archival intimacy, and old-world academic romance',
-      form_and_line: 'Detailed, gothic, arch-window contours, columnar rhythm, ornate typography',
-      color_palette:
+      subject_treatment:
+        'Detailed, gothic, arch-window contours, columnar rhythm, ornate typography',
+      color_and_tone:
         'Brown, Tweed, Black, Gold, mahogany-warm, oxblood-leather, brass-fixture shimmer, parchment-cream',
-      lighting_setup:
+      lighting_and_shadow:
         'Candlelight, dim, desk-lamp pool, fireplace flicker, window-shaft dust-mote drama',
-      material_texture:
+      texture_and_material:
         'Old paper, leather books, wood, wax-drip candle stacks, wool-blend jackets, ink-stained fingertips',
-      render_quality:
-        'Intellectual, moody, historic, dusty-spine mystery, thesis-night ambiance, secret-society elegance',
-      spatial_distortion:
-        'None, towering bookshelf compression, vaulted-ceiling vertigo, cloistered intimacy',
-      atmosphere:
+      camera_and_composition:
+        'Towering bookshelf compression, vaulted-ceiling vertigo, cloistered intimacy',
+      atmosphere_and_mood:
         'Serious, studious, mysterious, rain-on-glass melancholy, ancient-knowledge reverence, midnight revelation',
+      rendering_and_quality:
+        'Intellectual, moody, historic, dusty-spine mystery, thesis-night ambiance, secret-society elegance',
       key_features:
         'Books and coffee, quill-and-inkwell, brass reading lamps, leather-bound stacks',
       creative_brief:
@@ -195,19 +197,19 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Retro-digital consumer-memory haze with synthetic gradients, low-res luxury, mall-air unreality, and soft ironic emptiness',
-      form_and_line:
+      subject_treatment:
         'Pixel-sorted edges, glossy primitive geometry, UI-era grids, marble-like fragments, low-poly planes, VHS drift',
-      color_palette:
+      color_and_tone:
         'Pastel magenta-cyan, teal neutrals, sunset vapor, synthetic white, washed purple, soft grey marble',
-      lighting_setup:
+      lighting_and_shadow:
         'Diffuse monitor glow, gradient backwash, weak ambient haze, artificial highlight bands, nostalgic screen bloom',
-      material_texture:
+      texture_and_material:
         'Compressed video artifacts, glossy plastic, cheap marble, CRT fuzz, low-res UI texture, airbrushed gradients',
-      render_quality:
-        'Detached, glossy, synthetic, dreamlike, slightly degraded, intentionally corporate and unreal',
-      spatial_distortion:
+      camera_and_composition:
         'Pixel sorting, grid recession, VHS wobble, object-scale ambiguity, compression trails, liminal perspective flattening',
-      atmosphere: 'Empty, ironic, nostalgic, synthetic, uncanny, cool',
+      atmosphere_and_mood: 'Empty, ironic, nostalgic, synthetic, uncanny, cool',
+      rendering_and_quality:
+        'Detached, glossy, synthetic, dreamlike, slightly degraded, intentionally corporate and unreal',
       key_features:
         'Pastel vapor gradients, analog artifacts, UI grid fragments, glossy consumer surfaces, marble-plastic contrast',
       creative_brief:
@@ -222,20 +224,20 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Victorian-industrial speculative style with brass-and-steam futurism, analog invention romance, and ornate mechanical worldbuilding',
-      form_and_line:
+      subject_treatment:
         'Gears, pipes, cog-train silhouettes, steam-vent contours, clock-face profiles',
-      color_palette:
+      color_and_tone:
         'Brass, Copper, Brown leather, verdigris-patina green, steam-whistle silver, mahogany-wood, boiler-plate iron',
-      lighting_setup:
+      lighting_and_shadow:
         'Gaslight, steam, mantle-flame glow, hissing-vent haze, Edison-bulb warmth, lantern-swing shadows',
-      material_texture:
+      texture_and_material:
         'Metal, leather, steam, polished-brass luster, rivet-head bumps, pressure-gauge glass, oiled-gear teeth',
-      render_quality:
-        'Intricate, mechanical, gear-by-gear wonder, differential-engine complexity, aether-science elegance',
-      spatial_distortion:
+      camera_and_composition:
         'Clockwork parts, over-engineered joints, exposed-mechanism transparency, piston-in-sleeve precision',
-      atmosphere:
+      atmosphere_and_mood:
         'Adventure, invention, analog futurism, pressure-system tension, brass-and-steam coziness',
+      rendering_and_quality:
+        'Intricate, mechanical, gear-by-gear wonder, differential-engine complexity, aether-science elegance',
       key_features:
         'Cog-wheel motif language, pressure-gauge instrumentation, brass fittings, steam venting cues, mechanical ornament layering',
       creative_brief:
@@ -249,17 +251,19 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'metal, dry',
     style: {
       aesthetic: 'Biopunk flesh-tech hybrid design with recombinant-lab aesthetics',
-      form_and_line: 'Veins, flesh, sinew-strand contours, tendril-tangle, organic-tube networks',
-      color_palette:
+      subject_treatment:
+        'Veins, flesh, sinew-strand contours, tendril-tangle, organic-tube networks',
+      color_and_tone:
         'Pink, Green, Flesh, viscera-spectrum, bile-yellow, hemoglobin-crimson, amniotic-amber, bruise-purple',
-      lighting_setup:
+      lighting_and_shadow:
         'Wet, slime, fluorescent-incubator, surgical-key, mucous-membrane sheen, bioreactor-glow',
-      material_texture:
+      texture_and_material:
         'Organic matter, membrane-film, pulsating-tissue, slime-coat, chitin-shell, grown-not-built surface',
-      render_quality: 'Visceral speculative bio-design with high organic detail density',
-      spatial_distortion:
+      camera_and_composition:
         'Mutations, extra-limb growth, asymmetric-organ placement, tumor-bud emergence, fused-anatomy',
-      atmosphere: 'Unsettling, biological, lab-grown, accelerated-evolution, recombinant-anxiety',
+      atmosphere_and_mood:
+        'Unsettling, biological, lab-grown, accelerated-evolution, recombinant-anxiety',
+      rendering_and_quality: 'Visceral speculative bio-design with high organic detail density',
       key_features:
         'Flesh tubes, umbilical-cord coils, amniotic-fluid drip, pulsating-vein networks, grown-eye clusters, chitin-plate armor',
       creative_brief:
@@ -274,19 +278,19 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Gothic horror romanticism with ornamental decay, aristocratic gloom, and vertical menace',
-      form_and_line:
+      subject_treatment:
         'Spiky vertical silhouettes, flying-buttress rhythm, tombstone-contours, wrought-iron flourishes',
-      color_palette:
+      color_and_tone:
         'Black, Grey, Deep Red, midnight-blue, blood-wine, silver-moon, funeral-lilac, bone-ivory',
-      lighting_setup:
+      lighting_and_shadow:
         'Moonlight, fog, candelabra-flicker, stained-glass color cuts, lightning-flash drama, torch-sconce warmth',
-      material_texture:
+      texture_and_material:
         'Stone, velvet, fog, crumbling-masonry, coffin-wood, wax-drip candle, cold-marble tomb, cobweb-silk',
-      render_quality: 'Atmospheric gothic rendering blending elegance and menace',
-      spatial_distortion:
+      camera_and_composition:
         'Shadows, elongated-finger silhouettes, stretched verticals, impossible depth, cape-like darkness',
-      atmosphere:
+      atmosphere_and_mood:
         'Fear, elegance, whispered decay, eternal-twilight, forbidden-love, moonlit-solitude',
+      rendering_and_quality: 'Atmospheric gothic rendering blending elegance and menace',
       key_features:
         'Wrought-iron motifs, candelabra light pools, stone decay, dramatic moonlit silhouettes',
       creative_brief:
@@ -300,19 +304,19 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'dark, scary',
     style: {
       aesthetic: 'Kawaii pastel mascot illustration language with high-cute stylization',
-      form_and_line:
+      subject_treatment:
         'Thick soft lines, rounded-rubber-hose curves, marshmallow-contours, plushie-silhouette',
-      color_palette:
+      color_and_tone:
         'Pastel Pink, Blue, Yellow, cotton-candy-spectrum, mint-chip, lavender-cream, buttercream, powder-blue sky',
-      lighting_setup:
+      lighting_and_shadow:
         'Bright, flat, ring-light softness, studio-bounce fill, high-key-whites, shadowless-cheer',
-      material_texture:
+      texture_and_material:
         'Smooth, fluffy, marshmallow-soft, fondant-gloss, sherbet-grain, cotton-ball fuzz',
-      render_quality: 'Soft polished mascot finish with sticker-friendly clarity',
-      spatial_distortion:
+      camera_and_composition:
         'Big eyes, sparkle-pupil, oversized-head, tiny-body, chibi-extremity, bean-proportion',
-      atmosphere:
+      atmosphere_and_mood:
         'Joy, innocence, pastel-paradise, friendship-festival, sugar-rush delight, unconditional-sweetness',
+      rendering_and_quality: 'Soft polished mascot finish with sticker-friendly clarity',
       key_features:
         'Sparkles, ribbon-bows, heart-motifs, blush-stickers, star-twinkle accents, animal-ear headbands',
       creative_brief:
@@ -326,18 +330,19 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'hope, light',
     style: {
       aesthetic: 'Grimdark cathedral-industrial war fantasy with oppressive futurism',
-      form_and_line:
+      subject_treatment:
         'Heavy, dirty, ceramite-plate contours, purity-seal ribbons, chainsword-teeth, servo-skull profiles',
-      color_palette:
+      color_and_tone:
         'Mud, Blood, Rust, boltgun-metal, purity-parchment cream, plasma-coil blue, heretic-ash grey, melta-glow orange',
-      lighting_setup:
+      lighting_and_shadow:
         'Dark, harsh, gothic-arch crypt-light, muzzle-flash bursts, warp-storm flicker, candle-shrine pools',
-      material_texture:
+      texture_and_material:
         'Grime, scars, ceramite-ceramic, battle-damage pitting, purity-seal wax, worn-leather, adamantium-rivet',
-      render_quality: 'Dense militarized gothic rendering with maximal wear and severity',
-      spatial_distortion:
+      camera_and_composition:
         'Skulls everywhere, gothic-overscaling, cathedral-proportions, dreadnought-mass, flying-buttress tanks',
-      atmosphere: 'Depressing, epic, only-war, dying-emperor, last-stand-courage, faith-as-armor',
+      atmosphere_and_mood:
+        'Depressing, epic, only-war, dying-emperor, last-stand-courage, faith-as-armor',
+      rendering_and_quality: 'Dense militarized gothic rendering with maximal wear and severity',
       key_features:
         'Skull iconography, purity seals, cathedral spires, battle-scarred armor plates, relic-tech ornament',
       creative_brief:
@@ -351,19 +356,20 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'flat, matte',
     style: {
       aesthetic: 'Frutiger Aero Y2K-era glossy UI optimism and skeuomorphic futurism',
-      form_and_line:
+      subject_treatment:
         'Glossy curves, rounded-rect silhouettes, bubble-button contours, aqua-orb profiles',
-      color_palette:
+      color_and_tone:
         'Cyan, Green, White, aqua-bubble blue, grass-green, brushed-metal grey, traffic-light amber',
-      lighting_setup:
+      lighting_and_shadow:
         'Bright, glossy, window-reflection streak, soft-overhead ambient, screen-glow-backlight, inset-shadow depth',
-      material_texture:
+      texture_and_material:
         'Glass, water bubbles, brushed-aluminum, aqua-gel buttons, acrylic-transparency, droplet-lens',
-      render_quality: 'Polished early-2000s interface rendering with optimistic consumer-tech tone',
-      spatial_distortion:
+      camera_and_composition:
         'Floating icons, dock-magnification, widget-flyout, layer-drop-shadow separation',
-      atmosphere:
+      atmosphere_and_mood:
         'Fresh, clean, future, login-screen possibility, broadband-dawn, digital-optimism',
+      rendering_and_quality:
+        'Polished early-2000s interface rendering with optimistic consumer-tech tone',
       key_features:
         'Lens flare, glossy-aqua button, grass-green progress bar, brushed-metal window chrome, droplet-reflection',
       creative_brief:
@@ -378,19 +384,19 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Memphis-informed anti-minimal pattern system with geometric jokes, surface collision, and playful design contradiction',
-      form_and_line:
+      subject_treatment:
         'Squiggles, triangles, terrazzo speckles, checker fragments, zany circles, offset blocks, zigzag punctuation',
-      color_palette:
+      color_and_tone:
         'Hot pink, teal, primary yellow, traffic-cone orange, matte black, white, acid accents, cobalt depth',
-      lighting_setup:
+      lighting_and_shadow:
         'Flat product-design illumination with crisp shape boundaries, minimal shadows, and pattern-first readability',
-      material_texture:
+      texture_and_material:
         'Laminate gloss, terrazzo chips, matte plastic, printed pattern fields, synthetic tabletop tactility',
-      render_quality:
-        'Bold, cheeky, graphic, design-object sharp, deliberately over-patterned, high-contrast',
-      spatial_distortion:
+      camera_and_composition:
         'Pattern scale jumps, floating shape collisions, anti-grid balance, shallow design-stage depth, playful visual imbalance',
-      atmosphere: 'Playful, decorative, contrarian, optimistic, ironic, loud',
+      atmosphere_and_mood: 'Playful, decorative, contrarian, optimistic, ironic, loud',
+      rendering_and_quality:
+        'Bold, cheeky, graphic, design-object sharp, deliberately over-patterned, high-contrast',
       key_features:
         'Squiggle motifs, checkerboard fragments, terrazzo noise, primary blocks, black outline accents, anti-minimal composition',
       creative_brief:
@@ -405,19 +411,19 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Psychedelic optical recursion where color, line, and form melt into high-intensity perceptual feedback',
-      form_and_line:
+      subject_treatment:
         'Paisley whorls, melting contours, nested mandalas, flame tongues, vibrating curves, morphing edge loops',
-      color_palette:
+      color_and_tone:
         'Day-Glo rainbow, blacklight purple, neon chartreuse, hot magenta, acid cyan, saturated orange, op-art contrast',
-      lighting_setup:
+      lighting_and_shadow:
         'Internal chromatic glow, blacklight saturation, high contrast optical vibration, color-field pulsing',
-      material_texture:
+      texture_and_material:
         'Poster ink, liquid gradient bands, vibrating print grain, glossy ink pools, hand-drawn optical waves',
-      render_quality:
-        'Maximal, hallucinatory, dense, flowing, deliberately unstable, with intense graphic clarity',
-      spatial_distortion:
+      camera_and_composition:
         'Recursive warping, swirl pull, contour melt, scale loops, radial feedback, figure-ground reversal',
-      atmosphere: 'Trippy, euphoric, saturated, unstable, mesmerizing, loud',
+      atmosphere_and_mood: 'Trippy, euphoric, saturated, unstable, mesmerizing, loud',
+      rendering_and_quality:
+        'Maximal, hallucinatory, dense, flowing, deliberately unstable, with intense graphic clarity',
       key_features:
         'Paisley recursion, mandala centers, liquid contours, blacklight glow, vibrating color clashes, fractal spiral pressure',
       creative_brief:
@@ -432,19 +438,19 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Macro sparkle material system built from iridescent flake scatter, specular chaos, and celebratory micro-geometry',
-      form_and_line:
+      subject_treatment:
         'Tiny hexagons, sliced polygons, star confetti, shard edges, bokeh circles, clustered micro-facets',
-      color_palette:
+      color_and_tone:
         'Holographic rainbow, metallic silver, iridescent cyan-pink shifts, foil gold, neon accents, prismatic whites',
-      lighting_setup:
+      lighting_and_shadow:
         'Hard specular points, shallow macro falloff, prismatic bounce, high sparkle density, dark-to-bright contrast',
-      material_texture:
+      texture_and_material:
         'Foil flakes, glitter dust, micro-mirrors, glossy confetti, granular sparkle fields, scattered reflective chips',
-      render_quality:
-        'Dense, festive, tactile, reflective, close-focus, with controlled chaos and readable shimmer structure',
-      spatial_distortion:
+      camera_and_composition:
         'Bokeh expansion, specular starbursts, scale ambiguity, shallow-depth scatter, chromatic reflection shifts',
-      atmosphere: 'Celebratory, kinetic, glossy, playful, glamorous, high-energy',
+      atmosphere_and_mood: 'Celebratory, kinetic, glossy, playful, glamorous, high-energy',
+      rendering_and_quality:
+        'Dense, festive, tactile, reflective, close-focus, with controlled chaos and readable shimmer structure',
       key_features:
         'Iridescent flake geometry, specular hot spots, bokeh scatter, prism shifts, metallic dust, micro-facet density',
       creative_brief:

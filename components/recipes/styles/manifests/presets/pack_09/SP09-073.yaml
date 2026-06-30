@@ -13,15 +13,19 @@ tags:
   - man-made-materials
 visualDna:
   aesthetic: Retro linoleum pattern
-  form_and_line: Printed pattern
-  color_palette: Beige, pattern
-  lighting_setup: Waxy sheen
-  material_texture: Smooth plastic
-  render_quality: Retro, cheap
-  spatial_distortion: Peeling corner
-  atmosphere: Nostalgic, home
+  subject_treatment: Printed pattern
+  color_and_tone: Beige, pattern
+  lighting_and_shadow: Waxy sheen
+  texture_and_material: Smooth plastic
+  camera_and_composition: Peeling corner
+  atmosphere_and_mood: Nostalgic, home
+  rendering_and_quality: Retro, cheap
   key_features: Repeat pattern
-  creative_brief: 'Apply retro linoleum as printed material system: waxy beige surface, repeating mid-century motifs, smooth plastic tiredness, slight peeling corners, and nostalgic cheapness preserved in vinyl. If floor, interior, prop, or product exists, let pattern sit on it; otherwise use linoleum repetition and worn sheen as graphic surface treatment without requiring a kitchen.'
+  creative_brief: >-
+    Apply retro linoleum as printed material system: waxy beige surface, repeating mid-century motifs, smooth
+    plastic tiredness, slight peeling corners, and nostalgic cheapness preserved in vinyl. If floor, interior,
+    prop, or product exists, let pattern sit on it; otherwise use linoleum repetition and worn sheen as
+    graphic surface treatment without requiring a kitchen.
 avoidRules:
   - tile
   - wood

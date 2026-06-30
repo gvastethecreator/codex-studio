@@ -13,18 +13,20 @@ tags:
   - hard-surface-and-product-cgi
 visualDna:
   aesthetic: Automotive launch-film finish
-  form_and_line: Aerodynamic lines
-  color_palette: Metallic paint, color-shift finish
-  lighting_setup: Studio sweep, highlight-catch reflections
-  material_texture: Metallic paint, rubber/glass cues when relevant
-  render_quality: High end, pristine, launch-film quality
-  atmosphere: Fast, luxury, aerodynamic desire
+  subject_treatment: Aerodynamic lines
+  color_and_tone: Metallic paint, color-shift finish
+  lighting_and_shadow: Studio sweep, highlight-catch reflections
+  texture_and_material: Metallic paint, rubber/glass cues when relevant
+  camera_and_composition: >-
+    Lookdev camera for Automotive Render: three-quarter or orthographic framing, clean silhouette read,
+    material highlights, controlled depth, and vertical card composition.
+  atmosphere_and_mood: Fast, luxury, aerodynamic desire
+  rendering_and_quality: High end, pristine, launch-film quality
   key_features: Reflection lines, body-contour flow
   creative_brief: >-
-    Apply automotive launch-film rendering to the input: long reflection sweeps,
-    color-shifting metallic finish, aerodynamic highlight flow and pristine
-    material separation. If a vehicle is present, enhance grille/tail/rubber/
-    glass truth; otherwise use automotive surface language without forcing a car.
+    Apply automotive launch-film rendering to the input: long reflection sweeps, color-shifting metallic
+    finish, aerodynamic highlight flow and pristine material separation. If a vehicle is present, enhance
+    grille/tail/rubber/ glass truth; otherwise use automotive surface language without forcing a car.
 avoidRules:
   - dirty
   - dented

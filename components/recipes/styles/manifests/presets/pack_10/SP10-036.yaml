@@ -13,15 +13,19 @@ tags:
   - surrealism-and-dream
 visualDna:
   aesthetic: Two images blended
-  form_and_line: Silhouette
-  color_palette: Mixed
-  lighting_setup: Screen blend
-  material_texture: Layered
-  render_quality: True Detective intro
-  spatial_distortion: Ghosting
-  atmosphere: Psychological
+  subject_treatment: Silhouette
+  color_and_tone: Mixed
+  lighting_and_shadow: Screen blend
+  texture_and_material: Layered
+  camera_and_composition: Ghosting
+  atmosphere_and_mood: Psychological
+  rendering_and_quality: True Detective intro
   key_features: Silhouette container
-  creative_brief: Apply double-exposure blending over the input with two image systems occupying one frame, silhouette-like containment, screen-blend layering, ghosted overlap, and psychological continuity between inside and outside. If faces, figures, forests, cities, or landscapes exist, fuse them; otherwise use subject contours as containers for a second visual field.
+  creative_brief: >-
+    Apply double-exposure blending over the input with two image systems occupying one frame, silhouette-like
+    containment, screen-blend layering, ghosted overlap, and psychological continuity between inside and
+    outside. If faces, figures, forests, cities, or landscapes exist, fuse them; otherwise use subject
+    contours as containers for a second visual field.
 avoidRules:
   - single image
 assets:

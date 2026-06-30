@@ -12,19 +12,22 @@ tags:
   - anime-battle-and-worlds
   - modern-shonen-and-action
 visualDna:
-  aesthetic: Predator-ego sports assault, with hyper-competitive psychology, lock-on intensity, and tactical hunger made visible.
-  form_and_line: Feral close-up geometry, field-line abstractions, ballistic vectors, sharp eye-line cuts, and pressure-zone framing.
-  color_palette: Electric blue, predator green, hot magenta, stadium black, white linework, and acid yellow target accents.
-  lighting_setup: Neon rim aggression, spotlight isolation, pulse flashes, and high-contrast tunnel vision.
-  material_texture: Synthetic turf texture, sweat gloss, digital speed overlays, crisp cel impact, and chromatic motion haze.
-  render_quality: Premium sports-anime polish with psychological clarity, speed precision, and manic competitive focus.
-  spatial_distortion: Tunnel-vision compression, target-lock perspective, and velocity lines that make desire feel tactical.
-  atmosphere: Predatory, focused, manic, competitive
+  aesthetic: >-
+    Predator-ego sports assault, with hyper-competitive psychology, lock-on intensity, and tactical hunger
+    made visible.
+  subject_treatment: >-
+    Feral close-up geometry, field-line abstractions, ballistic vectors, sharp eye-line cuts, and
+    pressure-zone framing.
+  color_and_tone: Electric blue, predator green, hot magenta, stadium black, white linework, and acid yellow target accents.
+  lighting_and_shadow: Neon rim aggression, spotlight isolation, pulse flashes, and high-contrast tunnel vision.
+  texture_and_material: Synthetic turf texture, sweat gloss, digital speed overlays, crisp cel impact, and chromatic motion haze.
+  camera_and_composition: Tunnel-vision compression, target-lock perspective, and velocity lines that make desire feel tactical.
+  atmosphere_and_mood: Predatory, focused, manic, competitive
+  rendering_and_quality: Premium sports-anime polish with psychological clarity, speed precision, and manic competitive focus.
   key_features: Lock-on framing, ego aura, field-line abstraction, ballistic intent, predatory focus.
   creative_brief: >-
-    Turn any prompt into a competitive ego diagram: use target-lock framing,
-    neon pressure lines, feral focus, and ballistic intent without requiring a
-    sport object, field, goal, or match scene.
+    Turn any prompt into a competitive ego diagram: use target-lock framing, neon pressure lines, feral focus,
+    and ballistic intent without requiring a sport object, field, goal, or match scene.
 avoidRules:
   - realistic
   - 3d render
@@ -41,7 +44,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-124.webp
 attributes:
-  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
+  negativePrompt: >-
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts,
+    watermark, text, signature
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds

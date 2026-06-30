@@ -12,20 +12,20 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         "Winter Friction Romance Style within 2. 2000s Classics: a reusable Anime Classics & Prestige visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Winter Friction Romance Style's specific style identity.",
-      form_and_line:
+      subject_treatment:
         'Define Winter Friction Romance Style through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
-      color_palette:
+      color_and_tone:
         'Use a Winter Friction Romance Style-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
-      lighting_setup:
+      lighting_and_shadow:
         'Use lighting that makes Winter Friction Romance Style recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
-      material_texture:
+      texture_and_material:
         'Use materials and textures that reinforce Winter Friction Romance Style: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
-      render_quality:
-        'Render Winter Friction Romance Style with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
-      spatial_distortion:
+      camera_and_composition:
         'Use spatial behavior that fits Winter Friction Romance Style: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
-      atmosphere:
+      atmosphere_and_mood:
         'Set a mood that belongs to Winter Friction Romance Style: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+      rendering_and_quality:
+        'Render Winter Friction Romance Style with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       key_features:
         "Prioritize Winter Friction Romance Style's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
@@ -41,20 +41,20 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         "Clan Comedy Escalation Style within 2. 2000s Classics: a reusable Anime Classics & Prestige visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Clan Comedy Escalation Style's specific style identity.",
-      form_and_line:
+      subject_treatment:
         'Define Clan Comedy Escalation Style through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
-      color_palette:
+      color_and_tone:
         'Use a Clan Comedy Escalation Style-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
-      lighting_setup:
+      lighting_and_shadow:
         'Use lighting that makes Clan Comedy Escalation Style recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
-      material_texture:
+      texture_and_material:
         'Use materials and textures that reinforce Clan Comedy Escalation Style: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
-      render_quality:
-        'Render Clan Comedy Escalation Style with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
-      spatial_distortion:
+      camera_and_composition:
         'Use spatial behavior that fits Clan Comedy Escalation Style: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
-      atmosphere:
+      atmosphere_and_mood:
         'Set a mood that belongs to Clan Comedy Escalation Style: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+      rendering_and_quality:
+        'Render Clan Comedy Escalation Style with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       key_features:
         "Prioritize Clan Comedy Escalation Style's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
@@ -70,20 +70,20 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         "Pop Reality Bend Style within 2. 2000s Classics: a reusable Anime Classics & Prestige visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Pop Reality Bend Style's specific style identity.",
-      form_and_line:
+      subject_treatment:
         'Define Pop Reality Bend Style through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
-      color_palette:
+      color_and_tone:
         'Use a Pop Reality Bend Style-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
-      lighting_setup:
+      lighting_and_shadow:
         'Use lighting that makes Pop Reality Bend Style recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
-      material_texture:
+      texture_and_material:
         'Use materials and textures that reinforce Pop Reality Bend Style: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
-      render_quality:
-        'Render Pop Reality Bend Style with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
-      spatial_distortion:
+      camera_and_composition:
         'Use spatial behavior that fits Pop Reality Bend Style: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
-      atmosphere:
+      atmosphere_and_mood:
         'Set a mood that belongs to Pop Reality Bend Style: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+      rendering_and_quality:
+        'Render Pop Reality Bend Style with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       key_features:
         "Prioritize Pop Reality Bend Style's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
@@ -99,20 +99,20 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         "Anachronistic Deadpan Mayhem Style within 2. 2000s Classics: a reusable Anime Classics & Prestige visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Anachronistic Deadpan Mayhem Style's specific style identity.",
-      form_and_line:
+      subject_treatment:
         'Define Anachronistic Deadpan Mayhem Style through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
-      color_palette:
+      color_and_tone:
         'Use a Anachronistic Deadpan Mayhem Style-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
-      lighting_setup:
+      lighting_and_shadow:
         'Use lighting that makes Anachronistic Deadpan Mayhem Style recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
-      material_texture:
+      texture_and_material:
         'Use materials and textures that reinforce Anachronistic Deadpan Mayhem Style: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
-      render_quality:
-        'Render Anachronistic Deadpan Mayhem Style with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
-      spatial_distortion:
+      camera_and_composition:
         'Use spatial behavior that fits Anachronistic Deadpan Mayhem Style: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
-      atmosphere:
+      atmosphere_and_mood:
         'Set a mood that belongs to Anachronistic Deadpan Mayhem Style: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+      rendering_and_quality:
+        'Render Anachronistic Deadpan Mayhem Style with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       key_features:
         "Prioritize Anachronistic Deadpan Mayhem Style's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
@@ -128,20 +128,20 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         "Clinical Nocturne Tactics Style within 2. 2000s Classics: a reusable Anime Classics & Prestige visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Clinical Nocturne Tactics Style's specific style identity.",
-      form_and_line:
+      subject_treatment:
         'Define Clinical Nocturne Tactics Style through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
-      color_palette:
+      color_and_tone:
         'Use a Clinical Nocturne Tactics Style-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
-      lighting_setup:
+      lighting_and_shadow:
         'Use lighting that makes Clinical Nocturne Tactics Style recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
-      material_texture:
+      texture_and_material:
         'Use materials and textures that reinforce Clinical Nocturne Tactics Style: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
-      render_quality:
-        'Render Clinical Nocturne Tactics Style with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
-      spatial_distortion:
+      camera_and_composition:
         'Use spatial behavior that fits Clinical Nocturne Tactics Style: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
-      atmosphere:
+      atmosphere_and_mood:
         'Set a mood that belongs to Clinical Nocturne Tactics Style: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+      rendering_and_quality:
+        'Render Clinical Nocturne Tactics Style with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       key_features:
         "Prioritize Clinical Nocturne Tactics Style's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
@@ -157,20 +157,20 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         "Summer Loop Paranoia Style within 2. 2000s Classics: a reusable Anime Classics & Prestige visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Summer Loop Paranoia Style's specific style identity.",
-      form_and_line:
+      subject_treatment:
         'Define Summer Loop Paranoia Style through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
-      color_palette:
+      color_and_tone:
         'Use a Summer Loop Paranoia Style-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
-      lighting_setup:
+      lighting_and_shadow:
         'Use lighting that makes Summer Loop Paranoia Style recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
-      material_texture:
+      texture_and_material:
         'Use materials and textures that reinforce Summer Loop Paranoia Style: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
-      render_quality:
-        'Render Summer Loop Paranoia Style with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
-      spatial_distortion:
+      camera_and_composition:
         'Use spatial behavior that fits Summer Loop Paranoia Style: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
-      atmosphere:
+      atmosphere_and_mood:
         'Set a mood that belongs to Summer Loop Paranoia Style: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+      rendering_and_quality:
+        'Render Summer Loop Paranoia Style with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       key_features:
         "Prioritize Summer Loop Paranoia Style's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
@@ -186,20 +186,20 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         "Vertical Speed Rebellion Style within 2. 2000s Classics: a reusable Anime Classics & Prestige visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Vertical Speed Rebellion Style's specific style identity.",
-      form_and_line:
+      subject_treatment:
         'Define Vertical Speed Rebellion Style through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
-      color_palette:
+      color_and_tone:
         'Use a Vertical Speed Rebellion Style-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
-      lighting_setup:
+      lighting_and_shadow:
         'Use lighting that makes Vertical Speed Rebellion Style recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
-      material_texture:
+      texture_and_material:
         'Use materials and textures that reinforce Vertical Speed Rebellion Style: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
-      render_quality:
-        'Render Vertical Speed Rebellion Style with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
-      spatial_distortion:
+      camera_and_composition:
         'Use spatial behavior that fits Vertical Speed Rebellion Style: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
-      atmosphere:
+      atmosphere_and_mood:
         'Set a mood that belongs to Vertical Speed Rebellion Style: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+      rendering_and_quality:
+        'Render Vertical Speed Rebellion Style with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       key_features:
         "Prioritize Vertical Speed Rebellion Style's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
@@ -215,20 +215,20 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         "Black-Lipstick Melodrama Punk Style within 2. 2000s Classics: a reusable Anime Classics & Prestige visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Black-Lipstick Melodrama Punk Style's specific style identity.",
-      form_and_line:
+      subject_treatment:
         'Define Black-Lipstick Melodrama Punk Style through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
-      color_palette:
+      color_and_tone:
         'Use a Black-Lipstick Melodrama Punk Style-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
-      lighting_setup:
+      lighting_and_shadow:
         'Use lighting that makes Black-Lipstick Melodrama Punk Style recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
-      material_texture:
+      texture_and_material:
         'Use materials and textures that reinforce Black-Lipstick Melodrama Punk Style: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
-      render_quality:
-        'Render Black-Lipstick Melodrama Punk Style with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
-      spatial_distortion:
+      camera_and_composition:
         'Use spatial behavior that fits Black-Lipstick Melodrama Punk Style: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
-      atmosphere:
+      atmosphere_and_mood:
         'Set a mood that belongs to Black-Lipstick Melodrama Punk Style: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+      rendering_and_quality:
+        'Render Black-Lipstick Melodrama Punk Style with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       key_features:
         "Prioritize Black-Lipstick Melodrama Punk Style's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
@@ -244,20 +244,20 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         "Rose Elite Comedy Style within 2. 2000s Classics: a reusable Anime Classics & Prestige visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Rose Elite Comedy Style's specific style identity.",
-      form_and_line:
+      subject_treatment:
         'Define Rose Elite Comedy Style through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
-      color_palette:
+      color_and_tone:
         'Use a Rose Elite Comedy Style-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
-      lighting_setup:
+      lighting_and_shadow:
         'Use lighting that makes Rose Elite Comedy Style recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
-      material_texture:
+      texture_and_material:
         'Use materials and textures that reinforce Rose Elite Comedy Style: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
-      render_quality:
-        'Render Rose Elite Comedy Style with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
-      spatial_distortion:
+      camera_and_composition:
         'Use spatial behavior that fits Rose Elite Comedy Style: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
-      atmosphere:
+      atmosphere_and_mood:
         'Set a mood that belongs to Rose Elite Comedy Style: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+      rendering_and_quality:
+        'Render Rose Elite Comedy Style with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       key_features:
         "Prioritize Rose Elite Comedy Style's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
@@ -273,19 +273,19 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Moral alchemical fantasy with symbolic geometry, mechanical sacrifice, tragic resolve, and early-digital epic clarity.',
-      form_and_line:
+      subject_treatment:
         'Smooth vector-like anime strokes, crisp contour clarity, circular diagram rhythm, precise hand/edge emphasis, and grounded shonen stance.',
-      color_palette:
+      color_and_tone:
         'Burnished gold, oxide red, slate blue, parchment beige, steel gray, and saturated early-HD glow accents.',
-      lighting_setup:
+      lighting_and_shadow:
         'Polished gradient highlights, symbolic underglow, rim on mechanical edges, and balanced key/fill for readable drama.',
-      material_texture:
+      texture_and_material:
         'Smooth digital cel surfaces, etched symbol marks, brushed metal, worn cloth, chalky dust, and subtle composite grain.',
-      render_quality:
-        'Early-2000s digital anime production frame with clean rendering, smooth color blending, and epic moral readability.',
-      spatial_distortion:
+      camera_and_composition:
         'Circular composition fields, equivalent-exchange symmetry, bold perspective angles, and action-ready symbolic framing.',
-      atmosphere: 'Epic, thoughtful, tragic, philosophical',
+      atmosphere_and_mood: 'Epic, thoughtful, tragic, philosophical',
+      rendering_and_quality:
+        'Early-2000s digital anime production frame with clean rendering, smooth color blending, and epic moral readability.',
       key_features:
         'Symbolic circles, moral symmetry, mechanical edge highlights, tragic glow, and clear early-digital action hierarchy.',
       creative_brief:
@@ -301,19 +301,19 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Operatic rebellion strategy with theatrical command, aristocratic severity, masked intent, and elegant political tension.',
-      form_and_line:
+      subject_treatment:
         'Smooth vector-like anime strokes, crisp contour clarity, cape-like silhouette geometry, chessboard blocking, and declarative pose design.',
-      color_palette:
+      color_and_tone:
         'Imperial crimson, polished black, royal violet, cold white, gold trim accents, and saturated early-HD emergency glow.',
-      lighting_setup:
+      lighting_and_shadow:
         'Polished gradient highlights, spotlight-like command keys, crimson rim light, and clean fill for graphic hierarchy.',
-      material_texture:
+      texture_and_material:
         'Smooth digital cel polish, lacquered black surfaces, ceremonial cloth sheen, tactical glass glow, and subtle composite grain.',
-      render_quality:
-        'Early-2000s digital anime production frame with clean rendering, smooth color blending, and high-drama readability.',
-      spatial_distortion:
+      camera_and_composition:
         'Strategic overhead cues, theatrical diagonals, throne-like negative space, and compressed command-board perspective.',
-      atmosphere: 'Grand, strategic, dramatic, political',
+      atmosphere_and_mood: 'Grand, strategic, dramatic, political',
+      rendering_and_quality:
+        'Early-2000s digital anime production frame with clean rendering, smooth color blending, and high-drama readability.',
       key_features:
         'Masked intention, chesslike composition, crimson-black authority, theatrical diagonals, and elegant defiance.',
       creative_brief:
@@ -329,19 +329,19 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Hot-blooded spiral bravado with impossible scale, upward momentum, heroic exaggeration, and belief-as-motion intensity.',
-      form_and_line:
+      subject_treatment:
         'Smooth vector-like anime strokes, crisp contour clarity, spiral gesture arcs, explosive foreshortening, and shout-driven silhouette expansion.',
-      color_palette:
+      color_and_tone:
         'Fiery orange, solar yellow, electric blue, hot magenta, pure white impact cores, and deep cosmic blacks.',
-      lighting_setup:
+      lighting_and_shadow:
         'Polished gradient highlights, radial burst keys, rim glow on expanding forms, and clean fill for maximum hype readability.',
-      material_texture:
+      texture_and_material:
         'Smooth digital cel polish, energy-ring gradients, glossy heroic surfaces, speed-line noise, and subtle composite grain.',
-      render_quality:
-        'Early-2000s digital anime production frame with clean rendering, smooth color blending, and maximal impact hierarchy.',
-      spatial_distortion:
+      camera_and_composition:
         'Spiral-scale warping, upward vanishing points, impossible compression of distance, and oversized impact framing.',
-      atmosphere: 'Hype, unstoppable, passionate, transcendent',
+      atmosphere_and_mood: 'Hype, unstoppable, passionate, transcendent',
+      rendering_and_quality:
+        'Early-2000s digital anime production frame with clean rendering, smooth color blending, and maximal impact hierarchy.',
       key_features:
         'Spiral vectors, radial impact cores, upward scale escalation, declarative heroic pose logic, and clean hype readability.',
       creative_brief:
@@ -357,19 +357,19 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Early-digital gothic soul-pop action with angular cool, playful dread, mask-like rivalry, and occult graphic rhythm.',
-      form_and_line:
+      subject_treatment:
         'Clean vector-like anime linework, crisp contour clarity, angular silhouette hooks, stretched poses, and emblematic motion arcs.',
-      color_palette:
+      color_and_tone:
         'Saturated crimson, bone white, electric yellow, deep violet, flat blacks, and punchy early-HD chroma accents.',
-      lighting_setup:
+      lighting_and_shadow:
         'Polished gradient highlights, rim glow on angular edges, moonlike graphic keys, and balanced key/fill for clear action reads.',
-      material_texture:
+      texture_and_material:
         'Smooth matte digital cel surfaces, flat emblem graphics, subtle noise grain, lacquered black accents, and clean composite edges.',
-      render_quality:
-        'Early-2000s digital anime production frame with smooth color blending, clean rendering, and strong youth-action hierarchy.',
-      spatial_distortion:
+      camera_and_composition:
         'Bold perspective angles, emblem-like background compression, action-ready framing, and graphic orbit motifs.',
-      atmosphere: 'Gothic, stylish, eerie, sleek.',
+      atmosphere_and_mood: 'Gothic, stylish, eerie, sleek.',
+      rendering_and_quality:
+        'Early-2000s digital anime production frame with smooth color blending, clean rendering, and strong youth-action hierarchy.',
       key_features:
         'Occult pop motifs, angular silhouette language, readable impact choreography, rivalry geometry, and playful dread.',
       creative_brief:
@@ -385,20 +385,20 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         "Gothic Resonance Punk Style within 2. 2000s Classics: a reusable Anime Classics & Prestige visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Gothic Resonance Punk Style's specific style identity.",
-      form_and_line:
+      subject_treatment:
         'Define Gothic Resonance Punk Style through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
-      color_palette:
+      color_and_tone:
         'Use a Gothic Resonance Punk Style-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
-      lighting_setup:
+      lighting_and_shadow:
         'Use lighting that makes Gothic Resonance Punk Style recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
-      material_texture:
+      texture_and_material:
         'Use materials and textures that reinforce Gothic Resonance Punk Style: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
-      render_quality:
-        'Render Gothic Resonance Punk Style with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
-      spatial_distortion:
+      camera_and_composition:
         'Use spatial behavior that fits Gothic Resonance Punk Style: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
-      atmosphere:
+      atmosphere_and_mood:
         'Set a mood that belongs to Gothic Resonance Punk Style: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+      rendering_and_quality:
+        'Render Gothic Resonance Punk Style with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       key_features:
         "Prioritize Gothic Resonance Punk Style's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
@@ -414,20 +414,20 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         "Sky-Surf Romantic Momentum Style within 2. 2000s Classics: a reusable Anime Classics & Prestige visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Sky-Surf Romantic Momentum Style's specific style identity.",
-      form_and_line:
+      subject_treatment:
         'Define Sky-Surf Romantic Momentum Style through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
-      color_palette:
+      color_and_tone:
         'Use a Sky-Surf Romantic Momentum Style-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
-      lighting_setup:
+      lighting_and_shadow:
         'Use lighting that makes Sky-Surf Romantic Momentum Style recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
-      material_texture:
+      texture_and_material:
         'Use materials and textures that reinforce Sky-Surf Romantic Momentum Style: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
-      render_quality:
-        'Render Sky-Surf Romantic Momentum Style with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
-      spatial_distortion:
+      camera_and_composition:
         'Use spatial behavior that fits Sky-Surf Romantic Momentum Style: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
-      atmosphere:
+      atmosphere_and_mood:
         'Set a mood that belongs to Sky-Surf Romantic Momentum Style: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+      rendering_and_quality:
+        'Render Sky-Surf Romantic Momentum Style with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       key_features:
         "Prioritize Sky-Surf Romantic Momentum Style's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
@@ -443,20 +443,20 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         "Velvet Covenant Gothic Style within 2. 2000s Classics: a reusable Anime Classics & Prestige visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Velvet Covenant Gothic Style's specific style identity.",
-      form_and_line:
+      subject_treatment:
         'Define Velvet Covenant Gothic Style through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
-      color_palette:
+      color_and_tone:
         'Use a Velvet Covenant Gothic Style-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
-      lighting_setup:
+      lighting_and_shadow:
         'Use lighting that makes Velvet Covenant Gothic Style recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
-      material_texture:
+      texture_and_material:
         'Use materials and textures that reinforce Velvet Covenant Gothic Style: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
-      render_quality:
-        'Render Velvet Covenant Gothic Style with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
-      spatial_distortion:
+      camera_and_composition:
         'Use spatial behavior that fits Velvet Covenant Gothic Style: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
-      atmosphere:
+      atmosphere_and_mood:
         'Set a mood that belongs to Velvet Covenant Gothic Style: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+      rendering_and_quality:
+        'Render Velvet Covenant Gothic Style with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       key_features:
         "Prioritize Velvet Covenant Gothic Style's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
@@ -472,20 +472,20 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         "Crimson Threshold Embers Style within 2. 2000s Classics: a reusable Anime Classics & Prestige visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Crimson Threshold Embers Style's specific style identity.",
-      form_and_line:
+      subject_treatment:
         'Define Crimson Threshold Embers Style through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
-      color_palette:
+      color_and_tone:
         'Use a Crimson Threshold Embers Style-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
-      lighting_setup:
+      lighting_and_shadow:
         'Use lighting that makes Crimson Threshold Embers Style recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
-      material_texture:
+      texture_and_material:
         'Use materials and textures that reinforce Crimson Threshold Embers Style: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
-      render_quality:
-        'Render Crimson Threshold Embers Style with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
-      spatial_distortion:
+      camera_and_composition:
         'Use spatial behavior that fits Crimson Threshold Embers Style: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
-      atmosphere:
+      atmosphere_and_mood:
         'Set a mood that belongs to Crimson Threshold Embers Style: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+      rendering_and_quality:
+        'Render Crimson Threshold Embers Style with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       key_features:
         "Prioritize Crimson Threshold Embers Style's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
@@ -501,20 +501,20 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         "Techno-Gothic Exorcism Style within 2. 2000s Classics: a reusable Anime Classics & Prestige visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Techno-Gothic Exorcism Style's specific style identity.",
-      form_and_line:
+      subject_treatment:
         'Define Techno-Gothic Exorcism Style through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
-      color_palette:
+      color_and_tone:
         'Use a Techno-Gothic Exorcism Style-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
-      lighting_setup:
+      lighting_and_shadow:
         'Use lighting that makes Techno-Gothic Exorcism Style recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
-      material_texture:
+      texture_and_material:
         'Use materials and textures that reinforce Techno-Gothic Exorcism Style: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
-      render_quality:
-        'Render Techno-Gothic Exorcism Style with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
-      spatial_distortion:
+      camera_and_composition:
         'Use spatial behavior that fits Techno-Gothic Exorcism Style: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
-      atmosphere:
+      atmosphere_and_mood:
         'Set a mood that belongs to Techno-Gothic Exorcism Style: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+      rendering_and_quality:
+        'Render Techno-Gothic Exorcism Style with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       key_features:
         "Prioritize Techno-Gothic Exorcism Style's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
@@ -530,20 +530,20 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         "Noble Arcane Romcom Style within 2. 2000s Classics: a reusable Anime Classics & Prestige visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Noble Arcane Romcom Style's specific style identity.",
-      form_and_line:
+      subject_treatment:
         'Define Noble Arcane Romcom Style through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
-      color_palette:
+      color_and_tone:
         'Use a Noble Arcane Romcom Style-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
-      lighting_setup:
+      lighting_and_shadow:
         'Use lighting that makes Noble Arcane Romcom Style recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
-      material_texture:
+      texture_and_material:
         'Use materials and textures that reinforce Noble Arcane Romcom Style: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
-      render_quality:
-        'Render Noble Arcane Romcom Style with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
-      spatial_distortion:
+      camera_and_composition:
         'Use spatial behavior that fits Noble Arcane Romcom Style: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
-      atmosphere:
+      atmosphere_and_mood:
         'Set a mood that belongs to Noble Arcane Romcom Style: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+      rendering_and_quality:
+        'Render Noble Arcane Romcom Style with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       key_features:
         "Prioritize Noble Arcane Romcom Style's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
@@ -559,20 +559,20 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         "Ecological Whisper Healing Style within 2. 2000s Classics: a reusable Anime Classics & Prestige visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Ecological Whisper Healing Style's specific style identity.",
-      form_and_line:
+      subject_treatment:
         'Define Ecological Whisper Healing Style through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
-      color_palette:
+      color_and_tone:
         'Use a Ecological Whisper Healing Style-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
-      lighting_setup:
+      lighting_and_shadow:
         'Use lighting that makes Ecological Whisper Healing Style recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
-      material_texture:
+      texture_and_material:
         'Use materials and textures that reinforce Ecological Whisper Healing Style: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
-      render_quality:
-        'Render Ecological Whisper Healing Style with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
-      spatial_distortion:
+      camera_and_composition:
         'Use spatial behavior that fits Ecological Whisper Healing Style: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
-      atmosphere:
+      atmosphere_and_mood:
         'Set a mood that belongs to Ecological Whisper Healing Style: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+      rendering_and_quality:
+        'Render Ecological Whisper Healing Style with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       key_features:
         "Prioritize Ecological Whisper Healing Style's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:

@@ -13,15 +13,18 @@ tags:
   - commercial-and-product
 visualDna:
   aesthetic: Luxury macro advertising
-  form_and_line: Tight sculptural detail
-  color_palette: Deep black, champagne highlights, jewel accents
-  lighting_setup: Razor strip lights and controlled sparkle
-  material_texture: Polished reflective microdetail
-  render_quality: High-end jewelry campaign
-  spatial_distortion: Macro compression
-  atmosphere: Precious, rare, quiet
+  subject_treatment: Tight sculptural detail
+  color_and_tone: Deep black, champagne highlights, jewel accents
+  lighting_and_shadow: Razor strip lights and controlled sparkle
+  texture_and_material: Polished reflective microdetail
+  camera_and_composition: Macro compression
+  atmosphere_and_mood: Precious, rare, quiet
+  rendering_and_quality: High-end jewelry campaign
   key_features: Specular edge gleam
-  creative_brief: 'Luxury macro turns any subject into precious detail: tight framing, deep negative space, razor strip highlights, polished microtexture, and small controlled sparkle. It should imply rarity and high value without requiring jewelry, gemstones, watches, or metal objects.'
+  creative_brief: >-
+    Luxury macro turns any subject into precious detail: tight framing, deep negative space, razor strip
+    highlights, polished microtexture, and small controlled sparkle. It should imply rarity and high value
+    without requiring jewelry, gemstones, watches, or metal objects.
 avoidRules:
   - flat light
   - cheap plastic

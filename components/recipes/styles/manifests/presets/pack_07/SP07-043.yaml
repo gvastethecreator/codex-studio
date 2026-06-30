@@ -13,19 +13,18 @@ tags:
   - landscape-and-garden-systems
 visualDna:
   aesthetic: Dry mineral abstraction, material contemplation and extreme economy of gesture.
-  form_and_line: Intentionally raked waves, calm planes, two or three tactile mineral anchors and asymmetric balance.
-  color_palette: Grey, White, Moss, Granite Black, Silver sand, Lichen Green
-  lighting_setup: Low-angle raking light, furrow shadows and crisp early-hour contrast under eaves.
-  material_texture: Fine sand/gravel, weathered granite, crushed quartz and pinpoint velvet moss grain.
-  render_quality: Hyperclean minimalism with granular precision and disciplined compositional silence.
-  spatial_distortion: Raked field compression, asymmetrical mineral anchoring and scale reduction through quiet planes.
-  atmosphere: Focused quiet, ritual order and suspended time.
+  subject_treatment: Intentionally raked waves, calm planes, two or three tactile mineral anchors and asymmetric balance.
+  color_and_tone: Grey, White, Moss, Granite Black, Silver sand, Lichen Green
+  lighting_and_shadow: Low-angle raking light, furrow shadows and crisp early-hour contrast under eaves.
+  texture_and_material: Fine sand/gravel, weathered granite, crushed quartz and pinpoint velvet moss grain.
+  camera_and_composition: Raked field compression, asymmetrical mineral anchoring and scale reduction through quiet planes.
+  atmosphere_and_mood: Focused quiet, ritual order and suspended time.
+  rendering_and_quality: Hyperclean minimalism with granular precision and disciplined compositional silence.
   key_features: Raked fields, mineral anchors, selective living matter and austere containment.
   creative_brief: >-
-    Reduce any theme to active quiet, raked surface and mineral anchors in
-    tension. Few elements do heavy spatial work; moss or lichen can appear as
-    pinpoint accent, not lush garden. Keep subject legibility and scale cues;
-    avoid blank-field dominance or empty texture-only output.
+    Reduce any theme to active quiet, raked surface and mineral anchors in tension. Few elements do heavy
+    spatial work; moss or lichen can appear as pinpoint accent, not lush garden. Keep subject legibility and
+    scale cues; avoid blank-field dominance or empty texture-only output.
 avoidRules:
   - lush planting
   - pond

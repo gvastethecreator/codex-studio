@@ -13,21 +13,21 @@ tags:
   - natural-materials
 visualDna:
   aesthetic: Unfinished oak plank
-  form_and_line: Grain lines
-  color_palette: Pale brown
-  lighting_setup: Soft ambient
-  material_texture: Rough wood grain
-  render_quality: Lumber yard, natural
-  spatial_distortion: None
-  atmosphere: Rustic, solid
+  subject_treatment: Grain lines
+  color_and_tone: Pale brown
+  lighting_and_shadow: Soft ambient
+  texture_and_material: Rough wood grain
+  camera_and_composition: 'Compose for Oak Wood (Raw) using its key spatial cues: Grain direction.'
+  atmosphere_and_mood: Rustic, solid
+  rendering_and_quality: Lumber yard, natural
   key_features: Grain direction
   creative_brief: >-
-    Tactile direction for raw oak: the grain tells a story of slow growth and sun-filled years. Capture the fibrous
-    resistance beneath the fingertip, where every ridge and furrow is a line of natural poetry. Let the wood breathe
-    with the dry warmth of a lumber yard at dawn, honest and unadorned. Use Oak Wood as portable surface/render behavior
-    over any input: map its texture, light response, edge wear, color chemistry, and tactile rhythm onto the subject
-    instead of requiring a literal material sample, macro tile, wall, landscape, source object, or scene where the
-    material naturally appears.
+    Tactile direction for raw oak: the grain tells a story of slow growth and sun-filled years. Capture the
+    fibrous resistance beneath the fingertip, where every ridge and furrow is a line of natural poetry. Let
+    the wood breathe with the dry warmth of a lumber yard at dawn, honest and unadorned. Use Oak Wood as
+    portable surface/render behavior over any input: map its texture, light response, edge wear, color
+    chemistry, and tactile rhythm onto the subject instead of requiring a literal material sample, macro tile,
+    wall, landscape, source object, or scene where the material naturally appears.
 avoidRules:
   - varnish
   - plastic

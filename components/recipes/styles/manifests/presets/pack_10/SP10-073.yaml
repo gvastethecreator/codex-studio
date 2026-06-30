@@ -13,18 +13,17 @@ tags:
   - diagram-print-and-light-systems
 visualDna:
   aesthetic: Small square tiles
-  form_and_line: Grout lines
-  color_palette: Vibrant glass
-  lighting_setup: Uneven reflection
-  material_texture: Glass/Stone tiles
-  render_quality: Roman, durable
-  spatial_distortion: Pixelated by tiles
-  atmosphere: Ancient, solid
+  subject_treatment: Grout lines
+  color_and_tone: Vibrant glass
+  lighting_and_shadow: Uneven reflection
+  texture_and_material: Glass/Stone tiles
+  camera_and_composition: Pixelated by tiles
+  atmosphere_and_mood: Ancient, solid
+  rendering_and_quality: Roman, durable
   key_features: Tile grid
   creative_brief: >-
-    Apply mosaic tessera construction to the input: small stone or glass tiles,
-    grout gaps, hand-set irregularity, and cumulative fragment logic should
-    build the subject from durable modular pieces.
+    Apply mosaic tessera construction to the input: small stone or glass tiles, grout gaps, hand-set
+    irregularity, and cumulative fragment logic should build the subject from durable modular pieces.
 avoidRules:
   - smooth painting
 assets:

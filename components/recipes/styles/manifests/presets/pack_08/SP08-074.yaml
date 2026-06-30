@@ -13,19 +13,22 @@ tags:
   - fabric-and-texture-focus
 visualDna:
   aesthetic: Archival wrap concealment, aged linen tension, desiccated wrap grammar
-  form_and_line: Wrapping spirals, crossing-bandage grids, conceal-reveal gaps, trailing-wrap ends, layered binding rhythm
-  color_palette: White, Dirty, aged-linen, aged umber stain, desert-dust tan, archival-shadow grey, ancient-yellow
-  lighting_setup: Flat dimness, warm amber flicker, excavation daylight, wrapped-shadow mystery
-  material_texture: Cloth strips, linen bandage, gauze-weave texture, frayed-edge loose wrap, stiffened-gauze, overlapping-layer bulk
-  render_quality: Dry archival wrap texture, desiccated-linen tension
-  spatial_distortion: None
-  atmosphere: Hidden, ancient, dry, restrained, archival
+  subject_treatment: Wrapping spirals, crossing-bandage grids, conceal-reveal gaps, trailing-wrap ends, layered binding rhythm
+  color_and_tone: White, Dirty, aged-linen, aged umber stain, desert-dust tan, archival-shadow grey, ancient-yellow
+  lighting_and_shadow: Flat dimness, warm amber flicker, excavation daylight, wrapped-shadow mystery
+  texture_and_material: >-
+    Cloth strips, linen bandage, gauze-weave texture, frayed-edge loose wrap, stiffened-gauze,
+    overlapping-layer bulk
+  camera_and_composition: >-
+    Compose for Bandage/Mummy using its key spatial cues: Layered wraps, trailing ends, gauze weave, frayed
+    edges, crossing-bandage grid.
+  atmosphere_and_mood: Hidden, ancient, dry, restrained, archival
+  rendering_and_quality: Dry archival wrap texture, desiccated-linen tension
   key_features: Layered wraps, trailing ends, gauze weave, frayed edges, crossing-bandage grid
   creative_brief: >-
-    Bind the input in bandage-wrap grammar: aged linen strips, crossing wraps,
-    stiffened gauze, desert dust, trailing frays and conceal-reveal gaps. Keep
-    ancient tension as texture only; do not require a sarcophagus, walking
-    figure, exposed skin, wrapped face or tomb scene.
+    Bind the input in bandage-wrap grammar: aged linen strips, crossing wraps, stiffened gauze, desert dust,
+    trailing frays and conceal-reveal gaps. Keep ancient tension as texture only; do not require a
+    sarcophagus, walking figure, exposed skin, wrapped face or tomb scene.
 avoidRules:
   - exposed mummy face
   - bare-skin focus

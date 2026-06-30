@@ -12,7 +12,9 @@ tags:
   - essential-art-styles
   - game-art-directions-and-ui
 visualDna:
-  aesthetic: Stealth-game art direction with readable shadow zones, cool surveillance mood, and silent tactical composition.
+  aesthetic: >-
+    Stealth-game art direction with readable shadow zones, cool surveillance mood, and silent tactical
+    composition.
   subject_treatment: Break any subject into concealment-ready silhouettes, light-safe edges, and readable exposure states.
   color_and_tone: Blue-black shadows, sodium or cyan guard-light accents, desaturated mids, and sharp visibility contrast.
   lighting_and_shadow: Hard pools of detection light, broad occluding darkness, rim hints, and value-coded safe/danger zones.

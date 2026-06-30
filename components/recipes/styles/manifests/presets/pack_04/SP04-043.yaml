@@ -13,35 +13,32 @@ tags:
   - editorial-and-poster
 visualDna:
   aesthetic: >-
-    Mid-century pulp-cover illustration style with sensational composition, high-urgency editorial
-    drama, and lurid market-impact intent
-  form_and_line: >-
-    Painterly contour emphasis with bold gesture silhouettes, kinetic focal diagonals, and
-    headline-oriented compositional framing
-  color_palette: >-
+    Mid-century pulp-cover illustration style with sensational composition, high-urgency editorial drama, and
+    lurid market-impact intent
+  subject_treatment: >-
+    Painterly contour emphasis with bold gesture silhouettes, kinetic focal diagonals, and headline-oriented
+    compositional framing
+  color_and_tone: >-
     Aggressive warm primaries with acid yellow-red pushes, deep shadow anchors, and high-contrast
     attention-grab hierarchy
-  lighting_setup: >-
-    Hard-edged spotlight contrast with half-lit faces, dramatic shadow wedges, and suspense-driven
-    value staging
-  material_texture: >-
-    Cheap coated-pulp paper feel with visible print wear, ink soak variation, and subtle halftone
-    residue
-  render_quality: >-
-    High-energy cover-art finish prioritizing immediate shelf readability, dramatic hooks, and
-    tabloid-level visual punch
-  spatial_distortion: >-
-    Perspective pushed toward action-forward staging with foreground exaggeration and compressed
-    narrative depth
-  atmosphere: Tense, sensational, urgent, dramatic, lurid
+  lighting_and_shadow: >-
+    Hard-edged spotlight contrast with half-lit faces, dramatic shadow wedges, and suspense-driven value
+    staging
+  texture_and_material: Cheap coated-pulp paper feel with visible print wear, ink soak variation, and subtle halftone residue
+  camera_and_composition: >-
+    Perspective pushed toward action-forward staging with foreground exaggeration and compressed narrative
+    depth
+  atmosphere_and_mood: Tense, sensational, urgent, dramatic, lurid
+  rendering_and_quality: >-
+    High-energy cover-art finish prioritizing immediate shelf readability, dramatic hooks, and tabloid-level
+    visual punch
   key_features: >-
-    Masthead-safe title zone, blurb-driven layout logic, sensational focal center, newsstand-impact
-    color blocking
+    Masthead-safe title zone, blurb-driven layout logic, sensational focal center, newsstand-impact color
+    blocking
   creative_brief: >-
-    Apply pulp magazine cover grammar to any input: lurid contrast, dramatic diagonals, cheap
-    coated-paper wear, masthead-safe pressure, and sensational focal hierarchy should create
-    newsstand urgency without requiring detectives, monsters, peril scenes, headlines, weapons, or
-    fixed covers.
+    Apply pulp magazine cover grammar to any input: lurid contrast, dramatic diagonals, cheap coated-paper
+    wear, masthead-safe pressure, and sensational focal hierarchy should create newsstand urgency without
+    requiring detectives, monsters, peril scenes, headlines, weapons, or fixed covers.
 avoidRules:
   - modern
   - clean

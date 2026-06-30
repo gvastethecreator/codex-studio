@@ -14,15 +14,27 @@ tags:
   - apocalyptic-wargame-and-inked-dungeon
   - reliquary-apocalypse
 visualDna:
-  aesthetic: Apocalyptic iron reliquary fantasy with cathedral machines, caged saint-bones, armored shrine engines, and scorched liturgical metal.
-  subject_treatment: A walking iron shrine construct with bell legs, reliquary chest, beastlike shoulders, and tiny faceless penitents used only for scale.
+  aesthetic: >-
+    Apocalyptic iron reliquary fantasy with cathedral machines, caged saint-bones, armored shrine engines, and
+    scorched liturgical metal.
+  subject_treatment: >-
+    A walking iron shrine construct with bell legs, reliquary chest, beastlike shoulders, and tiny faceless
+    penitents used only for scale.
   color_and_tone: Furnace black, rust red, sacred gold, bone ivory, soot gray, and emerald reliquary glow.
   lighting_and_shadow: Furnace underlight and shrine glow illuminate large armor planes while preserving denoised dark fields.
-  texture_and_material: Riveted iron, scorched enamel, reliquary glass, cracked bone, chainmail, ash, and soot cleaned of ugly speckle.
-  camera_and_composition: Monumental portrait-card framing, altar-centered depth, vertical machine silhouettes, and strong foreground reliquary detail.
+  texture_and_material: >-
+    Riveted iron, scorched enamel, reliquary glass, cracked bone, chainmail, ash, and soot cleaned of ugly
+    speckle.
+  camera_and_composition: >-
+    Monumental portrait-card framing, altar-centered depth, vertical machine silhouettes, and strong
+    foreground reliquary detail.
   atmosphere_and_mood: Sacred, industrial, catastrophic, penitential, and mythic.
-  rendering_and_quality: Detailed dark fantasy digital illustration with clean black control, defined linework, polished material separation, and heavy denoise.
-  creative_brief: Original iron-apocalypse aesthetic for relic engines, armored saints, cathedral machines, and grim campaign bosses.
+  rendering_and_quality: >-
+    Detailed dark fantasy digital illustration with clean black control, defined linework, polished material
+    separation, and heavy denoise.
+  creative_brief: >-
+    Original iron-apocalypse aesthetic for relic engines, armored saints, cathedral machines, and grim
+    campaign bosses.
 avoidRules:
   - copied faction designs
   - readable religious text
@@ -33,6 +45,10 @@ avoidRules:
   - text
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP17-029.webp
+attributes:
+  negativePrompt: >-
+    copied faction designs, readable religious text, body horror focus, noisy dark compression, explicit gore,
+    watermark, text
 taxonomy:
   packId: pack_17
   packName: Medieval Fantasy & Dungeon Zine

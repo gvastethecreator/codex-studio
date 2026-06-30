@@ -12,23 +12,21 @@ tags:
   - illustration-and-graphic-novel
   - ink-and-print
 visualDna:
-  aesthetic: >-
-    Stipple dotwork style with meditative tonal accumulation and precision-built monochrome form
-    emergence
-  form_and_line: >-
+  aesthetic: Stipple dotwork style with meditative tonal accumulation and precision-built monochrome form emergence
+  subject_treatment: >-
     Dot-only mark system with density-controlled gradients, cluster rhythm, and no continuous stroke
     dependency
-  color_palette: Black ink, pointillist-mono, dot-gradient depth
-  lighting_setup: Dot density, stipple-as-value, cumulative point shadow
-  material_texture: Skin/Paper
-  render_quality: Detailed, slow, meditative precision, hand-poke patience
-  spatial_distortion: Gradient by dots
-  atmosphere: Obsessive, soft, pointillist trance, meticulous calm
+  color_and_tone: Black ink, pointillist-mono, dot-gradient depth
+  lighting_and_shadow: Dot density, stipple-as-value, cumulative point shadow
+  texture_and_material: Skin/Paper
+  camera_and_composition: Gradient by dots
+  atmosphere_and_mood: Obsessive, soft, pointillist trance, meticulous calm
+  rendering_and_quality: Detailed, slow, meditative precision, hand-poke patience
   key_features: Dots only, stipple gradient, point-by-point tone
   creative_brief: >-
-    Apply stipple dotwork grammar to any input: point-density value modeling, dot-cluster edges,
-    stroke-less tonal construction, slow monochrome accumulation, and meditative texture should
-    define form without requiring tattoos, skin, portraits, animals, or fixed illustration context.
+    Apply stipple dotwork grammar to any input: point-density value modeling, dot-cluster edges, stroke-less
+    tonal construction, slow monochrome accumulation, and meditative texture should define form without
+    requiring tattoos, skin, portraits, animals, or fixed illustration context.
 avoidRules:
   - lines
   - solid

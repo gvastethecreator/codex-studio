@@ -13,18 +13,17 @@ tags:
   - textile-and-ornamental-patterns
 visualDna:
   aesthetic: Woven plant fiber
-  form_and_line: Over/Under
-  color_palette: Straw, Tan
-  lighting_setup: Texture shadow
-  material_texture: Dry fiber
-  render_quality: Craft, natural
-  spatial_distortion: None
-  atmosphere: Rustic, simple
+  subject_treatment: Over/Under
+  color_and_tone: Straw, Tan
+  lighting_and_shadow: Texture shadow
+  texture_and_material: Dry fiber
+  camera_and_composition: 'Compose for Basket Weave using its key spatial cues: Weave pattern.'
+  atmosphere_and_mood: Rustic, simple
+  rendering_and_quality: Craft, natural
   key_features: Weave pattern
   creative_brief: >-
-    Apply basket-weave interlock to the input: over-under strips, reed-like
-    rhythm, tactile crossing shadows, and simple containment geometry should
-    organize surfaces without requiring baskets or craft setup.
+    Apply basket-weave interlock to the input: over-under strips, reed-like rhythm, tactile crossing shadows,
+    and simple containment geometry should organize surfaces without requiring baskets or craft setup.
 avoidRules:
   - solid
 assets:

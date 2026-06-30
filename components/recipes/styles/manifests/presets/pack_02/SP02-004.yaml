@@ -13,20 +13,26 @@ tags:
   - film-genres
 visualDna:
   aesthetic: Golden-age Technicolor fantasy, three-strip glory, hyper-saturated theatrical dream, musical spectacle
-  form_and_line: None
-  color_palette: Hyper-saturated, ruby red, emerald green, sapphire blue
-  lighting_setup: High key studio, broad soft fill, painted backdrop
-  material_texture: 3-strip Technicolor, glossy dye transfer, vibrant saturation
-  render_quality: Vibrant, classic, theatrical, luminous
-  spatial_distortion: None
-  atmosphere: Joyful, theatrical, magical spectacle, storybook wonder
+  subject_treatment: >-
+    Treat subjects as believable filmed or broadcast subjects under Technicolor Musical: casting, wardrobe,
+    props, motion cues, and silhouette hierarchy follow 1. Film Genres cinematic and broadcast grammar without
+    locking to one plot beat.
+  color_and_tone: Hyper-saturated, ruby red, emerald green, sapphire blue
+  lighting_and_shadow: High key studio, broad soft fill, painted backdrop
+  texture_and_material: 3-strip Technicolor, glossy dye transfer, vibrant saturation
+  camera_and_composition: >-
+    Camera language native to Technicolor Musical: genre-aware framing, lens character, focal hierarchy,
+    motion cue, and vertical style-card composition.
+  atmosphere_and_mood: Joyful, theatrical, magical spectacle, storybook wonder
+  rendering_and_quality: Vibrant, classic, theatrical, luminous
   key_features: Dye-transfer saturation, theatrical color clarity
   creative_brief: >-
-    Technicolor musical style makes color sing beyond realism: ruby reds, emerald greens, sapphire blues, broad studio
-    fill, glossy dye-transfer saturation, and painted-backdrop theatricality. Keep golden-age spectacle without forcing
-    yellow roads, slippers, emerald cities, or musical staging. Apply Technicolor Musical as a portable cinematic/camera
-    style over any input: preserve its lens behavior, color process, lighting setup, artifact pattern, and deformation
-    grammar while avoiding a required actor, room, prop, brand, readable text, fixed IP scene, or narrative setup.
+    Technicolor musical style makes color sing beyond realism: ruby reds, emerald greens, sapphire blues,
+    broad studio fill, glossy dye-transfer saturation, and painted-backdrop theatricality. Keep golden-age
+    spectacle without forcing yellow roads, slippers, emerald cities, or musical staging. Apply Technicolor
+    Musical as a portable cinematic/camera style over any input: preserve its lens behavior, color process,
+    lighting setup, artifact pattern, and deformation grammar while avoiding a required actor, room, prop,
+    brand, readable text, fixed IP scene, or narrative setup.
 avoidRules:
   - faded
   - dark

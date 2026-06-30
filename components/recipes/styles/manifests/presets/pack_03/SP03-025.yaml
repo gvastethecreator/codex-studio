@@ -13,19 +13,23 @@ tags:
   - hard-surface-and-product-cgi
 visualDna:
   aesthetic: Complex mechanical detail
-  form_and_line: Greebles
-  color_palette: Grey, metal, industrial wear
-  lighting_setup: AO dirt, rim-detail
-  material_texture: Mechanical parts, greeble density
-  render_quality: Concept art, detailed, blockbuster sci-fi
-  atmosphere: Industrial, complex, constructed chaos
+  subject_treatment: Greebles
+  color_and_tone: Grey, metal, industrial wear
+  lighting_and_shadow: AO dirt, rim-detail
+  texture_and_material: Mechanical parts, greeble density
+  camera_and_composition: >-
+    Lookdev camera for Kitbash: three-quarter or orthographic framing, clean silhouette read, material
+    highlights, controlled depth, and vertical card composition.
+  atmosphere_and_mood: Industrial, complex, constructed chaos
+  rendering_and_quality: Concept art, detailed, blockbuster sci-fi
   key_features: Dense detail, mechanical storytelling
   creative_brief: >-
-    Densify the input with kitbash logic: greebles, panel seams, rivets, worn industrial metal and ambient-occlusion
-    pockets that imply functional assembly. It can hint at starship/mecha engineering when suitable, but must not force
-    a vehicle hull, battle staging, or specific sci-fi set. Apply Kitbash as a portable 3D/render style system over any
-    input: preserve its renderer logic, material behavior, geometry language, lighting grammar, and production cues
-    while avoiding a required character, vehicle, prop, environment, UI screen, product shot, or scene template.
+    Densify the input with kitbash logic: greebles, panel seams, rivets, worn industrial metal and
+    ambient-occlusion pockets that imply functional assembly. It can hint at starship/mecha engineering when
+    suitable, but must not force a vehicle hull, battle staging, or specific sci-fi set. Apply Kitbash as a
+    portable 3D/render style system over any input: preserve its renderer logic, material behavior, geometry
+    language, lighting grammar, and production cues while avoiding a required character, vehicle, prop,
+    environment, UI screen, product shot, or scene template.
 avoidRules:
   - organic
   - smooth

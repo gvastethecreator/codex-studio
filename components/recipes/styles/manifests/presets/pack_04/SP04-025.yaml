@@ -13,19 +13,18 @@ tags:
   - childrens-illustration
 visualDna:
   aesthetic: Felt-tip/alcohol-marker illustration with spontaneous saturation behavior
-  form_and_line: Broad marker strokes, edge bleed, and overlap-driven contour definition
-  color_palette: High-saturation marker gamut with layered translucent mixes
-  lighting_setup: Flat-to-minimal light modeling via tonal marker passes
-  material_texture: Absorbent paper bleed, feathered edges, occasional smudge drag
-  render_quality: Bold sketchbook immediacy with visible hand-speed decisions
-  spatial_distortion: Loose perspective and gestural simplification
-  atmosphere: Casual, energetic, improvised
+  subject_treatment: Broad marker strokes, edge bleed, and overlap-driven contour definition
+  color_and_tone: High-saturation marker gamut with layered translucent mixes
+  lighting_and_shadow: Flat-to-minimal light modeling via tonal marker passes
+  texture_and_material: Absorbent paper bleed, feathered edges, occasional smudge drag
+  camera_and_composition: Loose perspective and gestural simplification
+  atmosphere_and_mood: Casual, energetic, improvised
+  rendering_and_quality: Bold sketchbook immediacy with visible hand-speed decisions
   key_features: Stroke stacking, bleed halos, quick gradient blends via overlap
   creative_brief: >-
-    Apply felt-tip marker behavior to any input: fast stroke confidence, transparent layering, edge
-    bleed, overlap gradients, feathered paper artifacts, and occasional smudge drag should stay bold
-    and flexible without requiring sketchbook pages, fashion poses, product drawings, or fixed scene
-    cues.
+    Apply felt-tip marker behavior to any input: fast stroke confidence, transparent layering, edge bleed,
+    overlap gradients, feathered paper artifacts, and occasional smudge drag should stay bold and flexible
+    without requiring sketchbook pages, fashion poses, product drawings, or fixed scene cues.
 avoidRules:
   - paint
   - blend

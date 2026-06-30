@@ -13,34 +13,34 @@ tags:
   - anime-style-spectrum
 visualDna:
   aesthetic: >-
-    Chalk-dust anime sketch treatment built from powder residue, erasure memory, broken strokes,
-    slate contrast, and fragile analog mark-making
-  form_and_line: >-
-    Variable-pressure chalk strokes, dry-friction breaks, eraser-softened contours, ghost-line
-    remnants, powder-edge diffusion
-  color_palette: >-
-    Chalk white core, muted pastel accents, deep green-black substrate, dusty greys, low-saturation
-    cyan and warm yellow notes
-  lighting_setup: >-
-    Soft directional glow with particulate scattering and gentle specular hotspots on semi-gloss
-    slate surfaces
-  material_texture: >-
-    Micro-grain slate tooth, powder residue layering, felt-eraser streaking, fingertip smudge bloom,
-    brittle chalk fracture traces
-  render_quality: >-
-    Medium-faithful analog rendering with visible process artifacts, non-uniform deposition, and
-    intentionally unfinished charm
-  spatial_distortion: >-
-    Flat-board presentation with slight perspective drift, edge-framing emphasis, and composition
-    anchored by mark density
-  atmosphere: Nostalgic, delicate, ephemeral, intimate, process-oriented
+    Chalk-dust anime sketch treatment built from powder residue, erasure memory, broken strokes, slate
+    contrast, and fragile analog mark-making
+  subject_treatment: >-
+    Variable-pressure chalk strokes, dry-friction breaks, eraser-softened contours, ghost-line remnants,
+    powder-edge diffusion
+  color_and_tone: >-
+    Chalk white core, muted pastel accents, deep green-black substrate, dusty greys, low-saturation cyan and
+    warm yellow notes
+  lighting_and_shadow: >-
+    Soft directional glow with particulate scattering and gentle specular hotspots on semi-gloss slate
+    surfaces
+  texture_and_material: >-
+    Micro-grain slate tooth, powder residue layering, felt-eraser streaking, fingertip smudge bloom, brittle
+    chalk fracture traces
+  camera_and_composition: >-
+    Flat-board presentation with slight perspective drift, edge-framing emphasis, and composition anchored by
+    mark density
+  atmosphere_and_mood: Nostalgic, delicate, ephemeral, intimate, process-oriented
+  rendering_and_quality: >-
+    Medium-faithful analog rendering with visible process artifacts, non-uniform deposition, and intentionally
+    unfinished charm
   key_features: >-
-    Powder halos, smudge ghosts, broken-stroke cadence, erasure memory, slate grain, and fragile
-    contour rhythm
+    Powder halos, smudge ghosts, broken-stroke cadence, erasure memory, slate grain, and fragile contour
+    rhythm
   creative_brief: >-
-    Use chalk-dust slate sketch as impermanent-mark grammar. Any prompt should look drawn, erased,
-    redrawn, and softened by powder residue over dark matte surface. Classrooms, chalkboards,
-    equations, and school props are optional.
+    Use chalk-dust slate sketch as impermanent-mark grammar. Any prompt should look drawn, erased, redrawn,
+    and softened by powder residue over dark matte surface. Classrooms, chalkboards, equations, and school
+    props are optional.
 avoidRules:
   - digital
   - permanent

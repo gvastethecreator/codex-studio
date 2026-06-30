@@ -13,18 +13,17 @@ tags:
   - fluid-and-organic
 visualDna:
   aesthetic: Fluid painting
-  form_and_line: Hard drying edges
-  color_palette: Translucent, vibrant
-  lighting_setup: Backlit
-  material_texture: Fluid dynamics
-  render_quality: Abstract art, flow
-  spatial_distortion: Liquid
-  atmosphere: Dreamy, fluid
+  subject_treatment: Hard drying edges
+  color_and_tone: Translucent, vibrant
+  lighting_and_shadow: Backlit
+  texture_and_material: Fluid dynamics
+  camera_and_composition: Liquid
+  atmosphere_and_mood: Dreamy, fluid
+  rendering_and_quality: Abstract art, flow
   key_features: Gold veins
   creative_brief: >-
-    Apply alcohol-ink bloom to the input: translucent pigment clouds, solvent
-    halos, soft feathered borders, and luminous color pooling should dissolve
-    surfaces while keeping enough contour to recognize the prompt.
+    Apply alcohol-ink bloom to the input: translucent pigment clouds, solvent halos, soft feathered borders,
+    and luminous color pooling should dissolve surfaces while keeping enough contour to recognize the prompt.
 avoidRules:
   - solid
   - dry

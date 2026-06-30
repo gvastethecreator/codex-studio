@@ -13,19 +13,18 @@ tags:
   - toys-and-crafts
 visualDna:
   aesthetic: Carved wood figure, traditional toy, whittled companion, heirloom plaything
-  form_and_line: Wood grain, flowing-grain contours, chisel-facet marks, rounded block-forms
-  color_palette: Natural wood, painted details, warm-oak honey, beech-cream, hand-painted folk-accents
-  lighting_setup: Warm, window-sill daylight, oiled-grain sheen, gentle-shadow depth
-  material_texture: Wood grain, paint chips, sanded-smooth bevel, hand-rubbed oil, age-darkened patina
-  render_quality: Traditional, sturdy, workshop-craft care, generation-passing durability, simple-elegance charm
-  spatial_distortion: Simple geometry, block-cut forms, peg-joint assembly, turned-wood symmetry
-  atmosphere: Nostalgic, simple, warm, handcrafted, old-world tenderness
+  subject_treatment: Wood grain, flowing-grain contours, chisel-facet marks, rounded block-forms
+  color_and_tone: Natural wood, painted details, warm-oak honey, beech-cream, hand-painted folk-accents
+  lighting_and_shadow: Warm, window-sill daylight, oiled-grain sheen, gentle-shadow depth
+  texture_and_material: Wood grain, paint chips, sanded-smooth bevel, hand-rubbed oil, age-darkened patina
+  camera_and_composition: Simple geometry, block-cut forms, peg-joint assembly, turned-wood symmetry
+  atmosphere_and_mood: Nostalgic, simple, warm, handcrafted, old-world tenderness
+  rendering_and_quality: Traditional, sturdy, workshop-craft care, generation-passing durability, simple-elegance charm
   key_features: Wood texture, visible grain rings, dovetail joints, paint-wear edges
   creative_brief: >-
-    Translate the input into carved wooden-toy logic: simplified block forms,
-    rounded peg-like joints, visible grain rings, hand-painted accents, and
-    age-polished bevels. Keep heirloom craft warmth, but avoid requiring small
-    hands, a workshop, or one literal toy object.
+    Translate the input into carved wooden-toy logic: simplified block forms, rounded peg-like joints, visible
+    grain rings, hand-painted accents, and age-polished bevels. Keep heirloom craft warmth, but avoid
+    requiring small hands, a workshop, or one literal toy object.
 avoidRules:
   - plastic
   - metal

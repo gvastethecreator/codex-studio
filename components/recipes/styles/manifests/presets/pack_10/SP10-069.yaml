@@ -13,18 +13,17 @@ tags:
   - diagram-print-and-light-systems
 visualDna:
   aesthetic: Data matrix
-  form_and_line: Square pixels
-  color_palette: Black and White
-  lighting_setup: Flat
-  material_texture: Digital
-  render_quality: Machine readable
-  spatial_distortion: Blocky
-  atmosphere: Digital, code
+  subject_treatment: Square pixels
+  color_and_tone: Black and White
+  lighting_and_shadow: Flat
+  texture_and_material: Digital
+  camera_and_composition: Blocky
+  atmosphere_and_mood: Digital, code
+  rendering_and_quality: Machine readable
   key_features: Corner markers
   creative_brief: >-
-    Apply QR-code data grammar to the input: black-white square modules,
-    finder-pattern logic, dense machine-readable clustering, and alien data
-    blocks should abstract forms without creating readable codes.
+    Apply QR-code data grammar to the input: black-white square modules, finder-pattern logic, dense
+    machine-readable clustering, and alien data blocks should abstract forms without creating readable codes.
 avoidRules:
   - round
   - analog

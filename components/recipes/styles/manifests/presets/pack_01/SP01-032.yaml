@@ -13,18 +13,20 @@ tags:
   - lighting-techniques
 visualDna:
   aesthetic: Twilight before sunrise/after sunset
-  form_and_line: Soft contrast
-  color_palette: Deep Blue, Purple, cold
-  lighting_setup: Ambient, shadowless
-  material_texture: Smooth
-  render_quality: Calm, moody
-  spatial_distortion: None
-  atmosphere: Quiet, cold
+  subject_treatment: Soft contrast
+  color_and_tone: Deep Blue, Purple, cold
+  lighting_and_shadow: Ambient, shadowless
+  texture_and_material: Smooth
+  camera_and_composition: >-
+    Camera setup native to Blue Hour: lens choice, crop distance, depth of field, and focal hierarchy support
+    2. Lighting Techniques without generic framing.
+  atmosphere_and_mood: Quiet, cold
+  rendering_and_quality: Calm, moody
   key_features: Blue cast
   creative_brief: >-
-    Apply blue-hour ambient stillness to the input: indigo-violet low light,
-    soft shadowless exposure, cool atmospheric fill, and quiet transitional
-    color should calm any subject without requiring sky or dawn backdrop.
+    Apply blue-hour ambient stillness to the input: indigo-violet low light, soft shadowless exposure, cool
+    atmospheric fill, and quiet transitional color should calm any subject without requiring sky or dawn
+    backdrop.
 avoidRules:
   - sun
   - orange

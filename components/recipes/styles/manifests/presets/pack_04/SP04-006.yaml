@@ -13,19 +13,18 @@ tags:
   - comic-book-styles
 visualDna:
   aesthetic: Vertical-scroll webcomic language with mobile-first readability
-  form_and_line: Clean digital linework with controlled contour simplification
-  color_palette: Saturated full-color palette with flat-to-soft-cel value staging
-  lighting_setup: Soft cel shading with selective rim accents for depth separation
-  material_texture: Crisp screen-native finish with minimal analog noise
-  render_quality: Polished episodic panel rendering optimized for long-scroll consumption
-  spatial_distortion: Stylized proportions tuned for expressive character readability
-  atmosphere: Emotion-forward, dramatic, contemporary digital storytelling
+  subject_treatment: Clean digital linework with controlled contour simplification
+  color_and_tone: Saturated full-color palette with flat-to-soft-cel value staging
+  lighting_and_shadow: Soft cel shading with selective rim accents for depth separation
+  texture_and_material: Crisp screen-native finish with minimal analog noise
+  camera_and_composition: Stylized proportions tuned for expressive character readability
+  atmosphere_and_mood: Emotion-forward, dramatic, contemporary digital storytelling
+  rendering_and_quality: Polished episodic panel rendering optimized for long-scroll consumption
   key_features: Vertical pacing gaps, beat-driven panel stacking, gradient-backed emphasis moments
   creative_brief: >-
-    Apply vertical-scroll webtoon grammar to any input: mobile-first spacing, clean digital
-    contours, saturated full color, beat gaps, and high-contrast focal stacking should create
-    episode rhythm without requiring characters, romance beats, dialogue panels, phone UI, or fixed
-    scene staging.
+    Apply vertical-scroll webtoon grammar to any input: mobile-first spacing, clean digital contours,
+    saturated full color, beat gaps, and high-contrast focal stacking should create episode rhythm without
+    requiring characters, romance beats, dialogue panels, phone UI, or fixed scene staging.
 avoidRules:
   - black and white
 assets:

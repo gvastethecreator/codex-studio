@@ -12,18 +12,18 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'grounded solarpunk orchard commons as a flat-to-painterly poster card built around shared solar shade panels, gardeners, repair ladders, and food-growing civic paths.',
-      form_and_line:
+      subject_treatment:
         'Repair-culture shapes, civic infrastructure, practical climate machines, and human-scaled commons. Core composition uses solar canopy, gardeners, ladders, edible plants, communal paths.',
-      color_palette: 'leaf green, warm solar gold, clay red, soft sky blue',
-      lighting_setup:
+      color_and_tone: 'leaf green, warm solar gold, clay red, soft sky blue',
+      lighting_and_shadow:
         'flat sun-through-panel blocks, leaf color bounce, clear afternoon shadow shapes',
-      material_texture:
+      texture_and_material:
         'solar panel planes, broad fruit-tree shapes, clay water jar blocks, seed crates without logos, recycled metal accents, linen workwear color fields',
-      render_quality:
-        'Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity, moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material simulation, or hyper-detail.',
-      spatial_distortion:
+      camera_and_composition:
         'Rooftops, riversides, roofs, blocks, terraces, and outdoor workshops with lived-in pragmatism. Keep depth legible and avoid default hallway, aisle, or empty studio staging.',
-      atmosphere: 'hopeful, practical, social, grounded',
+      atmosphere_and_mood: 'hopeful, practical, social, grounded',
+      rendering_and_quality:
+        'Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity, moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material simulation, or hyper-detail.',
       key_features: 'solar canopy, gardeners, ladders, edible plants, communal paths',
       creative_brief:
         'Use solarpunk once as grounded civic agriculture: people repair and grow food under solar shade, no glass utopia monoculture and no leaf-logo green branding. Keep the result representative rather than over-abstract; make one character in their environment the anchor, with motifs as background, costume, weather, architecture, or social pressure instead of a foreground prop. Favor flat-to-painterly editorial illustration, gouache poster aesthetics, clean graphic-novel card art, or stylized animation-background art over realism, photoreal photoreal painterly realism, cinematic key art, scratchy print noise, or hyper-detailed concept art. Use few bold color/value zones, low-to-moderate texture, large shapes, clean surfaces, shallow poster depth, and finish denoised with no excessive noise or ultra-fine detail.',
@@ -38,17 +38,18 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'dense urban solarpunk as a flat-to-painterly civic infrastructure poster card built around sunstacks, public elevators, repair crews, service platforms, and visible reuse systems.',
-      form_and_line:
+      subject_treatment:
         'Repair-culture shapes, civic infrastructure, practical climate machines, and human-scaled commons. Core composition uses sunstacks, public repair crews, terrace greenery, visible pipes, civic elevators.',
-      color_palette: 'sun yellow, sage, white ceramic, recycled aluminum',
-      lighting_setup: 'high sun-yellow slabs, soft graphic reflections, warm panel glow shapes',
-      material_texture:
+      color_and_tone: 'sun yellow, sage, white ceramic, recycled aluminum',
+      lighting_and_shadow:
+        'high sun-yellow slabs, soft graphic reflections, warm panel glow shapes',
+      texture_and_material:
         'ceramic tile blocks, recycled aluminum accents, terrace greenery blocks, water-reuse pipe loops, service platform shapes',
-      render_quality:
-        'Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity, moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material simulation, or hyper-detail.',
-      spatial_distortion:
+      camera_and_composition:
         'Rooftops, riversides, roofs, blocks, terraces, and outdoor workshops with lived-in pragmatism. Keep depth legible and avoid default hallway, aisle, or empty studio staging.',
-      atmosphere: 'bright, organized, public, optimistic',
+      atmosphere_and_mood: 'bright, organized, public, optimistic',
+      rendering_and_quality:
+        'Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity, moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material simulation, or hyper-detail.',
       key_features:
         'sunstacks, public repair crews, terrace greenery, visible pipes, civic elevators',
       creative_brief:
@@ -64,17 +65,18 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'repairpunk riverside workshop as a flat-to-painterly poster card built around a riverside commons fixing bicycles, turbines, boats, and small appliances under tarps.',
-      form_and_line:
+      subject_treatment:
         'Repair-culture shapes, civic infrastructure, practical climate machines, and human-scaled commons. Core composition uses repair benches, turbines, patched boats, union patches, riverside tarps.',
-      color_palette: 'river blue, rust orange, canvas tan, tool steel',
-      lighting_setup: 'open shade blocks, flat river color, simple workbench glow, late sun shape',
-      material_texture:
+      color_and_tone: 'river blue, rust orange, canvas tan, tool steel',
+      lighting_and_shadow:
+        'open shade blocks, flat river color, simple workbench glow, late sun shape',
+      texture_and_material:
         'canvas tarp planes, tool steel accents, patched boat silhouette, bicycle rubber arcs, weathered wood blocks',
-      render_quality:
-        'Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity, moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material simulation, or hyper-detail.',
-      spatial_distortion:
+      camera_and_composition:
         'Rooftops, riversides, roofs, blocks, terraces, and outdoor workshops with lived-in pragmatism. Keep depth legible and avoid default hallway, aisle, or empty studio staging.',
-      atmosphere: 'neighborly, capable, improvised, resilient',
+      atmosphere_and_mood: 'neighborly, capable, improvised, resilient',
+      rendering_and_quality:
+        'Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity, moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material simulation, or hyper-detail.',
       key_features: 'repair benches, turbines, patched boats, union patches, riverside tarps',
       creative_brief:
         'Repairpunk should feel hands-on and local: repaired objects, people using tools, and civic usefulness without shiny utopia or market clutter. Keep the result representative rather than over-abstract; make one character in their environment the anchor, with motifs as background, costume, weather, architecture, or social pressure instead of a foreground prop. Favor flat-to-painterly editorial illustration, gouache poster aesthetics, clean graphic-novel card art, or stylized animation-background art over realism, photoreal photoreal painterly realism, cinematic key art, scratchy print noise, or hyper-detailed concept art. Use few bold color/value zones, low-to-moderate texture, large shapes, clean surfaces, shallow poster depth, and finish denoised with no excessive noise or ultra-fine detail.',
@@ -89,17 +91,17 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'windpunk neighborhood roofs as a flat-to-painterly poster card built around tenement rooftops filled with windcatchers, kite turbines, cloth wind rhythm, and roof crews.',
-      form_and_line:
+      subject_treatment:
         'Repair-culture shapes, civic infrastructure, practical climate machines, and human-scaled commons. Core composition uses windcatcher towers, kite turbines, roof crews, laundry rhythm, brick silhouettes.',
-      color_palette: 'chalk white, wind blue, brick red, rope tan',
-      lighting_setup: 'windy daylight blocks, moving cloud shadow shapes, roofline rim color',
-      material_texture:
+      color_and_tone: 'chalk white, wind blue, brick red, rope tan',
+      lighting_and_shadow: 'windy daylight blocks, moving cloud shadow shapes, roofline rim color',
+      texture_and_material:
         'canvas vane planes, brick blocks, rope arcs, tin duct shapes, cotton cloth planes',
-      render_quality:
-        'Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity, moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material simulation, or hyper-detail.',
-      spatial_distortion:
+      camera_and_composition:
         'Rooftops, riversides, roofs, blocks, terraces, and outdoor workshops with lived-in pragmatism. Keep depth legible and avoid default hallway, aisle, or empty studio staging.',
-      atmosphere: 'airy, domestic, clever, communal',
+      atmosphere_and_mood: 'airy, domestic, clever, communal',
+      rendering_and_quality:
+        'Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity, moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material simulation, or hyper-detail.',
       key_features:
         'windcatcher towers, kite turbines, roof crews, laundry rhythm, brick silhouettes',
       creative_brief:
@@ -115,18 +117,18 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'seedpunk community archive as a flat-to-painterly poster card built around a block party with seed libraries, blank paper packets, planters, music shapes, and archival cabinets.',
-      form_and_line:
+      subject_treatment:
         'Repair-culture shapes, civic infrastructure, practical climate machines, and human-scaled commons. Core composition uses seed drawers, planters, neighborhood crowd, paper packets, garden tools.',
-      color_palette: 'seed brown, marigold, leafy green, faded poster pink',
-      lighting_setup:
+      color_and_tone: 'seed brown, marigold, leafy green, faded poster pink',
+      lighting_and_shadow:
         'golden-hour street blocks, small celebration color dots, soft plant shadow shapes',
-      material_texture:
+      texture_and_material:
         'blank seed-packet rectangles, wood cabinet silhouette, denim color blocks, soil plane, painted planter shapes',
-      render_quality:
-        'Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity, moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material simulation, or hyper-detail.',
-      spatial_distortion:
+      camera_and_composition:
         'Rooftops, riversides, roofs, blocks, terraces, and outdoor workshops with lived-in pragmatism. Keep depth legible and avoid default hallway, aisle, or empty studio staging.',
-      atmosphere: 'festive, archival, local, generous',
+      atmosphere_and_mood: 'festive, archival, local, generous',
+      rendering_and_quality:
+        'Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity, moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material simulation, or hyper-detail.',
       key_features: 'seed drawers, planters, neighborhood crowd, paper packets, garden tools',
       creative_brief:
         'Seedpunk as living archive: celebration, cabinets, gardeners, and seed exchange, no sterile lab, readable labels, or generic farmers market aisle. Keep the result representative rather than over-abstract; make one character in their environment the anchor, with motifs as background, costume, weather, architecture, or social pressure instead of a foreground prop. Favor flat-to-painterly editorial illustration, gouache poster aesthetics, clean graphic-novel card art, or stylized animation-background art over realism, photoreal photoreal painterly realism, cinematic key art, scratchy print noise, or hyper-detailed concept art. Use few bold color/value zones, low-to-moderate texture, large shapes, clean surfaces, shallow poster depth, and finish denoised with no excessive noise or ultra-fine detail.',
@@ -141,18 +143,18 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'desertpunk climate machines as a flat-to-painterly poster card built around desert water condensers, shade cloth, repair teams, sparse bloom beds, and dust-filter towers.',
-      form_and_line:
+      subject_treatment:
         'Repair-culture shapes, civic infrastructure, practical climate machines, and human-scaled commons. Core composition uses condenser towers, shade cloth, bloom beds, dust filters, repair teams.',
-      color_palette: 'sand ochre, cactus green, white shade cloth, copper pipe',
-      lighting_setup:
+      color_and_tone: 'sand ochre, cactus green, white shade cloth, copper pipe',
+      lighting_and_shadow:
         'harsh sun as flat shape, shade-cloth color blocks, cool condenser glow, simple dust color plane',
-      material_texture:
+      texture_and_material:
         'shade cloth plane, copper pipe arcs, dry clay blocks, simple water-color highlights, patched utility gear',
-      render_quality:
-        'Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity, moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material simulation, or hyper-detail.',
-      spatial_distortion:
+      camera_and_composition:
         'Rooftops, riversides, roofs, blocks, terraces, and outdoor workshops with lived-in pragmatism. Keep depth legible and avoid default hallway, aisle, or empty studio staging.',
-      atmosphere: 'resourceful, dry, bright, survivalist',
+      atmosphere_and_mood: 'resourceful, dry, bright, survivalist',
+      rendering_and_quality:
+        'Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity, moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material simulation, or hyper-detail.',
       key_features: 'condenser towers, shade cloth, bloom beds, dust filters, repair teams',
       creative_brief:
         'Desertpunk needs heat and water logic: visible condensers, shade, repair, and sparse bloom, not generic oasis fantasy. Keep the result representative rather than over-abstract; make one character in their environment the anchor, with motifs as background, costume, weather, architecture, or social pressure instead of a foreground prop. Favor flat-to-painterly editorial illustration, gouache poster aesthetics, clean graphic-novel card art, or stylized animation-background art over realism, photoreal photoreal painterly realism, cinematic key art, scratchy print noise, or hyper-detailed concept art. Use few bold color/value zones, low-to-moderate texture, large shapes, clean surfaces, shallow poster depth, and finish denoised with no excessive noise or ultra-fine detail.',
@@ -167,18 +169,18 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'rainpunk civic water system as a flat-to-painterly poster card built around public rainwater instruments, cistern blocks, gutter-harp arcs, umbrella crews, and blue ceramic channels.',
-      form_and_line:
+      subject_treatment:
         'Repair-culture shapes, civic infrastructure, practical climate machines, and human-scaled commons. Core composition uses gutter harps, cisterns, umbrella crews, water channels, rain rhythm.',
-      color_palette: 'rain blue, slate, ceramic white, brass pipe',
-      lighting_setup:
+      color_and_tone: 'rain blue, slate, ceramic white, brass pipe',
+      lighting_and_shadow:
         'overcast glow blocks, broad rain rhythm marks, flat cistern color, small warm accent dots',
-      material_texture:
+      texture_and_material:
         'ceramic channel planes, brass gutter arcs, rubber boot shapes, wet stone color blocks, umbrella fabric planes',
-      render_quality:
-        'Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity, moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material simulation, or hyper-detail.',
-      spatial_distortion:
+      camera_and_composition:
         'Rooftops, riversides, roofs, blocks, terraces, and outdoor workshops with lived-in pragmatism. Keep depth legible and avoid default hallway, aisle, or empty studio staging.',
-      atmosphere: 'musical, civic, wet, coordinated',
+      atmosphere_and_mood: 'musical, civic, wet, coordinated',
+      rendering_and_quality:
+        'Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity, moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material simulation, or hyper-detail.',
       key_features: 'gutter harps, cisterns, umbrella crews, water channels, rain rhythm',
       creative_brief:
         'Rainpunk as civic water music: people tune and maintain water systems, no empty rainy alley clone, lamp/window fixation, photoreal rain, or logo-like water symbols on clothes/walls/channels. Keep the result representative rather than over-abstract; make one character in their environment the anchor, with motifs as background, costume, weather, architecture, or social pressure instead of a foreground prop. Favor flat-to-painterly editorial illustration, gouache poster aesthetics, clean graphic-novel card art, or stylized animation-background art over realism, photoreal photoreal painterly realism, cinematic key art, scratchy print noise, or hyper-detailed concept art. Use few bold color/value zones, low-to-moderate texture, large shapes, clean surfaces, shallow poster depth, and finish denoised with no excessive noise or ultra-fine detail.',
@@ -193,17 +195,18 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'mangrovepunk amphibious commons as a flat-to-painterly poster card built around amphibious lifts and boardwalk workshops threaded through mangrove roots, boats, and maintenance crews.',
-      form_and_line:
+      subject_treatment:
         'Repair-culture shapes, civic infrastructure, practical climate machines, and human-scaled commons. Core composition uses mangrove roots, lift platforms, small boats, boardwalk crews, brackish reflections.',
-      color_palette: 'mangrove green, brackish brown, weathered teal, sun white',
-      lighting_setup: 'dappled water color blocks, warm deck accent dots, leaf-filtered sun planes',
-      material_texture:
+      color_and_tone: 'mangrove green, brackish brown, weathered teal, sun white',
+      lighting_and_shadow:
+        'dappled water color blocks, warm deck accent dots, leaf-filtered sun planes',
+      texture_and_material:
         'wet-wood color planes, mangrove root silhouettes, rope arcs, boat paint blocks, algae-stained metal accents',
-      render_quality:
-        'Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity, moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material simulation, or hyper-detail.',
-      spatial_distortion:
+      camera_and_composition:
         'Rooftops, riversides, roofs, blocks, terraces, and outdoor workshops with lived-in pragmatism. Keep depth legible and avoid default hallway, aisle, or empty studio staging.',
-      atmosphere: 'adaptive, humid, cooperative, rooted',
+      atmosphere_and_mood: 'adaptive, humid, cooperative, rooted',
+      rendering_and_quality:
+        'Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity, moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material simulation, or hyper-detail.',
       key_features:
         'mangrove roots, lift platforms, small boats, boardwalk crews, brackish reflections',
       creative_brief:

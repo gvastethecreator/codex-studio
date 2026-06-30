@@ -12,10 +12,16 @@ tags:
   - essential-art-styles
   - game-art-directions-and-ui
 visualDna:
-  aesthetic: Battle-royale visual language with high-visibility color coding, stormlike pressure gradients, and streamer-era polish.
-  subject_treatment: Clarify any subject through tactical silhouette separation, loot-color accents, and strong foreground priority.
+  aesthetic: >-
+    Battle-royale visual language with high-visibility color coding, stormlike pressure gradients, and
+    streamer-era polish.
+  subject_treatment: >-
+    Clarify any subject through tactical silhouette separation, loot-color accents, and strong foreground
+    priority.
   color_and_tone: Saturated cyan-violet perimeter glow, warm danger accents, high-key mids, and legible game-ready contrast.
-  lighting_and_shadow: Encroaching colored haze, bright rim edges, punchy sunlight or LED hits, and simplified shadow readability.
+  lighting_and_shadow: >-
+    Encroaching colored haze, bright rim edges, punchy sunlight or LED hits, and simplified shadow
+    readability.
   texture_and_material: Clean PBR-lite materials, compression-friendly gradients, subtle screen sharpness, and minimal grime.
   camera_and_composition: Wide playable readability, circular pressure motifs, strong focal isolation, and HUD-safe edges.
   atmosphere_and_mood: Urgent, competitive, kinetic mood without requiring arenas, storms, players, weapons, or vehicles.

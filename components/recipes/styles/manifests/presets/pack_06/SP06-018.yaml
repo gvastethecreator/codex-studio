@@ -13,19 +13,18 @@ tags:
   - drawing-and-sketching
 visualDna:
   aesthetic: Classic dip pen illustration
-  form_and_line: Cross-hatching, stippling
-  color_palette: Black ink on white
-  lighting_setup: High contrast
-  material_texture: Smooth paper
-  render_quality: Book illustration, detailed
-  spatial_distortion: Stylized shading
-  atmosphere: Classic, storybook
+  subject_treatment: Cross-hatching, stippling
+  color_and_tone: Black ink on white
+  lighting_and_shadow: High contrast
+  texture_and_material: Smooth paper
+  camera_and_composition: Stylized shading
+  atmosphere_and_mood: Classic, storybook
+  rendering_and_quality: Book illustration, detailed
   key_features: Line shading
   creative_brief: >-
-    Apply pen-and-ink drawing to any input: committed black linework, crosshatch
-    value, disciplined contour, untouched paper white, and crisp graphic
-    contrast. Keep irreversible ink clarity without requiring comic panels,
-    architectural plates, portraits, or handwritten labels.
+    Apply pen-and-ink drawing to any input: committed black linework, crosshatch value, disciplined contour,
+    untouched paper white, and crisp graphic contrast. Keep irreversible ink clarity without requiring comic
+    panels, architectural plates, portraits, or handwritten labels.
 avoidRules:
   - photo
   - realistic
@@ -45,7 +44,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP06-018.webp
 attributes:
-  negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border
+  negativePrompt: >-
+    photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy,
+    watermark, text, signature, frame, border
 taxonomy:
   packId: pack_06
   packName: Essential Art Styles

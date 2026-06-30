@@ -13,19 +13,18 @@ tags:
   - drawing-and-sketching
 visualDna:
   aesthetic: Doodle with biro pen
-  form_and_line: Thin, scribbly lines
-  color_palette: Blue or Black ink
-  lighting_setup: Flat
-  material_texture: Notebook paper, indentations
-  render_quality: Casual, sketch
-  spatial_distortion: Rough shading
-  atmosphere: Casual, restless, improvised
+  subject_treatment: Thin, scribbly lines
+  color_and_tone: Blue or Black ink
+  lighting_and_shadow: Flat
+  texture_and_material: Notebook paper, indentations
+  camera_and_composition: Rough shading
+  atmosphere_and_mood: Casual, restless, improvised
+  rendering_and_quality: Casual, sketch
   key_features: Scribble texture
   creative_brief: >-
-    Apply ballpoint-pen drawing to any input: blue ink pooling, scratchy pressure
-    variation, paper dimples, obsessive hatching, scribbled cross-contours, and
-    casual compulsive buildup. Keep everyday pen intimacy without requiring
-    notebooks, margins, classrooms, or readable text.
+    Apply ballpoint-pen drawing to any input: blue ink pooling, scratchy pressure variation, paper dimples,
+    obsessive hatching, scribbled cross-contours, and casual compulsive buildup. Keep everyday pen intimacy
+    without requiring notebooks, margins, classrooms, or readable text.
 avoidRules:
   - photo
   - realistic
@@ -47,7 +46,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP06-019.webp
 attributes:
-  negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border, notebook requirement, classroom mood
+  negativePrompt: >-
+    photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy,
+    watermark, text, signature, frame, border, notebook requirement, classroom mood
 taxonomy:
   packId: pack_06
   packName: Essential Art Styles

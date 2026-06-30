@@ -13,19 +13,31 @@ tags:
   - fabric-and-texture-focus
 visualDna:
   aesthetic: Trompe-l'oeil pigment couture, painted-clothing illusion and temporary surface transformation
-  form_and_line: Brush-stroke seams, faux closures, painted panel edges, airbrush gradients and contour-following pigment flow
-  color_palette: Vibrant primary-bold acrylics, UV-reactive brights, metallic pigment flashes, matte flats and dayglo accents
-  lighting_setup: Diffused even key, ring-flash catch, exhibition-spot accents and reflective control for painted-surface continuity
-  material_texture: Matte paint film, glycerin sheen, airbrush gradients, brush-stroke relief and substrate grain bleeding through pigment
-  render_quality: Artistic illusion mastery, painted-couture clarity and temporary-surface finish strong enough to replace fabric
-  spatial_distortion: None
-  atmosphere: Creative, performative and experimentally dressed through pigment rather than sewn construction
+  subject_treatment: >-
+    Brush-stroke seams, faux closures, painted panel edges, airbrush gradients and contour-following pigment
+    flow
+  color_and_tone: >-
+    Vibrant primary-bold acrylics, UV-reactive brights, metallic pigment flashes, matte flats and dayglo
+    accents
+  lighting_and_shadow: >-
+    Diffused even key, ring-flash catch, exhibition-spot accents and reflective control for painted-surface
+    continuity
+  texture_and_material: >-
+    Matte paint film, glycerin sheen, airbrush gradients, brush-stroke relief and substrate grain bleeding
+    through pigment
+  camera_and_composition: >-
+    Compose for Body Paint using its key spatial cues: Pigment film, brush strokes, trompe-l'oeil effect,
+    painted seams, faux trims and visible substrate texture.
+  atmosphere_and_mood: Creative, performative and experimentally dressed through pigment rather than sewn construction
+  rendering_and_quality: >-
+    Artistic illusion mastery, painted-couture clarity and temporary-surface finish strong enough to replace
+    fabric
   key_features: Pigment film, brush strokes, trompe-l'oeil effect, painted seams, faux trims and visible substrate texture
   creative_brief: >-
-    Build clothing illusion through pigment: acrylic matte film, brush-stroke relief, airbrush gradients, fake seams,
-    faux closures and trompe-l'oeil shadows. Treat the effect as temporary couture pigment over any surface or
-    silhouette, not a nude-body setup. Preserve painted-seam logic, pigment film, faux trims and styling attitude
-    without requiring a body, portrait, runway, room, prop, role or fixed character scene.
+    Build clothing illusion through pigment: acrylic matte film, brush-stroke relief, airbrush gradients, fake
+    seams, faux closures and trompe-l'oeil shadows. Treat the effect as temporary couture pigment over any
+    surface or silhouette, not a nude-body setup. Preserve painted-seam logic, pigment film, faux trims and
+    styling attitude without requiring a body, portrait, runway, room, prop, role or fixed character scene.
 avoidRules:
   - real stitched garment
   - nude-body setup

@@ -13,18 +13,18 @@ tags:
   - ink-and-print
 visualDna:
   aesthetic: Granular tonal etching with wash-like shadow fields
-  form_and_line: Light etched scaffolding under dominant tonal masses
-  color_palette: Smoke black, sepia umber, aged paper cream, muted iron gray
-  lighting_setup: Diffused tonal bloom with softly merged edge falloff
-  material_texture: Rosin-grain stipple, acid-bitten porosity, powdery plate tone
-  render_quality: Atmospheric print depth with layered tonal veils and subtle edge dissolve
-  spatial_distortion: Stable print geometry; depth built by tone stacking
-  atmosphere: Somber, introspective, gothic-romantic, haunted stillness
+  subject_treatment: Light etched scaffolding under dominant tonal masses
+  color_and_tone: Smoke black, sepia umber, aged paper cream, muted iron gray
+  lighting_and_shadow: Diffused tonal bloom with softly merged edge falloff
+  texture_and_material: Rosin-grain stipple, acid-bitten porosity, powdery plate tone
+  camera_and_composition: Stable print geometry; depth built by tone stacking
+  atmosphere_and_mood: Somber, introspective, gothic-romantic, haunted stillness
+  rendering_and_quality: Atmospheric print depth with layered tonal veils and subtle edge dissolve
   key_features: Grain-anchored gradients, soft shadow pooling, reduced hard edge contrast
   creative_brief: >-
-    Apply aquatint tonal-etch grammar to any input: rosin-grain gradients, acid-bitten porosity,
-    misted tone stacking, submerged contours, and soft shadow pools should make atmosphere primary
-    without requiring gothic scenes, landscapes, figures, ruins, or fixed somber subjects.
+    Apply aquatint tonal-etch grammar to any input: rosin-grain gradients, acid-bitten porosity, misted tone
+    stacking, submerged contours, and soft shadow pools should make atmosphere primary without requiring
+    gothic scenes, landscapes, figures, ruins, or fixed somber subjects.
 avoidRules:
   - sharp lines
 assets:

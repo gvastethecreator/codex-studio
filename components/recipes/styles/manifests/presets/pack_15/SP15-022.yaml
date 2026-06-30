@@ -14,16 +14,34 @@ tags:
   - desertpunk
   - climate-repair
 visualDna:
-  aesthetic: desertpunk climate machines as a flat-to-painterly poster card built around desert water condensers, shade cloth, repair teams, sparse bloom beds, and dust-filter towers.
-  form_and_line: Repair-culture shapes, civic infrastructure, practical climate machines, and human-scaled commons. Core composition uses condenser towers, shade cloth, bloom beds, dust filters, repair teams.
-  color_palette: sand ochre, cactus green, white shade cloth, copper pipe
-  lighting_setup: harsh sun as flat shape, shade-cloth color blocks, cool condenser glow, simple dust color plane
-  material_texture: shade cloth plane, copper pipe arcs, dry clay blocks, simple water-color highlights, patched utility gear
-  render_quality: Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity, moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material simulation, or hyper-detail.
-  spatial_distortion: Rooftops, riversides, roofs, blocks, terraces, and outdoor workshops with lived-in pragmatism. Keep depth legible and avoid default hallway, aisle, or empty studio staging.
-  atmosphere: resourceful, dry, bright, survivalist
+  aesthetic: >-
+    desertpunk climate machines as a flat-to-painterly poster card built around desert water condensers, shade
+    cloth, repair teams, sparse bloom beds, and dust-filter towers.
+  subject_treatment: >-
+    Repair-culture shapes, civic infrastructure, practical climate machines, and human-scaled commons. Core
+    composition uses condenser towers, shade cloth, bloom beds, dust filters, repair teams.
+  color_and_tone: sand ochre, cactus green, white shade cloth, copper pipe
+  lighting_and_shadow: harsh sun as flat shape, shade-cloth color blocks, cool condenser glow, simple dust color plane
+  texture_and_material: shade cloth plane, copper pipe arcs, dry clay blocks, simple water-color highlights, patched utility gear
+  camera_and_composition: >-
+    Rooftops, riversides, roofs, blocks, terraces, and outdoor workshops with lived-in pragmatism. Keep depth
+    legible and avoid default hallway, aisle, or empty studio staging.
+  atmosphere_and_mood: resourceful, dry, bright, survivalist
+  rendering_and_quality: >-
+    Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly
+    planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity,
+    moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material
+    simulation, or hyper-detail.
   key_features: condenser towers, shade cloth, bloom beds, dust filters, repair teams
-  creative_brief: 'Desertpunk needs heat and water logic: visible condensers, shade, repair, and sparse bloom, not generic oasis fantasy. Keep the result representative rather than over-abstract; make one character in their environment the anchor, with motifs as background, costume, weather, architecture, or social pressure instead of a foreground prop. Favor flat-to-painterly editorial illustration, gouache poster aesthetics, clean graphic-novel card art, or stylized animation-background art over realism, photoreal photoreal painterly realism, cinematic key art, scratchy print noise, or hyper-detailed concept art. Use few bold color/value zones, low-to-moderate texture, large shapes, clean surfaces, shallow poster depth, and finish denoised with no excessive noise or ultra-fine detail.'
+  creative_brief: >-
+    Desertpunk needs heat and water logic: visible condensers, shade, repair, and sparse bloom, not generic
+    oasis fantasy. Keep the result representative rather than over-abstract; make one character in their
+    environment the anchor, with motifs as background, costume, weather, architecture, or social pressure
+    instead of a foreground prop. Favor flat-to-painterly editorial illustration, gouache poster aesthetics,
+    clean graphic-novel card art, or stylized animation-background art over realism, photoreal photoreal
+    painterly realism, cinematic key art, scratchy print noise, or hyper-detailed concept art. Use few bold
+    color/value zones, low-to-moderate texture, large shapes, clean surfaces, shallow poster depth, and finish
+    denoised with no excessive noise or ultra-fine detail.
 avoidRules:
   - photoreal
   - watermark
@@ -37,7 +55,22 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP15-022.webp
 attributes:
-  negativePrompt: photoreal, hyperreal, realistic render, photoreal photoreal painterly realism, cinematic realism, AAA key art, cinematic concept-art render, photographic skin pores, realistic foreground portrait, realistic facial hair detail, lens blur, bokeh, depth-of-field photo look, realistic perspective drama, generic soldier hero, guard pin-up, weapon-first pose, palm oasis, fantasy desert city, foreground goggle portrait, survivalist weapon pose, water-bead microdetail, photoreal dust haze, market tent, HDR lens realism, 3D render look, PBR material simulation, hyper-detailed concept art, scratchy print noise, tiny black linework, watermark, text, logo, generic style, over-abstract, interchangeable preset, duplicated motifs, generic glass utopia, unmotivated market aisle, unmotivated library aisle, fantasy corridor, random camera held by subject, studio wall fixation, chair fixation, curtain fixation, lamp fixation, scarf fixation, pedestal fixation, bird fixation, excessive noise, ultra-fine detail, over-sharpened microtexture, over-rendered machinery, noisy grime, tiny rivets everywhere, busy texture chatter, realistic uniform portrait, uniformed officer hero, foreground guard portrait, detailed tattoo focus, dense machinery wallpaper, overcrowded scene, high-frequency surface detail, cinematic close-up portrait, flat black fill, crushed black, pure black masses, muddy black fields, generic American illustration, generic Western RPG card art
+  negativePrompt: >-
+    photoreal, hyperreal, realistic render, photoreal photoreal painterly realism, cinematic realism, AAA key
+    art, cinematic concept-art render, photographic skin pores, realistic foreground portrait, realistic
+    facial hair detail, lens blur, bokeh, depth-of-field photo look, realistic perspective drama, generic
+    soldier hero, guard pin-up, weapon-first pose, palm oasis, fantasy desert city, foreground goggle
+    portrait, survivalist weapon pose, water-bead microdetail, photoreal dust haze, market tent, HDR lens
+    realism, 3D render look, PBR material simulation, hyper-detailed concept art, scratchy print noise, tiny
+    black linework, watermark, text, logo, generic style, over-abstract, interchangeable preset, duplicated
+    motifs, generic glass utopia, unmotivated market aisle, unmotivated library aisle, fantasy corridor,
+    random camera held by subject, studio wall fixation, chair fixation, curtain fixation, lamp fixation,
+    scarf fixation, pedestal fixation, bird fixation, excessive noise, ultra-fine detail, over-sharpened
+    microtexture, over-rendered machinery, noisy grime, tiny rivets everywhere, busy texture chatter,
+    realistic uniform portrait, uniformed officer hero, foreground guard portrait, detailed tattoo focus,
+    dense machinery wallpaper, overcrowded scene, high-frequency surface detail, cinematic close-up portrait,
+    flat black fill, crushed black, pure black masses, muddy black fields, generic American illustration,
+    generic Western RPG card art
 taxonomy:
   packId: pack_15
   packName: Punk Spectrum Vault

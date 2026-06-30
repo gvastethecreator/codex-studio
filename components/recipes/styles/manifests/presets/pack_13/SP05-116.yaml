@@ -13,34 +13,32 @@ tags:
   - anime-style-spectrum
 visualDna:
   aesthetic: >-
-    Sumi-e impact treatment where pressure-variable brushwork, ink bursts, dry-brush splintering,
-    negative space, and monochrome value arcs imply force
-  form_and_line: >-
-    Single-gesture-brushstroke contours, variable-pressure-from-brush, dry-brush-scattering at
-    stroke-end, wet-ink-pooling at stroke-start, economy-of-line philosophy
-  color_palette: >-
-    Sumi-ink-black, rice-paper-white, vermillion-seal-stamp-red, grey-wash-dilutions, no other
-    colors exist, monochrome-poetry
-  lighting_setup: >-
-    No lighting, ink-density-as-value, dry-brush-lightness, wet-pool-darkness, negative-space-as
-    illumination
-  material_texture: >-
-    Rice-paper-fiber-absorption, ink-bleed-feathering, dry-brush-splinter-texture,
-    sumi-stick-grind-grain, bamboo-brush-hair-texture, paper-buckling-from-moisture
-  render_quality: >-
+    Sumi-e impact treatment where pressure-variable brushwork, ink bursts, dry-brush splintering, negative
+    space, and monochrome value arcs imply force
+  subject_treatment: >-
+    Single-gesture-brushstroke contours, variable-pressure-from-brush, dry-brush-scattering at stroke-end,
+    wet-ink-pooling at stroke-start, economy-of-line philosophy
+  color_and_tone: >-
+    Sumi-ink-black, rice-paper-white, vermillion-seal-stamp-red, grey-wash-dilutions, no other colors exist,
+    monochrome-poetry
+  lighting_and_shadow: No lighting, ink-density-as-value, dry-brush-lightness, wet-pool-darkness, negative-space-as illumination
+  texture_and_material: >-
+    Rice-paper-fiber-absorption, ink-bleed-feathering, dry-brush-splinter-texture, sumi-stick-grind-grain,
+    bamboo-brush-hair-texture, paper-buckling-from-moisture
+  camera_and_composition: >-
+    Ink splash suggests impact zones, negative space becomes form, brushstroke gesture replaces anatomy, no
+    filled forms, economy of space
+  atmosphere_and_mood: Zen discipline, explosive silence, one-stroke certainty, ink-grind meditation, quiet confidence
+  rendering_and_quality: >-
     Sumi-e brushstroke anime, zen action aesthetic, ink-wash mastery, single-breath rendering, and
     calligraphic force essence
-  spatial_distortion: >-
-    Ink splash suggests impact zones, negative space becomes form, brushstroke gesture replaces
-    anatomy, no filled forms, economy of space
-  atmosphere: Zen discipline, explosive silence, one-stroke certainty, ink-grind meditation, quiet confidence
   key_features: >-
-    Sumi ink monochrome, pressure-variable strokes, dry-brush splinters, ink-pool wetness,
-    rice-paper texture, and negative-space impact
+    Sumi ink monochrome, pressure-variable strokes, dry-brush splinters, ink-pool wetness, rice-paper texture,
+    and negative-space impact
   creative_brief: >-
-    Use sumi-e impact brushstroke as calligraphic-force grammar. Any prompt should be shaped by
-    pressure, splintering dry brush, ink pools, and negative-space tension. Fights, swords,
-    warriors, cuts, and literal combat are optional.
+    Use sumi-e impact brushstroke as calligraphic-force grammar. Any prompt should be shaped by pressure,
+    splintering dry brush, ink pools, and negative-space tension. Fights, swords, warriors, cuts, and literal
+    combat are optional.
 avoidRules:
   - detailed
   - filled
@@ -55,9 +53,7 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-116.webp
 attributes:
-  negativePrompt: >-
-    detailed, filled, colorful, gradient, cel-shaded, clean outlines, rendered, polished, busy,
-    noisy
+  negativePrompt: detailed, filled, colorful, gradient, cel-shaded, clean outlines, rendered, polished, busy, noisy
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle

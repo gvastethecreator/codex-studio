@@ -13,15 +13,18 @@ tags:
   - lighting-techniques
 visualDna:
   aesthetic: Sunset/Sunrise light
-  form_and_line: Long shadows
-  color_palette: Warm Gold, Orange, Red
-  lighting_setup: Directional, soft
-  material_texture: Glowing atmosphere
-  render_quality: Warm editorial realism
-  spatial_distortion: Lens flare
-  atmosphere: Warm, happy
+  subject_treatment: Long shadows
+  color_and_tone: Warm Gold, Orange, Red
+  lighting_and_shadow: Directional, soft
+  texture_and_material: Glowing atmosphere
+  camera_and_composition: Lens flare
+  atmosphere_and_mood: Warm, happy
+  rendering_and_quality: Warm editorial realism
   key_features: Warm cast
-  creative_brief: Low-angle warm light turns any subject into amber atmosphere with long shadows, soft directional falloff, orange-red color cast, and occasional flare. The effect is not a sunset backdrop; it is honeyed temporal warmth applied as photographic light behavior.
+  creative_brief: >-
+    Low-angle warm light turns any subject into amber atmosphere with long shadows, soft directional falloff,
+    orange-red color cast, and occasional flare. The effect is not a sunset backdrop; it is honeyed temporal
+    warmth applied as photographic light behavior.
 avoidRules:
   - blue
   - cold

@@ -12,19 +12,35 @@ tags:
   - anime-character-and-lifestyle
   - shojo-magical-girl-and-visionary-classics
 visualDna:
-  aesthetic: Adult-fashion shojo drama language with black-lace intimacy, night-realism restraint, and glamour-heartbreak duality
-  form_and_line: Slim fashion-forward contouring, angular romantic pose pressure, high-emotion facial line accents, and silhouette contrast between casual and performance-coded looks
-  color_palette: Black and wine-red anchors, smoky mauves, metallic silver accents, low-ambient amber practicals, and selective neon-stage highlights
-  lighting_setup: Low practical light pools, smoke-like diffusion, spotlight slices, and moody rim accents for emotional fracture
-  material_texture: Lace and leather material contrast, glossy makeup highlights, lived-in matte surfaces, and textile detail with urban wear traces
-  render_quality: Stylish mature shojo rendering with polished fashion readability, intimate drama tonality, and high emotional clarity without pastel washout
-  spatial_distortion: Compact noir framing with runway-like silhouette emphasis and controlled depth around interpersonal tension
-  atmosphere: Stylish, aching, intimate, adult
-  key_features: Fashion silhouettes, smoky intimacy, performance-light accents, emotional confrontation framing, black-lace detail
+  aesthetic: >-
+    Adult-fashion shojo drama language with black-lace intimacy, night-realism restraint, and
+    glamour-heartbreak duality
+  subject_treatment: >-
+    Slim fashion-forward contouring, angular romantic pose pressure, high-emotion facial line accents, and
+    silhouette contrast between casual and performance-coded looks
+  color_and_tone: >-
+    Black and wine-red anchors, smoky mauves, metallic silver accents, low-ambient amber practicals, and
+    selective neon-stage highlights
+  lighting_and_shadow: >-
+    Low practical light pools, smoke-like diffusion, spotlight slices, and moody rim accents for emotional
+    fracture
+  texture_and_material: >-
+    Lace and leather material contrast, glossy makeup highlights, lived-in matte surfaces, and textile detail
+    with urban wear traces
+  camera_and_composition: >-
+    Compact noir framing with runway-like silhouette emphasis and controlled depth around interpersonal
+    tension
+  atmosphere_and_mood: Stylish, aching, intimate, adult
+  rendering_and_quality: >-
+    Stylish mature shojo rendering with polished fashion readability, intimate drama tonality, and high
+    emotional clarity without pastel washout
+  key_features: >-
+    Fashion silhouettes, smoky intimacy, performance-light accents, emotional confrontation framing,
+    black-lace detail
   creative_brief: >-
-    Preserve black-lace apartment-heartbreak grammar as a reusable style
-    system: fashion-drama silhouette contrast, smoky intimate lighting, and
-    ambition-versus-affection tension should remain consistent across subjects.
+    Preserve black-lace apartment-heartbreak grammar as a reusable style system: fashion-drama silhouette
+    contrast, smoky intimate lighting, and ambition-versus-affection tension should remain consistent across
+    subjects.
 avoidRules:
   - realistic
   - 3d render
@@ -41,7 +57,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-182.webp
 attributes:
-  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
+  negativePrompt: >-
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts,
+    watermark, text, signature
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle

@@ -13,18 +13,20 @@ tags:
   - environment-and-worldbuilding
 visualDna:
   aesthetic: Isometric cartographic render
-  form_and_line: Topography
-  color_palette: Map colors, topographic contrast
-  lighting_setup: Sunlight, terrain-shadow casting
-  material_texture: Low poly terrain, topographic layers
-  render_quality: Game map, cute, cartographic style
-  atmosphere: Informative, toy, exploration-inviting
+  subject_treatment: Topography
+  color_and_tone: Map colors, topographic contrast
+  lighting_and_shadow: Sunlight, terrain-shadow casting
+  texture_and_material: Low poly terrain, topographic layers
+  camera_and_composition: >-
+    Production-preview camera for 3D Map: readable hero scale, foreground/midground/background depth, clean
+    silhouette, and practical vertical crop.
+  atmosphere_and_mood: Informative, toy, exploration-inviting
+  rendering_and_quality: Game map, cute, cartographic style
   key_features: Grid, elevation readability
   creative_brief: >-
-    Translate the input into isometric cartographic logic: stacked contour
-    layers, height-coded color, terrain-shadow style and minimap readability.
-    If landscape exists, map it; otherwise treat subject hierarchy as topographic
-    information without forcing hills, valleys or terrain.
+    Translate the input into isometric cartographic logic: stacked contour layers, height-coded color,
+    terrain-shadow style and minimap readability. If landscape exists, map it; otherwise treat subject
+    hierarchy as topographic information without forcing hills, valleys or terrain.
 avoidRules:
   - 2d map
   - paper

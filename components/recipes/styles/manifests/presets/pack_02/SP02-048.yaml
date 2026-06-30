@@ -13,15 +13,24 @@ tags:
   - photography-eras
 visualDna:
   aesthetic: First color photo
-  form_and_line: None
-  color_palette: Pointillist grain, stippled pastel, lavender, rose, moss
-  lighting_setup: Soft, dreamy, diffuse daylight, window glow
-  material_texture: Potato starch grain, dyed starch, random RGB mosaic
-  render_quality: Impressionist photo, pointillism, painterly light capture
-  spatial_distortion: None
-  atmosphere: Dreamy, vintage, Belle Epoque warmth, first-color wonder
+  subject_treatment: >-
+    Treat subjects as believable filmed or broadcast subjects under Autochrome (1900s): casting, wardrobe,
+    props, motion cues, and silhouette hierarchy follow 4. Photography Eras cinematic and broadcast grammar
+    without locking to one plot beat.
+  color_and_tone: Pointillist grain, stippled pastel, lavender, rose, moss
+  lighting_and_shadow: Soft, dreamy, diffuse daylight, window glow
+  texture_and_material: Potato starch grain, dyed starch, random RGB mosaic
+  camera_and_composition: >-
+    Camera language native to Autochrome (1900s): genre-aware framing, lens character, focal hierarchy, motion
+    cue, and vertical style-card composition.
+  atmosphere_and_mood: Dreamy, vintage, Belle Epoque warmth, first-color wonder
+  rendering_and_quality: Impressionist photo, pointillism, painterly light capture
   key_features: Grainy color, starch-speckle, luminous pastels
-  creative_brief: 'Reinterpret the input as early Autochrome color: dyed starch mosaic, stippled pastel grain, diffuse daylight, and a delicate impressionist veil over photographic form. Avoid requiring gardens, flowers, or period subjects. Every color should arrive through tiny scattered grains, as if the familiar world were being seen in color for the first time.'
+  creative_brief: >-
+    Reinterpret the input as early Autochrome color: dyed starch mosaic, stippled pastel grain, diffuse
+    daylight, and a delicate impressionist veil over photographic form. Avoid requiring gardens, flowers, or
+    period subjects. Every color should arrive through tiny scattered grains, as if the familiar world were
+    being seen in color for the first time.
 avoidRules:
   - sharp
   - digital color

@@ -13,15 +13,18 @@ tags:
   - commercial-and-product
 visualDna:
   aesthetic: Real estate HDR brightness
-  form_and_line: Wide angle
-  color_palette: Saturated, even
-  lighting_setup: No shadows (HDR)
-  material_texture: Sharp
-  render_quality: Listing-photo oversaturation
-  spatial_distortion: Unnatural dynamic range
-  atmosphere: Bright, selling
+  subject_treatment: Wide angle
+  color_and_tone: Saturated, even
+  lighting_and_shadow: No shadows (HDR)
+  texture_and_material: Sharp
+  camera_and_composition: Unnatural dynamic range
+  atmosphere_and_mood: Bright, selling
+  rendering_and_quality: Listing-photo oversaturation
   key_features: Shadowless HDR visibility
-  creative_brief: 'Real estate HDR makes any subject over-available: shadows lifted away, colors pushed slightly beyond realism, wide-angle clarity, and dynamic range flattened into sales-friendly brightness. Use listing-photo hypervisibility without requiring a house, room, window, or property context.'
+  creative_brief: >-
+    Real estate HDR makes any subject over-available: shadows lifted away, colors pushed slightly beyond
+    realism, wide-angle clarity, and dynamic range flattened into sales-friendly brightness. Use listing-photo
+    hypervisibility without requiring a house, room, window, or property context.
 avoidRules:
   - shadows
   - dark corners

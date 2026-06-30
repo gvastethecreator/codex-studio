@@ -14,16 +14,35 @@ tags:
   - broadcast-punk
   - pirate-tv
 visualDna:
-  aesthetic: broadcast punk public media built around a public atrium hijacked by pirate TV crews, stacked monitors, cables, tripods, and crowd attention.
-  form_and_line: CRT geometry, analog signal bands, vapor gradients, mall-era surfaces, tape artifacts, and digital slippage. Core composition uses monitor stacks, pirate crew, crowd, coax coils, camera gear as production context.
-  color_palette: broadcast blue, red tally light, concrete gray, black cable
-  lighting_setup: monitor wall glow, red tally sparks, atrium daylight, cable shadows
-  material_texture: CRT glass, concrete, coax cable, folding chairs, denim jackets
-  render_quality: Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity, moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material simulation, or hyper-detail.
-  spatial_distortion: Pools, arcades, stations, atriums, kiosks, malls, observatories, and broadcast corners with media texture. Keep depth legible and avoid default hallway, aisle, or empty studio staging.
-  atmosphere: public, disruptive, media-saturated, alert
+  aesthetic: >-
+    broadcast punk public media built around a public atrium hijacked by pirate TV crews, stacked monitors,
+    cables, tripods, and crowd attention.
+  subject_treatment: >-
+    CRT geometry, analog signal bands, vapor gradients, mall-era surfaces, tape artifacts, and digital
+    slippage. Core composition uses monitor stacks, pirate crew, crowd, coax coils, camera gear as production
+    context.
+  color_and_tone: broadcast blue, red tally light, concrete gray, black cable
+  lighting_and_shadow: monitor wall glow, red tally sparks, atrium daylight, cable shadows
+  texture_and_material: CRT glass, concrete, coax cable, folding chairs, denim jackets
+  camera_and_composition: >-
+    Pools, arcades, stations, atriums, kiosks, malls, observatories, and broadcast corners with media texture.
+    Keep depth legible and avoid default hallway, aisle, or empty studio staging.
+  atmosphere_and_mood: public, disruptive, media-saturated, alert
+  rendering_and_quality: >-
+    Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly
+    planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity,
+    moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material
+    simulation, or hyper-detail.
   key_features: monitor stacks, pirate crew, crowd, coax coils, camera gear as production context
-  creative_brief: Make pirate TV production visible through monitor stacks, signal gear, antenna arcs, crew silhouettes, and crowd attention, not visible camera equipment. Keep the result representative rather than over-abstract; make one character in their environment the anchor, with motifs as background, costume, weather, architecture, or social pressure instead of a foreground prop. Favor clean graphic-novel card art, stylized 2D digital illustration, controlled digital painting, cel-shaded poster art, or gouache-poster color blocking over realism, photoreal painterly realism, cinematic key art, or hyper-detailed concept art. Use few bold color/value zones, moderate texture, large shapes, clean surfaces, and finish denoised with no excessive noise or ultra-fine detail.
+  creative_brief: >-
+    Make pirate TV production visible through monitor stacks, signal gear, antenna arcs, crew silhouettes, and
+    crowd attention, not visible camera equipment. Keep the result representative rather than over-abstract;
+    make one character in their environment the anchor, with motifs as background, costume, weather,
+    architecture, or social pressure instead of a foreground prop. Favor clean graphic-novel card art,
+    stylized 2D digital illustration, controlled digital painting, cel-shaded poster art, or gouache-poster
+    color blocking over realism, photoreal painterly realism, cinematic key art, or hyper-detailed concept
+    art. Use few bold color/value zones, moderate texture, large shapes, clean surfaces, and finish denoised
+    with no excessive noise or ultra-fine detail.
 avoidRules:
   - photoreal
   - watermark
@@ -37,7 +56,22 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP15-052.webp
 attributes:
-  negativePrompt: photoreal, hyperreal, realistic render, painterly realism, realistic paint finish, cinematic realism, AAA key art, photographic skin pores, realistic foreground portrait, realistic facial hair detail, lens blur, bokeh, depth-of-field photo look, visible camera, tripod, softbox, light umbrella, pirate flag, skull, crossbones, banner, emblem, logo-like symbol, foreground camera prop, camera pointed at viewer, smartphone, readable UI, screen text, news logo, surveillance-camera hero, mall corridor, folding-chair clutter, cable spaghetti, generic soldier hero, guard pin-up, weapon-first pose, HDR lens realism, 3D render look, PBR material simulation, hyper-detailed concept art, watermark, text, logo, generic style, over-abstract, interchangeable preset, duplicated motifs, generic glass utopia, unmotivated market aisle, unmotivated library aisle, fantasy corridor, random camera held by subject, studio wall fixation, chair fixation, curtain fixation, lamp fixation, scarf fixation, pedestal fixation, bird fixation, excessive noise, ultra-fine detail, over-sharpened microtexture, over-rendered machinery, noisy grime, tiny rivets everywhere, busy texture chatter, realistic uniform portrait, uniformed officer hero, foreground guard portrait, detailed tattoo focus, dense machinery wallpaper, overcrowded scene, high-frequency surface detail, cinematic close-up portrait, flat black fill, crushed black, pure black masses, muddy black fields, generic American illustration, generic Western RPG card art
+  negativePrompt: >-
+    photoreal, hyperreal, realistic render, painterly realism, realistic paint finish, cinematic realism, AAA
+    key art, photographic skin pores, realistic foreground portrait, realistic facial hair detail, lens blur,
+    bokeh, depth-of-field photo look, visible camera, tripod, softbox, light umbrella, pirate flag, skull,
+    crossbones, banner, emblem, logo-like symbol, foreground camera prop, camera pointed at viewer,
+    smartphone, readable UI, screen text, news logo, surveillance-camera hero, mall corridor, folding-chair
+    clutter, cable spaghetti, generic soldier hero, guard pin-up, weapon-first pose, HDR lens realism, 3D
+    render look, PBR material simulation, hyper-detailed concept art, watermark, text, logo, generic style,
+    over-abstract, interchangeable preset, duplicated motifs, generic glass utopia, unmotivated market aisle,
+    unmotivated library aisle, fantasy corridor, random camera held by subject, studio wall fixation, chair
+    fixation, curtain fixation, lamp fixation, scarf fixation, pedestal fixation, bird fixation, excessive
+    noise, ultra-fine detail, over-sharpened microtexture, over-rendered machinery, noisy grime, tiny rivets
+    everywhere, busy texture chatter, realistic uniform portrait, uniformed officer hero, foreground guard
+    portrait, detailed tattoo focus, dense machinery wallpaper, overcrowded scene, high-frequency surface
+    detail, cinematic close-up portrait, flat black fill, crushed black, pure black masses, muddy black
+    fields, generic American illustration, generic Western RPG card art
 taxonomy:
   packId: pack_15
   packName: Punk Spectrum Vault

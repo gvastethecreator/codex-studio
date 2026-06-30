@@ -12,20 +12,33 @@ tags:
   - anime-character-and-lifestyle
   - shojo-magical-girl-and-visionary-classics
 visualDna:
-  aesthetic: Fated shojo-mecha fantasy language with tarot symbolism, windswept romance gravitas, and ceremonial machine-myth grandeur rooted in late-90s dramatic elegance
-  form_and_line: Noble silhouette architecture, elongated shojo expressivity, ornate mechanical contour weight, and destiny-charged diagonal composition lines
-  color_palette: Jewel-toned crimson-sapphire-violet skies, antique gold accents, misty stone neutrals, and prophecy-glow highlights
-  lighting_setup: Dramatic horizon backlight, tarot-like spotlight segmentation, rim-lit motion arcs, and high-contrast destiny staging with emotional focal pressure
-  material_texture: Ornate enamel, wind-lashed textile rhythm, painted-cloud sky layers, cel-grain filmic warmth, and crystalline magical accents
-  render_quality: Romantic high-drama 90s fantasy render with balanced machine-myth and emotion readability, rich atmospheric polish, and operatic clarity
-  spatial_distortion: Sweeping vertical fantasy depth with selective foreshortening and intimate foreground pressure
-  atmosphere: Romantic, fated, windswept, grand
-  key_features: Tarot symbolism, ceremonial silhouette flow, ornate mechanical motifs, sky-heavy compositions, prophecy-charged focal tension
+  aesthetic: >-
+    Fated shojo-mecha fantasy language with tarot symbolism, windswept romance gravitas, and ceremonial
+    machine-myth grandeur rooted in late-90s dramatic elegance
+  subject_treatment: >-
+    Noble silhouette architecture, elongated shojo expressivity, ornate mechanical contour weight, and
+    destiny-charged diagonal composition lines
+  color_and_tone: >-
+    Jewel-toned crimson-sapphire-violet skies, antique gold accents, misty stone neutrals, and prophecy-glow
+    highlights
+  lighting_and_shadow: >-
+    Dramatic horizon backlight, tarot-like spotlight segmentation, rim-lit motion arcs, and high-contrast
+    destiny staging with emotional focal pressure
+  texture_and_material: >-
+    Ornate enamel, wind-lashed textile rhythm, painted-cloud sky layers, cel-grain filmic warmth, and
+    crystalline magical accents
+  camera_and_composition: Sweeping vertical fantasy depth with selective foreshortening and intimate foreground pressure
+  atmosphere_and_mood: Romantic, fated, windswept, grand
+  rendering_and_quality: >-
+    Romantic high-drama 90s fantasy render with balanced machine-myth and emotion readability, rich
+    atmospheric polish, and operatic clarity
+  key_features: >-
+    Tarot symbolism, ceremonial silhouette flow, ornate mechanical motifs, sky-heavy compositions,
+    prophecy-charged focal tension
   creative_brief: >-
-    Fate the input through tarot-mecha fantasy: prophecy-card segmentation,
-    jewel-sky backlight, ornate machine-myth contours, and windswept shojo
-    gravity can mechanize or ceremonialize any subject without fixing a cockpit,
-    battlefield, castle, or literal tarot reading.
+    Fate the input through tarot-mecha fantasy: prophecy-card segmentation, jewel-sky backlight, ornate
+    machine-myth contours, and windswept shojo gravity can mechanize or ceremonialize any subject without
+    fixing a cockpit, battlefield, castle, or literal tarot reading.
 avoidRules:
   - realistic
   - 3d render
@@ -42,7 +55,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-172.webp
 attributes:
-  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
+  negativePrompt: >-
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts,
+    watermark, text, signature
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle

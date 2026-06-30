@@ -13,19 +13,18 @@ tags:
   - drawing-and-sketching
 visualDna:
   aesthetic: Sanguine/Sepia drawing
-  form_and_line: Square stick strokes
-  color_palette: Red, Brown, Black, White
-  lighting_setup: Classical study
-  material_texture: Textured paper
-  render_quality: Academic study finish with warm material restraint
-  spatial_distortion: None
-  atmosphere: Warm, classical
+  subject_treatment: Square stick strokes
+  color_and_tone: Red, Brown, Black, White
+  lighting_and_shadow: Classical study
+  texture_and_material: Textured paper
+  camera_and_composition: 'Compose for Conte Crayon using its key spatial cues: Earth tones.'
+  atmosphere_and_mood: Warm, classical
+  rendering_and_quality: Academic study finish with warm material restraint
   key_features: Earth tones
   creative_brief: >-
-    Apply conte-crayon drawing to any input: compressed earth tones, sanguine
-    and sepia value structure, square-stick strokes, textured paper drag, and
-    warm disciplined modeling. Keep archaeological restraint without requiring
-    academy figures, portraits, anatomy plates, or antique sketchbooks.
+    Apply conte-crayon drawing to any input: compressed earth tones, sanguine and sepia value structure,
+    square-stick strokes, textured paper drag, and warm disciplined modeling. Keep archaeological restraint
+    without requiring academy figures, portraits, anatomy plates, or antique sketchbooks.
 avoidRules:
   - photo
   - realistic
@@ -45,7 +44,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP06-024.webp
 attributes:
-  negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border
+  negativePrompt: >-
+    photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy,
+    watermark, text, signature, frame, border
 taxonomy:
   packId: pack_06
   packName: Essential Art Styles

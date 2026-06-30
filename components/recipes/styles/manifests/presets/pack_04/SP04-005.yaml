@@ -13,19 +13,18 @@ tags:
   - comic-book-styles
 visualDna:
   aesthetic: Romantic manga visual language with decorative emotional emphasis
-  form_and_line: Fine delicate linework, elegant curves, expressive facial detailing
-  color_palette: Monochrome with soft gray tone bands and light ornamental accents
-  lighting_setup: Diffused glow, soft bloom highlights, low-contrast value transitions
-  material_texture: Floral/sparkle screentone motifs and airy texture overlays
-  render_quality: Polished emotional panel rendering with graceful line control
-  spatial_distortion: Stylized facial proportion and lyrical panel-space treatment
-  atmosphere: Tender, dreamy, introspective
+  subject_treatment: Fine delicate linework, elegant curves, expressive facial detailing
+  color_and_tone: Monochrome with soft gray tone bands and light ornamental accents
+  lighting_and_shadow: Diffused glow, soft bloom highlights, low-contrast value transitions
+  texture_and_material: Floral/sparkle screentone motifs and airy texture overlays
+  camera_and_composition: Stylized facial proportion and lyrical panel-space treatment
+  atmosphere_and_mood: Tender, dreamy, introspective
+  rendering_and_quality: Polished emotional panel rendering with graceful line control
   key_features: Decorative overlays, ornamental borders, emotion-forward closeups
   creative_brief: >-
-    Apply shojo manga emotional grammar to any input: delicate line economy, soft tonal gradients,
-    decorative screentones, airy negative space, and lyrical close framing should prioritize
-    intimacy without requiring romance, flowers, sparkles, faces, school scenes, or a fixed
-    relationship setup.
+    Apply shojo manga emotional grammar to any input: delicate line economy, soft tonal gradients, decorative
+    screentones, airy negative space, and lyrical close framing should prioritize intimacy without requiring
+    romance, flowers, sparkles, faces, school scenes, or a fixed relationship setup.
 avoidRules:
   - rough
   - ugly

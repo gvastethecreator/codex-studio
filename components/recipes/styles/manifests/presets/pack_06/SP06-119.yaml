@@ -12,9 +12,15 @@ tags:
   - essential-art-styles
   - game-art-directions-and-ui
 visualDna:
-  aesthetic: Cozy sim seasonal art style with soft pixel warmth, gentle routine energy, and approachable hand-crafted charm.
-  subject_treatment: Make any subject feel small, friendly, useful, and collectible through rounded forms and soft edge priorities.
-  color_and_tone: Four-season palette logic, warm pastels, honeyed highlights, cool morning shadows, and low-stress contrast.
+  aesthetic: >-
+    Cozy sim seasonal art style with soft pixel warmth, gentle routine energy, and approachable hand-crafted
+    charm.
+  subject_treatment: >-
+    Make any subject feel small, friendly, useful, and collectible through rounded forms and soft edge
+    priorities.
+  color_and_tone: >-
+    Four-season palette logic, warm pastels, honeyed highlights, cool morning shadows, and low-stress
+    contrast.
   lighting_and_shadow: Soft ambient daylight, tiny contact shadows, seasonal color washes, and almost no harsh drama.
   texture_and_material: Gentle pixel grain, quilt-like pattern accents, soft organic noise, and tactile handmade detail.
   camera_and_composition: Isometric or icon-atlas framing with tidy spacing, cozy negative space, and clear modular grouping.
@@ -33,7 +39,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP06-119.webp
 attributes:
-  negativePrompt: motion blur, inconsistent proportions, changing costume, background scene, farm requirement, crop requirement, animal requirement, watermark, text
+  negativePrompt: >-
+    motion blur, inconsistent proportions, changing costume, background scene, farm requirement, crop
+    requirement, animal requirement, watermark, text
   layout:
     preferredFrameCount: 8
     frameGrid: 4x2

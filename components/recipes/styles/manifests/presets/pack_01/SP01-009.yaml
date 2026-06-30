@@ -19,11 +19,10 @@ visualDna:
   texture_and_material: Soft airy textures, smooth surfaces, bright fabrics or pale materials
   camera_and_composition: Blown out highlights in the background, clean and minimal framing
   atmosphere_and_mood: Happy, pure, clean, optimistic, ethereal
-  rendering_and_quality: Commercial beauty standard, crisp but soft, high resolution
+  rendering_and_quality: Commercial beauty polish, crisp but soft, high resolution
   creative_brief: >-
-    Apply high-key portrait lighting to any subject: white wraparound exposure,
-    pastel softness, clean minimal framing, near-shadowless form, and airy
-    optimism without requiring skin or figure.
+    Apply high-key portrait lighting to any subject: white wraparound exposure, pastel softness, clean minimal
+    framing, near-shadowless form, and airy optimism without requiring skin or figure.
 avoidRules:
   - dark
   - shadows

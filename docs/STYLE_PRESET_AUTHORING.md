@@ -192,7 +192,11 @@ It also enforces pack-reference drift:
 
 ## Visual DNA Fields
 
-All 8 fields are required and checked for emptiness by `validateStyleManifestGraph`:
+All 8 fields are required by exact canonical key name and checked by `validateStyleManifestGraph`.
+Alias fields such as `form_and_line`, `color_palette`, `lighting_setup`, `material_texture`,
+`spatial_distortion`, `atmosphere`, and `render_quality` are retired for authored manifests.
+Do not use placeholder values such as `Standard`, `Default`, `None`, `N/A`, `TBD`, `TODO`, or
+`placeholder`; write preset-specific language that represents the intended visual system.
 
 | Field                    | Purpose                           |
 | ------------------------ | --------------------------------- |
@@ -224,6 +228,15 @@ assets:
 ```
 
 Default images live in `assets/recipes/styles/defaults/`. Use `.webp` format.
+
+## Attributes
+
+Every preset must include `attributes.negativePrompt`, usually mirroring `avoidRules` as a comma-separated string:
+
+```yaml
+attributes:
+  negativePrompt: illustration, 3d render, watermark, text
+```
 
 ## Default Card Regeneration
 

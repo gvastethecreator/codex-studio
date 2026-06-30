@@ -13,23 +13,22 @@ tags:
   - ink-and-print
 visualDna:
   aesthetic: >-
-    Classical ukiyo-e woodblock seascape language with rhythmic wave massing, carved contour
-    elegance, and floating-world calm
-  form_and_line: Variable width
-  color_palette: Flat gradients (Bokashi), Edo-period restraint, indigo-prussian depth
-  lighting_setup: Flat, no shadow, graphic elegance, woodblock tradition
-  material_texture: Wood grain
-  render_quality: >-
-    Traditional woodblock print fidelity emphasizing carved-line discipline, restrained elegance,
-    and repeatable impression clarity
-  spatial_distortion: Flattened perspective
-  atmosphere: Nature, calm, ukiyo-e transience, seasonal reverence
+    Classical ukiyo-e woodblock seascape language with rhythmic wave massing, carved contour elegance, and
+    floating-world calm
+  subject_treatment: Variable width
+  color_and_tone: Flat gradients (Bokashi), Edo-period restraint, indigo-prussian depth
+  lighting_and_shadow: Flat, no shadow, graphic elegance, woodblock tradition
+  texture_and_material: Wood grain
+  camera_and_composition: Flattened perspective
+  atmosphere_and_mood: Nature, calm, ukiyo-e transience, seasonal reverence
+  rendering_and_quality: >-
+    Traditional woodblock print fidelity emphasizing carved-line discipline, restrained elegance, and
+    repeatable impression clarity
   key_features: Outline, gradient band, seal signature
   creative_brief: >-
-    Apply ukiyo-e woodblock grammar to any input: carved contour rhythm, bokashi gradients,
-    Prussian-indigo restraint, flattened perspective, and repeatable impression clarity should
-    define style without requiring waves, landscapes, actors, seals, nature scenes, or named
-    masterworks.
+    Apply ukiyo-e woodblock grammar to any input: carved contour rhythm, bokashi gradients, Prussian-indigo
+    restraint, flattened perspective, and repeatable impression clarity should define style without requiring
+    waves, landscapes, actors, seals, nature scenes, or named masterworks.
 avoidRules:
   - western
   - 3d

@@ -13,19 +13,20 @@ tags:
   - fantasy-sci-fi-costume
 visualDna:
   aesthetic: Classic mage regalia, arcane scholar mystique and spellcraft textile language.
-  form_and_line: Flowing robe columns, bell-sleeve drape, hooded-cowl depth, layered hems and occasional apex geometry
-  color_palette: Deep Blue, Stars, burgundy, amethyst, midnight, silver-thread constellations, emerald
-  lighting_setup: Arcane glow, silver rim, warm scholarly glow, jewel luminescence and embroidered highlight glints
-  material_texture: Velvet, silver-thread embroidery, astrological silk, crystal beads, aged leather, moonstone inlay
-  render_quality: Magical, wise, illuminated-manuscript wonder, arcane-academia gravitas
-  spatial_distortion: Draped-column elongation, constellation-stitch rhythm and cowl-shadow depth compression.
-  atmosphere: Mysterious, powerful, forbidden-knowledge awe, incantation tension, arcane focus
-  key_features: Rune-embroidered robe, silver constellation thread, crystal pendant, deep cowl and arcane accessory cues when useful
+  subject_treatment: Flowing robe columns, bell-sleeve drape, hooded-cowl depth, layered hems and occasional apex geometry
+  color_and_tone: Deep Blue, Stars, burgundy, amethyst, midnight, silver-thread constellations, emerald
+  lighting_and_shadow: Arcane glow, silver rim, warm scholarly glow, jewel luminescence and embroidered highlight glints
+  texture_and_material: Velvet, silver-thread embroidery, astrological silk, crystal beads, aged leather, moonstone inlay
+  camera_and_composition: Draped-column elongation, constellation-stitch rhythm and cowl-shadow depth compression.
+  atmosphere_and_mood: Mysterious, powerful, forbidden-knowledge awe, incantation tension, arcane focus
+  rendering_and_quality: Magical, wise, illuminated-manuscript wonder, arcane-academia gravitas
+  key_features: >-
+    Rune-embroidered robe, silver constellation thread, crystal pendant, deep cowl and arcane accessory cues
+    when useful
   creative_brief: >-
-    Give any input wizard-robe grammar: velvet depth, bell sleeves, hooded cowl, rune embroidery,
-    moonstone inlay, arcane rim and silver constellations. Staff, hat or spellbook cues may appear
-    when useful, but the preset should not require towers, libraries, sanctums, candle altars or
-    spellcasting scenes.
+    Give any input wizard-robe grammar: velvet depth, bell sleeves, hooded cowl, rune embroidery, moonstone
+    inlay, arcane rim and silver constellations. Staff, hat or spellbook cues may appear when useful, but the
+    preset should not require towers, libraries, sanctums, candle altars or spellcasting scenes.
 avoidRules:
   - literal school uniform
   - modern streetwear

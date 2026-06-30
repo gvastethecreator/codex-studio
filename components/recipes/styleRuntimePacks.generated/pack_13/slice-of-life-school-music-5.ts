@@ -11,19 +11,19 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Soft shojo-romance language with delicate emotional framing, spring-inflected tonal warmth, and lyrical sensitivity',
-      form_and_line:
+      subject_treatment:
         'Fine tapered linework, elongated eye-expression geometry, gentle hand and hair gesture arcs, and open negative-space framing',
-      color_palette:
+      color_and_tone:
         'Pastel rose, cream, lavender, mint green, and muted blush accents with low-saturation harmony',
-      lighting_setup:
+      lighting_and_shadow:
         'Diffuse late-afternoon glow, soft hair highlight ribbons, low-contrast facial fill, and subtle bloom around focal features',
-      material_texture:
+      texture_and_material:
         'Matte paper delicacy, lightweight fabric flow, petal-soft particulate overlays, and minimal-grain painterly finish',
-      render_quality:
-        'Polished ethereal shojo render with controlled softness, stable facial readability, and emotionally transparent color grading',
-      spatial_distortion:
+      camera_and_composition:
         'Shallow depth emphasis around expression or detail focal planes with restrained context recession',
-      atmosphere: 'Tender, nostalgic, romantic, calm, and introspective',
+      atmosphere_and_mood: 'Tender, nostalgic, romantic, calm, and introspective',
+      rendering_and_quality:
+        'Polished ethereal shojo render with controlled softness, stable facial readability, and emotionally transparent color grading',
       key_features:
         'Expressive focal hierarchy, pastel harmony discipline, floating petal motion cues, fine contour elegance, and intimacy-first composition',
       creative_brief:
@@ -38,19 +38,19 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Intimate slice-of-life anime language with rainy-day melancholy, grounded everyday realism, and restrained emotional dramaturgy',
-      form_and_line:
+      subject_treatment:
         'Soft contour cadence, naturalistic anatomy simplification, subtle gesture-driven acting lines, and low-noise framing hierarchy',
-      color_palette:
+      color_and_tone:
         'Clouded blue-grays, damp green undertones, warm beige interior neutrals, and muted skin tones with low-saturation harmony',
-      lighting_setup:
+      lighting_and_shadow:
         'Overcast ambient key, window reflection accents, diffuse interior fill, and gentle value rolloff for calm tonal continuity',
-      material_texture:
+      texture_and_material:
         'Raindrop diffusion, soft knit and cotton fabrics, matte wood-like planes, and low-gloss everyday surfaces',
-      render_quality:
-        'Cinematic everyday anime finish with emotional subtlety, high readability, and controlled detail density',
-      spatial_distortion:
+      camera_and_composition:
         'Medium-close compositional intimacy with shallow depth emphasis and minimal perspective exaggeration',
-      atmosphere: 'Quiet, reflective, tender, and human-scale',
+      atmosphere_and_mood: 'Quiet, reflective, tender, and human-scale',
+      rendering_and_quality:
+        'Cinematic everyday anime finish with emotional subtlety, high readability, and controlled detail density',
       key_features:
         'Rain-laced glazing cues, understated micro-expression, everyday prop simplicity, and soft tonal transitions',
       creative_brief:
@@ -65,19 +65,19 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Pre-performance slice-of-life anime language with emotional intimacy, polished stagecraft contrast, and rain-tinted nocturnal sensitivity',
-      form_and_line:
+      subject_treatment:
         'Soft facial contour priority, controlled costume-like fold elegance, hand-gesture micro-acting cues, and close-framing silhouette clarity',
-      color_palette:
+      color_and_tone:
         'Night blues, muted rose accents, warm gold practicals, mirror-neutral highlights, and subdued skin midtones',
-      lighting_setup:
+      lighting_and_shadow:
         'Vanity-like practicals as warm key, soft stage-bokeh separation, low-contrast fill, and rain-cooled edge tones',
-      material_texture:
+      texture_and_material:
         'Satin fabric sheen, reflective mirror-like surfaces, subtle cosmetic powder finish, damp diffusion, and metallic hardware accents',
-      render_quality:
-        'Emotion-first polished anime rendering with refined facial readability, restrained detail density, and premium music-drama card legibility',
-      spatial_distortion:
+      camera_and_composition:
         'Intimate medium framing with shallow focus falloff and performance context kept intentionally soft',
-      atmosphere: 'Vulnerable, aspirational, focused, and quietly determined',
+      atmosphere_and_mood: 'Vulnerable, aspirational, focused, and quietly determined',
+      rendering_and_quality:
+        'Emotion-first polished anime rendering with refined facial readability, restrained detail density, and premium music-drama card legibility',
       key_features:
         'Backstage-like light rhythm, pre-stage expression anchor, readiness cues, and rain-muted contrast',
       creative_brief:
@@ -92,19 +92,19 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Feel-good confection-comedy anime language with warm slice-of-life softness, sweet color charm, and everyday social tenderness',
-      form_and_line:
+      subject_treatment:
         'Friendly rounded line cadence, timing-aware expression exaggeration, tabletop-like staging rhythm, and readable conversational gesture arcs',
-      color_palette:
+      color_and_tone:
         'Cream neutrals, strawberry pink accents, honey gold warmth, mint-soft highlights, and gentle wood-tone grounding',
-      lighting_setup:
+      lighting_and_shadow:
         'Cozy practical glow, diffuse warm fill, soft tabletop-like reflections, and low-contrast value shaping for comfort tone',
-      material_texture:
+      texture_and_material:
         'Light-grain wood, glossy ceramic sheen, whipped-cream softness, syrup highlights, and subtle pastry-crumb detail',
-      render_quality:
-        'Clean colorful anime render with comedic readability, mood-consistent polish, and balanced prop-subject hierarchy',
-      spatial_distortion:
+      camera_and_composition:
         'Stable frontal composition with mild depth layering to keep interaction and sweet focal clarity',
-      atmosphere: 'Cheerful, comforting, playful, and kind-hearted',
+      atmosphere_and_mood: 'Cheerful, comforting, playful, and kind-hearted',
+      rendering_and_quality:
+        'Clean colorful anime render with comedic readability, mood-consistent polish, and balanced prop-subject hierarchy',
       key_features:
         'Sweet centerpiece framing, comedic expression timing cues, warm comfort prop language, and soft convivial color rhythm',
       creative_brief:
@@ -119,19 +119,19 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Lantern-summer slice-of-life anime language with flowing elegance, communal night warmth, and nostalgic romantic undercurrent',
-      form_and_line:
+      subject_treatment:
         'Soft flowing garment contours, gesture-led interaction rhythm, lantern-like cadence lines, and gentle layered silhouettes',
-      color_palette:
+      color_and_tone:
         'Lantern amber-orange, deep indigo night fields, muted rose accents, and warm skin-light highlights balanced by cool shadows',
-      lighting_setup:
+      lighting_and_shadow:
         'Warm lantern practical clusters, low-key night ambient fill, distant sparkle edge glints, and soft bokeh separation',
-      material_texture:
+      texture_and_material:
         'Light cotton weave, washi lantern diffusion, lacquered wood surfaces, and humid summer-air haze',
-      render_quality:
-        'Emotion-rich festival anime rendering with clear focal hierarchy, balanced crowd context, and polished readability',
-      spatial_distortion:
+      camera_and_composition:
         'Mid-depth perspective with layered lantern depth cues and stable subject readability in foreground',
-      atmosphere: 'Nostalgic, joyful, tender, and gently wistful',
+      atmosphere_and_mood: 'Nostalgic, joyful, tender, and gently wistful',
+      rendering_and_quality:
+        'Emotion-rich festival anime rendering with clear focal hierarchy, balanced crowd context, and polished readability',
       key_features:
         'Lantern-string cadence, flowing silhouette motifs, distant shimmer accents, and shared-gesture emotional anchors',
       creative_brief:

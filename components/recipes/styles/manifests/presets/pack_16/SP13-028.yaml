@@ -13,20 +13,27 @@ tags:
   - anime
   - samurai-medieval
 visualDna:
-  aesthetic: Sacred vow iconography built around verticality, heraldic gravitas, and devotional stillness rather than spectacle.
-  form_and_line: Clean armored contour language, weighted drape folds, and emblem-first line emphasis to foreground lineage coding.
-  color_palette: Brushed silver base, royal ultramarine fields, muted parchment neutrals, and amber liturgical highlights.
-  lighting_setup: Filtered clerestory-style shafts with soft volumetric dust, preserving sanctified contrast on metallic and fabric planes.
-  material_texture: Mirror-polished worn steel, carved stone relief, waxed fabric banners, and ceremonial leather straps.
-  render_quality: Premium anime finish with emblem legibility, controlled bloom, and high tonal discipline around symbolic gestures.
-  spatial_distortion: Monumental upward composition with columnar framing that magnifies vow posture and insignia readability.
-  atmosphere: Reverence, obligation, and intergenerational burden accepted in silence.
+  aesthetic: >-
+    Sacred vow iconography built around verticality, heraldic gravitas, and devotional stillness rather than
+    spectacle.
+  subject_treatment: >-
+    Clean armored contour language, weighted drape folds, and emblem-first line emphasis to foreground lineage
+    coding.
+  color_and_tone: Brushed silver base, royal ultramarine fields, muted parchment neutrals, and amber liturgical highlights.
+  lighting_and_shadow: >-
+    Filtered clerestory-style shafts with soft volumetric dust, preserving sanctified contrast on metallic and
+    fabric planes.
+  texture_and_material: Mirror-polished worn steel, carved stone relief, waxed fabric banners, and ceremonial leather straps.
+  camera_and_composition: Monumental upward composition with columnar framing that magnifies vow posture and insignia readability.
+  atmosphere_and_mood: Reverence, obligation, and intergenerational burden accepted in silence.
+  rendering_and_quality: >-
+    Premium anime finish with emblem legibility, controlled bloom, and high tonal discipline around symbolic
+    gestures.
   key_features: Oath-anchor posture, heraldic motif centrality, chapel-scale geometry, and ritual light crowns.
   creative_brief: >-
-    Define a reusable sacred-heraldic-vow style for any subject: heraldry,
-    sacred vertical framing, solemn material response, and devotional stillness
-    without imposing knights, weapons, chapels, armor, helmets, banners, or
-    medieval ceremony as literal content.
+    Define a reusable sacred-heraldic-vow style for any subject: heraldry, sacred vertical framing, solemn
+    material response, and devotional stillness without imposing knights, weapons, chapels, armor, helmets,
+    banners, or medieval ceremony as literal content.
 avoidRules:
   - photoreal
   - sci-fi-ui

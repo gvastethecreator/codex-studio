@@ -13,27 +13,22 @@ tags:
   - civic-infrastructure-and-specialty-spaces
 visualDna:
   aesthetic: High-stimulus commercial gaming logic designed for continuous attention and prolonged dwell time.
-  form_and_line: >-
-    Dense luminous modules, non-directional pattern fields, strategic reflection
-    layers and deliberately ambiguous circulation cues.
-  color_palette: Red, Gold, Neon, Casino Carpet Confetti, Chrome, Velvet Purple
-  lighting_setup: >-
-    Dark base with serial hotspots, ceiling wash, decorative glints and
-    controlled luminous overstimulation.
-  material_texture: Saturated pattern, molded casing sheen, worn chrome, glossy laminate and dense felt texture.
-  render_quality: >-
-    High-stimulus realism with commercial light hierarchy and dense nocturnal
-    finish.
-  spatial_distortion: >-
-    Attention-loop compression, mirrored depth and non-directional circulation
-    that can trap any subject without requiring a venue floor.
-  atmosphere: Continuous activation, temporal disorientation and consumption-pressure comfort.
+  subject_treatment: >-
+    Dense luminous modules, non-directional pattern fields, strategic reflection layers and deliberately
+    ambiguous circulation cues.
+  color_and_tone: Red, Gold, Neon, Casino Carpet Confetti, Chrome, Velvet Purple
+  lighting_and_shadow: Dark base with serial hotspots, ceiling wash, decorative glints and controlled luminous overstimulation.
+  texture_and_material: Saturated pattern, molded casing sheen, worn chrome, glossy laminate and dense felt texture.
+  camera_and_composition: >-
+    Attention-loop compression, mirrored depth and non-directional circulation that can trap any subject
+    without requiring a venue floor.
+  atmosphere_and_mood: Continuous activation, temporal disorientation and consumption-pressure comfort.
+  rendering_and_quality: High-stimulus realism with commercial light hierarchy and dense nocturnal finish.
   key_features: Low glow, mirrored depth, jackpot-color clusters, wayfinding suppression and sensory grid rhythm.
   creative_brief: >-
-    Hijack attention through pattern, low glow, reflection and commercial
-    disorientation. Any input becomes a tactical dwell-time stimulus; keep the
-    environmental psychology without requiring slot machines, prize props, a
-    casino floor or party spectacle.
+    Hijack attention through pattern, low glow, reflection and commercial disorientation. Any input becomes a
+    tactical dwell-time stimulus; keep the environmental psychology without requiring slot machines, prize
+    props, a casino floor or party spectacle.
 avoidRules:
   - daylight
   - calm

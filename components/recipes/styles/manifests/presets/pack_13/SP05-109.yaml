@@ -13,32 +13,30 @@ tags:
   - anime-style-spectrum
 visualDna:
   aesthetic: >-
-    Maximum-impact kinetic anime style where speed-line architecture, radial force marks, afterimage
-    rhythm, aura distortion, and fractured panels make motion legible
-  form_and_line: >-
-    Dense speed-line forests, impact-burst radial lines, action-smear tracers, after-image ghost
-    contours, velocity-deformation edges
-  color_palette: >-
-    Aura electric blue, impact-flash white, energy-blast yellow-to-white gradient, smoke grey,
-    motion-trail cyan, destruction orange
-  lighting_setup: >-
-    Explosive backlighting, power-up emission glow, impact-flash overexposure, dynamic key-shifting
-    mid-frame
-  material_texture: >-
-    Kinetic-smear surface, speed-line density mapping, particle-burst scattering, dust-cloud
-    volumetric texture
-  render_quality: >-
-    Peak-action anime frame, high-intensity animation showcase, shonen-sakuga excellence,
-    impact-maximum rendering
-  spatial_distortion: Extreme foreshortening, focal-depth compression, impact deformation, and afterimage ghost trails
-  atmosphere: Electric, explosive, adrenaline-maximum, impact-fever intensity, unstoppable momentum
+    Maximum-impact kinetic anime style where speed-line architecture, radial force marks, afterimage rhythm,
+    aura distortion, and fractured panels make motion legible
+  subject_treatment: >-
+    Dense speed-line forests, impact-burst radial lines, action-smear tracers, after-image ghost contours,
+    velocity-deformation edges
+  color_and_tone: >-
+    Aura electric blue, impact-flash white, energy-blast yellow-to-white gradient, smoke grey, motion-trail
+    cyan, destruction orange
+  lighting_and_shadow: Explosive backlighting, power-up emission glow, impact-flash overexposure, dynamic key-shifting mid-frame
+  texture_and_material: >-
+    Kinetic-smear surface, speed-line density mapping, particle-burst scattering, dust-cloud volumetric
+    texture
+  camera_and_composition: Extreme foreshortening, focal-depth compression, impact deformation, and afterimage ghost trails
+  atmosphere_and_mood: Electric, explosive, adrenaline-maximum, impact-fever intensity, unstoppable momentum
+  rendering_and_quality: >-
+    Peak-action anime frame, high-intensity animation showcase, shonen-sakuga excellence, impact-maximum
+    rendering
   key_features: >-
-    Speed-line forests, impact-burst radials, afterimage trails, aura deformation, kinetic fracture
-    geometry, and readable force direction
+    Speed-line forests, impact-burst radials, afterimage trails, aura deformation, kinetic fracture geometry,
+    and readable force direction
   creative_brief: >-
-    Use kinetic impact-line choreography as motion grammar. Any prompt should read as concentrated
-    force through speed-line density, radial bursts, afterimages, and deformation cues. Battles,
-    fighters, weapons, explosions, and combat events are optional.
+    Use kinetic impact-line choreography as motion grammar. Any prompt should read as concentrated force
+    through speed-line density, radial bursts, afterimages, and deformation cues. Battles, fighters, weapons,
+    explosions, and combat events are optional.
 avoidRules:
   - still
   - calm

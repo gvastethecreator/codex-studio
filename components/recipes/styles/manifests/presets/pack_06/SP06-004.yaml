@@ -13,19 +13,18 @@ tags:
   - traditional-painting
 visualDna:
   aesthetic: Opaque gouache illustration
-  form_and_line: Crisp edges, matte finish
-  color_palette: Vibrant, solid, chalky
-  lighting_setup: Flat, graphic
-  material_texture: Smooth paper, matte paint
-  render_quality: Illustrative, design-focused
-  spatial_distortion: Simplified forms
-  atmosphere: Playful, graphic
+  subject_treatment: Crisp edges, matte finish
+  color_and_tone: Vibrant, solid, chalky
+  lighting_and_shadow: Flat, graphic
+  texture_and_material: Smooth paper, matte paint
+  camera_and_composition: Simplified forms
+  atmosphere_and_mood: Playful, graphic
+  rendering_and_quality: Illustrative, design-focused
   key_features: Matte opacity
   creative_brief: >-
-    Apply flat gouache treatment to any input: velvet matte opacity, chalky
-    pigment body, crisp graphic edges, softened hand-painted precision, and
-    dense color fields that absorb light. Keep illustration-ready clarity without
-    requiring posters, character art, packaging, or flat product layouts.
+    Apply flat gouache treatment to any input: velvet matte opacity, chalky pigment body, crisp graphic edges,
+    softened hand-painted precision, and dense color fields that absorb light. Keep illustration-ready clarity
+    without requiring posters, character art, packaging, or flat product layouts.
 avoidRules:
   - photo
   - realistic
@@ -45,7 +44,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP06-004.webp
 attributes:
-  negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border
+  negativePrompt: >-
+    photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy,
+    watermark, text, signature, frame, border
 taxonomy:
   packId: pack_06
   packName: Essential Art Styles

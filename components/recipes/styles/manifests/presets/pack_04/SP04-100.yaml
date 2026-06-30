@@ -13,18 +13,19 @@ tags:
   - concept-art
 visualDna:
   aesthetic: Size-comparison chart with educational scale framing
-  form_and_line: Baseline-aligned silhouettes with measurement ticks and reference markers
-  color_palette: Neutral comparative scheme with restrained atmospheric scaling cues
-  lighting_setup: Consistent silhouette rim/read light for cross-subject legibility
-  material_texture: Clean chartboard finish with minimal atmospheric fade on largest entries
-  render_quality: Infographic-style concept sheet optimized for proportional comprehension
-  spatial_distortion: Left-to-right ascending scale progression with fixed ground reference
-  atmosphere: Awe-oriented yet analytical, museum-chart clarity
+  subject_treatment: Baseline-aligned silhouettes with measurement ticks and reference markers
+  color_and_tone: Neutral comparative scheme with restrained atmospheric scaling cues
+  lighting_and_shadow: Consistent silhouette rim/read light for cross-subject legibility
+  texture_and_material: Clean chartboard finish with minimal atmospheric fade on largest entries
+  camera_and_composition: Left-to-right ascending scale progression with fixed ground reference
+  atmosphere_and_mood: Awe-oriented yet analytical, museum-chart clarity
+  rendering_and_quality: Infographic-style concept sheet optimized for proportional comprehension
   key_features: Human and real-world benchmarks, incremental height logic, clear unit hierarchy
   creative_brief: >-
-    Apply monster size-comparison chart logic to any input: baseline scaling, tick marks, escalating silhouettes,
-    cutaway scale cues, and comparative graphic hierarchy. If no creature exists, convert the subject into abstract
-    scale-study forms without requiring monsters, humans for scale, chart labels, or a creature lineup.
+    Apply monster size-comparison chart logic to any input: baseline scaling, tick marks, escalating
+    silhouettes, cutaway scale cues, and comparative graphic hierarchy. If no creature exists, convert the
+    subject into abstract scale-study forms without requiring monsters, humans for scale, chart labels, or a
+    creature lineup.
 avoidRules:
   - single creature
   - no reference
@@ -37,7 +38,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP04-100.webp
 attributes:
-  negativePrompt: single creature, no reference, unclear scale, vague proportions, tiny, only one, human-centric, no comparison
+  negativePrompt: >-
+    single creature, no reference, unclear scale, vague proportions, tiny, only one, human-centric, no
+    comparison
 taxonomy:
   packId: pack_04
   packName: Illustration & Graphic Novel

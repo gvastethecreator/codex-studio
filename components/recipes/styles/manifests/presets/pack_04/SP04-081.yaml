@@ -13,19 +13,19 @@ tags:
   - concept-art
 visualDna:
   aesthetic: Value-thumbnail silhouette ideation focused on shape readability and rapid production-design iteration
-  form_and_line: Bold filled contours with minimal or no internal linework
-  color_palette: Strict 3-value grayscale (black, mid gray, white)
-  lighting_setup: Light logic expressed only through value grouping and rim separation
-  material_texture: Matte digital block-fill with slight brush-edge variance
-  render_quality: Deliberately rough ideation pass prioritizing quantity and clarity
-  spatial_distortion: Controlled proportion and mass variation across comparative grid
-  atmosphere: Exploratory, energetic, design-lab momentum
+  subject_treatment: Bold filled contours with minimal or no internal linework
+  color_and_tone: Strict 3-value grayscale (black, mid gray, white)
+  lighting_and_shadow: Light logic expressed only through value grouping and rim separation
+  texture_and_material: Matte digital block-fill with slight brush-edge variance
+  camera_and_composition: Controlled proportion and mass variation across comparative grid
+  atmosphere_and_mood: Exploratory, energetic, design-lab momentum
+  rendering_and_quality: Deliberately rough ideation pass prioritizing quantity and clarity
   key_features: Multi-variant silhouette grid, negative-space testing, high read-at-a-glance contrast
   creative_brief: >-
-    Apply thumbnail-silhouette exploration to any input as a high-read design language: small-value shapes, bold
-    figure-ground separation, multiple scale reads, simplified masses, and quick ideation marks. If characters or props
-    exist, iterate them; otherwise convert the prompt into abstract silhouette families without requiring a character
-    sheet, grid, or prop lineup.
+    Apply thumbnail-silhouette exploration to any input as a high-read design language: small-value shapes,
+    bold figure-ground separation, multiple scale reads, simplified masses, and quick ideation marks. If
+    characters or props exist, iterate them; otherwise convert the prompt into abstract silhouette families
+    without requiring a character sheet, grid, or prop lineup.
 avoidRules:
   - detailed
   - polished

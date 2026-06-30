@@ -14,16 +14,36 @@ tags:
   - seapunk
   - transit
 visualDna:
-  aesthetic: submerged transit seapunk as a flat graphic digital-illustration card built around a tideglass subway platform where commuters move behind thick water windows and reef-lit tracks.
-  form_and_line: Terrain-specific silhouettes, waterline arcs, ice facets, salt grids, stilt structures, and wind-tensioned forms. Core composition uses tide windows, commuters, reef-lit tracks, wet tiles, pressure doors.
-  color_palette: sea glass green, subway chrome, deep blue, safety orange
-  lighting_setup: water-window caustics, platform strips, reef glow, train headlights
-  material_texture: thick glass color blocks, wet tile planes, simple rail strip, seaweed shadow shapes, rubber boot silhouettes
-  render_quality: Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity, moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material simulation, or hyper-detail.
-  spatial_distortion: Coasts, piers, marinas, glacier towns, salt flats, and swamps with strong environmental identity. Keep depth legible and avoid default hallway, aisle, or empty studio staging.
-  atmosphere: surreal, public, aquatic, contained
+  aesthetic: >-
+    submerged transit seapunk as a flat graphic digital-illustration card built around a tideglass subway
+    platform where commuters move behind thick water windows and reef-lit tracks.
+  subject_treatment: >-
+    Terrain-specific silhouettes, waterline arcs, ice facets, salt grids, stilt structures, and wind-tensioned
+    forms. Core composition uses tide windows, commuters, reef-lit tracks, wet tiles, pressure doors.
+  color_and_tone: sea glass green, subway chrome, deep blue, safety orange
+  lighting_and_shadow: water-window caustics, platform strips, reef glow, train headlights
+  texture_and_material: >-
+    thick glass color blocks, wet tile planes, simple rail strip, seaweed shadow shapes, rubber boot
+    silhouettes
+  camera_and_composition: >-
+    Coasts, piers, marinas, glacier towns, salt flats, and swamps with strong environmental identity. Keep
+    depth legible and avoid default hallway, aisle, or empty studio staging.
+  atmosphere_and_mood: surreal, public, aquatic, contained
+  rendering_and_quality: >-
+    Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly
+    planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity,
+    moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material
+    simulation, or hyper-detail.
   key_features: tide windows, commuters, reef-lit tracks, wet tiles, pressure doors
-  creative_brief: Make aquatic transit believable through one tideglass commuter or transit keeper protagonist in public space, not concept art of an empty tunnel. Keep it representative through a cropped platform, thick tideglass water window, commuter silhouettes, reef-lit track strip, pressure doors, and broad tile planes. Favor flat graphic digital illustration, clean editorial illustration, cel-shaded poster art, gouache poster aesthetics, graphic-novel card art, or stylized animation-background art over realism, photoreal painterly realism, cinematic key art, scratchy print noise, or hyper-detailed concept art. Use few bold color/value zones, simplified brush planes, matte surfaces, low-to-moderate texture, large shapes, clean surfaces, shallow poster depth, and finish denoised with no excessive noise or ultra-fine detail.
+  creative_brief: >-
+    Make aquatic transit believable through one tideglass commuter or transit keeper protagonist in public
+    space, not concept art of an empty tunnel. Keep it representative through a cropped platform, thick
+    tideglass water window, commuter silhouettes, reef-lit track strip, pressure doors, and broad tile planes.
+    Favor flat graphic digital illustration, clean editorial illustration, cel-shaded poster art, gouache
+    poster aesthetics, graphic-novel card art, or stylized animation-background art over realism, photoreal
+    painterly realism, cinematic key art, scratchy print noise, or hyper-detailed concept art. Use few bold
+    color/value zones, simplified brush planes, matte surfaces, low-to-moderate texture, large shapes, clean
+    surfaces, shallow poster depth, and finish denoised with no excessive noise or ultra-fine detail.
 avoidRules:
   - photoreal
   - watermark
@@ -37,7 +57,22 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP15-034.webp
 attributes:
-  negativePrompt: photoreal, hyperreal, realistic render, photoreal painterly realism, cinematic realism, AAA key art, cinematic concept-art render, photobash polish, realistic material rendering, photographic skin pores, realistic foreground portrait, realistic facial hair detail, lens blur, bokeh, depth-of-field photo look, generic soldier hero, guard pin-up, weapon-first pose, long subway corridor, vanishing tunnel, empty platform, horror aquarium, underwater city vista, photoreal glass caustics, photoreal water caustics, readable station signage, UI map, HDR lens realism, 3D render look, PBR material simulation, hyper-detailed concept art, scratchy print noise, tiny black linework, watermark, text, logo, generic style, over-abstract, interchangeable preset, duplicated motifs, generic glass utopia, unmotivated market aisle, unmotivated library aisle, fantasy corridor, random camera held by subject, studio wall fixation, chair fixation, curtain fixation, lamp fixation, scarf fixation, pedestal fixation, bird fixation, excessive noise, ultra-fine detail, over-sharpened microtexture, over-rendered machinery, noisy grime, tiny rivets everywhere, busy texture chatter, realistic uniform portrait, uniformed officer hero, foreground guard portrait, detailed tattoo focus, dense machinery wallpaper, overcrowded scene, high-frequency surface detail, cinematic close-up portrait, flat black fill, crushed black, pure black masses, muddy black fields, generic American illustration, generic Western RPG card art
+  negativePrompt: >-
+    photoreal, hyperreal, realistic render, photoreal painterly realism, cinematic realism, AAA key art,
+    cinematic concept-art render, photobash polish, realistic material rendering, photographic skin pores,
+    realistic foreground portrait, realistic facial hair detail, lens blur, bokeh, depth-of-field photo look,
+    generic soldier hero, guard pin-up, weapon-first pose, long subway corridor, vanishing tunnel, empty
+    platform, horror aquarium, underwater city vista, photoreal glass caustics, photoreal water caustics,
+    readable station signage, UI map, HDR lens realism, 3D render look, PBR material simulation,
+    hyper-detailed concept art, scratchy print noise, tiny black linework, watermark, text, logo, generic
+    style, over-abstract, interchangeable preset, duplicated motifs, generic glass utopia, unmotivated market
+    aisle, unmotivated library aisle, fantasy corridor, random camera held by subject, studio wall fixation,
+    chair fixation, curtain fixation, lamp fixation, scarf fixation, pedestal fixation, bird fixation,
+    excessive noise, ultra-fine detail, over-sharpened microtexture, over-rendered machinery, noisy grime,
+    tiny rivets everywhere, busy texture chatter, realistic uniform portrait, uniformed officer hero,
+    foreground guard portrait, detailed tattoo focus, dense machinery wallpaper, overcrowded scene,
+    high-frequency surface detail, cinematic close-up portrait, flat black fill, crushed black, pure black
+    masses, muddy black fields, generic American illustration, generic Western RPG card art
 taxonomy:
   packId: pack_15
   packName: Punk Spectrum Vault

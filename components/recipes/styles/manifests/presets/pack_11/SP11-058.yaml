@@ -13,22 +13,24 @@ tags:
   - micro-macro
 visualDna:
   aesthetic: Biology textbook, microscope-slide, cellular-anatomy, histology-stain, inner-body-universe
-  form_and_line: Membrane walls, phospholipid-bilayer contour, organelle-circles, cilia-fringe, nuclear-envelope
-  color_palette: Pink, Purple stain, hematoxylin-blue, eosin-pink, mitochondria-glow, golgi-ribbon, sudan-orange
-  lighting_setup: Microscope light, condenser-brightfield, phase-contrast halo, fluorescence-excitation, oil-immersion glow
-  material_texture: Jelly, nucleus, cytoplasm-grain, vacuole-bubble, organelle-speckle, cover-slip compression, staining-granule
-  render_quality: Medical, tiny, histology-atlas, cellular-detail, pathology-lab, hematoxylin-eosin beauty
-  spatial_distortion: Blobs, amoeboid-shapes, pseudopod-extension, organelle-displacement, nuclear-eccentricity
-  atmosphere: Life, science, lab-bench quiet, cellular-metabolism, inner-space awe, microbiological wonder
+  subject_treatment: Membrane walls, phospholipid-bilayer contour, organelle-circles, cilia-fringe, nuclear-envelope
+  color_and_tone: Pink, Purple stain, hematoxylin-blue, eosin-pink, mitochondria-glow, golgi-ribbon, sudan-orange
+  lighting_and_shadow: Microscope light, condenser-brightfield, phase-contrast halo, fluorescence-excitation, oil-immersion glow
+  texture_and_material: >-
+    Jelly, nucleus, cytoplasm-grain, vacuole-bubble, organelle-speckle, cover-slip compression,
+    staining-granule
+  camera_and_composition: Blobs, amoeboid-shapes, pseudopod-extension, organelle-displacement, nuclear-eccentricity
+  atmosphere_and_mood: Life, science, lab-bench quiet, cellular-metabolism, inner-space awe, microbiological wonder
+  rendering_and_quality: Medical, tiny, histology-atlas, cellular-detail, pathology-lab, hematoxylin-eosin beauty
   key_features: >-
     Nucleus, nucleolus-dot, mitochondria-squiggle, vacuole-clear, cell-membrane edge, staining-artifact,
     scale-micron-bar
   creative_brief: >-
-    Render cellular life as structured histology with stain-coded compartments, membrane boundaries, and organelle
-    clustering. Preserve microscope-slide readability and educational clarity while remaining adaptable across cell
-    types. Apply Cellular Life as a portable style system over any input: preserve its construction grammar, material
-    cues, scale logic, and signature rendering behavior while avoiding a required franchise, literal prop, fixed
-    specimen, classroom sample, product shot, or scene template.
+    Render cellular life as structured histology with stain-coded compartments, membrane boundaries, and
+    organelle clustering. Preserve microscope-slide readability and educational clarity while remaining
+    adaptable across cell types. Apply Cellular Life as a portable style system over any input: preserve its
+    construction grammar, material cues, scale logic, and signature rendering behavior while avoiding a
+    required franchise, literal prop, fixed specimen, classroom sample, product shot, or scene template.
 avoidRules:
   - animal
 assets:

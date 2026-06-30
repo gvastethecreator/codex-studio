@@ -12,20 +12,20 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         "Frieren Afterquest Melancholy Fantasy within 8. Isekai & High Fantasy: a reusable Anime Battle & Worlds visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Frieren Afterquest Melancholy Fantasy's specific style identity.",
-      form_and_line:
+      subject_treatment:
         'Define Frieren Afterquest Melancholy Fantasy through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
-      color_palette:
+      color_and_tone:
         'Use a Frieren Afterquest Melancholy Fantasy-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
-      lighting_setup:
+      lighting_and_shadow:
         'Use lighting that makes Frieren Afterquest Melancholy Fantasy recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
-      material_texture:
+      texture_and_material:
         'Use materials and textures that reinforce Frieren Afterquest Melancholy Fantasy: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
-      render_quality:
-        'Render Frieren Afterquest Melancholy Fantasy with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
-      spatial_distortion:
+      camera_and_composition:
         'Use spatial behavior that fits Frieren Afterquest Melancholy Fantasy: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
-      atmosphere:
+      atmosphere_and_mood:
         'Set a mood that belongs to Frieren Afterquest Melancholy Fantasy: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+      rendering_and_quality:
+        'Render Frieren Afterquest Melancholy Fantasy with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       key_features:
         "Prioritize Frieren Afterquest Melancholy Fantasy's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
@@ -41,20 +41,20 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         "Shield Hero Defensive Underdog Fantasy within 8. Isekai & High Fantasy: a reusable Anime Battle & Worlds visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Shield Hero Defensive Underdog Fantasy's specific style identity.",
-      form_and_line:
+      subject_treatment:
         'Define Shield Hero Defensive Underdog Fantasy through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
-      color_palette:
+      color_and_tone:
         'Use a Shield Hero Defensive Underdog Fantasy-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
-      lighting_setup:
+      lighting_and_shadow:
         'Use lighting that makes Shield Hero Defensive Underdog Fantasy recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
-      material_texture:
+      texture_and_material:
         'Use materials and textures that reinforce Shield Hero Defensive Underdog Fantasy: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
-      render_quality:
-        'Render Shield Hero Defensive Underdog Fantasy with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
-      spatial_distortion:
+      camera_and_composition:
         'Use spatial behavior that fits Shield Hero Defensive Underdog Fantasy: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
-      atmosphere:
+      atmosphere_and_mood:
         'Set a mood that belongs to Shield Hero Defensive Underdog Fantasy: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+      rendering_and_quality:
+        'Render Shield Hero Defensive Underdog Fantasy with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       key_features:
         "Prioritize Shield Hero Defensive Underdog Fantasy's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
@@ -70,20 +70,20 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         "Delicious in Dungeon - Stove-Top Monster Cuisine within 8. Isekai & High Fantasy: a reusable Anime Battle & Worlds visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Delicious in Dungeon - Stove-Top Monster Cuisine's specific style identity.",
-      form_and_line:
+      subject_treatment:
         'Define Delicious in Dungeon - Stove-Top Monster Cuisine through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
-      color_palette:
+      color_and_tone:
         'Use a Delicious in Dungeon - Stove-Top Monster Cuisine-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
-      lighting_setup:
+      lighting_and_shadow:
         'Use lighting that makes Delicious in Dungeon - Stove-Top Monster Cuisine recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
-      material_texture:
+      texture_and_material:
         'Use materials and textures that reinforce Delicious in Dungeon - Stove-Top Monster Cuisine: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
-      render_quality:
-        'Render Delicious in Dungeon - Stove-Top Monster Cuisine with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
-      spatial_distortion:
+      camera_and_composition:
         'Use spatial behavior that fits Delicious in Dungeon - Stove-Top Monster Cuisine: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
-      atmosphere:
+      atmosphere_and_mood:
         'Set a mood that belongs to Delicious in Dungeon - Stove-Top Monster Cuisine: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+      rendering_and_quality:
+        'Render Delicious in Dungeon - Stove-Top Monster Cuisine with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       key_features:
         "Prioritize Delicious in Dungeon - Stove-Top Monster Cuisine's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
@@ -99,20 +99,20 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         "Campfire Cooking in Another World - Merchant Road Stew within 8. Isekai & High Fantasy: a reusable Anime Battle & Worlds visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Campfire Cooking in Another World - Merchant Road Stew's specific style identity.",
-      form_and_line:
+      subject_treatment:
         'Define Campfire Cooking in Another World - Merchant Road Stew through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
-      color_palette:
+      color_and_tone:
         'Use a Campfire Cooking in Another World - Merchant Road Stew-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
-      lighting_setup:
+      lighting_and_shadow:
         'Use lighting that makes Campfire Cooking in Another World - Merchant Road Stew recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
-      material_texture:
+      texture_and_material:
         'Use materials and textures that reinforce Campfire Cooking in Another World - Merchant Road Stew: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
-      render_quality:
-        'Render Campfire Cooking in Another World - Merchant Road Stew with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
-      spatial_distortion:
+      camera_and_composition:
         'Use spatial behavior that fits Campfire Cooking in Another World - Merchant Road Stew: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
-      atmosphere:
+      atmosphere_and_mood:
         'Set a mood that belongs to Campfire Cooking in Another World - Merchant Road Stew: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+      rendering_and_quality:
+        'Render Campfire Cooking in Another World - Merchant Road Stew with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       key_features:
         "Prioritize Campfire Cooking in Another World - Merchant Road Stew's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
@@ -128,20 +128,20 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         "Tsukimichi - Moonlit Merchant Wanderer within 8. Isekai & High Fantasy: a reusable Anime Battle & Worlds visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Tsukimichi - Moonlit Merchant Wanderer's specific style identity.",
-      form_and_line:
+      subject_treatment:
         'Define Tsukimichi - Moonlit Merchant Wanderer through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
-      color_palette:
+      color_and_tone:
         'Use a Tsukimichi - Moonlit Merchant Wanderer-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
-      lighting_setup:
+      lighting_and_shadow:
         'Use lighting that makes Tsukimichi - Moonlit Merchant Wanderer recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
-      material_texture:
+      texture_and_material:
         'Use materials and textures that reinforce Tsukimichi - Moonlit Merchant Wanderer: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
-      render_quality:
-        'Render Tsukimichi - Moonlit Merchant Wanderer with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
-      spatial_distortion:
+      camera_and_composition:
         'Use spatial behavior that fits Tsukimichi - Moonlit Merchant Wanderer: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
-      atmosphere:
+      atmosphere_and_mood:
         'Set a mood that belongs to Tsukimichi - Moonlit Merchant Wanderer: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+      rendering_and_quality:
+        'Render Tsukimichi - Moonlit Merchant Wanderer with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       key_features:
         "Prioritize Tsukimichi - Moonlit Merchant Wanderer's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
@@ -157,20 +157,20 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         "Handyman Saitou in Another World - Toolbox Party Quest within 8. Isekai & High Fantasy: a reusable Anime Battle & Worlds visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Handyman Saitou in Another World - Toolbox Party Quest's specific style identity.",
-      form_and_line:
+      subject_treatment:
         'Define Handyman Saitou in Another World - Toolbox Party Quest through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
-      color_palette:
+      color_and_tone:
         'Use a Handyman Saitou in Another World - Toolbox Party Quest-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
-      lighting_setup:
+      lighting_and_shadow:
         'Use lighting that makes Handyman Saitou in Another World - Toolbox Party Quest recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
-      material_texture:
+      texture_and_material:
         'Use materials and textures that reinforce Handyman Saitou in Another World - Toolbox Party Quest: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
-      render_quality:
-        'Render Handyman Saitou in Another World - Toolbox Party Quest with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
-      spatial_distortion:
+      camera_and_composition:
         'Use spatial behavior that fits Handyman Saitou in Another World - Toolbox Party Quest: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
-      atmosphere:
+      atmosphere_and_mood:
         'Set a mood that belongs to Handyman Saitou in Another World - Toolbox Party Quest: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+      rendering_and_quality:
+        'Render Handyman Saitou in Another World - Toolbox Party Quest with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       key_features:
         "Prioritize Handyman Saitou in Another World - Toolbox Party Quest's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
@@ -186,20 +186,20 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         "Ranking of Kings - Storybook Crown Courage within 8. Isekai & High Fantasy: a reusable Anime Battle & Worlds visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Ranking of Kings - Storybook Crown Courage's specific style identity.",
-      form_and_line:
+      subject_treatment:
         'Define Ranking of Kings - Storybook Crown Courage through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
-      color_palette:
+      color_and_tone:
         'Use a Ranking of Kings - Storybook Crown Courage-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
-      lighting_setup:
+      lighting_and_shadow:
         'Use lighting that makes Ranking of Kings - Storybook Crown Courage recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
-      material_texture:
+      texture_and_material:
         'Use materials and textures that reinforce Ranking of Kings - Storybook Crown Courage: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
-      render_quality:
-        'Render Ranking of Kings - Storybook Crown Courage with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
-      spatial_distortion:
+      camera_and_composition:
         'Use spatial behavior that fits Ranking of Kings - Storybook Crown Courage: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
-      atmosphere:
+      atmosphere_and_mood:
         'Set a mood that belongs to Ranking of Kings - Storybook Crown Courage: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+      rendering_and_quality:
+        'Render Ranking of Kings - Storybook Crown Courage with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       key_features:
         "Prioritize Ranking of Kings - Storybook Crown Courage's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
@@ -215,20 +215,20 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         "Princess Connect! Re:Dive - Banquet Quest Pastel within 8. Isekai & High Fantasy: a reusable Anime Battle & Worlds visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Princess Connect! Re:Dive - Banquet Quest Pastel's specific style identity.",
-      form_and_line:
+      subject_treatment:
         'Define Princess Connect! Re:Dive - Banquet Quest Pastel through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
-      color_palette:
+      color_and_tone:
         'Use a Princess Connect! Re:Dive - Banquet Quest Pastel-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
-      lighting_setup:
+      lighting_and_shadow:
         'Use lighting that makes Princess Connect! Re:Dive - Banquet Quest Pastel recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
-      material_texture:
+      texture_and_material:
         'Use materials and textures that reinforce Princess Connect! Re:Dive - Banquet Quest Pastel: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
-      render_quality:
-        'Render Princess Connect! Re:Dive - Banquet Quest Pastel with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
-      spatial_distortion:
+      camera_and_composition:
         'Use spatial behavior that fits Princess Connect! Re:Dive - Banquet Quest Pastel: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
-      atmosphere:
+      atmosphere_and_mood:
         'Set a mood that belongs to Princess Connect! Re:Dive - Banquet Quest Pastel: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+      rendering_and_quality:
+        'Render Princess Connect! Re:Dive - Banquet Quest Pastel with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       key_features:
         "Prioritize Princess Connect! Re:Dive - Banquet Quest Pastel's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
@@ -244,20 +244,20 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         "Sword Art Online Glowing VR Adventure within 8. Isekai & High Fantasy: a reusable Anime Battle & Worlds visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Sword Art Online Glowing VR Adventure's specific style identity.",
-      form_and_line:
+      subject_treatment:
         'Define Sword Art Online Glowing VR Adventure through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
-      color_palette:
+      color_and_tone:
         'Use a Sword Art Online Glowing VR Adventure-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
-      lighting_setup:
+      lighting_and_shadow:
         'Use lighting that makes Sword Art Online Glowing VR Adventure recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
-      material_texture:
+      texture_and_material:
         'Use materials and textures that reinforce Sword Art Online Glowing VR Adventure: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
-      render_quality:
-        'Render Sword Art Online Glowing VR Adventure with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
-      spatial_distortion:
+      camera_and_composition:
         'Use spatial behavior that fits Sword Art Online Glowing VR Adventure: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
-      atmosphere:
+      atmosphere_and_mood:
         'Set a mood that belongs to Sword Art Online Glowing VR Adventure: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+      rendering_and_quality:
+        'Render Sword Art Online Glowing VR Adventure with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       key_features:
         "Prioritize Sword Art Online Glowing VR Adventure's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
@@ -273,20 +273,20 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         "Re:Zero Reset-Loop Dark Fantasy within 8. Isekai & High Fantasy: a reusable Anime Battle & Worlds visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Re:Zero Reset-Loop Dark Fantasy's specific style identity.",
-      form_and_line:
+      subject_treatment:
         'Define Re:Zero Reset-Loop Dark Fantasy through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
-      color_palette:
+      color_and_tone:
         'Use a Re:Zero Reset-Loop Dark Fantasy-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
-      lighting_setup:
+      lighting_and_shadow:
         'Use lighting that makes Re:Zero Reset-Loop Dark Fantasy recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
-      material_texture:
+      texture_and_material:
         'Use materials and textures that reinforce Re:Zero Reset-Loop Dark Fantasy: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
-      render_quality:
-        'Render Re:Zero Reset-Loop Dark Fantasy with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
-      spatial_distortion:
+      camera_and_composition:
         'Use spatial behavior that fits Re:Zero Reset-Loop Dark Fantasy: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
-      atmosphere:
+      atmosphere_and_mood:
         'Set a mood that belongs to Re:Zero Reset-Loop Dark Fantasy: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+      rendering_and_quality:
+        'Render Re:Zero Reset-Loop Dark Fantasy with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       key_features:
         "Prioritize Re:Zero Reset-Loop Dark Fantasy's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
@@ -302,20 +302,20 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         "Mushoku Tensei Wandering Mage Chronicle within 8. Isekai & High Fantasy: a reusable Anime Battle & Worlds visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Mushoku Tensei Wandering Mage Chronicle's specific style identity.",
-      form_and_line:
+      subject_treatment:
         'Define Mushoku Tensei Wandering Mage Chronicle through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
-      color_palette:
+      color_and_tone:
         'Use a Mushoku Tensei Wandering Mage Chronicle-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
-      lighting_setup:
+      lighting_and_shadow:
         'Use lighting that makes Mushoku Tensei Wandering Mage Chronicle recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
-      material_texture:
+      texture_and_material:
         'Use materials and textures that reinforce Mushoku Tensei Wandering Mage Chronicle: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
-      render_quality:
-        'Render Mushoku Tensei Wandering Mage Chronicle with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
-      spatial_distortion:
+      camera_and_composition:
         'Use spatial behavior that fits Mushoku Tensei Wandering Mage Chronicle: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
-      atmosphere:
+      atmosphere_and_mood:
         'Set a mood that belongs to Mushoku Tensei Wandering Mage Chronicle: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+      rendering_and_quality:
+        'Render Mushoku Tensei Wandering Mage Chronicle with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       key_features:
         "Prioritize Mushoku Tensei Wandering Mage Chronicle's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
@@ -331,20 +331,20 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         "Konosuba Party-Quest Comedy within 8. Isekai & High Fantasy: a reusable Anime Battle & Worlds visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Konosuba Party-Quest Comedy's specific style identity.",
-      form_and_line:
+      subject_treatment:
         'Define Konosuba Party-Quest Comedy through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
-      color_palette:
+      color_and_tone:
         'Use a Konosuba Party-Quest Comedy-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
-      lighting_setup:
+      lighting_and_shadow:
         'Use lighting that makes Konosuba Party-Quest Comedy recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
-      material_texture:
+      texture_and_material:
         'Use materials and textures that reinforce Konosuba Party-Quest Comedy: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
-      render_quality:
-        'Render Konosuba Party-Quest Comedy with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
-      spatial_distortion:
+      camera_and_composition:
         'Use spatial behavior that fits Konosuba Party-Quest Comedy: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
-      atmosphere:
+      atmosphere_and_mood:
         'Set a mood that belongs to Konosuba Party-Quest Comedy: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+      rendering_and_quality:
+        'Render Konosuba Party-Quest Comedy with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       key_features:
         "Prioritize Konosuba Party-Quest Comedy's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
@@ -360,20 +360,20 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         "Slime Isekai Monster-Nation Bright Fantasy within 8. Isekai & High Fantasy: a reusable Anime Battle & Worlds visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Slime Isekai Monster-Nation Bright Fantasy's specific style identity.",
-      form_and_line:
+      subject_treatment:
         'Define Slime Isekai Monster-Nation Bright Fantasy through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
-      color_palette:
+      color_and_tone:
         'Use a Slime Isekai Monster-Nation Bright Fantasy-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
-      lighting_setup:
+      lighting_and_shadow:
         'Use lighting that makes Slime Isekai Monster-Nation Bright Fantasy recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
-      material_texture:
+      texture_and_material:
         'Use materials and textures that reinforce Slime Isekai Monster-Nation Bright Fantasy: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
-      render_quality:
-        'Render Slime Isekai Monster-Nation Bright Fantasy with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
-      spatial_distortion:
+      camera_and_composition:
         'Use spatial behavior that fits Slime Isekai Monster-Nation Bright Fantasy: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
-      atmosphere:
+      atmosphere_and_mood:
         'Set a mood that belongs to Slime Isekai Monster-Nation Bright Fantasy: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+      rendering_and_quality:
+        'Render Slime Isekai Monster-Nation Bright Fantasy with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       key_features:
         "Prioritize Slime Isekai Monster-Nation Bright Fantasy's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
@@ -389,20 +389,20 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         "DanMachi Dungeon Lantern Adventure within 8. Isekai & High Fantasy: a reusable Anime Battle & Worlds visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving DanMachi Dungeon Lantern Adventure's specific style identity.",
-      form_and_line:
+      subject_treatment:
         'Define DanMachi Dungeon Lantern Adventure through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
-      color_palette:
+      color_and_tone:
         'Use a DanMachi Dungeon Lantern Adventure-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
-      lighting_setup:
+      lighting_and_shadow:
         'Use lighting that makes DanMachi Dungeon Lantern Adventure recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
-      material_texture:
+      texture_and_material:
         'Use materials and textures that reinforce DanMachi Dungeon Lantern Adventure: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
-      render_quality:
-        'Render DanMachi Dungeon Lantern Adventure with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
-      spatial_distortion:
+      camera_and_composition:
         'Use spatial behavior that fits DanMachi Dungeon Lantern Adventure: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
-      atmosphere:
+      atmosphere_and_mood:
         'Set a mood that belongs to DanMachi Dungeon Lantern Adventure: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+      rendering_and_quality:
+        'Render DanMachi Dungeon Lantern Adventure with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       key_features:
         "Prioritize DanMachi Dungeon Lantern Adventure's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
@@ -418,20 +418,20 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         "Systemic Cooperation Grid Style within 8. Isekai & High Fantasy: a reusable Anime Battle & Worlds visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Systemic Cooperation Grid Style's specific style identity.",
-      form_and_line:
+      subject_treatment:
         'Define Systemic Cooperation Grid Style through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
-      color_palette:
+      color_and_tone:
         'Use a Systemic Cooperation Grid Style-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
-      lighting_setup:
+      lighting_and_shadow:
         'Use lighting that makes Systemic Cooperation Grid Style recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
-      material_texture:
+      texture_and_material:
         'Use materials and textures that reinforce Systemic Cooperation Grid Style: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
-      render_quality:
-        'Render Systemic Cooperation Grid Style with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
-      spatial_distortion:
+      camera_and_composition:
         'Use spatial behavior that fits Systemic Cooperation Grid Style: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
-      atmosphere:
+      atmosphere_and_mood:
         'Set a mood that belongs to Systemic Cooperation Grid Style: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+      rendering_and_quality:
+        'Render Systemic Cooperation Grid Style with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       key_features:
         "Prioritize Systemic Cooperation Grid Style's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
@@ -447,20 +447,20 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         "Smoke-Mud Vulnerability Style within 8. Isekai & High Fantasy: a reusable Anime Battle & Worlds visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Smoke-Mud Vulnerability Style's specific style identity.",
-      form_and_line:
+      subject_treatment:
         'Define Smoke-Mud Vulnerability Style through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
-      color_palette:
+      color_and_tone:
         'Use a Smoke-Mud Vulnerability Style-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
-      lighting_setup:
+      lighting_and_shadow:
         'Use lighting that makes Smoke-Mud Vulnerability Style recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
-      material_texture:
+      texture_and_material:
         'Use materials and textures that reinforce Smoke-Mud Vulnerability Style: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
-      render_quality:
-        'Render Smoke-Mud Vulnerability Style with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
-      spatial_distortion:
+      camera_and_composition:
         'Use spatial behavior that fits Smoke-Mud Vulnerability Style: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
-      atmosphere:
+      atmosphere_and_mood:
         'Set a mood that belongs to Smoke-Mud Vulnerability Style: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+      rendering_and_quality:
+        'Render Smoke-Mud Vulnerability Style with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       key_features:
         "Prioritize Smoke-Mud Vulnerability Style's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
@@ -476,20 +476,20 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         "Classic OVA Quest Tapestry Style within 8. Isekai & High Fantasy: a reusable Anime Battle & Worlds visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Classic OVA Quest Tapestry Style's specific style identity.",
-      form_and_line:
+      subject_treatment:
         'Define Classic OVA Quest Tapestry Style through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
-      color_palette:
+      color_and_tone:
         'Use a Classic OVA Quest Tapestry Style-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
-      lighting_setup:
+      lighting_and_shadow:
         'Use lighting that makes Classic OVA Quest Tapestry Style recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
-      material_texture:
+      texture_and_material:
         'Use materials and textures that reinforce Classic OVA Quest Tapestry Style: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
-      render_quality:
-        'Render Classic OVA Quest Tapestry Style with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
-      spatial_distortion:
+      camera_and_composition:
         'Use spatial behavior that fits Classic OVA Quest Tapestry Style: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
-      atmosphere:
+      atmosphere_and_mood:
         'Set a mood that belongs to Classic OVA Quest Tapestry Style: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+      rendering_and_quality:
+        'Render Classic OVA Quest Tapestry Style with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       key_features:
         "Prioritize Classic OVA Quest Tapestry Style's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
@@ -505,20 +505,20 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         "The Twelve Kingdoms - Imperial Destiny Chronicle within 8. Isekai & High Fantasy: a reusable Anime Battle & Worlds visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving The Twelve Kingdoms - Imperial Destiny Chronicle's specific style identity.",
-      form_and_line:
+      subject_treatment:
         'Define The Twelve Kingdoms - Imperial Destiny Chronicle through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
-      color_palette:
+      color_and_tone:
         'Use a The Twelve Kingdoms - Imperial Destiny Chronicle-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
-      lighting_setup:
+      lighting_and_shadow:
         'Use lighting that makes The Twelve Kingdoms - Imperial Destiny Chronicle recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
-      material_texture:
+      texture_and_material:
         'Use materials and textures that reinforce The Twelve Kingdoms - Imperial Destiny Chronicle: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
-      render_quality:
-        'Render The Twelve Kingdoms - Imperial Destiny Chronicle with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
-      spatial_distortion:
+      camera_and_composition:
         'Use spatial behavior that fits The Twelve Kingdoms - Imperial Destiny Chronicle: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
-      atmosphere:
+      atmosphere_and_mood:
         'Set a mood that belongs to The Twelve Kingdoms - Imperial Destiny Chronicle: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+      rendering_and_quality:
+        'Render The Twelve Kingdoms - Imperial Destiny Chronicle with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       key_features:
         "Prioritize The Twelve Kingdoms - Imperial Destiny Chronicle's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
@@ -534,20 +534,20 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         "The Vision of Escaflowne - Windblown Tarot Fantasy within 8. Isekai & High Fantasy: a reusable Anime Battle & Worlds visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving The Vision of Escaflowne - Windblown Tarot Fantasy's specific style identity.",
-      form_and_line:
+      subject_treatment:
         'Define The Vision of Escaflowne - Windblown Tarot Fantasy through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
-      color_palette:
+      color_and_tone:
         'Use a The Vision of Escaflowne - Windblown Tarot Fantasy-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
-      lighting_setup:
+      lighting_and_shadow:
         'Use lighting that makes The Vision of Escaflowne - Windblown Tarot Fantasy recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
-      material_texture:
+      texture_and_material:
         'Use materials and textures that reinforce The Vision of Escaflowne - Windblown Tarot Fantasy: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
-      render_quality:
-        'Render The Vision of Escaflowne - Windblown Tarot Fantasy with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
-      spatial_distortion:
+      camera_and_composition:
         'Use spatial behavior that fits The Vision of Escaflowne - Windblown Tarot Fantasy: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
-      atmosphere:
+      atmosphere_and_mood:
         'Set a mood that belongs to The Vision of Escaflowne - Windblown Tarot Fantasy: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+      rendering_and_quality:
+        'Render The Vision of Escaflowne - Windblown Tarot Fantasy with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       key_features:
         "Prioritize The Vision of Escaflowne - Windblown Tarot Fantasy's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
@@ -563,20 +563,20 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         "Magi - Labyrinth Jewel Caravan within 8. Isekai & High Fantasy: a reusable Anime Battle & Worlds visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Magi - Labyrinth Jewel Caravan's specific style identity.",
-      form_and_line:
+      subject_treatment:
         'Define Magi - Labyrinth Jewel Caravan through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
-      color_palette:
+      color_and_tone:
         'Use a Magi - Labyrinth Jewel Caravan-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
-      lighting_setup:
+      lighting_and_shadow:
         'Use lighting that makes Magi - Labyrinth Jewel Caravan recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
-      material_texture:
+      texture_and_material:
         'Use materials and textures that reinforce Magi - Labyrinth Jewel Caravan: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
-      render_quality:
-        'Render Magi - Labyrinth Jewel Caravan with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
-      spatial_distortion:
+      camera_and_composition:
         'Use spatial behavior that fits Magi - Labyrinth Jewel Caravan: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
-      atmosphere:
+      atmosphere_and_mood:
         'Set a mood that belongs to Magi - Labyrinth Jewel Caravan: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+      rendering_and_quality:
+        'Render Magi - Labyrinth Jewel Caravan with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       key_features:
         "Prioritize Magi - Labyrinth Jewel Caravan's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
@@ -592,20 +592,20 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         "Ascendance of a Bookworm - Printing Press Devotion within 8. Isekai & High Fantasy: a reusable Anime Battle & Worlds visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Ascendance of a Bookworm - Printing Press Devotion's specific style identity.",
-      form_and_line:
+      subject_treatment:
         'Define Ascendance of a Bookworm - Printing Press Devotion through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
-      color_palette:
+      color_and_tone:
         'Use a Ascendance of a Bookworm - Printing Press Devotion-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
-      lighting_setup:
+      lighting_and_shadow:
         'Use lighting that makes Ascendance of a Bookworm - Printing Press Devotion recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
-      material_texture:
+      texture_and_material:
         'Use materials and textures that reinforce Ascendance of a Bookworm - Printing Press Devotion: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
-      render_quality:
-        'Render Ascendance of a Bookworm - Printing Press Devotion with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
-      spatial_distortion:
+      camera_and_composition:
         'Use spatial behavior that fits Ascendance of a Bookworm - Printing Press Devotion: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
-      atmosphere:
+      atmosphere_and_mood:
         'Set a mood that belongs to Ascendance of a Bookworm - Printing Press Devotion: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+      rendering_and_quality:
+        'Render Ascendance of a Bookworm - Printing Press Devotion with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       key_features:
         "Prioritize Ascendance of a Bookworm - Printing Press Devotion's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
@@ -621,20 +621,20 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         "The Faraway Paladin - Quiet Temple Quest within 8. Isekai & High Fantasy: a reusable Anime Battle & Worlds visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving The Faraway Paladin - Quiet Temple Quest's specific style identity.",
-      form_and_line:
+      subject_treatment:
         'Define The Faraway Paladin - Quiet Temple Quest through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
-      color_palette:
+      color_and_tone:
         'Use a The Faraway Paladin - Quiet Temple Quest-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
-      lighting_setup:
+      lighting_and_shadow:
         'Use lighting that makes The Faraway Paladin - Quiet Temple Quest recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
-      material_texture:
+      texture_and_material:
         'Use materials and textures that reinforce The Faraway Paladin - Quiet Temple Quest: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
-      render_quality:
-        'Render The Faraway Paladin - Quiet Temple Quest with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
-      spatial_distortion:
+      camera_and_composition:
         'Use spatial behavior that fits The Faraway Paladin - Quiet Temple Quest: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
-      atmosphere:
+      atmosphere_and_mood:
         'Set a mood that belongs to The Faraway Paladin - Quiet Temple Quest: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+      rendering_and_quality:
+        'Render The Faraway Paladin - Quiet Temple Quest with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       key_features:
         "Prioritize The Faraway Paladin - Quiet Temple Quest's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
@@ -650,20 +650,20 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         "The Saint's Magic Power Is Omnipotent - Herbarium Court Glow within 8. Isekai & High Fantasy: a reusable Anime Battle & Worlds visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving The Saint's Magic Power Is Omnipotent - Herbarium Court Glow's specific style identity.",
-      form_and_line:
+      subject_treatment:
         "Define The Saint's Magic Power Is Omnipotent - Herbarium Court Glow through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.",
-      color_palette:
+      color_and_tone:
         "Use a The Saint's Magic Power Is Omnipotent - Herbarium Court Glow-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.",
-      lighting_setup:
+      lighting_and_shadow:
         "Use lighting that makes The Saint's Magic Power Is Omnipotent - Herbarium Court Glow recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.",
-      material_texture:
+      texture_and_material:
         "Use materials and textures that reinforce The Saint's Magic Power Is Omnipotent - Herbarium Court Glow: surface response, grain, patina, polish, or wear should feel intentional and style-defining.",
-      render_quality:
-        "Render The Saint's Magic Power Is Omnipotent - Herbarium Court Glow with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.",
-      spatial_distortion:
+      camera_and_composition:
         "Use spatial behavior that fits The Saint's Magic Power Is Omnipotent - Herbarium Court Glow: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.",
-      atmosphere:
+      atmosphere_and_mood:
         "Set a mood that belongs to The Saint's Magic Power Is Omnipotent - Herbarium Court Glow: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.",
+      rendering_and_quality:
+        "Render The Saint's Magic Power Is Omnipotent - Herbarium Court Glow with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.",
       key_features:
         "Prioritize The Saint's Magic Power Is Omnipotent - Herbarium Court Glow's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
@@ -679,20 +679,20 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         "Fushigi Yuugi - Celestial Maiden Portal Epic within 8. Isekai & High Fantasy: a reusable Anime Battle & Worlds visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Fushigi Yuugi - Celestial Maiden Portal Epic's specific style identity.",
-      form_and_line:
+      subject_treatment:
         'Define Fushigi Yuugi - Celestial Maiden Portal Epic through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
-      color_palette:
+      color_and_tone:
         'Use a Fushigi Yuugi - Celestial Maiden Portal Epic-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
-      lighting_setup:
+      lighting_and_shadow:
         'Use lighting that makes Fushigi Yuugi - Celestial Maiden Portal Epic recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
-      material_texture:
+      texture_and_material:
         'Use materials and textures that reinforce Fushigi Yuugi - Celestial Maiden Portal Epic: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
-      render_quality:
-        'Render Fushigi Yuugi - Celestial Maiden Portal Epic with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
-      spatial_distortion:
+      camera_and_composition:
         'Use spatial behavior that fits Fushigi Yuugi - Celestial Maiden Portal Epic: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
-      atmosphere:
+      atmosphere_and_mood:
         'Set a mood that belongs to Fushigi Yuugi - Celestial Maiden Portal Epic: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+      rendering_and_quality:
+        'Render Fushigi Yuugi - Celestial Maiden Portal Epic with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       key_features:
         "Prioritize Fushigi Yuugi - Celestial Maiden Portal Epic's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
@@ -708,20 +708,20 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         "Magic Knight Rayearth - Gem-Engine Rescue Quest within 8. Isekai & High Fantasy: a reusable Anime Battle & Worlds visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Magic Knight Rayearth - Gem-Engine Rescue Quest's specific style identity.",
-      form_and_line:
+      subject_treatment:
         'Define Magic Knight Rayearth - Gem-Engine Rescue Quest through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
-      color_palette:
+      color_and_tone:
         'Use a Magic Knight Rayearth - Gem-Engine Rescue Quest-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
-      lighting_setup:
+      lighting_and_shadow:
         'Use lighting that makes Magic Knight Rayearth - Gem-Engine Rescue Quest recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
-      material_texture:
+      texture_and_material:
         'Use materials and textures that reinforce Magic Knight Rayearth - Gem-Engine Rescue Quest: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
-      render_quality:
-        'Render Magic Knight Rayearth - Gem-Engine Rescue Quest with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
-      spatial_distortion:
+      camera_and_composition:
         'Use spatial behavior that fits Magic Knight Rayearth - Gem-Engine Rescue Quest: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
-      atmosphere:
+      atmosphere_and_mood:
         'Set a mood that belongs to Magic Knight Rayearth - Gem-Engine Rescue Quest: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+      rendering_and_quality:
+        'Render Magic Knight Rayearth - Gem-Engine Rescue Quest with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       key_features:
         "Prioritize Magic Knight Rayearth - Gem-Engine Rescue Quest's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
@@ -737,20 +737,20 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         "No Game No Life Hyper-Saturated Strategy Fantasy within 8. Isekai & High Fantasy: a reusable Anime Battle & Worlds visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving No Game No Life Hyper-Saturated Strategy Fantasy's specific style identity.",
-      form_and_line:
+      subject_treatment:
         'Define No Game No Life Hyper-Saturated Strategy Fantasy through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
-      color_palette:
+      color_and_tone:
         'Use a No Game No Life Hyper-Saturated Strategy Fantasy-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
-      lighting_setup:
+      lighting_and_shadow:
         'Use lighting that makes No Game No Life Hyper-Saturated Strategy Fantasy recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
-      material_texture:
+      texture_and_material:
         'Use materials and textures that reinforce No Game No Life Hyper-Saturated Strategy Fantasy: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
-      render_quality:
-        'Render No Game No Life Hyper-Saturated Strategy Fantasy with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
-      spatial_distortion:
+      camera_and_composition:
         'Use spatial behavior that fits No Game No Life Hyper-Saturated Strategy Fantasy: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
-      atmosphere:
+      atmosphere_and_mood:
         'Set a mood that belongs to No Game No Life Hyper-Saturated Strategy Fantasy: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+      rendering_and_quality:
+        'Render No Game No Life Hyper-Saturated Strategy Fantasy with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       key_features:
         "Prioritize No Game No Life Hyper-Saturated Strategy Fantasy's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
@@ -766,20 +766,20 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         "Saga of Tanya the Evil - Aerial War Mage Doctrine within 8. Isekai & High Fantasy: a reusable Anime Battle & Worlds visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Saga of Tanya the Evil - Aerial War Mage Doctrine's specific style identity.",
-      form_and_line:
+      subject_treatment:
         'Define Saga of Tanya the Evil - Aerial War Mage Doctrine through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
-      color_palette:
+      color_and_tone:
         'Use a Saga of Tanya the Evil - Aerial War Mage Doctrine-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
-      lighting_setup:
+      lighting_and_shadow:
         'Use lighting that makes Saga of Tanya the Evil - Aerial War Mage Doctrine recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
-      material_texture:
+      texture_and_material:
         'Use materials and textures that reinforce Saga of Tanya the Evil - Aerial War Mage Doctrine: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
-      render_quality:
-        'Render Saga of Tanya the Evil - Aerial War Mage Doctrine with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
-      spatial_distortion:
+      camera_and_composition:
         'Use spatial behavior that fits Saga of Tanya the Evil - Aerial War Mage Doctrine: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
-      atmosphere:
+      atmosphere_and_mood:
         'Set a mood that belongs to Saga of Tanya the Evil - Aerial War Mage Doctrine: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+      rendering_and_quality:
+        'Render Saga of Tanya the Evil - Aerial War Mage Doctrine with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       key_features:
         "Prioritize Saga of Tanya the Evil - Aerial War Mage Doctrine's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
@@ -795,20 +795,20 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         "Overlord Bone Throne Dark Dominion within 8. Isekai & High Fantasy: a reusable Anime Battle & Worlds visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Overlord Bone Throne Dark Dominion's specific style identity.",
-      form_and_line:
+      subject_treatment:
         'Define Overlord Bone Throne Dark Dominion through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
-      color_palette:
+      color_and_tone:
         'Use a Overlord Bone Throne Dark Dominion-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
-      lighting_setup:
+      lighting_and_shadow:
         'Use lighting that makes Overlord Bone Throne Dark Dominion recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
-      material_texture:
+      texture_and_material:
         'Use materials and textures that reinforce Overlord Bone Throne Dark Dominion: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
-      render_quality:
-        'Render Overlord Bone Throne Dark Dominion with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
-      spatial_distortion:
+      camera_and_composition:
         'Use spatial behavior that fits Overlord Bone Throne Dark Dominion: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
-      atmosphere:
+      atmosphere_and_mood:
         'Set a mood that belongs to Overlord Bone Throne Dark Dominion: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+      rendering_and_quality:
+        'Render Overlord Bone Throne Dark Dominion with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       key_features:
         "Prioritize Overlord Bone Throne Dark Dominion's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
@@ -824,20 +824,20 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         "The Ancient Magus' Bride - Thorn Cottage Enchantment within 8. Isekai & High Fantasy: a reusable Anime Battle & Worlds visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving The Ancient Magus' Bride - Thorn Cottage Enchantment's specific style identity.",
-      form_and_line:
+      subject_treatment:
         "Define The Ancient Magus' Bride - Thorn Cottage Enchantment through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.",
-      color_palette:
+      color_and_tone:
         "Use a The Ancient Magus' Bride - Thorn Cottage Enchantment-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.",
-      lighting_setup:
+      lighting_and_shadow:
         "Use lighting that makes The Ancient Magus' Bride - Thorn Cottage Enchantment recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.",
-      material_texture:
+      texture_and_material:
         "Use materials and textures that reinforce The Ancient Magus' Bride - Thorn Cottage Enchantment: surface response, grain, patina, polish, or wear should feel intentional and style-defining.",
-      render_quality:
-        "Render The Ancient Magus' Bride - Thorn Cottage Enchantment with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.",
-      spatial_distortion:
+      camera_and_composition:
         "Use spatial behavior that fits The Ancient Magus' Bride - Thorn Cottage Enchantment: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.",
-      atmosphere:
+      atmosphere_and_mood:
         "Set a mood that belongs to The Ancient Magus' Bride - Thorn Cottage Enchantment: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.",
+      rendering_and_quality:
+        "Render The Ancient Magus' Bride - Thorn Cottage Enchantment with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.",
       key_features:
         "Prioritize The Ancient Magus' Bride - Thorn Cottage Enchantment's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
@@ -853,20 +853,20 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         "Inuyasha - Shrine-Well Sengoku Pursuit within 8. Isekai & High Fantasy: a reusable Anime Battle & Worlds visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Inuyasha - Shrine-Well Sengoku Pursuit's specific style identity.",
-      form_and_line:
+      subject_treatment:
         'Define Inuyasha - Shrine-Well Sengoku Pursuit through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
-      color_palette:
+      color_and_tone:
         'Use a Inuyasha - Shrine-Well Sengoku Pursuit-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
-      lighting_setup:
+      lighting_and_shadow:
         'Use lighting that makes Inuyasha - Shrine-Well Sengoku Pursuit recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
-      material_texture:
+      texture_and_material:
         'Use materials and textures that reinforce Inuyasha - Shrine-Well Sengoku Pursuit: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
-      render_quality:
-        'Render Inuyasha - Shrine-Well Sengoku Pursuit with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
-      spatial_distortion:
+      camera_and_composition:
         'Use spatial behavior that fits Inuyasha - Shrine-Well Sengoku Pursuit: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
-      atmosphere:
+      atmosphere_and_mood:
         'Set a mood that belongs to Inuyasha - Shrine-Well Sengoku Pursuit: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+      rendering_and_quality:
+        'Render Inuyasha - Shrine-Well Sengoku Pursuit with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       key_features:
         "Prioritize Inuyasha - Shrine-Well Sengoku Pursuit's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:

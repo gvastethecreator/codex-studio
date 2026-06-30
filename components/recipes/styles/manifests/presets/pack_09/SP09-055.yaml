@@ -13,15 +13,19 @@ tags:
   - natural-materials
 visualDna:
   aesthetic: Raw amethyst
-  form_and_line: Facets
-  color_palette: Purple, White base
-  lighting_setup: Internal reflection
-  material_texture: Geometric growth
-  render_quality: Precious, magic
-  spatial_distortion: Sharp points
-  atmosphere: Mystical, valuable
+  subject_treatment: Facets
+  color_and_tone: Purple, White base
+  lighting_and_shadow: Internal reflection
+  texture_and_material: Geometric growth
+  camera_and_composition: Sharp points
+  atmosphere_and_mood: Mystical, valuable
+  rendering_and_quality: Precious, magic
   key_features: Cluster
-  creative_brief: 'Apply raw amethyst growth as crystalline structure over the input: purple facets, white mineral base, pointed terminations, internal reflections, and lattice corridors of light. If gem, cave, magic, tech, or ornament exists, amplify it; otherwise let crystal clusters grow from edges and planes without requiring a literal gemstone display.'
+  creative_brief: >-
+    Apply raw amethyst growth as crystalline structure over the input: purple facets, white mineral base,
+    pointed terminations, internal reflections, and lattice corridors of light. If gem, cave, magic, tech, or
+    ornament exists, amplify it; otherwise let crystal clusters grow from edges and planes without requiring a
+    literal gemstone display.
 avoidRules:
   - glass
   - smooth

@@ -12,20 +12,33 @@ tags:
   - anime-character-and-lifestyle
   - shojo-magical-girl-and-visionary-classics
 visualDna:
-  aesthetic: Secret-identity romcom shojo grammar balancing authority-rigidity and frilled sparkle through high-contrast persona switching
-  form_and_line: Snappy expression-line bursts, command-posture to flustered-pose transitions, frill-accent contouring, and comedic reaction framing
-  color_palette: Black-and-white uniform binaries, pastel pink embarrassment accents, warm cafe amber, and authority-red highlight punctuation
-  lighting_setup: Bright warm practical glow, high-key comedic fill, spotlight blush emphasis, and punchy contrast for identity-reveal beats
-  material_texture: Crisp binary fabric layering, lace frill detailing, polished surface reflections, and badge or ribbon accent textures
-  render_quality: Energetic romcom-shojo rendering with clear dual-role readability, expressive timing clarity, and polished costume articulation
-  spatial_distortion: Persona-shift exaggeration via comedic framing squash and confidence-height perspective modulation
-  atmosphere: Combative, cute, sparkling, energetic
-  key_features: Frill-coded sparkle, strict-to-flustered acting, secret-identity staging, authority-costume contrast, playful dominance framing
+  aesthetic: >-
+    Secret-identity romcom shojo grammar balancing authority-rigidity and frilled sparkle through
+    high-contrast persona switching
+  subject_treatment: >-
+    Snappy expression-line bursts, command-posture to flustered-pose transitions, frill-accent contouring, and
+    comedic reaction framing
+  color_and_tone: >-
+    Black-and-white uniform binaries, pastel pink embarrassment accents, warm cafe amber, and authority-red
+    highlight punctuation
+  lighting_and_shadow: >-
+    Bright warm practical glow, high-key comedic fill, spotlight blush emphasis, and punchy contrast for
+    identity-reveal beats
+  texture_and_material: >-
+    Crisp binary fabric layering, lace frill detailing, polished surface reflections, and badge or ribbon
+    accent textures
+  camera_and_composition: Persona-shift exaggeration via comedic framing squash and confidence-height perspective modulation
+  atmosphere_and_mood: Combative, cute, sparkling, energetic
+  rendering_and_quality: >-
+    Energetic romcom-shojo rendering with clear dual-role readability, expressive timing clarity, and polished
+    costume articulation
+  key_features: >-
+    Frill-coded sparkle, strict-to-flustered acting, secret-identity staging, authority-costume contrast,
+    playful dominance framing
   creative_brief: >-
-    Split the input into secret-uniform double life: strict black-white binaries,
-    pastel embarrassment flashes, frill-coded sparkle, authority-red punctuation,
-    and identity-switch acting can energize any subject without requiring a maid
-    cafe, school council, uniform gag, or romance duel.
+    Split the input into secret-uniform double life: strict black-white binaries, pastel embarrassment
+    flashes, frill-coded sparkle, authority-red punctuation, and identity-switch acting can energize any
+    subject without requiring a maid cafe, school council, uniform gag, or romance duel.
 avoidRules:
   - realistic
   - 3d render
@@ -42,7 +55,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-192.webp
 attributes:
-  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
+  negativePrompt: >-
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts,
+    watermark, text, signature
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle

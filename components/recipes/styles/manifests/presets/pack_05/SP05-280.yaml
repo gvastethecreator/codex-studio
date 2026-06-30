@@ -12,20 +12,23 @@ tags:
   - anime-battle-and-worlds
   - dark-fantasy-and-seinen
 visualDna:
-  aesthetic: Lantern-lit retribution, calm cruelty, midnight ritual serenity, crimson floral omen, fatal correspondence rendered as quiet ceremonial pressure
-  form_and_line: Dense mature-anime linework, heavy crosshatching, weighted contour variation, gritty ink density
-  color_palette: Muted earths, blood reds, cold moonlit tones, desaturated horror palette, bruised shadow hues
-  lighting_setup: Ominous directional shadows, single-source drama light, deep chiaroscuro, low-key shadow lift
-  material_texture: Candlelit paper glow, dark silk matte, still-water sheen, crimson petal softness, lacquer black, smoky ritual grain
-  render_quality: Gritty dramatic anime frame, film-noir rendering, heavy shadow compression, textured midtone grit
-  spatial_distortion: Ritual symmetry, lantern-point depth, still-water reflection, threshold framing, fatal close compression
-  atmosphere: Cold, ritualistic, nocturnal, fatal
+  aesthetic: >-
+    Lantern-lit retribution, calm cruelty, midnight ritual serenity, crimson floral omen, fatal correspondence
+    rendered as quiet ceremonial pressure
+  subject_treatment: Dense mature-anime linework, heavy crosshatching, weighted contour variation, gritty ink density
+  color_and_tone: Muted earths, blood reds, cold moonlit tones, desaturated horror palette, bruised shadow hues
+  lighting_and_shadow: Ominous directional shadows, single-source drama light, deep chiaroscuro, low-key shadow lift
+  texture_and_material: >-
+    Candlelit paper glow, dark silk matte, still-water sheen, crimson petal softness, lacquer black, smoky
+    ritual grain
+  camera_and_composition: Ritual symmetry, lantern-point depth, still-water reflection, threshold framing, fatal close compression
+  atmosphere_and_mood: Cold, ritualistic, nocturnal, fatal
+  rendering_and_quality: Gritty dramatic anime frame, film-noir rendering, heavy shadow compression, textured midtone grit
   key_features: Lantern glow, crimson floral omen, dark silk calm, ritual threshold, quiet fatal symmetry
-  creative_brief: >
-    Render any subject through quiet retribution ritual: lantern glow, crimson
-    floral accents, dark silk, still reflections, and fatal symmetry should define
-    the image without fixed settlements, attire, transport rituals, bargains,
-    or vengeance scenes.
+  creative_brief: >-
+    Render any subject through quiet retribution ritual: lantern glow, crimson floral accents, dark silk,
+    still reflections, and fatal symmetry should define the image without fixed settlements, attire, transport
+    rituals, bargains, or vengeance scenes.
 avoidRules:
   - realistic
   - 3d render
@@ -42,7 +45,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-280.webp
 attributes:
-  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
+  negativePrompt: >-
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts,
+    watermark, text, signature
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds

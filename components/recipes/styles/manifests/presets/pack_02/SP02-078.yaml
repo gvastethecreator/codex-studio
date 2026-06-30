@@ -13,20 +13,23 @@ tags:
   - lighting-and-atmosphere
 visualDna:
   aesthetic: Long exposure trails
-  form_and_line: Light streaks
-  color_palette: Neon lines, electric blue trails, magenta ribbon, RGB glow
-  lighting_setup: Dark background, total black, light-only visibility
-  material_texture: Glowing lines, light-tube smoothness, LED ribbon
-  render_quality: Creative, night, long-exposure artistry, motion-sculpture
-  spatial_distortion: None
-  atmosphere: Magic, art, drawing-with-light, nocturnal abstraction
+  subject_treatment: Light streaks
+  color_and_tone: Neon lines, electric blue trails, magenta ribbon, RGB glow
+  lighting_and_shadow: Dark background, total black, light-only visibility
+  texture_and_material: Glowing lines, light-tube smoothness, LED ribbon
+  camera_and_composition: >-
+    Camera language native to Light Painting: genre-aware framing, lens character, focal hierarchy, motion
+    cue, and vertical style-card composition.
+  atmosphere_and_mood: Magic, art, drawing-with-light, nocturnal abstraction
+  rendering_and_quality: Creative, night, long-exposure artistry, motion-sculpture
   key_features: Trails, light ribbon, calligraphic light, motion-blur glow
   creative_brief: >-
-    Use light painting as long-exposure mark-making: luminous trails, calligraphic motion, dark-field separation, and
-    neon gesture paths. Avoid performers, night-play scenes, or literal drawing tools. The input should be augmented by
-    light traces that reveal motion over time. Apply Light Painting as a portable cinematic/camera style over any input:
-    preserve its lens behavior, color process, lighting setup, artifact pattern, and deformation grammar while avoiding
-    a required actor, room, prop, brand, readable text, fixed IP scene, or narrative setup.
+    Use light painting as long-exposure mark-making: luminous trails, calligraphic motion, dark-field
+    separation, and neon gesture paths. Avoid performers, night-play scenes, or literal drawing tools. The
+    input should be augmented by light traces that reveal motion over time. Apply Light Painting as a portable
+    cinematic/camera style over any input: preserve its lens behavior, color process, lighting setup, artifact
+    pattern, and deformation grammar while avoiding a required actor, room, prop, brand, readable text, fixed
+    IP scene, or narrative setup.
 avoidRules:
   - static light
 assets:

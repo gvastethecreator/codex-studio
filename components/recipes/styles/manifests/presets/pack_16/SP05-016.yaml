@@ -12,20 +12,35 @@ tags:
   - anime-classics-and-prestige
   - 90s-golden-era
 visualDna:
-  aesthetic: 90s supernatural pressure style with disciplined confrontation, spectral charge, and restrained power escalation.
-  form_and_line: Crisp cel-era linework, defined contours, tense stance geometry, aura edges, and impact strokes that imply force without fixed choreography.
-  color_palette: Violet shadows, acid-green spirit accents, hot magenta energy pops, bruised blues, and warm skin-light contrast.
-  lighting_setup: High-contrast cel lighting with stark rim separation, aura bloom, and hard cuts between darkness and charged highlights.
-  material_texture: Painted background grain, cel overlay texture, smoky aura particulate, rough impact dust, and inked shadow bands.
-  render_quality: Golden-era anime frame polish with sharp cel definition, saturated grading, and readable silhouette hierarchy.
-  spatial_distortion: Compressed confrontation space, elastic foreshortening, energy-field warping, and diagonal pressure vectors.
-  atmosphere: Supernatural, intense, fierce, pressurized.
-  key_features: Spectral aura contrast, disciplined stance rhythm, explosive pause, bold silhouette design, and impact-ready visual storytelling.
+  aesthetic: >-
+    90s supernatural pressure style with disciplined confrontation, spectral charge, and restrained power
+    escalation.
+  subject_treatment: >-
+    Crisp cel-era linework, defined contours, tense stance geometry, aura edges, and impact strokes that imply
+    force without fixed choreography.
+  color_and_tone: >-
+    Violet shadows, acid-green spirit accents, hot magenta energy pops, bruised blues, and warm skin-light
+    contrast.
+  lighting_and_shadow: >-
+    High-contrast cel lighting with stark rim separation, aura bloom, and hard cuts between darkness and
+    charged highlights.
+  texture_and_material: >-
+    Painted background grain, cel overlay texture, smoky aura particulate, rough impact dust, and inked shadow
+    bands.
+  camera_and_composition: >-
+    Compressed confrontation space, elastic foreshortening, energy-field warping, and diagonal pressure
+    vectors.
+  atmosphere_and_mood: Supernatural, intense, fierce, pressurized.
+  rendering_and_quality: >-
+    Golden-era anime frame polish with sharp cel definition, saturated grading, and readable silhouette
+    hierarchy.
+  key_features: >-
+    Spectral aura contrast, disciplined stance rhythm, explosive pause, bold silhouette design, and
+    impact-ready visual storytelling.
   creative_brief: >-
-    Build a reusable spirit-tournament-pressure grammar for any subject or
-    input image: supernatural charge, disciplined confrontation, compressed
-    tension, aura-driven lighting, and 90s cel impact without imposing arenas,
-    fighters, ring battles, numbered powers, crowds, or cratered floors.
+    Build a reusable spirit-tournament-pressure grammar for any subject or input image: supernatural charge,
+    disciplined confrontation, compressed tension, aura-driven lighting, and 90s cel impact without imposing
+    arenas, fighters, ring battles, numbered powers, crowds, or cratered floors.
 avoidRules:
   - realistic
   - 3d render
@@ -42,7 +57,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-016.webp
 attributes:
-  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
+  negativePrompt: >-
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts,
+    watermark, text, signature
 taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige

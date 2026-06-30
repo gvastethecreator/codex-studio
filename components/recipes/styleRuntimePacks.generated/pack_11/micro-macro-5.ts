@@ -11,19 +11,19 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Radiographic transparency, density-layer scan art, shadow-bone logic, Roentgen spectral imaging',
-      form_and_line:
+      subject_treatment:
         'Bone density, marrow-gradient contour, trabecular-web lattice, cortical-bone edge',
-      color_palette:
+      color_and_tone:
         'Black and White negative, bone-white-on-void, tissue-grey gradient, lead-apron silhouette',
-      lighting_setup:
+      lighting_and_shadow:
         'Backlit, light-box glow, radiograph-viewer luminance, cold-blue-white transmission',
-      material_texture:
+      texture_and_material:
         'Film grain, silver-halide emulsion, radiation-speckle noise, acetate-base curl, developer-chemistry stain',
-      render_quality:
-        'Medical, spooky, internal, diagnostic-penetration, see-through-magic, radiograph precision',
-      spatial_distortion:
+      camera_and_composition:
         'Interior revelation, nested transparency, density-stacked projection, skeletal or structural ghosting',
-      atmosphere: 'Scientific, raw, clinical, mortality-aware, interior mystery',
+      atmosphere_and_mood: 'Scientific, raw, clinical, mortality-aware, interior mystery',
+      rendering_and_quality:
+        'Medical, spooky, internal, diagnostic-penetration, see-through-magic, radiograph precision',
       key_features:
         'Bone-like density, joint-space gaps when anatomy exists, metallic artifacts, fracture-line shadows, trabecular grain',
       creative_brief:
@@ -37,19 +37,20 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'natural colors',
     style: {
       aesthetic: 'Heat map camera, predator-vision, infrared-surveillance, temperature-portrait',
-      form_and_line:
+      subject_treatment:
         'Heat gradients, thermal-blob contours, isotherm-boundary curves, heat-plume wisps',
-      color_palette:
+      color_and_tone:
         'Rainbow (Red hot, Blue cold), ironbow-spectrum, white-hot core, magenta-warm, cyan-cool',
-      lighting_setup:
+      lighting_and_shadow:
         'Emission, self-illuminated heat, body-heat radiance, engine-exhaust glow, no external source',
-      material_texture:
+      texture_and_material:
         'Digital noise, sensor-speckle, hot-pixel artifacts, low-res thermal grain, calibration-barrier banding',
-      render_quality:
-        'Military, predator, seeker-head vision, FLIR-targeting, night-hunt aesthetic',
-      spatial_distortion:
+      camera_and_composition:
         'Blobby heat zones, thermal-plume bloom, heat-bleed blur, convection-trail smear',
-      atmosphere: 'Tactical, hunting, infrared-silence, predator-stalk, heat-signature dread',
+      atmosphere_and_mood:
+        'Tactical, hunting, infrared-silence, predator-stalk, heat-signature dread',
+      rendering_and_quality:
+        'Military, predator, seeker-head vision, FLIR-targeting, night-hunt aesthetic',
       key_features:
         'Heat glow, temperature-scale bar, crosshair-reticle, hot-spot bloom, cold-background contrast',
       creative_brief:
@@ -64,19 +65,20 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'SEM scan, electron-micrograph, nano-landscape, sub-micron-world, vacuum-chamber art',
-      form_and_line:
+      subject_treatment:
         'Tiny details, micro-sphere contours, crystalline-facet edges, dendrite-branch, nanowire strands',
-      color_palette:
+      color_and_tone:
         'Black and White, monochrome-grey gradient, false-color overlay, tungsten-filament shadow, gold-sputter-coat sheen',
-      lighting_setup:
+      lighting_and_shadow:
         'Scanning beam, raster-scan lines, secondary-electron emission, top-down detector, spot-mode shadow',
-      material_texture:
+      texture_and_material:
         'Alien landscape, nanometer-roughness, sputter-coated surface, carbon-tape background, electron-discharge artifact',
-      render_quality:
-        'Scientific, tiny, micrograph-journal, resolution-test beauty, lens-astigmatism correction, vacuum-seal cleanliness',
-      spatial_distortion:
+      camera_and_composition:
         'Dust looks like boulders, scale-shift vertigo, micro-to-macro confusion, feature-magnification awe',
-      atmosphere: 'Scientific, weird, electron-beam silence, nano-frontier, magnification-horizon',
+      atmosphere_and_mood:
+        'Scientific, weird, electron-beam silence, nano-frontier, magnification-horizon',
+      rendering_and_quality:
+        'Scientific, tiny, micrograph-journal, resolution-test beauty, lens-astigmatism correction, vacuum-seal cleanliness',
       key_features:
         'Scale bar, micron-marker, acceleration-voltage label, detector-mode annotation, sputter-coating grain, magnification-readout, charging-artifact bands',
       creative_brief:
@@ -91,20 +93,20 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Compound eye macro, insect-vision, ommatidial-array, arthropod-portrait, nature-engineering',
-      form_and_line:
+      subject_treatment:
         'Hexagonal grid, ommatidia-honeycomb, dome-curvature, lens-facet edges, bristle-between-lenses',
-      color_palette:
+      color_and_tone:
         'Iridescent, beetle-spectrum, metallic-green, structural-blue, chitin-rainbow, interference-film',
-      lighting_setup:
+      lighting_and_shadow:
         'Macro flash, ring-light reflection, lens-facet sparkle, ommatidia-catchlight array, diffused-twin-flash',
-      material_texture:
+      texture_and_material:
         'Facet grid, chitin-surface, hexagonal-lens, bristle-insertion, structural-color sheen',
-      render_quality:
-        'Detailed, alien, micro-four-thirds, insect-vision-portrait, arthropod-beauty, focus-stacking perfection',
-      spatial_distortion:
+      camera_and_composition:
         'Geometric eye, compound-surface, ommatidia-dome, panoramic-hemisphere, hex-grid-curvature',
-      atmosphere:
+      atmosphere_and_mood:
         'Nature, intense, macro-silence, compound-gaze, arthropod-alert, alien-familiarity',
+      rendering_and_quality:
+        'Detailed, alien, micro-four-thirds, insect-vision-portrait, arthropod-beauty, focus-stacking perfection',
       key_features:
         'Hexagons, ommatidial-lattice, bristle-pores, structural-color-bands, catchlight-hex-array, focal-plane-detail',
       creative_brief:
@@ -119,20 +121,20 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Biology textbook, microscope-slide, cellular-anatomy, histology-stain, inner-body-universe',
-      form_and_line:
+      subject_treatment:
         'Membrane walls, phospholipid-bilayer contour, organelle-circles, cilia-fringe, nuclear-envelope',
-      color_palette:
+      color_and_tone:
         'Pink, Purple stain, hematoxylin-blue, eosin-pink, mitochondria-glow, golgi-ribbon, sudan-orange',
-      lighting_setup:
+      lighting_and_shadow:
         'Microscope light, condenser-brightfield, phase-contrast halo, fluorescence-excitation, oil-immersion glow',
-      material_texture:
+      texture_and_material:
         'Jelly, nucleus, cytoplasm-grain, vacuole-bubble, organelle-speckle, cover-slip compression, staining-granule',
-      render_quality:
-        'Medical, tiny, histology-atlas, cellular-detail, pathology-lab, hematoxylin-eosin beauty',
-      spatial_distortion:
+      camera_and_composition:
         'Blobs, amoeboid-shapes, pseudopod-extension, organelle-displacement, nuclear-eccentricity',
-      atmosphere:
+      atmosphere_and_mood:
         'Life, science, lab-bench quiet, cellular-metabolism, inner-space awe, microbiological wonder',
+      rendering_and_quality:
+        'Medical, tiny, histology-atlas, cellular-detail, pathology-lab, hematoxylin-eosin beauty',
       key_features:
         'Nucleus, nucleolus-dot, mitochondria-squiggle, vacuole-clear, cell-membrane edge, staining-artifact, scale-micron-bar',
       creative_brief:
@@ -147,20 +149,20 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Ice crystal macro, frozen-star, winter-hexagon, snowflake-photography, dendrite-sculpture',
-      form_and_line:
+      subject_treatment:
         'Fractal symmetry, six-fold-branching, fern-dendrite, plate-plane, needle-spike extension',
-      color_palette:
+      color_and_tone:
         'Clear, Blue background, ice-spectrum, prism-rainbow, hoar-frost white, birefringence-color, dark-field sapphire',
-      lighting_setup:
+      lighting_and_shadow:
         'Sparkle, dark-field, refracted-rainbow spot, prism-split beam, supermacro-LED ring',
-      material_texture:
+      texture_and_material:
         'Ice crystal, hexagonal-plate, dendrite-branch, rime-coating, surface-etch, melt-rounding, sublimation-pit',
-      render_quality:
-        'Perfect, fragile, Wilson-Bentley devotion, snowflake-photomicrograph, crystalline-geometry, winter-laboratory',
-      spatial_distortion:
+      camera_and_composition:
         'Symmetrical, six-fold-rotation, hexagonal-plate, stellar-dendrite arm, capped-column crystal',
-      atmosphere:
+      atmosphere_and_mood:
         'Winter, beauty, falling-snow silence, crystal-uniqueness, frozen-moment, microscopic-wonder',
+      rendering_and_quality:
+        'Perfect, fragile, Wilson-Bentley devotion, snowflake-photomicrograph, crystalline-geometry, winter-laboratory',
       key_features:
         'Six arms, dendritic-branching, hexagonal symmetry, plate-crystal, rime-droplet capture, dark-field glow, melt-edge rounding',
       creative_brief:
@@ -175,22 +177,22 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'CPU die shot, silicon-city, wafer-art, integrated-circuit landscape, chip-fab photography',
-      form_and_line:
+      subject_treatment:
         'Traces, paths, Manhattan-routing, 45-degree diagonal, via-grid, interconnect-highway',
-      color_palette:
+      color_and_tone:
         'Green, Gold, Silicon, copper-interconnect orange, solder-mask green, gold-bond-wire, silicon-substrate grey, immersion-tin silver',
-      lighting_setup:
+      lighting_and_shadow:
         'Flat metallic, die-shot macro, ring-light, wafer-inspection, solder-mask reflection',
-      material_texture:
+      texture_and_material:
         'Silicon, solder, polysilicon gate, metal-interconnect stack, passivation-layer glaze, probe-mark indent, bond-pad gold',
-      render_quality:
-        "Tech, complex, silicon-engineering, Moore's-law beauty, nanometer-design, EDA-art",
-      spatial_distortion:
-        'City-like, macro-block placement, standard-cell grid, routing-congestion channel, floor-plan region',
-      atmosphere:
+      camera_and_composition:
+        'City-like, macro-block placement, logic-cell grid, routing-congestion channel, floor-plan region',
+      atmosphere_and_mood:
         'Digital, logic, clean-room silence, wafer-fab precision, clock-tree rhythm, silicon-dream',
+      rendering_and_quality:
+        "Tech, complex, silicon-engineering, Moore's-law beauty, nanometer-design, EDA-art",
       key_features:
-        'Chips, bond-pads, via-arrays, standard-cell rows, SRAM-block, metal-layer stack, die-mark text, test-structure, corner-fiducial',
+        'Chips, bond-pads, via-arrays, logic-cell rows, SRAM-block, metal-layer stack, die-mark text, test-structure, corner-fiducial',
       creative_brief:
         'Treat circuit surfaces as engineered micro-landscapes: trace routing logic, via arrays, and metallic layer hierarchy should stay explicit. Emphasize clean-room precision and component-scale structure without overfitting to one chip architecture. Apply Circuit Board as a portable style system over any input: preserve its construction grammar, material cues, scale logic, and signature rendering behavior while avoiding a required franchise, literal prop, fixed specimen, classroom sample, product shot, or scene template.',
     },
@@ -202,19 +204,19 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'dry',
     style: {
       aesthetic: 'Refraction in drop, lens-drop, optical-sphere, rain-jewel, surface-tension optic',
-      form_and_line:
+      subject_treatment:
         'Perfect sphere, meniscus-contact curve, capillary-bridge, pendant-drop, sessile-droplet',
-      color_palette:
+      color_and_tone:
         'Clear, prismatic-dispersion, rainbow-caustic, inverted-scene spectrum, bokeh-chromatic',
-      lighting_setup:
+      lighting_and_shadow:
         'Lens effect, backlit-refraction, macro-spot, dark-field sparkle, ring-flash catchlight',
-      material_texture:
+      texture_and_material:
         'Surface tension, liquid-skin, glycerin-viscosity, water-bead elasticity, contact-angle gloss',
-      render_quality:
-        'Physics, beauty, droplet-lens, refraction-magic, macro-patience, liquid-optics',
-      spatial_distortion:
+      camera_and_composition:
         'Inverted image inside, upside-down-world, refractive-compression, lens-barrel distortion, focal-miniaturization',
-      atmosphere: 'Calm, focus, macro-meditation, rain-pause, single-drop universe',
+      atmosphere_and_mood: 'Calm, focus, macro-meditation, rain-pause, single-drop universe',
+      rendering_and_quality:
+        'Physics, beauty, droplet-lens, refraction-magic, macro-patience, liquid-optics',
       key_features:
         'Reflection, refracted-upside-down image, bokeh-background, contact-line, specular-highlight, chromatic-aberration fringing, surface-tension curvature',
       creative_brief:
@@ -229,19 +231,20 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Thread zoom, textile-macro, fabric-architecture, weaver-close-up, cloth-landscape',
-      form_and_line:
+      subject_treatment:
         'Individual fibers, twist-ply helix, warp-weft grid, filament-strand, staple-fiber end',
-      color_palette:
+      color_and_tone:
         'Thread color, indigo-denim, linen-natural, wool-heathered, silk-ivory, yarn-dyed spectrum',
-      lighting_setup:
+      lighting_and_shadow:
         'Soft, raking-light across weave, thread-sheen catch, flat-diffuse, fiber-shadow',
-      material_texture:
+      texture_and_material:
         'Fuzzy, cotton-fiber, wool-crimp, silk-filament smoothness, microfiber-split, pilling-balls, staple-end tufts',
-      render_quality: 'Tactile, soft, textile-grid, weave-architecture, close-look, fiber-beauty',
-      spatial_distortion:
+      camera_and_composition:
         'Weave pattern, plain-weave grid, twill-diagonal, satin-float, knit-loop, stitch-v',
-      atmosphere:
+      atmosphere_and_mood:
         'Cozy, close, fabric-store, textile-tradition, thread-history, warp-weighted loom',
+      rendering_and_quality:
+        'Tactile, soft, textile-grid, weave-architecture, close-look, fiber-beauty',
       key_features:
         'Threads, warp-weft intersection, fiber-halo fuzz, pilling-balls, weave-structure, knit-stitch, selvage-edge',
       creative_brief:
@@ -255,20 +258,20 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'clean, eye, iris, pupil, lens',
     style: {
       aesthetic: 'Corrosion zoom, oxidation-portrait, time-texture, rust-patina, wreck-beauty',
-      form_and_line:
+      subject_treatment:
         'Flaking paint, paint-blister edges, rust-bubbling contour, crack-propagation fractal, peeling-layers',
-      color_palette:
+      color_and_tone:
         'Orange, Brown, iron-oxide spectrum, verdigris-green, zinc-white bloom, crust-brown, patina-teal',
-      lighting_setup:
+      lighting_and_shadow:
         'Rough, raking-side-light, texture-reveal shadow, overcast-diffusion, afternoon-grazing sun',
-      material_texture:
+      texture_and_material:
         'Oxidation, bumps, iron-oxide crust, flaking-paint platelets, pitted-steel, efflorescence-crystal, patina-powder',
-      render_quality:
-        'Texture, time, weathered-beauty, entropy-aesthetic, abandoned-place, wabi-sabi',
-      spatial_distortion:
+      camera_and_composition:
         'Cracks, paint-blister domes, oxide-blister eruption, corrosion-front boundary, peeling-plateau',
-      atmosphere:
+      atmosphere_and_mood:
         'Old, textured, shipwreck-quiet, abandoned-corner, time-eats-everything, beautiful-decay',
+      rendering_and_quality:
+        'Texture, time, weathered-beauty, entropy-aesthetic, abandoned-place, wabi-sabi',
       key_features:
         'Flakes, paint-blister domes, oxide-stalactite drip, rust-bleed staining, crack-propagation network, peeling-edge curls, bubbled-paint texture',
       creative_brief:
@@ -282,20 +285,20 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'skin',
     style: {
       aesthetic: 'Human eye zoom, iris-portrait, soul-window, ophthalmology-art, corneal-landscape',
-      form_and_line:
+      subject_treatment:
         'Muscle fibers, radial-iris striae, collarette-ridge, limbal-ring, pupillary-zone',
-      color_palette:
+      color_and_tone:
         'Blue/Green/Brown, amber-hazel, grey-steel, heterochromia, central-heterochromia gold, iris-texture spectrum',
-      lighting_setup:
+      lighting_and_shadow:
         'Ring light reflection, corneal-catch-light, iris-backlight, catch-light-dot, ophthalmoscope-glow',
-      material_texture:
+      texture_and_material:
         'Wet, fibrous, tear-film gloss, corneal-transparency, iris-crypt texture, limbal-palisade',
-      render_quality:
-        'Intense, soul, iris-photography, eye-contact-intimacy, macro-eye-portrait, cornea-reflection perfect',
-      spatial_distortion:
+      camera_and_composition:
         'Pupil hole, aperture-center, iris-diaphragm, depth-of-field fade, corneal-curve',
-      atmosphere:
+      atmosphere_and_mood:
         'Personal, deep, eye-contact stillness, window-to-soul, iris-garden, blink-moment',
+      rendering_and_quality:
+        'Intense, soul, iris-photography, eye-contact-intimacy, macro-eye-portrait, cornea-reflection perfect',
       key_features:
         'Pupil, iris-striae rays, corneal-catch-light, limbal-dark-ring, collarette-frill, iris-crypt pattern, conjunctiva-vessels, lacrimal-caruncle',
       creative_brief:
@@ -310,20 +313,20 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Oil slick surface, soap-film, interference-color, floating-sphere, ephemeral-iridescence',
-      form_and_line:
+      subject_treatment:
         'Swirling colors, interference-band contours, film-flow layers, gravity-flow, convective-whorl',
-      color_palette:
+      color_and_tone:
         'Rainbow iridescent, thin-film spectrum, magenta-cyan-yellow, soap-film pastel, interference-order colors',
-      lighting_setup:
+      lighting_and_shadow:
         'Reflection, dark-background, specular-catch, diffuse-overhead, ring-light iridescence',
-      material_texture:
+      texture_and_material:
         'Thin film liquid, soap-membrane, glycerin-viscosity, fluid-dynamics surface, micelle-layer',
-      render_quality:
-        'Fragile, colorful, bubble-poetry, interference-physics, iridescent-beauty, floating-second',
-      spatial_distortion:
+      camera_and_composition:
         'Sphere, curvature-distortion, reflection-bulge, horizon-warp, fisheye-miniature',
-      atmosphere:
+      atmosphere_and_mood:
         'Dreamy, fleeting, pop-second, bubble-bath quiet, childhood-wonder, vanishing-beauty',
+      rendering_and_quality:
+        'Fragile, colorful, bubble-poetry, interference-physics, iridescent-beauty, floating-second',
       key_features:
         'Rainbow swirl, interference-bands, black-film spot, thickness-gradient, specular-highlight, pop-edge retreat, background-reflection warp',
       creative_brief:
@@ -338,19 +341,19 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Bird feather zoom, plumage-detail, avian-architecture, flight-surface, contour-feather',
-      form_and_line:
+      subject_treatment:
         'Barbs and hooks, barbule-branch contour, rachis-spine line, vane-plane, pennaceous-array',
-      color_palette:
+      color_and_tone:
         'Iridescent, peacock-structural, hummingbird-metallic, macaw-spectrum, melanin-earth, carotenoid-bright',
-      lighting_setup:
+      lighting_and_shadow:
         'Soft sheen, directional-grazing light, barbule-catch, low-angle gloss, diffused-overhead',
-      material_texture:
+      texture_and_material:
         'Velcro-like, micro-barbicel hook, keratin-surface, barbule-zipper, plumulaceous-fluff, feather-oil',
-      render_quality:
-        'Nature, detailed, ornithology-close-up, feather-microstructure, barb-by-barb, structural-color marvel',
-      spatial_distortion: 'None, natural-contour, feather-curve, vane-width taper, rachis-diameter',
-      atmosphere:
+      camera_and_composition: 'Natural-contour, feather-curve, vane-width taper, rachis-diameter',
+      atmosphere_and_mood:
         'Soft, natural, bird-flight silence, molting-gift, feather-collector, avian-intimacy',
+      rendering_and_quality:
+        'Nature, detailed, ornithology-close-up, feather-microstructure, barb-by-barb, structural-color marvel',
       key_features:
         'Structure, barbule-hook detail, rachis-groove, iridescent-color shift, vane-gap, afterfeather, calamus-base',
       creative_brief:
@@ -365,19 +368,19 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Backlit leaf, chloroplast-window, vein-map, photosynthesis-architecture, leaf-botany',
-      form_and_line:
+      subject_treatment:
         'Vein network, midrib-spine, secondary-vein branching, areole-polygon mesh, margin-serration',
-      color_palette:
+      color_and_tone:
         'Chlorophyll Green, carotenoid-orange, xanthophyll-yellow, autumn-red, variegation-cream, mesophyll-translucency',
-      lighting_setup:
+      lighting_and_shadow:
         'Translucent, backlit-through-leaf, sun-behind-canopy, chlorophyll-glow, diffused-morning',
-      material_texture:
+      texture_and_material:
         'Plant cells, epidermal-layer, stomata-pores, cuticle-wax, mesophyll-spongy, vein-scaffold, trichome-hairs',
-      render_quality:
-        'Life, nature, photosynthesis-revealed, leaf-anatomy, pixel-leaf, botanical-illustration',
-      spatial_distortion: 'None, leaf-plane, blade-expansion, lobe-geometry, venation-pattern',
-      atmosphere:
+      camera_and_composition: 'Leaf-plane, blade-expansion, lobe-geometry, venation-pattern',
+      atmosphere_and_mood:
         'Fresh, organic, forest-floor quiet, photosynthesis-magic, chloroplast-glow, green-life',
+      rendering_and_quality:
+        'Life, nature, photosynthesis-revealed, leaf-anatomy, pixel-leaf, botanical-illustration',
       key_features:
         'Veins, midrib-center, secondary-vein, areole-polygon, stomata-pores, margin-edge, backlit-translucency',
       creative_brief:
@@ -392,18 +395,19 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Dermatology zoom, skin-terrain, pore-landscape, human-surface, epidermal-topography',
-      form_and_line:
+      subject_treatment:
         "Micro wrinkles, Langer's-line contours, sulcus-cutis furrow, crista-cutis ridge, fingerprint-ridge",
-      color_palette:
+      color_and_tone:
         'Skin tone, melanin-spectrum, Fitzpatrick-scale, undertone-warm, undertone-cool, capillary-blush',
-      lighting_setup:
+      lighting_and_shadow:
         'Soft scattering, epidermal-diffusion, subsurface-scatter, cross-polarized, ring-light-flat',
-      material_texture:
+      texture_and_material:
         'Pores, hair, vellus-hair, sebaceous-filament, stratum-corneum flake, sweat-gland duct, desquamation-scale',
-      render_quality:
+      camera_and_composition: 'Natural-contour, dermatoglyphic-pattern, skin-tension line',
+      atmosphere_and_mood:
+        'Raw, real, mirror-close, skin-acceptance, dermatology-office, self-examination',
+      rendering_and_quality:
         'Hyperreal, human, macro-skin, dermatoscope-detail, epidermal-intimacy, skin-barrier architecture',
-      spatial_distortion: 'None, natural-contour, dermatoglyphic-pattern, skin-tension line',
-      atmosphere: 'Raw, real, mirror-close, skin-acceptance, dermatology-office, self-examination',
       key_features:
         'Texture, pore-opening, hair-follicle, fingerprint-ridge, vellus-hair shaft, sebaceous-filament, desquamation-flake, sulcus-cutis groove',
       creative_brief:
@@ -417,19 +421,20 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'still',
     style: {
       aesthetic: 'Cloud tank, ink-diffusion, fluid-sculpture, dye-dance, aqueous-art',
-      form_and_line:
+      subject_treatment:
         'Swirls, mushroom-cloud, vortex-sheet, tendril-curls, turbulence-eddy, laminar-flow ribbons',
-      color_palette:
+      color_and_tone:
         'Black/Color ink, ink-spectrum, dye-gradient, water-dilution pastels, pigment-sediment, alcohol-ink vibrancy',
-      lighting_setup:
+      lighting_and_shadow:
         'Backlit, through-tank diffusion, volumetric-glow, dark-field, spotlight-beam',
-      material_texture:
+      texture_and_material:
         'Fluid smoke, ink-plume, dye-stratification, particle-suspension, density-layer, micro-current grain',
-      render_quality:
-        'Abstract, motion, slow-motion-fluid, smoke-photography, liquid-sculpture, ink-in-water magic',
-      spatial_distortion:
+      camera_and_composition:
         'Dissolving, dispersion-front, plume-expansion, diffusion-gradient, dissipating-edge',
-      atmosphere: 'Artistic, flow, fluid-dynamics peace, ink-drop meditation, underwater-weather',
+      atmosphere_and_mood:
+        'Artistic, flow, fluid-dynamics peace, ink-drop meditation, underwater-weather',
+      rendering_and_quality:
+        'Abstract, motion, slow-motion-fluid, smoke-photography, liquid-sculpture, ink-in-water magic',
       key_features:
         'Smoke shape, ink-tendril, mushroom-cap, vortex-ring, dye-gradient, backlit-glow, turbulence-texture',
       creative_brief:
@@ -443,20 +448,20 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'clean',
     style: {
       aesthetic: 'Petri dish, mycology-lab, mold-colony, fungal-garden, agar-culture',
-      form_and_line:
+      subject_treatment:
         'Fuzzy growth, hyphal-fringe, colony-circular, radial-extension, sporangiophore-stalk',
-      color_palette:
+      color_and_tone:
         'White, Green, Blue, sporulation-spectrum, conidia-ochre, penicillin-mint, aspergillus-charcoal, fusarium-rose',
-      lighting_setup:
+      lighting_and_shadow:
         'Macro, ring-light, petri-dish reflection, agar-surface gloss, top-down-laboratory',
-      material_texture:
+      texture_and_material:
         'Fuzzy, spores, aerial-mycelium, powdery-conidia, slimy-yeast, agar-surface, colony-elevation',
-      render_quality:
-        'Gross, fascinating, microbiology-aesthetic, petri-dish-art, contamination-beauty',
-      spatial_distortion:
+      camera_and_composition:
         'Growth rings, colony-concentric, inhibition-zone, sporulation-halo, colony-margin',
-      atmosphere:
+      atmosphere_and_mood:
         'Biological, decay, lab-incubator warmth, agar-dawn, invisible-kingdom, decomposition-cycle',
+      rendering_and_quality:
+        'Gross, fascinating, microbiology-aesthetic, petri-dish-art, contamination-beauty',
       key_features:
         'Spores, colony-margin, aerial-hyphae, conidia-powder, petri-dish-lid, inhibition-zone, contamination-sector, sporulation-color',
       creative_brief:
@@ -471,20 +476,20 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Chemical garden, crystal-lab, mineral-precipitation, geode-formation, silica-garden',
-      form_and_line:
+      subject_treatment:
         'Sharp geometric edges, crystal-facet planes, acicular-needles, dendrite-spikes, trigonal-pyramid',
-      color_palette:
+      color_and_tone:
         'Vibrant chemical colors, copper-sulfate blue, chrome-alum purple, ferric-oxide rust, nickel-nitrate emerald, manganese-pink',
-      lighting_setup:
+      lighting_and_shadow:
         'Internal reflection, facet-sparkle, dark-field, polarizing-filter, birefringence-rainbow',
-      material_texture:
+      texture_and_material:
         'Glassy, sharp, crystal-facet, conchoidal-fracture, vitreous-luster, cleavage-plane, growth- terrace',
-      render_quality:
-        'Geology, chemistry, crystal-growing, microscope-mineral, lab-grown-gem, facet-perfection',
-      spatial_distortion:
+      camera_and_composition:
         'Spikes, acicular-cluster, drusy-surface, needle-point, geode-cavity, radial-aggregate',
-      atmosphere:
+      atmosphere_and_mood:
         'Sharp, growing, crystallization-quiet, mineral-time, supersaturated-magic, geological-patience',
+      rendering_and_quality:
+        'Geology, chemistry, crystal-growing, microscope-mineral, lab-grown-gem, facet-perfection',
       key_features:
         'Facets, crystal-termination, growth-terrace, cleavage-plane, acicular-spike, drusy-crust, geode-cavity, birefringence-color',
       creative_brief:
@@ -498,18 +503,20 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'smooth',
     style: {
       aesthetic: 'Microscope record, groove-landscape, vinyl-macro, analog-waveform, LP-surface',
-      form_and_line:
+      subject_treatment:
         'Parallel waves, groove-modulation, lateral-cut curve, silent-groove spacing, lead-in-spiral',
-      color_palette:
+      color_and_tone:
         'Black plastic, vinyl-carbon, groove-shadow grey, stylus-wear silver, dust-speckle white',
-      lighting_setup:
+      lighting_and_shadow:
         'Highlight along groove, grazing-incidence, vinyl-sheen, dark-field groove, stylus-reflection',
-      material_texture:
+      texture_and_material:
         'Dust, plastic, PVC-surface, groove-wall, anti-static-brush residue, pressing-flash, static-cling particle',
-      render_quality: 'Audio, physical, turntable-macro, analog-ritual, sound-carved-in-plastic',
-      spatial_distortion:
+      camera_and_composition:
         'Wavy lines, groove-spiral, modulation-wiggle, lead-in-arc, run-out-lock-groove',
-      atmosphere: 'Music, tech, needle-drop quiet, vinyl-warmth, listening-room, hi-fi reverence',
+      atmosphere_and_mood:
+        'Music, tech, needle-drop quiet, vinyl-warmth, listening-room, hi-fi reverence',
+      rendering_and_quality:
+        'Audio, physical, turntable-macro, analog-ritual, sound-carved-in-plastic',
       key_features:
         'Grooves, spiral-lead-in, modulation-wiggle, dust-particle, stylus-reflection, lock-groove-circle, label-edge, pressing-plant matrix number',
       creative_brief:
@@ -524,20 +531,20 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Hooks and loops, fastener-macro, textile-engineering, velcro-close-up, grip-technology',
-      form_and_line:
+      subject_treatment:
         'Plastic hooks, mushroom-cap shapes, loop-pile tufts, hook-shank curvature, interlocking-interface',
-      color_palette:
+      color_and_tone:
         'Black/White, nylon-spectrum, hook-base color, loop-color contrast, industrial-grey, neon-accent',
-      lighting_setup:
+      lighting_and_shadow:
         'Macro, ring-flash, side-raking for hook-shape, loop-pile diffusion, shadow-depth for interlock',
-      material_texture:
+      texture_and_material:
         'Plastic loops, nylon-monofilament, woven-backing, hook-mushroom tip, loop-pile density, adhesive-back',
-      render_quality:
-        'Industrial, texture, hook-and-loop engineering, biomimetic-design, fastener-science',
-      spatial_distortion:
+      camera_and_composition:
         'Tangling, engaged-hook-loop, separation-gap, pile-compression, hook-penetration depth',
-      atmosphere:
+      atmosphere_and_mood:
         'Functional, close, design-cleverness, burdock-inspiration, Swiss-engineer wonder',
+      rendering_and_quality:
+        'Industrial, texture, hook-and-loop engineering, biomimetic-design, fastener-science',
       key_features:
         'Hooks, mushroom-cap tips, loop-pile, interlock-point, woven-backing, hook-shank, adhesive-layer, edge-trim',
       creative_brief:
@@ -552,19 +559,20 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Kitchen sponge zoom, foam-cell, open-cell-structure, absorbent-micro, cleaning-surface',
-      form_and_line:
+      subject_treatment:
         'Holes, bubbles, strut-network contours, cell-window edges, pore-space geometry',
-      color_palette:
+      color_and_tone:
         'Yellow, Pink, cleaning-spectrum, scrubber-green, dish-blue, foam-pastels, cellulose-tan',
-      lighting_setup:
+      lighting_and_shadow:
         'Soft, macro-diffused, shadow-in-pores, cell-depth contrast, flat-reflective on strut',
-      material_texture:
+      texture_and_material:
         'Porous foam, open-cell polyurethane, cellulose-sponge fiber, abrasive-scrub layer, water-saturated weight',
-      render_quality:
-        'Absorbent, texture, cleaning-tool macro, kitchen-necessity, pore-architecture',
-      spatial_distortion:
+      camera_and_composition:
         'Holes, pore-size distribution, cell-connectivity, strut-thickness variation, surface-membrane',
-      atmosphere: 'Clean, soft, kitchen-sink quiet, dish-duty, cleaning-ritual, water-warm',
+      atmosphere_and_mood:
+        'Clean, soft, kitchen-sink quiet, dish-duty, cleaning-ritual, water-warm',
+      rendering_and_quality:
+        'Absorbent, texture, cleaning-tool macro, kitchen-necessity, pore-architecture',
       key_features:
         'Pores, cell-windows, strut-network, scrub-layer, water-bead, soap-bubble residue, cellulose-fiber, abrasive-grit surface',
       creative_brief:
@@ -579,20 +587,20 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Forest floor zoom, moss-carpet, bryophyte-macro, soft-ground-cover, miniature-forest',
-      form_and_line:
+      subject_treatment:
         'Tiny leaves, phyllid-spiral, gametophyte-shoot, sporophyte-stalk, leaflet-arrangement',
-      color_palette:
+      color_and_tone:
         'Green, emerald-spectrum, moss-velvet, sporophyte-ochre, spring-moss bright, shadow-moss deep, dewdrop-crystal',
-      lighting_setup:
+      lighting_and_shadow:
         'Dappled, canopy-shaft, diffused-understory, leaf-filtered, dewdrop-sparkle, morning-ground',
-      material_texture:
+      texture_and_material:
         'Velvet plant, leaflet-surface, rhizoid-felt, capsule-sporangium, water-film, soil-particle, detritus-grain',
-      render_quality:
-        'Nature, soft, forest-floor macro, bryophyte-world, moss-garden, ground-cover beauty',
-      spatial_distortion:
+      camera_and_composition:
         'Carpet, ground-cover continuity, terrain-following, rock-contour, hummock-mound',
-      atmosphere:
+      atmosphere_and_mood:
         'Quiet, tiny, moss-forest silence, dewdrop-morning, miniature-continent, ground-level peace',
+      rendering_and_quality:
+        'Nature, soft, forest-floor macro, bryophyte-world, moss-garden, ground-cover beauty',
       key_features:
         'Greenery, phyllid-leaflets, sporophyte-capsule, dewdrop-bead, rhizoid-felt, soil-particle, detritus, capsule-teeth peristome',
       creative_brief:
@@ -606,18 +614,19 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'smooth',
     style: {
       aesthetic: 'Grit zoom, abrasive-surface, workshop-texture, grit-topography, sanding-material',
-      form_and_line:
+      subject_treatment:
         'Rough rocks, angular-grain contours, fractured-edges, irregular-particle shapes, bonding-resin crevices',
-      color_palette:
+      color_and_tone:
         'Brown, Black grit, aluminum-oxide grey, silicon-carbide metallic, garnet-red, ceramic-white',
-      lighting_setup:
+      lighting_and_shadow:
         'Sparkle on grit, raking-grazing light, particle-shadow, resin-gloss catch, point-source reflection',
-      material_texture:
+      texture_and_material:
         'Rough, abrasive, sharp-particle, bonding-resin, graded-grit size, backer-paper, clogged-dust',
-      render_quality:
+      camera_and_composition: 'Flat-sheet, grit-density, particle-projection, backing-plane',
+      atmosphere_and_mood:
+        'Harsh, work, workshop-silence, sanding-dust, tool-bench, abrasive-patience',
+      rendering_and_quality:
         'Industrial, rough, workshop-macro, grit-grade, sanding-precision, surface-prep',
-      spatial_distortion: 'None, flat-sheet, grit-density, particle-projection, backing-plane',
-      atmosphere: 'Harsh, work, workshop-silence, sanding-dust, tool-bench, abrasive-patience',
       key_features:
         'Grit, abrasive-grain, particle-size, bond-resin, grit-fracture, dust-clog, backer-paper edge, sanding-direction scratch',
       creative_brief:
@@ -632,19 +641,20 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Wine cork zoom, bottle-stopper, bark-product, Quercus-suber, compressed-tradition',
-      form_and_line:
+      subject_treatment:
         'Wood cells, prismatic-cell contours, lenticel-pores, radial-section, tangential-section',
-      color_palette:
+      color_and_tone:
         'Tan, Brown, cork-bark spectrum, wine-stain magenta, burnt-brand, aged-patina amber, suberin-wax cream',
-      lighting_setup: 'Matte, shadow-in-pores, low-angle-texture, soft-diffuse, natural-daylight',
-      material_texture:
+      lighting_and_shadow:
+        'Matte, shadow-in-pores, low-angle-texture, soft-diffuse, natural-daylight',
+      texture_and_material:
         'Compressed wood, suberin-cellular, lenticel-tube, elastic-recovery, pressed-granule, stopper-cylinder, bottle-neck impression',
-      render_quality:
-        'Natural, dry, bottle-closure, wine-cellar macro, bark-harvest craft, sustainable-texture',
-      spatial_distortion:
+      camera_and_composition:
         'Holes, lenticel-cylinder, cell-honeycomb, stopper-cylinder curve, extraction-helix',
-      atmosphere:
+      atmosphere_and_mood:
         'Rustic, dry, wine-bottle quiet, cork-pop anticipation, cellar-coolness, natural-craft',
+      rendering_and_quality:
+        'Natural, dry, bottle-closure, wine-cellar macro, bark-harvest craft, sustainable-texture',
       key_features:
         'Texture, lenticel-pores, cellular-structure, wine-stain, bottle-neck imprint, cork-brand, extraction-spiral, suberin-wax sheen',
       creative_brief:
@@ -659,18 +669,19 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Weave pattern, composite-macro, aerospace-material, tow-fiber, high-modulus structure',
-      form_and_line:
+      subject_treatment:
         'Diagonal weave, twill-diagonal, plain-weave cross, harness-satin float, yarn- crimp, tow-boundary',
-      color_palette:
+      color_and_tone:
         'Black, Grey, PAN-carbon, pitch-fiber dark, oxidized-surface, resin-matrix amber, intermediate-modulus sheen',
-      lighting_setup:
+      lighting_and_shadow:
         'Anisotropic reflection, fiber-direction gloss, weave-angle catch, grazing-incidence, ring-light polarizer',
-      material_texture:
+      texture_and_material:
         'Woven fiber, carbon-tow, filament-diameter, sizing-coating, resin-impregnation, micro-crack, weave- crimp',
-      render_quality:
+      camera_and_composition: 'Flat-laminate, weave-repeat, tow-orientation, ply-stack',
+      atmosphere_and_mood:
+        'Fast, expensive, autoclave-cure, racing-engineering, carbon-fiber exclusivity',
+      rendering_and_quality:
         'High tech, strong, Formula-1 engineering, aerospace-composite, strength-to-weight art',
-      spatial_distortion: 'None, flat-laminate, weave-repeat, tow-orientation, ply-stack',
-      atmosphere: 'Fast, expensive, autoclave-cure, racing-engineering, carbon-fiber exclusivity',
       key_features:
         'Weave, tow-band, resin-rich area, crimp-angle, weave-repeat, filament-break, fabric-selvage, prepreg-tack surface',
       creative_brief:
@@ -685,20 +696,20 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Seed parachute, dispersal-wonder, wind-botany, flight-without-wings, dandelion-clock',
-      form_and_line:
+      subject_treatment:
         'Fine hairs, pappus-bristle, filament-stalk, cypsela-seed, parachute-canopy, radial-fluff',
-      color_palette:
+      color_and_tone:
         'White, translucent-silver, seed-brown, backlit-gold, stem-green, sky-blue bokeh',
-      lighting_setup:
+      lighting_and_shadow:
         'Backlit sun, through-pappus glow, filament-silhouette, golden-hour, contre-jour',
-      material_texture:
+      texture_and_material:
         'Fluff, pappus-plume, barbed-filament, aerodynamic-surface, seed-attachment, hydrophobic-pappus',
-      render_quality:
-        'Delicate, wind, time-lapse flight, dandelion-wish, botanical-aeronautics, airborne-seed',
-      spatial_distortion:
+      camera_and_composition:
         'Flying, mid-air suspension, wind-current, pappus-sphere, cypsela-weight, descent-velocity',
-      atmosphere:
+      atmosphere_and_mood:
         'Wish, soft, meadow-breeze, spring-dispersal, make-a-wish, childhood-breath, floating-dream',
+      rendering_and_quality:
+        'Delicate, wind, time-lapse flight, dandelion-wish, botanical-aeronautics, airborne-seed',
       key_features:
         'Parachute, pappus-filaments, cypsela-seed, radial-symmetry, backlit-glow, airborne-suspension, wind-drift, dandelion-stem',
       creative_brief:

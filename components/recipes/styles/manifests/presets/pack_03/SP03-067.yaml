@@ -13,19 +13,18 @@ tags:
   - hard-surface-and-product-cgi
 visualDna:
   aesthetic: Tech merged with body
-  form_and_line: Integration lines
-  color_palette: Chrome, LED
-  lighting_setup: Sci-fi
-  material_texture: Metal/Skin transition, bio-mech fusion
-  render_quality: Deus Ex transhuman sci-fi, augmented identity
-  spatial_distortion: Prosthetic
-  atmosphere: Futuristic, body horror, identity tension
+  subject_treatment: Integration lines
+  color_and_tone: Chrome, LED
+  lighting_and_shadow: Sci-fi
+  texture_and_material: Metal/Skin transition, bio-mech fusion
+  camera_and_composition: Prosthetic
+  atmosphere_and_mood: Futuristic, body horror, identity tension
+  rendering_and_quality: Deus Ex transhuman sci-fi, augmented identity
   key_features: Seamless blend, implant integration
   creative_brief: >-
-    Apply cybernetic integration to the input: chrome/organic seams, LED status
-    glows, prosthetic geometry and bio-mech fusion lines. If a body or character
-    exists, augment it; otherwise embed transhuman interface cues into the
-    subject without forcing flesh, portrait framing or body horror.
+    Apply cybernetic integration to the input: chrome/organic seams, LED status glows, prosthetic geometry and
+    bio-mech fusion lines. If a body or character exists, augment it; otherwise embed transhuman interface
+    cues into the subject without forcing flesh, portrait framing or body horror.
 avoidRules:
   - flesh only
 assets:

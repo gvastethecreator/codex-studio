@@ -13,22 +13,21 @@ tags:
   - subcultures
 visualDna:
   aesthetic: Streetwear hype grammar, capsule-drop exclusivity, sneaker culture pressure
-  form_and_line: Oversized silhouette, boxy hoodie cut, dropped shoulders, wide-leg cargo
-  color_palette: Black, White, Red, Neon accents, high-vis lime, saturated electric blue
-  lighting_setup: Harsh direct flash, nighttime bounce, billboard-color glow, social-feed contrast
-  material_texture: Heavyweight cotton, ripstop nylon, pebbled leather, retroreflective tape, mesh paneling
-  render_quality: Luxury streetwear polish, trend-tuned finish, hype-drop precision
-  spatial_distortion: Oversized drop-culture massing, sneaker-scale emphasis and flash-compressed streetwear silhouette
-  atmosphere: Cool, rebellious, rich, exclusivity hunger, drop-day confidence, scarcity pressure
+  subject_treatment: Oversized silhouette, boxy hoodie cut, dropped shoulders, wide-leg cargo
+  color_and_tone: Black, White, Red, Neon accents, high-vis lime, saturated electric blue
+  lighting_and_shadow: Harsh direct flash, nighttime bounce, billboard-color glow, social-feed contrast
+  texture_and_material: Heavyweight cotton, ripstop nylon, pebbled leather, retroreflective tape, mesh paneling
+  camera_and_composition: Oversized drop-culture massing, sneaker-scale emphasis and flash-compressed streetwear silhouette
+  atmosphere_and_mood: Cool, rebellious, rich, exclusivity hunger, drop-day confidence, scarcity pressure
+  rendering_and_quality: Luxury streetwear polish, trend-tuned finish, hype-drop precision
   key_features: >-
-    Sneaker-scale emphasis, oversized hoodie/cargo mass, reflective hits, mesh
-    panels and graphic-block confidence without readable branding.
+    Sneaker-scale emphasis, oversized hoodie/cargo mass, reflective hits, mesh panels and graphic-block
+    confidence without readable branding.
   creative_brief: >-
-    Convert the input into hype-drop object language: oversized massing,
-    sneaker-scale emphasis, reflective hits and graphic confidence. Keep
-    flash-lit social bite and scarcity pressure without forcing readable
-    branding, collab logos, resale-culture props, crossbody-bag focus, a street
-    queue, block party or specific urban scene.
+    Convert the input into hype-drop object language: oversized massing, sneaker-scale emphasis, reflective
+    hits and graphic confidence. Keep flash-lit social bite and scarcity pressure without forcing readable
+    branding, collab logos, resale-culture props, crossbody-bag focus, a street queue, block party or specific
+    urban scene.
 avoidRules:
   - suit
   - formal

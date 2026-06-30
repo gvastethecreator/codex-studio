@@ -13,23 +13,22 @@ tags:
   - landscape-and-garden-systems
 visualDna:
   aesthetic: Formal vegetative maze grammar based on playful disorientation and clipped enclosure.
-  form_and_line: >-
-    Orthogonal hedge logic, rhythmic dead-end pressure, partial-route hierarchy
-    and continuous tall living-wall mass.
-  color_palette: Dark Green, Yew-shadow Black, Gravel-path Grey, Statue-stone Cream, Sky ceiling Blue
-  lighting_setup: Shaded passages, narrow sun bands, distant light stops and mottled gravel pattern.
-  material_texture: Densely clipped hedge, compact leaf surface, transit gravel and stone/moss node accents.
-  render_quality: Precise topiary geometry with wayfinding tension and readable route pressure.
-  spatial_distortion: >-
-    Maze-like route compression, false-node rhythm and living-wall enclosure
-    without requiring a literal maze plan or central destination.
-  atmosphere: Curious disorientation, playful anxiety and enclosed progression toward uncertain resolution.
+  subject_treatment: >-
+    Orthogonal hedge logic, rhythmic dead-end pressure, partial-route hierarchy and continuous tall
+    living-wall mass.
+  color_and_tone: Dark Green, Yew-shadow Black, Gravel-path Grey, Statue-stone Cream, Sky ceiling Blue
+  lighting_and_shadow: Shaded passages, narrow sun bands, distant light stops and mottled gravel pattern.
+  texture_and_material: Densely clipped hedge, compact leaf surface, transit gravel and stone/moss node accents.
+  camera_and_composition: >-
+    Maze-like route compression, false-node rhythm and living-wall enclosure without requiring a literal maze
+    plan or central destination.
+  atmosphere_and_mood: Curious disorientation, playful anxiety and enclosed progression toward uncertain resolution.
+  rendering_and_quality: Precise topiary geometry with wayfinding tension and readable route pressure.
   key_features: Clipped living enclosure, node rhythm, gravel-route texture, controlled sightline breaks and false exits.
   creative_brief: >-
-    Any image becomes repeated spatial decision: high hedge pressure, partial
-    route, false nodes and controlled sightlines. Tension comes from wayfinding
-    behavior, not from fantasy mystery, a literal hedge maze or a promised
-    center marker.
+    Any image becomes repeated spatial decision: high hedge pressure, partial route, false nodes and
+    controlled sightlines. Tension comes from wayfinding behavior, not from fantasy mystery, a literal hedge
+    maze or a promised center marker.
 avoidRules:
   - open field
 assets:

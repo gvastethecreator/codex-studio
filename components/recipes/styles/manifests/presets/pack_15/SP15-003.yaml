@@ -14,16 +14,36 @@ tags:
   - steampunk
   - automata
 visualDna:
-  aesthetic: steampunk automata poster built around a single simplified porcelain-mask mechanism, pressure valves, broad brass struts, and elegant clockwork gesture.
-  form_and_line: Mechanical silhouettes, chunky ink contours, labor-poster spacing, and tactile industrial rhythm. Core composition uses broad struts, pressure gauges, articulated hand shapes, porcelain mask geometry, and sparse brass needlework.
-  color_palette: porcelain white, oxidized brass, tea stain, pale blue glass
-  lighting_setup: soft display glow as posterized cream-blue blocks, small pressure sparks, translucent steam shapes
-  material_texture: broad porcelain planes, sparse brass linework, rubber seals, etched glass accents, velvet shadow blocks
-  render_quality: Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity, moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material simulation, or hyper-detail.
-  spatial_distortion: Readable workshops, rail platforms, docks, streets, or civic machine halls without becoming a corridor. Keep depth legible and avoid default hallway, aisle, or empty studio staging.
-  atmosphere: elegant, uncanny, precision-made
+  aesthetic: >-
+    steampunk automata poster built around a single simplified porcelain-mask mechanism, pressure valves,
+    broad brass struts, and elegant clockwork gesture.
+  subject_treatment: >-
+    Mechanical silhouettes, chunky ink contours, labor-poster spacing, and tactile industrial rhythm. Core
+    composition uses broad struts, pressure gauges, articulated hand shapes, porcelain mask geometry, and
+    sparse brass needlework.
+  color_and_tone: porcelain white, oxidized brass, tea stain, pale blue glass
+  lighting_and_shadow: soft display glow as posterized cream-blue blocks, small pressure sparks, translucent steam shapes
+  texture_and_material: broad porcelain planes, sparse brass linework, rubber seals, etched glass accents, velvet shadow blocks
+  camera_and_composition: >-
+    Readable workshops, rail platforms, docks, streets, or civic machine halls without becoming a corridor.
+    Keep depth legible and avoid default hallway, aisle, or empty studio staging.
+  atmosphere_and_mood: elegant, uncanny, precision-made
+  rendering_and_quality: >-
+    Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly
+    planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity,
+    moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material
+    simulation, or hyper-detail.
   key_features: lace struts, pressure gauges, articulated hands, porcelain faces, brass needlework
-  creative_brief: 'A refined automata preset: mechanical grace, human-like craft, broad porcelain mask geometry, and pressure-clock detail without defaulting to dolls in a studio chair, realistic face portrait, or overpacked filigree. Keep lace/needlework sparse and graphic; prioritize porcelain planes and clockwork silhouette. Keep the result representative rather than over-abstract; make one character in their environment the anchor, with motifs as background, costume, weather, architecture, or social pressure instead of a foreground prop. Favor screenprint poster, risograph poster, cel-shaded graphic-novel card art, flat-to-painterly digital illustration, or gouache poster aesthetics over realism, cinematic key art, or hyper-detailed concept art. Use few bold color/value zones, moderate texture, large shapes, clean surfaces, and finish denoised with no excessive noise or ultra-fine detail.'
+  creative_brief: >-
+    A refined automata preset: mechanical grace, human-like craft, broad porcelain mask geometry, and
+    pressure-clock detail without defaulting to dolls in a studio chair, realistic face portrait, or
+    overpacked filigree. Keep lace/needlework sparse and graphic; prioritize porcelain planes and clockwork
+    silhouette. Keep the result representative rather than over-abstract; make one character in their
+    environment the anchor, with motifs as background, costume, weather, architecture, or social pressure
+    instead of a foreground prop. Favor screenprint poster, risograph poster, cel-shaded graphic-novel card
+    art, flat-to-painterly digital illustration, or gouache poster aesthetics over realism, cinematic key art,
+    or hyper-detailed concept art. Use few bold color/value zones, moderate texture, large shapes, clean
+    surfaces, and finish denoised with no excessive noise or ultra-fine detail.
 avoidRules:
   - photoreal
   - watermark
@@ -37,7 +57,19 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP15-003.webp
 attributes:
-  negativePrompt: photoreal, hyperreal, realistic render, cinematic realism, AAA key art, photographic skin pores, realistic foreground portrait, realistic facial hair detail, lens blur, bokeh, depth-of-field photo look, generic soldier hero, guard pin-up, weapon-first pose, HDR lens realism, 3D render look, PBR material simulation, hyper-detailed concept art, watermark, text, logo, generic style, over-abstract, interchangeable preset, duplicated motifs, generic glass utopia, unmotivated market aisle, unmotivated library aisle, fantasy corridor, random camera held by subject, studio wall fixation, chair fixation, curtain fixation, lamp fixation, scarf fixation, pedestal fixation, bird fixation, excessive noise, ultra-fine detail, over-sharpened microtexture, over-rendered machinery, noisy grime, tiny rivets everywhere, busy texture chatter, realistic uniform portrait, uniformed officer hero, foreground guard portrait, detailed tattoo focus, dense machinery wallpaper, overcrowded scene, high-frequency surface detail, cinematic close-up portrait, flat black fill, crushed black, pure black masses, muddy black fields, generic American illustration, generic Western RPG card art
+  negativePrompt: >-
+    photoreal, hyperreal, realistic render, cinematic realism, AAA key art, photographic skin pores, realistic
+    foreground portrait, realistic facial hair detail, lens blur, bokeh, depth-of-field photo look, generic
+    soldier hero, guard pin-up, weapon-first pose, HDR lens realism, 3D render look, PBR material simulation,
+    hyper-detailed concept art, watermark, text, logo, generic style, over-abstract, interchangeable preset,
+    duplicated motifs, generic glass utopia, unmotivated market aisle, unmotivated library aisle, fantasy
+    corridor, random camera held by subject, studio wall fixation, chair fixation, curtain fixation, lamp
+    fixation, scarf fixation, pedestal fixation, bird fixation, excessive noise, ultra-fine detail,
+    over-sharpened microtexture, over-rendered machinery, noisy grime, tiny rivets everywhere, busy texture
+    chatter, realistic uniform portrait, uniformed officer hero, foreground guard portrait, detailed tattoo
+    focus, dense machinery wallpaper, overcrowded scene, high-frequency surface detail, cinematic close-up
+    portrait, flat black fill, crushed black, pure black masses, muddy black fields, generic American
+    illustration, generic Western RPG card art
 taxonomy:
   packId: pack_15
   packName: Punk Spectrum Vault

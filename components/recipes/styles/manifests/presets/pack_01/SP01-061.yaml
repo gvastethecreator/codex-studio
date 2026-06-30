@@ -13,15 +13,18 @@ tags:
   - documentary-and-street
 visualDna:
   aesthetic: Intrusive telephoto flash
-  form_and_line: Subject isolated
-  color_palette: Flash washed
-  lighting_setup: Direct flash at night
-  material_texture: High ISO noise
-  render_quality: Tabloid, intrusive
-  spatial_distortion: Motion blur
-  atmosphere: Urgent, chaotic
+  subject_treatment: Subject isolated
+  color_and_tone: Flash washed
+  lighting_and_shadow: Direct flash at night
+  texture_and_material: High ISO noise
+  camera_and_composition: Motion blur
+  atmosphere_and_mood: Urgent, chaotic
+  rendering_and_quality: Tabloid, intrusive
   key_features: Startled flash isolation
-  creative_brief: 'Telephoto distance plus sudden flash isolates any subject with tabloid urgency: high ISO grain, washed highlights, night compression, edge motion smear, and intrusive framing. Keep paparazzi tension without requiring street, celebrity, human surprise, or chase narrative.'
+  creative_brief: >-
+    Telephoto distance plus sudden flash isolates any subject with tabloid urgency: high ISO grain, washed
+    highlights, night compression, edge motion smear, and intrusive framing. Keep paparazzi tension without
+    requiring street, celebrity, human surprise, or chase narrative.
 avoidRules:
   - posed
   - studio

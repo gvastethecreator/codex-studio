@@ -21,9 +21,9 @@ visualDna:
   atmosphere_and_mood: Fun, personal, candid, relatable, modern
   rendering_and_quality: Social media quality, realistic smartphone photo look
   creative_brief: >-
-    Apply selfie-camera vernacular to any subject: close wide-angle distortion,
-    screen-glow flattening, smartphone sharpening, casual framing, and instant
-    social-media immediacy without requiring a face or extended arm.
+    Apply selfie-camera vernacular to any subject: close wide-angle distortion, screen-glow flattening,
+    smartphone sharpening, casual framing, and instant social-media immediacy without requiring a face or
+    extended arm.
 avoidRules:
   - illustration
   - painting
@@ -43,7 +43,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP01-006.webp
 attributes:
-  negativePrompt: illustration, painting, drawing, 3d render, cartoon, anime, sketch, blurry, noisy, low resolution, watermark, text, signature, bad anatomy, deformed
+  negativePrompt: >-
+    illustration, painting, drawing, 3d render, cartoon, anime, sketch, blurry, noisy, low resolution,
+    watermark, text, signature, bad anatomy, deformed
 taxonomy:
   packId: pack_01
   packName: Photography & Realism

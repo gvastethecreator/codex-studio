@@ -13,21 +13,24 @@ tags:
   - photography-eras
 visualDna:
   aesthetic: Toy camera (Holga)
-  form_and_line: None
-  color_palette: Cross processed, color-shifted, purple drift, green cast, unpredictable palette
-  lighting_setup: Leak, light-struck frame, accidental exposure, red window
-  material_texture: Plastic lens blur, toy-optics softness, zone focus mush
-  render_quality: Artsy, weird, lo-fi aesthetic, happy accident
-  spatial_distortion: Vignette blur, edge falloff, tunnel softness
-  atmosphere: Experimental, fun, rule-breaking, analog play
+  subject_treatment: >-
+    Treat subjects as believable filmed or broadcast subjects under Lomography: casting, wardrobe, props,
+    motion cues, and silhouette hierarchy follow 4. Photography Eras cinematic and broadcast grammar without
+    locking to one plot beat.
+  color_and_tone: Cross processed, color-shifted, purple drift, green cast, unpredictable palette
+  lighting_and_shadow: Leak, light-struck frame, accidental exposure, red window
+  texture_and_material: Plastic lens blur, toy-optics softness, zone focus mush
+  camera_and_composition: Vignette blur, edge falloff, tunnel softness
+  atmosphere_and_mood: Experimental, fun, rule-breaking, analog play
+  rendering_and_quality: Artsy, weird, lo-fi aesthetic, happy accident
   key_features: Light leaks, sprocket holes, film rebate, double-exposure ghost
   creative_brief: >-
-    Let the prompt surrender to toy-camera accidents: cross-processed color, plastic-lens blur, vignetting, edge
-    falloff, light leaks, sprocket traces, and double-exposure ghosts. Avoid subject-specific color rules or portrait
-    assumptions. Perfection is removed; the artifact, leak, and mistake become the composition. Apply Lomography as a
-    portable cinematic/camera style over any input: preserve its lens behavior, color process, lighting setup, artifact
-    pattern, and deformation grammar while avoiding a required actor, room, prop, brand, readable text, fixed IP scene,
-    or narrative setup.
+    Let the prompt surrender to toy-camera accidents: cross-processed color, plastic-lens blur, vignetting,
+    edge falloff, light leaks, sprocket traces, and double-exposure ghosts. Avoid subject-specific color rules
+    or portrait assumptions. Perfection is removed; the artifact, leak, and mistake become the composition.
+    Apply Lomography as a portable cinematic/camera style over any input: preserve its lens behavior, color
+    process, lighting setup, artifact pattern, and deformation grammar while avoiding a required actor, room,
+    prop, brand, readable text, fixed IP scene, or narrative setup.
 avoidRules:
   - correct color
 assets:

@@ -10,13 +10,15 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'cinematic, dark',
     style: {
       aesthetic: 'Cozy multi-camera sitcom warmth, laugh-track comfort, 90s broadcast vibe',
-      form_and_line: 'None',
-      color_palette: 'Bright flat warmth, beige, cream, soft accent color',
-      lighting_setup: 'Multi-camera lighting, broad even wash, audience-ready spill',
-      material_texture: 'Videotape, SD broadcast, soft analog edges',
-      render_quality: 'Studio audience feel, live-tap energy, punch-line timing',
-      spatial_distortion: 'None',
-      atmosphere: 'Comfort, funny, nostalgic security',
+      subject_treatment:
+        'Treat subjects as believable filmed or broadcast subjects under 90s Sitcom: casting, wardrobe, props, motion cues, and silhouette hierarchy follow 2. TV And Broadcast cinematic and broadcast grammar without locking to one plot beat.',
+      color_and_tone: 'Bright flat warmth, beige, cream, soft accent color',
+      lighting_and_shadow: 'Multi-camera lighting, broad even wash, audience-ready spill',
+      texture_and_material: 'Videotape, SD broadcast, soft analog edges',
+      camera_and_composition:
+        'Camera language native to 90s Sitcom: genre-aware framing, lens character, focal hierarchy, motion cue, and vertical style-card composition.',
+      atmosphere_and_mood: 'Comfort, funny, nostalgic security',
+      rendering_and_quality: 'Studio audience feel, live-tap energy, punch-line timing',
       key_features: 'Multi-camera wash, 3-wall-set clarity, sitcom warmth',
       creative_brief:
         '90s sitcom style wraps any subject in broad multi-camera comfort: flat warm light, SD videotape softness, audience-ready exposure, beige/cream palette, and punch-line timing. Keep familiar hangout warmth without requiring apartments, sofas, kitchens, New York, or cast members.',
@@ -29,13 +31,13 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'movie',
     style: {
       aesthetic: 'Broadcast-news urgency',
-      form_and_line: 'Lower-third graphic bands',
-      color_palette: 'Studio blue, navy, red accent, clean white',
-      lighting_setup: 'Flat studio, even key, hair light separation',
-      material_texture: 'HD Video, crisp digital, broadcast sharpness',
-      render_quality: 'Live, urgent, breaking-news tension, satellite delay',
-      spatial_distortion: 'Ticker tape, scrolling crawl, side panel',
-      atmosphere: 'Serious, informational, authoritative urgency',
+      subject_treatment: 'Lower-third graphic bands',
+      color_and_tone: 'Studio blue, navy, red accent, clean white',
+      lighting_and_shadow: 'Flat studio, even key, hair light separation',
+      texture_and_material: 'HD Video, crisp digital, broadcast sharpness',
+      camera_and_composition: 'Ticker tape, scrolling crawl, side panel',
+      atmosphere_and_mood: 'Serious, informational, authoritative urgency',
+      rendering_and_quality: 'Live, urgent, breaking-news tension, satellite delay',
       key_features: 'Lower-third bars, ticker rhythm, studio sharpness',
       creative_brief:
         'News broadcast style frames any subject as urgent information: cool blue studio light, crisp HD video, red accent graphics, lower-third-like bands, crawl rhythm, and authoritative flatness. Keep live-news tension without requiring anchors, desks, logos, or readable text.',
@@ -48,13 +50,14 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'film look',
     style: {
       aesthetic: 'Daytime TV',
-      form_and_line: 'None',
-      color_palette: 'Soft focus, pastel wash, peach glow, pearl sheen',
-      lighting_setup: 'High key, backlit, halo separation, glamour diffusion',
-      material_texture: '60fps video (Soap effect), hyper-smooth motion, interlaced',
-      render_quality: 'Dreamy, cheap, high-frame-rate unreality, studio artifice',
-      spatial_distortion: 'Soft glow, diffusion filter haze, vaseline smear',
-      atmosphere: 'Dramatic, romantic, suspended melodrama',
+      subject_treatment:
+        'Treat subjects as believable filmed or broadcast subjects under Soap Opera: casting, wardrobe, props, motion cues, and silhouette hierarchy follow 2. TV And Broadcast cinematic and broadcast grammar without locking to one plot beat.',
+      color_and_tone: 'Soft focus, pastel wash, peach glow, pearl sheen',
+      lighting_and_shadow: 'High key, backlit, halo separation, glamour diffusion',
+      texture_and_material: '60fps video (Soap effect), hyper-smooth motion, interlaced',
+      camera_and_composition: 'Soft glow, diffusion filter haze, vaseline smear',
+      atmosphere_and_mood: 'Dramatic, romantic, suspended melodrama',
+      rendering_and_quality: 'Dreamy, cheap, high-frame-rate unreality, studio artifice',
       key_features: 'Diffusion haze, melodramatic zoom, high-frame-rate gloss',
       creative_brief:
         'Soap opera style dissolves any subject into high-key melodrama: pastel wash, pearl glow, backlit halo, vaseline-lens diffusion, hyper-smooth video motion, and a suspended cliffhanger pause. Keep daytime-TV unreality without requiring romance, doorways, faces, or scandal.',
@@ -67,13 +70,14 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'scripted',
     style: {
       aesthetic: 'Reality TV confessional interview',
-      form_and_line: 'None',
-      color_palette: 'Saturated, pumped skin tones, jewel accent, matte shadow',
-      lighting_setup: 'Ring light, catchlight halo, soft frontal wrap',
-      material_texture: 'HD video, sharp digital, retouched surface',
-      render_quality: 'Produced, fake, manufactured drama, confessional intimacy',
-      spatial_distortion: 'Green screen back, chroma-key spill, composited backdrop',
-      atmosphere: 'Manufactured drama, direct intimacy',
+      subject_treatment:
+        'Treat subjects as believable filmed or broadcast subjects under Reality TV Confessional: casting, wardrobe, props, motion cues, and silhouette hierarchy follow 2. TV And Broadcast cinematic and broadcast grammar without locking to one plot beat.',
+      color_and_tone: 'Saturated, pumped skin tones, jewel accent, matte shadow',
+      lighting_and_shadow: 'Ring light, catchlight halo, soft frontal wrap',
+      texture_and_material: 'HD video, sharp digital, retouched surface',
+      camera_and_composition: 'Green screen back, chroma-key spill, composited backdrop',
+      atmosphere_and_mood: 'Manufactured drama, direct intimacy',
+      rendering_and_quality: 'Produced, fake, manufactured drama, confessional intimacy',
       key_features: 'Direct-to-camera framing, ring catchlight, composited backdrop',
       creative_brief:
         'Reality TV confessional style makes any subject overproduced and intimate: ring-light halo, saturated skinlike tones, chroma-key spill, direct-to-camera framing, and manufactured emotional closeness. Keep confessional drama without requiring chair, person, tears, or gossip plot.',
@@ -87,13 +91,14 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Late-90s luxury music-video fisheye, Hype Williams fishbowl, tunnel vision, opulent gloss',
-      form_and_line: 'None',
-      color_palette: 'Chrome, platinum, ice white, purple velvet',
-      lighting_setup: 'Studio tunnel, keyed spot, dramatic back silhouette',
-      material_texture: 'Fisheye lens, curved glass, spherical distortion',
-      render_quality: 'Glossy, expensive, music-video maximalism, diamond-studded',
-      spatial_distortion: 'Distorted wide angle, fishbowl warp, tunnel perspective',
-      atmosphere: 'Cool, flashy, hip-hop royalty, aspirational excess',
+      subject_treatment:
+        'Treat subjects as believable filmed or broadcast subjects under Hype Williams Fisheye Glam Video: casting, wardrobe, props, motion cues, and silhouette hierarchy follow 2. TV And Broadcast cinematic and broadcast grammar without locking to one plot beat.',
+      color_and_tone: 'Chrome, platinum, ice white, purple velvet',
+      lighting_and_shadow: 'Studio tunnel, keyed spot, dramatic back silhouette',
+      texture_and_material: 'Fisheye lens, curved glass, spherical distortion',
+      camera_and_composition: 'Distorted wide angle, fishbowl warp, tunnel perspective',
+      atmosphere_and_mood: 'Cool, flashy, hip-hop royalty, aspirational excess',
+      rendering_and_quality: 'Glossy, expensive, music-video maximalism, diamond-studded',
       key_features: 'Fisheye warp, chrome gloss, slow-motion opulence',
       creative_brief:
         'Hype Williams fisheye glam makes any subject curve into luxury spectacle: fishbowl distortion, chrome/platinum palette, dramatic back silhouette, glossy excess, tunnel perspective, and slow-motion opulence. Keep music-video swagger without requiring suits, bodies, rims, or performance.',
@@ -106,13 +111,14 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'color, hd',
     style: {
       aesthetic: 'Surveillance footage',
-      form_and_line: 'None',
-      color_palette: 'Black and White, crushed greys, no midtones, hot whites',
-      lighting_setup: 'Low dynamic range, flat sensor, blown highlights',
-      material_texture: 'Scanlines, noise, interlacing artifacts, pixel smear',
-      render_quality: 'Low res, grainy, surveillance-grade, compressed blockiness',
-      spatial_distortion: 'Wide angle distortion, convex warp, overhead mount',
-      atmosphere: 'Creepy, voyeur, institutional coldness, anonymous watching',
+      subject_treatment:
+        'Treat subjects as believable filmed or broadcast subjects under CCTV/Security Cam: casting, wardrobe, props, motion cues, and silhouette hierarchy follow 2. TV And Broadcast cinematic and broadcast grammar without locking to one plot beat.',
+      color_and_tone: 'Black and White, crushed greys, no midtones, hot whites',
+      lighting_and_shadow: 'Low dynamic range, flat sensor, blown highlights',
+      texture_and_material: 'Scanlines, noise, interlacing artifacts, pixel smear',
+      camera_and_composition: 'Wide angle distortion, convex warp, overhead mount',
+      atmosphere_and_mood: 'Creepy, voyeur, institutional coldness, anonymous watching',
+      rendering_and_quality: 'Low res, grainy, surveillance-grade, compressed blockiness',
       key_features: 'Timestamp-like overlay, camera ID marks, motion-box geometry',
       creative_brief:
         'CCTV media style fixes any subject under anonymous surveillance: black-and-white compression, convex wide-angle warp, scanlines, pixel smear, hot whites, and timestamp-like UI marks. Keep security-cam coldness without forcing people, suspects, crime, or literal readable overlays.',
@@ -125,13 +131,14 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'hd, digital',
     style: {
       aesthetic: '1990s camcorder',
-      form_and_line: 'None',
-      color_palette: 'Color bleed, magenta shift, yellowed warmth, cyan fringe',
-      lighting_setup: 'On-camera flash, built-in spotlight, clipped highlights',
-      material_texture: 'Tracking lines, head-switching noise, tape dropout',
-      render_quality: 'Nostalgic, bad, 240p mush, magnetic degradation',
-      spatial_distortion: 'Glitch, tearing, horizontal displacement, time-base error',
-      atmosphere: 'Memory, raw, unguarded nostalgia',
+      subject_treatment:
+        'Treat subjects as believable filmed or broadcast subjects under VHS Home Video: casting, wardrobe, props, motion cues, and silhouette hierarchy follow 2. TV And Broadcast cinematic and broadcast grammar without locking to one plot beat.',
+      color_and_tone: 'Color bleed, magenta shift, yellowed warmth, cyan fringe',
+      lighting_and_shadow: 'On-camera flash, built-in spotlight, clipped highlights',
+      texture_and_material: 'Tracking lines, head-switching noise, tape dropout',
+      camera_and_composition: 'Glitch, tearing, horizontal displacement, time-base error',
+      atmosphere_and_mood: 'Memory, raw, unguarded nostalgia',
+      rendering_and_quality: 'Nostalgic, bad, 240p mush, magnetic degradation',
       key_features: 'Date stamp, REC indicator, zoom wobble',
       creative_brief:
         'VHS home video turns any subject into magnetic memory: color bleed, magenta shift, tracking lines, head-switching noise, date-stamp feel, zoom wobble, and tape dropout. Keep camcorder nostalgia without requiring birthdays, childhood, faces, backyards, or family setups.',
@@ -144,13 +151,14 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'professional',
     style: {
       aesthetic: 'Weird local TV',
-      form_and_line: 'None',
-      color_palette: 'Bad white balance, green cast, orange skin, sickly fluorescent',
-      lighting_setup: 'Harsh shadows, single ceiling tube, unflattering overhead',
-      material_texture: 'Analog noise, composite video, RF interference',
-      render_quality: "Amateur, weird, Wayne's World cable-access, dead air",
-      spatial_distortion: 'Chroma key fail, blue fringe, transparent hair halo',
-      atmosphere: 'Surreal, awkward, uncanny local, midnight broadcast',
+      subject_treatment:
+        'Treat subjects as believable filmed or broadcast subjects under Public Access TV: casting, wardrobe, props, motion cues, and silhouette hierarchy follow 2. TV And Broadcast cinematic and broadcast grammar without locking to one plot beat.',
+      color_and_tone: 'Bad white balance, green cast, orange skin, sickly fluorescent',
+      lighting_and_shadow: 'Harsh shadows, single ceiling tube, unflattering overhead',
+      texture_and_material: 'Analog noise, composite video, RF interference',
+      camera_and_composition: 'Chroma key fail, blue fringe, transparent hair halo',
+      atmosphere_and_mood: 'Surreal, awkward, uncanny local, midnight broadcast',
+      rendering_and_quality: "Amateur, weird, Wayne's World cable-access, dead air",
       key_features: 'Bad keying, UHF noise, local-TV awkwardness',
       creative_brief:
         'Public access TV makes any subject locally uncanny: bad white balance, green cast, ceiling-tube shadows, RF interference, chroma-key failure, blue fringe, and amateur dead-air timing. Keep midnight cable weirdness without requiring faces, folding chairs, bulletins, or studio guests.',
@@ -163,13 +171,14 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'cinematic',
     style: {
       aesthetic: 'Infomercial product-demo energy',
-      form_and_line: 'None',
-      color_palette: 'Bright cheap primaries, sale red, primary yellow',
-      lighting_setup: 'Flat, even wash, product spotlight, over-lit',
-      material_texture: 'Video, SD sheen, low-budget smoothness',
-      render_quality: 'Sales, cheesy, excited-host energy, demonstration pace',
-      spatial_distortion: 'Before/After split, split-screen comparison, arrow overlay',
-      atmosphere: 'Enthusiastic, fake, limited-time urgency',
+      subject_treatment:
+        'Treat subjects as believable filmed or broadcast subjects under Infomercial: casting, wardrobe, props, motion cues, and silhouette hierarchy follow 2. TV And Broadcast cinematic and broadcast grammar without locking to one plot beat.',
+      color_and_tone: 'Bright cheap primaries, sale red, primary yellow',
+      lighting_and_shadow: 'Flat, even wash, product spotlight, over-lit',
+      texture_and_material: 'Video, SD sheen, low-budget smoothness',
+      camera_and_composition: 'Before/After split, split-screen comparison, arrow overlay',
+      atmosphere_and_mood: 'Enthusiastic, fake, limited-time urgency',
+      rendering_and_quality: 'Sales, cheesy, excited-host energy, demonstration pace',
       key_features: 'Split-screen comparison, price-tag rhythm, demo spotlight',
       creative_brief:
         'Infomercial style sells any subject with over-lit sincerity: cheap bright primaries, product spotlight, SD sheen, split-screen comparison logic, arrow-overlay rhythm, and frantic 3 AM urgency. Keep sales-demo energy without requiring host, phone number, kitchen, or readable promo text.',
@@ -182,13 +191,14 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'movie',
     style: {
       aesthetic: 'Live sports broadcast',
-      form_and_line: 'Scorebug graphic structure',
-      color_palette: 'Saturated field green, team-color accents, sky blue',
-      lighting_setup: 'Stadium lights, multi-source flood, uniform exposure',
-      material_texture: 'HD slow-motion crispness, droplet-perfect detail',
-      render_quality: 'Telephoto action, field-level compression, subject isolation',
-      spatial_distortion: 'None',
-      atmosphere: 'Exciting, live, roaring crowd, championship tension',
+      subject_treatment: 'Scorebug graphic structure',
+      color_and_tone: 'Saturated field green, team-color accents, sky blue',
+      lighting_and_shadow: 'Stadium lights, multi-source flood, uniform exposure',
+      texture_and_material: 'HD slow-motion crispness, droplet-perfect detail',
+      camera_and_composition:
+        'Camera language native to Sports Broadcast: genre-aware framing, lens character, focal hierarchy, motion cue, and vertical style-card composition.',
+      atmosphere_and_mood: 'Exciting, live, roaring crowd, championship tension',
+      rendering_and_quality: 'Telephoto action, field-level compression, subject isolation',
       key_features: 'Scorebug feel, replay wipe, telestrator circle',
       creative_brief:
         'Sports broadcast style gives any subject live-game energy: saturated field color, stadium-like floodlight, telephoto compression, replay-wipe graphics, scorebug structure, and slow-motion crispness. Keep championship tension without requiring athletes, grass, crowd, scoreboards, or teams.',
@@ -201,13 +211,14 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'plain studio',
     style: {
       aesthetic: 'Weather forecast graphics',
-      form_and_line: 'Isobars',
-      color_palette: 'Radar Green/Red, precipitation blue, severe-weather magenta',
-      lighting_setup: 'Digital map, emissive screen, composited background',
-      material_texture: 'Screen, broadcast graphics, crisp vector overlay',
-      render_quality: 'Info, graphics, Doppler sweep, forecast animation',
-      spatial_distortion: 'None',
-      atmosphere: 'Informative, reassuring, storm-track urgency, weekend outlook',
+      subject_treatment: 'Isobars',
+      color_and_tone: 'Radar Green/Red, precipitation blue, severe-weather magenta',
+      lighting_and_shadow: 'Digital map, emissive screen, composited background',
+      texture_and_material: 'Screen, broadcast graphics, crisp vector overlay',
+      camera_and_composition:
+        'Camera language native to Weather Channel: genre-aware framing, lens character, focal hierarchy, motion cue, and vertical style-card composition.',
+      atmosphere_and_mood: 'Informative, reassuring, storm-track urgency, weekend outlook',
+      rendering_and_quality: 'Info, graphics, Doppler sweep, forecast animation',
       key_features: 'Radar palette, isobar curves, forecast-grid rhythm',
       creative_brief:
         'Weather Channel style overlays any subject with forecast logic: radar green/red, precipitation blue, severe magenta, isobar curves, Doppler sweep, emissive map light, and reassuring broadcast order. Keep weather-graphics energy without requiring map, continent, forecaster, indoors/outdoors, or readable forecast.',
@@ -220,13 +231,13 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'clean',
     style: {
       aesthetic: 'Alternative video',
-      form_and_line: 'Scribbles',
-      color_palette: 'Desaturated + Neon, bleach bypass, acid green, safety orange',
-      lighting_setup: 'Strobe, flicker, flash-frame, concert par-can',
-      material_texture: 'Distressed film, scratched negative, hand-processed',
-      render_quality: 'Edgy, fast, rapid-fire montage, music-video relentlessness',
-      spatial_distortion: 'Morphing, image warp, video feedback, liquid dissolve',
-      atmosphere: 'Rebellious, cool, anti-establishment, mosh-pit energy',
+      subject_treatment: 'Scribbles',
+      color_and_tone: 'Desaturated + Neon, bleach bypass, acid green, safety orange',
+      lighting_and_shadow: 'Strobe, flicker, flash-frame, concert par-can',
+      texture_and_material: 'Distressed film, scratched negative, hand-processed',
+      camera_and_composition: 'Morphing, image warp, video feedback, liquid dissolve',
+      atmosphere_and_mood: 'Rebellious, cool, anti-establishment, mosh-pit energy',
+      rendering_and_quality: 'Edgy, fast, rapid-fire montage, music-video relentlessness',
       key_features: 'Fast-cut feel, scribble overlays, feedback warp',
       creative_brief:
         'MTV 90s grunge broadcast attacks any subject with scratched negative, bleach bypass, acid green/orange accents, strobe flash, feedback warp, scribble marks, and rapid-fire montage energy. Keep alternative video rebellion without requiring bands, crowd, logos, graffiti text, or mosh-pit content.',
@@ -239,13 +250,15 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'messy',
     style: {
       aesthetic: 'Cooking-show appetite lighting',
-      form_and_line: 'None',
-      color_palette: 'Warm, appetizing, golden crust, fresh herb green, tomato red',
-      lighting_setup: 'Bright kitchen, soft overhead, product-key, steam halo',
-      material_texture: 'Glistening surface, steam halo, crumb-like microdetail',
-      render_quality: 'Clean, delicious, mouth-watering, magazine-ready',
-      spatial_distortion: 'None',
-      atmosphere: 'Hungry, happy, cozy instruction, sizzle anticipation',
+      subject_treatment:
+        'Treat subjects as believable filmed or broadcast subjects under Cooking Show: casting, wardrobe, props, motion cues, and silhouette hierarchy follow 2. TV And Broadcast cinematic and broadcast grammar without locking to one plot beat.',
+      color_and_tone: 'Warm, appetizing, golden crust, fresh herb green, tomato red',
+      lighting_and_shadow: 'Bright kitchen, soft overhead, product-key, steam halo',
+      texture_and_material: 'Glistening surface, steam halo, crumb-like microdetail',
+      camera_and_composition:
+        'Camera language native to Cooking Show: genre-aware framing, lens character, focal hierarchy, motion cue, and vertical style-card composition.',
+      atmosphere_and_mood: 'Hungry, happy, cozy instruction, sizzle anticipation',
+      rendering_and_quality: 'Clean, delicious, mouth-watering, magazine-ready',
       key_features: 'Overhead demo angle, warm macro texture, steam halo',
       creative_brief:
         'Cooking-show style makes any subject appetizing and instructive: bright kitchen-like light, overhead demo angle, warm color, steam halo, gloss, macro texture, and clean magazine-ready polish. Keep food-TV sensory clarity without requiring food, cutting boards, garnish, spoons, or kitchen set.',
@@ -258,12 +271,15 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'cheap studio, artificial set',
     style: {
       aesthetic: 'Premium nature documentary, BBC Earth-style patience, global spectacle',
-      form_and_line: 'None',
-      color_palette: 'Natural, vibrant, savannah gold, ocean teal, rainforest emerald',
-      lighting_setup: 'Golden hour, magic-hour rim, dappled canopy, underwater shaft',
-      material_texture: 'Ultra HD, 8K natural texture, fine surface detail',
-      spatial_distortion: 'Slow motion, motion freeze, droplet suspension',
-      atmosphere: 'Majestic, patient reverence, untamed spectacle',
+      subject_treatment:
+        'Treat subjects as believable filmed or broadcast subjects under Nature Documentary: casting, wardrobe, props, motion cues, and silhouette hierarchy follow 2. TV And Broadcast cinematic and broadcast grammar without locking to one plot beat.',
+      color_and_tone: 'Natural, vibrant, savannah gold, ocean teal, rainforest emerald',
+      lighting_and_shadow: 'Golden hour, magic-hour rim, dappled canopy, underwater shaft',
+      texture_and_material: 'Ultra HD, 8K natural texture, fine surface detail',
+      camera_and_composition: 'Slow motion, motion freeze, droplet suspension',
+      atmosphere_and_mood: 'Majestic, patient reverence, untamed spectacle',
+      rendering_and_quality:
+        'Premium UHD documentary finish with natural texture clarity, patient telephoto detail, clean color, invisible-camera restraint, and no artificial set feel.',
       key_features: 'Telephoto reverence, slow-motion clarity, natural spectacle',
       creative_brief:
         'Nature documentary style gives any subject patient reverence: golden rim light, telephoto intimacy, ultra-HD texture, slow-motion clarity, natural vibrant color, and invisible-camera restraint. Keep BBC Earth grandeur without requiring wildlife, migration, fur, feathers, humans absent, or city exclusion.',
@@ -278,17 +294,17 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Improvised marker-edge sitcom cartoon, dry marker linework, awkward anti-slick timing, homemade creativity, hand-drawn TV softness',
-      form_and_line:
+      subject_treatment:
         'Dry marker outlines, awkward hand wobble, simple blocking, improv-timing spacing',
-      color_palette:
+      color_and_tone:
         'Felt-tip muted primaries, school-paper beige, faded blue, dry red, washed green, marker black',
-      lighting_setup: 'Flat TV lighting, no atmosphere, handmade sitcom readability',
-      material_texture: 'Marker bleed, paper softness, VHS-era TV blur, low-budget cel texture',
-      render_quality:
-        'Improvised hand-drawn TV softness, anti-slick sitcom cartooning, handmade charm',
-      spatial_distortion:
+      lighting_and_shadow: 'Flat TV lighting, no atmosphere, handmade sitcom readability',
+      texture_and_material: 'Marker bleed, paper softness, VHS-era TV blur, low-budget cel texture',
+      camera_and_composition:
         'Awkward blocking gaps, simple staged poses, marker-edge drift, low-budget composition',
-      atmosphere: 'Awkward, homemade, earnest, low-key funny',
+      atmosphere_and_mood: 'Awkward, homemade, earnest, low-key funny',
+      rendering_and_quality:
+        'Improvised hand-drawn TV softness, anti-slick sitcom cartooning, handmade charm',
       key_features:
         'Marker-like linework, simple staging, improvised poses, handmade TV charm, awkward pause spacing',
       creative_brief:
@@ -303,18 +319,19 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         '90s multicam sitcom broadcast, flat studio blocking, laugh-track rhythm, tape-soft comedy timing, live audience warmth',
-      form_and_line:
+      subject_treatment:
         'Center-weighted staging, readable blocking, broad silhouette spacing, proscenium-like composition',
-      color_palette:
+      color_and_tone:
         'Warm tungsten beige, set-paint teal, faded sofa red, carpet brown, broadcast-safe primaries',
-      lighting_setup:
+      lighting_and_shadow:
         'Three-wall studio wash, even overhead fill, practical lamp accents, no noir contrast',
-      material_texture:
+      texture_and_material:
         'BetaSP softness, mild chroma bleed, interlaced tape edge, set-fabric texture',
-      render_quality: 'Soft TV comedy polish, multicam readability, low-depth broadcast clarity',
-      spatial_distortion:
+      camera_and_composition:
         'Slight telephoto compression, stage-front perspective, camera-switch composition',
-      atmosphere: 'Cozy, artificial, rehearsed, broadly comic',
+      atmosphere_and_mood: 'Cozy, artificial, rehearsed, broadly comic',
+      rendering_and_quality:
+        'Soft TV comedy polish, multicam readability, low-depth broadcast clarity',
       key_features:
         'Studio wash, tape softness, interlace, stage blocking, laugh-track pause spacing',
       creative_brief:
@@ -329,18 +346,18 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Local news broadcast package, chroma-key compositing, urgent graphic polish, studio-blue authority, lower-third geometry without readable text',
-      form_and_line:
+      subject_treatment:
         'Rectangular broadcast frames, hard graphic boxes, safe-area composition, anchor-desk symmetry abstracted into layout',
-      color_palette:
+      color_and_tone:
         'Broadcast blue, alert red, white headline blocks, chrome grey, saturated weather green',
-      lighting_setup:
+      lighting_and_shadow:
         'Clean studio key, glossy set reflections, green-screen spill edge, high-fill news clarity',
-      material_texture:
+      texture_and_material:
         'Digital key edges, compressed overlay graphics, studio acrylic sheen, video sharpening halos',
-      render_quality: 'Local TV clean, mildly dated, graphic-heavy, authority-by-template',
-      spatial_distortion:
+      camera_and_composition:
         'Layered compositing planes, background replacement depth, boxed inset framing',
-      atmosphere: 'Urgent, official, polished, slightly synthetic',
+      atmosphere_and_mood: 'Urgent, official, polished, slightly synthetic',
+      rendering_and_quality: 'Local TV clean, mildly dated, graphic-heavy, authority-by-template',
       key_features:
         'Chroma halo, lower-third bars, inset rectangles, glossy blue package, no readable text',
       creative_brief:
@@ -355,18 +372,18 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Public-access cable channel, cheap community bulletin graphics, VHS routing noise, amateur studio sincerity, crawl bands without readable text',
-      form_and_line:
+      subject_treatment:
         'Boxy title-safe layout, simple centered shapes, chunky crawl strips, misaligned overlay geometry',
-      color_palette:
+      color_and_tone:
         'Cable blue, magenta key color, off-white crawl band, washed yellow, VHS black',
-      lighting_setup:
+      lighting_and_shadow:
         'Fluorescent community-studio wash, underpowered practicals, hot camcorder highlights',
-      material_texture:
+      texture_and_material:
         'VHS tracking noise, character-generator aliasing, tape blur, analog snow, scanline shimmer',
-      render_quality: 'Low-budget, sincere, awkward, community-TV artifact',
-      spatial_distortion:
+      camera_and_composition:
         'Title-safe margins, slightly skewed overlays, overscan cropping, analog edge warp',
-      atmosphere: 'Homemade, local, earnest, oddly hypnotic',
+      atmosphere_and_mood: 'Homemade, local, earnest, oddly hypnotic',
+      rendering_and_quality: 'Low-budget, sincere, awkward, community-TV artifact',
       key_features:
         'Crawl bands, title-safe framing, VHS noise, aliasing, overscan, no readable text',
       creative_brief:
@@ -381,17 +398,17 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Analog sports replay package, telestrator energy, freeze-frame analysis, stadium-video compression as style anchor, urgent motion breakdown',
-      form_and_line:
+      subject_treatment:
         'Dynamic arrows, replay boxes, cropped action zones, diagonal analysis marks, no readable labels',
-      color_palette: 'Broadcast green, replay yellow, scoreboard red, cold white, VHS shadow blue',
-      lighting_setup:
+      color_and_tone: 'Broadcast green, replay yellow, scoreboard red, cold white, VHS shadow blue',
+      lighting_and_shadow:
         'Harsh arena-style illumination, blown highlights, compressed shadow detail, replay exposure',
-      material_texture:
+      texture_and_material:
         'VHS smear, motion combing, field-line aliasing, overlay graphics, tape ghosting',
-      render_quality: 'Kinetic, analytical, noisy, analog replay clarity',
-      spatial_distortion:
+      camera_and_composition:
         'Freeze-frame doubling, slow-motion blur, inset replay crop, diagonal tracking artifacts',
-      atmosphere: 'Competitive, urgent, analytical, broadcast-tense',
+      atmosphere_and_mood: 'Competitive, urgent, analytical, broadcast-tense',
+      rendering_and_quality: 'Kinetic, analytical, noisy, analog replay clarity',
       key_features: 'Telestrator marks, replay inset, motion combing, VHS ghost, freeze-frame crop',
       creative_brief:
         'Apply analog sports replay grammar to any prompt: freeze-frame crop, telestrator-like arrows, VHS motion combing, inset replay boxes, and compressed highlight detail. Avoid actual teams, stadiums, scoreboards, athletes, or readable graphics as requirements. The image should feel analyzed by a noisy broadcast truck.',
@@ -405,15 +422,17 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Doppler weather broadcast graphic, storm-cell color fields, radar sweep, meteorological overlay abstraction, emergency color mapping',
-      form_and_line:
+      subject_treatment:
         'Contour bands, radar arcs, gridded map-like fields, translucent overlay blocks, no readable labels',
-      color_palette: 'Radar green, storm yellow, alert red, violet core, map grey, broadcast blue',
-      lighting_setup: 'Self-lit screen glow, studio monitor luminance, emissive overlay hierarchy',
-      material_texture:
+      color_and_tone: 'Radar green, storm yellow, alert red, violet core, map grey, broadcast blue',
+      lighting_and_shadow:
+        'Self-lit screen glow, studio monitor luminance, emissive overlay hierarchy',
+      texture_and_material:
         'Pixelated radar noise, compression blocks, translucent graphic layers, scanline shimmer',
-      render_quality: 'Informational, synthetic, urgent, screen-native weather visual',
-      spatial_distortion: 'Top-down map flattening, radar sweep curvature, overlay layer stacking',
-      atmosphere: 'Alert, analytical, atmospheric, system-driven',
+      camera_and_composition:
+        'Top-down map flattening, radar sweep curvature, overlay layer stacking',
+      atmosphere_and_mood: 'Alert, analytical, atmospheric, system-driven',
+      rendering_and_quality: 'Informational, synthetic, urgent, screen-native weather visual',
       key_features:
         'Radar sweep, storm-cell blobs, contour bands, broadcast grid, no readable labels',
       creative_brief:
@@ -428,18 +447,18 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Late-night infomercial broadcast, overlit demonstration gloss, cheap miracle-product persuasion, callout graphics without readable text',
-      form_and_line:
+      subject_treatment:
         'Before-after split logic, pointing callout shapes, product-demo center framing, exaggerated benefit composition',
-      color_palette:
+      color_and_tone:
         'Hotline red, bargain yellow, electric blue, clean white, plastic chrome, saturated orange',
-      lighting_setup:
+      lighting_and_shadow:
         'Overbright studio key, hard tabletop reflection, sparkle highlights, no subtle shadow',
-      material_texture:
+      texture_and_material:
         'Plastic gloss, camcorder sharpness, compressed color, cheap acrylic set surface',
-      render_quality: 'Persuasive, loud, overproduced-on-a-budget, glossy TV sales clarity',
-      spatial_distortion:
+      camera_and_composition:
         'Split-screen comparison, zoom burst, callout bubble shapes, oversaturated close crop',
-      atmosphere: 'Urgent, salesy, artificial, enthusiastic',
+      atmosphere_and_mood: 'Urgent, salesy, artificial, enthusiastic',
+      rendering_and_quality: 'Persuasive, loud, overproduced-on-a-budget, glossy TV sales clarity',
       key_features: 'Split layout, callout shapes, hard gloss, overlit demo, no readable text',
       creative_brief:
         'Use late-night infomercial gloss as treatment: overlit demo clarity, split-screen comparison, hard plastic shine, callout shapes, saturated bargain colors, and camcorder sharpness. Avoid specific products, presenters, phone numbers, or readable sales copy. The style should make any subject feel aggressively demonstrated.',
@@ -453,16 +472,17 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         '90s cable music-video broadcast, interlaced glamour, blown color gels, soft-focus performance glow, analog video dream',
-      form_and_line:
+      subject_treatment:
         'Rhythmic crop, layered silhouettes, diagonal stage-like composition, motion smear trails',
-      color_palette:
+      color_and_tone:
         'Magenta gel, cyan backlight, amber spotlight, black crush, violet bloom, video white',
-      lighting_setup: 'Color-gel backlights, hazer bloom, hard spotlight flare, video-camera gain',
-      material_texture:
+      lighting_and_shadow:
+        'Color-gel backlights, hazer bloom, hard spotlight flare, video-camera gain',
+      texture_and_material:
         'Interlaced scanlines, VHS chroma smear, tape dropout, soft diffusion, bloom halo',
-      render_quality: 'Glossy, rhythmic, analog, glamorous but degraded',
-      spatial_distortion: 'Interlaced motion combing, frame echo, dutch crop, soft zoom smear',
-      atmosphere: 'Hypnotic, stylish, late-night, video-age cool',
+      camera_and_composition: 'Interlaced motion combing, frame echo, dutch crop, soft zoom smear',
+      atmosphere_and_mood: 'Hypnotic, stylish, late-night, video-age cool',
+      rendering_and_quality: 'Glossy, rhythmic, analog, glamorous but degraded',
       key_features: 'Interlace, chroma smear, gel lights, motion echo, soft-focus bloom',
       creative_brief:
         'Apply interlaced music-video broadcast style to any prompt: gel-color lighting, soft-focus bloom, scanlines, chroma smear, motion echoes, and rhythmic crop. Avoid stages, performers, instruments, microphones, or music scenes as requirements. The input should feel glamorous through analog video degradation.',
@@ -476,16 +496,17 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Emergency broadcast interruption, signal-break abstraction, color bars, warning geometry without readable text, hostile analog tone made visual',
-      form_and_line:
+      subject_treatment:
         'Horizontal bands, test-pattern blocks, centered warning geometry, scanline fracture, hard rectangular cuts',
-      color_palette:
+      color_and_tone:
         'SMPTE color bars, alert red, black void, phosphor white, dirty cyan, warning yellow',
-      lighting_setup: 'Self-emissive CRT glow, blown white bars, high contrast signal clipping',
-      material_texture: 'CRT scanlines, analog snow, sync tear, tape dropout, phosphor bloom',
-      render_quality: 'Harsh, alarming, graphic, signal-native',
-      spatial_distortion:
+      lighting_and_shadow:
+        'Self-emissive CRT glow, blown white bars, high contrast signal clipping',
+      texture_and_material: 'CRT scanlines, analog snow, sync tear, tape dropout, phosphor bloom',
+      camera_and_composition:
         'Horizontal roll, tracking tear, image displacement, broadcast interruption layering',
-      atmosphere: 'Urgent, uncanny, official, hostile',
+      atmosphere_and_mood: 'Urgent, uncanny, official, hostile',
+      rendering_and_quality: 'Harsh, alarming, graphic, signal-native',
       key_features: 'Color bars, scanline tear, signal snow, hard warning blocks, no readable text',
       creative_brief:
         'Render any prompt as emergency broadcast interruption: color bars, warning-block geometry, CRT glow, scanline tear, analog snow, and clipped high-contrast signal. Avoid readable messages, official seals, real alerts, or literal TV sets. The style should feel like the image is being overridden by broadcast infrastructure.',

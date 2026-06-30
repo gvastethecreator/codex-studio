@@ -13,22 +13,22 @@ tags:
   - micro-macro
 visualDna:
   aesthetic: Dermatology zoom, skin-terrain, pore-landscape, human-surface, epidermal-topography
-  form_and_line: Micro wrinkles, Langer's-line contours, sulcus-cutis furrow, crista-cutis ridge, fingerprint-ridge
-  color_palette: Skin tone, melanin-spectrum, Fitzpatrick-scale, undertone-warm, undertone-cool, capillary-blush
-  lighting_setup: Soft scattering, epidermal-diffusion, subsurface-scatter, cross-polarized, ring-light-flat
-  material_texture: Pores, hair, vellus-hair, sebaceous-filament, stratum-corneum flake, sweat-gland duct, desquamation-scale
-  render_quality: Hyperreal, human, macro-skin, dermatoscope-detail, epidermal-intimacy, skin-barrier architecture
-  spatial_distortion: None, natural-contour, dermatoglyphic-pattern, skin-tension line
-  atmosphere: Raw, real, mirror-close, skin-acceptance, dermatology-office, self-examination
+  subject_treatment: Micro wrinkles, Langer's-line contours, sulcus-cutis furrow, crista-cutis ridge, fingerprint-ridge
+  color_and_tone: Skin tone, melanin-spectrum, Fitzpatrick-scale, undertone-warm, undertone-cool, capillary-blush
+  lighting_and_shadow: Soft scattering, epidermal-diffusion, subsurface-scatter, cross-polarized, ring-light-flat
+  texture_and_material: Pores, hair, vellus-hair, sebaceous-filament, stratum-corneum flake, sweat-gland duct, desquamation-scale
+  camera_and_composition: Natural-contour, dermatoglyphic-pattern, skin-tension line
+  atmosphere_and_mood: Raw, real, mirror-close, skin-acceptance, dermatology-office, self-examination
+  rendering_and_quality: Hyperreal, human, macro-skin, dermatoscope-detail, epidermal-intimacy, skin-barrier architecture
   key_features: >-
-    Texture, pore-opening, hair-follicle, fingerprint-ridge, vellus-hair shaft, sebaceous-filament, desquamation-flake,
-    sulcus-cutis groove
+    Texture, pore-opening, hair-follicle, fingerprint-ridge, vellus-hair shaft, sebaceous-filament,
+    desquamation-flake, sulcus-cutis groove
   creative_brief: >-
-    Build dermatology macro studies from pore topology, vellus hair presence, and subtle microrelief across skin tension
-    lines. Preserve realistic epidermal variation and clinical honesty without locking into a specific person or body
-    zone. Apply Skin Pores as a portable style system over any input: preserve its construction grammar, material cues,
-    scale logic, and signature rendering behavior while avoiding a required franchise, literal prop, fixed specimen,
-    classroom sample, product shot, or scene template.
+    Build dermatology macro studies from pore topology, vellus hair presence, and subtle microrelief across
+    skin tension lines. Preserve realistic epidermal variation and clinical honesty without locking into a
+    specific person or body zone. Apply Skin Pores as a portable style system over any input: preserve its
+    construction grammar, material cues, scale logic, and signature rendering behavior while avoiding a
+    required franchise, literal prop, fixed specimen, classroom sample, product shot, or scene template.
 avoidRules:
   - smooth plastic
 assets:

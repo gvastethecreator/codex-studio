@@ -13,18 +13,18 @@ tags:
   - childrens-illustration
 visualDna:
   aesthetic: Childlike crayon illustration with naive expressive immediacy
-  form_and_line: Waxy pressure-variable strokes with uneven contour control
-  color_palette: Bright primary/secondary crayon set with spontaneous overlap
-  lighting_setup: Flat paper-based lighting; value implied by stroke density
-  material_texture: Heavy wax buildup and visible paper tooth drag
-  render_quality: Deliberately unpolished, sincere, hand-made mark quality
-  spatial_distortion: Simplified anatomy and playful proportion exaggeration
-  atmosphere: Joyful, innocent, spontaneous
+  subject_treatment: Waxy pressure-variable strokes with uneven contour control
+  color_and_tone: Bright primary/secondary crayon set with spontaneous overlap
+  lighting_and_shadow: Flat paper-based lighting; value implied by stroke density
+  texture_and_material: Heavy wax buildup and visible paper tooth drag
+  camera_and_composition: Simplified anatomy and playful proportion exaggeration
+  atmosphere_and_mood: Joyful, innocent, spontaneous
+  rendering_and_quality: Deliberately unpolished, sincere, hand-made mark quality
   key_features: Uneven fill, directional scribble, layered wax bloom
   creative_brief: >-
-    Apply childlike crayon energy to any input: wax pressure changes, imperfect fill boundaries,
-    visible paper tooth, simplified forms, and spontaneous overlap should keep the style direct
-    without requiring children, stick figures, suns, houses, classroom pages, or fixed pose cliches.
+    Apply childlike crayon energy to any input: wax pressure changes, imperfect fill boundaries, visible paper
+    tooth, simplified forms, and spontaneous overlap should keep the style direct without requiring children,
+    stick figures, suns, houses, classroom pages, or fixed pose cliches.
 avoidRules:
   - professional
   - smooth

@@ -13,15 +13,18 @@ tags:
   - film-and-analog-process
 visualDna:
   aesthetic: Cheap plastic lens photo
-  form_and_line: Soft corners
-  color_palette: High contrast, cheap flash
-  lighting_setup: Direct flash
-  material_texture: Grainy
-  render_quality: Casual flash snapshot
-  spatial_distortion: Chromatic aberration
-  atmosphere: Fun, cheap
+  subject_treatment: Soft corners
+  color_and_tone: High contrast, cheap flash
+  lighting_and_shadow: Direct flash
+  texture_and_material: Grainy
+  camera_and_composition: Chromatic aberration
+  atmosphere_and_mood: Fun, cheap
+  rendering_and_quality: Casual flash snapshot
   key_features: Flash falloff
-  creative_brief: 'Cheap plastic optics with priceless accident energy: direct flash falloff, softened corners, harsh contrast, chromatic fringe, and grainy consumer-film texture. Make any subject feel caught by a disposable camera, immediate and unpolished, without forcing faces, rooms, or party context.'
+  creative_brief: >-
+    Cheap plastic optics with priceless accident energy: direct flash falloff, softened corners, harsh
+    contrast, chromatic fringe, and grainy consumer-film texture. Make any subject feel caught by a disposable
+    camera, immediate and unpolished, without forcing faces, rooms, or party context.
 avoidRules:
   - illustration
   - painting
@@ -41,7 +44,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP01-022.webp
 attributes:
-  negativePrompt: illustration, painting, drawing, 3d render, cartoon, anime, sketch, blurry, noisy, low resolution, watermark, text, signature, bad anatomy, deformed
+  negativePrompt: >-
+    illustration, painting, drawing, 3d render, cartoon, anime, sketch, blurry, noisy, low resolution,
+    watermark, text, signature, bad anatomy, deformed
 taxonomy:
   packId: pack_01
   packName: Photography & Realism

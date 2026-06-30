@@ -12,16 +12,36 @@ tags:
   - essential-art-styles
   - retro-game-visual-systems
 visualDna:
-  aesthetic: Nintendo DSi Flipnote Studio aesthetic, crude black-and-white hand-drawn animation on tiny stylus screen, memo-pad gridding, DS-camera crude photo support layers, low-res LCD limitation, exported-GIF-quality charm, Flipnote Hatena community art, 2009 creativity within limitations
-  form_and_line: Stylus-drawn-on-resistive-touchscreen, jittery-hand-drawn lines, crude simple contours, frame-by-frame animation marks, tiny-screen-scale linework
-  color_palette: Black-only-on-white, DS-LCD-desaturated-blacks, grey-background-grid, occasionally red-blue-3D-anaglyph-experiments, no-other-colors
-  lighting_setup: None, flat-black-line-drawing, DS-backlit-LCD-uniform-illumination, no-shading-no-lighting
-  material_texture: DS-resistive-touchscreen-texture, stylus-tip-plastic-on-plastic, low-res-LCD-pixel-grid, DSi-camera-CMOS-grain, Flipnote-memo-pad-pattern
-  render_quality: Flipnote-Studio-DS aesthetic, crude-black-and-white-animation beauty, low-res-handheld-art, internet-share-community-energy
-  spatial_distortion: Tiny-DS-LCD-resolution, stylus-screen-proportions, flipnote-memo-pad-gridding, crude-perspective-attempts, exported-GIF-spatial-compression
-  atmosphere: Youthful, creative-community, bedroom-animation-studio, DSi-sharing nostalgia, 2009-internet early-social-media, charming-simplicity
-  key_features: Black-on-white drawing only, DS-stylus jittery lines, flipbook-animation marks, optional crude camera support layer, memo-pad grid texture, low-res LCD, exported-GIF artifacts
-  creative_brief: A plastic stylus turns any prompt into jittery black marks on a tiny white screen. Flipbook timing marks, memo-grid texture and GIF compression make the image feel like homemade animation captured before polish can erase charm.
+  aesthetic: >-
+    Nintendo DSi Flipnote Studio aesthetic, crude black-and-white hand-drawn animation on tiny stylus screen,
+    memo-pad gridding, DS-camera crude photo support layers, low-res LCD limitation, exported-GIF-quality
+    charm, Flipnote Hatena community art, 2009 creativity within limitations
+  subject_treatment: >-
+    Stylus-drawn-on-resistive-touchscreen, jittery-hand-drawn lines, crude simple contours, frame-by-frame
+    animation marks, tiny-screen-scale linework
+  color_and_tone: >-
+    Black-only-on-white, DS-LCD-desaturated-blacks, grey-background-grid, occasionally
+    red-blue-3D-anaglyph-experiments, no-other-colors
+  lighting_and_shadow: Flat-black-line-drawing, DS-backlit-LCD-uniform-illumination, no-shading-no-lighting
+  texture_and_material: >-
+    DS-resistive-touchscreen-texture, stylus-tip-plastic-on-plastic, low-res-LCD-pixel-grid,
+    DSi-camera-CMOS-grain, Flipnote-memo-pad-pattern
+  camera_and_composition: >-
+    Tiny-DS-LCD-resolution, stylus-screen-proportions, flipnote-memo-pad-gridding, crude-perspective-attempts,
+    exported-GIF-spatial-compression
+  atmosphere_and_mood: >-
+    Youthful, creative-community, bedroom-animation-studio, DSi-sharing nostalgia, 2009-internet
+    early-social-media, charming-simplicity
+  rendering_and_quality: >-
+    Flipnote-Studio-DS aesthetic, crude-black-and-white-animation beauty, low-res-handheld-art,
+    internet-share-community-energy
+  key_features: >-
+    Black-on-white drawing only, DS-stylus jittery lines, flipbook-animation marks, optional crude camera
+    support layer, memo-pad grid texture, low-res LCD, exported-GIF artifacts
+  creative_brief: >-
+    A plastic stylus turns any prompt into jittery black marks on a tiny white screen. Flipbook timing marks,
+    memo-grid texture and GIF compression make the image feel like homemade animation captured before polish
+    can erase charm.
 avoidRules:
   - color
   - 3d

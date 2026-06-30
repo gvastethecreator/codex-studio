@@ -12,20 +12,27 @@ tags:
   - anime-battle-and-worlds
   - dark-fantasy-and-seinen
 visualDna:
-  aesthetic: Black signal nihilism, fluorescent rules pressure, synthetic afterlife dread, cynical precision, glossy void objects, survival logic as graphic design
-  form_and_line: Dense mature-anime linework, heavy crosshatching, weighted contour variation, gritty ink density
-  color_palette: Muted earths, blood reds, cold moonlit tones, desaturated horror palette, bruised shadow hues
-  lighting_setup: Ominous directional shadows, single-source drama light, deep chiaroscuro, low-key shadow lift
-  material_texture: Latex-black gloss, fluorescent scan haze, neutral domestic grit, cold polymer sheen, scratched glass, synthetic dust
-  render_quality: Gritty dramatic anime frame, film-noir rendering, heavy shadow compression, textured midtone grit
-  spatial_distortion: Spherical void anchors, target-like overlays, compressed enclosure tension, cynical rule spacing, glossy black focal gravity
-  atmosphere: Cruel, flashy, nihilistic, electric
-  key_features: Gloss-black void shapes, fluorescent rule marks, cynical target geometry, synthetic grit, ruthless body-language abstraction
-  creative_brief: >
-    Treat any subject as if it is being processed by a cruel fluorescent system:
-    glossy black anchors, green signal marks, synthetic grit, and rule-like
-    overlays create nihilistic pressure without fixed settings, attire systems,
-    play structures, locations, or scorekeeping props.
+  aesthetic: >-
+    Black signal nihilism, fluorescent rules pressure, synthetic afterlife dread, cynical precision, glossy
+    void objects, survival logic as graphic design
+  subject_treatment: Dense mature-anime linework, heavy crosshatching, weighted contour variation, gritty ink density
+  color_and_tone: Muted earths, blood reds, cold moonlit tones, desaturated horror palette, bruised shadow hues
+  lighting_and_shadow: Ominous directional shadows, single-source drama light, deep chiaroscuro, low-key shadow lift
+  texture_and_material: >-
+    Latex-black gloss, fluorescent scan haze, neutral domestic grit, cold polymer sheen, scratched glass,
+    synthetic dust
+  camera_and_composition: >-
+    Spherical void anchors, target-like overlays, compressed enclosure tension, cynical rule spacing, glossy
+    black focal gravity
+  atmosphere_and_mood: Cruel, flashy, nihilistic, electric
+  rendering_and_quality: Gritty dramatic anime frame, film-noir rendering, heavy shadow compression, textured midtone grit
+  key_features: >-
+    Gloss-black void shapes, fluorescent rule marks, cynical target geometry, synthetic grit, ruthless
+    body-language abstraction
+  creative_brief: >-
+    Treat any subject as if it is being processed by a cruel fluorescent system: glossy black anchors, green
+    signal marks, synthetic grit, and rule-like overlays create nihilistic pressure without fixed settings,
+    attire systems, play structures, locations, or scorekeeping props.
 avoidRules:
   - realistic
   - 3d render
@@ -42,7 +49,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-263.webp
 attributes:
-  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
+  negativePrompt: >-
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts,
+    watermark, text, signature
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds

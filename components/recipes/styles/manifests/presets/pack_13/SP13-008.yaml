@@ -12,20 +12,31 @@ tags:
   - anime-character-and-lifestyle
   - anime
 visualDna:
-  aesthetic: Gothic-vampiric anime language with aristocratic decadence, nocturnal romantic tension, and baroque theatricality
-  form_and_line: Fine dramatic contouring, elongated regal silhouette treatment, ornate trim lines, and sweeping diagonal composition
-  color_palette: Burgundy wine reds, abyssal blacks, oxidized silver accents, deep violet shadows, and candle-amber warmth
-  lighting_setup: Candle-like key pools against heavy ambient darkness, selective rim highlights on edges, and controlled chiaroscuro depth layering
-  material_texture: Crushed velvet drape, polished marble-like planes, aged wrought metal ornament, satin sheen, and carved dark-wood detail
-  render_quality: High-polish gothic anime rendering with luxurious material separation, elegant contrast control, and premium nocturnal readability
-  spatial_distortion: Theatrical depth recession through baroque diagonals, arch-like frames, and staged shadow anchors
-  atmosphere: Seductive, melancholic, aristocratic, ominous, and composed
-  key_features: Regal silhouette dominance, baroque ornament cadence, candlelit shadow orchestration, velvet-black value control, and noble-gothic iconography
+  aesthetic: >-
+    Gothic-vampiric anime language with aristocratic decadence, nocturnal romantic tension, and baroque
+    theatricality
+  subject_treatment: >-
+    Fine dramatic contouring, elongated regal silhouette treatment, ornate trim lines, and sweeping diagonal
+    composition
+  color_and_tone: Burgundy wine reds, abyssal blacks, oxidized silver accents, deep violet shadows, and candle-amber warmth
+  lighting_and_shadow: >-
+    Candle-like key pools against heavy ambient darkness, selective rim highlights on edges, and controlled
+    chiaroscuro depth layering
+  texture_and_material: >-
+    Crushed velvet drape, polished marble-like planes, aged wrought metal ornament, satin sheen, and carved
+    dark-wood detail
+  camera_and_composition: Theatrical depth recession through baroque diagonals, arch-like frames, and staged shadow anchors
+  atmosphere_and_mood: Seductive, melancholic, aristocratic, ominous, and composed
+  rendering_and_quality: >-
+    High-polish gothic anime rendering with luxurious material separation, elegant contrast control, and
+    premium nocturnal readability
+  key_features: >-
+    Regal silhouette dominance, baroque ornament cadence, candlelit shadow orchestration, velvet-black value
+    control, and noble-gothic iconography
   creative_brief: >-
-    Use Gothic Vampire Manor as style anchor for aristocratic darkness:
-    burgundy-black chiaroscuro, velvet materiality, and baroque silhouette drama
-    should transfer without requiring a manor, staircase, cape, vampire, or
-    interior scene.
+    Use Gothic Vampire Manor as style anchor for aristocratic darkness: burgundy-black chiaroscuro, velvet
+    materiality, and baroque silhouette drama should transfer without requiring a manor, staircase, cape,
+    vampire, or interior scene.
 avoidRules:
   - photoreal
   - cute-chibi

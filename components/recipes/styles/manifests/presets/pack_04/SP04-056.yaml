@@ -13,25 +13,24 @@ tags:
   - concept-art
 visualDna:
   aesthetic: >-
-    Photobash concept style using multi-source realism synthesis with fast iteration and
-    art-direction cohesion
-  form_and_line: >-
-    Hybrid photo-paint seam management with compositional masking, perspective harmonization, and
-    silhouette cleanup passes
-  color_palette: Unified grading, photobash-comped, multi-source harmony
-  lighting_setup: Realistic, ambient-match, multi-photo consistency
-  material_texture: Photo
-  render_quality: Realistic, fast, iterative pitching, concept-development speed
-  spatial_distortion: >-
-    Controlled source-scale mismatches intentionally corrected through grading, edge treatment, and
-    depth harmonization
-  atmosphere: Realism, concept, speculative design, art-department urgency
+    Photobash concept style using multi-source realism synthesis with fast iteration and art-direction
+    cohesion
+  subject_treatment: >-
+    Hybrid photo-paint seam management with compositional masking, perspective harmonization, and silhouette
+    cleanup passes
+  color_and_tone: Unified grading, photobash-comped, multi-source harmony
+  lighting_and_shadow: Realistic, ambient-match, multi-photo consistency
+  texture_and_material: Photo
+  camera_and_composition: >-
+    Controlled source-scale mismatches intentionally corrected through grading, edge treatment, and depth
+    harmonization
+  atmosphere_and_mood: Realism, concept, speculative design, art-department urgency
+  rendering_and_quality: Realistic, fast, iterative pitching, concept-development speed
   key_features: Texture clash, photo-fragment seam, value-unify grading
   creative_brief: >-
-    Apply photobash concept grammar to any input: multi-source texture assembly, perspective
-    harmonization, seam-disguise compositing, unified grading, and silhouette cleanup should create
-    art-direction realism without requiring environments, sci-fi concepts, vehicles, ruins, or one
-    scene.
+    Apply photobash concept grammar to any input: multi-source texture assembly, perspective harmonization,
+    seam-disguise compositing, unified grading, and silhouette cleanup should create art-direction realism
+    without requiring environments, sci-fi concepts, vehicles, ruins, or one scene.
 avoidRules:
   - painted
   - cartoon

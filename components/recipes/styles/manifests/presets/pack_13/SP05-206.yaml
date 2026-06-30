@@ -13,30 +13,26 @@ tags:
   - slice-of-life-and-moe
 visualDna:
   aesthetic: >-
-    Everyday-care anime intimacy where responsibility, patience, small practical rituals, and
-    sincere tenderness carry emotional weight
-  form_and_line: >-
-    Close relational spacing, softened posture arcs, careful hand gestures, and uncluttered
-    composition around acts of care
-  color_palette: Cotton cream, soft beige, lunchbox red, mild navy, warm skin peach, and pale morning blue
-  lighting_setup: >-
-    Gentle domestic daylight, soft practical warmth, low-contrast fill, and small highlight accents
-    on useful objects
-  material_texture: >-
-    Cotton softness, worn surfaces, small utility plastics, cloth wraps, paper textures, and handled
-    everyday tactility
-  render_quality: >-
-    Intimate anime finish with sincere emotional clarity, routine detail fidelity, and low-melodrama
-    restraint
-  spatial_distortion: Close framing compression that turns any subject into a quiet care ritual
-  atmosphere: Tender, patient, domestic, soft, responsible
-  key_features: >-
-    Caregiving gestures, small practical details, patient pauses, close spacing, and emotional
-    sincerity
+    Everyday-care anime intimacy where responsibility, patience, small practical rituals, and sincere
+    tenderness carry emotional weight
+  subject_treatment: >-
+    Close relational spacing, softened posture arcs, careful hand gestures, and uncluttered composition around
+    acts of care
+  color_and_tone: Cotton cream, soft beige, lunchbox red, mild navy, warm skin peach, and pale morning blue
+  lighting_and_shadow: >-
+    Gentle domestic daylight, soft practical warmth, low-contrast fill, and small highlight accents on useful
+    objects
+  texture_and_material: >-
+    Cotton softness, worn surfaces, small utility plastics, cloth wraps, paper textures, and handled everyday
+    tactility
+  camera_and_composition: Close framing compression that turns any subject into a quiet care ritual
+  atmosphere_and_mood: Tender, patient, domestic, soft, responsible
+  rendering_and_quality: Intimate anime finish with sincere emotional clarity, routine detail fidelity, and low-melodrama restraint
+  key_features: Caregiving gestures, small practical details, patient pauses, close spacing, and emotional sincerity
   creative_brief: >-
-    Use Usagi Drop as style anchor for everyday-care gesture intimacy. Apply patient hand placement,
-    soft practical light, close responsibility, and small-use textures to any prompt. Apartments,
-    lunches, school items, and parent-child scenes are optional.
+    Use Usagi Drop as style anchor for everyday-care gesture intimacy. Apply patient hand placement, soft
+    practical light, close responsibility, and small-use textures to any prompt. Apartments, lunches, school
+    items, and parent-child scenes are optional.
 avoidRules:
   - realistic
   - 3d render
@@ -54,8 +50,8 @@ assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-206.webp
 attributes:
   negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, text, signature
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts,
+    watermark, text, signature
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle

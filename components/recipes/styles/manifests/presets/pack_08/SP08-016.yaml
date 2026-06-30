@@ -13,18 +13,19 @@ tags:
   - contemporary-fashion
 visualDna:
   aesthetic: 90s everyday normcore, casual anti-fashion, dad-denim ease, nothing-to-prove comfort
-  form_and_line: Loose fit, straight-leg dad jeans, relaxed shoulder, anti-fit drape
-  color_palette: Grey, Blue denim, heathered oatmeal, faded navy, stonewash, light-wash indigo
-  lighting_setup: Flat everyday overhead, overcast softness, low-contrast practical warmth
-  material_texture: Cotton jersey, stonewashed denim, fleece sweatshirt, waffle-knit thermal, washed canvas
-  render_quality: Boring, ironic, comfortable, deliberately average, anti-fashion confidence
-  spatial_distortion: None
-  atmosphere: Casual, unpretentious, genuine, unbothered authenticity, anti-fashion ease
+  subject_treatment: Loose fit, straight-leg dad jeans, relaxed shoulder, anti-fit drape
+  color_and_tone: Grey, Blue denim, heathered oatmeal, faded navy, stonewash, light-wash indigo
+  lighting_and_shadow: Flat everyday overhead, overcast softness, low-contrast practical warmth
+  texture_and_material: Cotton jersey, stonewashed denim, fleece sweatshirt, waffle-knit thermal, washed canvas
+  camera_and_composition: >-
+    Compose for Normcore using its key spatial cues: Dad sneakers, light-wash jeans, tucked-in tee,
+    windbreaker.
+  atmosphere_and_mood: Casual, unpretentious, genuine, unbothered authenticity, anti-fashion ease
+  rendering_and_quality: Boring, ironic, comfortable, deliberately average, anti-fashion confidence
   key_features: Dad sneakers, light-wash jeans, tucked-in tee, windbreaker
   creative_brief: >-
-    Flatten the input into normcore anti-fashion: dad denim, fleece, washed
-    canvas, plain jersey, windbreaker logic and deliberately average
-    proportions. It should feel comfortable and unoptimized without requiring a
+    Flatten the input into normcore anti-fashion: dad denim, fleece, washed canvas, plain jersey, windbreaker
+    logic and deliberately average proportions. It should feel comfortable and unoptimized without requiring a
     coffee shop, sidewalk, sitcom reference or human standing pose.
 avoidRules:
   - flashy

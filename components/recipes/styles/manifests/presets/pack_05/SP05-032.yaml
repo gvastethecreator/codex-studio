@@ -12,19 +12,32 @@ tags:
   - anime-battle-and-worlds
   - modern-shonen-and-action
 visualDna:
-  aesthetic: Urban occult combat style with ritual geometry, predatory restraint, and high-contrast supernatural pressure fields
-  form_and_line: Razor contour discipline, sigil-like motion arcs, pressure-point emphasis, silhouette cuts that privilege threat readability
-  color_palette: Near-black base with toxic cyan-violet energy seams, selective crimson hazard notes, and sparse white-hot highlights
-  lighting_setup: Low-key nocturnal staging, localized aura bloom, hard rim partitions, and volumetric pockets around cursed emissions
-  material_texture: Polished modern surfaces interrupted by particulate curse residue, sharp effect overlays, subtle grain under high contrast
-  render_quality: Premium dark-action anime finish with clean edge fidelity and controlled post-bloom tuned for occult readability
-  spatial_distortion: Compressed depth lanes and warped local perspective around energy events to signal unstable spiritual space
-  atmosphere: Menacing, controlled, tactical, uncanny, electric
+  aesthetic: >-
+    Urban occult combat style with ritual geometry, predatory restraint, and high-contrast supernatural
+    pressure fields
+  subject_treatment: >-
+    Razor contour discipline, sigil-like motion arcs, pressure-point emphasis, silhouette cuts that privilege
+    threat readability
+  color_and_tone: >-
+    Near-black base with toxic cyan-violet energy seams, selective crimson hazard notes, and sparse white-hot
+    highlights
+  lighting_and_shadow: >-
+    Low-key nocturnal staging, localized aura bloom, hard rim partitions, and volumetric pockets around cursed
+    emissions
+  texture_and_material: >-
+    Polished modern surfaces interrupted by particulate curse residue, sharp effect overlays, subtle grain
+    under high contrast
+  camera_and_composition: >-
+    Compressed depth lanes and warped local perspective around energy events to signal unstable spiritual
+    space
+  atmosphere_and_mood: Menacing, controlled, tactical, uncanny, electric
+  rendering_and_quality: >-
+    Premium dark-action anime finish with clean edge fidelity and controlled post-bloom tuned for occult
+    readability
   key_features: Ritual gesture grammar, pressure-field visuals, sigil energy contours, threat-priority silhouette staging
   creative_brief: >-
-    Define this preset by occult-pressure visual logic: gesture-led energy
-    geometry, hard contrast segmentation, and localized spatial instability
-    should carry the identity across any subject.
+    Define this preset by occult-pressure visual logic: gesture-led energy geometry, hard contrast
+    segmentation, and localized spatial instability should carry the identity across any subject.
 avoidRules:
   - realistic
   - 3d render
@@ -41,7 +54,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-032.webp
 attributes:
-  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
+  negativePrompt: >-
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts,
+    watermark, text, signature
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds

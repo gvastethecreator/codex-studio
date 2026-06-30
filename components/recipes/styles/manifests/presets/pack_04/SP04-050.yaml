@@ -12,26 +12,25 @@ tags:
   - illustration-and-graphic-novel
   - concept-art
 visualDna:
-  aesthetic: >-
-    Futurist vehicle concept style balancing industrial plausibility with aspirational speed-form
-    language
-  form_and_line: >-
+  aesthetic: Futurist vehicle concept style balancing industrial plausibility with aspirational speed-form language
+  subject_treatment: >-
     Technical line discipline with aerodynamic panel segmentation, functional contour logic, and
     engineering-forward silhouette design
-  color_palette: Industrial, gunmetal primaries, functional-finish spectrum
-  lighting_setup: Studio, product-shot key, technical highlight
-  material_texture: Metal, dirt
-  render_quality: >-
-    High-fidelity industrial concept rendering emphasizing material separation, manufacturable form
-    language, and mobility-focused intent
-  spatial_distortion: None
-  atmosphere: Fast, tech, prototype adrenaline, engineering cool
+  color_and_tone: Industrial, gunmetal primaries, functional-finish spectrum
+  lighting_and_shadow: Studio, product-shot key, technical highlight
+  texture_and_material: Metal, dirt
+  camera_and_composition: >-
+    Compose for Vehicle Design using its key spatial cues: Perspective, technical form-language, callout
+    detail.
+  atmosphere_and_mood: Fast, tech, prototype adrenaline, engineering cool
+  rendering_and_quality: >-
+    High-fidelity industrial concept rendering emphasizing material separation, manufacturable form language,
+    and mobility-focused intent
   key_features: Perspective, technical form-language, callout detail
   creative_brief: >-
-    Apply vehicle-design concept grammar to any input: aerodynamic surface logic, functional panel
-    hierarchy, studio highlight control, material separation, and engineering-forward silhouette
-    should create mobility intent without requiring cars, spacecraft, wheels, cockpits, callouts, or
-    a specific sci-fi model.
+    Apply vehicle-design concept grammar to any input: aerodynamic surface logic, functional panel hierarchy,
+    studio highlight control, material separation, and engineering-forward silhouette should create mobility
+    intent without requiring cars, spacecraft, wheels, cockpits, callouts, or a specific sci-fi model.
 avoidRules:
   - organic
 assets:

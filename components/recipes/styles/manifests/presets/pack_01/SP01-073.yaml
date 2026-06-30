@@ -13,15 +13,18 @@ tags:
   - technical-and-specialist-imaging
 visualDna:
   aesthetic: Long-exposure motion smoothing
-  form_and_line: Silky motion, sharp anchors
-  color_palette: Cool blues, grey
-  lighting_setup: Overcast
-  material_texture: Mistlike blur, stable texture
-  render_quality: Fine-art long exposure
-  spatial_distortion: Motion-smoothed flow
-  atmosphere: Calm, ethereal
+  subject_treatment: Silky motion, sharp anchors
+  color_and_tone: Cool blues, grey
+  lighting_and_shadow: Overcast
+  texture_and_material: Mistlike blur, stable texture
+  camera_and_composition: Motion-smoothed flow
+  atmosphere_and_mood: Calm, ethereal
+  rendering_and_quality: Fine-art long exposure
   key_features: Silky temporal flow
-  creative_brief: Long exposure turns moving elements into silk while stable forms stay sharp. Apply cool fine-art calm, mistlike blur, and temporal smoothing to any subject without requiring waterfalls, sea, rocks, waves, or landscape.
+  creative_brief: >-
+    Long exposure turns moving elements into silk while stable forms stay sharp. Apply cool fine-art calm,
+    mistlike blur, and temporal smoothing to any subject without requiring waterfalls, sea, rocks, waves, or
+    landscape.
 avoidRules:
   - frozen motion
   - jagged flow

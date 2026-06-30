@@ -13,15 +13,21 @@ tags:
   - tv-and-broadcast
 visualDna:
   aesthetic: Weather forecast graphics
-  form_and_line: Isobars
-  color_palette: Radar Green/Red, precipitation blue, severe-weather magenta
-  lighting_setup: Digital map, emissive screen, composited background
-  material_texture: Screen, broadcast graphics, crisp vector overlay
-  render_quality: Info, graphics, Doppler sweep, forecast animation
-  spatial_distortion: None
-  atmosphere: Informative, reassuring, storm-track urgency, weekend outlook
+  subject_treatment: Isobars
+  color_and_tone: Radar Green/Red, precipitation blue, severe-weather magenta
+  lighting_and_shadow: Digital map, emissive screen, composited background
+  texture_and_material: Screen, broadcast graphics, crisp vector overlay
+  camera_and_composition: >-
+    Camera language native to Weather Channel: genre-aware framing, lens character, focal hierarchy, motion
+    cue, and vertical style-card composition.
+  atmosphere_and_mood: Informative, reassuring, storm-track urgency, weekend outlook
+  rendering_and_quality: Info, graphics, Doppler sweep, forecast animation
   key_features: Radar palette, isobar curves, forecast-grid rhythm
-  creative_brief: 'Weather Channel style overlays any subject with forecast logic: radar green/red, precipitation blue, severe magenta, isobar curves, Doppler sweep, emissive map light, and reassuring broadcast order. Keep weather-graphics energy without requiring map, continent, forecaster, indoors/outdoors, or readable forecast.'
+  creative_brief: >-
+    Weather Channel style overlays any subject with forecast logic: radar green/red, precipitation blue,
+    severe magenta, isobar curves, Doppler sweep, emissive map light, and reassuring broadcast order. Keep
+    weather-graphics energy without requiring map, continent, forecaster, indoors/outdoors, or readable
+    forecast.
 avoidRules:
   - plain studio
 assets:

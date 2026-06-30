@@ -13,19 +13,18 @@ tags:
   - printmaking
 visualDna:
   aesthetic: Hand stamped image
-  form_and_line: Broken, uneven ink
-  color_palette: Red, Black, Blue ink
-  lighting_setup: Flat
-  material_texture: Ink pad, paper grain
-  render_quality: Rough mechanical impression with hand-pressure variance
-  spatial_distortion: Incomplete impression
-  atmosphere: Official, rough, repetitive
+  subject_treatment: Broken, uneven ink
+  color_and_tone: Red, Black, Blue ink
+  lighting_and_shadow: Flat
+  texture_and_material: Ink pad, paper grain
+  camera_and_composition: Incomplete impression
+  atmosphere_and_mood: Official, rough, repetitive
+  rendering_and_quality: Rough mechanical impression with hand-pressure variance
   key_features: Incomplete impression
   creative_brief: >-
-    Apply rubber-stamp printing to any input: inkpad pressure, incomplete
-    impressions, broken edges, alignment wobble, repeated mechanical marks, and
-    ink fatigue. Keep tactile repetition without requiring labels, office forms,
-    postage, logos, or readable text.
+    Apply rubber-stamp printing to any input: inkpad pressure, incomplete impressions, broken edges, alignment
+    wobble, repeated mechanical marks, and ink fatigue. Keep tactile repetition without requiring labels,
+    office forms, postage, logos, or readable text.
 avoidRules:
   - photo
   - realistic
@@ -46,7 +45,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP06-041.webp
 attributes:
-  negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border, readable stamp text
+  negativePrompt: >-
+    photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy,
+    watermark, text, signature, frame, border, readable stamp text
 taxonomy:
   packId: pack_06
   packName: Essential Art Styles

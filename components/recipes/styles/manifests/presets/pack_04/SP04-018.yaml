@@ -13,19 +13,18 @@ tags:
   - childrens-illustration
 visualDna:
   aesthetic: Painted paper-collage storybook language (Eric Carle influence)
-  form_and_line: Hand-cut silhouette shapes with irregular scissor contours
-  color_palette: Tissue-paper primaries and secondaries with matte gouache-like variation
-  lighting_setup: Shallow cast shadows from stacked paper layers
-  material_texture: Visible paper fiber, torn edges, paint mottling
-  render_quality: Handmade tactile collage finish with child-facing readability
-  spatial_distortion: Simplified forms and modular layered depth planes
-  atmosphere: Bright, playful, exploratory, classroom-friendly
+  subject_treatment: Hand-cut silhouette shapes with irregular scissor contours
+  color_and_tone: Tissue-paper primaries and secondaries with matte gouache-like variation
+  lighting_and_shadow: Shallow cast shadows from stacked paper layers
+  texture_and_material: Visible paper fiber, torn edges, paint mottling
+  camera_and_composition: Simplified forms and modular layered depth planes
+  atmosphere_and_mood: Bright, playful, exploratory, classroom-friendly
+  rendering_and_quality: Handmade tactile collage finish with child-facing readability
   key_features: Overlap stratification, cut-edge rhythm, texture-rich color blocks
   creative_brief: >-
-    Apply painted cut-paper collage to any input: irregular scissor edges, tissue-paper color
-    blocks, shallow cast shadows, fiber texture, and clear shape hierarchy should replace drawn
-    contour modeling without requiring classroom subjects, animals, pages, props, or fixed story
-    scenes.
+    Apply painted cut-paper collage to any input: irregular scissor edges, tissue-paper color blocks, shallow
+    cast shadows, fiber texture, and clear shape hierarchy should replace drawn contour modeling without
+    requiring classroom subjects, animals, pages, props, or fixed story scenes.
 avoidRules:
   - drawn
   - painted

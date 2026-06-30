@@ -13,19 +13,18 @@ tags:
   - comic-book-styles
 visualDna:
   aesthetic: Dreamline retro sci-fi comics language (Moebius-inspired airy surrealism)
-  form_and_line: Fine controlled contour with stipple-assisted tonal modulation
-  color_palette: Soft pastel atmospherics, dusty warms, and cool alien blues
-  lighting_setup: Even ambient illumination with low-contrast dream glow
-  material_texture: Dot/stipple shading and clean matte color fields
-  render_quality: Intricate yet breathable world-detailing with contemplative pacing
-  spatial_distortion: Organic-futurist forms and elegant non-Euclidean silhouettes
-  atmosphere: Vast, meditative, enigmatic, serene
+  subject_treatment: Fine controlled contour with stipple-assisted tonal modulation
+  color_and_tone: Soft pastel atmospherics, dusty warms, and cool alien blues
+  lighting_and_shadow: Even ambient illumination with low-contrast dream glow
+  texture_and_material: Dot/stipple shading and clean matte color fields
+  camera_and_composition: Organic-futurist forms and elegant non-Euclidean silhouettes
+  atmosphere_and_mood: Vast, meditative, enigmatic, serene
+  rendering_and_quality: Intricate yet breathable world-detailing with contemplative pacing
   key_features: Stipple gradients, expansive negative space, poetic architecture
   creative_brief: >-
-    Apply dreamline retro sci-fi comic grammar to any input: clean contour precision, stipple
-    gradients, pastel atmospheres, organic-futurist forms, and vast contemplative scale should feel
-    exploratory without requiring deserts, spacecraft, architecture, alien worlds, travelers, or one
-    scene narrative.
+    Apply dreamline retro sci-fi comic grammar to any input: clean contour precision, stipple gradients,
+    pastel atmospheres, organic-futurist forms, and vast contemplative scale should feel exploratory without
+    requiring deserts, spacecraft, architecture, alien worlds, travelers, or one scene narrative.
 avoidRules:
   - dark
   - heavy shadows

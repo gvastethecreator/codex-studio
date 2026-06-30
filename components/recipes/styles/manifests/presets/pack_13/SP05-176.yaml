@@ -12,20 +12,33 @@ tags:
   - anime-character-and-lifestyle
   - shojo-magical-girl-and-visionary-classics
 visualDna:
-  aesthetic: Jewel-quest magical-knight shojo language with heroic friendship cores, rune-lit momentum, and bright mythic fantasy optimism as abstract color-and-symbol system
-  form_and_line: Jewel-faceted silhouette clarity, emblematic rune geometry, synchronized arc choreography, and expressive heroic line accents
-  color_palette: Saturated jewel primaries, radiant pink-red-blue heroine signatures, gold rune highlights, and sky-fantasy gradients with bright readability
-  lighting_setup: Rune-emission key glows, monumental backlight blooms, high-contrast cel split shading, and luminous multi-color rim partitioning
-  material_texture: Polished gem facets, layered cel paint warmth, watercolor fantasy gradients, and magical particle overlays with slight film grain
-  render_quality: High-energy 90s magical-fantasy render with ensemble-color clarity, heroic transformation readability, and richly colorful polish
-  spatial_distortion: Dynamic heroic foreshortening with balanced chromatic staging and monumental depth escalation
-  atmosphere: Heroic, bright, jewel-like, adventurous
-  key_features: Jewel-faceted silhouettes, monumental magic motifs, rune light effects, chromatic team partitioning, bright quest-like motion
+  aesthetic: >-
+    Jewel-quest magical-knight shojo language with heroic friendship cores, rune-lit momentum, and bright
+    mythic fantasy optimism as abstract color-and-symbol system
+  subject_treatment: >-
+    Jewel-faceted silhouette clarity, emblematic rune geometry, synchronized arc choreography, and expressive
+    heroic line accents
+  color_and_tone: >-
+    Saturated jewel primaries, radiant pink-red-blue heroine signatures, gold rune highlights, and sky-fantasy
+    gradients with bright readability
+  lighting_and_shadow: >-
+    Rune-emission key glows, monumental backlight blooms, high-contrast cel split shading, and luminous
+    multi-color rim partitioning
+  texture_and_material: >-
+    Polished gem facets, layered cel paint warmth, watercolor fantasy gradients, and magical particle overlays
+    with slight film grain
+  camera_and_composition: Dynamic heroic foreshortening with balanced chromatic staging and monumental depth escalation
+  atmosphere_and_mood: Heroic, bright, jewel-like, adventurous
+  rendering_and_quality: >-
+    High-energy 90s magical-fantasy render with ensemble-color clarity, heroic transformation readability, and
+    richly colorful polish
+  key_features: >-
+    Jewel-faceted silhouettes, monumental magic motifs, rune light effects, chromatic team partitioning,
+    bright quest-like motion
   creative_brief: >-
-    Facet the input into jewel-armor quest momentum: saturated team-color
-    partitions, rune-lit arcs, gemlike silhouettes, and monumental fantasy bloom
-    can armor, brighten, or emblemize any subject without requiring a fixed
-    party lineup, weapon pose, castle, or quest scene.
+    Facet the input into jewel-armor quest momentum: saturated team-color partitions, rune-lit arcs, gemlike
+    silhouettes, and monumental fantasy bloom can armor, brighten, or emblemize any subject without requiring
+    a fixed party lineup, weapon pose, castle, or quest scene.
 avoidRules:
   - realistic
   - 3d render
@@ -42,7 +55,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-176.webp
 attributes:
-  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
+  negativePrompt: >-
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts,
+    watermark, text, signature
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle

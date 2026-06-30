@@ -13,19 +13,18 @@ tags:
   - drawing-and-sketching
 visualDna:
   aesthetic: Chalk pastel drawing
-  form_and_line: Smudged, powdery
-  color_palette: Matte, vibrant, blended
-  lighting_setup: Soft, diffuse
-  material_texture: Textured paper, dust
-  render_quality: Fine art, degas style
-  spatial_distortion: Soft edges
-  atmosphere: Dreamy, atmospheric
+  subject_treatment: Smudged, powdery
+  color_and_tone: Matte, vibrant, blended
+  lighting_and_shadow: Soft, diffuse
+  texture_and_material: Textured paper, dust
+  camera_and_composition: Soft edges
+  atmosphere_and_mood: Dreamy, atmospheric
+  rendering_and_quality: Fine art, degas style
   key_features: Chalky finish
   creative_brief: >-
-    Apply soft pastel drawing to any input: powdery pure pigment, fragile
-    smudged edges, velvety saturation, paper tooth, atmospheric softness, and
-    touch-sensitive haze. Keep color-as-dust immediacy without requiring figure
-    studies, landscapes, chalk sets, or classroom boards.
+    Apply soft pastel drawing to any input: powdery pure pigment, fragile smudged edges, velvety saturation,
+    paper tooth, atmospheric softness, and touch-sensitive haze. Keep color-as-dust immediacy without
+    requiring figure studies, landscapes, chalk sets, or classroom boards.
 avoidRules:
   - photo
   - realistic
@@ -45,7 +44,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP06-021.webp
 attributes:
-  negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border
+  negativePrompt: >-
+    photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy,
+    watermark, text, signature, frame, border
 taxonomy:
   packId: pack_06
   packName: Essential Art Styles

@@ -13,18 +13,18 @@ tags:
   - diagram-print-and-light-systems
 visualDna:
   aesthetic: Metallic imprint on paper
-  form_and_line: Debossed
-  color_palette: Gold, Silver, Rose Gold
-  lighting_setup: Reflective
-  material_texture: Matte paper contrast
-  render_quality: Premium, invite
-  spatial_distortion: None
-  atmosphere: Expensive, elegant
+  subject_treatment: Debossed
+  color_and_tone: Gold, Silver, Rose Gold
+  lighting_and_shadow: Reflective
+  texture_and_material: Matte paper contrast
+  camera_and_composition: 'Compose for Foil Stamping using its key spatial cues: Metallic shine.'
+  atmosphere_and_mood: Expensive, elegant
+  rendering_and_quality: Premium, invite
   key_features: Metallic shine
   creative_brief: >-
-    Apply foil-stamping luxury to the input: metallic pressed highlights,
-    debossed edges, heat-transfer shine, and angle-dependent gold or silver
-    reflections should refine forms without requiring packaging or typography.
+    Apply foil-stamping luxury to the input: metallic pressed highlights, debossed edges, heat-transfer shine,
+    and angle-dependent gold or silver reflections should refine forms without requiring packaging or
+    typography.
 avoidRules:
   - print
   - ink

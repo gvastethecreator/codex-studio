@@ -13,15 +13,21 @@ tags:
   - lighting-and-atmosphere
 visualDna:
   aesthetic: Sunset light
-  form_and_line: None
-  color_palette: Warm Gold/Orange, honey amber, peach wash, copper rim, low-sun warmth
-  lighting_setup: Low angle sun, golden backlight, hazy atmospheric edge
-  material_texture: Soft, creamy diffusion, atmospheric haze
-  render_quality: Beautiful, romantic, magic-hour glow, cinematic warmth
-  spatial_distortion: Long shadows, stretched silhouettes, low-angle projection
-  atmosphere: Warm, happy, fleeting beauty, end-of-day peace
+  subject_treatment: >-
+    Treat subjects as believable filmed or broadcast subjects under Golden Hour: casting, wardrobe, props,
+    motion cues, and silhouette hierarchy follow 5. Lighting And Atmosphere cinematic and broadcast grammar
+    without locking to one plot beat.
+  color_and_tone: Warm Gold/Orange, honey amber, peach wash, copper rim, low-sun warmth
+  lighting_and_shadow: Low angle sun, golden backlight, hazy atmospheric edge
+  texture_and_material: Soft, creamy diffusion, atmospheric haze
+  camera_and_composition: Long shadows, stretched silhouettes, low-angle projection
+  atmosphere_and_mood: Warm, happy, fleeting beauty, end-of-day peace
+  rendering_and_quality: Beautiful, romantic, magic-hour glow, cinematic warmth
   key_features: Rim light, lens flare burst, amber haze, elongated shadow geometry
-  creative_brief: 'Apply golden-hour light as a transferable rendering system: low-angle warmth, amber haze, copper rim light, elongated shadows, and soft atmospheric diffusion. Do not require sunsets, horizons, landscapes, skin, or outdoor scenes. Any subject should feel briefly transformed by warm end-of-day light.'
+  creative_brief: >-
+    Apply golden-hour light as a transferable rendering system: low-angle warmth, amber haze, copper rim
+    light, elongated shadows, and soft atmospheric diffusion. Do not require sunsets, horizons, landscapes,
+    skin, or outdoor scenes. Any subject should feel briefly transformed by warm end-of-day light.
 avoidRules:
   - blue
   - cold

@@ -13,34 +13,34 @@ tags:
   - anime-style-spectrum
 visualDna:
   aesthetic: >-
-    Backlit contour anime longing where sky-led color scripts, pure silhouette dramaturgy, flare
-    haze, and golden rim light carry emotion
-  form_and_line: >-
-    Pure silhouette contour discipline, rim-lit hair-edge articulation, posture-led narrative shape
-    language, minimal internal line intrusion
-  color_palette: >-
-    Blazing orange-magenta sunset cores, deep silhouette blacks, gold rim luminance, violet dusk
-    transitions, cyan zenith remnants
-  lighting_setup: >-
+    Backlit contour anime longing where sky-led color scripts, pure silhouette dramaturgy, flare haze, and
+    golden rim light carry emotion
+  subject_treatment: >-
+    Pure silhouette contour discipline, rim-lit hair-edge articulation, posture-led narrative shape language,
+    minimal internal line intrusion
+  color_and_tone: >-
+    Blazing orange-magenta sunset cores, deep silhouette blacks, gold rim luminance, violet dusk transitions,
+    cyan zenith remnants
+  lighting_and_shadow: >-
     Extreme backlight staging with flare halos, atmospheric diffusion, crepuscular beam accents, and
     overexposed solar edge treatment
-  material_texture: >-
-    Lens flare bloom strata, haze particulate depth, soft cloud gradient layering, subtle film-grain
-    shadow structure
-  render_quality: >-
+  texture_and_material: >-
+    Lens flare bloom strata, haze particulate depth, soft cloud gradient layering, subtle film-grain shadow
+    structure
+  camera_and_composition: >-
+    Sky-first composition dominance with silhouette-anchor foregrounds and atmosphere-driven perceived depth
+    expansion
+  atmosphere_and_mood: Nostalgic, bittersweet, romantic, tender, wistful
+  rendering_and_quality: >-
     High-impact sunset silhouette rendering with cinematic sky scripting and emotionally readable
     negative-space composition
-  spatial_distortion: >-
-    Sky-first composition dominance with silhouette-anchor foregrounds and atmosphere-driven
-    perceived depth expansion
-  atmosphere: Nostalgic, bittersweet, romantic, tender, wistful
   key_features: >-
-    Sky-led framing, pure silhouette shapes, golden rim contours, flare haze, twilight color script,
-    and posture-like contour emotion
+    Sky-led framing, pure silhouette shapes, golden rim contours, flare haze, twilight color script, and
+    posture-like contour emotion
   creative_brief: >-
-    Use backlit contour longing as silhouette-emotion grammar. Any prompt should gain sky-scale
-    color, rim-lit edges, flare haze, and readable contour drama. Rooftops, beaches, couples,
-    sunsets as literal scene, and romance staging are optional.
+    Use backlit contour longing as silhouette-emotion grammar. Any prompt should gain sky-scale color, rim-lit
+    edges, flare haze, and readable contour drama. Rooftops, beaches, couples, sunsets as literal scene, and
+    romance staging are optional.
 avoidRules:
   - dark
   - gloomy

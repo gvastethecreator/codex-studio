@@ -12,16 +12,21 @@ tags:
   - cinematic-and-media
   - caricature-and-cartoon-styles
 visualDna:
-  aesthetic: Mike Judge dry anti-charisma cartoon, cubicle beige as style anchor, regional mediocrity, paperwork emptiness, satirical nobody energy, American beige despair made funny
-  form_and_line: Minimal dry contours, anti-charisma shapes, plain observational line, tiny awkward gestures
-  color_palette: Office beige, copy-paper white, washed-out polo green, stale blue, grey carpet, muted toner black
-  lighting_setup: Fluorescent flatness, shadowless workplace exposure, dull overhead wash
-  material_texture: Copy-paper grain, cubicle-fabric suggestion, cheap toner edge, dry marker-like fill
-  render_quality: Dry Mike Judge satire, underplayed adult animation, beige observational comedy
-  spatial_distortion: Underwhelming geometry, resignation posture, boxy spatial rhythm, anti-dynamic framing
-  atmosphere: Bored, dry, defeated, observant
+  aesthetic: >-
+    Mike Judge dry anti-charisma cartoon, cubicle beige as style anchor, regional mediocrity, paperwork
+    emptiness, satirical nobody energy, American beige despair made funny
+  subject_treatment: Minimal dry contours, anti-charisma shapes, plain observational line, tiny awkward gestures
+  color_and_tone: Office beige, copy-paper white, washed-out polo green, stale blue, grey carpet, muted toner black
+  lighting_and_shadow: Fluorescent flatness, shadowless workplace exposure, dull overhead wash
+  texture_and_material: Copy-paper grain, cubicle-fabric suggestion, cheap toner edge, dry marker-like fill
+  camera_and_composition: Underwhelming geometry, resignation posture, boxy spatial rhythm, anti-dynamic framing
+  atmosphere_and_mood: Bored, dry, defeated, observant
+  rendering_and_quality: Dry Mike Judge satire, underplayed adult animation, beige observational comedy
   key_features: Cubicle-like geometry, blank pauses, underwhelming body language, beige clutter, anti-glamour caricature
-  creative_brief: 'Apply Mike Judge office-boredom sketch language to any subject: dry linework, beige despair, anti-charisma staging, underwhelming shapes, and fluorescent flatness. Avoid cubicles, paperwork, faces, ties, or offices as mandatory content. Comedy should come from resignation, not spectacle.'
+  creative_brief: >-
+    Apply Mike Judge office-boredom sketch language to any subject: dry linework, beige despair, anti-charisma
+    staging, underwhelming shapes, and fluorescent flatness. Avoid cubicles, paperwork, faces, ties, or
+    offices as mandatory content. Comedy should come from resignation, not spectacle.
 avoidRules:
   - digital
   - HD

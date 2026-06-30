@@ -13,23 +13,25 @@ tags:
   - caricature-and-cartoon-styles
 visualDna:
   aesthetic: >-
-    Low-to-ground wobbly adventure, chunky simplified scale, everyday danger made epic, scribbly soft interiors, nervous
-    hand-drawn innocence, toy-scale heroism
-  form_and_line: Chunky uneven outlines, nervous hand-drawn curves, simplified object silhouettes, soft wobble marks
-  color_palette: Soft 90s TV pastels, warm carpet beige, toy-box primaries, nursery blue, faded marker color
-  lighting_setup: Flat TV lighting, soft low-angle fill, no rendered drama, readability-first brightness
-  material_texture: TV cel softness, dry marker edge, paper-like fill, softened scan texture
-  render_quality: 90s hand-drawn TV softness, low-angle everyday epic, gently wobbly animation
-  spatial_distortion: Low-eye-height scale, oversized ordinary forms, softened perspective, rounded clutter geometry
-  atmosphere: Curious, rambunctious, innocent, chaotic
-  key_features: Low-scale perspective, chunky outlines, oversized ordinary forms, crayon-ish uncertainty, soft domestic color
+    Low-to-ground wobbly adventure, chunky simplified scale, everyday danger made epic, scribbly soft
+    interiors, nervous hand-drawn innocence, toy-scale heroism
+  subject_treatment: Chunky uneven outlines, nervous hand-drawn curves, simplified object silhouettes, soft wobble marks
+  color_and_tone: Soft 90s TV pastels, warm carpet beige, toy-box primaries, nursery blue, faded marker color
+  lighting_and_shadow: Flat TV lighting, soft low-angle fill, no rendered drama, readability-first brightness
+  texture_and_material: TV cel softness, dry marker edge, paper-like fill, softened scan texture
+  camera_and_composition: Low-eye-height scale, oversized ordinary forms, softened perspective, rounded clutter geometry
+  atmosphere_and_mood: Curious, rambunctious, innocent, chaotic
+  rendering_and_quality: 90s hand-drawn TV softness, low-angle everyday epic, gently wobbly animation
+  key_features: >-
+    Low-scale perspective, chunky outlines, oversized ordinary forms, crayon-ish uncertainty, soft domestic
+    color
   creative_brief: >-
-    Apply toddler-scale perception without forcing toddlers: low viewpoint, oversized ordinary forms, chunky outlines,
-    soft 90s pastel color, and harmless things staged as epic obstacles. Avoid diapers, homes, toys, children, or
-    specific props as requirements. The style should make scale feel emotionally huge. Apply Rugrats - Toddler Crayon
-    Panic as a portable cinematic/camera style over any input: preserve its lens behavior, color process, lighting
-    setup, artifact pattern, and deformation grammar while avoiding a required actor, room, prop, brand, readable text,
-    fixed IP scene, or narrative setup.
+    Apply toddler-scale perception without forcing toddlers: low viewpoint, oversized ordinary forms, chunky
+    outlines, soft 90s pastel color, and harmless things staged as epic obstacles. Avoid diapers, homes, toys,
+    children, or specific props as requirements. The style should make scale feel emotionally huge. Apply
+    Rugrats - Toddler Crayon Panic as a portable cinematic/camera style over any input: preserve its lens
+    behavior, color process, lighting setup, artifact pattern, and deformation grammar while avoiding a
+    required actor, room, prop, brand, readable text, fixed IP scene, or narrative setup.
 avoidRules:
   - digital
   - HD

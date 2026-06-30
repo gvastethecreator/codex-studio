@@ -13,34 +13,37 @@ tags:
   - environment-and-worldbuilding
 visualDna:
   aesthetic: >-
-    Abstract Background within 7. Environment And Worldbuilding: a reusable 3D & CGI Rendering visual language with a
-    clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across
-    subjects while preserving Abstract Background's specific style identity.
-  form_and_line: >-
-    Define Abstract Background through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and
-    reusable beyond one literal scene.
-  color_palette: >-
+    Abstract Background within 7. Environment And Worldbuilding: a reusable 3D & CGI Rendering visual language
+    with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result
+    transferable across subjects while preserving Abstract Background's specific style identity.
+  subject_treatment: >-
+    Define Abstract Background through line, mass, contour, spacing, and rhythm. Keep forms readable,
+    intentional, and reusable beyond one literal scene.
+  color_and_tone: >-
     Use a Abstract Background-specific palette with clear dominant, secondary, and accent roles. Keep contrast
     deliberate and avoid generic color wash.
-  lighting_setup: >-
-    Use lighting that makes Abstract Background recognizable: purposeful key, rim, bounce, shadow, and glow behavior
-    with readable hierarchy.
-  material_texture: >-
-    Use materials and textures that reinforce Abstract Background: surface response, grain, patina, polish, or wear
-    should feel intentional and style-defining.
-  render_quality: >-
-    Render Abstract Background with high production clarity, strong silhouette reads, clean detail priority, and no
-    accidental UI, text, logos, or watermark.
-  atmosphere: >-
-    Set a mood that belongs to Abstract Background: specific, coherent, and distinct, with emotional tone carried by
-    visual systems rather than narrative captioning.
+  lighting_and_shadow: >-
+    Use lighting that makes Abstract Background recognizable: purposeful key, rim, bounce, shadow, and glow
+    behavior with readable hierarchy.
+  texture_and_material: >-
+    Use materials and textures that reinforce Abstract Background: surface response, grain, patina, polish, or
+    wear should feel intentional and style-defining.
+  camera_and_composition: >-
+    Production-preview camera for Abstract Background: readable hero scale, foreground/midground/background
+    depth, clean silhouette, and practical vertical crop.
+  atmosphere_and_mood: >-
+    Set a mood that belongs to Abstract Background: specific, coherent, and distinct, with emotional tone
+    carried by visual systems rather than narrative captioning.
+  rendering_and_quality: >-
+    Render Abstract Background with high production clarity, strong silhouette reads, clean detail priority,
+    and no accidental UI, text, logos, or watermark.
   key_features: >-
-    Prioritize Abstract Background's key features: recognizable shape language, palette logic, material cues, lighting
-    behavior, and composition rules.
+    Prioritize Abstract Background's key features: recognizable shape language, palette logic, material cues,
+    lighting behavior, and composition rules.
   creative_brief: >-
-    Create a style-card that translates Abstract Background into a portable visual system for 7. Environment And
-    Worldbuilding. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story
-    beat.
+    Create a style-card that translates Abstract Background into a portable visual system for 7. Environment
+    And Worldbuilding. Preserve the preset identity through style mechanics, not a fixed scene, character,
+    prop, or story beat.
 avoidRules:
   - subject
   - object

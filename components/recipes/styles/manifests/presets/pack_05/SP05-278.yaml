@@ -12,19 +12,25 @@ tags:
   - anime-battle-and-worlds
   - dark-fantasy-and-seinen
 visualDna:
-  aesthetic: Mineral loneliness, crystalline fragility, philosophical isolation, sharp beauty under fracture, stripped-down luminous ecosystem abstraction
-  form_and_line: Dense mature-anime linework, heavy crosshatching, weighted contour variation, gritty ink density
-  color_palette: Muted earths, blood reds, cold moonlit tones, desaturated horror palette, bruised shadow hues
-  lighting_setup: Ominous directional shadows, single-source drama light, deep chiaroscuro, low-key shadow lift
-  material_texture: Gem refraction, mineral facets, translucent fracture lines, polished dust, pearlescent sheen, clean matte voids
-  render_quality: Gritty dramatic anime frame, film-noir rendering, heavy shadow compression, textured midtone grit
-  spatial_distortion: Open emptiness, fracture-line depth, crystalline scale isolation, clean horizon pull, luminous void spacing
-  atmosphere: Crystalline, lonely, austere, luminous
+  aesthetic: >-
+    Mineral loneliness, crystalline fragility, philosophical isolation, sharp beauty under fracture,
+    stripped-down luminous ecosystem abstraction
+  subject_treatment: Dense mature-anime linework, heavy crosshatching, weighted contour variation, gritty ink density
+  color_and_tone: Muted earths, blood reds, cold moonlit tones, desaturated horror palette, bruised shadow hues
+  lighting_and_shadow: Ominous directional shadows, single-source drama light, deep chiaroscuro, low-key shadow lift
+  texture_and_material: >-
+    Gem refraction, mineral facets, translucent fracture lines, polished dust, pearlescent sheen, clean matte
+    voids
+  camera_and_composition: >-
+    Open emptiness, fracture-line depth, crystalline scale isolation, clean horizon pull, luminous void
+    spacing
+  atmosphere_and_mood: Crystalline, lonely, austere, luminous
+  rendering_and_quality: Gritty dramatic anime frame, film-noir rendering, heavy shadow compression, textured midtone grit
   key_features: Mineral refraction, clean emptiness, fracture motifs, luminous isolation, philosophical fragility
-  creative_brief: >
-    Render any subject as beautiful material loneliness: crystalline refraction,
-    clean emptiness, fracture lines, and pale light should communicate fragility
-    without fixed anatomy, shores, aggressors, taxonomy, or action scenes.
+  creative_brief: >-
+    Render any subject as beautiful material loneliness: crystalline refraction, clean emptiness, fracture
+    lines, and pale light should communicate fragility without fixed anatomy, shores, aggressors, taxonomy, or
+    action scenes.
 avoidRules:
   - realistic
   - 3d render
@@ -41,7 +47,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-278.webp
 attributes:
-  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
+  negativePrompt: >-
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts,
+    watermark, text, signature
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds

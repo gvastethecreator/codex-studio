@@ -13,19 +13,18 @@ tags:
   - printmaking
 visualDna:
   aesthetic: Sun print blueprint
-  form_and_line: White silhouettes
-  color_palette: Prussian Blue and White
-  lighting_setup: Inverted (negative)
-  material_texture: Watercolor paper
-  render_quality: Scientific photogram clarity without requiring plants, plans, or buildings
-  spatial_distortion: Silhouette only
-  atmosphere: Blue, scientific
+  subject_treatment: White silhouettes
+  color_and_tone: Prussian Blue and White
+  lighting_and_shadow: Inverted (negative)
+  texture_and_material: Watercolor paper
+  camera_and_composition: Silhouette only
+  atmosphere_and_mood: Blue, scientific
+  rendering_and_quality: Scientific photogram clarity without requiring plants, plans, or buildings
   key_features: Blue monochrome
   creative_brief: >-
-    Apply cyanotype process to any input: Prussian blue monochrome, UV-exposure
-    softness, paper fiber, contact-print whites, rinsed edges, and scientific
-    photogram calm. Keep sun-printed material logic without requiring plants,
-    specimen sheets, blueprints, labels, or archival catalog layouts.
+    Apply cyanotype process to any input: Prussian blue monochrome, UV-exposure softness, paper fiber,
+    contact-print whites, rinsed edges, and scientific photogram calm. Keep sun-printed material logic without
+    requiring plants, specimen sheets, blueprints, labels, or archival catalog layouts.
 avoidRules:
   - photo
   - realistic
@@ -47,7 +46,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP06-040.webp
 attributes:
-  negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border, botanical requirement, architecture requirement
+  negativePrompt: >-
+    photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy,
+    watermark, text, signature, frame, border, botanical requirement, architecture requirement
 taxonomy:
   packId: pack_06
   packName: Essential Art Styles

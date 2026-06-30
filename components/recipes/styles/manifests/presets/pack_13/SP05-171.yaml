@@ -12,20 +12,31 @@ tags:
   - anime-character-and-lifestyle
   - shojo-magical-girl-and-visionary-classics
 visualDna:
-  aesthetic: Arcane-chaos comedy anime language with loud spell theatrics, mercenary bravado, and high-tempo 90s fantasy irreverence abstracted into explosive color rhythm
-  form_and_line: Agile expressive linework with elastic comedic accents, flame-and-spell circle geometry, and reaction-shot exaggeration tuned for banter energy
-  color_palette: Fire-cast oranges, sapphire spell blues, scorched umbers, pop-magenta highlight accents, and bright fantasy-sky contrasts
-  lighting_setup: Spell-burst key flashes, warm ember practicals, high-contrast cel cuts during impact beats, and comedic brightness resets between chaos peaks
-  material_texture: Scorched matte surfaces, parchment-grain patterning, cel-grain overlays, and painted fantasy-depth wash
-  render_quality: Punchy 90s fantasy-comedy rendering with clear comedic timing readability, explosive magic grammar, and adventurous charm fidelity
-  spatial_distortion: Kinetic exaggeration and rapid perspective pushes that support slapstick-to-spell impact transitions
-  atmosphere: Comic, adventurous, fiery, rambunctious
-  key_features: Spell-circle bursts, flame-color punctuation, comic reaction geometry, mischievous silhouette energy, fireball spectacle
+  aesthetic: >-
+    Arcane-chaos comedy anime language with loud spell theatrics, mercenary bravado, and high-tempo 90s
+    fantasy irreverence abstracted into explosive color rhythm
+  subject_treatment: >-
+    Agile expressive linework with elastic comedic accents, flame-and-spell circle geometry, and reaction-shot
+    exaggeration tuned for banter energy
+  color_and_tone: >-
+    Fire-cast oranges, sapphire spell blues, scorched umbers, pop-magenta highlight accents, and bright
+    fantasy-sky contrasts
+  lighting_and_shadow: >-
+    Spell-burst key flashes, warm ember practicals, high-contrast cel cuts during impact beats, and comedic
+    brightness resets between chaos peaks
+  texture_and_material: Scorched matte surfaces, parchment-grain patterning, cel-grain overlays, and painted fantasy-depth wash
+  camera_and_composition: Kinetic exaggeration and rapid perspective pushes that support slapstick-to-spell impact transitions
+  atmosphere_and_mood: Comic, adventurous, fiery, rambunctious
+  rendering_and_quality: >-
+    Punchy 90s fantasy-comedy rendering with clear comedic timing readability, explosive magic grammar, and
+    adventurous charm fidelity
+  key_features: >-
+    Spell-circle bursts, flame-color punctuation, comic reaction geometry, mischievous silhouette energy,
+    fireball spectacle
   creative_brief: >-
-    Detonate the input with arcane-chaos roadtrip energy: spell-circle bursts,
-    fireball color punctuation, elastic comic reaction geometry, and mischievous
-    fantasy bravado can turn any subject loud and rambunctious without requiring
-    a party, wagon, tavern, or specific adventurer scene.
+    Detonate the input with arcane-chaos roadtrip energy: spell-circle bursts, fireball color punctuation,
+    elastic comic reaction geometry, and mischievous fantasy bravado can turn any subject loud and
+    rambunctious without requiring a party, wagon, tavern, or specific adventurer scene.
 avoidRules:
   - realistic
   - 3d render
@@ -42,7 +53,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-171.webp
 attributes:
-  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
+  negativePrompt: >-
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts,
+    watermark, text, signature
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle
