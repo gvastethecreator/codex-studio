@@ -87,11 +87,11 @@ function createDetail(overrides: Partial<JobDetailResponse> = {}): JobDetailResp
 }
 
 describe('canRetryStudioJob', () => {
-  it('allows retrying any persisted job state', () => {
-    expect(canRetryStudioJob('queued')).toBe(true);
-    expect(canRetryStudioJob('running')).toBe(true);
+  it('allows retrying only states that can be regenerated in place', () => {
+    expect(canRetryStudioJob('queued')).toBe(false);
+    expect(canRetryStudioJob('running')).toBe(false);
     expect(canRetryStudioJob('needs_review')).toBe(true);
-    expect(canRetryStudioJob('completed')).toBe(true);
+    expect(canRetryStudioJob('completed')).toBe(false);
     expect(canRetryStudioJob('failed')).toBe(true);
     expect(canRetryStudioJob('cancelled')).toBe(true);
   });

@@ -1,6 +1,7 @@
 import { describe, expect, it, vi } from 'vite-plus/test';
 
 import type {
+  CodexRuntimeDoctorReport,
   CodexModelCatalogResponse,
   LocalCodexSessionResponse,
 } from '../../../packages/shared/src';
@@ -119,6 +120,25 @@ function createWorkerDependency(): Pick<
       trackedJobs: 0,
     })),
     resetWorkerState: vi.fn(async () => {}),
+  };
+}
+
+function createCodexRuntimeReport(
+  overrides: Partial<CodexRuntimeDoctorReport> = {},
+): CodexRuntimeDoctorReport {
+  return {
+    status: 'ready',
+    canRunJobs: true,
+    checkedAt: '2026-05-31T00:00:00.000Z',
+    selectedExecutable: 'codex',
+    selectedCommand: 'codex --version',
+    selectedVersion: 'codex-cli 1.0.0',
+    selectedVersionNumber: '1.0.0',
+    appServerSupported: true,
+    recommendedAction: 'Codex Product Runtime is ready.',
+    issues: [],
+    candidates: [],
+    ...overrides,
   };
 }
 
@@ -418,6 +438,7 @@ describe('createStudioApp', () => {
         ensureAppServer,
         isAppServerRunning,
         getAppServerDiagnostics,
+        readCodexRuntimeDoctor: () => createCodexRuntimeReport(),
       },
     });
 
@@ -426,11 +447,12 @@ describe('createStudioApp', () => {
     });
 
     expect(response.status).toBe(200);
-    await expect(response.json()).resolves.toEqual({
+    await expect(response.json()).resolves.toMatchObject({
       running: true,
       wsUrl: expect.any(String),
       pid: 4242,
       lastStartError: null,
+      codexRuntime: expect.objectContaining({ canRunJobs: true }),
     });
     expect(ensureAppServer).toHaveBeenCalledWith('user');
     expect(isAppServerRunning).toHaveBeenCalled();
@@ -464,6 +486,55 @@ describe('createStudioApp', () => {
     expect(worker.getWorkerStatus).toHaveBeenCalledTimes(2);
   });
 
+  it('blocks Codex job creation before persistence when Runtime Doctor fails', async () => {
+    const createJob = vi.fn(() => {
+      throw new Error('job should not be persisted');
+    });
+    const dbStore = createFakeDbStore({
+      createJob: createJob as unknown as StudioDbStore['createJob'],
+    });
+    const worker = createWorkerDependency();
+
+    const studio = await createStudioApp({
+      runInit: false,
+      dependencies: {
+        dbStore,
+        catalogStore: createFakeCatalogStore(),
+        worker,
+        readCodexRuntimeDoctor: () =>
+          createCodexRuntimeReport({
+            status: 'blocked',
+            canRunJobs: false,
+            appServerSupported: false,
+            recommendedAction: 'Use the OpenAI Codex desktop CLI binary.',
+            issues: [
+              {
+                code: 'codex_cli_legacy',
+                severity: 'error',
+                message: 'Selected Codex CLI looks legacy.',
+                action: 'Use the OpenAI Codex desktop CLI binary.',
+              },
+            ],
+          }),
+      },
+    });
+
+    const response = await studio.app.request('/api/jobs', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ kind: 'codex_imagegen', prompt: 'draw a lighthouse' }),
+    });
+
+    expect(response.status).toBe(400);
+    await expect(response.json()).resolves.toMatchObject({
+      code: 'provider_runtime_blocked',
+      providerId: 'codex',
+      diagnostics: expect.arrayContaining([expect.stringContaining('legacy')]),
+    });
+    expect(createJob).not.toHaveBeenCalled();
+    expect(worker.enqueueJob).not.toHaveBeenCalled();
+  });
+
   it('surfaces runtime start failures through the composition seam', async () => {
     const ensureAppServer = vi.fn(() => {
       throw new Error('unable to start app-server');
@@ -476,6 +547,7 @@ describe('createStudioApp', () => {
         catalogStore: createFakeCatalogStore(),
         worker: createWorkerDependency(),
         ensureAppServer,
+        readCodexRuntimeDoctor: () => createCodexRuntimeReport(),
       },
     });
 

@@ -32,6 +32,19 @@ function createHealth(overrides?: Partial<HealthResponse>): HealthResponse {
       version: 'codex 1.0.0',
       command: 'codex --version',
     },
+    codexRuntime: {
+      status: 'ready',
+      canRunJobs: true,
+      checkedAt: '2026-05-07T00:00:00.000Z',
+      selectedExecutable: 'codex',
+      selectedCommand: 'codex --version',
+      selectedVersion: 'codex-cli 1.0.0',
+      selectedVersionNumber: '1.0.0',
+      appServerSupported: true,
+      recommendedAction: 'Codex Product Runtime is ready.',
+      issues: [],
+      candidates: [],
+    },
     appServer: {
       running: true,
       wsUrl: 'ws://localhost:17224',
@@ -48,6 +61,12 @@ function createHealth(overrides?: Partial<HealthResponse>): HealthResponse {
       libraryReady: true,
       codexReady: true,
       onboardingReady: true,
+    },
+    worker: {
+      maxConcurrentJobs: 1,
+      activeWorkerCount: 0,
+      queuedJobs: 0,
+      trackedJobs: 0,
     },
     ...overrides,
   };
@@ -197,6 +216,53 @@ describe('studioDiagnostics', () => {
         value: 'Login Required',
         tone: 'warning',
       }),
+    );
+  });
+
+  it('surfaces Codex runtime doctor blockers as actionable runtime status', () => {
+    const snapshot = buildStudioDiagnosticsSnapshot({
+      health: createHealth({
+        codexRuntime: {
+          ...createHealth().codexRuntime,
+          status: 'blocked',
+          canRunJobs: false,
+          appServerSupported: false,
+          recommendedAction: 'Use the OpenAI Codex desktop CLI binary.',
+          issues: [
+            {
+              code: 'codex_cli_legacy',
+              severity: 'error',
+              message: 'Selected Codex CLI looks legacy.',
+              action: 'Use the OpenAI Codex desktop CLI binary.',
+            },
+          ],
+        },
+        checks: {
+          libraryReady: true,
+          codexReady: false,
+          onboardingReady: false,
+        },
+      }),
+      localCodexSession: createLocalCodexSession(),
+      hasFetchedDiagnostics: true,
+      isBackendConnected: true,
+    });
+
+    expect(snapshot.statusItems).toEqual(
+      expect.arrayContaining([
+        expect.objectContaining({
+          key: 'codexCli',
+          value: 'Blocked',
+          tone: 'danger',
+          detail: 'Use the OpenAI Codex desktop CLI binary.',
+        }),
+        expect.objectContaining({
+          key: 'appServer',
+          value: 'Blocked',
+          tone: 'danger',
+          detail: 'Use the OpenAI Codex desktop CLI binary.',
+        }),
+      ]),
     );
   });
 });

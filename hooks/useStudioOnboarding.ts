@@ -38,7 +38,7 @@ export function useStudioOnboarding({ log, addToast, shouldAutoOpen }: UseStudio
       const nextHealth = await getStudioHealth();
       setHealth(nextHealth);
       log(
-        `Studio onboarding health refreshed: cli=${nextHealth.codexCli.available ? nextHealth.codexCli.version || 'available' : 'missing'}, appServer=${nextHealth.appServer.running ? 'running' : 'stopped'}, libraryReady=${nextHealth.checks.libraryReady}, envLocal=${nextHealth.runtime.envLocalPresent}`,
+        `Studio onboarding health refreshed: cli=${nextHealth.codexCli.available ? nextHealth.codexCli.version || 'available' : 'missing'}, codexRuntime=${nextHealth.codexRuntime.status}, appServer=${nextHealth.appServer.running ? 'running' : 'stopped'}, libraryReady=${nextHealth.checks.libraryReady}, envLocal=${nextHealth.runtime.envLocalPresent}`,
       );
     } catch (refreshError) {
       const message =
@@ -78,7 +78,9 @@ export function useStudioOnboarding({ log, addToast, shouldAutoOpen }: UseStudio
       const result = await startStudioAppServer();
       await refreshHealth();
       addToast(
-        result.running ? 'Codex app-server started' : 'Could not start Codex app-server',
+        result.running
+          ? 'Codex app-server started'
+          : (result.codexRuntime?.recommendedAction ?? 'Could not start Codex app-server'),
         result.running ? 'success' : 'info',
       );
     } catch (startError) {

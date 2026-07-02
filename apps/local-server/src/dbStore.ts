@@ -25,6 +25,7 @@ export interface StudioDbStore {
     execution?: JobExecutionOptions | null;
   }): Job;
   updateJobFinalPrompt(id: string, finalPrompt: string): Job | null;
+  requeueJob?(id: string): Job | null;
   getJob(id: string): Job | null;
   listJobs(): Job[];
   listJobSummaries?(): JobSummary[];
@@ -313,6 +314,14 @@ export function createSqliteDbStore({
         .run(finalPrompt, now(), id);
       return this.getJob(id);
     },
+    requeueJob(id) {
+      database
+        .query(
+          "UPDATE jobs SET status = 'queued', error = NULL, updated_at = ?, completed_at = NULL WHERE id = ?",
+        )
+        .run(now(), id);
+      return this.getJob(id);
+    },
     getJob(id) {
       const row = database.query('SELECT * FROM jobs WHERE id = ?').get(id);
       return row ? mapJob(row) : null;
@@ -365,6 +374,7 @@ export async function createDefaultDbStore(): Promise<StudioDbStore> {
     listJobSummaries,
     listLogs,
     listProjects,
+    requeueJob,
     updateJobFinalPrompt,
   } = await import('./db');
 
@@ -374,6 +384,7 @@ export async function createDefaultDbStore(): Promise<StudioDbStore> {
     listProjects,
     createJob,
     updateJobFinalPrompt,
+    requeueJob,
     getJob,
     listJobs,
     listJobSummaries,

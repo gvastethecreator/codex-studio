@@ -1,8 +1,7 @@
-import { spawnSync } from 'node:child_process';
 import { Hono } from 'hono';
-import type { AppServerEnsureReason } from '../../../packages/shared/src';
+import type { AppServerEnsureReason, CodexRuntimeDoctorReport } from '../../../packages/shared/src';
 import type { getSettings } from './config';
-import type { resolveCodexInvocation } from './codexExecutable';
+import { readCodexRuntimeDoctor } from './codexRuntimeDoctor';
 import type { getAppServerDiagnostics } from './codex/processSupervisor';
 import type { inspectLibrary } from './library';
 import type { WorkerStatus } from './worker';
@@ -10,7 +9,7 @@ import type { WorkerStatus } from './worker';
 interface RuntimeRoutesDependencies {
   readSettings: () => ReturnType<typeof getSettings>;
   inspectLibrary: () => ReturnType<typeof inspectLibrary>;
-  resolveCodexInvocation: typeof resolveCodexInvocation;
+  readCodexRuntimeDoctor?: () => CodexRuntimeDoctorReport;
   getCodexWsUrl: () => string;
   getEnvLocalPath: () => string;
   hasEnvLocalFile: () => boolean;
@@ -23,7 +22,7 @@ interface RuntimeRoutesDependencies {
 export function createRuntimeRoutes({
   readSettings,
   inspectLibrary,
-  resolveCodexInvocation,
+  readCodexRuntimeDoctor: readCodexRuntimeDoctorFn = readCodexRuntimeDoctor,
   getCodexWsUrl,
   getEnvLocalPath,
   hasEnvLocalFile,
@@ -42,9 +41,8 @@ export function createRuntimeRoutes({
   routes.get('/health', (c) => {
     const settings = readSettings();
     const library = inspectLibrary();
-    const [command, ...args] = resolveCodexInvocation(['--version']);
-    const codex = spawnSync(command, args, { encoding: 'utf8' });
-    const codexAvailable = codex.status === 0;
+    const codexRuntime = readCodexRuntimeDoctorFn();
+    const codexAvailable = codexRuntime.selectedVersion !== null;
     const appServerDiagnostics = readAppServerDiagnostics();
     const libraryReady = library.exists && library.writable && library.missingFolders.length === 0;
     const appServerRunning = isAppServerRunning();
@@ -74,9 +72,10 @@ export function createRuntimeRoutes({
       },
       codexCli: {
         available: codexAvailable,
-        version: codexAvailable ? codex.stdout.trim() : null,
-        command: [command, ...args].join(' '),
+        version: codexRuntime.selectedVersion,
+        command: codexRuntime.selectedCommand,
       },
+      codexRuntime,
       appServer: {
         running: appServerRunning,
         wsUrl: getCodexWsUrl(),
@@ -91,14 +90,28 @@ export function createRuntimeRoutes({
       },
       checks: {
         libraryReady,
-        codexReady: codexAvailable,
-        onboardingReady: libraryReady && codexAvailable && appServerRunning,
+        codexReady: codexRuntime.canRunJobs,
+        onboardingReady: libraryReady && codexRuntime.canRunJobs && appServerRunning,
       },
       worker: readWorkerStatus(),
     });
   });
 
+  routes.get('/runtime/doctor', (c) => c.json(readCodexRuntimeDoctorFn()));
+
   routes.post('/app-server/start', (c) => {
+    const codexRuntime = readCodexRuntimeDoctorFn();
+    if (!codexRuntime.canRunJobs) {
+      const diagnostics = readAppServerDiagnostics();
+      return c.json({
+        running: false,
+        wsUrl: getCodexWsUrl(),
+        pid: diagnostics.pid,
+        lastStartError: codexRuntime.recommendedAction,
+        codexRuntime,
+      });
+    }
+
     ensureAppServer('user');
     const diagnostics = readAppServerDiagnostics();
     return c.json({
@@ -106,6 +119,7 @@ export function createRuntimeRoutes({
       wsUrl: getCodexWsUrl(),
       pid: diagnostics.pid,
       lastStartError: diagnostics.lastStartError,
+      codexRuntime,
     });
   });
 

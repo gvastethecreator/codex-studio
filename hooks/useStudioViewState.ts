@@ -63,7 +63,7 @@ export interface StudioViewStateController {
 export function useStudioViewState({
   closeOverlay,
 }: UseStudioViewStateProps): StudioViewStateController {
-  const [isQueueOpen, setIsQueueOpen] = useState(true);
+  const [isQueueOpen, setIsQueueOpen] = useState(false);
   const [editorState, setEditorState] = useState<EditorState>(INITIAL_EDITOR_STATE);
   const [previewRatio, setPreviewRatio] = useState<AspectRatio | null>(null);
   const [isDashboardModalOpen, setIsDashboardModalOpen] = useState(false);
@@ -122,7 +122,7 @@ export function useStudioViewState({
   }, []);
 
   const resetViewState = useCallback(() => {
-    setIsQueueOpen(true);
+    setIsQueueOpen(false);
     setEditorState(INITIAL_EDITOR_STATE);
     setPreviewRatio(null);
     setIsDashboardModalOpen(false);

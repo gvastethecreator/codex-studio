@@ -66,6 +66,19 @@ function createHealth(overrides?: Partial<HealthResponse>): HealthResponse {
       version: 'codex 1.0.0',
       command: 'codex --version',
     },
+    codexRuntime: {
+      status: 'ready',
+      canRunJobs: true,
+      checkedAt: '2026-06-27T00:00:00.000Z',
+      selectedExecutable: 'codex',
+      selectedCommand: 'codex --version',
+      selectedVersion: 'codex-cli 1.0.0',
+      selectedVersionNumber: '1.0.0',
+      appServerSupported: true,
+      recommendedAction: 'Codex Product Runtime is ready.',
+      issues: [],
+      candidates: [],
+    },
     appServer: {
       running: false,
       wsUrl: 'ws://127.0.0.1:17224',
@@ -82,6 +95,12 @@ function createHealth(overrides?: Partial<HealthResponse>): HealthResponse {
       libraryReady: true,
       codexReady: true,
       onboardingReady: false,
+    },
+    worker: {
+      maxConcurrentJobs: 1,
+      activeWorkerCount: 0,
+      queuedJobs: 0,
+      trackedJobs: 0,
     },
     ...overrides,
   };
@@ -119,6 +138,7 @@ describe('buildCodexStudioSetupPrompt', () => {
     expect(prompt).toContain('D:/DEV/codex-studio');
     expect(prompt).toContain('D:/AI-Studio-Library');
     expect(prompt).toContain('Local Codex Session: chatgpt_login_required');
+    expect(prompt).toContain('Codex Runtime Doctor: Codex Product Runtime is ready.');
     expect(prompt).toContain('Run or repair `bun run studio:init`');
     expect(prompt).toContain('Provider Secrets out of SQLite');
     expect(prompt).toContain('bun run test');

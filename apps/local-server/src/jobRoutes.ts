@@ -15,6 +15,7 @@ interface JobRoutesDependencies extends PersistentJobIntakeDependencies {
   listJobs: () => Array<Job | JobSummary>;
   getJob: (jobId: string) => Job | null;
   getJobDetail: (jobId: string) => Promise<JobDetailResponse | null>;
+  requeueJob?: (jobId: string) => Job | null;
   cancelQueuedOrRunningJob: (jobId: string) => Job | null;
 }
 
@@ -46,14 +47,22 @@ const CreateJobRequestBoundarySchema = Schema.Struct({
 
 type CreateJobRequestBoundary = Schema.Schema.Type<typeof CreateJobRequestBoundarySchema>;
 
+const ACTIVE_RETRY_STATUSES = new Set<Job['status']>(['queued', 'running']);
+const REQUEUEABLE_STATUSES = new Set<Job['status']>(['failed', 'cancelled', 'needs_review']);
+
 function decodeCreateJobRequestBoundary(body: unknown) {
   return Schema.decodeUnknownEither(CreateJobRequestBoundarySchema)(body);
+}
+
+function resolveJobProviderId(job: Pick<Job, 'providerId' | 'sourceSpec'>) {
+  return job.providerId ?? job.sourceSpec?.providerId ?? 'codex';
 }
 
 export function createJobRoutes({
   listJobs,
   getJob,
   getJobDetail,
+  requeueJob,
   cancelQueuedOrRunningJob,
   ensureDefaultProjectId,
   createJobId,
@@ -106,6 +115,41 @@ export function createJobRoutes({
       return c.json({ error: 'Job cannot be cancelled right now' }, 409);
     }
 
+    return c.json(updatedJob);
+  });
+
+  routes.post('/:id/retry', (c) => {
+    const jobId = c.req.param('id');
+    const job = getJob(jobId);
+    if (!job) return c.json({ error: 'Job not found' }, 404);
+
+    if (ACTIVE_RETRY_STATUSES.has(job.status)) {
+      return c.json(job);
+    }
+
+    if (!REQUEUEABLE_STATUSES.has(job.status)) {
+      return c.json(
+        {
+          error: 'Job cannot be retried from its current status',
+          code: 'invalid_retry_status',
+          status: job.status,
+        },
+        409,
+      );
+    }
+
+    const providerBlocker = resolveProviderExecutionBlocker(resolveJobProviderId(job));
+    if (providerBlocker) {
+      return c.json(providerBlocker as Record<string, unknown>, 400);
+    }
+
+    const updatedJob = requeueJob?.(jobId);
+    if (!updatedJob) {
+      return c.json({ error: 'Job retry is unavailable' }, 409);
+    }
+
+    publishEvent('job.progress', updatedJob);
+    enqueueJob(updatedJob);
     return c.json(updatedJob);
   });
 

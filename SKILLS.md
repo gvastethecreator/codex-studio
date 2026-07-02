@@ -7,9 +7,10 @@ This file describes local repo workflows for people and agents. It is not a glos
 1. Use the repo-local skill `skills/codex-studio-setup/SKILL.md` to prepare a new checkout or repair a blocked welcome screen.
 2. The copyable onboarding prompt must point to that skill and pass a runtime snapshot: repo, local API, Studio Library, `.env.local`, Bun, Codex CLI, app-server, Local Codex Session, and readiness.
 3. Automated setup must use supported repo commands: `bun install` when needed, `bun run studio:init`, `bun run dev`, `/api/health`, `/api/codex/session`, and `/api/app-server/start`.
-4. If ChatGPT login is missing, stop with the exact action `codex login`; do not mark readiness complete without a real session.
-5. Keep Provider Secrets out of SQLite, catalog metadata, logs, screenshots, docs, and committed files.
-6. Close with `bun run test`, `bun run check`, and `bun run build`. For onboarding/frontend changes, also add visual verification.
+4. Use `bun run runtime:doctor` when Codex CLI path/version/app-server support is unclear; it must guide updates rather than auto-update silently.
+5. If ChatGPT login is missing, stop with the exact action `codex login`; do not mark readiness complete without a real session.
+6. Keep Provider Secrets out of SQLite, catalog metadata, logs, screenshots, docs, and committed files.
+7. Close with `bun run test`, `bun run check`, and `bun run build`. For onboarding/frontend changes, also add visual verification.
 
 ## Update Dependencies And Basic CI
 

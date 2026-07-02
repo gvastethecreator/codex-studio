@@ -74,6 +74,8 @@ export function buildStudioDiagnosticsSnapshot({
   hasFetchedDiagnostics,
   isBackendConnected,
 }: BuildStudioDiagnosticsSnapshotArgs): StudioDiagnosticsSnapshot {
+  const codexRuntime = health?.codexRuntime ?? null;
+  const blockedCodexRuntime = codexRuntime?.canRunJobs === false ? codexRuntime : null;
   const localSessionStatus = !localCodexSession
     ? {
         value: 'Checking',
@@ -129,26 +131,50 @@ export function buildStudioDiagnosticsSnapshot({
     {
       key: 'codexCli',
       label: 'Codex CLI',
-      value: health?.codexCli.available === true ? 'Ready' : health ? 'Unavailable' : 'Checking',
-      detail:
-        health?.codexCli.available === true
+      value: blockedCodexRuntime
+        ? 'Blocked'
+        : health?.codexCli.available === true
+          ? 'Ready'
+          : health
+            ? 'Unavailable'
+            : 'Checking',
+      detail: blockedCodexRuntime
+        ? blockedCodexRuntime.recommendedAction
+        : health?.codexCli.available === true
           ? (health.codexCli.version ?? health.codexCli.command ?? 'Codex CLI detected.')
           : health
             ? 'Install Codex CLI or confirm it is available on your PATH before running image tasks.'
             : 'Waiting for the first runtime check from the local backend.',
-      tone: health?.codexCli.available === true ? 'success' : health ? 'danger' : 'warning',
+      tone: blockedCodexRuntime
+        ? 'danger'
+        : health?.codexCli.available === true
+          ? 'success'
+          : health
+            ? 'danger'
+            : 'warning',
     },
     {
       key: 'appServer',
       label: 'App Server',
-      value: health?.appServer.running === true ? 'Running' : health ? 'Standby' : 'Checking',
-      detail:
-        health?.appServer.running === true
+      value: blockedCodexRuntime
+        ? 'Blocked'
+        : health?.appServer.running === true
+          ? 'Running'
+          : health
+            ? 'Standby'
+            : 'Checking',
+      detail: blockedCodexRuntime
+        ? blockedCodexRuntime.recommendedAction
+        : health?.appServer.running === true
           ? health.appServer.wsUrl || 'Codex app-server websocket is live.'
           : health
             ? 'The App-Server Lifecycle will start codex app-server automatically when a generation or Local Codex Session check needs it.'
             : 'Waiting for the first runtime check from the local backend.',
-      tone: health?.appServer.running === true ? 'success' : 'warning',
+      tone: blockedCodexRuntime
+        ? 'danger'
+        : health?.appServer.running === true
+          ? 'success'
+          : 'warning',
     },
     {
       key: 'localCodexSession',

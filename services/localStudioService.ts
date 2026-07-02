@@ -4,6 +4,7 @@ import type {
   CatalogWorkspaceSummary,
   CatalogBatchCommandResult,
   CatalogCommandFilter,
+  CodexRuntimeDoctorReport,
   CodexAccountStatusResponse,
   CodexModelCatalogResponse,
   LocalCodexSessionResponse,
@@ -33,7 +34,6 @@ import type {
   SystemLog,
   ToolingLogsPruneResult,
 } from '../packages/shared/src';
-import { buildStudioJobRetryRequest } from '../lib/studioJobRetry';
 import { resolveStudioApiBase } from './studioRuntime';
 
 /**
@@ -99,6 +99,10 @@ export async function listProjects() {
  */
 export async function getStudioHealth() {
   return request<HealthResponse>('/api/health');
+}
+
+export async function getCodexRuntimeDoctor() {
+  return request<CodexRuntimeDoctorReport>('/api/runtime/doctor');
 }
 
 /**
@@ -191,7 +195,13 @@ export async function getCodexAccountStatus() {
  * Ask the local backend to bootstrap `codex app-server` when possible.
  */
 export async function startStudioAppServer() {
-  return request<{ running: boolean; wsUrl: string }>('/api/app-server/start', {
+  return request<{
+    running: boolean;
+    wsUrl: string;
+    pid?: number | null;
+    lastStartError?: string | null;
+    codexRuntime?: CodexRuntimeDoctorReport;
+  }>('/api/app-server/start', {
     method: 'POST',
   });
 }
@@ -277,19 +287,19 @@ export async function getStudioJobDetail(jobId: string) {
 }
 
 /**
- * Recreate an existing backend job by reusing its recorded prompt, source spec,
- * and execution settings while issuing a fresh batch id for the new run.
+ * Requeue an existing backend job from its detail payload without copying it.
  */
 export async function retryStudioJob(detail: JobDetailResponse) {
-  return createStudioJob(buildStudioJobRetryRequest(detail));
+  return retryStudioJobById(detail.job.id);
 }
 
 /**
- * Convenience retry helper for queue surfaces that only know the job id.
+ * Requeue an existing backend job in place so failed tasks do not duplicate rows.
  */
 export async function retryStudioJobById(jobId: string) {
-  const detail = await getStudioJobDetail(jobId);
-  return retryStudioJob(detail);
+  return request<Job>(`/api/jobs/${jobId}/retry`, {
+    method: 'POST',
+  });
 }
 
 /**

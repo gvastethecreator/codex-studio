@@ -93,10 +93,12 @@ Studio Readiness combines:
 - local backend reachability
 - Studio Library health
 - Codex CLI availability
+- Codex Runtime Doctor path/version/app-server support
 - `codex app-server` lifecycle
 - Local Codex Session state
 
 The main product flow is blocked when the local Codex/ChatGPT login cannot run jobs. The default Codex flow does not require `OPENAI_API_KEY`.
+Codex job intake uses this same non-secret runtime readiness signal before persisting or requeueing jobs, so known-bad local runtimes fail fast instead of creating doomed queue rows.
 
 ## Provider Boundary
 
@@ -137,6 +139,7 @@ Codex SDK and scripts are automation surfaces, not the product runtime. They sup
 - `providers:verify`
 - `recipes:verify`
 - `styles:verify`
+- `runtime:doctor`
 - `ui:source:verify`
 - `ui:chunks:verify`
 - `library:layout:verify`

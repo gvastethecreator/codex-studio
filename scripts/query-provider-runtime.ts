@@ -1,8 +1,10 @@
 import {
+  createCodexRuntimePreflight,
   getExternalProviderRuntimePreflight,
-  readExternalProviderRuntimePreflights,
-  type ProviderRuntimePreflight,
+  readGenerationProviderRuntimePreflights,
 } from '../apps/local-server/src/providers/runtimeConfig';
+import { readCodexRuntimeDoctor } from '../apps/local-server/src/codexRuntimeDoctor';
+import type { GenerationProviderRuntimePreflight } from '../packages/shared/src';
 import type { GenerationProviderId } from '../packages/shared/src';
 
 function argValue(name: string) {
@@ -12,14 +14,18 @@ function argValue(name: string) {
 const providerId = argValue('provider') as GenerationProviderId | undefined;
 const asJson = process.argv.includes('--json');
 function isProviderRuntimePreflight(
-  value: ProviderRuntimePreflight | null,
-): value is ProviderRuntimePreflight {
+  value: GenerationProviderRuntimePreflight | null,
+): value is GenerationProviderRuntimePreflight {
   return Boolean(value);
 }
 
 const rows = providerId
-  ? [getExternalProviderRuntimePreflight(providerId)].filter(isProviderRuntimePreflight)
-  : readExternalProviderRuntimePreflights();
+  ? [
+      providerId === 'codex'
+        ? createCodexRuntimePreflight(readCodexRuntimeDoctor())
+        : getExternalProviderRuntimePreflight(providerId),
+    ].filter(isProviderRuntimePreflight)
+  : readGenerationProviderRuntimePreflights();
 
 if (asJson) {
   console.log(JSON.stringify({ count: rows.length, rows }, null, 2));

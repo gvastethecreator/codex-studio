@@ -52,6 +52,7 @@
     "providers:source:verify": "bun run scripts/provider-boundary-source-audit.ts",
     "providers:verify": "bun run providers:audit -- --verify && bun run providers:source:verify",
     "providers:preflight": "bun run scripts/query-provider-runtime.ts",
+    "runtime:doctor": "bun run scripts/query-codex-runtime.ts",
     "catalog:source:verify": "bun run scripts/catalog-first-source-audit.ts",
     "library:layout:verify": "bun run scripts/studio-library-layout-source-audit.ts",
     "storage:audit": "bun run scripts/studio-storage-maintenance.ts audit",

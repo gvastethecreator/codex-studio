@@ -32,6 +32,19 @@ function createHealth(overrides?: Partial<HealthResponse>): HealthResponse {
       version: 'codex 1.0.0',
       command: 'codex --version',
     },
+    codexRuntime: {
+      status: 'ready',
+      canRunJobs: true,
+      checkedAt: '2026-05-07T00:00:00.000Z',
+      selectedExecutable: 'codex',
+      selectedCommand: 'codex --version',
+      selectedVersion: 'codex-cli 1.0.0',
+      selectedVersionNumber: '1.0.0',
+      appServerSupported: true,
+      recommendedAction: 'Codex Product Runtime is ready.',
+      issues: [],
+      candidates: [],
+    },
     appServer: {
       running: true,
       wsUrl: 'ws://localhost:17224',
@@ -48,6 +61,12 @@ function createHealth(overrides?: Partial<HealthResponse>): HealthResponse {
       libraryReady: true,
       codexReady: true,
       onboardingReady: true,
+    },
+    worker: {
+      maxConcurrentJobs: 1,
+      activeWorkerCount: 0,
+      queuedJobs: 0,
+      trackedJobs: 0,
     },
     ...overrides,
   };
@@ -148,6 +167,43 @@ describe('buildStudioReadinessSnapshot', () => {
       nextAction: 'start-app-server',
       title: 'Start codex app-server',
     });
+  });
+
+  it('asks to repair Codex CLI when the runtime doctor blocks jobs', () => {
+    const snapshot = buildStudioReadinessSnapshot({
+      health: createHealth({
+        codexRuntime: {
+          ...createHealth().codexRuntime,
+          status: 'blocked',
+          canRunJobs: false,
+          recommendedAction: 'Use the OpenAI Codex desktop CLI binary.',
+        },
+        checks: {
+          libraryReady: true,
+          codexReady: false,
+          onboardingReady: false,
+        },
+      }),
+      isBackendConnected: true,
+      localCodexSession: createSession(),
+      runtime,
+    });
+
+    expect(snapshot).toMatchObject({
+      stage: 'action_required',
+      isReady: false,
+      nextAction: 'install-codex',
+      title: 'Repair Codex CLI',
+    });
+    expect(snapshot.checks).toEqual(
+      expect.arrayContaining([
+        expect.objectContaining({
+          key: 'codexCli',
+          ok: false,
+          detail: 'Use the OpenAI Codex desktop CLI binary.',
+        }),
+      ]),
+    );
   });
 
   it('returns an offline snapshot when the backend is disconnected', () => {

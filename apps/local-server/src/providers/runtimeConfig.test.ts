@@ -1,6 +1,7 @@
 import { describe, expect, it } from 'vite-plus/test';
 
 import {
+  createCodexRuntimePreflight,
   createProviderReadinessMaps,
   getExternalProviderRuntimePreflight,
   readExternalProviderRuntimePreflights,
@@ -87,5 +88,36 @@ describe('provider runtime config', () => {
       comfy: false,
     });
     expect(JSON.stringify(readiness)).not.toContain('nano-secret-value');
+  });
+
+  it('maps Codex Runtime Doctor blockers into provider preflight diagnostics', () => {
+    const preflight = createCodexRuntimePreflight({
+      status: 'blocked',
+      canRunJobs: false,
+      checkedAt: '2026-05-31T00:00:00.000Z',
+      selectedExecutable: 'C:/Users/dev/AppData/Roaming/npm/codex.cmd',
+      selectedCommand: 'codex --version',
+      selectedVersion: 'codex 0.2.3',
+      selectedVersionNumber: '0.2.3',
+      appServerSupported: false,
+      recommendedAction: 'Use the OpenAI Codex desktop CLI binary.',
+      issues: [
+        {
+          code: 'codex_cli_legacy',
+          severity: 'error',
+          message: 'Selected Codex CLI looks legacy.',
+          action: 'Use the OpenAI Codex desktop CLI binary.',
+        },
+      ],
+      candidates: [],
+    });
+
+    expect(preflight).toMatchObject({
+      providerId: 'codex',
+      runtimeKind: 'codex_app_server',
+      localRuntimeState: 'invalid',
+      canAttemptExecution: false,
+    });
+    expect(preflight.diagnostics.join(' ')).toContain('legacy');
   });
 });

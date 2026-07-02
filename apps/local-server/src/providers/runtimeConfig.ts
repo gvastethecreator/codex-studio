@@ -1,8 +1,10 @@
 import type {
+  CodexRuntimeDoctorReport,
   GenerationProviderId,
   GenerationProviderRuntimePreflight,
   ProviderSecretState,
 } from '../../../../packages/shared/src';
+import { readCodexRuntimeDoctor } from '../codexRuntimeDoctor';
 import {
   listExternalExecutableProviderEntries,
   type ExternalExecutableProviderId,
@@ -98,6 +100,32 @@ export function readExternalProviderRuntimePreflights(
   return listExternalExecutableProviderEntries().map((definition) =>
     createPreflight(definition, env),
   );
+}
+
+export function createCodexRuntimePreflight(
+  codexRuntime: CodexRuntimeDoctorReport,
+): GenerationProviderRuntimePreflight {
+  const unavailable = codexRuntime.issues.some((issue) => issue.code === 'codex_cli_unavailable');
+  return {
+    providerId: 'codex',
+    runtimeKind: 'codex_app_server',
+    secretState: 'not_required',
+    secretSource: null,
+    localRuntimeState: codexRuntime.canRunJobs ? 'configured' : unavailable ? 'missing' : 'invalid',
+    localRuntimeSource: codexRuntime.selectedExecutable,
+    canAttemptExecution: codexRuntime.canRunJobs,
+    diagnostics:
+      codexRuntime.issues.length > 0
+        ? codexRuntime.issues.map((issue) => `${issue.message} ${issue.action}`)
+        : [codexRuntime.recommendedAction],
+  };
+}
+
+export function readGenerationProviderRuntimePreflights(
+  env: Record<string, string | undefined> = process.env,
+  codexRuntime: CodexRuntimeDoctorReport = readCodexRuntimeDoctor(),
+) {
+  return [createCodexRuntimePreflight(codexRuntime), ...readExternalProviderRuntimePreflights(env)];
 }
 
 export function getExternalProviderRuntimePreflight(

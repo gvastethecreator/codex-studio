@@ -230,7 +230,8 @@ export const OnboardingModal: React.FC<OnboardingModalProps> = ({
   const isReady = status === 'ready';
   const isStartingAppServer = status === 'starting';
   const backendReachable = !error && Boolean(health);
-  const canStartAppServer = backendReachable && !health?.appServer.running;
+  const codexRuntimeBlocked = Boolean(health?.codexRuntime && !health.codexRuntime.canRunJobs);
+  const canStartAppServer = backendReachable && !health?.appServer.running && !codexRuntimeBlocked;
   const libraryReady = Boolean(health?.checks.libraryReady);
   const codexReady = Boolean(localCodexSession?.canRunLocalJobs);
   const appServerReady = Boolean(health?.appServer.running);
@@ -247,7 +248,9 @@ export const OnboardingModal: React.FC<OnboardingModalProps> = ({
     ? 'pending'
     : appServerReady
       ? 'ready'
-      : 'warning';
+      : codexRuntimeBlocked
+        ? 'error'
+        : 'warning';
   const runtimeLabel = isDesktopRuntime ? 'Desktop runtime' : 'Web runtime';
   const headline = isReady
     ? 'Welcome to Codex Studio'
@@ -278,9 +281,16 @@ export const OnboardingModal: React.FC<OnboardingModalProps> = ({
   );
   const sessionDetail = codexReady
     ? 'You are signed in and ready to generate.'
-    : localCodexSession?.reason === 'chatgpt_login_required'
-      ? 'Run codex login and choose ChatGPT.'
-      : localCodexSession?.error || 'Connect your local Codex session.';
+    : codexRuntimeBlocked
+      ? (health?.codexRuntime.recommendedAction ?? 'Repair the local Codex runtime.')
+      : localCodexSession?.reason === 'chatgpt_login_required'
+        ? 'Run codex login and choose ChatGPT.'
+        : localCodexSession?.error || 'Connect your local Codex session.';
+  const appServerDetail = appServerReady
+    ? 'Codex app-server is running and reachable.'
+    : codexRuntimeBlocked
+      ? (health?.codexRuntime.recommendedAction ?? 'Repair the local Codex runtime.')
+      : 'Start the local app-server when the backend is ready.';
 
   React.useEffect(() => {
     if (!isOpen) return;
@@ -417,13 +427,15 @@ export const OnboardingModal: React.FC<OnboardingModalProps> = ({
                       <CheckRow
                         icon={<Terminal size={18} />}
                         title="app-server connection"
-                        detail={
-                          appServerReady
-                            ? 'Codex app-server is running and reachable.'
-                            : 'Start the local app-server when the backend is ready.'
-                        }
+                        detail={appServerDetail}
                         meta={appServerReady ? health?.appServer.wsUrl : apiBase}
-                        status={appServerReady ? 'Running' : 'Not running'}
+                        status={
+                          appServerReady
+                            ? 'Running'
+                            : codexRuntimeBlocked
+                              ? 'Blocked'
+                              : 'Not running'
+                        }
                         tone={serverTone}
                       />
                     </div>

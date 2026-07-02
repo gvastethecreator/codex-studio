@@ -67,7 +67,7 @@ function resolveNextAction(
   if (!isBackendConnected) return 'retry';
   if (!health) return null;
   if (!health.checks.libraryReady) return 'fix-library';
-  if (!health.codexCli.available) return 'install-codex';
+  if (!health.codexRuntime.canRunJobs) return 'install-codex';
   if (!health.appServer.running) return 'start-app-server';
   if (!localCodexSession?.canRunLocalJobs) {
     return localCodexSession?.reason === 'app_server_unavailable' ? 'retry' : 'login-chatgpt';
@@ -78,7 +78,7 @@ function resolveNextAction(
 function buildTitle(nextAction: StudioReadinessAction, runtimeLabel: string) {
   switch (nextAction) {
     case 'install-codex':
-      return 'Install Codex CLI';
+      return 'Repair Codex CLI';
     case 'start-app-server':
       return 'Start codex app-server';
     case 'login-chatgpt':
@@ -95,7 +95,7 @@ function buildTitle(nextAction: StudioReadinessAction, runtimeLabel: string) {
 function buildDescription(nextAction: StudioReadinessAction, runtimeLabel: string) {
   switch (nextAction) {
     case 'install-codex':
-      return 'Install or restore the local Codex CLI before running a Local Generation Run.';
+      return 'Install, update, or reprioritize the local Codex CLI before running a Local Generation Run.';
     case 'start-app-server':
       return 'The backend is reachable, but the App-Server Lifecycle still needs to start `codex app-server`.';
     case 'login-chatgpt':
@@ -138,19 +138,25 @@ export function buildStudioReadinessSnapshot({
     {
       key: 'codexCli',
       label: 'Codex CLI',
-      ok: Boolean(health?.codexCli.available),
-      detail: health?.codexCli.available
-        ? health.codexCli.version || 'Codex CLI detected.'
-        : 'Install or restore the local Codex CLI.',
+      ok: Boolean(health?.codexRuntime?.canRunJobs),
+      detail:
+        health?.codexRuntime && !health.codexRuntime.canRunJobs
+          ? health.codexRuntime.recommendedAction
+          : health?.codexCli.available
+            ? health.codexCli.version || 'Codex CLI detected.'
+            : 'Install or restore the local Codex CLI.',
       blocking: true,
     },
     {
       key: 'appServer',
       label: 'codex app-server',
-      ok: Boolean(health?.appServer.running),
-      detail: health?.appServer.running
-        ? health.appServer.wsUrl || 'The app-server websocket is live.'
-        : 'The local app-server is not running yet.',
+      ok: Boolean(health?.appServer.running && health?.codexRuntime.canRunJobs),
+      detail:
+        health?.codexRuntime && !health.codexRuntime.canRunJobs
+          ? health.codexRuntime.recommendedAction
+          : health?.appServer.running
+            ? health.appServer.wsUrl || 'The app-server websocket is live.'
+            : 'The local app-server is not running yet.',
       blocking: true,
     },
     {

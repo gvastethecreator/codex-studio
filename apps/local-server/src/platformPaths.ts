@@ -16,18 +16,23 @@ function firstExisting(paths: string[], fallback: string) {
   return paths.find((candidate) => existsSync(candidate)) ?? fallback;
 }
 
-function resolveWindowsPath(key: PlatformPathKey) {
-  const home = homeDir();
-  const codexConfig = path.join(home, '.codex');
-  if (key === 'codex-config-dir') return codexConfig;
-  if (key === 'codex-skills-dir') return path.join(codexConfig, 'skills');
-  if (key === 'codex-generated-images') return path.join(codexConfig, 'generated_images');
+export interface PlatformPathCandidate {
+  path: string;
+  source: string;
+}
 
+function windowsCodexBinaryCandidates() {
+  const home = homeDir();
   const appData = process.env.APPDATA || path.join(home, 'AppData', 'Roaming');
   const localAppData = process.env.LOCALAPPDATA || path.join(home, 'AppData', 'Local');
-  return firstExisting(
-    [
-      path.join(
+
+  return [
+    {
+      path: path.join(localAppData, 'Programs', 'OpenAI', 'Codex', 'bin', 'codex.exe'),
+      source: 'OpenAI desktop install',
+    },
+    {
+      path: path.join(
         appData,
         'npm',
         'node_modules',
@@ -40,7 +45,10 @@ function resolveWindowsPath(key: PlatformPathKey) {
         'x86_64-pc-windows-msvc',
         'codex.exe',
       ),
-      path.join(
+      source: 'npm package vendor binary',
+    },
+    {
+      path: path.join(
         appData,
         'npm',
         'node_modules',
@@ -54,12 +62,56 @@ function resolveWindowsPath(key: PlatformPathKey) {
         'bin',
         'codex.exe',
       ),
-      path.join(home, 'AppData', 'Roaming', 'npm', 'codex.cmd'),
-      path.join(appData, 'npm', 'codex.cmd'),
-      path.join(appData, 'npm', 'codex.exe'),
-      path.join(appData, 'npm', 'codex'),
-      path.join(localAppData, 'Microsoft', 'WindowsApps', 'codex.exe'),
-    ],
+      source: 'npm package bin vendor binary',
+    },
+    {
+      path: path.join(home, 'AppData', 'Roaming', 'npm', 'codex.cmd'),
+      source: 'npm command shim',
+    },
+    {
+      path: path.join(appData, 'npm', 'codex.cmd'),
+      source: 'npm command shim',
+    },
+    {
+      path: path.join(appData, 'npm', 'codex.exe'),
+      source: 'npm executable shim',
+    },
+    {
+      path: path.join(appData, 'npm', 'codex'),
+      source: 'npm shell shim',
+    },
+    {
+      path: path.join(localAppData, 'Microsoft', 'WindowsApps', 'codex.exe'),
+      source: 'WindowsApps alias',
+    },
+    {
+      path: 'codex',
+      source: 'PATH fallback',
+    },
+  ] satisfies PlatformPathCandidate[];
+}
+
+function unixCodexBinaryCandidates() {
+  const home = homeDir();
+  return [
+    { path: path.join(home, '.local', 'bin', 'codex'), source: 'local bin' },
+    { path: path.join(home, '.local', 'share', 'npm', 'bin', 'codex'), source: 'npm local bin' },
+    { path: path.join(home, '.npm-global', 'bin', 'codex'), source: 'npm global bin' },
+    { path: 'codex', source: 'PATH fallback' },
+  ] satisfies PlatformPathCandidate[];
+}
+
+function resolveWindowsPath(key: PlatformPathKey) {
+  const home = homeDir();
+  const codexConfig = path.join(home, '.codex');
+  if (key === 'codex-config-dir') return codexConfig;
+  if (key === 'codex-skills-dir') return path.join(codexConfig, 'skills');
+  if (key === 'codex-generated-images') return path.join(codexConfig, 'generated_images');
+
+  return firstExisting(
+    windowsCodexBinaryCandidates()
+      .map((candidate) => candidate.path)
+      .filter((candidate) => candidate !== 'codex'),
     'codex',
   );
 }
@@ -72,11 +124,9 @@ function resolveUnixPath(key: PlatformPathKey) {
   if (key === 'codex-generated-images') return path.join(codexConfig, 'generated_images');
 
   return firstExisting(
-    [
-      path.join(home, '.local', 'bin', 'codex'),
-      path.join(home, '.local', 'share', 'npm', 'bin', 'codex'),
-      path.join(home, '.npm-global', 'bin', 'codex'),
-    ],
+    unixCodexBinaryCandidates()
+      .map((candidate) => candidate.path)
+      .filter((candidate) => candidate !== 'codex'),
     'codex',
   );
 }
@@ -85,6 +135,9 @@ export function resolvePlatformPath(key: PlatformPathKey) {
   return process.platform === 'win32' ? resolveWindowsPath(key) : resolveUnixPath(key);
 }
 
-function getPlatformPathSeparator() {
-  return path.sep;
+export function listPlatformPathCandidates(key: PlatformPathKey): PlatformPathCandidate[] {
+  if (key !== 'codex-binary') return [{ path: resolvePlatformPath(key), source: 'resolved path' }];
+  return process.platform === 'win32'
+    ? windowsCodexBinaryCandidates()
+    : unixCodexBinaryCandidates();
 }

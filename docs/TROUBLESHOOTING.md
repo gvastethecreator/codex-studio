@@ -4,8 +4,9 @@
 
 1. Run `bun run studio:init`.
 2. Start the backend with `bun run dev:server`.
-3. Check `http://localhost:17223/api/health`.
-4. If a quality gate failed, run `bun run tooling:logs` and inspect `*.latest.log`.
+3. Run `bun run runtime:doctor`.
+4. Check `http://localhost:17223/api/health`.
+5. If a quality gate failed, run `bun run tooling:logs` and inspect `*.latest.log`.
 
 ## Common Startup Problems
 
@@ -14,6 +15,20 @@
 Symptoms: `codexCli.available: false`, real jobs do not start.
 
 Check: `codex --version`, PATH setup, and terminal restart after installing Codex.
+
+Run:
+
+```bash
+bun run runtime:doctor
+```
+
+The doctor reports the selected executable, version, app-server support, and the recommended action without printing secrets.
+
+### An old `codex` install is selected
+
+Symptoms: jobs fail with WebSocket connection errors, `runtime:doctor` reports `codex_cli_legacy`, or health shows `codexRuntime.status: blocked`.
+
+Check: remove or update old npm shims under the user npm directory, make sure the OpenAI Codex desktop CLI binary is selected, then restart `bun run dev:server`.
 
 ### `codex app-server` is not available
 
@@ -93,6 +108,7 @@ bun run storage:thumbnails:backfill -- --limit=1000 --write --confirm=backfill-t
 bun run studio:init
 bun run dev:server
 bun run dev:ui
+bun run runtime:doctor
 bun run validate:fast
 bun run storage:audit
 bun run storage:thumbnails:backfill

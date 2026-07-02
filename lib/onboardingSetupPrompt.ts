@@ -47,6 +47,10 @@ export function buildCodexStudioSetupPrompt({
   const envLocalPath = renderValue(health?.runtime.envLocalPath, '.env.local');
   const libraryDir = renderValue(health?.libraryDir, 'Studio Library not detected yet');
   const codexVersion = renderValue(health?.codexCli.version, 'Codex CLI not detected yet');
+  const codexRuntimeAction = renderValue(
+    health?.codexRuntime.recommendedAction,
+    'Codex runtime not checked yet',
+  );
   const bunVersion = renderValue(health?.runtime.bunVersion, 'Bun version not detected yet');
   const appServerState = health?.appServer.running ? 'running' : 'not running';
   const localSessionState = localCodexSession?.canRunLocalJobs
@@ -66,6 +70,7 @@ export function buildCodexStudioSetupPrompt({
     `- .env.local: ${envLocalPath} (present: ${renderBool(health?.runtime.envLocalPresent)})`,
     `- Bun: ${bunVersion}`,
     `- Codex CLI: ${codexVersion}`,
+    `- Codex Runtime Doctor: ${codexRuntimeAction}`,
     `- codex app-server: ${appServerState}`,
     `- Local Codex Session: ${localSessionState}`,
     `- Readiness stage: ${readiness.stage}`,

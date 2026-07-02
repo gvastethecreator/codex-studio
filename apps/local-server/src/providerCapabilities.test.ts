@@ -75,4 +75,28 @@ describe('providerCapabilities', () => {
       }),
     );
   });
+
+  it('blocks Codex provider execution when runtime preflight fails', () => {
+    const report = readProviderCapabilities(
+      { defaultProviderId: 'codex' },
+      {},
+      { canRunJobs: false },
+    );
+
+    expect(report.providers).toEqual(
+      expect.arrayContaining([
+        expect.objectContaining({
+          providerId: 'codex',
+          status: 'not_configured',
+          canExecute: false,
+        }),
+      ]),
+    );
+    expect(getProviderExecutionBlocker(report, 'codex')).toEqual(
+      expect.objectContaining({
+        error: 'Provider cannot execute jobs yet.',
+        providerId: 'codex',
+      }),
+    );
+  });
 });

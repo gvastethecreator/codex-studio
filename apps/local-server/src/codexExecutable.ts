@@ -3,7 +3,9 @@ import path from 'node:path';
 import { resolvePlatformPath } from './platformPaths';
 import { resolveUserHome } from './platformHome';
 
-function resolveWindowsCodexShim() {
+export function resolveCodexExecutable() {
+  if (process.platform !== 'win32') return resolvePlatformPath('codex-binary');
+
   const home = resolveUserHome({ platform: 'win32' });
   const appData = process.env.APPDATA || path.join(home, 'AppData', 'Roaming');
   const shimCandidates = [
@@ -20,8 +22,7 @@ function resolveWindowsCodexShim() {
 }
 
 export function resolveCodexInvocation(args: string[]) {
-  const executable =
-    process.platform === 'win32' ? resolveWindowsCodexShim() : resolvePlatformPath('codex-binary');
+  const executable = resolveCodexExecutable();
   if (process.platform === 'win32' && executable.endsWith('.cmd')) {
     const quotedExecutable = `"${executable}"`;
     return ['cmd.exe', '/d', '/s', '/c', `${quotedExecutable} ${args.join(' ')}`];

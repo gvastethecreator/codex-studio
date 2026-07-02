@@ -44,6 +44,11 @@ export type StudioReadinessCheckKey =
   | 'codexCli'
   | 'appServer'
   | 'localCodexSession';
+export type CodexRuntimeDoctorStatus = 'ready' | 'blocked';
+export type CodexRuntimeDoctorIssueCode =
+  | 'codex_cli_unavailable'
+  | 'codex_cli_legacy'
+  | 'codex_app_server_unsupported';
 
 export interface JobExecutionOptions {
   model: string;
@@ -115,6 +120,34 @@ export interface LocalCodexSessionResponse {
 }
 
 export type CodexAccountStatusResponse = LocalCodexSessionResponse;
+
+export interface CodexRuntimeDoctorIssue {
+  code: CodexRuntimeDoctorIssueCode;
+  severity: 'error' | 'warning';
+  message: string;
+  action: string;
+}
+
+export interface CodexRuntimeDoctorCandidate {
+  executable: string;
+  source: string;
+  exists: boolean;
+  selected: boolean;
+}
+
+export interface CodexRuntimeDoctorReport {
+  status: CodexRuntimeDoctorStatus;
+  canRunJobs: boolean;
+  checkedAt: string;
+  selectedExecutable: string;
+  selectedCommand: string;
+  selectedVersion: string | null;
+  selectedVersionNumber: string | null;
+  appServerSupported: boolean;
+  recommendedAction: string;
+  issues: CodexRuntimeDoctorIssue[];
+  candidates: CodexRuntimeDoctorCandidate[];
+}
 
 export interface StudioReadinessCheck {
   key: StudioReadinessCheckKey;
@@ -421,6 +454,7 @@ export interface HealthResponse {
     version: string | null;
     command: string;
   };
+  codexRuntime: CodexRuntimeDoctorReport;
   appServer: {
     running: boolean;
     wsUrl: string;
@@ -437,6 +471,12 @@ export interface HealthResponse {
     libraryReady: boolean;
     codexReady: boolean;
     onboardingReady: boolean;
+  };
+  worker: {
+    maxConcurrentJobs: number;
+    activeWorkerCount: number;
+    queuedJobs: number;
+    trackedJobs: number;
   };
 }
 

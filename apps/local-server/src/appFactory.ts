@@ -1,7 +1,7 @@
 import { randomUUID } from 'node:crypto';
 import { Hono } from 'hono';
 import { getCodexWsUrl, getEnvLocalPath, getSettings, hasEnvLocalFile } from './config';
-import { resolveCodexInvocation } from './codexExecutable';
+import { readCodexRuntimeDoctor } from './codexRuntimeDoctor';
 import { createCatalogCommands } from './catalogCommands';
 import { createCatalogRoutes } from './catalogRoutes';
 import { createDefaultCatalogStore, type StudioCatalogStore } from './catalogStore';
@@ -45,6 +45,7 @@ import {
   resolveThumbnailMaxEdge,
 } from './libraryAssetVariants';
 import { getProviderExecutionBlocker, readProviderCapabilities } from './providerCapabilities';
+import { readGenerationProviderRuntimePreflights } from './providers/runtimeConfig';
 import { createOutputSourceRoutes } from './outputSourceRoutes';
 import { createProviderRoutes } from './providerRoutes';
 import { createSettingsRoutes } from './settingsRoutes';
@@ -80,6 +81,7 @@ export interface CreateStudioAppOptions {
   dependencies?: {
     readLocalCodexSession?: () => Promise<LocalCodexSessionResponse>;
     readCodexModelCatalog?: () => Promise<CodexModelCatalogResponse>;
+    readCodexRuntimeDoctor?: typeof readCodexRuntimeDoctor;
     ensureAppServer?: (reason?: AppServerEnsureReason) => void;
     getAppServerDiagnostics?: typeof getAppServerDiagnostics;
     isAppServerRunning?: typeof isAppServerRunning;
@@ -104,6 +106,8 @@ export async function createStudioApp(
   const app = new Hono();
   const readLocalCodexSession = options.dependencies?.readLocalCodexSession ?? getLocalCodexSession;
   const readCodexModelCatalog = options.dependencies?.readCodexModelCatalog ?? getCodexModelCatalog;
+  const readCodexRuntimeDoctorFn =
+    options.dependencies?.readCodexRuntimeDoctor ?? readCodexRuntimeDoctor;
   const ensureLocalAppServer = options.dependencies?.ensureAppServer ?? ensureAppServer;
   const readAppServerDiagnostics =
     options.dependencies?.getAppServerDiagnostics ?? getAppServerDiagnostics;
@@ -142,7 +146,7 @@ export async function createStudioApp(
     createRuntimeRoutes({
       readSettings: getSettings,
       inspectLibrary,
-      resolveCodexInvocation,
+      readCodexRuntimeDoctor: readCodexRuntimeDoctorFn,
       getCodexWsUrl,
       getEnvLocalPath,
       hasEnvLocalFile,
@@ -165,6 +169,7 @@ export async function createStudioApp(
     '/api/providers',
     createProviderRoutes({
       readSettings: () => readEditableStudioSettings(settingsStorage),
+      readCodexRuntimeDoctor: readCodexRuntimeDoctorFn,
     }),
   );
 
@@ -216,6 +221,7 @@ export async function createStudioApp(
       listJobs: () => dbStore.listJobSummaries?.() ?? dbStore.listJobs(),
       getJob: (jobId) => dbStore.getJob(jobId),
       getJobDetail,
+      requeueJob: (jobId) => dbStore.requeueJob?.(jobId) ?? null,
       cancelQueuedOrRunningJob: (jobId) => workerController.cancelQueuedOrRunningJob(jobId),
       ensureDefaultProjectId: () => dbStore.ensureDefaultProject().id,
       createJobId: () => randomUUID(),
@@ -242,10 +248,17 @@ export async function createStudioApp(
         ),
       readLibraryDir: () => getSettings().libraryDir,
       resolveProviderExecutionBlocker: (providerId) => {
+        const codexRuntime = readCodexRuntimeDoctorFn();
         const capabilityReport = readProviderCapabilities(
           readEditableStudioSettings(settingsStorage),
+          process.env,
+          codexRuntime,
         );
-        return getProviderExecutionBlocker(capabilityReport, providerId);
+        return getProviderExecutionBlocker(
+          capabilityReport,
+          providerId,
+          readGenerationProviderRuntimePreflights(process.env, codexRuntime),
+        );
       },
       isReferenceProcessingError: (error): error is ReferenceProcessingError =>
         error instanceof ReferenceProcessingError,

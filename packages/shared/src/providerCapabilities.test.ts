@@ -6,6 +6,7 @@ describe('providerCapabilities', () => {
   it('marks Codex and dry run as executable adapters', () => {
     const report = createGenerationProviderCapabilities({
       settings: { defaultProviderId: 'codex' },
+      localRuntimeConfigured: { codex: true },
     });
 
     expect(report.providers).toEqual(

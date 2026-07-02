@@ -86,6 +86,19 @@ describe('live recipe prompt quality evaluation', () => {
         version: '1.0.0',
         command: 'codex --version',
       },
+      codexRuntime: {
+        status: 'ready',
+        canRunJobs: true,
+        checkedAt: '2026-05-26T00:00:00.000Z',
+        selectedExecutable: 'codex',
+        selectedCommand: 'codex --version',
+        selectedVersion: 'codex-cli 1.0.0',
+        selectedVersionNumber: '1.0.0',
+        appServerSupported: true,
+        recommendedAction: 'Codex Product Runtime is ready.',
+        issues: [],
+        candidates: [],
+      },
       appServer: {
         running: false,
         wsUrl: 'ws://127.0.0.1:17224',
@@ -102,6 +115,12 @@ describe('live recipe prompt quality evaluation', () => {
         libraryReady: true,
         codexReady: true,
         onboardingReady: false,
+      },
+      worker: {
+        maxConcurrentJobs: 1,
+        activeWorkerCount: 0,
+        queuedJobs: 0,
+        trackedJobs: 0,
       },
     } satisfies HealthResponse;
     const session = {

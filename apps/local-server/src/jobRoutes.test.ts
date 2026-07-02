@@ -175,6 +175,131 @@ describe('jobRoutes', () => {
     expect(missingResponse.status).toBe(404);
   });
 
+  it('requeues failed jobs in place without creating a duplicate job', async () => {
+    const failed = createJob({
+      id: 'job-failed',
+      status: 'failed',
+      error: 'Unable to connect to ws://127.0.0.1:17224',
+      completedAt: '2026-05-29T00:01:00.000Z',
+    });
+    const requeued = createJob({
+      id: 'job-failed',
+      status: 'queued',
+      error: null,
+      completedAt: null,
+      updatedAt: '2026-05-29T00:02:00.000Z',
+    });
+    const createJobFn = vi.fn(() => createJob({ id: 'job-new' }));
+    const requeueJob = vi.fn<(...args: [string]) => Job | null>().mockReturnValue(requeued);
+    const enqueueJob = vi.fn();
+    const publishEvent = vi.fn();
+
+    const routes = createJobRoutes({
+      listJobs: () => [],
+      getJob: (jobId) => (jobId === 'job-failed' ? failed : null),
+      getJobDetail: async () => null,
+      requeueJob,
+      cancelQueuedOrRunningJob: () => null,
+      ensureDefaultProjectId: () => 'project-1',
+      createJobId: () => 'job-new',
+      createJob: createJobFn,
+      updateJobFinalPrompt: () => null,
+      processReferences: async () => ({ augmentedPrompt: 'x', persistedRefs: [] }),
+      hydrateSourceSpecAssetPaths: (sourceSpec) => sourceSpec,
+      readLibraryDir: () => 'D:/library',
+      resolveProviderExecutionBlocker: () => null,
+      isReferenceProcessingError,
+      publishEvent,
+      logJobCreated: () => {},
+      enqueueJob,
+    });
+
+    const response = await routes.request('/job-failed/retry', { method: 'POST' });
+
+    expect(response.status).toBe(200);
+    await expect(response.json()).resolves.toEqual(requeued);
+    expect(createJobFn).not.toHaveBeenCalled();
+    expect(requeueJob).toHaveBeenCalledWith('job-failed');
+    expect(publishEvent).toHaveBeenCalledWith('job.progress', requeued);
+    expect(enqueueJob).toHaveBeenCalledWith(requeued);
+  });
+
+  it('rejects retry for completed jobs so regeneration does not copy finished work', async () => {
+    const completed = createJob({ id: 'job-done', status: 'completed' });
+    const enqueueJob = vi.fn();
+
+    const routes = createJobRoutes({
+      listJobs: () => [],
+      getJob: (jobId) => (jobId === 'job-done' ? completed : null),
+      getJobDetail: async () => null,
+      requeueJob: () => createJob(),
+      cancelQueuedOrRunningJob: () => null,
+      ensureDefaultProjectId: () => 'project-1',
+      createJobId: () => 'job-new',
+      createJob: () => createJob({ id: 'job-new' }),
+      updateJobFinalPrompt: () => null,
+      processReferences: async () => ({ augmentedPrompt: 'x', persistedRefs: [] }),
+      hydrateSourceSpecAssetPaths: (sourceSpec) => sourceSpec,
+      readLibraryDir: () => 'D:/library',
+      resolveProviderExecutionBlocker: () => null,
+      isReferenceProcessingError,
+      publishEvent,
+      logJobCreated: () => {},
+      enqueueJob,
+    });
+
+    const response = await routes.request('/job-done/retry', { method: 'POST' });
+
+    expect(response.status).toBe(409);
+    await expect(response.json()).resolves.toMatchObject({
+      code: 'invalid_retry_status',
+      status: 'completed',
+    });
+    expect(enqueueJob).not.toHaveBeenCalled();
+  });
+
+  it('blocks retry before requeue when provider runtime preflight fails', async () => {
+    const failed = createJob({ id: 'job-failed', status: 'failed', providerId: 'codex' });
+    const requeueJob = vi.fn();
+    const enqueueJob = vi.fn();
+
+    const routes = createJobRoutes({
+      listJobs: () => [],
+      getJob: (jobId) => (jobId === 'job-failed' ? failed : null),
+      getJobDetail: async () => null,
+      requeueJob,
+      cancelQueuedOrRunningJob: () => null,
+      ensureDefaultProjectId: () => 'project-1',
+      createJobId: () => 'job-new',
+      createJob: () => createJob({ id: 'job-new' }),
+      updateJobFinalPrompt: () => null,
+      processReferences: async () => ({ augmentedPrompt: 'x', persistedRefs: [] }),
+      hydrateSourceSpecAssetPaths: (sourceSpec) => sourceSpec,
+      readLibraryDir: () => 'D:/library',
+      resolveProviderExecutionBlocker: () => ({
+        error: 'Provider cannot execute jobs yet.',
+        code: 'provider_runtime_blocked',
+        providerId: 'codex',
+        status: 'not_configured',
+        detail: 'Use the OpenAI Codex desktop CLI binary.',
+      }),
+      isReferenceProcessingError,
+      publishEvent,
+      logJobCreated: () => {},
+      enqueueJob,
+    });
+
+    const response = await routes.request('/job-failed/retry', { method: 'POST' });
+
+    expect(response.status).toBe(400);
+    await expect(response.json()).resolves.toMatchObject({
+      error: 'Provider cannot execute jobs yet.',
+      providerId: 'codex',
+    });
+    expect(requeueJob).not.toHaveBeenCalled();
+    expect(enqueueJob).not.toHaveBeenCalled();
+  });
+
   it('creates jobs with reference processing and provider blocker checks', async () => {
     const publishEvent = vi.fn();
     const enqueueJob = vi.fn();

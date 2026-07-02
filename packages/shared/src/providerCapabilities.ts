@@ -62,9 +62,10 @@ const PROVIDERS: ProviderCapabilityDefinition[] = [
     runtimeKind: 'codex_app_server',
     hasAdapter: true,
     requiresSecret: false,
+    requiresLocalRuntime: true,
     activeDetail: 'Codex Product Runtime adapter is available.',
     plannedDetail: 'Codex adapter is available.',
-    missingDetail: 'Codex adapter is available.',
+    missingDetail: 'Codex Product Runtime is blocked by local runtime preflight.',
   },
   {
     providerId: 'google',

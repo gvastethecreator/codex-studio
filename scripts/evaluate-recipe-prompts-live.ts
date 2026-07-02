@@ -468,7 +468,9 @@ export function evaluateLiveRuntimeReadiness(
   if (!health.checks.libraryReady) {
     failures.push('Studio Library is not ready for local generation.');
   }
-  if (!health.codexCli.available) {
+  if (!health.codexRuntime.canRunJobs) {
+    failures.push(`Codex Product Runtime is blocked: ${health.codexRuntime.recommendedAction}`);
+  } else if (!health.codexCli.available) {
     failures.push('Codex CLI is not available in the local backend environment.');
   }
   if (!health.appServer.running) {

@@ -1,8 +1,7 @@
-import { spawnSync } from 'node:child_process';
 import { existsSync, writeFileSync } from 'node:fs';
 import path from 'node:path';
 import { getSettings, loadDotEnvLocal } from './config';
-import { resolveCodexInvocation } from './codexExecutable';
+import { readCodexRuntimeDoctor } from './codexRuntimeDoctor';
 import { ensureDefaultProject, migrateDb } from './db';
 import { ensureLibrary, resolveLibraryPath } from './library';
 import { ensureDefaultLibrary } from './libraries';
@@ -15,9 +14,8 @@ export function initStudio() {
   ensureDefaultLibrary();
   const defaultProject = ensureDefaultProject();
   const envPath = path.resolve(process.cwd(), '.env.local');
-  const [command, ...args] = resolveCodexInvocation(['--version']);
-  const codex = spawnSync(command, args, { encoding: 'utf8' });
-  const codexVersion = codex.status === 0 ? codex.stdout.trim() : null;
+  const codexRuntime = readCodexRuntimeDoctor();
+  const codexVersion = codexRuntime.selectedVersion;
 
   if (!existsSync(envPath)) {
     const settings = getSettings();
@@ -37,11 +35,12 @@ export function initStudio() {
     );
   }
 
-  const message = codexVersion
-    ? `Studio initialized. Default project: ${defaultProject.id}. Codex: ${codexVersion}`
-    : `Studio initialized. Default project: ${defaultProject.id}. Codex CLI was not found in PATH.`;
+  const message =
+    codexVersion && codexRuntime.canRunJobs
+      ? `Studio initialized. Default project: ${defaultProject.id}. Codex: ${codexVersion}`
+      : `Studio initialized. Default project: ${defaultProject.id}. ${codexRuntime.recommendedAction}`;
 
-  log(codexVersion ? 'info' : 'warn', 'init', message);
+  log(codexRuntime.canRunJobs ? 'info' : 'warn', 'init', message);
   writeFileSync(
     resolveLibraryPath('logs', 'init.log'),
     `${new Date().toISOString()} ${message}\n`,

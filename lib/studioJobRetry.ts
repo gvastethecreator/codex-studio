@@ -1,14 +1,7 @@
 import type { CreateJobRequest, Job, JobDetailResponse } from '../packages/shared/src';
 import { buildGenerationVariationBrief, createGenerationVariationKey } from './generationVariation';
 
-const RETRYABLE_JOB_STATUSES = new Set<Job['status']>([
-  'queued',
-  'running',
-  'needs_review',
-  'completed',
-  'failed',
-  'cancelled',
-]);
+const RETRYABLE_JOB_STATUSES = new Set<Job['status']>(['needs_review', 'failed', 'cancelled']);
 
 function createRetryBatchId(now = Date.now, random = Math.random) {
   return `batch-retry-${now()}-${random().toString(36).slice(2, 10)}`;

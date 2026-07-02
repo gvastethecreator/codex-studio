@@ -1,4 +1,5 @@
 import { getCodexWsUrl } from '../config';
+import { readCodexRuntimeDoctor } from '../codexRuntimeDoctor';
 import { resolveCodexInvocation } from '../codexExecutable';
 import { resolveLibraryPath } from '../library';
 import { log } from '../logger';
@@ -96,6 +97,14 @@ export function ensureAppServer(reason: AppServerEnsureReason = 'session') {
   }
 
   if (isAppServerRunning()) return;
+
+  const runtimeDoctor = readCodexRuntimeDoctor();
+  if (!runtimeDoctor.canRunJobs) {
+    diagnostics.pid = null;
+    diagnostics.lastStartError = runtimeDoctor.recommendedAction;
+    log('error', 'app-server', runtimeDoctor.recommendedAction);
+    throw new AppServerStartError(runtimeDoctor.recommendedAction, runtimeDoctor);
+  }
 
   const logPath = resolveLibraryPath('logs', 'app-server.log');
   const invocation = resolveCodexInvocation(['app-server', '--listen', getCodexWsUrl()]);

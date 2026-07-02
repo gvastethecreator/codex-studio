@@ -465,6 +465,15 @@ export function updateJobStatus(
   return getJob(id, db);
 }
 
+export function requeueJob(id: string, db?: Database) {
+  getDb(db)
+    .query(
+      "UPDATE jobs SET status = 'queued', error = NULL, updated_at = ?, completed_at = NULL WHERE id = ?",
+    )
+    .run(now(), id);
+  return getJob(id, db);
+}
+
 export function getJob(id: string, db?: Database) {
   const row = getDb(db).query('SELECT * FROM jobs WHERE id = ?').get(id);
   return row ? mapJob(row) : null;
